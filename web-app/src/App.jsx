@@ -447,6 +447,15 @@ export default function App() {
   const [wizardManualBibtex, setWizardManualBibtex] = useState('');
   const [isWizardProcessing, setIsWizardProcessing] = useState(false);
 
+  // Batch Operations states
+  const [batchFolder, setBatchFolder] = useState('articles');
+  const [batchRecursive, setBatchRecursive] = useState(false);
+  const [batchBibtexText, setBatchBibtexText] = useState('');
+  const [isBatchDirectoryLoading, setIsBatchDirectoryLoading] = useState(false);
+  const [isBatchBibtexLoading, setIsBatchBibtexLoading] = useState(false);
+  const [batchDirectoryResult, setBatchDirectoryResult] = useState(null);
+  const [batchBibtexResult, setBatchBibtexResult] = useState(null);
+
   // Sorting & Folder filtering
   const [selectedFolderFilter, setSelectedFolderFilter] = useState('all'); // 'all', '' (root), or folder name
   const [sortField, setSortField] = useState('title');
@@ -700,6 +709,73 @@ export default function App() {
       }
     } catch (err) {
       console.error('Error fetching maintenance counts:', err);
+    }
+  };
+
+  const handleBatchDirectoryImport = async () => {
+    setIsBatchDirectoryLoading(true);
+    setBatchDirectoryResult(null);
+    try {
+      const res = await fetch(`${API_BASE}/api/papers/batch-import-directory`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          directory_path: batchFolder,
+          recursive: batchRecursive,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setBatchDirectoryResult(data);
+        // Refresh library lists
+        fetchPapers();
+        fetchFolders();
+        fetchMaintenanceCounts();
+      } else {
+        alert(data.detail || 'Failed to scan and import directory.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Error scanning and importing directory.');
+    } finally {
+      setIsBatchDirectoryLoading(false);
+    }
+  };
+
+  const handleBatchBibtexImport = async () => {
+    if (!batchBibtexText.trim()) {
+      alert('Please paste some BibTeX entries first.');
+      return;
+    }
+    setIsBatchBibtexLoading(true);
+    setBatchBibtexResult(null);
+    try {
+      const res = await fetch(`${API_BASE}/api/papers/batch-import-bibtex`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          raw_bibtex: batchBibtexText,
+        }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setBatchBibtexResult(data);
+        // Refresh library lists
+        fetchPapers();
+        fetchFolders();
+        fetchMaintenanceCounts();
+      } else {
+        alert(data.detail || 'Failed to import BibTeX entries.');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Error importing BibTeX entries.');
+    } finally {
+      setIsBatchBibtexLoading(false);
     }
   };
 
@@ -1573,6 +1649,9 @@ export default function App() {
             Broken Entries
             {brokenPapers.length > 0 && <span className="badge badge-warning" style={{ marginLeft: 'auto', backgroundColor: 'var(--danger-color)', color: '#fff', padding: '2px 6px', borderRadius: '10px', fontSize: '11px', fontWeight: 'bold' }}>{brokenPapers.length}</span>}
           </a>
+          <a className={`menu-item ${activeView === 'batch' ? 'active' : ''}`} onClick={() => { setActiveView('batch'); setSelectedPaper(null); }}>
+            Batch Operations
+          </a>
         </div>
 
         <div className="sidebar-notes-section">
@@ -1935,6 +2014,207 @@ export default function App() {
                 </tbody>
               </table>
             )}
+          </div>
+        ) : activeView === 'batch' ? (
+          <div className="batch-view" style={{ padding: '20px', overflowY: 'auto', height: '100%' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', borderBottom: '1px solid var(--border-color)', paddingBottom: '10px' }}>
+              <h2>Batch Operations</h2>
+            </div>
+            
+            <div className="batch-grid">
+              {/* Card 1: Batch PDF Directory Auto-Ingestion */}
+              <div className="batch-card">
+                <h3>Batch PDF Auto-Ingestion</h3>
+                <p className="batch-description">
+                  Scan a directory in your library for untracked PDF files, extract text to find DOIs, and automatically ingest them if resolved with high confidence.
+                </p>
+                
+                <div className="form-group" style={{ marginBottom: '15px' }}>
+                  <label htmlFor="batch-folder-select" style={{ display: 'block', marginBottom: '5px', fontWeight: '500' }}>Directory to Scan:</label>
+                  <select
+                    id="batch-folder-select"
+                    className="select-input"
+                    value={batchFolder}
+                    onChange={(e) => setBatchFolder(e.target.value)}
+                    style={{ width: '100%', padding: '8px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-secondary)', color: 'var(--text-primary)' }}
+                  >
+                    <option value="articles">articles/ (Library Root)</option>
+                    {folders.map(f => (
+                      <option key={f} value={`articles/${f}`}>{`articles/${f}/`}</option>
+                    ))}
+                  </select>
+                </div>
+                
+                <div className="form-group checkbox-group" style={{ marginBottom: '15px' }}>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer' }}>
+                    <input
+                      type="checkbox"
+                      checked={batchRecursive}
+                      onChange={(e) => setBatchRecursive(e.target.checked)}
+                    />
+                    Scan recursively (include subfolders)
+                  </label>
+                </div>
+                
+                <button
+                  className="btn btn-primary"
+                  onClick={handleBatchDirectoryImport}
+                  disabled={isBatchDirectoryLoading}
+                  style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}
+                >
+                  {isBatchDirectoryLoading ? (
+                    <>
+                      <div className="spinner-small" style={{ width: '14px', height: '14px', border: '2px solid var(--border-color)', borderTopColor: 'var(--text-primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div> Scanning & Ingesting...
+                    </>
+                  ) : (
+                    'Scan & Auto-Ingest'
+                  )}
+                </button>
+                
+                {batchDirectoryResult && (
+                  <div className="batch-result-panel" style={{ marginTop: '20px', padding: '15px', borderRadius: '6px', backgroundColor: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
+                    <h4 style={{ marginBottom: '10px' }}>Results Summary</h4>
+                    <div className="result-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '10px', marginBottom: '15px', textAlign: 'center' }}>
+                      <div className="stat-item" style={{ padding: '8px', backgroundColor: 'var(--bg-secondary)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchDirectoryResult.total_found}</span>
+                        <span className="stat-label" style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Found</span>
+                      </div>
+                      <div className="stat-item" style={{ padding: '8px', backgroundColor: 'var(--bg-secondary)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchDirectoryResult.already_indexed}</span>
+                        <span className="stat-label" style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Already Indexed</span>
+                      </div>
+                      <div className="stat-item success" style={{ padding: '8px', backgroundColor: 'rgba(5, 150, 105, 0.08)', color: 'var(--success-color)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchDirectoryResult.imported.length}</span>
+                        <span className="stat-label" style={{ fontSize: '11px' }}>Imported</span>
+                      </div>
+                      <div className="stat-item warning" style={{ padding: '8px', backgroundColor: 'rgba(217, 119, 6, 0.08)', color: 'var(--text-secondary)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchDirectoryResult.skipped.length}</span>
+                        <span className="stat-label" style={{ fontSize: '11px' }}>Skipped</span>
+                      </div>
+                    </div>
+                    
+                    {batchDirectoryResult.imported.length > 0 && (
+                      <div className="result-section" style={{ marginBottom: '15px' }}>
+                        <h5 style={{ fontSize: '12px', fontWeight: '600', marginBottom: '5px' }}>Successfully Imported:</h5>
+                        <ul className="result-list success-list" style={{ listStyle: 'none', paddingLeft: '0', maxHeight: '150px', overflowY: 'auto', fontSize: '12.5px' }}>
+                          {batchDirectoryResult.imported.map((item, idx) => (
+                            <li key={idx} style={{ padding: '4px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                              <strong>{item.key}</strong>: {item.title}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    
+                    {batchDirectoryResult.skipped.length > 0 && (
+                      <div className="result-section">
+                        <h5 style={{ fontSize: '12px', fontWeight: '600', marginBottom: '5px' }}>Skipped PDFs (No DOI or metadata resolved):</h5>
+                        <ul className="result-list skipped-list" style={{ listStyle: 'none', paddingLeft: '0', maxHeight: '150px', overflowY: 'auto', fontSize: '12.5px', color: 'var(--text-secondary)' }}>
+                          {batchDirectoryResult.skipped.map((item, idx) => (
+                            <li key={idx} style={{ padding: '4px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                              <span className="filename" style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', display: 'block', wordBreak: 'break-all' }}>{item.filename}</span>
+                              <span className="reason" style={{ fontSize: '11px', color: 'var(--danger-color)' }}>({item.reason})</span>
+                            </li>
+                          ))}
+                        </ul>
+                        <p className="batch-note" style={{ fontSize: '11px', marginTop: '10px', fontStyle: 'italic', color: 'var(--text-secondary)' }}>
+                          Note: Skipped files can be added manually using the standard <strong>Upload PDF</strong> or <strong>Untracked PDFs</strong> repair wizard.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+              
+              {/* Card 2: Batch BibTeX Import */}
+              <div className="batch-card">
+                <h3>Batch BibTeX Import</h3>
+                <p className="batch-description">
+                  Paste one or more BibTeX reference entries below to import them into your library as Reference-Only entries.
+                </p>
+                
+                <div className="form-group" style={{ marginBottom: '15px' }}>
+                  <label htmlFor="batch-bibtex-textarea" style={{ display: 'block', marginBottom: '5px', fontWeight: '500' }}>BibTeX Entries:</label>
+                  <textarea
+                    id="batch-bibtex-textarea"
+                    className="textarea-input"
+                    rows="10"
+                    placeholder={`@article{example2026,
+  author = {Author, A. and Scientist, B.},
+  title = {A Landmark Paper in Science},
+  journal = {Journal of Research},
+  year = {2026},
+  doi = {10.1000/xyz123}
+}`}
+                    value={batchBibtexText}
+                    onChange={(e) => setBatchBibtexText(e.target.value)}
+                    style={{ width: '100%', padding: '10px', borderRadius: '4px', border: '1px solid var(--border-color)', backgroundColor: 'var(--bg-secondary)', color: 'var(--text-primary)', fontFamily: 'var(--font-mono)', fontSize: '12px', resize: 'vertical' }}
+                  ></textarea>
+                </div>
+                
+                <button
+                  className="btn btn-primary"
+                  onClick={handleBatchBibtexImport}
+                  disabled={isBatchBibtexLoading}
+                  style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}
+                >
+                  {isBatchBibtexLoading ? (
+                    <>
+                      <div className="spinner-small" style={{ width: '14px', height: '14px', border: '2px solid var(--border-color)', borderTopColor: 'var(--text-primary)', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div> Importing References...
+                    </>
+                  ) : (
+                    'Batch Import References'
+                  )}
+                </button>
+                
+                {batchBibtexResult && (
+                  <div className="batch-result-panel" style={{ marginTop: '20px', padding: '15px', borderRadius: '6px', backgroundColor: 'var(--bg-tertiary)', border: '1px solid var(--border-color)' }}>
+                    <h4 style={{ marginBottom: '10px' }}>Results Summary</h4>
+                    <div className="result-stats" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px', marginBottom: '15px', textAlign: 'center' }}>
+                      <div className="stat-item" style={{ padding: '8px', backgroundColor: 'var(--bg-secondary)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchBibtexResult.total_parsed}</span>
+                        <span className="stat-label" style={{ fontSize: '11px', color: 'var(--text-secondary)' }}>Parsed</span>
+                      </div>
+                      <div className="stat-item success" style={{ padding: '8px', backgroundColor: 'rgba(5, 150, 105, 0.08)', color: 'var(--success-color)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchBibtexResult.imported.length}</span>
+                        <span className="stat-label" style={{ fontSize: '11px' }}>Imported</span>
+                      </div>
+                      <div className="stat-item warning" style={{ padding: '8px', backgroundColor: 'rgba(217, 119, 6, 0.08)', color: 'var(--text-secondary)', borderRadius: '4px' }}>
+                        <span className="stat-val" style={{ display: 'block', fontSize: '18px', fontWeight: 'bold' }}>{batchBibtexResult.skipped.length}</span>
+                        <span className="stat-label" style={{ fontSize: '11px' }}>Skipped / Dups</span>
+                      </div>
+                    </div>
+                    
+                    {batchBibtexResult.imported.length > 0 && (
+                      <div className="result-section" style={{ marginBottom: '15px' }}>
+                        <h5 style={{ fontSize: '12px', fontWeight: '600', marginBottom: '5px' }}>Successfully Imported:</h5>
+                        <ul className="result-list success-list" style={{ listStyle: 'none', paddingLeft: '0', maxHeight: '150px', overflowY: 'auto', fontSize: '12.5px' }}>
+                          {batchBibtexResult.imported.map((item, idx) => (
+                            <li key={idx} style={{ padding: '4px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                              <strong>{item.key}</strong>: {item.title}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    
+                    {batchBibtexResult.skipped.length > 0 && (
+                      <div className="result-section">
+                        <h5 style={{ fontSize: '12px', fontWeight: '600', marginBottom: '5px' }}>Skipped (Duplicate keys/DOIs/titles, or parse failure):</h5>
+                        <ul className="result-list skipped-list" style={{ listStyle: 'none', paddingLeft: '0', maxHeight: '150px', overflowY: 'auto', fontSize: '12.5px', color: 'var(--text-secondary)' }}>
+                          {batchBibtexResult.skipped.map((item, idx) => (
+                            <li key={idx} style={{ padding: '4px 0', borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                              <strong className="filename">{item.key}</strong>: {item.title}
+                              <span className="reason" style={{ fontSize: '11px', color: 'var(--danger-color)' }}> ({item.reason})</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
         ) : (
           /* Markdown Notes Editor view */

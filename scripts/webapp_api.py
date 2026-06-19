@@ -77,6 +77,15 @@ class IngestExistingRequest(BaseModel):
     manual_bibtex: str | None = None
 
 
+class BatchImportDirectoryRequest(BaseModel):
+    directory_path: str
+    recursive: bool = False
+
+
+class BatchImportBibtexRequest(BaseModel):
+    raw_bibtex: str
+
+
 class ResolveUntrackedDuplicateRequest(BaseModel):
     existing_paper_id: str
     relative_path: str
@@ -836,8 +845,7 @@ async def add_reference(body: RefAddRequest):
         paper_id = ingest.reference_paper_id_from_metadata(metadata.get("semantic_scholar_paper_id"), bibtex_key)
         
         res = add_lib.finalize_reference_addition(
-            paper_id=paper_id,
-            title_query=body.query,
+            query=body.query,
             metadata=metadata,
             semantic_attempts=[],
             semantic_merged=[],
@@ -845,8 +853,6 @@ async def add_reference(body: RefAddRequest):
             parsed_bibtex=parsed_bibtex,
             chunk_chars=2000,
             overlap_chars=200,
-            addition_mode="ref_guided",
-            metadata_source_hint=metadata_source
         )
         
         if res != 0:
@@ -1186,6 +1192,266 @@ async def link_supplement(paper_id: str, body: LinkSupplementRequest):
         return {"status": "success", "data": supplement_row}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+def split_multiple_bibtex(raw_content: str) -> list[str]:
+    import re
+    entries = []
+    pattern = re.compile(r"@[A-Za-z0-9_:-]+\s*\{", re.S)
+    pos = 0
+    length = len(raw_content)
+    while True:
+        match = pattern.search(raw_content, pos)
+        if not match:
+            break
+        start_idx = match.start()
+        depth = 1
+        idx = match.end()
+        while idx < length and depth > 0:
+            char = raw_content[idx]
+            if char == '{':
+                depth += 1
+            elif char == '}':
+                depth -= 1
+            idx += 1
+        if depth == 0:
+            entries.append(raw_content[start_idx:idx].strip())
+            pos = idx
+        else:
+            pos = match.end()
+    return entries
+
+
+@app.post("/api/papers/batch-import-bibtex")
+async def batch_import_bibtex(body: BatchImportBibtexRequest):
+    try:
+        entries_raw = split_multiple_bibtex(body.raw_bibtex)
+        total_parsed = len(entries_raw)
+        imported = []
+        skipped = []
+
+        existing_rows = ingest.load_master_index_rows()
+        existing_dois = {r.get("doi").lower().strip() for r in existing_rows if r.get("doi")}
+        existing_keys = {r.get("bibtex_key").lower().strip() for r in existing_rows if r.get("bibtex_key")}
+        existing_titles = {r.get("resolved_title").lower().strip() for r in existing_rows if r.get("resolved_title")}
+
+        for entry_str in entries_raw:
+            try:
+                parsed_bibtex = ingest.parse_bibtex_entry(entry_str)
+                parsed_bibtex = add_lib.canonicalize_manual_bibtex(parsed_bibtex)
+                metadata = parsed_bibtex["normalized"]
+                
+                doi = metadata.get("doi", "").lower().strip()
+                key = metadata.get("bibtex_key", "").lower().strip()
+                title = metadata.get("title", "").lower().strip()
+                year = metadata.get("year", "").strip()
+
+                is_duplicate = False
+                reason = ""
+                if doi and doi in existing_dois:
+                    is_duplicate = True
+                    reason = f"DOI {doi} already exists."
+                elif key and key in existing_keys:
+                    is_duplicate = True
+                    reason = f"BibTeX key '{key}' already exists."
+                elif title and title in existing_titles:
+                    is_duplicate = True
+                    reason = f"Title '{title}' matches an existing paper."
+                
+                if is_duplicate:
+                    skipped.append({
+                        "key": key or "unknown",
+                        "title": title or "unknown",
+                        "reason": reason
+                    })
+                    continue
+
+                if not key:
+                    author_token = ingest.preferred_title_token(metadata.get("authors", "author"))
+                    year_token = year or "undated"
+                    title_token = ingest.preferred_title_token(title or "title")
+                    key = f"{author_token}{year_token}{title_token}"
+                    metadata["bibtex_key"] = key
+
+                paper_id = ingest.reference_paper_id_from_metadata(
+                    metadata.get("semantic_scholar_paper_id"), key
+                )
+
+                res = add_lib.finalize_reference_addition(
+                    query=title,
+                    metadata=metadata,
+                    semantic_attempts=[],
+                    semantic_merged=[],
+                    selected_candidate=None,
+                    parsed_bibtex=parsed_bibtex,
+                    chunk_chars=2000,
+                    overlap_chars=200,
+                )
+
+                if res == 0:
+                    imported.append({
+                        "key": key,
+                        "title": title,
+                        "paper_id": paper_id
+                    })
+                    if doi: existing_dois.add(doi)
+                    if key: existing_keys.add(key)
+                    if title: existing_titles.add(title)
+                else:
+                    skipped.append({
+                        "key": key,
+                        "title": title,
+                        "reason": "Reference finalization pipeline failed."
+                    })
+            except Exception as entry_err:
+                skipped.append({
+                    "key": "unknown",
+                    "title": "Parse error",
+                    "reason": f"Failed to parse entry: {str(entry_err)}"
+                })
+
+        return {
+            "status": "success",
+            "total_parsed": total_parsed,
+            "imported": imported,
+            "skipped": skipped
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/api/papers/batch-import-directory")
+async def batch_import_directory(body: BatchImportDirectoryRequest):
+    try:
+        import os
+        dir_path = (LIBRARY_ROOT / body.directory_path.strip("/")).resolve()
+        if not dir_path.is_relative_to(LIBRARY_ROOT) or not dir_path.is_dir():
+            raise HTTPException(status_code=400, detail="Invalid directory path or directory not found")
+        
+        pdf_paths = []
+        if body.recursive:
+            for root, dirs, files in os.walk(dir_path):
+                for f in files:
+                    if f.lower().endswith(".pdf"):
+                        pdf_paths.append(Path(root) / f)
+        else:
+            for f in os.listdir(dir_path):
+                full_f = dir_path / f
+                if full_f.is_file() and f.lower().endswith(".pdf"):
+                    pdf_paths.append(full_f)
+                    
+        total_found = len(pdf_paths)
+        already_indexed = 0
+        imported = []
+        skipped = []
+        
+        existing_rows = ingest.load_master_index_rows()
+        existing_paths = {r.get("pdf_path").lower().strip("/") for r in existing_rows if r.get("pdf_path")}
+        existing_shas = {r.get("pdf_sha256") for r in existing_rows if r.get("pdf_sha256")}
+        
+        for pdf_path in pdf_paths:
+            try:
+                rel_path = ingest.relative_to_library(pdf_path).lower().strip("/")
+                sha256 = ingest.sha256_path(pdf_path)
+                
+                if rel_path in existing_paths or sha256 in existing_shas:
+                    already_indexed += 1
+                    continue
+                    
+                title_query = ingest.derive_title_query(pdf_path)
+                text_status, text_error, text_content = ingest.extract_pdf_text(pdf_path)
+                
+                if text_status != "ok" or not text_content:
+                    skipped.append({
+                        "filename": pdf_path.name,
+                        "path": str(ingest.relative_to_library(pdf_path)),
+                        "reason": f"Text extraction failed: {text_error or 'No text extracted'}"
+                    })
+                    continue
+                    
+                filename_hints = ingest.derive_filename_hints(pdf_path)
+                title_targets = [title_query] + ingest.derive_text_title_candidates(text_content)
+                doi_res = ingest.resolve_pdf_doi_metadata(
+                    pdf_path=pdf_path,
+                    extracted_text=text_content,
+                    filename_hints=filename_hints,
+                    title_targets=title_targets
+                )
+                
+                accepted_crossref = doi_res.get("accepted_metadata")
+                if not accepted_crossref:
+                    score = doi_res.get("best_score")
+                    reason = f"No DOI resolved (best score: {score or 'n/a'})"
+                    skipped.append({
+                        "filename": pdf_path.name,
+                        "path": str(ingest.relative_to_library(pdf_path)),
+                        "reason": reason
+                    })
+                    continue
+                    
+                metadata = ingest.crossref_to_bibtex_fields(accepted_crossref)
+                
+                doi_resolution = {
+                    "candidate_dois": doi_res.get("candidate_dois", []),
+                    "candidate_details": doi_res.get("candidate_details", []),
+                    "crossref_attempts": doi_res.get("crossref_attempts", []),
+                    "best_candidate_doi": doi_res.get("best_candidate_doi", ""),
+                    "best_metadata": accepted_crossref,
+                    "best_score": doi_res.get("best_score"),
+                    "warnings": doi_res.get("warnings", []),
+                    "error": doi_res.get("error", ""),
+                    "accepted_metadata": accepted_crossref,
+                    "review_metadata": None,
+                    "accepted_source": "crossref_doi",
+                    "matched_by": "doi_text_validation",
+                }
+                
+                res = add_lib.finalize_pdf_addition(
+                    pdf_path=pdf_path,
+                    title_query=title_query,
+                    metadata=metadata,
+                    semantic_attempts=[],
+                    semantic_merged=[],
+                    selected_candidate=None,
+                    parsed_bibtex=None,
+                    chunk_chars=2000,
+                    overlap_chars=200,
+                    addition_mode="pdf_guided",
+                    metadata_source_hint="crossref_doi_primary",
+                    doi_resolution_hint=doi_resolution
+                )
+                
+                if res == 0:
+                    new_row = ingest.load_master_index_row_by_pdf_sha256(sha256)
+                    imported.append({
+                        "filename": pdf_path.name,
+                        "title": new_row.get("resolved_title") or title_query,
+                        "key": new_row.get("bibtex_key", ""),
+                        "paper_id": new_row.get("paper_id", "")
+                    })
+                    existing_paths.add(rel_path)
+                    existing_shas.add(sha256)
+                else:
+                    skipped.append({
+                        "filename": pdf_path.name,
+                        "path": str(ingest.relative_to_library(pdf_path)),
+                        "reason": "PDF addition finalization pipeline failed."
+                    })
+            except Exception as file_err:
+                skipped.append({
+                    "filename": pdf_path.name,
+                    "path": str(ingest.relative_to_library(pdf_path)),
+                    "reason": f"Internal error: {str(file_err)}"
+                })
+                
+        return {
+            "status": "success",
+            "total_found": total_found,
+            "already_indexed": already_indexed,
+            "imported": imported,
+            "skipped": skipped
+        }
+    except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
 
