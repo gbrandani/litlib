@@ -1,0 +1,549 @@
+[Page 1]
+
+Towards a Unified Model of SMC Complex Function Markus Hassler1,2, Indra A. Shaltiel1,2, and Christian H. Haering1,* 1Cell Biology and Biophysics Unit, Structural and Computational Biology Unit, European Molecular Biology Laboratory (EMBL), Heidelberg, Germany 2These authors contributed equally to this work. *Correspondence: christian.haering@embl.de https://doi.org/10.1016/j.cub.2018.08.034
+
+Protein complexes built of structural maintenance of chromosomes (SMC) and kleisin subunits, including cohesin, condensin and the Smc5/6 complex, are master organizers of genome architecture in all kingdoms of life. How these large ring-shaped molecular machines use the energy of ATP hydrolysis to change the topology of chromatin fibers has remained a central unresolved question of chromosome biology. A currently emerging concept suggests that the common principle that underlies the essential functions of SMC protein complexes in the control of gene expression, chromosome segregation or DNA damage repair is their ability to expand DNA into large loop structures. Here, we review the current knowledge about the biochemical and structural properties of SMC protein complexes that might enable them to extrude DNA loops and compare their action to other motor proteins and nucleic acid translocases. We evaluate the currently predominant models of active loop extrusion and propose a detailed version of a ‘scrunching’ model, which reconciles much of the available mechanistic data and provides an elegant explanation for how SMC protein complexes fulfill an array of seemingly diverse tasks during the organization of genomes. Introduction The sheer length of the DNA molecule in each of our chromosomes poses unique challenges to DNA transactions that need to take place within the confines of the nuclear or cellular space. A family of large protein complexes present in all domains of life has evolved to deal with the large-scale organization of our genetic material [1]. These complexes are characterized by long coiled-coil protein subunits named structural maintenance of chromosomes (SMC), which use the energy of adenosine triphosphate (ATP) hydrolysis to drive conformational changes in DNA topology. In prokaryotes, SMC or SMC-related homodimers assemble with additional subunits to form SMC– ScpAB, MukBEF or MksBEF complexes that play key roles in the successful segregation of the bacterial nucleoid (Figure 1A) [2]. Eukaryotic SMC complexes are, in contrast, built from heterodimers of different SMC subunits that form the basis for cohesin, condensin and Smc5/6 complexes [3,4]. Each complex has distinct functions: cohesin holds together sister chromatids and is responsible for the dynamic compartmentalization of chromosomes during interphase into topologically associating domains (TADs). Condensin plays a key role in the compaction and individualization of chromatids in preparation for their segregation by spindle microtubules during cell divisions. Smc5/6 complexes have been implicated in the repair of DNA damage by homologous recombination and the resolution of DNA supercoiling that results from DNA replication. SMC proteins fold around a globular ‘hinge’ domain, situated in the middle of their peptide chain, into anti-parallel coiled coils of varying lengths (Figure 1A), ranging on average between 270 amino acid (aa) residues for the coiled coils of the Smc5–Smc6 heterodimer of the Smc5/6 complex to 350 aa for the coiled coils of Smc1–Smc3 and Smc2–Smc4 heterodimers of cohesin and condensin, respectively [5]. The combined amino and carboxyl termini at the end of the coiled coil create a globular
+
+‘head’ domain that contains ATP binding and hydrolysis motifs of the ATP-binding cassette (ABC) transporter family. In addition to the constitutive dimerization via the association of their hinge domains, two SMC molecules transiently interact when their head domains sandwich a pair of ATP molecules, which creates two hydrolysis-competent catalytic pockets, similar to other ABC ATPases. The ATPase head domains are connected by a so-called ‘kleisin’ subunit, which binds the coiled-coil base region immediately adjacent to one SMC (designated as n-SMC) head domain via an a-helix located at its amino terminus [6–8] and to the distal side of the other SMC (designated as k-SMC) head domain via a winged-helix domain (WHD) at its carboxyl terminus (Figure 1B) [6,9]. This arrangement imposes overall asymmetry even upon prokaryotic complexes and results in a closed ring structure, which is able to encircle DNA within its circumference [7,10–12]. In addition, all kleisin proteins recruit supplementary protein subunits that are either composed of a-helical repeat motifs found in Huntingtin, elongation factor 3, protein phosphatase 2A and TOR1 kinase (HEAT) proteins, as in the case of cohesin and condensin, or tandem WHDs, as in the case of Smc5/6 and prokaryotic SMC complexes (Figure 1A) [13,14]. Several other proteins, some with distinct enzymatic activities, have been found to also associate with different SMC complexes (for an overview, see [15]). How do SMC protein complexes organize chromosome architecture? An increasing amount of evidence supports the notion that the common molecular mechanism that underlies the action of SMC complexes is their ability to create and progressively enlarge loops of DNA in a process termed loop extrusion (Figure 2A) [16,17]. This simple mechanism can bring two distant elements on the same DNA molecule into close physical proximity. For example, enhancer sequences that can be hundreds of kilobase pairs (kbp) away can be targeted to the promoters that they regulate for the activation of gene expression. Loop
+
+R1266 Current Biology 28, R1266–R1281, November 5, 2018 a 2018 Elsevier Ltd.
+
+[Page 2]
+
+Core subunits
+
+κ-SMC
+
+ν-SMC
+
+B. subtilis
+
+SMC
+
+SMC
+
+ScpA
+
+ScpB
+
+E. coli
+
+MukB MukB
+
+MukF
+
+MukE
+
+Smc5/6
+
+Smc6 Smc5
+
+Nse4
+
+Nse3
+
+Nse1
+
+Coiled coils
+
+Cohesin
+
+Smc3 Smc1
+
+Scc1
+
+Pds5*
+
+Scc3
+
+ATPase heads
+
+Condensin Smc2 Smc4
+
+Brn1
+
+Ycs4
+
+Ycg1
+
+Hinge
+
+CN
+
+Kleisin
+
+C N
+
+Figure 1. Architecture and composition of SMC complexes.
+
+Accessory subunits
+
+WHD
+
+HEAT
+
+(A) Ring-like architecture created by the association of the SMC and kleisin subunits and subunit composition of common prokaryotic (top two) and eukaryotic (bottom three; S. cerevisiae protein names) SMC complexes. Note that Pds5 associates with the other cohesin subunits transiently and might hence not be a stoichiometric subunit of cohesin complexes. (B) Structure models of a k-SMC ATPase head domain bound to the WHD located at the carboxyl terminus of the kleisin subunit (pdb: 1w1w; S. cerevisiae cohesin Smc1– Scc1) and of a n-SMC ATPase head domain bound to the helical domain located at the amino terminus of the kleisin subunit (pdb: 4ux3; S. cerevisiae cohesin Smc3–Scc1).
+
+N-Kleisin
+
+κ-SMC ATPase
+
+180 ̊
+
+ATP
+
+ATP
+
+Kleisin-C
+
+Dimerization interface
+
+extrusion furthermore provides an elegant method for folding the chromatin fiber into rod-shaped mitotic chromosomes. In computational simulations that use polymer physics, loop extrusion can indeed account for the dynamic sub-compartmentalization of the genome into TADs [18,19] as well as mitotic chromosome formation and sister chromatid individualization [20,21]. By encircling and linking together DNA helices [10,11], SMC protein complexes seem to be excellently suited to direct the formation of DNA loops in the genome. Whether they fulfill the requirements that are imposed onto loop-extruding factors in theoretical modeling approaches remains, however, unclear. In this review, we discuss possible mechanisms for SMC-mediated DNA loop extrusion based on the biochemical and structural properties of these large ring-shaped protein complexes. What Drives DNA Loop Extrusion? Models That Rely on External Motors One key aspect that distinguishes models of SMC-mediated loop extrusion is the energy source that drives the expansion of DNA loops. Despite possessing ATPase domains, there are no clear clues from the architecture of SMC complexes as to how the chemical energy from ATP hydrolysis could be converted into the mechanical motion that would be necessary to actively move DNA. Furthermore, the ATP hydrolysis rates that have so far been measured for different SMC complexes are extremely low — ranging between 0.1 and 2 molecules ATP
+
+hydrolyzed per SMC dimer per second — when compared to those of DNA motor proteins, which are capable of hydrolyzing thousands of ATP molecules per second (Table 1) [22,23]. These low ATPase rates make it difficult to imagine that ν-SMC ATP hydrolysis by the SMC subunits ATPase could be sufficient for rapid loop extrusion rates, which have been estimated based on chromosome conformation capture (Hi-C) data to reach speeds of several hundred base pairs (bp) per second in bacteria [41]. It is therefore conceivable that the driving force for loop extrusion might come from external DNA motor proteins that move DNA through the SMC protein ring. The observation that cohesin complexes accumulate at sites of convergent gene transcription in budding yeast [42–46] and in mouse embryonic fibroblasts lacking both Wapl and CTCF — two proteins that release cohesin from chromosomes or anchor it to specific sites in the genome, respectively [47] — prompted the idea that RNA polymerases might push cohesin along the chromatin fiber (Figure 2B). In this scenario, cohesin is able to slide along the DNA double helix due to the topological entrapment of DNA within the cohesin ring architecture [48], a notion that is consistent with the in vitro release of cohesin from circular minichromosomes upon linearization of the DNA double helix [49] and the random translocation of salt-resistant cohesin complexes along immobilized DNA molecules in single molecule imaging experiments [50–52]. The one-dimensional diffusion coefficients measured in the latter studies ranged between 0.2 and 3.8 mm2/s and mobility increased with increasing salt concentrations, which implies that cohesin complexes make electrostatic contacts with the DNA double helix, in addition to encircling it. Whereas cohesin moved past DNA-bound obstacles up to the size of nucleosomes (11 nm diameter), although with much reduced diffusion times, it failed to pass larger objects (20 nm or more), including other cohesin molecules. Remarkably, a bacterial RNA polymerase moved cohesin along the DNA over distances of several kbp [50], as did other DNA motor proteins, including the prokaryotic DNA translocase FtsK [51]. Hence, the combined action of external molecular motors, roadblocks Current Biology 28, R1266–R1281, November 5, 2018 R1267
+
+[Page 3]
+
+Topological
+
+RNA polymerase
+
+Pseudo-topological
+
+Boundary element
+
+Loading site
+
+Asymmetric
+
+Symmetric
+
+Asymmetric strand switching
+
+Asymmetric dimers
+
+Hi-C stripe Boundary element
+
+Gap
+
+Figure 2. Principles of DNA loop extrusion. (A) SMC rings might capture the bases of DNA loops either in a topological manner (which requires ring opening for DNA entry or exit) or a pseudo-topological manner (which does not require ring opening for DNA entry). (B) Loop extrusion by external motors. The transcription machinery might push loops to the 3’ end of actively transcribed genes, thereby enlarging loops. (C) Motor-free models of loop extrusion. The continuous loading of SMC complexes at a specific site creates osmotic pressure that pushes already loaded rings along the DNA until they encounter a barrier (boundary element), where they accumulate and dissociate. (D) SMC complexes as DNA motors. Loop extrusion could be driven by SMC dimers (handcuffs) that reel in DNA symmetrically from both sides or by individual SMC complexes that anchor DNA at one side and reel in DNA from the other. Symmetric loop extrusion could alternatively be achieved if individual complexes repeatedly switch strands or if two complexes that each anchor DNA assemble in a head-to-head orientation, producing two loops as they reel in DNA from opposite sides. (E) Symmetric loop extrusion until halted by the encounter of boundary elements reproduces topologically associating domain (TAD) formation. Asymmetric loop extrusion is expected to produce ‘stripes’ in Hi-C contact maps and might lead to gaps that are not folded into loops.
+
+and cohesin rings that diffuse along the DNA helix could result in an expansion of DNA loops — as long as the pushing motor acts within the confines of a pre-formed loop (Figure 2B). However, a model in which cohesin-dependent loop extrusion is driven by the transcription machinery cannot account for de novo TAD formation in mouse zygotes before the onset of transcription [53] or in early Drosophila embryos in which transcription R1268 Current Biology 28, R1266–R1281, November 5, 2018
+
+elongation has been blocked by small molecule inhibitors [54]. Inhibition of transcription also had no major effects on TAD formation after cohesin depletion and re-induction, or after B cell activation; nor did it massively alter the genomic distribution of cohesin [55]. Pushing of cohesin rings by RNA polymerases hence cannot be the sole explanation for how these complexes move along the chromatin fiber. Moreover, entrapment of DNA by cohesin rings
+
+[Page 4]
+
+Table 1. ATPase rates of SMC complexes and other motor proteins. Max. ATPase rate (s-1)
+
+References
+
+B. subtilis SMC
+
+0.3
+
+[24–26]
+
+B. subtilis SMC–ScpAB
+
+0.5
+
+[26]
+
+E. coli MukB
+
+<0.1
+
+[27,28]
+
+E. coli MukBEF
+
+0.1
+
+[28]
+
+S. cerevisiae Smc2– Smc4
+
+0.2
+
+[29]
+
+SMC complexes
+
+S. cerevisiae condensin
+
+* 2.0
+
+[30,31]
+
+X. laevis Smc2–Smc4
+
+0.1
+
+[32]
+
+X. laevis condensin
+
+* 0.9
+
+[33]
+
+S. pombe condensin
+
+0.2
+
+[34]
+
+S. pombe cohesin
+
+** 0.2
+
+[35]
+
+ABC transporters E. coli BtuCD
+
+2
+
+[36]
+
+S. typhimurium HisP
+
+8
+
+[37]
+
+T. maritima TM287/288
+
+2
+
+[38]
+
+Motor proteins E. coli FtsK translocase
+
+2,600
+
+[22]
+
+E. coli EcoR124I translocase
+
+998
+
+[23]
+
+D. melanogaster kinesin
+
+25
+
+[39]
+
+S. cerevisiae dynein
+
+38
+
+[40]
+
+*In the presence of DNA. **In the presence of the Scc2–Scc4 loader and DNA
+
+does not seem to be a prerequisite for translocation, since mutations in the SMC hinge domains or in one of the two SMC ATP binding sites of yeast cohesin that are both thought to block stable topological loading onto chromosomes did not interfere with cohesin migration from its loading sites at centromeres up to 30 kbp into the neighboring chromosome regions [56] or affect the diffusive behavior of cohesin in a single molecule assay [52]. It therefore seems unlikely that the driving force behind loop extrusion can be explained by the action of external motors that move passively sliding SMC complexes along the chromatin fiber. Models of Motor-Free Mechanisms Does loop extrusion require any motor activity at all? Recent computer simulations suggest that, at least in theory, the processive enlargement of DNA loops can be explained by a combination of local loading of SMC protein complexes coupled to their diffusion from the loading site [57,58]. In these models, the osmotic pressure generated by the loading of new cohesin complexes at a defined site would provide a ‘ratchet’ mechanism to drive cohesins away from the loading site until they reach boundary elements, for example CTCF-bound DNA regions, which confine their diffusion (Figure 2C). If at least some of the cohesin molecules were loaded such that they bridge two DNAs, either by their co-entrapment within a single ring or through tethering of two rings that each entrap a single DNA, this process would result in the extrusion of a DNA loop that is stabilized once cohesin reaches the boundary elements,
+
+thereby reproducing the basic features observed in Hi-C contact maps [57]. Although these models are able to reproduce in silico loop extrusion driven by the energy of localized cohesin loading and the thermal energy of diffusion, they would predict the steadystate enrichment of cohesin around sites occupied by its Scc2–Scc4 loader complex. Whereas such an enrichment is not evident from ChIP-seq data under normal conditions [47], it can be observed after depletion of cellular ATP levels in human cells [55] or when ATP hydrolysis by the SMC subunits is prevented by mutations in yeast cells [59]. ATP hydrolysis is therefore either required to load cohesin complexes onto DNA in a manner that allows their diffusion away from the loading site, or, more likely, for an active movement process along the chromosome. A mechanism that drives loop extrusion by osmotic pressure is furthermore difficult to extend to condensin complexes, which appear to extrude DNA loops at highly variable positions in the genome and hence cannot generate osmotic pressure from clearly defined loading sites [60]. Models of SMC Complexes as DNA Motors Since it seems difficult to reconcile available data with passive models for SMC-dependent DNA loop extrusion that rely merely on diffusion or the action of external motors, it is worth considering the possibility that the role of the SMC ATPase cycle goes beyond loading SMC complexes onto DNA. The idea that an SMC complex might not require external motors to fold chromosomes into loops gained strong support from the finding that a mixture of purified condensin I, topoisomerase II, histones and three different histone chaperones was sufficient for the formation of chromatid-like structures in vitro, without the help of additional DNA motor proteins [61]. Direct visual proof for an SMCpowered translocation mechanism came from the observation of purified budding yeast condensin complexes, which actively moved along linear l-DNA molecules that had been tethered at both ends in a microfluidic setup [30]. On these ‘DNA curtains’, condensin molecules translocated at a moderate velocity (60 bp/s), yet in a highly processive manner, moving over distances of several kbp without turning around or falling off. Importantly, movement was dependent on the presence of hydrolyzable ATP and was abolished by mutations that prevent ATP binding by the SMC ATPase head domains. Subsequent single-molecule experiments further demonstrated that the linear translocation observed for condensin can be converted into DNA loop extrusion. Addition of purified budding yeast condensin to l-DNA molecules, which had been tethered under low tension to a passivated surface and then slightly stretched into an arc by buffer flow, allowed the real-time visualization of ATP-dependent formation and gradual expansion of DNA loops of several kbp in size [31]. Loop extrusion rates correlated with the tension in the DNA molecules and ranged from 100 bp/s for DNA molecules that had been stretched to a degree comparable to the ones in the DNA curtains setup to 1.5 kbp/s for DNA molecules that had been tethered with more slack. Condensin hence is a highly processive but weak DNA motor that stalls at forces exceeding 1 pN (Table 2); a value that is in line with the stalling forces that have been measured for DNA compaction by the same condensin complexes in magnetic tweezers assays [62,63]. Current Biology 28, R1266–R1281, November 5, 2018 R1269
+
+[Page 5]
+
+Table 2. Translocation rates of SMC complexes and other motor proteins. Max. translocation speed (s 1)
+
+Step size (ATP 1)
+
+Stall force (pN)
+
+References
+
+SMC complexes B. subtilis SMC-ScpAB
+
+* 770 bp
+
+[41]
+
+G. gallus condensin
+
+* 170 bp
+
+S. cerevisiae condensin
+
+1,500 bp
+
+750 bp
+
+1
+
+[60] [31]
+
+E. coli FtsK translocase
+
+4,800 bp
+
+2 bp
+
+>60
+
+[22,64]
+
+E. coli EcoR124I translocase
+
+840 bp
+
+2 bp
+
+>4
+
+[23,65]
+
+S. cerevisiae RSC translocase
+
+25 bp
+
+2 bp
+
+30
+
+[66]
+
+D. melanogaster kinesin
+
+1,000 nm
+
+8 nm
+
+6
+
+[67]
+
+S. cerevisiae dynein
+
+Variable
+
+8–32 nm
+
+1
+
+[67]
+
+Motor proteins
+
+*Estimates from Hi-C data.
+
+In vivo evidence for the notion that SMC protein complexes move actively on DNA was obtained in the bacterium Bacillus subtilis. In this species, a limited number of SMC protein complexes load onto DNA at a specific genomic site in the vicinity of the replication origin (parS) and then zip up the left and right ‘arms’ of the circular chromosome while they translocate along the chromosome [41]. Time-resolved Hi-C and ChIP-seq experiments suggested that these SMC complexes move at a constant rate of 0.9 kbp/s — a speed that is of the same order of magnitude as the loop extrusion rates measured for yeast condensin [31]. The findings that mutant SMC complexes that are unable to hydrolyze ATP accumulated at parS sites [68] and that inhibition of transcription did not prevent the juxtaposition of the two chromosome arms [41] are difficult to explain by a passive diffusion model and further argue against the notion that the transcription machinery provides the motor force for movement. Comparison to Other Translocating Motor Proteins To gain insights into the mechanistic basis for the DNA translocation mechanism of condensin, and possibly other SMC protein complexes, we start by considering the working principles of the well-characterized cytoskeletal motor proteins myosin, kinesin or dynein [69]. On a superficial level, these cytoskeletal motors and SMC proteins share the architectural principle of a dimer of ATPase-containing domains that are linked via elongated coiled-coil stalks. This similarity had prompted the hypothesis that SMCs might function analogously to these motor proteins, long before their actual structure had been known [70,71]. Although the speeds by which these motor proteins move (Table 2) are in the range of the condensin-driven DNA loop extrusion rates measured in vitro (100 nm/s [31]), they do burn significantly more ATP for their movement than SMC protein complexes seem to do. Bulk measurements suggest that a condensin complex can, even when stimulated by the addition of DNA, hydrolyze only very few (up to 2) molecules of ATP per second — an order of magnitude below the ATPase rates of cytoskeletal motor proteins (Table 1). In addition, major differences exist in the functional principles between cytoskeletal and SMC motors. For example, the directionality of movement of cytoskeletal motors is largely determined by the polarity of their substrates actin and tubulin. Since no such polarity is present in the phosphate backbone of the DNA double helix, it remains mysterious what R1270 Current Biology 28, R1266–R1281, November 5, 2018
+
+would prevent condensin from constantly changing directions, which is clearly not the case [30]. Moreover, the ATPase heads of cytoskeletal motors complete their reaction cycles sequentially, which is fundamentally different to the concerted ATP binding and hydrolysis steps that are thought to take place at SMC head pairs, based on their homology to ABC transporter ATPases [72]. The movement of ATP-dependent nucleic acid translocases, for example helicases, is generally based on catalytic core domains that are formed by a pair of RecA-like lobes [73]. Through sequential ATP binding and hydrolysis cycles of the two RecA lobes, which always contact the same sugar-phosphate backbone, these enzymes are able to overcome the directionality problem of double-stranded nucleic acids and processively translocate over lengths of several kbp [74]. Notably, the type I restriction enzyme EcoR124I employs such a motor activity to reel in DNA adjacent to its recognition site, essentially extruding a loop [75], before cleaving the DNA helix [65]. Such an ‘inchworming’-type mechanism does, however, only allow for translocation steps of a few bp per ATP hydrolysis cycle. This number is very different to the step sizes of hundreds of bp or more that have been estimated for purified condensin complexes [30,31,62,76]. The DNA-translocation mechanism of SMC complexes therefore must be fundamentally different from those of the well-characterized DNA translocases described above. To understand the translocation and ultimately the DNA loop extrusion mechanism of SMC protein complexes, it will be essential to know how they interact with their chromatin substrates, whether they function as individual complexes or larger molecular assemblies, and how conformational changes in these complexes drive their movement on DNA. How Do SMC Protein Complexes Interact with Chromosomes? Taking into account that the unifying feature of all SMC protein complexes is the presence of a dimer of long coiled-coil ATPases and a kleisin subunit that associates with related, yet heterogeneous sets of additional subunits, it seems reasonable to assume that the basic DNA translocase activity would need to be contained within the SMC–kleisin core. If this hypothesis were true, we would expect that ATPase-cycle-regulated DNA interactions within these subunits, coupled to large-scale
+
+[Page 6]
+
+Box 1. DNA binding sites in the SMC subunits.
+
+Recent co-crystal structures with double-stranded DNA of Rad50, an SMC-related coiled-coil ATPase with key roles in DNA damage repair, have revealed potential interaction sites either directly at the inner shallow, positively charged cavity of the ATP-dimerized head domains [77,78] or at the head-proximal coiled coils [79] (Figure 3A). The former binding surface is presumably only established upon ATPase head dimerization, which is consistent with the reduced in vitro DNA-binding activity of mutant Rad50 heads that are unable to dimerize in the presence of nucleotide. Remarkably, the crystal structures of engaged prokaryotic SMC [80] and MukB [28] ATPase head domains revealed similar positively charged cavities, which raises the intriguing possibility that the ATPase head domains of (at least prokaryotic) SMCs might possess an ATP-controlled DNA binding site. A second putative DNA binding site might be located at or near the SMC hinge dimerization domains. In vitro, the purified hinge domains of prokaryotic SMCs [81,82], cohesin [83], condensin [84,85] and Smc5/6 complexes [86] bind to DNA substrates. All but one [83] study reported stronger binding of the SMC hinge dimers to single-stranded than to double-stranded DNA. The functional implications of this substrate preference are currently unclear, but single-stranded DNA binding has recently been linked to the topological loading of a second DNA strand into the cohesin ring for the establishment of sister chromatid cohesion at the DNA replication fork [87]. The reduction in DNA binding upon mutation of positively charged residues suggests that DNA binding might take place at positively charged patches at the inner surface between the stems of the coiled coils [82] or at other surfaces of the hinge structure [81,84,86]. Alternatively, it might be conceivable that the conserved positively charged channel within the torusshaped hinge domain [88] is, at least in part, responsible for nucleic acid interaction [56,86], although it would be too small to accommodate a DNA double helix and is absent in the structures of MukB hinge domains [89,90] (Figure 3B).
+
+conformational changes, serve as the motor for directed locomotion. The additional subunits most likely determine the differences in specificity and functionality between the diverse complexes, for example by controlling the speed of the core motor activity, regulating recruitment of SMC complexes to specific chromosomal loci, or anchoring them to chromatin during the movement steps. What is the current evidence that such a concept could represent reality? Several studies showed that both the SMC subunits (Box 1) as well as the non-SMC subunits (Box 2) can make stable contacts with the chromatin fiber, although it has remained unclear whether all, some, or none of these potential DNA-binding interfaces are used by SMC protein complexes for DNA loop extrusion. One intriguing possibility is that multiple low-affinity binding sites exist in SMC subunits, to which DNA gains only transient access in a manner that is controlled by the ATPase cycle (see below). Binding to such sites might be considerably augmented by topological DNA confinement. Such a scenario would explain the difficulties in pinpointing the exact locations of DNA binding sites within the SMC subunits. The strongest support for a defined role of a DNA binding site exists for the one formed by the condensin Ycg1 HEAT-repeat and Brn1 kleisin subunits [96], which seemingly serves as a DNA anchor site that enables condensin to extrude DNA loops in an asymmetric manner [31]. It is tempting to speculate that the transient DNA-binding activity of the cohesin Scc3 HEATrepeat subunit [91] could similarly be strengthened upon complex formation with the Scc1 kleisin [97] to provide an equivalent DNA-anchor mechanism in cohesin complexes, which might also be the role of the DNA-binding activity of the Nse3 WHD subunit of Smc5/6 complexes [95]. Do SMC Complexes Act as Individual Complexes or Higher-Order Assemblies? Most theoretical models of SMC-driven loop extrusion are based on the idea that one loop-extruding unit consists of two tethered DNA-binding modules that translocate along the DNA in opposite
+
+directions [16,18,20,21]. A bi-directional movement would naturally result in the formation of a symmetric loop centered around its origin, until translocation of one of the two modules would stop, for example when it encounters a boundary element (Figure 2D). What is the evidence that SMC protein complexes function as dimers (or multimers) on chromosomal DNA? The findings that certain mutations in one allele can genetically suppress the defects caused by different mutations in the second allele of the same cohesin subunit in budding yeast cells [56,98] and that cohesin complexes containing either the SA1 or SA2 HEAT-repeat subunit simultaneously occupy the same binding sites in human cultured cells [99] indeed indicate that two (or more) cohesin complexes might functionally interact on chromosomes. Biochemical evidence for stable cohesin dimer formation is, however, less clear, since only one study found oligomerization of human cohesin complexes [100], while other studies did not detect the formation of stable cohesin dimers or multimers by co-immunoprecipitation from yeast or human cell extracts [48,101]. In contrast, there is a solid molecular basis for homodimerization of the Escherichia coli SMC-like complex MukBEF [102] via winged-helix and helical domains at the amino termini of their MukF kleisin subunits [28,103]. Although it is conceivable that other SMC complexes could employ similar mechanisms for dimerization, the lack of a WHD at the amino termini of other kleisin proteins [26] should caution rash generalization. Nevertheless, the observation that B. subtilis SMC complexes move along the left and right sides of ectopic parS loading sites with different velocities provides an additional argument that the loopextruding unit needs to consist of two tethered complexes that can translocate at independent rates [41]. Whereas atomic force microscopy imaging, magnetic tweezers and protein cross-linking experiments have provided some indication of condensin multimerization [34,63,104], the discrete one-step bleaching events of fluorescently labeled yeast condensin complexes that localized to the base of emerging DNA loops in single-molecule imaging experiments Current Biology 28, R1266–R1281, November 5, 2018 R1271
+
+[Page 7]
+
+Figure 3. Possible DNA binding sites in SMC ATPase head and hinge domains.
+
+Hinge
+
+Heads
+
+strongly argue that loop extrusion is achieved by individual condensin complexes [31]. Furthermore, the observation that DNA was only reeled into the loop from one side in a strictly asymmetric manner is difficult to reconcile with models of dimeric motors that reel in DNA from both sides simultaneously as they move in opposite directions. It is instead compatible with a model in which a single condensin complex makes stable contact with the DNA and then uses this contact as an ‘anchor’ while moving along the double helix (Figure 2D). Such a model is also supported by the fact that mutations in the putative DNA anchoring site [96] cause the DNA loop to shift its position [31], similar to what has been observed in the experimental conditions of the DNA curtains assay [30]. Finally, a careful quantification of the number of condensin molecules bound to human mitotic chromosomes revealed an average spacing of 60–90 kbp [105], which excellently matches the 60–80 kbp sizes of condensin-mediated loops calculated from Hi-C data of mitotic DT40 cells [60]. Which Conformational Changes Can SMC Protein Complexes Undergo? SMC Coiled-Coil Gating The first high-resolution structural model of the entire B. subtilis SMC homodimer, generated from protein cross-linking experiments and crystal structures, revealed a rod-shaped conformation in which the two coiled coils were aligned over much of their lengths [106]. Remarkably, this conformation is incompatible with ATP-dependent head dimerization. Conversion into the canonical ATP-dimerized conformation requires substantial rotational (by 85 ) and translational (by 10 Å) movements of the ATPase heads, which results in the tilting of the attached coiled coils into the wide-open configuration seen in crystal structures. SMCs might hence exist in two stable functional states (Figure 4A): in the ATP-bound state, the coiled coils are spread apart and forced into a bent conformation due to their connection at the hinge domains. Upon ATP hydrolysis, tension in the bent coiled coils would be released by straightening, which drives the head domains apart and subsequently allows the coiled coils to ‘zip up’ into a rod-shaped structure. Such a rodshaped architecture had previously been observed in some EM and AFM images of prokaryotic [107] or eukaryotic [34,48,108–110] SMCs. It is furthermore consistent with crosslinking experiments, crystal structures and small angle X-ray scattering (SAXS) data of constructs that contain hinge and coiled-coil domains of prokaryotic SMC complexes, condensin or Smc5/6 complexes [86,109], or with cross-linking data of full-length cohesin SMCs [104]. R1272 Current Biology 28, R1266–R1281, November 5, 2018
+
+(A) Structure model of DNA bound at the shallow surface of the dimerized Methanocaldococcus jannaschii Rad50 ATPase head domains (pdb: 5f3w) and of DNA bound to the coiled coil of one of the Thermotoga maritima Rad50 ATPase head domains (pdb: 4w9m) projected onto the M. jannaschii structure. (B) Structure model of the dimerized T. maritima SMC hinge domain (pdb: 1gxl). Colors represent positive (blue; +5 keT) or negative (red; –5 keT) electrostatic surface potential values.
+
+The idea of strictly stiff coiled coils that store mechanical energy similar to a loaded spring [106] is, however, inconsistent with the EM images of bent or kinked coiled coils that have been recorded for the majority of B. subtilis SMC and E. coli MukB dimers [26,107] or cohesin SMCs [48,108,111]. Even in the rod-shaped conformation, such kinks were frequently identified in the coiled coils of the fission yeast condensin SMCs [34]. It should be noted, however, that these imaging techniques require the deposition of molecules on a solid surface, followed by drying in vacuum, which makes it impossible to exclude that either straight, bent or kinked conformations might be artifacts of this process. High-speed AFM time-lapse recordings of the condensin SMC heterodimer in solution showed a remarkably high degree of flexibility in the coiled-coil arms, which seemed to be able to dynamically explore the entire conformational space available to them, including an arrangement in which one or both of the ATPase head domains bind to the hinge by bending the coil arm by close to 180 (Figure 4A) [110]. Whereas SMCs can assume a stiff rod-shaped conformation, it seems that they can equally well switch to an open conformation that is more flexible than anticipated in the constrained ring hypothesis. Conformational Changes in the SMC ATPase Heads If there were transitions between stiff straight and relaxed circular coiled-coil conformations, then it would be reasonable to assume that these transitions would be driven by the ATPase head domains. In contemplating how such large-scale changes might be initiated, it is instructive to consider the knowledge gained from the study of the related ABC transmembrane transporter proteins, which catalyze the transfer of small molecule ligands across the lipid bilayer [112]. The nucleotide binding domains (NBDs) of ABC transporters are built from two subdomains. The first subdomain resembles the RecA-like domain found in DNA and RNA translocases and contains the Walker A (P-loop) and B motifs, which are essential for the coordination and hydrolysis of the ATP nucleotide (Figure 4B). The second, initially termed ‘helical’, subdomain contains the so-called ABC signature motif (LSGGQ) and the Q-loop motif (named after a strictly conserved glutamine residue). In all ABC transporters, two complete ATPase sites are only formed upon dimerization of two NBDs in an antiparallel orientation, which brings together Walker A and B motifs of one domain with the signature motif of the other domain [113]. A basic switch mechanism between the ATPbound and the nucleotide-free conformation is thought to drive ligand translocation through the attached transmembrane domain via transmission of the conformational energy through a structurally conserved coupling helix [113,114]. Since there is no evidence for the presence of a coupling helix in SMC proteins,
+
+[Page 8]
+
+Box 2. DNA binding sites in the non-SMC subunits.
+
+The Scc2–Scc4 cohesin loader has been shown to bind DNA via its Scc2Nipbl HEAT-repeat subunit in electrophoretic mobility shift assays [35] and the cohesin Scc3SA2 subunit was found to bind and diffuse along DNA until it encounters single-stranded or otherwise structured DNA regions in a microfluidic imaging setup [91]. The presence of an AT-hook motif in the human Scc3SA1 subunit has been implicated in the recruitment of cohesin to telomeric sequences [92,93] and binding of CTCF to the cohesin subunit Scc3SA2 has been suggested to maintain cohesin’s position at promoter and enhancer regions [94]. The Nse4–Nse1–Nse3 kleisin/WHD-domain subunits and the Brn1–Ycs4–Ycg1 kleisin/HEAT-repeat subunits of Smc5/6 or condensin, respectively, were shown to bind short double-stranded DNA templates in vitro [85,95]. A recent crystal structure of the budding yeast Brn1–Ycg1 heterodimer bound to an 18-bp DNA double helix revealed that both subunits contribute to the formation of a positively charged groove within the U-shaped architecture of the Ycg1 HEAT-repeat solenoid, which makes electrostatic contacts with the two DNA helix phosphate backbones [96]. The only moderate affinity to DNA is augmented by the confinement of the bound DNA within a peptide loop of the Brn1 kleisin subunit, which presumably allows the complex to slide along the double helix over short distances until it encounters an obstacle, such as a nucleosome.
+
+the question arises how the energy from ATP hydrolysis is converted into movement by the SMCs. The Q-loop might play an essential role in the mechanistic coupling between the two ATPase sites, since it is in a location to link the two subdomains and to position the nucleophilic water molecule for hydrolysis of the ATP phosphodiester bond [72]. Comparison of crystal structures of bacterial SMC ATPase head structures in monomeric nucleotide-free and dimeric ATP-bound states reveals not only a rotation of the helical subdomain and the attached coiled-coil by 30 upon ATP-induced NBD dimerization [115], but also a significant shift in the orientation of the Q-loop (Figure 4C). Movement of the Q-loop therefore has the potential to transmit conformational energy in SMC ATPases without the requirement of a coupling helix. Crystal structures also revealed that ATP binding restructures the flexible R-loop (named after a conserved arginine residue) in the RecA-like subdomain, which contacts the phosphate moieties of the bound nucleotide (Figure 4B) [80,115]. Notably, the R-loop arginine is conserved in SMC and Rad50 proteins, but not in ABC transporters. Although the conformational change in this loop is presumably not necessary to stabilize the bound nucleotide, it might provide a local platform to read out the ATPase state. Conformational Changes in the SMC Hinge Domains Crystal structures of various SMC hinge domains suggest that they can assume at least two distinct conformational states (Figure 4D): A ‘closed’ architecture with closely juxtaposed coiled coils [109] or an ‘open’ architecture with outspread coiled coils [48,89,90,115]. Evidence for the existence of either conformation in solution came from SAXS or protein–protein crosslinking experiments [81,84,86,109]. Remarkably, the hinge torus was considerably tilted relative to the coiled-coil axis in the structures of the budding yeast and human condensin [109] and the fission yeast Smc5/6 hinge domain [86] with juxtaposed coiled coils, which suggests that, even when the SMC coiled coils associate into a rod-shaped conformation, their contact point with the hinge domain might maintain a high degree of flexibility. If DNA bound to the inner hinge surface between the coiled coils [82], which would obviously only be possible in the open conformation, then an SMC ATPase-mediated switch from closed to open states, as put forward in the coiled-coil gating model [109], could regulate access to this binding site.
+
+Whereas the hinge domains assembled into a (pseudo-)symmetric torus in most of the available crystal structures, one of the two interfaces between remained dissociated in some crystal forms (Figure 4D) [48,84,115]. If such a half-dissociated state also existed in solution, it would provide an elegant opportunity for double-stranded DNA helices to gain access to the highly conserved positively charged channel at the center of the hinge torus (Figure 3B). Such a DNA-binding site might be pivotal for the translocation mechanism during DNA loop extrusion (see below). Alternatively, once DNA has been bound, opening of the second hinge interface and simultaneous re-closure of the first interface would provide a mechanism for the transport of the DNA double helix into the SMC ring structure to yield topological entrapment [116]. These two options might explain why mutation of certain residues in the SMC hinge channel prevent cohesin from encircling chromosomal DNA and from generating sister chromatid cohesion without affecting its translocation on chromosomes [56,88]. If this scenario were true, it is conceivable that topological DNA entrapment resulted as a byproduct during the evolution of SMC proteins whose original function had been to translocate along nucleic acids. How a sequential opening and closing of the SMC hinge might be controlled is still a mystery, but one can imagine that the disengagement of the hinge interfaces might again be controlled by the ATPase head domains, either through a rotation of stiff coiled coils or a direct interaction of head and hinge domains enabled by flexible coiled coils (Figure 4A). However, any model that places emphasis on a defined function of the SMC hinge domains needs to explain how it is possible to replace the torus-shaped SMC hinge by the structurally distinct zinc-hook dimerization domain of Rad50 proteins without eliminating SMC complex function during fast cell divisions in B. subtilis [5]. Opening and Closing the SMC–Kleisin Ring Although different studies still disagree whether cohesin complexes open at their SMC hinge or SMC–kleisin interfaces for DNA entry into the ring architecture [56,117], it is generally accepted that DNA exit from cohesin rings is achieved either by the proteolytic cleavage of the kleisin subunit by separase or disengagement of the amino terminus of the Scc1 kleisin subunit from the Smc3 n-SMC coiled coil in a manner that depends on the Pds5 and Wapl subunits [118]. Evidence for the latter Current Biology 28, R1266–R1281, November 5, 2018 R1273
+
+[Page 9]
+
+Figure 4. Conformational changes in SMC proteins.
+
+(A) Models of ATP-bound open (ring-shaped) and ATP-free closed (rod-shaped) SMC dimers and conformational transitions of condensin SMC subunits observed in AFM images. (B) Structure models of the ATP-bound NBD of the Staphylococcus aureus Sav1866 ABC transporter ATPase (left, pdb: 2onj) and of the Geobacillus stearothermophilus SMC ATPase head domain (right, pdb: 5h68). (C) Close-up view of the Q-loop conformation in structures of the ATP-free monomeric B. subtilis SMC ATPase head domain (light grey; pdb: 5h67) and the ATP-dimerized B. subtilis SMC ATPase head domain (dark grey; pdb: 5xg3) and side-views of the coiled-coil orientations in both structures. (D) Structural models of the Pyrococcus furiosus SMC hinge domain in the closed coiled-coil conformation (pdb: 4rsj), of the T. maritima SMC hinge domain in the open coiled-coil conformation with both hinge interfaces associated (pdb: 1gxl) and of the G. stearothermophilus SMC hinge domain in the open coiled-coil conformation with one hinge interface dissociated (pdb: 5h69).
+
+ATP
+
+Open
+
+Closed ADP
+
+Coupling helix
+
+ATP
+
+Q-loop
+
+R-loop Q-loop
+
+ABC signature Walker-B
+
+P-loop ATP ABC signature
+
+Walker-B P-loop
+
+Closed Mg2+
+
+ATP
+
+Open
+
+Q-loop ATP-free
+
+Q-loop ATP-bound
+
+P-loop
+
+~30 ̊
+
+ATP-free monomer
+
+ATP-bound dimer
+
+pathway comes from the findings that fusion or artificial dimerization of the Smc3 and Scc1 interface prevented cohesin dissociation from chromosomes in yeast [119], fly [120] or human cultured cells [121], and that mutations at this interface interfered with stable binding of cohesin to chromosomes and sister chromatid cohesion in yeast [7] or human cells [111]. Since release of Scc1 from the Smc3 coiled coil by Pds5 could not be observed in the absence of the Smc1 k-SMC ATPase head [122] and mutation of the SMC ATPases greatly reduced cohesin unloading from plasmid DNA by Pds5 and Wapl [117], it seems reasonable to assume that the ATPase cycle is required to drive the disengagement of Scc1 from the Smc3 coiled coil. Mutation of the signature motif of the Smc1 ATPase head (but not of the Smc3 ATPase head) strongly reduced the release of cohesin from chromosomes during mitotic prophase [123], which suggests that the two ATPase sites of the cohesin SMCs make different contributions to ring opening. How this is achieved at a mechanistic level is still unknown. One hypothesis suggests that Pds5, Wapl and Scc3, when bound to the Scc1 kleisin subunit, generate a stiff mechanical linker [124] that could transduce conformational energy of ATP-dependent SMC head dimerization to the disengagement of Scc1 from Smc3 [117]. It is R1274 Current Biology 28, R1266–R1281, November 5, 2018
+
+similarly unclear how ring opening and closing might be coordinated with the transport of DNA out of cohesin rings. Since Pds5, Wapl and Scc3 have some affinity to DNA in vitro, it is possible that these proteins guide the movement of Half-dissociated the DNA double helix [124]. Notably, the DNA binding site observed in one crystal structure of Rad50 [79] coincides with the exact same position in the cohesin Smc3 coiled coil where the Scc1 amino terminus binds [7], which suggests a possible mechanism to regulate access to a binding site inside the cohesin ring. Even less is known about the possible entry or exit gates of other SMC complexes. It is, however, clear that topological loading of prokaryotic SMC complexes depends on their ATPase activity [12], as it is the case for cohesin [59]. In E. coli, overexpression of the MukF kleisin amino terminus results in an efficient displacement of MukBEF from the bacterial chromosome [8], which suggests that disengagement of the kleisin– SMC interface might similarly serve as DNA gate in prokaryotic SMC complexes. Interestingly, binding of the WHD subunit ScpB to the ScpA kleisin subunit displaces it from the B. subtilis SMC neck coiled coil [115] and binding of the WHD subunit MukE to the central region of the MukF kleisin reduces E. coli MukB ATPase activity [8]. The role of the WHD subunits might hence be in the control of kleisin–SMC interactions. Towards a Unified Model for SMC Complexes as DNALoop-Extruding Machines Taking into account the current knowledge of the molecular properties of the different SMC protein complexes, their interaction with DNA and chromatin, as well as the conformational changes these complexes can undergo, is it possible to combine this information into a generally valid model for their anticipated
+
+[Page 10]
+
+DNA-loop-extrusion activity? It seems that first, a number of controversies need to be resolved. For example, the data obtained from Hi-C experiments hint at a symmetric loop extrusion process by bacterial SMC complexes in vivo [125], whereas single-molecule studies in vitro clearly demonstrated asymmetric loop extrusion by condensin [31]. One caveat of asymmetric loop extrusion is that the DNA region between two complexes that are oriented in a back-to-back configuration would not get folded into a loop, leaving gaps in the compacted chromosome (Figure 2E). Such gaps might, however, not be problematic if condensin complexes frequently dissociated and re-bound in a random orientation — a notion that is compatible with the rapid turnover on chromosomes of most human condensin I complexes [105,126]. A second caveat of anchoring SMC complexes to specific sites in the genome from where they reel in DNA unidirectionally is that this should generate ‘stripes’ in Hi-C contact maps. Stripes were, however, only observed in activated B cells at CTCF-binding sites that coincide with binding sites of the Scc2Nipbl cohesin loader (Figure 2E) [55], but not as a general feature. However, if condensin loaded onto DNA and started extruding loops from random sites in the genome, the absence of stripes in population-averaged Hi-C maps of mitotic chromosomes could be explained [60,127]. Asymmetric could be easily converted into symmetric loop extruders if a single complex repeatedly changed the positions of its anchor and motor sites, or if two complexes always dimerized facing away from each other (Figure 2D), as predicted for cohesin by the handcuff model [98,100]. The latter option would predict, however, that these complexes should still remain bound to their original binding site, which, at least in the case of cohesin complexes that translocate from their chromosomal loading sites [59] or bacterial SMC complexes that move from the replication origin along both arms of the circular bacterial chromosome [41], does not seem to be the case. Despite these apparent disparities, we will conclude this review by discussing three distinct models for DNA-loop extrusion by SMC protein complexes that have been suggested previously in these or slightly modified versions. All three models are based on ATP-hydrolysis-mediated changes in the geometry of the SMC coiled-coil arms, which provide the potential means to overcome the challenges of translocation on chromatin fibers, where nucleosomes and other DNA-bound proteins pose substantial obstacles. The Sequential Walking Model In analogy to the translocation mechanism used by cytoskeletal motor proteins (see above), it has been suggested that the two SMC ATPase head domains sequentially bind DNA (Figure 5A): while one head attaches the complex stably to DNA, the other ATPase head is able to reach out to contact another binding site on the same DNA molecule at a distance that is limited either by the combined lengths of the two coiled-coil and hinge domains [30] or by the length of the kleisin linker that connects the two head domains, assuming that the SMC–kleisin ring architecture remains intact [128]. DNA binding of the second ATPase head would then trigger a conformational change that releases the first head to start the next step of the translocation cycle. Such a mechanism could easily account for the 16-nm step sizes that have been calculated for condensin’s movement along
+
+DNA [30]. Since translocation does not need to follow the path of the DNA in this model, a single step might cover considerably larger base-pair distances on relaxed DNA [31] or chromatinized substrates. Whereas the mechanical force for translocation could, at least in principle, derive from alternating between opening and closing of the SMC coiled coils [106], the sequential walking model neglects the bi-directionality of the DNA double helix and hence fails to explain how condensin is able to translocate over tens of kbp without changing direction, or how condensin could be prevented from switching to another DNA molecule that comes into bridging distance. Furthermore, the lack of evidence for alternated binding of the monomeric SMC ATPase head domains to DNA make it difficult to reconcile such a model with the available biochemical data. The DNA Pumping Model A very different model has its foundation in the discovery of closely juxtaposed SMC coiled coils in prokaryotic SMC complexes [68,106]. This model relies on pseudo-topological DNA loop capture between open SMC coiled-coils (Figure 5B). Following ATP hydrolysis, the coiled coils zip up, starting from the hinge domain, and the base of the entrapped DNA loop is pushed towards and past the now disengaged ATPase heads. Upon exchange of ADP by ATP, the heads re-engage, the SMC coiled coils return to the open conformation and the base of the DNA loop is now entrapped within a second sub-compartment that is confined by the engaged ATPase head domains and the kleisin subunit. In the next cycle, another DNA loop is captured between the coiled coils and pushed into the second sub-compartment, where it merges with the already entrapped DNA loop into an ever-larger loop. This elegant model raises two key questions. First, how is a pre-formed DNA loop threaded into the lumen between the SMC coiled-coils? Although it is conceivable that narrow DNA loops could be generated through ParB-dependent bridging of parS sequences at the SMC loading sites, through bending of the DNA by other abundant nucleoid-associated proteins [129], or through DNA supercoiling, it is difficult to imagine how these loops could be caught between the SMC coiled coils. Second, how is directionality of loop extrusion ensured; i.e. what prevents a DNA loop from slipping out of the second sub-compartment when the ATPase heads disengage? It is likely that such a mechanism would require DNA anchor sites in this sub-compartment, but whether such sites exist remains unknown. The Extended Scrunching Model Initially suggested as an alternative to the sequential walking hypothesis for condensin, the scrunching model anticipates the alternating binding and release of two distinct DNA binding sites, one located at the SMC ATPase heads and the other located at the hinge domains, for translocation along the chromatin fiber [30]. We here present an extended version of this model, which takes into account knowledge of the biochemical properties gained from the study of condensin and other SMC protein complexes (Figure 5C). We assume that DNA binds to the disengaged ATPase head domains of SMC dimers with juxtaposed coiled coils. Upon ATP-mediated SMC head dimerization, the coiled coils disengage, resulting in a conformational change that provides access to a DNA binding site at the SMC hinge and a concomitant release of the DNA at the head domains. Due to the high flexibility of the disengaged coiled coils, the Current Biology 28, R1266–R1281, November 5, 2018 R1275
+
+[Page 11]
+
+ATP
+
+ATP ADP
+
+ATP zip up ADP
+
+ADP
+
+ATP ADP
+
+Bound
+
+Released
+
+Inaccessible
+
+Anchored
+
+Figure 5. Different models of active SMC-driven loop extrusion mechanism. (A) Sequential walking model. (B) DNA pumping model. (C) Extended scrunching model. See main text for details. Note that the sequential walking model makes no assumptions about the SMC coiled coil conformations, whereas the pumping model assumes stiff coiled coils that are under tension when bent open. The extended scrunching model postulates that SMC coiled coils alternate between stiff and relaxed states.
+
+SMC complex can now (passively) fold into a conformation where the engaged head domains contact the hinge domains. DNA re-binding at the heads and release from the hinge resets the translocation cycle. In this model, the ATPase cycle drives the conformational transitions between coiled-coil opening and closure, analogous to the model put forward for prokaryotic SMCs [68], providing DNA access to either of the two DNA binding sites. Stiffening of the SMC coiled-coil arms provides the power stroke that places the hinge at a 50-nm distance to the head domains. In this model, loop extrusion would be achieved through DNA attachment to an additional, constitutive anchor site, like the one created by the Brn1–Ycg1 subunits of the condensin complex [31,96], which ensures that condensin drags the DNA helix into a loop while it translocates. R1276 Current Biology 28, R1266–R1281, November 5, 2018
+
+Although highly speculative, this model explains several of the features of SMC complexes that we have outlined before: DNA binding at the hinge might take place within the conserved positively charged channel of the torus-shaped domain [88] and alternating access to the channel might be controlled by transitions between the fully associated and half-dissociated conformations observed in crystal structures (Figure 4D). Notably, half-dissociated conformations have only been observed for SMC constructs with open coiled-coils [48,84,115], whereas all crystal structures with juxtaposed coiled-coils displayed fully associated conformations [109]. This correlation raises the possibility that coiled-coil opening might promote hinge interface disengagement. Control of the DNA binding site at the ATPase head domains would presumably be directly coupled to the
+
+[Page 12]
+
+head engagement state. Whether such binding sites indeed exist in the SMC hinge and head domains is, however, still unknown. As in the sequential walking model, the power stroke movement does not need to follow the path of the DNA and thereby enables condensin to take steps that are significantly larger than the 150 bp that would theoretically be possible for a motor that moves 50 nm along a B-type DNA helix. It would also provide the SMC complex with the ability to ‘step over’ nucleosomes and thereby cover even larger base-pair distances. Finally, this model does not rely on pre-formed DNA loops, but instead allows SMC complexes to initiate loop formation de novo. Major questions also remain for the scrunching model. For example, what would prevent condensin from taking a step backwards instead of always stepping into one direction during the power stroke movement? How would the hinge and head domains know that they have come into proximity before handing over DNA binding from the hinge to the head domains? Whereas it is conceivable that such a switch in binding sites could be triggered by a transient association between head and hinge domains, evidence for a direct protein–protein interaction between SMC head and hinge domains is so far only available for cohesin, and even this evidence is limited [35,130]. Finally, the key function of the DNA binding site at the SMC hinge domain put forward by this model makes it difficult to explain how it can be replaced by the Rad50 zinc hook in the B. subtilis SMC complex [5]. Outlook For two decades, the image of the cohesin complex stably connecting sister chromatids has shaped the perception of SMC protein complexes as static chromatid linker molecules. Yet, a passive structural mode of action has difficulties to explain the emerging evidence for cohesin’s role in transcriptional regulation, or condensin’s function during the folding of mitotic chromosomes. The entrapment of two sister DNA molecules now appears to be a specialized aspect of the family of SMC protein complexes, whose unifying principle most likely can be found in their ability to extrude large DNA loops. How these complexes move along chromatinized DNA and thereby fold genomes into complex structures has become one of the central questions of chromosome biology. In this review, we have discussed mechanistic models for the action of SMC protein complexes as DNA-loop-extruding enzymes. Despite their differences, the models underscore the universal requirement for transient DNA binding sites for any processive motor action on DNA. Characterization of such sites must take into account the topological restrictions laid out by the unique architecture of SMC–kleisin complexes and the conformational changes that are most likely instructed from distal sites within the complex and controlled by the ATP hydrolysis cycle. Real-time observation of loop extrusion on naked DNA by single condensin molecules has opened up new avenues to systematically test the assumptions made in polymer models for loop extrusion, including the behavior of assemblies that simultaneously act on the same DNA template. What happens when loop-extruding complexes encounter obstacles, such as other loop-extruding enzymes, when they bump into the DNA replication machinery or transcribing RNA polymerases, or when the topology of their DNA substrate changes? These are exciting questions that will probably be answered soon.
+
+Taking into account that SMC complexes originated in prokaryotes, which lack canonical histones, it is not surprising that many aspects of eukaryotic SMC complex function can be recapitulated on naked DNA. Yet, the ability to function on chromatinized DNA is one important feature that sets SMC protein complexes apart from other known DNA motor proteins. Remarkably, loop extrusion by condensin — and possibly other SMC complexes — seems to operate in steps that are two orders of magnitude larger than those of conventional DNA motors. Such large steps can be explained if the translocation movement did not need to follow the linear path of the DNA double helix, where histones and a multitude of other proteins might impede processive tracking of the sugar-phosphate backbone. If this were the case, a key prediction of most of the models outlined above is that reducing the length of the SMC coiled coils — a feat that has already been achieved for bacterial SMCs [5] — should shorten step sizes during DNA translocation. Regardless of the outcome of such experiments, it is already clear that whichever mechanism this class of protein complexes uses to form looped chromosomes, it must be something out of the ordinary that has never been seen before. ACKNOWLEDGEMENTS We thank all colleagues and members of the Haering lab for many stimulating discussions. Work in the Haering lab is supported by the European Molecular Biology Laboratory (EMBL) and the European Research Council (ERC, grant number 681365).
+
+REFERENCES 1. Cobbe, N., and Heck, M.M.S. (2006). The evolution of ATPase activity in SMC proteins. Proteins 63, 685–696. 2. Gruber, S. (2011). MukBEF on the march: taking over chromosome organization in bacteria? Mol. Microbiol. 81, 855–859. 3. Uhlmann, F. (2016). SMC complexes: from DNA to chromosomes. Nat. Rev. Mol. Cell Biol. 17, 399–412. 4. van Ruiten, M.S., and Rowland, B.D. (2018). SMC complexes: universal DNA looping machines with distinct regulators. Trends Genet. 34, 5. Bürmann, F., Basfeld, A., Vazquez Nunez, R., Diebold-Durand, M.-L., Wilhelm, L., and Gruber, S. (2017). Tuned SMC arms drive chromosomal loading of prokaryotic condensin. Mol. Cell 65, 861–869. nez-Oya, V., Kim, 6. Bürmann, F., Shin, H.-C., Basquin, J., Soh, Y.-M., Gime Y.-G., Oh, B.H., and Gruber, S. (2013). An asymmetric SMC-kleisin bridge in prokaryotic condensin. Nat. Struct. Mol. Biol. 20, 371–379. 7. Gligoris, T.G., Scheinost, J.C., Bürmann, F., Petela, N., Chan, K.-L., Uluocak, P., Beckouët, F., Gruber, S., Nasmyth, K., and Löwe, J. (2014). Closing the cohesin ring: structure and function of its Smc3-kleisin interface. Science 346, 963–967. 8. Zawadzka, K., Zawadzki, P., Baker, R., Rajasekar, K.V., Wagner, F., Sherratt, D.J., and Arciszewska, L.K. (2018). MukB ATPases are regulated independently by the N- and C-terminal domains of MukF kleisin. Elife 7, e31522. 9. Haering, C.H., Schoffnegger, D., Nishino, T., Helmhart, W., Nasmyth, K., and Löwe, J. (2004). Structure and stability of cohesin’s Smc1-kleisin interaction. Mol. Cell 15, 951–964. 10. Haering, C.H., Farcas, A.-M., Arumugam, P., Metson, J., and Nasmyth, K. (2008). The cohesin ring concatenates sister DNA molecules. Nature 454, 297–301.
+
+Current Biology 28, R1266–R1281, November 5, 2018 R1277
+
+[Page 13]
+
+11. Cuylen, S., Metz, J., and Haering, C.H. (2011). Condensin structures chromosomal DNA through topological links. Nat. Struct. Mol. Biol. 18,
+
+31. Ganji, M., Shaltiel, I.A., Bisht, S., Kim, E., Kalichava, A., Haering, C.H., and Dekker, C. (2018). Real-time imaging of DNA loop extrusion by condensin. Science 360, 102–105.
+
+12. Wilhelm, L., Bürmann, F., Minnen, A., Shin, H.-C., Toseland, C.P., Oh, B.-H., and Gruber, S. (2015). SMC condensin entraps chromosomal DNA by an ATP hydrolysis dependent loading mechanism in Bacillus subtilis. Elife 4, 11202.
+
+32. Kimura, K., and Hirano, T. (2000). Dual roles of the 11S regulatory subcomplex in condensin functions. Proc. Natl. Acad. Sci. USA 97, 11972– 11977.
+
+13. Palecek, J.J., and Gruber, S. (2015). Kite proteins: a superfamily of SMC/ Kleisin partners conserved across bacteria, archaea, and eukaryotes. Structure 23, 2183–2190.
+
+33. Kimura, K., and Hirano, T. (1997). ATP-dependent positive supercoiling of DNA by 13S condensin: a biochemical implication for chromosome condensation. Cell 90, 625–634.
+
+14. Wells, J.N., Gligoris, T.G., Nasmyth, K.A., and Marsh, J.A. (2017). Evolution of condensin and cohesin complexes driven by replacement of Kite by Hawk proteins. Curr. Biol. 27, R17–R18.
+
+34. Yoshimura, S.H., Hizume, K., Murakami, A., Sutani, T., Takeyasu, K., and Yanagida, M. (2002). Condensin architecture and interaction with DNA: regulatory non-SMC subunits bind to the head of SMC heterodimer. Curr. Biol. 12, 508–513.
+
+15. Haering, C.H., and Gruber, S. (2016). SnapShot: SMC protein complexes part I. Cell 164, 326–326.e1.
+
+35. Murayama, Y., and Uhlmann, F. (2014). Biochemical reconstitution of topological DNA binding by the cohesin ring. Nature 505, 367–371.
+
+16. Alipour, E., and Marko, J.F. (2012). Self-organization of domain structures by DNA-loop-extruding enzymes. Nucleic Acids Res. 40, 11202– 11212.
+
+36. Borths, E.L., Poolman, B., Hvorup, R.N., Locher, K.P., and Rees, D.C. (2005). In vitro functional characterization of BtuCD-F, the Escherichia coli ABC transporter for vitamin B12 uptake. Biochemistry 44, 16301– 16309.
+
+17. Nasmyth, K. (2001). Disseminating the genome: joining, resolving, and separating sister chromatids during mitosis and meiosis. Annu. Rev. Genet. 35, 673–745. 18. Fudenberg, G., Imakaev, M., Lu, C., Goloborodko, A., Abdennur, N., and Mirny, L.A. (2016). Formation of chromosomal domains by loop extrusion. Cell Rep. 15, 2038–2049. 19. Sanborn, A.L., Rao, S.S.P., Huang, S.-C., Durand, N.C., Huntley, M.H., Jewett, A.I., Bochkov, I.D., Chinnappan, D., Cutkosky, A., Li, J., et al. (2015). Chromatin extrusion explains key features of loop and domain formation in wild-type and engineered genomes. Proc. Natl. Acad. Sci. USA 112, E6456–E6465.
+
+37. Liu, C.E., Liu, P.Q., and Ames, G.F. (1997). Characterization of the adenosine triphosphatase activity of the periplasmic histidine permease, a traffic ATPase (ABC transporter). J. Biol. Chem. 272, 21883–21891. 38. Hohl, M., Briand, C., Grütter, M.G., and Seeger, M.A. (2012). Crystal structure of a heterodimeric ABC transporter in its inward-facing conformation. Nat. Struct. Mol. Biol. 19, 395–402. 39. Farrell, C.M., Mackey, A.T., Klumpp, L.M., and Gilbert, S.P. (2002). The role of ATP hydrolysis for kinesin processivity. J. Biol. Chem. 277,
+
+20. Goloborodko, A., Marko, J.F., and Mirny, L.A. (2016). Chromosome compaction by active loop extrusion. Biophys. J. 110, 2162–2168.
+
+40. Schmidt, H., Gleave, E.S., and Carter, A.P. (2012). Insights into dynein motor domain function from a 3.3-Å crystal structure. Nat. Struct. Mol. Biol. 19, 492–497, S1.
+
+21. Goloborodko, A., Imakaev, M.V., Marko, J.F., and Mirny, L. (2016). Compaction and segregation of sister chromatids via active loop extrusion. Elife 5, e14864.
+
+41. Wang, X., Brandão, H.B., Le, T.B.K., Laub, M.T., and Rudner, D.Z. (2017). Bacillus subtilis SMC complexes juxtapose chromosome arms as they travel from origin to terminus. Science 355, 524–527.
+
+22. Graham, J.E., Sherratt, D.J., and Szczelkun, M.D. (2010). Sequence-specific assembly of FtsK hexamers establishes directional translocation on DNA. Proc. Natl. Acad. Sci. USA 107, 20263–20268.
+
+42. Lengronne, A., Katou, Y., Mori, S., Yokobayashi, S., Kelly, G.P., Itoh, T., Watanabe, Y., Shirahige, K., and Uhlmann, F. (2004). Cohesin relocation from sites of chromosomal loading to places of convergent transcription. Nature 430, 573–578.
+
+23. Seidel, R., Bloom, J.G.P., Dekker, C., and Szczelkun, M.D. (2008). Motor step size and ATP coupling efficiency of the dsDNA translocase EcoR124I. EMBO J. 27, 1388–1398. 24. Hirano, M., Anderson, D.E., Erickson, H.P., and Hirano, T. (2001). Bimodal activation of SMC ATPase by intra- and inter-molecular interactions. EMBO J. 20, 3238–3250. 25. Hirano, M., and Hirano, T. (2002). Hinge-mediated dimerization of SMC protein is essential for its dynamic interaction with DNA. EMBO J. 21, 26. Kamada, K., Miyata, M., and Hirano, T. (2013). Molecular basis of SMC ATPase activation: role of internal structural changes of the regulatory subcomplex ScpAB. Structure 21, 581–594. 27. Petrushenko, Z.M., Lai, C.-H., Rai, R., and Rybenkov, V.V. (2006). DNA reshaping by MukB. Right-handed knotting, left-handed supercoiling. J. Biol. Chem. 281, 4606–4615. 28. Woo, J.-S., Lim, J.-H., Shin, H.-C., Suh, M.-K., Ku, B., Lee, K.-H., Joo, K., Robinson, H., Lee, J., Park, S.Y., et al. (2009). Structural studies of a bacterial condensin complex reveal ATP-dependent disruption of intersubunit interactions. Cell 136, 85–96. 29. Stray, J.E., and Lindsley, J.E. (2003). Biochemical analysis of the yeast condensin Smc2/4 complex: an ATPase that promotes knotting of circular DNA. J. Biol. Chem. 278, 26238–26248. 30. Terakawa, T., Bisht, S., Eeftens, J.M., Dekker, C., Haering, C.H., and Greene, E.C. (2017). The condensin complex is a mechanochemical motor that translocates along DNA. Science 358, 672–676.
+
+R1278 Current Biology 28, R1266–R1281, November 5, 2018
+
+43. Glynn, E.F., Megee, P.C., Yu, H.-G., Mistrot, C., Unal, E., Koshland, D.E., DeRisi, J.L., and Gerton, J.L. (2004). Genome-wide mapping of the cohesin complex in the yeast Saccharomyces cerevisiae. PLoS Biol. 2, E259. 44. Gullerova, M., and Proudfoot, N.J. (2008). Cohesin complex promotes transcriptional termination between convergent genes in S. pombe. Cell 132, 983–995. 45. Ocampo-Hafalla, M., Muñoz, S., Samora, C.P., and Uhlmann, F. (2016). Evidence for cohesin sliding along budding yeast chromosomes. Open Biol. 6, 150178. 46. Borrie, M.S., Campor, J.S., Joshi, H., and Gartenberg, M.R. (2017). Binding, sliding, and function of cohesin during transcriptional activation. Proc. Natl. Acad. Sci. USA 114, E1062–1071. 47. Busslinger, G.A., Stocsits, R.R., van der Lelij, P., Axelsson, E., Tedeschi, A., Galjart, N., and Peters, J.M. (2017). Cohesin is positioned in mammalian genomes by transcription, CTCF and Wapl. Nature 544, 503–507. 48. Haering, C.H., Löwe, J., Hochwagen, A., and Nasmyth, K. (2002). Molecular architecture of SMC proteins and the yeast cohesin complex. Mol. Cell 9, 773–788. 49. Ivanov, D., and Nasmyth, K. (2005). A topological interaction between cohesin rings and a circular minichromosome. Cell 122, 849–860. 50. Davidson, I.F., Goetz, D., Zaczek, M.P., Molodtsov, M.I., Huis In ’t Veld, P.J., Weissmann, F., Litos, G., Cisneros, D.A., Ocampo-Hafalla, M., Ladurner, R., et al. (2016). Rapid movement and transcriptional re-localization of human cohesin on DNA. EMBO J. 35, 2671–2685.
+
+[Page 14]
+
+51. Stigler, J., Çamdere, G.Ö., Koshland, D.E., and Greene, E.C. (2016). Single-molecule imaging reveals a collapsed conformational state for DNAbound cohesin. Cell Rep. 15, 988–998. 52. Kanke, M., Tahara, E., Huis In’t Veld, P.J., and Nishiyama, T. (2016). Cohesin acetylation and Wapl-Pds5 oppositely regulate translocation of cohesin along DNA. EMBO J. 35, 2686–2698. 53. Flyamer, I.M., Gassler, J., Imakaev, M., Brandão, H.B., Ulianov, S.V., Abdennur, N., Razin, S.V., Mirny, L.A., and Tachibana-Konwalski, K. (2017). Single-nucleus Hi-C reveals unique chromatin reorganization at oocyteto-zygote transition. Nature 544, 110–114. 54. Hug, C.B., Grimaldi, A.G., Kruse, K., and Vaquerizas, J.M. (2017). Chromatin architecture emerges during zygotic genome activation independent of transcription. Cell 169, 216–219. 55. Vian, L., Pekowska, A., Rao, S.S.P., Kieffer-Kwon, K.-R., Jung, S., Baranello, L., Huang, S.C., El Khattabi, L., Dose, M., Pruett, N., et al. (2018). The energetics and physiological impact of cohesin extrusion. Cell 73, 1165–1178.e20. 56. Srinivasan, M., Scheinost, J.C., Petela, N.J., Gligoris, T.G., Wissler, M., Ogushi, S., Collier, J.E., Voulgaris, M., Kurze, A., Chan, K.L., et al. (2018). The cohesin ring uses its hinge to organize DNA using non-topological as well as topological mechanisms. Cell 173, 1508–1518. 57. Brackley, C.A., Johnson, J., Michieletto, D., Morozov, A.N., Nicodemi, M., Cook, P.R., and Marenduzzo, D. (2018). Extrusion without a motor: a new take on the loop extrusion model of genome organization. Nucleus 9, 95–103. 58. Yamamoto, T., and Schiessel, H. (2017). Osmotic mechanism of the loop extrusion process. Phys. Rev. E 96, 030402. 59. Hu, B., Itoh, T., Mishra, A., Katoh, Y., Chan, K.-L., Upcher, W., Godlee, C., Roig, M.B., Shirahige, K., and Nasmyth, K. (2011). ATP hydrolysis is required for relocating cohesin from sites occupied by its Scc2/4 loading complex. Curr. Biol. 21, 12–24. 60. Gibcus, J.H., Samejima, K., Goloborodko, A., Samejima, I., Naumova, N., Nuebler, J., Kanemaki, M.T., Xie, L., Paulson, J.R., Earnshaw, W.C., et al. (2018). A pathway for mitotic chromosome formation. Science 359, eaao6135. 61. Shintomi, K., Takahashi, T.S., and Hirano, T. (2015). Reconstitution of mitotic chromatids with a minimum set of purified factors. Nat. Cell Biol. 17, 1014–1023. 62. Eeftens, J.M., Bisht, S., Kerssemakers, J., Kschonsak, M., Haering, C.H., and Dekker, C. (2017). Real-time detection of condensin-driven DNA compaction reveals a multistep binding mechanism. EMBO J. 36, 63. Keenholtz, R.A., Dhanaraman, T., Palou, R., Yu, J., D’Amours, D., and Marko, J.F. (2017). Oligomerization and ATP stimulate condensin-mediated DNA compaction. Sci. Rep. 7, 14279. 64. Pease, P.J., Levy, O., Cost, G.J., Gore, J., Ptacin, J.L., Sherratt, D., Bustamante, C., and Cozzarelli, N.R. (2005). Sequence-directed DNA translocation by purified FtsK. Science 307, 586–590. 65. Seidel, R., van Noort, J., van der Scheer, C., Bloom, J.G.P., Dekker, N.H., Dutta, C.F., Blundell, A., Robinson, T., Firman, K., and Dekker, C. (2004). Real-time observation of DNA translocation by the type I restriction modification enzyme EcoR124I. Nat. Struct. Mol. Biol. 11, 838–843. 66. Sirinakis, G., Clapier, C.R., Gao, Y., Viswanathan, R., Cairns, B.R., and Zhang, Y. (2011). The RSC chromatin remodelling ATPase translocates DNA with high force and small step size. EMBO J. 30, 2364–2372. 67. Sweeney, H.L., and Holzbaur, E.L.F. (2018). Motor proteins. Cold Spring Harb. Perspect. Biol. 10, a021931. 68. Minnen, A., Bürmann, F., Wilhelm, L., Anchimiuk, A., Diebold-Durand, M.-L., and Gruber, S. (2016). Control of Smc coiled coil architecture by the ATPase heads facilitates targeting to chromosomal ParB/parS and release onto flanking DNA. Cell Rep. 14, 2003–2016. 69. Kato, Y., Miyakawa, T., and Tanokura, M. (2018). Overview of the mechanism of cytoskeletal motors based on structure. Biophys. Rev. 10,
+
+70. Guacci, V., Yamamoto, A., Strunnikov, A., Kingsbury, J., Hogan, E., Meluh, P., and Koshland, D. (1993). Structure and function of chromosomes in mitosis of budding yeast. Cold Spring Harb. Symp. Quant. Biol. 58, 71. Peterson, C.L. (1994). The SMC family: novel motor proteins for chromosome condensation? Cell 79, 389–392. 72. Hopfner, K.-P., and Tainer, J.A. (2003). Rad50/SMC proteins and ABC transporters: unifying concepts from high-resolution structures. Curr. Opin. Struct. Biol. 13, 249–255. 73. Singleton, M.R., Dillingham, M.S., and Wigley, D.B. (2007). Structure and mechanism of helicases and nucleic acid translocases. Annu. Rev. Biochem. 76, 23–50. 74. Clapier, C.R., Iwasa, J., Cairns, B.R., and Peterson, C.L. (2017). Mechanisms of action and regulation of ATP-dependent chromatin-remodelling complexes. Nat. Rev. Mol. Cell Biol. 18, 407–422. 75. Riggs, A.D. (1990). DNA methylation and late replication probably aid cell memory, and type I DNA reeling could aid chromosome folding and enhancer function. Philos. Trans. R. Soc. Lond. B. Biol. Sci. 326, 76. Strick, T.R., Kawaguchi, T., and Hirano, T. (2004). Real-time detection of single-molecule DNA compaction by condensin I. Curr. Biol. 14, 77. Liu, Y., Sung, S., Kim, Y., Li, F., Gwon, G., Jo, A., Kim, A.K., Kim, T., Song, O.K., Lee, S.E., and Cho, Y. (2016). ATP-dependent DNA binding, unwinding, and resection by the Mre11/Rad50 complex. EMBO J. 35, 78. Seifert, F.U., Lammens, K., Stoehr, G., Kessler, B., and Hopfner, K.-P. (2016). Structural mechanism of ATP-dependent DNA binding and DNA end bridging by eukaryotic Rad50. EMBO J. 35, 759–772. 79. Rojowska, A., Lammens, K., Seifert, F.U., Direnberger, C., Feldmann, H., and Hopfner, K.-P. (2014). Structure of the Rad50 DNA double-strand break repair protein in complex with DNA. EMBO J. 33, 2847–2859. 80. Lammens, A., Schele, A., and Hopfner, K.-P. (2004). Structural biochemistry of ATP-driven dimerization and DNA-stimulated activation of SMC ATPases. Curr. Biol. 14, 1778–1782. 81. Griese, J.J., and Hopfner, K.-P. (2011). Structure and DNA-binding activity of the Pyrococcus furiosus SMC protein hinge domain. Proteins 79, 82. Hirano, M., and Hirano, T. (2006). Opening closed arms: long-distance activation of SMC ATPase by hinge-DNA interactions. Mol. Cell 21, 83. Chiu, A., Revenkova, E., and Jessberger, R. (2004). DNA interaction and dimerization of eukaryotic SMC hinge domains. J. Biol. Chem. 279, 84. Griese, J.J., Witte, G., and Hopfner, K.-P. (2010). Structure and DNA binding activity of the mouse condensin hinge domain highlight common and diverse features of SMC proteins. Nucleic Acids Res. 38, 3454–3465. 85. Piazza, I., Rutkowska, A., Ori, A., Walczak, M., Metz, J., Pelechano, V., Beck, M., and Haering, C.H. (2014). Association of condensin with chromosomes depends on DNA binding by its HEAT-repeat subunits. Nat. Struct. Mol. Biol. 21, 560–568. 86. Alt, A., Dang, H.Q., Wells, O.S., Polo, L.M., Smith, M.A., McGregor, G.A., Welte, T., Lehmann, A.R., Pearl, L.H., Murray, J.M., and Oliver, A.W. (2017). Specialized interfaces of Smc5/6 control hinge stability and DNA association. Nat. Commun. 8, 14011. 87. Murayama, Y., Samora, C.P., Kurokawa, Y., Iwasaki, H., and Uhlmann, F. (2018). Establishment of DNA-DNA interactions by the cohesin ring. Cell 172, 465–477.e15. 88. Kurze, A., Michie, K.A., Dixon, S.E., Mishra, A., Itoh, T., Khalid, S., Strmecki, L., Shirahige, K., Haering, C.H., Löwe, J., and Nasmyth, K. (2011). A positively charged channel within the Smc1/Smc3 hinge required for sister chromatid cohesion. EMBO J. 30, 364–378.
+
+Current Biology 28, R1266–R1281, November 5, 2018 R1279
+
+[Page 15]
+
+89. Li, Y., Schoeffler, A.J., Berger, J.M., and Oakley, M.G. (2010). The crystal structure of the hinge domain of the Escherichia coli structural maintenance of chromosomes protein MukB. J. Mol. Biol. 395, 11–19. 90. Ku, B., Lim, J.-H., Shin, H.-C., Shin, S.-Y., and Oh, B.-H. (2010). Crystal structure of the MukB hinge domain with coiled-coil stretches and its functional implications. Proteins 78, 1483–1490. 91. Countryman, P., Fan, Y., Gorthi, A., Pan, H., Strickland, J., Kaur, P., Wang, X., Lin, J., Lei, X., White, C., et al. (2017). Cohesin SA2 is a sequence independent DNA binding protein that recognizes DNA replication and repair intermediates. J. Biol. Chem. 293, 1054–1069. 92. Bisht, K.K., Daniloski, Z., and Smith, S. (2013). SA1 binds directly to DNA through its unique AT-hook to promote sister chromatid cohesion at telomeres. J. Cell Sci. 126, 3493–3503. 93. Lin, J., Countryman, P., Chen, H., Pan, H., Fan, Y., Jiang, Y., Kaur, P., Miao, W., Gurgel, G., You, C., et al. (2016). Functional interplay between SA1 and TRF1 in telomeric DNA binding and DNA-DNA pairing. Nucleic Acids Res. 44, 6363–6376. 94. Xiao, T., Wallace, J., and Felsenfeld, G. (2011). Specific sites in the C terminus of CTCF interact with the SA2 subunit of the cohesin complex and are required for cohesin-dependent insulation activity. Mol. Cell. Biol. 31, 95. Zabrady, K., Adamus, M., Vondrova, L., Liao, C., Skoupilova, H., Novakova, M., Jurcisinova, L., Alt, A., Oliver, A.W., Lehmann, A.R., and Palecek, J.J. (2015). Chromatin association of the SMC5/6 complex is dependent on binding of its NSE3 subunit to DNA. Nucleic Acids Res. 44, 1064–1079.
+
+107. Melby, T.E., Ciampaglio, C.N., Briscoe, G., and Erickson, H.P. (1998). The symmetrical structure of structural maintenance of chromosomes (SMC) and MukB proteins: long, antiparallel coiled coils, folded at a flexible hinge. J. Cell Biol. 142, 1595–1604. 108. Anderson, D.E., Losada, A., Erickson, H.P., and Hirano, T. (2002). Condensin and cohesin display different arm conformations with characteristic hinge angles. J. Cell Biol. 156, 419–424. 109. Soh, Y.-M., Bürmann, F., Shin, H.-C., Oda, T., Jin, K.S., Toseland, C.P., Kim, C., Lee, H., Kim, S.J., Kong, M.S., et al. (2014). Molecular basis for SMC rod formation and its dissolution upon DNA binding. Mol. Cell 57, 110. Eeftens, J.M., Katan, A.J., Kschonsak, M., Hassler, M., de Wilde, L., Dief, E.M., Haering, C.H., and Dekker, C. (2016). Condensin Smc2-Smc4 dimers are flexible and dynamic. Cell Rep. 14, 1813–1818. 111. Huis In ’t Veld, P.J., Herzog, F., Ladurner, R., Davidson, I.F., Piric, S., Kreidl, E., Bhaskara, V., Aebersold, R., and Peters, J.M. (2014). Characterization of a DNA exit gate in the human cohesin ring. Science 346, 112. Rees, D.C., Johnson, E., and Lewinson, O. (2009). ABC transporters: the power to change. Nat. Rev. Mol. Cell Biol. 10, 218–227. 113. Locher, K.P. (2009). Structure and mechanism of ATP-binding cassette transporters. Philos. Trans. R. Soc. Lond. B. Biol. Sci. 364, 239–245. 114. Linton, K.J. (2007). Structure and function of ABC transporters. Physiology 22, 122–130.
+
+96. Kschonsak, M., Merkel, F., Bisht, S., Metz, J., Rybin, V., Hassler, M., and Haering, C.H. (2017). Structural basis for a safety-belt mechanism that anchors condensin to chromosomes. Cell 171, 588–600.e24.
+
+115. Kamada, K., Su’etsugu, M., Takada, H., Miyata, M., and Hirano, T. (2017). Overall shapes of the SMC-ScpAB complex are determined by balance between constraint and relaxation of its structural parts. Structure 25, 603–616.e4.
+
+97. Li, Y., Muir, K., Bowler, M.W., Metz, J., Haering, C.H., and Panne, D. (2018). Structural basis for Scc3-dependent cohesin recruitment to chromatin. Elife 7, e38356.
+
+116. Gruber, S., Arumugam, P., Katou, Y., Kuglitsch, D., Helmhart, W., Shirahige, K., and Nasmyth, K. (2006). Evidence that loading of cohesin onto chromosomes involves opening of its SMC hinge. Cell 127, 523–537.
+
+98. Eng, T., Guacci, V., and Koshland, D. (2015). Interallelic complementation provides functional evidence for cohesin-cohesin interactions on DNA. Mol. Biol. Cell 26, 4224–4235.
+
+117. Murayama, Y., and Uhlmann, F. (2015). DNA entry into and exit out of the cohesin ring by an interlocking gate mechanism. Cell 163, 1628–1640.
+
+nez-Llorente, D., Rodrı́99. Kojic, A., Cuadrado, A., De Koninck, M., Gime guez-Corsino, M., Gómez-López, G., Le Dily, F., Marti-Renom, M.A., and Losada, A. (2018). Distinct roles of cohesin-SA1 and cohesin-SA2 in 3D chromosome organization. Nat. Struct. Mol. Biol. 25, 496–504. 100. Zhang, N., Kuznetsov, S.G., Sharan, S.K., Li, K., Rao, P.H., and Pati, D. (2008). A handcuff model for the cohesin complex. J. Cell Biol. 183, 101. Hauf, S., Roitinger, E., Koch, B., Dittrich, C.M., Mechtler, K., and Peters, J.-M. (2005). Dissociation of cohesin from chromosome arms and loss of arm cohesion during early mitosis depends on phosphorylation of SA2. PLoS Biol. 3, e69. 102. Badrinarayanan, A., Reyes-Lamothe, R., Uphoff, S., Leake, M.C., and Sherratt, D.J. (2012). In vivo architecture and action of bacterial structural maintenance of chromosome proteins. Science 338, 528–531. 103. Fennell-Fezzie, R., Gradia, S.D., Akey, D., and Berger, J.M. (2005). The MukF subunit of Escherichia coli condensin: architecture and functional relationship to kleisins. EMBO J. 24, 1921–1930. 104. Barysz, H., Kim, J.H., Chen, Z.A., Hudson, D.F., Rappsilber, J., Gerloff, D.L., and Earnshaw, W.C. (2015). Three-dimensional topology of the SMC2/SMC4 subcomplex from chicken condensin I revealed by crosslinking and molecular modelling. Open Biol. 5, 150005. 105. Walther, N., Hossain, M.J., Politi, A.Z., Koch, B., Kueblbeck, M., Ødegård-Fougner, Ø., Lampe, M., and Ellenberg, J. (2018). A quantitative map of human Condensins provides new insights into mitotic chromosome architecture. J. Cell Biol. 271, 2309–2328. 106. Diebold-Durand, M.-L., Lee, H., Ruiz Avila, L.B., Noh, H., Shin, H.-C., Im, H., Bock, F.P., Bürmann, F., Durand, A., Basfeld, A., et al. (2017). Structure of full-length SMC and rearrangements required for chromosome organization. Mol. Cell 67, 334–347.e5.
+
+R1280 Current Biology 28, R1266–R1281, November 5, 2018
+
+118. Beckouët, F., Srinivasan, M., Roig, M.B., Chan, K.-L., Scheinost, J.C., Batty, P., Hu, B., Petela, N., Gligoris, T., Smith, A.C., et al. (2016). Releasing activity disengages cohesin’s Smc3/Scc1 interface in a process blocked by acetylation. Mol. Cell 61, 563–574. 119. Chan, K.-L., Roig, M.B., Hu, B., Beckouët, F., Metson, J., and Nasmyth, K. (2012). Cohesin’s DNA exit gate is distinct from its entrance gate and is regulated by acetylation. Cell 150, 961–974. 120. Eichinger, C.S., Kurze, A., Oliveira, R.A., and Nasmyth, K. (2013). Disengaging the Smc3/kleisin interface releases cohesin from Drosophila chromosomes during interphase and mitosis. EMBO J. 32, 656–665. 121. Buheitel, J., and Stemmann, O. (2013). Prophase pathway-dependent removal of cohesin from human chromosomes requires opening of the Smc3-Scc1 gate. EMBO J. 32, 666–676. 122. Ouyang, Z., Zheng, G., Tomchick, D.R., Luo, X., and Yu, H. (2016). Structural basis and IP6 requirement for Pds5-dependent cohesin dynamics. Mol. Cell 62, 248–259. 123. Elbatsh, A.M.O., Haarhuis, J.H.I., Petela, N., Chapard, C., Fish, A., Celie, P.H., Stadnik, M., Ristic, D., Wyman, C., Medema, R.H., et al. (2016). Cohesin releases DNA through asymmetric ATPase-driven ring opening. Mol. Cell 61, 575–588. 124. Ouyang, Z., and Yu, H. (2017). Releasing the cohesin ring: A rigid scaffold model for opening the DNA exit gate by Pds5 and Wapl. Bioessays 39, 1600207. 125. Wang, X., Le, T.B.K., Lajoie, B.R., Dekker, J., Laub, M.T., and Rudner, D.Z. (2015). Condensin promotes the juxtaposition of DNA flanking its loading site in Bacillus subtilis. Genes Dev. 29, 1661–1675. 126. Gerlich, D., Hirota, T., Koch, B., Peters, J.-M., and Ellenberg, J. (2006). Condensin I stabilizes chromosomes mechanically through a dynamic interaction in live cells. Curr. Biol. 16, 333–344.
+
+[Page 16]
+
+127. Naumova, N., Imakaev, M., Fudenberg, G., Zhan, Y., Lajoie, B.R., Mirny, L.A., and Dekker, J. (2013). Organization of the mitotic chromosome. Science 342, 948–953. 128. Fudenberg, G., Abdennur, N., Imakaev, M., Goloborodko, A., and Mirny, L.A. (2018). Emerging evidence of chromosome folding by loop extrusion. Cold Spring Harb. Symp. Quant. Biol. 82, 45–55.
+
+129. Gruber, S. (2014). Multilayer chromosome organization through DNA bending, bridging and extrusion. Curr. Opin. Microbiol. 22, 102–210. 130. Mc Intyre, J., Muller, E.G.D., Weitzer, S., Snydsman, B.E., Davis, T.N., and Uhlmann, F. (2007). In vivo analysis of cohesin architecture using FRET in the budding yeast Saccharomyces cerevisiae. EMBO J. 26,
+
+Current Biology 28, R1266–R1281, November 5, 2018 R1281

@@ -1,0 +1,59 @@
+{
+  "paper_id": "sha256-27caf52e88257428",
+  "content_kind": "pdf_backed",
+  "addition_mode": "pdf_guided",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/TF-DNA_interactions/Cui 2026 NatCommun - Intrinsic DNA codes govern distinct modes of nucleosome-transcription factor interactions.pdf",
+  "pdf_sha256": "27caf52e8825742884bd15b05e4609a6c4d38b22c73c0f697ec0adf10a488535",
+  "filename": "Cui 2026 NatCommun - Intrinsic DNA codes govern distinct modes of nucleosome-transcription factor interactions.pdf",
+  "item_type": "article",
+  "title_query": "Intrinsic DNA codes govern distinct modes of nucleosome transcription factor interactions",
+  "date_indexed": "2026-06-15T08:29:42.909151+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": null,
+  "metadata_source": "manual_bibtex",
+  "doi_candidates": [],
+  "doi_candidate_details": [],
+  "semantic_scholar": {
+    "query": "Intrinsic DNA codes govern distinct modes of nucleosome transcription factor interactions",
+    "limit": 0,
+    "attempts": [],
+    "selected_paper_id": "",
+    "best_candidate": null,
+    "merged_candidates": []
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false,
+    "accepted_doi": "",
+    "best_candidate_doi": "",
+    "crossref_attempts": [],
+    "accepted_source": "",
+    "matched_by": ""
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-27caf52e88257428.json",
+    "text_path": "paper_index/text/sha256-27caf52e88257428.txt",
+    "chunk_path": "paper_index/chunks/sha256-27caf52e88257428.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "5ba314dfe153fc7c480070d246f760b37a1e92840b0e0a8018af53ba3ada86f2",
+    "chunk_count": 35,
+    "chunk_target_chars": 2000,
+    "chunk_overlap_chars": 200,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "raw_bibtex": "@article{carson2026codes,\n  title = {Intrinsic DNA codes govern distinct modes of nucleosome-transcription factor interactions},\n  author = {Christopher W. Carson, Sheethal Umesh Nagalakshmi, Image Adhikari, Julia M. Freewoman, Joseph R. Pizzi, Prakyat Prakash, Feng Cui},\n  year = {2026},\n  journal = {Nature Communications},\n  doi = {10.1038/s41467-026-74448-4},\n  url = {https://doi.org/10.1038/s41467-026-74448-4},\n  issn = {2041-1723},\n  publisher = {Springer Science and Business Media LLC}\n}",
+    "parsed_bibtex_type": "article",
+    "source_note": "pasted into library_add.py pdf flow",
+    "bibtex_key": "carson2026codes"
+  }
+}

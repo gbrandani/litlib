@@ -1,0 +1,724 @@
+{
+  "paper_id": "sha256-73875aac701bc4ab",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_theory/Vanden-Eijnden 2023 - Building Normalizing Flows with Stochastic Interpolants.pdf",
+  "pdf_sha256": "73875aac701bc4ab7c0250afc898ef75dd21ee1b97d9a838cc8b48d8fbc42124",
+  "filename": "Vanden-Eijnden 2023 - Building Normalizing Flows with Stochastic Interpolants.pdf",
+  "item_type": "article",
+  "title_query": "Building Normalizing Flows with Stochastic Interpolants",
+  "filename_hints": {
+    "year_hint": 2023,
+    "venue_hint": "",
+    "prefix": "Vanden-Eijnden 2023"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:24:16.062493+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2023!=2022"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "manual_verified",
+  "semantic_scholar": {
+    "query": "Building Normalizing Flows with Stochastic Interpolants",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "Building Normalizing Flows with Stochastic Interpolants",
+        "status": "needs_manual_review",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2023!=2022"
+        ],
+        "best_score": 1.0,
+        "candidate_count": 10
+      },
+      {
+        "query": "arXiv:2209.15571v3 [cs.LG] 9 Mar 2023",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "A BSTRACT A generative model based on a continuous time normalizing flow between any pair of base and target probability densities is proposed",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      }
+    ],
+    "best_candidate": {
+      "paperId": "4e6244baf4236f4635e85f7dfb941a9a0a6c4a11",
+      "externalIds": {
+        "DBLP": "conf/iclr/AlbergoV23",
+        "ArXiv": "2209.15571",
+        "DOI": "10.48550/arXiv.2209.15571",
+        "CorpusId": 252668615
+      },
+      "url": "https://www.semanticscholar.org/paper/4e6244baf4236f4635e85f7dfb941a9a0a6c4a11",
+      "title": "Building Normalizing Flows with Stochastic Interpolants",
+      "venue": "International Conference on Learning Representations",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "http://arxiv.org/pdf/2209.15571",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.15571, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-09-30",
+      "journal": {
+        "name": "ArXiv",
+        "volume": "abs/2209.15571"
+      },
+      "authors": [
+        {
+          "authorId": "27590460",
+          "name": "M. Albergo"
+        },
+        {
+          "authorId": "1397404076",
+          "name": "E. Vanden-Eijnden"
+        }
+      ],
+      "abstract": "A generative model based on a continuous-time normalizing flow between any pair of base and target probability densities is proposed. The velocity field of this flow is inferred from the probability current of a time-dependent density that interpolates between the base and the target in finite time. Unlike conventional normalizing flow inference methods based the maximum likelihood principle, which require costly backpropagation through ODE solvers, our interpolant approach leads to a simple quadratic loss for the velocity itself which is expressed in terms of expectations that are readily amenable to empirical estimation. The flow can be used to generate samples from either the base or target, and to estimate the likelihood at any time along the interpolant. In addition, the flow can be optimized to minimize the path length of the interpolant density, thereby paving the way for building optimal transport maps. In situations where the base is a Gaussian density, we also show that the velocity of our normalizing flow can also be used to construct a diffusion model to sample the target as well as estimate its score. However, our approach shows that we can bypass this diffusion completely and work at the level of the probability flow with greater simplicity, opening an avenue for methods based solely on ordinary differential equations as an alternative to those based on stochastic differential equations. Benchmarking on density estimation tasks illustrates that the learned flow can match and surpass conventional continuous flows at a fraction of the cost, and compares well with diffusions on image generation on CIFAR-10 and ImageNet $32\\times32$. The method scales ab-initio ODE flows to previously unreachable image resolutions, demonstrated up to $128\\times128$."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "4e6244baf4236f4635e85f7dfb941a9a0a6c4a11",
+        "title": "Building Normalizing Flows with Stochastic Interpolants",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2023,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4fb25bb556794786767bdf582aab83e55cac07e9",
+        "title": "SESaMo: Symmetry-Enforcing Stochastic Modulation for Normalizing Flows",
+        "score": 0.4267,
+        "title_similarity": 0.5067,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5799743ebcf90f4b46c67bc1294d1bc42749d224",
+        "title": "DisasterNet: Causal Bayesian Networks with Normalizing Flows for Cascading Hazards Estimation from Satellite Imagery",
+        "score": 0.39,
+        "title_similarity": 0.31,
+        "query_year": 2023,
+        "candidate_year": 2023,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d103b97c6cc629c9bd84d16f6ded9e31bacf8582",
+        "title": "BoltzNCE: Learning Likelihoods for Boltzmann Generation with Stochastic Interpolants and Noise Contrastive Estimation",
+        "score": 0.2338,
+        "title_similarity": 0.3138,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "63960678d4c6dcad16d3e9a64abe68fb04efb5a7",
+        "title": "SPDFlow: Lightweight Normalizing Flows With Range Asymmetric Numeral Systems for Online Compression of Large-Scale Smart Metering Data",
+        "score": 0.2189,
+        "title_similarity": 0.2989,
+        "query_year": 2023,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3c7c7b2ad2261c7617516617e10b95836539359b",
+        "title": "Application of stochastic storm transposition for hydrologic modeling in the mountainous western US",
+        "score": 0.1869,
+        "title_similarity": 0.1569,
+        "query_year": 2023,
+        "candidate_year": 2024,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "cc9d6a9cf48f8311fe343089b2615477b4f2dd0f",
+        "title": "SplineFlow: Flow Matching for Dynamical Systems with B-Spline Interpolants",
+        "score": 0.0818,
+        "title_similarity": 0.1618,
+        "query_year": 2023,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a016871842152c4c91290686b54e7dfae3cb2f08",
+        "title": "Solving Schrödinger Bridge Problem via Continuous Normalizing Flow",
+        "score": 0.0769,
+        "title_similarity": 0.1569,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3debb49d1ed0e11922ee2ebff1c8f2aebb879d84",
+        "title": "Assessment of Simulation-based Inference Methods for Stochastic Compartmental Models in Epidemiological Research",
+        "score": 0.075,
+        "title_similarity": 0.155,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3a6641999cb7c094e2a4cc262e93d8723ff6619c",
+        "title": "GeodesicNVS: Probability Density Geodesic Flow Matching for Novel View Synthesis",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2023,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.48550/arxiv.2209.15571"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 23,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "4e6244baf4236f4635e85f7dfb941a9a0a6c4a11",
+          "externalIds": {
+            "DBLP": "conf/iclr/AlbergoV23",
+            "ArXiv": "2209.15571",
+            "DOI": "10.48550/arXiv.2209.15571",
+            "CorpusId": 252668615
+          },
+          "url": "https://www.semanticscholar.org/paper/4e6244baf4236f4635e85f7dfb941a9a0a6c4a11",
+          "title": "Building Normalizing Flows with Stochastic Interpolants",
+          "venue": "International Conference on Learning Representations",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "http://arxiv.org/pdf/2209.15571",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.15571, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-09-30",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2209.15571"
+          },
+          "authors": [
+            {
+              "authorId": "27590460",
+              "name": "M. Albergo"
+            },
+            {
+              "authorId": "1397404076",
+              "name": "E. Vanden-Eijnden"
+            }
+          ],
+          "abstract": "A generative model based on a continuous-time normalizing flow between any pair of base and target probability densities is proposed. The velocity field of this flow is inferred from the probability current of a time-dependent density that interpolates between the base and the target in finite time. Unlike conventional normalizing flow inference methods based the maximum likelihood principle, which require costly backpropagation through ODE solvers, our interpolant approach leads to a simple quadratic loss for the velocity itself which is expressed in terms of expectations that are readily amenable to empirical estimation. The flow can be used to generate samples from either the base or target, and to estimate the likelihood at any time along the interpolant. In addition, the flow can be optimized to minimize the path length of the interpolant density, thereby paving the way for building optimal transport maps. In situations where the base is a Gaussian density, we also show that the velocity of our normalizing flow can also be used to construct a diffusion model to sample the target as well as estimate its score. However, our approach shows that we can bypass this diffusion completely and work at the level of the probability flow with greater simplicity, opening an avenue for methods based solely on ordinary differential equations as an alternative to those based on stochastic differential equations. Benchmarking on density estimation tasks illustrates that the learned flow can match and surpass conventional continuous flows at a fraction of the cost, and compares well with diffusions on image generation on CIFAR-10 and ImageNet $32\\times32$. The method scales ab-initio ODE flows to previously unreachable image resolutions, demonstrated up to $128\\times128$."
+        },
+        {
+          "paperId": "d103b97c6cc629c9bd84d16f6ded9e31bacf8582",
+          "externalIds": {
+            "PubMedCentral": "12461797",
+            "ArXiv": "2507.00846",
+            "DBLP": "journals/corr/abs-2507-00846",
+            "DOI": "10.48550/arXiv.2507.00846",
+            "CorpusId": 280079961,
+            "PubMed": "41019229"
+          },
+          "url": "https://www.semanticscholar.org/paper/d103b97c6cc629c9bd84d16f6ded9e31bacf8582",
+          "title": "BoltzNCE: Learning Likelihoods for Boltzmann Generation with Stochastic Interpolants and Noise Contrastive Estimation",
+          "venue": "arXiv.org",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.00846, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-01",
+          "journal": {
+            "name": "ArXiv"
+          },
+          "authors": [
+            {
+              "authorId": "2110049976",
+              "name": "Rishal Aggarwal"
+            },
+            {
+              "authorId": "2395690047",
+              "name": "Jacky Chen"
+            },
+            {
+              "authorId": "12061674",
+              "name": "N. Boffi"
+            },
+            {
+              "authorId": "2339614519",
+              "name": "D. Koes"
+            }
+          ],
+          "abstract": "Efficient sampling from the Boltzmann distribution defined by an energy function is a key challenge in modeling physical systems such as molecules. Boltzmann Generators tackle this by leveraging Continuous Normalizing Flows that transform a simple prior into a distribution that can be reweighted to match the Boltzmann distribution using sample likelihoods. However, obtaining likelihoods requires computing costly Jacobians during integration, making it impractical for large molecular systems. To overcome this, we propose learning the likelihood of the generated distribution via an energy-based model trained with noise contrastive estimation and score matching. By using stochastic interpolants to anneal between the prior and generated distributions, we combine both the objective functions to efficiently learn the density function. On the alanine dipeptide system, we demonstrate that our method yields free energy profiles and energy distributions comparable to those obtained with exact likelihoods. Additionally, we show that free energy differences between metastable states can be estimated accurately with orders-of-magnitude speedup."
+        },
+        {
+          "paperId": "4fb25bb556794786767bdf582aab83e55cac07e9",
+          "externalIds": {
+            "ArXiv": "2505.19619",
+            "DBLP": "journals/corr/abs-2505-19619",
+            "DOI": "10.48550/arXiv.2505.19619",
+            "CorpusId": 278904560
+          },
+          "url": "https://www.semanticscholar.org/paper/4fb25bb556794786767bdf582aab83e55cac07e9",
+          "title": "SESaMo: Symmetry-Enforcing Stochastic Modulation for Normalizing Flows",
+          "venue": "arXiv.org",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.19619, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-05-26",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2505.19619"
+          },
+          "authors": [
+            {
+              "authorId": "2339781102",
+              "name": "Janik Kreit"
+            },
+            {
+              "authorId": "2339778981",
+              "name": "Dominic Schuh"
+            },
+            {
+              "authorId": "52031641",
+              "name": "K. Nicoli"
+            },
+            {
+              "authorId": "103152554",
+              "name": "L. Funcke"
+            }
+          ],
+          "abstract": "Deep generative models have recently garnered significant attention across various fields, from physics to chemistry, where sampling from unnormalized Boltzmann-like distributions represents a fundamental challenge. In particular, autoregressive models and normalizing flows have become prominent due to their appealing ability to yield closed-form probability densities. Moreover, it is well-established that incorporating prior knowledge - such as symmetries - into deep neural networks can substantially improve training performances. In this context, recent advances have focused on developing symmetry-equivariant generative models, achieving remarkable results. Building upon these foundations, this paper introduces Symmetry-Enforcing Stochastic Modulation (SESaMo). Similar to equivariant normalizing flows, SESaMo enables the incorporation of inductive biases (e.g., symmetries) into normalizing flows through a novel technique called stochastic modulation. This approach enhances the flexibility of the generative model, allowing to effectively learn a variety of exact and broken symmetries. Our numerical experiments benchmark SESaMo in different scenarios, including an 8-Gaussian mixture model and physically relevant field theories, such as the $\\phi^4$ theory and the Hubbard model."
+        },
+        {
+          "paperId": "63960678d4c6dcad16d3e9a64abe68fb04efb5a7",
+          "externalIds": {
+            "DBLP": "journals/iotj/JeongSH26",
+            "DOI": "10.1109/JIOT.2025.3640010",
+            "CorpusId": 283604621
+          },
+          "url": "https://www.semanticscholar.org/paper/63960678d4c6dcad16d3e9a64abe68fb04efb5a7",
+          "title": "SPDFlow: Lightweight Normalizing Flows With Range Asymmetric Numeral Systems for Online Compression of Large-Scale Smart Metering Data",
+          "venue": "IEEE Internet of Things Journal",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JIOT.2025.3640010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JIOT.2025.3640010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-02-15",
+          "journal": {
+            "name": "IEEE Internet of Things Journal",
+            "pages": "7695-7713",
+            "volume": "13"
+          },
+          "authors": [
+            {
+              "authorId": "2397430984",
+              "name": "Heehun Jeong"
+            },
+            {
+              "authorId": "2004396527",
+              "name": "Giup Seo"
+            },
+            {
+              "authorId": "2287967739",
+              "name": "Euiseok Hwang"
+            }
+          ],
+          "abstract": "In this article, we propose a novel lossless data compression framework, called Stochastic Pattern Discrete Flow (SPDFlow), designed for lightweight IoT applications. SPDFlow integrates normalizing flow models with range Asymmetric Numeral Systems (rANS) to efficiently compress high-frequency and stochastic time-series smart metering data. Building on advances in invertible flow-based distribution mapping, we design an online compression scheme optimized for electricity usage profiles sampled from tens of milliseconds to several seconds. The proposed linear and lightweight architecture enables real-time deployment on resource-constrained edge devices while maintaining robust modeling capability under unpredictable, event-driven peaks. A customized discretization strategy allows efficient encoding of wide-ranging measurement values. Comprehensive theoretical analysis and experiments across diverse datasets verify SPDFlow’s superior compression performance compared with both traditional and recent learning-based methods, achieving up to 31% data volume reduction under short update intervals. Furthermore, real-world deployment on Raspberry Pi devices confirms its practical feasibility. To the best of our knowledge, this is the first work to explore lossless compression of time-series load profiles using normalizing flows."
+        },
+        {
+          "paperId": "5799743ebcf90f4b46c67bc1294d1bc42749d224",
+          "externalIds": {
+            "DBLP": "conf/kdd/LiBMNWX23",
+            "DOI": "10.1145/3580305.3599807",
+            "CorpusId": 260500005
+          },
+          "url": "https://www.semanticscholar.org/paper/5799743ebcf90f4b46c67bc1294d1bc42749d224",
+          "title": "DisasterNet: Causal Bayesian Networks with Normalizing Flows for Cascading Hazards Estimation from Satellite Imagery",
+          "venue": "Knowledge Discovery and Data Mining",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3580305.3599807?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3580305.3599807, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Book",
+            "Conference"
+          ],
+          "publicationDate": "2023-08-04",
+          "journal": {
+            "name": "Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining"
+          },
+          "authors": [
+            {
+              "authorId": "2181353249",
+              "name": "Xuechun Li"
+            },
+            {
+              "authorId": "2092105998",
+              "name": "P. Bürgi"
+            },
+            {
+              "authorId": "2111664945",
+              "name": "Wei Ma"
+            },
+            {
+              "authorId": "2065075859",
+              "name": "Hae Young Noh"
+            },
+            {
+              "authorId": "35191197",
+              "name": "D. Wald"
+            },
+            {
+              "authorId": "8182534",
+              "name": "Susu Xu"
+            }
+          ],
+          "abstract": "Sudden-onset hazards like earthquakes often induce cascading secondary hazards (e.g., landslides, liquefaction, debris flows, etc.) and subsequent impacts (e.g., building and infrastructure damage) that cause catastrophic human and economic losses. Rapid and accurate estimates of these hazards and impacts are critical for timely and effective post-disaster responses. Emerging remote sensing techniques provide pre- and post-event satellite images for rapid hazard estimation. However, hazards and damage often co-occur or colocate with underlying complex cascading geophysical processes, making it challenging to directly differentiate multiple hazards and impacts from satellite imagery using existing single-hazard models. We introduce DisasterNet, a novel family of causal Bayesian networks to model processes that a major hazard triggers cascading hazards and impacts and further jointly induces signal changes in remotely sensed observations. We integrate normalizing flows to effectively model the highly complex causal dependencies in this cascading process. A triplet loss is further designed to leverage prior geophysical knowledge to enhance the identifiability of our highly expressive Bayesian networks. Moreover, a novel stochastic variational inference with normalizing flows is derived to jointly approximate posteriors of multiple unobserved hazards and impacts from noisy remote sensing observations. Integrating with the USGS Prompt Assessment of Global Earthquakes for Response (PAGER) system, our framework is evaluated in recent global earthquake events. Evaluation results show that DisasterNet significantly improves multiple hazard and impact estimation compared to existing USGS products."
+        },
+        {
+          "paperId": "cc9d6a9cf48f8311fe343089b2615477b4f2dd0f",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2601-23072",
+            "ArXiv": "2601.23072",
+            "DOI": "10.48550/arXiv.2601.23072",
+            "CorpusId": 285240734
+          },
+          "url": "https://www.semanticscholar.org/paper/cc9d6a9cf48f8311fe343089b2615477b4f2dd0f",
+          "title": "SplineFlow: Flow Matching for Dynamical Systems with B-Spline Interpolants",
+          "venue": "arXiv.org",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.23072, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-01-30",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2601.23072"
+          },
+          "authors": [
+            {
+              "authorId": "2142534220",
+              "name": "S. Rathod"
+            },
+            {
+              "authorId": "2326838116",
+              "name": "Pietro Lio"
+            },
+            {
+              "authorId": "2327006713",
+              "name": "Xiao Zhang"
+            }
+          ],
+          "abstract": "Flow matching is a scalable generative framework for characterizing continuous normalizing flows with wide-range applications. However, current state-of-the-art methods are not well-suited for modeling dynamical systems, as they construct conditional paths using linear interpolants that may not capture the underlying state evolution, especially when learning higher-order dynamics from irregular sampled observations. Constructing unified paths that satisfy multi-marginal constraints across observations is challenging, since na\\\"ive higher-order polynomials tend to be unstable and oscillatory. We introduce SplineFlow, a theoretically grounded flow matching algorithm that jointly models conditional paths across observations via B-spline interpolation. Specifically, SplineFlow exploits the smoothness and stability of B-spline bases to learn the complex underlying dynamics in a structured manner while ensuring the multi-marginal requirements are met. Comprehensive experiments across various deterministic and stochastic dynamical systems of varying complexity, as well as on cellular trajectory inference tasks, demonstrate the strong improvement of SplineFlow over existing baselines. Our code is available at: https://github.com/santanurathod/SplineFlow."
+        },
+        {
+          "paperId": "a016871842152c4c91290686b54e7dfae3cb2f08",
+          "externalIds": {
+            "ArXiv": "2503.17829",
+            "DOI": "10.4208/eajam.2025-085.181125",
+            "CorpusId": 277272551
+          },
+          "url": "https://www.semanticscholar.org/paper/a016871842152c4c91290686b54e7dfae3cb2f08",
+          "title": "Solving Schrödinger Bridge Problem via Continuous Normalizing Flow",
+          "venue": "East Asian Journal on Applied Mathematics",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.17829, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-03-22",
+          "journal": {
+            "name": "East Asian Journal on Applied Mathematics"
+          },
+          "authors": [
+            {
+              "authorId": "2182688231",
+              "name": "Yang Jing"
+            },
+            {
+              "authorId": "2256977492",
+              "name": "Lei Li"
+            },
+            {
+              "authorId": "2249883379",
+              "name": "Jingtong Zhang"
+            }
+          ],
+          "abstract": "The Schrödinger bridge problem (SBP), which can be understood as an entropy-regularized optimal transport, seeks to compute stochastic dynamic mappings connecting two given distributions. SBP has shown significant theoretical importance and broad practical potential, with applications spanning a wide range of interdisciplinary fields. While theoretical aspects of the SBP are well-understood, practical computational solutions for general cases have remained challenging. This work introduces a computational framework that leverages continuous normalizing flows and score matching methods to approximate the drift in the dynamic formulation of the SBP. The learned drift term can be used for building generative models, opening new possibilities for applications in probability flow-based methods. We also provide a rigorous Γ−convergence analysis for our algorithm, demonstrating that the neuron network solutions converge to the theoretical ones as the regularization parameter tends to infinity. Lastly, we validate our algorithm through numerical experiments on fundamental cases."
+        },
+        {
+          "paperId": "3debb49d1ed0e11922ee2ebff1c8f2aebb879d84",
+          "externalIds": {
+            "ArXiv": "2512.02528",
+            "CorpusId": 283458445
+          },
+          "url": "https://www.semanticscholar.org/paper/3debb49d1ed0e11922ee2ebff1c8f2aebb879d84",
+          "title": "Assessment of Simulation-based Inference Methods for Stochastic Compartmental Models in Epidemiological Research",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.02528, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-12-02",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2323564128",
+              "name": "Vincent Wieland"
+            },
+            {
+              "authorId": "2395767389",
+              "name": "Nils Wassmuth"
+            },
+            {
+              "authorId": "3314810",
+              "name": "L. Contento"
+            },
+            {
+              "authorId": "2395768690",
+              "name": "M. Kuhn"
+            },
+            {
+              "authorId": "2271176646",
+              "name": "Jan Hasenauer"
+            }
+          ],
+          "abstract": "Global pandemics, such as the recent COVID-19 crisis, highlight the need for stochastic epidemic models that can capture the randomness inherent in the spread of disease. Such models must be accompanied by methods for estimating parameters in order to generate fast nowcasts and short-term forecasts that can inform public health decisions. This paper presents a comparison of two advanced Bayesian inference methods: 1) pseudo-marginal particle Markov chain Monte Carlo, using an unbiased likelihood estimate obtained by Particle Filter (PF), and 2) Conditional Normalizing Flows (CNF). We investigate their performance on three commonly used compartmental models: A classical Susceptible-Infected-Susceptible (SIS), a Susceptible-Infected-Recovered (SIR) model and a two-variant Susceptible-Exposed-Infected-Recovered (SEIR) model, complemented by an observation model that maps latent trajectories to empirical data. Addressing the challenges of intractable likelihoods for parameter inference in stochastic settings, our analysis highlights how these likelihood-free methods provide accurate and robust inference capabilities. The results of our simulation study further underscore the effectiveness of these approaches in capturing the stochastic dynamics of epidemics, providing prediction capabilities for the control of epidemic outbreaks. Results on an Ethiopian cohort study demonstrate operational robustness under real-world noise and irregular data sampling. To facilitate reuse and to enable building pipelines that ultimately contribute to better informed decision making in public health, we make code and synthetic datasets publicly available."
+        },
+        {
+          "paperId": "3c7c7b2ad2261c7617516617e10b95836539359b",
+          "externalIds": {
+            "DOI": "10.1007/s00477-024-02853-6",
+            "CorpusId": 274213101
+          },
+          "url": "https://www.semanticscholar.org/paper/3c7c7b2ad2261c7617516617e10b95836539359b",
+          "title": "Application of stochastic storm transposition for hydrologic modeling in the mountainous western US",
+          "venue": "Stochastic environmental research and risk assessment (Print)",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1007/s00477-024-02853-6",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00477-024-02853-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00477-024-02853-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-11-23",
+          "journal": {
+            "name": "Stochastic Environmental Research and Risk Assessment",
+            "pages": "109 - 127",
+            "volume": "39"
+          },
+          "authors": [
+            {
+              "authorId": "2262274745",
+              "name": "Seth Lawler"
+            },
+            {
+              "authorId": "2331977908",
+              "name": "Matthew Deshotel"
+            },
+            {
+              "authorId": "2331978019",
+              "name": "Alyssa Hendricks Dietrich"
+            },
+            {
+              "authorId": "2336827122",
+              "name": "Lan Zhang"
+            },
+            {
+              "authorId": "2331974741",
+              "name": "Gregory Karlovits"
+            },
+            {
+              "authorId": "2315506020",
+              "name": "Celso Ferreira"
+            }
+          ],
+          "abstract": "Recent studies have shown that stochastic storm transposition (SST) is an effective method for flood frequency analysis in small to medium sized watersheds. The effectiveness of this method has not been evaluated in larger watersheds in mountainous regions where snowmelt is the primary driver for peak flow events. In the western United States, several watersheds fall in an area where NOAA Atlas-14 precipitation frequency estimates do not exist. This data sparsity limits the available methods for developing flood frequency estimates. In this research, we present a case study for exploring the use of SST in the high desert of Wyoming, with challenges of scale, regulation, and snowmelt. Building on existing methods, a framework for performing SST in cold mountain regions is proposed, including incorporation of snowmelt functions, normalization fields in high altitude locations, and techniques for hydrologic model adjustment to account for epistemic uncertainty due to regulation. Results show that the foundational processes in the SST framework provide a valuable alternative for peak flow analysis in locations where frequency-based precipitation is not available."
+        },
+        {
+          "paperId": "3a6641999cb7c094e2a4cc262e93d8723ff6619c",
+          "externalIds": {
+            "ArXiv": "2603.01010",
+            "DBLP": "journals/corr/abs-2603-01010",
+            "DOI": "10.48550/arXiv.2603.01010",
+            "CorpusId": 286224495
+          },
+          "url": "https://www.semanticscholar.org/paper/3a6641999cb7c094e2a4cc262e93d8723ff6619c",
+          "title": "GeodesicNVS: Probability Density Geodesic Flow Matching for Novel View Synthesis",
+          "venue": "arXiv.org",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.01010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-03-01",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2603.01010"
+          },
+          "authors": [
+            {
+              "authorId": "2379980773",
+              "name": "Xuqin Wang"
+            },
+            {
+              "authorId": "2387387852",
+              "name": "Tao Wu"
+            },
+            {
+              "authorId": "2372760391",
+              "name": "Yanfeng Zhang"
+            },
+            {
+              "authorId": "2373503382",
+              "name": "Lu Liu"
+            },
+            {
+              "authorId": "2243451200",
+              "name": "Mingwei Sun"
+            },
+            {
+              "authorId": "2242918639",
+              "name": "Yongliang Wang"
+            },
+            {
+              "authorId": "47710182",
+              "name": "Niclas Zeller"
+            },
+            {
+              "authorId": "2379937479",
+              "name": "Daniel Cremers"
+            }
+          ],
+          "abstract": "Recent advances in generative modeling have substantially enhanced novel view synthesis, yet maintaining consistency across viewpoints remains challenging. Diffusion-based models rely on stochastic noise-to-data transitions, which obscure deterministic structures and yield inconsistent view predictions. We advocate a Data-to-Data Flow Matching framework that learns deterministic transformations between paired views, enhancing view-consistent synthesis through explicit data coupling. Building on this, we propose Probability Density Geodesic Flow Matching (PDG-FM), which aligns interpolation trajectories with density-based geodesics of a data manifold. To enable tractable geodesic estimation, we employ a teacher-student framework that distills density-based geodesic interpolants into an efficient ambient-space predictor. Empirically, our method surpasses diffusion-based baselines on Objaverse and GSO30 datasets, demonstrating improved structural coherence and smoother transitions across views. These results highlight the advantages of incorporating data-dependent geometric regularization into deterministic flow matching for consistent novel view generation."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-73875aac701bc4ab.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-73875aac701bc4ab.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-73875aac701bc4ab.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "ec3b53afc53aa9fbebe85ee0cabe73e0258ddead125aa3c40723680915457b0a",
+    "chunk_count": 47,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "title": "Building Normalizing Flows with Stochastic Interpolants",
+    "authors": "Michael S. Albergo, Eric Vanden-Eijnden",
+    "year": "2023",
+    "venue": "International Conference on Learning Representations",
+    "doi": "10.48550/arXiv.2209.15571",
+    "url": "https://openreview.net/forum?id=li7qeBbCR1t",
+    "abstract": "",
+    "source_urls": [
+      "https://openreview.net/forum?id=li7qeBbCR1t",
+      "https://iclr.cc/virtual/2023/poster/10866"
+    ],
+    "source_note": "verified as the ICLR 2023 conference paper; retains arXiv DOI",
+    "bibtex_key": "albergo2023building"
+  },
+  "content_kind": "pdf_backed"
+}

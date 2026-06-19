@@ -1,0 +1,860 @@
+{
+  "paper_id": "sha256-8f82dc5b9dbccc75",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/nucleosome_positioning/Van Noort - PNAS 2012 - Sequence based prediction of single nucleosome positioning.pdf",
+  "pdf_sha256": "8f82dc5b9dbccc7512a7a4c524b26f5d63985b2909b146dd7587e27e8ec4b072",
+  "filename": "Van Noort - PNAS 2012 - Sequence based prediction of single nucleosome positioning.pdf",
+  "item_type": "article",
+  "title_query": "Sequence based prediction of single nucleosome positioning",
+  "filename_hints": {
+    "year_hint": null,
+    "venue_hint": "",
+    "prefix": "Van Noort"
+  },
+  "doi_candidates": [
+    "10.1073/pnas.1205659109"
+  ],
+  "date_indexed": "2026-04-17T03:34:15.446098+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Sequence based prediction of single nucleosome positioning",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "5b343753f9ee7f43f5ee5abd62361eed60fab109",
+      "externalIds": {
+        "MAG": "1973850164",
+        "DOI": "10.1073/PNAS.1205659109",
+        "CorpusId": 30521995,
+        "PubMed": "22908247"
+      },
+      "url": "https://www.semanticscholar.org/paper/5b343753f9ee7f43f5ee5abd62361eed60fab109",
+      "title": "Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2012,
+      "openAccessPdf": {
+        "url": "https://www.pnas.org/content/pnas/109/38/E2514.full.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/PNAS.1205659109?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/PNAS.1205659109, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2012-08-20",
+      "journal": {
+        "name": "Proceedings of the National Academy of Sciences",
+        "pages": "E2514 - E2522",
+        "volume": "109"
+      },
+      "authors": [
+        {
+          "authorId": "4677550",
+          "name": "T. van der Heijden"
+        },
+        {
+          "authorId": "4068849",
+          "name": "J. V. van Vugt"
+        },
+        {
+          "authorId": "4906993",
+          "name": "C. Logie"
+        },
+        {
+          "authorId": "6162541",
+          "name": "J. van Noort"
+        }
+      ],
+      "abstract": null
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "5b343753f9ee7f43f5ee5abd62361eed60fab109",
+        "title": "Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2012,
+        "candidate_year": 2012,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ce23374f7b8f4dbae6c1169076ae3b584da73c92",
+        "title": "Correction for van der Heijden et al., Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2012,
+        "candidate_year": 2013,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e44ec3529f7002b03d9e7e2452fadd7eb493d9d1",
+        "title": "Prediction of nucleosome rotational positioning in yeast and human genomes based on sequence-dependent DNA anisotropy",
+        "score": 0.5963,
+        "title_similarity": 0.6763,
+        "query_year": 2012,
+        "candidate_year": 2014,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5879f5b3722669679f36e92213e267d9bd54e3bb",
+        "title": "Prediction of nucleosome rotational positioning in yeast and human genomes based on sequence-dependent DNA anisotropy",
+        "score": 0.5963,
+        "title_similarity": 0.6763,
+        "query_year": 2012,
+        "candidate_year": 2014,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4b9ece8ceb70220986dbbcfeb4357f66bd8a50e9",
+        "title": "Nucleosome positioning based on DNA sequence embedding and deep learning",
+        "score": 0.4933,
+        "title_similarity": 0.5733,
+        "query_year": 2012,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3c4ff113e16918e6598c9c1fd38da44b802a1488",
+        "title": "Integrating protein sequence embeddings with structure via graph-based deep learning for single-residue property prediction",
+        "score": 0.4408,
+        "title_similarity": 0.5208,
+        "query_year": 2012,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f0fdfed0570944f46d51466292e071a589ee8d18",
+        "title": "High-yield ligation-free assembly of DNA constructs with nucleosome positioning sequence repeats for single-molecule manipulation assays",
+        "score": 0.4357,
+        "title_similarity": 0.5157,
+        "query_year": 2012,
+        "candidate_year": 2023,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a2b86ae14fd086aff09ae8d60f22eb2f3c0f244e",
+        "title": "Prediction of Nucleosome Positioning in Genomes: Limits and Perspectives of Physical and Bioinformatic Approaches",
+        "score": 0.3325,
+        "title_similarity": 0.4125,
+        "query_year": 2012,
+        "candidate_year": 2010,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ce6e7da71012c0336f15667458a53a94dcf3395d",
+        "title": "DeepNup: Prediction of Nucleosome Positioning from DNA Sequences Using Deep Neural Network",
+        "score": 0.3258,
+        "title_similarity": 0.4058,
+        "query_year": 2012,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "904f7dd0922a912ffc3b4bfb5bfffde6f2a84ff5",
+        "title": "HDGS-Net: nucleosome occupancy prediction based on a hybrid dilated gated separable convolutional neural network",
+        "score": 0.3106,
+        "title_similarity": 0.3906,
+        "query_year": 2012,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1073/pnas.1205659109"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 1111,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "5b343753f9ee7f43f5ee5abd62361eed60fab109",
+          "externalIds": {
+            "MAG": "1973850164",
+            "DOI": "10.1073/PNAS.1205659109",
+            "CorpusId": 30521995,
+            "PubMed": "22908247"
+          },
+          "url": "https://www.semanticscholar.org/paper/5b343753f9ee7f43f5ee5abd62361eed60fab109",
+          "title": "Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2012,
+          "openAccessPdf": {
+            "url": "https://www.pnas.org/content/pnas/109/38/E2514.full.pdf",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/PNAS.1205659109?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/PNAS.1205659109, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2012-08-20",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences",
+            "pages": "E2514 - E2522",
+            "volume": "109"
+          },
+          "authors": [
+            {
+              "authorId": "4677550",
+              "name": "T. van der Heijden"
+            },
+            {
+              "authorId": "4068849",
+              "name": "J. V. van Vugt"
+            },
+            {
+              "authorId": "4906993",
+              "name": "C. Logie"
+            },
+            {
+              "authorId": "6162541",
+              "name": "J. van Noort"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "ce23374f7b8f4dbae6c1169076ae3b584da73c92",
+          "externalIds": {
+            "DOI": "10.1073/pnas.1301591110",
+            "CorpusId": 219197627
+          },
+          "url": "https://www.semanticscholar.org/paper/ce23374f7b8f4dbae6c1169076ae3b584da73c92",
+          "title": "Correction for van der Heijden et al., Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2013,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1073/pnas.1301591110",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1301591110?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1301591110, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2013-03-12",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences",
+            "pages": "6240 - 6240",
+            "volume": "110"
+          },
+          "authors": [],
+          "abstract": null
+        },
+        {
+          "paperId": "904f7dd0922a912ffc3b4bfb5bfffde6f2a84ff5",
+          "externalIds": {
+            "PubMedCentral": "12910957",
+            "DOI": "10.1186/s12864-026-12523-2",
+            "CorpusId": 284980509,
+            "PubMed": "41580672"
+          },
+          "url": "https://www.semanticscholar.org/paper/904f7dd0922a912ffc3b4bfb5bfffde6f2a84ff5",
+          "title": "HDGS-Net: nucleosome occupancy prediction based on a hybrid dilated gated separable convolutional neural network",
+          "venue": "BMC Genomics",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12910957, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-01-24",
+          "journal": {
+            "name": "BMC Genomics",
+            "volume": "27"
+          },
+          "authors": [
+            {
+              "authorId": "2406823524",
+              "name": "Fuquan Shi"
+            },
+            {
+              "authorId": "2358886767",
+              "name": "Meizhi Wang"
+            },
+            {
+              "authorId": "2843526",
+              "name": "Zhixia Teng"
+            },
+            {
+              "authorId": "2263933510",
+              "name": "L. Cai"
+            },
+            {
+              "authorId": "2271954008",
+              "name": "Guoqing Liu"
+            },
+            {
+              "authorId": "2370887279",
+              "name": "Yongqiang Xing"
+            },
+            {
+              "authorId": "2270274314",
+              "name": "Xiangjun Cui"
+            },
+            {
+              "authorId": "2358997006",
+              "name": "Guojun Liu"
+            },
+            {
+              "authorId": "2406755303",
+              "name": "Zhihua Yang"
+            },
+            {
+              "authorId": "2270099327",
+              "name": "Hu Meng"
+            }
+          ],
+          "abstract": "Nucleosome positioning plays a central role in chromatin organization and gene regulation, yet its accurate computational prediction remains challenging. This study introduces a Hybrid Dilated Gated Separable Convolutional Neural Network (HDGS-Net), which integrates dilated convolution, gated convolution, and depthwise separable convolution to achieve continuous prediction of in vitro nucleosome occupancy at single-base resolution across the entire Saccharomyces cerevisiae genome. On benchmark datasets, HDGS-Net attained an average Pearson correlation coefficient of 0.87, outperforming conventional methods and demonstrating excellent cross-chromosome generalization capability. Sequence analysis confirms that DNA dinucleotide physical properties dominate nucleosome positioning, with AT-rich sequences inhibiting binding and GC-rich sequences promoting binding. Analysis of transcription start regions verifies that flanking nucleosome sequence features are highly conserved across different chromatin environments, supporting the universal regulatory role of sequence preference. Cross-species analysis demonstrates that the guiding efficacy of DNA sequence on nucleosome positioning varies among species, showing quantitatively decreasing contributions in Caenorhabditis elegans, Saccharomyces cerevisiae, and Schizosaccharomyces pombe. This study provides a high-accuracy predictive tool for investigating dynamic nucleosome positioning."
+        },
+        {
+          "paperId": "a2b86ae14fd086aff09ae8d60f22eb2f3c0f244e",
+          "externalIds": {
+            "MAG": "2039378897",
+            "DOI": "10.1080/07391102.2010.10508583",
+            "CorpusId": 41616465,
+            "PubMed": "20232931"
+          },
+          "url": "https://www.semanticscholar.org/paper/a2b86ae14fd086aff09ae8d60f22eb2f3c0f244e",
+          "title": "Prediction of Nucleosome Positioning in Genomes: Limits and Perspectives of Physical and Bioinformatic Approaches",
+          "venue": "Journal of Biomolecular Structure and Dynamics",
+          "year": 2010,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1080/07391102.2010.10508583?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/07391102.2010.10508583, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2010-06-01",
+          "journal": {
+            "name": "Journal of Biomolecular Structure and Dynamics",
+            "pages": "747 - 764",
+            "volume": "27"
+          },
+          "authors": [
+            {
+              "authorId": "5143541",
+              "name": "P. de Santis"
+            },
+            {
+              "authorId": "2354100",
+              "name": "S. Morosetti"
+            },
+            {
+              "authorId": "2180665",
+              "name": "A. Scipioni"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "f0fdfed0570944f46d51466292e071a589ee8d18",
+          "externalIds": {
+            "PubMedCentral": "10404619",
+            "DOI": "10.1016/j.jbc.2023.104874",
+            "CorpusId": 255523524,
+            "PubMed": "37257819"
+          },
+          "url": "https://www.semanticscholar.org/paper/f0fdfed0570944f46d51466292e071a589ee8d18",
+          "title": "High-yield ligation-free assembly of DNA constructs with nucleosome positioning sequence repeats for single-molecule manipulation assays",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "http://www.jbc.org/article/S0021925823019026/pdf",
+            "status": "GOLD",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10404619, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-01-06",
+          "journal": {
+            "name": "The Journal of Biological Chemistry",
+            "volume": "299"
+          },
+          "authors": [
+            {
+              "authorId": "2107896797",
+              "name": "Yi-yun Lin"
+            },
+            {
+              "authorId": "38839588",
+              "name": "Tine Brouns"
+            },
+            {
+              "authorId": "120118545",
+              "name": "Pauline J. Kolbeck"
+            },
+            {
+              "authorId": "8331760",
+              "name": "Willem Vanderlinden"
+            },
+            {
+              "authorId": "2949266",
+              "name": "J. Lipfert"
+            }
+          ],
+          "abstract": "Force and torque spectroscopy have provided unprecedented insights into the mechanical properties, conformational transitions, and dynamics of DNA and DNA-protein complexes, notably nucleosomes. Reliable single-molecule manipulation measurements require, however, specific and stable attachment chemistries to tether the molecules of interest. Here, we present a functionalization strategy for DNA that enables high-yield production of constructs for torsionally constrained and very stable attachment. The method is based on two subsequent PCR reactions: first ∼380 bp long DNA strands are generated that contain multiple labels, which are used as “megaprimers” in a second PCR reaction to generate ∼kbp long double-stranded DNA constructs with multiple labels at the respective ends. We use DBCO-based click chemistry for covalent attachment to the surface and biotin-streptavidin coupling to the bead. The resulting tethers are torsionally constrained and extremely stable under force, with an average lifetime of 60 ± 3 hours at 45 pN. The high yield of the approach enables nucleosome reconstitution by salt dialysis on the functionalized DNA and we demonstrate proof-of-concept measurements on nucleosome assembly statistics and inner turn unwrapping under force. We anticipate that our approach will facilitate a range of studies of DNA interactions and nucleoprotein complexes under forces and torques."
+        },
+        {
+          "paperId": "4b9ece8ceb70220986dbbcfeb4357f66bd8a50e9",
+          "externalIds": {
+            "PubMedCentral": "9006412",
+            "DOI": "10.1186/s12864-022-08508-6",
+            "CorpusId": 248154847,
+            "PubMed": "35418074"
+          },
+          "url": "https://www.semanticscholar.org/paper/4b9ece8ceb70220986dbbcfeb4357f66bd8a50e9",
+          "title": "Nucleosome positioning based on DNA sequence embedding and deep learning",
+          "venue": "BMC Genomics",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/s12864-022-08508-6",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9006412, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-04-13",
+          "journal": {
+            "name": "BMC Genomics",
+            "volume": "23"
+          },
+          "authors": [
+            {
+              "authorId": "143959163",
+              "name": "Guo-Sheng Han"
+            },
+            {
+              "authorId": "2118912747",
+              "name": "Qi Li"
+            },
+            {
+              "authorId": "2155508605",
+              "name": "Ying Li"
+            }
+          ],
+          "abstract": "Nucleosome positioning is the precise determination of the location of nucleosomes on DNA sequence. With the continuous advancement of biotechnology and computer technology, biological data is showing explosive growth. It is of practical significance to develop an efficient nucleosome positioning algorithm. Indeed, convolutional neural networks (CNN) can capture local features in DNA sequences, but ignore the order of bases. While the bidirectional recurrent neural network can make up for CNN's shortcomings in this regard and extract the long-term dependent features of DNA sequence. In this work, we use word vectors to represent DNA sequences and propose three new deep learning models for nucleosome positioning, and the integrative model NP_CBiR reaches a better prediction performance. The overall accuracies of NP_CBiR on H. sapiens, C. elegans, and D. melanogaster datasets are 86.18%, 89.39%, and 85.55% respectively. Benefited by different network structures, NP_CBiR can effectively extract local features and bases order features of DNA sequences, thus can be considered as a complementary tool for nucleosome positioning."
+        },
+        {
+          "paperId": "e44ec3529f7002b03d9e7e2452fadd7eb493d9d1",
+          "externalIds": {
+            "MAG": "2066053617",
+            "DBLP": "journals/bmcbi/CuiCLZ14",
+            "PubMedCentral": "4261538",
+            "DOI": "10.1186/1471-2105-15-313",
+            "CorpusId": 12297356,
+            "PubMed": "25244936"
+          },
+          "url": "https://www.semanticscholar.org/paper/e44ec3529f7002b03d9e7e2452fadd7eb493d9d1",
+          "title": "Prediction of nucleosome rotational positioning in yeast and human genomes based on sequence-dependent DNA anisotropy",
+          "venue": "BMC Bioinformatics",
+          "year": 2014,
+          "openAccessPdf": {
+            "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-15-313",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4261538, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2014-09-22",
+          "journal": {
+            "name": "BMC Bioinformatics",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "143924658",
+              "name": "F. Cui"
+            },
+            {
+              "authorId": "2200700431",
+              "name": "Linlin Chen"
+            },
+            {
+              "authorId": "3134843",
+              "name": "P. LoVerso"
+            },
+            {
+              "authorId": "2141750",
+              "name": "V. Zhurkin"
+            }
+          ],
+          "abstract": "BackgroundAn organism’s DNA sequence is one of the key factors guiding the positioning of nucleosomes within a cell’s nucleus. Sequence-dependent bending anisotropy dictates how DNA is wrapped around a histone octamer. One of the best established sequence patterns consistent with this anisotropy is the periodic occurrence of AT-containing dinucleotides (WW) and GC-containing dinucleotides (SS) in the nucleosomal locations where DNA is bent in the minor and major grooves, respectively. Although this simple pattern has been observed in nucleosomes across eukaryotic genomes, its use for prediction of nucleosome positioning was not systematically tested.ResultsWe present a simple computational model, termed the W/S scheme, implementing this pattern, without using any training data. This model accurately predicts the rotational positioning of nucleosomes both in vitro and in vivo, in yeast and human genomes. About 65 – 75% of the experimentally observed nucleosome positions are predicted with the precision of one to two base pairs. The program is freely available at http://people.rit.edu/fxcsbi/WS_scheme/. We also introduce a simple and efficient way to compare the performance of different models predicting the rotational positioning of nucleosomes.ConclusionsThis paper presents the W/S scheme to achieve accurate prediction of rotational positioning of nucleosomes, solely based on the sequence-dependent anisotropic bending of nucleosomal DNA. This method successfully captures DNA features critical for the rotational positioning of nucleosomes, and can be further improved by incorporating additional terms related to the translational positioning of nucleosomes in a species-specific manner."
+        },
+        {
+          "paperId": "ce6e7da71012c0336f15667458a53a94dcf3395d",
+          "externalIds": {
+            "PubMedCentral": "9689664",
+            "DOI": "10.3390/genes13111983",
+            "CorpusId": 253274558,
+            "PubMed": "36360220"
+          },
+          "url": "https://www.semanticscholar.org/paper/ce6e7da71012c0336f15667458a53a94dcf3395d",
+          "title": "DeepNup: Prediction of Nucleosome Positioning from DNA Sequences Using Deep Neural Network",
+          "venue": "Genes",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/2073-4425/13/11/1983/pdf?version=1667525773",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9689664, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-10-30",
+          "journal": {
+            "name": "Genes",
+            "volume": "13"
+          },
+          "authors": [
+            {
+              "authorId": "2150666267",
+              "name": "Yiting Zhou"
+            },
+            {
+              "authorId": "3361824",
+              "name": "Tingfang Wu"
+            },
+            {
+              "authorId": "2157498690",
+              "name": "Yelu Jiang"
+            },
+            {
+              "authorId": "2156583487",
+              "name": "Yan Li"
+            },
+            {
+              "authorId": "2158256973",
+              "name": "Kailong Li"
+            },
+            {
+              "authorId": "8483066",
+              "name": "Lijun Quan"
+            },
+            {
+              "authorId": "2147282012",
+              "name": "Qiang Lyu"
+            }
+          ],
+          "abstract": "Nucleosome positioning is involved in diverse cellular biological processes by regulating the accessibility of DNA sequences to DNA-binding proteins and plays a vital role. Previous studies have manifested that the intrinsic preference of nucleosomes for DNA sequences may play a dominant role in nucleosome positioning. As a consequence, it is nontrivial to develop computational methods only based on DNA sequence information to accurately identify nucleosome positioning, and thus intend to verify the contribution of DNA sequences responsible for nucleosome positioning. In this work, we propose a new deep learning-based method, named DeepNup, which enables us to improve the prediction of nucleosome positioning only from DNA sequences. Specifically, we first use a hybrid feature encoding scheme that combines One-hot encoding and Trinucleotide composition encoding to encode raw DNA sequences; afterwards, we employ multiscale convolutional neural network modules that consist of two parallel convolution kernels with different sizes and gated recurrent units to effectively learn the local and global correlation feature representations; lastly, we use a fully connected layer and a sigmoid unit serving as a classifier to integrate these learned high-order feature representations and generate the final prediction outcomes. By comparing the experimental evaluation metrics on two benchmark nucleosome positioning datasets, DeepNup achieves a better performance for nucleosome positioning prediction than that of several state-of-the-art methods. These results demonstrate that DeepNup is a powerful deep learning-based tool that enables one to accurately identify potential nucleosome sequences."
+        },
+        {
+          "paperId": "5879f5b3722669679f36e92213e267d9bd54e3bb",
+          "externalIds": {
+            "DOI": "10.1186/1471-2105-15-313",
+            "CorpusId": 255779425
+          },
+          "url": "https://www.semanticscholar.org/paper/5879f5b3722669679f36e92213e267d9bd54e3bb",
+          "title": "Prediction of nucleosome rotational positioning in yeast and human genomes based on sequence-dependent DNA anisotropy",
+          "venue": "BMC Bioinformatics",
+          "year": 2014,
+          "openAccessPdf": {
+            "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-15-313",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1186/1471-2105-15-313?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1186/1471-2105-15-313, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2014-09-22",
+          "journal": {
+            "name": "BMC Bioinformatics",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "143924658",
+              "name": "F. Cui"
+            },
+            {
+              "authorId": "2200700431",
+              "name": "Linlin Chen"
+            },
+            {
+              "authorId": "3134843",
+              "name": "P. LoVerso"
+            },
+            {
+              "authorId": "2141750",
+              "name": "V. Zhurkin"
+            }
+          ],
+          "abstract": "An organism’s DNA sequence is one of the key factors guiding the positioning of nucleosomes within a cell’s nucleus. Sequence-dependent bending anisotropy dictates how DNA is wrapped around a histone octamer. One of the best established sequence patterns consistent with this anisotropy is the periodic occurrence of AT-containing dinucleotides (WW) and GC-containing dinucleotides (SS) in the nucleosomal locations where DNA is bent in the minor and major grooves, respectively. Although this simple pattern has been observed in nucleosomes across eukaryotic genomes, its use for prediction of nucleosome positioning was not systematically tested. We present a simple computational model, termed the W/S scheme, implementing this pattern, without using any training data. This model accurately predicts the rotational positioning of nucleosomes both in vitro and in vivo, in yeast and human genomes. About 65 – 75% of the experimentally observed nucleosome positions are predicted with the precision of one to two base pairs. The program is freely available at http://people.rit.edu/fxcsbi/WS_scheme/. We also introduce a simple and efficient way to compare the performance of different models predicting the rotational positioning of nucleosomes. This paper presents the W/S scheme to achieve accurate prediction of rotational positioning of nucleosomes, solely based on the sequence-dependent anisotropic bending of nucleosomal DNA. This method successfully captures DNA features critical for the rotational positioning of nucleosomes, and can be further improved by incorporating additional terms related to the translational positioning of nucleosomes in a species-specific manner."
+        },
+        {
+          "paperId": "3c4ff113e16918e6598c9c1fd38da44b802a1488",
+          "externalIds": {
+            "ArXiv": "2502.17294",
+            "CorpusId": 282812048
+          },
+          "url": "https://www.semanticscholar.org/paper/3c4ff113e16918e6598c9c1fd38da44b802a1488",
+          "title": "Integrating protein sequence embeddings with structure via graph-based deep learning for single-residue property prediction",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.17294, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-02-24",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2191075326",
+              "name": "Kevin Michalewicz"
+            },
+            {
+              "authorId": "2346980455",
+              "name": "Mauricio Barahona"
+            },
+            {
+              "authorId": "2279905208",
+              "name": "Barbara Bravi"
+            }
+          ],
+          "abstract": "Understanding the intertwined contributions of amino acid sequence and spatial structure is essential to explain protein behaviour. Here, we introduce INFUSSE (Integrated Network Framework Unifying Structure and Sequence Embeddings), a deep learning framework for the prediction of single-residue properties that combines fine-tuning of sequence embeddings derived from a Large Language Model with the inclusion of graph-based representations of protein structures via a diffusive Graph Convolutional Network. To illustrate the benefits of jointly leveraging sequence and structure, we apply INFUSSE to the prediction of B-factors in antibodies, a residue property that reflects the local flexibility shaped by biochemical and structural constraints in these highly variable and dynamic proteins. Using a dataset of 1510 antibody and antibody-antigen complexes from the database SAbDab, we show that INFUSSE improves performance over current machine learning (ML) methods based on sequence or structure alone, and allows for the systematic disentanglement of sequence and structure contributions to the performance. Our results show that adding structural information via geometric graphs enhances predictions especially for intrinsically disordered regions, protein-protein interaction sites, and highly variable amino acid positions -- all key structural features for antibody function which are not well captured by purely sequence-based ML descriptions."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1073/pnas.1205659109",
+      "DOI": "10.1073/pnas.1205659109",
+      "type": "journal-article",
+      "issue": "38",
+      "author": [
+        {
+          "given": "Thijn",
+          "family": "van der Heijden",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Physics of Life Processes, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands; and"
+            }
+          ]
+        },
+        {
+          "given": "Joke J.F.A.",
+          "family": "van Vugt",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics of Life Processes, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands; and"
+            },
+            {
+              "name": "Molecular Biology, Nijmegen Center for Molecular Life Sciences, Radboud University, Geert Grooteplein 28, 6525 GA Nijmegen, The Netherlands"
+            }
+          ]
+        },
+        {
+          "given": "Colin",
+          "family": "Logie",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Molecular Biology, Nijmegen Center for Molecular Life Sciences, Radboud University, Geert Grooteplein 28, 6525 GA Nijmegen, The Netherlands"
+            }
+          ]
+        },
+        {
+          "given": "John",
+          "family": "van Noort",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics of Life Processes, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands; and"
+            }
+          ]
+        }
+      ],
+      "ISSN": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "container-title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "title": [
+        "Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy"
+      ],
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "abstract": "<jats:p>\n            Nucleosome positioning dictates eukaryotic DNA compaction and access. To predict nucleosome positions in a statistical mechanics model, we exploited the knowledge that nucleosomes favor DNA sequences with specific periodically occurring dinucleotides. Our model is the first to capture both dyad position within a few base pairs, and free binding energy within 2 \n            <jats:italic>k</jats:italic>\n            <jats:sub>B</jats:sub>\n            <jats:italic>T</jats:italic>\n            , for all the known nucleosome positioning sequences. By applying Percus’s equation to the derived energy landscape, we isolate sequence effects on genome-wide nucleosome occupancy from other factors that may influence nucleosome positioning. For both in vitro and in vivo systems, three parameters suffice to predict nucleosome occupancy with correlation coefficients of respectively 0.74 and 0.66. As predicted, we find the largest deviations in vivo around transcription start sites. This relatively simple algorithm can be used to guide future studies on the influence of DNA sequence on chromatin organization.\n          </jats:p>",
+      "issued": {
+        "date-parts": [
+          [
+            2012,
+            8,
+            20
+          ]
+        ]
+      },
+      "volume": "109"
+    },
+    "accepted_score": 1.0,
+    "accepted": true,
+    "accepted_doi": "10.1073/pnas.1205659109",
+    "best_candidate_doi": "10.1073/pnas.1205659109",
+    "crossref_attempts": [
+      {
+        "doi": "10.1073/pnas.1205659109",
+        "source_region": "first_page",
+        "position": 7057,
+        "context": "l. This article contains supporting information online at www.pnas.org/lookup/suppl/ doi:10.1073/pnas.1205659109/-/DCSupplemental. Edited by Timothy J. Richmond, Swiss Federal Institute of Technology, Zurich, Switzerla",
+        "priority_score": 0.63,
+        "score": 1.0,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1073/pnas.1205659109",
+          "DOI": "10.1073/pnas.1205659109",
+          "type": "journal-article",
+          "issue": "38",
+          "author": [
+            {
+              "given": "Thijn",
+              "family": "van der Heijden",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Physics of Life Processes, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands; and"
+                }
+              ]
+            },
+            {
+              "given": "Joke J.F.A.",
+              "family": "van Vugt",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Physics of Life Processes, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands; and"
+                },
+                {
+                  "name": "Molecular Biology, Nijmegen Center for Molecular Life Sciences, Radboud University, Geert Grooteplein 28, 6525 GA Nijmegen, The Netherlands"
+                }
+              ]
+            },
+            {
+              "given": "Colin",
+              "family": "Logie",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Molecular Biology, Nijmegen Center for Molecular Life Sciences, Radboud University, Geert Grooteplein 28, 6525 GA Nijmegen, The Netherlands"
+                }
+              ]
+            },
+            {
+              "given": "John",
+              "family": "van Noort",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Physics of Life Processes, Leiden University, Niels Bohrweg 2, 2333 CA Leiden, The Netherlands; and"
+                }
+              ]
+            }
+          ],
+          "ISSN": [
+            "0027-8424",
+            "1091-6490"
+          ],
+          "container-title": [
+            "Proceedings of the National Academy of Sciences"
+          ],
+          "title": [
+            "Sequence-based prediction of single nucleosome positioning and genome-wide nucleosome occupancy"
+          ],
+          "publisher": "Proceedings of the National Academy of Sciences",
+          "abstract": "<jats:p>\n            Nucleosome positioning dictates eukaryotic DNA compaction and access. To predict nucleosome positions in a statistical mechanics model, we exploited the knowledge that nucleosomes favor DNA sequences with specific periodically occurring dinucleotides. Our model is the first to capture both dyad position within a few base pairs, and free binding energy within 2 \n            <jats:italic>k</jats:italic>\n            <jats:sub>B</jats:sub>\n            <jats:italic>T</jats:italic>\n            , for all the known nucleosome positioning sequences. By applying Percus’s equation to the derived energy landscape, we isolate sequence effects on genome-wide nucleosome occupancy from other factors that may influence nucleosome positioning. For both in vitro and in vivo systems, three parameters suffice to predict nucleosome occupancy with correlation coefficients of respectively 0.74 and 0.66. As predicted, we find the largest deviations in vivo around transcription start sites. This relatively simple algorithm can be used to guide future studies on the influence of DNA sequence on chromatin organization.\n          </jats:p>",
+          "issued": {
+            "date-parts": [
+              [
+                2012,
+                8,
+                20
+              ]
+            ]
+          },
+          "volume": "109"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-8f82dc5b9dbccc75.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-8f82dc5b9dbccc75.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-8f82dc5b9dbccc75.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "7839f4de6e7740b70d3658719f1693249f715f4d2f8a0ca718a3a931e7216c08",
+    "chunk_count": 27,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1073/pnas.1205659109",
+      "source_region": "first_page",
+      "position": 7057,
+      "context": "l. This article contains supporting information online at www.pnas.org/lookup/suppl/ doi:10.1073/pnas.1205659109/-/DCSupplemental. Edited by Timothy J. Richmond, Swiss Federal Institute of Technology, Zurich, Switzerla",
+      "priority_score": 0.63
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:10:03.544094+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1073/pnas.1205659109",
+    "score": 1.0
+  }
+}

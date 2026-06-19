@@ -1,0 +1,2405 @@
+[Page 1]
+
+Disordered C-terminal domain drives spatiotemporal confinement of RNAPII to enhance search for chromatin targets Yick Hin Ling1 , Joseph Ye1,∗ , Chuofan Yu1,∗ , Chloe Liang1,∗ , Giho Park1,∗ , Jeffry Corden2 and Carl Wu1,2
+
+Department of Biology, Johns Hopkins University, Baltimore, USA Department of Molecular Biology and Genetics, Johns Hopkins University School of Medicine, Baltimore, USA ∗ Equal contribution
+
+Abstract Efficient gene expression demands RNA Polymerase II (RNAPII) to find chromatin targets precisely in space and time. How RNAPII manages this complex diffusive search in a 3D nuclear space remains largely unknown. The disordered carboxy-terminal domain (CTD) of RNAPII, which is essential for recruiting transcription-associated proteins, forms phase-separated droplets in vitro, hinting at a potential role in modulating RNAPII dynamics. Here, we use single-molecule tracking and spatiotemporal mapping in living yeast to show that the CTD is responsible for confining RNAPII diffusion within a subnuclear region enriched for active genes, but without apparent phase separation into condensates. Both Mediator and global chromatin organization are required for sustaining RNAPII confinement.
+
+Remarkably, truncating the CTD disrupts RNAPII spatial confinement, prolongs target search,
+
+diminishes chromatin binding, impairs pre-initiation complex formation, and reduces transcription bursting. This study illuminates the pivotal role of the CTD in driving spatiotemporal confinement of RNAPII for efficient gene expression.
+
+Introduction The carboxy-terminal domain (CTD) of RPB1 (Rpo21 in yeast), the largest subunit of RNA Polymerase II (RNAPII), is an essential and unique structural feature crucial for transcription regulation in eukaryotes. Defined by its intrinsically disordered structure1 and consensus heptad repeats (YSPTSPS)2 , the CTD acts as a docking platform for recruiting transcription-associated proteins to interact with RNAPII3-5 . Notably, the number of the heptad repeats in the CTD correlates with genome size throughout eukaryotes6-8 . The biochemical properties of intrinsically disordered regions (IDRs), including the CTD, allow liquid-liquid phase separation (LLPS) through weak-multivalent transient interactions9-11 . This results in the formation of phase-separated
+
+transcription
+
+condensates
+
+comprising
+
+RNAPII,
+
+the
+
+Mediator
+
+complex
+
+and
+
+other
+
+transcription-related proteins. These condensates have been proposed to play a critical role in organizing the transcription machinery to facilitate gene regulation9-14 . By creating a specialized subnuclear environment, LLPS
+
+[Page 2]
+
+may help increase the concentration of RNAPII and associated factors for efficient transcription15,16 . In vitro, the ability of the biochemically purified CTD to form phase-separated droplets depends on its length. For example, the human RNAPII CTD, which has 52 heptad repeats, twice as many as its yeast counterpart with 26 repeats, readily forms larger droplets9,11 . An unresolved question is whether phase-separated RNAPII condensates represent a universally conserved mechanism, or if weak interactions driven by disordered CTDs can guide RNAPII diffusion without transitioning into a condensed phase. Here, we combined live-cell, single-molecule tracking with yeast genetics to elucidate the intricate diffusive mechanisms of RNAPII and the causal dependencies of its target search. Our results show that the diffusing RNAPII is spatially confined, but does not instigate formation of phase-separated condensates on a microscopic scale. The spatial confinement of RNAPII is governed by the full-length CTD, and requires both Mediator and global yeast chromatin organization.
+
+Importantly, such
+
+confinement allows freely diffusing RNAPII to stochastically oversample subnuclear regions enriched with active genes, establishing a highly efficient target search mechanism to enhance pre-initiation complex (PIC) formation and transcription bursting. Our work demonstrates how RNAPII leverages its search strategy as a rate-limiting step to promote transcription activation, providing insights on the functional significance of the CTD in regulating the spatiotemporal dynamics of RNAPII.
+
+Spatiotemporal mapping of transcription machinery We performed live-cell single-molecule tracking (SMT) of fluorescently labeled endogenous RNAPII and other transcription proteins fused to HaloTag, and expressed as sole source under native promoter control (Fig. 1b, Extended Data Fig. 1e). Molecule trajectories were categorized into chromatin-bound or freely diffusing states based on diffusivity, geometry and angular orientation using a multi-parameter classification approach (Fig. 1a, Extended Data Fig. 1d and 2, and Supplementary Methods). To extract the spatiotemporal dynamics of the transcription machinery in the small budding yeast nucleus, we developed a mapping method for a strain with GFP markers delineating the plasma membrane, nuclear envelope and the nucleolus (Extended Data Fig. 1a–c and Supplementary Video 1). The method involves selection of G1 phase cells with minimal nuclear drift (Extended Data Fig. 1g and 3a), normalization of trajectory positions based on nuclear landmarks, and superposition of single-molecule localizations from multiple (>10) cell nuclei (Fig.
+
+1a).
+
+This maps the spatial distribution of
+
+chromatin-bound and freely diffusing proteins over an integrated timeframe, and is grounded in the physical constraints imposed on the centromeres and telomeres of yeast interphase chromatin17-20 (Extended Data Fig. 1b). A similar mapping approach was previously described for the spatial localization of a single gene locus in
+
+[Page 3]
+
+yeast21 . We interpret the spatiotemporal map density as the probability density of protein localization over time (rather than protein clustering). We validated the method by mapping the trajectories of free HaloTag, chromatin-bound centromeric Cse4 and telomeric Sir4 trajectories to the expected subnuclear regions (Extended Data Fig. 3e–g). We next examined essential transcription proteins RNAPII, RNAPI, RNAPIII, TFIID and SAGA, showing their free and bound diffusion coefficient distribution and fractions (Fig. 1b). Unlike the semi-homogenous H2B density map (Fig. 1c; bottom), the bound transcription protein maps (Fig. 1c) are uniquely distinct, and spatially mimic the corresponding functional gene classes located by 3D genome simulation22 (Fig. 1d). Notably, chromatin-bound TFIID and SAGA exhibit distinct spatial territories in the spatiotemporal maps (Fig. 1c), mirroring the TATA-less and TATA-containing genes23 respectively in the genome simulations (Fig. 1d). This suggests potential co-regulation within these gene classes due to spatial proximity24 . Further investigation is needed to fully understand the implications of this organization.
+
+CTD governs chromatin binding and spatial confinement of free RNAPII We compared the spatiotemporal distribution and diffusivity of RNAPII with RNAPI and RNAPIII, given their structural similarities. Freely diffusing RNAPII shows a higher degree of nucleolar exclusion (Extended Data Fig. 4a–c), and diffuses more slowly than expected from its molecular weight (Extended Data Fig.
+
+4d).
+
+We
+
+hypothesized that the distinct spatiotemporal dynamics of freely diffusing RNAPII might be attributed to its large hydrodynamic radius due to the presence of the disordered CTD25,26 , a feature absent in RNAPI and RNAPIII (Fig. 2a and Extended Data Fig. 4e–j). Notably, we observed that increasing CTD length led to increased nucleolar exclusion and decreased diffusion coefficient of free RNAPII (Dfree ), with the opposite observed for CTD truncations (Fig. 2b,c and Extended Data Fig. 5a). This indicates that CTD length modulates the diffusivity and distribution of free RNAPII between nucleolus and nucleoplasm.
+
+Specifically, a large hydrodynamic radius,
+
+conferred by a long and highly disordered CTD, may limit diffusion of RNAPII into the nucleolus via size exclusion, thereby increasing its effective concentration in the nucleoplasm. Next, we explored the impact of CTD length on the chromatin-bound population of RNAPII. Progressive truncation of the CTD from 26 repeats to 10, 9, 8, and 0 repeats notably reduces the bound fraction of RNAPII, while CTD mutants expanded to 52, 78, and 104 repeats show a trend towards increased chromatin-binding (Fig. 2d,e). This trend remains consistent after normalizing nuclear RPB1Rpo21 fluorescence intensity to the expression level across mutants8 (Extended Data Fig. 5c,d). Subsequent investigations in this study primarily focus on CTD truncations due to their pronounced effects. The spatiotemporal maps of bound RNAPII show a global reduction of RNAPII
+
+[Page 4]
+
+binding for truncated CTD strains (Fig. 2f; top). Importantly, the map of free RNAPII shows spatial confinement in a subnuclear region enriched for the bound fraction (Fig. 2f), an area also abundant in highly expressed genes (Fig. 1d and Extended Data Fig. 3d). This confinement is disrupted in the CTD9 mutant, and further reduced in the CTD0 strain (Fig. 2f; bottom). Hence, the CTD has a critical role in the spatiotemporal dynamics for both bound and free RNAPII.
+
+RNAPII confinement characterized by anisotropic diffusion depends on CTD, Mediator and 3D chromatin organization We quantified the spatiotemporal confinement of freely diffusing RNAPII by analyzing its angle distribution within trajectories and anisotropy (Fig. 3a,b and Supplementary Video 3). Anisotropy was measured by ratio of extreme backward to forward angles (f180/0 ) of free trajectories in the nucleoplasm, with confined trajectories showing backward bias27 (Fig. 3b; top). We observed a substantial backward bias in WT RNAPII (CTD26), which is largely absent for CTD9 and CTD0 mutants, and free HaloTag (Fig. 3a,b). On the other hand, CTDs expanded to 52, 78, and 104 repeats show increasing anisotropy (Extended Data Fig. 5c). A f180/0 peak around 150 nm (Fig. 3b) suggests RNAPII confinement within potential domains, as reported for CTCF in mammalian cells, in which anisotropic diffusion through transient trapping in zones has been proposed as an explanatory model27 . Given that yeast interphase chromosomes are physically tethered to the nuclear envelope via telomeres, we disrupted global chromatin organization by inducing telomere detachment through deletion of esc1 and yku70 28 (Fig. 3c,d and Supplementary Video 4). This resulted in a slight reduction of RNAPII binding (Fig. 3e). Notably, telomere detachment abolishes the f180/0 peak at 150 nm in RNAPII, but maintains elevated f180/0 across length scales as compared to the f180/0 of CTD truncation mutants (Fig. 3f,g). This suggests that global chromatin organization might be required for establishing transient trapping zones or domains that contribute to RNAPII confinement kinetics. Given the reported weak interactions between mammalian Mediator IDRs and RNAPII CTD in vitro11 , we investigated the role of Mediator in RNAPII diffusion. We observed a significant reduction of RNAPII binding when Mediator is degraded using an auxin-inducible degron strain (MED14Rgr1 AID) (Fig. 3h,i). Importantly, there is a large reduction of backward bias as shown in the angle distribution plots and anisotropy for free RNAPII (Fig. 3j,k). Furthermore, spatiotemporal mapping indicates a considerable decrease in free RNAPII spatial confinement following Mediator degron (Extended Data Fig. 7e). To further explore the spatiotemporal correlation between Mediator and RNAPII, we found that the map of bound Mediator partially overlaps with the map of confined
+
+[Page 5]
+
+RNAPII (Extended Data Fig. 7c,d). Taken together, we conclude that Mediator is functionally linked to RNAPII diffusion confinement.
+
+No substantial RNAPII clustering observed in yeast nucleoplasm The confined diffusion of RNAPII raises the question of phase separation in condensates. We did not observe fluorescent RNAPII puncta under wide-field microscopy in RPB1Rpo21 -HaloTag fusions harboring WT or CTD mutants with reduced or expanded repeats (Fig. 4a). To investigate the possibility of nanoscale puncta, we performed fixed-cell stochastic optical reconstruction microscopy (STORM) on RPB1Rpo21 -HaloTag co-stained with JF552 and JFX650. We imaged two color channels simultaneously and performed pairwise cross-correlation C(r) analysis to account for clustering artifacts due to fluorophore blinking29 (Fig. 4b). The results show no significant clustering of RNAPII-CTD26, with C(r) value close to 1, suggesting a spatial distribution close to random. This low C(r) value is comparable to that of H2B and RNAPII-CTD9 (Fig. 4c). Given the possibility that transient clusters could be missed by imaging of fixed cells, we replicated the co-staining experiment using live yeast. We analyzed the data using multiple short time windows for potential time-correlated detections13 , and performed Monte Carlo simulations to account for high C(r) values resulting from the limited number of detections within brief observation windows. Nonetheless, we found no strong statistical evidence for transient RNAPII clustering within specific time windows (Fig. 4d; top). Notably, pairwise correlation g(r) analysis performed using only JF552 indicated strong clustering due to repetitive fluorophore blinking or overcounting of fluorophores with extended lifetimes (Fig. 4d; bottom), which underscores the importance of two-color staining for reliable cluster assessment29 . Thus, the observed high density of free RNAPII over time in our spatiotemporal map (Fig. 2f; bottom) results from transient confinement, rather than stable clustering or phase separation into condensates. This implies that despite the spatial confinement of RNAPII in subnuclear regions, its overall distribution at any given time remains broadly homogeneous.
+
+CTD length is critical for efficient RNAPII target search kinetics To further investigate the role of the CTD in controlling the chromatin binding kinetics of RNAPII, we measured residence time of individual RNAPII binding events using the ’slow-tracking’ SMT mode that minimizes photobleaching with low laser power (Fig. 5b, Extended Data Fig. 8c,d and Supplementary Video 5). Halo-H2B cells were imaged as a spike-in control to correct for photobleaching and chromatin movements out of the focal plane (Fig. 5a and Extended Data Fig. 8f). We observed an average stable residence time of ~20 s for WT RNAPII, which encompasses nonproductive and productive pre-initiation, initiation, elongation, and termination.
+
+[Page 6]
+
+For RNAPII-CTD9, this average value is reduced substantially to ~10 s, and the stably bound fraction decreases from ~16% to ~3% (Fig. 5c–e). The short residence time of RNAPII-CTD9 is likely a consequence of the failure of RNAPII to progress beyond the PIC stage at promoters (see below) (Fig. 5j). Similarly, when Mediator is degraded by auxin-inducible degron (MED14Rgr1 AID), the RNAPII stably bound fraction is decreased, and the residence time even further reduced to ~5 s (Fig. 5g–i), consistent with previous ChIP results showing depletion of RNAPII occupancy across nearly all genes under similar degron conditions30 . We estimated the target search time of RNAPII, i.e. the average search duration for an RNAPII molecule between two stable binding events including intervening 3D diffusion and multiple transient chromatin associations, to be ~120 s (Fig. 5f). Although there is no significant change of target search time for the telomere attachment mutant esc1∆ yku70∆, we found that the CTD9 mutant indeed shows prolonged RNAPII target search, increasing from the WT value of ~120 s to ~350 s (Fig. 5f). This observation is consistent with the marked reduction in f180/0 (Fig. 3b), and in spatial confinement of CTD9 and CTD0 mutants (Fig. 2f; bottom), suggesting that spatiotemporal confinement of RNAPII facilitates its search for and association with promoter chromatin.
+
+CTD regulates spatiotemporal dynamics of PIC components and HSP82 transcription bursting Next, we examined the effects of CTD truncation on the dynamics of PIC components. Strikingly, in the CTD9 mutant, the bound fraction of Mediator, TFIIA, TFIIB, TFIIE, TFIIF, and TFIIK is substantially decreased, while SAGA, TFIID and TFIIH show limited changes (Fig. 6a,b). The small change of TFIIH binding was unexpected, given its established function in transcription initiation following PIC formation. This result could be due to the role of TFIIH in DNA repair31,32 , or to unknown complexities of TFIIH in the transcription pathway requiring further investigation. Overall, truncation of the CTD impairs PIC formation in live cells, providing unanticipated insights into the importance of CTD contributions to PIC formation or stability. We additionally detected a substantial decrease in the anisotropy (f180/0 ) for freely diffusing TFIIA, TFIIB, TFIIE, and TFIIF in the CTD9 mutant (Fig. 6c). This could be due to disruption of potential weak interactions between the CTD and these general transcription factors (GTFs). Notably, TFIIA, TFIIE and TFIIF are highly disordered proteins (Fig. 6d-f). We next examined transcription changes in the CTD9 mutant, focusing on heat shock genes because of the temperature-sensitive CTD9 mutant phenotype33 . Hsf1, the master transcriptional regulator of the heat shock genes34 , constitutively associates with heat shock elements (HSEs) at the promoter35-38 under both non-heat shock (NHS) and heat shock (HS) conditions (Fig. 7f). The spatiotemporal map reveals a high density of bound Hsf1 near the nuclear envelope, similar to highly expressed Hsf1 gene targets in the 3D genome simulation map (Fig. 7a,b).
+
+[Page 7]
+
+Hsf1 is highly dynamic, with over ~85% of molecules which are freely diffusing (Fig. 7c and Extended Data Fig. 9a). Heat shock induction increases Hsf1 binding from ~10% to ~20% (stable binding from ~2% to ~5%) during acute response (0–20 min at 39◦ C) (Fig. 7c,d), maintaining a ~5 s residence time for NHS and acute HS (Fig. 7e and Extended Data Fig. 9b). Prolonged HS (20–40 min at 39◦ C) slightly reduces Hsf1 binding to ~15% (~3% stable binding) (Fig. 7c,d and Extended Data Fig. 9a), with a decrease of residence time to ~2.5 s (Fig. 7e and Extended Data Fig. 9b). In CTD9 mutant, Hsf1 binding and residence time during the acute heat shock response remains largely unchanged (Fig. 7c–e and Extended Data Fig. 9a,b), suggesting that CTD truncation has a minimal impact on the observed binding dynamics of the upstream transcription factor Hsf1. To address the functional consequences of CTD truncation, we focused on HSP82, a gene governed by Hsf1 that is expressed constitutively and is highly inducible under heat shock. Previous research has emphasized the importance of CTD length in the transcription bursting of GAL genes8 , which are expressed only under inducible conditions. It remains unclear whether the CTD controls the burst kinetics of constitutively expressed genes. We examined transcription bursting of HSP82 by imaging the binding of fluorescently-tagged PP7 coat protein (PP7CPx2-mScarlet-Ix3) to a 24xPP7 sequence inserted into the 5’ UTR of the nascent HSP82 mRNA (Fig. 7f,g and Supplementary Video 6). Strong fluorescent foci of PP7CPx2-mScarlet-Ix3 representing HSP82 transcription sites (TSs), frequently appear near the nuclear envelope (Fig. 7h-j), consistent with the spatiotemporal map of bound Hsf1 (Fig. 7a,b). Under nonshock conditions, CTD9 shows a lower percentage of cells with HSP82 TS fluorescence (~78%) compared to WT (~96%). However, upon heat shock, TS fluorescence appears almost instantaneously in nearly all cells for both WT and CTD9 mutant strains (Fig.
+
+7k,l).
+
+We calculated the
+
+corresponding transcription ON and OFF times after binary conversion of HSP82 TS signals (Fig. 7k). For WT CTD26, acute heat shock increases HSP82 ON from ~3 min to ~4.5 min, while decreasing OFF from ~7 min to ~2 min. For prolonged heat shock, the ON time is similar to nonshock conditions, while OFF time is reduced to ~3 min (Fig. 7m,n, and Extended Data Fig. 9c,d), anticipating attenuation of the heat shock response. Notably, in all conditions, the CTD9 mutant consistently reduces ON time (lower burst duration) and increases OFF time (lower burst frequency) of HSP82 transcription (Fig. 7m,n and Extended Data Fig. 9c,d), indicating that full CTD length is required for proper burst kinetics under both constitutive and heat shock conditions. This finding offers a molecular explanation for the temperature-sensitive phenotype observed for the CTD9 mutant33 . Importantly, the reduction in both duration and frequency of transcription bursting indicates that the diffusion confinement of RNAPII in the nucleoplasm could regulate the rate-limiting search for chromatin targets in the transcription cycle to sustain a transcription burst.
+
+The number of intrinsically disordered CTD repeats is central to this spatiotemporal
+
+[Page 8]
+
+confinement.
+
+Discussion We have extended single-molecule tracking (SMT) to develop global spatiotemporal maps of transcription protein dynamics in living yeast (Fig. 1). This approach reveals that the disordered CTD of RNAPII, with a WT length of 26 heptad repeats, directs the confinement of RNAPII within a subnuclear region enriched for active genes (Fig. 2). Characterization of anisotropic diffusion of RNAPII shows its dependence on the full-length CTD, chromatin organization and the presence of Mediator (Fig. 3). RNAPII exhibits transient confinement without phase separation into condensate (Fig. 4). Importantly, the number of CTD repeats critically influences RNAPII search kinetics (Fig. 5) and PIC formation (Fig. 6). Functionally, CTD truncation disrupts transcription burst kinetics of HSP82 (Fig. 7). Our observations in yeast demonstrate that RNAPII show no substantial clustering, challenging the generality of LLPS for the spatial organization of RNAPII. For eukaryotes with larger nuclei and genome complexity, additional spatial control and dynamic phase-separated compartments might be necessary for long range promoter-enhancer interaction, although this is a topic of ongoing study39,40 . In yeast, however, the strong physical constraints and tethering imposed on chromatin17-20 could create genomic domains enriched for active genes (Fig. 1c,d), facilitating RNAPII confinement without the need for phase separation into condensates (Fig. 3 and 4). Furthermore, a biochemical environment in the yeast nucleoplasm that is inhibitory to phase separation cannot be excluded. For example, LLPS-prone FUS protein forms foci in the yeast cytoplasm (by incorporating into stress granules and P-bodies), but not in the yeast nucleus41 . What might be the molecular basis of this confinement of RNAPII? In vitro evidence of weak interactions between CTD and Mediator IDRs11 suggests a mechanism by heterotypic IDR-IDR interactions. Consistent with this, degradation of the Mediator largely reduces RNAPII confinement (Fig. 3j,k and Extended Data Fig. 7e), and the maps of bound Mediator and confined RNAPII do partially overlap (Extended Data Fig. 7c,d). In addition to the heterotypic weak interactions, homotypic interactions between the CTD have been identified in vitro9,10 . Imaging of the CTD fused to GFP shows evidence of enrichment at transcriptionally active loci of Drosophila polytene chromosomes in vivo42 , raising the question whether the CTD alone is sufficient to drive its own spatiotemporal confinement in living yeast. Our supplementary observations show that HaloTag alone and Halo-CTD fusions harboring 26, 52, 78, and 104 heptad repeats expressed under control of the natural RPO21 promoter exhibit minimal chromatin binding (Extended Data Fig. 10a), show no puncta (Extended Data Fig. 10b), and Dfree values align with the Stokes-Einstein equation, indicating uniform nucleoplasmic viscosity (~30 cP) without phase
+
+[Page 9]
+
+separation (Extended Data Fig.
+
+10d-g).
+
+Furthermore, Halo-CTD mutants do not exhibit high f180/0 values,
+
+indicating that diffusion is relatively isotropic or unconfined (Extended Data Fig. 10h). Evidently, at physiological expression levels, the CTD alone does not induce the same degree of diffusion confinement as observed for the RNAPII complex. Thus, the CTD is necessary, but not sufficient for the spatiotemporal confinement of RNAPII, and additional factors or domains within the RNAPII complex might come into play (e.g.
+
+TFIIF, which is
+
+predominantly recruited in association with RNAPII and has high intrinsic disorder (Fig. 6d-f)). Our data suggest that diffusion confinement of RNAPII dependent on CTD repeats facilitates the rate-limiting search for chromatin targets early in the transcription cycle (Fig. 8). We propose that the heterotypic IDR-IDR interactions among Mediator, CTD and GTFs increase specific association rates for formation of a complete PIC. These weak-multivalent interactions govern spatiotemporal confinement of protein factors at physiological expression levels evidently below the threshold for phase separation into condensate. A dynamic, fuzzy ’pre-PIC cloud’, characterized by transient weak interactions between components, may form near promoters until all essential components including RNAPII become engaged at promoter DNAs for repeated rounds of pre-initiation, initiation, and elongation to generate a transcription burst. Our study emphasizes the crucial role of the CTD in driving RNAPII target search and shaping the spatiotemporal dynamics of PIC assembly, highlighting its multifaceted functions in the pathway to gene expression.
+
+Acknowledgments We thank Scarlet Cho and Gan Ling for assistance in image processing; Luke Lavis for providing Janelia Fluor dyes; Kelly Xie for IUPRED3 data mining; Xiaona Tang and Sheng Liu for computational assistance; Nathan Jones, Vincent Schoonderwoert and Ciprian Almonte for microscopy technical support; Karen Yuen and Gaku Mizuguchi for plasmids and yeast strains; Charmaine Wong, Jee Min Kim, Ibrahim Cissé and Anders Hansen for helpful discussions; and members of the Wu laboratory for comments. This study was supported by National Institute of Health grant GM132290-01 (C.W.) and the Croucher Foundation (Y.H.L.).
+
+Author information These authors contributed equally: Joseph Ye, Chuofan Yu, Chloe Liang, Giho Park
+
+Authors and Affiliations Department of Biology, Johns Hopkins University, Baltimore, USA Yick Hin Ling, Joseph Ye, Chuofan Yu, Chloe Liang, Giho Park, Carl Wu
+
+[Page 10]
+
+Department of Molecular Biology and Genetics, Johns Hopkins University School of Medicine, Baltimore, USA Jeffry Corden, Carl Wu
+
+Contributions Y.H.L., J.C., and C.W. designed the experiments. Y.H.L. performed the experiments and analyzed the data. J.Y. performed SMT on Hsf1-Halo in the wildtype background. G.P. contributed to the initial trial of spatiotemporal mapping. J.Y., C.Y., and C.L. assisted in experiments. Y.H.L., J.C., and C.W. wrote the manuscript.
+
+Methods Extended Data Figures Extended Data Figures 1-10
+
+Supplementary information Supplementary Methods, Supplementary Tables 1,2, Supplementary Figures 1,2 and references. Supplementary Videos 1-6
+
+[Page 11]
+
+References 1. Cramer, P., Bushnell, D. A. & Kornberg, R. D. Structural basis of transcription: RNA polymerase II at 2.8 angstrom resolution. Science 292, 1863-1876, doi:10.1126/science.1059493 (2001). 2. Corden, J. L. RNA polymerase II C-terminal domain: Tethering transcription to transcript and template. Chem Rev 113, 8423-8455, doi:10.1021/cr400158h (2013). 3. Eick, D. & Geyer, M. The RNA polymerase II carboxy-terminal domain (CTD) code. Chem Rev 113, 8456-8490, doi:10.1021/cr400071f (2013). 4. Harlen, K. M. & Churchman, L. S. The code and beyond: transcription regulation by the RNA polymerase II carboxy-terminal domain. Nat Rev Mol Cell Biol 18, 263-273, doi:10.1038/nrm.2017.10 (2017). 5. Buratowski, S. Progression through the RNA polymerase II CTD cycle. Mol Cell 36, 541-546, doi:10.1016/j.molcel.2009.10.019 (2009). 6. Chapman, R. D., Heidemann, M., Hintermair, C. & Eick, D. Molecular evolution of the RNA polymerase II CTD. Trends Genet 24, 289-296, doi:10.1016/j.tig.2008.03.010 (2008). 7. Yang, C. & Stiller, J. W. Evolutionary diversity and taxon-specific modifications of the RNA polymerase II C-terminal domain. Proc Natl Acad Sci U S A 111, 5920-5925, doi:10.1073/pnas.1323616111 (2014). 8. Quintero-Cadena, P., Lenstra, T. L. & Sternberg, P. W. RNA Pol II Length and Disorder Enable Cooperative Scaling of Transcriptional Bursting. Mol Cell 79, 207-220 e208, doi:10.1016/j.molcel.2020.05.030 (2020). 9. Boehning, M. et al. RNA polymerase II clustering through carboxy-terminal domain phase separation. Nat Struct Mol Biol 25, 833-840, doi:10.1038/s41594-018-0112-y (2018). 10. Lu, H. et al.
+
+Phase-separation mechanism for C-terminal hyperphosphorylation of RNA polymerase II. Nature 558, 318-323,
+
+doi:10.1038/s41586-018-0174-3 (2018). 11. Guo, Y. E. et al. Pol II phosphorylation regulates a switch between transcriptional and splicing condensates. Nature 572, 543-548, doi:10.1038/s41586-019-1464-0 (2019). 12. Cho, W. K. et al. RNA Polymerase II cluster dynamics predict mRNA output in living cells. Elife 5, doi:10.7554/eLife.13617 (2016). 13. Cisse, II et al.
+
+Real-time dynamics of RNA polymerase II clustering in live human cells.
+
+Science 341, 664-667,
+
+doi:10.1126/science.1239053 (2013). 14. Cho, W. K. et al. Mediator and RNA polymerase II clusters associate in transcription-dependent condensates. Science 361, 412-415, doi:10.1126/science.aar4199 (2018). 15. Boija, A. et al. Transcription Factors Activate Genes through the Phase-Separation Capacity of Their Activation Domains. Cell 175, 1842-1855 e1816, doi:10.1016/j.cell.2018.10.042 (2018). 16. Wei, M. T. et al. Nucleated transcriptional condensates amplify gene expression. Nat Cell Biol 22, 1187-1196, doi:10.1038/s41556-02000578-6 (2020). 17. Tjong, H., Gong, K., Chen, L. & Alber, F. Physical tethering and volume exclusion determine higher-order genome organization in budding yeast. Genome Res 22, 1295-1305, doi:10.1101/gr.129437.111 (2012). 18. Gasser, S. M., Hediger, F., Taddei, A., Neumann, F. R. & Gartenberg, M. R. The function of telomere clustering in yeast: the circe effect. Cold Spring Harb Symp Quant Biol 69, 327-337, doi:10.1101/sqb.2004.69.327 (2004). 19. Rosa,
+
+A. & Everaers,
+
+R. Structure and dynamics of interphase chromosomes.
+
+doi:10.1371/journal.pcbi.1000153 (2008).
+
+PLoS Comput Biol 4,
+
+e1000153,
+
+[Page 12]
+
+20. Zimmer, C. & Fabre, E. Principles of chromosomal organization: lessons from yeast. J Cell Biol 192, 723-733, doi:10.1083/jcb.201010058 (2011). 21. Berger, A. B. et al.
+
+High-resolution statistical mapping reveals gene territories in live yeast.
+
+Nat Methods 5, 1031-1037,
+
+doi:10.1038/nmeth.1266 (2008). 22. Duan, Z. et al. A three-dimensional model of the yeast genome. Nature 465, 363-367, doi:10.1038/nature08973 (2010). 23. Huisinga, K. L. & Pugh, B. F. A genome-wide housekeeping role for TFIID and a highly regulated stress-related role for SAGA in Saccharomyces cerevisiae. Mol Cell 13, 573-585, doi:10.1016/s1097-2765(04)00087-5 (2004). 24. Gong, K., Tjong, H., Zhou, X. J. & Alber, F. Comparative 3D genome structure analysis of the fission and the budding yeast. PLoS One 10, e0119672, doi:10.1371/journal.pone.0119672 (2015). 25. Erickson, H. P. Size and shape of protein molecules at the nanometer level determined by sedimentation, gel filtration, and electron microscopy. Biol Proced Online 11, 32-51, doi:10.1007/s12575-009-9008-x (2009). 26. Portz, B. et al. Structural heterogeneity in the intrinsically disordered RNA polymerase II C-terminal domain. Nat Commun 8, 15231, doi:10.1038/ncomms15231 (2017). 27. Hansen, A. S., Amitai, A., Cattoglio, C., Tjian, R. & Darzacq, X. Guided nuclear exploration increases CTCF target search efficiency. Nat Chem Biol 16, 257-266, doi:10.1038/s41589-019-0422-3 (2020). 28. Gartenberg, M. R., Neumann, F. R., Laroche, T., Blaszczyk, M. & Gasser, S. M. Sir-mediated repression can occur independently of chromosomal and subnuclear contexts. Cell 119, 955-967, doi:10.1016/j.cell.2004.11.008 (2004). 29. Hansen, A. S., Pustova, I., Cattoglio, C., Tjian, R. & Darzacq, X. CTCF and cohesin regulate chromatin loop stability with distinct dynamics. Elife 6, doi:10.7554/eLife.25776 (2017). 30. Warfield, L. et al. Transcription of Nearly All Yeast RNA Polymerase II-Transcribed Genes Is Dependent on Transcription Factor TFIID. Mol Cell 68, 118-129 e115, doi:10.1016/j.molcel.2017.08.014 (2017). 31. Schaeffer, L. et al.
+
+DNA repair helicase:
+
+a component of BTF2 (TFIIH) basic transcription factor.
+
+Science 260, 58-63,
+
+doi:10.1126/science.8465201 (1993). 32. Feaver, W. J. et al. Dual roles of a multiprotein complex from S. cerevisiae in transcription and DNA repair. Cell 75, 1379-1387, doi:10.1016/0092-8674(93)90624-y (1993). 33. West, M. L. & Corden, J. L. Construction and analysis of yeast RNA polymerase II CTD deletion and substitution mutations. Genetics 140, 1223-1233, doi:10.1093/genetics/140.4.1223 (1995). 34. Wu,
+
+Heat
+
+shock
+
+transcription
+
+factors:
+
+structure
+
+and
+
+regulation.
+
+Annu
+
+Rev
+
+Cell
+
+Dev
+
+Biol
+
+441-469,
+
+doi:10.1146/annurev.cb.11.110195.002301 (1995). 35. Jakobsen, B. K. & Pelham, H. R. Constitutive binding of yeast heat shock factor to DNA in vivo.
+
+Mol Cell Biol 8, 5040-5042,
+
+doi:10.1128/mcb.8.11.5040-5042.1988 (1988). 36. Park, H. O. & Craig, E. A. Positive and negative regulation of basal expression of a yeast HSP70 gene. Mol Cell Biol 9, 2025-2033, doi:10.1128/mcb.9.5.2025-2033.1989 (1989). 37. Sorger, P. K. & Pelham, H. R. Purification and characterization of a heat-shock element binding protein from yeast. EMBO J 6, 3035-3041, doi:10.1002/j.1460-2075.1987.tb02609.x (1987). 38. Sorger, P. K. & Pelham, H. R. Yeast heat shock factor is an essential DNA-binding protein that exhibits temperature-dependent phosphorylation. Cell 54, 855-864, doi:10.1016/s0092-8674(88)91219-6 (1988).
+
+[Page 13]
+
+39. Hnisz, D., Shrinivas, K., Young, R. A., Chakraborty, A. K. & Sharp, P. A. A Phase Separation Model for Transcriptional Control. Cell 169, 13-23, doi:10.1016/j.cell.2017.02.007 (2017). 40. Lyons, H. et al.
+
+Functional partitioning of transcriptional regulators by patterned charge blocks.
+
+Cell 186, 327-345 e328,
+
+doi:10.1016/j.cell.2022.12.013 (2023). 41. Sun, Z. et al. Molecular determinants and genetic modifiers of aggregation and toxicity for the ALS disease protein FUS/TLS. PLoS Biol 9, e1000614, doi:10.1371/journal.pbio.1000614 (2011). 42. Lu, F., Portz, B. & Gilmour, D. S. The C-Terminal Domain of RNA Polymerase II Is a Multivalent Targeting Sequence that Supports Drosophila Development with Only Consensus Heptads. Mol Cell 73, 1232-1242 e1234, doi:10.1016/j.molcel.2019.01.008 (2019). 43. Lenstra, T. L. & Larson, D. R. Single-Molecule mRNA Detection in Live Yeast.
+
+Curr Protoc Mol Biol 113, 14 24 11-14 24 15,
+
+doi:10.1002/0471142727.mb1424s113 (2016). 44. Nguyen, V. Q. et al. Spatiotemporal coordination of transcription preinitiation complex assembly in live cells. Mol Cell 81, 3560-3575 e3566, doi:10.1016/j.molcel.2021.07.022 (2021). 45. Zheng, Q. et al. Rational Design of Fluorogenic and Spontaneously Blinking Labels for Super-Resolution Imaging. ACS Cent Sci 5, 1602-1613, doi:10.1021/acscentsci.9b00676 (2019). 46. Grimm, J. B. et al. A general method to improve fluorophores for live-cell and single-molecule microscopy. Nat Methods 12, 244-250, 243 p following 250, doi:10.1038/nmeth.3256 (2015). 47. Vallotton, P. et al.
+
+Diatrack particle tracking software: Review of applications and performance evaluation.
+
+Traffic 18, 840-852,
+
+doi:10.1111/tra.12530 (2017). 48. Persson, F., Linden, M., Unoson, C. & Elf, J. Extracting intracellular diffusive states and transition rates from single-molecule tracking data. Nat Methods 10, 265-269, doi:10.1038/nmeth.2367 (2013). 49. Miura, F. et al. Absolute quantification of the budding yeast transcriptome by means of competitive PCR between genomic and complementary DNAs. BMC Genomics 9, 574, doi:10.1186/1471-2164-9-574 (2008). 50. Luan, J. et al. Distinct properties and functions of CTCF revealed by a rapidly inducible degron system. Cell Rep 34, 108783, doi:10.1016/j.celrep.2021.108783 (2021). 51. Chazeau, A., Katrukha, E. A., Hoogenraad, C. C. & Kapitein, L. C. Studying neuronal microtubule organization and microtubuleassociated proteins using single molecule localization microscopy. Methods Cell Biol 131, 127-149, doi:10.1016/bs.mcb.2015.06.017 (2016). 52. Bohrer, C. H. et al. A pairwise distance distribution correction (DDC) algorithm to eliminate blinking-caused artifacts in SMLM. Nat Methods 18, 669-677, doi:10.1038/s41592-021-01154-y (2021). 53. Morawska, M. & Ulrich, H. D. An expanded tool kit for the auxin-inducible degron system in budding yeast. Yeast 30, 341-351, doi:10.1002/yea.2967 (2013). 54. Papagiannakis, A., de Jonge, J. J., Zhang, Z. & Heinemann, M. Quantitative characterization of the auxin-inducible degron: a guide for dynamic protein depletion in single yeast cells. Sci Rep 7, 4704, doi:10.1038/s41598-017-04791-6 (2017). 55. Gesnel, M. C., Del Gatto-Konczak, F. & Breathnach, R. Combined use of MS2 and PP7 coat fusions shows that TIA-1 dominates hnRNP A1 for K-SAM exon splicing control. J Biomed Biotechnol 2009, 104853, doi:10.1155/2009/104853 (2009). 56. Brouwer, I., Kerklingh, E., van Leeuwen, F. & Lenstra, T. L. Dynamic epistasis analysis reveals how chromatin remodeling regulates transcriptional bursting. Nat Struct Mol Biol, doi:10.1038/s41594-023-00981-1 (2023).
+
+[Page 14]
+
+57. Li, L., Waymack, R., Gad, M. & Wunderlich, Z. Two promoters integrate multiple enhancer inputs to drive wild-type knirps expression in the Drosophila melanogaster embryo. Genetics 219, doi:10.1093/genetics/iyab154 (2021). 58. Zhang, T. et al.
+
+An improved method for whole protein extraction from yeast Saccharomyces cerevisiae.
+
+Yeast 28, 795-798,
+
+doi:10.1002/yea.1905 (2011). 59. Kovacs, D. et al.
+
+HSF1Base: A Comprehensive Database of HSF1 (Heat Shock Factor 1) Target Genes.
+
+Int J Mol Sci 20,
+
+doi:10.3390/ijms20225815 (2019). 60. Pincus, D. et al. Genetic and epigenetic determinants establish a continuum of Hsf1 occupancy and activity across the yeast genome. Mol Biol Cell 29, 3168-3182, doi:10.1091/mbc.E18-06-0353 (2018). 61. Pontius, B. W. Close encounters: why unstructured, polymeric domains can increase rates of specific macromolecular association. Trends Biochem Sci 18, 181-186, doi:10.1016/0968-0004(93)90111-y (1993). 62. Therizols, P., Duong, T., Dujon, B., Zimmer, C. & Fabre, E. Chromosome arm length and nuclear constraints determine the dynamic relationship of yeast subtelomeres. Proc Natl Acad Sci U S A 107, 2025-2030, doi:10.1073/pnas.0914187107 (2010). 63. Taddei, A. & Gasser, S. M. Structure and function in the budding yeast nucleus. Genetics 192, 107-129, doi:10.1534/genetics.112.140608 (2012). 64. Tsai, K. L. et al. A conserved Mediator-CDK8 kinase module association regulates Mediator-RNA polymerase II interaction. Nat Struct Mol Biol 20, 611-619, doi:10.1038/nsmb.2549 (2013). 65. Knuesel, M. T., Meyer, K. D., Bernecky, C. & Taatjes, D. J. The human CDK8 subcomplex is a molecular switch that controls Mediator coactivator function. Genes Dev 23, 439-451, doi:10.1101/gad.1767009 (2009). 66. Elmlund, H. et al. The cyclin-dependent kinase 8 module sterically blocks Mediator interactions with RNA polymerase II. Proc Natl Acad Sci U S A 103, 15788-15793, doi:10.1073/pnas.0607483103 (2006). 67. Mazza, D., Abernathy, A., Golob, N., Morisaki, T. & McNally, J. G. A benchmark for chromatin binding measurements in live cells. Nucleic Acids Res 40, e119, doi:10.1093/nar/gks701 (2012).
+
+[Page 15]
+
+c Bound trajectories
+
+b Diffusion coefficient
+
+Free
+
+Bound
+
+RPB1Rpo21-Halo
+
+Spatiotemporal mapping
+
+RNAPII
+
+Free
+
+UMAP2
+
+Rpa190-Halo
+
+Ret1-Halo
+
+Top mRNA genes, n = 200
+
+RNAPII
+
+Bound: 24.1 ± 0.8%
+
+D (μm2/s)
+
+RNAPIII
+
+rDNA, n = 150
+
+RNAPI
+
+Bound: 45.7 ± 0.9%
+
+Taf1-Halo
+
+Overlay
+
+D (μm2/s)
+
+TFIID
+
+tRNA genes, n = 275
+
+RNAPIII
+
+Bound: 38.5 ± 0.9 %
+
+• • •
+
+Nucleus n
+
+Spt7-Halo
+
+D (μm2/s)
+
+SAGA
+
+Top TFIID-dominated genes, n = 1000
+
+TFIID
+
+Bound: 45.9 ± 1.1 %
+
++
+
+Mirror Halo-Htb1
+
+D (μm2/s)
+
+RNAPI
+
+Normalize
+
+Nucleus 2
+
+Nucleus Cell 11
+
+Nucleus 1
+
+Nucleus 1
+
+Bound: 58.9 ± 0.6%
+
+Bound
+
+UMAP1
+
+d Genome simulation
+
+D (μm2/s)
+
+H2B
+
+Top SAGA-dominated genes, n = 100
+
+SAGA
+
+Bound: 83.2 ± 0.5 %
+
+D (μm2/s)
+
+H2B Density
+
+Total genomic DNA Density
+
+Fig. 1. Spatiotemporal mapping of transcription machinery in living yeast nucleus. a, Spatiotemporal mapping workflow: bound and free trajectories (Scale bar: 0.2 μm) classified by multi-parameter analysis, and single-molecule localization and nuclear radius normalized to a circular model of 1 μm radius. Localizations overlaid from at least 10 nuclei that display minimal drift during image acquisition. Visualization of the spatiotemporal map on a single plane facilitated by mirroring around the central axis21 . b, Diffusion coefficient histograms for RNAPII, RNAPI, RNAPIII, TFIID, SAGA and H2B. Representative HaloTag fusions shown (n: number of trajectories; mean value ± s.d.). c, Detection map of chromatin-bound trajectories. Scale bar: 0.5 μm (Error bar: centroid of nucleolus ± s.d.; n: number of nuclei). d, Simulation of the spatial distribution of gene classes in yeast nucleus (n: number of genes).
+
+[Page 16]
+
+Consensus (YSPTSPS)
+
+CTD26
+
+→
+
+Tip linker
+
+Disorder
+
+→
+
+Score
+
+CTD78
+
+2223 2425 26
+
+Order
+
+e 1.0
+
+D (μm2/s)
+
+Bound trajectories
+
+Free
+
+Bound
+
+CTD10 CTD9 CTD8
+
+Dcoef of free RNAPII in nucleoplasm CTD0 CTD8
+
+CTD10
+
+CTD9 CTD52 CTD78 CTD26
+
+CTD0
+
+CTD26 (WT)
+
+CTD104
+
+Molecular weight (kDa)
+
+Nucleoplasm/Nucleolus
+
+CTD0 CTD9 CTD26 (WT)
+
+CTD26
+
+0.0 0.5 1.0 1.5 2.0 2.5 3.0 3.5 4.0
+
+RPB1Rpo21 amino acid residues
+
+Free trajectories
+
+CTD52
+
+Dfree (μm2/s)
+
+1 2
+
+d 0.12
+
+CTD104
+
+RNAPII
+
+Non-consensus Tip domain
+
+Free RNAPII
+
+CTD9
+
+CTD0
+
+TD C 0 TD C 8 C D9 TD C 10 TD C 26 TD C 52 C D7 TD 8
+
+Density
+
+RNAPII
+
+Fig. 2. CTD governs spatiotemporal dynamics of RNAPII. a, Disordered C-terminal domain of RPB1Rpo21 consisting of 26 heptad repeats with consensus sequence YSPTSPS. IUPRED3 scores above 0.5 considered disordered. b-f, Spatiotemporal dynamics of RNAPII and CTD mutants characterized by b, freely diffusing population Nucleoplasm/Nucleolus (n = 100 resamplings; mean value ± s.d.), c, Dfree in nucleoplasm (n = 100 resamplings; mean value ± s.d.), d, two-component Gaussian fit of diffusion coefficient histograms, e, fraction of free and bound (n = 100 resamplings; mean value ± s.d.), and f, spatiotemporal mapping for free and chromatin-bound trajectories. Scale bar: 0.5 μm (Error bar: centroid of nucleolus ± s.d.; n: number of nuclei). Top left panel is reuse of Fig. 1c top panel.
+
+[Page 17]
+
+Angle (θ) and mean displacement (μm) of free trajectories in nucleoplasm CTD26 (WT)
+
+CTD9
+
+d1 + d2 Mean displacement =
+
+d1
+
+Anisotropy
+
+Halo
+
+CTD0
+
+f180/0 =
+
+Angular movement of free RNAPII CTD26 (WT) CTD9 CTD0 Halo
+
+f180/0
+
+180° ± 30° 0° ± 30°
+
+Sir4-HaloJFX650
+
+SPB
+
+Free RNAPII esc1Δ yku70Δ
+
+esc1Δ yku70Δ esc1Δ yku70Δ
+
+***
+
+MED14Rgr1-AID*miRFP670nano3
+
+Relative RNAPII bound fraction
+
+esc1Δ yku70Δ
+
+RNAPII-CTD0
+
+WT esc1Δ
+
+-Auxin
+
+Density
+
+Free RNAPII MED14Rgr1 AID
+
++Auxin
+
+Angular movement of free RNAPII MED14Rgr1 AID –Auxin
+
+f180/0
+
++Auxin
+
+RNAPII-CTD0
+
+in ux in
+
+Relative fold change
+
++Auxin
+
+***
+
+Mean displacement (μm)
+
+WT
+
+Angular movement of free RNAPII
+
+-Auxin
+
+yku70Δ
+
+Mean displacement (μm)
+
+WT
+
+Relative fold change
+
+CEN
+
+Relative RNAPII bound fraction
+
+Density
+
+f180/0
+
+c WT
+
+TEL
+
+ux
+
++A
+
+MED14
+
+Rgr1
+
+AID
+
+Density
+
+Mean displacement (μm)
+
+Fig. 3. The interplay of CTD, chromatin organization and Mediator shapes RNAPII anisotropic diffusion. a, Angle (angular axis) and mean displacement (radial axis; unit: μm) polar plots of RNAPII, CTD mutants and HaloTag (NLSx2-Halo). b, Anisotropic diffusion of freely diffusing of RNAPII, CTD mutants and HaloTag in nucleoplasm measured by f180/0 (n = 100 resamplings; mean value ± s.d.). c, Impaired telomere (TEL) attachment in esc1∆ yku70∆ strain. d, Fluorescence signal of Sir4-HaloJFX650 (red) in WT and esc1∆ yku70∆. Nucleolar and ER markers in green. Scale bar: 1.0 μm (Supplementary Video 4). e, Relative bound fraction of RNAPII in WT and esc1∆ yku70∆ strains (n = 100 resamplings; mean value ± s.d.; two-tailed unpaired t-test). f, Angle and displacement polar plots of RNAPII in esc1∆ yku70∆ strain. g, f180/0 of RNAPII in WT and esc1∆ yku70∆ strains (n = 100 resamplings; mean value ± s.d.). h, Fluorescence signal of MED14Rgr1 -AID*-miRFP670nano3 (red) before and after Mediator degradation by auxin treatment. Nucleolar and ER markers in green. Scale bar: 1.0 μm. i, Relative bound fraction of RNAPII after Mediator degradation (n = 100 resamplings; mean value ± s.d.; two-tailed unpaired t-test). j, Angle and displacement polar plots of RNAPII before and after Mediator degradation. k, f180/0 of RNAPII before and after Mediator degradation (n = 100 resamplings; mean value ± s.d.).
+
+[Page 18]
+
+RNAPII-CTD0
+
+RNAPII-CTD8
+
+RNAPII-CTD9
+
+*
+
+RNAPII-CTD26
+
+Cell 1
+
+Cell 2
+
+*
+
+*
+
+RNAPII-CTD10
+
+*
+
+Fixed RNAPII-CTD26 (WT)
+
+RNAPII-CTD52
+
+RNAPII-CTD78
+
+RNAPII-CTD104
+
+Pairwise cross correlation C(r) Apparent clusters due to fluorophore blinking; Small C(r)
+
+*
+
+*
+
+Likely to be real cluster; Large C(r)
+
+*
+
+*
+
+RPB1Rpo21-HaloJF552 RPB1Rpo21-HaloJFX650
+
+C(r)
+
+CTD26 (WT), n = 66 CTD9, n = 33
+
+Fixed cell
+
+C(r)
+
+Pairwise cross correlation C(r) JF552 and JFX650 in nucleoplasm
+
+H2B, n = 65 Random
+
+Live cell rolling window analysis Pairwise cross correlation C(r): JF552 and JFX650 in nucleoplasm
+
+2-second window
+
+4-second window
+
+r (μm)
+
+0 .0
+
+0 .1
+
+0 .2
+
+0 .3
+
+0 .4
+
+0 .5
+
+8-second window
+
+r (μ m )
+
+r (μm)
+
+0.5 0.0
+
+16-second window
+
+r (μm)
+
+Pairwise correlation g(r): JF552 in nucleoplasm
+
+r (μm)
+
+g(r)
+
+2-second window
+
+r (μm)
+
+4-second window
+
+r (μm)
+
+0.5 0.0
+
+RNAPII-CTD26 (JF552 + JFX650), n = 116 RNAPII-CTD26 (JF552), n = 116
+
+8-second window
+
+r (μm)
+
+0.5 0.0
+
+16-second window
+
+r (μm)
+
+Monte-Carlo envelope Random
+
+Fig. 4. No substantial RNAPII clustering in yeast nucleoplasm. a, Bulk wide-field staining of RPB1Rpo21 -Halo with JFX650 in live cells. Nucleolus indicated by asterisk. Scale bar: 1.0 μm. b, RPB1Rpo21 -Halo fixed-cell STORM images using JF552 and JFX650. Scale bar: 1.0 μm (top). RNAPII clustering analyzed by pairwise cross-correlation C(r) (bottom). c, C(r) of RNAPII-CTD26, RNAPII-CTD9 and H2B in nucleoplasm (n: number of nuclei; mean value ± s.d.). d, RPB1Rpo21 -Halo rolling window analysis for live cell two-color STORM (n: number of nuclei; mean value ± s.d.).
+
+[Page 19]
+
+Pus1miRFP670nano3
+
+Gar1-GFP Elo3-GFP
+
+H2B spike-in
+
+HaloJF552
+
+POI-Halo
+
+Halo-H2B
+
+Stably bound RNAPII
+
+CTD26 (WT), n = 2639 CTD9, n = 1536
+
+esc1Δ yku70Δ
+
+Transient chromatin association
+
+ns
+
+*
+
+***
+
+TD (W T) es D c1 2 6 yk (W u7 T 0Δ ) TD
+
+Stably bound RNAPII
+
++Auxin, n = 1990
+
+Free 3D diffusion
+
+***
+
+Stable binding
+
+**
+
+Initiation
+
+MED14Rgr1 AID
+
+ux in
+
+in ux
+
+CTD9
+
++A
+
+in
+
+Termination
+
+ux
+
+Elongation
+
+Corrected residence time (s)
+
+CTD26
+
+✱ ✱
+
+Time (s)
+
+-Auxin, n = 2986
+
+H2B, n = 2561
+
+Transient chromatin association
+
+Mean residence time RNAPII
+
+TD (W T) es D c1 2 6 Δ ( yk W u7 T 0Δ ) TD
+
+Time (s)
+
+TD (W T) es D c1 26 Δ ( yk W u7 T 0Δ ) TD
+
+Survival probability
+
+Free 3D diffusion
+
+***
+
+Residence time: RNAPII MED14Rgr1 AID
+
+Corrected residence time (s)
+
++A
+
+ns
+
+**
+
+Search time RNAPII
+
+CTD26 (WT), n = 1826
+
+Time (s)
+
+Mean residence time RNAPII
+
+H2B, n = 7707
+
+Survival probability
+
+Time (s)
+
+Residence time: RNAPII
+
+ux in
+
+MED14Rgr1 AID
+
+Fig. 5. CTD facilitates RNAPII target-search kinetics. a, Halo-H2B cell spike-in for residence time correction with Pus1miRFP670nano3 nuclear marker. Scale bar: 1.0 μm. b, Kymograph of slow tracking trajectories of RNAPII (RPB1Rpo21 -Halo) (Supplementary Video 5). c, Survival probability of H2B-corrected residence times for bound RNAPII in CTD26 (WT), CTD9 and esc1∆ yku70∆ strains (n: number of trajectories; mean value ± s.d.). d-f, d, Stably bound fractions, e, mean residence times, and f, search times (left) of RNAPII in CTD26 (WT), CTD9 and esc1∆ yku70∆ strains (n = 10,000 resamplings; mean value ± s.d.; two-tailed unpaired t-test). f, Simplified mode of target search in the nucleus (right). g, Survival probability of H2Bcorrected residence times of RNAPII before and after Mediator degradation (MED14Rgr1 AID) (n: number of trajectories; mean value ± s.d.). h-i, h, Stably bound fractions and i, mean residence times of RNAPII before and after Mediator degradation (n = 10,000 resamplings; mean value ± s.d.; two-tailed unpaired t-test). j, Model of reduction of RNAPII residence time in CTD9 mutant.
+
+[Page 20]
+
+D (μm2/s)
+
+TFIIA Halo-Toa1
+
+TFIIB Sua7-Halo
+
+Tfg1-Halo
+
+TFIIH Ssl2-Halo
+
+D (μm /s)
+
+TFIID
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+TFIIB
+
+f180/0
+
+Mediator
+
+TFIIA
+
+TFIIH
+
+TFIIE
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+Mean displacement (μm)
+
+101 201 301 401 482
+
+Tfg1 Tfg2 Taf14
+
+Amino acid residue
+
+101 201 301 401 501 601 701
+
+Amino acid residue
+
+TFIIH
+
+TFIIK
+
+TFIIK
+
+Ssl2 Rad3 Tfb1 Tfb2 Ssl1 Tfb4 Tfb5
+
+Ccl1 Tfb3 Kin28
+
+101 201 301 393
+
+Amino acid residue
+
+101 201 301 401 501 601 701 801
+
+Amino acid residue
+
+IUPRED3 score
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+Mean displacement (μm)
+
+CTD9
+
+CTD26 (WT)
+
+General transcription factors (GTFs)
+
+IIK
+
+To To 1 a2 Su a7 Tf Tf 1 a2 Tf Tf 1 Ta g2 f1 Ss R l2 ad Tf 3 Tf 1 Ss 2 Tf 1 Tf 4 b5 cl Tf 1 Ki b3 n2
+
+Precentage disorder (%)
+
+IIH
+
+101 201 301
+
+Amino acid residue
+
+TFIIF
+
+TFIIE
+
+f180/0
+
+101 201 286
+
+Tfa1 Tfa2
+
+Mean displacement (μm)
+
+f180/0
+
+Sua7
+
+Amino acid residue
+
+TFIIB
+
+Toa1 Toa2
+
+Mean displacement (μm)
+
+f180/0
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+Subunit
+
+f180/0
+
+f180/0
+
+Percetange disorder (%)
+
+Mean displacement (μm)
+
+IIF
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+IIA IIB IIE
+
+f180/0
+
+f180/0
+
+f180/0
+
+CTD9
+
+Mean displacement (μm)
+
+D (μm2/s)
+
+TFIIK Kin28-Halo
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+TFIIF
+
+Mean displacement (μm)
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35
+
+CTD26 (WT) CTD9
+
+D (μm /s)
+
+TFIIA
+
+SAGA
+
+D (μm2/s)
+
+CTD26 (WT)
+
+c 3.0
+
+TFIIE
+
+Tfa1-Halo
+
+D (μm2/s)
+
+D (μm2/s)
+
+TFIIF
+
+D (μm2/s)
+
+D (μm2/s)
+
+CTD9/CTD26
+
+Mediator Rgr1-Halo
+
+Relative fold change
+
+SA M TF A ed IID ia TF tor TFIIA TFIIB TF I E TF IIF TF I H IIK
+
+II ed D ia to TF IIA TF IIB TF IIE TF IIF TF IIH TF IIK
+
+TFIID Taf1-Halo
+
+TF
+
+SA
+
+SAGA Spt7-Halo
+
+Bound Fraction
+
+TFIIF
+
+TFIIE
+
+TFIIA
+
+TFIIB
+
+TFIID SAGA
+
+TFIIK
+
+TFIIH
+
+RNAPII RNAPIII Mediator RNAPI
+
+Molecular weight (kDa)
+
+Fig. 6. CTD truncation impairs PIC formation and confinement of TFIIA, TFIIB, TFIIE, and TFIIF. a, Diffusion histogram for SAGA, TFIID, Mediator, TFIIA, TFIIB, TFIIE, TFIIF, TFIIH, and TFIIK in WT and CTD9 strains (n: number of trajectories). b, Fraction free and bound in WT and CTD9 strains. Relative fold change in the inner panel, with values lower than 0.8 highlighted in orange (n = 100 resamplings; mean value ± s.d.). c, f180/0 plot in WT and CTD9 strains (n = 100 resamplings; mean value ± s.d.). d, IUPRED3 disorder scores for general transcription factors (GTFs). Residues with predicted scores above 0.5 considered disordered. e, Percentage disorder for individual subunits. f, Percentage disorder of selected transcription proteins.
+
+[Page 21]
+
+***
+
+*0.04
+
+***
+
+ns
+
+2.61 2.64
+
+C T TD
+
+CTD9
+
+WT
+
+ns
+
+0- N 20 20 HS -4 m 0 in in 0- N 20 20 HS -4 m 0 in in
+
+Density
+
+**
+
+**
+
+ns 5.56 5.60
+
+Density
+
+***
+
+*** *
+
+ns
+
+***
+
+**
+
+ns
+
+22°C (NHS) 39°C, 0'-20' 39°C, 20'-40'
+
+C T TD
+
+Free Bound
+
+Mean Residence time Hsf1
+
+C T TD
+
+Stably bound Hsf1
+
+C T TD
+
+Hsf1
+
+Time (s)
+
+b Top Hsf1 genes, n = 40 c
+
+C T TD
+
+C T TD
+
+Bound Hsf1 (22°C)
+
+HSEs
+
+3 2
+
+mScarlet-Ix3
+
+24xPBS TATA
+
+AU
+
+G U G A
+
+PP7CPx2
+
+... CDS (2.1 kb) ...
+
+......
+
+5’ UTR
+
+-229 -206 -177
+
+AU
+
++1
+
+HSP82
+
+24xPBS
+
+mRNA
+
+3’ UTR
+
+RNAPII
+
+CTD
+
+CTD26 (WT): 22°C (NHS)
+
+00:00
+
+13:00
+
+25:20
+
+29:40
+
+37:40
+
+Relative intensity
+
+39°C
+
+35:00
+
+Time (min)
+
+Percentage of cell with HSP82 TS signal CTD9
+
+39°C
+
+22°C
+
+96.4 ± 3.0% 100.0 ± 0.0%
+
+39°C
+
+Active
+
+CTD9
+
+Time (min)
+
+Time (min)
+
+40 0
+
+Time (min)
+
+***
+
+ns
+
+***
+
+***
+
+Mean OFF time
+
+***
+
+***
+
+***
+
+***
+
+*** ***
+
+***
+
+***9.76
+
+***5.64
+
+***
+
+C T TD
+
+22°C (NHS) 39°C, 0'-20' 39°C, 20'-40'
+
+Mean ON time
+
+39°C
+
+22°C
+
+99.6 ± 1.1%
+
+C T TD
+
+C T TD
+
+40 0
+
+78.1 ± 8.7%
+
+Time (min)
+
+C T TD
+
+C T TD
+
+Cell index
+
+27:20
+
+Inactive
+
+Time (min)
+
+17:00
+
+CTD26 (WT)
+
+Time (min)
+
+06:40
+
+22°C
+
+Cell index
+
+Time (min)
+
+CTD26 (WT) 22°C
+
+CTD26 (WT): 39°C (HS)
+
+00:00
+
+Relative intensity
+
+C T TD
+
+HSP82 ON OFF
+
+Fig. 7. CTD length controls burst size and frequency of HSP82 gene transcription. a, Spatiotemporal map of bound Hsf1-Halo trajectories. Scale bar: 0.5 μm. b, Simulation of top Hsf1 target genes (HSF1Base59 ; n: number of genes). c-e, c, Fraction free and bound (n = 100 resamplings; mean value ± s.d.), d, stably bound fractions (n = 10,000 resamplings; mean value ± s.d.; two-tailed unpaired t-test) and e, mean residence times (n = 10,000 resamplings; mean value ± s.d.; two-tailed unpaired t-test) of Hsf1-Halo on heat shock (HS). CTD9 mutant shows similar upregulation of Hsf1 binding during acute heat shock (HS) compared to WT, but with slightly lower basal levels. Unlike WT, the CTD9 mutant maintains Hsf1 binding at the induced level during the prolonged response. The residence time of Hsf1 is comparable between WT and CTD9 under normal heat shock (NHS) and HS conditions. Overall, the dynamics of Hsf1 exhibit minimal change in CTD9 mutant. f, HSP82 gene contains three characterized heat shock elements (HSEs) for Hsf1 binding60 . 24x PP7 binding site (PBS) inserted within the 5’ UTR of HSP82 gene. g, Nascent HSP82 mRNA visualized by PP7CPx2-mScarlet-Ix3 binding. h, Nascent mRNAs on HSP82 transcription site (TS) as a bright spot in the nucleus (orange arrow). Cytoplasmic HSP82 mRNAs indicated by white arrows. Scale bar: 1.0 μm. i-j, Maximum z-projected time-lapse images of PP7-HSP82 cells. Scale bar: 1.0 μm (top). Trace of relative fluorescence intensity of the transcription site (bottom). k, Binarized rastergrams of the PP7 signal at the HSP82 TS of 100 cells, ordered by time of first detection. l, % cells with HSP82 TS signal. m-n, m, Mean ON time and n, mean OFF time of HSP82 transcription (n = 10,000 resamplings; mean value ± s.d.; two-tailed unpaired t-test).
+
+[Page 22]
+
+GTF
+
+Regions with Active genes
+
+CTD26WT
+
+PIC
+
+CTD9 MED
+
+UAS
+
+TF
+
+Promoter
+
+CTD-directed spatiotemporal confinement
+
+PPP P P
+
+PPP P P
+
+PP
+
+PP
+
+P P P P P
+
+P P P P P
+
+RNA
+
+Bursting
+
+Fig. 8. CTD directs subnuclear confinement and chromatin binding of RNAPII for efficient PIC assembly and transcription bursting. In the yeast nucleus, telomere tethering of yeast chromosomes creates subnuclear regions enriched with active genes (left blue circle). Within these regions, the diffusion of RNAPII is confined by weak, long-range, transient CTDMediator interactions near an active promoter (middle square), leading to localized oversampling and enhanced target search. Subnuclear exploration of PIC components might also be confined by similar weak IDR-IDR interactions involving the CTD. Beyond spatial confinement, an increased hydrodynamic volume, attributed to IDRs, could amplify intermolecular interaction probabilities and specific association rates61 . The combined effect of spatial confinement and elevated intermolecular interactions promotes the assembly kinetics of a complete PIC, thereby facilitating multiple rounds of RNAPII binding and activation during a transcription burst. GTF: General transcription factor; IID: TFIID; MED: Mediator; TF: Transcription factor; UAS: Upstream activating sequence.
+
+[Page 23]
+
+Nucleolus
+
+Cell membrane
+
+Elo3-GFP (ER)
+
+CEN
+
+Nucleoplasm
+
+SPB Chr. XII
+
+Gar1-GFP (Nucleolus)
+
+10 ms
+
+20 ms
+
+30 ms
+
+40 ms
+
+50 ms
+
+60 ms
+
+Nucleoplasm TEL
+
+70 ms
+
+80 ms
+
+90 ms
+
+Bound Free
+
+0 ms
+
+Nucleolus
+
+D = 0.63 μm2/s
+
+Frame
+
+D = 0.03 μm2/s
+
+JF552-HTL
+
+POI
+
+-5 min
+
+555nm ON
+
+0 min
+
+30 min
+
+60 min
+
+120 min
+
+150 min
+
+180 min
+
+HaloTag
+
+Halo-Htb1 (Fixed) [Fixed Histone H2B]
+
+NLSx2-Halo
+
+Halo-Hht1 [Histone H3]
+
+Bound: 63.5 ± 0.5%
+
+Bound: 43.6 ± 1.0%
+
+Bound: 57.3 ± 0.7%
+
+Cse4-Halointernal [Centromere]
+
+D (μm2/s)
+
+D (μm2/s)
+
+D (μm2/s)
+
+Bound: 83.6 ± 1.2%
+
+Sir4-Halo [Telomere]
+
+Bound: 45.1 ± 1.5%
+
+D (μm2/s)
+
+D (μm2/s)
+
+Spt5-Halo [Elongation factor]
+
+D (μm2/s)
+
+Rgr1-Halo [Mediator; UAS/Promoter]
+
+Dcoef of immbolized*/slow#/bound
+
+D (μm2/s)
+
+Bound: 77.7 ± 0.6%
+
+Htz1-Halo [H2A.Z; +1 nucleosome]
+
+Slow: 7.9 ± 0.6%
+
+D (μm2/s)
+
+N xed LS H x2 2B -H * al o# 2B H H3 M 2A ed .Z ia to S r R pt5 R AP N I R AP N II AP C II se Si r4
+
+Anaphase
+
+G2/Metaphase
+
+D (μm2/s)
+
+Fi
+
+G1
+
+90 min
+
+4.5 s
+
+1.3 s
+
+0.3 s
+
+0.0 s
+
+Extended Data Fig. 1 Single-molecule tracking in living yeast. a, ER and nucleolus shown by Elo3-GFP and Gar1GFP. Scale bar: 1.0 μm. b, Coarse-grained representation of yeast interphase chromosomes, physically constrained by telomere (TEL)-nuclear envelope and centromere-spindle pole body (CEN-SPB) tethering. c, Overlay of RPB1Rpo21 -HaloJF552 trajectories on the nucleus relative to ER and nucleolar GFP markers. Rainbow colors indicate the first appearance of each trajectory. Scale bar: 1 μm. d, Single-molecule trajectories of RPB1Rpo21 -HaloJF552 (free or bound) with diffusion coefficients. Scale bar: 0.2 μm. e, Protein of interested (POI) fused with HaloTag, labeled with JF552-HaloTag ligand (JF552-HTL) (Top). Initial laser exposure of JF552 resulted in strong ’nuclear glow’, followed by shelving in dark state and stochastic reactivation, leading to single-molecule detection. Nucleus circled in red. Scale bar: 1.0 μm. (Bottom). f, Strong 555 nm laser exposure for 5 min does not result in noticeable cell death or growth arrest. g, ER and nucleolar GFP markers for cell cycle stage identification. Scale bar: 1.0 μm. h, Diffusion coefficient histograms of various nuclear proteins (n: number of trajectories; mean value ± s.d.). i, Assessing diffusion coefficients of the immobilized/slow/bound population reveals no significant difference between histones and proteins that can move along DNA (e.g. RNAPII, RNAPIII, Spt5), while nucleolar RNAPI, and proteins that are physically tethered (Cse4 and Sir4) have significantly lower values (n = 100 resamplings; mean value ± s.d.).
+
+[Page 24]
+
+Variational Bayes single particle tracking (vbSPT)
+
+HMM state-fitting (vbSPT)
+
+Fast state (State 2)
+
+61.0%
+
+39.0%
+
+Model score
+
+Slow state (State 1)
+
+D (μm /s)
+
+Number of state
+
+D (μm /s)
+
+Multi-parameter classification (Unsupervised)
+
+Class 1
+
+Slow class (Class 1)
+
+UMAP1
+
+43.4%
+
+UMAP2
+
+Class 2
+
+Fast class (Class 2)
+
+56.6%
+
+D (μm2/s)
+
+D (μm /s)
+
+Multi-parameter classification (Semi-supervised by 2-state HMM)
+
+Class 1
+
+Slow class (Class 1)
+
+Class 2
+
+UMAP2
+
+D (μm2/s)
+
+Span
+
+Angle Bias
+
+Class 1 Class 2
+
+μm
+
+μm
+
+Class 1 Class 2
+
+✱ ✱ ✱
+
+Class 1 Class 2
+
+Class 1 Class 2
+
+Aspect ratio
+
+✱ ✱ ✱
+
+Class 1 Class 2
+
+Asymmetry 2
+
+✱ ✱ ✱
+
+✱ ✱ ✱
+
+Class 1 Class 2
+
+Asymmetry 1
+
+✱ ✱ ✱
+
+Class 1 Class 2
+
+Angle Bias
+
+✱ ✱ ✱
+
+Aspect ratio
+
+Class 1 Class 2
+
+Asymmetry 1
+
+Mean displacement
+
+✱ ✱ ✱
+
+α 1.0
+
+Min. displacement
+
+✱ ✱ ✱
+
+Asymmetry 2
+
+✱ ✱ ✱
+
+D (μm2/s)
+
+Max. displacement
+
+✱ ✱ ✱
+
+μm
+
+Alpha
+
+log(Dcoef)
+
+μm2/s
+
+μm
+
+41.1%
+
+UMAP1
+
+Fast class (Class 2)
+
+58.9%
+
+Class 1 Class 2
+
+Class 1 Class 2
+
+Extended Data Fig. 2 Multi-parameter classification of trajectories. a, Unsupervised vbSPT overfits SMT data of RNAPII (n = 100 resamplings; mean value ± s.d.). b, Diffusion coefficient histogram for fast and slow states from 2-state HMM using vbSPT. A minor fraction of very slowly diffusing trajectories was misclassified as fast-state (dashed circle) (n: number of trajectories; mean value ± s.d.). c, Unsupervised multi-parameter classification of RNAPII trajectories with UMAP dimension reduction and GMM clustering. d, Diffusion coefficient (D) distribution for the classified clusters (n: number of trajectories; mean value ± s.d.). e-f, similar to c-d, but with multi-parameter classification semi-supervised by 2-state HMM. d and f, Compared to b, Fast-class diffusion coefficient distribution showed less tailing (dashed circle). g, 10 parameters used for classification and their distributions in identified classes (refers f for n numbers; median (line), IQR (box), and min-max values (whiskers); two-tailed unpaired t-test).
+
+[Page 25]
+
+5 min
+
+0 min
+
+Masks + localizations
+
+Density calculation for spatiotemporal mapping Canopy radius
+
+Drifted nucleus 1 μm
+
+Minimal drift 10 nm
+
+3D model of the yeast interphase genome (Duan et al., 2010) Chromosome
+
+Free trajectories NLSx2-Halo
+
+Genome simulation (Duan et al., 2010); Expression levels (Miura et al., 2008)
+
+Top mRNA genes, n = 200
+
+Bottom mRNA genes, n = 500 Density
+
+g Bound trajectories Dcoef
+
+Bound trajectories Cse4-Halointernal
+
+Sir4-Halo
+
+Halo-H2B
+
+Dbound (μm2/s)
+
+Density
+
+Extended Data Fig. 3 Spatiotemporal mapping reveals dynamics of nucleosome and nuclear landmark proteins. a, Nuclei in G1 cells with minimal drift selected for spatiotemporal mapping. Scale bar: 1.0 μm. b, Localization density calculated using 150 nm canopy radius from 10 nm bins. c, 3D simulation of the yeast interphase genome based on 3C data22 . d, Top and bottom mRNA genes simulation maps based on gene expression data in minimal medium49 . Left panel is reuse of Fig. 1d top panel (n: number of genes). e, Freely diffusing NLSx2-Halo map. Scale bar: 0.5 μm. f, Bound Cse4 (left) and Sir4 (right) maps (Error bar: centroid of nucleolus ± s.d.; n: number of nuclei). Sir4 bound map showed dense regions proximal and distal to the centromere, mirroring the telomere clusters of short and long chromosomes20,22,62 . g, Bound H2B diffusion coefficient map. Scale bar: 0.5 μm (Error bar: centroid of nucleolus ± s.d.; n: number of nuclei). Telomere and centromere movements are confined due to attachment to the nuclear envelope and spindle pole body, respectively63 . Likewise, the local diffusion coefficients of chromatin-bound H2B reveal lower histone dynamics near centromeres and telomeres (Extended Data Fig. 1h,i).
+
+[Page 26]
+
+Distribution of trajectory
+
+NPL: Nucleoplasm NOL: Nucleolus
+
+Freely diffusing population
+
+Simulation
+
+RNAPII RNAPI RNAPIII
+
+0.0 0.5 1.0 1.5 2.0 2.5 3.0
+
+RNAPII
+
+RNAPI
+
+NPL
+
+RNAPI
+
+RNAPII
+
+901 1001 1101 1201 1301 1401 1501 1601 1701
+
+RNAPI
+
+Subunit
+
+Percetange disorder (%)
+
+901 1001 1101 1201 1301 1401 1501 1601
+
+RNAPIII
+
+Subunit
+
+RNAPIII
+
+po R 31 R et pc 1 R 8 p 2 R c5 p 3 R c4 p 0 R c3 p 4 R c3 pc 7 R 31 R pb p 5 R c2 p 5 R c1 po 7 R 26 R pb p 8 R c1 p 9 R c1 pb 1
+
+Percetange disorder (%)
+
+Rpo31 Ret1 Rpc82 Rpc53 Rpc40 Rpc34 Rpc37 Rpc31 Rpb5 Rpc25 Rpc17 Rpo26 Rpb8 Rpc19 Rpc11 Rpb10
+
+RNAPI
+
+R a19 pa 0 R 135 R a49 R c40 R a43 pa R 34 R pb5 po R 26 R b8 R c19 R a14 R a12 R b10 pc
+
+RNAPII
+
+Amino acid residue
+
+Rpa190 Rpa135 Rpa49 Rpc40 Rpa43 Rpa34 Rpb5 Rpo26 Rpb8 Rpc19 Rpa14 Rpa12 Rpb10 Rpc10
+
+Amino acid residue
+
+po R 1 pb R 2 pb R 3 pb R 4 pb R 5 R b7 po R 6 pb R 8 R b9 pb R 11 pb R 10 pc
+
+Percetange disorder (%)
+
+RNAPI RNAPIII RNAPII
+
+RNAPIII
+
+Rpo21 Rpb2 Rpb3 Rpb4 Rpb5 Rpo26 Rpb7 Rpb8 Rpb9 Rpb10 Rpb11 Rpc10
+
+Molecular weight (kDa)
+
+NOL
+
+NPL
+
+NOL
+
+NPL
+
+RNAPII
+
+RNAPIII
+
+Nucleoplasm/Nucleolus NOL
+
+Dcoef (free) in nucleoplasm Halo
+
+d 2.5
+
+Bound
+
+Free
+
+Dfree (μm2/s)
+
+901 1001 1101 1201 1301 1401
+
+Subunit
+
+Amino acid residue IUPRED3 score
+
+Extended Data Fig. 4 Spatiotemporal dynamics of RNAPII, RNAPI and RNAPIII. a, Fraction of free and bound in nucleoplasm (NPL) and nucleolus (NOL) (n = 100 resamplings; mean value ± s.d.). b, Distribution (area normalized) of free RNAPII, RNAPI and RNAPIII in nucleoplasm and nucleolus (n = 100 resamplings; mean value ± s.d.). c, Simulation of Nucleoplasm/Nucleolus distribution. d, Diffusion coefficients and molecular weights of free RNAPII, RNAPI and RNAPIII in nucleoplasm (n = 100 resamplings; mean value ± s.d.). e,g,i, IUPRED3 disorder scores for subunits of RNAPII, RNAPI and RNAPIII. Residues with predicted scores above 0.5 considered disordered. f,h,j, Percentage disorder for individual subunits.
+
+[Page 27]
+
+RNAPII-CTD8
+
+D (μm2/s)
+
+Intensity
+
+Ratio
+
+RNAPII-CTD78
+
+Parent
+
+RPB1Rpo21-nCTD26 RPB1Rpo21-nCTD26-Halo - Auxin
+
+Ponceau S
+
+GGEGp (WT) OsTIR1 (T) AtAFB2 (A)
+
+OsTIR1 + AtAFB2 (TA) A + RPB1Rpo21-AID* TA + RPB1Rpo21-AID* TA TA + MED14Rgr1-AID*
+
+bound RNAPII *
+
+PB 1 Rp -H al o2 (+ Au - -AID xi Ha * n) lo +
+
+o2
+
+PB
+
+1 Rp
+
+RPB1Rpo21-AID* + RPB1Rpo21-Halo (+Auxin)
+
+RPB1Rpo21-Halo
+
+PB
+
+Angular movement of free RNAPII-CTD26 (WT)
+
+f180/0
+
+Relative fold change
+
+po
+
+Bound RNAPII (intensity normalized)
+
+T + RPB1Rpo21-AID*
+
+TD C 0 TD C 8 C D9 TD C 10 TD C 26 TD C 52 C D7 TD 8
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+TD
+
+pdr5Δ
+
+α-CTD
+
++Auxin
+
+GGEGp
+
+-Auxin
+
+RNAPII
+
+AtAFB2, OsTIR1 +Auxin 0 30 60 90 120 min
+
+RPB1Rpo21-AID*miRFP670nano3
+
+RNAPII-CTD104
+
+d 1.8
+
+RNAPII
+
+D (μm2/s)
+
+Relative nuclear intensity
+
+RNAPII
+
+Slow: 69.8 ± 0.6%
+
+D (μm2/s)
+
+D (μm2/s)
+
+Bound: 64.4 ± 0.5%
+
+D (μm2/s)
+
+Nuclear/Cytoplasmic ratio
+
+D (μm2/s)
+
+RNAPII-CTD52
+
+Bound: 62.0 ± 0.5%
+
+D (μm2/s)
+
+Bound: 58.9 ± 0.6%
+
+RNAPII-CTD10 Bound: 18.2 ± 0.4%
+
+D (μm2/s)
+
+RNAPII-CTD26
+
+Relative fold change
+
+RNAPII-CTD9 Bound: 17.2 ± 0.4%
+
+Bound: 16.8 ± 0.3%
+
+Bound: 10.4 ± 0.3%
+
+RNAPII-CTD0
+
+Mean displacement (μm)
+
++ Auxin
+
+[Page 28]
+
+Extended Data Fig. 5 CTD length affects RNAPII subcellular distribution and expression. a, Diffusion coefficient histogram for RNAPII with varying CTD lengths (n: number of trajectories; mean value ± s.d.). b-c, b, nuclear/cytoplasmic ratio and c, relative nuclear intensity of WT RNAPII and CTD mutants (n ≥ 50 nuclei; median (line), IQR (box), and min-max values (whiskers)). Consistent with previous study, we observed an overexpression of RNAPII for CTD truncation mutants8 , and additionally detected an increased RPB1Rpo21 signal in the cytoplasm and nucleolus. d, Amount of bound RNAPII normalized to nuclear intensity (n = 100 resamplings; mean value ± s.d.). e, Fluorescence signal of RPB1Rpo21 -AID*-miRFP670nano3 (red) before and after RNAPII degradation by auxin. Nucleolar and ER markers in green. Scale bar: 1.0 μm. f, Western blot showing time course degradation of RPB1Rpo21 -AID* by auxin, detected using CTD antibody (top), and Ponceau S staining on total protein (bottom). g, Spot assay for strains with pdr5∆, GFP markers (GGEGp), RPB1Rpo21 -nCDT26, or RPB1Rpo21 nCDT26-Halo showing identical growth. h, Spot assay demonstrating impaired cell growth for RPB1Rpo21 or MED14Rgr1 AID degron. All AID* constructs contain miRFP670nano3 as a fluorescence marker. i-j, Cells expressing ectopic RPB1Rpo21 -Halo in an RPB1Rpo21 AID background show minimal changes in the i, bound fraction and j, f180/0 of RNAPII after auxin treatment, compared to those in WT expressing RPB1Rpo21 -Halo.
+
+[Page 29]
+
+Apparent anisotropy
+
+Angular movement
+
+Free RNAPII (experimental)
+
+Simulation (1 μm radius boundary)
+
+f180/0
+
+1 μm
+
+Simulation (No boundary)
+
+0.00 0.05 0.10 0.15 0.20 0.25 0.30 0.35 0.40 0.45 0.50 0.55
+
+Mean displacement (μm) RNAPII-CTD0
+
+RNAPII-CTD8
+
+Mean displacement (μm)
+
+RNAPII-CTD52
+
+RNAPII-CTD78
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+f180/0
+
+f180/0
+
+f180/0
+
+RNAPII-CTD104
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+RNAPII-CTD26
+
+f180/0
+
+f180/0
+
+RNAPII-CTD10
+
+f180/0
+
+RNAPII-CTD9
+
+f180/0
+
+f180/0
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+Extended Data Fig. 6 CTD length impacts free RNAPII anisotropy. a, Apparent anisotropy due to nuclear confinement in small yeast nucleus. b, Brownian simulations indicate significant apparent anisotropy for mean displacement longer than 350 nm (n = 100 resamplings; mean value ± s.d.). c, CTD length increase leads to an elevation in f180/0 trend (n = 100 resamplings; mean value ± s.d.).
+
+[Page 30]
+
+Mediator
+
+Mediator
+
+Tail
+
+Head
+
+Mid Regulatory
+
+Sr Sr 4 M b5 ed M 6 R d8 ox M rb ed 2 N 11 R t1 M r1 ed M 1 M d4 ed N 7 C t2 Sr e2 Sob7 h1 al S 1 M in4 ed Pg 2 d1 Sr Ssb8 Ssn2 Ssn3 n8
+
+Percetange disorder (%)
+
+Srb4 Srb5 Med6 Head Med8 Rox3 Srb2 Med11 Nut1 Rgr1 Med1 Med4 Mid Med7 Nut2 Cse2 Srb7 Soh1 Gal11 Tail Sin4 Med2 Pgd1 Srb8 Ssn2 Regulatory Ssn3 Ssn8
+
+Subunit
+
+101 201 301 401 501 601 701 801 901 1001 1101 1201 1301 1401
+
+Amino acid residue
+
+IUPRED3 score
+
+Mediator Bound trajectories
+
+RNAPII-CTD26 (WT) Free trajectories (180° ± 30°)
+
+Free RNAPII-CTD26 (WT); MED14Rgr1 AID -Auxin +Auxin
+
+Free RNAPII-CTD26 MED14Rgr1 AID
+
+-Auxin +Auxin 0.0 0.5 1.0 1.5 2.0 2.5 3.0 Nucleoplasm/Nucleolus Density
+
+Density
+
+ns
+
+(W
+
+Ec
+
+T)
+
+(in pi TD C C 9 TD T 2 6 D9 )
+
+TD
+
+T) (W
+
+Ec
+
+CTD9 Ectopic CTD9 (in CTD26)
+
+(in pi TD C C 9 TD T 2 6 D9 )
+
+TD
+
+Mean displacement (μm)
+
+RNAPII Bound fraction
+
+***
+
+Angular movement Free RNAPII
+
+CTD26 (SSN3) CTD26 (ssn3Δ) CTD9 (SSN3) CTD9 (ssn3Δ)
+
+***
+
+f180/0
+
+Angular movement Free RNAPII-CTD9
+
+SS ss 3 n3
+
+SS ss 3 n3
+
+**
+
+RNAPII Bound fraction
+
+Relative fold change
+
+f180/0
+
+Mediator Bound fraction
+
+Relative fold change
+
+Relative fold change
+
+CTD26
+
+Mean displacement (μm)
+
+CTD9
+
+Extended Data Fig. 7 Investigating the role of Mediator in spatiotemporal confinement of RNAPII a, IUPRED3 disorder scores for Mediator subunits. Residues with predicted scores above 0.5 considered disordered. b, Percentage disorder for individual subunits. c, Bound Mediator map. d, Free RNAPII-CTD26 map showing confined trajectories. Scale bar: 0.5 μm. (Error bar: centroid of nucleolus ± s.d.; n: number of nuclei). e, Free RNAPII-CTD26 map in MED14Rgr1 AID background before and after auxin treatment. Scale bar: 0.5 μm (Error bar: centroid of nucleolus ± s.d.; n: number of nuclei). f, Nucleoplasm/Nucleolus value of RNPAII-CTD26 in MED14Rgr1 AID background before and after auxin treatment (n = 100 resamplings; mean value ± s.d.). Although increased hydrodynamic volume conferred by the disordered CTD (Fig. 2c and Extended Data Fig. 10c) could contribute to size exclusion of RNAPII from the nucleolus, resulting in nucleoplasmic concentration and confinement, it is notable that degradation of Mediator (MED14Rgr1 AID) allows diffusion of full-length RNAPII into the nucleolus, indicating the importance of active restraint by the Mediator. g-i, g, Relative Mediator bound fraction, h, relative RNAPII bound fraction and i, f180/0 for RNAPII-CTD9 as sole source, or ectopically expressed in CTD26 (WT) background (n = 100 resamplings; mean value ± s.d.; two-tailed unpaired t-test). The reduction of Mediator binding in the CTD9 mutant (Fig. 6a,b) led us to examine if this contributed to the observed RNAPII-CTD9 dynamics (Fig. 2 and 3). We find that despite restored Mediator binding in a strain co-expressing RPB1Rpo21 -CTD26 (WT) and RPB1Rpo21 -CTD9, RNAPIICTD9 still showed a significant decrease in bound fraction and near-isotropic diffusion, suggesting that the altered RNAPII dynamics is a directed consequence of CTD truncation, instead of a reduction in Mediator binding. j, Relative fraction bound of RNAPII-CTD26 and RNAPII-CTD9 in WT and ssn3∆ (n = 100 resamplings; mean value ± s.d.; two-tailed unpaired t-test). k, f180/0 plot for RNAPII-CTD26 and RNAPII-CTD9 in WT and ssn3∆ (n = 100 resamplings; mean value ± s.d.). j-k, During PIC formation, interaction between the Mediator and RNAPII can be obstructed by the Mediator regulatory subcomplex, the 4-subunit Cdk8 kinase module (CKM)64-66 . Deficiency of Cdk8SSN3 (ssn3∆) promotes stable Mediator-RNAPII interactions64 . Importantly, increasing the frequency of stable interactions between Mediator and RNAPII does not affect the confinement of free RNAPII, as little or no change in the anisotropy (f180/0 ) of free RNAPII is observed in the ssn3∆ mutant.
+
+[Page 31]
+
+Single-step disappearance Bound RNAPII in fast tracking (10 ms/frame; 100 Hz)
+
+Bound track 1
+
+Time (s)
+
+rmax = 0.32 μm = 3 pixels
+
+Displacement (μm)
+
+Transient binding dominated
+
+Empirical
+
+Time (s)
+
+Decay constant Stably bound Halo-H2B
+
+1 .0
+
+Photobleaching, Dye blinking/photopyhsics, Chromatin/Nuclear movement, Focus drift, etc.
+
+Time (s)
+
+H a lo - H 2 B
+
+Stable binding dominated
+
+Theoretical
+
+2-component model H2B residence time
+
+Time (s)
+
+Survival probability
+
+CDF
+
+ns
+
+CTD26 (WT), n = 5648
+
+CTD9, n = 5263
+
+0 .8 0 .6
+
+0 .4
+
+0 .2 0 .0
+
+Time (s)
+
+ksb
+
+Bound track 3
+
+Fluorescence duration: 4.75 s
+
+T)
+
+TD
+
+(W
+
+Time (s)
+
+Intensity (a.u.)
+
+Intensity (a.u.)
+
+Intensity (a.u.)
+
+Fluorescence duration: 26.00 s
+
+Bound track 2
+
+Fluorescence duration: 20.50 s
+
+CDF of bound displacement (Fast tracking data at 250 ms Δt)
+
+RNAPII H2B H3 H2A.Z
+
+Time (s)
+
+Bound track 1
+
+Laser power: Low Frame rate: Long
+
+Single-step disappearance Bound RNAPII in slow tracking (250 ms/frame; 4 Hz)
+
+Slow tracking
+
+Time (s)
+
+Fluorescence duration: 0.44 s
+
+Intensity (a.u.)
+
+Intensity (a.u.)
+
+Intensity (a.u.)
+
+Bound track 3
+
+Fluorescence duration: 0.33 s
+
+Laser power: High Frame rate: Short
+
+Bound track 2
+
+Fluorescence duration: 0.75 s
+
+TD
+
+Fast tracking
+
+Survival probability
+
+Extended Data Fig. 8 Fast and slow tracking mode of single-molecule tracking. a, Fast tracking with high laser power and short frame rate (10 ms/frame) reveals diffusive dynamics of free (red) and bound (blue) molecules. b, Single-step disappearance of chromatin-bound RNAPII in fast tracking. c, Slow tracking with low laser power and long frame rate (250 ms/frame) reveals residence time of bound molecules (blue). d, Single-step disappearance of chromatin-bound RNAPII in slow tracking. b-d, Here we term ’disappearance’ as we cannot definitively differentiate between the molecule diffusing out of the focal plane or photobleaching within the living cell. e, CDF of bound displacement of RNAPII, H2B, H3 and H2A.Z to determine the rmax for trajectory linking in slow tracking67 . f, In G1 cells, nucleosomal H2B (representing the stable binding population) was hypothesized to bind for a sufficiently long period, such that during image acquisition, their dissociation was barely observed. Nonetheless, the observed residence times for H2B typically fall within 30 seconds, due to factors such as photobleaching, dye blinking, chromatin/nuclear movements, and focus drift. g, Survival probability of Halo-H2B observed residence times in CTD26 (WT) and CTD9 strains (n: number of trajectories; mean value ± s.d.). h, Decay constant of stably bound Halo-H2B (ksb ) in CTD26 (WT) and CTD9 strains (mean value ± s.d.).
+
+[Page 32]
+
+39°C, 0'-20', n = 1544 39°C, 20'-40', n = 3554
+
+D (μm2/s)
+
+H2B, n = 2642 22°C, n = 3011 39°C, 0'-20', n= 1232 39°C, 20'-40', n = 1568
+
+H2B, n = 4056
+
+Corrected residence time (s)
+
+HSP82 ON time (CTD9)
+
+22°C, n = 355
+
+39°C, 20'-40', n = 349
+
+Time (min)
+
+22°C, n = 259
+
+39°C, 0'-20', n = 301
+
+39°C, 20'-40', n = 216
+
+Time (min)
+
+22°C, n = 270
+
+39°C, 0'-20', n = 380
+
+CDF
+
+CDF
+
+39°C, 20'-40', n = 349
+
+Time (min)
+
+22°C, n = 329
+
+39°C, 0'-20', n = 398
+
+HSP82 OFF time (CTD9)
+
+22°C, n = 4943 39°C, 0'-20', n= 1081 39°C, 20'-40', n = 1326
+
+Corrected residence time (s)
+
+HSP82 OFF time (CTD26)
+
+Hsf1 (CTD9)
+
+D (μm2/s)
+
+HSP82 ON time (CTD26)
+
+c 1.0 CDF
+
+22°C (NHS), n = 6120
+
+39°C, 20'-40', n = 1976
+
+39°C, 0'-20', n = 1498
+
+Hsf1 (CTD26)
+
+Survival probability
+
+22°C (NHS), n = 1246
+
+Hsf1 (CTD9)
+
+Survival probability
+
+Hsf1 (CTD26)
+
+CDF
+
+39°C, 0'-20', n = 349 39°C, 20'-40', n = 273
+
+Time (min)
+
+Extended Data Fig.9 CTD length controls HSP82 transcription bursting, with minimal effect on Hsf1 dynamics. a-b, a, Diffusion coefficient histograms for Hsf1-Halo and b, survival probability of bound Hsf1-Halo under heat shock in CTD26 (WT) (left) and CTD9 (right) strains (n: number of trajectories; mean value ± s.d.). c-d, c, HSP82 ON time and d, OFF time cumulative distribution function (CDF) under heat shock in CTD26 (WT) (left) and CTD9 (right) strains (n: number of ON or OFF events; mean value ± s.d.).
+
+[Page 33]
+
+Halo-CTD52
+
+D (μm2/s)
+
+D (μm2/s)
+
+HaloCTD52
+
+HaloCTD78
+
+HaloCTD104
+
+*
+
+*
+
+*
+
+*
+
+*
+
+Hydrodynamic radius (Rh)
+
+Halo
+
+CTD78
+
+CTD104
+
+Folded Unfolded
+
+Free Halo
+
+Free Halo-CTD26
+
+Halo-CTD78 Halo-CTD104
+
+NPL: Nucleoplasm NOL: Nucleolus
+
+Free Halo-CTD78
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+f180/0
+
+f180/0
+
+f180/0
+
+f180/0
+
+Free Halo-CTD104
+
+Estimated Rh (nm)
+
+k BT Dfree = 6πηRh
+
+Viscosity (η)
+
+Halo-CTD52
+
+Halo-CTD26
+
+Nucleolus
+
+Free Halo-CTD52
+
+Nucleoplasm
+
+Nucleoplasm/Nucleolus
+
+Estimated Rh (nm)
+
+f180/0
+
+CTD52
+
+CTD26
+
+D (μm2/s)
+
+Halo
+
+Freely diffusing population
+
+Dfree (μm2/s)
+
+Molecular weight (kDa)
+
+Folded
+
+Halo Halo-CTD26 Halo-CTD52 Halo-CTD78 Halo-CTD104
+
+D (μm2/s)
+
+HaloCTD26
+
+Unfolded
+
+Halo-CTD104 Slow: 8.4 ± 0.5%
+
+D (μm2/s)
+
+Halo
+
+Slow: 7.9 ± 0.5%
+
+Halo-CTD78
+
+Slow: 4.2 ± 0.5%
+
+2O PL
+
+Halo-CTD26 Slow: 4.6 ± 0.7%
+
+cP
+
+Halo Slow: 7.9 ± 0.6%
+
+Mean displacement (μm)
+
+Mean displacement (μm)
+
+Extended Data Fig. 10 CTD is necessary but not sufficient for confining protein diffusion. a, HaloTag (NLSx2-Halo) and Halo-CTD fusions diffusion coefficient histogram by CTD length (n: number of trajectories; mean value ± s.d.). The first plot is reuse of the top panel’s second plot from Extended Data Fig. 1h. b, HaloTag and Halo-CTD fusions bulk widefield staining using JFX650 in live cell. Scale bar: 1.0 μm. c, Nucleoplasm/Nucleolus ratios for freely diffusing HaloTag and Halo-CTD fusions (n = 100 resamplings; mean value ± s.d.). d, Protein disorder affects hydrodynamic radius (Rh ). e, Theoretical relationship between molecule weight and Rh for folded and unfolded peptides (Data from Fluidic Analytics). f-g, f, Dfree and estimated Rh of the HaloTag and Halo-CTD fusions in nucleoplasm and nucleolus. Data fitted with Stokes-Einstein equation to calculate g, apparent viscosity (η ) of yeast nucleoplasm and nucleolus, respectively. KB : Boltzmann’s constant. T: Temperature in Kelvin; 295.15K (22◦ C) (n = 100 resamplings; mean value ± s.d.). h, f180/0 plot for HaloTag and Halo-CTD fusions (n = 100 resamplings; mean value ± s.d.).

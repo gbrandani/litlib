@@ -1,0 +1,513 @@
+[Page 1]
+
+RESEARCH ARTICLE | JULY 10 2013
+
+Predicting phase behavior in multicomponent mixtures  William M. Jacobs; Daan Frenkel
+
+https://doi.org/10.1063/1.4812461
+
+  View Online
+
+Export Citation
+
+[Page 2]
+
+THE JOURNAL OF CHEMICAL PHYSICS 139, 024108 (2013)
+
+Predicting phase behavior in multicomponent mixtures William M. Jacobs and Daan Frenkel Department of Chemistry, University of Cambridge, Lensfield Road, Cambridge CB2 1EW, United Kingdom
+
+(Received 19 March 2013; accepted 14 June 2013; published online 10 July 2013) Mixtures with a large number of components can undergo phase transitions of a hybrid character, with both condensation and demixing contributions. We describe a robust Monte Carlo simulation method for calculating phase coexistence in multicomponent mixtures. We use this approach to study the phase behavior of lattice models of multicomponent mixtures with strongly varying pair interactions. Such a system can be thought of as a simplified model of the cytosol, with both specific and nonspecific interactions. We show that mapping a multicomponent mixture onto an approximately equivalent one-component system yields both upper and lower bounds on the maximum solute volume fraction of a stable, homogeneous phase. By following the minimum excess-free-energy path from the dilute phase free-energy minimum, we predict the difference in composition between the condensed and dilute phases at the boundary of the homogeneous phase. We find that this “direction” of phase separation rarely aligns with the dominant direction of density fluctuations in the dilute phase. We also show that demixing transitions tend to lower the maximum solute volume fraction at which the homogeneous phase is stable. By considering statistical ensembles of mixtures with random interactions, we show that the demixing contribution to phase separation is self-averaging and dependent only on the mean and variance of the distribution of interactions. © 2013 AIP Publishing LLC. [http://dx.doi.org/10.1063/1.4812461] I. INTRODUCTION
+
+0021-9606/2013/139(2)/024108/12/$30.00
+
+thermodynamic stability of a multicomponent mixture to the distribution of its interaction energies. Previous simulation studies of the phase behavior of multicomponent mixtures have considered systems with a relatively small number of components.12, 13 Fenz et al. have showed that the phase diagram of Ising mixtures can be computed without resorting to numerical simulation by using an integral equation formulation.14 Yet integral equations quickly become intractable in high dimensions, since the spatial discretization required for a numerical solution grows exponentially with the number of components. Nevertheless, the high-dimensional problem has been successfully tackled in the context of polydisperse mixtures. By approximating the continuous distribution of particle sizes and interactions with a large but finite number of discretized “pseudocomponents,” Wilding et al. and Buzzacchi et al. have performed numerical simulations of polydisperse mixtures.15–18 Significant progress has also been made with analytical techniques by considering only the moments of the polydispersity distribution.15 When dealing with functional mixtures, however, perturbative and moment-based approaches are less useful, since the distribution of interactions that form specific complexes are not well described by continuous functions. A significant advance in the description of the phase behavior of multicomponent mixtures was made by Sear and Cuesta, who modeled the second-virial coefficients of a mixture as the elements of a random matrix.19 By relating the eigenvalue distribution of a random matrix to instabilities in a multicomponent free-energy surface, they were able to distinguish between condensation phase transitions, in which the dilute and condensed phases have identical compositions, and demixing phase transitions, which are characterized by strong
+
+139, 024108-1
+
+© 2013 AIP Publishing LLC
+
+In nature, multicomponent mixtures are the rule and pure fluids are the exception. This is true in particular for the cytosol, a “functional” mixture of many different species, some of which can assemble into specific complexes. The cytosol typically contains a large number of distinct molecular components, which make it possible to integrate a vast array of biochemical signals. In a prokaryotic cell, for instance, millions of copies of interacting protein domains make up more than 10% of the volume of the cytosol.1, 2 Although mixtures with many components are characterized by an enormous parameter space of interaction potentials and component concentrations, the design space of functional mixtures is presumably much smaller.3–6 In fact, a key requirement for a functional cytosol is that it combines thermodynamic stability of the homogeneous phase with the ability to form a large number of specific complexes that may, for instance, play a role in biochemical signaling.7–9 For this reason, evolution weeds out strong non-specific interactions that could lead to irreversible aggregation or phase separation.10, 11 The phase behavior of multicomponent mixtures is more complex than that of single-component fluids. Liquid mixtures with large differences in binding affinities have a tendency to demix into multiple phases of varying composition. The extent of fractionation depends on both the temperature and the concentrations of all components; as a result, the compositions of coexisting phases vary continuously in a highdimensional phase diagram. The first phase separation, which bounds the single homogeneous, dilute phase and denotes a mixture’s limit of thermodynamic stability, is a collective property of the entire mixture. In this article, we describe Monte Carlo simulations that allow us to relate the limit of
+
+[Page 3]
+
+II. THEORY A. Phase diagrams of multicomponent mixtures
+
+(b)
+
+cloud pt.
+
+ζ̂
+
+coexist. region
+
+shadow pt.
+
+ρ1
+
+ρ1
+
+(constant temperature)
+
+FIG. 1. A schematic phase diagram of a two-component mixture at a fixed temperature. (a) The parent composition specifies a dilution line, ρ = φ c. Within a coexistence region, the generalized lever rule given by Eq. (1) specifies how the parent phase splits into two daughter phases, represented here by empty circles. (b) The dilution line intersects the boundary of the coexistence region at the cloud point, where the parent phase coexists with an infinitesimal amount of the daughter phase. The direction of phase separation, ζ̂ , forms an angle θ with the dilution line. When ζ̂ and c are parallel, the mixture undergoes a condensation phase transition; phase separation in a direction perpendicular to the dilution line indicates a demixing transition.
+
+overall parent densities ρ splits into two or more “daughter” phases, which have densities lying on the coexistence surface (Figure 1(a)). The m daughter phases need not have the same composition as the homogeneous parent phase, although the total densities must still obey the dilution line requirement. The phase-separated mixture therefore satisfies the generalized lever rule, ρ =
+
+Xα ρα ,
+
+where Xα is the volume fraction of the α-phase and ρα represents the component densities in that phase. In a multicomponent phase diagram, the tie lines spanning the coexistence region need not be parallel for different temperatures, parent compositions or total volume fractions, and the critical temperature for each parent composition is not necessarily an extremum of the coexistence surface. The intersections of the dilution line and the coexistence surface are often referred to as the “cloud points” at the given temperature (Figure 1(b)).20 The majority phase is called the “cloud phase,” which has the same composition as the parent phase. The cloud phase coexists with an infinitesimal amount of the “shadow phase.” Since we are only interested in the stability of the dilute homogeneous phase, we shall refer to the intersection of the dilution line with the dilute branch of the coexistence surface as the “cloud point.” The total volume fraction at the cloud point, denoted by φ cl , is the highest volume fraction for which the parent phase with the given composition is thermodynamically stable. A unit vector ζ̂ characterizes the direction of the tie line connecting the cloud and shadow phases (Figure 1(b)). Since the shadow phase is not required to have the parent composition, the direction of phase separation forms an angle θ with the dilution line. When the direction of phase separation is nearly parallel to the dilution line, we say that the phase separation has mostly a “condensation” character. This occurs when the cloud and shadow phases have nearly identical compositions but differing total volume fractions. On
+
+We begin our description of multicomponent mixtures by contrasting the phase diagram of a typical multicomponent mixture with that of a single-component fluid. In a simple one-component fluid, attractive interactions among particles can drive phase separation into a low-density phase and a high-density phase. Since we are primarily concerned with mixtures of proteins, the fluctuating density is that of the solvated proteins, and we find that the solution separates into coexisting phases that are either depleted or enriched in protein. Parallel tie lines connect coexisting phases on the phase diagram at different temperatures, forming a binodal curve. The binodal has a maximum in temperature at the critical point, above which no phase separation occurs. In a mixture of n components, the phase diagram has n − 1 extra degrees of freedom. As a result, different coexisting phases can be observed by varying the overall component concentrations at a fixed temperature. Yet phase separation must conserve the total number of particles in solution, and thus the overall “parent” composition of the mixture must remain constant (Figure 1(a)). This parent composition c, where
+
+ci is the overall fraction of component i and ni=1 ci = 1, defines a dilution line of equal-volume components: ρ = φ c. The volume fraction of each component, ρ i , is proportional to the total volume fraction φ. In order to simplify the terminology, we call ρ i the “density” of component i. Since the total volume fraction cannot exceed one, the component densities are bounded by an n-simplex, ni=1 ρi ≤ 1, which we denote as n . According to Gibbs’s phase rule, it is possible to have up to n + 2 simultaneously coexisting phases. The analog of a binodal in a one-component fluid is thus an (n + 1)dimensional coexistence surface, which bounds one or more coexistence regions. Inside such regions, the mixture with
+
+(a)
+
+ρ2
+
+fractionation. Their theory provides a useful statistical framework for approaching functional mixtures, in which a small number of collective parameters describe the limiting behavior of mixtures with a large number of components. Thus far, a direct test of the approach of Sear and Cuesta has been lacking. We present computer simulations of multicomponent mixtures that allow us to compare the analytical predictions of Ref. 19 with numerical data on the volume fractions and compositions of the coexisting phases. As in Ref. 19, we assume a statistical distribution of interaction energies and examine the phase behavior of random mixtures with an increasing number of components (Sec. III). We introduce an efficient Monte Carlo method for calculating coexistence between two phases in a high-dimensional density space (Sec. IV). Using this technique, we perform explicit calculations for individual “quenched” random mixtures. These calculations allow us to evaluate many of the assumptions made in Ref. 19 and to test improved theories for predicting both the location and direction of phase separation in a mixture’s phase diagram (Sec. V). Such an analysis goes beyond the limitations of a second-virial-level random-matrix theory.
+
+ρ2
+
+[Page 4]
+
+the other hand, we describe a phase transition as having a mostly “demixing” character when the direction of phase separation and the dilution line are nearly perpendicular. In this case, there may be one or more shadow phases, with very different compositions, in coexistence with the cloud phase. When a coexistence surface bounds more than one nested coexistence region, the dilution line may pass through multiple consecutive phase boundaries at a single temperature. By continuity with the case of an entirely degenerate phase transition, in which multiple incipient phases demix at the same total volume fraction and temperature, we expect phase separations that are spaced closely in φ to have mostly demixing characters. B. Random matrix theory of multicomponent mixtures
+
+In this section, we summarize the assumptions and key results of the random matrix theory of Ref. 19. Sear and Cuesta approximated the Helmholtz free energy per unit volume, F, of a multicomponent mixture as the sum of its ideal and second-virial contributions:
+
+ρi (ln ρi − 1) + ρi Bij ρj , βF = 2 i=1 j =1 i=1
+
+δρi (δij /ρi + Bij )δρj = 0.
+
+i=1 j =1
+
+The corresponding unit eigenvector points along the “softest” normal mode of the density fluctuations about the dilutephase free-energy minimum. Sear and Cuesta predicted that a mixture will phase separate in the direction of this eigenvector in the component density space. If we assume that all components have equal concentrations, i.e., c = (1/n, . . . , 1/n), then the first instability is determined by the minimum eigenvalue of B, so that ζ̂ ≈ ν̂min (B). This instability defines a spinodal on the approximate free-energy surface given by Eq. (2). The total volume fraction at the spinodal is φsp = −n/λmin (B). In this model, the phase behavior of a mixture is completely described by the spectrum of its second-virialcoefficient matrix, B. If we model B as a random matrix, then we can use the statistical distribution of its eigenvalues to understand what characteristics of second-virial-coefficient matrices lead to condensation and demixing phase transitions. If the symmetric elements of B are independent and identically distributed random variables with mean b̄ and finite
+
+B = 1, n = 4 B = 52 , n = 8 B = 5, n = 16 B = 0, n → ∞
+
+0.8 0.6 0.4 0.2
+
+reduced eigenvalue λ̃
+
+FIG. 2. The probability density function of the reduced eigenvalues, λ̃i , of rank-n symmetric random matrices. When |B| 1, the distribution approaches Wigner’s semicircle law given by Eq. (5) as n → ∞. When B 1, a single Gaussian-distributed eigenvalue appears to the right of the semicircle. In Sear and Cuesta’s theory, this lone eigenvalue corresponds to a condensation phase transition, while the remaining n − 1 eigenvalues correspond to demixing transitions.
+
+variance σb2 , then the probability density distribution of the eigenvalues of B is very simple in the limit of large n.21 The results are most easily expressed in terms of scaled eigenvalues, λ̃i , and the scaled mean matrix-element, B, defined as follows: λi λ̃i ≡ − (4a) √ , 2σb n B≡−
+
+√ b̄ n . σb
+
+(4b)
+
+The signs are chosen for later convenience. If B 1, then the maximum scaled eigenvalue of B is a Gaussian random variable with mean 12 (B + B −1 ) and variance 1/2n. The corresponding √ eigenvector √ is nearly parallel to the unit vector 1̂ ≡ (1/ n, . . . , 1/ n). The remaining scaled eigenvalues are distributed according to Wigner’s semicircle law: 1 − λ̃2 , if |λ̃| ≤ 1, p(λ̃) = π if |λ̃| > 1. If |B| 1, then all n eigenvalues are distributed according to Eq. (5). Figure 2 compares the distributions of the eigenvalues for several choices of B and n. The nature of the first instability of the dilute phase depends on whether B 1 or B 1. When B 1, the unit eigenvector corresponding to the minimum eigenvalue of B is nearly parallel to 1̂, which is exactly the direction of the dilution line. Thus, we associate this type of instability with a condensation phase transition. All of the remaining eigenvectors, corresponding to eigenvalues from the semicircular distribution, are nearly orthogonal to 1̂. By continuity, when B 1, the eigenvector corresponding to the largest eigenvalue from within the semicircle is also nearly orthogonal to 1̂. We therefore associate the minimum eigenvalue of B when B 1 with a demixing transition. Sear and Cuesta predicted that the phase behavior of random mixtures should be self-averaging with the number of components. A property of a random matrix, such as its
+
+where β is the inverse temperature 1/kB T and kB is the Boltzmann constant. The second-virial coefficients, which provide a first-order correction to the ideal gas equation of state, take the form of a symmetric matrix B, whose elements Bij describe the orientationally averaged interactions between components i and j. The free-energy surface of a thermodynamically stable phase is necessarily concave up, since spontaneous density fluctuations would otherwise drive a phase transition to an overall lower free energy. The homogeneous phase of the mixture becomes unstable to density fluctuations, δ ρ, where the free-energy curvature matrix has a zero eigenvalue, i.e.,
+
+p(λ̃)
+
+[Page 5]
+
+minimum eigenvalue, is self-averaging if the variance of the probability density function of that property goes to zero as the rank of the random matrix increases. In both cases, when B 1 as well as when B 1, the variance of the minimum eigenvalue of a random second-virial matrix vanishes in the limit that n → ∞. The angles that the corresponding eigenvectors make with the dilution line should also be self-averaging, since the separation between the lone eigenvalue and the nearest edge of the semicircular distribution becomes increasingly well defined as the number of components grows, except at the crossover where B ≃ 1. As a consequence, Sear and Cuesta suggested that biologically relevant mixtures with comparable distributions of proteinprotein and other macromolecular interactions should exhibit similar phase behavior. III. METHODS: QUENCHED RANDOM MIXTURES
+
+sembles with identical B but differing numbers of components. In our numerical simulations, we investigate families with B = 1, 5/2, 5, 10, 25, and 50 for random mixture ensembles with 4, 8, and 16 components. In order to test the predictions of Sear and Cuesta’s theory, we examine mixtures with parent compositions of equal component concentrations and look for self-averaging in the phase behavior of each family. IV. METHODS: MONTE CARLO SIMULATIONS
+
+Our simulations of multicomponent mixtures build upon powerful reweighting methods, developed by Wilding et al. in the context of polydisperse fluids, to calculate phase coexistence in the grand-canonical ensemble.15–18, 23, 24 The grandcanonical ensemble is ideal for studying phase transitions, since we can sample from the complete solute density distribution (at fixed temperature and chemical potentials) in a single simulation. Although this ensemble does not allow us to specify the parent composition of a mixture a priori, it avoids the significant hysteresis effects plaguing the simulation of coexisting phases in finite-sized canonical and isobaric ensembles. In the context of multicomponent mixtures, grand-canonical Monte Carlo is also preferable to the Gibbs ensemble, since the number of coexisting phases is not imposed on the system,25 and to flat-histogram methods, as the grand-canonical probability density can be estimated in all n component dimensions without storing a high-dimensional histogram of the density of states.26 In what follows, we describe how we tune the parameters of a grand-canonical Metropolis Monte Carlo simulation in order to locate the cloud point of a quenched random mixture. After introducing the simulation model in Sec. IV A, we describe in Sec. IV B an efficient method for sampling in the solute density space of a multicomponent mixture with strongly varying interaction energies. Then in Sec. IV C, we explain how we calculate the direction of phase separation, ζ̂ , and the densities of the coexisting phases self-consistently. Finally, in Sec. IV D, we describe how we iteratively solve for the solute chemical potentials at the cloud point. A. Lattice model
+
+Assigning each component a chemical potential μi , we define the grand-canonical Hamiltonian of our lattice gas as
+
+Hgc ≡ · ρ, ij − L μ n.n.
+
+where the sum is over all nearest-neighbor pairs of lattice sites, ij is the interaction energy between components i and j, and ρ i is the “density” of component i. The probability of observing some ρ in the grand-canonical ensemble is ρ; L2 , β, μ) = exp(−βH)/, where is the grand parpgc ( tition function. Without loss of generality, we take both the solvent-solvent interactions and the solvent chemical potentials to be zero. Assuming that each solute individually is completely miscible, we also restrict our attention to mixtures with zero solute-solvent interactions. Only a single Monte Carlo move—a change of identity, either to a different solute or to a solvent particle, at one lattice site—is used in the
+
+In order to explore the high-dimensional space of component densities efficiently, we adopt for our numerical simulations a simple discrete model: an n-component twodimensional lattice gas of “proteins.” We use an L × L square lattice with periodic boundary conditions, where all sites not occupied by “proteins” are occupied by solvent particles; the absence of explicit vacancies implies that we ignore the compressibility of the solvent. For computational tractability, we choose L = 16. A mixture is defined as a set of n components with isotropic nearest-neighbor interactions. Although this simplification of protein-protein interactions neglects the orientational dependence of specific interactions mediated by protein interfaces, it nevertheless provides a reasonable description of the short range attraction of globular proteins at the second-virial level.22 The nearest-neighbor interactions form an n × n matrix of effective solute-solute free energies, where ij denotes the interaction between components i and j. We take to be a symmetric random matrix with matrix elements ij chosen independently from a Gaussian distribution with mean attractive interaction free energy ̄ < 0. Each interaction matrix is a collection of quenched random interactions, which remain constant throughout the course of our numerical simulations. We investigate the statistical properties of ensembles of random mixtures, each defined by a particular realization of β, by generating many independent mixtures and calculating the unique cloud point for each mixture separately. Since we do not know a priori where a random mixture will phase separate, we choose the dimensionless mean interaction, β ̄ , of the interaction energy distributions to be slightly less than the dimensionless critical energy of the one-component lattice gas, √ β (crit) = −2 ln(1 + 2). On a two-dimensional square lattice, the secondvirial coefficients are given by Bij = −2fij , where fij ≡ exp (−β ij ) − 1. As a result, our choice of a Gaussian distribution of interaction energies results in a secondvirial-coefficient distribution with a finite variance, as required by Sear and Cuesta’s theory. We define “families” of random√mixture ensembles via their scaled mean f element, B ≡ f ̄ n/σf . This definition is equivalent to that given in Eq. (4b). Each family contains a set of random mixture en-
+
+[Page 6]
+
+simulations. This move is equivalent to exchanging solute particles with infinite ideal reservoirs at fixed chemical potentials. Translation of particles within the system is achieved through multiple successive identity changes.
+
+densities, ρ ≡ ζ̂ · (ρ − ρ D ). This biasing potential is given by the logarithm of the marginal probability density of ρ under the harmonic constraint:
+
+(mc) uζ̂ (ρ ) ≡ ln (dρ )n δ(ρ − ρ )
+
+B. Multicanonical biasing
+
+pb ( ρ; L2 , β, μ) ∝ exp[L2 β μ · ρ − uζ̂ (ρ )]ZL2 ,ρ ,
+
+where ρ⊥ ≡ (I − ζ̂ ζ̂ ) · (ρ − ρ D ) and ρ D is the mean density of the dilute phase. We choose γ such that γ |ρ⊥ |2 ≃ 8 near the barrier between either the cloud or shadow phase and the closest metastable free-energy minimum. With this choice, the constraint prevents the random walk from wandering out of the region of phase space that directly connects the cloud and shadow phase free-energy minima. Adding a multicanonical biasing potential helps the random walk to cross the free-energy barrier separating the cloud and shadow phases. We choose to apply a one-dimensional multicanonical bias in the parallel component of the solute
+
+The limits of integration of the solute densities ρ are the facets of the solute density n-simplex, n . This integral can only be evaluated with prior knowledge of the configurational partition function. As a result, Eq. (9) provides an iterative scheme for improving the biasing potential given an initial estimate of ZL2 ,ρ . In practice, the configurational partition function can be extrapolated from simulation data gathered at a nearby thermodynamic state.27 The complete biasing potential is the sum of the harmonic and multicanonical contributions, uζ̂ (ρ ) ≡ u(harm) (ρ ) + u(mc) (ρ ). ζ̂ ζ̂
+
+By unbiasing samples collected in a multicanonical simulation, we recover the grand-canonical probability distribuρ; L2 , β, μ). In order to visualize the n-dimensional tion, pgc ( probability density at a given (β, μ), we define the semi-grand potentials in one and two dimensions, respectively,
+
+(ρ ) ≡ − ln dρ n δ(ρ · ν̂ − ρ )pgc (ρ ), (11a) β(1) ν̂
+
+β(2) ν̂ , ν̂ (ρ , ρ ) ≡ − ln
+
+dρ n δ(ρ · ν̂ − ρ )
+
+× δ(ρ · ν̂ − ρ )pgc (ρ ).
+
+(11b)
+
+Two semi-grand potentials, evaluated at the cloud point for an example 16-component system, are plotted in Figures 3(a) and 4. Use of the biasing potential uζ̂ , a twodimensional slice of which is shown in Figure 3(b), prevents the simulation from sampling a prominent metastable phase. Figure 4 shows another benefit of biasing with Eq. (10): the simulation easily overcomes an apparent discontinuity in the one-dimensional semi-grand potential. The shoulder on the condensed phase minimum of (1) arises from density fluctuations in the direction of the metastable phase. Statistical noise near the apparent discontinuity is a result of unbiasing the “unfavorably” biased samples near the barrier between the condensed and metastable phases. These statistical errors do not affect the accuracy of the simulation, since only the probability density in the immediate vicinity of the two stable minima contributes significantly to grand-canonical ensemble averages. C. Calculating the direction of phase separation
+
+Using Eq. (10) as a biasing potential guarantees that we find at most two well defined free-energy minima in (2) . At the cloud point, these two minima are located at the cloud (dilute) and shadow (condensed) phase densities ρ D and
+
+where ZL2 ,ρ is the configurational partition function of a multicomponent lattice gas with component densities ρ. The biasing potential uζ̂ (ρ ) is designed to minimize the number of Monte Carlo moves required for the simulation to travel reversibly between free-energy minima. When B we expect to find only one dominant stable (or metastable) condensed phase and thus only one free-energy barrier, as in the case of a single-component lattice gas. However, when B ≃ 1, random matrix theory suggests that we should find multiple phases spaced closely in the parameter space (β, μ). While only one condensed phase might be thermodynamically stable, the remaining phases appear as metastable freeenergy minima, separated by multiple free-energy barriers, in a finite-size simulation. Using a multicanonical bias to flatten all of these barriers simultaneously is not feasible in a high-dimensional density space. Furthermore, flattening one of the barriers with a one-dimensional free-energy projection, as implemented in Refs. 17 and 24, can cause one or more of the metastable free-energy minima to become stable in the biased ensemble. As a result, the simulation can easily become trapped in one of the phases that would only be metastable in the absence of biasing. We have therefore implemented a multicanonical biasing potential in combination with a harmonic constraint designed to select only one condensed phase. Given an estimate of the direction of phase separation, we apply a harmonic constraint in all orthogonal directions of the solute density space, (ρ ) ≡ γ |ρ⊥ |2 , u(harm) ζ̂
+
+× eL β μ·ρ −γ |ρ⊥ | ZL2 ,ρ .
+
+The Metropolis Monte Carlo method is based on “importance sampling,” which implies that regions of phase space with low Boltzmann weight are rarely visited.25 Importance sampling is ill-suited to overcome free-energy barriers, and it limits the domain of solute densities over which we can accurately extrapolate pgc . We overcome both of these limitations with the careful application of multicanonical biasing.25 Our simulations sample in a modified ensemble where the biased probability, pb , of observing the solute densities ρ is
+
+[Page 7]
+
+βΦν̂1 ,ν̂2
+
+(a)
+
+uζ̂
+
+(b)
+
+ρ C ≡
+
+L2 ρ · ν̂2
+
+cloud phase shadow phase
+
+C ≡
+
+200 0
+
+L2 ρ · ν̂1
+
+L2 ρ · ν̂1
+
+FIG. 3. (a) Contours of constant semi-grand potential ν̂1 ,ν̂2 for an example 16-component mixture at the cloud point. The free-energy minima corresponding to the cloud and shadow phases are clearly visible. The basis vectors chosen for the projection, ν̂1 and ν̂2 , are the eigenvectors corresponding to the largest and second largest eigenvalues, respectively, of δ ρ δ ρ . (b) The corresponding two-dimensional slice of the biasing po(2) tential, uζ̂ ≡ uζ̂ [(ρ · ν̂1 )ν̂1 + (ρ · ν̂2 )ν̂2 ]. In both plots, the contour interval is 5 dimensionless units.
+
+ρ C − ρ D . |ρ C − ρ D |
+
+We then construct a dividing surface between the two phases, ρ = ρ ∗ , such that the maximum of the free-energy barrier is located at ρ ∗ in the one-dimensional semi-grand potential . This dividing surface yields self-consistent definitions ζ̂ for the cloud and shadow phase densities,
+
+ρ D ≡ dρ n ρ pgc (ρ ), (13a) ρ <ρ ∗
+
+βΦν̂1
+
+L2 ρ∗
+
+ρ <ρ ∗
+
+dρ n pgc (ρ ).
+
+(14b)
+
+ρ >ρ ∗
+
+We can approximate ζ̂ by considering the solute density covariance matrix, δ ρ δ ρ , where δ ρ ≡ ρ − ρ and ρ is the mean density vector of pgc (ρ ). If only one dilute phase is stable, then the dominant eigenvector (the eigenvector corresponding to the largest eigenvalue) of δ ρ δ ρ is nearly parallel to the minimum eigenvalue given by Eq. (3). When two phases are stable, ζ̂ is essentially parallel to the principal component of δ ρ δ ρ , i.e., the eigenvector, ν̂max , corresponding to the largest eigenvalue: δ ρ δ ρ ν̂max = λmax ν̂max .
+
+In a finite-size simulation, the direction of phase separation between the cloud and shadow phases can be estimated by extrapolating the covariance matrix obtained from a simulation at a lower total volume fraction, in which all condensed phases are metastable. This estimate can then be improved through repeated sampling near the cloud point. D. Locating the cloud point
+
+In order to calculate the solute chemical potentials at the cloud point, μ cl , we look for a solution to the generalized lever rule given by Eq. (1) in the limit that the volume fraction of the condensed phase, XC , goes to zero. First, we require that the dilute phase densities, ρ D , are proportional to the parent composition. Second, we require that the dilute and condensed phases have equal pressures in order to minimize errors due to finite-size effects.16 In the grand-canonical ensemble with a fixed number of lattice sites, the pressure difference between the two phases, P, is determined by the ratio of the dilute and condensed phase grand partition functions, C /D = exp (−L2 βP). The equal pressure criterion therefore implies that the total grand-canonical probability density associated with each coexisting phase be the same. These two conditions give us n + 1 linearly dependent equations with a unique solution μ cl : ρ (μ cl )D = φ(μ cl ) c,
+
+(16a)
+
+D (μ cl ) = 1. C (μ cl )
+
+(16b)
+
+L2 ρ · ν̂1
+
+FIG. 4. The semi-grand potential ν̂1 of the system shown in Figure 3. An apparent discontinuity results from the components of pgc (ρ ) in the condensed-phase that are perpendicular to ζ̂ . This feature has a negligible effect on the accuracy of ensemble averages, yet it significantly affects the sampling efficiency by impeding recrossings of the free-energy barrier. The approximate dividing surface, (ρ − ρ D ) · ν̂1 = ρ ∗ , is indicated by the dashed line.
+
+In Eq. (16a), φ depends on ρ D and thus removes one degree of freedom from the system of equations. We solve these equations by reweighting samples obtained from biased simulations at multiple nearby thermodynamic states and minimizing the sum of squares of the residuals (see Appendix B).
+
+ρ C , respectively, and correspond to regions of high probability density in pgc . We define the direction of phase separation, ζ̂ , in a grand-canonical simulation according to the density difference between these two phases: ζ̂ ≡
+
+(13b)
+
+respectively. The total probability densities associated with the two phases are likewise
+
+D ≡ dρ n pgc (ρ ), (14a)
+
+metastable phase
+
+dρ n ρ pgc (ρ ),
+
+ρ >ρ ∗
+
+[Page 8]
+
+V. RESULTS A. Predicting the direction of phase separation
+
+Sear and Cuesta’s theory suggests that the dominant instability in mixtures with very similar interactions among all components, when B 1, is likely to be a condensation phase transition. In other words, nearly degenerate interactions among all components should suppress demixing. The minimum eigenvalue of B may lie significantly outside of the semicircular distribution given by Eq. (5), qualitatively indicating a large separation between the first phase transition and phase transitions at higher total volume fractions on the phase diagram. In mixtures √ with very dissimilar second-virial coefficients, where σb / n −b̄ and thus B 1, Sear and Cuesta’s argument implies that specific interactions among subsets of components drive demixing into fractionated phases. From the continuous density of eigenvalues near λ̃ = 1, we expect a series of demixing transitions at similar volume fractions, with nearly orthogonal directions of phase separation.
+
+(a)
+
+1 − ν̂max (f ) · ζ̂
+
+0.8 0.6 0.4 0.2
+
+π/8
+
+π/4
+
+3π/8
+
+π/2
+
+3π/8
+
+π/2
+
+(b) 0.6
+
+0.4
+
+demixing
+
+0.2
+
+π/8
+
+π/4
+
+FIG. 5. The error between the direction of phase separation, ζ̂ , and predictions based on (a) the dominant eigenvector of f and (b) the path of minimum excess-free-energy given by Eq. (17). The dominant eigenvector of f underestimates the demixing contribution to ζ̂ . The prediction for ζ̂ from the final iteration, t = tf , of Eq. (17) is much more accurate over the entire range of θ for which we performed simulations.
+
+We find that the predictions of random matrix theory are useful for qualitatively interpreting the direction of phase separation as a function of B. In agreement with the theory, we observe condensation phase transitions, with no competing metastable states, for mixtures with B 1. When B ≃ 1, we find tightly clustered demixing transitions, with daughter phase compositions deviating significantly from the parent composition. The quantitative predictions of the theory, which are based on the local curvature of the dilute free-energy minimum, consistently underestimate the extent of demixing. The theory assumes that a mixture will phase separate in the direction of the dominant eigenvector of f. We find that this eigenvector is in excellent agreement with the dominant eigenvector of the solute density covariance matrix evaluated in the dilute phase (cf. Eq. (15), but with the domain of ρ restricted to the dilute phase). Nevertheless, this eigenvector provides a poor estimate of ζ̂ , particularly in cases where there is significant demixing (Figure 5(a)). In order to improve our prediction of the direction of phase separation, we propose an analytic algorithm that incorporates information from the entire matrix f. In this perturbative approach, we assume that the condensed phase forms on the lattice by following the lowest excess-free-energy path between the cloud and shadow phases. Starting from the dilute free-energy minimum, we follow the soft mode of the curvature of the excess free energy, c(2) (ρ ) ≡ ∂ 2 Fex (ρ )/ ∂ ρ∂ ρ, on a path of increasing total volume fraction. At the
+
+Since our multicanonical simulations require that the chemical potentials be specified a priori, we conduct a series of preliminary simulations to provide a reasonable guess for μ cl . We start from a total volume fraction in the dilute limit, where only one free-energy minimum is apparent. We estimate the chemical potentials in the dilute limit according to the second-virial approximation for a multicomponent lattice gas: β μ = [ln( ρ/φ) + B ρ ]. We then calculate the onedimensional semi-grand potential in the direction of ν̂max (B) at these chemical potentials with a Wang–Landau simulation (see Appendix A). This provides an initial biasing potential, with γ = 0 and ν̂max (B) as a rough guess for ζ̂ in Eq. (10). By increasing the volume fraction, we iteratively step along the dilution line and toward the phase boundary by reweighting and minimizing the residuals of ρ ( μ) = φ c. The total grand-canonical probability density associated with the condensed phase, C , grows exponentially with φ until the simulation crosses the phase boundary (see Appendix B). Samples from further simulations near this point can be used to solve the cloud point equations given by Eq. (16). When multiple metastable free-energy minima are present, we must be careful to choose the correct metastable phase before attempting to solve for the cloud point. In mixtures with several competing demixing transitions, the metastable condensed-phase free-energy minima appear prominently in finite-size simulations at total volume fractions that are considerably lower than φ cl . We can therefore identify all metastable condensed phases by first sampling at a lower total volume fraction in the absence of the harmonic constraint, i.e., with γ = 0. It is highly unlikely that we should fail to locate the most stable condensed phase in this manner, since the multicanonical bias only serves to push the simulation out of the dilute free-energy minimum. Once we have identified the metastable state that will lead to the first phase transition at a higher total volume fraction, we turn on the harmonic constraint and solve for the cloud point selfconsistently.
+
+1 − r̂(tf ) · ζ̂
+
+[Page 9]
+
+ρ(t)]r̂(t) = λmax (t)r̂(t), c(2) [
+
+(17a)
+
+ρ(t + t) =
+
+ρ(t) + r̂(t)t,
+
+(17b)
+
+B. Self-averaging of the direction of phase separation
+
+We find compelling evidence of self-averaging in θ , the angle between ζ̂ and the equal-concentration dilution line, in families of random mixture ensembles. Figure 6 shows the mean, θ̄, and relative standard deviation, σθ /θ̄ , for random mixture ensembles with 4, 8, and 16 components as a function of the family parameter B. With a finite number of components, the maximum θ̄ is limited by the geometry of the solute density n-simplex; when phase separating at a low total volume fraction, the largest possible angle√ between the dilution line and a demixing tie line is cos−1 (1/ n). Although we have shown that the direction of phase separation is sensitive to the details of the interaction matrix, we find that the relative standard deviation of θ at fixed B decreases with the number of components. (a) π/2
+
+3π/8
+
+follows the uphill path with the smallest gradient at every step along the excess-free-energy surface. Iteration terminates when r̂(t) converges to a constant direction; we take this direction to be our best estimate of ζ̂ . In practice, this occurs long before φ(t) becomes comparable to the total volume fraction at the saddle point. As a result, we find that only a few terms in the density expansion of c(2) (ρ ) are required for a reasonably accurate prediction of ζ̂ . Figure 5(b) shows the improved predictions for the direction of phase separation using Eq. (17). The results for a small number of random mixtures with nearly degenerate demixing transitions, for which sufficiently accurate simulation data could not be obtained, have been left out of the comparison. Use of Eq. (17) requires prior knowledge of φ cl , since both the initial solute densities, ρ(t = 0), and an appropriate step size t must be chosen in advance. Nevertheless, the final prediction of ζ̂ is relatively insensitive to either of these variables, as long as φ cl is known to within an order of magnitude and t is smaller than φ cl . The success of Eq. (17) in predicting the direction of phase separation supports our hypothesis that the transition on the lattice from the dilute to the condensed phase follows the lowest excess-free-energy path in the n-dimensional density space. We can interpret this finding in terms of a “cluster,” or spatial inhomogeneity, described by the diagrammatic expansion of c(2) . As this cluster grows, the change in the excess chemical potential of particles already in the cluster due to the addition of new particles is highly nonlinear. The direction of phase separation therefore turns away from the dilution line rapidly in mixtures with subsets of strongly interacting components. A similar disagreement between the direction of the local soft mode of the bulk phase and the ultimate direction of phase separation was reported by Fasolo and Sollich in a study of polydisperse hard-spheres.28 The small number of cluster diagrams included in the expansion of c(2) implies that further growth of the cluster does not measurably change the direction of phase separation. For this reason, we can still interpret ζ̂ as an essentially local property of the unstable homogeneous phase. Since the density expansion of c(2) (ρ ) is not basisinvariant (see Appendix C), we conclude that on-diagonal and
+
+off-diagonal interactions are fundamentally different. This observation implies that it is impossible to reproduce the phase behavior of a mixture with the spectral properties of the matrix f alone.
+
+θ̄
+
+saddle point along this path, two-dimensional projections of the semi-grand potential, such as the one in Figure 3(a), show that the dominant direction of density fluctuations is approximately parallel to the direction of phase separation. In this algorithm, we take discrete steps along the path of minimum excess free energy between the cloud and shadow phases. We parameterize this path according to the variable t and start from the solute densities at the free-energy minimum of the dilute phase at the cloud point, ρ(t = 0) = ρcl . At every step, we evaluate the direct pair correlation function, c(2) (ρ ) (see Appendix C). We then perturb the solute densities by taking a step of magnitude t in the direction of the eigenvector r̂(t) corresponding to the largest eigenvalue of c(2) (ρ ). This iterative procedure,
+
+π/4
+
+π/8
+
+(b) 0.7
+
+0.6 0.5 σθ /θ̄
+
+0.4 0.3 0.2 0.1
+
+FIG. 6. (a) The average phase separation angle, θ̄, of a random mixture ensemble as a function of the random mixture family parameter B. Phase separation tends toward demixing with decreasing B. This trend agrees with the qualitative predictions of Sear and Cuesta’s theory, even though the predicted directions of phase separation differ significantly from those calculated by numerical simulation (cf. Figure 5(a)). (b) The relative standard deviation, σθ /θ̄ , as a function of B. The decrease in σθ /θ̄ with increasing n indicates that the random mixture ensembles are self-averaging, except where B = 5. The error bars, which denote one standard deviation of the mean, were calculated with bootstrapping simulations.
+
+[Page 10]
+
+C. Mapping onto a one-component lattice gas
+
+In addition to calculating the direction of phase separation, we would like to define an effective interaction strength that describes the driving force for phase separation at the cloud point. By reducing the n × n interaction matrix to a single parameter, we can attempt to map the cloud point of an n-component mixture onto the binodal of an “effective” onecomponent lattice gas. The Sear-Cuesta model predicts that a mixture with equal solute densities will first phase separate in the direction of ν̂max ( f ), the eigenvector corresponding to the largest eigenvalue of f (or equivalently, the eigenvector corresponding to the minimum eigenvalue of B). In Figure 7(a), we plot the simulated cloud points, φ cl , against λmax ( f )/n. This parameter measures the effective interaction strength per component, in terms of the dimensionless matrix f, for density fluctuations projected along ν̂max ( f ). We compare these points with Onsager’s analytical expression for the binodal of a one-component, twodimensional square lattice gas with dimensionless interaction strength β : φbi (f ) = 12 − 12 [1 − 16(1 + f )2 /f 4 ]1/8 , where f ≡ exp (−β ) − 1.30 We find that, with this parameterization, the cloud points of multicomponent mixtures lie on or below the onecomponent lattice gas binodal, i.e., φcl ≤ φbi [λmax ( f )/n]. Equality is only achieved when the interaction matrix is completely degenerate, and thus B → ∞. In this limit, an ncomponent mixture is equivalent to a one-component lattice gas with arbitrarily labeled components. As a result, the mix-
+
+(a) 100
+
+φcl
+
+−1
+
+φbi (λmax (f )/n)
+
+10−2
+
+10−3
+
+10−4
+
+λmax (f )/n
+
+(b) 100
+
+−1
+
+10−2
+
+φbi (f ∗ )
+
+10−3
+
+10−4
+
+∗ −2 2 (f )
+
+f∗
+
+FIG. 7. A comparison of two methods of mapping an n-component mixture onto an effective one-component lattice gas. (a) When parameterized by λmax ( f )/n, φ cl lies on or below the equivalent lattice-gas binodal φbi (λmax ( f )/n). (b) Parameterizing according to f ∗ , which is defined in Eq. (18), correctly maps the matrix√f onto an equivalent one-component lattice gas in the limit that cos θ → 1/ n and reveals an empirical lower bound on φ cl .
+
+ture and the one-component system must have the same phase behavior. The difference between φ cl and φbi [λmax ( f )/n] increases with θ as the phase separation acquires more of a demixing character. In order to improve our mapping between an ncomponent mixture and the one-component lattice gas, we introduce an empirical parameter f ∗ : f∗ ≡
+
+ζ̂ f ζ̂ . n cos θ
+
+By analogy with the previous parameterization, the quantity (ζ̂ f ζ̂ )/n measures the effective interaction strength per component for density fluctuations projected along the calculated direction of phase separation, ζ̂ . A plot of φ cl versus f ∗ is shown in Figure 7(b). The factor (1/cos θ ) is included in Eq. (18) to satisfy the dilution line constraint, i.e., equal solute densities in the dilute phase, in the limit that B → 0. If we assume that the most attractive interaction, max , is significantly stronger than all other interactions in the mixture, then we can simply approximate the remaining entries, where fij = fmax , with zeros. If we further assume that max lies on the diagonal of the interaction matrix and that φ cl is small, then we know that
+
+The matrix f alone does not govern the direction of phase separation, as is assumed in Sear and Cuesta’s theory. If that were the case, then we would see better agreement between ν̂max ( f ) and ζ̂ in Figure 5(a), and we would expect a maximum in σθ /θ̄ at B ≃ 1, where random matrix theory predicts a crossover from mostly condensation to mostly demixing phase transitions. Instead, we find that σθ /θ̄ has a peak near B = 5, which sharpens as the number of components increases. Our test for self-averaging is inconclusive for B = 5, and we expect that mixtures with many more components would have to be simulated in order to observe self-averaging close to the condensation-demixing crossover. Self-averaging in θ implies that the extent of demixing at the first instability in a mixture with hundreds of components is determined entirely by the mean and variance of the distribution of its interactions. Except near B ≃ 5, B accurately predicts whether a multicomponent mixture will phase separate due to condensation or demixing; this predictive ability only becomes more accurate as the number of components increases. The matrix δ ρ δ ρ , whose dominant eigenvector points along the direction of phase separation in the thermodynamic limit, can be expanded as a diagrammatic series involving the matrix f.29 Although we cannot evaluate the series at high densities, this relationship suggests that δ ρ δ ρ , when evaluated at the cloud point, is itself a random matrix with some probability distribution for the random elements δρ i δρ j . As a result, we recover a statistical interpretation of the phase behavior of random mixtures.
+
+φcl
+
+[Page 11]
+
+D. Predicting the total volume fraction at the cloud point
+
+We can estimate the limit of stability for random mixture ensembles statistically by considering our empirical bounds on φ cl as a function of f ∗ (cf. Figure 7(b)). Here, φ cl depends explicitly on the mean interaction energy of the random mixture ensemble, ̄ . We must therefore calculate the ratio of the average effective interaction of a random mixture ensemble, f ̄∗ , to the mean value of f for the underlying Gaussian distribution of interaction energies, f ̄. This ratio increases as the phase transition acquires a more demixing character and the number of components increases (Figure 8). Although we have only found evidence of self-averaging in f ̄∗ /f ̄ for B ≥ 25, we expect this ratio to be self-averaging for all random mixture ensembles with a sufficiently large number of components. We examine the dependence of φ cl on B and n by calculating the empirical upper and lower bounds as a function of f ̄∗ . In the inset of Figure 8, we show the estimated bounds on φ cl for random mixture ensembles with f ̄ = 5. This choice places the mean interaction strength just above the critical interaction strength for an equivalent one-component lattice gas.
+
+f ̄ = 5 10−1 φcl
+
+10−2
+
+10−3
+
+FIG. 8. The ratio of the random mixture ensemble-averaged effective interaction, f ̄∗ , to the mean value of f for the underlying Gaussian distribution of interaction energies, f ̄. This ratio increases with the number of components as the phase separation tends toward pure demixing. The result of simulations with n = 16 and B = 1 has not been included due to its unacceptably large error bar. (Inset) The empirical upper (solid line) and lower (dashed line) bounds on φ cl as a function of B and the number of components. The bounds are calculated from the simulation estimates of f ̄∗ assuming f ̄ = 5, which corresponds to a slightly sub-critical temperature for an equivalent one-component lattice gas.
+
+As B → 1 and the number of components increases, both bounds on φ cl rapidly diminish. This behavior is exactly opposite to that predicted by Sear and Cuesta,19 whose theory suggests that the spinodal density should diverge as n → ∞ for B 1. This contradiction arises from the different parameters (λmax ( f )/n versus f ∗ ) used to describe the driving force for phase separation in Sear and Cuesta’s theory and in our analysis. In particular, we note that the divergence of f ̄∗ /f ̄ as B → 1 is due to the factor 1/cos θ in Eq. (18), which was introduced to satisfy the dilution line constraint in the limit of complete demixing. Thus, the fundamental reason for this disagreement is the treatment of the dilution line constraint in mixtures with a large variance in interaction energies. From our simulation results, we conclude that demixing tends to lower the total volume fraction at which a mixture phase separates. As a consequence, multicomponent mixtures that are characterized by a large variance in interaction energies tend to be thermodynamically unstable in a homogeneous phase. VI. CONCLUSIONS
+
+We have described a robust Monte Carlo method for calculating coexistence in multicomponent mixtures with strongly varying interaction energies. In the spirit of Sear and Cuesta’s theory of random mixtures, we have reduced the n × n interaction matrix of a random mixture to a single parameter, which maps closely onto an effective one-component fluid. We have also calculated the direction of phase separation at the boundary of the homogeneous phase. Although the driving force for phase separation is in general a collective property of a mixture’s interactions, mixtures with equal component concentrations and large disparities
+
+the direction of phase separation must be nearly parallel to a basis vector in the direction√of the strongly interacting component, and thus cos θ ≃ 1/ n. The strongly interacting component demixes from the other effectively inert components −2 when its density is equal to φ bi (fmax ), which approaches fmax ∗ for fmax 1. Our choice for f therefore satisfies the dilution line constraint for the total volume fraction: φ cl = nφ bi (fmax ) = φ bi (f ∗ ). When B → 0 and max is an off-diagonal element of the interaction matrix, the analysis becomes more complex. Consider the simplest case of a two-component mixture with no self-interactions. symmetry, the direction of phase sep√ By √ aration is (1/ 2, 1/ 2). In the “checkerboard” condensed phase in the absence of vacancies, the excess chemical potential of each component is approximately equal to that of a onecomponent lattice gas with the same self-interaction energy, max . We therefore have a dilute phase of two non-interacting fluids in coexistence with a single condensed phase, and the total volume fraction at coexistence is twice φ bi (fmax ). Yet be−2 1, φcl ≃ 2fmax ≃ φbi (f ∗ )/2. This limiting case cause fmax suggests that φ cl lies below φ bi (f ∗ ) for some mixtures due to strong off-diagonal interactions. Thus, at low temperatures 1), φ cl for any two-component mixture must fall some(f ∗ where between φ bi (f ∗ )/2 and φ bi (f ∗ ). Remarkably, we find that (f ∗ )−2 /2 provides an empirical lower bound for φ cl for all random mixtures considered in this work (Figure 7(b)). This result implies that mixtures with stable heteromeric complexes, which require strong offdiagonal interactions, are marginally less stable than mixtures that reduce to the same f ∗ but form predominantly homomeric complexes. Although the particular form of f ∗ and the corresponding effective binodal are specific to the two-dimensional lattice gas, we speculate that an analogous effective parameter exists for any multicomponent mixture.
+
+f ̄∗ /f ̄
+
+[Page 12]
+
+protein interactions are unlikely to affect the phase boundary of the dilute phase of a self-averaging, functional mixture. ACKNOWLEDGMENTS
+
+The authors would like to thank Richard Sear, Nigel Wilding, and Fabien Paillusson for helpful discussions and Patrick Varilly for a careful reading of the manuscript. W.M.J. acknowledges support from the Gates Cambridge Trust and the National Science Foundation Graduate Research Fellowship under Grant No. DGE-1143678. D.F. acknowledges support of ERC Advanced Grant 227758, a Wolfson Merit Award of the Royal Society of London and EPSRC Programme Grant EP/I001352/1. APPENDIX A: WANG–LANDAU SIMULATIONS
+
+Given an estimate of the tie line direction ζ̂ , we calculate a one-dimensional semi-grand potential in the dilute limit with a Wang–Landau simulation.26 Following the usual flathistogram procedure, we construct a histogram of the logarithm of the generalized density of states:
+
+gζ̂ (ρ ) = (dρ )n δ(ρ − ρ )eL β μ̂ (I−ζ̂ ζ̂ )ρ ZL2 ,ρ . (A1)
+
+The corresponding semi-grand potential, given by · ζ̂ β(1) (ρ ) = ln gζ̂ (ρ ) + L2 β μ
+
+(A2)
+
+is used as an initial multicanonical bias [cf. Eq. (10)]. Caution is required in the implementation of the histogram “flatness” criteria: near the boundaries of the one-dimensional projection of n , the logarithm of the density of states falls off exponentially. As a result, the majority of the computational time goes toward computing the extremes of the density-of-states histogram. Wasted computational time can be avoided by precalculating the relevant domain of ρ . APPENDIX B: SUM OF SQUARES MINIMIZATIONS
+
+We solve the dilution line, Eq. (B1), and cloud point, Eq. (16), equations by recasting them as n-dimensional minimization problems.24, 31 Due to the statistical errors of Monte Carlo sampling, it may not be possible to satisfy the equations exactly, and minimization of the residuals allows us to determine the best solution given the available data. In practice, we have reduced the sum of residuals to below 1 × 10−9 in our final solutions to the cloud point equations; this value is orders of magnitude smaller than the relevant quantities, ρ and D /C , in Eq. (16). For both sets of equations, analytic derivatives can be used to guide the minimization using an algorithm such as Levenberg–Marquardt.32 1. Dilution line equations
+
+When tracking a dilution line, we require the ensembleaveraged solute densities to be proportional to the parent composition c: ρ ( μ) = φ c.
+
+(B1)
+
+among interaction energies tend to demix at very low densities. This effect, which we have shown to be a consequence of the fixed parent composition, is at odds with the divergent spinodal density predicted by Sear and Cuesta.19 It is possible that, in mixtures with thousands of components, the small B limit might be unrealistic: presumably the mean and variance in the distribution of protein-protein interactions remain fairly constant as the number of components in the system increases. If this is the case, then our results predict that protein solutions might avoid demixing, and hence prevent instabilities at low volume fractions, simply by having a large number of components. We have found that the dominant direction of the dilute phase density fluctuations, which tend to point toward uniformly higher component densities, is not a reliable predictor of the direction of phase separation. In this respect, our results differ qualitatively from the predictions of Sear and Cuesta’s theory. The assumption of an approximately parabolic freeenergy minimum in the dilute phase is quite poor at the cloud point. In order to obtain a reliable estimate of the direction of phase separation, it is necessary to consider the potentially nonlinear solute density fluctuations in the dilute phase. Nevertheless, we note that this direction is still an essentially local property of the dilute phase for the model studied in this work since it can be predicted without knowledge of the shadow phase composition. In order to achieve thermodynamic stability in protein mixtures with specific interactions at a high total volume fraction, it is clear that the parent composition of the mixture must be appropriately tuned. It would be straightforward to extend our computational approach to mixtures with varying parent compositions and to “optimize” the concentrations of model proteins for thermodynamic stability. Removing the equal density constraint might actually make computations easier, since a component with a tendency to aggregate could simply be assigned a lower chemical potential in a simulation. In reality, we do not expect all proteins with strong interactions to be equally likely to upset the stability of a mixture, as is the case in our current model. Instead, we expect proteins with only highly directional interactions, which are buried when forming dimers or other oligomers, to be less prone to aggregation. The parent composition should therefore be tuned with particular attention to those proteins that have either strong isotropic or many anisotropic interactions. For this reason, we suggest that our current model be viewed as an approximation of this dangerous subset of proteins that could cause unwanted aggregation or induce phase separation in the cytosol. Finally, the self-averaging behavior of the phase separation angle θ implies that knowledge of the distribution of protein-protein-interaction free energies is sufficient to describe the extent to which a mixture demixes at the lowestdensity instability. This self-averaging agrees qualitatively with Sear and Cuesta’s theory. Even though small perturbations in the interaction strengths of a protein-interaction network might dramatically change the pathways for aggregation or the composition of a demixed phase, localized changes only negligibly affect the statistical properties of a multicomponent mixture. As a result, perturbations of specific protein-
+
+[Page 13]
+
+The constant of proportionality, φ, is in general not equal to the true total volume fraction when multiple phases are present. This difference is a result of considerable finite-size effects, which arise from pressure differences between coexisting phases.17 The Jacobian of this system of equations is the solute density covariance matrix: ∂ρ D = δ ρ δ ρ D . ∂(L2 β μ)
+
+(B2)
+
+2. Cloud point equations
+
+Equation (16) defines the cloud point in terms of the solute densities and the grand partition functions D and C . We find that the minimization converges more reliably if we modify Eq. (16a) as follows: ρ (μ cl )D = c. φ(μ cl )
+
+(B3)
+
+Each term in this series represents the sum over all possible combinations of components at the field points (filled circles) for every pair of components fixed at the root points (empty circles). To evaluate a diagram, we take the product of all field-point component densities ρ i and all f-bonds, which are indicated by edges between pairs of components. The symmetry number of each term is implicitly included in the definition of the corresponding diagram. Since Eq. (C1) is only guaranteed to converge at low densities, we cannot rigorously show that the algorithm given by Eq. (17) converges. Yet by terminating the iteration when r̂(t) attains a fixed direction, we expect to maintain a consistent ρ(t)]. order of approximation between ρ(t) and c(2) [ 1 S. Jones and J. M. Thornton, Proc. Natl. Acad. Sci. U.S.A. 93, 13 (1996). 2 R. P. Sear, J. Phys.: Condens. Matter 17, S3587–S3595 (2005). 3 R. P. Sear, Phys. Biol. 1, 53–60 (2004). 4 M. Johnson and G. Hummer, Proc. Natl. Acad. Sci. U.S.A. 108, 603 (2011). 5 M. Heo, S. Maslov, and E. Shakhnovich, Proc. Natl. Acad. Sci. U.S.A. 108,
+
+4258 (2011). 6 S. Pechmann, E. D. Levy, G. G. Tartaglia, and M. Vendruscolo, Proc. Natl.
+
+The Jacobian of the modified system can be written in terms of the first two moments of the solute density distribution: ∂(ρ D /φcl ) = δ ρ δ ρ D ∂(L β μ) φcl
+
+Acad. Sci. U.S.A. 106, 10159–10164 (2009). 7 G. G. Tartaglia, S. Pechmann, C. M. Dobson, and M. Vendruscolo, Trends
+
+Biochem. Sci. 32, 204 (2007). 8 F. Braun, S. Paulsen, R. P. Sear, and P. Warren, Phys. Rev. Lett. 94, 178105
+
+9 R. P. Sear, J. Chem. Phys. 120, 998 (2004). 10 R. P. Sear, Phys. Biol. 1, 166–172 (2004).
+
+ρ D , −(δ ρ δ ρ D · 1) φcl2
+
+(B4)
+
+∂(D /C ) (ρ D − ρ C ) , = ∂(L2 β μ)
+
+(B5)
+
+11 J.-R. Yang, B.-Y. Liao, S.-M. Zhuang, and J. Zhang, Proc. Natl. Acad. Sci.
+
+U.S.A. 109, E831 (2012). 13 J. Yang, Q. Xin, L. Sun, H. Liu, Y. Hu, and J. Jiang, J. Chem. Phys. 125,
+
+where 1 is the vector (1, 1, . . . , 1). Equation (16b) is valid when other metastable phases are present. In this case, the pressures are only equalized between the dilute phase and the most stable condensed phase.
+
+164506 (2006). 14 W. Fenz, I. P. Omelyan, and R. Folk, Phys. Rev. E 72, 056121 (2005). 15 N. B. Wilding and P. Sollich, Europhys. Lett. 67, 219–225 (2004). 16 N. B. Wilding, P. Sollich, M. Fasolo, and M. Buzzacchi, J. Chem. Phys.
+
+125, 014908 (2006). 17 M. Buzzacchi, P. Sollich, N. B. Wilding, and M. Müller, Phys. Rev. E 73,
+
+046110 (2006). 18 N. B. Wilding, P. Sollich, and M. Buzzacchi, Phys. Rev. E 77, 011501
+
+19 R. P. Sear and J. Cuesta, Phys. Rev. Lett. 91, 245701 (2003).
+
+APPENDIX C: DIAGRAMMATIC EXPANSIONS
+
+20 P. Sollich, J. Phys.: Condens. Matter 14, R79 (2002).
+
+The diagrammatic expansion of the multicomponent direct pair correlation function, c(2) (|Ri − Rj |), where Ri and Rj are the positions of two particles of type i and j, is derived from the Mayer cluster expansion of the grand partition function.29 On a two-dimensional square lattice with nearest-neighbor interactions, c(2) (ρ ) is only evaluated at the nearest-neighbor distance, and many terms drop out of the expansion.33 The resulting series can be succinctly notated as
+
+21 Z. Füredi and J. Komlós, Combinatorica 1, 233 (1981). 22 R. P. Sear, Europhys. Lett. 60, 938 (2002). 23 N. B. Wilding and P. Sollich, J. Chem. Phys. 116, 7116 (2002). 24 N. B. Wilding, P. Sollich, and M. Fasolo, Phys. Rev. Lett. 95, 155701
+
+25 D. Frenkel and B. Smit, Understanding Molecular Simulation, 2nd ed.
+
+(Academic Press, 2002). 26 F. Wang and D. P. Landau, Phys. Rev. Lett. 86, 2050 (2001). 27 Z. Tan, E. Gallicchio, M. Lapelosa, and R. M. Levy, J. Chem. Phys. 136,
+
+144102 (2012). 28 M. Fasolo and P. Sollich, Phys. Rev. E 70, 041410 (2004). 29 J.-P. Hansen and I. McDonald, Theory of Simple Liquids, 3rd ed. (Academic
+
+Press, Amsterdam, The Netherlands, 2006).
+
+c(2) (ρ ) =
+
++
+
++
+
++
+
++
+
+30 L. Onsager, Phys. Rev. 65, 117 (1944).
+
++
+
+31 N. B. Wilding, Am. J. Phys. 69, 1147 (2001). 32 J. J. Moré, in Numerical Analysis, Lecture Notes in Mathematics Vol. 630,
+
++
+
++
+
++
+
++
+
++
+
++
+
+edited by G. Watson (Springer, Heidelberg, Berlin, 1978), pp. 105–116.
+
++ O(φ6 ).
+
+33 G. S. Rushbrooke and H. I. Scoins, Proc. R. Soc. London, Ser. A 230, 74–
+
+(C1)
+
+90 (1955).
+
+12 W. Fenz and R. Folk, Phys. Rev. E 71, 046104 (2005).

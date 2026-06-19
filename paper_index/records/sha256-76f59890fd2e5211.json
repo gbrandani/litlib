@@ -1,0 +1,630 @@
+{
+  "paper_id": "sha256-76f59890fd2e5211",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/chromatin_and_gene_regulation/papantonis_2021_NatRevMolCellBiol_transcription_factories_vs_llps.pdf",
+  "pdf_sha256": "76f59890fd2e52118a760871f5f6c45c2d954b686866ca5fe0063e0941154613",
+  "filename": "papantonis_2021_NatRevMolCellBiol_transcription_factories_vs_llps.pdf",
+  "item_type": "article",
+  "title_query": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation",
+  "filename_hints": {
+    "year_hint": 2021,
+    "venue_hint": "",
+    "prefix": "papantonis 2021 NatRevMolCellBiol transcription factories vs llps"
+  },
+  "doi_candidates": [
+    "10.1101/cshperspect.a040683"
+  ],
+  "date_indexed": "2026-04-17T05:21:18.178800+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "NatRevMolCellBiol transcription factories vs llps",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 1.0,
+        "candidate_count": 7
+      },
+      {
+        "query": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation? Karsten Rippe",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 0.96,
+        "candidate_count": 1
+      },
+      {
+        "query": "Recent studies invoke phase separation as a mechanism underlying the formation of ‘transcriptional condensates’",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "Division of Chromatin Networks, German Cancer Research Center (DKFZ) and Bioquant, Heidelberg, Germany",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2021!=2012"
+        ],
+        "best_score": 0.0,
+        "candidate_count": 1
+      }
+    ],
+    "best_candidate": {
+      "paperId": "4f626800e1f6b7a131993ef8a741b360deb2e83d",
+      "externalIds": {
+        "DOI": "10.1038/s41580-021-00401-6",
+        "CorpusId": 236142155,
+        "PubMed": "34282323"
+      },
+      "url": "https://www.semanticscholar.org/paper/4f626800e1f6b7a131993ef8a741b360deb2e83d",
+      "title": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation?",
+      "venue": "Nature reviews. Molecular cell biology",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41580-021-00401-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41580-021-00401-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2021-07-19",
+      "journal": {
+        "name": "Nature Reviews Molecular Cell Biology",
+        "pages": "645 - 646",
+        "volume": "22"
+      },
+      "authors": [
+        {
+          "authorId": "2408430",
+          "name": "K. Rippe"
+        },
+        {
+          "authorId": "3966230",
+          "name": "A. Papantonis"
+        }
+      ],
+      "abstract": null
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "4f626800e1f6b7a131993ef8a741b360deb2e83d",
+        "title": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation?",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": null,
+        "candidate_year": 2021,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "601fb636e98231d14d24157428e1b537736f6bce",
+        "title": "Phase-separation mechanism for C-terminal hyperphosphorylation of RNA polymerase II",
+        "score": 0.2429,
+        "title_similarity": 0.2429,
+        "query_year": null,
+        "candidate_year": 2018,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "227e58b46fda1fd39e000e35ae57775432cca29c",
+        "title": "Liquid phase condensation directs nucleosome epigenetic modifications",
+        "score": 0.0797,
+        "title_similarity": 0.0797,
+        "query_year": null,
+        "candidate_year": 2020,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5484f90a215b9c7055251994ee416bc60fcdb453",
+        "title": "Chromatin mechanics dictates subdiffusion and coarsening dynamics of embedded condensates",
+        "score": 0.0785,
+        "title_similarity": 0.0785,
+        "query_year": null,
+        "candidate_year": 2020,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "002a83f7727314dd66f442d1066c51393fbef431",
+        "title": "1D Sequence Based 3D Chromatin Phase Separation: Forces, Processes, and Functions",
+        "score": 0.0766,
+        "title_similarity": 0.0766,
+        "query_year": null,
+        "candidate_year": 2020,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "9889f06400282b5c32c4a6180de43dd1a1d3e584",
+        "title": "Evidence for DNA-mediated nuclear compartmentalization distinct from phase separation",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": null,
+        "candidate_year": 2019,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "66dbf44a170cd1f7de5dcec4447a22fb10986978",
+        "title": "Coactivator condensation at super-enhancers links phase separation and gene control",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": null,
+        "candidate_year": 2018,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41580-021-00401-6"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 7,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "4f626800e1f6b7a131993ef8a741b360deb2e83d",
+          "externalIds": {
+            "DOI": "10.1038/s41580-021-00401-6",
+            "CorpusId": 236142155,
+            "PubMed": "34282323"
+          },
+          "url": "https://www.semanticscholar.org/paper/4f626800e1f6b7a131993ef8a741b360deb2e83d",
+          "title": "RNA polymerase II transcription compartments: from multivalent chromatin binding to liquid droplet formation?",
+          "venue": "Nature reviews. Molecular cell biology",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41580-021-00401-6?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41580-021-00401-6, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-07-19",
+          "journal": {
+            "name": "Nature Reviews Molecular Cell Biology",
+            "pages": "645 - 646",
+            "volume": "22"
+          },
+          "authors": [
+            {
+              "authorId": "2408430",
+              "name": "K. Rippe"
+            },
+            {
+              "authorId": "3966230",
+              "name": "A. Papantonis"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "601fb636e98231d14d24157428e1b537736f6bce",
+          "externalIds": {
+            "MAG": "2804270751",
+            "DOI": "10.1038/s41586-018-0174-3",
+            "CorpusId": 44074195,
+            "PubMed": "29849146"
+          },
+          "url": "https://www.semanticscholar.org/paper/601fb636e98231d14d24157428e1b537736f6bce",
+          "title": "Phase-separation mechanism for C-terminal hyperphosphorylation of RNA polymerase II",
+          "venue": "Nature",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6475116",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41586-018-0174-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41586-018-0174-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-05-30",
+          "journal": {
+            "name": "Nature",
+            "pages": "318 - 323",
+            "volume": "558"
+          },
+          "authors": [
+            {
+              "authorId": "4139578",
+              "name": "Huasong Lu"
+            },
+            {
+              "authorId": "2145102795",
+              "name": "Dan Yu"
+            },
+            {
+              "authorId": "144396362",
+              "name": "A. Hansen"
+            },
+            {
+              "authorId": "6028417",
+              "name": "S. Ganguly"
+            },
+            {
+              "authorId": "15736693",
+              "name": "Rongdiao Liu"
+            },
+            {
+              "authorId": "46195638",
+              "name": "A. Heckert"
+            },
+            {
+              "authorId": "6858188",
+              "name": "X. Darzacq"
+            },
+            {
+              "authorId": "7451768",
+              "name": "Qiang Zhou"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "9889f06400282b5c32c4a6180de43dd1a1d3e584",
+          "externalIds": {
+            "MAG": "2942748350",
+            "PubMedCentral": "6522219",
+            "DOI": "10.7554/eLife.47098",
+            "CorpusId": 140422970,
+            "PubMed": "31038454"
+          },
+          "url": "https://www.semanticscholar.org/paper/9889f06400282b5c32c4a6180de43dd1a1d3e584",
+          "title": "Evidence for DNA-mediated nuclear compartmentalization distinct from phase separation",
+          "venue": "eLife",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.7554/elife.47098",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6522219, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-04-30",
+          "journal": {
+            "name": "eLife",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "4875044",
+              "name": "D. McSwiggen"
+            },
+            {
+              "authorId": "144396362",
+              "name": "A. Hansen"
+            },
+            {
+              "authorId": "40502687",
+              "name": "Sheila S. Teves"
+            },
+            {
+              "authorId": "1399323424",
+              "name": "H. Marie-Nelly"
+            },
+            {
+              "authorId": "91366332",
+              "name": "Yvonne Hao"
+            },
+            {
+              "authorId": "46195638",
+              "name": "A. Heckert"
+            },
+            {
+              "authorId": "51293526",
+              "name": "Kayla K Umemoto"
+            },
+            {
+              "authorId": "1398074204",
+              "name": "C. Dugast-Darzacq"
+            },
+            {
+              "authorId": "4787737",
+              "name": "R. Tjian"
+            },
+            {
+              "authorId": "6858188",
+              "name": "X. Darzacq"
+            }
+          ],
+          "abstract": "RNA Polymerase II (Pol II) and transcription factors form concentrated hubs in cells via multivalent protein-protein interactions, often mediated by proteins with intrinsically disordered regions. During Herpes Simplex Virus infection, viral replication compartments (RCs) efficiently enrich host Pol II into membraneless domains, reminiscent of liquid-liquid phase separation. Despite sharing several properties with phase-separated condensates, we show that RCs operate via a distinct mechanism wherein unrestricted nonspecific protein-DNA interactions efficiently outcompete host chromatin, profoundly influencing the way DNA-binding proteins explore RCs. We find that the viral genome remains largely nucleosome-free, and this increase in accessibility allows Pol II and other DNA-binding proteins to repeatedly visit nearby DNA binding sites. This anisotropic behavior creates local accumulations of protein factors despite their unrestricted diffusion across RC boundaries. Our results reveal underappreciated consequences of nonspecific DNA binding in shaping gene activity, and suggest additional roles for chromatin in modulating nuclear function and organization."
+        },
+        {
+          "paperId": "66dbf44a170cd1f7de5dcec4447a22fb10986978",
+          "externalIds": {
+            "MAG": "2809057270",
+            "DOI": "10.1126/science.aar3958",
+            "CorpusId": 49356501,
+            "PubMed": "29930091"
+          },
+          "url": "https://www.semanticscholar.org/paper/66dbf44a170cd1f7de5dcec4447a22fb10986978",
+          "title": "Coactivator condensation at super-enhancers links phase separation and gene control",
+          "venue": "Science",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://science.sciencemag.org/content/sci/361/6400/eaar3958.full.pdf",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1126/science.aar3958?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1126/science.aar3958, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-07-27",
+          "journal": {
+            "name": "Science",
+            "volume": "361"
+          },
+          "authors": [
+            {
+              "authorId": "4508475",
+              "name": "Benjamin R. Sabari"
+            },
+            {
+              "authorId": "1401817875",
+              "name": "Alessandra Dall’Agnese"
+            },
+            {
+              "authorId": "3777740",
+              "name": "Ann Boija"
+            },
+            {
+              "authorId": "3881762",
+              "name": "Isaac A. Klein"
+            },
+            {
+              "authorId": "5637260",
+              "name": "Eliot L. Coffey"
+            },
+            {
+              "authorId": "50855937",
+              "name": "K. Shrinivas"
+            },
+            {
+              "authorId": "41330093",
+              "name": "B. Abraham"
+            },
+            {
+              "authorId": "3607792",
+              "name": "N. Hannett"
+            },
+            {
+              "authorId": "7594699",
+              "name": "A. V. Zamudio"
+            },
+            {
+              "authorId": "50406905",
+              "name": "John C. Manteiga"
+            },
+            {
+              "authorId": "2109482219",
+              "name": "Charles H. Li"
+            },
+            {
+              "authorId": "49813841",
+              "name": "Y. Guo"
+            },
+            {
+              "authorId": "5885383",
+              "name": "Daniel S. Day"
+            },
+            {
+              "authorId": "46504090",
+              "name": "Jurian Schuijers"
+            },
+            {
+              "authorId": "4735229",
+              "name": "E. Vasile"
+            },
+            {
+              "authorId": "50229939",
+              "name": "S. Malik"
+            },
+            {
+              "authorId": "3787252",
+              "name": "Denes Hnisz"
+            },
+            {
+              "authorId": "152240986",
+              "name": "Tong Ihn Lee"
+            },
+            {
+              "authorId": "4411833",
+              "name": "I. Cissé"
+            },
+            {
+              "authorId": "1824599",
+              "name": "R. Roeder"
+            },
+            {
+              "authorId": "2065901",
+              "name": "P. Sharp"
+            },
+            {
+              "authorId": "2230842",
+              "name": "A. Chakraborty"
+            },
+            {
+              "authorId": "2248177080",
+              "name": "R. Young"
+            }
+          ],
+          "abstract": "Phase separation and gene control Many components of eukaryotic transcription machinery—such as transcription factors and cofactors including BRD4, subunits of the Mediator complex, and RNA polymerase II—contain intrinsically disordered low-complexity domains. Now a conceptual framework connecting the nature and behavior of their interactions to their functions in transcription regulation is emerging (see the Perspective by Plys and Kingston). Chong et al. found that low-complexity domains of transcription factors form concentrated hubs via functionally relevant dynamic, multivalent, and sequence-specific protein-protein interaction. These hubs have the potential to phase-separate at higher concentrations. Indeed, Sabari et al. showed that at super-enhancers, BRD4 and Mediator form liquid-like condensates that compartmentalize and concentrate the transcription apparatus to maintain expression of key cell-identity genes. Cho et al. further revealed the differential sensitivity of Mediator and RNA polymerase II condensates to selective transcription inhibitors and how their dynamic interactions might initiate transcription elongation. Science, this issue p. eaar2555, p. eaar3958, p. 412; see also p. 329 Phase-separated condensates compartmentalize the transcription apparatus at super-enhancers of key cell-identity genes. INTRODUCTION Mammalian genes that play prominent roles in healthy and diseased cellular states are often controlled by special DNA elements called super-enhancers (SEs). SEs are clusters of enhancers that are occupied by an unusually high density of interacting factors and drive higher levels of transcription than most typical enhancers. This high-density assembly at SEs has been shown to exhibit sharp transitions of formation and dissolution, forming in a single nucleation event and collapsing when chromatin factors or nucleation sites are deleted. These features led us to postulate that SEs are phase-separated multimolecular assemblies, also known as biomolecular condensates. Phase-separated condensates, such as the nucleolus and other membraneless cellular bodies, provide a means to compartmentalize and concentrate biochemical reactions within cells. RATIONALE SEs are formed by the binding of master transcription factors (TFs) at each component enhancer, and these recruit unusually high densities of coactivators, including Mediator and BRD4. Mediator is a large (~1.2 MDa) multisubunit complex that has multiple roles in transcription, including bridging interactions between TFs and RNA polymerase II (RNA Pol II). BRD4 facilitates the release of RNA Pol II molecules from the site of transcription initiation. The presence of MED1, a subunit of Mediator, and BRD4 can be used to define SEs. We reasoned that if transcriptional condensates are formed at SEs, then MED1 and BRD4 should be visualized as discrete bodies at SE elements in cell nuclei. These bodies should exhibit behaviors described for liquid-like condensates. We investigated these possibilities by using murine embryonic stem cells (mESCs), in which SEs were originally described. Because intrinsically disordered regions (IDRs) of proteins have been implicated in condensate formation, we postulated that the large IDRs present in MED1 and BRD4 might be involved. RESULTS We found that MED1 and BRD4 occupy discrete nuclear bodies that occur at SEs in mESCs. These bodies exhibit properties of other well-studied biomolecular condensates, including rapid recovery of fluorescence after photobleaching and sensitivity to 1,6-hexanediol, which disrupts liquid-like condensates. Disruption of MED1 and BRD4 bodies by 1,6-hexanediol was accompanied by a loss of chromatin-bound MED1 and BRD4 at SEs, as well as a loss of RNA Pol II at SEs and SE-driven genes. The IDRs of both MED1 and BRD4 formed phase-separated liquid droplets in vitro, and these droplets exhibited features characteristic of condensates formed by networks of weak protein-protein interactions. The MED1-IDR droplets were found to concentrate BRD4 and RNA Pol II from transcriptionally competent nuclear extracts, which may reflect their contribution to compartmentalizing and concentrating biochemical reactions associated with transcription at SEs in cells. CONCLUSION Our results show that coactivators form phase-separated condensates at SEs and that SE condensates compartmentalize and concentrate the transcription apparatus at key cell-identity genes. These results have implications for the mechanisms involved in the control of genes in healthy and diseased cell states. We suggest that SE condensates facilitate the compartmentalization and concentration of transcriptional components at specific genes through the phase-separating properties of IDRs in TFs and cofactors. SE condensates may thus ensure robust transcription of genes essential to cell-identity maintenance. These properties may also explain why cancer cells acquire large SEs at driver oncogenes and why SEs that facilitate transcriptional dysregulation in disease can be especially sensitive to transcriptional inhibitors. Phase separation of coactivators compartmentalizes and concentrates the transcription apparatus. Enhancers are gene regulatory elements bound by transcription factors that recruit coactivators and the transcription apparatus (not shown) to regulate gene expression. Super-enhancers are clusters of enhancers bound by master transcription factors that concentrate high densities of coactivators and the transcription apparatus to drive robust expression of genes that play prominent roles in cell identity. This is achieved by the phase separation of coactivators, which is driven in part by high-valency and low-affinity interactions of intrinsically disordered regions. Super-enhancers (SEs) are clusters of enhancers that cooperatively assemble a high density of the transcriptional apparatus to drive robust expression of genes with prominent roles in cell identity. Here we demonstrate that the SE-enriched transcriptional coactivators BRD4 and MED1 form nuclear puncta at SEs that exhibit properties of liquid-like condensates and are disrupted by chemicals that perturb condensates. The intrinsically disordered regions (IDRs) of BRD4 and MED1 can form phase-separated droplets, and MED1-IDR droplets can compartmentalize and concentrate the transcription apparatus from nuclear extracts. These results support the idea that coactivators form phase-separated condensates at SEs that compartmentalize and concentrate the transcription apparatus, suggest a role for coactivator IDRs in this process, and offer insights into mechanisms involved in the control of key cell-identity genes."
+        },
+        {
+          "paperId": "5484f90a215b9c7055251994ee416bc60fcdb453",
+          "externalIds": {
+            "CorpusId": 266978400
+          },
+          "url": "https://www.semanticscholar.org/paper/5484f90a215b9c7055251994ee416bc60fcdb453",
+          "title": "Chromatin mechanics dictates subdiffusion and coarsening dynamics of embedded condensates",
+          "venue": "",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://softlivingmatter.princeton.edu/wp-content/uploads/2021/03/LeeDSWNatPhys-1.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [],
+          "abstract": null
+        },
+        {
+          "paperId": "002a83f7727314dd66f442d1066c51393fbef431",
+          "externalIds": {
+            "MAG": "2975492640",
+            "DOI": "10.3866/PKU.WHXB201907010",
+            "CorpusId": 242743328
+          },
+          "url": "https://www.semanticscholar.org/paper/002a83f7727314dd66f442d1066c51393fbef431",
+          "title": "1D Sequence Based 3D Chromatin Phase Separation: Forces, Processes, and Functions",
+          "venue": "Acta Physico-Chimica Sinica",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.3866/pku.whxb201907010",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3866/PKU.WHXB201907010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3866/PKU.WHXB201907010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "Acta Physico-Chimica Sinica"
+          },
+          "authors": [
+            {
+              "authorId": "48641965",
+              "name": "Sirui Liu"
+            },
+            {
+              "authorId": "121777229",
+              "name": "Hui Quan"
+            },
+            {
+              "authorId": "2111835849",
+              "name": "Hao Tian"
+            },
+            {
+              "authorId": "2068016519",
+              "name": "Rui Zhou"
+            },
+            {
+              "authorId": "153737279",
+              "name": "Lijiang Yang"
+            },
+            {
+              "authorId": "145139453",
+              "name": "Y. Gao"
+            }
+          ],
+          "abstract": ": The high-order chromatin structure plays a non-negligible role in gene regulation. The formation of chromatin structure and its regulatory mechanisms have been studied intensely. To analyze the high-order chromatin structures, both computational and physical models have been developed, including polymer physics models and molecular crowding models. Over the past few years, the phase separation theory has drawn a lot of research interest, and the effect of heterochromatin and transcriptional factors (TFs) on phase separation has attracted much attention. Existing phase separation models for chromatin focus on multivalent molecules or on epigenetic properties and does not adequately explore the dependence of chromatin structure organization and remodeling on DNA sequence. Genomes of a number of species are highly uneven at multiple scales. It can be divided purely based on sequential properties into two sequentially, epigenetically, and transcriptionally distinct regions, namely forest and prairie domains, demonstrating the intrinsic mosaicity in genome. Compared to prairies, forest domains are on average more gene-rich, accessible, transcriptionally active, higher in open-sea methylation level, and are enriched in RNA polymerase II binding sites as well as active histone modifications. Moreover, different structural properties of these two types of sequential domains suggest that sequence may play a role in topologically associated domain (TAD) and compartment formation. The chromatin sequence-structural relationship and functional regulation in different cell types with almost identical sequences are discussed in this review. We try to describe the evolution of chromatin structure in multiple biological processes including early development, differentiation, and senescence in a unified framework. The forest and prairie domains with high and low CGI densities, respectively, show enhanced segregation from each other in development, differentiation, and senescence. Meanwhile the multiscale forest-prairie spatial intermingling is cell-type specific and increases upon differentiation, thereby helping to define cell identity. The consistency between chromatin structure and open-sea methylation level suggests that the latter is a promising indicator of structural segregation, deepening our understanding of epigenetic-structure relation. We further discuss the physical driving forces of phase separation as well as their biological implications. The phase separation of the uneven 1D sequence in 3D space serves as a potential driving force, and together with cell type specific epigenetic marks and transcription factors shapes the chromatin structure in different cell types. Transcriptional complex along with dynamic TFs and epigenetic marks may account for local structure formation and separation, regulating chromatin structure at a smaller spatial-temporal scale based on their sequential environment. Finally, role of physical factors like temperature and sequence unevenness in affecting chromatin structure have also been discussed."
+        },
+        {
+          "paperId": "227e58b46fda1fd39e000e35ae57775432cca29c",
+          "externalIds": {
+            "PubMedCentral": "7203014",
+            "MAG": "3021355866",
+            "DOI": "10.1038/s41392-020-0166-2",
+            "CorpusId": 218513690,
+            "PubMed": "32376821"
+          },
+          "url": "https://www.semanticscholar.org/paper/227e58b46fda1fd39e000e35ae57775432cca29c",
+          "title": "Liquid phase condensation directs nucleosome epigenetic modifications",
+          "venue": "Signal Transduction and Targeted Therapy",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41392-020-0166-2.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7203014, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-05-06",
+          "journal": {
+            "name": "Signal Transduction and Targeted Therapy",
+            "volume": "5"
+          },
+          "authors": [
+            {
+              "authorId": "2143687322",
+              "name": "Yi Yang"
+            },
+            {
+              "authorId": "1862319",
+              "name": "Chuanhe Yu"
+            }
+          ],
+          "abstract": "In a recent study published in Nature, Gallego et al. provided an interesting model in which layered condensates of histonemodifying enzymes generate chromatin-associated “reaction chambers” to help performing catalytic activity along gene bodies. Eukaryotic transcription is regulated by chromatin structure, whose alterations are mediated by conserved post-translational histone tail modifications. The consequences of these epigenetic modifications have been linked to cell development, cell cycle regulation, as well as cell state and fate. One of these modifications is ubiquitylation (ub), which adds a polypeptide (ubiquitin) to a lysine residue of histone. Ubiquitylation reaction requires a ubiquitin-activating enzyme (E1), a ubiquitinconjugating enzyme (E2), and a ubiquitin-ligating enzyme (E3). H2BK120ub is ubiquitylated H2B at position 120 in human, and has been found to be important for gene transcriptional regulation in cell differentiation, organism development, and tumorigenesis. The orthologous residue for ubiquitylated H2B in yeast is H2BK123. H2BK123ub is generated by Bre1 (E3), with Rad6 (E2), and Uba1 (E1). Generally, the level of H2BK123ub correlates with the elongation rate of RNA polymerase II. The protein Large 1 (Lge1), which regulates the size of yeast cell, can copurify with Bre1 and is essential for H2B mono-ubiquitylation. However, its mechanistic role in this modification is unknown. In order to explore the function of Lge1 on H2BK123ub, Gallego et al. analyzed the protein sequence of Lge1 and identified an intrinsically disordered region (IDR). This region likely participates in multivalent interactions and may lead to liquid–liquid phase separation (LLPS) and the formation of biomolecular condensates. In this study, the in vitro LLPS assay shows that Lge1 protein itself could form condensates. When Bre1 was mixed with Lge1, Bre1 formed a distinct compartment encapsulating the Lge1 core. Bre1 and Lge1 directly interacted with each other and formed large complexes in cells. To address the function of LLPS on the H2B ubiquitylation in vivo, Gallego et al. performed H2BK123ub ChIPexo analysis to provide a high-resolution location pattern within each nucleosome. The results suggest that the IDR of Lge1 enhances H2BK123ub at the gene body region but not at the transcriptional +1 nucleosome region. While H2BK123ub at the transcriptional +1 position does not depend on the Lge1 liquid–liquid phase separation, an unknown mechanism is likely involved in the ubiquitylation regulation at this position. Interestingly, Gallego et al. found that substituting the IDR region of yeast Lge1 with a similar IDR region from WAC, a human Lge1 counterpart, was functional on H2Bub. It suggests the evolutionary conservation of Lge1-mediated LLPS on directing regulation of transcriptional H2BK123ub. As the histone variant H2A.Z is assembled into the transcriptional +1 position, the authors further tested the genetic interaction between H2A.Z and the IDR region of Lge1. The results indicate that LLPS of Lge1 is essential for viability when H2A.Z encoding gene Htz1 is absent from +1 nucleosomes, and also reinforce the physiological importance of Lge1-Bre1 condensates. Overall, this study demonstrates that the Bre1 shell, facilitated by Lge1-mediated LLPS, has a direct catalytic role on nucleosome ubiquitylation. Given that mutations in human Lge1 orthologue WAC could lead to DeSanto–Shinawi syndrome (a neurodevelopmental disorder), this study also implies that LLPS might contribute to this syndrome. An important question regarding the chromatin-associated “reaction chambers” model is how the protein factors enter and leave the chamber in a controlled manner. In this study, the E3 ligase Bre1 was found locating at the shell of Lge1-mediated chamber (Fig. 1). The E2 ligase Brad6 can only slowly enter the reaction chamber, while the nucleosome-associated chromatin seems to enter the chamber freely. This study shows that H2BK123ub colocalizes with the transcriptional regions. Likely the transcriptional machinery plays a role in chromatin association with Lge1-mediated chamber. Whether the composition or the physiological nature of the large biomolecular plays a fundamental role in controlling the “in and out” is still unknown. More studies in this direction will clarify the process behind. LLPS condensates have been shown to be involved in multiple cellular processes and functions. Over the past several years, researchers in the chromatin field have begun to draw attention to LLPS. Several chromatin proteins, including heterochromatin protein 1 (HP1), bromodomain-containing protein 4 (Brd4) and polycomb repressive complex 1 (PRC1) components have an intrinsic capacity for LLPS. Through LLPS, nuclear chromatin can be compartmentalized. All these studies begin to shed light on the relationship between intercellular spatial compartmentalization and chromatin structure. The significance of this study is the original discovery that the intercellular LLPS is involved in the regulation of epigenetic enzymatic activity at specific genomic regions and has a substantial impact on biological and cellular functions. It is hard to imagine how widely LLPS affects the epigenetic regulation program. As the intrinsically disordered proteins (IDPs) and intrinsically disordered proteins regions (IDPRs) are highly abundant throughout different organisms, more proteins with this structure may mediate the epigenetic enzymatic ‘reaction chambers’ structure and play a role in the epigenetic regulation process. Another key point about the intercellular LLPS"
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-76f59890fd2e5211.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-76f59890fd2e5211.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-76f59890fd2e5211.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "1d11034ba10f866abd60a6ea193c88504dee097cb16effc627ec75b6eb28bab5",
+    "chunk_count": 7,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

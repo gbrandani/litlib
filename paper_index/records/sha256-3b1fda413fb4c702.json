@@ -1,0 +1,931 @@
+{
+  "paper_id": "sha256-3b1fda413fb4c702",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/deep_learning_methods/Jumper 2021 Nature - Highly accurate protein structure prediction with AlphaFold - SI.pdf",
+  "pdf_sha256": "3b1fda413fb4c70288414065198864cfd39310e638efd76960a973882d193dd8",
+  "filename": "Jumper 2021 Nature - Highly accurate protein structure prediction with AlphaFold - SI.pdf",
+  "item_type": "article",
+  "title_query": "Highly accurate protein structure prediction with AlphaFold",
+  "filename_hints": {
+    "year_hint": 2021,
+    "venue_hint": "nature",
+    "prefix": "Jumper 2021 Nature"
+  },
+  "doi_candidates": [
+    "10.1038/s41586-021-03819-2"
+  ],
+  "date_indexed": "2026-04-17T03:31:09.755427+00:00",
+  "match_status": "matched_supplement",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "manual_supplement_link",
+  "semantic_scholar": {
+    "query": "Highly accurate protein structure prediction with AlphaFold",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "dc32a984b651256a8ec282be52310e6bd33d9815",
+      "externalIds": {
+        "PubMedCentral": "8371605",
+        "DOI": "10.1038/s41586-021-03819-2",
+        "CorpusId": 235959867,
+        "PubMed": "34265844"
+      },
+      "url": "https://www.semanticscholar.org/paper/dc32a984b651256a8ec282be52310e6bd33d9815",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "venue": "Nature",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41586-021-03819-2.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2021-07-15",
+      "journal": {
+        "name": "Nature",
+        "pages": "583 - 589",
+        "volume": "596"
+      },
+      "authors": [
+        {
+          "authorId": "47921134",
+          "name": "J. Jumper"
+        },
+        {
+          "authorId": "2115604214",
+          "name": "Richard Evans"
+        },
+        {
+          "authorId": "1863250",
+          "name": "A. Pritzel"
+        },
+        {
+          "authorId": "1484039896",
+          "name": "Tim Green"
+        },
+        {
+          "authorId": "73776617",
+          "name": "Michael Figurnov"
+        },
+        {
+          "authorId": "1737326",
+          "name": "O. Ronneberger"
+        },
+        {
+          "authorId": "2119712884",
+          "name": "Kathryn Tunyasuvunakool"
+        },
+        {
+          "authorId": "2119696840",
+          "name": "Russ Bates"
+        },
+        {
+          "authorId": "40501144",
+          "name": "Augustin Žídek"
+        },
+        {
+          "authorId": "13759734",
+          "name": "Anna Potapenko"
+        },
+        {
+          "authorId": "1392692054",
+          "name": "Alex Bridgland"
+        },
+        {
+          "authorId": "1406288863",
+          "name": "Clemens Meyer"
+        },
+        {
+          "authorId": "2060176064",
+          "name": "Simon A A Kohl"
+        },
+        {
+          "authorId": "3577056",
+          "name": "Andy Ballard"
+        },
+        {
+          "authorId": "143964037",
+          "name": "A. Cowie"
+        },
+        {
+          "authorId": "1403031665",
+          "name": "Bernardino Romera-Paredes"
+        },
+        {
+          "authorId": "48206221",
+          "name": "Stanislav Nikolov"
+        },
+        {
+          "authorId": "22418321",
+          "name": "Rishub Jain"
+        },
+        {
+          "authorId": "40523747",
+          "name": "J. Adler"
+        },
+        {
+          "authorId": "2830305",
+          "name": "T. Back"
+        },
+        {
+          "authorId": "48348688",
+          "name": "Stig Petersen"
+        },
+        {
+          "authorId": "2066483671",
+          "name": "D. Reiman"
+        },
+        {
+          "authorId": "2072167521",
+          "name": "Ellen Clancy"
+        },
+        {
+          "authorId": "2060760382",
+          "name": "Michal Zielinski"
+        },
+        {
+          "authorId": "3396092",
+          "name": "Martin Steinegger"
+        },
+        {
+          "authorId": "32358258",
+          "name": "Michalina Pacholska"
+        },
+        {
+          "authorId": "2119712712",
+          "name": "Tamas Berghammer"
+        },
+        {
+          "authorId": "2300353939",
+          "name": "Sebastian Bodenstein"
+        },
+        {
+          "authorId": "145824029",
+          "name": "David Silver"
+        },
+        {
+          "authorId": "1689108",
+          "name": "O. Vinyals"
+        },
+        {
+          "authorId": "33666044",
+          "name": "A. Senior"
+        },
+        {
+          "authorId": "2645384",
+          "name": "K. Kavukcuoglu"
+        },
+        {
+          "authorId": "143967473",
+          "name": "Pushmeet Kohli"
+        },
+        {
+          "authorId": "48987704",
+          "name": "D. Hassabis"
+        }
+      ],
+      "abstract": "Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an enormous experimental effort1–4, the structures of around 100,000 unique proteins have been determined5, but this represents a small fraction of the billions of known protein sequences6,7. Structural coverage is bottlenecked by the months to years of painstaking effort required to determine a single protein structure. Accurate computational approaches are needed to address this gap and to enable large-scale structural bioinformatics. Predicting the three-dimensional structure that a protein will adopt based solely on its amino acid sequence—the structure prediction component of the ‘protein folding problem’8—has been an important open research problem for more than 50 years9. Despite recent progress10–14, existing methods fall far short of atomic accuracy, especially when no homologous structure is available. Here we provide the first computational method that can regularly predict protein structures with atomic accuracy even in cases in which no similar structure is known. We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14)15, demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods. Underpinning the latest version of AlphaFold is a novel machine learning approach that incorporates physical and biological knowledge about protein structure, leveraging multi-sequence alignments, into the design of the deep learning algorithm. AlphaFold predicts protein structures with an accuracy competitive with experimental structures in the majority of cases using a novel deep learning architecture."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "dc32a984b651256a8ec282be52310e6bd33d9815",
+        "title": "Highly accurate protein structure prediction with AlphaFold",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "cc4d81cf13dab3ee3814472b2d52f5c38536592a",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4d6b8b3259e9fa52bd68ed7eb4cfe1d5d2041d4b",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "295256eac35374d05f9010fadf8efbb18043c666",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "cc47b86d344f8b99957c7589039a225a51499112",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "16ade002f626efa90894c65715975445a0e8e3b6",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c53634af1e4c34127dff9dc06a802347ea0cf07c",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c502d60a8f581a0ec75baba06a16cb370e9dc509",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c88dd8ba5808345a6e799472066ff0f0575df286",
+        "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2021,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "1fb3ad9969245795f268636eff9a145337144718",
+        "title": "Highly accurate protein structure prediction for the human proteome",
+        "score": 0.8804,
+        "title_similarity": 0.7604,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41586-021-03819-2"
+    ],
+    "matching_extracted_doi": "10.1038/s41586-021-03819-2",
+    "raw_response": {
+      "total": 1339,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "dc32a984b651256a8ec282be52310e6bd33d9815",
+          "externalIds": {
+            "PubMedCentral": "8371605",
+            "DOI": "10.1038/s41586-021-03819-2",
+            "CorpusId": 235959867,
+            "PubMed": "34265844"
+          },
+          "url": "https://www.semanticscholar.org/paper/dc32a984b651256a8ec282be52310e6bd33d9815",
+          "title": "Highly accurate protein structure prediction with AlphaFold",
+          "venue": "Nature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41586-021-03819-2.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-07-15",
+          "journal": {
+            "name": "Nature",
+            "pages": "583 - 589",
+            "volume": "596"
+          },
+          "authors": [
+            {
+              "authorId": "47921134",
+              "name": "J. Jumper"
+            },
+            {
+              "authorId": "2115604214",
+              "name": "Richard Evans"
+            },
+            {
+              "authorId": "1863250",
+              "name": "A. Pritzel"
+            },
+            {
+              "authorId": "1484039896",
+              "name": "Tim Green"
+            },
+            {
+              "authorId": "73776617",
+              "name": "Michael Figurnov"
+            },
+            {
+              "authorId": "1737326",
+              "name": "O. Ronneberger"
+            },
+            {
+              "authorId": "2119712884",
+              "name": "Kathryn Tunyasuvunakool"
+            },
+            {
+              "authorId": "2119696840",
+              "name": "Russ Bates"
+            },
+            {
+              "authorId": "40501144",
+              "name": "Augustin Žídek"
+            },
+            {
+              "authorId": "13759734",
+              "name": "Anna Potapenko"
+            },
+            {
+              "authorId": "1392692054",
+              "name": "Alex Bridgland"
+            },
+            {
+              "authorId": "1406288863",
+              "name": "Clemens Meyer"
+            },
+            {
+              "authorId": "2060176064",
+              "name": "Simon A A Kohl"
+            },
+            {
+              "authorId": "3577056",
+              "name": "Andy Ballard"
+            },
+            {
+              "authorId": "143964037",
+              "name": "A. Cowie"
+            },
+            {
+              "authorId": "1403031665",
+              "name": "Bernardino Romera-Paredes"
+            },
+            {
+              "authorId": "48206221",
+              "name": "Stanislav Nikolov"
+            },
+            {
+              "authorId": "22418321",
+              "name": "Rishub Jain"
+            },
+            {
+              "authorId": "40523747",
+              "name": "J. Adler"
+            },
+            {
+              "authorId": "2830305",
+              "name": "T. Back"
+            },
+            {
+              "authorId": "48348688",
+              "name": "Stig Petersen"
+            },
+            {
+              "authorId": "2066483671",
+              "name": "D. Reiman"
+            },
+            {
+              "authorId": "2072167521",
+              "name": "Ellen Clancy"
+            },
+            {
+              "authorId": "2060760382",
+              "name": "Michal Zielinski"
+            },
+            {
+              "authorId": "3396092",
+              "name": "Martin Steinegger"
+            },
+            {
+              "authorId": "32358258",
+              "name": "Michalina Pacholska"
+            },
+            {
+              "authorId": "2119712712",
+              "name": "Tamas Berghammer"
+            },
+            {
+              "authorId": "2300353939",
+              "name": "Sebastian Bodenstein"
+            },
+            {
+              "authorId": "145824029",
+              "name": "David Silver"
+            },
+            {
+              "authorId": "1689108",
+              "name": "O. Vinyals"
+            },
+            {
+              "authorId": "33666044",
+              "name": "A. Senior"
+            },
+            {
+              "authorId": "2645384",
+              "name": "K. Kavukcuoglu"
+            },
+            {
+              "authorId": "143967473",
+              "name": "Pushmeet Kohli"
+            },
+            {
+              "authorId": "48987704",
+              "name": "D. Hassabis"
+            }
+          ],
+          "abstract": "Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an enormous experimental effort1–4, the structures of around 100,000 unique proteins have been determined5, but this represents a small fraction of the billions of known protein sequences6,7. Structural coverage is bottlenecked by the months to years of painstaking effort required to determine a single protein structure. Accurate computational approaches are needed to address this gap and to enable large-scale structural bioinformatics. Predicting the three-dimensional structure that a protein will adopt based solely on its amino acid sequence—the structure prediction component of the ‘protein folding problem’8—has been an important open research problem for more than 50 years9. Despite recent progress10–14, existing methods fall far short of atomic accuracy, especially when no homologous structure is available. Here we provide the first computational method that can regularly predict protein structures with atomic accuracy even in cases in which no similar structure is known. We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14)15, demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods. Underpinning the latest version of AlphaFold is a novel machine learning approach that incorporates physical and biological knowledge about protein structure, leveraging multi-sequence alignments, into the design of the deep learning algorithm. AlphaFold predicts protein structures with an accuracy competitive with experimental structures in the majority of cases using a novel deep learning architecture."
+        },
+        {
+          "paperId": "cc4d81cf13dab3ee3814472b2d52f5c38536592a",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793588050",
+            "CorpusId": 241481191
+          },
+          "url": "https://www.semanticscholar.org/paper/cc4d81cf13dab3ee3814472b2d52f5c38536592a",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793588050?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793588050, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-08-19",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "4408985",
+              "name": "A. Berman"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "1fb3ad9969245795f268636eff9a145337144718",
+          "externalIds": {
+            "PubMedCentral": "8387240",
+            "DOI": "10.1038/s41586-021-03828-1",
+            "CorpusId": 236198847,
+            "PubMed": "34293799"
+          },
+          "url": "https://www.semanticscholar.org/paper/1fb3ad9969245795f268636eff9a145337144718",
+          "title": "Highly accurate protein structure prediction for the human proteome",
+          "venue": "Nature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41586-021-03828-1.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8387240, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-07-22",
+          "journal": {
+            "name": "Nature",
+            "pages": "590 - 596",
+            "volume": "596"
+          },
+          "authors": [
+            {
+              "authorId": "2119712884",
+              "name": "Kathryn Tunyasuvunakool"
+            },
+            {
+              "authorId": "40523747",
+              "name": "J. Adler"
+            },
+            {
+              "authorId": "51125091",
+              "name": "Zachary Wu"
+            },
+            {
+              "authorId": "1484039896",
+              "name": "Tim Green"
+            },
+            {
+              "authorId": "2060760382",
+              "name": "Michal Zielinski"
+            },
+            {
+              "authorId": "40501144",
+              "name": "Augustin Žídek"
+            },
+            {
+              "authorId": "1392692054",
+              "name": "Alex Bridgland"
+            },
+            {
+              "authorId": "143964037",
+              "name": "A. Cowie"
+            },
+            {
+              "authorId": "1406288863",
+              "name": "Clemens Meyer"
+            },
+            {
+              "authorId": "2120370895",
+              "name": "Agata Laydon"
+            },
+            {
+              "authorId": "26591876",
+              "name": "S. Velankar"
+            },
+            {
+              "authorId": "2452390",
+              "name": "G. Kleywegt"
+            },
+            {
+              "authorId": "46888415",
+              "name": "A. Bateman"
+            },
+            {
+              "authorId": "152381239",
+              "name": "R. Evans"
+            },
+            {
+              "authorId": "1863250",
+              "name": "A. Pritzel"
+            },
+            {
+              "authorId": "73776617",
+              "name": "Michael Figurnov"
+            },
+            {
+              "authorId": "1737326",
+              "name": "O. Ronneberger"
+            },
+            {
+              "authorId": "2119696840",
+              "name": "Russ Bates"
+            },
+            {
+              "authorId": "2060176064",
+              "name": "Simon A A Kohl"
+            },
+            {
+              "authorId": "13759734",
+              "name": "Anna Potapenko"
+            },
+            {
+              "authorId": "5055381",
+              "name": "A. Ballard"
+            },
+            {
+              "authorId": "1403031665",
+              "name": "Bernardino Romera-Paredes"
+            },
+            {
+              "authorId": "48206221",
+              "name": "Stanislav Nikolov"
+            },
+            {
+              "authorId": "22418321",
+              "name": "Rishub Jain"
+            },
+            {
+              "authorId": "2072167521",
+              "name": "Ellen Clancy"
+            },
+            {
+              "authorId": "2066483671",
+              "name": "D. Reiman"
+            },
+            {
+              "authorId": "48348688",
+              "name": "Stig Petersen"
+            },
+            {
+              "authorId": "33666044",
+              "name": "A. Senior"
+            },
+            {
+              "authorId": "2645384",
+              "name": "K. Kavukcuoglu"
+            },
+            {
+              "authorId": "1702103",
+              "name": "E. Birney"
+            },
+            {
+              "authorId": "143967473",
+              "name": "Pushmeet Kohli"
+            },
+            {
+              "authorId": "47921134",
+              "name": "J. Jumper"
+            },
+            {
+              "authorId": "48987704",
+              "name": "D. Hassabis"
+            }
+          ],
+          "abstract": "Protein structures can provide invaluable information, both for reasoning about biological processes and for enabling interventions such as structure-based drug development or targeted mutagenesis. After decades of effort, 17% of the total residues in human protein sequences are covered by an experimentally determined structure1. Here we markedly expand the structural coverage of the proteome by applying the state-of-the-art machine learning method, AlphaFold2, at a scale that covers almost the entire human proteome (98.5% of human proteins). The resulting dataset covers 58% of residues with a confident prediction, of which a subset (36% of all residues) have very high confidence. We introduce several metrics developed by building on the AlphaFold model and use them to interpret the dataset, identifying strong multi-domain predictions as well as regions that are likely to be disordered. Finally, we provide some case studies to illustrate how high-quality predictions could be used to generate biological hypotheses. We are making our predictions freely available to the community and anticipate that routine large-scale and high-accuracy structure prediction will become an important tool that will allow new questions to be addressed from a structural perspective. AlphaFold is used to predict the structures of almost all of the proteins in the human proteome—the availability of high-confidence predicted structures could enable new avenues of investigation from a structural perspective."
+        },
+        {
+          "paperId": "4d6b8b3259e9fa52bd68ed7eb4cfe1d5d2041d4b",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793587546",
+            "CorpusId": 241393984
+          },
+          "url": "https://www.semanticscholar.org/paper/4d6b8b3259e9fa52bd68ed7eb4cfe1d5d2041d4b",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.3410/f.740477161.793587546",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793587546?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793587546, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-08-01",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "5074564",
+              "name": "S. Endow"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "c502d60a8f581a0ec75baba06a16cb370e9dc509",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793590709",
+            "CorpusId": 246791635
+          },
+          "url": "https://www.semanticscholar.org/paper/c502d60a8f581a0ec75baba06a16cb370e9dc509",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793590709?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793590709, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2022-02-07",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "144233692",
+              "name": "James P. Allen"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "c88dd8ba5808345a6e799472066ff0f0575df286",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793590095",
+            "CorpusId": 245923325
+          },
+          "url": "https://www.semanticscholar.org/paper/c88dd8ba5808345a6e799472066ff0f0575df286",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793590095?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793590095, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2022-01-03",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "6360069",
+              "name": "V. Kanamarlapudi"
+            },
+            {
+              "authorId": "4014225",
+              "name": "R. Eva"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "295256eac35374d05f9010fadf8efbb18043c666",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793587439",
+            "CorpusId": 242530331
+          },
+          "url": "https://www.semanticscholar.org/paper/295256eac35374d05f9010fadf8efbb18043c666",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793587439?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793587439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-07-28",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "145094741",
+              "name": "A. Maxwell"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "cc47b86d344f8b99957c7589039a225a51499112",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793587548",
+            "CorpusId": 243613073
+          },
+          "url": "https://www.semanticscholar.org/paper/cc47b86d344f8b99957c7589039a225a51499112",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.3410/f.740477161.793587548",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793587548?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793587548, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-08-01",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "2127436804",
+              "name": "Arockia Jeyaprakash Arulanandam"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "16ade002f626efa90894c65715975445a0e8e3b6",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793587507",
+            "CorpusId": 242825351
+          },
+          "url": "https://www.semanticscholar.org/paper/16ade002f626efa90894c65715975445a0e8e3b6",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793587507?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793587507, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-07-30",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "145660432",
+              "name": "J. Skolnick"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "c53634af1e4c34127dff9dc06a802347ea0cf07c",
+          "externalIds": {
+            "DOI": "10.3410/f.740477161.793588825",
+            "CorpusId": 241538687
+          },
+          "url": "https://www.semanticscholar.org/paper/c53634af1e4c34127dff9dc06a802347ea0cf07c",
+          "title": "Faculty Opinions recommendation of Highly accurate protein structure prediction with AlphaFold.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.740477161.793588825?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.740477161.793588825, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-09-27",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "1786001",
+              "name": "T. Gabaldón"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-3b1fda413fb4c702.json",
+    "text_path": "paper_index/text/sha256-3b1fda413fb4c702.txt",
+    "chunk_path": "paper_index/chunks/sha256-3b1fda413fb4c702.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "df23402f7c3f5ca5cb16371370357bba954210379464874b9014c0dceb05af8f",
+    "chunk_count": 84,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "supplement_parent": {
+    "paper_id": "sha256-65b9c97c9d868c4f",
+    "item_type": "article",
+    "content_kind": "pdf_backed",
+    "pdf_path": "articles/deep_learning_methods/Jumper 2021 Nature - Highly accurate protein structure prediction with AlphaFold.pdf",
+    "pdf_sha256": "65b9c97c9d868c4fe065bf2f89b1637922faf0cd82839e32ec62eca6d4ea0a2d",
+    "filename": "Jumper 2021 Nature - Highly accurate protein structure prediction with AlphaFold.pdf",
+    "title_query": "Highly accurate protein structure prediction with AlphaFold",
+    "resolved_title": "Highly accurate protein structure prediction with AlphaFold",
+    "authors": "John Jumper, Richard Evans, Alexander Pritzel, Tim Green, Michael Figurnov, Olaf Ronneberger, Kathryn Tunyasuvunakool, Russ Bates, Augustin Žídek, Anna Potapenko, Alex Bridgland, Clemens Meyer, Simon A. A. Kohl, Andrew J. Ballard, Andrew Cowie, Bernardino Romera-Paredes, Stanislav Nikolov, Rishub Jain, Jonas Adler, Trevor Back, Stig Petersen, David Reiman, Ellen Clancy, Michal Zielinski, Martin Steinegger, Michalina Pacholska, Tamas Berghammer, Sebastian Bodenstein, David Silver, Oriol Vinyals, Andrew W. Senior, Koray Kavukcuoglu, Pushmeet Kohli, Demis Hassabis",
+    "year": "2021",
+    "venue": "Nature",
+    "doi": "10.1038/s41586-021-03819-2",
+    "semantic_scholar_paper_id": "dc32a984b651256a8ec282be52310e6bd33d9815",
+    "match_confidence": "1.0",
+    "match_status": "matched_via_doi",
+    "bibtex_type": "article",
+    "canonical_url": "https://doi.org/10.1038/s41586-021-03819-2",
+    "bibtex_key": "jumper2021protein",
+    "text_path": "paper_index/text/sha256-65b9c97c9d868c4f.txt",
+    "chunk_path": "paper_index/chunks/sha256-65b9c97c9d868c4f.jsonl",
+    "abstract_source": "semantic_scholar",
+    "date_indexed": "2026-04-17T03:31:12.209223+00:00",
+    "notes": ""
+  }
+}

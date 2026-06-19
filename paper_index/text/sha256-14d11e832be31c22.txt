@@ -1,0 +1,349 @@
+[Page 1]
+
+Effects of macromolecular crowding on protein folding and aggregation studied by density functional theory: Statics Akira R. Kinjo1,* and Shoji Takada1,2,†
+
+PRESTO, Japan Science and Technology Corporation, Kobe University, Kobe 675-8501, Japan Department of Chemistry, Faculty of Science, Kobe University, Kobe 657-8501, Japan 共Received 4 April 2002; published 24 September 2002兲
+
+Proteins are neither purified nor diluted inside the living cell. Thus it is indispensable to take into account various interactions between the protein of interest and other macromolecules for understanding the properties of proteins in physiological conditions. Here we focus on excluded volume interactions which are omnipresent in dense or crowded solutions of proteins and macromolecules or ‘‘crowding agents.’’ A protein solution with macromolecular crowding agents is modeled by means of a density functional theory. Effects of macromolecular crowding on protein aggregation and stability are investigated in particular. Phase diagrams are obtained in various parameter spaces by solving the equation of state. Two generic features are found: the addition of the crowding agent 共1兲 enhances the aggregation of the denatured proteins, and 共2兲 stabilizes the native protein unless the aggregation occurs. The present theory is qualitatively in good agreement with experimental observations and unifies previous theories regarding the crowding effects on protein stability and aggregation. DOI: 10.1103/PhysRevE.66.031911
+
+PACS number共s兲: 87.15.Nn, 87.15.Aa
+
+I. INTRODUCTION
+
+Although thorough, most previous theoretical works are based on the theories of uniform fluid so that they cannot treat inherently nonuniform phenomena such as the morphology of aggregation. Protein aggregation had been in many cases regarded as a nuisance factor in experimental studies. However, its fundamental importance has recently been recognized regarding its relevance to inclusion bodies, amyloidoses, and other protein deposition diseases 关14兴. Some simulation studies have been also performed to track protein aggregation 关15–17兴. Although these simulations can provide detailed pictures of protein conformational changes upon aggregation and/or folding, the number of protein molecules that can be handled in each simulation is limited. Since aggregation typically involves quite a large number of molecules, other theoretical frameworks are needed to complement detailed molecular simulations. In the present paper, we present a theoretical framework to describe nonuniform system of proteins in crowded media. The theory presented in this paper is based on a static density functional theory which has been developed to treat nonuniform systems of infinite degree of freedom 关18,19兴. Density functional theories are especially suited to describe interfacial phenomena such as phase separations of colloidal dispersions and polymer blends, etc. 关20兴. Thus, the present theory provides a unified framework to treat protein stability and aggregation in inhomogeneous crowded solutions. Our model views the crowded system from a coarse-grained scale, and proteins and macromolecules are represented by the corresponding 共number兲 density fields in space. The protein is characterized by the intrinsic free energies of its native and denatured states, and a native protein can transform to a denatured protein and vice versa. Using the model developed, phase diagrams are obtained and the crowding effects on protein stability and aggregation at equilibrium are examined.
+
+Typically, physical and chemical properties of proteins have been studied under highly idealized solvent conditions in which proteins are purified and diluted so that the perturbations to them are minimized. However, inside, the living cell is inherently crowded with many kinds of proteins and other macromolecules which occupy in general 20–30 % of the space in the cell 关1兴. Such crowded conditions are expected to impose significant effects on a wide spectrum of properties including protein stability, association, enzymatic activity, diffusion, and so on 关2–7兴. There may be specific and/or nonspecific interactions between proteins and macromolecules. Among them, one particular class of nonspecific interactions, the excluded volume effect, is recently gaining attention 关5–7兴 because it is always present as long as macromolecules exist around the protein. Such molecules that exert the excluded volume effect on the target protein are termed ‘‘crowding agents’’ 关6兴. In their prescient work, Asakura and Oosawa 关8兴 have already investigated how the volume exclusion by macromolecules affects the interaction between colloidal particles and predicted that the osmotic pressure due to macromolecules can induce aggregation of the particles. More recently, much of theoretical studies of macromolecular crowding were put forward by Minton 关9兴. Corresponding experiments in vitro can be carried out by adding crowding agents such as dextran or bovine serum albumin to protein solutions. To date, crowding effects on, for example, protein folding 关10,11兴, protein self-assembly 关12兴, and amyloid formation 关13兴, have been investigated to support theoretical predictions 关5–7兴. *Electronic address: akinjo@theory.chem.sci.kobe-u.ac.jp †
+
+Electronic address: stakada@kobe-u.ac.jp
+
+1063-651X/2002/66共3兲/031911共9兲/$20.00
+
+66 031911-1
+
+©2002 The American Physical Society
+
+[Page 2]
+
+The paper is organized as follows. In Sec. II, we formulate the free energy functional of the crowded system consisting of proteins and crowding agents, and derive equations for the equilibrium state. Some analytical results for the uniform phase are also presented. Then we apply these equations to obtain phase diagrams in Sec. III. In Sec. IV, we compare our results with experimental observations and other theories, and check the validity of the model. Sec. V concludes the present study. II. THEORY AND MODELING
+
+F i 关 兵 ␾ ␣ 共 r兲 其 兴 ⫽
+
+u ␣,␤共 r 兲 ⫽
+
+⬁
+
+共 r⭐R ␣ ⫹R ␤ 兲 ,
+
+⑀ ␣,␤
+
+关 R ␣ ⫹R ␤ ⬍r⭐c 共 R ␣ ⫹R ␤ 兲兴 ,
+
+关 r⬎c 共 R ␣ ⫹R ␤ 兲兴 ,
+
+共1兲
+
+where R ␣ and R ␤ are the radii of molecular species ␣ and ␤ (⫽N,D,C), and c is a constant factor greater than unity. The excluded volume interaction is represented by the uppermost line in Eq. 共1兲. Other longer ranged interactions are represented by ⑀ ␣ , ␤ . Since we are mainly concerned with the excluded volume interaction, ⑀ ␣ , ␤ is set to 0 except for ⑀ D,D . Because of exposed hydrophobic residues, isolated hydrogen bond donors and acceptors, denatured proteins are expected to attract each other. Therefore, ⑀ D,D is usually set negative in the following. The length scale in the present theory is set to ⬃10 nm, which is taken as the unit length. Therefore the radii of the protein and crowding agent are of order of ⬃0.1 unit length. We always set c⫽3 in this paper. The system is represented by the number density fields of the native protein, denatured protein, and crowding agent: ␾ N (r), ␾ D (r) and ␾ C (r), respectively. The density field of solvent, ␾ S (r), is indirectly defined by ␾ S (r)⫽ ␳ 0 ⫺ 兺 ␣ ␾ ␣ (r), where the summation is over ␣ ⫽N,D,C. Here, ␳ 0 is the total bulk density of the system treated. The density functional 共free energy functional兲 is given by
+
+dr
+
+F 关 兵 ␾ 共 r兲 其 兴 ⫽F i ⫹F n ,
+
+共2兲
+
+where F i is the ideal part, and F n is the nonideal part representing intermolecular interactions. The ideal part is
+
+␣
+
+␣
+
+⫹T
+
+兺␣ ␾ ␣ ln ␾ ␣ 共3兲
+
+The first term 共here and below, summation is always taken over ␣ or ␤ ⫽N,D, and C) comes from the intrinsic free energy, and the second and third terms represent the entropy of mixing. If only up to two-body correlation is taken into account, the nonideal part of the free energy is given by F n 关 兵 ␾ ␣ 共 r兲 其 兴 ⫽
+
+兺 冕 冕 dr1 dr2 ␾ ␣共 r1 兲 ␾ ␤共 r2 兲
+
+2 ␣,␤
+
+⫻u ␣eff, ␤ 共 兩 r1 ⫺r2 兩 兲 .
+
+共4兲
+
+Here, u ␣eff, ␤ ( 兩 r1 ⫺r2 兩 ) is the effective interaction given by 关21兴 u ␣eff, ␤ 共 兩 r兩 兲 ⫽T 共 1⫺e ⫺u ␣ , ␤ ( 兩 r兩 )/T 兲 .
+
+共5兲
+
+We assume that all the effective interactions are short ranged compared to the system size, the nonideal part of the free energy functional can be rearranged as follows. First, we transform the variables r1 and r2 using r1 ⫹r2 ,
+
+共6兲
+
+s⫽r1 ⫺r2 .
+
+共7兲
+
+r⫽
+
+Since u ␣eff, ␤ ( 兩 s兩 ) is of short range, it is meaningful for small 兩 s兩 . Thus ␾ ␣ (r1 ) and ␾ ␤ (r2 ) in Eq. 共4兲 can be approximated as follows: ␾ ␣ 共 r1 兲 ⬇ ␾ ␣ 共 r兲 ⫹ s•ⵜ ␾ ␣ 共 r兲 ,
+
+共8兲
+
+␾ ␤ 共 r2 兲 ⬇ ␾ ␤ 共 r兲 ⫺ s•ⵜ ␾ ␤ 共 r兲 ,
+
+共9兲
+
+where the gradient operator (“) is applied with respect to r. With the above expansion, F n becomes F n⫽
+
+dr关 U ␣ , ␤ ␾ ␣ 共 r兲 ␾ ␤ 共 r兲 ⫺V ␣ , ␤ “ ␾ ␣ 共 r兲 •“ ␾ ␤ 共 r兲兴 . 共10兲
+
+Here we have defined a set of effective interaction parameters:
+
+U ␣,␤⫽ V ␣,␤⫽
+
+␣
+
+␣
+
+⫹T ␾ S ln ␾ S .
+
+A. Free energy functional and equation of state
+
+We consider a system which consists of one protein species 共P兲 and one crowding agent species 共C兲 . The protein can be in one of the two states: native 共N兲 or denatured 共D兲. In the limit of dilute solution, state of the protein is characterized by the intrinsic free energy of the native state ( ␩ N ) and of the denatured state ( ␩ D ). In principle, they can be further decomposed into energetic and entropic parts. However, since the temperature is fixed in the following calculations, decomposition of the intrinsic free energies is not necessary. The intrinsic free energy of the crowding agent does not play any role in the present theory, so we set ␩ C ⫽0 for convenience. Next, we assume that the bare interaction (u ␣ , ␤ ) between two molecules is the hard-core square-well potential, that is, with r being intermolecular distance,
+
+冕 冋兺 ␩ ␾
+
+4d
+
+dsu ␣eff, ␤ 共 兩 s兩 兲 ,
+
+共11兲
+
+ds兩 s兩 2 u ␣eff, ␤ 共 兩 s兩 兲 ,
+
+共12兲
+
+where d is the spatial dimension 共i.e., d⫽3). Thus defined U ␣ , ␤ is 共two times兲 the excluded volume parameter 关22兴, and its positive or negative values correspond to repulsive or
+
+[Page 3]
+
+attractive interaction, respectively. The parameter V ␣ , ␤ in Eq. 共12兲 corresponds to 共negative兲 surface tension of the fluid. Mixing or separation of two species ␣ and ␤ is preferred when V ␣ , ␤ is positive or negative, respectively. Local chemical potential ␮ ␣ (r) is defined as a functional derivative of the free energy F with respect to ␾ ␣ (r):
+
+␮ ␣ 共 r兲 ⫽
+
+␦F ␦ ␾ ␣ 共 r兲
+
+⫽ ␩ ␣ ⫹T ln
+
+␾ ␣ 共 r兲 ␳ 0⫺
+
+兺 ␾ ␤ 共 r兲 ␤
+
+⫹W ␣ 共 r兲 , 共13兲 ␤
+
+where the last term W ␣ (r)⬅ 兺 ␤ (U ␣ , ␤ ⫹V ␣ , ␤ “ ) ␾ (r) may be regarded as the potential of mean force for the species ␣ . The chemical potential is spatially uniform at equilibrium. Let ␮ ␣0 be the equilibrium chemical potential. Then the equilibrium condition is given by ␮ ␣ (r)⫽ ␮ ␣0 . This equation can be rearranged by the use of Eq. 共13兲 to obtain a set of selfconsistent equations of state:
+
+␾ ␣ 共 r兲 ⫽
+
+␳ 0 exp关 ⫺ 兵 ␩ ␣ ⫹W ␣ 共 r兲 ⫺ ␮ ␣0 其 /T 兴 1⫹
+
+兺␤
+
+.
+
+FIG. 1. Graphical solution of the self-consistent equation for the uniform case. The vertical axis indicates the value of the left-hand side of Eq. 共15兲 in units of T 共temperature兲. The horizontal axis is the fraction of the native protein 共dimensionless兲. Stable solutions for Eq. 共15兲 are indicated by arrows. There can be one 共solid curve兲 or two 共dashed curve兲 solutions depending on the strength of the interactions.
+
+共14兲
+
+exp关 ⫺ 兵 ␩ ␤ ⫹W ␤ 共 r兲 ⫺ ␮ ␤0 其 /T 兴
+
+␳ C⫾ ⫽
+
+Note that each protein can be either native or denatured, which we denote by ␮ 0P . In the folrequiring that ␮ N0 ⫽ ␮ D lowing, we solve this set of equations of state 共14兲 to obtain phase diagrams.
+
+T ln
+
+冉 冊
+
+fN ⫺ 共 2U N,D ⫺U N,N ⫺U D,D 兲 ␳ P f N 1⫺ f N
+
+⫹ 共 U N,D ⫺U D,D 兲 ␳ P ⫹ 共 U N,C ⫺U D,C 兲 ␳ C ⫹ ␩ N ⫺ ␩ D ⫽0.
+
+共15兲
+
+This equation can be graphically solved for f N 共Fig. 1兲. Graphical analysis with some algebra shows that Eq. 共15兲 has one solution when
+
+␳ P 共 2U N,D ⫺U N,N ⫺U D,D 兲 ⭐4T,
+
+共16兲
+
+and two solutions when
+
+␳ P 共 2U N,D ⫺U N,N ⫺U D,D 兲 ⬎4T and ␳ C⫹ ⬍ ␳ C ⬍ ␳ C⫺ . 共17兲 Here ␳ C⫾ are defined by
+
+⫻ ␳ P f N⫾ ⫺ ␩ D ⫹ ␩ N ⫺ 共 U D,D ⫺U N,D 兲 ␳ P ,
+
+共18兲
+
+with
+
+B. Some analytical results for the uniform case
+
+In order to grasp the qualitative behavior of the model presented above, we derive some analytical relations for the spatially uniform system. Namely, we describe the solution of the self-consistent equation 共14兲 for ␾ N with fixed values of ␾ N ⫹ ␾ D (⫽ ␳ P ) and ␾ C (⫽ ␳ C ). Setting ␮ N ⫽ ␮ D , substituting ␾ D ⫽ ␳ P ⫺ ␾ N and defining f N ⫽ ␾ N / ␳ P , we have
+
+冋 冉 冊
+
+f N⫾ T ln ⫺ 共 2U N,D ⫺U N,N ⫺U D,D 兲 U D,C ⫺U N,C 1⫺ f N⫾
+
+f N⫾ ⫽ ⫾
+
+. ⫺ 4 共 2U N,D ⫺U N,N ⫺U D,D 兲 ␳ P
+
+共19兲
+
+Figure 1 illustrates these two cases. When the latter condition in Eq. 共17兲 does not hold, there is again only one stable solution. From Eq. 共15兲 and Fig. 1, we can see that the increase in ␳ C results in the increase in f N provided that the denatured protein has larger excluded volume than the native one (U D,C ⬎U N,C ), which is the physically appropriate case. The increase in ␳ P leads to the decrease in ␾ N when the denatured proteins attract each other strongly enough that U D,D ⬍U N,D , which, again, is usually the case due to the exposed hydrophobic residues and isolated hydrogenbonding groups in the denatured protein. C. Numerics
+
+Before going into the details of the calculation, we summarize the physical scales of the system treated. First, the unit of energy is defined as the folding temperature which is ⬃3 kJ/mol. Most of the calculations are carried out at the folding temperature in dilute solution, hence ␩ N ⫽ ␩ D holds, and we set ␩ N ⫽ ␩ D ⫽0. These values are always used below otherwise stated. The unit length is taken as approximately 10 nm, so that the radii of the molecules are ⬃0.1 unit length. The experimentally measured radius of gyration of
+
+[Page 4]
+
+the native state of the IgG binding domain of streptococcal protein L 共62 amino acid residues兲 is 1.65 nm and that of the denatured state 共denatured by GdmCl兲 is ⬃2.6 nm 关23兴. Hence R D ⬃1.5R N . Depending on the protein, the radius of the denatured protein can be larger than that of the native protein by 100%. In most of the calculations below, we set the radius of the native protein to 0.4 unit length and that of the denatured protin to 0.6. In order to keep the volume fraction of the denatured protein in a unit volume less than unity, we set ␳ 0 ⫽1. In the following numerical calculations, the linear system size is set to 128 unit length.
+
+TABLE I. Parameter sets of the phase diagrams. Plane
+
+␳P
+
+␩N
+
+␳ C -⑀ D,D ␳ C -␳ P ␳ C -␩ N ␳ C -R C ␳ C -R D
+
+0.1
+
+0.1 0.1 0.1
+
+⑀ D,D ⫺0.058 ⫺0.058 ⫺0.058 ⫺0.058
+
+RC
+
+RD
+
+0.4 0.4 0.4
+
+0.6 0.6 0.6 0.6
+
+0.4
+
+quantity 具 ␾ ␣ 典 is the spatial average of the density field ␾ ␣ (r) defined by
+
+1. Discretization scheme
+
+具 ␾ ␣ 典 ⫽V ⫺1
+
+冕␾
+
+␣
+
+共 r兲 dr,
+
+共22兲
+
+The system is discretized into a simple cubic lattice system with 32⫻32⫻32 lattice sites. Differential operators are discretized using central finite difference operators. For example, denoting r⫽(x,y,z), the partial derivative of an arbitrary function f (x,y,z) with respect to x is defined as
+
+where V is the volume of the system. Then the bulk chemical potentials are updated as
+
+⳵ f 共 r兲 → 关 f 共 x⫹h/2,y,z 兲 ⫺ f 共 x⫺h/2,y,z 兲兴 , ⳵x
+
+␮ 0P ← ␮ 0P ⫹T ln关 ␳ P / 共 具 ␾ N 典 ⫹ 具 ␾ D 典 兲兴 ,
+
+共23兲
+
+␮ C0 ← ␮ C0 ⫹T ln关 ␳ C / 具 ␾ C 典 兴 .
+
+共24兲
+
+共20兲
+
+where h is the lattice constant h⫽128/32⫽4. The discretized Laplacian operator includes up to next-next-nearest neighbors:
+
+冋 兺
+
+f 共 r j 兲 ⫹w 2 f 共 rj 兲 “ 2 f 共 ri 兲 → 2 w 1 j苸n 1 j苸n 2 ⫹w 3
+
+兺 f 共 rj 兲 ⫺z f 共 ri 兲 ,
+
+j苸n 3
+
+共21兲
+
+where n 1 , n 2 , and n 3 stand for nearest neighbors, nextnearest neighbors, and next-next-nearest neighbors of ri , respectively. The weighting factors w i , (i⫽1,2,3) are chosen to make the system isotropic. We use the values given by van Vlimmeren and Fraaije 关24兴, that is, w 1 ⫽0.294 726, w 2 ⫽0.235 425, w 3 ⫽0.175 818, and z⫽6.
+
+The overall nested functional iteration method proceeds as follows. 共1兲 Give the initial distribution of ␾ ␣ (r) and initial bulk chemical potentials ␮ 0P and ␮ C0 . Calculate the potential of mean force W ␣ (r). 共2兲 Keeping W ␣ (r) fixed and using the current ␮ 0P and ␮ C , calculate 共temporary兲 ␾ ␣ (r) through Eq. 共14兲, hence 具 ␾ ␣ 典 . Update ␮ 0P and ␮ C0 using Eqs. 共23兲 and 共24兲. Neither ␾ ␣ (r) nor W ␣ (r) are updated at this stage. 共3兲 Repeat step 2 until ␮ 0P and ␮ C0 converge. 共4兲 Using the current W ␣ (r), and ␮ 0P and ␮ C0 obtained in the previous step, update ␾ ␣ (r) through Eq. 共14兲. Then update W ␣ (r) using the new ␾ ␣ (r). 共5兲 Repeat steps 共2兲–共4兲 until ␾ ␣ (r) converge. III. NUMERICAL RESULTS
+
+2. Calculation of equilibrium states
+
+A. General remarks
+
+All the equilibrium properties are calculated from the density fields ␾ ␣ (r) at equilibrium which are obtained by solving the self-consistent equations 共14兲. Given the value of ⑀ ␣ , ␤ and the radii of molecules, the interaction parameters U ␣ , ␤ and V ␣ , ␤ are calculated by numerical integration of u ␣eff, ␤ according to Eqs. 共11兲 and 共12兲, respectively. In all the cases below, all ⑀ ␣ , ␤ but ⑀ D,D are set to 0. The periodic boundary condition is imposed in all directions throughout this study. In order to solve Eq. 共14兲 with predefined values of bulk densities of protein ( ␳ P ) and crowding agent ( ␳ C ), we use a nested functional iteration method. Note that the conserved bulk densities are those of protein, and crowding agent, not those of native protein, denatured protein and crowding agent. Thus we have to adjust two bulk chemical potentials, ␮ 0P (⫽ ␮ N0 ⫽ ␮ D0 ) and ␮ C0 , instead of three, so that the constraints ␳ P ⫽ 具 ␾ N 典 ⫹ 具 ␾ D 典 and ␳ C ⫽ 具 ␾ C 典 are satisfied. The
+
+Preliminary calculations of equilibrium states were conducted with various parameter values for ␳ P , ␳ C , ⑀ D,D as well as different initial conditions. It was found that there are two different phases. One is the uniform phase (U phase兲. The other is the phase in which there are aggregates of the denatured proteins and the remaining region is mostly uniform. In the latter phase, the lowest free energy state has one spherical aggregate. We call it the A D phase. The phase boundary between the U and A D phases can be determined by the relative spatial deviation,
+
+DN 关 ⫽ 冑Š( ␾ N ⫺ 具 ␾ N 典 ) 2 ‹/ 具 ␾ N 典 兴 , of the native protein density field ␾ N (r). The system is in the uniform phase when D N ⬍10⫺8 and in the A D phase otherwise. The stability of the native protein can be monitored by the fraction of the native protein f N ⫽ 具 ␾ N 典 / ␳ P . In the following phase diagrams, we always set T⫽1, ␩ D ⫽0, and R N ⫽0.4, and ⑀ ␣ , ␤ ⫽0 except for ⑀ D,D . Other
+
+[Page 5]
+
+FIG. 4. Free energy and chemical potential of the protein as functions of ␳ C at different ␳ P . Units: free energy and chemical potential in 关 T 兴 ; ␳ C and ␳ P in 关 1/(R N /0.4) 3 兴 .
+
+FIG. 2. Phase diagram on the ␳ C -⑀ D,D plane with ␳ P ⫽0.1. The thick solid line indicates the phase boundary. The contour of the fraction of the native protein, f n , is shown as dashed and dotted lines with its values. U indicates the uniform phase and A D the phase where the denatured proteins form an aggregate. Units: ␳ C and ␳ P in 关 1/(R N /0.4) 3 兴 ; ⑀ D,D in 关T兴.
+
+⫺0.07 to ⫺0.05. This phase diagram exhibits two typical behaviors of the system. First, aggregation is enhanced as the bulk density of the crowding agent ( ␳ C ) increases. Second, the native protein is stabilized as ␳ C increases as long as the system is in the uniform 共U兲 phase, which is the behavior predicted in the preceding section. In the following, we investigate these effects due to crowding in detail. The phase boundary in Fig. 2 suggests that, in order to study the aggregation of the denatured proteins, it is convenient to set ⑀ D,D ⬃⫺0.06 and we use the value ⑀ D,D ⫽⫺0.058 below.
+
+parameters are summarized in Table I. In most of the phase diagrams below, the bulk 共number兲 density of the crowding agent ( ␳ C ) is varied from 0 to 0.8. When R C ⫽0.4 and ␳ C ⫽0.8, the bulk volume fraction of the crowding agent is equal to 0.215. When R N ⫽0.4, R D ⫽0.6, and ␳ P ⫽0.1, the bulk volume fraction of the protein resides in the range between 0.0268 and 0.0905. Thus the total volume fraction of molecules in the systems investigated roughly corresponds to that of the living cell, which is 0.2–0.3. We first drew the phase diagram on the ␳ C -⑀ D,D plane 共Fig. 2兲 to determine the range of ␳ C and ⑀ D,D that can cause the aggregation of the denatured protein. From Fig. 2, we see that the system crosses the phase boundary when ⑀ D,D ⫽
+
+Although some essential features of the crowded protein solution can be grasped in the ␳ C -⑀ D,D phase diagram 共Fig. 2兲, it is experimentally difficult to manipulate the phenomenological parameter ⑀ D,D . Therefore we choose other variables for phase diagrams. One natural choice is the bulk density of the protein, ␳ P . The ␳ C -␳ P phase diagram is shown in Fig. 3. Here we again see the two features pointed out above: as ␳ C increases, the aggregation of the denatured protein is enhanced and the native protein is stabilized in the uniform phase. When the protein density ␳ P is sufficiently low, the aggregation is no longer observed. The contour of the relative fraction of the native protein ( f N ) in the uniform
+
+FIG. 3. Phase diagram on the ␳ C -␳ P plane with the contour of f N . Units of ␳ C and ␳ P are 关 1/(R N /0.4) 3 兴 .
+
+FIG. 5. Phase diagram on the ␳ C -␩ N plane with the contour of f N . Units: ␩ N in 关 T 兴 ; ␳ C in 关 1/(R N /0.4) 3 兴 .
+
+B. Crowding effects on aggregation and native stability
+
+[Page 6]
+
+关Fig. 6共a兲兴. The chemical potential of the protein, ␮ 0P , with different ␩ N 关Fig. 6共b兲兴 exhibits the same tendency as Fig. 4共b兲. C. Dependence of protein stability and aggregation on molecular size
+
+FIG. 6. Free energy and chemical potential of the protein as functions of ␳ C at different ␩ N . Units: free energy, chemical potential, and ␩ N in 关 T 兴 ; ␳ C in 关 1/(R N /0.4) 3 兴 .
+
+phase are almost straight lines. This is a result derived in the preceding section. That is, Eq. 共15兲 shows that, with f N fixed, ␳ P is a linear function of ␳ C . The contour of the relative native fraction ( f N ) is distorted in the upper right corner of the ␳ C -␳ P phase diagram 共Fig. 3兲. The reason for this distorted f N contour seems to be an artifact due to the small size of the lattice system 共i.e., the isotropy of the system is not completely preserved because of the large mesh size兲. Nevertheless, the free energy of the system as a function of ␳ C changes continuously and smoothly, and it is also concave up 关Fig. 4共a兲兴 for ␳ P ⫽0.05, 0.1, and 0.2, indicating that the equation of state, Eq. 共14兲, is successfully solved. When the system crosses the phase boundary, a cusp is observed in the chemical potential of the protein, ␮ 0P , as a function of ␳ C 关Fig. 4共b兲兴, which is expected for a phase transition. The value of ␮ 0P increases as ␳ C increases, and the rate of its increase becomes more stringent for large ␳ C . The intrinsic free energy ␩ N of the native protein is also chosen as a variable which can be experimentally manipulated by mutations. The ␳ C -␩ N phase diagram 共Fig. 5兲 again reveals the general tendency of the crowding effects: enhancing aggregation, and stabilizing the native protein in the uniform phase. When the native protein is highly destabilized intrinsically ( ␩ N ⬎1), the phase boundary on the ␳ C -␩ N plane becomes nearly vertical. This indicates that the critical value of ␳ C for the aggregation becomes almost independent of ␩ N when the native protein is highly unstable. Note that when ␳ C ⬍0.2 and ␩ N ⬎1, the majority of the proteins is denatured ( f N ⬍0.2). In this case, the system is already a solution of denatured proteins and crowding agents, but they are dispersed. The free energy changes continuously
+
+So far the radii of molecules have been fixed such that R N ⫽R C ⫽0.4 and R D ⫽0.6. Here we study how crowding effects vary for different sizes of the crowding agents and denatured proteins. Experimentally, the size of the crowding agent can be readily manipulated by changing the crowding agent to a different one. In the case when the crowding agent is a polysaccharide, the average degree of polymerization may also be manipulated. In the calculation, the radius of the crowding agent R C was varied from 0.1 to 0.45. The ␳ C -R C phase diagram 关Fig. 7共a兲兴 shows that, with the number density ␳ C fixed, larger crowding agent enhances the aggregation of the denatured proteins and stabilizes the native proteins in the uniform phase more significantly. That is, the increase in R C imposes effects similar to the increase in the number density ␳ C , which is as expected since a larger crowding agent occupies more space at a constant number density ␳ C . In order to exclude this apparent dependence, we redraw the phase diagram with the volume fraction of the crowding agent, ̃␳ C ⫽(4 ␲ /3)R C3 ␳ C , as a variable 关Fig. 7共b兲兴. If the phase boundary is dependent solely on the volume excluded by the crowding agent, it would appear as a vertical line on the ̃␳ C -R C plane, but this was not found to be the case. Within the range of R C studied, we see that, at a constant volume fraction ̃␳ C , smaller crowding agents have stronger effects both on the native protein stabilization in the uniform phase and on the aggregation. The increase in R C at fixed ̃␳ C reduces the native protein stability in the uniform phase, and tends to prevent aggregation. Thus, the crowding effects on protein stabilization and aggregation are dependent not only on the volume excluded by the crowding agent, but also on the size of the crowding agent. For R C ⬎0.45, the nested functional iterations did not converge to yield reliable solutions of the self-consistent equations of state. Next we investigate how the size of the denatured protein, R D , affects the crowding effects. For this purpose, we depict the ␳ C -R D phase diagram 共Fig. 8兲. We can see the increase in ␳ C enhances the aggregation when R D is large (R D ⬎0.5). For R D ⬎R N ⫽0.4, the increase in ␳ C stabilizes the native
+
+FIG. 7. Phase diagrams on the ␳ C -R C plane 共a兲 and on the ̃␳ C -R C plane 共b兲. ̃␳ C is the volume fraction of the crowding agent. The dotted region in 共b兲 corresponds to a subspace of 共a兲. The contour of f N is also shown. Units: R C in 关 R N /0.4 兴 ; ␳ C in 关 1/(R N /0.4) 3 兴 ; ̃␳ C 共dimensionless兲.
+
+[Page 7]
+
+FIG. 8. Phase diagram on the ␳ C -R D plane with the contour of f N . Units: R D in 关 R N /0.4 兴 ; ␳ C in 关 1/(R N /0.4) 3 兴 .
+
+protein in the uniform phase as in the previous examples. These crowding effects on aggregation and native protein stability are stronger for larger R D . Although unfolded proteins are always more expanded than the native ones, we may ask what would happen theoretically if it were not the case. We calculated the phase diagram for R D ⬍R N in which the increase in the crowding agent density destabilized the native protein in the uniform phase 共data not shown兲. This result clarifies that the effects of macromolecular crowding observed here are caused by the fact that the denatured proteins are larger than the native ones. IV. DISCUSSION
+
+Regarding the crowding effect on protein stability, Minton 关25兴 proposed a statistical-thermodynamic model based on the McMillan-Mayer theory of multicomponent solutions 关26兴. He modeled the native protein as a hard sphere and the denatured protein as an ensemble of 共convex hulls of兲 random coils of varying compactness. The main result of Minton’s theory is that increasing the concentration of crowding agent leads to the enhanced thermostability of native proteins. The system treated in the Minton theory corresponds to the uniform phase in our case. The ␳ C -⑀ D,D 共Fig. 2兲, ␳ C -␳ P 共Fig. 3兲, and ␳ C -␩ N 共Fig. 5兲 phase diagrams all show that, in the uniform phase and with sufficiently low ␳ P , the increase of ␳ C is accompanied by the increase of the fraction of native protein, thus our results are in agreement with the Minton theory. A qualitatively similar result was also obtained by Zhou and Hall 关27兴 that the addition of crowding agent whose size is comparable with the protein enhances the stability of the native protein. They also modeled the native protein as a hard sphere, and the denatured protein was modeled as a chain-molecule by a thermodynamic perturbation theory. However, as pointed out by Minton 关25兴, the perturbation theory of Zhou and Hall does not actually treat the chain connectivity of the denatured protein, and the degree of native stabilization by the crowding agent measured in terms of the equilibrium constant f N /(1⫺ f N ) was predicted
+
+to be unrealistically high (⬃109 ) 关27兴. In the present theory, the value of f N /(1⫺ f N ) in the uniform phase can be calculated from Eq. 共15兲. Using the same parameters as in the ␳ C -␳ P phase diagram 共Table I兲 with ␳ P ⫽0.05; as the bulk density of the crowding agent ␳ C changes from 0 to 0.9, the equilibrium constant f N /(1⫺ f N ) monotonically increases from 0.8 to 6.5. These values are of the order similar to that obtained by Minton 关25兴 who predicted the maximum increase to be ⬃10–100. This partial agreement may be attributed to the treatment of the conformation of the denatured protein: The convex hull of random coils as a model of the denatured state introduced by Minton somewhat resembles the present hard-sphere model. Difference between the results in the present theory and those of the Minton theory may be due to the different size of the denatured protein relative to the native protein, and due to the attraction between the denatured proteins in the present theory. There is an experimental observation that the native stability of G-actin was increased in the presence of polyethylene glycol 6000 关28兴. However, experimental investigations to test the theoretical predictions regarding stability in general have been difficult because actual systems exhibit quasiirreversible aggregation of denatured proteins 关25兴. This difficulty was partly overcome by Eggers and Valentine 关29兴 who investigated thermal stability of four kinds of proteins 共lysozyme, ␣ -lactalbumin, metmyoglobin, and apomyoglobin兲 by the sol-gel method in which proteins are encapsulated in a silica glass matrix. The silica glass matrix confines proteins inside its pores and thus exerts the molecular confinement effect similar to macromolecular crowding effect 关5兴. The sol-gel method is useful, in that encapsulating proteins in different pores of the glass prevents aggregation of proteins. Eggers and Valentine 关29兴 reported that three out of four proteins they studied retained nativelike structures and exhibited increased thermostability. One exception was apomyoglobin which was found to be totally unfolded inside the pore. This was later shown to be due to the perturbed water structure inside the pores, hence weakened hydrophobic effect 关30兴. Recent molecular simulations of a ␤ -hairpin forming peptide confined in a pore also exhibited enhanced stability of compact native states 关31兴. Thus it appears that the theoretical prediction is validated by experiment as well as by simulations in the majority of the cases, although the above experimental results suggest the limitation of the present theoretical model which does not include the hydration effect explicitly. The theory presented in this paper can treat not only the uniform phase but also the aggregation phase. Van den Berg et al. 关10兴 studied the effect of macromolecular crowding on the refolding of oxidized as well as reduced lysozyme using four kinds of crowding agents, namely, ficoll 70, dextran 70, bovine serum albumin, and ovalbumin. They reported that the aggregation of the reduced lysozyme was enhanced with increased concentration of any crowding agent while refolding of oxidized lysozyme was hardly affected. In the reduced lysozyme, the native disulphide bonds are broken and therefore the protein structures at stages of refolding are expected to be more expanded compared to the oxidized lysozyme. The ␳ C -R D phase diagram 共Fig. 8兲 shows that the denatured
+
+[Page 8]
+
+protein with larger size is more liable to aggregation. Thus, disregarding other complications, the present model with the above steric consideration alone can qualitatively describe the difference between the refolding of oxidized and reduced lysozyme. Recently, molecular simulation studies on the competition between protein folding and aggregation have been performed 关15–17兴. These studies with detailed representations of protein molecules revealed the sensitivity of the native and aggregate conformations 关15,17兴. Dima and Thirumalai 关17兴 also obtained a phase diagram of a system containing two protein molecules. Simulations of a single peptide molecule confined in a pore have also been performed to examine molecular confinement effects on protein folding 关31兴, in which native as well as denatured conformations of the peptide were analyzed in detail. However, with these detailed models, systems consisting of only two to eight 关16兴 proteins were treated, possibly because of computational limitation. The model presented in this paper, on the other hand, can treat systems containing infinite number of proteins together with crowding agents at the cost of microscopic details. Therefore, the present model serves to study large scale properties of protein aggregation to complement molecular simulation studies. We note that it is possible, at least in principle, to incorporate amino acid sequence information to the density functional formulation by combining the path integral and self-consistent field descriptions as is done in simulations of polymer solutions and melts 关22,32兴. However, the uniqueness of the native protein conformation complicates the use of such formulation. In the present paper, we have considered only the excluded volume interaction between proteins and crowding agents, except for the attraction between the denatured proteins. It should be stressed that the term ‘‘excluded volume’’ is defined in this paper as the volume excluded by a macromolecule 共protein or crowding agent兲 to other macromolecules. The excluded volume of a protein in the present
+
+关1兴 A.B. Fulton, Cell 30, 345 共1982兲. 关2兴 S.B. Zimmerman and A.P. Minton, Annu. Rev. Biophys. Biomol. Struct. 22, 27 共1993兲. 关3兴 A.P. Minton, Curr. Opin. Biotechnol. 8, 65 共1997兲. 关4兴 A.P. Minton, Curr. Opin. Struct. Biol. 10, 34 共2000兲. 关5兴 A.P. Minton, J. Biol. Chem. 276, 10577 共2001兲. 关6兴 R.J. Ellis, Curr. Opin. Struct. Biol. 11, 114 共2001兲. 关7兴 R.J. Ellis, Trends Biochem. Sci. 26, 597 共2001兲. 关8兴 S. Asakura and F. Oosawa, J. Polym. Sci. 33, 183 共1958兲. 关9兴 A.P. Minton, Methods Enzymol. 295, 127 共1998兲. 关10兴 B. van den Berg, R.J. Ellis, and C.M. Dobson, EMBO J. 18, 6927 共1999兲. 关11兴 B. van den Berg, R. Wain, C.M. Dobson, and R.J. Ellis, EMBO J. 19, 3870 共2000兲. 关12兴 G. Rivas, J.A. Fernández, and A.P. Minton, Proc. Natl. Acad. Sci. U.S.A. 98, 3150 共2001兲. 关13兴 D.M. Hatters, A.P. Minton, and G.J. Howlett, J. Biol. Chem. 277, 7824 共2002兲.
+
+meaning should be distinguished from the partial molar volume. Although partial molar volume of proteins may decrease upon unfolding due to the change of hydration structure, the excluded volume always increases upon unfolding because unfolded structures of protein cannot be more compact than its native structure. As discussed above, the present highly simplified picture of crowded protein solutions is at least qualitatively in good agreement with some experimental observations, and thus can elucidate the importance of the excluded volume effects in crowded environments. Further, elaboration of the theory to include more realistic interactions such as electrostatic ones is straightforward if the interactions are isotropic. Since macromolecules 共proteins and crowding agents兲 and solvent 共water兲 molecules largely differ in their sizes, explicit treatment of hydration structures may be difficult and is left for future studies. V. CONCLUSION
+
+We have proposed a density functional theory that describes crowded protein solutions. Neglecting solvent water molecules, the present theory can handle systems consisting of proteins and macromolecules of comparable sizes. By solving the self-consistent equations of state, it was shown that uniform and nonuniform equilibrium states can be successfully obtained for wide ranges of parameter sets. Various phase diagrams suggest that macromolecular crowding 共1兲 enhances aggregation of the denatured proteins, 共2兲 stabilizes the native protein as long as the system is uniform. The present theoretical results agree qualitatively with some experimental results. An extension of the present theory to treat dynamical phenomena will be given in a forthcoming paper 关33兴. ACKNOWLEDGMENT
+
+The authors thank Professor Yuji Goto for helpful discussion and for providing some references.
+
+关14兴 A.L. Fink, Fold Des 3, R9 共1998兲. 关15兴 P.M. Harrison, H.S. Chan, S.B. Prusiner, and F.E. Cohen, J. Mol. Biol. 286, 593 共1999兲. 关16兴 A.V. Smith and C.K. Hall, J. Mol. Biol. 312, 187 共2001兲. 关17兴 R.I. Dima and D. Thirumalai, Protein Sci. 11, 1036 共2002兲. 关18兴 J.P. Hansen and I.R. McDonald, Theory of Simple Liquids, 2nd ed. 共Academic Press, London, 1986兲. 关19兴 K. Kawasaki, Non-equilibrium and Phase Transition 共Asakura Shoten, Tokyo, 2000兲, in Japanese. 关20兴 S.A. Safran, Statistical Thermodynamics of Surfaces, Interfaces, and Membranes, Frontiers in Physics Vol. 90 共AddisonWesley, Reading, MA, 1994兲. 关21兴 L.D. Landau and I.M .Lifshitz, Statistical Physics, 3rd ed. 共Iwanami Shoten, Tokyo, 1980兲, Pt. I, Japanese translation. 关22兴 T. Kawakatsu, Foundations of Polymer Physics 共Saiensu Sha, Tokyo, 2001兲, in Japanese. 关23兴 A. Fersht, Structure and Mechanism in Protein Science 共Freeman, New York, 1999兲.
+
+[Page 9]
+
+关24兴 B.A.C. van Vlimmeren and J.G.E.M. Fraaije, Comput. Phys. Commun. 99, 21 共1996兲. 关25兴 A.P. Minton, Biophys. J. 78, 101 共2000兲. 关26兴 W.G. McMillan, Jr. and J.E. Mayer, J. Chem. Phys. 13, 276 共1945兲. 关27兴 Y. Zhou and C.K. Hall, Biopolymers 38, 273 共1996兲. 关28兴 R.L. Tellam, M.J. Sculley, and L.W. Nichol, Biochem. J. 213, 651 共1983兲.
+
+关29兴 D.K. Eggers and J.S. Valentine, Protein Sci. 10, 250 共2001兲. 关30兴 D.K. Eggers and J.S. Valentine, J. Mol. Biol. 314, 911 共2001兲. 关31兴 D.K. Klimov, D. Newfield, and D. Thirumalai, Proc. Natl. Acad. Sci. U.S.A. 99, 8019 共2002兲. 关32兴 J.G.E.M. Fraaije, B.A.C. van Vlimmeren, N.M. Maurits, M. Postma, O.A. Evers, C. Hoffmann, P. Altevogt, and G. Goldbeck-Wood, J. Chem. Phys. 106, 4260 共1997兲. 关33兴 A.R. Kinjo and S. Takada 共unpublished兲.

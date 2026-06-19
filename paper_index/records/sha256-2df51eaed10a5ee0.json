@@ -1,0 +1,978 @@
+{
+  "paper_id": "sha256-2df51eaed10a5ee0",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/shell_2008_JChemPhys_relative_entropy_multiscaling.pdf",
+  "pdf_sha256": "2df51eaed10a5ee0bd02b6092bdd0adadcc98e009d28dae2144e83019e045d84",
+  "filename": "shell_2008_JChemPhys_relative_entropy_multiscaling.pdf",
+  "item_type": "article",
+  "title_query": "JChemPhys relative entropy multiscaling",
+  "filename_hints": {
+    "year_hint": 2008,
+    "venue_hint": "",
+    "prefix": "shell 2008 JChemPhys relative entropy multiscaling"
+  },
+  "doi_candidates": [
+    "10.1063/1.2992060",
+    "10.1063/1.3557038",
+    "10.1063/1.2938860",
+    "10.1063/1.4818908"
+  ],
+  "date_indexed": "2026-04-17T03:29:42.830069+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.4125,
+  "warnings": [
+    "year_hint_mismatch:2008!=2024"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "JChemPhys relative entropy multiscaling",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+      "externalIds": {
+        "ArXiv": "2403.09061",
+        "DOI": "10.1021/acs.jctc.3c01052",
+        "CorpusId": 268038878,
+        "PubMed": "38416535"
+      },
+      "url": "https://www.semanticscholar.org/paper/feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+      "title": "Relative Resolution: An Analysis with the Kullback-Leibler Entropy.",
+      "venue": "Journal of Chemical Theory and Computation",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.09061, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2024-02-28",
+      "journal": {
+        "name": "Journal of chemical theory and computation"
+      },
+      "authors": [
+        {
+          "authorId": "2173598",
+          "name": "M. Chaimovich"
+        },
+        {
+          "authorId": "4000654",
+          "name": "Aviel Chaimovich"
+        }
+      ],
+      "abstract": "A novel type of a multiscale approach, called Relative Resolution (RelRes), can correctly retrieve the behavior of various nonpolar liquids while speeding up molecular simulations by almost an order of magnitude. In this approach in a single system, molecules switch their resolution in terms of their relative separation, with near neighbors interacting via fine-grained potentials, yet far neighbors interacting via coarse-grained potentials; notably, these two potentials are analytically parametrized by a multipole approximation. Our current work focuses on analyzing RelRes by relating it with the Kullback-Leibler (KL) entropy, which is a useful metric for multiscale errors. In particular, we thoroughly examine the exact and approximate versions of this informatic measure for several alkane systems. By analyzing its dependency on the system size, we devise a formula for predicting the exact KL entropy of an \"infinite\" system via the computation of the approximate KL entropy of an \"infinitesimal\" system. Demonstrating that the KL entropy can holistically capture many multiscale errors, we settle bounds for the KL entropy that ensure a sufficient representation of the structural and thermal behavior by the RelRes algorithm. This, in turn, allows the scientific community to readily determine the ideal switching distance for an arbitrary RelRes system."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+        "title": "Relative Resolution: An Analysis with the Kullback-Leibler Entropy.",
+        "score": 0.4125,
+        "title_similarity": 0.4125,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "36ff5c95090911341b96876bfcbc9556e93e78a5",
+        "title": "Remote Passive Sonar Detection by Relative Multiscale Change Entropy",
+        "score": 0.395,
+        "title_similarity": 0.395,
+        "query_year": null,
+        "candidate_year": 2022,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7ae8fb3c729b257ba1b948598f070dff000375bd",
+        "title": "Remote ship detection using relative multiscale weighted link entropy in marine environment",
+        "score": 0.3788,
+        "title_similarity": 0.3788,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "22d665ea511944f99961fcf1f3eb83952b2e005f",
+        "title": "Reactive molecular dynamics models from ab initio molecular dynamics data using relative entropy minimization.",
+        "score": 0.3788,
+        "title_similarity": 0.3788,
+        "query_year": null,
+        "candidate_year": 2017,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "49d06128a23c94e159d27762d00fb9d143ceef37",
+        "title": "Selecting Video Key Frames Based on Relative Entropy and the Extreme Studentized Deviate Test",
+        "score": 0.3788,
+        "title_similarity": 0.3788,
+        "query_year": null,
+        "candidate_year": 2016,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0d9d82665525841187d162e6cc3a54bad3f6a157",
+        "title": "Coarse-grained models using local-density potentials optimized with the relative entropy: Application to implicit solvation.",
+        "score": 0.3717,
+        "title_similarity": 0.3717,
+        "query_year": null,
+        "candidate_year": 2016,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "25ed0c95282b1570e4ce49a8e2bb93fe8811206f",
+        "title": "Machine learning-based differentiation of schizophrenia and bipolar disorder using multiscale fuzzy entropy and relative power from resting-state EEG",
+        "score": 0.3639,
+        "title_similarity": 0.3639,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "608fc0bf26445de7c45973a798efe4069085f057",
+        "title": "Entropy signatures of interstate aggression on social cohesion dynamics",
+        "score": 0.1975,
+        "title_similarity": 0.1975,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f762f1ab482fd36c59ccfaec43cf5b6f07b48740",
+        "title": "Associating daily meteorological variables of a local climate using DCCA, sample entropy, Lévy-index and Hurst–Kolmogorov exponents: a case study",
+        "score": 0.18,
+        "title_similarity": 0.18,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "65101ab953f893e9ba02e7844e38dbfb9f8cadd2",
+        "title": "A Cable Partial Discharge Localization Method Based on Complete Ensemble Empirical Mode Decomposition with Adaptive Noise–Multiscale Permutation Entropy–Improved Wavelet Thresholding Denoising and Cross-Correlation Coefficient Filtering",
+        "score": 0.1755,
+        "title_similarity": 0.1755,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1021/acs.jctc.3c01052"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 196,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "25ed0c95282b1570e4ce49a8e2bb93fe8811206f",
+          "externalIds": {
+            "PubMedCentral": "11993622",
+            "DOI": "10.1038/s41398-025-03354-y",
+            "CorpusId": 277740372,
+            "PubMed": "40221392"
+          },
+          "url": "https://www.semanticscholar.org/paper/25ed0c95282b1570e4ce49a8e2bb93fe8811206f",
+          "title": "Machine learning-based differentiation of schizophrenia and bipolar disorder using multiscale fuzzy entropy and relative power from resting-state EEG",
+          "venue": "Translational Psychiatry",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41398-025-03354-y",
+            "status": "GOLD",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11993622, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-04-12",
+          "journal": {
+            "name": "Translational Psychiatry",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "2222367541",
+              "name": "Hyeon-Ho Hwang"
+            },
+            {
+              "authorId": "2107150512",
+              "name": "Kang-Min Choi"
+            },
+            {
+              "authorId": "2158596108",
+              "name": "Sungkean Kim"
+            },
+            {
+              "authorId": "2202919060",
+              "name": "Seung-Hwan Lee"
+            }
+          ],
+          "abstract": "Schizophrenia (SZ) and bipolar disorder (BD) pose diagnostic challenges due to overlapping clinical symptoms and genetic factors, often resulting in misdiagnosis and suboptimal treatment outcomes. This study aimed to identify EEG-based biomarkers that can differentiate SZ from BD using multiscale fuzzy entropy (MFE) and relative power (RP) analyses and to evaluate their diagnostic utility using machine learning. EEG data were collected from 65 patients with SZ and 49 patients with BD under resting-state conditions. The MFE and RP were calculated for the bilateral frontal, central, and parietal regions using 30 s EEG segments. For MFE, the band-scale fuzzy entropy (FuzzyEn) was determined across the theta, alpha, beta, and gamma bands based on simulation results demonstrating an inverse relationship between scale factors and frequency components. RP was derived by segmenting the EEG data into 2 s intervals with a 500 ms moving window. A support vector machine (SVM) was used to differentiate between patients with SZ and BD based on band-scale FuzzyEn and RP. The SVM classifier achieved an accuracy of 78.94%, a sensitivity of 81.53%, and a specificity of 75.51%. Patients with SZ showed higher theta-scale FuzzyEn in the right frontal, left central, and bilateral parietal regions; higher alpha-scale FuzzyEn in the right parietal region; and increased theta power in the bilateral frontal, central, and right parietal regions. These differences remained robust after controlling for medication effects. These findings demonstrate the potential of combining MFE, RP, and machine learning to differentiate between SZ and BD, contributing to improved diagnostic precision in psychiatric disorders."
+        },
+        {
+          "paperId": "feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+          "externalIds": {
+            "ArXiv": "2403.09061",
+            "DOI": "10.1021/acs.jctc.3c01052",
+            "CorpusId": 268038878,
+            "PubMed": "38416535"
+          },
+          "url": "https://www.semanticscholar.org/paper/feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+          "title": "Relative Resolution: An Analysis with the Kullback-Leibler Entropy.",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.09061, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-28",
+          "journal": {
+            "name": "Journal of chemical theory and computation"
+          },
+          "authors": [
+            {
+              "authorId": "2173598",
+              "name": "M. Chaimovich"
+            },
+            {
+              "authorId": "4000654",
+              "name": "Aviel Chaimovich"
+            }
+          ],
+          "abstract": "A novel type of a multiscale approach, called Relative Resolution (RelRes), can correctly retrieve the behavior of various nonpolar liquids while speeding up molecular simulations by almost an order of magnitude. In this approach in a single system, molecules switch their resolution in terms of their relative separation, with near neighbors interacting via fine-grained potentials, yet far neighbors interacting via coarse-grained potentials; notably, these two potentials are analytically parametrized by a multipole approximation. Our current work focuses on analyzing RelRes by relating it with the Kullback-Leibler (KL) entropy, which is a useful metric for multiscale errors. In particular, we thoroughly examine the exact and approximate versions of this informatic measure for several alkane systems. By analyzing its dependency on the system size, we devise a formula for predicting the exact KL entropy of an \"infinite\" system via the computation of the approximate KL entropy of an \"infinitesimal\" system. Demonstrating that the KL entropy can holistically capture many multiscale errors, we settle bounds for the KL entropy that ensure a sufficient representation of the structural and thermal behavior by the RelRes algorithm. This, in turn, allows the scientific community to readily determine the ideal switching distance for an arbitrary RelRes system."
+        },
+        {
+          "paperId": "7ae8fb3c729b257ba1b948598f070dff000375bd",
+          "externalIds": {
+            "DOI": "10.1016/j.oceaneng.2024.116976",
+            "CorpusId": 267452718
+          },
+          "url": "https://www.semanticscholar.org/paper/7ae8fb3c729b257ba1b948598f070dff000375bd",
+          "title": "Remote ship detection using relative multiscale weighted link entropy in marine environment",
+          "venue": "Ocean Engineering",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.oceaneng.2024.116976?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.oceaneng.2024.116976, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-03-01",
+          "journal": {
+            "name": "Ocean Engineering"
+          },
+          "authors": [
+            {
+              "authorId": "2155354602",
+              "name": "Hongwei Zhang"
+            },
+            {
+              "authorId": "2278802429",
+              "name": "Haiyan Wang"
+            },
+            {
+              "authorId": "46461266",
+              "name": "Yongsheng Yan"
+            },
+            {
+              "authorId": "30961283",
+              "name": "Haiyang Yao"
+            },
+            {
+              "authorId": "2197478633",
+              "name": "Qinzheng Zhang"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "36ff5c95090911341b96876bfcbc9556e93e78a5",
+          "externalIds": {
+            "DOI": "10.1109/JSEN.2022.3195994",
+            "CorpusId": 251480725
+          },
+          "url": "https://www.semanticscholar.org/paper/36ff5c95090911341b96876bfcbc9556e93e78a5",
+          "title": "Remote Passive Sonar Detection by Relative Multiscale Change Entropy",
+          "venue": "IEEE Sensors Journal",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JSEN.2022.3195994?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JSEN.2022.3195994, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2022-09-15",
+          "journal": {
+            "name": "IEEE Sensors Journal",
+            "pages": "18066-18075",
+            "volume": "22"
+          },
+          "authors": [
+            {
+              "authorId": "2181164855",
+              "name": "Zhang Hongwei"
+            },
+            {
+              "authorId": "2144218484",
+              "name": "Haiyan Wang"
+            },
+            {
+              "authorId": "2181185626",
+              "name": "Yan Yongsheng"
+            },
+            {
+              "authorId": "2120594877",
+              "name": "Yao Haiyang"
+            },
+            {
+              "authorId": "31062230",
+              "name": "D. Haitao"
+            }
+          ],
+          "abstract": "Remote passive sonar detection is significant as it constitutes potential real-time monitoring of severe underwater threats. There is still a lack of an efficient approach to achieving weak ship signal detection with nonparametric and noninformation priors. We propose the relative multiscale change entropy (RMCE) method to tackle these problems that should be promising. It measures the similarity between the signal under test and the ambient noise by combining different time scale factors to perceive the small changes in the complexity of the ambient noise, which is led by the presence of the distant ship. The value of RMCE is demonstrated by simulation and applied to the actual recorded data. We analyze the distribution characteristics of relative multiscale entropy of the ambient noise data with and without ship noise, collected in the South China Sea. Then this article presents a Neyman–Pearson (N–P) criterion-based RMCE detector for ship signal detection in the marine environment. The results show that the RMCE method outperforms the narrowband energy detection (NBED) method considerably."
+        },
+        {
+          "paperId": "22d665ea511944f99961fcf1f3eb83952b2e005f",
+          "externalIds": {
+            "MAG": "2606480334",
+            "DOI": "10.1016/j.cplett.2017.04.064",
+            "CorpusId": 7225087,
+            "PubMed": "28845049"
+          },
+          "url": "https://www.semanticscholar.org/paper/22d665ea511944f99961fcf1f3eb83952b2e005f",
+          "title": "Reactive molecular dynamics models from ab initio molecular dynamics data using relative entropy minimization.",
+          "venue": "Chemical Physics Letters",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "http://manuscript.elsevier.com/S0009261417303937/pdf/S0009261417303937.pdf",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.cplett.2017.04.064?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.cplett.2017.04.064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2017-09-01",
+          "journal": {
+            "name": "Chemical physics letters",
+            "pages": "\n          573-578\n        ",
+            "volume": "683"
+          },
+          "authors": [
+            {
+              "authorId": "9640450",
+              "name": "C. Arntsen"
+            },
+            {
+              "authorId": "2127379098",
+              "name": "Chen Chen"
+            },
+            {
+              "authorId": "2634229",
+              "name": "G. Voth"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "49d06128a23c94e159d27762d00fb9d143ceef37",
+          "externalIds": {
+            "DBLP": "journals/entropy/GuoXSLS16a",
+            "MAG": "2295176006",
+            "DOI": "10.3390/e18030073",
+            "CorpusId": 5463185
+          },
+          "url": "https://www.semanticscholar.org/paper/49d06128a23c94e159d27762d00fb9d143ceef37",
+          "title": "Selecting Video Key Frames Based on Relative Entropy and the Extreme Studentized Deviate Test",
+          "venue": "Entropy",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/1099-4300/18/3/73/pdf?version=1457526333",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/e18030073?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/e18030073, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2016-03-09",
+          "journal": {
+            "name": "Entropy",
+            "pages": "73",
+            "volume": "18"
+          },
+          "authors": [
+            {
+              "authorId": "2979634",
+              "name": "Yuejun Guo"
+            },
+            {
+              "authorId": "144361326",
+              "name": "Qing Xu"
+            },
+            {
+              "authorId": "48904600",
+              "name": "Shihua Sun"
+            },
+            {
+              "authorId": "2748911",
+              "name": "Xiaoxiao Luo"
+            },
+            {
+              "authorId": "144182746",
+              "name": "M. Sbert"
+            }
+          ],
+          "abstract": "This paper studies the relative entropy and its square root as distance measures of neighboring video frames for video key frame extraction. We develop a novel approach handling both common and wavelet video sequences, in which the extreme Studentized deviate test is exploited to identify shot boundaries for segmenting a video sequence into shots. Then, video shots can be divided into different sub-shots, according to whether the video content change is large or not, and key frames are extracted from sub-shots. The proposed technique is general, effective and efficient to deal with video sequences of any kind. Our new approach can offer optional additional multiscale summarizations of video data, achieving a balance between having more details and maintaining less redundancy. Extensive experimental results show that the new scheme obtains very encouraging results in video key frame extraction, in terms of both objective evaluation metrics and subjective visual perception."
+        },
+        {
+          "paperId": "0d9d82665525841187d162e6cc3a54bad3f6a157",
+          "externalIds": {
+            "MAG": "2499809569",
+            "DOI": "10.1063/1.4958629",
+            "CorpusId": 205215526,
+            "PubMed": "27448876"
+          },
+          "url": "https://www.semanticscholar.org/paper/0d9d82665525841187d162e6cc3a54bad3f6a157",
+          "title": "Coarse-grained models using local-density potentials optimized with the relative entropy: Application to implicit solvation.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1063/1.4958629?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1063/1.4958629, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2016-07-20",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "pages": "\n          034109\n        ",
+            "volume": "145 3"
+          },
+          "authors": [
+            {
+              "authorId": "3077899",
+              "name": "Tanmoy Sanyal"
+            },
+            {
+              "authorId": "2255784007",
+              "name": "Scott Shella"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "608fc0bf26445de7c45973a798efe4069085f057",
+          "externalIds": {
+            "PubMedCentral": "12606156",
+            "DOI": "10.1098/rsos.251310",
+            "CorpusId": 282988482,
+            "PubMed": "41234804"
+          },
+          "url": "https://www.semanticscholar.org/paper/608fc0bf26445de7c45973a798efe4069085f057",
+          "title": "Entropy signatures of interstate aggression on social cohesion dynamics",
+          "venue": "Royal Society Open Science",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12606156, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-11-01",
+          "journal": {
+            "name": "Royal Society Open Science",
+            "volume": "12"
+          },
+          "authors": [
+            {
+              "authorId": "1485279320",
+              "name": "J. Adam‐Troian"
+            },
+            {
+              "authorId": "2392231972",
+              "name": "Nathalie Bauchet"
+            },
+            {
+              "authorId": "3426037",
+              "name": "Arsalane Chouaib Guidoum"
+            },
+            {
+              "authorId": "118061126",
+              "name": "Abdessadek El Ahmadi"
+            }
+          ],
+          "abstract": "This study proposes a systems approach to explore the entropy signatures of war phases on social cohesion dynamics in Ukraine (2004–2025). Using a psycholinguistic time series of online searches for first-person plural pronouns, we quantified social cohesion complexity using sample entropy and refined composite multiscale entropy (RCMSE). Analyses reveal distinct signatures between war phases over time for both metrics, with, respectively, R2 = 0.57 and R2 = 0.95. Relative to peace and full invasion, social cohesion entropy decreased under partial invasion and displayed more anti-persistent behaviour. While social cohesion was most dysfunctional under partial invasion, entropy signatures of full-scale invasion and peace were relatively close. These results offer insights into the impact of interstate aggression on social cohesion and contribute to a dynamical systems understanding of warfare as a systemic shock. The methodology provides a framework for monitoring and predicting societal resilience in response to significant events."
+        },
+        {
+          "paperId": "f762f1ab482fd36c59ccfaec43cf5b6f07b48740",
+          "externalIds": {
+            "DOI": "10.1007/s00703-024-01006-2",
+            "CorpusId": 267639603
+          },
+          "url": "https://www.semanticscholar.org/paper/f762f1ab482fd36c59ccfaec43cf5b6f07b48740",
+          "title": "Associating daily meteorological variables of a local climate using DCCA, sample entropy, Lévy-index and Hurst–Kolmogorov exponents: a case study",
+          "venue": "Meteorology and atmospheric physics (Print)",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s00703-024-01006-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s00703-024-01006-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-12",
+          "journal": {
+            "name": "Meteorology and Atmospheric Physics",
+            "volume": "136"
+          },
+          "authors": [
+            {
+              "authorId": "2270317488",
+              "name": "H. Millán"
+            },
+            {
+              "authorId": "33067090",
+              "name": "R. Biondi"
+            },
+            {
+              "authorId": "102457589",
+              "name": "Ramiro Cumbrera"
+            },
+            {
+              "authorId": "2283950132",
+              "name": "Everaldo Freitas-Guedes"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "65101ab953f893e9ba02e7844e38dbfb9f8cadd2",
+          "externalIds": {
+            "DOI": "10.3390/en18205511",
+            "CorpusId": 282254446
+          },
+          "url": "https://www.semanticscholar.org/paper/65101ab953f893e9ba02e7844e38dbfb9f8cadd2",
+          "title": "A Cable Partial Discharge Localization Method Based on Complete Ensemble Empirical Mode Decomposition with Adaptive Noise–Multiscale Permutation Entropy–Improved Wavelet Thresholding Denoising and Cross-Correlation Coefficient Filtering",
+          "venue": "Energies",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/en18205511?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/en18205511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-10-19",
+          "journal": {
+            "name": "Energies"
+          },
+          "authors": [
+            {
+              "authorId": "2392602580",
+              "name": "Ting Zhu"
+            },
+            {
+              "authorId": "2310179904",
+              "name": "Yuchen Lin"
+            },
+            {
+              "authorId": "48496727",
+              "name": "H. Tian"
+            },
+            {
+              "authorId": "2239388873",
+              "name": "Youxiang Yan"
+            }
+          ],
+          "abstract": "Partial discharge (PD) source localization is an essential technology to identify the location of defects in power cables. This paper presents a complete cable PD localization system. To improve localization accuracy and reduce computational cost, the Complete Ensemble Empirical Mode Decomposition with Adaptive Noise—Multiscale Permutation Entropy–Improved Wavelet Threshold (CEEMDAN-MPE-IWT) method is first employed to effectively suppress noise in PD signals. Subsequently, Cross-Correlation (CC) coefficients are calculated between the double-ended signals to eliminate low-quality signals with poor correlation. Furthermore, the retained signals are subjected to time-window cropping to minimize redundant data and enhance computational efficiency. Based on the processed signals, multiple time delay estimates are derived using the Generalized Cross-Correlation (GCC) algorithm, and the K-means clustering algorithm is subsequently applied to determine the final localization result. Finally, a cable PD experimental platform is established to validate the proposed method. Experimental results demonstrate that the proposed approach achieves a relative localization error of less than 3%, indicating high localization accuracy and strong potential for engineering applications."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            13
+          ]
+        ],
+        "date-time": "2026-04-13T22:05:38Z",
+        "timestamp": 1776117938134,
+        "version": "3.50.1"
+      },
+      "reference-count": 17,
+      "publisher": "AIP Publishing",
+      "issue": "14",
+      "content-domain": {
+        "domain": [
+          "pubs.aip.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2008,
+            10,
+            14
+          ]
+        ]
+      },
+      "abstract": "<jats:p>We show that the relative entropy, Srel≡∑pT ln(pT/pM), provides a fundamental and unifying framework for multiscale analysis and for inverse molecular-thermodynamic problems involving optimization of a model system (M) to reproduce the properties of a target one (T). We demonstrate that the relative entropy serves as a generating function for principles in variational mean-field theory and uniqueness and gives intuitive results for simple case scenarios in model development. Moreover, we suggest that the relative entropy provides a rigorous framework for multiscale simulations and offers new numerical techniques for linking models at different scales. Finally, we show that Srel carries physical significance by using it to quantify the deviations of a three-site model of water from simple liquids, finding that the relative entropy, a thermodynamic concept, even predicts water’s kinetic anomalies.</jats:p>",
+      "DOI": "10.1063/1.2992060",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2008,
+            10,
+            12
+          ]
+        ],
+        "date-time": "2008-10-12T08:17:13Z",
+        "timestamp": 1223799433000
+      },
+      "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+      "source": "Crossref",
+      "is-referenced-by-count": 561,
+      "title": [
+        "The relative entropy is fundamental to multiscale and inverse thermodynamic problems"
+      ],
+      "prefix": "10.1063",
+      "volume": "129",
+      "author": [
+        {
+          "given": "M. Scott",
+          "family": "Shell",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of California Department of Chemical Engineering, , Santa Barbara, California 93106, USA"
+            }
+          ]
+        }
+      ],
+      "member": "317",
+      "published-online": {
+        "date-parts": [
+          [
+            2008,
+            10,
+            10
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "2023062610003964000_c1",
+          "doi-asserted-by": "publisher",
+          "first-page": "359",
+          "DOI": "10.1080/08927028808080958",
+          "volume": "1",
+          "year": "1988",
+          "journal-title": "Mol. Simul."
+        },
+        {
+          "key": "2023062610003964000_c2",
+          "doi-asserted-by": "publisher",
+          "first-page": "3730",
+          "DOI": "10.1103/PhysRevE.52.3730",
+          "volume": "52",
+          "year": "1995",
+          "journal-title": "Phys. Rev. E"
+        },
+        {
+          "key": "2023062610003964000_c3a",
+          "doi-asserted-by": "publisher",
+          "first-page": "2469",
+          "DOI": "10.1021/jp044629q",
+          "volume": "109",
+          "year": "2005",
+          "journal-title": "J. Phys. Chem. B"
+        },
+        {
+          "key": "2023062610003964000_c3b",
+          "doi-asserted-by": "publisher",
+          "first-page": "134105",
+          "DOI": "10.1063/1.2038787",
+          "volume": "123",
+          "year": "2005",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023062610003964000_c4",
+          "doi-asserted-by": "publisher",
+          "first-page": "583",
+          "DOI": "10.1209/0295-5075/26/8/005",
+          "volume": "26",
+          "year": "1994",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023062610003964000_c5a",
+          "doi-asserted-by": "publisher",
+          "first-page": "054103",
+          "DOI": "10.1063/1.1992483",
+          "volume": "123",
+          "year": "2005",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023062610003964000_c5b",
+          "doi-asserted-by": "publisher",
+          "first-page": "084109",
+          "DOI": "10.1063/1.2011391",
+          "volume": "123",
+          "year": "2005",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023062610003964000_c6",
+          "doi-asserted-by": "publisher",
+          "first-page": "8951",
+          "DOI": "10.1073/pnas.93.17.8951",
+          "volume": "93",
+          "year": "1996",
+          "journal-title": "Proc. Natl. Acad. Sci. U.S.A."
+        },
+        {
+          "key": "2023062610003964000_c7",
+          "volume-title": "Thermodynamics and Thermostatistics",
+          "year": "1985"
+        },
+        {
+          "key": "2023062610003964000_c8",
+          "first-page": "197",
+          "volume": "49A",
+          "year": "1974",
+          "journal-title": "Phys. Lett."
+        },
+        {
+          "key": "2023062610003964000_c9",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1007/978-3-540-38448-9",
+          "volume-title": "Free Energy Calculations: Theory and Applications in Chemistry and Biology",
+          "author": "Chipot",
+          "year": "2007"
+        },
+        {
+          "key": "2023062610003964000_c10",
+          "doi-asserted-by": "publisher",
+          "first-page": "6269",
+          "DOI": "10.1021/j100308a038",
+          "volume": "91",
+          "year": "1987",
+          "journal-title": "J. Phys. Chem."
+        },
+        {
+          "key": "2023062610003964000_c11",
+          "doi-asserted-by": "publisher",
+          "first-page": "1559",
+          "DOI": "10.1039/b000206m",
+          "volume": "2",
+          "year": "2000",
+          "journal-title": "Phys. Chem. Chem. Phys."
+        },
+        {
+          "key": "2023062610003964000_c12",
+          "doi-asserted-by": "publisher",
+          "first-page": "318",
+          "DOI": "10.1038/35053024",
+          "volume": "409",
+          "year": "2001",
+          "journal-title": "Nature (London)"
+        },
+        {
+          "key": "2023062610003964000_c13",
+          "doi-asserted-by": "publisher",
+          "first-page": "9406",
+          "DOI": "10.1063/1.1615966",
+          "volume": "119",
+          "year": "2003",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023062610003964000_c14",
+          "doi-asserted-by": "publisher",
+          "first-page": "2545",
+          "DOI": "10.1103/PhysRevA.15.2545",
+          "volume": "15",
+          "year": "1977",
+          "journal-title": "Phys. Rev. A"
+        },
+        {
+          "key": "2023062610003964000_c15",
+          "doi-asserted-by": "publisher",
+          "first-page": "076102",
+          "DOI": "10.1063/1.2336197",
+          "volume": "125",
+          "year": "2006",
+          "journal-title": "J. Chem. Phys."
+        }
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.2992060/15419593/144108_1_online.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.2992060/15419593/144108_1_online.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            26
+          ]
+        ],
+        "date-time": "2023-06-26T13:45:12Z",
+        "timestamp": 1687787112000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://pubs.aip.org/jcp/article/129/14/144108/187242/The-relative-entropy-is-fundamental-to-multiscale"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2008,
+            10,
+            10
+          ]
+        ]
+      },
+      "references-count": 17,
+      "journal-issue": {
+        "issue": "14",
+        "published-print": {
+          "date-parts": [
+            [
+              2008,
+              10,
+              14
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1063/1.2992060",
+      "relation": {},
+      "ISSN": [
+        "0021-9606",
+        "1089-7690"
+      ],
+      "issn-type": [
+        {
+          "value": "0021-9606",
+          "type": "print"
+        },
+        {
+          "value": "1089-7690",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published-other": {
+        "date-parts": [
+          [
+            2008,
+            10,
+            14
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2008,
+            10,
+            10
+          ]
+        ]
+      },
+      "article-number": "144108"
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-2df51eaed10a5ee0.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-2df51eaed10a5ee0.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-2df51eaed10a5ee0.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "b51869a99a13149e70ba6c3dc861ccb6a48c84766f110be2fde30604514251c0",
+    "chunk_count": 18,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

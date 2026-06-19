@@ -1,0 +1,1899 @@
+{
+  "paper_id": "sha256-3a71a2ddab6ff54e",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/TF-DNA_interactions/Schaepe 2025 Cell - Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells.pdf",
+  "pdf_sha256": "3a71a2ddab6ff54e3385a7803801ee71278f3c56b844e6c134de05045a41f225",
+  "filename": "Schaepe 2025 Cell - Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells.pdf",
+  "item_type": "article",
+  "title_query": "Thermodynamic principles link in vitro transcription factor affinities to single molecule chromatin states in cells",
+  "filename_hints": {
+    "year_hint": 2025,
+    "venue_hint": "cell",
+    "prefix": "Schaepe 2025 Cell"
+  },
+  "doi_candidates": [
+    "10.1016/j.cell.2025.11.008"
+  ],
+  "date_indexed": "2026-04-17T05:18:16.550873+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [
+    "venue_hint_mismatch:cell!=biorxiv"
+  ],
+  "crossref_warnings": [
+    "crossref_year_hint_mismatch:2025!=2026"
+  ],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Thermodynamic principles link in vitro transcription factor affinities to single molecule chromatin states in cells",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "Thermodynamic principles link in vitro transcription factor affinities to single molecule chromatin states in cells",
+        "status": "needs_manual_review",
+        "api_error": "",
+        "warnings": [
+          "venue_hint_mismatch:cell!=biorxiv"
+        ],
+        "best_score": 1.0,
+        "candidate_count": 2
+      },
+      {
+        "query": "In vitro transcription factor:DNA binding kinetics & energetics",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2025!=2022",
+          "venue_hint_mismatch:cell!=biophysicaljournal"
+        ],
+        "best_score": 0.5189,
+        "candidate_count": 10
+      },
+      {
+        "query": "DNA variants of: Motif Flanks",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2025!=2018",
+          "venue_hint_mismatch:cell!=thefasebjournal"
+        ],
+        "best_score": 0.3325,
+        "candidate_count": 10
+      },
+      {
+        "query": "Nonspecifically Specifically bound bound ptot",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2025!=1978",
+          "venue_hint_mismatch:cell!=actapathologicamicrobiologicascandinavicasectioncimmunology"
+        ],
+        "best_score": 0.3228,
+        "candidate_count": 10
+      },
+      {
+        "query": "Nonspecifically Specifically bound bound ptot KLF1",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2025!=2008",
+          "venue_hint_mismatch:cell!=ieeesensorsjournal"
+        ],
+        "best_score": 0.2383,
+        "candidate_count": 10
+      }
+    ],
+    "best_candidate": {
+      "paperId": "bd615442eb86124e61cab60fbfe0f571cb5d8646",
+      "externalIds": {
+        "PubMedCentral": "11838358",
+        "DOI": "10.1101/2025.01.27.635162",
+        "CorpusId": 276047484,
+        "PubMed": "39975040"
+      },
+      "url": "https://www.semanticscholar.org/paper/bd615442eb86124e61cab60fbfe0f571cb5d8646",
+      "title": "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells",
+      "venue": "bioRxiv",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11838358, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2025-01-30",
+      "journal": {
+        "name": "bioRxiv"
+      },
+      "authors": [
+        {
+          "authorId": "1987290118",
+          "name": "Julia M. Schaepe"
+        },
+        {
+          "authorId": "2343287965",
+          "name": "Torbjörn Fries"
+        },
+        {
+          "authorId": "1437982879",
+          "name": "Benjamin R. Doughty"
+        },
+        {
+          "authorId": "2312303366",
+          "name": "Olivia J. Crocker"
+        },
+        {
+          "authorId": "1395364165",
+          "name": "Michaela M. Hinks"
+        },
+        {
+          "authorId": "34656113",
+          "name": "E. Marklund"
+        },
+        {
+          "authorId": "2282765487",
+          "name": "William J. Greenleaf"
+        }
+      ],
+      "abstract": "The molecular details governing transcription factor (TF) binding and the formation of accessible chromatin are not yet quantitatively understood – including how sequence context modulates affinity, how TFs search DNA, the kinetics of TF occupancy, and how motif grammars coordinate binding. To resolve these questions for a human TF, erythroid Krüppel-like factor (eKLF/KLF1), we quantitatively compare, in high throughput, in vitro TF binding rates and affinities with in vivo single molecule TF and nucleosome occupancies across engineered DNA sequences. We find that 40-fold flanking sequence effects on affinity are consistent with distal flanks tuning TF search parameters and captured by a linear energy model. Motif recognition probability, rather than time in the bound state, drives affinity changes, and in vitro and in nuclei measurements exhibit consistent, minutes-long TF residence times. Finally, pairing in vitro biophysical parameters with thermodynamic models accurately predicts in vivo single-molecule chromatin states for unseen motif grammars. Highlights KLF1:DNA binding is consistent with a three state binding model wherein the probability of recognizing the motif from a nonspecifically-bound state drives affinity. Substantial effects from proximal and distal motif-flanking sequence on KLF1 binding affinity are captured by an extended PWM model. KLF minutes-long residence time inferred from single-molecule footprinting in nuclei is consistent with in vitro measurement. In vitro binding energies combined with thermodynamic models predict in vivo, single-molecule chromatin configurations across motif grammars and sequence contexts."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "bd615442eb86124e61cab60fbfe0f571cb5d8646",
+        "title": "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2025,
+        "candidate_year": 2025,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "1946a13b48c84915f1d57e7c98fcf636e77c67fc",
+        "title": "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2025,
+        "candidate_year": 2025,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1101/2025.01.27.635162"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 2,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "bd615442eb86124e61cab60fbfe0f571cb5d8646",
+          "externalIds": {
+            "PubMedCentral": "11838358",
+            "DOI": "10.1101/2025.01.27.635162",
+            "CorpusId": 276047484,
+            "PubMed": "39975040"
+          },
+          "url": "https://www.semanticscholar.org/paper/bd615442eb86124e61cab60fbfe0f571cb5d8646",
+          "title": "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11838358, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-01-30",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "1987290118",
+              "name": "Julia M. Schaepe"
+            },
+            {
+              "authorId": "2343287965",
+              "name": "Torbjörn Fries"
+            },
+            {
+              "authorId": "1437982879",
+              "name": "Benjamin R. Doughty"
+            },
+            {
+              "authorId": "2312303366",
+              "name": "Olivia J. Crocker"
+            },
+            {
+              "authorId": "1395364165",
+              "name": "Michaela M. Hinks"
+            },
+            {
+              "authorId": "34656113",
+              "name": "E. Marklund"
+            },
+            {
+              "authorId": "2282765487",
+              "name": "William J. Greenleaf"
+            }
+          ],
+          "abstract": "The molecular details governing transcription factor (TF) binding and the formation of accessible chromatin are not yet quantitatively understood – including how sequence context modulates affinity, how TFs search DNA, the kinetics of TF occupancy, and how motif grammars coordinate binding. To resolve these questions for a human TF, erythroid Krüppel-like factor (eKLF/KLF1), we quantitatively compare, in high throughput, in vitro TF binding rates and affinities with in vivo single molecule TF and nucleosome occupancies across engineered DNA sequences. We find that 40-fold flanking sequence effects on affinity are consistent with distal flanks tuning TF search parameters and captured by a linear energy model. Motif recognition probability, rather than time in the bound state, drives affinity changes, and in vitro and in nuclei measurements exhibit consistent, minutes-long TF residence times. Finally, pairing in vitro biophysical parameters with thermodynamic models accurately predicts in vivo single-molecule chromatin states for unseen motif grammars. Highlights KLF1:DNA binding is consistent with a three state binding model wherein the probability of recognizing the motif from a nonspecifically-bound state drives affinity. Substantial effects from proximal and distal motif-flanking sequence on KLF1 binding affinity are captured by an extended PWM model. KLF minutes-long residence time inferred from single-molecule footprinting in nuclei is consistent with in vitro measurement. In vitro binding energies combined with thermodynamic models predict in vivo, single-molecule chromatin configurations across motif grammars and sequence contexts."
+        },
+        {
+          "paperId": "1946a13b48c84915f1d57e7c98fcf636e77c67fc",
+          "externalIds": {
+            "DOI": "10.1016/j.cell.2025.11.008",
+            "CorpusId": 283352051,
+            "PubMed": "41308636"
+          },
+          "url": "https://www.semanticscholar.org/paper/1946a13b48c84915f1d57e7c98fcf636e77c67fc",
+          "title": "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells.",
+          "venue": "Cell",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.cell.2025.11.008?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.cell.2025.11.008, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-11-01",
+          "journal": {
+            "name": "Cell"
+          },
+          "authors": [
+            {
+              "authorId": "1987290118",
+              "name": "Julia M. Schaepe"
+            },
+            {
+              "authorId": "2343287965",
+              "name": "Torbjörn Fries"
+            },
+            {
+              "authorId": "1437982879",
+              "name": "Benjamin R. Doughty"
+            },
+            {
+              "authorId": "2167328362",
+              "name": "Vivekanandan Ramalingam"
+            },
+            {
+              "authorId": "2359171882",
+              "name": "Betty B. Liu"
+            },
+            {
+              "authorId": "2312303366",
+              "name": "Olivia J. Crocker"
+            },
+            {
+              "authorId": "2293055151",
+              "name": "Georgi K. Marinov"
+            },
+            {
+              "authorId": "1395364165",
+              "name": "Michaela M. Hinks"
+            },
+            {
+              "authorId": "2282002272",
+              "name": "E. Marklund"
+            },
+            {
+              "authorId": "2263655528",
+              "name": "William J. Greenleaf"
+            }
+          ],
+          "abstract": "The molecular details governing transcription factor (TF) binding and the formation of accessible chromatin are not yet quantitatively understood-including how sequence context modulates affinity, how TFs search DNA, the kinetics of TF occupancy, and how motif grammars coordinate binding. To resolve these questions for a human TF, erythroid Krüppel-like factor (eKLF/KLF1), we quantitatively compare, in high throughput, in vitro TF binding rates and affinities with in vivo single-molecule TF and nucleosome occupancies and in vivo-derived deep learning models. We find that 40-fold flanking sequence effects on affinity are consistent with distal flanks tuning TF search parameters and captured by a linear energy model. Motif recognition probability, rather than time in the bound state, drives affinity changes, and in vitro and in nuclei measurements exhibit consistent, minutes-long TF residence times. Finally, in vitro biophysical parameters predict in vivo sequence preferences and single-molecule chromatin states for unseen motif grammars."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            20
+          ]
+        ],
+        "date-time": "2026-03-20T05:30:01Z",
+        "timestamp": 1773984601907,
+        "version": "3.50.1"
+      },
+      "reference-count": 112,
+      "publisher": "Elsevier BV",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2026-01-01T00:00:00Z",
+            "timestamp": 1767225600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2026,
+                1,
+                1
+              ]
+            ],
+            "date-time": "2026-01-01T00:00:00Z",
+            "timestamp": 1767225600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                11,
+                13
+              ]
+            ],
+            "date-time": "2025-11-13T00:00:00Z",
+            "timestamp": 1762992000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100014989",
+          "name": "The Chan Zuckerberg Initiative",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/100014989",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100004359",
+          "name": "Swedish Research Council",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100004359",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100001729",
+          "name": "Swedish Foundation for Strategic Research",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100001729",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000082",
+          "name": "National Science Foundation Division of Graduate Education",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/100000082",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100006358",
+          "name": "Foundation Blanceflor Boncompagni Ludovisi née Bildt",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100006358",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100007435",
+          "name": "Åke Wiberg Foundation",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/100007435",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100009252",
+          "name": "SciLifeLab",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100009252",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "cell.com",
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Cell"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.cell.2025.11.008",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            26
+          ]
+        ],
+        "date-time": "2025-11-26T15:59:28Z",
+        "timestamp": 1764172768000
+      },
+      "page": "307-322.e23",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 2,
+      "title": [
+        "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells"
+      ],
+      "prefix": "10.1016",
+      "volume": "189",
+      "author": [
+        {
+          "given": "Julia M.",
+          "family": "Schaepe",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Torbjörn",
+          "family": "Fries",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Benjamin R.",
+          "family": "Doughty",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Vivekanandan",
+          "family": "Ramalingam",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Betty B.",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Olivia J.",
+          "family": "Crocker",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Georgi K.",
+          "family": "Marinov",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Michaela M.",
+          "family": "Hinks",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Emil",
+          "family": "Marklund",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1409-3095",
+          "authenticated-orcid": false,
+          "given": "William J.",
+          "family": "Greenleaf",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib1",
+          "doi-asserted-by": "crossref",
+          "first-page": "613",
+          "DOI": "10.1038/nrg3207",
+          "article-title": "Transcription factors: from enhancer binding to developmental control",
+          "volume": "13",
+          "author": "Spitz",
+          "year": "2012",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib2",
+          "doi-asserted-by": "crossref",
+          "first-page": "421",
+          "DOI": "10.1016/j.tig.2020.12.001",
+          "article-title": "Speed-specificity trade-offs in the transcription factors search for their genomic binding sites",
+          "volume": "37",
+          "author": "Jana",
+          "year": "2021",
+          "journal-title": "Trends Genet."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib3",
+          "doi-asserted-by": "crossref",
+          "first-page": "401",
+          "DOI": "10.1016/0022-2836(70)90074-4",
+          "article-title": "The lac repressor-operator interaction. 3. Kinetic studies",
+          "volume": "53",
+          "author": "Riggs",
+          "year": "1970",
+          "journal-title": "J. Mol. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib4",
+          "doi-asserted-by": "crossref",
+          "first-page": "6929",
+          "DOI": "10.1021/bi00527a028",
+          "article-title": "Diffusion-driven mechanisms of protein translocation on nucleic acids. 1. Models and theory",
+          "volume": "20",
+          "author": "Berg",
+          "year": "1981",
+          "journal-title": "Biochemistry"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib5",
+          "doi-asserted-by": "crossref",
+          "first-page": "675",
+          "DOI": "10.1016/S0021-9258(19)84994-3",
+          "article-title": "Facilitated target location in biological systems",
+          "volume": "264",
+          "author": "von Hippel",
+          "year": "1989",
+          "journal-title": "J. Biol. Chem."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib6",
+          "article-title": "Single molecule measurements of repressor protein 1D diffusion on DNA",
+          "volume": "97",
+          "author": "Wang",
+          "year": "2006",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib7",
+          "doi-asserted-by": "crossref",
+          "first-page": "1191",
+          "DOI": "10.1126/science.1141967",
+          "article-title": "Probing transcription factor dynamics at the single-molecule level in a living cell",
+          "volume": "316",
+          "author": "Elf",
+          "year": "2007",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib8",
+          "doi-asserted-by": "crossref",
+          "first-page": "1595",
+          "DOI": "10.1126/science.1221648",
+          "article-title": "The lac repressor displays facilitated diffusion in living cells",
+          "volume": "336",
+          "author": "Hammar",
+          "year": "2012",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib9",
+          "doi-asserted-by": "crossref",
+          "first-page": "858",
+          "DOI": "10.1038/s41586-020-2413-7",
+          "article-title": "DNA surface exploration and operator bypassing during target search",
+          "volume": "583",
+          "author": "Marklund",
+          "year": "2020",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib10",
+          "doi-asserted-by": "crossref",
+          "first-page": "442",
+          "DOI": "10.1126/science.abg7427",
+          "article-title": "Sequence specificity in DNA binding is mainly governed by association",
+          "volume": "375",
+          "author": "Marklund",
+          "year": "2022",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib11",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1093/nar/gks701",
+          "article-title": "A benchmark for chromatin binding measurements in live cells",
+          "volume": "40",
+          "author": "Mazza",
+          "year": "2012",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib12",
+          "doi-asserted-by": "crossref",
+          "first-page": "421",
+          "DOI": "10.1038/nmeth.2411",
+          "article-title": "Single-molecule imaging of transcription factor binding to DNA in live mammalian cells",
+          "volume": "10",
+          "author": "Gebhardt",
+          "year": "2013",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib13",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/ncomms5456",
+          "article-title": "Single-molecule analysis of transcription factor binding at transcription sites in live cells",
+          "volume": "5",
+          "author": "Morisaki",
+          "year": "2014",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib14",
+          "doi-asserted-by": "crossref",
+          "first-page": "1274",
+          "DOI": "10.1016/j.cell.2014.01.062",
+          "article-title": "Single-molecule dynamics of enhanceosome assembly in embryonic stem cells",
+          "volume": "156",
+          "author": "Chen",
+          "year": "2014",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib15",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/ncomms15896",
+          "article-title": "Single-molecule analysis of steroid receptor and cofactor action in living cells",
+          "volume": "8",
+          "author": "Paakinaho",
+          "year": "2017",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1583",
+          "DOI": "10.1016/j.bpj.2022.03.026",
+          "article-title": "Following the tracks: How transcription factor binding dynamics control transcription",
+          "volume": "121",
+          "author": "de Jonge",
+          "year": "2022",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib17",
+          "doi-asserted-by": "crossref",
+          "first-page": "160",
+          "DOI": "10.1016/j.tig.2023.11.003",
+          "article-title": "Time will tell: comparing timescales to gain insight into transcriptional bursting",
+          "volume": "40",
+          "author": "Meeussen",
+          "year": "2024",
+          "journal-title": "Trends Genet."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib18",
+          "doi-asserted-by": "crossref",
+          "first-page": "880",
+          "DOI": "10.1073/pnas.1812734116",
+          "article-title": "Single-molecule imaging of the transcription factor SRF reveals prolonged chromatin-binding kinetics upon cell stimulation",
+          "volume": "116",
+          "author": "Hipp",
+          "year": "2019",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib19",
+          "doi-asserted-by": "crossref",
+          "first-page": "6605",
+          "DOI": "10.1093/nar/gkab072",
+          "article-title": "Power-law behavior of transcription factor dynamics at the single-molecule level implies a continuum affinity model",
+          "volume": "49",
+          "author": "Garcia",
+          "year": "2021",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib20",
+          "doi-asserted-by": "crossref",
+          "first-page": "665",
+          "DOI": "10.1038/s41594-022-00800-z",
+          "article-title": "Kinetic principles underlying pioneer function of GAGA transcription factor in live cells",
+          "volume": "29",
+          "author": "Tang",
+          "year": "2022",
+          "journal-title": "Nat. Struct. Mol. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib21",
+          "doi-asserted-by": "crossref",
+          "first-page": "1036",
+          "DOI": "10.1016/j.molcel.2024.01.020",
+          "article-title": "Transcription factor exchange enables prolonged transcriptional bursts",
+          "volume": "84",
+          "author": "Pomp",
+          "year": "2024",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib22",
+          "doi-asserted-by": "crossref",
+          "first-page": "533",
+          "DOI": "10.1038/35054095",
+          "article-title": "Genomic binding sites of the yeast cell-cycle transcription factors SBF and MBF",
+          "volume": "409",
+          "author": "Iyer",
+          "year": "2001",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib23",
+          "doi-asserted-by": "crossref",
+          "first-page": "1798",
+          "DOI": "10.1101/gr.139105.112",
+          "article-title": "Sequence features and chromatin structure around the genomic regions bound by 119 human transcription factors",
+          "volume": "22",
+          "author": "Wang",
+          "year": "2012",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib24",
+          "doi-asserted-by": "crossref",
+          "first-page": "2306",
+          "DOI": "10.1126/science.290.5500.2306",
+          "article-title": "Genome-wide location and function of DNA binding proteins",
+          "volume": "290",
+          "author": "Ren",
+          "year": "2000",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib25",
+          "doi-asserted-by": "crossref",
+          "first-page": "99",
+          "DOI": "10.1038/nature02800",
+          "article-title": "Transcriptional regulatory code of a eukaryotic genome",
+          "volume": "431",
+          "author": "Harbison",
+          "year": "2004",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib26",
+          "doi-asserted-by": "crossref",
+          "first-page": "1093",
+          "DOI": "10.1016/j.celrep.2013.03.014",
+          "article-title": "Genomic regions flanking E-box binding sites influence DNA binding specificity of bHLH transcription factors through DNA shape",
+          "volume": "3",
+          "author": "Gordân",
+          "year": "2013",
+          "journal-title": "Cell Rep."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib27",
+          "doi-asserted-by": "crossref",
+          "first-page": "4913",
+          "DOI": "10.1073/pnas.94.10.4913",
+          "article-title": "Structural basis of DNA bending and oriented heterodimer binding by the basic leucine zipper domains of Fos and Jun",
+          "volume": "94",
+          "author": "Leonard",
+          "year": "1997",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib28",
+          "doi-asserted-by": "crossref",
+          "first-page": "2917",
+          "DOI": "10.1093/emboj/16.10.2917",
+          "article-title": "DNA bending by Fos-Jun and the orientation of heterodimer binding depend on the sequence of the AP-1 site",
+          "volume": "16",
+          "author": "Rajaram",
+          "year": "1997",
+          "journal-title": "EMBO J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib29",
+          "doi-asserted-by": "crossref",
+          "first-page": "1248",
+          "DOI": "10.1038/nature08473",
+          "article-title": "The role of DNA shape in protein-DNA recognition",
+          "volume": "461",
+          "author": "Rohs",
+          "year": "2009",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib30",
+          "doi-asserted-by": "crossref",
+          "first-page": "307",
+          "DOI": "10.1016/j.cell.2015.02.008",
+          "article-title": "Deconvolving the recognition of DNA shape from sequence",
+          "volume": "161",
+          "author": "Abe",
+          "year": "2015",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib31",
+          "doi-asserted-by": "crossref",
+          "first-page": "1018",
+          "DOI": "10.1101/gr.185033.114",
+          "article-title": "Unraveling determinants of transcription factor binding outside the core binding site",
+          "volume": "25",
+          "author": "Levo",
+          "year": "2015",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib32",
+          "doi-asserted-by": "crossref",
+          "first-page": "1268",
+          "DOI": "10.1101/gr.184671.114",
+          "article-title": "A widespread role of the motif environment in transcription factor binding across diverse protein families",
+          "volume": "25",
+          "author": "Dror",
+          "year": "2015",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib33",
+          "doi-asserted-by": "crossref",
+          "first-page": "1001",
+          "DOI": "10.1038/s41586-025-09472-3",
+          "article-title": "Multiple overlapping binding sites determine transcription factor occupancy",
+          "volume": "646",
+          "author": "Khetan",
+          "year": "2025",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib34",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1126/science.add1250",
+          "article-title": "Short tandem repeats bind transcription factors to tune eukaryotic gene expression",
+          "volume": "381",
+          "author": "Horton",
+          "year": "2023",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib35",
+          "doi-asserted-by": "crossref",
+          "first-page": "160",
+          "DOI": "10.1016/j.bpj.2011.04.037",
+          "article-title": "DNA sequence correlations shape nonspecific transcription factor-DNA binding affinity",
+          "volume": "101",
+          "author": "Sela",
+          "year": "2011",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib36",
+          "doi-asserted-by": "crossref",
+          "first-page": "17140",
+          "DOI": "10.1073/pnas.1410569111",
+          "article-title": "Protein-DNA binding in the absence of specific base-pair recognition",
+          "volume": "111",
+          "author": "Afek",
+          "year": "2014",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib37",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1371/journal.pcbi.1004429",
+          "article-title": "Nonconsensus protein binding to repetitive DNA sequence elements significantly affects eukaryotic genomes",
+          "volume": "11",
+          "author": "Afek",
+          "year": "2015",
+          "journal-title": "PLoS Comput. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib38",
+          "doi-asserted-by": "crossref",
+          "first-page": "149",
+          "DOI": "10.1016/j.gene.2004.06.035",
+          "article-title": "Some microsatellites may act as novel polymorphic cis-regulatory elements through transcription factor binding",
+          "volume": "341",
+          "author": "Iglesias",
+          "year": "2004",
+          "journal-title": "Gene"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib39",
+          "doi-asserted-by": "crossref",
+          "first-page": "2015",
+          "DOI": "10.1016/j.bpj.2020.02.009",
+          "article-title": "Transcription factor binding in embryonic stem cells is constrained by DNA sequence repeat symmetry",
+          "volume": "118",
+          "author": "Goldshtein",
+          "year": "2020",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib40",
+          "doi-asserted-by": "crossref",
+          "first-page": "729",
+          "DOI": "10.1038/s41586-020-2528-x",
+          "article-title": "Global reference mapping of human transcription factor footprints",
+          "volume": "583",
+          "author": "Vierstra",
+          "year": "2020",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib41",
+          "doi-asserted-by": "crossref",
+          "first-page": "434",
+          "DOI": "10.1016/j.tig.2009.08.003",
+          "article-title": "Different gene regulation strategies revealed by analysis of binding motifs",
+          "volume": "25",
+          "author": "Wunderlich",
+          "year": "2009",
+          "journal-title": "Trends Genet."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib42",
+          "doi-asserted-by": "crossref",
+          "first-page": "1091",
+          "DOI": "10.1016/0092-8674(95)90136-1",
+          "article-title": "Virus induction of human IFN beta gene expression requires the assembly of an enhanceosome",
+          "volume": "83",
+          "author": "Thanos",
+          "year": "1995",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib43",
+          "doi-asserted-by": "crossref",
+          "first-page": "816",
+          "DOI": "10.1126/science.1229223",
+          "article-title": "Probing allostery through DNA",
+          "volume": "339",
+          "author": "Kim",
+          "year": "2013",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib44",
+          "doi-asserted-by": "crossref",
+          "first-page": "22534",
+          "DOI": "10.1073/pnas.0913805107",
+          "article-title": "Nucleosome-mediated cooperativity between transcription factors",
+          "volume": "107",
+          "author": "Mirny",
+          "year": "2010",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib45",
+          "doi-asserted-by": "crossref",
+          "first-page": "88",
+          "DOI": "10.1038/30032",
+          "article-title": "Chromatin remodelling by the glucocorticoid receptor requires the BRG1 complex",
+          "volume": "393",
+          "author": "Fryer",
+          "year": "1998",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib46",
+          "doi-asserted-by": "crossref",
+          "first-page": "145",
+          "DOI": "10.1016/j.molcel.2011.06.016",
+          "article-title": "Transcription factor AP1 potentiates chromatin accessibility and glucocorticoid receptor binding",
+          "volume": "43",
+          "author": "Biddie",
+          "year": "2011",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib47",
+          "doi-asserted-by": "crossref",
+          "first-page": "745",
+          "DOI": "10.1038/s41586-024-08219-w",
+          "article-title": "Single-molecule states link transcription factor binding to gene expression",
+          "volume": "636",
+          "author": "Doughty",
+          "year": "2024",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib48",
+          "doi-asserted-by": "crossref",
+          "first-page": "650",
+          "DOI": "10.1016/j.cell.2018.01.029",
+          "article-title": "The human transcription factors",
+          "volume": "172",
+          "author": "Lambert",
+          "year": "2018",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib49",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1186/gb-2003-4-2-206",
+          "article-title": "Sp1- and Krüppel-like transcription factors",
+          "volume": "4",
+          "author": "Kaczynski",
+          "year": "2003",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib50",
+          "doi-asserted-by": "crossref",
+          "first-page": "1996",
+          "DOI": "10.1016/j.biocel.2007.07.018",
+          "article-title": "Krüppel-like transcription factors: A functional family",
+          "volume": "40",
+          "author": "Pearson",
+          "year": "2008",
+          "journal-title": "Int. J. Biochem. Cell Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib51",
+          "doi-asserted-by": "crossref",
+          "first-page": "742",
+          "DOI": "10.1038/ng.637",
+          "article-title": "KLF1 regulates BCL11A expression and gamma- to beta-globin gene switching",
+          "volume": "42",
+          "author": "Zhou",
+          "year": "2010",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib52",
+          "doi-asserted-by": "crossref",
+          "first-page": "2497",
+          "DOI": "10.1101/gr.143008.112",
+          "article-title": "Genome-wide mapping of nucleosome positioning and DNA methylation within individual DNA molecules",
+          "volume": "22",
+          "author": "Kelly",
+          "year": "2012",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib53",
+          "doi-asserted-by": "crossref",
+          "first-page": "411",
+          "DOI": "10.1016/j.molcel.2017.06.027",
+          "article-title": "Genome-wide Single-Molecule Footprinting Reveals High RNA Polymerase II Turnover at Paused Promoters",
+          "volume": "67",
+          "author": "Krebs",
+          "year": "2017",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib54",
+          "doi-asserted-by": "crossref",
+          "first-page": "255",
+          "DOI": "10.1016/j.molcel.2020.11.015",
+          "article-title": "Molecular Co-occupancy Identifies Transcription Factor Binding Cooperativity In Vivo",
+          "volume": "81",
+          "author": "Sönmezer",
+          "year": "2021",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib55",
+          "article-title": "ChromBPNet: bias factorized, base-resolution deep learning models of chromatin accessibility reveal cis-regulatory sequence syntax, transcription factor footprints and regulatory variants",
+          "author": "Pampari",
+          "year": "2025",
+          "journal-title": "bioRxiv"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib56",
+          "doi-asserted-by": "crossref",
+          "first-page": "659",
+          "DOI": "10.1038/nbt.1882",
+          "article-title": "Direct measurement of DNA affinity landscapes on a high-throughput sequencing instrument",
+          "volume": "29",
+          "author": "Nutiu",
+          "year": "2011",
+          "journal-title": "Nat. Biotechnol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib57",
+          "doi-asserted-by": "crossref",
+          "first-page": "6824",
+          "DOI": "10.1021/bi9727646",
+          "article-title": "Unique DNA binding mode of the N-terminal zinc finger of transcription factor Sp1",
+          "volume": "37",
+          "author": "Yokono",
+          "year": "1998",
+          "journal-title": "Biochemistry"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib58",
+          "doi-asserted-by": "crossref",
+          "first-page": "3121",
+          "DOI": "10.1007/s00018-010-0618-x",
+          "article-title": "The structure of the Klf4 DNA-binding domain links to self-renewal and macrophage differentiation",
+          "volume": "68",
+          "author": "Schuetz",
+          "year": "2011",
+          "journal-title": "Cell. Mol. Life Sci."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib59",
+          "doi-asserted-by": "crossref",
+          "first-page": "16027",
+          "DOI": "10.1021/bi048438p",
+          "article-title": "NMR structure of transcription factor Sp1 DNA binding domain",
+          "volume": "43",
+          "author": "Oka",
+          "year": "2004",
+          "journal-title": "Biochemistry"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib60",
+          "doi-asserted-by": "crossref",
+          "first-page": "1052",
+          "DOI": "10.1101/gr.106575.110",
+          "article-title": "A global role for KLF1 in erythropoiesis revealed by ChIP-seq in primary erythroid cells",
+          "volume": "20",
+          "author": "Tallack",
+          "year": "2010",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib61",
+          "doi-asserted-by": "crossref",
+          "first-page": "6572",
+          "DOI": "10.1093/nar/gkx441",
+          "article-title": "Krüppel-like factors compete for promoters and enhancers to fine-tune transcription",
+          "volume": "45",
+          "author": "Ilsley",
+          "year": "2017",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib62",
+          "doi-asserted-by": "crossref",
+          "first-page": "1130",
+          "DOI": "10.1093/nar/gkw1014",
+          "article-title": "Promiscuous DNA-binding of a mutant zinc finger protein corrupts the transcriptome and diminishes cell viability",
+          "volume": "45",
+          "author": "Gillinder",
+          "year": "2017",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib63",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.celrep.2022.111830",
+          "article-title": "EKLF/Klf1 regulates erythroid transcription by its pioneering activity and selective control of RNA Pol II pause-release",
+          "volume": "41",
+          "author": "Mukherjee",
+          "year": "2022",
+          "journal-title": "Cell Rep."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib64",
+          "article-title": "Predicting DNA structure using a deep learning method",
+          "volume": "15",
+          "author": "Li",
+          "year": "2024",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib65",
+          "doi-asserted-by": "crossref",
+          "first-page": "1674",
+          "DOI": "10.1038/s41592-024-02372-w",
+          "article-title": "Geometric deep learning of protein-DNA binding specificity",
+          "volume": "21",
+          "author": "Mitra",
+          "year": "2024",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib66",
+          "doi-asserted-by": "crossref",
+          "first-page": "1117",
+          "DOI": "10.1038/s41587-022-01624-4",
+          "article-title": "A universal deep-learning model for zinc finger design enables transcription factor reprogramming",
+          "volume": "41",
+          "author": "Ichikawa",
+          "year": "2023",
+          "journal-title": "Nat. Biotechnol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib67",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/s41467-021-23148-2",
+          "article-title": "Allostery through DNA drives phenotype switching",
+          "volume": "12",
+          "author": "Rosenblum",
+          "year": "2021",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib68",
+          "doi-asserted-by": "crossref",
+          "first-page": "881",
+          "DOI": "10.1038/s41556-021-00722-w",
+          "article-title": "CTCF chromatin residence time controls three-dimensional genome organization, gene expression and DNA methylation in pluripotent cells",
+          "volume": "23",
+          "author": "Soochit",
+          "year": "2021",
+          "journal-title": "Nat. Cell Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib69",
+          "doi-asserted-by": "crossref",
+          "first-page": "236",
+          "DOI": "10.1101/gr.241547.118",
+          "article-title": "CTCF sites display cell cycle-dependent dynamics in factor binding and nucleosome positioning",
+          "volume": "29",
+          "author": "Oomen",
+          "year": "2019",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib70",
+          "doi-asserted-by": "crossref",
+          "first-page": "2051",
+          "DOI": "10.1016/j.bpj.2017.04.018",
+          "article-title": "Direct observation of cell-cycle-dependent interactions between CTCF and chromatin",
+          "volume": "112",
+          "author": "Agarwal",
+          "year": "2017",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib71",
+          "doi-asserted-by": "crossref",
+          "first-page": "822",
+          "DOI": "10.1038/s41586-023-05961-5",
+          "article-title": "CTCF is a DNA-tension-dependent barrier to cohesin-mediated loop extrusion",
+          "volume": "616",
+          "author": "Davidson",
+          "year": "2023",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib72",
+          "doi-asserted-by": "crossref",
+          "first-page": "281",
+          "DOI": "10.1038/s41586-018-0567-3",
+          "article-title": "Principles of nucleosome organization revealed by single-cell micrococcal nuclease sequencing",
+          "volume": "562",
+          "author": "Lai",
+          "year": "2018",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib73",
+          "doi-asserted-by": "crossref",
+          "first-page": "3455",
+          "DOI": "10.1016/j.molcel.2024.08.009",
+          "article-title": "Genome access is transcription factor-specific and defined by nucleosome position",
+          "volume": "84",
+          "author": "Grand",
+          "year": "2024",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib74",
+          "doi-asserted-by": "crossref",
+          "first-page": "1795",
+          "DOI": "10.1101/gad.303321.117",
+          "article-title": "A dynamic interplay of enhancer elements regulates Klf4 expression in naïve pluripotency",
+          "volume": "31",
+          "author": "Xie",
+          "year": "2017",
+          "journal-title": "Genes Dev."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib75",
+          "doi-asserted-by": "crossref",
+          "first-page": "1280",
+          "DOI": "10.1101/gr.266551.120",
+          "article-title": "Enzymatic methyl sequencing detects DNA methylation at single-base resolution from picograms of DNA",
+          "volume": "31",
+          "author": "Vaisvila",
+          "year": "2021",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib76",
+          "doi-asserted-by": "crossref",
+          "first-page": "343",
+          "DOI": "10.1073/pnas.1713895115",
+          "article-title": "Visualizing long-term single-molecule dynamics in vivo by stochastic protein labeling",
+          "volume": "115",
+          "author": "Liu",
+          "year": "2018",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib77",
+          "doi-asserted-by": "crossref",
+          "first-page": "116",
+          "DOI": "10.1016/j.gde.2005.02.007",
+          "article-title": "Transcriptional regulation by the numbers: models",
+          "volume": "15",
+          "author": "Bintu",
+          "year": "2005",
+          "journal-title": "Curr. Opin. Genet. Dev."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib78",
+          "doi-asserted-by": "crossref",
+          "first-page": "1129",
+          "DOI": "10.1073/pnas.79.4.1129",
+          "article-title": "Quantitative model for gene regulation by lambda phage repressor",
+          "volume": "79",
+          "author": "Ackers",
+          "year": "1982",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib79",
+          "doi-asserted-by": "crossref",
+          "first-page": "1192",
+          "DOI": "10.1038/nsmb.1500",
+          "article-title": "A quantitative model of transcription factor-activated gene expression",
+          "volume": "15",
+          "author": "Kim",
+          "year": "2008",
+          "journal-title": "Nat. Struct. Mol. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib80",
+          "doi-asserted-by": "crossref",
+          "first-page": "93",
+          "DOI": "10.1016/S0092-8674(00)81785-7",
+          "article-title": "A SWI/SNF-related chromatin remodeling complex, E-RC1, is required for tissue-specific transcriptional regulation by EKLF in vitro",
+          "volume": "95",
+          "author": "Armstrong",
+          "year": "1998",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib81",
+          "doi-asserted-by": "crossref",
+          "first-page": "2441",
+          "DOI": "10.1101/gad.828000",
+          "article-title": "Functional selectivity of recombinant mammalian SWI/SNF subunits",
+          "volume": "14",
+          "author": "Kadam",
+          "year": "2000",
+          "journal-title": "Genes Dev."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib82",
+          "doi-asserted-by": "crossref",
+          "first-page": "2413",
+          "DOI": "10.1128/MCB.21.7.2413-2422.2001",
+          "article-title": "Site-specific acetylation by p300 or CREB binding protein regulates erythroid Krüppel-like factor transcriptional activity via its interaction with the SWI-SNF complex",
+          "volume": "21",
+          "author": "Zhang",
+          "year": "2001",
+          "journal-title": "Mol. Cell. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib83",
+          "doi-asserted-by": "crossref",
+          "first-page": "10484",
+          "DOI": "10.1073/pnas.1017029108",
+          "article-title": "Structural and functional characterization of an atypical activation domain in erythroid Krüppel-like factor (EKLF)",
+          "volume": "108",
+          "author": "Mas",
+          "year": "2011",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib84",
+          "doi-asserted-by": "crossref",
+          "first-page": "13337",
+          "DOI": "10.1073/pnas.1405422111",
+          "article-title": "Transcription factor EKLF (KLF1) recruitment of the histone chaperone HIRA is essential for β-globin gene expression",
+          "volume": "111",
+          "author": "Soni",
+          "year": "2014",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib85",
+          "doi-asserted-by": "crossref",
+          "first-page": "6160",
+          "DOI": "10.1128/MCB.00919-08",
+          "article-title": "Acetylation of EKLF is essential for epigenetic modification and transcriptional activation of the beta-globin locus",
+          "volume": "28",
+          "author": "SenGupta",
+          "year": "2008",
+          "journal-title": "Mol. Cell. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib86",
+          "doi-asserted-by": "crossref",
+          "first-page": "501",
+          "DOI": "10.1182/blood-2018-02-835330",
+          "article-title": "Dexpramipexole as an oral steroid-sparing agent in hypereosinophilic syndromes",
+          "volume": "132",
+          "author": "Panch",
+          "year": "2018",
+          "journal-title": "Blood"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib87",
+          "doi-asserted-by": "crossref",
+          "first-page": "611",
+          "DOI": "10.1016/j.devcel.2011.09.008",
+          "article-title": "Animal transcription networks as highly connected, quantitative continua",
+          "volume": "21",
+          "author": "Biggin",
+          "year": "2011",
+          "journal-title": "Dev. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib88",
+          "doi-asserted-by": "crossref",
+          "first-page": "960",
+          "DOI": "10.1016/j.molcel.2020.03.031",
+          "article-title": "Absolute quantification of transcription factors reveals principles of gene regulation in erythropoiesis",
+          "volume": "78",
+          "author": "Gillespie",
+          "year": "2020",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib89",
+          "doi-asserted-by": "crossref",
+          "first-page": "354",
+          "DOI": "10.1038/s41588-021-00782-6",
+          "article-title": "Base-resolution models of transcription-factor binding reveal soft motif syntax",
+          "volume": "53",
+          "author": "Avsec",
+          "year": "2021",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib90",
+          "article-title": "De novo distillation of thermodynamic affinity from deep learning regulatory sequence models of in vivo protein-DNA binding",
+          "author": "Alexandari",
+          "year": "2023",
+          "journal-title": "bioRxiv"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib91",
+          "doi-asserted-by": "crossref",
+          "first-page": "1247",
+          "DOI": "10.1126/science.271.5253.1247",
+          "article-title": "Crystal structure of the lactose operon repressor and its complexes with DNA and inducer",
+          "volume": "271",
+          "author": "Lewis",
+          "year": "1996",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib92",
+          "doi-asserted-by": "crossref",
+          "first-page": "5461",
+          "DOI": "10.1073/pnas.1700557114",
+          "article-title": "High-throughput biochemical profiling reveals sequence determinants of dCas9 off-target binding and unbinding",
+          "volume": "114",
+          "author": "Boyle",
+          "year": "2017",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib93",
+          "doi-asserted-by": "crossref",
+          "first-page": "18576",
+          "DOI": "10.1021/jacs.7b08870",
+          "article-title": "Single-Molecule Fluorescence Reveals Commonalities and Distinctions among Natural and in Vitro-Selected RNA Tertiary Motifs in a Multistep Folding Pathway",
+          "volume": "139",
+          "author": "Bonilla",
+          "year": "2017",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib94",
+          "doi-asserted-by": "crossref",
+          "first-page": "756",
+          "DOI": "10.1016/j.bpj.2013.05.061",
+          "article-title": "Single-molecule kinetics reveal cation-promoted DNA duplex formation through ordering of single-stranded helices",
+          "volume": "105",
+          "author": "Dupuis",
+          "year": "2013",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib95",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/s41467-021-21144-0",
+          "article-title": "Effects of individual base-pairs on in vivo target search and destruction kinetics of bacterial small RNA",
+          "volume": "12",
+          "author": "Poddar",
+          "year": "2021",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib96",
+          "doi-asserted-by": "crossref",
+          "first-page": "38524",
+          "DOI": "10.1074/jbc.M110.172072",
+          "article-title": "Two independent histidines, one in human prolactin and one in its receptor, are critical for pH-dependent receptor recognition and activation",
+          "volume": "285",
+          "author": "Kulkarni",
+          "year": "2010",
+          "journal-title": "J. Biol. Chem."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib97",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/ncomms4719",
+          "article-title": "Klf4 and Klf5 differentially inhibit mesoderm and endoderm differentiation in embryonic stem cells",
+          "volume": "5",
+          "author": "Aksoy",
+          "year": "2014",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib98",
+          "doi-asserted-by": "crossref",
+          "first-page": "353",
+          "DOI": "10.1038/ncb1698",
+          "article-title": "A core Klf circuitry regulates self-renewal of embryonic stem cells",
+          "volume": "10",
+          "author": "Jiang",
+          "year": "2008",
+          "journal-title": "Nat. Cell Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib99",
+          "doi-asserted-by": "crossref",
+          "first-page": "239",
+          "DOI": "10.1016/j.sbi.2021.08.002",
+          "article-title": "Transcription factor binding kinetics and transcriptional bursting: What do we really know?",
+          "volume": "71",
+          "author": "Mazzocca",
+          "year": "2021",
+          "journal-title": "Curr. Opin. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib100",
+          "doi-asserted-by": "crossref",
+          "first-page": "277",
+          "DOI": "10.1146/annurev-cellbio-022823-013847",
+          "article-title": "Transcription factor dynamics: One molecule at a time",
+          "volume": "39",
+          "author": "Wagh",
+          "year": "2023",
+          "journal-title": "Annu. Rev. Cell Dev. Biol."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib101",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.15252/embj.2018100809",
+          "article-title": "Live-cell imaging reveals the interplay between transcription factors, nucleosomes, and bursting",
+          "volume": "38",
+          "author": "Donovan",
+          "year": "2019",
+          "journal-title": "EMBO J."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib102",
+          "doi-asserted-by": "crossref",
+          "first-page": "1111",
+          "DOI": "10.1016/j.cell.2007.05.019",
+          "article-title": "An atomic model of the interferon-beta enhanceosome",
+          "volume": "129",
+          "author": "Panne",
+          "year": "2007",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib103",
+          "doi-asserted-by": "crossref",
+          "first-page": "555",
+          "DOI": "10.1016/j.cell.2015.03.017",
+          "article-title": "Pioneer transcription factors target partial DNA motifs on nucleosomes to initiate reprogramming",
+          "volume": "161",
+          "author": "Soufi",
+          "year": "2015",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib104",
+          "doi-asserted-by": "crossref",
+          "first-page": "365",
+          "DOI": "10.1038/s41586-023-05906-y",
+          "article-title": "Large-scale mapping and mutagenesis of human transcriptional effector domains",
+          "volume": "616",
+          "author": "DelRosso",
+          "year": "2023",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib105",
+          "doi-asserted-by": "crossref",
+          "first-page": "2020",
+          "DOI": "10.1016/j.cell.2020.11.024",
+          "article-title": "High-Throughput Discovery and Characterization of Human Transcriptional Effectors",
+          "volume": "183",
+          "author": "Tycko",
+          "year": "2020",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib106",
+          "doi-asserted-by": "crossref",
+          "first-page": "2483",
+          "DOI": "10.1093/bioinformatics/bty127",
+          "article-title": "PWMScan: a fast tool for scanning entire genomes with a position-specific weight matrix",
+          "volume": "34",
+          "author": "Ambrosini",
+          "year": "2018",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib107",
+          "doi-asserted-by": "crossref",
+          "first-page": "3619",
+          "DOI": "10.1073/pnas.1618370114",
+          "article-title": "Comprehensive and quantitative mapping of RNA-protein interactions across a transcribed eukaryotic genome",
+          "volume": "114",
+          "author": "She",
+          "year": "2017",
+          "journal-title": "Proc. Natl. Acad. Sci. USA"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib108",
+          "doi-asserted-by": "crossref",
+          "first-page": "741",
+          "DOI": "10.1016/j.molcel.2019.06.012",
+          "article-title": "High-Throughput Analysis Reveals Rules for Target RNA Binding and Cleavage by AGO2",
+          "volume": "75",
+          "author": "Becker",
+          "year": "2019",
+          "journal-title": "Mol. Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib109",
+          "doi-asserted-by": "crossref",
+          "first-page": "377",
+          "DOI": "10.1016/j.cell.2018.05.038",
+          "article-title": "High-Throughput Investigation of Diverse Junction Elements in RNA Tertiary Folding",
+          "volume": "174",
+          "author": "Denny",
+          "year": "2018",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib110",
+          "first-page": "D87",
+          "article-title": "JASPAR 2020: update of the open-access database of transcription factor binding profiles",
+          "volume": "48",
+          "author": "Fornes",
+          "year": "2020",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib111",
+          "article-title": "Attention is all you need",
+          "author": "Vaswani",
+          "year": "2017",
+          "journal-title": "arXiv"
+        },
+        {
+          "key": "10.1016/j.cell.2025.11.008_bib112",
+          "article-title": "Fast and accurate alignment of long bisulfite-seq reads",
+          "author": "Pedersen",
+          "year": "2014",
+          "journal-title": "arXiv"
+        }
+      ],
+      "container-title": [
+        "Cell"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0092867425013005?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S0092867425013005?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            5
+          ]
+        ],
+        "date-time": "2026-02-05T05:09:11Z",
+        "timestamp": 1770268151000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0092867425013005"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "references-count": 112,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2026,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S0092867425013005"
+      ],
+      "URL": "https://doi.org/10.1016/j.cell.2025.11.008",
+      "relation": {},
+      "ISSN": [
+        "0092-8674"
+      ],
+      "issn-type": [
+        {
+          "value": "0092-8674",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2026,
+            1
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Thermodynamic principles link in vitro transcription factor affinities to single-molecule chromatin states in cells",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Cell",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.cell.2025.11.008",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2025 The Authors. Published by Elsevier Inc.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ]
+    },
+    "accepted_score": 1.11,
+    "accepted": true
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-3a71a2ddab6ff54e.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-3a71a2ddab6ff54e.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-3a71a2ddab6ff54e.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "6a5b919ab2d81eda0c7c9edc1caa099dfc75df57e9dc73fb78da704f6a14a3ca",
+    "chunk_count": 98,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

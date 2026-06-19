@@ -1,0 +1,640 @@
+{
+  "paper_id": "sha256-2fd114f6339e9033",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/MD_methods/Noe 2019 PNAS - Dynamic-graphical-models-of-molecular-kinetics.pdf",
+  "pdf_sha256": "2fd114f6339e90337bf18b905ef81a3aa7516a7684ba42ecab64761385568d34",
+  "filename": "Noe 2019 PNAS - Dynamic-graphical-models-of-molecular-kinetics.pdf",
+  "item_type": "article",
+  "title_query": "Noe 2019 PNAS Dynamic-graphical-models-of-molecular-kinetics",
+  "filename_hints": {
+    "year_hint": 2019,
+    "venue_hint": "proceedingsofthenationalacademyofsciences",
+    "prefix": "Noe 2019 PNAS"
+  },
+  "doi_candidates": [
+    "10.1073/pnas.1901692116"
+  ],
+  "date_indexed": "2026-04-17T03:23:03.209993+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": null,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Noe 2019 PNAS Dynamic-graphical-models-of-molecular-kinetics",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": null,
+    "candidate_scores": [],
+    "candidate_dois": [],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 0,
+      "offset": 0
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            26
+          ]
+        ],
+        "date-time": "2026-02-26T20:22:29Z",
+        "timestamp": 1772137349127,
+        "version": "3.50.1"
+      },
+      "reference-count": 66,
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "issue": "30",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2020,
+                1,
+                8
+              ]
+            ],
+            "date-time": "2020-01-08T00:00:00Z",
+            "timestamp": 1578441600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 184,
+          "URL": "https://www.pnas.org/site/aboutpnas/licenses.xhtml"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.pnas.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Proc. Natl. Acad. Sci. U.S.A."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            23
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Significance</jats:title>\n                  <jats:p>Biomolecules, such as proteins or nucleic acids, can adopt a number of molecular configurations, which grow exponentially with their size. Since conformation change drives biological function, characterizing structural configurations is critical. However, exhaustively sampling an exponentially large number of states and the transitions in between these rapidly becomes difficult by explicit simulation. Here, we make significant strides toward the characterization conformations of such systems. To achieve this, we break molecular configurations into subsystems and model how the subsystems mutually affect the others’ dynamics. We show that this approach may accurately capture the molecular dynamics and systematically outperforms existing methodology by predicting unobserved molecular configurations.</jats:p>",
+      "DOI": "10.1073/pnas.1901692116",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            8
+          ]
+        ],
+        "date-time": "2019-07-08T20:24:46Z",
+        "timestamp": 1562617486000
+      },
+      "page": "15001-15006",
+      "update-policy": "https://doi.org/10.1073/pnas.cm10313",
+      "source": "Crossref",
+      "is-referenced-by-count": 42,
+      "title": [
+        "Dynamic graphical models of molecular kinetics"
+      ],
+      "prefix": "10.1073",
+      "volume": "116",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-3927-7897",
+          "authenticated-orcid": false,
+          "given": "Simon",
+          "family": "Olsson",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Mathematics and Computer Science, Freie Universität Berlin, 14195 Berlin, Germany;"
+            }
+          ]
+        },
+        {
+          "given": "Frank",
+          "family": "Noé",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Mathematics and Computer Science, Freie Universität Berlin, 14195 Berlin, Germany;"
+            },
+            {
+              "name": "Department of Physics, Freie Universität Berlin, 14195 Berlin, Germany;"
+            },
+            {
+              "name": "Department of Chemistry, Rice University, Houston, TX 77005"
+            }
+          ]
+        }
+      ],
+      "member": "341",
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            8
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "e_1_3_3_1_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1006/jcph.1999.6231"
+        },
+        {
+          "key": "e_1_3_3_2_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.2714539"
+        },
+        {
+          "key": "e_1_3_3_3_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.2714538"
+        },
+        {
+          "key": "e_1_3_3_4_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/jp0761665"
+        },
+        {
+          "key": "e_1_3_3_5_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.3565032"
+        },
+        {
+          "key": "e_1_3_3_6_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.2116947"
+        },
+        {
+          "key": "e_1_3_3_7_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.3644344"
+        },
+        {
+          "key": "e_1_3_3_8_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ct050162r"
+        },
+        {
+          "key": "e_1_3_3_9_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1039/C3CP54520B"
+        },
+        {
+          "key": "e_1_3_3_10_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.3569857"
+        },
+        {
+          "key": "e_1_3_3_11_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.0905466106"
+        },
+        {
+          "key": "e_1_3_3_12_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ja106936n"
+        },
+        {
+          "key": "e_1_3_3_13_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/jp2076935"
+        },
+        {
+          "key": "e_1_3_3_14_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nchem.1821"
+        },
+        {
+          "key": "e_1_3_3_15_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1417811112"
+        },
+        {
+          "key": "e_1_3_3_16_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1103547108"
+        },
+        {
+          "key": "e_1_3_3_17_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/ncomms8653"
+        },
+        {
+          "key": "e_1_3_3_18_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pcbi.1003767"
+        },
+        {
+          "key": "e_1_3_3_19_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pcbi.1002002"
+        },
+        {
+          "key": "e_1_3_3_20_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nchem.2785"
+        },
+        {
+          "key": "e_1_3_3_21_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/0021-9991(77)90121-8"
+        },
+        {
+          "key": "e_1_3_3_22_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevE.52.2893"
+        },
+        {
+          "key": "e_1_3_3_23_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.202427399"
+        },
+        {
+          "key": "e_1_3_3_24_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-017-01163-6"
+        },
+        {
+          "key": "e_1_3_3_25_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ar9500933"
+        },
+        {
+          "key": "e_1_3_3_26_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ja4098719"
+        },
+        {
+          "key": "e_1_3_3_27_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1410404111"
+        },
+        {
+          "key": "e_1_3_3_28_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/0022-5193(71)90034-8"
+        },
+        {
+          "key": "e_1_3_3_29_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/nature04701"
+        },
+        {
+          "key": "e_1_3_3_30_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ct4000444"
+        },
+        {
+          "key": "e_1_3_3_31_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ct500834t"
+        },
+        {
+          "key": "e_1_3_3_32_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1214/09-AOS691"
+        },
+        {
+          "key": "e_1_3_3_33_2",
+          "volume-title": "Structure Learning in Markov Random Fields",
+          "author": "Parise S.",
+          "year": "2006",
+          "unstructured": "S. Parise, M. Welling, Structure Learning in Markov Random Fields, B. Schölkopf, J. Platt, T. Hoffman, Eds. (NIPS, 2006), vol. 19."
+        },
+        {
+          "key": "e_1_3_3_34_2",
+          "volume-title": "Pattern Recognition and Machine Learning",
+          "author": "Bishop C. M.",
+          "year": "2006",
+          "unstructured": "C. M. Bishop, Pattern Recognition and Machine Learning (Springer Science, 2006)."
+        },
+        {
+          "key": "e_1_3_3_35_2",
+          "volume-title": "Probabilistic Graphical Models: Principles and Techniques",
+          "author": "Koller D.",
+          "year": "2009",
+          "unstructured": "D. Koller, N. Friedman, Probabilistic Graphical Models: Principles and Techniques (Adaptive Computation and Machine Learning, The MIT Press, 2009)."
+        },
+        {
+          "key": "e_1_3_3_36_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.106.048702"
+        },
+        {
+          "key": "e_1_3_3_37_2",
+          "first-page": "613",
+          "article-title": "Beiträge zum verständnis der magnetischen eigenschaften in festen körpern",
+          "volume": "21",
+          "author": "Lenz W.",
+          "year": "1920",
+          "unstructured": "W. Lenz, Beiträge zum verständnis der magnetischen eigenschaften in festen körpern. Phys. Z. 21, 613–615 (1920).",
+          "journal-title": "Phys. Z."
+        },
+        {
+          "key": "e_1_3_3_38_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.1703954"
+        },
+        {
+          "key": "e_1_3_3_39_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRev.145.224"
+        },
+        {
+          "key": "e_1_3_3_40_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.1699114"
+        },
+        {
+          "key": "e_1_3_3_41_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevE.79.051915"
+        },
+        {
+          "key": "e_1_3_3_42_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.72.3634"
+        },
+        {
+          "key": "e_1_3_3_43_2",
+          "first-page": "675",
+          "volume": "98",
+          "author": "Ziehe A.",
+          "year": "1998",
+          "unstructured": "A. Ziehe, K. R. Müller, TDSEP—An Efficient Algorithm for Blind Separation Using Time Structure in ICANN (Springer, London, 1998), vol. 98, pp. 675–680.",
+          "journal-title": "TDSEP—An Efficient Algorithm for Blind Separation Using Time Structure in ICANN"
+        },
+        {
+          "key": "e_1_3_3_44_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.4811489"
+        },
+        {
+          "key": "e_1_3_3_45_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ct300878a"
+        },
+        {
+          "key": "e_1_3_3_46_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.1208351"
+        },
+        {
+          "key": "e_1_3_3_47_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.4828816"
+        },
+        {
+          "key": "e_1_3_3_48_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1137/110858616"
+        },
+        {
+          "key": "e_1_3_3_49_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/ct4009156"
+        },
+        {
+          "key": "e_1_3_3_50_2",
+          "unstructured": "H. Wu F. Noé Variational approach for learning Markov processes from time series data. arXiv:1707.04659 (11 December 2017)."
+        },
+        {
+          "key": "e_1_3_3_51_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1704803114"
+        },
+        {
+          "key": "e_1_3_3_52_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.1004646108"
+        },
+        {
+          "key": "e_1_3_3_53_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/jacs.6b09460"
+        },
+        {
+          "key": "e_1_3_3_54_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-017-02388-1"
+        },
+        {
+          "key": "e_1_3_3_55_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevE.97.062412"
+        },
+        {
+          "key": "e_1_3_3_56_2",
+          "unstructured": "H. Wu A. Mardt L. Pasquali F. Noé Deep generative markov state models. arXiv:1805.07601 (11 January 2019)."
+        },
+        {
+          "key": "e_1_3_3_57_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.5011399"
+        },
+        {
+          "key": "e_1_3_3_58_2",
+          "unstructured": "H. Jung R. Covino G. Hummer Artificial intelligence assists discovery of reaction coordinates and mechanisms from molecular dynamics simulations. arXiv:1901.04595 (14 January 2019)."
+        },
+        {
+          "key": "e_1_3_3_59_2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "W. Wang R. Gómez-Bombarelli Coarse-graining auto-encoders for molecular dynamics. arXiv:1812.02706 (27 March 2019).",
+          "DOI": "10.1038/s41524-019-0261-5"
+        },
+        {
+          "key": "e_1_3_3_60_2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "W. Chen H. Sidky A. L. Ferguson Nonlinear discovery of slow molecular modes using hierarchical dynamics encoders. arXiv:1902.03336 (2 June 2019).",
+          "DOI": "10.1063/1.5092521"
+        },
+        {
+          "key": "e_1_3_3_61_2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "T. Xie A. France-Lanord Y. Wang Y. Shao-Horn J. C. Grossman Graph dynamical networks: Unsupervised learning of atomic scale dynamics in materials. arXiv:1902.06836 (22 May 2019).",
+          "DOI": "10.1038/s41467-019-10663-6"
+        },
+        {
+          "key": "e_1_3_3_62_2",
+          "doi-asserted-by": "crossref",
+          "unstructured": "F. Noé S. Olsson J. Köhler H. Wu Boltzmann generators–Sampling equilibrium states of many-body systems with deep learning. arXiv:1812.01729 (4 December 2018).",
+          "DOI": "10.1126/science.aaw1147"
+        },
+        {
+          "key": "e_1_3_3_63_2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1021/acscentsci.8b00913"
+        },
+        {
+          "key": "e_1_3_3_64_2",
+          "volume-title": "Deep Learning",
+          "author": "Goodfellow I.",
+          "year": "2016",
+          "unstructured": "I. Goodfellow, Y. Bengio, A. Courville, Deep Learning (MIT Press, 2016)."
+        },
+        {
+          "key": "e_1_3_3_65_2",
+          "first-page": "1646",
+          "volume-title": "Saga: A Fast Incremental Bradient Method with Support for Non-Strongly Convex Composite Objectives",
+          "author": "Defazio A.",
+          "year": "2014",
+          "unstructured": "A. Defazio, F. Bach, S. Lacoste-Julien, Saga: A Fast Incremental Bradient Method with Support for Non-Strongly Convex Composite Objectives (NIPS, 2014), vol. 27, pp. 1646–1654."
+        },
+        {
+          "key": "e_1_3_3_66_2",
+          "first-page": "2825",
+          "article-title": "Scikit-learn: Machine learning in Python",
+          "volume": "12",
+          "author": "Pedregosa F.",
+          "year": "2011",
+          "unstructured": "F. Pedregosa , Scikit-learn: Machine learning in Python. JMLR 12, 2825–2830 (2011).",
+          "journal-title": "JMLR"
+        }
+      ],
+      "container-title": [
+        "Proceedings of the National Academy of Sciences"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://www.pnas.org/syndication/doi/10.1073/pnas.1901692116",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://pnas.org/doi/pdf/10.1073/pnas.1901692116",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            4,
+            13
+          ]
+        ],
+        "date-time": "2022-04-13T05:45:06Z",
+        "timestamp": 1649828706000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://pnas.org/doi/full/10.1073/pnas.1901692116"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            8
+          ]
+        ]
+      },
+      "references-count": 66,
+      "journal-issue": {
+        "issue": "30",
+        "published-print": {
+          "date-parts": [
+            [
+              2019,
+              7,
+              23
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10.1073/pnas.1901692116"
+      ],
+      "URL": "https://doi.org/10.1073/pnas.1901692116",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/467050",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "0027-8424",
+        "1091-6490"
+      ],
+      "issn-type": [
+        {
+          "value": "0027-8424",
+          "type": "print"
+        },
+        {
+          "value": "1091-6490",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            7,
+            8
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "2019-07-08",
+          "order": 2,
+          "name": "published",
+          "label": "Published",
+          "group": {
+            "name": "publication_history",
+            "label": "Publication History"
+          }
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-2fd114f6339e9033.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-2fd114f6339e9033.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-2fd114f6339e9033.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "2935dab1e2f445db6d9d8e6ee3e462aaede9fc25f76a698d8a442694d45d02e9",
+    "chunk_count": 21,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

@@ -1,0 +1,1542 @@
+{
+  "paper_id": "sha256-ee2d5f9419fc2a48",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/crystallography_and_related/stahlberg_2017_JStructBiol_focus_cryo-em_analysis.pdf",
+  "pdf_sha256": "ee2d5f9419fc2a484c2da91194c20ed1b1ca3d2b2cfbdd761e8c1da84084e187",
+  "filename": "stahlberg_2017_JStructBiol_focus_cryo-em_analysis.pdf",
+  "item_type": "article",
+  "title_query": "JStructBiol focus cryo em analysis",
+  "filename_hints": {
+    "year_hint": 2017,
+    "venue_hint": "",
+    "prefix": "stahlberg 2017 JStructBiol focus cryo-em analysis"
+  },
+  "doi_candidates": [
+    "10.1016/j.jsb.2017.03.007"
+  ],
+  "date_indexed": "2026-04-17T03:30:06.624569+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.4855,
+  "warnings": [
+    "year_hint_mismatch:2017!=2020"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "JStructBiol focus cryo em analysis",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "6cbda6072a3ca5c93e11a3df5703bd8df9787998",
+      "externalIds": {
+        "MAG": "3111756256",
+        "DOI": "10.1016/j.jsb.2020.107635",
+        "CorpusId": 222182100,
+        "PubMed": "33022362"
+      },
+      "url": "https://www.semanticscholar.org/paper/6cbda6072a3ca5c93e11a3df5703bd8df9787998",
+      "title": "SIMPLE 3.0. Stream single-particle cryo-EM analysis in real time.",
+      "venue": "Journal of Structural Biology",
+      "year": 2020,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jsb.2020.107635?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jsb.2020.107635, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2020-10-03",
+      "journal": {
+        "name": "Journal of structural biology",
+        "pages": "\n          107635\n        "
+      },
+      "authors": [
+        {
+          "authorId": "50423561",
+          "name": "Joseph J. E. Caesar"
+        },
+        {
+          "authorId": "1606034796",
+          "name": "Cyril F. Reboul"
+        },
+        {
+          "authorId": "1991629867",
+          "name": "Chiara Machello"
+        },
+        {
+          "authorId": "8658946",
+          "name": "S. Kiesewetter"
+        },
+        {
+          "authorId": "1991296349",
+          "name": "Molly L. Tang"
+        },
+        {
+          "authorId": "48542333",
+          "name": "J. Deme"
+        },
+        {
+          "authorId": "145832056",
+          "name": "Steven Johnson"
+        },
+        {
+          "authorId": "6044392",
+          "name": "D. Elmlund"
+        },
+        {
+          "authorId": "144286328",
+          "name": "S. Lea"
+        },
+        {
+          "authorId": "6580909",
+          "name": "H. Elmlund"
+        }
+      ],
+      "abstract": "We here introduce the third major release of the SIMPLE (Single-particle IMage Processing Linux Engine) open-source software package for analysis of cryogenic transmission electron microscopy (cryo-EM) movies of single-particles (Single-Particle Analysis, SPA). Development of SIMPLE 3.0 has been focused on real-time data processing using minimal CPU computing resources to allow easy and cost-efficient scaling of processing as data rates escalate. Our stream SPA tool implements the steps of anisotropic motion correction and CTF estimation, rapid template-based particle identification and 2D clustering with automatic class rejection. SIMPLE 3.0 additionally features an easy-to-use web-based graphical user interface (GUI) that can be run on any device (workstation, laptop, tablet or phone) and supports a remote multi-user environment over the network. The new project-based execution model automatically records the executed workflow and represents it as a flow diagram in the GUI. This facilitates meta-data handling and greatly simplifies usage. Using SIMPLE 3.0, it is possible to automatically obtain a clean SP data set amenable to high-resolution 3D reconstruction directly upon completion of the data acquisition, without the need for extensive image processing post collection. Only minimal standard CPU computing resources are required to keep up with a rate of ∼300 Gatan K3 direct electron detector movies per hour. SIMPLE 3.0 is available for download from simplecryoem.com."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "6cbda6072a3ca5c93e11a3df5703bd8df9787998",
+        "title": "SIMPLE 3.0. Stream single-particle cryo-EM analysis in real time.",
+        "score": 0.4855,
+        "title_similarity": 0.4855,
+        "query_year": null,
+        "candidate_year": 2020,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2f92d120282b8a69578a054ed7ac7a0d833840bb",
+        "title": "Structural analysis of the water channel AQP2 by single-particle cryo-EM.",
+        "score": 0.4855,
+        "title_similarity": 0.4855,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "64bcd903571c7b4ad26a7e5024954aa7994326f7",
+        "title": "Focused classifications and refinements in high-resolution single particle cryo-EM analysis.",
+        "score": 0.4775,
+        "title_similarity": 0.4775,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "010eb84ebc1032db899b83db4952d5fe33a46320",
+        "title": "Comparative structural analysis of IS21 transposition complexes using Cryo-EM and AlphaFold3",
+        "score": 0.4775,
+        "title_similarity": 0.4775,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d9d8a434678a467c1a7644e25589ea6e9fc66d7c",
+        "title": "SLC12A Cryo-EM: Analysis of relevant ion binding sites, structural domains and amino acids.",
+        "score": 0.465,
+        "title_similarity": 0.465,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "36f848457aedef4f4b64638ad5b764c76352515b",
+        "title": "Combining per-particle cryo-ET and cryo-EM single particle analysis to elucidate heterogeneous DNA-protein organization.",
+        "score": 0.46,
+        "title_similarity": 0.46,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ae688d900bb00a004f36a6beb70578bee5c916d7",
+        "title": "Cryo-EM in academia, nonprofits, startups, and biotech",
+        "score": 0.3378,
+        "title_similarity": 0.3378,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "efd6fbaf8dac5d4ce2ad0a6d28dccc328d60b3c1",
+        "title": "Accelerating the Cryo-EM Structure Determination in RELION on Modern Many-Core CPU",
+        "score": 0.3138,
+        "title_similarity": 0.3138,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a4e4ba3628d9fa554b7dee44b355654d360f727f",
+        "title": "Cryo-EM reveals a composite flavobicluster electron bifurcation site in the Bfu family member NfnABC",
+        "score": 0.3067,
+        "title_similarity": 0.3067,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f676ed0648e9ce79dbe379b201ad83674dc1caf5",
+        "title": "Cryo-EM structure of the calcium-sensing receptor complexed with the kokumi substance γ-glutamyl-valyl-glycine",
+        "score": 0.3067,
+        "title_similarity": 0.3067,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1016/j.jsb.2020.107635"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 305,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "64bcd903571c7b4ad26a7e5024954aa7994326f7",
+          "externalIds": {
+            "DOI": "10.1016/j.jsb.2023.108015",
+            "CorpusId": 261478934,
+            "PubMed": "37659578"
+          },
+          "url": "https://www.semanticscholar.org/paper/64bcd903571c7b4ad26a7e5024954aa7994326f7",
+          "title": "Focused classifications and refinements in high-resolution single particle cryo-EM analysis.",
+          "venue": "Journal of Structural Biology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.sciencedirect.com/science/article/am/pii/S1047847723000783",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jsb.2023.108015?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jsb.2023.108015, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-08-31",
+          "journal": {
+            "name": "Journal of structural biology",
+            "pages": "\n          108015\n        "
+          },
+          "authors": [
+            {
+              "authorId": "2237297655",
+              "name": "Charles Barchet"
+            },
+            {
+              "authorId": "1557772006",
+              "name": "Léo Fréchin"
+            },
+            {
+              "authorId": "1557750909",
+              "name": "Samuel Holvec"
+            },
+            {
+              "authorId": "2237301542",
+              "name": "Isabelle Hazemann"
+            },
+            {
+              "authorId": "7920028",
+              "name": "O. von Loeffelholz"
+            },
+            {
+              "authorId": "1900528",
+              "name": "B. Klaholz"
+            }
+          ],
+          "abstract": "Recent advances in cryo electron microscopy (cryo-EM) and image processing provide new opportunities to analyse drug targets at high resolution. However, structural heterogeneity limits resolution in many practical cases, hence restricting the level at which structural details can be analysed and drug design be performed. As structural disorder is not spread throughout the entire structure of a given macromolecular complex but instead is found in certain regions that move with respect to others and covering molecular scales from domain conformational changes up to the level of side chain conformations in ligand binding pockets, it is possible to focus the attention on those regions and the associated relative movements. Here we show how the usage of focused classifications and refinements provide insights into global conformational arrangements, exemplified on the human ribosome and on the cannabinoid G protein coupled receptor (GPCR), and how they can improve the local map resolution from an essentially disordered region to the 3-4 Å and finally to the 2 Å resolution range. A systematic analysis with variable spherical masks during focused refinement is presented showing that the choice of an optimal mask size helps refining to high resolution. This study covers several practical approaches on 4 examples illustrating how important mask size & shape and including neighbouring structural elements are for a focused analysis of a macromolecular complex. Such methods will be crucial for cryo-EM structure-based drug design of various medical targets and are applicable to single particle cryo-EM and electron tomography data."
+        },
+        {
+          "paperId": "d9d8a434678a467c1a7644e25589ea6e9fc66d7c",
+          "externalIds": {
+            "DOI": "10.1152/ajpcell.00089.2023",
+            "CorpusId": 260681067,
+            "PubMed": "37545407"
+          },
+          "url": "https://www.semanticscholar.org/paper/d9d8a434678a467c1a7644e25589ea6e9fc66d7c",
+          "title": "SLC12A Cryo-EM: Analysis of relevant ion binding sites, structural domains and amino acids.",
+          "venue": "American Journal of Physiology - Cell Physiology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1152/ajpcell.00089.2023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1152/ajpcell.00089.2023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-08-07",
+          "journal": {
+            "name": "American journal of physiology. Cell physiology"
+          },
+          "authors": [
+            {
+              "authorId": "121134066",
+              "name": "F. Trejo"
+            },
+            {
+              "authorId": "2211675630",
+              "name": "Stephanie Elizalde"
+            },
+            {
+              "authorId": "143675962",
+              "name": "A. Mercado"
+            },
+            {
+              "authorId": "3575643",
+              "name": "G. Gamba"
+            },
+            {
+              "authorId": "6537420",
+              "name": "Paola de los Heros"
+            }
+          ],
+          "abstract": "The SLC12A superfamily of membrane transporters modulate the movement of cations coupled with chloride across the membrane. In doing so, these cotransporters are involved in numerous aspects of human physiology: cell volume regulation, ion homeostasis, blood pressure regulation, and neurological action potential via intracellular chloride concentration modulation. Their physiological characterization has been largely studied; however, understanding the mechanics of their function and relevance of structural domains or specific amino acids has been a pending task. In recent years, single-particle cryogenic electron microscopy (cryo-EM), has been successfully applied to members of the SLC12A family including all KCCs, NKCC1 and recently NCC; revealing structural elements that play key roles in their function. The present review analyzes the data provided by these cryo-EM reports focusing on structural domains and specific amino acids involved in ion binding, domain interactions, and other important SCL12A structural elements. Comparison of cryo-EM data from NKCC1 and KCCs is presented in the light of the two recent NCC cryo-EM studies, to propose insight into structural elements that might also be found in NCC and are necessary for its proper function. On the final sections, the importance of key coordination residues for substrate specificity and their implication on various pathophysiological conditions and genetic disorders is reviewed, as this could provide the basis to correlate structural elements with the development of novel and selective treatments, as well as mechanistic insight into the function and regulation of CCCs."
+        },
+        {
+          "paperId": "010eb84ebc1032db899b83db4952d5fe33a46320",
+          "externalIds": {
+            "PubMedCentral": "12486865",
+            "DOI": "10.1186/s13100-025-00374-9",
+            "CorpusId": 281703950,
+            "PubMed": "41029432"
+          },
+          "url": "https://www.semanticscholar.org/paper/010eb84ebc1032db899b83db4952d5fe33a46320",
+          "title": "Comparative structural analysis of IS21 transposition complexes using Cryo-EM and AlphaFold3",
+          "venue": "Mobile DNA",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12486865, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-09-30",
+          "journal": {
+            "name": "Mobile DNA",
+            "volume": "16"
+          },
+          "authors": [
+            {
+              "authorId": "2242974654",
+              "name": "Mercedes Spínola-Amilibia"
+            },
+            {
+              "authorId": "2383149478",
+              "name": "Irene Rizzuto"
+            },
+            {
+              "authorId": "1401266110",
+              "name": "E. Arias-Palomo"
+            }
+          ],
+          "abstract": "Transposition is a fundamental driver of genome evolution, enabling the movement of discrete DNA segments (transposons) within genomes. This process can modulate gene expression and contributes to the spread of antibiotic resistance and virulence factors. We recently determined different cryo-electron microscopy (cryo-EM) structures of the IS21 transposon, a widespread mobile genetic element that encodes IstA, a transposase, and IstB, a AAA + ATPase essential for DNA transposition. The reconstructions of these factors in the pre- and post-transposition states revealed key insights into the architecture and conformational dynamics of the transpososome. In parallel, we evaluated one of the newest structure prediction engines, AlphaFold3 (AF3), to help guide the structural work and explore its capacity to model these intricate protein–DNA assemblies. Here we present a focused comparison between the cryo-electron-microscopy structures of the IS21 transpososome and models generated with the public AF3 server. Overall, our findings show that while AF3 excels at predicting individual monomeric domains and select oligomeric arrangements, it struggles to capture some complex assemblies, conformational changes, and higher-order interactions critical for transposon function."
+        },
+        {
+          "paperId": "6cbda6072a3ca5c93e11a3df5703bd8df9787998",
+          "externalIds": {
+            "MAG": "3111756256",
+            "DOI": "10.1016/j.jsb.2020.107635",
+            "CorpusId": 222182100,
+            "PubMed": "33022362"
+          },
+          "url": "https://www.semanticscholar.org/paper/6cbda6072a3ca5c93e11a3df5703bd8df9787998",
+          "title": "SIMPLE 3.0. Stream single-particle cryo-EM analysis in real time.",
+          "venue": "Journal of Structural Biology",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jsb.2020.107635?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jsb.2020.107635, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-10-03",
+          "journal": {
+            "name": "Journal of structural biology",
+            "pages": "\n          107635\n        "
+          },
+          "authors": [
+            {
+              "authorId": "50423561",
+              "name": "Joseph J. E. Caesar"
+            },
+            {
+              "authorId": "1606034796",
+              "name": "Cyril F. Reboul"
+            },
+            {
+              "authorId": "1991629867",
+              "name": "Chiara Machello"
+            },
+            {
+              "authorId": "8658946",
+              "name": "S. Kiesewetter"
+            },
+            {
+              "authorId": "1991296349",
+              "name": "Molly L. Tang"
+            },
+            {
+              "authorId": "48542333",
+              "name": "J. Deme"
+            },
+            {
+              "authorId": "145832056",
+              "name": "Steven Johnson"
+            },
+            {
+              "authorId": "6044392",
+              "name": "D. Elmlund"
+            },
+            {
+              "authorId": "144286328",
+              "name": "S. Lea"
+            },
+            {
+              "authorId": "6580909",
+              "name": "H. Elmlund"
+            }
+          ],
+          "abstract": "We here introduce the third major release of the SIMPLE (Single-particle IMage Processing Linux Engine) open-source software package for analysis of cryogenic transmission electron microscopy (cryo-EM) movies of single-particles (Single-Particle Analysis, SPA). Development of SIMPLE 3.0 has been focused on real-time data processing using minimal CPU computing resources to allow easy and cost-efficient scaling of processing as data rates escalate. Our stream SPA tool implements the steps of anisotropic motion correction and CTF estimation, rapid template-based particle identification and 2D clustering with automatic class rejection. SIMPLE 3.0 additionally features an easy-to-use web-based graphical user interface (GUI) that can be run on any device (workstation, laptop, tablet or phone) and supports a remote multi-user environment over the network. The new project-based execution model automatically records the executed workflow and represents it as a flow diagram in the GUI. This facilitates meta-data handling and greatly simplifies usage. Using SIMPLE 3.0, it is possible to automatically obtain a clean SP data set amenable to high-resolution 3D reconstruction directly upon completion of the data acquisition, without the need for extensive image processing post collection. Only minimal standard CPU computing resources are required to keep up with a rate of ∼300 Gatan K3 direct electron detector movies per hour. SIMPLE 3.0 is available for download from simplecryoem.com."
+        },
+        {
+          "paperId": "36f848457aedef4f4b64638ad5b764c76352515b",
+          "externalIds": {
+            "DOI": "10.1016/j.sbi.2023.102765",
+            "CorpusId": 266787397,
+            "PubMed": "38181688"
+          },
+          "url": "https://www.semanticscholar.org/paper/36f848457aedef4f4b64638ad5b764c76352515b",
+          "title": "Combining per-particle cryo-ET and cryo-EM single particle analysis to elucidate heterogeneous DNA-protein organization.",
+          "venue": "Current Opinion in Structural Biology",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.sbi.2023.102765?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.sbi.2023.102765, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-01-04",
+          "journal": {
+            "name": "Current opinion in structural biology",
+            "pages": "\n          102765\n        ",
+            "volume": "84"
+          },
+          "authors": [
+            {
+              "authorId": "103685036",
+              "name": "L. Palao"
+            },
+            {
+              "authorId": "2308396281",
+              "name": "Kenji Murakami"
+            },
+            {
+              "authorId": "2251966600",
+              "name": "Yi-Wei Chang"
+            }
+          ],
+          "abstract": "Cryo-electron microscopy single particle analysis (cryo-EM SPA) and cryo-electron tomography (cryo-ET) have historically been employed as distinct approaches for investigating molecular structures of disparate sample types, focusing on highly purified biological macromolecules and in situ cellular contexts, respectively. However, these techniques offer inherently complementary structural insights that, when combined, provide a more comprehensive understanding of complex biological systems. For example, if both techniques are applied to the same purified biological macromolecules, cryo-ET has the ability to resolve highly flexible yet strong signal features on an individual target molecule which will not be preserved in the high-resolution cryo-EM SPA results. In this review, we highlight recent achievements utilizing such applications to unveil new insights into the chromatin assembly and activities of DNA-protein assemblies. This convergence of cryo-EM SPA and cryo-ET holds great promise for elucidating new structural aspects of these essential molecular processes."
+        },
+        {
+          "paperId": "2f92d120282b8a69578a054ed7ac7a0d833840bb",
+          "externalIds": {
+            "DOI": "10.1016/j.jsb.2023.107984",
+            "CorpusId": 259163732,
+            "PubMed": "37315821"
+          },
+          "url": "https://www.semanticscholar.org/paper/2f92d120282b8a69578a054ed7ac7a0d833840bb",
+          "title": "Structural analysis of the water channel AQP2 by single-particle cryo-EM.",
+          "venue": "Journal of Structural Biology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1016/j.jsb.2023.107984",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.jsb.2023.107984?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.jsb.2023.107984, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-06-12",
+          "journal": {
+            "name": "Journal of structural biology",
+            "pages": "\n          107984\n        "
+          },
+          "authors": [
+            {
+              "authorId": "4065003",
+              "name": "A. Kamegawa"
+            },
+            {
+              "authorId": "48038422",
+              "name": "Shota Suzuki"
+            },
+            {
+              "authorId": "2111603812",
+              "name": "Hiroshi Suzuki"
+            },
+            {
+              "authorId": "47883613",
+              "name": "Kouki Nishikawa"
+            },
+            {
+              "authorId": "3675506",
+              "name": "N. Numoto"
+            },
+            {
+              "authorId": "4258420",
+              "name": "Y. Fujiyoshi"
+            }
+          ],
+          "abstract": "Water channels, which are small membrane proteins almost entirely buried in lipid membranes, are challenging research targets for single-particle cryo-electron microscopy (cryo-EM), a powerful technique routinely used to determine the structures of membrane proteins. Because the single-particle method enables structural analysis of a whole protein with flexible parts that interfere with crystallization, we have focused our efforts on analyzing water channel structures. Here, utilizing this system, we analyzed the structure of full-length aquaporin-2 (AQP2), a primary regulator of vasopressin-dependent reabsorption of water at the renal collecting ducts. The 2.9 Å resolution map revealed a cytoplasmic extension of the cryo-EM density that was presumed to be the highly flexible C-terminus at which the localization of AQP2 is regulated in the renal collecting duct cells. We also observed a continuous density along the common water pathway inside the channel pore and lipid-like molecules at the membrane interface. Observations of these constructions in the AQP2 structure analyzed without any fiducial markers (e.g., a rigidly bound antibody) indicate that single-particle cryo-EM will be useful for investigating water channels in native states as well as in complexes with chemical compounds."
+        },
+        {
+          "paperId": "a4e4ba3628d9fa554b7dee44b355654d360f727f",
+          "externalIds": {
+            "PubMedCentral": "11829005",
+            "DOI": "10.1038/s42003-025-07706-8",
+            "CorpusId": 276371095,
+            "PubMed": "39953182"
+          },
+          "url": "https://www.semanticscholar.org/paper/a4e4ba3628d9fa554b7dee44b355654d360f727f",
+          "title": "Cryo-EM reveals a composite flavobicluster electron bifurcation site in the Bfu family member NfnABC",
+          "venue": "Communications Biology",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11829005, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-02-14",
+          "journal": {
+            "name": "Communications Biology",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "2389040934",
+              "name": "Hua Li"
+            },
+            {
+              "authorId": "5790642",
+              "name": "G. Schut"
+            },
+            {
+              "authorId": "143919248",
+              "name": "Xiang Feng"
+            },
+            {
+              "authorId": "2269833539",
+              "name": "Michael W. W. Adams"
+            },
+            {
+              "authorId": "2241991331",
+              "name": "Huilin Li"
+            }
+          ],
+          "abstract": "The BfuABC family is a diverse group of electron bifurcating enzymes that play key roles in anaerobic microbial metabolism. Previous studies have focused almost exclusively on the BfuABC-type hydrogenases but the mechanism and site of electron bifurcation remain unknown. Herein we focus on the Caldicellulosiruptor saccharolyticus (Csac) NfnABC-type Bfu enzyme that catalyzes the oxidation of NADPH and simultaneous reduction of NAD and the redox protein ferredoxin (Fd). Cryo-EM structures determined with and without NAD and Fd reveal seven FeS clusters and one FAD in NfnA, one FeS cluster in NfnC, and three FeS clusters, two Zn ions, and one FMN in NfnB. The Zn ions take the place of FeS clusters previously proposed in other Bfu family members. Csac Nfn for the first time defines the minimum bifurcation site as a flavobicluster consisting of FMN, a [4Fe-4S] (B1) cluster and a [2Fe-2S] (C1) cluster. Binding of NAD to the FMN triggers a series of conformational changes, crucial to the bifurcation of two electron pairs derived from NADPH by the [B1-FMN-C1] flavobicluster into low and high potential electrons that reduce Fd and NAD, respectively. The structures lay the foundation for investigations of the proposed reaction cycle common to all Bfu enzymes. Structural analysis of a thermophilic bacterial NfnABC complex reveals for the first time that the minimum electron bifurcating site of the Bfu family is a flavobicluster consisting of FMN, a [4Fe-4S] (B1) cluster and a [2Fe-2S] (C1) cluster."
+        },
+        {
+          "paperId": "ae688d900bb00a004f36a6beb70578bee5c916d7",
+          "externalIds": {
+            "DOI": "10.1063/4.0000623",
+            "CorpusId": 277683271
+          },
+          "url": "https://www.semanticscholar.org/paper/ae688d900bb00a004f36a6beb70578bee5c916d7",
+          "title": "Cryo-EM in academia, nonprofits, startups, and biotech",
+          "venue": "Structural Dynamics",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1063/4.0000623",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1063/4.0000623?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1063/4.0000623, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-03-01",
+          "journal": {
+            "name": "Structural Dynamics"
+          },
+          "authors": [
+            {
+              "authorId": "2354747092",
+              "name": "Caleigh Azumaya"
+            }
+          ],
+          "abstract": "At the University of Virginia, I worked in Jochen Zimmer's lab studying the function of proteins that synthesize and transport biopolymers. I received a BSc in Chemistry and BA in Biology and then moved to Vanderbilt University for my PhD in Molecular Physiology and Biophysics with Teru Nakagawa. I learned cryo-EM in my first rotation and determined the structures of multiple ion channels and receptors to better understand their function in glutamatergic synapses. I spent much of my time in the EM facility and decided that in the future I would most like to collect and process data, train future EM microscopists, and maintain a well-run facility. I moved to UCSF to do a postdoc with Yifan Cheng knowing that I would focus primarily on methods development and integrating myself into their facility. After a few years, a global pandemic, and collaborating on ferroportin, COVID, and characterizing the K3 detector, I moved to Seattle to help Melody Campbell build the Electron Microscopy Shared Resource at Fred Hutch. We set up microscopes and computation to enable cryo-EM structural analysis, integrated with the existing cellular EM facility, and trained users to generate high quality EM structures. We collected data for multiple companies when scope time was available and I did part-time EM consulting for startups. When an opportunity opened to join the cryo-EM team at Genentech as a Systems Specialist, I decided to move back to the Bay in order to join a team leveraging cryo-EM to push both research and their drug discovery pipeline forward."
+        },
+        {
+          "paperId": "f676ed0648e9ce79dbe379b201ad83674dc1caf5",
+          "externalIds": {
+            "PubMedCentral": "11785791",
+            "DOI": "10.1038/s41598-025-87999-1",
+            "CorpusId": 276059662,
+            "PubMed": "39890873"
+          },
+          "url": "https://www.semanticscholar.org/paper/f676ed0648e9ce79dbe379b201ad83674dc1caf5",
+          "title": "Cryo-EM structure of the calcium-sensing receptor complexed with the kokumi substance γ-glutamyl-valyl-glycine",
+          "venue": "Scientific Reports",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41598-025-87999-1",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11785791, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-01-31",
+          "journal": {
+            "name": "Scientific Reports",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "2114750108",
+              "name": "H. Yamaguchi"
+            },
+            {
+              "authorId": "2343385402",
+              "name": "Seiji Kitajima"
+            },
+            {
+              "authorId": "2244119424",
+              "name": "Hiroshi Suzuki"
+            },
+            {
+              "authorId": "2228275743",
+              "name": "Shota Suzuki"
+            },
+            {
+              "authorId": "47883613",
+              "name": "Kouki Nishikawa"
+            },
+            {
+              "authorId": "4065003",
+              "name": "A. Kamegawa"
+            },
+            {
+              "authorId": "2243927495",
+              "name": "Y. Fujiyoshi"
+            },
+            {
+              "authorId": "2314528583",
+              "name": "Kazutoshi Takahashi"
+            },
+            {
+              "authorId": "6813933",
+              "name": "Uno Tagami"
+            },
+            {
+              "authorId": "2343384041",
+              "name": "Yutaka Maruyama"
+            },
+            {
+              "authorId": "2343382736",
+              "name": "Motonaka Kuroda"
+            },
+            {
+              "authorId": "34653033",
+              "name": "Masayuki Sugiki"
+            }
+          ],
+          "abstract": "Taste is a key element for food palatability and is strongly influenced by the five basic tastes and other taste sensations, such as fatty orosensation, and koku perception, which indicates taste complexity, mouthfulness and lastingness. This study focuses on the taste modifier γ-glutamyl-valyl-glycine (γ-EVG), a potent kokumi substance that enhances taste and koku perception by modulating the calcium-sensing receptor (CaSR). We used cryo-electron microscopy to determine the structure of the CaSR/γ-EVG complex at a resolution of 3.55 Å. Structural analysis revealed important interactions between γ-EVG and the CaSR, involving key residues, such as Pro39, Phe42, Arg66, Ser147, and Glu297. Mutagenesis experiments demonstrated the importance of these residues in peptide binding. Each γ-EVG residue contributed to its binding to the orthosteric ligand binding site of the CaSR. These findings elucidate the molecular basis of kokumi peptide recognition by the CaSR and contribute to a better understanding of positive allosteric modulators of the CaSR. In addition, this research provides valuable insights into the functionality of class C G-protein-coupled receptors in taste perception, potentially informing the development of new taste modifiers and advancing the field of food science."
+        },
+        {
+          "paperId": "efd6fbaf8dac5d4ce2ad0a6d28dccc328d60b3c1",
+          "externalIds": {
+            "DOI": "10.1109/HPCC67675.2025.00023",
+            "CorpusId": 282611363
+          },
+          "url": "https://www.semanticscholar.org/paper/efd6fbaf8dac5d4ce2ad0a6d28dccc328d60b3c1",
+          "title": "Accelerating the Cryo-EM Structure Determination in RELION on Modern Many-Core CPU",
+          "venue": "IEEE International Conference on High Performance Computing and Communications",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/HPCC67675.2025.00023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/HPCC67675.2025.00023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Conference"
+          ],
+          "publicationDate": "2025-08-13",
+          "journal": {
+            "name": "2025 IEEE International Conference on High Performance Computing and Communications (HPCC)",
+            "pages": "26-33"
+          },
+          "authors": [
+            {
+              "authorId": "2203360243",
+              "name": "Kelun Lei"
+            },
+            {
+              "authorId": "46402263",
+              "name": "Hailong Yang"
+            },
+            {
+              "authorId": "2174741399",
+              "name": "Jiakang Yuan"
+            },
+            {
+              "authorId": "2293893748",
+              "name": "Shaokang Du"
+            },
+            {
+              "authorId": "1698860",
+              "name": "Zhongzhi Luan"
+            },
+            {
+              "authorId": "2153627620",
+              "name": "Yi Liu"
+            },
+            {
+              "authorId": "2198378217",
+              "name": "Depei Qian"
+            }
+          ],
+          "abstract": "RELION is a widely-used software suite for cryoelectron microscopy (cryo-EM) single-particle analysis (SPA), yet its performance optimization has primarily focused on x86 CPUs and NVIDIA GPUs. In this work, we present the first systematic effort to optimize RELION on modern many-core CPUs. Through detailed performance analysis, we identify critical bottlenecks across RELION's major computational stages. We then apply a set of software- and hardware-aware optimizations, including vectorization optimization, process and thread configurations tuning, algorithm optimization, lock optimization, memory affinity optimization, and computation redundancy optimization. Our optimized version achieves significant speedups and exhibits better scalability than the original RELION across all stages. Notably, it outperforms a single NVIDIA A100 GPU on the complete SPA workflow, achieving a $2.22 \\times$ speedup on the SPA dataset and a $1.13 \\times$ speedup on the RELION Benchmark dataset. Validation experiments further confirm that our optimizations preserve the reconstruction accuracy, demonstrating the potential of specific CPU architectures as a competitive and efficient platform for cryo-EM data processing."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            16
+          ]
+        ],
+        "date-time": "2026-04-16T02:18:30Z",
+        "timestamp": 1776305910373,
+        "version": "3.50.1"
+      },
+      "reference-count": 44,
+      "publisher": "Elsevier BV",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                5,
+                1
+              ]
+            ],
+            "date-time": "2017-05-01T00:00:00Z",
+            "timestamp": 1493596800000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2017,
+                3,
+                22
+              ]
+            ],
+            "date-time": "2017-03-22T00:00:00Z",
+            "timestamp": 1490140800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/501100001711",
+          "name": "Swiss National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "205320_166164"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "205320_166164"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/501100001711",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/501100002339",
+          "name": "NCCR",
+          "doi-asserted-by": "publisher",
+          "id": [
+            {
+              "id": "10.13039/501100002339",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Journal of Structural Biology"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            5
+          ]
+        ]
+      },
+      "DOI": "10.1016/j.jsb.2017.03.007",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            23
+          ]
+        ],
+        "date-time": "2017-03-23T14:51:27Z",
+        "timestamp": 1490280687000
+      },
+      "page": "124-133",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 212,
+      "title": [
+        "Focus: The interface between data collection and data processing in cryo-EM"
+      ],
+      "prefix": "10.1016",
+      "volume": "198",
+      "author": [
+        {
+          "given": "Nikhil",
+          "family": "Biyani",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Ricardo D.",
+          "family": "Righetto",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Robert",
+          "family": "McLeod",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Daniel",
+          "family": "Caujolle-Bert",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Daniel",
+          "family": "Castano-Diez",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Kenneth N.",
+          "family": "Goldie",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Henning",
+          "family": "Stahlberg",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0005",
+          "doi-asserted-by": "crossref",
+          "first-page": "139",
+          "DOI": "10.1016/j.jsb.2011.12.017",
+          "article-title": "Dynamo: a flexible, user-friendly development tool for subtomogram averaging of cryo-EM data in high-performance computing environments",
+          "volume": "178",
+          "author": "Castaño-Díez",
+          "year": "2012",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.jsb.2017.03.007_b0010",
+          "doi-asserted-by": "crossref",
+          "first-page": "146",
+          "DOI": "10.1016/j.jsb.2015.04.002",
+          "article-title": "MRC2014: Extensions to the MRC format header for electron cryo-microscopy and tomography",
+          "volume": "192",
+          "author": "Cheng",
+          "year": "2015",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0015",
+          "series-title": "The Resolution Revolution: Recent Advances in Cryo-EM, Methods in Enzymology",
+          "year": "2016"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0020",
+          "doi-asserted-by": "crossref",
+          "first-page": "93",
+          "DOI": "10.1016/j.jsb.2016.04.010",
+          "article-title": "Scipion: A software framework toward integration, reproducibility and validation in 3D electron microscopy",
+          "volume": "195",
+          "author": "de la Rosa-Trevín",
+          "year": "2016",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0025",
+          "doi-asserted-by": "crossref",
+          "first-page": "15",
+          "DOI": "10.1016/j.jsb.2013.11.003",
+          "article-title": "SPRING – An image processing package for single-particle based helical reconstruction from electron cryomicrographs",
+          "volume": "185",
+          "author": "Desfosses",
+          "year": "2014",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0030",
+          "doi-asserted-by": "crossref",
+          "first-page": "83",
+          "DOI": "10.1016/j.jsb.2006.05.015",
+          "article-title": "The iterative helical real space reconstruction method: surmounting the problems posed by real polymers",
+          "volume": "157",
+          "author": "Egelman",
+          "year": "2007",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0035",
+          "article-title": "A pipeline approach to single-particle processing in RELION",
+          "author": "Fernandez-Leiro",
+          "year": "2016",
+          "journal-title": "bioRXiv"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0045",
+          "doi-asserted-by": "crossref",
+          "first-page": "375",
+          "DOI": "10.1016/j.jsb.2007.09.011",
+          "article-title": "2dx_merge: data management and merging for 2D crystal images",
+          "volume": "160",
+          "author": "Gipson",
+          "year": "2007",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0050",
+          "doi-asserted-by": "crossref",
+          "first-page": "64",
+          "DOI": "10.1016/j.jsb.2006.07.020",
+          "article-title": "2dx – user-friendly image processing for 2D crystals",
+          "volume": "157",
+          "author": "Gipson",
+          "year": "2007",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0055",
+          "doi-asserted-by": "crossref",
+          "first-page": "633",
+          "DOI": "10.1038/nature04321",
+          "article-title": "Lipid-protein interactions in double-layered two-dimensional AQP0 crystals",
+          "volume": "438",
+          "author": "Gonen",
+          "year": "2005",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0060",
+          "doi-asserted-by": "crossref",
+          "first-page": "e06980",
+          "DOI": "10.7554/eLife.06980",
+          "article-title": "Measuring the optimal exposure for single particle cryo-EM using a 2.6 Å reconstruction of rotavirus VP6",
+          "volume": "4",
+          "author": "Grant",
+          "year": "2015",
+          "journal-title": "Elife"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0065",
+          "doi-asserted-by": "crossref",
+          "first-page": "117",
+          "DOI": "10.1016/j.jsb.2006.05.004",
+          "article-title": "FREALIGN: high-resolution refinement of single particle structures",
+          "volume": "157",
+          "author": "Grigorieff",
+          "year": "2007",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0070",
+          "doi-asserted-by": "crossref",
+          "first-page": "191",
+          "DOI": "10.1016/bs.mie.2016.04.013",
+          "article-title": "Frealign: An exploratory tool for single-particle cryo-EM",
+          "volume": "579",
+          "author": "Grigorieff",
+          "year": "2016",
+          "journal-title": "Methods Enzymol."
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.jsb.2017.03.007_b0075",
+          "doi-asserted-by": "crossref",
+          "first-page": "191",
+          "DOI": "10.1016/j.jsb.2016.06.007",
+          "article-title": "Implementation of a cryo-electron tomography tilt-scheme optimized for high resolution subtomogram averaging",
+          "volume": "197",
+          "author": "Hagen",
+          "year": "2016",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0080",
+          "doi-asserted-by": "crossref",
+          "first-page": "4889",
+          "DOI": "10.1128/JVI.00057-10",
+          "article-title": "Electron cryotomography of Tula hantavirus suggests a unique assembly paradigm for enveloped viruses",
+          "volume": "84",
+          "author": "Huiskonen",
+          "year": "2010",
+          "journal-title": "J. Virol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0085",
+          "doi-asserted-by": "crossref",
+          "first-page": "71",
+          "DOI": "10.1006/jsbi.1996.0013",
+          "article-title": "Computer visualization of three-dimensional image data using IMOD",
+          "volume": "116",
+          "author": "Kremer",
+          "year": "1996",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0090",
+          "doi-asserted-by": "crossref",
+          "first-page": "1443",
+          "DOI": "10.1126/science.1251652",
+          "article-title": "The resolution revolution",
+          "volume": "343",
+          "author": "Kühlbrandt",
+          "year": "2014",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0095",
+          "doi-asserted-by": "crossref",
+          "first-page": "95",
+          "DOI": "10.1016/j.jsb.2009.01.002",
+          "article-title": "Appion: an integrated, database-driven pipeline to facilitate EM image processing",
+          "volume": "166",
+          "author": "Lander",
+          "year": "2009",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0100",
+          "doi-asserted-by": "crossref",
+          "first-page": "12174",
+          "DOI": "10.1073/pnas.1614594113",
+          "article-title": "Structure and assembly model for the Trypanosoma cruzi 60S ribosomal subunit",
+          "volume": "113",
+          "author": "Liu",
+          "year": "2016",
+          "journal-title": "Proc. Natl. Acad. Sci. U. S. A."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0105",
+          "doi-asserted-by": "crossref",
+          "first-page": "584",
+          "DOI": "10.1038/nmeth.2472",
+          "article-title": "Electron counting and beam-induced motion correction enable near-atomic-resolution single-particle cryo-EM",
+          "volume": "10",
+          "author": "Li",
+          "year": "2013",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0110",
+          "doi-asserted-by": "crossref",
+          "first-page": "174",
+          "DOI": "10.1016/j.jsb.2015.09.003",
+          "article-title": "Asynchronous data acquisition and on-the-fly analysis of dose fractionated cryoEM images by UCSFImage",
+          "volume": "192",
+          "author": "Li",
+          "year": "2015",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0115",
+          "doi-asserted-by": "crossref",
+          "first-page": "159",
+          "DOI": "10.1016/bs.mie.2016.05.001",
+          "article-title": "Single-particle refinement and variability analysis in EMAN2.1",
+          "volume": "579",
+          "author": "Ludtke",
+          "year": "2016",
+          "journal-title": "Methods Enzymol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0120",
+          "doi-asserted-by": "crossref",
+          "first-page": "377",
+          "DOI": "10.1016/j.jsb.2013.07.005",
+          "article-title": "Likelihood-based classification of cryo-EM images using FREALIGN",
+          "volume": "183",
+          "author": "Lyumkis",
+          "year": "2013",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0125",
+          "doi-asserted-by": "crossref",
+          "first-page": "36",
+          "DOI": "10.1016/j.jsb.2005.07.007",
+          "article-title": "Automated electron microscope tomography using robust prediction of specimen movements",
+          "volume": "152",
+          "author": "Mastronarde",
+          "year": "2005",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.jsb.2017.03.007_b0130",
+          "first-page": "179",
+          "article-title": "Robust image alignment for cryogenic transmission electron microscopy",
+          "volume": "179",
+          "author": "McLeod",
+          "year": "2016",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0135",
+          "doi-asserted-by": "crossref",
+          "first-page": "1698",
+          "DOI": "10.1016/j.cell.2016.05.040",
+          "article-title": "Breaking cryo-EM resolution barriers to facilitate drug discovery",
+          "volume": "165",
+          "author": "Merk",
+          "year": "2016",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0140",
+          "doi-asserted-by": "crossref",
+          "first-page": "944",
+          "DOI": "10.1126/science.1128618",
+          "article-title": "The molecular architecture of axonemes revealed by cryoelectron tomography",
+          "volume": "313",
+          "author": "Nicastro",
+          "year": "2006",
+          "journal-title": "Science"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0145",
+          "doi-asserted-by": "crossref",
+          "first-page": "227",
+          "DOI": "10.1016/j.jsb.2004.10.006",
+          "article-title": "TOM software toolbox: acquisition and analysis for electron tomography",
+          "volume": "149",
+          "author": "Nickell",
+          "year": "2005",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0150",
+          "doi-asserted-by": "crossref",
+          "first-page": "270",
+          "DOI": "10.1016/j.jsb.2015.10.003",
+          "article-title": "Automated batch fiducial-less tilt-series alignment in Appion using Protomo",
+          "volume": "192",
+          "author": "Noble",
+          "year": "2015",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "issue": "3",
+          "key": "10.1016/j.jsb.2017.03.007_b0155",
+          "doi-asserted-by": "crossref",
+          "first-page": "290",
+          "DOI": "10.1038/nmeth.4169",
+          "article-title": "CryoSPARC: algorithms for rapid unsupervised cryo-EM structure determination",
+          "volume": "14",
+          "author": "Punjani",
+          "year": "2017",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0160",
+          "doi-asserted-by": "crossref",
+          "first-page": "35",
+          "DOI": "10.1016/j.ymeth.2016.03.011",
+          "article-title": "Methods to account for movement and flexibility in cryo-EM data processing",
+          "volume": "100",
+          "author": "Rawson",
+          "year": "2016",
+          "journal-title": "Methods"
+        },
+        {
+          "issue": "2",
+          "key": "10.1016/j.jsb.2017.03.007_b0165",
+          "doi-asserted-by": "crossref",
+          "first-page": "216",
+          "DOI": "10.1016/j.jsb.2015.08.008",
+          "article-title": "CTFFIND4: Fast and accurate defocus estimation from electron micrographs",
+          "volume": "192",
+          "author": "Rohou",
+          "year": "2015",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0170",
+          "doi-asserted-by": "crossref",
+          "first-page": "188",
+          "DOI": "10.1016/j.jsb.2015.08.007",
+          "article-title": "Alignment of cryo-EM movies of individual particles by optimization of image translations",
+          "volume": "192",
+          "author": "Rubinstein",
+          "year": "2015",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0175",
+          "doi-asserted-by": "crossref",
+          "first-page": "385",
+          "DOI": "10.1016/j.jsb.2013.10.016",
+          "article-title": "Quantitative characterization of electron detectors for transmission electron microscopy",
+          "volume": "184",
+          "author": "Ruskin",
+          "year": "2013",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0180",
+          "doi-asserted-by": "crossref",
+          "first-page": "302",
+          "DOI": "10.1016/j.jsb.2014.03.016",
+          "article-title": "2dx_automator: implementation of a semiautomatic high-throughput high-resolution cryo-electron crystallography pipeline",
+          "volume": "186",
+          "author": "Scherer",
+          "year": "2014",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0185",
+          "doi-asserted-by": "crossref",
+          "first-page": "519",
+          "DOI": "10.1016/j.jsb.2012.09.006",
+          "article-title": "RELION: implementation of a Bayesian approach to cryo-EM structure determination",
+          "volume": "180",
+          "author": "Scheres",
+          "year": "2012",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b9000",
+          "doi-asserted-by": "crossref",
+          "first-page": "328",
+          "DOI": "10.1006/jsbi.1998.4014",
+          "article-title": "A maximum-likelihood approach to single-particle image refinement",
+          "volume": "122",
+          "author": "Sigworth",
+          "year": "1998",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0190",
+          "doi-asserted-by": "crossref",
+          "first-page": "41",
+          "DOI": "10.1016/j.jsb.2005.03.010",
+          "article-title": "Automated molecular microscopy: the new Leginon system",
+          "volume": "151",
+          "author": "Suloway",
+          "year": "2005",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "issue": "1",
+          "key": "10.1016/j.jsb.2017.03.007_b0195",
+          "doi-asserted-by": "crossref",
+          "first-page": "38",
+          "DOI": "10.1016/j.jsb.2006.05.009",
+          "article-title": "EMAN2: an extensible image processing suite for electron microscopy",
+          "volume": "157",
+          "author": "Tang",
+          "year": "2007",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b9010",
+          "doi-asserted-by": "crossref",
+          "first-page": "624",
+          "DOI": "10.1107/97809553602060000875",
+          "article-title": "Four-dimensional cryo-electron microscopy at quasi-atomic resolution: IMAGIC 4D",
+          "author": "van Heel",
+          "year": "2012",
+          "journal-title": "Int. Tables Crystallogr. F."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0210",
+          "doi-asserted-by": "crossref",
+          "first-page": "1984",
+          "DOI": "10.1016/j.str.2016.09.008",
+          "article-title": "Antibody-based affinity cryoelectron microscopy at 2.6-Å resolution",
+          "volume": "24",
+          "author": "Yu",
+          "year": "2016",
+          "journal-title": "Structure"
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0215",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1016/j.jsb.2015.11.003",
+          "article-title": "Gctf: Real-time CTF determination and correction",
+          "volume": "193",
+          "author": "Zhang",
+          "year": "2016",
+          "journal-title": "J. Struct. Biol."
+        },
+        {
+          "issue": "4",
+          "key": "10.1016/j.jsb.2017.03.007_b0220",
+          "doi-asserted-by": "crossref",
+          "first-page": "331",
+          "DOI": "10.1038/nmeth.4193",
+          "article-title": "MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy",
+          "volume": "14",
+          "author": "Zheng",
+          "year": "2017",
+          "journal-title": "Nat. Meth."
+        },
+        {
+          "key": "10.1016/j.jsb.2017.03.007_b0225",
+          "doi-asserted-by": "crossref",
+          "first-page": "138",
+          "DOI": "10.1016/j.jsb.2006.06.005",
+          "article-title": "UCSF tomography: an integrated software suite for real-time electron microscopic tomographic data collection, alignment, and reconstruction",
+          "volume": "157",
+          "author": "Zheng",
+          "year": "2007",
+          "journal-title": "J. Struct. Biol."
+        }
+      ],
+      "container-title": [
+        "Journal of Structural Biology"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1047847717300515?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:S1047847717300515?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            7,
+            8
+          ]
+        ],
+        "date-time": "2022-07-08T04:55:39Z",
+        "timestamp": 1657256139000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1047847717300515"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2017,
+            5
+          ]
+        ]
+      },
+      "references-count": 44,
+      "journal-issue": {
+        "issue": "2",
+        "published-print": {
+          "date-parts": [
+            [
+              2017,
+              5
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "S1047847717300515"
+      ],
+      "URL": "https://doi.org/10.1016/j.jsb.2017.03.007",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/105452",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "1047-8477"
+      ],
+      "issn-type": [
+        {
+          "value": "1047-8477",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            5
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "Focus: The interface between data collection and data processing in cryo-EM",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Journal of Structural Biology",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/j.jsb.2017.03.007",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "© 2017 The Author(s). Published by Elsevier Inc.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-ee2d5f9419fc2a48.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-ee2d5f9419fc2a48.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-ee2d5f9419fc2a48.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "fd1afc36a75652dee2a08ba84f75f6411a530e3d75059fb3b652493bae52f1b1",
+    "chunk_count": 23,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

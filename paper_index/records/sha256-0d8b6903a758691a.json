@@ -1,0 +1,324 @@
+{
+  "paper_id": "sha256-0d8b6903a758691a",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/TF-DNA_interactions/Noble 2011 bioinformatics - FIMO- scanning for occurrences of a given motif.pdf",
+  "pdf_sha256": "0d8b6903a758691a5eec8a4aab39d0a77331966eac74ba554b93768615b92278",
+  "filename": "Noble 2011 bioinformatics - FIMO- scanning for occurrences of a given motif.pdf",
+  "item_type": "article",
+  "title_query": "FIMO- scanning for occurrences of a given motif",
+  "filename_hints": {
+    "year_hint": 2011,
+    "venue_hint": "",
+    "prefix": "Noble 2011 bioinformatics"
+  },
+  "doi_candidates": [
+    "10.1093/bioinformatics/btr064"
+  ],
+  "date_indexed": "2026-04-17T03:23:46.169456+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "FIMO- scanning for occurrences of a given motif",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "7c303c889a395457d0af263760ad2bdd6da7959a",
+      "externalIds": {
+        "PubMedCentral": "3065696",
+        "DBLP": "journals/bioinformatics/GrantBN11",
+        "MAG": "2140952049",
+        "DOI": "10.1093/bioinformatics/btr064",
+        "CorpusId": 263863720,
+        "PubMed": "21330290"
+      },
+      "url": "https://www.semanticscholar.org/paper/7c303c889a395457d0af263760ad2bdd6da7959a",
+      "title": "FIMO: scanning for occurrences of a given motif",
+      "venue": "Bioinform.",
+      "year": 2011,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/bioinformatics/article-pdf/27/7/1017/48868245/bioinformatics_27_7_1017.pdf",
+        "status": "HYBRID",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3065696, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2011-02-16",
+      "journal": {
+        "name": "Bioinformatics",
+        "pages": "1017 - 1018",
+        "volume": "27"
+      },
+      "authors": [
+        {
+          "authorId": "2185341",
+          "name": "Charles E. Grant"
+        },
+        {
+          "authorId": "2250198359",
+          "name": "Timothy L. Bailey"
+        },
+        {
+          "authorId": "2246817335",
+          "name": "W. S. Noble"
+        }
+      ],
+      "abstract": "Summary: A motif is a short DNA or protein sequence that contributes to the biological function of the sequence in which it resides. Over the past several decades, many computational methods have been described for identifying, characterizing and searching with sequence motifs. Critical to nearly any motif-based sequence analysis pipeline is the ability to scan a sequence database for occurrences of a given motif described by a position-specific frequency matrix. Results: We describe Find Individual Motif Occurrences (FIMO), a software tool for scanning DNA or protein sequences with motifs described as position-specific scoring matrices. The program computes a log-likelihood ratio score for each position in a given sequence database, uses established dynamic programming methods to convert this score to a P-value and then applies false discovery rate analysis to estimate a q-value for each position in the given sequence. FIMO provides output in a variety of formats, including HTML, XML and several Santa Cruz Genome Browser formats. The program is efficient, allowing for the scanning of DNA sequences at a rate of 3.5 Mb/s on a single CPU. Availability and Implementation: FIMO is part of the MEME Suite software toolkit. A web server and source code are available at http://meme.sdsc.edu. Contact: t.bailey@imb.uq.edu.au; t.bailey@imb.uq.edu.au Supplementary information: Supplementary data are available at Bioinformatics online."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "7c303c889a395457d0af263760ad2bdd6da7959a",
+        "title": "FIMO: scanning for occurrences of a given motif",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2011,
+        "candidate_year": 2011,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1093/bioinformatics/btr064"
+    ],
+    "matching_extracted_doi": "10.1093/bioinformatics/btr064",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "7c303c889a395457d0af263760ad2bdd6da7959a",
+          "externalIds": {
+            "PubMedCentral": "3065696",
+            "DBLP": "journals/bioinformatics/GrantBN11",
+            "MAG": "2140952049",
+            "DOI": "10.1093/bioinformatics/btr064",
+            "CorpusId": 263863720,
+            "PubMed": "21330290"
+          },
+          "url": "https://www.semanticscholar.org/paper/7c303c889a395457d0af263760ad2bdd6da7959a",
+          "title": "FIMO: scanning for occurrences of a given motif",
+          "venue": "Bioinform.",
+          "year": 2011,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/bioinformatics/article-pdf/27/7/1017/48868245/bioinformatics_27_7_1017.pdf",
+            "status": "HYBRID",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3065696, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2011-02-16",
+          "journal": {
+            "name": "Bioinformatics",
+            "pages": "1017 - 1018",
+            "volume": "27"
+          },
+          "authors": [
+            {
+              "authorId": "2185341",
+              "name": "Charles E. Grant"
+            },
+            {
+              "authorId": "2250198359",
+              "name": "Timothy L. Bailey"
+            },
+            {
+              "authorId": "2246817335",
+              "name": "W. S. Noble"
+            }
+          ],
+          "abstract": "Summary: A motif is a short DNA or protein sequence that contributes to the biological function of the sequence in which it resides. Over the past several decades, many computational methods have been described for identifying, characterizing and searching with sequence motifs. Critical to nearly any motif-based sequence analysis pipeline is the ability to scan a sequence database for occurrences of a given motif described by a position-specific frequency matrix. Results: We describe Find Individual Motif Occurrences (FIMO), a software tool for scanning DNA or protein sequences with motifs described as position-specific scoring matrices. The program computes a log-likelihood ratio score for each position in a given sequence database, uses established dynamic programming methods to convert this score to a P-value and then applies false discovery rate analysis to estimate a q-value for each position in the given sequence. FIMO provides output in a variety of formats, including HTML, XML and several Santa Cruz Genome Browser formats. The program is efficient, allowing for the scanning of DNA sequences at a rate of 3.5 Mb/s on a single CPU. Availability and Implementation: FIMO is part of the MEME Suite software toolkit. A web server and source code are available at http://meme.sdsc.edu. Contact: t.bailey@imb.uq.edu.au; t.bailey@imb.uq.edu.au Supplementary information: Supplementary data are available at Bioinformatics online."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "issue": "7",
+      "title": [
+        "FIMO: scanning for occurrences of a given motif"
+      ],
+      "type": "journal-article",
+      "author": [
+        {
+          "given": "Charles E.",
+          "family": "Grant",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+            }
+          ]
+        },
+        {
+          "given": "Timothy L.",
+          "family": "Bailey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+            }
+          ]
+        },
+        {
+          "given": "William Stafford",
+          "family": "Noble",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+            },
+            {
+              "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+            }
+          ]
+        }
+      ],
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Summary: A motif is a short DNA or protein sequence that contributes to the biological function of the sequence in which it resides. Over the past several decades, many computational methods have been described for identifying, characterizing and searching with sequence motifs. Critical to nearly any motif-based sequence analysis pipeline is the ability to scan a sequence database for occurrences of a given motif described by a position-specific frequency matrix.</jats:p><jats:p>Results: We describe Find Individual Motif Occurrences (FIMO), a software tool for scanning DNA or protein sequences with motifs described as position-specific scoring matrices. The program computes a log-likelihood ratio score for each position in a given sequence database, uses established dynamic programming methods to convert this score to a P-value and then applies false discovery rate analysis to estimate a q-value for each position in the given sequence. FIMO provides output in a variety of formats, including HTML, XML and several Santa Cruz Genome Browser formats. The program is efficient, allowing for the scanning of DNA sequences at a rate of 3.5 Mb/s on a single CPU.</jats:p><jats:p>Availability and Implementation: FIMO is part of the MEME Suite software toolkit. A web server and source code are available at http://meme.sdsc.edu.</jats:p><jats:p>Contact:  t.bailey@imb.uq.edu.au; t.bailey@imb.uq.edu.au</jats:p><jats:p>Supplementary information:  Supplementary data are available at Bioinformatics online.</jats:p>",
+      "volume": "27",
+      "DOI": "10.1093/bioinformatics/btr064",
+      "ISSN": [
+        "1367-4811",
+        "1367-4803"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            2,
+            16
+          ]
+        ]
+      },
+      "page": "1017-1018",
+      "URL": "https://doi.org/10.1093/bioinformatics/btr064",
+      "container-title": [
+        "Bioinformatics"
+      ],
+      "publisher": "Oxford University Press (OUP)"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1093/bioinformatics/btr064",
+    "best_candidate_doi": "10.1093/bioinformatics/btr064",
+    "crossref_attempts": [
+      {
+        "doi": "10.1093/bioinformatics/btr064",
+        "source_region": "first_page",
+        "position": 50,
+        "context": "[Page 1] Vol. 27 no. 7 2011, pages 1017–1018 doi:10.1093/bioinformatics/btr064 BIOINFORMATICS APPLICATIONS NOTE Sequence analysis Advance Access publication February",
+        "priority_score": 0.83,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "issue": "7",
+          "title": [
+            "FIMO: scanning for occurrences of a given motif"
+          ],
+          "type": "journal-article",
+          "author": [
+            {
+              "given": "Charles E.",
+              "family": "Grant",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+                }
+              ]
+            },
+            {
+              "given": "Timothy L.",
+              "family": "Bailey",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+                }
+              ]
+            },
+            {
+              "given": "William Stafford",
+              "family": "Noble",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+                },
+                {
+                  "name": "1 Department of Genome Sciences, University of Washington, Seattle, WA, USA, 2Institute for Molecular Bioscience, The University of Queensland, Brisbane, Australia and 3Department of Computer Science and Engineering, University of Washington, Seattle, WA, USA"
+                }
+              ]
+            }
+          ],
+          "abstract": "<jats:title>Abstract</jats:title><jats:p>Summary: A motif is a short DNA or protein sequence that contributes to the biological function of the sequence in which it resides. Over the past several decades, many computational methods have been described for identifying, characterizing and searching with sequence motifs. Critical to nearly any motif-based sequence analysis pipeline is the ability to scan a sequence database for occurrences of a given motif described by a position-specific frequency matrix.</jats:p><jats:p>Results: We describe Find Individual Motif Occurrences (FIMO), a software tool for scanning DNA or protein sequences with motifs described as position-specific scoring matrices. The program computes a log-likelihood ratio score for each position in a given sequence database, uses established dynamic programming methods to convert this score to a P-value and then applies false discovery rate analysis to estimate a q-value for each position in the given sequence. FIMO provides output in a variety of formats, including HTML, XML and several Santa Cruz Genome Browser formats. The program is efficient, allowing for the scanning of DNA sequences at a rate of 3.5 Mb/s on a single CPU.</jats:p><jats:p>Availability and Implementation: FIMO is part of the MEME Suite software toolkit. A web server and source code are available at http://meme.sdsc.edu.</jats:p><jats:p>Contact:  t.bailey@imb.uq.edu.au; t.bailey@imb.uq.edu.au</jats:p><jats:p>Supplementary information:  Supplementary data are available at Bioinformatics online.</jats:p>",
+          "volume": "27",
+          "DOI": "10.1093/bioinformatics/btr064",
+          "ISSN": [
+            "1367-4811",
+            "1367-4803"
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2011,
+                2,
+                16
+              ]
+            ]
+          },
+          "page": "1017-1018",
+          "URL": "https://doi.org/10.1093/bioinformatics/btr064",
+          "container-title": [
+            "Bioinformatics"
+          ],
+          "publisher": "Oxford University Press (OUP)"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-0d8b6903a758691a.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-0d8b6903a758691a.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-0d8b6903a758691a.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "0cff93b90eb373aadbf8b4afbcc0f89ce0c383fd1a57ab49763915ee6fc7a2c1",
+    "chunk_count": 5,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1093/bioinformatics/btr064",
+      "source_region": "first_page",
+      "position": 50,
+      "context": "[Page 1] Vol. 27 no. 7 2011, pages 1017–1018 doi:10.1093/bioinformatics/btr064 BIOINFORMATICS APPLICATIONS NOTE Sequence analysis Advance Access publication February",
+      "priority_score": 0.83
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:05:10.636262+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1093/bioinformatics/btr064",
+    "score": 1.08
+  }
+}

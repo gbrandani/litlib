@@ -1,0 +1,702 @@
+{
+  "paper_id": "sha256-c56f3655b61bc952",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/MD_methods/Zacharias 2019 JCTC - Evaluation of Predicted Protein–Protein Complexes by Binding Free Energy Simulations.pdf",
+  "pdf_sha256": "c56f3655b61bc952c25c50563d4bfcb7594bed5278d1b739642dc3fdadd51e40",
+  "filename": "Zacharias 2019 JCTC - Evaluation of Predicted Protein–Protein Complexes by Binding Free Energy Simulations.pdf",
+  "item_type": "article",
+  "title_query": "Evaluation of Predicted Protein–Protein Complexes by Binding Free Energy Simulations",
+  "filename_hints": {
+    "year_hint": 2019,
+    "venue_hint": "",
+    "prefix": "Zacharias 2019 JCTC"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:23:04.903975+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "Evaluation of Predicted Protein–Protein Complexes by Binding Free Energy Simulations",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "3f4db742cb28ee5dff3cef46efe45a5b0f609cf7",
+      "externalIds": {
+        "MAG": "2913931455",
+        "DOI": "10.1021/acs.jctc.8b01022",
+        "CorpusId": 73412421,
+        "PubMed": "30698954"
+      },
+      "url": "https://www.semanticscholar.org/paper/3f4db742cb28ee5dff3cef46efe45a5b0f609cf7",
+      "title": "Evaluation of Predicted Protein-Protein Complexes by Binding Free Energy Simulations.",
+      "venue": "Journal of Chemical Theory and Computation",
+      "year": 2019,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jctc.8b01022?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jctc.8b01022, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2019-01-30",
+      "journal": {
+        "name": "Journal of chemical theory and computation",
+        "pages": "\n          2071-2086\n        ",
+        "volume": "15 3"
+      },
+      "authors": [
+        {
+          "authorId": "39115346",
+          "name": "Till Siebenmorgen"
+        },
+        {
+          "authorId": "2664768",
+          "name": "M. Zacharias"
+        }
+      ],
+      "abstract": "The accurate prediction of protein-protein complex geometries is of major importance to ultimately model the complete interactome of interacting proteins in a cell. A major bottleneck is the realistic free energy evaluation of predicted docked structures. Typically, simple scoring functions applied to single-complex structures are employed that neglect conformational entropy and often solvent effects completely. The binding free energy of a predicted protein-protein complex can, however, be calculated using umbrella sampling (US) along a predefined dissociation/association coordinate of a complex. We employed atomistic US-molecular dynamics simulations including appropriate conformational and axial restraints and an implicit generalized Born solvent model to calculate binding free energies of a large set of docked decoys for 20 different complexes. Free energies associated with the restraints were calculated separately. In principle, the approach includes all energetic and entropic contributions to the binding process. The evaluation of docked complexes based on binding free energy calculation was in better agreement with experiment compared to a simple scoring based on energy minimization or MD refinement using exactly the same force field description. Even calculated absolute binding free energies of structures close to the native binding geometry showed a reasonable correlation to experiment. However, still for a number of complexes docked decoys of lower free energy than near-native geometries were found indicating inaccuracies in the force field or the implicit solvent model. Although time consuming the approach may open up a new route for realistic ranking of predicted geometries based on calculated free energy of binding."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "3f4db742cb28ee5dff3cef46efe45a5b0f609cf7",
+        "title": "Evaluation of Predicted Protein-Protein Complexes by Binding Free Energy Simulations.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2019,
+        "candidate_year": 2019,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7ec807c31096399c2864436a0e952584f13b88dc",
+        "title": "Efficient Refinement and Free Energy Scoring of Predicted Protein-Protein Complexes Using Replica Exchange with Repulsive Scaling",
+        "score": 0.5856,
+        "title_similarity": 0.5156,
+        "query_year": 2019,
+        "candidate_year": 2020,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3aae4803f7fbb2d8deaec3a788c39cc7310b0c2d",
+        "title": "Assessing the performance of MM/PBSA and MM/GBSA methods. 9. Prediction reliability of binding affinities and binding poses for protein-peptide complexes.",
+        "score": 0.379,
+        "title_similarity": 0.299,
+        "query_year": 2019,
+        "candidate_year": 2019,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6090a3af6239929bc2812fa90d09320baf0b12c5",
+        "title": "Computational prediction of protein–protein binding affinities",
+        "score": 0.3461,
+        "title_similarity": 0.2261,
+        "query_year": 2019,
+        "candidate_year": 2019,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "347a493d21cf47d27b93a0d83131cbc05fdfeeb0",
+        "title": "Exploring the Dynamic Interplay of Deleterious Variants on the RAF1–RAP1A Binding in Cancer: Conformational Analysis, Binding Free Energy, and Essential Dynamics",
+        "score": 0.2162,
+        "title_similarity": 0.2963,
+        "query_year": 2019,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5bd5907fc46d640ad3ee6dcf2f918901eddddeb5",
+        "title": "Docking and free energy simulations to predict conformational domains involved in hCG–LH receptor interactions using recombinant antibodies",
+        "score": 0.2162,
+        "title_similarity": 0.2963,
+        "query_year": 2019,
+        "candidate_year": 2011,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "72833d1422d0b58fea6f4f5814fae9bad1cf1ef3",
+        "title": "Assessing the performance of the MM/PBSA and MM/GBSA methods. 10. Impacts of enhanced sampling and variable dielectric model on protein-protein Interactions.",
+        "score": 0.1772,
+        "title_similarity": 0.0972,
+        "query_year": 2019,
+        "candidate_year": 2019,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b44117da55f64eb8ab5b391282b8ce33eacaf901",
+        "title": "Predicting and characterising protein-protein complexes",
+        "score": 0.1525,
+        "title_similarity": 0.2325,
+        "query_year": 2019,
+        "candidate_year": 2011,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "1207691704dcd77a04b2d852bf1e21c3abe0da76",
+        "title": "In Silico Evaluation and Therapeutic Targeting of LVDD9B Protein for WSSV Inhibition: Molecular and Ecological Insights for Aquaculture Solutions",
+        "score": 0.1193,
+        "title_similarity": 0.1993,
+        "query_year": 2019,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6008365309d765829f08ee664780380799c13483",
+        "title": "Integrative computational pipeline for identifying binding‐enhancing mutations targeting the MBD2–p66α interaction: Implications for therapeutic applications",
+        "score": 0.0179,
+        "title_similarity": 0.0979,
+        "query_year": 2019,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1021/acs.jctc.8b01022"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 32,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "3f4db742cb28ee5dff3cef46efe45a5b0f609cf7",
+          "externalIds": {
+            "MAG": "2913931455",
+            "DOI": "10.1021/acs.jctc.8b01022",
+            "CorpusId": 73412421,
+            "PubMed": "30698954"
+          },
+          "url": "https://www.semanticscholar.org/paper/3f4db742cb28ee5dff3cef46efe45a5b0f609cf7",
+          "title": "Evaluation of Predicted Protein-Protein Complexes by Binding Free Energy Simulations.",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jctc.8b01022?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jctc.8b01022, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-01-30",
+          "journal": {
+            "name": "Journal of chemical theory and computation",
+            "pages": "\n          2071-2086\n        ",
+            "volume": "15 3"
+          },
+          "authors": [
+            {
+              "authorId": "39115346",
+              "name": "Till Siebenmorgen"
+            },
+            {
+              "authorId": "2664768",
+              "name": "M. Zacharias"
+            }
+          ],
+          "abstract": "The accurate prediction of protein-protein complex geometries is of major importance to ultimately model the complete interactome of interacting proteins in a cell. A major bottleneck is the realistic free energy evaluation of predicted docked structures. Typically, simple scoring functions applied to single-complex structures are employed that neglect conformational entropy and often solvent effects completely. The binding free energy of a predicted protein-protein complex can, however, be calculated using umbrella sampling (US) along a predefined dissociation/association coordinate of a complex. We employed atomistic US-molecular dynamics simulations including appropriate conformational and axial restraints and an implicit generalized Born solvent model to calculate binding free energies of a large set of docked decoys for 20 different complexes. Free energies associated with the restraints were calculated separately. In principle, the approach includes all energetic and entropic contributions to the binding process. The evaluation of docked complexes based on binding free energy calculation was in better agreement with experiment compared to a simple scoring based on energy minimization or MD refinement using exactly the same force field description. Even calculated absolute binding free energies of structures close to the native binding geometry showed a reasonable correlation to experiment. However, still for a number of complexes docked decoys of lower free energy than near-native geometries were found indicating inaccuracies in the force field or the implicit solvent model. Although time consuming the approach may open up a new route for realistic ranking of predicted geometries based on calculated free energy of binding."
+        },
+        {
+          "paperId": "7ec807c31096399c2864436a0e952584f13b88dc",
+          "externalIds": {
+            "DBLP": "journals/jcisd/SiebenmorgenZ20",
+            "MAG": "3093226627",
+            "DOI": "10.1021/acs.jcim.0c00853",
+            "CorpusId": 224811094,
+            "PubMed": "33075222"
+          },
+          "url": "https://www.semanticscholar.org/paper/7ec807c31096399c2864436a0e952584f13b88dc",
+          "title": "Efficient Refinement and Free Energy Scoring of Predicted Protein-Protein Complexes Using Replica Exchange with Repulsive Scaling",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jcim.0c00853?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jcim.0c00853, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-10-19",
+          "journal": {
+            "name": "Journal of chemical information and modeling"
+          },
+          "authors": [
+            {
+              "authorId": "39115346",
+              "name": "Till Siebenmorgen"
+            },
+            {
+              "authorId": "2664768",
+              "name": "M. Zacharias"
+            }
+          ],
+          "abstract": "Accurate prediction and evaluation of protein-protein complex structures are of major importance to understand the cellular interactome. Typically, putative complexes are predicted based on docking methods, and simple force field or knowledge-based scoring functions are applied to evaluate single complex structures. We have extended a replica-exchange-based scheme employing different levels of a repulsive biasing between partners in each replica simulation (RS-REMD) to simultaneously refine and score protein-protein complexes. The bias acts specifically on the intermolecular interactions based on an increase in effective pairwise van der Waals radii (repulsive scaling (RS)-REMD) without affecting interactions within each protein or with the solvent. The method provides a free energy score that correlates quite well with experimental binding free energies on a set of 36 complexes with correlation coefficients of 0.77 and 0.55 in explicit and implicit solvent simulations, respectively. For a large set of docked decoy complexes, significant improvement of docked complexes was found in many cases with the starting structure in the vicinity (within 20 Å) of the native complex. In the majority of cases (14 out of 20 in explicit solvent), near native docking solutions were identified as the best scoring complexes. The approach is computational demanding but may offer a route for refinement and realistic ranking of predicted protein-protein docking geometries."
+        },
+        {
+          "paperId": "1207691704dcd77a04b2d852bf1e21c3abe0da76",
+          "externalIds": {
+            "DOI": "10.1007/s40203-025-00390-w",
+            "CorpusId": 277676162,
+            "PubMed": "40657273"
+          },
+          "url": "https://www.semanticscholar.org/paper/1207691704dcd77a04b2d852bf1e21c3abe0da76",
+          "title": "In Silico Evaluation and Therapeutic Targeting of LVDD9B Protein for WSSV Inhibition: Molecular and Ecological Insights for Aquaculture Solutions",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s40203-025-00390-w?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s40203-025-00390-w, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-04-09",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2370581822",
+              "name": "Md. Iftehimul"
+            },
+            {
+              "authorId": "1634620333",
+              "name": "N. Hasan"
+            },
+            {
+              "authorId": "2304437337",
+              "name": "Mst Akter"
+            },
+            {
+              "authorId": "2153237164",
+              "name": "Md. Arju Hossain"
+            },
+            {
+              "authorId": "2354658051",
+              "name": "Sajia Afrin Tima"
+            },
+            {
+              "authorId": "2156578067",
+              "name": "Amirul Kabir"
+            },
+            {
+              "authorId": "2354657620",
+              "name": "Prottay Choudhury"
+            },
+            {
+              "authorId": "2354658780",
+              "name": "Apurbo Bhowmick"
+            },
+            {
+              "authorId": "2354658104",
+              "name": "S. Pranto"
+            },
+            {
+              "authorId": "2355094832",
+              "name": "Ali Mohamod Wasaf Hasan"
+            },
+            {
+              "authorId": "6385597",
+              "name": "S. Ansari"
+            },
+            {
+              "authorId": "2321977931",
+              "name": "Md Habibur Rahman"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "347a493d21cf47d27b93a0d83131cbc05fdfeeb0",
+          "externalIds": {
+            "PubMedCentral": "11809134",
+            "DOI": "10.1002/prot.26759",
+            "CorpusId": 273818219,
+            "PubMed": "39498560"
+          },
+          "url": "https://www.semanticscholar.org/paper/347a493d21cf47d27b93a0d83131cbc05fdfeeb0",
+          "title": "Exploring the Dynamic Interplay of Deleterious Variants on the RAF1–RAP1A Binding in Cancer: Conformational Analysis, Binding Free Energy, and Essential Dynamics",
+          "venue": "Proteins: Structure, Function, and Bioinformatics",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/prot.26759",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11809134, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-11-05",
+          "journal": {
+            "name": "Proteins",
+            "pages": "684 - 701",
+            "volume": "93"
+          },
+          "authors": [
+            {
+              "authorId": "2288507042",
+              "name": "Abbas Khan"
+            },
+            {
+              "authorId": "5903617",
+              "name": "Syed Shujait Ali"
+            },
+            {
+              "authorId": "1993029679",
+              "name": "M. A. Zahid"
+            },
+            {
+              "authorId": "2329152022",
+              "name": "S. Abdelsalam"
+            },
+            {
+              "authorId": "2329153188",
+              "name": "Noorah Albekairi"
+            },
+            {
+              "authorId": "1399525824",
+              "name": "Raed M. Al‐Zoubi"
+            },
+            {
+              "authorId": "91212187",
+              "name": "M. Shkoor"
+            },
+            {
+              "authorId": "2238417833",
+              "name": "Dongqing Wei"
+            },
+            {
+              "authorId": "2279986243",
+              "name": "Abdelali Agouni"
+            }
+          ],
+          "abstract": "The RAF1–RAP1A interaction activates the MAPK/ERK pathway which is very crucial in the carcinogenesis process. This protein complex influences tumor formation, proliferation, and metastasis. Understanding aberrant interactions driven by clinical mutations is vital for targeted therapies. Hence, the current study focuses on the screening of clinically reported substitutions in the RAF1 and RAP1A genes using predictive algorithms integrated with all‐atoms simulation, essential dynamics, and binding free energy methods. Survival analysis results revealed a strong association between RAF1 and RAP1A expression levels and diminished survival rates in cancer patients across different cancer types. Integrated machine learning algorithms showed that among the 134 mutations reported for these 2 proteins, only 13 and 35 were classified as deleterious mutations in RAF1 and RAP1P, respectively. Moreover, one mutation in RAF1 reported elevated levels of binding between RAF1 and RAP1P while in RAP1A, 7 mutations were reported to increase the binding affinity. The high‐binding mutations, P34Q and V60F, were subjected to protein–protein coupling which confirmed the increase in the binding affinity. Wild‐type and mutant RAF1–RAP1P bound complexes were subjected to molecular simulation investigation, revealing enhanced structural stability, increased compactness, and stabilized residue fluctuations of the mutant systems in contrast to the wild‐type. In addition, hydrogen bonding analysis revealed a variation in the binding paradigm which further underscores the impact of these substitutions on the coupling of RAF1 and RAP1A. Principal component analysis (PCA) and free energy landscape (FEL) evaluation further determined dynamical variations in the wild‐type and mutant complexes. Finally, the Gibbs free energy for each complex was estimated and found to be −71.94 ± 0.38 kcal/mol for the wild‐type, −95.57 ± 0.37 kcal/mol for the V60F, and −85.76 ± 0.72 kcal/mol for P34Q complex. These findings confirm the effect of these variants on increasing the binding affinity of RAF1 to RAP1P. These mutations can therefore be targeted for cancer therapy to modulate the activity of the MAPK/ERK signaling pathway."
+        },
+        {
+          "paperId": "72833d1422d0b58fea6f4f5814fae9bad1cf1ef3",
+          "externalIds": {
+            "MAG": "2968876990",
+            "DOI": "10.1039/c9cp04096j",
+            "CorpusId": 201756154,
+            "PubMed": "31453590"
+          },
+          "url": "https://www.semanticscholar.org/paper/72833d1422d0b58fea6f4f5814fae9bad1cf1ef3",
+          "title": "Assessing the performance of the MM/PBSA and MM/GBSA methods. 10. Impacts of enhanced sampling and variable dielectric model on protein-protein Interactions.",
+          "venue": "Physical Chemistry, Chemical Physics - PCCP",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1039/c9cp04096j?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1039/c9cp04096j, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-09-11",
+          "journal": {
+            "name": "Physical chemistry chemical physics : PCCP"
+          },
+          "authors": [
+            {
+              "authorId": "47151803",
+              "name": "Ercheng Wang"
+            },
+            {
+              "authorId": "114395680",
+              "name": "Gaoqi Weng"
+            },
+            {
+              "authorId": "2846716",
+              "name": "Huiyong Sun"
+            },
+            {
+              "authorId": "2065002824",
+              "name": "Hongyan Du"
+            },
+            {
+              "authorId": "2075370075",
+              "name": "Feng Zhu"
+            },
+            {
+              "authorId": "2118175503",
+              "name": "Fu Chen"
+            },
+            {
+              "authorId": "2108194856",
+              "name": "Zhe Wang"
+            },
+            {
+              "authorId": "143824804",
+              "name": "Tingjun Hou"
+            }
+          ],
+          "abstract": "Enhanced sampling has been extensively used to capture the conformational transitions in protein folding, but it attracts much less attention in the studies of protein-protein recognition. In this study, we evaluated the impact of enhanced sampling methods and solute dielectric constants on the overall accuracy of the molecular mechanics/Poisson-Boltzmann surface area (MM/PBSA) and molecular mechanics/generalized Born surface area (MM/GBSA) approaches for the protein-protein binding free energy calculations. Here, two widely used enhanced sampling methods, including aMD and GaMD, and conventional molecular dynamics (cMD) simulations with two AMBER force fields (ff03 and ff14SB) were used to sample the conformations for 21 protein-protein complexes. The MM/PBSA and MM/GBSA calculation results illustrate that the standard MM/GBSA based on the cMD simulations yields the best Pearson correlation (rp = -0.523) between the predicted binding affinities and the experimental data, which is much higher than that given by MM/PBSA (rp = -0.212). Two enhanced sampling methods (aMD and GaMD) are indeed more efficient for conformational sampling, but they did not improve the binding affinity predictions for protein-protein systems, suggesting that the aMD or GaMD sampling (at least in short timescale simulations) may not be a good choice for the MM/PBSA and MM/GBSA predictions of protein-protein complexes. The solute dielectric constant of 1.0 is recommended to MM/GBSA, but a higher solute dielectric constant is recommended to MM/PBSA, especially for the systems with higher polarity on the protein-protein binding interfaces. Then, a preliminary assessment of the MM/GBSA calculations based on a variable dielectric generalized Born (VDGB) model was conducted. The results highlight the potential power of VDGB in the free energy predictions for protein-protein systems, but more thorough studies should be done in the future."
+        },
+        {
+          "paperId": "5bd5907fc46d640ad3ee6dcf2f918901eddddeb5",
+          "externalIds": {
+            "MAG": "2110890551",
+            "DOI": "10.1002/prot.23138",
+            "CorpusId": 21356739,
+            "PubMed": "21989932"
+          },
+          "url": "https://www.semanticscholar.org/paper/5bd5907fc46d640ad3ee6dcf2f918901eddddeb5",
+          "title": "Docking and free energy simulations to predict conformational domains involved in hCG–LH receptor interactions using recombinant antibodies",
+          "venue": "Proteins: Structure, Function, and Bioinformatics",
+          "year": 2011,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/prot.23138?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/prot.23138, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2011-11-01",
+          "journal": {
+            "name": "Proteins: Structure",
+            "volume": "79"
+          },
+          "authors": [
+            {
+              "authorId": "3587335",
+              "name": "R. Majumdar"
+            },
+            {
+              "authorId": "8245493",
+              "name": "R. Railkar"
+            },
+            {
+              "authorId": "2089298",
+              "name": "R. Dighe"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "6090a3af6239929bc2812fa90d09320baf0b12c5",
+          "externalIds": {
+            "MAG": "2982586377",
+            "DOI": "10.1002/wcms.1448",
+            "CorpusId": 208760101
+          },
+          "url": "https://www.semanticscholar.org/paper/6090a3af6239929bc2812fa90d09320baf0b12c5",
+          "title": "Computational prediction of protein–protein binding affinities",
+          "venue": "WIREs Computational Molecular Science",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/wcms.1448",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/wcms.1448?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/wcms.1448, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": "2019-10-29",
+          "journal": {
+            "name": "Wiley Interdisciplinary Reviews: Computational Molecular Science",
+            "volume": "10"
+          },
+          "authors": [
+            {
+              "authorId": "39115346",
+              "name": "Till Siebenmorgen"
+            },
+            {
+              "authorId": "2664768",
+              "name": "M. Zacharias"
+            }
+          ],
+          "abstract": "Protein–protein interactions form central elements of almost all cellular processes. Knowledge of the structure of protein–protein complexes but also of the binding affinity is of major importance to understand the biological function of protein–protein interactions. Even weak transient protein–protein interactions can be of functional relevance for the cell during signal transduction or regulation of metabolism. The structure of a growing number of protein–protein complexes has been solved in recent years. Combined with docking approaches or template‐based methods, it is possible to generate structural models of many putative protein–protein complexes or to design new protein–protein interactions. In order to evaluate the functional relevance of putative or predicted protein–protein complexes, realistic binding affinity prediction is of increasing importance. Several computational tools ranging from simple force‐field or knowledge‐based scoring of single protein–protein complexes to ensemble‐based approaches and rigorous binding free energy simulations are available to predict relative and absolute binding affinities of complexes. With a focus on molecular mechanics force‐field approaches the present review aims at presenting an overview on available methods and discussing advantages, approximations, and limitations of the various methods."
+        },
+        {
+          "paperId": "3aae4803f7fbb2d8deaec3a788c39cc7310b0c2d",
+          "externalIds": {
+            "MAG": "2938770575",
+            "DOI": "10.1039/C9CP01674K",
+            "CorpusId": 145959965,
+            "PubMed": "31062799"
+          },
+          "url": "https://www.semanticscholar.org/paper/3aae4803f7fbb2d8deaec3a788c39cc7310b0c2d",
+          "title": "Assessing the performance of MM/PBSA and MM/GBSA methods. 9. Prediction reliability of binding affinities and binding poses for protein-peptide complexes.",
+          "venue": "Physical Chemistry, Chemical Physics - PCCP",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1039/C9CP01674K?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1039/C9CP01674K, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-05-15",
+          "journal": {
+            "name": "Physical chemistry chemical physics : PCCP",
+            "pages": "\n          10135-10145\n        ",
+            "volume": "21 19"
+          },
+          "authors": [
+            {
+              "authorId": "114395680",
+              "name": "Gaoqi Weng"
+            },
+            {
+              "authorId": "47151803",
+              "name": "Ercheng Wang"
+            },
+            {
+              "authorId": "2118175503",
+              "name": "Fu Chen"
+            },
+            {
+              "authorId": "2846716",
+              "name": "Huiyong Sun"
+            },
+            {
+              "authorId": "2108194856",
+              "name": "Zhe Wang"
+            },
+            {
+              "authorId": "143824804",
+              "name": "Tingjun Hou"
+            }
+          ],
+          "abstract": "A significant number of protein-protein interactions (PPIs) are mediated through the interactions between proteins and peptide segments, and therefore determination of protein-peptide interactions (PpIs) is critical to gain an in-depth understanding of the PPI network and even design peptides or small molecules capable of modulating PPIs. Computational approaches, especially molecular docking, provide an efficient way to model PpIs, and a reliable scoring function that can recognize the correct binding conformations for protein-peptide complexes is one of the most important components in protein-peptide docking. The end-point binding free energy calculation methods, such as MM/GBSA and MM/PBSA, are theoretically more rigorous than most empirical and semi-empirical scoring functions designed for protein-peptide docking, but their performance in predicting binding affinities and binding poses for protein-peptide systems has not been systematically assessed. In this study, we first evaluated the capability of MM/GBSA and MM/PBSA with different solvation models, interior dielectric constants (εin) and force fields to predict the binding affinities for 53 protein-peptide complexes. For the 19 short peptides with 5-12 residues, MM/PBSA based on the minimized structures in explicit solvent with the ff99 force field and εin = 2 yields the best correlation between the predicted binding affinities and the experimental data (rp = 0.748), while for the 34 medium-size peptides with 20-25 residues, MM/GBSA based on 1 ns of molecular dynamics (MD) simulations in implicit solvent with the ff03 force field, the GBOBC1 model and a low interior dielectric constant (εin = 1) yields the best accuracy (rp = 0.735). Then, we assessed the rescoring capability of MM/PBSA and MM/GBSA to distinguish the correct binding conformations from the decoys for 112 protein-peptide systems. The results illustrate that MM/PBSA based on the minimized structures with the ff99 or ff14SB force field and MM/GBSA based on the minimized structures with the ff03 force field show excellent capability to recognize the near-native binding poses for the short and medium-size peptides, respectively, and they outperform the predictions given by two popular protein-peptide docking algorithms (pepATTRACT and HPEPDOCK). Therefore, MM/PBSA and MM/GBSA are powerful tools to predict the binding affinities and identify the correct binding poses for protein-peptide systems."
+        },
+        {
+          "paperId": "6008365309d765829f08ee664780380799c13483",
+          "externalIds": {
+            "DOI": "10.1002/bkcs.12923",
+            "CorpusId": 274844902
+          },
+          "url": "https://www.semanticscholar.org/paper/6008365309d765829f08ee664780380799c13483",
+          "title": "Integrative computational pipeline for identifying binding‐enhancing mutations targeting the MBD2–p66α interaction: Implications for therapeutic applications",
+          "venue": "Bulletin of the Korean Chemical Society",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/bkcs.12923?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/bkcs.12923, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-12-16",
+          "journal": {
+            "name": "Bulletin of the Korean Chemical Society"
+          },
+          "authors": [
+            {
+              "authorId": "51185344",
+              "name": "Sargol Mazraedoost"
+            },
+            {
+              "authorId": "2292822102",
+              "name": "Hadi Sedigh Malekroodi"
+            },
+            {
+              "authorId": "47727738",
+              "name": "Myunggi Yi"
+            },
+            {
+              "authorId": "2026906399",
+              "name": "J. J. Liu"
+            },
+            {
+              "authorId": "2335977850",
+              "name": "Sung In Lim"
+            }
+          ],
+          "abstract": "This study presents a comprehensive computational pipeline to identify and evaluate potential stabilizing mutations for the coiled‐coil protein–protein interaction between methyl‐CpG‐binding domain protein 2 (MBD2) and transcriptional repressor p66‐alpha (p66α). The pipeline begins with the BeAtMuSiC program, which employs statistical potentials derived from known structures to predict candidate stabilizing mutations at the protein–protein interface. Out of 565 potential mutations, 10 single‐point mutations (K149I, K163I, A237F, K149L, K149M, K163L, R166M, R166W, K163F, and E155L) with the highest binding affinity were selected for further evaluation using rigorous alchemical free energy calculations. These alchemical simulations conducted using the double‐system/single‐box method, predicted changes in binding free energy (ΔΔG) upon mutation while maintaining charge neutrality. The Crooks–Gaussian intersection technique was employed to analyze the results, identifying K149I, K149L, and K163L as potentially enhancing binding affinity the most, while mutations like K163F, A237F, and E155L were predicted to destabilize the interaction significantly. Complementary conventional Molecular Dynamics Simulations provided further support for the alchemical predictions, revealing decreased flexibility, increased contacts, and more compact structures for the predicted stabilizing mutants compared with the wild‐type complex. Additionally, Molecular Mechanics Poisson–Boltzmann Surface Area (MM/PBSA) binding free energy calculations were performed, and their results were consistent with the direction of free energy change predicted by the alchemical approach. This multifaceted computational pipeline, combining predictive methods, alchemical simulations, and conventional analyses, offers valuable insights into modulating the binding affinity of the MBD2–p66α coiled‐coil interaction. The identified stabilizing mutations can create numerous opportunities across biotechnology, biomedical research, and synthetic biology."
+        },
+        {
+          "paperId": "b44117da55f64eb8ab5b391282b8ce33eacaf901",
+          "externalIds": {
+            "MAG": "22376704",
+            "CorpusId": 59700733
+          },
+          "url": "https://www.semanticscholar.org/paper/b44117da55f64eb8ab5b391282b8ce33eacaf901",
+          "title": "Predicting and characterising protein-protein complexes",
+          "venue": "",
+          "year": 2011,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://discovery.ucl.ac.uk/1333249/1/1333249.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2011-10-28",
+          "journal": {
+            "name": "",
+            "volume": ""
+          },
+          "authors": [
+            {
+              "authorId": "2254074",
+              "name": "I. Moal"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-c56f3655b61bc952.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-c56f3655b61bc952.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-c56f3655b61bc952.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "25f653e98fa2d07c25d9f7a2e3a1817e9eb0da80f45ba8b885ddc95d9d535cc7",
+    "chunk_count": 38,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

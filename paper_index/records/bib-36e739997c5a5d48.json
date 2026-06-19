@@ -1,0 +1,801 @@
+{
+  "paper_id": "bib-36e739997c5a5d48",
+  "content_kind": "reference_only",
+  "addition_mode": "ref_manual_bibtex",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "",
+  "pdf_sha256": "",
+  "filename": "",
+  "item_type": "article",
+  "title_query": "structure prediciton of alternative protein conformations",
+  "date_indexed": "2026-04-22T01:03:02.436605+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": null,
+  "metadata_source": "manual_bibtex",
+  "semantic_scholar": {
+    "query": "structure prediciton of alternative protein conformations",
+    "limit": 10,
+    "attempts": [
+      {
+        "query": "structure prediciton of alternative protein conformations",
+        "status": "needs_manual_review",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 0.7533,
+        "candidate_count": 10,
+        "best_candidate": {
+          "paperId": "4bf067cbf1303e8f723efc6bd0eab86282307776",
+          "externalIds": {
+            "PubMedCentral": "11347660",
+            "DOI": "10.1038/s41467-024-51507-2",
+            "CorpusId": 263148494,
+            "PubMed": "39187507"
+          },
+          "url": "https://www.semanticscholar.org/paper/4bf067cbf1303e8f723efc6bd0eab86282307776",
+          "title": "Structure prediction of alternative protein conformations",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41467-024-51507-2",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11347660, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-09-25",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "2062950823",
+              "name": "P. Bryant"
+            }
+          ],
+          "abstract": "Proteins are dynamic molecules whose movements result in different conformations with different functions. Neural networks such as AlphaFold2 can predict the structure of single-chain proteins in the conformations most likely to exist in the PDB. However, almost all conformations in the PDB are seen during training. Therefore, it is not possible to assess whether alternative protein conformations can be predicted or if these are reproduced from memory. Here, we train a new structure prediction network on a conformational split of the PDB to generate alternative conformations. Our network, Cfold, enables efficient exploration of the conformational landscape of monomeric protein structures. 52% (81) of the nonredundant alternative protein conformations evaluated here are predicted with high accuracy (TM-score>0.8). Cfold is freely available at: https://github.com/patrickbryant1/Cfold"
+        },
+        "scored_candidates": [
+          {
+            "paper_id": "4bf067cbf1303e8f723efc6bd0eab86282307776",
+            "title": "Structure prediction of alternative protein conformations",
+            "score": 0.7533,
+            "title_similarity": 0.7533,
+            "query_year": null,
+            "candidate_year": 2023,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "2f59d5c327c721d5f7642435dbc63db61385ae73",
+            "title": "Can Protein Structure Prediction Methods Capture Alternative Conformations of Membrane Transporters?",
+            "score": 0.6473,
+            "title_similarity": 0.6473,
+            "query_year": null,
+            "candidate_year": 2024,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "4d10670a965836f533a9d0772f6a53c8645f48f6",
+            "title": "Large-scale predictions of alternative protein conformations by AlphaFold2-based sequence association",
+            "score": 0.4775,
+            "title_similarity": 0.4775,
+            "query_year": null,
+            "candidate_year": 2025,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "8b62d4078fcabe331a4f5544004a384135bedb10",
+            "title": "Seesaw protein: Design of a protein that adopts interconvertible alternative functional conformations and its dynamics",
+            "score": 0.4708,
+            "title_similarity": 0.4708,
+            "query_year": null,
+            "candidate_year": 2025,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "13672f49f6d7239a1336794cbb2495b337c8d839",
+            "title": "In Cellulo Cysteine Umpolung for Protein Structure Probing",
+            "score": 0.3378,
+            "title_similarity": 0.3378,
+            "query_year": null,
+            "candidate_year": 2025,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "bf693c4dea175cb24980be5345bc501905eab89f",
+            "title": "AlphaFold2 Predicts Alternative Conformation Populations in Green Fluorescent Protein Variants",
+            "score": 0.3183,
+            "title_similarity": 0.3183,
+            "query_year": null,
+            "candidate_year": 2024,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "f97964fd13dfccf136dfca52a9d9e4840e34211b",
+            "title": "Predicting new protein conformations from molecular dynamics simulation conformational landscapes and machine learning",
+            "score": 0.31,
+            "title_similarity": 0.31,
+            "query_year": null,
+            "candidate_year": 2020,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "be4621b779adb4cf63840d744b3f9826c2c98c4d",
+            "title": "De novo sequencing and construction of a unique antibody for the recognition of alternative conformations of cytochrome c in cells",
+            "score": 0.31,
+            "title_similarity": 0.31,
+            "query_year": null,
+            "candidate_year": 2022,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "d3cca92c310db348384ce97fdcda514e0a5da6d4",
+            "title": "Modeling Active-State Conformations of G-Protein-Coupled Receptors Using AlphaFold2 via Template Bias and Explicit Protein Constrains",
+            "score": 0.3012,
+            "title_similarity": 0.3012,
+            "query_year": null,
+            "candidate_year": 2025,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          },
+          {
+            "paper_id": "e04cf2c4882ef1cf741a88c918b0fb5b852f679d",
+            "title": "AlphaFold2's training set powers its predictions of some fold‐switched conformations",
+            "score": 0.155,
+            "title_similarity": 0.155,
+            "query_year": null,
+            "candidate_year": 2025,
+            "year_bonus": 0.0,
+            "author_bonus": 0.0,
+            "venue_penalty": 0.0
+          }
+        ]
+      }
+    ],
+    "selected_paper_id": "",
+    "best_candidate": null,
+    "merged_candidates": [
+      {
+        "identity": "paper:4bf067cbf1303e8f723efc6bd0eab86282307776",
+        "candidate": {
+          "paperId": "4bf067cbf1303e8f723efc6bd0eab86282307776",
+          "externalIds": {
+            "PubMedCentral": "11347660",
+            "DOI": "10.1038/s41467-024-51507-2",
+            "CorpusId": 263148494,
+            "PubMed": "39187507"
+          },
+          "url": "https://www.semanticscholar.org/paper/4bf067cbf1303e8f723efc6bd0eab86282307776",
+          "title": "Structure prediction of alternative protein conformations",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41467-024-51507-2",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11347660, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-09-25",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "2062950823",
+              "name": "P. Bryant"
+            }
+          ],
+          "abstract": "Proteins are dynamic molecules whose movements result in different conformations with different functions. Neural networks such as AlphaFold2 can predict the structure of single-chain proteins in the conformations most likely to exist in the PDB. However, almost all conformations in the PDB are seen during training. Therefore, it is not possible to assess whether alternative protein conformations can be predicted or if these are reproduced from memory. Here, we train a new structure prediction network on a conformational split of the PDB to generate alternative conformations. Our network, Cfold, enables efficient exploration of the conformational landscape of monomeric protein structures. 52% (81) of the nonredundant alternative protein conformations evaluated here are predicted with high accuracy (TM-score>0.8). Cfold is freely available at: https://github.com/patrickbryant1/Cfold"
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.7533,
+        "title_similarity": 0.7533,
+        "candidate_year": 2023
+      },
+      {
+        "identity": "paper:2f59d5c327c721d5f7642435dbc63db61385ae73",
+        "candidate": {
+          "paperId": "2f59d5c327c721d5f7642435dbc63db61385ae73",
+          "externalIds": {
+            "DBLP": "journals/jcisd/XieH24",
+            "DOI": "10.1021/acs.jcim.3c01936",
+            "CorpusId": 268884122,
+            "PubMed": "38564295"
+          },
+          "url": "https://www.semanticscholar.org/paper/2f59d5c327c721d5f7642435dbc63db61385ae73",
+          "title": "Can Protein Structure Prediction Methods Capture Alternative Conformations of Membrane Transporters?",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jcim.3c01936?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jcim.3c01936, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-04-02",
+          "journal": {
+            "name": "Journal of chemical information and modeling"
+          },
+          "authors": [
+            {
+              "authorId": "2124935697",
+              "name": "Tengyu Xie"
+            },
+            {
+              "authorId": "2145739436",
+              "name": "Jing Huang"
+            }
+          ],
+          "abstract": "Understanding the conformational dynamics of proteins, such as the inward-facing (IF) and outward-facing (OF) transition observed in transporters, is vital for elucidating their functional mechanisms. Despite significant advances in protein structure prediction (PSP) over the past three decades, most efforts have been focused on single-state prediction, leaving multistate or alternative conformation prediction (ACP) relatively unexplored. This discrepancy has led to the development of highly accurate PSP methods such as AlphaFold, yet their capabilities for ACP remain limited. To investigate the performance of current PSP methods in ACP, we curated a data set, named IOMemP, consisting of 32 experimentally determined high-resolution IF and OF structures of 16 membrane proteins with substantial conformational changes. We benchmarked 12 representative PSP methods, along with two recent multistate methods based on AlphaFold, against this data set. Our findings reveal a remarkably consistent preference for specific states across various PSP methods. We elucidated how coevolution information in MSAs influences state preference. Moreover, we showed that AlphaFold, when excluding coevolution information, estimated similar energies between the experimental IF and OF conformations, indicating that the energy model learned by AlphaFold is not biased toward any particular state. Our IOMemP data set and benchmark results are anticipated to advance the development of robust ACP methods."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.6473,
+        "title_similarity": 0.6473,
+        "candidate_year": 2024
+      },
+      {
+        "identity": "paper:4d10670a965836f533a9d0772f6a53c8645f48f6",
+        "candidate": {
+          "paperId": "4d10670a965836f533a9d0772f6a53c8645f48f6",
+          "externalIds": {
+            "PubMedCentral": "12219334",
+            "DOI": "10.1038/s41467-025-60759-5",
+            "CorpusId": 279798801,
+            "PubMed": "40595555"
+          },
+          "url": "https://www.semanticscholar.org/paper/4d10670a965836f533a9d0772f6a53c8645f48f6",
+          "title": "Large-scale predictions of alternative protein conformations by AlphaFold2-based sequence association",
+          "venue": "Nature Communications",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12219334, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-01",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "16"
+          },
+          "authors": [
+            {
+              "authorId": "2317091812",
+              "name": "Myeongsang Lee"
+            },
+            {
+              "authorId": "2249958969",
+              "name": "Joseph W. Schafer"
+            },
+            {
+              "authorId": "2201676136",
+              "name": "Jeshuwin D. Prabakaran"
+            },
+            {
+              "authorId": "2249951764",
+              "name": "Devlina Chakravarty"
+            },
+            {
+              "authorId": "2369638360",
+              "name": "Madeleine F Clore"
+            },
+            {
+              "authorId": "2274944624",
+              "name": "Lauren L. Porter"
+            }
+          ],
+          "abstract": "The many successes of AlphaFold2 (AF2) have inspired methods to predict multiple protein conformations, many of which have biological significance. These methods often assume that AF2 relies on evolutionary couplings to predict alternative protein conformations, but they perform poorly on fold-switching proteins, which remodel their secondary structures and modulate their functions in response to cellular stimuli. Here we present a method designed to leverage AF2’s learning of protein structure more than evolutionary couplings. This method–called CF-random–outperforms other methods for predicting alternative conformations of not only fold switchers but also dozens of other proteins that undergo rigid body motions and local conformational rearrangements. It also enables predictions of fold-switched assemblies unpredicted by AlphaFold3. Several lines of evidence suggest that CF-random sometimes works by sequence association: relating patterns from homologous sequences to a learned structural landscape. Through a blind search of thousands of Escherichia coli proteins, CF-random suggests that up to 5% switch folds. Predicting alternative protein conformations is an emerging frontier of computational biology. Lee, et al. develop CF-random, a relatively accurate and efficient approach that blindly predicts new alternative conformations from proteomes."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.4775,
+        "title_similarity": 0.4775,
+        "candidate_year": 2025
+      },
+      {
+        "identity": "paper:8b62d4078fcabe331a4f5544004a384135bedb10",
+        "candidate": {
+          "paperId": "8b62d4078fcabe331a4f5544004a384135bedb10",
+          "externalIds": {
+            "PubMedCentral": "11848303",
+            "DOI": "10.1073/pnas.2412117122",
+            "CorpusId": 276255930,
+            "PubMed": "39928865"
+          },
+          "url": "https://www.semanticscholar.org/paper/8b62d4078fcabe331a4f5544004a384135bedb10",
+          "title": "Seesaw protein: Design of a protein that adopts interconvertible alternative functional conformations and its dynamics",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11848303, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-02-10",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences of the United States of America",
+            "volume": "122"
+          },
+          "authors": [
+            {
+              "authorId": "2298252653",
+              "name": "Toma Ikeda"
+            },
+            {
+              "authorId": "2303482707",
+              "name": "Tatsuya Nojima"
+            },
+            {
+              "authorId": "2303610537",
+              "name": "Souma Yamamoto"
+            },
+            {
+              "authorId": "2303482695",
+              "name": "Ryusei Yamada"
+            },
+            {
+              "authorId": "2346570",
+              "name": "Tatsuya Niwa"
+            },
+            {
+              "authorId": "2074255002",
+              "name": "Hiroki Konno"
+            },
+            {
+              "authorId": "2267469424",
+              "name": "Hideki Taguchi"
+            }
+          ],
+          "abstract": "Significance Following Anfinsen’s classic dogma that the amino acid sequence uniquely determines a three-dimensional structure of a protein, proteins capable of folding into two conformations from a single amino acid sequence have been identified naturally or engineered through various strategies. This paper describes a class of fold-switching proteins created by fusing green fluorescent protein (GFP) and dihydrofolate reductase (DHFR) with an overlapping linker to achieve mutually exclusive folding. The fusion protein exhibits two distinct functions in Escherichia coli, and displays two alternative conformations, as revealed by biochemical analysis. Additionally, the dynamics of this fusion protein are directly visualized by high-speed atomic force microscopy, offering a powerful method for studying other reversible fold-switching proteins."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.4708,
+        "title_similarity": 0.4708,
+        "candidate_year": 2025
+      },
+      {
+        "identity": "paper:13672f49f6d7239a1336794cbb2495b337c8d839",
+        "candidate": {
+          "paperId": "13672f49f6d7239a1336794cbb2495b337c8d839",
+          "externalIds": {
+            "PubMedCentral": "12498408",
+            "DOI": "10.1021/jacs.5c10259",
+            "CorpusId": 281397833,
+            "PubMed": "40970402"
+          },
+          "url": "https://www.semanticscholar.org/paper/13672f49f6d7239a1336794cbb2495b337c8d839",
+          "title": "In Cellulo Cysteine Umpolung for Protein Structure Probing",
+          "venue": "Journal of the American Chemical Society",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12498408, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-09-19",
+          "journal": {
+            "name": "Journal of the American Chemical Society",
+            "pages": "35587 - 35594",
+            "volume": "147"
+          },
+          "authors": [
+            {
+              "authorId": "2275446431",
+              "name": "Philipp Hartmann"
+            },
+            {
+              "authorId": "2275550147",
+              "name": "Kostiantyn Bohdan"
+            },
+            {
+              "authorId": "51260484",
+              "name": "Lara Vogelsang"
+            },
+            {
+              "authorId": "2381097460",
+              "name": "Dario Marchionni"
+            },
+            {
+              "authorId": "2248262468",
+              "name": "Christian Preisinger"
+            },
+            {
+              "authorId": "2275555955",
+              "name": "Alessandro Vetere"
+            },
+            {
+              "authorId": "2250084148",
+              "name": "Karl-Josef Dietz"
+            },
+            {
+              "authorId": "2253446467",
+              "name": "Tobias Ritter"
+            }
+          ],
+          "abstract": "Proteome-wide intramolecular cross-linking of amino acids allows for protein structure probing and is often achieved by reactive intermediates generated in situ. For example, carbene insertion chemistry forms versatile products but relies on two-step protocols that first introduce a photoreactive group and then generate a reactive intermediate via UV light irradiation. Alternatively, direct cross-linking with bifunctional electrophilic reagents enables modification of natural amino acids in a single transformation but proceeds via intermediates with a sufficiently long half-life in solution to capture unfavorable protein conformations. Herein, we report the use of commercially available vinyl thianthrenium tetrafluoroborate (VTT) for a single-step cross-linking strategy based on the umpolung of native cysteinyl thiols to electrophilic episulfonium ions in cells. We demonstrate that the umpolung reaction proceeds within minutes in various cell types. Even when competing with cysteine-reactive maleimide or iodoacetamide reagents, the fast cellular uptake of VTT enables efficient intracellular labeling and ensures the formation of products with a short and stable ethylene linker between cysteine and nucleophilic natural amino acids. We anticipate that the fast generation of episulfonium ions, which enable cross-linking without exogenous activation, will assist researchers in predicting protein structures based on quantitative proteome-wide information generated in cellulo."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.3378,
+        "title_similarity": 0.3378,
+        "candidate_year": 2025
+      },
+      {
+        "identity": "paper:bf693c4dea175cb24980be5345bc501905eab89f",
+        "candidate": {
+          "paperId": "bf693c4dea175cb24980be5345bc501905eab89f",
+          "externalIds": {
+            "PubMedCentral": "11423400",
+            "DBLP": "journals/jcisd/NunezFrancoMJP24",
+            "DOI": "10.1021/acs.jcim.4c01388",
+            "CorpusId": 272370882,
+            "PubMed": "39227031"
+          },
+          "url": "https://www.semanticscholar.org/paper/bf693c4dea175cb24980be5345bc501905eab89f",
+          "title": "AlphaFold2 Predicts Alternative Conformation Populations in Green Fluorescent Protein Variants",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://pubs.acs.org/doi/pdf/10.1021/acs.jcim.4c01388?ref=article_openPDF",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11423400, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-09-03",
+          "journal": {
+            "name": "Journal of Chemical Information and Modeling",
+            "pages": "7135 - 7140",
+            "volume": "64"
+          },
+          "authors": [
+            {
+              "authorId": "2042654232",
+              "name": "Reyes Núñez‐Franco"
+            },
+            {
+              "authorId": "2319445696",
+              "name": "M. M. Muriel-Olaya"
+            },
+            {
+              "authorId": "2238413294",
+              "name": "Gonzalo Jiménez‐Osés"
+            },
+            {
+              "authorId": "14795448",
+              "name": "Francesca Peccati"
+            }
+          ],
+          "abstract": "Artificial intelligence-based protein structure prediction methods such as AlphaFold2 have emerged as powerful tools for characterizing proteins sequence-structure relationship offering unprecedented opportunities for the molecular interpretation of biological and biochemical phenomena. While initially confined to providing a static representation of proteins through their global free-energy minimum, AlphaFold2 has demonstrated the ability to partially sample conformational landscapes, providing insights into protein dynamics, which is fundamental for interpreting and potentially tuning the function of natural and artificial proteins. In this study, we show that targeted column masking of AlphaFold2’s multiple sequence alignment enables the characterization and estimation of the population ratio of the two main conformations of engineered green fluorescent proteins with alternative β-strands. The possibility of quickly estimating relative populations through AlphaFold2 predictions is expected to speed-up the computational design of related systems for sensing applications."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.3183,
+        "title_similarity": 0.3183,
+        "candidate_year": 2024
+      },
+      {
+        "identity": "paper:be4621b779adb4cf63840d744b3f9826c2c98c4d",
+        "candidate": {
+          "paperId": "be4621b779adb4cf63840d744b3f9826c2c98c4d",
+          "externalIds": {
+            "PubMedCentral": "9704708",
+            "DOI": "10.1073/pnas.2213432119",
+            "CorpusId": 253521276,
+            "PubMed": "36378644"
+          },
+          "url": "https://www.semanticscholar.org/paper/be4621b779adb4cf63840d744b3f9826c2c98c4d",
+          "title": "De novo sequencing and construction of a unique antibody for the recognition of alternative conformations of cytochrome c in cells",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1073/pnas.2213432119",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9704708, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-11-15",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences of the United States of America",
+            "volume": "119"
+          },
+          "authors": [
+            {
+              "authorId": "15719792",
+              "name": "Florencia Tomasina"
+            },
+            {
+              "authorId": "2227286580",
+              "name": "Jennyfer Mart ı nez"
+            },
+            {
+              "authorId": "2159482",
+              "name": "A. Zeida"
+            },
+            {
+              "authorId": "2364454161",
+              "name": "Mar ı a Laura Chiribao"
+            },
+            {
+              "authorId": "2227307823",
+              "name": "onica Demicheli"
+            },
+            {
+              "authorId": "2404837592",
+              "name": "Agustín Correa"
+            },
+            {
+              "authorId": "4069024",
+              "name": "C. Quijano"
+            },
+            {
+              "authorId": "49907972",
+              "name": "L. Castro"
+            },
+            {
+              "authorId": "4562525",
+              "name": "R. Carnahan"
+            },
+            {
+              "authorId": "39199776",
+              "name": "P. Vinson"
+            },
+            {
+              "authorId": "1857492526",
+              "name": "M. Goff"
+            },
+            {
+              "authorId": "49576525",
+              "name": "Tracy L. Cooper"
+            },
+            {
+              "authorId": "144344148",
+              "name": "W. McDonald"
+            },
+            {
+              "authorId": "3123550",
+              "name": "N. Castellana"
+            },
+            {
+              "authorId": "6276603",
+              "name": "L. Hannibal"
+            },
+            {
+              "authorId": "91180169",
+              "name": "Paul T. Morse"
+            },
+            {
+              "authorId": "34422198",
+              "name": "Junmei Wan"
+            },
+            {
+              "authorId": "2227286576",
+              "name": "Maik H € uttemann"
+            },
+            {
+              "authorId": "6247462",
+              "name": "R. Jemmerson"
+            },
+            {
+              "authorId": "5507674",
+              "name": "L. Piacenza"
+            },
+            {
+              "authorId": "4322410",
+              "name": "R. Radi"
+            },
+            {
+              "authorId": "2072638569",
+              "name": "M. D. L. Rosa"
+            },
+            {
+              "authorId": "5690411",
+              "name": "M. Mamula"
+            }
+          ],
+          "abstract": "Significance Cytochrome c (cyt c) is an abundant heme protein that, in its native conformation, plays essential roles in mitochondrial bioenergetics and apoptotic signaling in mammalian cells. The dynamic properties of cyt c confers substantial plasticity to produce alternative conformations in vitro, but their detection in cellula remains essentially unexplored. We have restored by de novo sequencing a unique monoclonal antibody (R1D3) recognizing conformationally altered cyt c proteoforms. R1D3 application to different cell models showed that alternative cyt c conformers are translocated from mitochondria to the nuclei without triggering apoptosis. R1D3 represents a unique immunochemical tool for mitochondrial and cell biology, encompassing knowledge of protein dynamics and plasticity with the identification of noncanonical structures and functions of cyt c in vivo."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.31,
+        "title_similarity": 0.31,
+        "candidate_year": 2022
+      },
+      {
+        "identity": "paper:f97964fd13dfccf136dfca52a9d9e4840e34211b",
+        "candidate": {
+          "paperId": "f97964fd13dfccf136dfca52a9d9e4840e34211b",
+          "externalIds": {
+            "MAG": "3163449584",
+            "DOI": "10.1002/prot.26068",
+            "CorpusId": 232048029,
+            "PubMed": "33629765"
+          },
+          "url": "https://www.semanticscholar.org/paper/f97964fd13dfccf136dfca52a9d9e4840e34211b",
+          "title": "Predicting new protein conformations from molecular dynamics simulation conformational landscapes and machine learning",
+          "venue": "Proteins: Structure, Function, and Bioinformatics",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://www.authorea.com/doi/pdf/10.22541/au.159670261.13926984",
+            "status": "GREEN",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/prot.26068?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/prot.26068, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-08-06",
+          "journal": {
+            "name": "Proteins: Structure",
+            "pages": "915 - 921",
+            "volume": "89"
+          },
+          "authors": [
+            {
+              "authorId": "2110838680",
+              "name": "Yiming Jin"
+            },
+            {
+              "authorId": "3521590",
+              "name": "L. Johannissen"
+            },
+            {
+              "authorId": "145938833",
+              "name": "Sam Hay"
+            }
+          ],
+          "abstract": "Molecular dynamics (MD) simulations are a popular method of studying protein structure and function, but are unable to reliably sample all relevant conformational space in reasonable computational timescales. A range of enhanced sampling methods are available that can improve conformational sampling, but these do not offer a complete solution. We present here a proof‐of‐principle method of combining MD simulation with machine learning to explore protein conformational space. An autoencoder is used to map snapshots from MD simulations onto a user‐defined conformational landscape defined by principal components analysis or specific structural features, and we show that we can predict, with useful accuracy, conformations that are not present in the training data. This method offers a new approach to the prediction of new low energy/physically realistic structures of conformationally dynamic proteins and allows an alternative approach to enhanced sampling of MD simulations."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.31,
+        "title_similarity": 0.31,
+        "candidate_year": 2020
+      },
+      {
+        "identity": "paper:d3cca92c310db348384ce97fdcda514e0a5da6d4",
+        "candidate": {
+          "paperId": "d3cca92c310db348384ce97fdcda514e0a5da6d4",
+          "externalIds": {
+            "DBLP": "journals/jcisd/ChiesaKK25",
+            "DOI": "10.1021/acs.jcim.5c00489",
+            "CorpusId": 278998583,
+            "PubMed": "40440630"
+          },
+          "url": "https://www.semanticscholar.org/paper/d3cca92c310db348384ce97fdcda514e0a5da6d4",
+          "title": "Modeling Active-State Conformations of G-Protein-Coupled Receptors Using AlphaFold2 via Template Bias and Explicit Protein Constrains",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jcim.5c00489?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jcim.5c00489, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-05-29",
+          "journal": {
+            "name": "Journal of chemical information and modeling"
+          },
+          "authors": [
+            {
+              "authorId": "2261374922",
+              "name": "Luca Chiesa"
+            },
+            {
+              "authorId": "2374320836",
+              "name": "D. Khasanova"
+            },
+            {
+              "authorId": "2261374376",
+              "name": "Esther Kellenberger"
+            }
+          ],
+          "abstract": "AlphaFold2 and other deep learning tools represent the state of the art for protein structure prediction; however, they are still limited in their ability to model multiple protein conformations. Since the function of many proteins depends on their ability to assume different stable conformational states, different approaches are required to access these alternative conformations. G-protein-coupled receptors regulate intracellular signaling by assuming two main conformational states: an active state able to bind G-protein and an inactive state. Receptor activation is characterized by large conformational changes at the intracellular region, where the G-protein interacts, accompanied by more subtle structural rearrangements at the extracellular ligand-binding site. Retrospective studies have demonstrated that, for many receptors, the inactive state is the favored conformation generated by AlphaFold2 when the receptor is modeled alone, while active-state structures can only be modeled by introducing a conformational bias in the template information used for the prediction or by explicitly incorporating the binding of a ligand into the modeled system. This benchmarking study extends previous analyses, confirming the opportunities of deep learning tools for modeling G-protein complexed to the active state of receptor, while also revealing limitations in the modeling of allosteric effects, particularly the reduced accuracy of predictions at the receptor extracellular site, which may impact their applicability in structure-based drug design."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.3012,
+        "title_similarity": 0.3012,
+        "candidate_year": 2025
+      },
+      {
+        "identity": "paper:e04cf2c4882ef1cf741a88c918b0fb5b852f679d",
+        "candidate": {
+          "paperId": "e04cf2c4882ef1cf741a88c918b0fb5b852f679d",
+          "externalIds": {
+            "PubMedCentral": "11934219",
+            "DOI": "10.1002/pro.70105",
+            "CorpusId": 277276106,
+            "PubMed": "40130805"
+          },
+          "url": "https://www.semanticscholar.org/paper/e04cf2c4882ef1cf741a88c918b0fb5b852f679d",
+          "title": "AlphaFold2's training set powers its predictions of some fold‐switched conformations",
+          "venue": "Protein Science",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11934219, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-03-25",
+          "journal": {
+            "name": "Protein Science : A Publication of the Protein Society",
+            "volume": "34"
+          },
+          "authors": [
+            {
+              "authorId": "2249958969",
+              "name": "Joseph W. Schafer"
+            },
+            {
+              "authorId": "2274944624",
+              "name": "Lauren L. Porter"
+            }
+          ],
+          "abstract": "AlphaFold2 (AF2), a deep‐learning‐based model that predicts protein structures from their amino acid sequences, has recently been used to predict multiple protein conformations. In some cases, AF2 has successfully predicted both dominant and alternative conformations of fold‐switching proteins, which remodel their secondary and/or tertiary structures in response to cellular stimuli. Whether AF2 has learned enough protein folding principles to reliably predict alternative conformations outside of its training set is unclear. Previous work suggests that AF2 predicted these alternative conformations by memorizing them during training. Here, we use CFold—an implementation of the AF2 network trained on a more limited subset of experimentally determined protein structures—to directly test how well the AF2 architecture predicts alternative conformations of fold switchers outside of its training set. We tested CFold on eight fold switchers from six protein families. These proteins—whose secondary structures switch between α‐helix and β‐sheet and/or whose hydrogen bonding networks are reconfigured dramatically—had not been tested previously, and only one of their alternative conformations was in CFold's training set. Successful CFold predictions would indicate that the AF2 architecture can predict disparate alternative conformations of fold‐switched conformations outside of its training set, while unsuccessful predictions would suggest that AF2 predictions of these alternative conformations likely arise from association with structures learned during training. Despite sampling 1300–4300 structures/protein with various sequence sampling techniques, CFold predicted only one alternative structure outside of its training set accurately and with high confidence while also generating experimentally inconsistent structures with higher confidence. Though these results indicate that AF2's current success in predicting alternative conformations of fold switchers stems largely from its training data, results from a sequence pruning technique suggest developments that could lead to a more reliable generative model in the future."
+        },
+        "query": "structure prediciton of alternative protein conformations",
+        "score": 0.155,
+        "title_similarity": 0.155,
+        "candidate_year": 2025
+      }
+    ]
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/bib-36e739997c5a5d48.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/bib-36e739997c5a5d48.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/bib-36e739997c5a5d48.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "metadata_stub"
+  },
+  "manual_override": {
+    "raw_bibtex": "@article{bryant2024structure,\n  title={Structure prediction of alternative protein conformations},\n  author={Bryant, Patrick and No{\\'e}, Frank},\n  journal={Nature Communications},\n  volume={15},\n  number={1},\n  pages={7328},\n  year={2024},\n  publisher={Nature Publishing Group UK London},\n  abstract={Proteins are dynamic molecules whose movements result in different conformations with different functions. Neural networks such as AlphaFold2 can predict the structure of single-chain proteins with conformations most likely to exist in the PDB. However, almost all protein structures with multiple conformations represented in the PDB have been used while training these models. Therefore, it is unclear whether alternative protein conformations can be genuinely predicted using these networks, or if they are simply reproduced from memory. Here, we train a structure prediction network, Cfold, on a conformational split of the PDB to generate alternative conformations. Cfold enables efficient exploration of the conformational landscape of monomeric protein structures. Over 50% of experimentally known nonredundant alternative protein conformations evaluated here are predicted with high accuracy (TM-score > 0.8).}\n}",
+    "parsed_bibtex_type": "article",
+    "source_note": "pasted into library_add.py ref flow",
+    "bibtex_key": "bryant2024structure"
+  }
+}

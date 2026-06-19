@@ -1,0 +1,1105 @@
+{
+  "paper_id": "sha256-b9969fac62e73d1e",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_genome/Stark 2024 Nature - Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo.pdf",
+  "pdf_sha256": "b9969fac62e73d1ebf53f012df7f4c7f98142fb244992aff3d69c08b19a4bc67",
+  "filename": "Stark 2024 Nature - Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo.pdf",
+  "item_type": "article",
+  "title_query": "Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo",
+  "filename_hints": {
+    "year_hint": 2024,
+    "venue_hint": "nature",
+    "prefix": "Stark 2024 Nature"
+  },
+  "doi_candidates": [
+    "10.1038/s41586-023-06905-9"
+  ],
+  "date_indexed": "2026-04-17T03:30:58.451348+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2024!=2023"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "d4fb76baba4ee5eb5827188116ccd4ce86d044d3",
+      "externalIds": {
+        "PubMedCentral": "10830412",
+        "DOI": "10.1038/s41586-023-06905-9",
+        "CorpusId": 266224265,
+        "PubMed": "38086418"
+      },
+      "url": "https://www.semanticscholar.org/paper/d4fb76baba4ee5eb5827188116ccd4ce86d044d3",
+      "title": "Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo",
+      "venue": "Nature",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41586-023-06905-9_reference.pdf",
+        "status": "BRONZE",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10830412, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2023-12-12",
+      "journal": {
+        "name": "Nature",
+        "pages": "207 - 211",
+        "volume": "626"
+      },
+      "authors": [
+        {
+          "authorId": "2090852685",
+          "name": "B. P. de Almeida"
+        },
+        {
+          "authorId": "2276842289",
+          "name": "Christoph Schaub"
+        },
+        {
+          "authorId": "36310147",
+          "name": "Michaela Pagani"
+        },
+        {
+          "authorId": "14760640",
+          "name": "S. Secchia"
+        },
+        {
+          "authorId": "1699679",
+          "name": "E. Furlong"
+        },
+        {
+          "authorId": "73547297",
+          "name": "Alexander Stark"
+        }
+      ],
+      "abstract": "Enhancers control gene expression and have crucial roles in development and homeostasis1–3. However, the targeted de novo design of enhancers with tissue-specific activities has remained challenging. Here we combine deep learning and transfer learning to design tissue-specific enhancers for five tissues in the Drosophila melanogaster embryo: the central nervous system, epidermis, gut, muscle and brain. We first train convolutional neural networks using genome-wide single-cell assay for transposase-accessible chromatin with sequencing (ATAC-seq) datasets and then fine-tune the convolutional neural networks with smaller-scale data from in vivo enhancer activity assays, yielding models with 13% to 76% positive predictive value according to cross-validation. We designed and experimentally assessed 40 synthetic enhancers (8 per tissue) in vivo, of which 31 (78%) were active and 27 (68%) functioned in the target tissue (100% for central nervous system and muscle). The strategy of combining genome-wide and small-scale functional datasets by transfer learning is generally applicable and should enable the design of tissue-, cell type- and cell state-specific enhancers in any system. Deep learning and transfer learning were used to design tissue-specific enhancers in the Drosophila embryo that were active and specific, validating this approach to achieve tissue-, cell type- and cell state-specific expression control."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "d4fb76baba4ee5eb5827188116ccd4ce86d044d3",
+        "title": "Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2024,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41586-023-06905-9"
+    ],
+    "matching_extracted_doi": "10.1038/s41586-023-06905-9",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "d4fb76baba4ee5eb5827188116ccd4ce86d044d3",
+          "externalIds": {
+            "PubMedCentral": "10830412",
+            "DOI": "10.1038/s41586-023-06905-9",
+            "CorpusId": 266224265,
+            "PubMed": "38086418"
+          },
+          "url": "https://www.semanticscholar.org/paper/d4fb76baba4ee5eb5827188116ccd4ce86d044d3",
+          "title": "Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo",
+          "venue": "Nature",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41586-023-06905-9_reference.pdf",
+            "status": "BRONZE",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10830412, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-12-12",
+          "journal": {
+            "name": "Nature",
+            "pages": "207 - 211",
+            "volume": "626"
+          },
+          "authors": [
+            {
+              "authorId": "2090852685",
+              "name": "B. P. de Almeida"
+            },
+            {
+              "authorId": "2276842289",
+              "name": "Christoph Schaub"
+            },
+            {
+              "authorId": "36310147",
+              "name": "Michaela Pagani"
+            },
+            {
+              "authorId": "14760640",
+              "name": "S. Secchia"
+            },
+            {
+              "authorId": "1699679",
+              "name": "E. Furlong"
+            },
+            {
+              "authorId": "73547297",
+              "name": "Alexander Stark"
+            }
+          ],
+          "abstract": "Enhancers control gene expression and have crucial roles in development and homeostasis1–3. However, the targeted de novo design of enhancers with tissue-specific activities has remained challenging. Here we combine deep learning and transfer learning to design tissue-specific enhancers for five tissues in the Drosophila melanogaster embryo: the central nervous system, epidermis, gut, muscle and brain. We first train convolutional neural networks using genome-wide single-cell assay for transposase-accessible chromatin with sequencing (ATAC-seq) datasets and then fine-tune the convolutional neural networks with smaller-scale data from in vivo enhancer activity assays, yielding models with 13% to 76% positive predictive value according to cross-validation. We designed and experimentally assessed 40 synthetic enhancers (8 per tissue) in vivo, of which 31 (78%) were active and 27 (68%) functioned in the target tissue (100% for central nervous system and muscle). The strategy of combining genome-wide and small-scale functional datasets by transfer learning is generally applicable and should enable the design of tissue-, cell type- and cell state-specific enhancers in any system. Deep learning and transfer learning were used to design tissue-specific enhancers in the Drosophila embryo that were active and specific, validating this approach to achieve tissue-, cell type- and cell state-specific expression control."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            9
+          ]
+        ],
+        "date-time": "2026-04-09T03:14:01Z",
+        "timestamp": 1775704441220,
+        "version": "3.50.1"
+      },
+      "reference-count": 68,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "7997",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                12
+              ]
+            ],
+            "date-time": "2023-12-12T00:00:00Z",
+            "timestamp": 1702339200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                12,
+                12
+              ]
+            ],
+            "date-time": "2023-12-12T00:00:00Z",
+            "timestamp": 1702339200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nature"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            2,
+            1
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title><jats:p>Enhancers control gene expression and have crucial roles in development and homeostasis<jats:sup>1–3</jats:sup>. However, the targeted de novo design of enhancers with tissue-specific activities has remained challenging. Here we combine deep learning and transfer learning to design tissue-specific enhancers for five tissues in the <jats:italic>Drosophila melanogaster</jats:italic> embryo: the central nervous system, epidermis, gut, muscle and brain. We first train convolutional neural networks using genome-wide single-cell assay for transposase-accessible chromatin with sequencing (ATAC-seq) datasets and then fine-tune the convolutional neural networks with smaller-scale data from in vivo enhancer activity assays, yielding models with 13% to 76% positive predictive value according to cross-validation. We designed and experimentally assessed 40 synthetic enhancers (8 per tissue) in vivo, of which 31 (78%) were active and 27 (68%) functioned in the target tissue (100% for central nervous system and muscle). The strategy of combining genome-wide and small-scale functional datasets by transfer learning is generally applicable and should enable the design of tissue-, cell type- and cell state-specific enhancers in any system.</jats:p>",
+      "DOI": "10.1038/s41586-023-06905-9",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            12
+          ]
+        ],
+        "date-time": "2023-12-12T17:02:27Z",
+        "timestamp": 1702400547000
+      },
+      "page": "207-211",
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 80,
+      "title": [
+        "Targeted design of synthetic enhancers for selected tissues in the Drosophila embryo"
+      ],
+      "prefix": "10.1038",
+      "volume": "626",
+      "author": [
+        {
+          "given": "Bernardo P.",
+          "family": "de Almeida",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3714-0050",
+          "authenticated-orcid": false,
+          "given": "Christoph",
+          "family": "Schaub",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Michaela",
+          "family": "Pagani",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1000-8543",
+          "authenticated-orcid": false,
+          "given": "Stefano",
+          "family": "Secchia",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9544-8339",
+          "authenticated-orcid": false,
+          "given": "Eileen E. M.",
+          "family": "Furlong",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2611-0841",
+          "authenticated-orcid": false,
+          "given": "Alexander",
+          "family": "Stark",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            12
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "6905_CR1",
+          "doi-asserted-by": "publisher",
+          "first-page": "R754",
+          "DOI": "10.1016/j.cub.2010.06.070",
+          "volume": "20",
+          "author": "M Levine",
+          "year": "2010",
+          "unstructured": "Levine, M. Transcriptional enhancers in animal development and evolution. Curr. Biol. 20, R754–R763 (2010).",
+          "journal-title": "Curr. Biol."
+        },
+        {
+          "key": "6905_CR2",
+          "doi-asserted-by": "publisher",
+          "first-page": "299",
+          "DOI": "10.1016/0092-8674(81)90413-X",
+          "volume": "27",
+          "author": "J Banerji",
+          "year": "1981",
+          "unstructured": "Banerji, J., Rusconi, S. & Schaffner, W. Expression of a β-globin gene is enhanced by remote SV40 DNA sequences. Cell 27, 299–308 (1981).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "6905_CR3",
+          "doi-asserted-by": "publisher",
+          "first-page": "272",
+          "DOI": "10.1038/nrg3682",
+          "volume": "15",
+          "author": "D Shlyueva",
+          "year": "2014",
+          "unstructured": "Shlyueva, D., Stampfel, G. & Stark, A. Transcriptional enhancers: From properties to genome-wide predictions. Nat. Rev. Genet. 15, 272–286 (2014).",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "6905_CR4",
+          "doi-asserted-by": "publisher",
+          "first-page": "91",
+          "DOI": "10.1038/nature13395",
+          "volume": "512",
+          "author": "EZ Kvon",
+          "year": "2014",
+          "unstructured": "Kvon, E. Z. et al. Genome-scale functional characterization of Drosophila developmental enhancers in vivo. Nature 512, 91–95 (2014).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "6905_CR5",
+          "doi-asserted-by": "publisher",
+          "first-page": "D88",
+          "DOI": "10.1093/nar/gkl822",
+          "volume": "35",
+          "author": "A Visel",
+          "year": "2007",
+          "unstructured": "Visel, A., Minovitsky, S., Dubchak, I. & Pennacchio, L. A. VISTA Enhancer Browser—a database of tissue-specific human enhancers. Nucleic Acids Res. 35, D88–D92 (2007).",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "6905_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "613",
+          "DOI": "10.1038/s41588-022-01048-5",
+          "volume": "54",
+          "author": "BP de Almeida",
+          "year": "2022",
+          "unstructured": "de Almeida, B. P., Reiter, F., Pagani, M. & Stark, A. DeepSTARR predicts enhancer activity from DNA sequence and enables the de novo design of synthetic enhancers. Nat. Genet. 54, 613–624 (2022).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "6905_CR7",
+          "unstructured": "Yosinski, J., Clune, J., Bengio, Y. & Lipson, H. in Advances in Neural Information Processing Systems, Vol. 27 (Curran Associates, 2014)."
+        },
+        {
+          "key": "6905_CR8",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13059-021-02581-y",
+          "volume": "23",
+          "author": "SC Zheng",
+          "year": "2022",
+          "unstructured": "Zheng, S. C. et al. Universal prediction of cell-cycle position using transfer learning. Genome Biol. 23, 41 (2022).",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "6905_CR9",
+          "doi-asserted-by": "publisher",
+          "first-page": "616",
+          "DOI": "10.1038/s41586-023-06139-9",
+          "volume": "618",
+          "author": "CV Theodoris",
+          "year": "2023",
+          "unstructured": "Theodoris, C. V. et al. Transfer learning enables predictions in network biology. Nature 618, 616–624 (2023).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "6905_CR10",
+          "doi-asserted-by": "publisher",
+          "first-page": "1118",
+          "DOI": "10.1038/s41592-020-0960-3",
+          "volume": "17",
+          "author": "R Schwessinger",
+          "year": "2020",
+          "unstructured": "Schwessinger, R. et al. DeepC: predicting 3D genome folding using megabase-scale transfer learning. Nat. Methods 17, 1118–1124 (2020).",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "6905_CR11",
+          "doi-asserted-by": "publisher",
+          "first-page": "lqad026",
+          "DOI": "10.1093/nargab/lqad026",
+          "volume": "5",
+          "author": "M Salvatore",
+          "year": "2023",
+          "unstructured": "Salvatore, M., Horlacher, M., Marsico, A., Winther, O. & Andersson, R. Transfer learning identifies sequence determinants of cell-type specific regulatory element accessibility. NAR Genomics Bioinformatics 5, lqad026 (2023).",
+          "journal-title": "NAR Genomics Bioinformatics"
+        },
+        {
+          "key": "6905_CR12",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/s13059-021-02499-5",
+          "volume": "22",
+          "author": "G Novakovsky",
+          "year": "2021",
+          "unstructured": "Novakovsky, G., Saraswat, M., Fornes, O., Mostafavi, S. & Wasserman, W. W. Biologically relevant transfer learning improves transcription factor binding prediction. Genome Biol. 22, 280 (2021).",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "6905_CR13",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Bravo González-Blas, C. et al. Enhancer grammar of liver cell types and hepatocyte zonation states. Preprint at bioRxiv https://doi.org/10.1101/2022.12.08.519575 (2022).",
+          "DOI": "10.1101/2022.12.08.519575"
+        },
+        {
+          "key": "6905_CR14",
+          "doi-asserted-by": "publisher",
+          "first-page": "630",
+          "DOI": "10.1038/s41586-021-04262-z",
+          "volume": "601",
+          "author": "J Janssens",
+          "year": "2022",
+          "unstructured": "Janssens, J. et al. Decoding gene regulation in the fly brain. Nature 601, 630–636 (2022).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "6905_CR15",
+          "doi-asserted-by": "publisher",
+          "first-page": "eaba7612",
+          "DOI": "10.1126/science.aba7612",
+          "volume": "370",
+          "author": "S Domcke",
+          "year": "2020",
+          "unstructured": "Domcke, S. et al. A human cell atlas of fetal chromatin accessibility. Science 370, eaba7612 (2020).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "6905_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "eabn5800",
+          "DOI": "10.1126/science.abn5800",
+          "volume": "377",
+          "author": "D Calderon",
+          "year": "2022",
+          "unstructured": "Calderon, D. et al. The continuum of Drosophila embryonic development at single-cell resolution. Science 377, eabn5800 (2022).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "6905_CR17",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1008050",
+          "DOI": "10.1371/journal.pcbi.1008050",
+          "volume": "16",
+          "author": "DR Kelley",
+          "year": "2020",
+          "unstructured": "Kelley, D. R. Cross-species regulatory sequence activity prediction. PLoS Comput. Biol. 16, e1008050 (2020).",
+          "journal-title": "PLoS Comput. Biol."
+        },
+        {
+          "key": "6905_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "990",
+          "DOI": "10.1101/gr.200535.115",
+          "volume": "26",
+          "author": "DR Kelley",
+          "year": "2016",
+          "unstructured": "Kelley, D. R., Snoek, J. & Rinn, J. L. Basset: learning the regulatory code of the accessible genome with deep convolutional neural networks. Genome Res. 26, 990–999 (2016).",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "6905_CR19",
+          "doi-asserted-by": "publisher",
+          "first-page": "739",
+          "DOI": "10.1101/gr.227819.117",
+          "volume": "28",
+          "author": "DR Kelley",
+          "year": "2018",
+          "unstructured": "Kelley, D. R. et al. Sequential regulatory activity prediction across chromosomes with convolutional neural networks. Genome Res. 28, 739–750 (2018).",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "6905_CR20",
+          "doi-asserted-by": "publisher",
+          "first-page": "1564",
+          "DOI": "10.1038/s41588-021-00947-3",
+          "volume": "53",
+          "author": "D Kim",
+          "year": "2021",
+          "unstructured": "Kim, D. et al. The dynamic, combinatorial cis-regulatory lexicon of epidermal differentiation. Nat. Genet. 53, 1564–1576 (2021).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "6905_CR21",
+          "unstructured": "Shrikumar, A. et al. TF-MoDISco v0.4.4.2-alpha: technical note. Preprint at https://arxiv.org/abs/1811.00416v1 (2018)."
+        },
+        {
+          "key": "6905_CR22",
+          "unstructured": "Shrikumar, A., Greenside, P. & Kundaje, A. Learning important features through propagating activation differences. Preprint at https://arxiv.org/abs/1704.02685 (2017)."
+        },
+        {
+          "key": "6905_CR23",
+          "doi-asserted-by": "publisher",
+          "first-page": "56",
+          "DOI": "10.1038/s42256-019-0138-9",
+          "volume": "2",
+          "author": "SM Lundberg",
+          "year": "2020",
+          "unstructured": "Lundberg, S. M. et al. From local explanations to global understanding with explainable AI for trees. Nat. Mach. Intell. 2, 56–67 (2020).",
+          "journal-title": "Nat. Mach. Intell."
+        },
+        {
+          "key": "6905_CR24",
+          "unstructured": "Lundberg, S. M. & Lee, S.-I. in 31st Conference on Neural Information Processing Systems (ACM, 2017)."
+        },
+        {
+          "key": "6905_CR25",
+          "first-page": "55",
+          "volume": "12",
+          "author": "CQ Doe",
+          "year": "2017",
+          "unstructured": "Doe, C. Q. Temporal patterning in the Drosophila CNS. Annu. Rev. Cell Dev. Biol. 12, 55 (2017).",
+          "journal-title": "Annu. Rev. Cell Dev. Biol."
+        },
+        {
+          "key": "6905_CR26",
+          "doi-asserted-by": "publisher",
+          "first-page": "1011",
+          "DOI": "10.1038/s41588-018-0140-x",
+          "volume": "50",
+          "author": "J Jacobs",
+          "year": "2018",
+          "unstructured": "Jacobs, J. et al. The transcription factor Grainy head primes epithelial enhancers for spatiotemporal activation by displacing nucleosomes. Nat. Genet. 50, 1011–1020 (2018).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "6905_CR27",
+          "doi-asserted-by": "publisher",
+          "first-page": "272",
+          "DOI": "10.1016/j.ydbio.2013.12.012",
+          "volume": "386",
+          "author": "P Spahn",
+          "year": "2014",
+          "unstructured": "Spahn, P. et al. Multiple regulatory safeguards confine the expression of the GATA factor serpent to the hemocyte primordium within the Drosophila mesoderm. Dev. Biol. 386, 272–279 (2014).",
+          "journal-title": "Dev. Biol."
+        },
+        {
+          "key": "6905_CR28",
+          "doi-asserted-by": "publisher",
+          "first-page": "1123",
+          "DOI": "10.1242/dev.120.5.1123",
+          "volume": "120",
+          "author": "R Reuter",
+          "year": "1994",
+          "unstructured": "Reuter, R. The gene serpent has homeotic properties and specifies endoderm versus ectoderm within the Drosophila gut. Development 120, 1123–1135 (1994).",
+          "journal-title": "Development"
+        },
+        {
+          "key": "6905_CR29",
+          "first-page": "474",
+          "volume": "306",
+          "author": "BE Aronson",
+          "year": "2014",
+          "unstructured": "Aronson, B. E., Stapleton, K. A., Krasinski, S. D. & Friedman, D. R. Role of GATA factors in development, differentiation, and homeostasis of the small intestinal epithelium. Am. J. Physiol. 306, 474–490 (2014).",
+          "journal-title": "Am. J. Physiol."
+        },
+        {
+          "key": "6905_CR30",
+          "doi-asserted-by": "publisher",
+          "first-page": "754",
+          "DOI": "10.1016/j.ceb.2009.10.001",
+          "volume": "21",
+          "author": "L Ciglar",
+          "year": "2009",
+          "unstructured": "Ciglar, L. & Furlong, E. E. Conservation and divergence in developmental networks: a view from Drosophila myogenesis. Curr. Opin. Cell Biol. 21, 754–760 (2009).",
+          "journal-title": "Curr. Opin. Cell Biol."
+        },
+        {
+          "key": "6905_CR31",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-021-27506-y",
+          "volume": "12",
+          "author": "ED Larson",
+          "year": "2021",
+          "unstructured": "Larson, E. D. et al. Cell-type-specific chromatin occupancy by the pioneer factor Zelda drives key developmental transitions in Drosophila. Nat. Commun. 12, 7153 (2021).",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "6905_CR32",
+          "doi-asserted-by": "publisher",
+          "first-page": "407",
+          "DOI": "10.1016/j.celrep.2012.07.008",
+          "volume": "2",
+          "author": "C Berger",
+          "year": "2012",
+          "unstructured": "Berger, C. et al. FACS purification and transcriptome analysis of Drosophila neural stem cells reveals a role for Klumpfuss in self-renewal. Cell Rep. 2, 407–418 (2012).",
+          "journal-title": "Cell Rep."
+        },
+        {
+          "key": "6905_CR33",
+          "doi-asserted-by": "publisher",
+          "first-page": "538",
+          "DOI": "10.1038/nature25981",
+          "volume": "555",
+          "author": "DA Cusanovich",
+          "year": "2018",
+          "unstructured": "Cusanovich, D. A. et al. The cis-regulatory dynamics of embryonic development at single-cell resolution. Nature 555, 538–542 (2018).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "6905_CR34",
+          "doi-asserted-by": "publisher",
+          "first-page": "576",
+          "DOI": "10.1016/j.ydbio.2004.11.021",
+          "volume": "278",
+          "author": "T Okumura",
+          "year": "2005",
+          "unstructured": "Okumura, T., Matsumoto, A., Tanimura, T. & Murakami, R. An endoderm-specific GATA factor gene, dGATAe, is required for the terminal differentiation of the Drosophila endoderm. Dev. Biol. 278, 576–586 (2005).",
+          "journal-title": "Dev. Biol."
+        },
+        {
+          "key": "6905_CR35",
+          "doi-asserted-by": "publisher",
+          "first-page": "178",
+          "DOI": "10.1016/j.modgep.2006.07.001",
+          "volume": "7",
+          "author": "T Okumura",
+          "year": "2007",
+          "unstructured": "Okumura, T., Tajiri, R., Kojima, T., Saigo, K. & Murakami, R. GATAe-dependent and -independent expressions of genes in the differentiated endodermal midgut of Drosophila. Gene Expr. Patterns 7, 178–186 (2007).",
+          "journal-title": "Gene Expr. Patterns"
+        },
+        {
+          "key": "6905_CR36",
+          "doi-asserted-by": "publisher",
+          "first-page": "1055",
+          "DOI": "10.1242/dev.119.4.1055",
+          "volume": "119",
+          "author": "J Winick",
+          "year": "1993",
+          "unstructured": "Winick, J. et al. A GATA family transcription factor is expressed along the embryonic dorsoventral axis in Drosophila melanogaster. Development 119, 1055–1065 (1993).",
+          "journal-title": "Development"
+        },
+        {
+          "key": "6905_CR37",
+          "doi-asserted-by": "publisher",
+          "first-page": "5679",
+          "DOI": "10.1242/dev.126.24.5679",
+          "volume": "126",
+          "author": "K Gajewski",
+          "year": "1999",
+          "unstructured": "Gajewski, K., Fossett, N., Molkentin, J. D. & Schulz, R. A. The zinc finger proteins Pannier and GATA4 function as cardiogenic factors in Drosophila. Development 126, 5679–5688 (1999).",
+          "journal-title": "Development"
+        },
+        {
+          "key": "6905_CR38",
+          "doi-asserted-by": "publisher",
+          "first-page": "146",
+          "DOI": "10.1126/science.288.5463.146",
+          "volume": "288",
+          "author": "T Lebestky",
+          "year": "2000",
+          "unstructured": "Lebestky, T., Chang, T., Hartenstein, V. & Banerjee, U. Specification of Drosophila hematopoietic lineage by conserved transcription factors. Science 288, 146–149 (2000).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "6905_CR39",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1010653",
+          "DOI": "10.1371/journal.pgen.1010653",
+          "volume": "19",
+          "author": "ML Weinstein",
+          "year": "2023",
+          "unstructured": "Weinstein, M. L. et al. A novel role for trithorax in the gene regulatory network for a rapidly evolving fruit fly pigmentation trait. PLoS Genet. 19, e1010653 (2023).",
+          "journal-title": "PLoS Genet."
+        },
+        {
+          "key": "6905_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "E1291",
+          "DOI": "10.1073/pnas.1621150114",
+          "volume": "114",
+          "author": "SR Grossman",
+          "year": "2017",
+          "unstructured": "Grossman, S. R. et al. Systematic dissection of genomic features determining transcription factor binding and enhancer function. Proc. Natl Acad. Sci. USA 114, E1291–E1300 (2017).",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "6905_CR41",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1003711",
+          "DOI": "10.1371/journal.pcbi.1003711",
+          "volume": "10",
+          "author": "M Ghandi",
+          "year": "2014",
+          "unstructured": "Ghandi, M., Lee, D., Mohammad-noori, M. & Beer, M. A. Enhanced regulatory sequence prediction using gapped k-mer features. PLoS Comput. Biol. 10, e1003711 (2014).",
+          "journal-title": "PLoS Comput. Biol."
+        },
+        {
+          "key": "6905_CR42",
+          "doi-asserted-by": "publisher",
+          "first-page": "1147",
+          "DOI": "10.1101/gr.169243.113",
+          "volume": "24",
+          "author": "JO Yanez-Cuna",
+          "year": "2014",
+          "unstructured": "Yanez-Cuna, J. O. et al. Dissection of thousands of cell type-specific enhancers identifies dinucleotide repeat motifs as general enhancer features. Genome Res. 24, 1147–1156 (2014).",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "6905_CR43",
+          "first-page": "51",
+          "volume": "21",
+          "author": "L Vongoc",
+          "year": "2020",
+          "unstructured": "Vongoc, L., Huang, C. Y., Cassidy, C. J., Medrano, C. & Kadonaga, J. T. Identification of the human DPR core promoter element using machine learning. Nature 21, 51–60 (2020).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "6905_CR44",
+          "doi-asserted-by": "publisher",
+          "first-page": "346",
+          "DOI": "10.1101/gr.277246.122",
+          "volume": "33",
+          "author": "F Reiter",
+          "year": "2023",
+          "unstructured": "Reiter, F., de Almeida, B. P. & Stark, A. Enhancers display constrained sequence flexibility and context-specific modulation of motif function. Genome Res. 33, 346–358 (2023).",
+          "journal-title": "Genome Res."
+        },
+        {
+          "key": "6905_CR45",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Taskiran, I. I. et al. Cell type directed design of synthetic enhancers. Nature https://doi.org/10.1038/s41586-023-06936-2 (2023).",
+          "DOI": "10.1038/s41586-023-06936-2"
+        },
+        {
+          "key": "6905_CR46",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Gosai, S. et al. Machine-guided design of synthetic cell type-specific cis-regulatory elements. Preprint at bioRxiv https://doi.org/10.1101/2023.08.08.552077 (2023).",
+          "DOI": "10.1101/2023.08.08.552077"
+        },
+        {
+          "key": "6905_CR47",
+          "doi-asserted-by": "publisher",
+          "first-page": "1196",
+          "DOI": "10.1038/s41592-021-01252-x",
+          "volume": "18",
+          "author": "Ž Avsec",
+          "year": "2021",
+          "unstructured": "Avsec, Ž. et al. Effective gene expression prediction from sequence by integrating long-range interactions. Nat. Methods 18, 1196–1203 (2021).",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "6905_CR48",
+          "unstructured": "Goodfellow, I. J. et al. in Proc. 27th International Conference on Neural Information Processing Systems (MIT Press, 2014)."
+        },
+        {
+          "key": "6905_CR49",
+          "unstructured": "Rezende, D. J., Mohamed, S. & Wierstra, D. Stochastic backpropagation and approximate inference in deep generative models. Proc. 31st International Conference on Machine Learning (ICML) (2014)."
+        },
+        {
+          "key": "6905_CR50",
+          "unstructured": "Kingma, D. P. & Welling, M. Auto-encoding variational Bayes. Preprint at https://arxiv.org/abs/1312.6114 (2014)."
+        },
+        {
+          "key": "6905_CR51",
+          "unstructured": "Yang, L. et al. Diffusion models: a comprehensive survey of methods and applications. Preprint at https://arxiv.org/abs/2209.00796 (2022)."
+        },
+        {
+          "key": "6905_CR52",
+          "doi-asserted-by": "publisher",
+          "first-page": "1111",
+          "DOI": "10.1038/s41592-020-0958-x",
+          "volume": "17",
+          "author": "G Fudenberg",
+          "year": "2020",
+          "unstructured": "Fudenberg, G., Kelley, D. R. & Pollard, K. S. Predicting 3D genome folding from DNA sequence with Akita. Nat. Methods 17, 1111–1117 (2020).",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "6905_CR53",
+          "doi-asserted-by": "publisher",
+          "first-page": "725",
+          "DOI": "10.1038/s41588-022-01065-4",
+          "volume": "54",
+          "author": "J Zhou",
+          "year": "2022",
+          "unstructured": "Zhou, J. Sequence-based modeling of three-dimensional genome architecture from kilobase to chromosome scale. Nat. Genet. 54, 725–734 (2022).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "6905_CR54",
+          "doi-asserted-by": "publisher",
+          "first-page": "1728",
+          "DOI": "10.1038/nprot.2012.101",
+          "volume": "7",
+          "author": "J Feng",
+          "year": "2012",
+          "unstructured": "Feng, J., Liu, T., Qin, B., Zhang, Y. & Liu, X. S. Identifying ChIP–seq enrichment using MACS. Nat. Protoc. 7, 1728–1740 (2012).",
+          "journal-title": "Nat. Protoc."
+        },
+        {
+          "key": "6905_CR55",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/gb-2008-9-9-r137",
+          "volume": "9",
+          "author": "Y Zhang",
+          "year": "2008",
+          "unstructured": "Zhang, Y. et al. Model-based analysis of ChIP–seq (MACS). Genome Biol. 9, R137 (2008).",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "6905_CR56",
+          "unstructured": "Abadi, M. et al. TensorFlow: large-scale machine learning on heterogeneous distributed systems. Preprint at https://arxiv.org/abs/1603.04467 (2016)."
+        },
+        {
+          "key": "6905_CR57",
+          "unstructured": "Kingma, D. P. & Ba, J. L. Adam: A method for stochastic optimization. Preprint at https://arxiv.org/abs/1412.6980 (2015)."
+        },
+        {
+          "key": "6905_CR58",
+          "doi-asserted-by": "publisher",
+          "first-page": "841",
+          "DOI": "10.1093/bioinformatics/btq033",
+          "volume": "26",
+          "author": "AR Quinlan",
+          "year": "2010",
+          "unstructured": "Quinlan, A. R. & Hall, I. M. BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 26, 841–842 (2010).",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "6905_CR59",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1186/gb-2007-8-2-r24",
+          "volume": "8",
+          "author": "S Gupta",
+          "year": "2007",
+          "unstructured": "Gupta, S., Stamatoyannopoulos, J. A., Bailey, T. L. & Noble, W. S. Quantifying similarity between motifs. Genome Biol. 8, R24 (2007).",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "6905_CR60",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.18637/jss.v028.i05",
+          "volume": "28",
+          "author": "M Kuhn",
+          "year": "2008",
+          "unstructured": "Kuhn, M. Building predictive models in R using the caret package. J. Stat. Softw. 28, 1–26 (2008).",
+          "journal-title": "J. Stat. Softw."
+        },
+        {
+          "key": "6905_CR61",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1004060",
+          "DOI": "10.1371/journal.pgen.1004060",
+          "volume": "10",
+          "author": "J Erceg",
+          "year": "2014",
+          "unstructured": "Erceg, J. et al. Subtle changes in motif positioning cause tissue-specific effects on robustness of an enhancer’s activity. PLoS Genet. 10, e1004060 (2014).",
+          "journal-title": "PLoS Genet."
+        },
+        {
+          "key": "6905_CR62",
+          "doi-asserted-by": "publisher",
+          "first-page": "556",
+          "DOI": "10.1038/nature13994",
+          "volume": "518",
+          "author": "MA Zabidi",
+          "year": "2015",
+          "unstructured": "Zabidi, M. A. et al. Enhancer–core-promoter specificity separates developmental and housekeeping gene regulation. Nature 518, 556–559 (2015).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "6905_CR63",
+          "doi-asserted-by": "publisher",
+          "first-page": "3547",
+          "DOI": "10.1016/j.cub.2018.09.026",
+          "volume": "28",
+          "author": "IE Schor",
+          "year": "2018",
+          "unstructured": "Schor, I. E. et al. Non-coding RNA expression, function, and variation during Drosophila embryogenesis. Curr. Biol. 28, 3547–3561.e9 (2018).",
+          "journal-title": "Curr. Biol."
+        },
+        {
+          "key": "6905_CR64",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Schindelin, J. et al. Fiji: an open-source platform for biological-image analysis. Nat. Methods 9, 676–682 (2012).",
+          "DOI": "10.1038/nmeth.2019"
+        },
+        {
+          "key": "6905_CR65",
+          "doi-asserted-by": "publisher",
+          "first-page": "213",
+          "DOI": "10.1111/j.1365-2818.2006.01706.x",
+          "volume": "224",
+          "author": "S Bolte",
+          "year": "2006",
+          "unstructured": "Bolte, S. & Cordelières, F. P. A guided tour into subcellular colocalization analysis in light microscopy. J. Microsc. 224, 213–232 (2006).",
+          "journal-title": "J. Microsc."
+        },
+        {
+          "key": "6905_CR66",
+          "unstructured": "R Core Team. R: A language and environment for statistical computing. R Foundation for Statistical Computing. https://www.R-project.org/ (R Foundation for Statistical Computing, 2020)."
+        },
+        {
+          "key": "6905_CR67",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wickham, H. ggplot2: Elegant Graphics for Data Analysis (Springer, 2016).",
+          "DOI": "10.1007/978-3-319-24277-4"
+        },
+        {
+          "key": "6905_CR68",
+          "doi-asserted-by": "publisher",
+          "first-page": "996",
+          "DOI": "10.1101/gr.229102",
+          "volume": "12",
+          "author": "WJ Kent",
+          "year": "2002",
+          "unstructured": "Kent, W. J. et al. The Human Genome Browser at UCSC. Genome Res. 12, 996–1006 (2002).",
+          "journal-title": "Genome Res."
+        }
+      ],
+      "container-title": [
+        "Nature"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41586-023-06905-9.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41586-023-06905-9",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41586-023-06905-9.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            31
+          ]
+        ],
+        "date-time": "2024-01-31T12:05:49Z",
+        "timestamp": 1706702749000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41586-023-06905-9"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            12
+          ]
+        ]
+      },
+      "references-count": 68,
+      "journal-issue": {
+        "issue": "7997",
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              2,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "6905"
+      ],
+      "URL": "https://doi.org/10.1038/s41586-023-06905-9",
+      "relation": {},
+      "ISSN": [
+        "0028-0836",
+        "1476-4687"
+      ],
+      "issn-type": [
+        {
+          "value": "0028-0836",
+          "type": "print"
+        },
+        {
+          "value": "1476-4687",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            12
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "19 June 2023",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "28 November 2023",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "12 December 2023",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "The authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing interests"
+          }
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-b9969fac62e73d1e.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-b9969fac62e73d1e.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-b9969fac62e73d1e.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "0a01434fe63d2d130fd652a851288a6722ace858839523fc5e99ac98274e1fb9",
+    "chunk_count": 34,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

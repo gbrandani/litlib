@@ -1,0 +1,2261 @@
+[Page 1]
+
+Resource
+
+Single-Molecule Nanoscopy Elucidates RNA Polymerase II Transcription at Single Genes in Live Cells Graphical Abstract
+
+Authors Single-molecule imaging at single genes in live cells by background suppression using target-locking 3D STED
+
+Off
+
+Off On
+
+Off
+
+Jieru Li, Ankun Dong, Kamola Saydaminova, ..., Hiroshi Ochiai, Takashi Yamamoto, Alexandros Pertsinidis
+
+Correspondence pertsina@mskcc.org
+
+Off
+
+Real-time visualization of Pol II dynamics during the transcription cycle
+
+Off
+
+Pol II
+
+Mediator
+
+P-TEFb
+
+Sox2
+
+Brd4
+
+Control of target promoter amplitude and bursting kinetics by focal accumulation of regulatory factors at enhancers
+
+Highlights
+
+Real-time single-molecule detection in high-background, crowded cellular locales
+
+Imaging and tracking Pol II at single genes during the transcription cycle
+
+Organization, dynamics, and interdependencies of enhancer-bound regulatory factors
+
+Dissection of enhancer mechanisms at the endogenous Pou5f1 and Nanog
+
+Li et al., 2019, Cell 178, 491–506 July 11, 2019 a 2019 Elsevier Inc. https://doi.org/10.1016/j.cell.2019.05.029
+
+In Brief Key limitations of imaging single copies of highly abundant factors at specific intracellular sites of activity are overcome by an active target-locking system that achieves long-term tracking at singlemolecule resolution.
+
+[Page 2]
+
+Resource Single-Molecule Nanoscopy Elucidates RNA Polymerase II Transcription at Single Genes in Live Cells Jieru Li,1,5 Ankun Dong,1,2,5 Kamola Saydaminova,1 Hill Chang,1,3 Guanshi Wang,1 Hiroshi Ochiai,4 Takashi Yamamoto,4 and Alexandros Pertsinidis1,6,* 1Structural Biology Program, Memorial Sloan Kettering Cancer Center, New York, NY 10065, USA 2Department of Physics, Brown University, Providence, RI 02912, USA 3Department of Biomedical Engineering, Rutgers University, Piscataway, NJ 08854, USA 4Program of Mathematical and Life Sciences, Graduate School of Integrated Sciences for Life, Hiroshima University, Higashi-Hiroshima 739-8526, Japan 5These authors contributed equally 6Lead Contact *Correspondence: pertsina@mskcc.org https://doi.org/10.1016/j.cell.2019.05.029
+
+SUMMARY
+
+Transforming the vast knowledge from genetics, biochemistry, and structural biology into detailed molecular descriptions of biological processes inside cells remains a major challenge—one in sore need of better imaging technologies. For example, transcription involves the complex interplay between RNA polymerase II (Pol II), regulatory factors (RFs), and chromatin, but visualizing these dynamic molecular transactions in their native intracellular milieu remains elusive. Here, we zoom into single tagged genes using nanoscopy techniques, including an active target-locking, ultra-sensitive system that enables single-molecule detection in addressable subdiffraction volumes, within crowded intracellular environments. We image, track, and quantify Pol II with single-molecule resolution, unveiling its dynamics during the transcription cycle. Further probing multiple functionally linked events—RF-chromatin interactions, Pol II dynamics, and nascent transcription kinetics—reveals detailed operational parameters of gene-regulatory mechanisms hitherto-unseen in vivo. Our approach sets the stage for single-molecule studies of complex molecular processes in live cells. INTRODUCTION Our knowledge of biological processes has vastly expanded over the past few decades. Genetics; biochemistry; and molecular, cellular, and structural biology studies identified key components and interactions, provided snapshots of macromolecules in action, and began to elaborate on the dynamic and interconnected nature of biological pathways. A major challenge is transforming this vast knowledge base into a
+
+complete description of how biological processes take place inside live cells. Developing tools to visualize complex molecular transactions at exact intracellular locales is a pressing unmet need. Gene control is fundamental across biomedical fields. To transcribe eukaryotic protein-coding genes, the RNA polymerase II (Pol II) machinery coordinates with multiple RFs: DNA-specific transcription factors, chromatin remodelers, histone modifying enzymes, chromatin readers, and Mediator. How this intricate biochemical system works in vivo remains obscure. Visualizing single molecules at specific intracellular 3D loci, such as enhancers and promoters, is technically very challenging. Thus, little is known at the single-gene level about the spatiotemporal Pol II and RF organization, the mechanisms that dictate assembly of transcription complexes and direct enhancer-promoter communication, and how the various molecular interactions and biochemical activities control the progression of the transcription cycle. A technology capable of imaging single Pol II and RFs at a single gene, concomitant to nascent transcription kinetics, would greatly advance our understanding of these hitherto-unseen molecular processes in vivo. Visualizing transcription at single genes in live cells presents unique challenges. First, single-molecule tracking experiments often detect the behavior of transcription factors at random nuclear locations and without extra functional readouts. How observations at unspecified locations relate to the function of these factors at specific genes remains unclear. Second, real-time single-molecule detection at specific loci requires discriminating the signal of individual molecules functionally engaged at the gene of interest from an overwhelming background from molecules transiently diffusing through the optical detection volume, as well as from molecules bound to loci nearby. High nuclear Pol II and RF concentration—hundreds of nanomolars to low mM—is a formidable barrier. Finally, addressing functional consequences of observed molecular dynamics requires imaging multiple functionally linked events at the transcription site and promptly analyzing the effects of perturbations to capture primary effects and test causal relationships. Addressing the most basic questions about Cell 178, 491–506, July 11, 2019 a 2019 Elsevier Inc. 491
+
+[Page 3]
+
+transcription at the single-molecule and single-gene level requires new, improved optical imaging approaches. Advances in single-molecule tracking, fluorescence spectroscopy, and sub-diffraction microscopy were steps toward these goals. Such techniques reach single-molecule resolution by sparse labeling or stochastic photo switching, multi-copy signal amplification, or multi-event averaging via temporal-correlation approaches. In natural or artificial multi-copy tandem gene arrays, the signal from hundreds to thousands of recruited fluorescent molecules enables robust quantitative analyses (Dundr et al., 2002; McNally et al., 2000; Stasevich et al., 2014; Yao et al., 2006). However, imaging single-copy genes remains elusive. Setups with minimal out-of-focus background (Chen et al., 2014a; Zhao et al., 2014) could only detect single molecules at (10-nM concentrations by under-labeling or stochastic photo switching. Because such approaches detect only a small percentage (0.01%–0.1%) of molecules at any given time, the effective sensitivity during dynamic imaging is dramatically decreased. Live-cell photo-activated localization microscopy (PALM) could detect interpretable signals only when an estimated 100 Pol II molecules were simultaneously present in the same sub-diffraction volume (Cisse et al., 2013). As PALM traces contain mostly an un-interpretable absence of signal, fewer molecules (e.g., 2–20 possible elongating Pol IIs at a gene of interest), as well as real-time dynamic changes involving such small Pol II numbers, could not be detected in live cells (Cho et al., 2016). Also, multiple on-off transitions of the same molecule (‘‘blinking’’) seriously complicate counting exact numbers of molecules by PALM. Thus, despite remarkable technical advances, methods to directly visualize the organization, dynamics, and relation to transcription activity of down to 1–10 Pol II and RF molecules at the general and physiological setting of endogenous single-copy genes are currently lacking. Here, we achieve real-time, single-gene and single-molecule, multi-faceted interrogation of transcription in live cells: zooming into individual tagged gene loci, detecting real-time nascent transcription kinetics, and simultaneously tracking Pol II and RF dynamics with down-to-single-molecule resolution. To overcome optical detection challenges, we show that spatially targeted optical nanoscopy techniques efficiently suppress background at high concentrations. We further develop an active target-locking system to maximize signal from detected molecules while eliminating time-consuming and signal-wasting point-by-point scanning. At single transcription sites, point scanning provides 3D spatial perspective, while target locking maximizes detection signal-to-noise ratio (SNR), allows long-term tracking with minimal photobleaching, and by suppressing background via stimulated emission depletion (STED), enables single-molecule detection sensitivity. With the new capabilities, we elucidate the nanometer-scale Pol II and RF organization at single gene loci, visualize Pol II dynamics during the transcription cycle, dissect RF hierarchies and interdependencies at the enhancer, and link these complex molecular transactions to control of promoter kinetics. Beyond transcription, these improved technologies can be applied broadly to elucidate the molecular processes that underlie many important cellular functions in situ.
+
+492 Cell 178, 491–506, July 11, 2019
+
+RESULTS 3D STED Enables Single-Molecule Detection and Nanometer Localization at High Background Concentrations Spatially targeted fluorescence suppression in the periphery of a focused excitation beam using STED appeared promising for single-molecule detection in the presence of high background concentrations. In 1D and 2D geometries, STED could visualize dense molecules (Eggeling et al., 2009; Heller et al., 2013; Hua et al., 2014). However, pioneering (Kastrup et al., 2005) attempts to detect single molecules at high 3D bulk concentrations were less fruitful: STED increased 3D resolution (Harke et al., 2008) and achieved nano-sized detection volumes, but inefficiently depleted out-of-focus background molecules overwhelmed the signal from molecules transiting through the center, resulting in SNR that degrades with increasing depletion intensity. Whether such approaches can break the high concentration barrier thus remained unclear. We set out to explore the fundamental limits of single-molecule detection using 3D STED (Figures 1A and S1A). Conceptually, two distinct types of noise emerge in different experimental systems and molecular concentration and/or brightness regimes (STAR Methods): (1) Poisson-distributed shot-noise, due to the stochastic nature of fluorescent photon emission, and (2) super-Poisson noise from particle number fluctuations, as background molecules randomly transit the detection volume. To identify the dominant noise source under single-molecule detection conditions, we first characterize the background properties in solutions of freely diffusing molecules. Our results reveal hallmarks of super-Poisson noise (Figures S1B–S1D), indicating that particle-number fluctuations hinder singlemolecule detection at high concentrations. Intriguingly, measurements of fluorescent Pol II in live cells recapitulate results from freely diffusing molecules in solution (Figures S1E and S1F), which shows that super-Poisson number fluctuations can also dominate in certain crowded intracellular environments. Theoretical calculations and numerical simulations reveal that STED should be particularly effective in suppressing super-Poisson noise from number fluctuations (STAR Methods; Video S1). Experimental results confirm the predicted efficiency both for freely diffusing molecules in solution (Figures 1B and S1D) and Pol II in live cells (Figure S1E). To exploit this pristine background suppression by STED for single-molecule detection at high concentrations, we reason that the maximum SNR increase is achieved for molecules exactly at the center point of zero STED (STAR Methods). We thus center surface-immobilized Cy3-labeled single-stranded DNA (ssDNA) targets at the STED zero and measure the realtime on-off binding of short Atto647N-labeled complementary probes from the solution (Figure 1C). Real-time traces of directly excited Atto647N reveal noisy intensity fluctuations, while STED enables unambiguous identification of binding events (Figure 1D), markedly improving SNR (Figure 1E). This proof-of-principle experiment shows that target-locking STED achieves single-molecule detection at up to 0.6–1 mM solution concentrations.
+
+[Page 4]
+
+On-off binding of Atto647N-probes from the solution
+
+STED off
+
+Atto647N direct
+
+E 8 Excitation only
+
+SNR
+
+Excitation + STED
+
+FRET
+
+STED: - + - + - + 300nM 600nM 1 μM
+
+600nM probe
+
+Time (sec)
+
+Time (0.01sec)
+
+Cy3B
+
+Atto647N FRET
+
+Relative Cy3B-Atto647N xy coordinates
+
+Non-specific background Atto647N oligos 300nm red-only
+
+red+STED
+
+Stable Cy3BAtto647N duplex
+
+50nm red-only red+STED
+
+2D Distance (nm)
+
+Atto647N signal (photons/0.01sec)
+
+Freely diffusing Atto647N-streptavidin STED
+
+Cy3 (counts/0.1sec)
+
+Cy3-target
+
+STED on Direct excitation
+
+Atto647N direct
+
+Atto647N FRET
+
+STED:
+
+**
+
+-
+
++
+
+-
+
++
+
+300nM 0nM
+
+Figure 1. 3D STED Enables Single-Molecule Detection and Nanometer Localization at High Background Concentrations (A) Scheme of background reduction by STED. (B) Fluorescence intensity trace in 150 nM Atto647N-streptavidin solution. (C–E) (C) On-off probe-target hybridization scheme, (D) real-time trace at 600 nM, and (E) SNR at different Atto647N-probe concentrations. (D) Top: Atto647N photon counts (100-ms time-bins) under direct 642-nm excitation. Bottom: Cy3 (green) and Atto647N (magenta) photon counts under 561-nm excitation measuring Cy3-Atto647N fluorescence resonance energy transfer (FRET) upon DNA duplex formation. (F and G) (F) Schematic and (G) actual images of immobilized Cy3B-Atto647N duplexes against non-specific background Atto647N oligos in solution. (G) 300-nM background (2 mm 3 2 mm ROIs, 8 s/scan). Arrowheads: Atto647N molecules. SNR 1(3) for red only (red+STED). (H and I) (H) xy scatterplots and (I) Cy3B-Atto647N 2D distances. STED recovers lost localization precision, reducing the excess 2D localization errors at 300-nM qffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi background compared to 0 nM ð 2 sx;y ð300nMÞ2 2 sx;y ð0nMÞ2 Þ, from z 41 nm (red only) to z 15 nm (red+STED), corresponding to z 29 nm and z 10 nm errors in each xy coordinate, respectively. **p < 0.01; Wilcoxon rank sum. See also Figure S1 and Video S1.
+
+If the 3D coordinates where molecules reside are not predefined, spatial information is often obtained imaging point by point. As the beams are raster scanned over the sample, the molecules do not always reside in the highest-intensity peak, trading some signal for spatial information. Even so, point-scanning imaging is improved: single molecules obscure in confocal-only images become visible with STED (Figures 1F, 1G, and S1G–S1I) at up to 0.3–0.6 mM background in solution. Beyond detecting the presence of a molecule in an image, position information at length scales much shorter than the spatial resolution can also be extracted. (Sub-)nanometer precision is achievable at low background (Pertsinidis et al., 2010), but performance dramatically deteriorates due to super-Poisson back-
+
+ground noise (STAR Methods). STED recovers the lost precision, enabling nanometer measurements at elevated background concentrations (Figures 1H and 1I). Both increased detection SNR and improved localization precision rely on suppressing super-Poisson noise from number fluctuations—a previously uncharacterized property of STED, distinct from the known inversesquare-root spatial resolution law (Westphal and Hell, 2005) pffiffiffiffiffiffiffiffiffi ð1= 1 + z; z : depletion saturationÞ. Notably, we find that STED increases the working concentration range in quadratic (1+z)2 fashion (STAR Methods); a modest 1+z = 3–4 depletion, versus 1+z > 10 used for sub-diffraction imaging, provides an orderof-magnitude-higher working concentration range for singlemolecule detection and localization experiments.
+
+Cell 178, 491–506, July 11, 2019 493
+
+[Page 5]
+
+IRES-Puro
+
+24×PP7
+
+SV40pA
+
+BFP
+
+CMV-IE
+
+tdPCP-EGFP
+
+Insulator
+
+Insulator
+
+1kb
+
+28×TetO
+
+TetR-RFP
+
+red+STED 20-25% labeled
+
+Signal (A.U.)
+
+4.6μm BFP
+
+tdPCP-EGFP
+
+TetR-RFP
+
+300nm
+
+tdPCP-EGFP
+
+300nm
+
+2D Distance (nm)
+
+tdPCP-Pol II
+
+tdPCP-TetR
+
+100nm red-only STEDxy
+
+100nm
+
+Target-locked
+
+Displacement (nm)
+
+σx=25nm
+
+red-only STEDxy TetR
+
+tdPCP-EGFP
+
+Time (sec)
+
+SiR-Rpb1 (S+Bi)
+
+SiR-Rpb1 (Bd)
+
+Time (sec)
+
+200nm
+
+SiR-Rpb1
+
+50nm
+
+50nm
+
+SiR-Rpb1 signal (A.U.)
+
+60k
+
+red+STED ~100% labeled
+
+200nm
+
+tdPCP-EGFP
+
+10 20 30
+
+Time (sec)
+
+y -1000
+
+*
+
+σy=24nm
+
+Rpb1
+
+Free-moving
+
+# of Pol II molecules
+
+Fano #
+
+red only 20-25% labeled
+
+***
+
+Relative xy coordinates
+
+TetR-Halo-JF646
+
+Signal (A.U.)
+
+SiR-SNAP-Rpb1
+
+Signal (A.U.)
+
+tdPCP-EGFP
+
+Confocal imaging
+
+STEDxy imaging
+
+Time (sec)
+
+50k
+
+Experiment: 1
+
+40k
+
+red only red + STED
+
+S+Bi
+
+30k 20k 10k
+
+laser on
+
+Bd
+
+10 15 20 25 30 35
+
+Time (sec)
+
+(legend on next page)
+
+494 Cell 178, 491–506, July 11, 2019
+
+[Page 6]
+
+Pol II Accumulates at Active Transcription Sites We first establish a synthetic ‘‘mini-gene’’ system (Figure 2A) to simultaneously image (1) Pol II dynamics via an O6-alkylguanineDNA alkyltransferase derivative (SNAP-tag) fused to the Rpb1subunit (SNAP-Rpb1) and labeled with silicon rhodamine (SiR), (2) nascent transcription kinetics via phage PP7-derived stem loops (24 3 PP7) bound by a tandem-dimer phage coat protein EGFP fusion (tdPCP-EGFP), and (3) genomic location via tetracycline-repressor RFP (TetR-RFP) bound at an upstream tetracycline operator array (28 3 TetO). Single mini-gene copies are stably integrated in U-2 OS cells (Figures S2A–S2C), and use of the highly active Cytomegalovirus immediate-early (CMV-IE) promoter-enhancer results in transcription sites that contain multiple nascent RNAs appearing as bright tdPCP-EGFP and TetR-RFP co-localized nuclear foci (Figure 2B; Video S2). Fast-scanning imaging in a small region of interest (ROI) around the transcription site reveals SiR-Rpb1 foci that colocalize with tdPCP-EGFP (Figures 2C and 2D). Rpb1-tdPCP co-localize better in STED versus confocal-only images, indicating that background suppression by STED increases localization precision. Unlike Pol II, TetR does not strictly overlap with tdPCP, indicating resolvable nanometer separations between 30 and upstream regions. Notably, the brightness and gradual SiR-Rpb1 photobleaching within these foci (Figure S2D) indicate multiple Pol II molecules clustered at the mini-gene. It was unclear if typically, transcription is carried out by single, solitary Pol II molecules (Zhao et al., 2014) or if it involves multiple Pol II molecules (Jackson et al., 1993). When Pol II clustering occurs, as typically, little information on genomic position and promoter activity is simultaneously available, it has been hard to establish whether and how this phenomenon relates to transcription. Our observations reveal that focal Pol II accumulation and transcription activity from a specific promoter at a specific genomic locus are spatially and temporally linked. Target Locking Probes Nanometer Pol II Organization at the Transcription Site Motion blur and bleaching during scanning distorts the 3D images, limits the observation times, and hinders quantifying and tracking Pol II at the transcription site with single-molecule sensi-
+
+tivity and higher spatiotemporal resolution (Figure S2D). To eliminate scanning, we develop a target-locking system that obtains single-shot spatial information and actively stabilizes the transcription site at the excitation maximum and STED zero (Figure S1A; Video S1). Feedback loop speeds up to 30 fps cancel Brownian motion of the transcription site (Figure S2E) and lock tdPCP-EGFP within 30 nm root mean square (r.m.s.) from the desired set point (Figures 2E and S2F). Target locking at the excitation maximum provides the same total photon counts as scanning but at orders-of-magnitude lower power, improving photostability. Importantly, target-locking STED reduces background more efficiently than scanning (STAR Methods) and is ultimately essential for single-molecule detection with optimum SNR at a mobile locus, like the transcription site. The improved capabilities of target-locking enable further quantifying the spatial Pol II distribution at the transcription site. The Pol II cluster center—obtained from background-subtracted images immediately after the red laser turns on and before appreciable photobleaching—is within 33 nm r.m.s. from the tdPCP-EGFP set point (Figures 2F–2H), improving on the less precise scanning data (Figures 2C and 2D). Target-locking STED can also measure Pol II cluster size by increasing STEDxy doughnut-beam intensity and monitoring depletion of Pol II molecules at progressively smaller radii from the center. We obtain an r.m.s. cluster size of 85 ± 11 nm (mean ± SD) for SiR-Rpb1 by target-locking STEDxy in live cells (Figure S2G), consistent with 85 ± 13 nm (mean ± SD) radius of gyration obtained by tdPCP-EGFP super-resolution imaging (Figures S2H–S2J) and in rough agreement with 40–50 nm r.m.s. size from SiR-Rpb1 confocal and STEDxy imaging (Figures S2K–S2M), in fixed cells. Nascent RNA and Pol II thus co-occupy the same sub-diffraction volume (Rg 45–85 nm) at the transcription site—smaller than z10 kb active chromatin domains (Rg R 100 nm; Boettiger et al., 2016) but significantly larger than a single 15 nm diameter Pol II molecule. Target-Locking 3D STED Enables Single-Molecule Pol II Quantification at Transcription Sites To count how many Pol IIs cluster at the mini-gene, we first calibrate the brightness of one SiR-Rpb1 by labeling at
+
+Figure 2. Pol II Accumulates at Transcription Sites and Target-Locked 3D STED Enables Single-Molecule Pol II Quantification (A) Mini-gene schematic. TetO, tetracycline operator; CMV-IE, CMV immediate-early enhancer-promoter; BFP, blue-fluorescent protein; IRES-Puro, internal ribosome entry site-Puromycin resistance gene; PP7, stem-loops recognized by tdPCP; SV40pA, simian virus 40 polyadenylation signal. (B) Cell with two mini-gene integrations (clone 6). White arrows: nascent transcription sites. (C) Live-cell confocal and STEDxy (2 mm 3 2 mm ROIs, 0.8 s/scan) shows co-localized tdPCP-EGFP and SiR-Rpb1 (yellow arrow) or TetR-JF646 spots at the transcription site. (D) Scatterplots: relative xy coordinates between tdPCP and Rpb1/TetR. 2D distances (mean ± SD): 82 ± 32 (64 ± 30) nm Rpb1 red-only (w/ STED), n = 31 (25) cells; 184 ± 87nm TetR, n = 17 cells (*p < 0.05, ***p < 0.001; Wilcoxon rank sum). (E) xy tdPCP-EGFP displacements when target locking versus freely moving. (F) tdPCP-EGFP target-locked image. (G) SiR-Rpb1 signal with tdPCP-EGFP locked at the 642-nm excitation peak. SiR-Rpb1 images obtained at initial 642-nm beam turn on (S+Bi) and during steady plateau (Bd). (H) tdPCP-EGFP and SiR-Rpb1 coordinates are within 25 nm and 33 nm r.m.s. from the set point respectively (different colors: n = 3 independent experiments). (I–K) Single-molecule SiR-Rpb1 counting by bleaching steps, in 25% (I and K) and 100% (J) labeled samples, respectively. Red lines: multi-plateau fits. (L) Number of Pol II molecules detected at the transcription site (n = 4 independent experiments, 100% labeling). Fano factors: 1.7 ± 0.7 and 1.2 ± 0.5 (mean ± SD) for excitation and excitation+STED respectively. See also Figures S2 and S3 and Videos S1 and S2.
+
+Cell 178, 491–506, July 11, 2019 495
+
+[Page 7]
+
+C 600
+
+flavopiridol elongation
+
+termination
+
+recruitment promoter-proximal pause release recycling?
+
+Rpb1
+
+tdPCP
+
+Time (seconds)
+
+SiR-Rpb1 signal (A.U.)
+
+Time (seconds)
+
+Slope (Pol II/min)
+
+tdPCP-EGFP signal (A.U.)
+
+SiR-Rpb1 signal (A.U.)
+
+DMSO
+
+Time (seconds)
+
+SiR-Spb1 signal (A.U.)
+
+Triptolide
+
+Recovery time (sec)
+
+tdPCP-EGFP signal (A.U.)
+
+Flavopiridol
+
+SiR-Rpb1 Signal (A.U.)
+
+SiR-Rpb1 Signal (A.U.)
+
+tdPCP-EGFP signal (A.U.)
+
+FV TR FV TR FV TR
+
+initiation
+
+Decay Time (sec)
+
+triptolide
+
+Figure 3. Target Locking Enables Tracking Pol II Dynamics during the Transcription Cycle at Single Transcription Sites (A) Transcription cycle schematic. (B) Dynamics after adding 10 mM FVP, 10 mM TRP, or 0.1% v/v DMSO. tdPCP-EGFP: individual transcription site traces (wide-field imaging setup). SiRRpb1: signal from different transcription sites (red circles) measured either before (t = 0) or after drug addition (by target locking). Black squares in SiRRpb1: mean. Error bars: SD. (C) Exponential decay times. SiR-Rpb1 decay times (1) fit parameters in (B), 238 ± 49 s (FVP) and 239 ± 24 s (TRP) and (2) individual target-locked transcription site traces, as in Figure S4J and S4K, 162 ± 71 s (FVP) and 242 ± 148 s (TRP); mean ± SD; n = 8 and 15 traces. tdPCP-EGFP: 132 ± 38 s (FVP) and 179 ± 57 s (TRP); mean ± SD; n = 6 and 5 traces. (D) SiR-Rpb1 FRAP trace at a single transcription site. (E) 1.2 mm 3 1.2 mm scans of a single transcription site. (F) SiR-Rpb1 recovery slopes and times: 2.0 ± 1.3 min1 and 253 ± 169 s; mean ± SD; n = 12 and 11 traces. (G) Average SiR-Rpb1 recovery; n = 7 traces. Error bars: SD; red line: single-exponential fit. See also Figure S4 and Video S3.
+
+spond to Pol II that accumulates at the mini-gene, while an additional immobile Pol II background is equivalent to up to 5–6 (3–4) molecules, for excitation-only 0 200 400 600 800 (excitation+STED) (S = 70% and Bi = 0 200 400 600 800 Time (sec) Time (sec) 30% of total signal; STAR Methods; Figures S3I–S3L). The Fano factors of the tdPCP-EGFP SiR-Rpb1 tdPCP-EGFP SiR-Rpb1 tdPCP-EGFP SiR-Rpb1 Pol II distributions over the cell populations are between 1 and 2 (Figure 2L), suggesting no significant transcription ‘‘bursting’’ (Golding et al., 2005; Suter et al., 2011) Before Bleaching After Bleaching After ~10min Recovery and hinting that a Poisson process underlies Pol II recruitment and/or accumulation. tdPCP-EGFP dynamics also support 20%–25% of maximal SiR nuclear level. Under these under- absence of memory effects and indicate stochastic uncorrelated labeled conditions, SiR traces show clear bleaching steps initiation events (Figures S4A–S4E). (SNR up to 6), detecting 2–4 Pol II molecules at the transcription site (Figures 2I and 2J). Increasing background hinders step Target-Locking Enables Tracking Pol II Dynamics during detection (Figures S3A–S3C). With STED, but not without, sin- the Transcription Cycle gle-molecule bleaching steps are clearly seen in fully labeled Clustered Pol II on a gene could reflect (1) closely spaced molsamples (Figures 2K and S3D–S3F), showing that background ecules engaged in transcription elongation (Osheim et al., suppression by target-locking STED is essential for detecting 1999), (2) dynamic self-assemblies that potentiate transcripsingle Pol II molecules in fully labeled nuclei. Also, SNR in fully tion (pre-)initiation via molecular crowding effects (Cho et al., labeled samples with STED is similar to SNR in under-labeled 2016; Cisse et al., 2013), and (3) spatially restricted compartsamples without STED (Figure S3G), showing that target-locking ments that prevent exchange with the nucleoplasm and facilSTED enables single-molecule detection at 4- to 5-fold elevated itate multi-round transcription by local Pol II recycling (Yao concentrations in live cells. et al., 2007; Zobeck et al., 2010). These models predict Using our single-molecule calibration (Figure S3H), we obtain different fates for Pol II clusters upon transcription inhibition, 17 ± 3 (13 ± 2) detected Pol II molecules for excitation only as well as distinct Pol II residence times at the transcription (excitation+STED) (Figure 2L; mean ± SD, n = 4 independent ex- site under steady-state conditions. We use fast-acting periments). At least 12 (9) of the detected molecules corre- (Jonkers et al., 2014) small-molecule inhibitors to block the
+
+Confocal imaging
+
+496 Cell 178, 491–506, July 11, 2019
+
+[Page 8]
+
+transcription cycle at two stages: (1) initiation, using triptolide (TRP) (Titov et al., 2011), and (2) promoter-proximal pause release and transition to elongation, using flavopiridol (FVP) (Chao and Price, 2001) (Figure 3A). Upon adding either inhibitor, but not DMSO, tdPCP-EGFP gradually disappears from transcription sites (Figures 3B and 3C; Video S3; decay times 130–180 s). This result is consistent with completion of elongation and release of nascent transcripts by Pol IIs already engaged and complete inhibition of new productive initiation events. Pol II follows the fate of nascent transcripts, gradually decreasing upon inhibition (Figures 3B, 3C, and S4F; decay times 160–240 s). Thus, Pol II accumulation at the mini-gene does not persist in the absence of de novo transcription (Jackson and Cook, 1985; Mitchell and Fraser, 2008). Since Pol II loss follows kinetics similar to elongation completion and RNA release, Pol II likely accumulates at the mini-gene at a step after pause release, i.e., elongation and/or termination. This contrasts models proposing transient Pol II clusters forming before initiation and persisting upon transcription inhibition (Cho et al., 2016; Cisse et al., 2013). SiR-Rbp1 traces at target-locked mini-genes (with and without STED and from 1.6 kW/cm2 down to an ultra-low 6.4 W/cm2 average excitation) are absent of features such as large intensity ‘‘spikes’’ that would have indicated transient clustering of 100 Pol IIs. Chromatin immunoprecipitation (ChIP) experiments show near-complete Pol II loss from the mini-gene body and terminator within 5 min of inhibition (Figures S4G and S4H). The good agreement with decay rates measured optically further indicates that clustering reflects multiple elongating/terminating Pol IIs. During multi-round transcription, Pol II could be locally recycled by spatial restriction (Yao et al., 2007; Zobeck et al., 2010) or termination-initiation coupling (Ansari and Hampsey, 2005; Mapendano et al., 2010). We devised target-locking fluorescence recover after photobleaching (FRAP) experiments to probe Pol II dynamics at the transcription site under steady-state activity. Bleached SiR-Rpb1 signal initially recovers linearly, reaching a plateau over a few minutes (Figure 3D), while the Pol II cluster reappears (Figure 3E). The initial recovery rate, 2 ± 1 Pol II/min (Figure 3F), is close to the estimated 2.4 ± 0.5 RNA/min initiation rate (Figure S4C). The population-averaged recovery has a non-linear concave shape due to site-to-site variability: slower-recovering sites dominate the rate at longer times. With an (empirical) singleexponential fit, we estimate 290 s recovery time and 60% recovery efficiency (Figure 3G). The recovery time agrees with an estimated 310 s needed to complete one minigene transcription cycle (STAR Methods; Figures S4I and S4J). The recovery amplitude is consistent with close-to-full recovery of the Pol II population accumulated at the minigene (70%, S), as the immobile background population (30%, Bi) is expected to recover at a much slower rate (1,000–1,500 s; Figures S4K and S4L). Taken together, our results indicate that a Pol II molecule is recruited to the minigene from the nucleoplasm, enters productive elongation, and upon termination after one transcription round, is predominantly released back into the nucleoplasm rather than being retained and recycled over multiple rounds.
+
+Pol II and RFs Form Spatially Distinct Foci at the Endogenous Pou5f1 Locus in Mouse Embryonic Stem Cells We next focus on Pol II and RFs at Pou5f1 in mouse embryonic stem cells (mESCs). This essential gene for early embryo development is controlled by enhancers (Figure 4A) (Yeom et al., 1996) bound by several transcription factors (TFs), including Sox2, Oct4, and Nanog (Chen et al., 2008). Enhancer clusters that regulate genes with cell-type-specific roles (Parker et al., 2013; Whyte et al., 2013) show high ChIP signals of TFs, certain regulatory complexes, and histone acetylation. However, steadystate occupancies, binding kinetics, and links to transcription dynamics are not well characterized. Pou5f1 transcription sites, imaged via 30 UTR-integrated 24 3 MS2 and an MS2 phage coat protein fused to mNeonGreen (MCP-mNeonGreen), appear as bright nuclear foci in live cells, indicating multiple present nascent RNAs. These foci persist over 30 min (Video S4), an on time significantly longer than one transcription round (see below). Strikingly, zooming onto active Pou5f1 loci we discover subdiffraction clusters of Pol II (SNAP-Rpb1), as well as four distinct RFs (SNAP-tagged Sox2, Cdk9, Brd4, and Med22; Figure 4B). Our results further reveal that Rpb1-MCP colocalize but that MCP does not strictly overlap with any of the four RFs (Figures 4C and 4D). This nanometer-scale separation between Pol II/30 UTR-tagged RNA and upstream-bound factors markedly resembles the organization of Pol II, tdPCP, and TetR at the CMV mini-gene. Canceling Pou5f1 Brownian motion (Figure S5A) by target locking enables single-molecule Pol II quantification (Figures S5B and S5C). We obtain 9.2 ± 1.6 detected SiR-Rpb1 molecules (Figure S5D; mean ± SD, n = 10 experiments), which reflects at least 6–7 molecules at the Pou5f1 transcription site and immobile background contributions equivalent to up to 2–3 molecules (72%, S and 28%, Bi; Figures S5E–S5H). By comparing the brightness of Sox2, Cdk9, Brd4, and Med22 foci with Rpb1, we estimate 14–22, 4–6, 9–15, and 3–5 Sox2, Cdk9, Brd4, and Med22 detected molecules, respectively (Figures S5I and S5J). These results indicate focal accumulation of multiple Pol IIs at the gene body and multiple Sox2, Cdk9, Brd4, and Med22 molecules at the enhancer region. Target Locking Reveals Pol II Dynamics during the Pou5f1 Transcription Cycle Transcription inhibition with FVP or TRP results in gradual Pol II and nascent Pou5f1 RNA loss (Figures 5A and 5B; Video S5) but with slower kinetics than the CMV mini-gene, consistent with a longer transcription cycle (6.3 kb versus 3 kb gene length). Pol II decay measured optically agrees with kinetics measured by ChIP (Figures S6A and S6B). Without inhibitors, under steady-state Pou5f1 transcription, target-locked FRAP experiments show Pol II recovery (Figures 5C and 5D), with 330 s and 66% averaged recovery time and efficiency, respectively (Figure 5E). The recovery time agrees with an estimated 270–743 s or a more precise z338 s needed to complete one Pou5f1 transcription cycle (STAR Methods). Hence, during Pou5f1 transcription, Pol II accumulates at steps after initiation and pause release, likely at elongation and/or termination, and
+
+Cell 178, 491–506, July 11, 2019 497
+
+[Page 9]
+
+24×MS2
+
+Endogenous Pou5f1 gene locus
+
+Pou5f1 enhancer
+
+1kb
+
+MCP N -mNeonGreen
+
+Sox2 binding sites
+
+MCP-mNeonGreen
+
+**
+
+SiR-Rpb1
+
+SiR-Sox2
+
+SiR-Cdk9
+
+SiR-Brd4
+
+SiR-Med22
+
+2D Distance (nm)
+
+STEDxy imaging
+
+**
+
+*
+
+*
+
+STED: - + - + - + - + - +
+
+pb So x2 kd Br d4 ed
+
+300nm
+
+Relative xy coordinates MCP-Rpb1
+
+MCP-Sox2
+
+MCP-Cdk9
+
+MCP-Brd4
+
+MCP-Med22 red-only STEDxy
+
+100nm
+
+Figure 4. Pol II and RFs Form Spatially Distinct Foci at the Endogenous Pou5f1 Locus in mESCs (A) Edited Pou5f1 allele schematic. Black rectangles: exons and 50 and 30 UTR. (B) Live-cell confocal and STEDxy (2 mm 3 2 mm ROIs, 0.8 s/scan) shows co-localized MCP-mNeonGreen and SiR-Rpb1, -Sox2, -Cdk9, -Brd4, and -Med22 foci (yellow arrows). (C and D) (C) Relative MCP-Rpb1, -Sox2, -Cdk9, -Brd4, and -Med22 xy coordinates and (D) 2D distances (mean ± SD): Rpb1 124 ± 75 (80 ± 34) nm, Sox2 187 ± 81(193 ± 96) nm, Cdk9 197 ± 92 (185 ± 73) nm, Brd4 227 ± 89 (196 ± 93) nm, Med22 194 ± 97 (170 ± 108) nm and n = 26 (15), 27 (9), 24 (10), 35 (10), and 28 (21) cells, without STED (with STED), respectively (*p < 0.05, **p < 0.01; Wilcoxon rank sum). See also Figure S5 and Video S4.
+
+is predominantly released rather than retained after one transcription round. The similarities between CMV mini-gene and Pou5f1 prompted us to analyze Pou5f1 promoter kinetics in more detail. Although a Poisson process quantitatively describes tdPCP fluctuations and nascent RNA and Pol II quantification at the CMV mini-gene, the Poisson approximation breaks down for Pou5f1. MCP fluctuations appear less noisy than predicted for a Poisson distribution: assumption of Poisson statistics significantly overestimates the initiation rate and number of nascent Pou5f1 RNAs (Figures S6C–S6E versus Figures S6F and S6G). Consistent with reduced transcription noise, Pol II statistics also suggest suppressed fluctuations (Figure S5D), possibly reflecting multiple slow and/or rate-limiting steps in the Pou5f1 transcription cycle (Pedraza and Paulsson, 2008) (STAR Methods; Figures S6H–S6K). Imaging RF Dynamics at Pou5f1 Elucidates Enhancer Mechanisms The ability to visualize RF clusters at Pou5f1 enables characterizing their dynamics and elucidating how high-local-concentration foci shape target promoter kinetics. FRAP experiments show Sox2, Cdk9, Brd4, and Med22 recovery, with character-
+
+498 Cell 178, 491–506, July 11, 2019
+
+istic times 2–10 s (Figures 6A–6C). The short RF residence times at Pou5f1 suggest that clusters are stabilized via highly dynamic interactions. To study the interactions that stabilize Sox2 clustering, we mutate the high-mobility-group (HMG) Sox2 domain, disrupting Sox DNA motif recognition (Reményi et al., 2003). HMG mutations reduce Sox2 clustering at Pou5f1 (2.5-fold; Figures S5I and S5J). Thus, Sox2 accumulation mostly depends on canonical HMG-Sox motif interactions. Interestingly, since HMG mutations do not completely abolish clustering, a fraction of Sox2 might also engage in relaxed-specificity, non-canonical interactions—for example, 1D DNA sliding (Chen et al., 2014a) or degenerate and/or partial motif binding (Soufi et al., 2015). FRAP experiments had indicated <2-s Cdk9 residence times in nuclear foci (Ghamari et al., 2013), while at an array of HIV-1 promoters, residence time varied from 11 s to 71 s depending on specific mode of transcription activation (Molle et al., 2007). P-TEFb/ Cdk9 can be recruited to transcription sites through multiple factors: TFs (Barboric et al., 2001), Mediator (Luo et al., 2012), ‘‘super-elongation’’ complexes (Luo et al., 2012), or acetylated chromatin through Brd4 (Jang et al., 2005; Yang et al., 2005). Notably, Brd4 exhibits few-second residence times on chromatin
+
+[Page 10]
+
+MCP Rpb1
+
+JQ1 FVP TRP JQ1
+
+FVP TRP
+
+Time (sec)
+
+JQ1
+
+Time (sec)
+
+Slope (Pol II/min)
+
+SiR-Rpb1 signal (A.U.)
+
+Decay Time (sec)
+
+Time (sec)
+
+Time (sec)
+
+DMSO
+
+SiR-Rpb1 Signal (A.U.) MCP-mNeonGreen (A.U.)
+
+Time (sec)
+
+SiR-Rpb1 signal (A.U.)
+
+Triptolide
+
+Recovery time (sec)
+
+SiR-Rpb1 signal (A.U.) MCP-mNeonGreen (A.U.)
+
+Flavopiridol
+
+SiR-Rpb1 signal (A.U.) MCP-mNeonGreen (A.U.)
+
+SiR-Rpb1 signal (A.U.) MCP-mNeonGreen (A.U.)
+
+200 400 600 800
+
+Time (sec)
+
+Figure 5. Target Locking Probes Pol II Dynamics during the Pou5f1 Transcription Cycle (A) Dynamics upon adding 10 mM FVP, 10 mM TRP, 0.1% v/v DMSO, or 1 mM JQ1. MCP-mNeonGreen: individual transcription site traces (wide-field imaging setup). SiR1-Rpb1: total signal from different transcription sites (red circles) measured either before (t = 0) or after drug addition (by target locking). Black squares for SiR-Rpb1: mean. Error bars: SD. (B) Exponential decay times. Rpb1 from fits in (A): 347 ± 104 s (FVP), 565 ± 109 s (TRP), and 310 ± 123 s (JQ1). MCP: 378 ± 193 s (FVP), 378 ± 115 s (TRP), and 300 ± 136 s (JQ1); mean ± SD; n = 11, 7, and 6 traces. (C) SiR-Rpb1 FRAP trace of a Pou5f1 transcription site. (D) SiR1-Rpb1 recovery slopes and times: 0.77 ± 0.66 min1 and 341 ± 206 s (mean ± SD, n = 9 traces). (E) SiR1-Rpb1 recovery averaged over n = 10 traces. Error bars: SD, red line: single-exponential fit. See also Figures S5 and S6 and Video S5.
+
+and can be rapidly displaced by small molecules, like JQ1 (Filippakopoulos et al., 2010). Brd4 inhibition can also displace P-TEFb and Mediator from certain cis-elements (Di Micco et al., 2014). We discover that JQ1 abruptly abolishes Pou5f1 transcription (Figure 5A; Video S5), consistent with highly dynamic Brd4 binding to the Pou5f1 enhancer and rapid displacement upon inhibition. Pou5f1 shutdown by JQ1 suggests that Brd4 controls key steps in the Pol II cycle, possibly by recruiting Cdk9 and/or Med22. Consistent with this hypothesis, within 1 min of JQ1 treatment, Brd4, Cdk9, and Med22 signals drop sharply (Figure 6D), indicating that Cdk9 and Med22 accumulation largely depends on Brd4-acetyllysine recognition. Brd4, Cdk9, and Med22 signal is not lost when inhibiting Cdk9 kinase activity with FVP (Figure 6D). Thus, most Cdk9 molecules are not tethered to the transcription site by engaging their kinase substrates or association with Pol II elongation complexes, and Brd4, Cdk9, and Med22 clustering is not stabilized by the nascent RNA or the act of transcription itself. Cdk9 and Med22 foci are stabilized through specific molecular recognition—multiple Brd4 molecules binding to multiple acetylated targets throughout the Pou5f1 enhancer—rather than less-
+
+selective physicochemical forces, e.g., driven by low-complexity protein domains and RNA (Kwon et al., 2013). Contrary to Brd4, Med22, and Cdk9, Sox2 foci persist through transcription inhibition by either JQ1 or FVP (Figure 6D). The differential sensitivities between RFs and modes of inhibition unveil a hierarchy of molecular transactions that control Pou5f1 transcription: Sox2 binding occurs upstream of Cdk9, Med22, and Brd4 recruitment, and accumulation of all four RFs occurs upstream of Pol II release into productive elongation. Brd4-acetyllysine recognition does not reinforce Sox2 accumulation, and clustering of all four RFs does not depend on the nascent Pou5f1 RNA or transcription itself. Displacing focally accumulated RFs allows exploring links between clustering and transcription in detail. At intermediate [JQ1], individual transcription sites display attenuated response: after treatment, MCP signal decays to a new finite plateau (Figure S7A; Video S6). Accumulated Brd4 and Cdk9 levels, together with MCP amplitude, gradually decrease with increasing [JQ1] (Figures 6E and S7B), unveiling a mechanism whereby tuning the local RF concentration at the enhancer enables fine control
+
+Cell 178, 491–506, July 11, 2019 499
+
+[Page 11]
+
+Sox2 Signal
+
+1.5 1.0 0.5 0.0
+
+1.5 1.0 0.5 0.0
+
+0 1 2 3 4 5 6
+
+0 1 2 3 4 5 6
+
+Time (min)
+
+1.5 1.0 0.5 0.0 JQ1 FVP JQ1 FVP JQ1 FVP JQ1 FVP
+
+Signal Remaining
+
+Time (min)
+
+0.0
+
+10 15 20
+
+1.0
+
+1.0
+
+10 20 30 40
+
+Time (sec)
+
+0.8 0.6
+
+TFs (Sox2) Histone Acetylation HATs (p300)
+
+A-485
+
+0.0 1.0 0.9 0.8
+
+0.7
+
+0.6
+
+[JQ1] (nM)
+
+0.6 0.4 0.2 0.0
+
+1μM
+
+1.0
+
+0.2 0.0
+
+[A-485] (nM)
+
+100nM
+
+1μM
+
+0.5
+
+1.0
+
+1.5
+
+1μM A-485
+
+0.0
+
+0.5
+
+1.0
+
+DMSO
+
+1.5
+
+1.0
+
+1.0
+
+0.5
+
+0.5
+
+0.0 0.8
+
+0.4
+
+Relative Transcription Site Intensity
+
+0.8
+
+0.6
+
+0.0
+
+0.5
+
+0.6
+
+0100 101 102 103 104
+
+0.8
+
+100nM
+
+0.4
+
+6sec
+
+0.2
+
+3sec
+
+10nM
+
+0.4
+
+1sec
+
+JQ1
+
+0.0
+
+Relative Cdk9 Signal
+
+10nM
+
+Count
+
+Cdk9 Signal
+
+1.0
+
+0.5
+
+Sox2 signal
+
+2.0
+
+1.5
+
+1.0
+
+Time (sec)
+
+Flavopiridol
+
+2.0
+
+Pre
+
+Brd4
+
+10 20 30 40
+
+Time (sec)
+
+JQ1
+
+0.5
+
+Relative Cdk9 signal Relative MCP signal
+
+Time (sec)
+
+1.0
+
+0.0
+
+10 20 30 40
+
+3sec
+
+MCP
+
+0.0
+
+Med22 Signal
+
+1.0
+
+2sec
+
+1.5
+
+Relative MCP signal
+
+0.0
+
+Brd4 Signal
+
+0.5
+
+1.5
+
+1sec
+
+Relative MCP signal
+
+Pre
+
+MCP
+
+MCP
+
+1.0
+
+Brd4 Signal
+
+19sec
+
+1.5 1.5
+
+Sox2 signal
+
+Cdk9 Signal
+
+Med22 Signal
+
+10sec
+
+Med22
+
+1sec
+
+Sox2
+
+Pre
+
+MCP
+
+14sec
+
+Recovery Time (sec)
+
+5sec
+
+Br d4 dk So M 2 ed
+
+1sec
+
+Cdk9
+
+Pre
+
+Confocal imaging
+
+10 15 20
+
+Time (min)
+
+10 15 20
+
+Time (min)
+
+Accumulation of TFs through feedback stabilization
+
+A-485 Highly acetylated enhancer chromatin state
+
+All-or-none behavior via positive feedback
+
+High local concentration of co-activators/co-factors
+
+P-TEFb (Ckd9)
+
+Mediator Brd4 Pol II
+
+elongation
+
+Tunable transcription via fine control of factor accumulation
+
+Control of Pol II kinetics at promoter
+
+termination
+
+JQ1 Pol II
+
+termination elongation
+
+recruitment
+
+recruitment initiation
+
+promoter-proximal pause release
+
+initiation
+
+promoter-proximal pause release
+
+(legend on next page)
+
+500 Cell 178, 491–506, July 11, 2019
+
+[Page 12]
+
+of promoter output (Figures 6F and S7C). This insight was previously unattainable with approaches that either lacked gene context and functional readout or only tracked nascent RNA without monitoring RF dynamics. Brd4 Controls Pol II Pause Release at Pou5f1 by ‘‘Seeding’’ Rather than ‘‘Scaffolding’’ Cdk9 Clustering The shorter Brd4 residence time (2 s) versus Cdk9 (7 s) at the Pou5f1 locus is inconsistent with on-off binding of binary Brd4:P-TEFb complexes or a canonical ‘‘scaffold-client’’ relationship and indicates distinct or partially overlapping recruitment and retention mechanisms (Figure S7D). Brd4 clustering at Pou5f1 is more sensitive (K = 28 nM; Figure S7B) to JQ1 than both Cdk9 clustering and nascent transcription amplitude (K = 97 nM and 63 nM; Figure 6E). Thus, Cdk9 clustering and Pou5f1 nascent transcription amplitude can be sustained with limited amounts of accumulated Brd4 (Figure S7C). Tuning total nuclear Brd4 levels by targeted degradation further corroborates these findings: consistent with the JQ1 titration results, nascent Pou5f1 transcription output quickly saturates after the onset of Brd4 clustering (Figures S7E and S7F). These observations do not favor a model where Brd4 clustering creates a ‘‘local trap,’’ as Cdk9 accumulation should have been highly sensitive to trap size, but rather hint toward a ‘‘seeding’’ mechanism. Brd4 is crucial for initial Cdk9 recruitment (Figures 6D and 6E), but retention of clustered Cdk9 at the transcription site likely involves additional interactions. Sox2 (Arter and Wegner, 2015) and Mediator (Donner et al., 2010) both interact with P-TEFb and cluster at Pou5f1. These results suggest that Brd4 initiates or seeds and TFs and/or co-activators further stabilize Cdk9 clustering. Interplay between p300 and/or CBP HAT Activity and Sox2 Clustering Maintains the Active Pou5f1 Enhancer State The p300 and CREB-binding protein (CBP) histone acetyltransferases (HATs) are essential for early development (Yao et al., 1998) and co-occupy mESC enhancers with Sox2, Oct4, and Nanog (Chen et al., 2008). To understand how p300 and/or CBP HAT activity relates to transcription, we use a potent and selective small-molecule inhibitor, A-485 (Lasko et al., 2017). At 1mM, A-485 Pou5f1 shuts down within 20 min (Figure S7G). The rapid kinetics indicates a primary A-485 effect and causal relationships between p300 and/or CBP HAT activity and Pou5f1
+
+transcription. The decay time upon A-485 treatment is slower than JQ1, FVP, or TRP (635 s versus 340–380 s; Figure S7H versus Figure 5B). Although these other three inhibitors act within seconds, transcription shutdown by A-485 involves minute-long processes, consistent with histone acetylation turnover times (Katan-Khaykovich and Struhl, 2002; Weinert et al., 2018). Strikingly, although at the population level titrating A-485 results in gradual Pou5f1 transcription attenuation (Figure 6G), individual transcription sites exhibit all-or-none responses (Figures 6H and S7I). At intermediate [A-485], transcription either persists or completely shuts down, with [A-485] controlling shutdown probability. This is in stark contrast with Pou5f1 response to Brd4 inhibition, where at intermediate [JQ1] individual transcription sites show attenuated output without complete shutdown (Figures 6H and S7A). This all-or-none behavior could reflect positive feedback mechanisms, as in some ‘‘switch-like’’ biological responses (Thomas and D’Ari, 1990). Histone acetylation can modulate TF-chromatin association (Lee et al., 1993; Vettese-Dadey et al., 1996), providing an underlying biochemical basis. Consistent with this hypothesis, upon A-485 addition, Sox2 clusters at Pou5f1 gradually shrink (Figure 6I), with similar kinetics to transcription shutdown (12.5 versus 10.5 min). Brd4 clusters at Pou5f1 also gradually shrink (8 min; Figure S7J), with kinetics similar to H3K27ac loss (7 min; Figure S7K). Our results are consistent with a positive feedback mechanism that maintains and/or stabilizes the active Pou5f1 enhancer state, whereby Sox2/TFs recruit p300 and/or CBP (Chen et al., 2008; Nowling et al., 2000) and p300 and/or CBP HAT activity further reinforces Sox2/TF accumulation. Visualizing RF-nascent transcription interplay in single cells uncovers phenomena otherwise masked when ensemble averaging, providing detailed views of transcription mechanisms in vivo (Figure 6J). Brd4 Clustering Controls Nanog Transcription Bursting Kinetics Transcription bursting—intermittent on-off switching—is a fascinating but little-explored aspect of gene regulation. Developmental Drosophila enhancers were found to control transgene reporter bursting kinetics (Fukaya et al., 2016). Whether developmental enhancers generally control bursting of endogenous mammalian genes and which factors and mechanisms are involved is unknown. Nanog, another distal-enhancer-controlled pluripotency gene in mESCs (Figure 7A), exhibits minute-long transcription bursts
+
+Figure 6. Imaging RF Dynamics at Pou5f1 Elucidates Enhancer Mechanisms (A–C) FRAP experiments at Pou5f1. (A) 2 mm 3 2 mm, 0.8 s/scan. Yellow arrows: Cdk9, Sox2, Brd4, and Med22 foci. (B) FRAP curves and (C) recovery times: Cdk9 7 ± 3 s; Sox2 10 ± 3 s, Brd4 2 ± 2 s, Med22 7 ± 4 s (mean ± SD, n = 6 traces). (D) Brd4, Med22, Cdk9, and Sox2 signals upon inhibition with 1 mM JQ1 or 10 mM FVP. Cdk9 and Med22 signals with JQ1 drop close to noise floor; the estimated relative decrease might underestimate the actual decrease (only features bright enough above the background are quantified). Bar graph: mean ± SD of all the t > 0 points. (E) Relative MCP and Cdk9 signals versus [JQ1]. Error bars: SEM, n = 3–7 (Cdk9) and 5–13 (MCP) cells measured for each [JQ1]. Red lines: non-linear leastsquares fitting to Hill equation, 1⁄2JQ1n =Kn + 1⁄2JQ1n , with K = 63 ± 39 and 97 ± 44 nM and n = 1.1 ± 0.7 and 0.8 ± 0.1 for MCP and Cdk9, respectively. (F) Cdk9-MCP relationship based on (E). (G) Population-averaged response to A-485. Error bars: SEM, n = 11–43 cells measured for each [A-485] %1 mM (n = 5 for 10 mM). (H) Distributions of transcription site intensities at various [A-485] and [JQ1]. (I) Sox2 signal upon adding 1 mM A-485 or 0.1% v/v DMSO. Red line: exponential fit, t = 12.5 ± 8.6 s. (J) Model of inter-dependencies between RFs, histone marks, and Pol II kinetics at Pou5f1. See also Figure S7 and Video S6.
+
+Cell 178, 491–506, July 11, 2019 501
+
+[Page 13]
+
+24×MS2
+
+En dogen ous Nanog gene locus
+
+Sox2 binding sites
+
+1kb
+
+MCP-mNeonGreen
+
+Nanog enhancer
+
+MCP-mNeonGreen
+
+DMSO control
+
+300nm
+
+SiR-Brd4
+
+300nm
+
+300nm
+
+MCP-Rpb1
+
+MCP-Brd4
+
+MCP-Sox2
+
+30nM JQ1
+
+Relative xy coordinates
+
+Rel. Amplitude
+
+SiR-Sox2
+
+Time (sec)
+
+red-only STEDxy
+
+Burst Frequency (1/min)
+
+SiR-Rpb1
+
+MCP-mNeonGreen (A.U.)
+
+STEDxy imaging
+
+Duration (sec)
+
+1.0
+
+0.5
+
+0.0 0.06 0.04 0.02 0.00 0 1
+
+n.s.
+
+***
+
+** **
+
+TFs (Sox2)
+
+Co-factors (Brd4) Pol II
+
+Nascent RNA
+
+Rpb1 Sox2 Brd4 Rpb1 Sox2 Brd4 red-only w/STED
+
+1.0 0.8 0.6
+
+0.4 0 1
+
+Increasing distance
+
+100 1000
+
+[JQ1] (nM)
+
+Relative Burst Frequency
+
+*
+
+Relative Brd4 Signal
+
+** 2D Distance(nm)
+
+[JQ1] (nM)
+
+100nm
+
+1.2 1.0 0.8 0.6 0.4 0.2
+
+0.0 0.4
+
+0.6
+
+0.8
+
+1.0
+
+Relative Brd4 Signal
+
+Figure 7. Brd4 clustering controls Nanog transcription bursting (A) Edited Nanog schematic. Black rectangles: exons and 50 /30 -UTR. (B) Live-cell confocal and STEDxy scans (2mm 3 2mm ROIs, 0.8 s/scan). Yellow arrows: SiR-Rpb1, -Sox2, and -Brd4 foci. (C) Relative MCP-Rpb1, -Sox2, and -Brd4 xy coordinates and (D) 2D distances, (mean ± SD): Rpb1 145 ± 88(123 ± 44)nm, Sox2 266 ± 119(275 ± 101)nm, Brd4 228 ± 110(198 ± 96)nm, n = 20(16), 12(26), 23(21) cells, w/o STED(w/ STED) respectively (*: p < 0.05; **: p < 0.01; ***: p < 0.001, Wilcoxon rank sum). (E) Nanog bursting after adding 0.1%v/v DMSO or 30nM JQ1. (F) Burst parameters versus [JQ1]. Red line, burst frequency: Hill equation fit, K = 23 ± 17nM, n = 0.9 ± 0.3. Error bars: SEM (n = 18-28 cells for each [JQ1]). (G) Relative Brd4 signal at Nanog versus [JQ1]. Red line: Hill curve (K = 25nM, n = 1.0). Error bars: SEM (n = 25-42 cells measured for each [JQ1]). (H) Relationship between Brd4 cluster size and burst frequency based on the data in (F-G). See also Figure S7 and Video S7.
+
+(Ochiai et al., 2014). We discover that Pol II, Sox2, and Brd4 cluster at Nanog transcription sites (Figures 7B, S7L, and S7M), with nanoscale organization akin to Pou5f1-Pol II colocalization with 30 UTRtagged nascent RNA and resolvable separation of enhancerassociated RFs (Figures 7C and 7D). STED reveals additional nanometer details not seen in confocal-only images: Brd4 is closer to MCP and Pol II than Sox2, an organization broadly consistent with models postulating co-activators or co-factors bridging the gap from distal enhancer-bound TFs toward the transcription machinery at the target gene (Figure 7D). These results also suggest that focal Pol II and RF accumulation might be a general feature of pluripotency genes and associated mESC enhancers. If Brd4 foci at Nanog mainly act to release Pol II pausing, upon Brd4 inhibition, we expect a reduction in burst amplitude. Surprisingly, burst frequency is dramatically reduced at low [JQ1],
+
+502 Cell 178, 491–506, July 11, 2019
+
+with a modest reduction in burst amplitude at higher [JQ1] while burst duration remains largely unaffected (Figures 7E and 7F; Video S7). JQ1 titrations show a striking correspondence between burst frequency and Brd4 cluster size (Figures 7G and 7H). Thus, beyond controlling Pol II pause release, Brd4 clustering can regulate transcription bursting, a discovery that further exemplifies how single-molecule and single-gene imaging provides new insights unattainable by bulk, static endpoint assays (ChIP, NET-Seq, etc.). DISCUSSION Elucidating Transcription at Single Genes, In Situ Visualizing transcription at single-molecule and single-gene level in live cells addresses questions that could not be answered
+
+[Page 14]
+
+otherwise. First, imaging, tracking, and quantifying Pol II with single-molecule resolution reveals its spatial organization, its participation into functional assemblies, and its dynamics during the transcription cycle. Since early descriptions of mammalian nuclear ultra-structure (Monneron and Bernhard, 1969) and continuing to date, such questions have attracted great interest. The methods we establish pave the way for studying different genes, cell types, or growth conditions to deepen our understanding of the diversity of gene regulation mechanisms. Second, we discover that focal RF accumulation at the Pou5f1 and Nanog enhancers controls target promoter kinetics. Perturbing and modulating these high-local-concentration foci and monitoring effects on nascent transcription establishes the functional consequences of RF clustering. Cis-elements had been extensively analyzed at the DNA sequence level, e.g., number and/or type of TF binding sites. Probing how steady-state RF occupancies and on-off binding kinetics relate to nascent transcription dynamics provides a biophysical basis and unveils detailed, context-specific kinetic mechanisms (e.g., control of promoter amplitude, burst frequency) that are only accessible by single-gene, live-cell imaging. Third, our results expand our understanding of the interdependencies and intertwined activities of the multiple RFs at active gene loci. Traditional in vitro reconstitution portrays step-by-step assembly mechanisms (Orphanides et al., 1996). Live-cell experiments reveal highly dynamic interactions that argue against formation of stable complexes and ordered progression through well-defined stable and static intermediates (Hager et al., 2009; Liu and Tjian, 2018). Such data are often interpreted in probabilistic frameworks (Coulon et al., 2013; Hager et al., 2009; Misteli, 2007) whereby assembly of large complexes occurs through random interactions of individual components without strict hierarchy. Some nuclear bodies form via such stochastic self-assembly mechanisms (Dundr and Misteli, 2010), and weak and transient Pol II and RF interactions are proposed to drive formation of cooperative molecular assemblies (Hnisz et al., 2017; Liu and Tjian, 2018; Shin and Brangwynne, 2017), but the specific scaffold-client (Banani et al., 2016) relationships remain uncharacterized. The range of models proposed—from ordered to random—contrasts the lack of tools to visualize these phenomena in live cells. Probing assembly pathways and RF synergies and interdependencies, exemplified by the Sox2-Brd4-Cdk9-Pol II hierarchy, the seeding mechanism of P-TEFb recruitment by Brd4, and the positive Sox2-p300 and/or -CBP feedback we discovered at Pou5f1, are critical strides toward reconciling these conundrums. Fourth, we provide glimpses of functional genome organization at kilobase scales, shedding light onto active gene ‘‘microenvironments.’’ Nuclear compartments were associated with distinct genome regulation processes (Carmo-Fonseca, 2002), and how such membrane-less organelles form is a fascinating subject (Shin and Brangwynne, 2017). Although micrometer-sized nuclear structures containing 103–105 molecules have been amenable to light-microscopic investigations, nuclear organization at 10–100 nm scales, relative to transcription, has been hard to probe in live cells. At Pou5f1 and Nanog, we discovered 100 nm foci containing 10 Pol II and RF molecules stabilized by specific RF-chromatin interactions. These finite system size effects and spatial constraints of the chromatin scaffold provide
+
+quantitative frameworks to synthesize statistical-mechanics and soft-matter physics concepts into models of transcription control (Hager et al., 2009; Hnisz et al., 2017; Misteli, 2007). Fixed-cell super-resolution fluorescence in situ hybridization (FISH) imaging revealed genome folding at tens of kilobase to megabase scales (Boettiger et al., 2016). Live-cell localization down to single fluorescent molecules bound at specific genomic sites will provide even higher resolution views at %1 kb levels, e.g., elucidating real-time promoter-enhancer interactions. The resolvable spatial separation between upstream-bound factors and 30 UTR-tagged nascent RNA suggests that real-time tracking of individual Pol II molecules moving along the gene through a complete transcription cycle (Wang et al., 2016) in live cells might be within reach. Future Developments of Target-Locking 3D STED Target-locking 3D STED can be further improved in speed, photon efficiency, background reduction, and photobleaching. Fast electro-optic beam deflectors, single-photon counting electronics, and real-time hardware-based control systems will extend temporal resolution to %100 ms, enabling locking onto fast-moving targets, like single freely diffusing molecules. Optimal localization algorithms (Balzarotti et al., 2017) and 3D interferometry (Wang et al., 2016) will enhance 3D target locking onto dim targets. Near-isotropic, tightly focused excitation and depletion profiles (Schmidt et al., 2008) will increase background suppression at reduced STED intensities. Triplet- or dark-state relaxation and time-gated detection can further reduce photo-bleaching and background. Spatially targeted fluorescence background suppression can be achieved by photo-physical and/or -chemical means beyond STED (e.g., photo-switching or -activation, expanding the usable fluorophores and the possible applications). Further Dissemination to Understand Complex Molecular Processes in Cells Our tools can broadly transform studies of molecular processes in live cells. The new capabilities allow probing stoichiometry, nanoscale organization, and dynamic molecular transactions in a variety of important pathways. We anticipate exciting adaptations of target-locking nanoscopy for real-time single-molecule detection in size-tunable volumes at specific intracellular activity sites (e.g., a single DNA lesion, single mRNAs and translating ribosomes, sub-cellular organelles, presynaptic active zones and signaling complexes and clusters on the membrane). These technological innovations henceforth enable single-molecule approaches to fulfill their unrealized potential to elucidate molecular mechanisms in vivo. STAR+METHODS Detailed methods are provided in the online version of this paper and include the following: d KEY RESOURCES TABLE d CONTACT FOR REAGENT AND RESOURCE SHARING d EXPERIMENTAL MODEL AND SUBJECT DETAILS
+
+B Cell culture conditions B Cell line generation
+
+Cell 178, 491–506, July 11, 2019 503
+
+[Page 15]
+
+B Targeted integration of SNAP-tag in the endogenous
+
+Sox2, Cdk9, Brd4 and Med22 genes d METHOD DETAILS B Detailed 3D single-molecule STED Optical Setup B Setup operation B Single-molecule in vitro experiments B DNA constructs B Validation of CRISPR/Cas9 gRNAs B Mini-gene integration characterization B ChIP-qPCR analysis of Pol II after FVP treatment B ChIP-qPCR analysis of H3K27ac after A-485 treatment B Preparation of cells for live-cell imaging (wide-field and confocal/STED) B Transient expression of WT and HMG domain mutant (2M) Sox2 B Targeted Brd4 degradation using MZ1 B Preparation of fixed cells for GFP nanobody super-resolution imaging B Preparation of fixed cells for SiR-Rpb1 confocal/STED imaging B Additional Wide-Field Imaging Optical Setups B Wide-Field Cell Imaging Experiments B Experimental design d QUANTIFICATION AND STATISTICAL ANALYSIS B Types of background noise in single-molecule detection B Experimental determination of dominant noise type under single-molecule detection conditions B Contributions of other sources of noise B Efficiency of STED in suppressing different types of background noise B Simulation of background suppression by STED B SNR for target-locking versus scanning STED approaches B Localization precision improvement by STED at elevated background concentrations B Localization and two-color distance measurement procedures B Estimation of Pol II cluster size by target-locking STEDxy B Step-detection algorithms B Quantification of Pol II signal (S) and immobile background (Bi) at the transcription site B Estimation of transcription cycle duration B Sox2 binding sites at Pou5f1 and Nanog enhancers B Promoter kinetics and transcription noise B Statistical analysis SUPPLEMENTAL INFORMATION Supplemental Information can be found online at https://doi.org/10.1016/j. cell.2019.05.029. ACKNOWLEDGMENTS We thank Kai Johnsson and Luke Lavis for generous gifts of dye reagents. This work is supported by a NYSTEM Postdoctoral Training Award (C32599GG; J.L.); Grants-in-Aid for Scientific Research from the Ministry of Education, Culture, Sports, Science, and Technology (18H05531 and 19K06612; H.O.); the
+
+504 Cell 178, 491–506, July 11, 2019
+
+JST PRESTO program (JPMJPR15F2; H.O.); a National Cancer Institute grant (P30 CA008748); a National Institutes of Health (NIH) Director’s New Innovator Award (1DP2GM105443-01; A.P.); and the Louis V. Gerstner, Jr. Young Investigators Fund (A.P.). AUTHOR CONTRIBUTIONS A.P. conceived, designed, and supervised the study. A.P. and A.D. built the experimental apparatus. A.D. developed instrument control software and performed in vitro single-molecule experiments with guidance from A.P. A.P., J.L., and K.S. developed the CMV mini-gene system. H.O. and T.Y. performed the initial Pou5f1 and Nanog 24 3 MS2 integration and preliminary characterizations of Pou5f1 and Nanog 24 3 MS2 transcription. J.L. and A.P. developed the tagged Rpb1, Sox2, Cdk9, Brd4, and Med22 and the final Pou5f1 and Nanog live-cell transcription imaging systems. A.P., J.L., A.D., H.C., and G.W. performed live-cell single-molecule experiments and analyzed the data. A.P. interpreted the data and wrote the manuscript. DECLARATION OF INTERESTS The authors declare no competing interests. Received: February 23, 2018 Revised: December 23, 2018 Accepted: May 14, 2019 Published: May 30, 2019 REFERENCES Ansari, A., and Hampsey, M. (2005). A role for the CPF 30 -end processing machinery in RNAP II-dependent gene looping. Genes Dev. 19, 2969–2978. Arter, J., and Wegner, M. (2015). Transcription factors Sox10 and Sox2 functionally interact with positive transcription elongation factor b in Schwann cells. J. Neurochem. 132, 384–393. Balzarotti, F., Eilers, Y., Gwosch, K.C., Gynnå, A.H., Westphal, V., Stefani, F.D., Elf, J., and Hell, S.W. (2017). Nanometer resolution imaging and tracking of fluorescent molecules with minimal photon fluxes. Science 355, 606–612. Banani, S.F., Rice, A.M., Peeples, W.B., Lin, Y., Jain, S., Parker, R., and Rosen, M.K. (2016). Compositional Control of Phase-Separated Cellular Bodies. Cell 166, 651–663. Barboric, M., Nissen, R.M., Kanazawa, S., Jabrane-Ferrat, N., and Peterlin, B.M. (2001). NF-kappaB binds P-TEFb to stimulate transcriptional elongation by RNA polymerase II. Mol. Cell 8, 327–337. Boettiger, A.N., Bintu, B., Moffitt, J.R., Wang, S., Beliveau, B.J., Fudenberg, G., Imakaev, M., Mirny, L.A., Wu, C.T., and Zhuang, X. (2016). Super-resolution imaging reveals distinct chromatin folding for different epigenetic states. Nature 529, 418–422. Carmo-Fonseca, M. (2002). The contribution of nuclear compartmentalization to gene regulation. Cell 108, 513–521. Chao, S.H., and Price, D.H. (2001). Flavopiridol inactivates P-TEFb and blocks most RNA polymerase II transcription in vivo. J. Biol. Chem. 276, 31793–31799. Chen, Y., Müller, J.D., So, P.T., and Gratton, E. (1999). The photon counting histogram in fluorescence fluctuation spectroscopy. Biophys. J. 77, 553–567. Chen, X., Xu, H., Yuan, P., Fang, F., Huss, M., Vega, V.B., Wong, E., Orlov, Y.L., Zhang, W., Jiang, J., et al. (2008). Integration of external signaling pathways with the core transcriptional network in embryonic stem cells. Cell 133, 1106–1117. Chen, J., Zhang, Z., Li, L., Chen, B.C., Revyakin, A., Hajj, B., Legant, W., Dahan, M., Lionnet, T., Betzig, E., et al. (2014a). Single-molecule dynamics of enhanceosome assembly in embryonic stem cells. Cell 156, 1274–1285. Chen, Y., Deffenbaugh, N.C., Anderson, C.T., and Hancock, W.O. (2014b). Molecular counting by photobleaching in protein complexes with many
+
+[Page 16]
+
+subunits: best practices and application to the cellulose synthesis complex. Mol. Biol. Cell 25, 3630–3642. Cho, W.K., Jayanth, N., English, B.P., Inoue, T., Andrews, J.O., Conway, W., Grimm, J.B., Spille, J.H., Lavis, L.D., Lionnet, T., et al. (2016). RNA Polymerase II cluster dynamics predict mRNA output in living cells. eLife 5, e13617. Cisse, I.I., Izeddin, I., Causse, S.Z., Boudarene, L., Senecal, A., Muresan, L., Dugast-Darzacq, C., Hajj, B., Dahan, M., and Darzacq, X. (2013). Real-time dynamics of RNA polymerase II clustering in live human cells. Science 341, 664–667. Coulon, A., Chow, C.C., Singer, R.H., and Larson, D.R. (2013). Eukaryotic transcriptional dynamics: from single molecules to cell populations. Nat. Rev. Genet. 14, 572–584.
+
+Hua, B., Han, K.Y., Zhou, R., Kim, H., Shi, X., Abeysirigunawardena, S.C., Jain, A., Singh, D., Aggarwal, V., Woodson, S.A., and Ha, T. (2014). An improved surface passivation method for single-molecule studies. Nat. Methods 11, 1233–1236. Jackson, D.A., and Cook, P.R. (1985). Transcription occurs at a nucleoskeleton. EMBO J. 4, 919–925. Jackson, D.A., Hassan, A.B., Errington, R.J., and Cook, P.R. (1993). Visualization of focal sites of transcription within human nuclei. EMBO J. 12, 1059–1065. Jang, M.K., Mochizuki, K., Zhou, M., Jeong, H.S., Brady, J.N., and Ozato, K. (2005). The bromodomain protein Brd4 is a positive regulatory component of P-TEFb and stimulates RNA polymerase II-dependent transcription. Mol. Cell 19, 523–534.
+
+Crocker, J.C., and Grier, D.G. (1996). Methods of Digital Video Microscopy for Colloidal Studies. J. Colloid Interface Sci. 179, 298–310.
+
+Jonkers, I., Kwak, H., and Lis, J.T. (2014). Genome-wide dynamics of Pol II elongation and its interplay with promoter proximal pausing, chromatin, and exons. eLife 3, e02407.
+
+Di Micco, R., Fontanals-Cirera, B., Low, V., Ntziachristos, P., Yuen, S.K., Lovell, C.D., Dolgalev, I., Yonekubo, Y., Zhang, G., Rusinova, E., et al. (2014). Control of embryonic stem cell identity by BRD4-dependent transcriptional elongation of super-enhancer-associated pluripotency genes. Cell Rep. 9, 234–247.
+
+Kask, P., Palo, K., Ullmann, D., and Gall, K. (1999). Fluorescence-intensity distribution analysis and its application in biomolecular detection technology. Proc. Natl. Acad. Sci. USA 96, 13756–13761.
+
+Donner, A.J., Ebmeier, C.C., Taatjes, D.J., and Espinosa, J.M. (2010). CDK8 is a positive regulator of transcriptional elongation within the serum response network. Nat. Struct. Mol. Biol. 17, 194–201. Donnert, G., Keller, J., Medda, R., Andrei, M.A., Rizzoli, S.O., Lührmann, R., Jahn, R., Eggeling, C., and Hell, S.W. (2006). Macromolecular-scale resolution in biological fluorescence microscopy. Proc. Natl. Acad. Sci. USA 103, 11440–11445. Dundr, M., and Misteli, T. (2010). Biogenesis of nuclear bodies. Cold Spring Harb. Perspect. Biol. 2, a000711. Dundr, M., Hoffmann-Rohrer, U., Hu, Q., Grummt, I., Rothblum, L.I., Phair, R.D., and Misteli, T. (2002). A kinetic framework for a mammalian RNA polymerase in vivo. Science 298, 1623–1626. Eggeling, C., Ringemann, C., Medda, R., Schwarzmann, G., Sandhoff, K., Polyakova, S., Belov, V.N., Hein, B., von Middendorff, C., Schönle, A., and Hell, S.W. (2009). Direct observation of the nanoscale dynamics of membrane lipids in a living cell. Nature 457, 1159–1162. Filippakopoulos, P., Qi, J., Picaud, S., Shen, Y., Smith, W.B., Fedorov, O., Morse, E.M., Keates, T., Hickman, T.T., Felletar, I., et al. (2010). Selective inhibition of BET bromodomains. Nature 468, 1067–1073. Fukaya, T., Lim, B., and Levine, M. (2016). Enhancer Control of Transcriptional Bursting. Cell 166, 358–368. Ghamari, A., van de Corput, M.P., Thongjuea, S., van Cappellen, W.A., van Ijcken, W., van Haren, J., Soler, E., Eick, D., Lenhard, B., and Grosveld, F.G. (2013). In vivo live imaging of RNA polymerase II transcription factories in primary cells. Genes Dev. 27, 767–777. Golding, I., Paulsson, J., Zawilski, S.M., and Cox, E.C. (2005). Real-time kinetics of gene activity in individual bacteria. Cell 123, 1025–1036. Grimm, J.B., English, B.P., Chen, J., Slaughter, J.P., Zhang, Z., Revyakin, A., Patel, R., Macklin, J.J., Normanno, D., Singer, R.H., et al. (2015). A general method to improve fluorophores for live-cell and single-molecule microscopy. Nat. Methods 12, 244–250. Hager, G.L., McNally, J.G., and Misteli, T. (2009). Transcription dynamics. Mol. Cell 35, 741–753. Harke, B., Ullal, C.K., Keller, J., and Hell, S.W. (2008). Three-dimensional nanoscopy of colloidal crystals. Nano Lett. 8, 1309–1313. Heller, I., Sitters, G., Broekmans, O.D., Farge, G., Menges, C., Wende, W., Hell, S.W., Peterman, E.J., and Wuite, G.J. (2013). STED nanoscopy combined with optical tweezers reveals protein dynamics on densely covered DNA. Nat. Methods 10, 910–916. Hnisz, D., Shrinivas, K., Young, R.A., Chakraborty, A.K., and Sharp, P.A. (2017). A Phase Separation Model for Transcriptional Control. Cell 169, 13–23. Hsu, P.D., Scott, D.A., Weinstein, J.A., Ran, F.A., Konermann, S., Agarwala, V., Li, Y., Fine, E.J., Wu, X., Shalem, O., et al. (2013). DNA targeting specificity of RNA-guided Cas9 nucleases. Nat. Biotechnol. 31, 827–832.
+
+Kastrup, L., Blom, H., Eggeling, C., and Hell, S.W. (2005). Fluorescence fluctuation spectroscopy in subdiffraction focal volumes. Phys. Rev. Lett. 94, 178104. Katan-Khaykovich, Y., and Struhl, K. (2002). Dynamics of global histone acetylation and deacetylation in vivo: rapid restoration of normal histone acetylation status upon removal of activators and repressors. Genes Dev. 16, 743–752. Khan, A., Fornes, O., Stigliani, A., Gheorghe, M., Castro-Mondragon, J.A., van der Lee, R., Bessy, A., Chèneby, J., Kulkarni, S.R., Tan, G., et al. (2018). JASPAR 2018: update of the open-access database of transcription factor binding profiles and its web framework. Nucleic Acids Res. 46 (D1), D260–D266. Kimura, H., Sugaya, K., and Cook, P.R. (2002). The transcription cycle of RNA polymerase II in living cells. J. Cell Biol. 159, 777–782. Kwon, I., Kato, M., Xiang, S., Wu, L., Theodoropoulos, P., Mirzaei, H., Han, T., Xie, S., Corden, J.L., and McKnight, S.L. (2013). Phosphorylation-regulated binding of RNA polymerase II to fibrous polymers of low-complexity domains. Cell 155, 1049–1060. Larson, D.R., Zenklusen, D., Wu, B., Chao, J.A., and Singer, R.H. (2011). Realtime observation of transcription initiation and elongation on an endogenous yeast gene. Science 332, 475–478. Lasko, L.M., Jakob, C.G., Edalji, R.P., Qiu, W., Montgomery, D., Digiammarino, E.L., Hansen, T.M., Risi, R.M., Frey, R., Manaves, V., et al. (2017). Discovery of a selective catalytic p300/CBP inhibitor that targets lineage-specific tumours. Nature 550, 128–132. Lee, D.Y., Hayes, J.J., Pruss, D., and Wolffe, A.P. (1993). A positive role for histone acetylation in transcription factor access to nucleosomal DNA. Cell 72, 73–84. Leutenegger, M., Rao, R., Leitgeb, R.A., and Lasser, T. (2006). Fast focus field calculations. Opt. Express 14, 11277–11291. Liu, Z., and Tjian, R. (2018). Visualizing transcription factor dynamics in living cells. J. Cell Biol. 217, 1181–1191. ius, G., Umezawa, K., Olivier, N., Honigmann, A., Yang, G., Plass, T., Lukinavic Mueller, V., Reymond, L., Corrêa, I.R., Jr., Luo, Z.G., et al. (2013). A nearinfrared fluorophore for live-cell super-resolution microscopy of cellular proteins. Nat. Chem. 5, 132–139. Luo, Z., Lin, C., Guest, E., Garrett, A.S., Mohaghegh, N., Swanson, S., Marshall, S., Florens, L., Washburn, M.P., and Shilatifard, A. (2012). The super elongation complex family of RNA polymerase II elongation factors: gene target specificity and transcriptional output. Mol. Cell. Biol. 32, 2608–2617. Mapendano, C.K., Lykke-Andersen, S., Kjems, J., Bertrand, E., and Jensen, T.H. (2010). Crosstalk between mRNA 30 end processing and transcription initiation. Mol. Cell 40, 410–422. McNally, J.G., Müller, W.G., Walker, D., Wolford, R., and Hager, G.L. (2000). The glucocorticoid receptor: rapid exchange with regulatory sites in living cells. Science 287, 1262–1265. Misteli, T. (2007). Beyond the sequence: cellular organization of genome function. Cell 128, 787–800.
+
+Cell 178, 491–506, July 11, 2019 505
+
+[Page 17]
+
+Mitchell, J.A., and Fraser, P. (2008). Transcription factories are nuclear subcompartments that remain in the absence of transcription. Genes Dev. 22, 20–25.
+
+Soufi, A., Garcia, M.F., Jaroszewicz, A., Osman, N., Pellegrini, M., and Zaret, K.S. (2015). Pioneer transcription factors target partial DNA motifs on nucleosomes to initiate reprogramming. Cell 161, 555–568.
+
+Molle, D., Maiuri, P., Boireau, S., Bertrand, E., Knezevich, A., Marcello, A., and Basyuk, E. (2007). A real-time view of the TAR:Tat:P-TEFb complex at HIV-1 transcription sites. Retrovirology 4, 36.
+
+Stasevich, T.J., Hayashi-Takanaka, Y., Sato, Y., Maehara, K., Ohkawa, Y., Sakata-Sogawa, K., Tokunaga, M., Nagase, T., Nozaki, N., McNally, J.G., and Kimura, H. (2014). Regulation of RNA polymerase II activation by histone acetylation in single living cells. Nature 516, 272–275.
+
+Monneron, A., and Bernhard, W. (1969). Fine structural organization of the interphase nucleus in some mammalian cells. J. Ultrastruct. Res. 27, 266–288. Nelson, J.D., Denisenko, O., and Bomsztyk, K. (2006). Protocol for the fast chromatin immunoprecipitation (ChIP) method. Nat. Protoc. 1, 179–185. Nguyen, V.T., Giannoni, F., Dubois, M.F., Seo, S.J., Vigneron, M., Kédinger, C., and Bensaude, O. (1996). In vivo degradation of RNA polymerase II largest subunit triggered by alpha-amanitin. Nucleic Acids Res. 24, 2924–2929. Nowling, T.K., Johnson, L.R., Wiebe, M.S., and Rizzino, A. (2000). Identification of the transactivation domain of the transcription factor Sox-2 and an associated co-activator. J. Biol. Chem. 275, 3810–3818. Ochiai, H., Sugawara, T., Sakuma, T., and Yamamoto, T. (2014). Stochastic promoter activation affects Nanog expression variability in mouse embryonic stem cells. Sci. Rep. 4, 7125. Ochiai, H., Sugawara, T., and Yamamoto, T. (2015). Simultaneous live imaging of the transcription and nuclear position of specific genes. Nucleic Acids Res. 43, e127. Orphanides, G., Lagrange, T., and Reinberg, D. (1996). The general transcription factors of RNA polymerase II. Genes Dev. 10, 2657–2683. Osheim, Y.N., Proudfoot, N.J., and Beyer, A.L. (1999). EM visualization of transcription by RNA polymerase II: downstream termination requires a poly(A) signal but not transcript cleavage. Mol. Cell 3, 379–387. Ovesný, M., Krı́zek, P., Borkovec, J., Svindrych, Z., and Hagen, G.M. (2014). ThunderSTORM: a comprehensive ImageJ plug-in for PALM and STORM data analysis and super-resolution imaging. Bioinformatics 30, 2389–2390.
+
+Suter, D.M., Molina, N., Gatfield, D., Schneider, K., Schibler, U., and Naef, F. (2011). Mammalian genes are transcribed with widely different bursting kinetics. Science 332, 472–474. Thomas, R., and D’Ari, R. (1990). Biological feedback (Boca Raton: CRC Press). Thompson, R.E., Larson, D.R., and Webb, W.W. (2002). Precise nanometer localization analysis for individual fluorescent probes. Biophys. J. 82, 2775–2783. Titov, D.V., Gilman, B., He, Q.L., Bhat, S., Low, W.K., Dang, Y., Smeaton, M., Demain, A.L., Miller, P.S., Kugel, J.F., et al. (2011). XPB, a subunit of TFIIH, is a target of the natural product triptolide. Nat. Chem. Biol. 7, 182–188. Vettese-Dadey, M., Grant, P.A., Hebbes, T.R., Crane-Robinson, C., Allis, C.D., and Workman, J.L. (1996). Acetylation of histone H4 plays a primary role in enhancing transcription factor binding to nucleosomal DNA in vitro. EMBO J. 15, 2508–2518. Wang, G., Hauver, J., Thomas, Z., Darst, S.A., and Pertsinidis, A. (2016). Single-Molecule Real-Time 3D Imaging of the Transcription Cycle by Modulation Interferometry. Cell 167, 1839–1852. Weinert, B.T., Narita, T., Satpathy, S., Srinivasan, B., Hansen, B.K., Schölz, C., Hamilton, W.B., Zucconi, B.E., Wang, W.W., Liu, W.R., et al. (2018). TimeResolved Analysis Reveals Rapid Dynamics and Broad Scope of the CBP/ p300 Acetylome. Cell 174, 231–244. Westphal, V., and Hell, S.W. (2005). Nanoscale resolution in the focal plane of an optical microscope. Phys. Rev. Lett. 94, 143903.
+
+Parker, S.C., Stitzel, M.L., Taylor, D.L., Orozco, J.M., Erdos, M.R., Akiyama, J.A., van Bueren, K.L., Chines, P.S., Narisu, N., Black, B.L., et al.; NISC Comparative Sequencing Program; National Institutes of Health Intramural Sequencing Center Comparative Sequencing Program Authors; NISC Comparative Sequencing Program Authors (2013). Chromatin stretch enhancer states drive cell-specific gene regulation and harbor human disease risk variants. Proc. Natl. Acad. Sci. USA 110, 17921–17926.
+
+Whyte, W.A., Orlando, D.A., Hnisz, D., Abraham, B.J., Lin, C.Y., Kagey, M.H., Rahl, P.B., Lee, T.I., and Young, R.A. (2013). Master transcription factors and mediator establish super-enhancers at key cell identity genes. Cell 153, 307–319.
+
+Pedraza, J.M., and Paulsson, J. (2008). Effects of molecular memory and bursting on fluctuations in gene expression. Science 319, 339–343. Pertsinidis, A., Zhang, Y., and Chu, S. (2010). Subnanometre single-molecule localization, registration and distance measurements. Nature 466, 647–651.
+
+Yao, T.P., Oh, S.P., Fuchs, M., Zhou, N.D., Ch’ng, L.E., Newsome, D., Bronson, R.T., Li, E., Livingston, D.M., and Eckner, R. (1998). Gene dosage-dependent embryonic development and proliferation defects in mice lacking the transcriptional integrator p300. Cell 93, 361–372.
+
+Pinello, L., Canver, M.C., Hoban, M.D., Orkin, S.H., Kohn, D.B., Bauer, D.E., and Yuan, G.C. (2016). Analyzing CRISPR genome-editing experiments with CRISPResso. Nat. Biotechnol. 34, 695–697.
+
+Yao, J., Munson, K.M., Webb, W.W., and Lis, J.T. (2006). Dynamics of heat shock factor association with native gene loci in living cells. Nature 442, 1050–1053.
+
+Reményi, A., Lins, K., Nissen, L.J., Reinbold, R., Schöler, H.R., and Wilmanns, M. (2003). Crystal structure of a POU/HMG/DNA ternary complex suggests differential assembly of Oct4 and Sox2 on two enhancers. Genes Dev. 17, 2048–2059.
+
+Yao, J., Ardehali, M.B., Fecko, C.J., Webb, W.W., and Lis, J.T. (2007). Intranuclear distribution and local dynamics of RNA polymerase II during transcription activation. Mol. Cell 28, 978–990.
+
+Schmidt, R., Wurm, C.A., Jakobs, S., Engelhardt, J., Egner, A., and Hell, S.W. (2008). Spherical nanosized focal spot unravels the interior of cells. Nat. Methods 5, 539–544. Shaner, N.C., Lambert, G.G., Chammas, A., Ni, Y., Cranfill, P.J., Baird, M.A., Sell, B.R., Allen, J.R., Day, R.N., Israelsson, M., et al. (2013). A bright monomeric green fluorescent protein derived from Branchiostoma lanceolatum. Nat. Methods 10, 407–409.
+
+Yang, Z., Yik, J.H., Chen, R., He, N., Jang, M.K., Ozato, K., and Zhou, Q. (2005). Recruitment of P-TEFb for stimulation of transcriptional elongation by the bromodomain protein Brd4. Mol. Cell 19, 535–545.
+
+Yeom, Y.I., Fuhrmann, G., Ovitt, C.E., Brehm, A., Ohbo, K., Gross, M., Hübner, K., and Schöler, H.R. (1996). Germline regulatory element of Oct-4 specific for the totipotent cycle of embryonal cells. Development 122, 881–894. Zengerle, M., Chan, K.H., and Ciulli, A. (2015). Selective Small Molecule Induced Degradation of the BET Bromodomain Protein BRD4. ACS Chem. Biol. 10, 1770–1777.
+
+Shin, Y., and Brangwynne, C.P. (2017). Liquid phase condensation in cell physiology and disease. Science 357, eaaf4382.
+
+Zhao, Z.W., Roy, R., Gebhardt, J.C., Suter, D.M., Chapman, A.R., and Xie, X.S. (2014). Spatial organization of RNA polymerase II inside a mammalian cell nucleus revealed by reflected light-sheet superresolution microscopy. Proc. Natl. Acad. Sci. USA 111, 681–686.
+
+Slaymaker, I.M., Gao, L., Zetsche, B., Scott, D.A., Yan, W.X., and Zhang, F. (2016). Rationally engineered Cas9 nucleases with improved specificity. Science 351, 84–88.
+
+Zobeck, K.L., Buckley, M.S., Zipfel, W.R., and Lis, J.T. (2010). Recruitment timing and dynamics of transcription factors at the Hsp70 loci in living cells. Mol. Cell 40, 965–975.
+
+506 Cell 178, 491–506, July 11, 2019
+
+[Page 18]
+
+STAR+METHODS KEY RESOURCES TABLE
+
+REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+H3K27ac (mAb)
+
+Active Motif
+
+Cat# 39685; RRID:AB_2793305
+
+Histone H3 (mAb)
+
+Active Motif
+
+Cat# 39763; RRID:AB_2650522
+
+Mouse monoclonal anti-Flag M2
+
+Sigma-Aldrich
+
+Cat# F3165-5MG; RRID:AB_259529
+
+Antibodies
+
+Chemicals, Peptides, and Recombinant Proteins SNAP-Cell 647-SiR
+
+New England Biolabs
+
+Cat# S9102S
+
+JF646 Halo Tag Ligand
+
+Grimm et al., 2015
+
+N/A
+
+Lipofectamine 2000
+
+Thermo Fisher Scientific
+
+Cat# 11668019
+
+a-Amanitin
+
+Sigma-Aldrich
+
+Cat# A2263-1MG
+
+G 418 disulfate salt solution
+
+Sigma-Aldrich
+
+Cat# G8168-10ML
+
+Puromycin dihydrochloride solution
+
+Sigma-Aldrich
+
+Cat# P9620-10ML
+
+Blasticidin
+
+Thermo Fisher Scientific
+
+Cat# R21001
+
+Zeocin
+
+Thermo Fisher Scientific
+
+Cat# R25001
+
+Cell Line Nucleofector Kit V
+
+Lonza
+
+Cat# VCA-1003
+
+Herculase II Fusion DNA Polymerase
+
+Agilent
+
+Cat# 600675
+
+Flavopiridol hydrochloride hydrate
+
+Sigma-Aldrich
+
+Cat# F3055-5MG
+
+Triptolide
+
+Sigma-Aldrich
+
+Cat# T3652-1MG
+
+(+)-JQ1
+
+Sigma-Aldrich
+
+Cat# SML1524-5MG
+
+A-485
+
+Structural Genomics Consortium
+
+https://www.thesgc.org/chemical-probes/A-485
+
+Human recombinant laminin 511
+
+BioLamina
+
+Cat# LN511-02
+
+PD 0325901
+
+Axon Medchem
+
+Cat# 1408
+
+GSK-3 Inhibitor XVI (CHIR99021)
+
+Millipore Sigma
+
+Cat# 361559-5MG
+
+Protein G PLUS-Agarose
+
+Santa Cruz Biotechnology
+
+Cat# sc-2002; RRID:AB_10200697
+
+Dynabeads Protein G
+
+Thermo Fisher Scientific
+
+Cat# 1003D
+
+SYBR Green PCR Master Mix
+
+Thermo Fisher Scientific
+
+Cat# 4309155
+
+NucleoSpin Gel and PCR Clean-up
+
+Macherey-Nagel
+
+Cat# 740609.250
+
+PureLink HiPure Plasmid Maxiprep Kit
+
+Thermo Fisher Scientific
+
+Cat# K210007
+
+Surveyor Mutation Detection Kit S100
+
+Integrated DNA Technologies
+
+Cat# 706020
+
+TOPO TA Cloning Kit
+
+Thermo Fisher Scientific
+
+Cat# K4575J10
+
+Critical Commercial Assays
+
+High Pure PCR Template Preparation Kit
+
+Roche
+
+Cat# 11796828001
+
+DIG-High Prime DNA Labeling and Detection Starter Kit II
+
+Roche
+
+Cat# 11585614910
+
+U-2 OS cells
+
+ATCC
+
+https://www.atcc.org/
+
+T-Rex-HeLa Cell Line
+
+Thermo Fisher Scientific
+
+Cat# R1407
+
+T-Rex HeLa Rpb9-SNAP-Flag cells
+
+This paper
+
+N/A
+
+Rpb1 clone 2-5 U-2 OS cells
+
+This paper
+
+N/A
+
+CMV mini-gene clones 5 and 6
+
+This paper
+
+N/A
+
+OM mESCs
+
+Ochiai et al., 2015
+
+N/A
+
+Experimental Models: Cell Lines
+
+NMG mESCs
+
+Ochiai et al., 2014
+
+N/A
+
+OMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Rpb1 clone 3 OMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Sox2 clone 8 OMG mESCs
+
+This paper
+
+N/A (Continued on next page)
+
+Cell 178, 491–506.e1–e14, July 11, 2019 e1
+
+[Page 19]
+
+Continued REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+SNAP-CDK9 clone 17-8 OMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Brd4 clone 9 OMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Med22 clone 17 OMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Rpb1 clone 3 NMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Sox2 clone 3 NMG mESCs
+
+This paper
+
+N/A
+
+SNAP-Brd4 clone 7 NMG mESCs
+
+This paper
+
+N/A
+
+This paper
+
+Table S3
+
+Oligonucleotides gRNA cloning and qPCR primers Recombinant DNA espCas9
+
+Slaymaker et al., 2016
+
+Addgene Plasmid#71814
+
+PB007-EF1a-Flag-SNAP-Rpb1(aAmR)
+
+This paper
+
+N/A
+
+CMV mini-gene construct
+
+This paper
+
+N/A
+
+pPB-LR5-CAG-MCP-mNeonGreen-IRES-Neo
+
+Ochiai et al., 2014
+
+N/A
+
+pCMV-hyPBase
+
+Ochiai et al., 2014
+
+N/A
+
+espCas9-gRNA-Sox2
+
+This paper
+
+N/A
+
+espCas9-gRNA-Cdk9
+
+This paper
+
+N/A
+
+espCas9-gRNA-Brd4
+
+This paper
+
+N/A
+
+espCas9-gRNA-Med22
+
+This paper
+
+N/A
+
+LabVIEW 2012 & 2014
+
+National Instruments
+
+RRID:SCR_014325
+
+MATLAB 2010b
+
+MathWorks
+
+RRID:SCR_001622
+
+IDL 6.4
+
+Harris Geospatial Solutions
+
+https://www.harrisgeospatial.com/ Software-Technology/IDL
+
+ThunderSTORM
+
+Ovesný et al., 2014
+
+https://github.com/zitmen/thunderstorm
+
+ImageJ 1.50b
+
+Wayne Rasband, NIH
+
+https://imagej.nih.gov/ij/; RRID:SCR_003070
+
+JASPAR 2018
+
+Khan et al., 2018
+
+http://jaspar.genereg.net/; RRID:SCR_003030
+
+CRISPResso
+
+Pinello et al., 2016
+
+http://crispresso.rocks/
+
+Origin 8.5.0
+
+OriginLab
+
+https://www.originlab.com/ index.aspx?go=PRODUCTS/Origin
+
+Software and Algorithms
+
+CONTACT FOR REAGENT AND RESOURCE SHARING Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Alexandros Pertsinidis (PertsinA@mskcc.org). EXPERIMENTAL MODEL AND SUBJECT DETAILS Cell culture conditions All cell culture was performed at 37 C, in 5% v/v CO2 atmosphere, in a humidified incubator. U-2 OS cells were maintained in McCoy’s 5A media without phenol-red (GE Healthcare SH30200.01), supplemented with 10% fetal bovine serum (Gemini Bio, 100-500), 1 3 Non-essential Amino Acids Solution (Termo Fisher Scientific 11140050), 1mM Sodium Pyruvate (Thermo Fisher Scientific 11360070), 100U/mL Penicillin-Streptomycin (Thermo Fisher Scientific, 15140122) and with the appropriate selection drugs. T-Rex HeLa cells were maintained in MEM+NEAA media (Thermo Fisher Scientific 41500-018), supplemented with 10% fetal bovine serum (Gemini Bio, 100-106), 2 mM L-alanyl-L-glutamine (Thermo Fisher Scientific 35050079), 1mM Sodium Pyruvate (Thermo Fisher Scientific 11360070), 100U/mL Penicillin-Streptomycin (Thermo Fisher Scientific, 15140122) and 5mg/mL Blasticidin (Thermo Fisher Scientific R21001). mESCs were maintained in +2i media with appropriate selection drugs on 0.1% gelatin-coated dishes. +2i media contain D-MEM (Thermo Fisher Scientific 10313021), 15% fetal bovine serum (Gemini Bio 100-500), 0.1 mM b-mercaptoethanol (Thermo Fisher Scientific 21985023), 2 mM L-alanyl-L-glutamine (Thermo Fisher Scientific 35050079), 1 3 MEM
+
+e2 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 20]
+
+nonessential amino acids (Thermo Fisher Scientific 11140076), 1000 U/mL LIF (Millipore ESG1107), 3 mM CHIR99021 (Millipore 361559), 1 mM PD0325901 (Axon Medichem 1408) and 100U/mL Penicillin-Streptomycin (Thermo Fisher Scientific, 15140122). Cell line generation U-2 OS cells (ATCC HTB-96; human, female – no additional cell line authentification performed) were transfected with Flag-SNAPRpb1 (amaR) plasmid and selected with 1mg/mL a-amanitin. Individual a-amanitin-resistant colonies were picked, expanded, labeled with SiR-BG and imaged. In the presence of a-amanitin the endogenous Rpb1 is degraded and the cells survive solely on the SNAPtagged version of Pol II (Nguyen et al., 1996). A single clone (dubbed ‘‘Rpb1 clone 2-5’’) that showed SiR nuclear staining consistent with expected Pol II distribution (diffuse and punctuated signal in nucleus together with absence of signal from cytoplasm and nucleoli) was selected for all further experiments. T-Rex HeLa cells (Thermo Fisher Scientific R71407; human, female – no additional cell line authentification performed) were transfected with Rpb9-SNAP-Flag plasmid and selected with 100mg/mL zeocin (Thermo Fisher Scientific R25001). Individual zeocin-resistant colonies were picked, expanded and labeled with SNAP-Cell TMR reagent (NEB). A single clone that showed minimal TMR signal in absence of tetracycline and strong TMR signal in presence of 1mg/mL tetracycline was used for all further experiments. Rpb1 clone 2-5 cells were transfected with the CMV mini-gene plasmid and either a plasmid expressing piggyBac transposase (Transposagen, sPBo) or GFP (Lonza, pMaxGFP) as a control. Cells were selected with 1mg/mL puromycin for 2 weeks. 5-fold more puromycin-resistant colonies were obtained for sPBo versus pMaxGFP, indicating transposase-specific genomic integration. Individual puromycin-resistant colonies were picked, expanded, transfected with tdPCP-EGFP and tetR-RFP plasmids and imaged. Two BFP-positive clones (dubbed as CMV clones ‘‘5’’ and ‘‘6’’) from the CMV mini-gene/sPBo transfection that showed each two transcription sites in the nucleus were selected for all further experiments. Embryonic stem cell lines were derived from Bruce 4 mESCs (Millipore Sigma CMTI-2; murine strain C57/BL6J, male – species/sex verified by karyotyping, no additional cell line authentification performed). OM mESCs contain a 24 3 MS2 cassette integrated in the 30 -UTR of one of the two Pou5f1 (Oct4) alleles (Ochiai et al., 2015). OM cells (1x106) were transfected with 10 mg pPB-LR5-CAG-MCPmNeonGreen-IRES-Neo and 1 mg pCMV-hyPBase vectors (Ochiai et al., 2014) using Lipofectamine 2000 (Invitrogen 11668019). cDNA of mNeonGreen (Shaner et al., 2013) was originally provided by Allele Biotechnology. After incubation for 2 days, cells were subjected to 400 mg/mL G418 (Sigma G8168) selection. Individual colonies were picked, expanded, and imaged. Two single clones (OMG-1, OMG-2) that showed bright MCP-mNeonGreen-tagged Pou5f1 nascent transcription sites were selected for all further experiments. NMG mESCs contain 24 3 MS2 cassettes integrated in the 30 -UTR of both Nanog alleles and also stably express MCP-mNeonGreen (Ochiai et al., 2014). OMG-1 or NMG mESCs (1x106) were transfected with 10 mg PB007-EF1a-Flag-SNAP-Rpb1 (aAmR) and 1 mg pCMV-hyPBase vectors using Lipofectamine 2000 (Invitrogen 11668019). Cells were subjected to 3 mg/mL a-amanitin 2 days post-transfection. Individual a-amanitin-resistant colonies were picked after 2 weeks, expanded, labeled with SiR-BG and imaged. Single clones (dubbed ‘‘OMG SNAP-Rpb1 clone 3’’ and ‘‘NMG SNAP-Rpb1 clone 3’’ respectively) that showed SiR nuclear staining consistent with expected Pol II distribution (diffuse and punctuated signal in the nucleus together with absence of signal from cytoplasm and nucleoli) were selected for all further experiments. Targeted integration of SNAP-tag in the endogenous Sox2, Cdk9, Brd4 and Med22 genes To generate OMG or NMG SNAP-Sox2 targeted cells, OMG-1 or NMG mESCs (1x106) were transfected with 10 mg SNAP-Sox2 donor vector and 0.6 mg espCas9-gRNA-Sox2 vector. 10 days after transfection, the cells were trypsinized, labeled with 0.3 mM SiR-BG for 10 min, rinsed three times with new media, followed by immediate fluorescence-activated cell sorting (FACS). All the SiR-positive cells were collected, expanded for 2 weeks, trypsinized, labeled with SiR-BG and sorted again. Almost 100% SNAP positive pools were obtained from the second round of sorting and individual clones were picked and expanded. Homozygous clones (dubbed ‘‘OMG SNAP-Sox2 clone 8’’ and NMG SNAP-Sox2 clone 3’’ respectively) with both Sox2 alleles correctly targeted with SNAP-tag integrations and that show SiR nuclear staining were selected for all further experiments. To generate OMG SNAP-Cdk9 targeted cells, OMG-1 mESCs (1x106) were transfected with 10 mg SNAP-Cdk9 donor vector and 0.6 mg espCas9-gRNA-Cdk9 vector. 10 days after transfection, the cells were trypsinized, labeled with SiR-BG and subjected to FACS, generating a first-round SiR-positive pool. This pool was then expanded, stained with SiR-BG and subjected to second FACS round and individual clones were picked and expanded. A heterozygous clone (dubbed ‘‘OMG SNAP-Cdk9 clone17-8’’) with one Cdk9 allele correctly targeted with a SNAP-tag integration and that shows SiR nuclear staining was selected for all further experiments. To generate OMG or NMG SNAP-Brd4 targeted cells, OMG-1 or NMG mESCs (1x106) were transfected with 10 mg SNAP-Brd4 donor vector and 0.6 mg espCas9-gRNA-Brd4 vector. 10 days after transfection, the cells were trypsinized, labeled with SiR-BG and subjected to FACS, generating a first-round SiR-positive pool. This pool was then expanded, stained with SiR-BG and subjected to second FACS round and individual clones were picked and expanded. Homozygous clones (dubbed ‘‘OMG SNAP-Brd4 clone 9’’ and NMG SNAP-Brd4 clone 7’’ respectively) with two Brd4 allele correctly targeted with a SNAP-tag integration and that shows SiR nuclear staining was selected for all further experiments.
+
+Cell 178, 491–506.e1–e14, July 11, 2019 e3
+
+[Page 21]
+
+To generate OMG SNAP-Med22 targeted cells, OMG-1 mESCs (1x106) were transfected with 10 mg SNAP-Med22 donor vector and 0.6 mg espCas9-gRNA-Med22 vector. 10 days after transfection, the cells were trypsinized, labeled with SiR-BG and subjected to FACS, generating a first-round SiR-positive pool. This pool was then expanded, stained with SiR-BG and subjected to second FACS round and individual clones were picked and expanded. A heterozygous clone (dubbed ‘‘OMG SNAP-Med22 clone 17’’) with one Med22 allele correctly targeted with a SNAP-tag integration and that shows SiR nuclear staining was selected for all further experiments. METHOD DETAILS Detailed 3D single-molecule STED Optical Setup Microscope Optics The setup (Figure S1A) was built around an inverted optical microscope base (Olympus, IX-71) with a two-tier multi-port design to accommodate selectable confocal/STED and wide-field light paths. We used a silicone oil immersion objective lens (Olympus UPLSAPO60XS, 60 3, NA = 1.30). For fluorescence excitation we used two pulsed laser diodes operating at 490nm and 640nm (PicoQuant, LDH-P-C-485B and LDH-P-C-640B, controlled by Sepia 828-S 2 channel driver) and a 561nm CW solid-state laser (Cobolt, Jive 500). For STED we used a beam from a Titanium-sapphire oscillator (Coherent MIRA HP-D, pumped by an 18W 532nm Verdi G-18 laser or Spectra Physics Tsunami 3941D, pumped by a 10W 532nm Millennia Xs laser) operated in CW mode. The MIRA beam was additionally passed through an Electro-optic Modulator (Conoptics, model 350-80) that enabled fast modulation of laser intensity. The STED beam was split into two beams that were independently phase modulated using a vortex phase plate (RPC Photonics, VPP-1a) with a 0-2p ramp that created the STEDxy doughnut profile and a liquid-crystal spatial light modulator (Hamamatsu, LCOS-SLM X10468-02) programmed with a circular 0-p phase step that created the STEDz profile. The STEDxy and STEDz beams were combined with the excitation beams, passed through an achromatic quarter-waveplate (Edmund Optics) and delivered to the upper-tier right-side port of the microscope. Fluorescence emission collected by the objective lens was back-propagated though the same optical path and separated from the excitation and STED beams using dichroic mirrors (Chroma/Semrock). Different emission wavelengths were then separated using additional dichroics and band-pass emission filters and focused onto 3 separate avalanche photo-diode (APD) detectors (Pico-Quant, Tau SPAD and Perkin-Elmer, SPCM-AQRH). The physical size of the APD active area corresponded to 1 Airy disk unit. Alternatively, the fluorescence was separated using a quad-view device (Photometrics, QV2) and GFP, RFP and SiR were simultaneously imaged onto different quadrants of a back-illuminated EM-CCD detector (Andor iXon3 897). The CCD was operated either in Electron-Multiplication (EM) mode (running at 30fps) or in conventional CCD mode (at 10fps). For astigmatismbased axial localization, a weak cylindrical lens was inserted before the quad-view. Final magnification was 67nm/pixel. For inspecting cellular samples using wide-field epi-fluorescence, 4 laser beams (405nm and 642nm diodes, Thorlabs; 488nm, Coherent Sapphire HP 500; 561nm, Cobolt Jive 500) were combined and delivered through the back port of the IX-71 microscope using a multi-band dichroic mirror (Semrock). Fluorescence emission transmitted through the dichroic was imaged at the lower-tier left side-port of the microscope using appropriate relay optics and band-pass filters for BFP, GFP, RFP and SiR onto a back-illuminated EM-CCD (Andor Ixon 860). Selecting between wide-field and confocal/STED light paths was achieved by rotation of the IX-71 fluorescence cube turret. Control Electronics and Software The specimen holder was mounted on a direct drive, high-dynamics 3D nanopositioning stage equipped with capacitive sensors (Physik Instrumente, P-561.3DD), interfaced to a digital controller (Physik Instrumente E-710 or E-712). For 2D and 3D imaging, the built-in wave generator of the controller was programmed to raster-scan the specimen in a pre-defined trajectory over the stationary excitation and STED beams. The actual trajectory achieved was monitored using the stage capacitive sensors and the position data obtained were used to reconstruct the final images. A typical 2mm 3 2mm, 8-second scan consisted of 80 lines and 8000 points were sampled to obtain the actual trajectory of the stage (100 points/line). Individual fluorescence photons detected by the APDs were registered using time-tagging single-photon counting electronics (PicoHarp 300, PicoQuant) with 4psec temporal resolution. Instrument control, including communication with the nanopositioning stage controller and the photon-counting electronics was implemented in LabVIEW 2012 & 2014 (National Instruments). The wave generator ran under internal timing of the nanopositioning controller which served as the master clock for synchronization. Trigger pulses were sent to the photon-counting electronics to mark each raster line. Offline analysis and image reconstruction was performed in MATLAB 2010b (MathWorks). We extracted the arrival time of each photon from the PicoHarp 300 data and, using the markers from the wave generator, we binned the detected photons in 1ms intervals starting at the beginning of each line. We then performed a 2D interpolation of the xy stage position and corresponding photon counts at each time-bin to a regular 200 3 200 grid (10nm interval). The final image was then binned to a 40nm pixel size. For active feedback control experiments, we adopted a custom LabVIEW program, optimized for fast CCD acquisition, real-time image analysis and active microscope stabilization using nanopositioning equipment (Wang et al., 2016). The images obtained from the Ixon3 897 detector were analyzed on the fly by non-linear least-squares fitting of a 21 3 21 pixel ROI to a 2D Gaussian peak function implemented in LabVIEW. Axial localization was achieved either though the degree of defocus or based on astigmatism. The coordinates returned by the 2D Gaussian peak fit were passed onto a PID controller that calculated the desired position correction
+
+e4 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 22]
+
+that was commanded to the nanopositioning stage controller. The LabVIEW application ran at sustained speeds of up to 30 frames/ second. For real-time confocal and STED imaging, we programmed the wave generator to scan 2mm 3 2mm or 1mm 3 1mm xy areas in 0.8sec or 0.2sec respectively. 3D scanning was performed by acquiring 5 xy scans while moving the stage by 0.5mm in z between scans. TTL pulses corresponding to single-photon events from the APDs, together with the trigger pulses from the wave generator were detected using a field-programmable gate array (FPGA) data acquisition system (National Instruments, PCIe-7852R). For target-locked FRAP experiments at the CMV mini-gene (Figures 3D–3G), tdPCP-EGFP was tracked using a 0.02-0.08mW 490nm beam. SiR-Rpb1 was initially probed with a 0.1mW 642nm beam, bleached with 0.9mW for 10 s and recovery was then monitored every 10 s for 0.4 s with 0.1mW. For target-locked FRAP experiments at Pou5f1 (Figures 5C–5E), MCP-EGFP was tracked using a 0.05mW 490nm beam. SiR-Rpb1 was initially probed with a 0.22mW 642nm beam, bleached with 0.9mW for 10 s and recovery was then monitored every 10 s for 0.4 s with 0.22mW. Setup operation For imaging live cells at 37 C we built a stage incubator with a temperature-controlled brass insert that can accommodate chambered coverglass specimens. Flexible kapton heaters and a thermistor sensor were used to control the temperature of the sample with a PID controller (Thorlabs, TC200). A separate set of heater, thermistor and PID controller regulated the temperature of the objective lens. To achieve the desired gas atmosphere, N2, O2 and CO2 were controlled independently by 3 electronic mass-flow controllers (Omega Engineering), and the gas mixture was passed through a bubbler humidifier before being delivered to the incubator. Single-molecule in vitro experiments Glass coverslips and slides were passivated with Poly-ethylene-glycol (PEG) based on our previous work (Pertsinidis et al., 2010), but using 4-arm instead of linear PEG (Wang et al., 2016). Coverslips and slides were cleaned in a 70:30 v:v H2SO4:H2O2 mixture, rinsed with Milli-Q water, cleaned in a 0.5M KOH solution, rinsed with Milli-Q water and then soaked in a 98:2 v:v acetone-(3-aminopropyl)triethoxysilane (Sigma 440140) solution for 10 min and washed with Milli-Q water. A 10% w/v solution of 4arm 10k PEG, Succininidyl carbonate (Laysan Bio, 4arm-PEG-SC10K) prepared at 4 C in 0.55M K2SO4 was applied for 90 min at RT. Coverslips also contained 1:100 mixture of biotin-PEG:PEG (mPEG-Biotin, MW 5,000, Laysan Bio MPEG-Biotin-5000) for immobilizing single molecules through biotin-streptavidin interactions. The high resistance to non-specific adsorption was critical for successful single-molecule experiments at up to 1mM concentration, especially using Atto647N, one of the best-performing fluorophores under STED, for which previous attempts using surfactant-passivated surfaces had failed (Hua et al., 2014). Flow cells were assembled with a PEG-coated glass slide that contained drilled holes and a PEG-coated glass coverslip, sandwiched with 100-mm-thick double-sticky tape. Channels were block with 10% w/v BSA for 10 min, incubated with 50ng/mL streptavidin for 10 min and rinsed with 1 3 PBS. 20-100pM Cy3/biotin-labeled 15nt target oligo (IDT, 50 Cy3-ACTCTCTTCCTCATC-30 Biotin-TEG, HPLC purified, 8nt matching to the probe underlined) was then bound to the surface for 10 min, followed by 1 3 PBS rinse. The Atto647N-labeled probe oligo (IDT, 50 Atto647N-TGAGGAAGTC-30 , HPLC purified, 8nt matching to the target underlined) was diluted in an imaging buffer containing 75mM HEPES-KOH pH 7.5, 10mM Potassium Glutamate, 0.18%w/v glucose, 1mM Methyl Viologen, 1 mM Ascorbic Acid, a mixture of glucose oxidase and catalase enzymes(Pertsinidis et al., 2010) and 10mM of a random 10nt oligo as competitor (IDT, 50 -NNNNNNNNNN-30 ). Depending on the concentration of the probe oligo, the imaging buffer also contained a variable concentration of NaCl (750, 500 and 100 mM NaCl for 300, 600 and 1000 nM probe respectively) in order to achieve 50:50 on-off binding equilibrium of the probe to the target. A 2mm 3 2mm region was first scanned in 8 s with 200mW 561nm excitation to localize immobile Cy3 molecules. Subsequently the nanopositioning stage was moved to place a selected Cy3 molecule at the zero of the STED beams. Coordinate mapping transformations were calibrated using confocal images of stable 15bp Cy3-Atto647N duplexes (IDT, Cy3-biotin target oligo described above and 50 Atto647N-AGATGAGGAAGAGAGT-30 , HPLC purified) obtained with 561nm, 642nm only and 642nm+STED lasers. The focus position was adjusted by looking at the reflected images of the lasers beams on the left-side port CCD camera. With the Cy3 placed at the STED zero, we obtained 40 s time traces, using 10mW 561nm and 15.2mW 642nm excitation beams interlaced at 50Hz. The STED beams were off for the first 20 s and on for the last 20 s. Time-tagged single photon detection events were simultaneously recorded from the Cy3 and Atto647N APDs. Offline data analysis was done in MATLAB (MathWorks, R2010b). For experiments to characterize background level and noise of freely diffusing molecules in solution, sample cells were assembled using PEG coverslips and slides as described above. After 10% BSA blocking, variable concentrations of Atto647N-labeled streptavidin diluted in imaging buffer (75mM HEPES-KOH pH 7.5, 55mM Potassium Glutamate, 1.8% w/v Glucose, 1mM Ascorbic Acid, 1mM Methyl Viologen, glucose oxidase and catalase enzymes and 0.080.125 mg/mL unlabeled streptavidin) flowed in and the sample was sealed with tape and imaged. Atto647N time-tagged single-photon counting traces were acquired with the excitation and STED beams focused 2mm above the coverslip surface and into the solution. For 2D imaging experiments in the presence of background from freely diffusing molecules in solution, the 15bp Cy3-Atto647N duplex was immobilized on the PEG coverslip surface through biotin-streptavidin interactions as described for the Cy3-biotin-labeled oligo above. An Atto647N-labeled oligo was then diluted at 100-600nM in imaging buffer (75mM HEPES-KOH pH 7.5, 55mM Potassium Glutamate, 1.8% w/v Glucose, 1mM Ascorbic Acid, 1mM Methyl Viologen, glucose oxidase and catalase enzymes and 500mM random 10nt oligo), flowed in and the sample was sealed with tape. A 2mm 3 2mm region was first scanned in 8 s with 200mW 561nm excitation to localize immobile Cy3 molecules and look for presence of co-localized Atto647N through FRET. The same region was
+
+Cell 178, 491–506.e1–e14, July 11, 2019 e5
+
+[Page 23]
+
+then scanned two more times, once with 66mW 642nm excitation only, followed by 66mW 642nm plus 200mW STEDxy and 600mW STEDz 780nm beams. Reconstructed 2D images were analyzed by calculating the total Atto647N photon counts within a certain radius r from the Cy3 position (r = 180 nm and 100 nm for excitation only and excitation+STED respectively) and comparing with total photon counts from equal size regions where there was no Cy3 detected. DNA constructs An a-amanitin resistant mutant (Rpb1, N792D) of the large catalytic subunit of human Pol II was amplified from Flag-Pol-II WT(Addgene 35175) and cloned into a modified pSNAPf vector (NEB) that contained SNAP-tag with an N-terminal Flag-tag peptide, resulting in Flag-SNAP-Rpb1(aAmR). The PB007-EF1a-Flag-SNAP-Rpb1(aAmR) vector was constructed in two steps. First CMV- Flag-SNAP-Rpb1(aAmR) from FlagSNAP-Rpb1(aAmR) was cut and pasted into an empty piggyback transposon vector (Transposagen, PB007), resulting in PB007CMV- Flag-SNAP-Rpb1(aAmR). Next the CMV promoter was replaced by EF1a promoter (cloned from pEF1a-IRES-Neo, Addgene 28019), resulting in PB007-EF1a-Flag-SNAP-Rpb1(aAmR). The subunit Rpb9 of human Pol II was amplified from HeLa cell cDNA and cloned into pSNAPf (NEB) resulting in Rpb9-SNAP. Rpb9-SNAP then was PCR amplified, using a reverse primer with a Flag-tag peptide sequence and cloned into pCDNA4/TO (Invitrogen), resulting in Rpb9-SNAP-Flag. The CMV mini-gene construct was assembled in multiple steps. First the ZsGreen1 sequence in pLVX-shRNA2 (Clontech) was replaced with mTagBFP2 (amplified from mTagBFP2-Lifeact-7, Addgene plasmid 54602), resulting in pLVX-shRNA2-CMV-BFP. Then 28 3 TetO sites were inserted upstream of CMV in 3 steps (7 3 TetO/14 3 TetO/28 3 TetO) using the 7 3 TetO sequence from TRE-TIGHT-EGFP-backward donor (Addgene 22077), resulting in pLVX-shRNA2-28 3 TetO-CMV-BFP. A synthetic vector, pJ241-P[IRES-Puro], containing two multiple-cloning sites flanking an Internal Ribosome Entry Site followed by a Puromycin resistance gene (MCSA-IRES-Puro-MCSB) was provided by DNA2.0. The SV40 polyadenylation sequence was amplified from a gene-Block (IDT) and inserted downstream of IRES-Puro, resulting in pJ241-P[IRES-Puro-SV40pA]. Then the 24 3 PP7 repeat sequence from pCR4-24xPP7SL (Addgene 31864) was cut and pasted resulting in pJ241-P[IRES-Puro-24 3 PP7-SV40pA]. Subsequently CMV-BFP from the construct described above was cut and pasted, resulting in pJ241-P[CMV-BFP-IRES-Puro-24 3 PP7-SV40pA]. The 28 3 TetO was then cut and pasted, resulting in pJ241-P[28 3 TetO -CMV-BFP-IRES-Puro-24 3 PP7-SV40pA]. Finally the 28 3 TetO -.-SV40pA sequence from the pJ241 vector was cut and pasted into the MCS of an empty Piggybac transposon vector (Transposagen, PB007). tdPCP-EGFP was amplified from phage-ubc-nls-ha-tdPCP-gfp (Addgene 40650) and cloned into a modified pCDNA4/TO vector in which the zeocin resistance gene had been replaced with a blasticidin resistance gene. TetR was amplified from pCDNA6/TR (Life Technologies) and cloned into pCDNA4/TO. TagRFP was amplified from TagRFP-TEEA1 (Addgene 42635) with a reverse primer containing an SV40 Nuclear-localization signal (NLS) sequence and cloned into pCDNA4/TO-tetR, resulting in tetR-RFP. WT and Sox2M HMG mutant Sox2 transient expression constructs were assembled in multiple steps. First EF1a promoter and SV40 terminator were amplified from gene-Blocks (Genscript) and inserted into an empty Piggybac vector (Transposagen Bio, PB007), resulting in PB007-EF1a-SV40. Next, Flag-SNAP-Sox2 WT/2M was amplified from gene-Blocks (Genscript) and cloned into PB007- EF1a-SV40, resulting in PB007- EF1a-Flag-SNAP-Sox2 WT/2M-SV40. Finally, IRES-Puro (amplified from the minigene construct) was inserted downstream of Sox2 WT/2M, resulting in PB007-EF1a-Flag-SNAP-Sox2 WT/2M-IRES-Puro-SV40. Sox2M contains 3 mutations in the HMG domain: M47G, F50G and M51G (Chen et al., 2014a; Reményi et al., 2003). Gene-targeting constructs gRNAs were designed using an online tool (http://crispr.mit.edu/; Hsu et al., 2013), with targeting regions near the translation start sites of the mouse Sox2, Cdk9, Brd4 and Med22 loci. The expected cut sites are 32bp, 40bp and 68bp after and 7bp before the translation start sites (AUG codon) of Sox2,Cdk9, Med22 and Brd4 respectively. The target sequences are 50 -GAGACGGAG CTGAAGCCGCCGGG-30 (Sox2-gRNA), 50 -GGAATGCCCGTTCTGCGATGAGG-30 (Cdk9-gRNA), 50 -ATCCCATCACATTCTTCACC AGG-30 (Brd4-gRNA) and 50 -AGACGACATCAAGTCCATCATGG-30 (Med22-gRNA) (PAM underlined). For gRNA cloning, oligo pairs containing partially complementary sequences were annealed and ligated into the BbsI site of espCas9 (Addgene 71814), resulting in espCas9-gRNA-Sox2, -Cdk9, -Brd4 and -Med22 respectively. A Sox2 targeting construct was generated for integrating a SNAP-tag at the N terminus of the endogenous Sox2. First, a gene block was synthesized containing the Sox2 50 -UTR (423 bp) as a left homology arm (HA-L), followed by a sequence encoding Flag-GGSG spacer-SNAP-tag, and finally a Sox2 exon 1 sequence (750 bp) as a right homology arm (HA-R). In the HA-R, 4 silent mutations were included to prevent re-cutting by Sox2-gRNA-programmed CRISPR/Cas9. Finally, the gene block was inserted into the EcoRV site of pUC57. A Cdk9 targeting construct was generated for integrating a SNAP-tag at the N terminus of the endogenous Cdk9. First, a gene block was synthesized containing part of Cdk9 promoter and 50 -UTR sequences (610 bp) as a HA-L, followed by a sequence encoding Flag-GGSG spacer-SNAP-tag, and finally a Cdk9 exon 1 sequence (752 bp) as a HA-R. In the HA-R, 3 silent mutations were included to prevent re-cutting by Cdk9-gRNA-programmed CRISPR/Cas9. Finally, the gene block was inserted into the EcoRV site of pUC57.
+
+e6 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 24]
+
+A Brd4 targeting construct was generated for integrating a SNAP-tag at the N terminus of the endogenous Brd4. First, a gene block was synthesized containing part of Brd4 intron 1 (714 bp) and 50 -UTR sequences (33 bp) as a HA-L, followed by a sequence encoding Flag-GGSG spacer-SNAP-tag, and finally a Brd4 exon 1 and part of intron 1 sequence (750 bp) as a HA-R. In the HA-L, 1 bp deletion in the 50 -UTR was made to prevent re-cutting by Brd4-gRNA-programmed CRISPR/Cas9. Finally, the gene block was inserted into the EcoRV site of pUC57. A Med22 targeting construct was generated for integrating a SNAP-tag at the N terminus of the endogenous Med22. First, a gene block was synthesized containing part of Med22 promoter (173 bp) and 50 -UTR sequences (227 bp) as a HA-L, followed by a sequence encoding Flag-GGSG spacer-SNAP-tag, and finally a Med22 exon 1 and part of intron 1 sequence (750 bp) as a HA-R. In the HA-R, 3 silent mutations were included to prevent re-cutting by Med22-gRNA-programmed CRISPR/Cas9. Finally, the gene block was inserted into the EcoRV site of pUC57. Validation of CRISPR/Cas9 gRNAs To test the efficiencies of the gRNAs, 0.25 mg of espCas9-gRNA-Sox2, -Cdk9, -Brd4 or –Med22 were transfected into 1x 104 WT mESCs (Bruce 4 C57BL/6) respectively using Lipofectamine 2000 (Invitrogen 11668019). Genomic DNA was extracted 5 days post-transfection using High Pure PCR Template Preparation Kit (Roche 11796828001). To test the cutting efficiency of espCas9gRNA-Sox2 and espCas9-gRNA-Med22, a surveyor assay was performed using Surveyor Mutation Detection Kit S100 (IDT 706020). Briefly, DNA samples were PCR-amplified by Herculase II Fusion DNA Polymerase (Agilent 600675) using site-specific primers and the PCR products were denatured by heating-up and then cooled down to form heteroduplexes. Mismatched duplexes were then cleaved by Nuclease S and cleavage products were detected by gel electrophoresis. To test the cutting efficiency of espCas9-gRNA-Cdk9 and espCas9-gRNA-Brd4, a 220-bp amplicon was obtained by Herculase II Fusion DNA Polymerase (Agilent 600675), using specific primers spanning the Cdk9-gRNA and Brd4-gRNA targeting regions. Samples were then submitted for DNA sequencing based on the Illumina HiSeq platform at the Massachussets General Hospital NextGen Core facility. Single-end reads in FASTA format were obtained from the deep-sequencing data, and used as inputs to analyze the cutting efficiency with CRISPResso (http://crispresso.rocks/) (Pinello et al., 2016). Mini-gene integration characterization Genomic DNA from CMV clones 5 and 6 was extracted using GenElute Mammalian Genomic DNA Miniprep Kit (Sigma-Aldrich). In order to isolate and identify the insertion sites, splinkerette PCR was performed, using PiggyBac splinkerette PCR Kit (Transposagen). The PCR products were cloned (Invitrogen, TOPO TA Cloning Kit) and sequenced. The genomic sequences beyond the TTAA junctions that were obtained were used to map the integration sites to the human genome with BLAT (https://genome.ucsc. edu/cgi-bin/hgBlat?command=start). Three out of four integration sites (5-2, 6-1, 6-2) were successfully mapped to specific genomic locations (Table S1), while 1 integration site (5-1) is mapped to a SINE element, predicted to exist at thousands of genomic locations. In order to verify the integration sites obtained by splinkerette PCR, locus-specific primer pairs were designed near both ends of the identified integration sites and junction PCR was carried out. We successfully obtained expected size products for all junction PCRs, except for the 5-2 30 junction. The PCR products were subsequently cloned (Invitrogen, TOPO TA Cloning Kit) and sequenced. Sequence results that matched the expected genomic integration sites were obtained for the junctions that had showed correct size PCR products (Table S1). We further verified correct integration of single intact copies of the mini-genes at the mapped positions using Southern blotting. A digoxigenin-labeled probe specific to the Puromycin-resistance gene in our construct was prepared by PCR (Roche, PCR DIG Probe Synthesis Kit). Genomic DNA from clones 5 and 6 were digested by HindIII and PvuII, separated by gel electrophoresis and transferred onto a nylon membrane. The DIG-labeled Puro probe was hybridized at 65 C overnight, stained with anti-DIG-AP Fab fragments and detected by chemiluminescence (DIG-High Prime DNA Labeling and Detection Starter Kit II, Roche). The results of the Southern blotting showed two bands for each clone (Figure S2A), which further verifies the presence of two integration sites in both clone 5 and 6. The sizes of the bands match the predicted sizes based on the distance of the HindIII site in the mini-gene and the nearest 30 PvuII (or in the case of 6-1, the nearest 30 HindIII) site on the genome (Table S1). Based on the reference human genome sequence (hg19), we were expecting a 6.1kb band for site 6-2, but we obtained a 4kb band instead. Upon further inspection of the genomic sequence obtained by junction PCR, we found a point-mutation (G/C at chr19:53833111) that creates a PvuII site near the 6-2 30 junction (Figure S2B), thus explaining the observed 4kb versus 6.1kb band. Finally, we quantified the total copy number of mini-gene integrations using quantitative real time PCR (qPCR). Primer pairs were designed for 4 internal mini-gene regions (Puro, BFP, TetO, SV40) and the 5 mapped (mini-gene)-genome junctions. qPCR was performed on a 7500 Real Time PCR system (ABI), using KAPA- SYBR FAST Master mix ABI Prism (KAPA Biosystems #KK4604) and with 10ng of genomic DNA in duplicate 10 ml reactions. Final primer concentration was 100 mM. All reactions used standard ABI cycling conditions (initial 2 min at 50 C, denaturation 5 min at 95 C, 40 cycles of 10 s at 95 C, annealing and extension for 1min at 60 C). Copy number for each sequence was determined from the Ct of the genomic DNA reactions, using a calibration curve obtained from 10-fold serial dilution (106-100 copies per reaction) of synthetic dsDNA fragments (IDT, gBlocks). Quantification of the internal sequences relatively to the junction sequences (expected to be unique in the genome) indicates 2.03 ± 0.34 (mean ± S.D., n = 3-5 biological replicates) mini-gene integrations (Figure S2C).
+
+Cell 178, 491–506.e1–e14, July 11, 2019 e7
+
+[Page 25]
+
+We note that when imaging individual cells, it is not possible to identify which transcription site (tdPCP-EGFP spot) corresponds to which integration site. However, both tdPCP-EGFP tagged transcription sites seem to behave very similarly, arguing that the CMV mini-gene transcription is not significantly affected by the position that it is integrated in the genome. The mini-genes are flanked by insulators that are expected to further reduce the effects of the nearby chromatin environment. Most of the data in the paper were obtained with clone ‘‘5’’ and similar results were obtained in experiments with clone ‘‘6,’’ further suggesting limited effects of the specific genomic integration site. ChIP-qPCR analysis of Pol II after FVP treatment U-2 OS cells Fast chromatin immuno-precipitation was performed as described (Nelson et al., 2006). Confluent 15cm dishes (20 3 106 cells) were treated with 10mM FVP or DMSO for the indicated times. Methanol-free formaldehyde (Thermo Fisher) was then directly added to the media to 1% v/v final concentration, and dishes were immediately placed on a rotator/shaker for 10 min at RT. Formaldehyde was quenched with 125mM glycine for 5min at RT, and cells were scraped and collected with centrifugation (2,000 g, 5min at 4 C) and washed twice with cold PBS. Cells were lysed in buffer IP (150 mM NaCl, 50 mM Tris-HCl pH 7.5, 5 mM EDTA, 0.5% v/v NP-40, 1.0% v/v Triton X-100) containing protease inhibitors, centrifuged (12,000 g, 1min at 4 C), and after one wash, the pellet was resuspended in buffer IP+protesase inhibitors. Volume equivalent to 4 3 106 cells was sonicated to shear the chromatin (Bioruptor indirect sonicator), and cleared using centrifugation (12,000 g, 10min at 4 C). The supernatant was diluted 1:10 in buffer IP+protease inhibitors, pre-cleared using Protein G PLUS-Agarose beads (Santa Cruz Biotech; pre-blocked with salmon-sperm DNA), for 2hr at 4 C, centrifuged, and 10% of the pre-cleared supernatant was kept at 20 C as input. The rest of the sample was split in two halves, one used as a no-antibody control and one mixed with 3mg with a monoclonal anti-FLAG antibody (M2, Sigma Aldrich F1804) to immuno-precipitate FLAG-SNAP-Rpb1. Samples were incubated overnight at 4 C, and then mixed and rotated for another 2hr at 4 C with Protein G PLUSAgarose beads. The beads were spun-down and then washed at least 5 times with ice-cold buffer IP+protease inhibitors. Chelex 100 resin (Bio-Rad, cat. no. 142-1253), 10% w/v in water, was added to the washed beads. The 10% input sample was precipitated with 3 volumes of ethanol at 20 C, and the precipitated pellet was resuspended, bound to Chelex resin and subsequently processed as the rest of the samples. The samples were boiled for 10min, and once cool, Proteinase-K was added, incubated 30min at 55 C and then Proteinase-K was inactivated by boiling for 10min. Beads and chelex resin were spun down, and chelex-bound DNA was eluted in water. Eluted chromatin was analyzed with qPCR, using primer pairs specific for different mini-gene regions (Figures S4G and S4H). mESCs Confluent 15cm dishes (10 3 106 OMG SNAP-Rpb1 clone 3 cells) were treated with 10mM FVP or DMSO for the indicated times. Methanol-free formaldehyde (Thermo Fisher) was then directly added to the media to 1% v/v final concentration, and dishes were immediately placed on a rotator/shaker for 10 min at RT. Formaldehyde was quenched with 125mM glycine for 5min at RT, and cells were scraped and collected with centrifugation (800x g, 5min at 4 C) and washed twice with cold PBS. Cells were lysed with SDS lysis buffer (50 mM Tris-HCl pH 8, 10mM EDTA, 1% SDS) containing protease inhibitors, and placed on ice for 10 min. Volume equivalent to 2 3 106 cells was sonicated to shear the chromatin (Branson SFX 150), and cleared using centrifugation (12,000 g, 10min at 4 C). The supernatant was diluted 1:10 in dilution buffer (0.01% SDS, 1.1% Triton X-100, 1.2 mM EDTA, 16.7 mM Tris-HCl pH 8, 167 mM NaCl)+protease inhibitors, pre-cleared using magnetic Protein G beads (Thermo Fisher Scientific 10003 D), for 2hr at 4 C, cleared by separating the beads with a magnet, and 2% of the pre-cleared supernatant was kept at 20 C as input. The rest of the sample was split in two halves, one used as a no-antibody control and one mixed with 5 mg of a monoclonal anti-FLAG antibody (M2, Sigma Aldrich F1804) to immuno-precipitate FLAG-SNAP-Rpb1. Samples were incubated overnight at 4 C, and then mixed and rotated for another 4hr at 4 C with magnetic Protein G beads. The beads were then washed sequentially with ice-cold low salt buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20mM Tris-HCl pH 8, 150 mM NaCl), high salt buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl pH 8, 500 mM NaCl), LiCl immune complex buffer (0.25 M LiCl, 1% IGEPAL-CA630, 1% deoxycholic acid, 1mM EDTA, 10 mM Tris-HCl pH 8) and TE buffer (10 mM Tris-HCl pH 8, 1mM EDTA). All the samples as well as the inputs were incubated with elution buffer (50 mM Tris-HCl pH 8, 10 mM EDTA, 1%SDS) + Proteinase-K, at 62 C for 2hr with shaking. The samples were then boiled for 10 min, and once cool, the supernatants were collected after using a magnet to separate the beads. DNA was then purified by Qiaquick PCR purification kit (QIAGEN 28104). Eluted chromatin was analyzed with qPCR, using primer pairs specific for different Pou5f1/Oct4 regions (Figures S2A and S2B). ChIP-qPCR analysis of H3K27ac after A-485 treatment For H3K27ac and H3 ChIP-qPCR experiments, confluent 10cm dishes (3 3 106 OMG SNAP-Sox2 cells) were treated with 1mM A-485 (Structural Genomics Consortium) or 0.1%v/v DMSO for the indicated times. Fixation, cell lysis, sonicated chromatin preparation, immunoprecipitation and qPCR anaylsis were performed as described for OMG SNAP-Rpb1 cells in the previous section, with the exception that 5mg H3K27ac antibody (Active Motif 39685) or 5mg H3 antibody (Active Motif 39763) were used for each IP respectively. Preparation of cells for live-cell imaging (wide-field and confocal/STED) 106 CMV mini-gene clone 5 and 6 cells were nucleofected with 0.2mg tdPCP-EGFP and 0.5mg tetR-RFP plasmids (Amaxa kit VCA1003, Lonza) and seeded in collagen-coated 8-chamber coverglass (LabTek, 155411), in media containing a-amanitin only. 1-3 days ius et al., 2013) or JF646 Halo Tag Ligand (Grimm et al., 2015) and used post-nucleofection cells were stained with SiR-BG (Lukinavic
+
+e8 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 26]
+
+for imaging experiments. To achieve full staining, cells were incubated with media containing 1mM SiR-BG or JF646 Halo Tag Ligand for 1-1.5hrs at 37 C. Decreasing SiR to 0.3mM or increasing SiR to 3mM had no significant effect on the SiR-Rpb1 signal at the transcription sites, indicating 100% labeling saturation. To achieve reduced staining, cells were incubated with media containing 0.3mM SiR for 10minutes. This modified protocol results in 20%–25% of maximum staining, as estimated by the 4-5 3 reduction in steadystate plateau level Bd that reflects level of diffusing Pol II in the nucleus. Cells were then rinsed once with new media, placed in new media containing a-amanitin and imaged 15min to a few hours after. T-Rex HeLa Rpb9-SNAP-Flag cells were seeded in 8-chamber coverglass on day 1 and induced with 10 ng/mL tetracycline on day 2. On day 3, cells were incubated in media containing 1.25mM SiR-BG for 0.5 hr at 37 C, washed three times with new media and imaged. mESC cells were seeded onto 8-chamber coverglass (LabTek, 155411) coated with 5 mg/mL laminin (BioLamina LN511), in 2i media (OMG) or +2i media (NMG) and appropriate drugs. We discovered that 1hr incubations with 1mM SiR-BG resulted in noticable background staining. We thus reduced the incubation time to 10 min and performed SiR-BG titrations between 30nM and 1mM. Nuclear staining increases up to 0.3 mM and then remains constant up to 1mM SiR-BG, indicating that in mESCs 100% SNAP-tag labeling saturation can be reached with 10 min staining. For optimal signal-to-background, cells were thus labeled with media containing 0.3 mM SiR-BG for 10 min, at 37 C, followed by three washes with new media. Transient expression of WT and HMG domain mutant (2M) Sox2 OMG-1 cells (1x106) were transfected with 10 mg PB007-EF1a-Flag-SNAP-Sox2 WT/2M-IRES-Puro-SV40 and 1 mg pCMV-hyPBase vectors using Lipofectamine 2000 (Invitrogen 11668019). One day post-transfection, cells were transferred onto laminin-coated coverglass chambers in 2i+G418 media and imaged after 1-2 days (for details see previous section, Preparation of cells for live-cell imaging (wide-field and confocal/STED)). Targeted Brd4 degradation using MZ1 OMG SNAP-Cdk9 clone 9 cells, seeded onto laminin-coated 8-chamber coverglass, were treated with media containing variable concentrations of MZ1(Zengerle et al., 2015) (Figures S7E and S7F), or 0.1% v/v DMSO control for 1hr. Subsequently, cells were briefly washed with fresh media, incubated in fresh media for 1hr, followed by SiR staining and imaging. Preparation of fixed cells for GFP nanobody super-resolution imaging For super-resolution imaging of tdPCP-EGFP at the transcription site, cells were nucleofected and seeded in 8-chamber coverglass samples as outlined above. Media were removed, cells were briefly rinsed with RT 1 3 PBS and then fixed with 4% methanol-free formaldehyde (Thermo Fisher) in 1 3 PBS for 10min at RT, washed with 1 3 PBS and quenched with 50mM NH4Cl in 1 3 PBS for 5 min. Following 3 3 10 min washes in 1 3 PBS, cells were permeabilized for 10 min with 0.5% Triton X-100 in 1 3 PBS, and blocked for 10 min with Image-iT FX Signal Enhancer reagent (Cell Signaling Technology) and 1.5hrs with 5% w/v BSA in 1 3 PBS. Then the cells were stained with 20nM GFP nanobody (Chromotek, GFP-Trap) that was labeled using Alexa 647-NHS (Life Technologies) at 1:1 dye:nanobody ratio in 5% BSA/ 3 PBS. After 3 3 5 min washes in 1 3 PBS, cells were imaged in photo-switching buffer that contained 75mM HEPES-KOH pH 7.5, 0.9% w/v Glucose, 55mM Potassium Glutamate, 100mM b-Mercaptoethylamine and a mixture of glucose oxidase and catalase enzymes. Preparation of fixed cells for SiR-Rpb1 confocal/STED imaging Cells were nucleofected, seeded in 8-chamber coverglass samples and stained with SiR as outlined above. Media were then removed, cells were briefly rinsed with 1 3 PBS pre-warmed at 37 C and then fixed with pre-warmed 4% methanol-free formaldehyde (Thermo Fisher) in 1 3 PBS for 10min at 37 C and washed with 1 3 PBS at RT. Imaging was performed in buffer that contained 75mM HEPES-KOH pH 7.5, 0.9% w/v Glucose, 55mM Potassium Glutamate, 1mM methyl viologen, 1mM ascorbic acid and a mixture of glucose oxidase and catalase enzymes. Additional Wide-Field Imaging Optical Setups Routine cell observations were performed using a commercial epi-fluorescence microscope (Zeiss, Axiovert 200), equipped with an oil-immersion objective lens (Zeiss, Plan-apochromat 63 3 NA = 1.4), a mercury lamp illuminator (VSG HBO100/001-26E), filter sets for DAPI (used for BFP), GFP, TMR (used for RFP) and Cy5 (used for SiR), and a scientific CCD (Hamamatsu, ORCA Flash part #C47428012AG). Image acquisition and analysis was performed using AxioVision software (release 4.8.2). Home-made super-resolution setup A wide-field single-molecule and super-resolution imaging setup was built using custom and off-the-shelf opto-mechanics parts (Thorlabs). A custom-machined plate supported a combination of a high-stability coarse positioning stage (Physik Instrumente M-686, with C-867 controllers) with a nanopositioning state (Physik Instrumente P-517.3CD, with E-710.3CD controller). We used an oil immersion objective lens (Nikon 60 3, NA = 1.49) that was mounted on a coarse positioner (Physik Instrumente ND72Z9LAQ with E-861 controller) supported on a 30mm cage structure (Thorlabs). For fluorescence excitation and photo-switching, 405nm (Thorlabs laser diode), 488nm (Coherent Sapphire HP 500), 532nm (Coherent Verdi G-2) or 561nm (Cobolt Jive 500) and 640642nm (Coherent Cube 640-100C or MPB Communications VFL642, 2W) laser beams were combined using dichroics and focused at the back-focal plane of the objective lens to achieve epi-illumination. A dynamic diffuser (Optotune) was used to reduce laser
+
+Cell 178, 491–506.e1–e14, July 11, 2019 e9
+
+[Page 27]
+
+speckle and interference effects and achieve a spatially homogeneous illumination profile. Fluorescence signal was imaged with an achromatic lens, split using a quad-view device (Photometrics, QV2) and separate images for GFP, RFP and SiR/Alexa 647 were projected on different quadrants of a back-illuminated EM-CCD (Andor Ixon3 897). Final image magnification was 160nm/pixel. A home-made temperature-controlled stage incubator, similar to the one used in our STED microscope described earlier, with independent mass-flow controllers (Omega) for N2, CO2 and O2, was used for live cell imaging experiments. A separate heater and temperature controller were used for the objective lens. Wide-Field Cell Imaging Experiments Live cell imaging experiments (tdPCP-EGFP and MCP-mNeonGreen tracking) For time-lapse imaging, a z stack of 11-20 frames at 1 frame/second was acquired, by stepping the sample along the z axis using the nanopositioning stage (250nm steps). The CCD data were analyzed using IDL 6.4 (ITTVIS). Maximum projection images were calculated for each stack, and the resulting 11-20 s/frame movie was used to track the intensities of individual tdPCP-EGFP- or MCP-mNeonGreentagged transcription sites. A particle tracking routine (Crocker and Grier, 1996) was used for finding the positions of the transcription site in each frame and linking them into a 2D trajectory. The intensity trace of tdPCP-EGFP or MCP-mNeonGreen at the transcription site was corrected for photo-bleaching using the time trace of tdPCP-EGFP or MCP-mNeonGreen in a nearby nuclear region. The auto-correlation function was calculated (for the tdPCP-EGFP and MCP-mNeonGreen fluctuation analysis), or the data were imported in Origin 8.5.0 (OriginLab) and the trace fitted to a single-exponential decay (for the transcription inhibition experiments). Live cell imaging experiments (SiR-Rpb1 FRAP) For SiR-Rpb1 FRAP experiments, time lapse images were acquired at 1fps at a focal point adjusted at the mid-plane of the nucleus. To bleach molecules at a spot in the nucleus, an iris was used to block all but a small circle in the center of the excitation beam, the dynamic diffuser was removed and 7kW/mm2 642nm laser power was applied for 10 s. Then, the 642nm laser power was reduced to 7 W/mm2, the diffuser was put back in the optical path (resulting in additional drop in the power reaching the sample), the iris was removed and time- lapse acquisition continued. The recovery trace of SiR-Rpb1 at the bleached spot was corrected for photobleaching using the intensity of nearby (non-photobleached) regions in the nucleus. Super-resolution imaging For super-resolution imaging based on single-molecule switching, the dynamic diffuser was removed to achieve higher laser power (7kW/mm2 at 642nm). Once most of the Alexa 647 had switched off and single-molecule blinking events were visible (16 s after (7kW/mm2 642nm power was applied), we acquired 20,000 frames at 36fps (Ixon3 detector settings: 3MHz, 5.1 3 gain, conventional readout port). Data analysis was performed with the ThunderSTORM ImageJ plug-in (Ovesný et al., 2014). Estimated xy localization precision was 11nm. The distributions of single-molecule localizations from individual transcription sites were analyzed using Origin 8.5.0. Experimental design Independent experiments were performed with different seeded cell cultures on different days, with reproducible results. For smallmolecule inhibitor titration and DMSO control experiments, individual coverglass chambers or tissue culture plates were assigned randomly. Because it was not practicable to complete a full JQ1 or A-485 titration experiment within a single day, we pooled together multiple single-cell measurements obtained from multiple (typically 2-3) different cell cultures over multiple days. Experimentalists were not blind to the experimental parameters during the study. No sample size calculations were performed; sample size was determined to be adequate based on the magnitude and consistency of the measurable effects. No data were excluded. QUANTIFICATION AND STATISTICAL ANALYSIS Types of background noise in single-molecule detection The signal of a molecule at a predefined 3D coordinate is masked by intensity fluctuations due to an ultimately overwhelming number of n background molecules within the detection volume (Figure 1A). Two main types of intensity fluctuations are expected to dominate for different experimental systems and measurement regimes (Chen et al., 1999; Kask et al., 1999): shot noise and particle number fluctuations. Shot noise For a closed system, n remains constant during the measurement, and shot noise due to the stochastic nature of fluorescence emission dominates. For shot noise the intensity p I, given ffiffiffiffiffiffiffi by I = nε (ε: molecular brightness), follows a Poisson distribution, characterized by a variance dI2shot noise = I = nε. Thus SNR ε=n and single-molecule detection (SNR > 1) is in principle achievable at high molecular brightness (ε >> n). Particle number fluctuations A fundamentally different situation emerges in open systems, where n can fluctuate. In the simplest case of freely diffusing molecules pffiffiffi in a 3D solution, n is Poisson-distributed ðdn = n Þ, thus giving rise to intensity fluctuations dI2number fluctuations = nε2 . For ε>1, the intensity fluctuations exceed the Poisson limit ðFano number = dI2number =I = ε > 1Þ. Thus above a certain molecular brightness, and particularly under conditions relevant to single-molecule detection pffiffiffiffiffiffiffiffi (ε >>1), particle number fluctuations give rise to super-Poisson intensity noise. Importantly, for number fluctuations SNR 1=n, thus, irrespective of molecular brightness, single-molecule detection becomes impossible above a certain concentration (SNR < 1 for n >> 1).
+
+e10 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 28]
+
+Experimental determination of dominant noise type under single-molecule detection conditions Under low brightness conditions (0.5 < ε < 3), often used in fluorescence correlation spectroscopy, small deviations from Poisson were seen in the tails of photon-counting (intensity) histograms at 1-50nM molecules in solution (Chen et al., 1999). The small deviations from Poisson were deemed characteristic of number fluctuations. It was further intuitively proposed that the relative effect of number fluctuations diminishes at high concentrations, with the largest deviations from Poisson expected at increasing ε and decreasing n. However, the molecular concentration and brightness regimes where (Poisson) shot noise and (super-Poisson) number fluctuations respectively dominate, and how these relate to conditions relevant to single-molecule detection (ε >> 1), have not been fully characterized. To understand which noise type dominates under single-molecule detection conditions, we measure background level (mean of intensity) and noise (standard deviation of intensity) in solutions of Atto647N-labeled streptavidin, over a range of 15nM-1mM concentrations. Our results show that noise exceeds several-fold the Poisson limit (Figures 1B and S1D), while the Fano factor (variance/ mean) increases proportionally with excitation power (i.e., molecular brightness ε), independent of concentration (Figures S1B and S1C). Also, we characterize the background in live HeLa cells that stably express a SNAP-tag fusion of the Rpb9 Pol II sub-unit, labeled with SNAP-silicon-rhodamine (SiR). Background level and noise measurements over a range of SiR-Rpb9 levels reveal super-Poisson characteristics, reminiscent of number fluctuations of freely diffusing molecules in solution (Figure S1E). Hence, superPoisson number fluctuations hinder single-molecule detection at up to 1mM solution concentrations and can also dominate in certain cellular systems. Contributions of other sources of noise When measuring the fluorescence signal of a single molecule, additional noise sources can play a role: the intrinsic Poisson noise of the molecule’s fluorescence emission, the background from cellular autofluorescence, and noise sources dependent on parameters of the detector in use, such as (effective) Quantum Efficiency (QE), as well as readout and dark noise contributions. Here we provide a detailed account of the relative contributions of these various sources of noise: Poisson emission statistics Under the experimental conditions used in this paper, single-molecule brightness corresponds to 100-1000 photons per time-bin or camera exposure (e.g., Figures 1D, 1G, 2I–2K, S1F, S1G, S3G, S3H, S5B, and S5C). The intrinsic Poisson noise (10-30 photons) is a negligible contribution to the overall noise, providing in this ideal case SNR1:10-1:30. Cellular autofluorescence, laser scattering and other sources of background The total background in the SiR detection channel when imaging an unstained sample is merely 1% of the background level when imaging a fully SiR-stained sample. This shows that the combined effects of cellular autofluorescence, laser scattering, cross-talk from GFP/mNeonGreen fluorescence and detector dark counts are only minor contributions to the total noise under our experimental conditions. Detector QE and readout noise In our experiments we use a back-illuminated (EM)-CCD or a far-red-optimized APD, providing > 90% and 70% QE at 670nm (Cy5/ SiR emission) respectively. When operating the CCD in electron-multiplication mode, the effective QE is 45%, while the readout noise is negligible, while under conventional CCD operation, readout noise is 15 photo-electrons. For the (EM)-CCD, dark noise is 0.001 photo-electron/sec, and for the APD < 20 cps. Thus, there are only minor differences in the performance of the EM-CCD versus CCD versus APD detectors: %2-fold QE difference, contributing only %1.4-fold difference in noise, while readout/dark noise are similar to or less than the intrinsic Poisson noise of the fluorescence signal under our conditions. We note that none of these detector-related noise sources fundamentally prohibit single-molecule detection: limitations in the detector can be merely overcome by increasing molecular brightness with higher excitation intensity. This not the case for super-Poisson number fluctuations at high concentrations, which require radically different approaches to overcome. Thus there is a fundamental reason why QE and readout noise detector specifications are mostly irrelevant under our experimental conditions. At low brightness conditions when Poisson shot noise dominates, the detector specifications might be important. However, at the laser power used for all our single-molecule detection experiments, shot-noise is negligible and super-Poisson number fluctuations dominate. In fact, intensity traces in solutions of 10nM-1mM concentrations show that increasing laser power (and thus molecular brightness) has little effect on achievable SNR (Figures S1B and S1C). As detailed in the previous section on Types of background noise in single-molecule detection, this is a hallmark of super-Poisson number fluctuations. To further illustrate that number fluctuations dominate and detector noise specifications are mostly irrelevant under our experimental conditions, we split the fluorescence signal 50:50 between an APD and an (EM)-CCD. When we focus in the nucleus of a U-2 OS cell with SiR-Rpb1, we discover that both detectors exhibit the same noise magnitude and, moreover, show d-correlated intensity fluctuations (Figure S1F). This clearly indicates that number fluctuations (from the sample) are the dominant source of noise while detector noise is of secondary importance under our conditions. Efficiency of STED in suppressing different types of background noise STED reduces the molecular brightness ε and thus background level by a factor inversely proportional to depletion saturation z: ε /ε = ε=1 + z (Donnert et al., 2006). The type of dominant background noise has profound effects on the efficiency of noise suppression and the SNR improvement by STED. When shot noise dominates, background fluctuations are reduced proportionally to the
+
+Cell 178, 491–506.e1–e14, July 11, 2019 e11
+
+[Page 29]
+
+pffiffiffiffiffiffiffiffiffi square root of background level, improving SNR by 1 + z. In contrast, for number fluctuations, background noise is reduced proportionally to background level, improving SNR by 1+z. Thus, STED is much more effective in suppressing super-Poisson number fluctuations than shot noise, an important consideration for enabling single-molecule detection at high concentrations. Simulation of background suppression by STED We calculated the electromagnetic field at the focus of an objective lens using the method of (Leutenegger et al., 2006). Calculations are based on NA 1.1, lex = 640nm, lem = 700nm and lSTED = 780nm, with a grid size 10nm. A 2 3 2 3 6mm3 simulation box with periodic boundary conditions contains 1,000 Brownian particles. At each simulation step the (x,y,z) displacements of each particle are drawn from a normal distribution with s = 10nm. The number of photons emitted by particle i in each step is drown from a Poisson distribution with a mean equal to N0 3 Iex(xi) 3 Iem(xi) for excitation-only and to N0 3 Iex (xi) 3 Iem(xi) 3 1/[1+3ISTEDxy (xi)] 3 1/ [1+10ISTEDz (xi)] for STEDxyz, with Iex, Iem, ISTEDxy and ISTEDz normalized to [0,1]. We selected N0 = 1, corresponding to a particle bound to a (hypothetical) target exactly at the center emitting on average 1 photon/simulation step. The numerical simulations show proportional reduction of background level and noise by STED (z3-fold; Video S1 Part I), further substantiating the ‘‘zeroorder’’ approximation for estimating the reduction in noise from Super-Poisson number fluctuations (previous section ‘‘Efficiency of STED in suppressing different types of background noise’’). SNR for target-locking versus scanning STED approaches Application of STED decreases the molecular brightness ε by a factor of 1=ð1 + zÞ and the width of the PSF s by a factor of pffiffiffiffiffiffiffiffiffi 1= 1 + z. In images obtained by 1D, 2D or 3D point-scanning the signal from a molecule will be contained in a length, area or volume of dimensions s, thus the total signal Ssd where d is the spatial dimension. Similarly, the noise, given by the fluctuations in intensity integrated over a volume sd, is Nsd/2ε. Thus the effect of STED on the SNR = S/N depends on the spatial dimension as SNR ð1 + zÞð4dÞ=4 . As scanning is performed in higher dimensional space, the effect of STED is progressively diminished, as SNRd = 1 ð1 + zÞ3=4 , SNRd = 2 ð1 + zÞ1=2 and SNRd = 3 ð1 + zÞ1=4 in 1D, 2D and 3D respectively. Thus the biggest improvement is obtained for single-molecule detection with the target locked at the center of the STED doughnut (i.e., no scanning or d = 0), since SNRd = 0 ð1 + zÞ1 . Localization precision improvement by STED at elevated background concentrations The localization precision has contributions from photon and background noise (Thompson et al., 2002): s2loc; total = s2loc; photon noise + s2loc; background noise . These two contributions are given by: s2loc; photon noise zs2 =N, where s the standard deviation of the image of the object and N the number of collected photons; s2loc; background noise zð8ps4 s2B Þ=ða2 N2 Þ, where a the pixel size and sB2 the variance of the background. If background is dominated by shot noise (Poisson statistics), sB;shot noise2 = B, where B: background level. At elevated concentrations, an additional contribution emerges from super-Poisson number fluctuations, sB;n2 = nε2, with n: average number of background p molecules in detection volume and ε: molecular brightness. Thus, there is an excess localization error,s2loc; n n or ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi sloc;n concentration, that dominates at sufficiently elevated background concentrations, Importantly, when background noise is dominated by number fluctuations, the localization precision becomes independent of laser power: sBεPlaser (the molecular brightness εPlaser), while also NPlaser, thus s2loc; background noise s2B =N2 constant. This effect is similar to the independence of SNR versus laser power (Figures S1B and S1C): when background noise is dominated by super-Poisson number fluctuations, both detection SNR and localization precision are fundamentally limited and cannot be improved by merely increasing the laser power. STED decreases s2 and N both by a factor of 1/(1+z), thus leaving the photon noise term unchanged. Thus, the well-known reduction in PSF width by STED has no net gain in localization precision. Contrary, background noise suppression by STED has a dramatic effect when the background is dominated by number fluctuations: the variance of the background is decreased, sB;n1/(1+z), thus the localization precision is also improved by a factor of 1/(1+z). For the Cy3B-Atto647N distance measurements (Figures 1H and 1I) the 2D distance precision is given by: s22D distance ðX nMÞ = Cy3B Atto647N 2ðsloc; total Þ + 2ðsloc; total ðX nMÞÞ + 2ðssystematic Þ , with X the concentration of free Atto647N in solution and ssystematic reflecting any localization errors extraneous to the molecule emission and background, such as instrument drift and/or instabilities. In the absence of free Atto647N (0nM/no background), we experimentally obtain s2D distance ð0nMÞ = 20nm, for both red-only and red+STED redonly imaging. In the presence of 300nM free Atto647N oligo in solution the localization errors are increased, to s2D distance ð300nMÞ = 46nm red + STED and s2D distance ð300nMÞ = 25nm. Thus the effect of STED is to reduce the excess 2D Atto647N localization error qffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi pffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi pffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi Atto647N ð462 202 Þ = 41nm to ð252 202 Þ = 15nm. 2 ðsAtto647N loc; total ð300nMÞÞ 2 ðsloc; total ð0nMÞÞ , from
+
+We can theoretically estimate the precision for localizing clusters of Pol II and the various regulatory factors in live cells based on image parameters. For SiR, s160nm, a = 40nm, N1,000-4,500, and sB10-30. Thus SiR localization errors are dominated by redonly background, with sloc; total 22 51nm (versus sloc; photon noise 3 6nm). As nascent RNA localization precision is blue sloc; total 12nm (s120nm, a = 40nm, N1,200, and sB6), the 2D distance measurement precision is mostly limited by the SiR redonly 2 localization precision ðs22D distance = 2ðsblue loc; total Þ + 2ðsloc; total Þ ; s2D distance 35 74nmÞ. Application of STEDxy with (1+z)2-3
+
+e12 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 30]
+
+results in improved precision, sSTEDxy loc; total 8 20nm, and s2D distance 21 34nm. We note that these theoretical considerations assume spatially uniform background over the image of the object that is localized. In cell nuclei, SiR background distribution is inhomogeneous due to local variations in Pol II and RF densities. Spatial background variations over distances comparable to the sizes of the clusters likely further reduce the actual localization precision, especially for the higher-background confocal-only images. Localization and two-color distance measurement procedures Transcription sites were identified in the tdPCP-EGFP or MCP-mNeonGreen images using the particle tracking package of (Crocker and Grier, 1996). Then, 19 3 19 pixels sub-ROIs centered on the transcription site were fitted to a 2D Gaussian peak function of the form: Iðx;yÞ = B + Aeððxx0 Þ =2sx Þððyy0 Þ =2sy Þ . In the cellular setting, the background can be very inhomogeneous, so the constant B is only an approximation, often reasonable over a small image area. Occasionally, if the transcription site was close to the image edge or to avoid background in-homogeneities in the SiR and JF646 images that might prevent convergence of the fitting algorithm or otherwise affect the position estimates, the sub-ROIs were further trimmed and/or shifted manually (down to 13 3 13 pixels and by up to ± 6pixels respectively). For measuring distances between the features localized in the blue or yellow and red images, first the excitation focal spots were overlapped based on images of backscattered laser light from 100nm gold particles, detected by the PMT (Figure S1A). Then each APD was centered by maximizing the photon counts while focused inside a dye solution. The registration between different colors was calibrated by imaging Cy3-Atto647N duplexes or 40nm-diameter TransFluoSpheres (488/645; ThermoFisher Scientific, T10711). Residual systematic offsets (typically < 40nm, often < 10nm) were then subtracted for the final 2D distance measurements. Estimation of Pol II cluster size by target-locking STEDxy To estimate the SiR-Rpb1 cluster size (Figure S2G), we target-lock the transcription site (based on the tdPCP signal) at the zero STEDxy point. We next turn on red+STEDxy beams and obtain bleaching curves, from which we extract peak signal (when beams initially turn on) and background (when SiR-Rpb1 signal reaches a steady plateau), as shown in Figures 2F and 2G. Using progressively higher STEDxy intensity results in a progressively tighter PSF and depletes Pol II molecules at progressively shorter radii from the center, resulting in reduced peak signal. Beyond the effect of tighter PSF, peak signal is additionally lost due to residual movement of the transcription size away from the STED zero, as well as non-ideal STED zero (residual STED intensity in the center) - this approach likely overestimates the real Pol II cluster size. To isolate the effect of geometric confinement (narrower PSF) from the signal loss due to (i) non-ideal STED zero (20% loss at the highest STED power) and (ii) movement away from the center, the peak signal data (Figure S2G) were corrected based on (i) measurements of the signal loss of single Atto647N-labeled dsDNA molecules placed at the center of the STEDxy doughnut, (ii) a (first-order) correction factor of expðdx2 =s2PSF Þ, where s2PSF is the r.m.s. PSF size and dx = 32nm is the residual r.m.s. displacement of the SiR-Rpb1 cluster from the STED zero setpoint (Figure 2H). Note that this correction neglects the finite size of the SiR-Rpb1 cluster and assumes a Gaussian profile for the PSF. Step-detection algorithms SiR-Rpb1 bleaching intensity traces, I(t), were fit to a multi-plateau function of the form: I(t) = Ii, ti<t<ti+1, i = 1, nsteps, by non-linear least-squares fitting in Origin (Figures 2I–2K, S3G, S3H, S5B, and S5C). Alternatively, we used a test-statistic-based algorithm (Chen et al., 2014b) programmed in MATLAB (Figures S3A–S3C). We further tested the performance of the test-statistic step-detection algorithm using simulated bleaching traces, validating the accuracy of unitary single-molecule step detection at different background and SNR levels (Figures S3D–S3F). Quantification of Pol II signal (S) and immobile background (Bi) at the transcription site With tdPCP-EGFP locked at the peak of the red excitation beam, upon activating the red excitation beam the SiR-Rpb1 signal shows an initial spike, followed by decay to a stationary plateau (Figure 2G). This behavior reflects gradual photobleaching of Pol II molecules residing within the excitation volume during the measurement (total immobile population, S+ Bi) and a constant background of molecules rapidly diffusing in and out (diffusing background, Bd). The immobile population reflects Pol IIs accumulated at the minigene (signal, S), as well as Pol IIs bound to other genomic regions and/or nuclear structures nearby (immobile background, Bi). When locking the tdPCP-EGFP 0.536mm away from the red beam (thus displacing the red beam well beyond the clustered Pol II) (Figure S3I), the initial spike upon red excitation activation contains only immobile background Pol IIs (Bi), from a random nuclear location 0.536mm away from the transcription site. For both traces at the transcription site and 0.536mm away, we estimate the S+Bi, Bi and Bd parameters and bleaching times by stretched exponential fits, of the form eðtt0 =tÞ , where t0 is the frame when the 642nm laser is initially turned on (Figure S3J). For traces 0.536mm away from the transcription site, Pol II molecules are at random locations and not exactly at the peak of the red excitation beam. The SiR-Rpb1 traces locked away from the transcription site show a 3-fold decreased initial level and slower decay to the stationary plateau compared to traces locked on the transcription site (Figure S3J). Thus any immobile background present at the mini-gene manifests as slow baseline decay (from Pol IIs at the periphery) after the initial sharp peak (from Pol IIs at the center). From the above analysis it becomes obvious that traces locked at the transcription site contain two Pol II populations, S and Bi, that bleach with different decay times. Therefore, we can also estimate S, Bi and Bd parameters and their ratios S/(S+Bi) and Bi/(S+Bi) by double exponential fitting (of the form Seðtt0 =t1 Þ + Bi eðtt0 =t2 Þ + Bd ) of traces locked at the transcription site (Figure S3K). Analysis Cell 178, 491–506.e1–e14, July 11, 2019 e13
+
+[Page 31]
+
+of the fast and slow decay components of traces locked at the transcription site, as well as comparison of initial levels and decay times with traces locked 0.536mm away, provides upper-limit estimates of the relative S and Bi contributions (Figure S3K). These estimated S/(S+Bi) and Bi/(S+Bi) ratios likely reflect upper limits, since errors such as imperfect target-locking would lead to underestimating S and overestimating Bi. Thus, for the CMV mini-gene: (i) at least 71 ± 1.3% of the initial peak signal corresponds to Pol II accumulated at the mini-gene (S), while up to 29 ± 1.3% is immobile background (Bi); (ii) the final plateau total background consists of %37 ± 3.5% immobile (Bi) and R63 ± 3.5% diffusing (Bd) background (mean ± SD, n = 3 experiments, > 10 transcription sites each). These ratios are robust; peak signal and steady plateau level are linear over a 10-fold excitation intensity range (Figure S3L). The Bi/ Bd ratio is also consistent with: (i) Fluorescence Recovery After Photobleaching (FRAP) measurements at random nuclear locations (Figures S4K and S4L), showing that 40% of total Pol II is immobile (recovery time 20min) and likely transcriptionally engaged; (ii) previous GFP-Pol II FRAP results in a related system (Kimura et al., 2002). Similarly, we obtain 72% and 28% upper-limit estimates of the relative S and Bi contributions at the Pou5f1 locus respectively (Figures S5E–S5H). Estimation of transcription cycle duration CMV mini-gene We first estimate the Pol II elongation rate based on the difference in the mean nascent RNA residence times between the original (IRES-Puro-24 3 PP7) mini-gene (Figures S2A–S2C) and a re-arranged (24 3 PP7-IRES-Puro) mini-gene (Figures S2I and S2J). The 68 ± 35 s difference (Figure S2C versus Figure S2J) reflects the elongation time of Pol II through the 1.24kb IRES-Puro sequence, providing an estimated elongation rate of 1.24kb/(68 ± 35)sec = 1.1 ± 0.6kb/min. We obtain 302sec for the duration of one transcription cycle. This estimate is based on 202 s median residence time of the tdPCPEGFP nascent RNA (Figure S4C) that reflects the time needed to elongate through the last 1.7kb of the mini-gene and release the RNA, plus an additional 109 s needed for Pol II to elongate at a speed of 1.1kb/min(Figures S4I and S4J) through the first 2kb before the 24 3 PP7 repeats. Pou5f1 We obtain a range of 270-743 s or a more precise z338sec for the duration of one transcription cycle. This estimate is based on 203 s median residence time of the MCP-mNeonGreen nascent RNA (Figure S6E) that reflects the time needed to elongate through the last 1.8kb of the 24 3 MS2-tagged Pou5f1 allele and release the RNA, plus an additional 67.5-540 s or z135 s needed for Pol II to elongate through the first 4.5kb before the 24 3 MS2 repeats, at reported speeds of 0.5-4kb/min (Jonkers et al., 2014) based on genomewide GRO-Seq or z2kb/min (Ochiai et al., 2014) based on live-cell imaging of MS2-tagged Nanog. Sox2 binding sites at Pou5f1 and Nanog enhancers We scanned the 0-5kb Pou5f1 and 0-7kb Nanog upstream regions by the JASPAR CORE database 2018 (Khan et al., 2018). We masked regions with Sox2 ChIP-Seq signal (GSM1082341) and searched for Sox2 and Pou5f1::Sox2 motifs at p < 0.001. Motifs found are annotated in Figures 4A and 7A. Promoter kinetics and transcription noise Certain multi-step kinetic processes that are characterized by finite wait times (‘‘memory’’) between individual events can exhibit reduced noise. Suppression of intrinsic noise is theoretically predicted in models of e.g., transcription, translation or RNA decay characterized by several small steps between individual birth or death events (Pedraza and Paulsson, 2008). Applied to transcription kinetics, if the promoter cycles between multiple (inactive) states, there is effectively a memory between productive initiation events: after one Pol II escapes into elongation, a new Pol II has to wait a certain time for the promoter cycle to be completed. The end result for such a simple kinetic scheme (Figure S6H) is that individual initiation events would be more regularly spaced in time, thus reducing the transcription noise. This feature is also recapitulated in numerical calculations based on this simple multi-step kinetic scheme for promoter activation (Figures S6I–S6K). Interestingly, if release of RNA and Pol II upon termination occurs in a single step, characterized with a release time constant that is comparable to the total elongation time, the autocorrelation functions of transcription traces of a Poisson promoter (n = 1) or promoters that cycle through multiple steps (n > 1) closely resemble each other (Figure S6J). When the auto-correlation functions are dominated by the RNA/Pol II release time, additional experimental parameters (e.g., mean and variance of RNA/Pol II numbers) allow discriminating between different promoters (n = 1 versus n > 1). Statistical analysis Data are represented as mean ± SD or mean ± SEM. The exact number, n, of data points and the representation of n (cells, independent experiments etc.) are indicated in the respective figure legends and in the Results. Boxplots with descriptive statistics were created in Origin. Boxes indicate inter-quartile range (IQR; 25%–75% intervals) and the median line; whiskers indicate 1.5-times the IQR; ‘ 3 ’ symbols indicate 1% and 99% percentiles; square symbols indicate the mean. To test whether 2D distance measurements are derived from the same underlying distribution, Wilcoxon rank sum statistical tests were performed in MATLAB.
+
+e14 Cell 178, 491–506.e1–e14, July 11, 2019
+
+[Page 32]
+
+Supplemental Figures
+
+Real-time feedback control
+
+Microscope
+
+xyz piezo-stage
+
+Detection
+
+60× OL
+
+Atto647N APD
+
+STED Cy3 APD
+
+GFP APD
+
+PD WP
+
+AQWP TL SL
+
+EM-CCD
+
+CF
+
+PMT FL
+
+D4
+
+CL
+
+RM
+
+D2
+
+Noise (photons/0.01s)
+
+15nM 500nM 1200nM
+
+Laser Power (μW)
+
+-2 0 2 4 6 8 10 12 14 16
+
+no STED w/ STED
+
+Background Level (photons/0.01sec)
+
+Background Level (photons/0.01s)
+
+Cy3
+
+Rpb9-SiR Hela cells
+
+Atto647N (Cy3 FRET)
+
+Atto647N direct w/o STED
+
+w/ STED
+
+APD-EMCCD
+
+200nm
+
+Time lag (sec)
+
+-2 0 2 4 6 8 10 12 14 16
+
+Time (sec)
+
+0.6
+
+w/o STED
+
+140000 160000 180000 200000
+
+w/ STED
+
+APD-CCD
+
+0.4 0.2 0.0 -0.2 -15 -10
+
+Time lag (sec)
+
+200nm
+
+Total Atto647N signal (A.U.)
+
+# of regions
+
+-15 -10
+
+200nm
+
+200nm
+
+# of regions
+
+0.8 0.6 0.4 0.2 0.0 -0.2 -0.4
+
+Cross-correlation
+
+# of regions
+
+Cross-correlation
+
+Time (sec)
+
+no STED w/STED
+
+# of regions
+
+EMCCD (A.U.)
+
+CCD (A.U.)
+
+Laser Power (μW) APD (photons/100msec)
+
+15nM 0.5μM 1.2μM
+
+APD (photons/100msec)
+
+Atto647N-streptavidin
+
+Noise (photons/0.01sec)
+
+D1
+
+Mean/Stdev (SNR)
+
+Fano #
+
+RL
+
+PBS
+
+HWP RL Excitation
+
+0-2π Vortex plate
+
+RL RM
+
+CF 561nm HWP
+
+SLM
+
+D3
+
+HWP
+
+CF
+
+PBS
+
+QV
+
+D6
+
+EF3
+
+EF2
+
+D5
+
+HWP
+
+w/o STED w/ STED
+
+SNR
+
+490nm
+
+EF1
+
+642nm
+
+PM
+
+HWP
+
+HWP
+
+780nm
+
+Concentration (nM)
+
+(legend on next page)
+
+[Page 33]
+
+Figure S1. STED Enables Single-Molecule Imaging at Elevated Concentrations, Related to Figure 1 (A) Optical Setup. STED subsystem: STED beam is launched from a fiber collimator. CF: band-pass clean-up filter. WP: Wollaston polarizer. PM: 90%/10% pick-off mirror. PD: photo-diode for monitoring and stabilizing the laser power. HWP: half-wave plate. PBS: polarizing beam splitter cube. SLM: spatial light modulator. RL relay lenses (RL) for independently fine-steering the STEDxy and STEDz beams. Excitation subsystem: 642nm, 490nm and 561nm beams launched from fiber collimators. D2-4: dichroic mirrors. Microscope subsystem: SL: scan lens; TL: tube lens. QWP: achromatic quarter-wave plate. Objective lens (60 3 OL). M: partial mirror reflecting 95% of incident light. The sample is scanned using a 3D nanopositioning stage (xyz piezo-stage). Detection subsystem: D1: long-pass dichroic. RM: removable mirror. APD: avalanche photo-diode detector. In some experiments, a broad-band non-polarizing 50:50 beam-splitter was used instead of the removable mirror, allowing simultaneous use of both EM-CCD and APDs. D5-6: dichroic mirrors. EF1-3: emission filters. QV: Quad-view device, projecting images of Atto647N, GFP and Cy3 in separate quadrants of the camera. FL: focusing lens. CL: cylindrical lens, introducing astigmatism for z localization. PMT: photo-multiplier tube, detecting back-scattered laser light for beam profile calibrations. Real-time feedback control system: analyzes data from the Detection subsystem and actively controls the xyz piezo-stage to stabilize the target at the desired set-point. (B) Fano factor (variance/mean) versus laser power for intensity fluctuations in 15, 500 and 1200nM Atto647N-streptavidin solutions. Solid line: linear relation. (C) SNR (mean/stdev) for the data in (B). SNR varies < 3-fold over 100-fold range of laser power. (D,E) Background noise versus background level for (D) 15, 50, 150, 500 and 1200nM Atto647N-streptavidin pffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi solutions and (E) Rpb9-SiR in live HeLa cells. Poisson limit: noise = Background Level. STED reduces both background level and noise proportionally, by z3-fold. (F) Comparison of background noise simultaneously measured with an APD and an (EM)CCD, for SiR-Rpb1 in live U-2 OS cells. A 50:50 beamsplitter splits the fluorescence signal equally between the two detectors (Figure S1A). CCD operated in EM-CCD (top) or conventional (bottom) mode. The laser is turned on at 1.5sec. Intensity traces and cross-correlations show matching intensity fluctuations in the two detectors; thus noise is dominated by SiR-Rpb1 number fluctuations, while other noise sources are less prominent. (G) 2D images of immobile Cy3-Atto647N duplexes at 600nM Atto647N oligo in solution. First two panels: Cy3 and Atto647N images obtained with 561nm excitation. Arrows: Atto647N molecules indirectly excited through FRET. Last two panels: Atto647N images obtained through direct 642nm excitation. w/o STED, Atto647N molecules are not detected above the background (SNR0.6); w/ STED, Atto647N molecules are visible (arrows, SNR1.2,). (H) Distributions of total counts in Atto647N channel for ROIs centered on molecules versus ROIs at random locations away from molecules, for 300nM background Atto647N oligo in solution (Figure 1G). Signal of Atto647N molecules is not well separated from background w/o STED but becomes better separated w/ STED. (I) SNR obtained for 2D imaging of Cy3-Atto647N duplex at 100, 300 and 600nM Atto647NH oligo in solution, with 642nm excitation only and with 642nm excitation + STED.
+
+[Page 34]
+
+(legend on next page)
+
+[Page 35]
+
+Figure S2. Characterization of Mini-gene Integrations, Scanning Imaging Limitations, Axial Localization Performance, and Organization of Mini-gene Transcription Sites, Related to Figure 2 (A) Southern blot of genomic DNA from clones 5 and 6, digested with HindIII-PvuII, using a probe targeting the Puromycin resistance gene region. Two bands corresponding to two integration sites are observed for each clone. (B) Sequencing result of the genomic region close to the 30 junction of the 6-2 integration site, revealing a single-mutation (shown in italic, G/C) at chr19:53833111 that results in a PvuII restriction site (underlined). (C) Relative qPCR quantification of junctions between mini-gene and genome and internal mini-gene sequences. Data points and error bars indicate mean and SD from n = 3-5 experiments. Relative abundances in the genome are 1 ± 0.22 and 2.03 ± 0.34 (mean ± SD) for junctions and internal sequences respectively (mean values indicated by dashed lines). (D) Standard scanning confocal/STED imaging suffers from photo-bleaching and does not provide single-molecule SiR-Rpb1 quantification. 2mm 3 2mm ROI, 0.8 s/scan, 10-slice z-stack, 250nm z-steps. Inserts: maximum projection from 3 slices centered at the best focus. Traces: SiR-Rpb1 cluster signal. Contrary to target-locked detection (Figures 2I–2L and S3A–S3C), single-molecule steps cannot be identified. (E) Transcription site movement: mean-square-displacement (MSD) scales as ta; az0.5 indicates anomalous diffusion, typical for genomic loci in live-cell nuclei. Mean first-passage times versus distance: within 0.2 s the transcription sites move a distance equal to the radius (HWHM, r = 125nm) of the red excitation beam. (F) Axial localization and target-locking of transcription sites with < 50nm precision and reproducibility. Middle: Astigmatism calibration and z position estimator (sx/sy) versus z using 100nm, 200nm and 500nm beads. Each calibration curve was obtained by moving in 50nm z-steps. At each z position the images are fitted to an elliptical 2D Gaussian PSF model with widths sx and sy in x and y respectively. The z-position estimator sx/sy is robust, exhibiting very similar behavior for different bead sizes. Left: Cyan symbols show image parameters of individual tdPCP-EGFP transcription sites during target-locking. Error bars: S.D.. Individual transcription sites are locked to within ± 50nm (dotted lines) from the set-point (sx/sy = 1.1; dashed line). Right: Trace of a single transcription site shows 29nm r.m.s. target-locking z precision. (G) Relative SiR-Rpb1 (top) signal and qffiffiffiffiffiffiffiffiffiffiffiffiffiffi (bottom) background, detected when locked at the transcription site versus r.m.s. width s = s2x + s2y of the STED PSF. STEDxy: 0-400mW. Error bars: s.e.m., n > 10 transcription sites measured at each intensity. Data from clone 5 (two experiments, open symbols) and clone 6 (one experiment, solid symbols) cells are shown. In top panel data are corrected for non-ideal STED zero and residual movement (STAR METHODS). Solid lines: fits to functional dependencies of the forms s2 =ðs2 + s2trxn site Þ (top) and s2 (bottom) respectively. Estimated r.m.s. transcription site size: strxn site = 85 ± 11nm. (H) Super-resolution image of tdPCP-EGFP tagged with an Alexa 647-labeled GFP-nanobody. (I) Radial distribution of the Alexa 647 localizations in (H), indicating an 81nm radius-of-gyration. (J) Rg is 85 ± 13nm (mean ± SD, n = 9). (K) 2mm 3 2mm fixed-cell images of transcription sites, obtained with excitation only (top) and excitation plus 430mW STEDxy beams (bottom). (L) Relative xy coordinates of tdPCP-EGFP and SiR-Rpb1 from n = 31 (black symbols) and n = 24 (red symbols) excitation-only and excitation+STEDxy images respectively. (M) SiR-Rpb1 spot sizes in fixed-cell images excitation-only and excitation+STEDxy. SiR-Rpb1 images were fitted to 2D Gaussian peak qwith ffiffiffiffiffiffiffiffiffiffiffiffiffiffi functions with widths sx, sy. r.m.s. size s was estimated as s = s2x + s2y . Median values: 168nm/98nm for excitation/excitation+STEDxy respectively. r.m.s size strxn site40-50nm, estimated as s2trxn site = s2 s2PSF .
+
+[Page 36]
+
+SNR=0.8
+
+SiR-Rpb1 signal (103 A.U.)
+
+red only 20-25% SiR-Rpb1
+
+1.0 0.8 0.6 0.4 0.2 0.0
+
+0.8 0.6
+
+Time (sec)
+
+red+STED 20-25%
+
+red+STED 100%
+
+red only 20-25%
+
+1.0 0.8
+
+red only 100%
+
+-900-600-300 0 300 600
+
+Step size (A.U.)
+
+0.6 0.4
+
+200 400 600
+
+Step Size (A.U.)
+
+SiR-Rpb1 (Bd)
+
+200nm
+
+Bi
+
+laser on
+
+Bd
+
+Time (sec)
+
+red only
+
+60k 40k 20k
+
+Bi S+
+
+40k 30k 20k 10k
+
+Bd
+
+Bi
+
+15k
+
+site away trxn m at 0.5u
+
+Bi Bd
+
+Ratio
+
+red + STED
+
+200nm
+
+0 150 300 450 600
+
+SiR-Rpb1 (Bi)
+
+SiR-Rpb1 Signal (A.U.)
+
+150 SNR=3.2 120 SNR=2.4 120 SNR=1.6 75 SNR=1.2 50 SNR=0.8 -6000 -4000 -2000
+
+red only red + STED
+
+red only 100% SiR-Rpb1
+
+Decay Time (sec)
+
+Time (frame)
+
+6.0 5.5 5.0 4.5 4.0 3.5 3.0 2.5
+
+SiR-Rpb1 signal (A.U.)
+
+~100% labeled
+
+Step Size (A.U.)
+
+SiR-Rpb1 Signal (A.U.)
+
+# of steps
+
+# of steps
+
+Step size (photons)
+
+Fraction unitary steps
+
+2.5
+
+0.2
+
+3.0
+
+0 150 300 450 600
+
+0.4
+
+red+STED 100% SiR-Rpb1
+
+4.0 3.5
+
+1.2 1.0 0.8 0.6 0.4 0.2 0.0
+
+Peak (A.U.)
+
+SNR=1.6
+
+# of Steps
+
+0.0 4.5
+
+12k 9k 6k 3k
+
+7.5k
+
+Plateau (A.U.)
+
+1000 photons
+
+Intensity (photons)
+
+0.4 0.2
+
+SNR
+
+0.6
+
+20-25% labeled
+
+red+STED 20-25%
+
+0.8
+
+red+STED 100%
+
+red+STED 20-25% SiR-Rpb1
+
+1.2 1.0
+
+SNR=3.2
+
+red only 20-25%
+
+1.4
+
+red only 100%
+
+Fraction unitary step Unitary Step Size (A.U.)
+
+6.0k 4.5k 3.0k 1.5k 0.0
+
+Excitation Power (μW)
+
+Bi) Bi) S+ S+ S/( Bi/(
+
+0.2 0.0 0.75 1.50 2.25 3.00
+
+SNR
+
+(legend on next page)
+
+[Page 37]
+
+Figure S3. Single-Molecule Pol II Counting, Related to Figure 2 (A, B) Step detection performance in simulated traces. Simulation parameters: n = 10 signal molecules initially present, Nph = 1,000 photons/frame average molecular brightness. Individual molecules bleach at random times with an exponential time constant tbleach = 50 frames. Blue traces contain only Poisson noise from random photon statistics. To simulate background number fluctuations, we assume that nB additional background molecules are present in the detection volume. nB is drawn from a Poisson distribution with average nB = 10, while each background molecule brightness is ε 3 Nph (ε = 0.1, 0.133, 0.2, 0.267, 0.4 for SNR = 3.2, 2.4, 1.6, 1.2 and 0.8 respectively). Black traces: total photon emission from signal and background molecules. Magenta traces: steps identified using a test-statistic algorithm (Chen et al., 2014b). (B) Histograms of step sizes for different SNR. Red curves: fits to multi-Gaussian peaks. (C) Fraction of bleaching steps identified that correspond to the unitary step size population for simulated traces. (D) Experimental target-locking bleaching traces of SiR-Rpb1 at the CMV minigene. Red lines: steps identified by the test-statistic algorithm. (E) Histograms of identified steps sizes. A sub-population of positive steps could reflect binding of new Pol II molecules or photophysics such as blinking events. Red lines: fits to a Gaussian mixture model (Chen et al., 2014b). Note that for red-only traces in 100%-labeled samples there is no Gaussian peak component identified at the expected unitary step size from the under-labeled (20%–25%) SiR-Rpb1 traces. (F) Fraction of bleaching steps identified that correspond to the unitary step size population and unitary bleaching step size, for experimental SiR-Rpb1 traces. (G) SNR versus step size for reduced- and fully-labeled SiR-Rpb1 samples respectively. Solid lines are linear fits, showing 2-fold improvement in SNR (comparing red versus black line slopes for each panel) and 4-5 increase in working concentration range (comparing black line in 20%–25% to red line in 100%) when STED is used. (H) Step-size distributions obtained from reduced-labeled SiR1-Rpb1 samples. Step sizes are 320 ± 115A.U. and 242 ± 83A.U. (mean ± SD) for excitation and excitation+STED respectively. (I-K) Dissecting S versus Bi contributions. (I) SiR-Rpb1 signal with tdPCP-EGFP locked 0.536mm away from the 642nm excitation beam (by displacing the blue (GFP) tracking beam). Top panels: SiR-Rpb1 images when the 642nm beam is initially turned on (Bi) and when the SiR-Rpb1 has reached a steady plateau (Bd). (J) S+Bi, Bi and Bd parameters and bleaching times from stretched exponential fits of traces locked at the transcription site (n = 24) and 0.536mm away (n = 18). (K) S, Bi and Bd parameters and S/(S+Bi) and Bi/(S+Bi) ratios, obtained by double exponential fitting of traces locked at the transcription site (n = 25). (L) Peak (S+Bi) and steady-state plateau (Bd) levels v.s. excitation power. Red lines: linear fits. Data points: mean, error bars: S.D., n = 21, 20, 15, 20 and 17 transcription sites, for 0.38, 0.5, 1.2, 2.7 and 5 mW 642nm power respectively.
+
+[Page 38]
+
+1000 1500 2000 2500
+
+SiR-Rpb1 signal (A.U.)
+
+200 A.U.
+
+200 A.U.
+
+SiR-Rpb1 signal (A.U.)
+
+200 A.U.
+
+0 100 200 300 400 500 600 700
+
+Time (seconds)
+
+Time (seconds)
+
+0 100 200 300 400 500 600 700
+
+Time (sec)
+
+28×TetO
+
+Ctmock-CtIP
+
+CMV-IE
+
+Insulator
+
+BFP
+
+DMSO 0' 2' 5' 12'
+
+1kb
+
+Insulator
+
+DMSO
+
+0 100 200 300 400 500 600 700
+
+IRES-Puro
+
+Triptolide SiR-Rpb1 signal (A.U.)
+
+Flavopiridol
+
+24×PP7
+
+SV40pA
+
+Time (seconds)
+
+Time (seconds)
+
+1000 1500 2000 2500
+
+Transcription site brightness (vs. single mRNAs)
+
+Initiation Rate (1/min)
+
+0.8
+
+Number of RNAs
+
+1.0
+
+Residence Time (sec)
+
+G(τ)
+
+tdPCP-EGFP Signal (A.U.)
+
+CMetO C -E CM MV V- -P BF BF PP P P 7- uro SV SV4 40 0 -in
+
+SV40pA
+
+24×PP7
+
+IRES-Puro
+
+BFP
+
+CMV-IE
+
+28×TetO
+
+Insulator
+
+Insulator
+
+1kb
+
+Residence Time (sec)
+
+Pre-bleach
+
+6sec
+
+200sec
+
+500sec
+
+1200sec
+
+Fraction recovered
+
+1.0 0.8 0.6 0.4 media only Flavopiridol
+
+0.2 0.0
+
+500 1000 1500
+
+Time (sec)
+
+(legend on next page)
+
+[Page 39]
+
+Figure S4. tdPCP-EGFP Fluctuation Analysis, Pol II Dynamics at the CMV Mini-gene upon Transcription Inhibition, and Pol II FRAP, Related to Figure 3 (A) tdPCP-EGFP intensity trace of a single-transcription site and (B) (normalized) auto-correlation-function G(t). G(t) decays to zero at a time delay t = 241 ± 13 s (determined by least-squares fit, red solid line) and remains zero after that, consistent with absence of memory effects and stochastic independent initiation events (Larson et al., 2011). (C) Transcription kinetic parameters. Nascent RNA residence time t estimated by the characteristic time delay when G(t) = 0. Number of tdPCP-EGFP-decorated nascent transcripts N, estimated by assuming Poisson statistics, as N = m2/s2 (Larson et al., 2011), where m and s2 are the mean and variance of the tdPCP-EGFP intensity trace. Initiation rate c, estimated as c = N/t. Statistics for (C): RNA residence time 214 ± 66 s, number of RNAs 8 ± 2 and initiation rate 2.4 ± 0.5 min-1, respectively (mean ± S.D., n = 14 transcription sites). (D) Snapshot of a transcription site (arrow) and single 24 3 PP7 RNA molecules (arrow heads). (E) Quantification of nascent transcription site brightness, indicating brightness equivalent to 5.3 ± 2.4 single RNAs (mean ± S.D., n = 48 transcription sites), consistent with the estimates by assuming Poisson statistics for the tdPCP fluctuations in (C). (F) SiR-Rpb1 intensity traces of single-transcription sites after addition of 10mM FVP, 10mM TRP or 0.1% v/v DMSO. SiR- Red solid lines are fits to single exponential decays. Individual curves are vertically offset for clarity. The SiR1-Rpb1 decay time measurements from multiple such transcription sites are shown in Figure 3C. (G,H) ChIP-qPCR assays. Clone 5 cells were treated with 10mM FVP for the indicated times or with 0.1% v/v DMSO control for 12 min. (G) Schematic of mini-gene and corresponding regions amplified by qPCR primer pairs. (H) Fold-enrichment, calculated as 2Ctmock 2CtIP , where Ctmock and CtIP the threshold cycle values obtained from no-antibody control and anti-FLAG samples respectively. Data-points: mean ± S.E.M., n = 4 independent ChIP experiments. Note the near-complete loss of Pol II signal from the minigene body and terminator regions by the 5-min time point. (I) Schematic of a rearranged CMV mini-gene, with 24 3 PP7 placed upstream of IRES-Puro. (J) Nascent RNA residence time for the rearranged CMV mini-gene, 282 ± 89 s (mean ± S.D., n = 9 cells), determined by auto-correlation analysis. (K,L) SiR-Rpb1 FRAP experiments. (K) Snapshots of SiR-Rpb1 in the nucleus of a cell from clone 5 before bleaching and during the fluorescence recovery. (L) Average FRAP traces in absence of FVP (black, n = 5 cells) and after 30-40 min incubation with 10mM FVP (red, n = 4 cells). A fast initial recovery (10-30 s to 60%; black curve) presumably corresponds to diffusion of mobile SiR-Rpb1 into the bleached area, with the slow recovery over 1000-1500sec corresponding to a 40% immobile Pol II population. Incubation with FVP is expected to block promoter-proximal pause release and thus deplete the majority of elongating Pol IIs. Thus, the reduction of the slow-recovering immobile population to 10%–15% after FVP treatment (fast recovery to 85%–90%; red curve) indicates that the majority of immobile Pol II observed under normal conditions is likely engaged in transcription elongation.
+
+[Page 40]
+
+Time lag (sec)
+
+τ~0.3sec
+
+Distance (nm)
+
+# of Steps
+
+SiR-Rpb1 Signal (A.U.)
+
+# of Pol II molecules
+
+S+Bi
+
+Bd
+
+laser on
+
+100 200 300 400 500 600
+
+Step Size (A.U.)
+
+Bi
+
+laser on
+
+9 10
+
+2k
+
+1k
+
+Bi S+
+
+ay site aw rxn um at t 0.5
+
+Bi Bd
+
+2k
+
+1.0 0.8
+
+1k
+
+0.6 0.4 0.2 0.0
+
+Bd
+
+Endogenous (SNAP-tag knock-in)
+
+Confocal imaging
+
+Ratio
+
+Time (sec)
+
+SiR-Rpb1 Signal (A.U.)
+
+Bd
+
+Time (sec)
+
+Decay Time (sec)
+
+Experiment:
+
+SiR-Rpb1 Signal (A.U.)
+
+Fano #
+
+1.00 0.75 0.50
+
+Time (sec)
+
+SiR-Rpb1 signal (A.U.)
+
+SiR-SNAP-Rpb1 signal (A.U.)
+
+slope=0.5
+
+r=125nm
+
+MSD (nm2)
+
+Mean first-passage time (sec)
+
+Bi
+
+Bi) Bi) S+ i/(S+ S/(
+
+Exogenous expression
+
+MCP
+
+MCP
+
+MCP
+
+MCP
+
+MCP
+
+MCP
+
+MCP
+
+Rpb1
+
+Sox2
+
+Cdk9
+
+Brd4
+
+Med22
+
+WT Sox2
+
+Sox2M
+
+Sox2 (exogenous)
+
+Sox2 (exogenous)
+
+Sox2 (exogenous)
+
+25k 20k 15k 10k 5k
+
+# of SiR molecules
+
+30k
+
+Rp b1 So x2 Cd k9 Br M d4 ed 2M
+
+Integrated Signal (A.U.)
+
+Rb p1 So x2 Cd k9 Br M d4 ed 2M
+
+sxy (nm)
+
+Rp b1 So x2 Cd k9 Br M d4 ed 2M
+
+Peak (A.U.)
+
+Background (A.U.)
+
+Rp b1 So x2 Cd k9 Br M d4 ed 2M
+
+J 200
+
+# of SiR molecules
+
+300nm
+
+Sox2 (exogenous)
+
+(legend on next page)
+
+[Page 41]
+
+Figure S5. Quantification of Pol II, Sox2, Cdk9, Brd4, and Med22 at the Pou5f1 Locus, Related to Figures 4 and 5 (A) Pou5f1 transcription site movement: mean-square-displacement (MSD) scales as ta; az0.5 indicates anomalous diffusion, typical for genomic loci in livecell nuclei. Mean first-passage times versus distance show that within 0.3 s the transcription sites move a distance equal to the radius (HWHM, r = 125nm) of the red excitation beam. (B) Target-locked SiR-Rpb1 trace at the Pou5f1 locus, showing a single bleaching step and (C) step-size distribution, in reduced-labeled conditions. Step sizes are 283 ± 78A.U. (mean ± SD). (D) Number of Pol II molecules detected at the Pou5f1 transcription site in n = 10 independent experiments with fully-labeled samples. Fano factors (Top panel) are 0.7 ± 0.2 (mean ± SD). (E, F) SiR-Rpb1 signals obtained with MCP-mNeonGreen locked at the center (E) and 0.536mm away (F) from the 642nm excitation beam. (G) S+Bi, Bi and Bd parameters and bleaching times, obtained by stretched exponential fits of traces locked at the transcription site (n = 12) and 0.536mm away (n = 13). (H) S, Bi and Bd parameters and S/(S+Bi) and Bi/(S+Bi) ratios, obtained by double exponential fitting of traces locked at the transcription site (n = 14). (I) Live-cell scans showing co-localized MCP-mNeonGreen and SiR-Rpb1, -Sox2, -Cdk9, -Brd4, and -Med22 spots (yellow arrows) at the transcription site. A 2mm 3 2mm ROI scanned in 0.8 s from a z-stack is shown. (J) Relative peak amplitude (A0), background level (B), r.m.s. width sxy = (sxsy)0.5 and integrated signal (p,A0,sy,sy), for the Rpb1, Sox2, Cdk9, Brd4 and Med22 foci respectively, as well as foci of ectopically expressed WT Sox2 and Sox2M HMG mutant, obtained by fitting to an elliptical 2D Gaussian function of the form Iðx; yÞ = B + A0 eðx =2sx Þðy =2sy Þ . Peak and integrated signal right-hand y-axes are calibrated based on the Pol II counts obtained by target-locking.
+
+[Page 42]
+
+24×MS2
+
+Endogenous Pou5f1 gene locus
+
+Pou5f1 enhancer
+
+1kb
+
+Relative Signal
+
+3.0 2.0 1.5 1.0 0.5 0.0
+
+5 11 24 25 16 17 19 23
+
+Primer Pair
+
+1.2 1.0 0.8 0.6 0.4 0.2 0.0 -0.2 -0.4
+
+Residence Time (sec)
+
+G(τ)
+
+Time (sec)
+
+Time (sec)
+
+Transcription site brightness (vs. single mRNAs)
+
+MCP-mNeonGreen signal (A.U.)
+
+DMSO 0' 2' 5' 12.5'
+
+2.5
+
+Number of RNAs
+
+Sox2 binding sites
+
+Initiation rate (1/min)
+
+Pn
+
+kcycle
+
+P2
+
+kinit
+
+P1
+
+kterm
+
+E1
+
+EL
+
+Poisson
+
+Sub-Poisson
+
+1.0
+
+n=1 n=3 n=10
+
+0.8
+
+n=1 n=3 n=10
+
+Time (steps)
+
+Fano #
+
+0.6
+
+Steady-state
+
+G(τ)
+
+# of Pol IIs
+
+δ(# of Pol IIs)
+
+0.4 0.2 0.0 -0.2
+
+10000 20000 30000 40000
+
+Time lag (steps)
+
+1.1 1.0 0.9 0.8 0.7 0.6 0.5 0.4 0.3 0.2 0.1
+
+Figure S6. Pol II Dynamics at Pou5f1 upon Transcription Inhibition and MCP-mNeonGreen Fluctuation Analysis, Related to Figure 5 (A,B) ChIP-qPCR assays. OMG1 SNAP-Rpb1 clone 3 cells were treated with 10mM FVP for the indicated times or with 0.1% v/v DMSO control for 12.5 min. (A) Schematic of the Pou5f1 locus and corresponding regions amplified by qPCR primer pairs. (B) Relative % input, calculated as 100 2Ctinput 5:644CtIP , where Ctinput and CtIP are the threshold cycle values obtained from the input and anti-FLAG IP samples respectively. All the values were normalized relatively to primer pair #17, t = 0 min time-point. Data-points are mean ± SEM from n = 3 independent ChIP experiments. Note the significant and near-complete losses, by the 5-min and 12.5-min time points respectively, of Pol II signal from the Pou5f1 gene body and 30 UTR regions. (C) MCP-mNeonGreen intensity trace of a single Pou5f1 transcription site and (D) (normalized) auto-correlation-function G(t). G(t) decays to zero at a time delay t = 246 ± 12 s (determined by least-squares fit, red solid line). (E) Transcription parameters. Nascent RNA residence time t is estimated by the characteristic time delay when G(t) = 0. Number of MCP-mNeonGreendecorated nascent transcripts N, estimated by assuming Poisson statistics, as N = m2/s2 (Larson et al., 2011), where m and s2 are the mean and variance of the MCP-mNeonGreen intensity trace. Initiation rate c, estimated as c = N/t. Statistics for (E): RNA residence time 203 ± 102 s (mean ± SD), number of RNAs 17 ± 8 (mean ± SD) and initiation rate 5.7 ± 2.3 min-1 (mean ± SD), respectively (n = 6 transcription sites). (F) Snapshot of a transcription site (arrow) and single 24 3 MS2
+
+(legend continued on next page)
+
+[Page 43]
+
+RNA molecules (arrow heads). (G) Quantification of nascent transcription site brightness, indicating brightness equivalent to 4.4 ± 2.2 (mean ± S.D., n = 16 transcription sites) single RNAs. Note the 4-fold discrepancy with the estimates assuming Poisson statistics in (E). (H) Kinetic scheme for a promoter cycle with n states. (I) Mean and standard deviation of number of Pol II molecules NpolII(t), from N = 1000 simulated traces based on the scheme in (H), with n = 1, 3 and 10 respectively. Simulation parameters: LDNA = 3700, kelongation = 1, kterm = 1/3000 and kinit = 1/900 for n = 1 or kinit = 1, kcycle = n /900 for n > 1, respectively. Initially no polymerases are present (NpolII(t = 0) = 0) and the system reaches a steady-state plateau with an average of z7.5 polymerases. After t = 50,000 steps the initiation rate is reduced to zero and NpolII decays back to zero. Dotted line in the top graph marks noise level for Poisson fluctuations. (J) Mean auto-correlation function, calculated from N = 1000 traces during the steady-state plateau. (K) Fano factor versus n. indicating reduced Pol II fluctuations for n > 1.
+
+[Page 44]
+
+(legend on next page)
+
+[Page 45]
+
+Figure S7. Dynamics and Interdependencies of RFs at Pou5f1 and Quantification of Pol II, Sox2, and Brd4 at Nanog, Related to Figures 6 and 7 (A) MCP-mNeonGreen dynamics upon addition of 100nM JQ1. Dashed lines: finite level of attenuated transcription. (B) Relative Brd4 signal at Pou5f1 versus [JQ1]. Red solid line: non-linear least-squares Hill equation fit; K = 28 ± 5nM, n = 1.3 ± 0.3. Error bars: SEM (n = 11-20 cells for each [JQ1]). (C) Relationships between Brd4 and Cdk9 and MCP signals based on the data in (B) and in Figures 6E and 6F. (D) Models for Brd4-dependent P-TEFb recruitment. (E) Total nuclear Brd4 signal after targeted Brd4 degradation using various concentrations of MZ1. (F) MCP amplitude versus Brd4 cluster signal at Pou5f1. (G) Dynamics of MCP-mNeonGreen upon addition of 1mM A-485. Different colors indicate traces from different transcription sites. (H) MCP decay times: 635 ± 350sec (mean ± S.D., n = 17 traces). (I) Dynamics of MCP-mNeonGreen upon addition of 100nM A-485, showing transcription sites that shut down (left) or persist (right). (J) Time course of Brd4 signal at the Pou5f1 locus upon inhibition with 1mM A-485 or 0.1%v/v DMSO control. Red line: exponential fit, t = 8 ± 1sec. (K) ChIP-qPCR analysis of H3K27ac after 1mM A-485 treatment (open symbols) or 0.1%v/v DMSO (solid symbols, 30min time-point). Primer pair locations are shown in Figure S6A. Error bars: s.e.m., n = 3 independent experiments. Dashed lines: exponential fits, with characteristic decay times 7 ± 4, 7 ± 2, 5 ± 1 and 13 ± 4 minutes for primer pairs 5, 4, 6 and 7 respectively. (L) Live-cell images showing co-localized MCP-mNeonGreen and SiR-Rpb1, -Sox2, and -Brd4 spots (yellow arrows) at the transcription site. 2mm 3 2mm ROIs scanned in 0.8 s. (M) Relative peak amplitude (A0), background level (B), r.m.s. width sxy = (sxsy)0.5 and integrated signal (p,A0,sy,sy), for the Rpb1, Sox2 and Brd4 foci respectively at Nanog, obtained by fitting to an elliptical 2D Gaussian function of the form Iðx; yÞ = B + A0 eðx =2sx Þðy =2sy Þ . Peak and integrated signal right-hand y-axes are calibrated based on the Pol II counts obtained by target-locking at Pou5f1 (Figure S6).

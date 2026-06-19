@@ -1,0 +1,1149 @@
+[Page 1]
+
+Letter
+
+https://doi.org/10.1038/s41586-018-0836-1
+
+Genomic encoding of transcriptional burst kinetics Anton J. M. Larsson1, Per Johnsson1,2, Michael Hagemann-Jensen1,8, Leonard Hartmanis1,8, Omid R. Faridani1,3, Björn Reinius1,2,4, Åsa Segerstolpe1,3,7, Chloe M. Rivera5,6, Bing Ren5,6 & Rickard Sandberg1,2,3*
+
+Mammalian gene expression is inherently stochastic1,2, and results in discrete bursts of RNA molecules that are synthesized from each allele3–7. Although transcription is known to be regulated by promoters and enhancers, it is unclear how cis-regulatory sequences encode transcriptional burst kinetics. Characterization of transcriptional bursting, including the burst size and frequency, has mainly relied on live-cell4,6,8 or single-molecule RNA fluorescence in situ hybridization3,5,8,9 recordings of selected loci. Here we determine transcriptome-wide burst frequencies and sizes for endogenous mouse and human genes using allele-sensitive singlecell RNA sequencing. We show that core promoter elements affect burst size and uncover synergistic effects between TATA and initiator elements, which were masked at mean expression levels. Notably, we provide transcriptome-wide evidence that enhancers control burst frequencies, and demonstrate that cell-type-specific gene expression is primarily shaped by changes in burst frequencies. Together, our data show that burst frequency is primarily encoded in enhancers and burst size in core promoters, and that allelic single-cell RNA sequencing is a powerful model for investigating transcriptional kinetics. It was postulated more than 20 years ago that enhancers might increase the probability of transcription10, yet supporting data are scarce (for example, Hbb in mouse9 and sna in flies8), and it remains unclear whether these observations generalize across different types of promoter and enhancer11. An important goal is therefore to determine how promoters and enhancers modulate gene expression by altering burst frequencies and sizes. Single-cell analyses of allelic transcription have revealed frequent monoallelic expression, consistent with episodic transcription12–14. Inspired by recent developments in transcriptome-wide inference of burst kinetics6,15,16, we modelled the expression distribution at each allele independently16 using the two-state model of transcription17. Profile-likelihood was used to infer point estimates (using maximum likelihood) and confidence intervals directly on burst frequency (kon; in units of mRNA degradation rate) and size (ksyn/koff; the individual parameters are unidentifiable in larger parts of parameter space) (Extended Data Fig. 1a, b, exemplified for Mbnl2 in Fig. 1a; Supplementary Methods). Using simulations, we determined the boundaries of parameter space in which kinetic parameters could be robustly inferred (Fig. 1b), and how cell numbers and incomplete sampling (that is, sensitivity) in single-cell RNA sequencing (scRNA-seq) affected inference (Extended Data Fig. 2). To investigate transcriptome-wide patterns of transcriptional bursting, kinetic parameters were inferred for 7,186 genes using transcriptomes from 224 individual primary mouse fibroblasts for each allele (CAST/EiJ × C57BL/6J) (Supplementary Table 1). Inference was performed on Smart-seq2 scRNA-seq libraries, both at the level of reads per kilobase of transcript per million mapped reads (RPKM) and the molecule level (Supplementary Methods), with improved goodness-offit towards the two-state model for molecule-level data (Extended Data Fig. 1c–f). The inferred kinetic parameters inhabited regions in
+
+parameter space for which the estimated precision was high (that is, small confidence intervals) for most genes (Fig. 1b). Observed burst frequencies (Fig. 1c) and burst sizes (Fig. 1d) were in the range of those observed in imaging-based single-gene analyses6, and had a general relationship with expression levels (Extended Data Fig. 1g, h), similar to a previous study18. Kinetics inferred for the two alleles correlated (Spearman r = 0.89 and 0.74 for burst frequency and size, respectively) and were consistent with two independent transcriptional processes (Extended Data Fig. 1i), as previously reported12. Incorporating gene-specific mRNA half-lives had minor effects on the estimation of burst frequency (Fig. 1e), because burst frequencies had larger magnitudes of variation than the rates of mRNA degradation. Notably, the average waiting times between bursts were approximately 4 h per allele (Fig. 1f), and inferred kon values were consistently much smaller than the corresponding koff values (Fig. 1g), demonstrating that genes are mainly in an idle state with occasional bursts of transcription. We dissected the molecular determinants of burst size variation. Housekeeping genes tend to be highly expressed and have compact gene structure19. Indeed, we observed negative correlation between the gene loci length and burst size (Extended Data Fig. 3a, Spearman r = −0.46, P = 1.2 × 10−13; 50 genes per bin) but not burst frequency (Extended Data Fig. 3b, r = −0.10, P = 0.23; 50 genes per bin), and this effect was not associated with the length of the spliced mRNA transcript (Extended Data Fig. 3c). To assess the roles of core promoter elements on burst kinetics (Fig. 2a), we formulated linear regression models that included gene length, TATA and initiator elements (Supplementary Methods) and identified several significant factors and interactions (Supplementary Table 2). Genes with TATA elements in their core promoters had significantly larger burst sizes (P = 4.0 × 10−6, F-test, adjusted for gene length) (Fig. 2b) than genes without TATA elements, in agreement with previous reports in yeast20 and mammals21. In TATA-containing core promoters, we observed that the initiator element significantly boosted burst sizes (P = 7.2 × 10−5, F-test, adjusted for gene length), whereas initiator elements alone (in promoters that lack TATA elements) had no effect on burst size (Fig. 2b). Notably, the effects of the TATA and initiator elements were masked in mean gene expression levels (Extended Data Fig. 3d) and absent in burst frequencies (Extended Data Fig. 3e). Thus, a separation of expression into burst kinetics was required to identify the effects of core promoter elements on transcriptional dynamics, because variations in burst frequencies distort the burst size effect at mean expression levels (Extended Data Fig. 3f). The observed synergy between TATA and initiator elements significantly extends an earlier report of the positive effect of initiator elements on gene expression for promoters with TATA elements22. Notably, we observed distinct gene-length dependencies for the different core promoter elements (Fig. 2c and Extended Data Fig. 3g) and the effects declined around 80 kb. We conclude that core promoter sequence elements affect burst size and that a transcriptome-wide inference of burst kinetics can deduce individual and synergistic effects of cis-regulatory elements on transcription.
+
+Department of Cell and Molecular Biology, Karolinska Institutet, Stockholm, Sweden. 2Ludwig Institute for Cancer Research, Stockholm, Sweden. 3Integrated Cardio Metabolic Center (ICMC), Karolinska Institutet, Stockholm, Sweden. 4Department of Medical Biochemistry and Biophysics, Karolinska Institutet, Stockholm, Sweden. 5Ludwig Institute for Cancer Research, San Diego, CA, USA. 6Department of Cellular and Molecular Medicine, University of California, San Diego School of Medicine, La Jolla, CA, USA. 7Present address: Klarman Cell Observatory, Broad Institute of MIT and Harvard, Cambridge, MA, USA. 8These authors contributed equally: Michael Hagemann-Jensen, Leonard Hartmanis. *e-mail: rickard.sandberg@ki.se
+
+1 0 J A N U A R Y 2 0 1 9 | V O L 5 6 5 | N A T U RE | 2 5 1
+
+[Page 2]
+
+Cells
+
+Number of genes
+
+10 20 30 40 50 60 Total expression
+
+kon = 1.40 koff = 4.74 ksyn = 38.8
+
+kon = 1.52 koff = 3.45 ksyn = 24.9
+
+Paternal expression
+
+–2
+
+Maternal expression
+
+Burst size
+
+–1
+
+log10(burst frequency)
+
+Number of genes
+
+–1.5 –1.0 –0.5 0.0
+
+kon = 2.71 koff = 12.0 ksyn = 89.5
+
+Cells
+
+log2(precision)
+
+Burst frequency
+
+Cells
+
+log10(burst size)
+
+–1 –2
+
+Longest RNA half-lives Shortest RNA half-lives –3 –2 –1 log10[burst frequency (h–1)]
+
+log10(inferred kon)
+
+Number of genes
+
+log10(burst frequency) (1/mRNA decay rate)
+
+Time until burst (h, per allele)
+
+–1 –2 –2
+
+–1
+
+log10(inferred koff)
+
+Fig. 1 | Transcriptome-wide inference of transcriptional burst kinetics. a, Allele-resolution kinetics inferred from scRNA-seq data. The total expression for the Mbln2 gene (top) was separated into allelic expression (maternal: middle; paternal: bottom). Inference was performed independently on total expression and allele-level expression to illustrate that allele-level inference has the required resolution, with expression measured as observed RNA molecules. b, Inferred burst kinetics for each gene (CAST allele) in primary fibroblasts (red dots, 7,186 genes). Blue contours indicate the inference precision defined as the width of the confidence interval divided by the point estimate from simulated observations (Supplementary Methods). Burst size in units of observed RNA molecules. c, Histogram of inferred burst frequencies for CAST allele
+
+in primary fibroblasts, in timescale of mRNA degradation rate. d, Histogram of inferred burst sizes (observed RNA molecules) for CAST allele in primary fibroblasts. e, Scatter plot comparing inferred burst frequencies with gene-specific mRNA degradation rates (x axis) against inferred burst frequencies that did not use mRNA degradation rates (using the average degradation rate for all genes). Genes with the 50 longest (green) and shortest (red) mRNA degradation rates are marked. Data from ES cells and CAST allele. f, Histogram of allele-level waiting times between bursts (data from ES cells and CAST allele). g, Scatter plot showing the inferred gene inactivation (koff ) and activation (kon) rates, highlighting that genes have higher koff than kon values. Data from fibroblast and CAST allele.
+
+We applied the same procedure to 188 mouse embryonic stem (ES) cells (C57BL/6 × CAST/EiJ) (Supplementary Table 3), and determined kinetic differences between the 4,854 genes that were expressed (and had inferable kinetics) in both ES cells and fibroblasts. We detected 1,552 genes with significant (false discovery rate (FDR) < 5%) differences in burst frequency (Fig. 3a) and 1,075 genes for burst size (Fig. 3b), with our current power to detect changes (Extended Data Fig. 4 and Supplementary Table 4). We next investigated whether alterations in burst sizes or frequencies account for cell-type-specific differential expression. When binning genes by expression difference between the cell types, it became apparent that cell-type-specific expression levels are mainly shaped by changes in burst frequencies (Fig. 3c and Extended Data Fig. 5a–d). We hypothesized that burst frequencies were generally regulated by enhancers8–10. A strong linear dependence was observed between differential enhancer activity (normalized histone 3 Lys27 acetylation (H3K27ac) chromatin-immunoprecipitation followed by sequencing (ChIP–seq) read density in enhancer regions) and differential burst frequencies (Fig. 3d and Extended Data Fig. 5e, f), with only a modest effect on burst size, providing genome-wide support for enhancer-mediated regulation of burst frequencies. To validate the allele-level kinetics using a complementary method, we performed single-molecule RNA fluorescence in situ hybridization (smFISH) on male fibroblasts and ES cells for a selection of X-linked genes (expressed from a single allele) with (Hdac6, Msl3, Mpp1) and without (Ibgp1) significant cell-type differences in burst frequencies or size (Extended Data Fig. 6). We observed a general agreement between methods in burst frequencies with some discrepancies and larger burst size estimates in the smFISH data (Extended Data Fig. 7a–f). Importantly,
+
+significant cell-type differences were corroborated in the kinetics inferred from the smFISH data as we observed a significant increase in burst frequencies (Hdac6, in ES cells; Msl3, in fibroblasts) and burst size (Mpp1, in fibroblasts) using both methods (Fig. 3e and Extended Data Fig. 7g–j). Inr No TATA and Inr
+
+Only TATA
+
+Burst size (model)
+
+Inr
+
+Both TATA and Inr
+
+P = 7.2 × 10–5
+
+P = 4 × 10–6
+
+Burst size (model)
+
+TATA
+
+TATA
+
+Only Inr
+
+2,000
+
+4,000 Genes
+
+6,000
+
+log10(gene length)
+
+Fig. 2 | Core promoter elements dictate transcriptional burst size. a, Illustration of gene categorization (and colouring) according to TATA and initiator (Inr) elements in core promoters. b, Burst size (from linear model) for genes, ordered and coloured based on core promoter elements (n = 6,935 genes, F-test). c, The dependency between burst size and gene length for the gene categories. Burst size prediction from linear model with the shaded areas showing the 95% confidence intervals for the prediction, genes ordered (ascending) according to gene length.
+
+2 5 2 | N A T U RE | V O L 5 6 5 | 1 0 J A N U A R Y 2 0 1 9
+
+[Page 3]
+
+–2.0
+
+–2
+
+Burst frequency Burst size
+
+Freq. Size Freq. Msl3 Size Freq. Mpp1 Size
+
+Igbp1
+
+–1.0
+
+log10(differential burst kinetics)
+
+–4 –2.0
+
+–1.0
+
+log10(fibroblast burst frequency)
+
+–4 –2 0 2 4 Gene expression, log2(ES cell/fibroblast)
+
+log10(fibroblast burst size)
+
+Freq. Size
+
+–0.5
+
+sc sm NA FI SH sc RN sm A FI SH
+
+–1.0
+
+Burst frequency Burst size Enhancer magnitude, log2(ES cell/fibroblast)
+
+Burst kinetics, log2(ES cell/fibroblast)
+
+log10(ES cell burst size)
+
+log10(ES cell burst frequency)
+
+Hdac6
+
+–0.8 –0.2 0.0 0.4
+
+–4
+
+–2 Burst kinetics, log2(ES cell/fibroblast)
+
+log10(significance) –12 –10 –8 –6 –4 –2
+
+Fig. 3 | Enhancers regulate burst frequencies to shape cell-typespecific expression. a, b, Scatter plots of transcriptome-wide inferred transcriptional burst frequencies (a) and sizes (b) in mouse ES cells and adult tail fibroblasts (n = 4,854 genes; C57 allele). Genes with significant differences (profile likelihood test, FDR < 0.05) between cell types are marked in red. c, Graph depicting cell-type differences in burst frequency and size, as a function of fold changes in mean expression between cell types. Lines represent median fold change in burst size and frequency between cell types for genes binned by expression difference (n genes per bin = 100). d, Graph depicting cell-type differences in enhancer
+
+magnitude (H3K27ac read densities in enhancers) for genes ordered by cell-type differences in either burst frequency or size. Computed as a rolling median in groups of 200 genes. e, Validation of scRNA-seq inferred cell-type differences in transcriptional burst kinetics by smFISH on four genes (Hdac6, Msl3, Mpp1 and Igbp1). The left heat map denotes effect size and direction of change and the right heat map shows the significance level of cell-type difference in burst kinetics, separated by method, gene and burst kinetic parameter (profile likelihood test). For more information see Extended Data Fig. 7.
+
+To investigate the effects of enhancers on burst frequencies further, we identified genes with significant kinetics differences between the C57 and CAST allele in fibroblasts (burst frequency: 307 genes; burst size: 276 genes) (Fig. 4a, b, Extended Data Fig. 8a–d and Supplementary Table 5). Notably, genes with burst frequency differences had significantly higher densities of single nucleotide polymorphisms (SNPs) in their enhancer regions (Fig. 4c) but not in their promoters (Extended Data Fig. 5g). No effect was found when performing similar analyses on genes with significant differences in burst sizes (data not shown). The fact that genes with strain-specific burst frequencies have more genetic changes in their enhancers supports the notion of enhancers regulating burst frequencies. To functionally assess whether enhancers regulate burst frequencies, we sequenced and inferred transcriptional kinetics from 57 normal mouse ES cells (CAST/EiJ × 129SvEv) and 174 ES cells containing a Sox2 enhancer deletion on the CAST allele23 (Fig. 4d). Markedly, cells with a Sox2 enhancer deletion had significantly (P < 4.2 × 10−40; profile likelihood test) reduced Sox2 burst frequency specifically on the affected CAST allele (Fig. 4e), whereas no significant change in burst size was observed (P = 0.48; profile likelihood test). Using simulations, we demonstrated that the observed kinetics for the affected CAST
+
+allele was in the region of parameter space expected for an exclusive reduction in burst frequency (Fig. 4e, green region; Supplementary Methods). This provides direct evidence for the role of enhancers in modulating transcriptional frequencies and validates that allelesensitive scRNA-seq is sufficiently accurate to infer transcriptional kinetics after a perturbation. The conservation of gene expression patterns and levels among mammals has been extensively studied24, but little is known about the conservation of transcriptional kinetics. We inferred transcriptional kinetics for 2,484 genes in 163 human fibroblast cells after phasing their transcribed SNPs. One-to-one orthologues (1,609 genes) showed significant positive correlations in burst frequency, size and mean expression (Extended Data Fig. 9a–c and Supplementary Table 6). Notably, kinetic parameters were more similar across species than expected merely by preserved expression levels (Extended Data Fig. 9d), although larger datasets would enable in-depth analysis. A caveat to inference of burst kinetics by scRNA-seq is that the estimates may be partly affected by cell-cycle features. A decreased burst frequency per allele25 combined with an additional copy of each allele after genome duplication would balance the numbers of RNA
+
+–0.5 –1.0 –1.5 –2.0 –2.5
+
+Reduced burst frequency
+
+–7 –6 –5 –4 –3 –2 –1 0 log10(burst frequency P value)
+
+log10(C57 burst frequency)
+
+Reduced burst size
+
+–2.5 –2.0 –1.5 –1.0 –0.5
+
+Burst size
+
+log10(CAST burst size)
+
+log10(CAST burst frequency)
+
+SNPs per enhancer (rolling median)
+
+log10(C57 burst size)
+
+Wild type
+
+Sox2 enhancer
+
+Sox2
+
+Sox2
+
+CAST
+
+Sox2
+
+CAST
+
+Sox2
+
+(Sox2 enh–)
+
+Fig. 4 | Altered burst frequencies by enhancer polymorphisms and deletion. a, b, Scatter plots of the burst frequency (a) and burst size (b) inferred for the CAST/EiJ and C57BL/6J alleles in fibroblasts (n = 5,491 genes). Genes with significant differences (FDR < 0.05, profile likelihood test) between genotypes are marked red. c, SNP density in the enhancers of genes with differential burst frequencies were significantly higher (two-sample t-test). We display the rolling median (n = 50) of SNPs per enhancer ordered by the P value of a burst frequency difference between
+
+Burst frequency
+
+CAST and C57 (profile likelihood test, no adjustment for multiple comparisons). d, An illustration of the genetic deletion of the distal Sox2 enhancer. e, Inferred point estimates of burst frequency and size with 95% confidence intervals for both the 129SvEv (red) and CAST/EiJ (blue) allele in wild-type mouse ES cells (solid, n = 57 cells) and after Sox2 enhancer deletion (dashed, n = 174 cells) on the CAST allele. Simulated cases of expression reduced by a drop in burst frequency and size are shown in green and red, respectively. 1 0 J A N U A R Y 2 0 1 9 | V O L 5 6 5 | N A T U RE | 2 5 3
+
+[Page 4]
+
+Data availability
+
+Bartman, C. R., Hsu, S. C., Hsiung, C. C.-S., Raj, A. & Blobel, G. A. Enhancer regulation of transcriptional bursting parameters revealed by forced chromatin looping. Mol. Cell 62, 237–247 (2016). 10. Walters, M. C. et al. Enhancers increase the probability but not the level of gene expression. Proc. Natl Acad. Sci. USA 92, 7125–7129 (1995). 11. Zabidi, M. A. et al. Enhancer-core-promoter specificity separates developmental and housekeeping gene regulation. Nature 518, 556–559 (2015). 12. Deng, Q., Ramsköld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193–196 (2014). 13. Reinius, B. et al. Analysis of allelic expression patterns in clonal somatic cells by single-cell RNA-seq. Nat. Genet. 48, 1430–1435 (2016). 14. Reinius, B. & Sandberg, R. Random monoallelic expression of autosomal genes: stochastic transcription and allele-level regulation. Nat. Rev. Genet. 16, 653–664 (2015). 15. Kim, J. K. & Marioni, J. C. Inferring the kinetics of stochastic gene expression from single-cell RNA-sequencing data. Genome Biol. 14, R7 (2013). 16. Jiang, Y., Zhang, N. R. & Li, M. SCALE: modeling allele-specific gene expression by single-cell RNA sequencing. Genome Biol. 18, 74 (2017). 17. Peccoud, J. & Ycart, B. Markovian modeling of gene-product synthesis. Theor. Popul. Biol. 48, 222–234 (1995). 18. Dar, R. D. et al. Transcriptional burst frequency and burst size are equally modulated across the human genome. Proc. Natl Acad. Sci. USA 109, 17454–17459 (2012). 19. Eisenberg, E. & Levanon, E. Y. Human housekeeping genes are compact. Trends Genet. 19, 362–365 (2003). 20. Hornung, G. et al. Noise-mean relationship in mutated promoters. Genome Res. 22, 2409–2417 (2012). 21. Tantale, K. et al. A single-molecule view of transcription reveals convoys of RNA polymerases and multi-scale bursting. Nat. Commun. 7, 12248 (2016). 22. Malecová, B., Gross, P., Boyer-Guittaut, M., Yavuz, S. & Oelgeschläger, T. The initiator core promoter element antagonizes repression of TATA-directed transcription by negative cofactor NC2. J. Biol. Chem. 282, 24767–24776 (2007). 23. Li, Y. et al. CRISPR reveals a distal super-enhancer required for Sox2 expression in mouse embryonic stem cells. PLoS One 9, e114485 (2014). 24. Merkin, J., Russell, C., Chen, P. & Burge, C. B. Evolutionary dynamics of gene and isoform regulation in mammalian tissues. Science 338, 1593–1599 (2012). 25. Padovan-Merhar, O. et al. Single mammalian cells compensate for differences in cellular volume and DNA copy number through independent global transcriptional mechanisms. Mol. Cell 58, 339–352 (2015). 26. Hantsche, M. & Cramer, P. Conserved RNA polymerase II initiation complex structure. Curr. Opin. Struct. Biol. 47, 17–22 (2017). 27. Roeder, R. G. The role of general initiation factors in transcription by RNA polymerase II. Trends Biochem. Sci. 21, 327–335 (1996). 28. Jonkers, I. & Lis, J. T. Getting up to speed with transcription elongation by RNA polymerase II. Nat. Rev. Mol. Cell Biol. 16, 167–177 (2015).
+
+Online content
+
+Acknowledgements We thank Q. Deng for ES cell culturing, S. Giatrellis for assistance with FACS sorting, G.-J. Hendriks for discussions, and the remainder of the Sandberg laboratory. This work was supported by grants to R.S. from the European Research Council (648842), the Swedish Research Council (201701062), the Knut and Alice Wallenberg’s foundation (2017.0110) and the Bert L. and N. Kuggie Vallee Foundation.
+
+molecules recorded per allele in scRNA-seq. However, most cells analysed in our study were in the G1 phase, and genes with different kinetics between phases were mostly related to the cell-cycle functions (Extended Data Fig. 10). Transcription is regulated at several levels, including enhancer– promoter interactions11, the formation of the transcription pre-initiation complex, recruitment of RNA polymerase (Pol) II26, initiation of Pol II27 and control of Pol II elongation28. Active transcription typically results in several Pol II complexes simultaneously transcribing the locus, generating spurts of RNA molecules21. Such dynamics become averaged out in bulk RNA sequencing (RNA-seq) data and obscured even in scRNA-seq when lacking allelic resolution. We have demonstrated that separation of gene expression into burst size and frequency enables a richer characterization of transcription. Mechanistically, specialized TATA-binding protein-associated and protein-related factors bind different types of core promoter1, and our data suggest that such complexes ultimately affect burst size, potentially through the modulation of subsequent steps such as the control of RNA Pol II elongation28. Hundreds of genes had significant differences in burst size between both cell types and genotypes, suggesting that modulations of both the levels of trans-acting factors and variations in the DNA elements they bind can regulate burst size. Our data provide transcriptome-wide evidence for the role of enhancers in controlling burst frequencies. Thus, the primary role of enhancers might lie in forming a pre-initiation complex without affecting the size of the transcriptional burst. The strategy introduced here paves the way for unprecedented mechanistic insights into how burst size and frequency control are governed by cis-regulatory sequences and the systematic dissection of transcription.
+
+Reporting summary
+
+Further information on research design is available in the Nature Research Reporting Summary linked to this paper.
+
+Sequencing data have been deposited at the EBI European Nucleotide Archive (ENA) under accession numbers E-MTAB-6362, E-MTAB-6385 and E-MTAB-7098 and code for transcriptional kinetic inference and analyses is provided through GitHub (https://github.com/sandberg-lab/txburst).
+
+Any methods, additional references, Nature Research reporting summaries, source data, statements of data availability and associated accession codes are available at https://doi.org/10.1038/s41586-018-0836-1.
+
+Received: 20 November 2017; Accepted: 28 November 2018; Published online 2 January 2019.
+
+Levine, M. & Tjian, R. Transcription regulation and animal diversity. Nature 424, 147–151 (2003). Raj, A. & van Oudenaarden, A. Nature, nurture, or chance: stochastic gene expression and its consequences. Cell 135, 216–226 (2008). Raj, A., Peskin, C. S., Tranchina, D., Vargas, D. Y. & Tyagi, S. Stochastic mRNA synthesis in mammalian cells. PLoS Biol. 4, e309 (2006). Chubb, J. R., Trcek, T., Shenoy, S. M. & Singer, R. H. Transcriptional pulsing of a developmental gene. Curr. Biol. 16, 1018–1025 (2006). Levsky, J. M., Shenoy, S. M., Pezo, R. C. & Singer, R. H. Single-cell gene expression profiling. Science 297, 836–840 (2002). Suter, D. M. et al. Mammalian genes are transcribed with widely different bursting kinetics. Science 332, 472–474 (2011). Nicolas, D., Phillips, N. E. & Naef, F. What shapes eukaryotic transcriptional bursting? Mol. Biosyst. 13, 1280–1290 (2017). Fukaya, T., Lim, B. & Levine, M. Enhancer control of transcriptional bursting. Cell 166, 358–368 (2016).
+
+Reviewer information Nature thanks C. Bartman, P. Kharchenko, A. Raj and the anonymous reviewer(s) for their contribution to the peer review of this work. Author contributions Conceived the study: R.S. Developed computational methodology: A.J.M.L. Explored and interpreted data: A.J.M.L. and R.S. Prepared single-cell transcriptome data: P.J., L.H., B. Reinius and Å.S. Designed modified smart-seq2: M.H.-J. and O.R.F. Provided Sox2 enhancer deletion cells: C.M.R. and B. Ren. Performed single-molecule RNA FISH: P.J. Generated figures: A.J.M.L. and R.S. Wrote the manuscript: R.S. and A.J.M.L. Competing interests R.S., O.R.F. and M.H.-J. have submitted a patent application that includes the UMI-based template switching technology for full-length single-cell RNA-sequencing. Additional information Extended data is available for this paper at https://doi.org/10.1038/s41586018-0836-1. Supplementary information is available for this paper at https://doi.org/ 10.1038/s41586-018-0836-1. Reprints and permissions information is available at http://www.nature.com/ reprints. Correspondence and requests for materials should be addressed to R.S. Publisher’s note: Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+2 5 4 | N A T U RE | V O L 5 6 5 | 1 0 J A N U A R Y 2 0 1 9
+
+[Page 5]
+
+Extended Data Fig. 1 | Using profile likelihood to infer transcriptional burst kinetics. a, Illustration of the two-state model of transcription. The promoter can be in an ON or OFF state and converts from OFF to ON with a rate kon, and from ON to OFF with rate koff. In the ON state, RNAs are transcribed with rate ksyn and degraded with rate deg. See Supplementary Methods. b, Derivation of a confidence interval for a simulated set of observations with a given burst frequency = 0.5 (n = 200 simulated observations). The quadratic function shown in blue is a transformed version of the log-likelihood as a function of burst frequency, in which the most likely parameter value has a likelihood of 0. Standard theory for likelihood methods gives a cut off value of 1.92 for a 95% confidence interval (solid red line), which can then be traced down to their corresponding value on the x axis (dashed red lines) to derive a confidence interval. The true value, shown as a green dot, is within the confidence interval. c, Goodness-of-fit test for 7,382 genes on the
+
+C57 allele of the fibroblast cells (from molecular level input data). The histogram shows the mean expression levels of genes with a good (green) or bad (red) fit (Supplementary Methods). d, A scatter plot of the Akaike information criterion (AIC) for the inference obtain from molecule (UMIs) and RPKM values. The green line denotes y = x. e, f, Scatter plot of the burst frequency and size obtained from inference procedure based on either molecules (UMIs) or RPKM values. g, Scatter plot of mean expression against inferred burst frequency for all genes in fibroblasts. Red line denotes spline fitted to data. h, Scatter plot of mean expression against inferred burst size for all genes in fibroblasts. Red line denotes spline fitted to data. Data in g and h are from the CAST allele. i, Scatterplot of the percentage of biallelic to silent cells for 10,727 genes, in fibroblasts. The genes are located on the expected curve under the independence model (see Supplementary Methods and ref. 12 for details).
+
+[Page 6]
+
+Inferred burst frequency
+
+Sensitivity
+
+Inferred burst size
+
+Cells
+
+Cells
+
+Extended Data Fig. 2 | Robustness of inference to cell numbers and technical noise in scRNA-seq. a–j, The distribution of inferred burst frequency and sizes as a function of sensitivity (loss of RNA molecules) and cell numbers, based on the location of the parameters in the kinetics parameter space. Centre lines denote the median; hinges denote the first
+
+Inferred burst size
+
+Inferred burst frequency
+
+Inferred burst size
+
+Inferred burst frequency
+
+Cells
+
+Sensitivity
+
+Cells
+
+Cells
+
+Cells
+
+Sensitivity
+
+Sensitivity
+
+Cells
+
+Sensitivity
+
+Cells
+
+Inferred burst size
+
+Sensitivity
+
+Inferred burst size
+
+Inferred burst frequency
+
+Inferred burst size
+
+Cells
+
+Sensitivity
+
+Sensitivity
+
+Cells
+
+Sensitivity
+
+Sensitivity
+
+Cells
+
+Inferred burst size
+
+Inferred burst size
+
+Inferred burst frequency
+
+Inferred burst size
+
+Inferred burst frequency
+
+Sensitivity
+
+Cells
+
+Sensitivity
+
+Sensitivity
+
+Inferred burst size
+
+Cells
+
+Cells
+
+Cells
+
+Inferred burst frequency
+
+Cells
+
+Inferred burst size
+
+Inferred burst frequency
+
+Cells
+
+Sensitivity
+
+Cells
+
+Inferred burst size
+
+Inferred burst frequency
+
+Inferred burst frequency
+
+Inferred burst frequency
+
+Inferred burst size
+
+Sensitivity
+
+Sensitivity
+
+Inferred burst frequency
+
+Sensitivity
+
+Inferred burst size
+
+Sensitivity
+
+Sensitivity
+
+Inferred burst size
+
+Inferred burst size
+
+Inferred burst size
+
+Inferred burst frequency
+
+Inferred burst frequency
+
+Inferred burst size
+
+Cells
+
+Inferred burst frequency
+
+Inferred burst size
+
+1.5 2.0 2.5
+
+Burst size (log10)
+
+Inferred burst frequency
+
+Inferred burst frequency
+
+Sensitivity
+
+Inferred burst frequency
+
+Inferred burst frequency
+
+Inferred burst size
+
+Burst frequency (log10)
+
+A B
+
+Inferred burst frequency
+
+Cells
+
+and third quartiles; whiskers denote 1.5× the interquartile range (IQR). Distributions are based on 50 simulations for each unique combination of parameters and 100 cells for the sensitivity calculations. Inferred burst sizes were divided by the sensitivity used in simulation (as the inferred burst size scales linearly with sensitivity).
+
+[Page 7]
+
+Gene length, binned (log10)
+
+Genes without TATA and Inr Genes with only Inr
+
+Difference from burst size median
+
+Median burst frequency (log10)
+
+Median burst size (log10)
+
+1 2 3 4 5 6 7 8 9 1011121314151617181920
+
+Genes, ranked by transcript length (short to long, within bins)
+
+Gene length, binned (log10)
+
+Genes with only TATA Genes with TATA and Inr
+
+Burst frequency (log10)
+
+Mean expression (log10)
+
+Genes
+
+Genes
+
+Burst size (inferred)
+
+Mean expression (molecules)
+
+Burst frequency (log10)
+
+10-1
+
+0 QU1
+
+QU5 QU1
+
+No TATA or Inr
+
+Burst size (log10)
+
+QU5 QU1
+
+Only Inr
+
+Only TATA
+
+QU5 QU1
+
+QU5
+
+TATA and Inr
+
+Extended Data Fig. 3 | Gene length effect on burst size and frequency and the effect of core promoter elements on mean expression and burst frequency. a, b, Scatter plots of median burst size (a) and frequency (b) compared to median gene length. Genes were binned (50 genes per group). c, Box plot of genes binned according to gene loci length (20 genes per group). For each bin, we ranked genes according to their transcript lengths and calculated the gene-level difference to the median burst size of that bin. We see no effect from differing transcript lengths in estimated burst size. Box plots are as in Extended Data Fig. 2. d, e, Mean expression (d) and burst frequency (e), ordered and coloured for genes based on their core promoter elements. (Complementing the analysis presented in Fig. 2b, but with mean expression and burst frequency as dependent
+
+variables.) The results of the linear regressions are shown in Supplementary Table 1 (n = 7,186 genes). f, Scatter plot of burst frequency and size of genes with each dot colour by their mean expression level. g, Box plots showing the inferred burst size for genes separated according to the presence of core promoter elements, and further grouped into five equally sized bins (quintiles, QU1–QU5) according to gene loci lengths. No TATA or initiator: n = 4,397 genes (2,585, 1,124, 635, 36 and 17 in each quintile, respectively), Only initiator: n = 2,035 genes (942, 531, 442, 74 and 46 in each quintile, respectively), Only TATA: n = 359 genes (129, 126, 58, 31 and 15 in each quintile, respectively), TATA and initiator: n = 144 genes (53, 45, 24, 19 and 3 in each quintile, respectively).
+
+[Page 8]
+
+A 1.0
+
+B 1.0
+
+1.5 2.0 2.5
+
+Burst size (log10) D 1.0
+
+F 1.0
+
+Power
+
+Power
+
+E 1.0
+
+Burst frequency (0.8 to 3.2) Burst size (30 to 120)
+
+H 1.0
+
+Burst frequency (0.01 to 0.04) Burst size (3 to 12)
+
+Burst frequency (0.08 to 0.32) Burst size (10 to 40)
+
+Number of cells
+
+Burst frequency (0.01 to 0.04) Burst size (10 to 40)
+
+Number of cells
+
+Number of cells
+
+Burst frequency (0.09 to 0.36) Burst size (3to 12)
+
+Burst frequency (0.043 to 1.72) Burst size (10 to 40)
+
+Power
+
+Power
+
+Power
+
+G 1.0
+
+Burst frequency (0.3 to 1.2) Burst size (2 to 8)
+
+Number of cells
+
+Number of cells
+
+Number of cells
+
+Burst frequency (1.37 to 5.48) Burst size (10 to 40)
+
+Number of cells
+
+Number of cells
+
+Power
+
+C 1.0
+
+Power
+
+Burst frequency (1.34 to 5.36) Burst size (3 to 12)
+
+Power
+
+Burst frequency (1.34 to 5.36) Burst size (2 to 8)
+
+Number of cells
+
+Power
+
+A B
+
+Power
+
+Burst frequency (log10)
+
+Number of cells
+
+Extended Data Fig. 4 | Power analysis in different locations of kinetic parameter space. a–j, The power of detecting fourfold changes in burst frequency and size as a function of the number of cells depending on the location of transcriptional burst kinetic parameters in parameter space.
+
+Top, analysis of power for burst frequency and size in indicated location in parameter space. Bottom, histogram with expression distributions over cells at the different locations in parameter space.
+
+[Page 9]
+
+Burst size, ESC/Fibroblast (log2)
+
+Expression, ESC/Fibroblast (log2)
+
+Expression, ESC/Fibroblast (log2)
+
+Mean expression (ESC/Fibroblast, log2)
+
+Mean expression (ESC/Fibroblast, log2)
+
+P = 3.3e
+
+H3K27Ac density in enhancers (ESC/Fibroblast, log2)
+
+P = 1.7e-23
+
+P = 3.4e-64
+
+Fibr.
+
+Fibr.
+
+ESC
+
+ESC
+
+Top 100 genes, by burst size
+
+Top 100 genes, by burst frequency
+
+Fibr.
+
+ESC
+
+Top 100 genes, by burst frequency
+
+P = 0.07 H3K27Ac density in enhancers (ESC/Fibroblast, log2)
+
+Burst frequency, ESC/Fibroblast (log2)
+
+Fibr.
+
+ESC
+
+Top 100 genes, by burst size
+
+SNPs per enhancer (rolling median)
+
+P-value (log10) burst size difference
+
+Extended Data Fig. 5 | Comparison of transcriptional burst kinetics across cell types. a, b, Box plot visualization of cell-type differences in burst frequency and size, as a function of fold changes in mean expression between cell types, as in Fig. 3c. c, d, Box plots of the fold change in mean expression for the top 100 genes in each direction for burst frequency and size, respectively (n = 100 genes in each group, two-sided t-test). e, f, Box plots of the fold change in normalized read density of H3K27ac in
+
+enhancers (enhancer magnitude) between cell types. Enhancer linked to genes that had top 100 changes in either burst frequency or size (n = 100 genes in each group, two-sided t-test). g, Rolling median (n = 50) of SNPs per enhancer ordered by the P value of burst size difference between the CAST and C57 allele in fibroblast cells (profile likelihood test, no adjustment for multiple comparisons).
+
+[Page 10]
+
+Extended Data Fig. 6 | Representative images for cell identification and RNA transcript quantification using smFISH. a, b, Two representative cells for the detection of Msl3 in male fibroblast (a) and male ES cell (b) (from 140 fibroblasts and 341 ES cells). From left to right: probe
+
+detection (Q570), antibody detection (Cy5), DAPI, and identified RNA transcripts. White rectangles in b denote the region zoomed-in for RNA transcript quantification. Original images are available at https://github. com/sandberg-lab/txburst.
+
+[Page 11]
+
+Molecules
+
+Fibroblasts (n=140)
+
+Cells
+
+Msl3 Cells
+
+0 2 4 6 8 10 12 14
+
+Molecules
+
+10 20 30 40 50
+
+0 20 40 60 80 100120 0
+
+Cells
+
+Fibroblasts (n=120)
+
+Cells
+
+Mpp1 Cells
+
+Molecules
+
+ES cells (n=479)
+
+Fibroblasts (n=118)
+
+Burst frequency, smRNA FISH
+
+80 100
+
+Hdac6 Msl3 Mpp1 Igbp1
+
+Burst size, scRNA-seq
+
+ES cells (n=188)
+
+Molecules
+
+10 15
+
+Molecules
+
+ES cells (n=188)
+
+0 2.5 5 7.5 10 12.5
+
+ES cells (n=188)
+
+Fibroblasts (n=224)
+
+0 2.5 5 7.5 10 12.5
+
+Molecules
+
+P-values: BF: 1.2e-5 BS: 0.057
+
+0 25 50 75 100125
+
+Fibroblasts (n=224)
+
+0.25 0.5 0.75 1.0 1.25 1.5
+
+1.75 2.0
+
+Extended Data Fig. 7 | Expression distributions and inferred kinetics from smFISH and scRNA-seq. a–d, Histograms of the expression distributions of genes measured by smFISH (left) and scRNA-seq (right) for genes: Hdac6 (a), Msl3 (b), Mpp1 (c) and Igbp1 (d). The number of cells quantified for each gene, cell type and method is presented above each figure item. e, f, Scatter plots of burst size (e) and frequency (f) inferred based on data from scRNA-seq and smFISH. Data from both fibroblasts and ES cells are shown. Although the few data points do not allow for a systematic comparison between methods, we observed a few trends. There was a good agreement for both burst size and frequency except for the
+
+P-values: BF: 0.003 BS: 0.11
+
+P-values: BF: 1e-12 BS: 0.35
+
+Burst size
+
+scRNAseq: ES scRNAseq: Fibroblast smRNA-FISH: ES smRNA-FISH: Fibroblast
+
+Mpp1
+
+P-values: BF: 0.78 BS: 2.2e-16
+
+P-values: BF: 0.85 BS: 3.9e-6
+
+Burst frequency, scRNA-seq
+
+scRNAseq: ES scRNAseq: Fibroblast smRNA-FISH: ES smRNA-FISH: Fibroblast
+
+Msl3
+
+Molecules
+
+Hdac6 Msl3 Mpp1 Igbp1
+
+Burst size
+
+Burst size
+
+P-values: BF: 1.2e-6 BS: 1
+
+Molecules
+
+Molecules
+
+Molecules
+
+140 Fibroblasts (n=224) 0 0 5 10 15 20 25
+
+Molecules
+
+Molecules
+
+Burst size, smRNA FISH
+
+Molecules
+
+Cells
+
+Molecules
+
+Cells
+
+Igbp1 Cells
+
+Molecules
+
+ES cells (n=215)
+
+Cells
+
+ES cells (n=341)
+
+Cells
+
+Cells 0 5 10 15 20 25 30 35
+
+Burst frequency (log10)
+
+Molecules
+
+Burst frequency (log10)
+
+Cells
+
+Fibroblasts (n=224)
+
+Cells
+
+ES cells (n=188)
+
+scRNAseq: ES scRNAseq: Fibroblast smRNA-FISH: ES smRNA-FISH: Fibroblast
+
+Hdac6
+
+Cells
+
+Fibroblasts (n=197)
+
+Cells
+
+Hdac6 Cells
+
+ES cells (n=321)
+
+single-cell RNA-seq
+
+Burst frequency (log10)
+
+single-molecule RNA-FISH
+
+Igbp1 Burst frequency (log10)
+
+scRNAseq: ES scRNAseq: Fibroblast smRNA-FISH: ES smRNA-FISH: Fibroblast
+
+P-values: BF: 0.015 BS: 0.19
+
+P-values: BF: 1 BS: 0.004
+
+Burst size
+
+gene Igbp1 that is an outlier in both scatterplots. Igbp1 has increased burst size and lower burst frequency in scRNA-seq than in smFISH. Excluding Igbp1, we see a fairly linear correspondence between methods over the remaining six data points (three genes and two cell types). g–j, Point estimates and confidence intervals shown for each gene, cell type and method based on the profile likelihood method. Number of cells used for the inference is shown in the corresponding histogram in a–d. P values for cell-type comparison in burst kinetics is shown per method based on the profile likelihood test.
+
+[Page 12]
+
+(Burst frequency up in CAST) Scp2
+
+Sept8
+
+CAST C57
+
+RNA molecules
+
+CAST C57
+
+RNA molecules
+
+Cells
+
+Cells
+
+Cells
+
+Car13
+
+CAST C57
+
+RNA molecules
+
+(Burst frequency up in C57)
+
+CAST C57
+
+RNA molecules
+
+Arhgef5 Cells
+
+Cells
+
+Cells
+
+Srf
+
+CAST C57
+
+RNA molecules
+
+Ccbe1
+
+CAST C57
+
+10 12 14
+
+RNA molecules
+
+(Burst size up in CAST)
+
+Cells
+
+RNA molecules
+
+Ctsf
+
+Cells
+
+Cells
+
+Ndrg1
+
+Cdc42se1
+
+RNA molecules
+
+RNA molecules
+
+(Burst size up in C57)
+
+Cells
+
+RNA molecules
+
+RNA molecules
+
+BF: 0.72 (0.56-0.92) BS: 55 (42-76)
+
+Cells
+
+Expression (RPKM)
+
+Extended Data Fig. 8 | Expression distributions for genes with significant strain differences in burst kinetics. a–d, Histograms of the expression distributions for the CAST and C57 alleles in fibroblasts for genes with burst frequency significantly up in CAST (a) and C57 (b), burst
+
+CAST deletion (affected allele) BF: 0.02 (0.01-0.04) BS: 109 (44-309)
+
+Cells
+
+0 10 20 30 40 50 60 70
+
+Expression (RPKM)
+
+129 deletion (unaffected allele)
+
+RNA molecules
+
+Cells
+
+BF: 0.59 (0.38-0.91) BS: 67 (37-118)
+
+CAST WT
+
+129 WT
+
+BF: 1.04 (0.66-1.59) BS: 84 (48-148)
+
+Zyx
+
+Cells
+
+Cells
+
+Snx7
+
+Cells
+
+Phgdh
+
+Expression (RPKM)
+
+Expression (RPKM)
+
+size significantly up in CAST (c) and C57 (d). e, Expression distributions for the 129 and CAST alleles in the wild-type mouse ES cells and ES cells harbouring a CAST-lined deletion of a Sox2 enhancer.
+
+[Page 13]
+
+Burst size, human (log10)
+
+Pearson r=0.37, P = 6.4e-51
+
+Pearson r=0.29, P = 1.2e-31
+
+Burst frequency, mouse (log10)
+
+Burst size, mouse (log10)
+
+Mean expression, human (log10)
+
+Burst frequency, human (log10)
+
+Pearson r=0.54, P=1.5e-118
+
+Mean expression, mouse (log10)
+
+Burst frequency Inconsistent
+
+–9
+
+Sh
+
+rth
+
+ol
+
+og uf fle
+
+Consistent
+
+Fraction consistent
+
+Human
+
+Burst size
+
+Mouse
+
+P < 1.4e
+
+Extended Data Fig. 9 | Conservation of transcriptional kinetics in mouse and human. a, Scatter plot of burst frequency between one-toone orthologues of mouse and human (n = 1,609 genes). b, Scatter plot of burst size between one-to-one orthologues of mouse and human (n = 1,609 genes). c, Scatter plot of mean expression between one-to-one orthologues of mouse and human (n = 1,609 genes). d, Left, illustrating the test for conservation beyond mean expression level. In both mouse and human, the orthologue is compared to 50 genes of similar mean
+
+expression (7 genes in cartoon) and we determine whether the location on the diagonal is consistent relative to the median gene in both species. Right, the fraction of one-to-one orthologues genes (red) and shuffled orthologues (blue) with consistent positioning in transcriptional kinetics space (binomial test, based on 1,609 genes). Error bars denote standard deviations. The limited numbers of cells and the use of RPKM-based transcriptional burst kinetics inference could underestimate the degree of conservation in transcriptional burst kinetics.
+
+[Page 14]
+
+Burst frequency S (28 cells, log10)
+
+G1 > S
+
+meiosis (GO:0007126) DNA recombinatinon (GO:000631) DNA replication (GO: 006260) chromosome segragation (GO:000631) DNA metabolic process (GO:0006259) regulation of cell cycle (GO:0051726) respiratory electron transport chain (GO: 0022904) mitosis (GO:0007067) generation of precursor metabolites and energy (GO:0006091) cell cycle (GO:0007049)
+
+0 2 4 6 8 10 12 14 16
+
+Fold enrichment
+
+Burst size S (28 cells, log10)
+
+Burst frequency G1 (165 cells, log10)
+
+Burst size G1 (165 cells, log10)
+
+Burst frequency G2M (31cells, log10)
+
+S > G2M
+
+mitochondrial transport (GO:0006839)
+
+DNA replication (GO: 006260)
+
+DNA metabolic process (GO:0006259) nucleobase-containing compound metabolic process (GO:0006139) primary metabolic process (GO:0044238)
+
+metabolic process (GO:0008152)
+
+-2.5 -2.0 -1.5 -1.0 -0.5 0.0 0.5 1.0
+
+Burst frequency S (28 cells, log10)
+
+Fold enrichment
+
+Burst size G2M (31 cells, log10)
+
+Burst size S (28 cells, log10)
+
+Extended Data Fig. 10 | Inference of kinetics in different phases of the cell cycle. a, c, Comparisons of inferred burst frequency (a) and size (c) for the C57 allele in fibroblasts with cells classified according to cell cycle phase. Scatter plots of burst frequency and size are shown for comparisons
+
+between S and G1 (a) and S and G2/M (c) phases. b, d, The Gene Ontology (GO) terms that are enriched in the group of genes with significant differential burst frequency between S and G1 (b) and S and G2/M (d) (n = 116 genes with differential burst frequency in b and 75 genes in d).
+
+[Page 15]
+
+Life Sciences Reporting Summary Nature Research wishes to improve the reproducibility of the work that we publish. This form is intended for publication with all accepted life science papers and provides structure for consistency and transparency in reporting. Every life science submission will use this form; some list items might not apply to an individual manuscript, but all fields must be completed for clarity. For further information on the points included in this form, see Reporting Life Sciences Research. For further information on Nature Research policies, including our data availability policy, see Authors & Referees and the Editorial Policy Checklist. Please do not complete any field with "not applicable" or n/a. Refer to the help text for what text to use if an item is not relevant to your study. For final submission: please carefully check your responses for accuracy; you will not be able to make changes later.
+
+`
+
+Experimental design
+
+1. Sample size Describe how sample size was determined.
+
+The cell numbers were sufficient for the inference of kinetic parameters for most genes as we obtained relatively small confidence intervals. Identification of significant differences between genotypes and cell types had good power for 4-fold differences in the most densely populated areas in parameter space.
+
+nature research | life sciences reporting summary
+
+Corresponding author(s): Rickard Sandberg
+
+2. Data exclusions Describe any data exclusions.
+
+We excluded sequencing libraries that had low technical qualities, i.e. either a low percentage of reads mapping uniquely to the genome or a low percentage of reads aligning within genes, as detailed in the methods section. These criteria are standard although exact thresholds depend on the cell types investigated. It is important to remove faulty sequence libraries as these otherwise would lead to the underestimation of burst frequencies.
+
+3. Replication Describe the measures taken to verify the reproducibility of the experimental findings.
+
+The general inference of kinetic parameters were done on several datasets, including fibroblasts sequenced from different members of the lab. We also determine that the two genotypes generally agree. Important findings (e.g. that core promoter element dictate burst size) was demonstrated using both genotypes, and that enhancers dictate burst frequencies were demonstrated using both SNP densities in enhancers and by CRISPR-mediated enhancer deletion. All the findings above were also replicated at both RPKM and molecule-level of Smart-seq2 data. Altogether, all replications were successful.
+
+4. Randomization Describe how samples/organisms/participants were allocated into experimental groups.
+
+The cells were all F1 offspring of fully inbred mouse strains. Analyzed cells were grouped by their type (fibroblasts and mESCs) and by the presence or absence of the Sox2-enhancer. Samples were not randomized across experiments.
+
+5. Blinding Describe whether the investigators were blinded to group allocation during data collection and/or analysis.
+
+Blinding is not applicable to the experiments made (single-cell analyses of defined cell types and genotypes).
+
+Note: all in vivo studies must report how sample size was determined and whether blinding and randomization were used.
+
+November 2017
+
+[Page 16]
+
+6. Statistical parameters
+
+n/a Confirmed The exact sample size (n) for each experimental group/condition, given as a discrete number and unit of measurement (animals, litters, cultures, etc.) A description of how samples were collected, noting whether measurements were taken from distinct samples or whether the same sample was measured repeatedly A statement indicating how many times each experiment was replicated The statistical test(s) used and whether they are one- or two-sided Only common tests should be described solely by name; describe more complex techniques in the Methods section.
+
+A description of any assumptions or corrections, such as an adjustment for multiple comparisons Test values indicating whether an effect is present Provide confidence intervals or give results of significance tests (e.g. P values) as exact values whenever appropriate and with effect sizes noted.
+
+A clear description of statistics including central tendency (e.g. median, mean) and variation (e.g. standard deviation, interquartile range) Clearly defined error bars in all relevant figure captions (with explicit mention of central tendency and variation) See the web collection on statistics for biologists for further resources and guidance.
+
+nature research | life sciences reporting summary
+
+For all figures and tables that use statistical methods, confirm that the following items are present in relevant figure legends (or in the Methods section if additional space is needed).
+
+` Software Policy information about availability of computer code
+
+7. Software Describe the software used to analyze the data in this study.
+
+Code for inference and the analysis performed within this study will be deposited at https:// github.com/sandberg-lab/txburst. We additionally used Python3, scphaser (https:// github.com/edsgard/scphaser), liftOver and MACS (v 1.4).
+
+For manuscripts utilizing custom algorithms or software that are central to the paper but not yet described in the published literature, software must be made available to editors and reviewers upon request. We strongly encourage code deposition in a community repository (e.g. GitHub). Nature Methods guidance for providing algorithms and software for publication provides further information on this topic.
+
+` Materials and reagents Policy information about availability of materials
+
+8. Materials availability Indicate whether there are restrictions on availability of unique materials or if these materials are only available for distribution by a third party.
+
+No unique materials were used.
+
+9. Antibodies Describe the antibodies used and how they were validated Segmentation of cells was facilitated by adding Vimentin antibody to tail fibroblasts for use in the system under study (i.e. assay and species). (ThermoFisher Scientific, Cat# MA5-11883-A647, 1:50 dilution, Alexa Fluor 647) or SSEA-1
+
+antibody to embryonic fibroblasts (BD Pharmingen, Cat#: 560120, 1:20 dilution, Alexa Fluor 647). These antibodies are reported by the manufacturers as suitable to characterize the two respective cell types in mouse.
+
+10. Eukaryotic cell lines The F1X S129/SvJAE Sox2 distal enhancer CRISPR deletion cell line was generated in the Ren lab.
+
+b. Describe the method of cell line authentication used.
+
+The Ren Lab developed the cell line. They have the gene expression patterns described for mouse embryonic stem cells.
+
+c. Report whether the cell lines were tested for mycoplasma contamination.
+
+The CASTx129SvEv cell lines (with and without Sox2 enhancer deletion) was not tested for Mycoplasma. For primary male fibroblasts and mESCs (both of C57 and CAST genotype) DAPI staining during single-molecule RNA FISH confirmed their negative status.
+
+d. If any of the cell lines used are listed in the database of commonly misidentified cell lines maintained by ICLAC, provide a scientific rationale for their use.
+
+No commonly misidentified cell line were used.
+
+November 2017
+
+a. State the source of each eukaryotic cell line used.
+
+[Page 17]
+
+Animals and human research participants
+
+Policy information about studies involving animals; when reporting animal research, follow the ARRIVE guidelines
+
+11. Description of research animals Provide all relevant details on animals and/or animal-derived materials used in the study.
+
+Primary tail fibroblasts were derived from adult male and female CAST/EiJ x C57BL/6J or C57BL/6J x CAST/EiJ mice. mESCs were derived from pre-implantation embryonic development for male CAST/EiJ x C57BL/6J or C57BL/6J x CAST/EiJ mice.
+
+Policy information about studies involving human research participants
+
+12. Description of human research participants Describe the covariate-relevant population characteristics of the human research participants.
+
+This study did not involve human research participants.
+
+nature research | life sciences reporting summary
+
+`
+
+November 2017

@@ -1,0 +1,3286 @@
+{
+  "paper_id": "sha256-4e24b8e334cacb9c",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/protein_folding_and_design/Levitt 2015 - The language of the protein universe.pdf",
+  "pdf_sha256": "4e24b8e334cacb9ce8ff631b775ec90d4c42b4d15d8391c4c73c867d0d1ec7ff",
+  "filename": "Levitt 2015 - The language of the protein universe.pdf",
+  "item_type": "article",
+  "title_query": "The language of the protein universe",
+  "filename_hints": {
+    "year_hint": 2015,
+    "venue_hint": "",
+    "prefix": "Levitt 2015"
+  },
+  "doi_candidates": [
+    "10.1016/j.gde.2015.08.010"
+  ],
+  "date_indexed": "2026-04-17T03:36:54.789307+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "The language of the protein universe",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "0c79e2acdddd25e7aab345440f186ab6b4740fff",
+      "externalIds": {
+        "MAG": "2192585006",
+        "DOI": "10.1016/j.gde.2015.08.010",
+        "CorpusId": 23928857,
+        "PubMed": "26451980"
+      },
+      "url": "https://www.semanticscholar.org/paper/0c79e2acdddd25e7aab345440f186ab6b4740fff",
+      "title": "The language of the protein universe.",
+      "venue": "Current Opinion in Genetics and Development",
+      "year": 2015,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc4695241?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.gde.2015.08.010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.gde.2015.08.010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "Review",
+        "JournalArticle"
+      ],
+      "publicationDate": "2015-12-01",
+      "journal": {
+        "name": "Current opinion in genetics & development",
+        "pages": "\n          50-6\n        ",
+        "volume": "35"
+      },
+      "authors": [
+        {
+          "authorId": "12204785",
+          "name": "Andrea Scaiewicz"
+        },
+        {
+          "authorId": "145162720",
+          "name": "M. Levitt"
+        }
+      ],
+      "abstract": null
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "0c79e2acdddd25e7aab345440f186ab6b4740fff",
+        "title": "The language of the protein universe.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2015,
+        "candidate_year": 2015,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5525a7dbde03638e720d3fc4d0b0fb1b5385be2a",
+        "title": "NAD_MCNN: Combining Protein Language Models and Multiwindow Convolutional Neural Networks for Deacetylase NAD+ Binding Site Prediction",
+        "score": 0.4,
+        "title_similarity": 0.48,
+        "query_year": 2015,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a3877a9ca41a64a986f9db0f476edd41d0eacd88",
+        "title": "Enhancing the classification of metal-binding residue in proteins with retrieval-augmented generation, protein language models, and deep learning",
+        "score": 0.4,
+        "title_similarity": 0.48,
+        "query_year": 2015,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e02acd84254e68d07200cbd95561d40f56ca8528",
+        "title": "DEEPTRANS: Enhancing primary active transport protein prediction via RAG-augmented protein language models and multi-scale deep learning",
+        "score": 0.3945,
+        "title_similarity": 0.4745,
+        "query_year": 2015,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8e77f8af9dcebe1cdc4abb61ae64de84ddee3451",
+        "title": "VesiMCNN: Using pre-trained protein language models and multiple window scanning convolutional neural networks to identify vesicular transport proteins.",
+        "score": 0.3922,
+        "title_similarity": 0.4722,
+        "query_year": 2015,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e42420a5f434c5d0f77653cd1fd625d1b4b710dd",
+        "title": "MCNN_MC: Computational Prediction of Mitochondrial Carriers and Investigation of Bongkrekic Acid Toxicity Using Protein Language Models and Convolutional Neural Networks",
+        "score": 0.3922,
+        "title_similarity": 0.4722,
+        "query_year": 2015,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a88253bf417021c32efd1e9de69977f0a2c6d32e",
+        "title": "RAG-msCNN: predicting protein-DNA binding sites by integration of retrieval-augmented generation (RAG) with protein language models and the multi-scale separable convolutional neural network",
+        "score": 0.3883,
+        "title_similarity": 0.4683,
+        "query_year": 2015,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "149c3fbd5dd06af2fb7c7c721436a9c45f69c922",
+        "title": "MCNN-AAPT: accurate classification and functional prediction of amino acid and peptide transporters in secondary active transporters using protein language models and multi-window deep learning",
+        "score": 0.3867,
+        "title_similarity": 0.4667,
+        "query_year": 2015,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e7dca78b08c2b17470d7002e6672579ff56c9cc3",
+        "title": "EMU and Euclid: Detection of a radio-optical galaxy clustering cross-correlation signal between the Evolutionary Map of the Universe and Euclid",
+        "score": 0.1985,
+        "title_similarity": 0.2385,
+        "query_year": 2015,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0ed318a5a48d9472070ef55a644fcb6cd20953b3",
+        "title": "The Evolutionary Map of the Universe: A new radio atlas for the southern hemisphere sky",
+        "score": 0.1685,
+        "title_similarity": 0.2485,
+        "query_year": 2015,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1016/j.gde.2015.08.010"
+    ],
+    "matching_extracted_doi": "10.1016/j.gde.2015.08.010",
+    "raw_response": {
+      "total": 671,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "0c79e2acdddd25e7aab345440f186ab6b4740fff",
+          "externalIds": {
+            "MAG": "2192585006",
+            "DOI": "10.1016/j.gde.2015.08.010",
+            "CorpusId": 23928857,
+            "PubMed": "26451980"
+          },
+          "url": "https://www.semanticscholar.org/paper/0c79e2acdddd25e7aab345440f186ab6b4740fff",
+          "title": "The language of the protein universe.",
+          "venue": "Current Opinion in Genetics and Development",
+          "year": 2015,
+          "openAccessPdf": {
+            "url": "https://europepmc.org/articles/pmc4695241?pdf=render",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.gde.2015.08.010?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.gde.2015.08.010, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2015-12-01",
+          "journal": {
+            "name": "Current opinion in genetics & development",
+            "pages": "\n          50-6\n        ",
+            "volume": "35"
+          },
+          "authors": [
+            {
+              "authorId": "12204785",
+              "name": "Andrea Scaiewicz"
+            },
+            {
+              "authorId": "145162720",
+              "name": "M. Levitt"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "5525a7dbde03638e720d3fc4d0b0fb1b5385be2a",
+          "externalIds": {
+            "DOI": "10.1111/cbdd.70085",
+            "CorpusId": 277548806,
+            "PubMed": "40183480"
+          },
+          "url": "https://www.semanticscholar.org/paper/5525a7dbde03638e720d3fc4d0b0fb1b5385be2a",
+          "title": "NAD_MCNN: Combining Protein Language Models and Multiwindow Convolutional Neural Networks for Deacetylase NAD+ Binding Site Prediction",
+          "venue": "Chemical Biology and Drug Design",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1111/cbdd.70085?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1111/cbdd.70085, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-04-01",
+          "journal": {
+            "name": "Chemical Biology & Drug Design",
+            "volume": "105"
+          },
+          "authors": [
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2315945413",
+              "name": "Yu-Chen Liu"
+            },
+            {
+              "authorId": "2316013251",
+              "name": "Yan-Yun Chang"
+            },
+            {
+              "authorId": "2292642128",
+              "name": "Yu-Cheng Lee"
+            },
+            {
+              "authorId": "2318951495",
+              "name": "Yi-Jing Lin"
+            },
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": "Sirtuins, a class of NAD+ ‐dependent deacetylases, play a key role in aging, metabolism, and longevity. Their interaction with NAD+ at the catalytic site is crucial for function, but experimental methods to map NAD+ binding sites are time consuming. To address this, we developed a computational method integrating pretrained protein language models with multiwindow convolutional neural networks (CNNs). This method captures sequence information and diverse local patterns, achieving state‐of‐the‐art performance, with AUC of 0.9733 for human sirtuin proteins and 0.9701 for other NAD‐dependent deacylation enzymes. These findings offer insights into the role of sirtuins in aging and their broader biological functions while providing a new path for identifying therapeutic targets in aging‐related diseases."
+        },
+        {
+          "paperId": "149c3fbd5dd06af2fb7c7c721436a9c45f69c922",
+          "externalIds": {
+            "DOI": "10.1080/07391102.2024.2431664",
+            "CorpusId": 274178717,
+            "PubMed": "39576667"
+          },
+          "url": "https://www.semanticscholar.org/paper/149c3fbd5dd06af2fb7c7c721436a9c45f69c922",
+          "title": "MCNN-AAPT: accurate classification and functional prediction of amino acid and peptide transporters in secondary active transporters using protein language models and multi-window deep learning",
+          "venue": "Journal of Biomolecular Structure and Dynamics",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/07391102.2024.2431664?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/07391102.2024.2431664, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-11-22",
+          "journal": {
+            "name": "Journal of Biomolecular Structure and Dynamics",
+            "pages": "657 - 666",
+            "volume": "44"
+          },
+          "authors": [
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2112405259",
+              "name": "Syed Muazzam Ali Shah"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": "Abstract Secondary active transporters play a crucial role in cellular physiology by facilitating the movement of molecules across cell membranes. Identifying the functional classes of these transporters, particularly amino acid and peptide transporters, is essential for understanding their involvement in various physiological processes and disease pathways, including cancer. This study aims to develop a robust computational framework that integrates pre-trained protein language models and deep learning techniques to classify amino acid and peptide transporters within the secondary active transporter (SAT) family and predict their functional association with solute carrier (SLC) proteins. The study leverages a comprehensive dataset of 448 secondary active transporters, including 36 solute carrier proteins, obtained from UniProt and the Transporter Classification Database (TCDB). Three state-of-the-art protein language models, ProtTrans, ESM-1b, and ESM-2, are evaluated within a deep learning neural network architecture that employs a multi-window scanning technique to capture local and global sequence patterns. The ProtTrans-based feature set demonstrates exceptional performance, achieving a classification accuracy of 98.21% with 87.32% sensitivity and 99.76% specificity for distinguishing amino acid and peptide transporters from other SATs. Furthermore, the model maintains strong predictive ability for SLC proteins, with an overall accuracy of 88.89% and a Matthews Correlation Coefficient (MCC) of 0.7750. This study showcases the power of integrating pre-trained protein language models and deep learning techniques for the functional classification of secondary active transporters and the prediction of associated solute carrier proteins. The findings have significant implications for drug development, disease research, and the broader understanding of cellular transport mechanisms. SUMMARY This study presents a novel computational approach that integrates pre-trained protein language models, such as ProtTrans, ESM-1b, and ESM-2, with deep learning techniques to achieve two key objectives: 1. accurately classify amino acid and peptide transporters within the secondary active transporter (SAT) family, and 2. Predict the functional association of SATs with solute carrier (SLC) proteins. We developed a comprehensive dataset of 448 secondary active transporters, including 36 SLC proteins, and evaluated the performance of the different language models within a deep-learning neural network framework. The results demonstrate the exceptional performance of the ProtTrans-based feature set, which achieves 98.21% accuracy, 87.32% sensitivity, and 99.76% specificity in distinguishing amino acid and peptide transporters from other SATs, while also maintaining strong predictive ability for SLC proteins."
+        },
+        {
+          "paperId": "8e77f8af9dcebe1cdc4abb61ae64de84ddee3451",
+          "externalIds": {
+            "DOI": "10.1016/j.ijbiomac.2024.136048",
+            "CorpusId": 272926743,
+            "PubMed": "39332561"
+          },
+          "url": "https://www.semanticscholar.org/paper/8e77f8af9dcebe1cdc4abb61ae64de84ddee3451",
+          "title": "VesiMCNN: Using pre-trained protein language models and multiple window scanning convolutional neural networks to identify vesicular transport proteins.",
+          "venue": "International Journal of Biological Macromolecules",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ijbiomac.2024.136048?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ijbiomac.2024.136048, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-09-25",
+          "journal": {
+            "name": "International journal of biological macromolecules",
+            "pages": "\n          136048\n        "
+          },
+          "authors": [
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2292641565",
+              "name": "Yi-Hsuan Tseng"
+            },
+            {
+              "authorId": "2315945413",
+              "name": "Yu-Chen Liu"
+            },
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": "Vesicular transport is a critical cellular process responsible for the proper organization and functioning of eukaryotic cells. This mechanism relies on specialized vesicles that shuttle macromolecules, such as proteins, across the cellular landscape, a process pivotal to maintaining cellular homeostasis. Disruptions in vesicular transport have been linked to various disease mechanisms, including cancer and neurodegenerative disorders. In this study, we present vesiMCNN, a novel computational approach that integrates pre-trained protein language models with a multi-window scanning convolutional neural network architecture to accurately identify vesicular transport proteins. To the best of our knowledge, this is the first study to leverage the power of pre-trained language models in combination with the multi-window scanning technique for this task. Our method achieved a Matthews Correlation Coefficient (MCC) of 0.558 and an Area Under the Receiver Operating Characteristic (AUC-ROC) of 0.933, outperforming existing state-of-the-art approaches. Additionally, we have curated a comprehensive benchmark dataset for the study of vesicular transport proteins, which can facilitate further research in this field. The remarkable performance of our model, combined with the comprehensive dataset and novel deep learning model, marks a significant advancement in the field of vesicular transport protein research."
+        },
+        {
+          "paperId": "0ed318a5a48d9472070ef55a644fcb6cd20953b3",
+          "externalIds": {
+            "ArXiv": "2505.08271",
+            "DOI": "10.1017/pasa.2025.10042",
+            "CorpusId": 278535139
+          },
+          "url": "https://www.semanticscholar.org/paper/0ed318a5a48d9472070ef55a644fcb6cd20953b3",
+          "title": "The Evolutionary Map of the Universe: A new radio atlas for the southern hemisphere sky",
+          "venue": "Publications Astronomical Society of Australia",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.08271, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2025-05-13",
+          "journal": {
+            "name": "Publications of the Astronomical Society of Australia",
+            "volume": "42"
+          },
+          "authors": [
+            {
+              "authorId": "2270123935",
+              "name": "A. Hopkins"
+            },
+            {
+              "authorId": "89526701",
+              "name": "A. Kapińska"
+            },
+            {
+              "authorId": "152630135",
+              "name": "J. Marvil"
+            },
+            {
+              "authorId": "101240028",
+              "name": "T. Vernstrom"
+            },
+            {
+              "authorId": "1989649",
+              "name": "J. Collier"
+            },
+            {
+              "authorId": "2305760151",
+              "name": "R. Norris"
+            },
+            {
+              "authorId": "2349645691",
+              "name": "Y. A. Gordon"
+            },
+            {
+              "authorId": "2226265730",
+              "name": "S. Duchesne"
+            },
+            {
+              "authorId": "2283768158",
+              "name": "L. Rudnick"
+            },
+            {
+              "authorId": "2229054652",
+              "name": "N. Gupta"
+            },
+            {
+              "authorId": "2256658069",
+              "name": "E. Carretti"
+            },
+            {
+              "authorId": "2293371872",
+              "name": "C. Anderson"
+            },
+            {
+              "authorId": "2305402935",
+              "name": "S. Dai"
+            },
+            {
+              "authorId": "101903238",
+              "name": "G. Gurkan"
+            },
+            {
+              "authorId": "2241127513",
+              "name": "D. Parkinson"
+            },
+            {
+              "authorId": "9099285",
+              "name": "I. Prandoni"
+            },
+            {
+              "authorId": "2292400830",
+              "name": "S. Riggi"
+            },
+            {
+              "authorId": "2107031887",
+              "name": "C. S. Saraf"
+            },
+            {
+              "authorId": "2144800173",
+              "name": "Y. K. Ma"
+            },
+            {
+              "authorId": "2360708933",
+              "name": "M. D. Filipovi'c"
+            },
+            {
+              "authorId": "2349648144",
+              "name": "G. Umana"
+            },
+            {
+              "authorId": "2117265743",
+              "name": "B. Bahr-Kalus"
+            },
+            {
+              "authorId": "2159539640",
+              "name": "B. Koribalski"
+            },
+            {
+              "authorId": "2332357638",
+              "name": "E. Lenc"
+            },
+            {
+              "authorId": "1516757667",
+              "name": "A. Ingallinera"
+            },
+            {
+              "authorId": "2243336107",
+              "name": "J. Afonso"
+            },
+            {
+              "authorId": "2350153625",
+              "name": "A. Ahmad"
+            },
+            {
+              "authorId": "2275242481",
+              "name": "U. T. Ahmed"
+            },
+            {
+              "authorId": "2360696217",
+              "name": "E. Alexander"
+            },
+            {
+              "authorId": "2283765368",
+              "name": "H. Andernach"
+            },
+            {
+              "authorId": "1431010639",
+              "name": "J. Asorey"
+            },
+            {
+              "authorId": "2295669109",
+              "name": "A. J. Battisti"
+            },
+            {
+              "authorId": "2257037037",
+              "name": "M. Bilicki"
+            },
+            {
+              "authorId": "2063030795",
+              "name": "A. Botteon"
+            },
+            {
+              "authorId": "2110944128",
+              "name": "M. Brown"
+            },
+            {
+              "authorId": "2257040014",
+              "name": "M. Bruggen"
+            },
+            {
+              "authorId": "2368447403",
+              "name": "M. Cowley"
+            },
+            {
+              "authorId": "88727135",
+              "name": "K. Dage"
+            },
+            {
+              "authorId": "2325729283",
+              "name": "C. L. Hale"
+            },
+            {
+              "authorId": "2307804871",
+              "name": "M. Hardcastle"
+            },
+            {
+              "authorId": "2359452171",
+              "name": "R. Kothes"
+            },
+            {
+              "authorId": "2392256705",
+              "name": "S. Lazarevi'c"
+            },
+            {
+              "authorId": "47904046",
+              "name": "Y.-T. Lin"
+            },
+            {
+              "authorId": "102623117",
+              "name": "K. Luken"
+            },
+            {
+              "authorId": "2244113806",
+              "name": "J. P. Moss"
+            },
+            {
+              "authorId": "2266392248",
+              "name": "J. Prathap"
+            },
+            {
+              "authorId": "2362313149",
+              "name": "S. F. Rahman"
+            },
+            {
+              "authorId": "114074341",
+              "name": "T. Reiprich"
+            },
+            {
+              "authorId": "104040031",
+              "name": "C. Riseley"
+            },
+            {
+              "authorId": "153778848",
+              "name": "M. Salvato"
+            },
+            {
+              "authorId": "2331411309",
+              "name": "N. Seymour"
+            },
+            {
+              "authorId": "2227757849",
+              "name": "S. Shabala"
+            },
+            {
+              "authorId": "2219560155",
+              "name": "D. Smith"
+            },
+            {
+              "authorId": "152254629",
+              "name": "Mattia Vaccari"
+            },
+            {
+              "authorId": "2053044244",
+              "name": "J. V. Loon"
+            },
+            {
+              "authorId": "2336093109",
+              "name": "O. Wong"
+            },
+            {
+              "authorId": "102754303",
+              "name": "R. Alsaberi"
+            },
+            {
+              "authorId": "2318094989",
+              "name": "A. D. Asher"
+            },
+            {
+              "authorId": "2221139711",
+              "name": "B. Ball"
+            },
+            {
+              "authorId": "2243337816",
+              "name": "D. Barbosa"
+            },
+            {
+              "authorId": "102221170",
+              "name": "N. Biava"
+            },
+            {
+              "authorId": "2344756427",
+              "name": "A. Bradley"
+            },
+            {
+              "authorId": "2377116964",
+              "name": "R. Carvajal"
+            },
+            {
+              "authorId": "2318055206",
+              "name": "E. J. Crawford"
+            },
+            {
+              "authorId": "2360362124",
+              "name": "T. Galvin"
+            },
+            {
+              "authorId": "2287056791",
+              "name": "M. Huynh"
+            },
+            {
+              "authorId": "2313729880",
+              "name": "D. Leahy"
+            },
+            {
+              "authorId": "2085797749",
+              "name": "I. Matute"
+            },
+            {
+              "authorId": "2276204509",
+              "name": "V. Moss"
+            },
+            {
+              "authorId": "2243335758",
+              "name": "C. Pappalardo"
+            },
+            {
+              "authorId": "2298116947",
+              "name": "Z. Smeaton"
+            },
+            {
+              "authorId": "2360702045",
+              "name": "V. Velovi'c"
+            },
+            {
+              "authorId": "2360710456",
+              "name": "T. Australia"
+            },
+            {
+              "authorId": "102748107",
+              "name": "National Radio Astronomy Observatory Usa"
+            },
+            {
+              "authorId": "2360703114",
+              "name": "Australia Telescope National Facility Csiro Space"
+            },
+            {
+              "authorId": "2360694260",
+              "name": "Astronomy Bentley Australia"
+            },
+            {
+              "authorId": "103126208",
+              "name": "I. O. W. Australia"
+            },
+            {
+              "authorId": "2167031150",
+              "name": "Australian Research Council Centre of Excellence in All Sky A Australia"
+            },
+            {
+              "authorId": "2360703242",
+              "name": "Inter-University Institute for Data Intensive Astronomy University Africa"
+            },
+            {
+              "authorId": "2251662552",
+              "name": "Western Australia"
+            },
+            {
+              "authorId": "2360694262",
+              "name": "Astronomy Epping Australia"
+            },
+            {
+              "authorId": "103262833",
+              "name": "U. O. A. Usa"
+            },
+            {
+              "authorId": "103262833",
+              "name": "U. O. A. Usa"
+            },
+            {
+              "authorId": "102797131",
+              "name": "I. -. I. D. R. B. Italy"
+            },
+            {
+              "authorId": "2360694264",
+              "name": "Australian Astronomical Optics Macquarie University Australia"
+            },
+            {
+              "authorId": "2360708977",
+              "name": "UK UniversityofHertfordshireHatfield"
+            },
+            {
+              "authorId": "102802503",
+              "name": "Korea Astronomy"
+            },
+            {
+              "authorId": "2360688160",
+              "name": "Space Science Institute Daejeon Republic of Korea"
+            },
+            {
+              "authorId": "102797140",
+              "name": "I. A. D. B. Italy"
+            },
+            {
+              "authorId": "102797140",
+              "name": "I. A. D. B. Italy"
+            },
+            {
+              "authorId": "2156930080",
+              "name": "I. -. S. D. T. Italy"
+            },
+            {
+              "authorId": "1582861661",
+              "name": "U. D. S. D. B. Italy"
+            },
+            {
+              "authorId": "2360709170",
+              "name": "Instituto de Astrof'isica e Ciencias do Espacco Universidade Portugal"
+            },
+            {
+              "authorId": "2360709132",
+              "name": "Departamento de F'isica Faculdade de Ciencias Universidade de L Portugal"
+            },
+            {
+              "authorId": "2360694264",
+              "name": "Australian Astronomical Optics Macquarie University Australia"
+            },
+            {
+              "authorId": "2360703808",
+              "name": "UK UniversityofLeeds"
+            },
+            {
+              "authorId": "1404781439",
+              "name": "Thuringer Landessternwarte Tautenburg Germany"
+            },
+            {
+              "authorId": "2360693423",
+              "name": "Universidad de Guanajuato Mexico"
+            },
+            {
+              "authorId": "2156928739",
+              "name": "Universidad de Zaragoza Spain"
+            },
+            {
+              "authorId": "1403708277",
+              "name": "I. C. F. R. A. R. Australia"
+            },
+            {
+              "authorId": "2360694266",
+              "name": "A. Australia"
+            },
+            {
+              "authorId": "2360708971",
+              "name": "Center for Theoretical Physics Polish Academy of Sciences Poland"
+            },
+            {
+              "authorId": "2360694287",
+              "name": "Monash University Australia"
+            },
+            {
+              "authorId": "2185955424",
+              "name": "University of Bonn Germany"
+            },
+            {
+              "authorId": "2360710627",
+              "name": "Queensland University of Technology Brisbane Australia"
+            },
+            {
+              "authorId": "95901879",
+              "name": "U. O. S. Australia"
+            },
+            {
+              "authorId": "1403708277",
+              "name": "I. C. F. R. A. R. Australia"
+            },
+            {
+              "authorId": "2262444199",
+              "name": "Department of Physics"
+            },
+            {
+              "authorId": "102278105",
+              "name": "UK UniversityofOxford"
+            },
+            {
+              "authorId": "2360710582",
+              "name": "Herzberg Astronomy"
+            },
+            {
+              "authorId": "2360709154",
+              "name": "Astrophysics National Research Council Canada Penticton Canada"
+            },
+            {
+              "authorId": "2348391633",
+              "name": "University of Calgary Canada"
+            },
+            {
+              "authorId": "2360710534",
+              "name": "Astronomical Observatory Belgrade Serbia"
+            },
+            {
+              "authorId": "88727293",
+              "name": "I. O. Astronomy"
+            },
+            {
+              "authorId": "2339666177",
+              "name": "Astrophysics Taipei Taiwan"
+            },
+            {
+              "authorId": "2360708947",
+              "name": "Victoria University of Wellington Kelburn Wellington New Zealand"
+            },
+            {
+              "authorId": "2360703138",
+              "name": "Macquarie University Astrophysics"
+            },
+            {
+              "authorId": "2357718097",
+              "name": "Space Technologies Research Centre Macquarie University Australia"
+            },
+            {
+              "authorId": "2360710552",
+              "name": "Lahore Pakistan"
+            },
+            {
+              "authorId": "2360710539",
+              "name": "Ncbc at Ned University of Engineering"
+            },
+            {
+              "authorId": "2360693848",
+              "name": "Technology Pakistan"
+            },
+            {
+              "authorId": "2185955424",
+              "name": "University of Bonn Germany"
+            },
+            {
+              "authorId": "2360703122",
+              "name": "Ruhr-Universitat Bochum Germany"
+            },
+            {
+              "authorId": "1582861661",
+              "name": "U. D. S. D. B. Italy"
+            },
+            {
+              "authorId": "2348097344",
+              "name": "M. F. A. -. H. Germany"
+            },
+            {
+              "authorId": "1403708277",
+              "name": "I. C. F. R. A. R. Australia"
+            },
+            {
+              "authorId": "95901879",
+              "name": "U. O. S. Australia"
+            },
+            {
+              "authorId": "102690878",
+              "name": "Inter-University Centre for Astronomy"
+            },
+            {
+              "authorId": "2360710524",
+              "name": "Astronomy University of the Western Cape Cape Town South Africa"
+            },
+            {
+              "authorId": "2360703242",
+              "name": "Inter-University Institute for Data Intensive Astronomy University Africa"
+            },
+            {
+              "authorId": "2360694030",
+              "name": "UK Lennard-JonesLaboratoriesKeeleUniversity"
+            },
+            {
+              "authorId": "2360707795",
+              "name": "Gifu University Gifu Japan"
+            },
+            {
+              "authorId": "2348391633",
+              "name": "University of Calgary Canada"
+            }
+          ],
+          "abstract": "Abstract We present the Evolutionary Map of the Universe (EMU) survey conducted with the Australian Square Kilometre Array Pathfinder (ASKAP). EMU aims to deliver the touchstone radio atlas of the southern hemisphere. We introduce EMU and review its science drivers and key science goals, updated and tailored to the current ASKAP five-year survey plan. The development of the survey strategy and planned sky coverage is presented, along with the operational aspects of the survey and associated data analysis, together with a selection of diagnostics demonstrating the imaging quality and data characteristics. We give a general description of the value-added data pipeline and data products before concluding with a discussion of links to other surveys and projects and an outline of EMU’s legacy value."
+        },
+        {
+          "paperId": "e42420a5f434c5d0f77653cd1fd625d1b4b710dd",
+          "externalIds": {
+            "PubMedCentral": "11683872",
+            "DBLP": "journals/jcisd/MalikCLLO24",
+            "DOI": "10.1021/acs.jcim.4c00961",
+            "CorpusId": 271854187,
+            "PubMed": "39133248"
+          },
+          "url": "https://www.semanticscholar.org/paper/e42420a5f434c5d0f77653cd1fd625d1b4b710dd",
+          "title": "MCNN_MC: Computational Prediction of Mitochondrial Carriers and Investigation of Bongkrekic Acid Toxicity Using Protein Language Models and Convolutional Neural Networks",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1021/acs.jcim.4c00961",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11683872, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-08-12",
+          "journal": {
+            "name": "Journal of Chemical Information and Modeling",
+            "pages": "9125 - 9134",
+            "volume": "64"
+          },
+          "authors": [
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2316013251",
+              "name": "Yan-Yun Chang"
+            },
+            {
+              "authorId": "2315945413",
+              "name": "Yu-Chen Liu"
+            },
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": "Mitochondrial carriers (MCs) are essential proteins that transport metabolites across mitochondrial membranes and play a critical role in cellular metabolism. ADP/ATP (adenosine diphosphate/adenosine triphosphate) is one of the most important carriers as it contributes to cellular energy production and is susceptible to the powerful toxin bongkrekic acid. This toxin has claimed several lives; for example, a recent foodborne outbreak in Taipei, Taiwan, has caused four deaths and sickened 30 people. The issue of bongkrekic acid poisoning has been a long-standing problem in Indonesia, with reports as early as 1895 detailing numerous deaths from contaminated coconut fermented cakes. In bioinformatics, significant advances have been made in understanding biological processes through computational methods; however, no established computational method has been developed for identifying mitochondrial carriers. We propose a computational bioinformatics approach for predicting MCs from a broader class of secondary active transporters with a focus on the ADP/ATP carrier and its interaction with bongkrekic acid. The proposed model combines protein language models (PLMs) with multiwindow scanning convolutional neural networks (mCNNs). While PLM embeddings capture contextual information within proteins, mCNN scans multiple windows to identify potential binding sites and extract local features. Our results show 96.66% sensitivity, 95.76% specificity, 96.12% accuracy, 91.83% Matthews correlation coefficient (MCC), 94.63% F1-Score, and 98.55% area under the curve (AUC). The results demonstrate the effectiveness of the proposed approach in predicting MCs and elucidating their functions, particularly in the context of bongkrekic acid toxicity. This study presents a valuable approach for identifying novel mitochondrial complexes, characterizing their functional roles, and understanding mitochondrial toxicology mechanisms. Our findings, that utilize computational methods to improve our understanding of cellular processes and drug-target interactions, contribute to the development of therapeutic strategies for mitochondrial disorders, reducing the devastating effects of bongkrekic acid poisoning."
+        },
+        {
+          "paperId": "e02acd84254e68d07200cbd95561d40f56ca8528",
+          "externalIds": {
+            "DOI": "10.1016/j.cplett.2025.142495",
+            "CorpusId": 282450750
+          },
+          "url": "https://www.semanticscholar.org/paper/e02acd84254e68d07200cbd95561d40f56ca8528",
+          "title": "DEEPTRANS: Enhancing primary active transport protein prediction via RAG-augmented protein language models and multi-scale deep learning",
+          "venue": "Chemical Physics Letters",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.cplett.2025.142495?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.cplett.2025.142495, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-01-01",
+          "journal": {
+            "name": "Chemical Physics Letters"
+          },
+          "authors": [
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "a88253bf417021c32efd1e9de69977f0a2c6d32e",
+          "externalIds": {
+            "DBLP": "journals/bspc/MalikHHLO26",
+            "DOI": "10.1016/j.bspc.2025.109407",
+            "CorpusId": 283855819
+          },
+          "url": "https://www.semanticscholar.org/paper/a88253bf417021c32efd1e9de69977f0a2c6d32e",
+          "title": "RAG-msCNN: predicting protein-DNA binding sites by integration of retrieval-augmented generation (RAG) with protein language models and the multi-scale separable convolutional neural network",
+          "venue": "Biomedical Signal Processing and Control",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.bspc.2025.109407?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.bspc.2025.109407, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-04-01",
+          "journal": {
+            "name": "Biomed. Signal Process. Control.",
+            "pages": "109407",
+            "volume": "115"
+          },
+          "authors": [
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2374090211",
+              "name": "Muhammad Hussain"
+            },
+            {
+              "authorId": "21546743",
+              "name": "Quang-Thai Ho"
+            },
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "a3877a9ca41a64a986f9db0f476edd41d0eacd88",
+          "externalIds": {
+            "DBLP": "journals/eaai/MalikLO26",
+            "DOI": "10.1016/j.engappai.2026.114330",
+            "CorpusId": 286186908
+          },
+          "url": "https://www.semanticscholar.org/paper/a3877a9ca41a64a986f9db0f476edd41d0eacd88",
+          "title": "Enhancing the classification of metal-binding residue in proteins with retrieval-augmented generation, protein language models, and deep learning",
+          "venue": "Engineering applications of artificial intelligence",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.engappai.2026.114330?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.engappai.2026.114330, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-05-01",
+          "journal": {
+            "name": "Eng. Appl. Artif. Intell.",
+            "pages": "114330",
+            "volume": "171"
+          },
+          "authors": [
+            {
+              "authorId": "2292733312",
+              "name": "Muhammad-Shahid Malik"
+            },
+            {
+              "authorId": "2292637119",
+              "name": "Van-The Le"
+            },
+            {
+              "authorId": "2261197388",
+              "name": "Yu-Yen Ou"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "e7dca78b08c2b17470d7002e6672579ff56c9cc3",
+          "externalIds": {
+            "ArXiv": "2511.22732",
+            "CorpusId": 283439414
+          },
+          "url": "https://www.semanticscholar.org/paper/e7dca78b08c2b17470d7002e6672579ff56c9cc3",
+          "title": "EMU and Euclid: Detection of a radio-optical galaxy clustering cross-correlation signal between the Evolutionary Map of the Universe and Euclid",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.22732, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": "2025-11-27",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2273412873",
+              "name": "G. Piccirilli"
+            },
+            {
+              "authorId": "2117265743",
+              "name": "B. Bahr-Kalus"
+            },
+            {
+              "authorId": "49731796",
+              "name": "S. Camera"
+            },
+            {
+              "authorId": "152285737",
+              "name": "J. Asorey"
+            },
+            {
+              "authorId": "2330184660",
+              "name": "C. Hale"
+            },
+            {
+              "authorId": "10745990",
+              "name": "G. Fabbian"
+            },
+            {
+              "authorId": "2318094989",
+              "name": "A. D. Asher"
+            },
+            {
+              "authorId": "2327963079",
+              "name": "M. Vai"
+            },
+            {
+              "authorId": "2107031887",
+              "name": "C. S. Saraf"
+            },
+            {
+              "authorId": "2350517968",
+              "name": "D. Parkinson"
+            },
+            {
+              "authorId": "90977202",
+              "name": "N. Tessore"
+            },
+            {
+              "authorId": "102557399",
+              "name": "K. Tanidis"
+            },
+            {
+              "authorId": "2270751471",
+              "name": "M. Kunz"
+            },
+            {
+              "authorId": "2270123935",
+              "name": "A. Hopkins"
+            },
+            {
+              "authorId": "101240028",
+              "name": "T. Vernstrom"
+            },
+            {
+              "authorId": "2245650671",
+              "name": "M. Regis"
+            },
+            {
+              "authorId": "2110944128",
+              "name": "M. Brown"
+            },
+            {
+              "authorId": "3719910",
+              "name": "D. Carollo"
+            },
+            {
+              "authorId": "2283768555",
+              "name": "T. Zafar"
+            },
+            {
+              "authorId": "2305760151",
+              "name": "R. Norris"
+            },
+            {
+              "authorId": "2302800108",
+              "name": "F. Pace"
+            },
+            {
+              "authorId": "2254624481",
+              "name": "J. M. Diego"
+            },
+            {
+              "authorId": "2265616951",
+              "name": "H. Tang"
+            },
+            {
+              "authorId": "2395542659",
+              "name": "F. Rahman"
+            },
+            {
+              "authorId": "2115184980",
+              "name": "D. Farrah"
+            },
+            {
+              "authorId": "2395544052",
+              "name": "J. V. Loon"
+            },
+            {
+              "authorId": "89531033",
+              "name": "C. Pennock"
+            },
+            {
+              "authorId": "2381278289",
+              "name": "J. Willingham"
+            },
+            {
+              "authorId": "1748532",
+              "name": "S. Andreon"
+            },
+            {
+              "authorId": "2488388",
+              "name": "C. Baccigalupi"
+            },
+            {
+              "authorId": "2372671815",
+              "name": "M. Baldi"
+            },
+            {
+              "authorId": "5276210",
+              "name": "S. Bardelli"
+            },
+            {
+              "authorId": "2352679343",
+              "name": "A. Biviano"
+            },
+            {
+              "authorId": "4804744",
+              "name": "E. Branchini"
+            },
+            {
+              "authorId": "2260337097",
+              "name": "M. Brescia"
+            },
+            {
+              "authorId": "2249533065",
+              "name": "G. Cañas-Herrera"
+            },
+            {
+              "authorId": "108516655",
+              "name": "V. Capobianco"
+            },
+            {
+              "authorId": "37874349",
+              "name": "C. Carbone"
+            },
+            {
+              "authorId": "2263138448",
+              "name": "V. Cardone"
+            },
+            {
+              "authorId": "119894740",
+              "name": "J. Carretero"
+            },
+            {
+              "authorId": "144248743",
+              "name": "S. Casas"
+            },
+            {
+              "authorId": "2241604074",
+              "name": "M. Castellano"
+            },
+            {
+              "authorId": "102356560",
+              "name": "G. Castignani"
+            },
+            {
+              "authorId": "2568179",
+              "name": "S. Cavuoti"
+            },
+            {
+              "authorId": "2261246009",
+              "name": "K. Chambers"
+            },
+            {
+              "authorId": "1742667",
+              "name": "A. Cimatti"
+            },
+            {
+              "authorId": "1380246041",
+              "name": "C. Colodro-Conde"
+            },
+            {
+              "authorId": "48518696",
+              "name": "G. Congedo"
+            },
+            {
+              "authorId": "8114978",
+              "name": "L. Conversi"
+            },
+            {
+              "authorId": "69010811",
+              "name": "Y. Copin"
+            },
+            {
+              "authorId": "2303463579",
+              "name": "F. Courbin"
+            },
+            {
+              "authorId": "2258955424",
+              "name": "H. Courtois"
+            },
+            {
+              "authorId": "2361534913",
+              "name": "M. Cropper"
+            },
+            {
+              "authorId": "2110269114",
+              "name": "A. Silva"
+            },
+            {
+              "authorId": "5456964",
+              "name": "H. Degaudenzi"
+            },
+            {
+              "authorId": "2170081226",
+              "name": "G. D. Lucia"
+            },
+            {
+              "authorId": "65805413",
+              "name": "H. Dole"
+            },
+            {
+              "authorId": "5444640",
+              "name": "M. Douspis"
+            },
+            {
+              "authorId": "51241348",
+              "name": "F. Dubath"
+            },
+            {
+              "authorId": "1380246603",
+              "name": "C. Duncan"
+            },
+            {
+              "authorId": "6729944",
+              "name": "X. Dupac"
+            },
+            {
+              "authorId": "6909880",
+              "name": "S. Dusini"
+            },
+            {
+              "authorId": "2351004937",
+              "name": "S. Escoffier"
+            },
+            {
+              "authorId": "117076357",
+              "name": "M. Farina"
+            },
+            {
+              "authorId": "5015676",
+              "name": "R. Farinelli"
+            },
+            {
+              "authorId": "52229461",
+              "name": "F. Faustini"
+            },
+            {
+              "authorId": "47118705",
+              "name": "S. Ferriol"
+            },
+            {
+              "authorId": "2351810383",
+              "name": "F. Finelli"
+            },
+            {
+              "authorId": "3073847",
+              "name": "M. Frailis"
+            },
+            {
+              "authorId": "46832563",
+              "name": "E. Franceschi"
+            },
+            {
+              "authorId": "52253858",
+              "name": "M. Fumana"
+            },
+            {
+              "authorId": "2574173",
+              "name": "S. Galeotta"
+            },
+            {
+              "authorId": "2256631395",
+              "name": "K. George"
+            },
+            {
+              "authorId": "102716273",
+              "name": "B. Gillis"
+            },
+            {
+              "authorId": "51456607",
+              "name": "C. Giocoli"
+            },
+            {
+              "authorId": "1380246220",
+              "name": "J. Graciá-Carpio"
+            },
+            {
+              "authorId": "12897738",
+              "name": "A. Grazian"
+            },
+            {
+              "authorId": "1411206975",
+              "name": "F. Grupp"
+            },
+            {
+              "authorId": "5200944",
+              "name": "L. Guzzo"
+            },
+            {
+              "authorId": "69054246",
+              "name": "S. Haugan"
+            },
+            {
+              "authorId": "1599284720",
+              "name": "W. Holmes"
+            },
+            {
+              "authorId": "3060588",
+              "name": "I. Hook"
+            },
+            {
+              "authorId": "12095927",
+              "name": "F. Hormuth"
+            },
+            {
+              "authorId": "46773613",
+              "name": "A. Hornstrup"
+            },
+            {
+              "authorId": "2306694147",
+              "name": "K. Jahnke"
+            },
+            {
+              "authorId": "153312028",
+              "name": "M. Jhabvala"
+            },
+            {
+              "authorId": "30125421",
+              "name": "B. Joachimi"
+            },
+            {
+              "authorId": "102922668",
+              "name": "E. Keihanen"
+            },
+            {
+              "authorId": "11647299",
+              "name": "S. Kermiche"
+            },
+            {
+              "authorId": "145717114",
+              "name": "A. Kiessling"
+            },
+            {
+              "authorId": "35043875",
+              "name": "M. Kilbinger"
+            },
+            {
+              "authorId": "95237098",
+              "name": "B. Kubik"
+            },
+            {
+              "authorId": "152478113",
+              "name": "M. Kummel"
+            },
+            {
+              "authorId": "1380246077",
+              "name": "H. Kurki-Suonio"
+            },
+            {
+              "authorId": "32343978",
+              "name": "A. Brun"
+            },
+            {
+              "authorId": "66032887",
+              "name": "S. Ligori"
+            },
+            {
+              "authorId": "3926702",
+              "name": "P. Lilje"
+            },
+            {
+              "authorId": "103088323",
+              "name": "V. Lindholm"
+            },
+            {
+              "authorId": "12563398",
+              "name": "I. Lloro"
+            },
+            {
+              "authorId": "3082146",
+              "name": "G. Mainetti"
+            },
+            {
+              "authorId": "2177248",
+              "name": "D. Maino"
+            },
+            {
+              "authorId": "3483703",
+              "name": "O. Mansutti"
+            },
+            {
+              "authorId": "100462297",
+              "name": "S. Marcin"
+            },
+            {
+              "authorId": "52201814",
+              "name": "O. Marggraf"
+            },
+            {
+              "authorId": "2275237204",
+              "name": "M. Martinelli"
+            },
+            {
+              "authorId": "48525489",
+              "name": "N. Martinet"
+            },
+            {
+              "authorId": "30800771",
+              "name": "F. Marulli"
+            },
+            {
+              "authorId": "2345748179",
+              "name": "R. Massey"
+            },
+            {
+              "authorId": "15147676",
+              "name": "E. Medinaceli"
+            },
+            {
+              "authorId": "2381720677",
+              "name": "S. Mei"
+            },
+            {
+              "authorId": "3849545",
+              "name": "Y. Mellier"
+            },
+            {
+              "authorId": "2251961290",
+              "name": "M. Meneghetti"
+            },
+            {
+              "authorId": "2186182446",
+              "name": "E. Merlin"
+            },
+            {
+              "authorId": "6030188",
+              "name": "G. Meylan"
+            },
+            {
+              "authorId": "2302795279",
+              "name": "A. Mora"
+            },
+            {
+              "authorId": "2060604193",
+              "name": "M. Moresco"
+            },
+            {
+              "authorId": "2302030921",
+              "name": "L. Moscardini"
+            },
+            {
+              "authorId": "2268491648",
+              "name": "R. Nakajima"
+            },
+            {
+              "authorId": "2568705",
+              "name": "C. Neissner"
+            },
+            {
+              "authorId": "2229086076",
+              "name": "R. Nichol"
+            },
+            {
+              "authorId": "40465320",
+              "name": "S. Niemi"
+            },
+            {
+              "authorId": "2241600378",
+              "name": "C. Padilla"
+            },
+            {
+              "authorId": "3391447",
+              "name": "K. Paech"
+            },
+            {
+              "authorId": "4196114",
+              "name": "S. Paltani"
+            },
+            {
+              "authorId": "3248528",
+              "name": "F. Pasian"
+            },
+            {
+              "authorId": "2256991407",
+              "name": "K. Pedersen"
+            },
+            {
+              "authorId": "2351003144",
+              "name": "W. Percival"
+            },
+            {
+              "authorId": "3691085",
+              "name": "V. Pettorino"
+            },
+            {
+              "authorId": "145574484",
+              "name": "S. Pires"
+            },
+            {
+              "authorId": "6018607",
+              "name": "G. Polenta"
+            },
+            {
+              "authorId": "47788108",
+              "name": "M. Poncet"
+            },
+            {
+              "authorId": "144761488",
+              "name": "L. Popa"
+            },
+            {
+              "authorId": "117359478",
+              "name": "L. Pozzetti"
+            },
+            {
+              "authorId": "103255899",
+              "name": "F. Raison"
+            },
+            {
+              "authorId": "1992929",
+              "name": "A. Renzi"
+            },
+            {
+              "authorId": "2241967323",
+              "name": "J. Rhodes"
+            },
+            {
+              "authorId": "2264761576",
+              "name": "G. Riccio"
+            },
+            {
+              "authorId": "52154193",
+              "name": "E. Romelli"
+            },
+            {
+              "authorId": "89191647",
+              "name": "M. Roncarelli"
+            },
+            {
+              "authorId": "96237694",
+              "name": "R. Saglia"
+            },
+            {
+              "authorId": "8377552",
+              "name": "D. Sapone"
+            },
+            {
+              "authorId": "2047726657",
+              "name": "B. Sartoris"
+            },
+            {
+              "authorId": "2631902",
+              "name": "J. Schewtschenko"
+            },
+            {
+              "authorId": "2058146233",
+              "name": "P. Schneider"
+            },
+            {
+              "authorId": "102268726",
+              "name": "T. Schrabback"
+            },
+            {
+              "authorId": "92964702",
+              "name": "A. Secroun"
+            },
+            {
+              "authorId": "49328699",
+              "name": "G. Seidel"
+            },
+            {
+              "authorId": "2053825494",
+              "name": "S. Serrano"
+            },
+            {
+              "authorId": "2052639391",
+              "name": "P. Simon"
+            },
+            {
+              "authorId": "47085800",
+              "name": "C. Sirignano"
+            },
+            {
+              "authorId": "15093029",
+              "name": "G. Sirri"
+            },
+            {
+              "authorId": "50350073",
+              "name": "A. Mancini"
+            },
+            {
+              "authorId": "2379937840",
+              "name": "L. Stanco"
+            },
+            {
+              "authorId": "145394548",
+              "name": "J. Starck"
+            },
+            {
+              "authorId": "49347199",
+              "name": "J. Steinwagner"
+            },
+            {
+              "authorId": "2386612889",
+              "name": "P. Tallada-Cresp'i"
+            },
+            {
+              "authorId": "2242242673",
+              "name": "A. Taylor"
+            },
+            {
+              "authorId": "3440614",
+              "name": "I. Tereno"
+            },
+            {
+              "authorId": "2267725970",
+              "name": "S. Toft"
+            },
+            {
+              "authorId": "1380245958",
+              "name": "R. Toledo-Moreo"
+            },
+            {
+              "authorId": "103759883",
+              "name": "F. Torradeflot"
+            },
+            {
+              "authorId": "5972836",
+              "name": "I. Tutusaus"
+            },
+            {
+              "authorId": "5725782",
+              "name": "L. Valenziano"
+            },
+            {
+              "authorId": "5048135",
+              "name": "J. Valiviita"
+            },
+            {
+              "authorId": "95807245",
+              "name": "T. Vassallo"
+            },
+            {
+              "authorId": "69904258",
+              "name": "A. Veropalumbo"
+            },
+            {
+              "authorId": "2376533356",
+              "name": "Y. Wang"
+            },
+            {
+              "authorId": "2249429875",
+              "name": "J. Weller"
+            },
+            {
+              "authorId": "2163163103",
+              "name": "G. Zamorani"
+            },
+            {
+              "authorId": "2245698081",
+              "name": "F. Zerbi"
+            },
+            {
+              "authorId": "2246273762",
+              "name": "E. Zucca"
+            },
+            {
+              "authorId": "2392721091",
+              "name": "J. Garc'ia-Bellido"
+            },
+            {
+              "authorId": "2383169731",
+              "name": "J. Mart'in-Fleitas"
+            },
+            {
+              "authorId": "2257329746",
+              "name": "A. Pezzotta"
+            },
+            {
+              "authorId": "102260274",
+              "name": "V. Scottez"
+            },
+            {
+              "authorId": "2256700057",
+              "name": "M. V. D. D. Fisica"
+            },
+            {
+              "authorId": "102735570",
+              "name": "U. Torino"
+            },
+            {
+              "authorId": "1422586098",
+              "name": "1. ViaP.Giuria"
+            },
+            {
+              "authorId": "1387897930",
+              "name": "10125 Torino"
+            },
+            {
+              "authorId": "2251847707",
+              "name": "Italy"
+            },
+            {
+              "authorId": "145872073",
+              "name": "I. Torino"
+            },
+            {
+              "authorId": "2202029828",
+              "name": "I. Torino"
+            },
+            {
+              "authorId": "1387934705",
+              "name": "20 viaOsservatorio"
+            },
+            {
+              "authorId": "1382582906",
+              "name": "1. P. Torinese"
+            },
+            {
+              "authorId": "2082472537",
+              "name": "Departamento de F'isica Te'orica"
+            },
+            {
+              "authorId": "1490634524",
+              "name": "Centro de Astropart'iculas y F'isica de Altas Energ'ias"
+            },
+            {
+              "authorId": "93237898",
+              "name": "U. Zaragoza"
+            },
+            {
+              "authorId": "2395544041",
+              "name": "50009 Zaragoza"
+            },
+            {
+              "authorId": "120231217",
+              "name": "Spain."
+            },
+            {
+              "authorId": "2237985348",
+              "name": "D. Physics"
+            },
+            {
+              "authorId": "102471606",
+              "name": "O. University"
+            },
+            {
+              "authorId": "92982740",
+              "name": "Keble Road"
+            },
+            {
+              "authorId": "103150510",
+              "name": "O. 3RH"
+            },
+            {
+              "authorId": "2262550528",
+              "name": "Uk"
+            },
+            {
+              "authorId": "103004057",
+              "name": "Institute for Astronomy"
+            },
+            {
+              "authorId": "95994788",
+              "name": "U. Edinburgh"
+            },
+            {
+              "authorId": "2381059476",
+              "name": "R. Observatory"
+            },
+            {
+              "authorId": "41221445",
+              "name": "B. Hill"
+            },
+            {
+              "authorId": "152478613",
+              "name": "Edinburgh EH9 3HJ"
+            },
+            {
+              "authorId": "1388354217",
+              "name": "Universit'e Paris-Saclay"
+            },
+            {
+              "authorId": "2303464038",
+              "name": "Cnrs"
+            },
+            {
+              "authorId": "88742276",
+              "name": "I. D. Spatiale"
+            },
+            {
+              "authorId": "2142464246",
+              "name": "91405"
+            },
+            {
+              "authorId": "152116034",
+              "name": "Orsay"
+            },
+            {
+              "authorId": "2264615079",
+              "name": "France"
+            },
+            {
+              "authorId": "96005773",
+              "name": "Western Sydney University"
+            },
+            {
+              "authorId": "1429733253",
+              "name": "Locked Bag 1797"
+            },
+            {
+              "authorId": "1429732224",
+              "name": "DC PenrithSouth"
+            },
+            {
+              "authorId": "2395543848",
+              "name": "Nsw 2751"
+            },
+            {
+              "authorId": "2261706621",
+              "name": "Australia"
+            },
+            {
+              "authorId": "103212026",
+              "name": "Australia Telescope National Facility"
+            },
+            {
+              "authorId": "89907735",
+              "name": "Csiro"
+            },
+            {
+              "authorId": "90979932",
+              "name": "Space"
+            },
+            {
+              "authorId": "2254660649",
+              "name": "Astronomy"
+            },
+            {
+              "authorId": "2395543879",
+              "name": "76 POBox"
+            },
+            {
+              "authorId": "103058598",
+              "name": "Epping"
+            },
+            {
+              "authorId": "1429733805",
+              "name": "Nsw 1710"
+            },
+            {
+              "authorId": "102802503",
+              "name": "Korea Astronomy"
+            },
+            {
+              "authorId": "144175662",
+              "name": "Space Telescope Science Institute"
+            },
+            {
+              "authorId": "2386608337",
+              "name": "776 Daedeok-daero"
+            },
+            {
+              "authorId": "1388347323",
+              "name": "Yuseong-gu"
+            },
+            {
+              "authorId": "2374483139",
+              "name": "Daejeon 34055"
+            },
+            {
+              "authorId": "73622522",
+              "name": "R. Korea."
+            },
+            {
+              "authorId": "2239104862",
+              "name": "University of Science"
+            },
+            {
+              "authorId": "2321564408",
+              "name": "Technology"
+            },
+            {
+              "authorId": "2395544617",
+              "name": "217 Gajeong-ro"
+            },
+            {
+              "authorId": "2395544213",
+              "name": "Daejeon 34113"
+            },
+            {
+              "authorId": "103253564",
+              "name": "Mullard Space Science Laboratory"
+            },
+            {
+              "authorId": "101245983",
+              "name": "U. London"
+            },
+            {
+              "authorId": "102836837",
+              "name": "Holmbury St. Mary"
+            },
+            {
+              "authorId": "10239573",
+              "name": "Dorking"
+            },
+            {
+              "authorId": "2156585065",
+              "name": "Surrey RH5 6NT"
+            },
+            {
+              "authorId": "143767819",
+              "name": "Gower Street"
+            },
+            {
+              "authorId": "102730011",
+              "name": "London WC1E 6BT"
+            },
+            {
+              "authorId": "88726436",
+              "name": "Center for Computational Astrophysics"
+            },
+            {
+              "authorId": "102232946",
+              "name": "Cosmology"
+            },
+            {
+              "authorId": "102868702",
+              "name": "U. N. Gorica"
+            },
+            {
+              "authorId": "89829024",
+              "name": "Nova Gorica"
+            },
+            {
+              "authorId": "52546875",
+              "name": "Slovenia."
+            },
+            {
+              "authorId": "75113868",
+              "name": "U. Geneve"
+            },
+            {
+              "authorId": "1404815199",
+              "name": "D'epartement de Physique Th'eorique"
+            },
+            {
+              "authorId": "103275896",
+              "name": "Centre for Theoretical Physics"
+            },
+            {
+              "authorId": "2157043669",
+              "name": "24 quai Ernest-Ansermet"
+            },
+            {
+              "authorId": "2157044356",
+              "name": "4. CH-1211Geneve"
+            },
+            {
+              "authorId": "121906441",
+              "name": "Switzerland."
+            },
+            {
+              "authorId": "102690770",
+              "name": "School of Applied Mathematical"
+            },
+            {
+              "authorId": "144573450",
+              "name": "P. Sciences"
+            },
+            {
+              "authorId": "90188865",
+              "name": "Macquarie University"
+            },
+            {
+              "authorId": "70405717",
+              "name": "Sydney"
+            },
+            {
+              "authorId": "2143151356",
+              "name": "Nsw 2109"
+            },
+            {
+              "authorId": "2262779000",
+              "name": "Atnf"
+            },
+            {
+              "authorId": "2202418740",
+              "name": "P. B. 1130"
+            },
+            {
+              "authorId": "2211576132",
+              "name": "Bentley"
+            },
+            {
+              "authorId": "2395543858",
+              "name": "WA 6151"
+            },
+            {
+              "authorId": "103146253",
+              "name": "International Centre for Radio Astronomy Research"
+            },
+            {
+              "authorId": "95901879",
+              "name": "U. O. S. Australia"
+            },
+            {
+              "authorId": "120326098",
+              "name": "35 Stirling Highway"
+            },
+            {
+              "authorId": "2237985263",
+              "name": "Crawley"
+            },
+            {
+              "authorId": "2203914847",
+              "name": "Western Australia 6009"
+            },
+            {
+              "authorId": "89909107",
+              "name": "S. O. Physics"
+            },
+            {
+              "authorId": "96408268",
+              "name": "M. University"
+            },
+            {
+              "authorId": "2122591701",
+              "name": "Clayton"
+            },
+            {
+              "authorId": "2162836835",
+              "name": "Victoria 3800"
+            },
+            {
+              "authorId": "145906293",
+              "name": "Inaf Trieste"
+            },
+            {
+              "authorId": "1417420946",
+              "name": "11 ViaG.B.Tiepolo"
+            },
+            {
+              "authorId": "2037383460",
+              "name": "34127 Trieste"
+            },
+            {
+              "authorId": "152299823",
+              "name": "Instituto de F'isica de Cantabria"
+            },
+            {
+              "authorId": "2302800775",
+              "name": "Edificio Juan Jord'a"
+            },
+            {
+              "authorId": "13109339",
+              "name": "Avenida de los Castros"
+            },
+            {
+              "authorId": "2210729280",
+              "name": "39005 Santander"
+            },
+            {
+              "authorId": "2359144961",
+              "name": "Xi'an Jiaotong-Liverpool University"
+            },
+            {
+              "authorId": "2395543976",
+              "name": "Suzhou 215123"
+            },
+            {
+              "authorId": "2374051561",
+              "name": "China"
+            },
+            {
+              "authorId": "2262216882",
+              "name": "Syed Babar Ali School of Science"
+            },
+            {
+              "authorId": "2285034440",
+              "name": "Engineering"
+            },
+            {
+              "authorId": "2395544681",
+              "name": "L. U. O. M. Sciences"
+            },
+            {
+              "authorId": "2324567902",
+              "name": "Lahore"
+            },
+            {
+              "authorId": "2254330125",
+              "name": "Pakistan"
+            },
+            {
+              "authorId": "102836509",
+              "name": "University of Hawai'i at Manoa"
+            },
+            {
+              "authorId": "2395542530",
+              "name": "2505 Correa Rd."
+            },
+            {
+              "authorId": "90503494",
+              "name": "Honolulu"
+            },
+            {
+              "authorId": "2244006227",
+              "name": "Hi"
+            },
+            {
+              "authorId": "2395545638",
+              "name": "96822"
+            },
+            {
+              "authorId": "2237992692",
+              "name": "Usa"
+            },
+            {
+              "authorId": "103124289",
+              "name": "U. Hawaii"
+            },
+            {
+              "authorId": "2191896436",
+              "name": "2680 Woodlawn Drive"
+            },
+            {
+              "authorId": "2154607755",
+              "name": "HI 96822"
+            },
+            {
+              "authorId": "2366427849",
+              "name": "Lennard-Jones Laboratories"
+            },
+            {
+              "authorId": "145288963",
+              "name": "Keele University"
+            },
+            {
+              "authorId": "1417453272",
+              "name": "S. 5BG"
+            },
+            {
+              "authorId": "2360703138",
+              "name": "Macquarie University Astrophysics"
+            },
+            {
+              "authorId": "102614236",
+              "name": "S. R. Centre"
+            },
+            {
+              "authorId": "152287482",
+              "name": "Inaf Brera"
+            },
+            {
+              "authorId": "2157044849",
+              "name": "28 ViaBrera"
+            },
+            {
+              "authorId": "103304654",
+              "name": "20133 Milano"
+            },
+            {
+              "authorId": "2154608445",
+              "name": "Ifpu"
+            },
+            {
+              "authorId": "1490888546",
+              "name": "Institute for Fundamental Physics of the Universe"
+            },
+            {
+              "authorId": "2047287443",
+              "name": "2. viaBeirut"
+            },
+            {
+              "authorId": "2037383460",
+              "name": "34127 Trieste"
+            },
+            {
+              "authorId": "152568243",
+              "name": "Infn"
+            },
+            {
+              "authorId": "102753457",
+              "name": "Sezione di Trieste"
+            },
+            {
+              "authorId": "1413659873",
+              "name": "2. ViaValerio"
+            },
+            {
+              "authorId": "2191896030",
+              "name": "TS 34127Trieste"
+            },
+            {
+              "authorId": "102442433",
+              "name": "Sissa"
+            },
+            {
+              "authorId": "102456232",
+              "name": "International School for Advanced Studies"
+            },
+            {
+              "authorId": "2157044594",
+              "name": "Via Bonomea 265"
+            },
+            {
+              "authorId": "2191897400",
+              "name": "TS 34136Trieste"
+            },
+            {
+              "authorId": "102468963",
+              "name": "D. Astronomia"
+            },
+            {
+              "authorId": "112871064",
+              "name": "U. Bologna"
+            },
+            {
+              "authorId": "1422457674",
+              "name": "V. G. 932"
+            },
+            {
+              "authorId": "103220483",
+              "name": "40129 Bologna"
+            },
+            {
+              "authorId": "102827193",
+              "name": "I. Bologna"
+            },
+            {
+              "authorId": "103230173",
+              "name": "V. G. 933"
+            },
+            {
+              "authorId": "102827178",
+              "name": "I. Bologna"
+            },
+            {
+              "authorId": "113354953",
+              "name": "62 vialeBertiPichat"
+            },
+            {
+              "authorId": "103220483",
+              "name": "40129 Bologna"
+            },
+            {
+              "authorId": "102262087",
+              "name": "D. Fisica"
+            },
+            {
+              "authorId": "102864912",
+              "name": "U. Genova"
+            },
+            {
+              "authorId": "1422213009",
+              "name": "33 viaDodecaneso"
+            },
+            {
+              "authorId": "2090357082",
+              "name": "16146"
+            },
+            {
+              "authorId": "103057906",
+              "name": "Genova"
+            },
+            {
+              "authorId": "152359268",
+              "name": "I. Genova"
+            },
+            {
+              "authorId": "2157042414",
+              "name": "Department of PhysicsE. Pancini"
+            },
+            {
+              "authorId": "102803639",
+              "name": "U. Federico"
+            },
+            {
+              "authorId": "2157044898",
+              "name": "6. ViaCinthia"
+            },
+            {
+              "authorId": "2191895395",
+              "name": "80126"
+            },
+            {
+              "authorId": "2241270084",
+              "name": "Napoli"
+            },
+            {
+              "authorId": "90940924",
+              "name": "I. -. Capodimonte"
+            },
+            {
+              "authorId": "2157044864",
+              "name": "16 viaMoiariello"
+            },
+            {
+              "authorId": "2191896907",
+              "name": "80131 Napoli"
+            },
+            {
+              "authorId": "2157042305",
+              "name": "European Space AgencyESTEC"
+            },
+            {
+              "authorId": "103143562",
+              "name": "1. Keplerlaan"
+            },
+            {
+              "authorId": "2126415296",
+              "name": "2. Noordwijk"
+            },
+            {
+              "authorId": "2378511023",
+              "name": "The Netherlands"
+            },
+            {
+              "authorId": "2054760452",
+              "name": "L. Observatory"
+            },
+            {
+              "authorId": "2065599210",
+              "name": "Leiden University"
+            },
+            {
+              "authorId": "2301019020",
+              "name": "55 Einsteinweg"
+            },
+            {
+              "authorId": "2301019285",
+              "name": "2333 CC Leiden"
+            },
+            {
+              "authorId": "103287996",
+              "name": "Inaf-Iasf Milano"
+            },
+            {
+              "authorId": "2157042433",
+              "name": "12 ViaAlfonsoCorti"
+            },
+            {
+              "authorId": "103304654",
+              "name": "20133 Milano"
+            },
+            {
+              "authorId": "2319606781",
+              "name": "Inafiasf Roma"
+            },
+            {
+              "authorId": "102689845",
+              "name": "33 viaFrascati"
+            },
+            {
+              "authorId": "102667878",
+              "name": "00078 Monte Porzio Catone"
+            },
+            {
+              "authorId": "143664861",
+              "name": "I. Roma"
+            },
+            {
+              "authorId": "49432238",
+              "name": "P. A. Moro"
+            },
+            {
+              "authorId": "2157043697",
+              "name": "2. -. C. D. D. Fisica"
+            },
+            {
+              "authorId": "2261389514",
+              "name": "Edificio G. Marconi"
+            },
+            {
+              "authorId": "1388360550",
+              "name": "00133 Roma"
+            },
+            {
+              "authorId": "103205512",
+              "name": "Centro de Investigaciones Energ'eticas"
+            },
+            {
+              "authorId": "100460827",
+              "name": "Medioambientales y Tecnol'ogicas"
+            },
+            {
+              "authorId": "1491707808",
+              "name": "40 AvenidaComplutense"
+            },
+            {
+              "authorId": "102853551",
+              "name": "28014 Madrid"
+            },
+            {
+              "authorId": "2124367374",
+              "name": "Port d'Informaci'o Cient'ifica"
+            },
+            {
+              "authorId": "102449811",
+              "name": "Campus Uab"
+            },
+            {
+              "authorId": "89410745",
+              "name": "C. Sn"
+            },
+            {
+              "authorId": "88727214",
+              "name": "08193 Bellaterra"
+            },
+            {
+              "authorId": "102462783",
+              "name": "I. F. Physics"
+            },
+            {
+              "authorId": "90037339",
+              "name": "Rwth Aachen University"
+            },
+            {
+              "authorId": "2191896531",
+              "name": "52056 Aachen"
+            },
+            {
+              "authorId": "2264654886",
+              "name": "Germany"
+            },
+            {
+              "authorId": "2276349595",
+              "name": "V. DeutschesZentrumfurLuft-undRaumfahrte."
+            },
+            {
+              "authorId": "98910772",
+              "name": "Linder Hohe"
+            },
+            {
+              "authorId": "1389867976",
+              "name": "50937 Koln"
+            },
+            {
+              "authorId": "2157043002",
+              "name": "I. Naples"
+            },
+            {
+              "authorId": "1388952415",
+              "name": "D. Bologna"
+            },
+            {
+              "authorId": "1410640555",
+              "name": "Instituto de Astrof'isica de Canarias"
+            },
+            {
+              "authorId": "1380786410",
+              "name": "E. Laguna"
+            },
+            {
+              "authorId": "152262807",
+              "name": "Tenerife"
+            },
+            {
+              "authorId": "2157044287",
+              "name": "European Space AgencyESRIN"
+            },
+            {
+              "authorId": "2157043244",
+              "name": "1. LargoGalileoGalilei"
+            },
+            {
+              "authorId": "1388397787",
+              "name": "00044 Frascati"
+            },
+            {
+              "authorId": "2329100856",
+              "name": "Roma"
+            },
+            {
+              "authorId": "103230873",
+              "name": "Esacesa"
+            },
+            {
+              "authorId": "2065337646",
+              "name": "Camino Bajo de Castillo"
+            },
+            {
+              "authorId": "102439013",
+              "name": "Sn"
+            },
+            {
+              "authorId": "102800819",
+              "name": "Urb. Villafranca del Castillo"
+            },
+            {
+              "authorId": "1388304707",
+              "name": "28692 Villanueva de la Canada"
+            },
+            {
+              "authorId": "2252612614",
+              "name": "Madrid"
+            },
+            {
+              "authorId": "1382546848",
+              "name": "1. Universit'eClaudeBernardLyon"
+            },
+            {
+              "authorId": "152432549",
+              "name": "CNRSIN2p3"
+            },
+            {
+              "authorId": "103286831",
+              "name": "I. Lyon"
+            },
+            {
+              "authorId": "2157044503",
+              "name": "Umr 5822"
+            },
+            {
+              "authorId": "102946594",
+              "name": "Villeurbanne"
+            },
+            {
+              "authorId": "2301018486",
+              "name": "F-69100"
+            },
+            {
+              "authorId": "97080864",
+              "name": "Institut de Ci'encies del Cosmos"
+            },
+            {
+              "authorId": "145524191",
+              "name": "U. Barcelona"
+            },
+            {
+              "authorId": "2161965602",
+              "name": "1. Mart'iiFranques"
+            },
+            {
+              "authorId": "1388304977",
+              "name": "08193 Barcelona"
+            },
+            {
+              "authorId": "1387885964",
+              "name": "I. C. D. R. I. E. Avanccats"
+            },
+            {
+              "authorId": "2302801422",
+              "name": "23 PasseigdeLlu'isCompanys"
+            },
+            {
+              "authorId": "1388304977",
+              "name": "08193 Barcelona"
+            },
+            {
+              "authorId": "123080358",
+              "name": "Institut de Ci'encies de l'Espai"
+            },
+            {
+              "authorId": "2157044640",
+              "name": "Carrer de Can Magrans"
+            },
+            {
+              "authorId": "2164336876",
+              "name": "sn Cerdanyola del Vall'es"
+            },
+            {
+              "authorId": "1388304977",
+              "name": "08193 Barcelona"
+            },
+            {
+              "authorId": "2157043973",
+              "name": "1. UCBLyon"
+            },
+            {
+              "authorId": "51280923",
+              "name": "Iuf"
+            },
+            {
+              "authorId": "2142474323",
+              "name": "4. R. E. Fermi"
+            },
+            {
+              "authorId": "2211734560",
+              "name": "69622 Villeurbanne"
+            },
+            {
+              "authorId": "103378694",
+              "name": "Departament de F'isica"
+            },
+            {
+              "authorId": "101180427",
+              "name": "F. Ciencias"
+            },
+            {
+              "authorId": "52467992",
+              "name": "Universidade Tecnica de Lisboa"
+            },
+            {
+              "authorId": "2162838174",
+              "name": "C8 Edif'icio"
+            },
+            {
+              "authorId": "2053992700",
+              "name": "C. Grande"
+            },
+            {
+              "authorId": "3878333",
+              "name": "P. Lisboa"
+            },
+            {
+              "authorId": "97953156",
+              "name": "Portugal"
+            },
+            {
+              "authorId": "88742463",
+              "name": "I. D. A. E. C. D. Espacco"
+            },
+            {
+              "authorId": "2170536169",
+              "name": "1049-001 Lisboa"
+            },
+            {
+              "authorId": "102339916",
+              "name": "D. O. Astronomy"
+            },
+            {
+              "authorId": "52229751",
+              "name": "U. Geneva"
+            },
+            {
+              "authorId": "2087693883",
+              "name": "16 ch.d'Ecogia"
+            },
+            {
+              "authorId": "103000020",
+              "name": "1290 Versoix"
+            },
+            {
+              "authorId": "1422423144",
+              "name": "INFN-Padova"
+            },
+            {
+              "authorId": "102349302",
+              "name": "8. viaMarzolo"
+            },
+            {
+              "authorId": "2189423295",
+              "name": "35131 Padova"
+            },
+            {
+              "authorId": "102454663",
+              "name": "A. Universit'e"
+            },
+            {
+              "authorId": "102320529",
+              "name": "Cppm"
+            },
+            {
+              "authorId": "95281528",
+              "name": "Marseille"
+            },
+            {
+              "authorId": "1823631848",
+              "name": "I. D. A. E. P. Spaziali"
+            },
+            {
+              "authorId": "103278669",
+              "name": "V. Cavaliere"
+            },
+            {
+              "authorId": "1391023356",
+              "name": "100"
+            },
+            {
+              "authorId": "1388360550",
+              "name": "00133 Roma"
+            },
+            {
+              "authorId": "102538136",
+              "name": "S. Center"
+            },
+            {
+              "authorId": "1388360617",
+              "name": "Italian Space Agency"
+            },
+            {
+              "authorId": "1388360314",
+              "name": "via del Politecnico snc"
+            },
+            {
+              "authorId": "1388360550",
+              "name": "00133 Roma"
+            },
+            {
+              "authorId": "1422424352",
+              "name": "INFN-Bologna"
+            },
+            {
+              "authorId": "2157044904",
+              "name": "46 ViaIrnerio"
+            },
+            {
+              "authorId": "103220483",
+              "name": "40129 Bologna"
+            },
+            {
+              "authorId": "2256619237",
+              "name": "University Observatory"
+            },
+            {
+              "authorId": "2364055817",
+              "name": "L. F. O. Physics"
+            },
+            {
+              "authorId": "122905864",
+              "name": "1. Scheinerstr."
+            },
+            {
+              "authorId": "2064602750",
+              "name": "81679 Munich"
+            },
+            {
+              "authorId": "121021007",
+              "name": "M. F. P. Physics"
+            },
+            {
+              "authorId": "2157043508",
+              "name": "1. Giessenbachstr."
+            },
+            {
+              "authorId": "102943829",
+              "name": "85748 Garching"
+            },
+            {
+              "authorId": "152168030",
+              "name": "Inaf - Padova"
+            },
+            {
+              "authorId": "2157044529",
+              "name": "5. Viadell'Osservatorio"
+            },
+            {
+              "authorId": "2189423295",
+              "name": "35131 Padova"
+            },
+            {
+              "authorId": "103210288",
+              "name": "Universitatssternwarte Munchen"
+            },
+            {
+              "authorId": "103024819",
+              "name": "F. Physik"
+            },
+            {
+              "authorId": "52244545",
+              "name": "Ludwig-Maximilians-Universitat Munchen"
+            },
+            {
+              "authorId": "1389868000",
+              "name": "8. Munchen"
+            },
+            {
+              "authorId": "2119894628",
+              "name": "Dipartimento di FisicaAldo Pontremoli"
+            },
+            {
+              "authorId": "2315924541",
+              "name": "U. Milano"
+            },
+            {
+              "authorId": "103379564",
+              "name": "16 viaCeloria"
+            },
+            {
+              "authorId": "1473076127",
+              "name": "I. Milano"
+            },
+            {
+              "authorId": "102710800",
+              "name": "I. Astrophysics"
+            },
+            {
+              "authorId": "102378200",
+              "name": "U. Oslo"
+            },
+            {
+              "authorId": "2157044459",
+              "name": "P. O. B. 1. Blindern"
+            },
+            {
+              "authorId": "1410624112",
+              "name": "0315 Oslo"
+            },
+            {
+              "authorId": "51953222",
+              "name": "Norway."
+            },
+            {
+              "authorId": "102835046",
+              "name": "Jet propulsion Laboratory"
+            },
+            {
+              "authorId": "102611508",
+              "name": "C. I. O. Technology."
+            },
+            {
+              "authorId": "2157043672",
+              "name": "4800 Oak Grove Drive"
+            },
+            {
+              "authorId": "119874209",
+              "name": "Pasadena"
+            },
+            {
+              "authorId": "51281501",
+              "name": "Ca"
+            },
+            {
+              "authorId": "2157044915",
+              "name": "91109"
+            },
+            {
+              "authorId": "2361329897",
+              "name": "Lancaster University"
+            },
+            {
+              "authorId": "101253468",
+              "name": "Lancaster"
+            },
+            {
+              "authorId": "2157044596",
+              "name": "LA1 4YB"
+            },
+            {
+              "authorId": "2302796380",
+              "name": "Felix Hormuth Engineering"
+            },
+            {
+              "authorId": "2302795031",
+              "name": "17 Goethestr."
+            },
+            {
+              "authorId": "2302795786",
+              "name": "69181 Leimen"
+            },
+            {
+              "authorId": "12578472",
+              "name": "T. Denmark"
+            },
+            {
+              "authorId": "2157043404",
+              "name": "Elektrovej 327"
+            },
+            {
+              "authorId": "2157043299",
+              "name": "2800 Kgs. Lyngby"
+            },
+            {
+              "authorId": "113326763",
+              "name": "Denmark."
+            },
+            {
+              "authorId": "102481307",
+              "name": "Cosmic Dawn Center"
+            },
+            {
+              "authorId": "93336282",
+              "name": "M. Astronomie"
+            },
+            {
+              "authorId": "102701690",
+              "name": "17 Konigstuhl"
+            },
+            {
+              "authorId": "102917045",
+              "name": "69117 Heidelberg"
+            },
+            {
+              "authorId": "1388360111",
+              "name": "Nasa Goddard Space Flight Center"
+            },
+            {
+              "authorId": "69047918",
+              "name": "Greenbelt"
+            },
+            {
+              "authorId": "93416803",
+              "name": "MD 20771"
+            },
+            {
+              "authorId": "102942054",
+              "name": "H. I. O. Physics"
+            },
+            {
+              "authorId": "1413667749",
+              "name": "2. GustafHallstrominkatu"
+            },
+            {
+              "authorId": "102960630",
+              "name": "U. Helsinki"
+            },
+            {
+              "authorId": "2157042813",
+              "name": "0. Helsinki"
+            },
+            {
+              "authorId": "103287801",
+              "name": "Finland."
+            },
+            {
+              "authorId": "2162838041",
+              "name": "Universit'e de Paris Cit'e"
+            },
+            {
+              "authorId": "152234079",
+              "name": "Cea"
+            },
+            {
+              "authorId": "87063022",
+              "name": "Aim"
+            },
+            {
+              "authorId": "2184593566",
+              "name": "91191"
+            },
+            {
+              "authorId": "1388354189",
+              "name": "Gif-sur-Yvette"
+            },
+            {
+              "authorId": "2113252136",
+              "name": "64 P.O.Box"
+            },
+            {
+              "authorId": "2351600473",
+              "name": "Laboratoire d'etude de l'Univers et des phenomenes eXtremes"
+            },
+            {
+              "authorId": "2052999742",
+              "name": "Observatoire de Paris"
+            },
+            {
+              "authorId": "102330208",
+              "name": "Universit'e Psl"
+            },
+            {
+              "authorId": "102638402",
+              "name": "Sorbonne Universit'e"
+            },
+            {
+              "authorId": "102663885",
+              "name": "92190 Meudon"
+            },
+            {
+              "authorId": "2101934529",
+              "name": "skao"
+            },
+            {
+              "authorId": "103314170",
+              "name": "J. Bank"
+            },
+            {
+              "authorId": "2275230674",
+              "name": "Lower Withington"
+            },
+            {
+              "authorId": "2380608346",
+              "name": "Macclesfield SK11 9FT"
+            },
+            {
+              "authorId": "2212884473",
+              "name": "Centre de Calcul de l'IN2P3CNRS"
+            },
+            {
+              "authorId": "2157043780",
+              "name": "21 avenue Pierre de Coubertin F-69627 Villeurbanne Cedex"
+            },
+            {
+              "authorId": "51952154",
+              "name": "U. Sciences"
+            },
+            {
+              "authorId": "103376105",
+              "name": "A. Switzerland"
+            }
+          ],
+          "abstract": "Synergies between large-scale radio-continuum and optical/near-infrared galaxy surveys are a powerful tool for cosmology. Cross-correlating these surveys can constrain the redshift distribution of radio sources, mitigate systematic effects, and place constraints on cosmological models. We perform the first measurement of the clustering cross-spectrum between radio-continuum sources in the Evolutionary Map of the Universe (EMU) survey and galaxies from the ESA Euclid satellite mission's Q1 release. Our goal is to detect and characterise the cross-correlation signal, test its robustness against systematic effects, and compare our measurements with theoretical predictions. We use data from the Australian SKA Pathfinder's EMU Main Survey, which overlaps with the Euclid Deep Field South. We generate two radio-source catalogues using different source finders to create galaxy maps. We measure the harmonic-space cross-correlation signal using a pseudo-spectrum estimator. The measured signal is compared to theoretical predictions based on a {\\Lambda}CDM cosmology, using several models for the EMU source redshift distribution and bias. We report detection above 8{\\sigma} of the cross-correlation signal consistent across all tested models and data sets. The measured cross-spectra from the two radio catalogues are in excellent agreement, demonstrating that the cross-correlation is robust against the choice of source-finding algorithm. The measured signal also agrees with theoretical models developed from previous cross-correlation studies and simulations. This pathfinder study establishes a statistically significant cross-correlation between EMU and Euclid. The robustness of the signal is a crucial validation of the methodology, paving the way for future large-scale analyses leveraging the full power of this synergy to constrain cosmological parameters and our understanding of galaxy evolution."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1016/j.gde.2015.08.010",
+      "DOI": "10.1016/j.gde.2015.08.010",
+      "type": "journal-article",
+      "author": [
+        {
+          "given": "Andrea",
+          "family": "Scaiewicz",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Michael",
+          "family": "Levitt",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "0959-437X"
+      ],
+      "page": "50-56",
+      "container-title": [
+        "Current Opinion in Genetics &amp; Development"
+      ],
+      "title": [
+        "The language of the protein universe"
+      ],
+      "publisher": "Elsevier BV",
+      "issued": {
+        "date-parts": [
+          [
+            2015,
+            12
+          ]
+        ]
+      },
+      "volume": "35"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1016/j.gde.2015.08.010",
+    "best_candidate_doi": "10.1016/j.gde.2015.08.010",
+    "crossref_attempts": [
+      {
+        "doi": "10.1016/j.gde.2015.08.010",
+        "source_region": "first_page",
+        "position": 1328,
+        "context": "view see the Issue and the Editorial Available online 3rd November 2015 http://dx.doi.org/10.1016/j.gde.2015.08.010 sequences as the N-to-C terminal sequential order of their domains, or domain architectu",
+        "priority_score": 0.68,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1016/j.gde.2015.08.010",
+          "DOI": "10.1016/j.gde.2015.08.010",
+          "type": "journal-article",
+          "author": [
+            {
+              "given": "Andrea",
+              "family": "Scaiewicz",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Michael",
+              "family": "Levitt",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "0959-437X"
+          ],
+          "page": "50-56",
+          "container-title": [
+            "Current Opinion in Genetics &amp; Development"
+          ],
+          "title": [
+            "The language of the protein universe"
+          ],
+          "publisher": "Elsevier BV",
+          "issued": {
+            "date-parts": [
+              [
+                2015,
+                12
+              ]
+            ]
+          },
+          "volume": "35"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-4e24b8e334cacb9c.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-4e24b8e334cacb9c.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-4e24b8e334cacb9c.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "eb920b130c5450b8635bfe94b258ceeb060dcde285745d3dc6e0017dfcedb5af",
+    "chunk_count": 20,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1016/j.gde.2015.08.010",
+      "source_region": "first_page",
+      "position": 1328,
+      "context": "view see the Issue and the Editorial Available online 3rd November 2015 http://dx.doi.org/10.1016/j.gde.2015.08.010 sequences as the N-to-C terminal sequential order of their domains, or domain architectu",
+      "priority_score": 0.68
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:10:54.320397+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1016/j.gde.2015.08.010",
+    "score": 1.08
+  }
+}

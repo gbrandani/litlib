@@ -1,0 +1,1109 @@
+[Page 1]
+
+https://doi.org/10.1038/s41587-022-01289-z
+
+Identifying synergistic high-order 3D chromatin conformations from genome-scale nanopore concatemer sequencing Aditya S. Deshpande1,2,3, Netha Ulahannan1,2, Matthew Pendleton 4, Xiaoguang Dai4, Lynn Ly 5, Julie M. Behr1,2,3, Stefan Schwenk6, Will Liao 2, Michael A. Augello7,8, Carly Tyer4, Priyesh Rughani4, Sarah Kudman9, Huasong Tian1,2, Hannah G. Otis 2,10, Emily Adney1,2, David Wilkes 9, Juan Miguel Mosquera 1,9, Christopher E. Barbieri 7,8,9, Ari Melnick 9,11, David Stoddart6, Daniel J. Turner4,5,6, Sissel Juul 4,5,6, Eoghan Harrington4 and Marcin Imieliński 1,2,8,9,12 ✉ High-order three-dimensional (3D) interactions between more than two genomic loci are common in human chromatin, but their role in gene regulation is unclear. Previous high-order 3D chromatin assays either measure distant interactions across the genome or proximal interactions at selected targets. To address this gap, we developed Pore-C, which combines chromatin conformation capture with nanopore sequencing of concatemers to profile proximal high-order chromatin contacts at the genome scale. We also developed the statistical method Chromunity to identify sets of genomic loci with frequencies of high-order contacts significantly higher than background (‘synergies’). Applying these methods to human cell lines, we found that synergies were enriched in enhancers and promoters in active chromatin and in highly transcribed and lineage-defining genes. In prostate cancer cells, these included binding sites of androgen-driven transcription factors and the promoters of androgen-regulated genes. Concatemers of high-order contacts in highly expressed genes were demethylated relative to pairwise contacts at the same loci. Synergies in breast cancer cells were associated with tyfonas, a class of complex DNA amplicons. These results rigorously link genome-wide high-order 3D interactions to lineage-defining transcriptional programs and establish Pore-C and Chromunity as scalable approaches to assess high-order genome structure.
+
+fundamental question in human epigenetics is to understand how three-dimensional (3D) chromatin organization drives cell identity-defining transcriptional programs1. Although gene regulation is understood to depend on the 3D proximity of enhancers and promoters, such interactions occur in a background of DNA folding patterns that are not directly linked to transcription, including cohesin-mediated loop extrusion (for example, topologically associated domains (TADs) and CTCF loops)2,3. More fundamentally, it is unknown whether the 10–20 enhancers associated with a typical gene contact their targets individually or simultaneously to activate gene expression. Cooperativity is a hallmark of classic biochemical models of gene regulation, where allosteric conformational changes increase the probability of high-order interactions between DNA and transcription factors (TFs)4. The genome-wide distribution of gene regulatory cooperativity has not, however, been assessed in mammalian cells. The key roadblocks to such investigations have been technical. Over the past two decades, the workhorse of 3D genomics has been chromatin conformation capture (3C), which enables quantification of interaction frequencies between pairs of DNA loci. 3C libraries are composed of DNA sequences called concatemers that
+
+result from the ligation of sets of DNA fragments that are proximal (within a 200-nm contact radius) in the sample5. However, most 3C-based assays (for example, Hi-C) use short Illumina reads and thus rarely detect high-order contacts (<1% of interactions), limiting their insight into gene regulatory cooperativity. Assays using targeted (Tri-C6, TM3C7, COLA8), molecular barcoding (C-walks9) and long-read (MC-4C10)-based profiling of 3C libraries have been shown to detect high-order interactions at select loci but do not scale to whole genomes. Recently developed genome-wide approaches for the study of high-order 3D interactions bypass 3C by directly applying molecular barcodes to chemically fixed nuclear fragments (SPRITE11 and ChIA-Drop12) or sections (GAM13,14). SPRITE molecularly tags nuclear fragments from a wide size distribution produced through sonication; as a result, many high-order SPRITE clusters reflect origin in a larger nuclear fragment and represent interactions across a substantially larger contact radius than 3C11. In GAM, each barcode marks sequences that originate in the same thin (220-nm) nuclear cryosection; as a result, sequences that share barcodes can be distant (up to a nuclear diameter that is 5–10 μm) despite sharing the same thin plane. The wider contact radius associated with these technologies
+
+Department of Pathology and Laboratory Medicine, Weill Cornell Medicine, New York, NY, USA. 2New York Genome Center, New York, NY, USA. Tri-Institutional PhD Program in Computational Biology and Medicine, New York, NY, USA. 4Oxford Nanopore Technologies, New York, NY, USA. 5Oxford Nanopore Technologies, San Francisco, CA, USA. 6Oxford Nanopore Technologies, Oxford, UK. 7Department of Urology, Weill Cornell Medicine, New York, NY, USA. 8Sandra and Edward Meyer Cancer Center, Weill Cornell Medicine, New York, NY, USA. 9Englander Institute for Precision Medicine, Weill Cornell Medicine, New York, NY, USA. 10Weill Cornell/Rockefeller/Sloan Kettering Tri-Institutional MD–PhD Program, New York, NY, USA. 11Division of Hematology/Oncology, Weill Cornell Medicine, New York, NY, USA. 12Institute for Computational Biomedicine, Weill Cornell Medicine, New York, NY, USA. ✉e-mail: mski@mskilab.org
+
+[Page 2]
+
+empowers them to uncover micron-scale nuclear structures but may limit the specificity with which they detect high-order interactions in gene regulation, which is generally thought to occur at the 10- to 200-nm scale4. Beyond assay limitations, a key conceptual challenge is how to identify cooperativity among patterns of high-order 3D chromatin interactions4,14–16. Biochemical intuition suggests that the contact frequency of three or more cooperatively interacting genomic loci should exceed that which would be expected on the basis of their pairwise interaction rate. Concrete computational challenges include how to identify statistically significant high-order interaction frequencies in the presence of this considerable pairwise background and how to uncover foci of cooperativity in a large combinatorial space of locus sets. To address these gaps, we sought to develop (1) a genome-wide assay to deeply and efficiently profile high-order 3D chromatin interactions within a small (<200-nm) contact radius and (2) computational methods to uncover genome-wide hotspots of synergy or statistically significant high-order interactions above pairwise background. We reasoned that the contact radius (<200 nm) of 3C libraries would be sufficient4,5 to detect functional regulatory element interactions with specificity, as has been validated for many mammalian cell types1 and cancers that undergo enhancer hijacking17. We also surmised that recent step changes in the throughput of Oxford Nanopore Technologies (ONT) sequencing would render genome-wide ONT profiling of 3C libraries practical and enable rigorous genome-wide analyses of 3D cooperativity. Results. Nanopore sequencing of chromatin concatemers. To scalably assay genome-wide high-order chromatin interactions, we developed Pore-C, which applies nanopore sequencing to size-selected (>1.5-kilobase (kb)) DNA libraries obtained through in situ restriction digestion and proximity ligation of cross-linked nuclei (Fig. 1a). To segment each Pore-C read into a concatenation of restriction fragments (concatemer), we developed an algorithm to identify the minimal set of high-quality alignments that maximally covers the sequence by solving a graph optimization problem (Methods). Each of these filtered alignments is then assigned to a restriction fragment (monomer) based on midpoint position (Fig. 1a and Extended Data Fig. 1a). We refer to the number of fragments associated with a concatemer as its cardinality and refer to concatemers with cardinality of >2 as high order. We optimized the Pore-C assay on the Ebstein–Barr virus (EBV)-transformed B lymphocyte cell line GM12878 (Methods and Supplementary Tables 1 and 2), generating 397 gigabases (Gb) of sequence data (132× genome-wide read depth) and detecting 135 million concatemers, of which 78.59% were high order. To assess library quality and permit comparison with Hi-C pairwise contacts, we first decomposed each Pore-C concatemer into all ( ) possible monomer pairs, yielding 2k virtual pairwise contacts (VPCs) per read, where k is the concatemer cardinality. Comparing different restriction enzymes, we found that library preparation using the four-cutter NlaIII consistently had a higher density of VPCs among total bases sequenced (5.67 million VPCs per Gb) and lower monomer N50 (391 bp, N50 is the shortest sequence length in a library such that the summed length of all longer sequences comprises less than 50% of the total library length) than a protocol based on a second four-cutter (DpnII; 2.1 million VPCs per Gb and 733 bp) or a six-cutter (HindIII; 0.68 VPCs per Gb and 6,249 bp) enzyme (Extended Data Fig. 1b,c). Based on these results, we concluded that NlaIII was a superior reagent for human genomic Pore-C library preparation. Pore-C concatemers faithfully capture 3D and linear human genome structure. To assess the fidelity of Pore-C data, we compared contact maps computed from Pore-C VPCs and previously published ‘gold
+
+standard’ Hi-C data18. Indeed, Pore-C contact maps visually recapitulated features of GM12878 Hi-C maps (Fig. 1b-d) and derivative values (compartment scores, insulation scores; Extended Data Fig. 1e,f) reflecting A/B compartment and TAD structure. Unbiased analysis of Pore-C VPCs with state-of-the-art 4DN tools19,20 uncovered TAD boundaries (Extended Data Fig. 1g) and structural loops (Extended Data Fig. 1h–k) with higher accuracy than SPRITE, although with less sensitivity than Hi-C. Overall, we found high values of stratum-adjusted correlation coefficients (SCCs21; for Pore-C VPC contact maps at five resolutions; Fig. 1e, 10 kb–1 Mb), comparable to Hi-C replicates and higher than for SPRITE11 or a negative control (HCC1954 Pore-C). This correlation was maintained at the level of individual PromethION runs (P1 or P2, mean of 16.8 million concatemers, 22× genome-wide coverage, mean SCC of 0.89, 50 kb; Extended Data Fig. 1d) but was reduced with MinION runs (1–2 million concatemers, 2–4×, mean SCC of 0.77). These results indicated that two PromethION flow cells of Pore-C are sufficient to capture major pairwise features of 3D chromatin structure. We also assessed the ability of Pore-C VPCs to faithfully reflect linear genome structure by scaffolding de novo human genome assemblies, a common Hi-C application22–26. We profiled the HG002 genome in a bottle reference sample27 with a PromethION flow cell of a shotgun whole-genome sequencing (WGS) library (40× coverage, read N50 of 20 kb) and a second flow cell of an NlaIII-digested Pore-C library (15× coverage, 201 million VPCs). Application of the Shasta assembler28 to WGS nanopore reads yielded an initial draft human genome assembly with 8,843 contigs and an NG50 (the length of the shortest scaffold in the assembly such that the length of all longer scaffolds is less than 50% of the reference genome length) of 7.2 Mb (Extended Data Fig. 2a). Applying the 3D-DNA and SALSA2 algorithms to merge proximal contigs using the 3D data in Pore-C VPCs (Methods24,25 and Extended Data Fig. 2a,b) yielded an assembly with median scaffold NG50 of 125 Mb, representing a 17-fold improvement over the initial draft assembly and approaching the GRCh38 reference assembly in size (Extended Data Fig. 2c). The final assembly merged all chromosomes into one or two scaffolds that covered >80% of their respective genomic territory, with some scaffolds approaching 200 Mb (Extended Data Fig. 2b) and joining chromosome arms (Extended Data Fig. 2d). These results, which are comparable to results obtained for previous Hi-C-based studies22–26, demonstrate that Pore-C VPCs enable chromosome-scale de novo human genome assembly. High-order concatemers are abundant and reflect proximal chromatin interactions. Having validated the pairwise signal implicit in Pore-C concatemers, we investigated the potential of Pore-C libraries to reveal high-order chromatin structure. Analyzing distributions of GM12878 Pore-C contact cardinality revealed a smooth unimodal distribution with a median cardinality of 4 (Fig. 1f). While GM12878 SPRITE clusters also had a median cardinality of 4, a smaller fraction represented high-order interactions (11.69% versus 78.59% for Pore-C). Taken together, these results revealed a marked enrichment (odds ratio (OR) = 27.72 for >two way) of high-order contacts in Pore-C libraries relative to SPRITE. Investigating SPRITE distributions further at the read level (Fig. 1f, right) rather than the cluster level (Fig. 1f, left) revealed a bimodality in the histogram showing the fraction of reads associated with a given cluster cardinality. The majority (58%) of reads belonging to high-order SPRITE clusters were associated with a very high cardinality (cardinality > 25) mode distinct from a lower mode that included pairwise contacts (Fig. 1f, right). By contrast, the histogram of Pore-C monomer membership was unimodal. Although the relative fidelity of Pore-C and SPRITE against the Hi-C gold standard was comparable overall, SPRITE’s fidelity was reduced to background levels when virtual contact maps were derived only from high-order SPRITE interactions. This indicated that SPRITE’s
+
+[Page 3]
+
+No. contacts 5,000
+
+Cross-linking DNA and protein
+
+50 Mb
+
+1.00
+
+Pore-C
+
+0.08 −0.08 0.08 −0.08
+
+0.75
+
+Pore-C CS
+
+SCC
+
+Hi-C CS
+
+GM12878 Hi-C replicate 1 GM12878 Hi-C replicate 2 GM12878 Pore-C
+
+0.50
+
+GM12878 SPRITE HCC1954 Pore-C
+
+0.25
+
+Hi-C
+
+In situ digestion
+
+5,000
+
+10 kb 25 kb 50 kb 100 kb 1 Mb
+
+Resolution
+
+No. contacts
+
+1 Mb Pore-C
+
+Reverse cross-linking and DNA purification
+
+−1 −1
+
+Size selection, sequencing library preparation
+
+Pore-C IS Hi-C IS
+
+SPRITE
+
+Hi-C
+
+Five-way concatemer
+
+VPCs
+
+A–B A–C A–D ... C–E D–E
+
+191 Mb
+
+Chr 3
+
+SPRITE
+
+0.2
+
+0.4
+
+0.6
+
+0.1
+
+0.1
+
+No. contacts
+
+300 kb Pore-C
+
+CTCF
+
+1,700
+
+Hi-C
+
+Pore-C
+
+43.6 Mb
+
+42.4 Chr 11
+
+0.3
+
+SPRITE Pore-C/ SPRITE high-order
+
+0.75
+
+Pore-C/ SPRITE pairwise
+
+0.50 0.25
+
+Hi-C
+
+0.2
+
+Proportion of monomers/reads
+
+1.00 Normalized contact frequency
+
+Pore-C
+
+Proportion of concatemers/clusters
+
+Nanopore sequencing
+
+One-way
+
+0.2
+
+Pairwise >1,000 101–1,000 26–100
+
+1,000
+
+Pore-C read
+
+High-order Pore-C
+
+>1,000 101–1,000 26–100 Cardinality
+
+Proximity ligation
+
+Chr 2
+
+242 Mb
+
+Cardinality
+
+log10 genomic distance
+
+Fig. 1 | Pore-C concatemers yield high-fidelity maps of proximal 3D contacts. a, Schematic of the Pore-C protocol. Proximally ligated concatemers obtained by 3C are directly sequenced using the ONT long-read sequencing platform. A greedy piece-wise alignment algorithm maps each concatemer sequence to an ordered set of intervals representing a high-order chromatin contact. Each high-order contact of k interactions can be decomposed into k(k−1) VPCs. b, Pore-C and Hi-C 500-kb contact maps for chromosome (Chr) 2 alongside the respective compartment scores (CSs) demonstrating visual correspondence between Pore-C and Hi-C compartment patterns and the CSs; Mb, megabases. c, Pore-C VPC and Hi-C 50-kb contact maps for a portion of chromosome 3 alongside the respective insulation scores (ISs), demonstrating correspondence between Pore-C- and Hi-C-derived TAD structures. d, An example of CTCF peaks coinciding with visually recognizable structural loop anchors (circle) in 10-kb Pore-C and Hi-C contact maps. e, SCCs between the gold standard GM12878 Hi-C dataset and GM12878 Pore-C, GM12878 SPRITE and HCC1954 Pore-C (negative control) datasets. Two Hi-C replicates of GM12878 Hi-C (positive controls) were analyzed at various resolutions. The bars represent mean SCC score for all chromosomes for each cell line with s.e.m. Each data point represents SCC score for a single chromosome; n = 23 chromosomes. f, Comparison of the distribution of contact cardinality between Pore-C concatemers and SPRITE clusters (left) and Pore-C monomers and SPRITE reads (right) in GM12878 with the proportions of one-way, pairwise and high-order components for the two assays. g, Reference distance-dependent decay of high-order and pairwise contacts in Pore-C and SPRITE data compared with Hi-C data.
+
+fidelity was primarily driven by pairwise clusters (Extended Data Fig. 1l). By contrast, Pore-C fidelity was not impacted by the inclusion or exclusion of pairwise contacts. We hypothesized that this difference in fidelity may be driven by differences in contact radius between high-order contacts in Pore-C and SPRITE. To address this, we analyzed the decay of interactions as a function of reference distance in high-order and pairwise Pore-C and SPRITE contacts. High-order and pairwise Pore-C contacts showed the same reference distance decay as Hi-C; by contrast, high-order SPRITE clusters showed a markedly slower decay than Hi-C, pairwise SPRITE clusters and high-order Pore-C concatemers (Fig. 1g). These results indicate that both high- and low-order Pore-C concatemers arise from the same ligation process assayed by other 3C-based methods and thus sample the same contact radius (<200-nm) previously associated with other 3C assays5; by contrast, high-order SPRITE clusters may reflect larger chromatin fragments in the assay and thus represent more indirect and long-range interactions in the nucleus.
+
+Pore-C concatemers reveal cooperativity at active enhancers and promoters. Given the abundance, fidelity and proximity of high-order contacts in Pore-C data, we next asked whether some of these proximal interactions arose from cooperative biological processes distinct from those generating pairwise interactions. We reasoned that the statistical enrichment of high-order contacts relative to what would be expected given the pairwise contact frequencies across a set of bins would provide a readout of synergistic or cooperative 3D interactions. To detect this signal, we developed a background model predicting the count of concatemers overlapping an arbitrary set of genomic bins (bin-set) as a function of covariates (including reference genomic distance between bins, GC content, restriction fragment count and bin-set cardinality) using a gamma-Poisson generalized linear model (GLM; Fig. 2a, left). To assess a bin-set B of interest, we analyze the observed and expected concatemer counts across pairwise and high-order subsets of B (up to a cardinality of 5). We then evaluate whether high-order subsets have a statistically significant deviation from expectation relative to pairwise subsets in a
+
+[Page 4]
+
+Bin-sets background model E(count) = f
+
+Distance cardinality GC content ...
+
+Enhancer
+
+Synergy model
+
+Promoter
+
+Enhancer bin-set
+
+Genomic coordinates
+
+Bin-set O/E
+
+Expected
+
+Promoter bin-set High order
+
+Probability
+
+Observed
+
+Random bin-set
+
+log2 O/E
+
+Pairwise
+
+Count
+
+___ ∼ High order
+
+Sliding window Genomic coordinates
+
+Shuffled
+
+Shuffled concatemers with disrupted high-order contacts
+
+Original concatemers with high-order contacts FDR < 0.1
+
+10.0
+
+2.5 5.0
+
+Pr
+
+−2.5
+
+2.5 5.0
+
+do
+
+Enhancer synergy enrichment
+
+log2 RR
+
+log2 RR
+
+an
+
+−2.5
+
+fle
+
+2.5
+
+5.0
+
+0.02
+
+uf
+
+2.5
+
+0.04
+
+er
+
+5.0
+
+7.5
+
+–8
+
+–11
+
+0.06
+
+ot
+
+7.5
+
+P = 1.9 × 10 P = 1 × 10
+
+om
+
+−log10 FDR
+
+−log10 FDR
+
+10.0 Promoters
+
+Promoter synergy enrichment
+
+Preserved pairwise contacts
+
+Original pairwise contacts
+
+Sh
+
+Original
+
+Fraction of bin-sets with synergy
+
+–5
+
+P = 9.8 × 10
+
+do an
+
+En
+
+−2.5 0 2.5 5.0 log2 RR
+
+−2.5 0 2.5 5.0 log2 RR
+
+0.02
+
+fle
+
+2.5
+
+uf
+
+5.0
+
+Sh
+
+2.5
+
+–7
+
+0.04
+
+er
+
+5.0
+
+7.5
+
+nc
+
+7.5
+
+P = 1.3 × 10
+
+ha
+
+10.0 −log10 FDR
+
+−log10 FDR
+
+Enhancers
+
+10.0
+
+Fraction of bin-sets with synergy
+
+FDR < 0.1
+
+Fig. 2 | Synergy algorithm uncovers cooperativity in high-order enhancer and promoter interactions. a, Schematic of the Synergy algorithm. In the first step, a gamma-Poisson GLM is fit to predict the counts of concatemers overlapping a particular set of intervals (bin-set) as a function of genomic covariates (left). To test a bin-set for synergy, a second gamma-Poisson GLM is fit to assess the excess counts among high-order versus pairwise subsets of a candidate bin-set. Specifically, the counts of concatemers overlapping all subsets between size 2 and k = 5 of the candidate bin-set are analyzed to test the hypothesis that high-order (cardinality > 2) subsets have a consistently higher (or lower) deviation from expectation than size 2 subsets (Methods). O, observed; E, expected. b, Illustration of the sliding window approach to test promoter, enhancer and random bin-sets for synergy; d indicates the minimum reference distance allowed between bins (50 kb). c, Volcano plots of Synergy models for promoters (top row, left) and enhancers (bottom row, left) along with respective shuffled concatemers (top and bottom right). Red points represent significant bin-sets (FDR < 0.1). Shuffled concatemers maintained pairwise interactions but randomized high-order ones (top). d, Bar plot of the fraction of synergistic enhancer-derived (n = 1,490) and promoter-derived (n = 1,357) bin-sets compared with those obtained from shuffled concatemers (promoter derived n = 1,280, enhancer derived n = 1,437) and random bin-sets (promoter derived n = 1,780, enhancer derived n = 1,908). A Fisher’s exact test was used to determine enrichment of synergy between various groups. Two-sided P values were obtained for each comparison. Error bars on bar plots represent 95% confidence intervals on the Bernoulli trial parameter.
+
+second GLM. In the output of this algorithm, which we call Synergy, the magnitude (relative risk, RR) of this deviation is returned as the effect size along with its P value (Fig. 2a, right, and Methods). We interpret this effect size as a measure of bin-set cooperativity and also refer to each synergistic bin-set (that is, one that harbors a statistically significant positive deviation in cooperativity) as a synergy. We next asked whether enhancers and promoters were significantly enriched in cooperativity. To address this, we annotated non-overlapping 10-kb genomic bins as intersecting one of 64,070
+
+strong enhancers or 15,274 active promoters in GM12878. For each 2-Mb sliding window (1-Mb stride) in the genome (Fig. 2b and Methods), we assessed cooperativity for the set of bins in the window that overlapped a promoter (or enhancer; Methods). This approach revealed that a subset of windows in the enhancer (3%; Fig. 2c, top row, left) and promoter (5%; Fig. 2c, bottom row, left) analysis harbored statistically significant cooperativity (false discovery rate (FDR) < 0.1). For comparison, we applied Synergy to random bin-sets of identical cardinality in each window (Extended Data Fig. 3b).
+
+[Page 5]
+
+Chromunity
+
+Sliding window
+
+A/B compartment
+
+Community detection
+
+Enhancer Promoter
+
+Chr C
+
+Concatemers 1 2 3 4 5 6
+
+Number of common bins
+
+Histone marks
+
+−2
+
+Enhancer activity
+
+LCL-specific TFs
+
+RNAPII binding
+
+−4
+
+Architectural factors
+
+Synergy
+
+Chr A Chr B
+
+Concatemers
+
+Adjacency of concatemers
+
+Regulatory element
+
+ChromHMM annotation
+
+Gene expression
+
+Genomic coordinates
+
+OR
+
+Contact No contact
+
+B compartment A compartment Heterochromatin/low Repressed Insulator Txn transition Txn elongation Weak txn Unexpressed genes Low expressed genes High expressed genes H3K27me3 H3K9me3 H3K36me3 H2AFZ H3K27ac H3K4me3 H3K9ac H3K4me1 EBF1 ETS1 BCL3 TCF3 RELB MAX ELF1 PAX5 IKZF1 RUNX3 SE EP300 RNAPII-S2p RNAPII-S5p POLR2A RAD21 SMC3 ZNF143 YY1
+
+1 2 3 4 5 6 7 8
+
+log2 OR
+
+Contact matrix
+
+Window
+
+Concatemers
+
+Genomic bins
+
+Bin-sets
+
+Epigenomic features
+
+Full Pore-C
+
+10 Mb
+
+250 kb
+
+50 kb
+
+Pore-C community contact map
+
+Pore-C concatemers
+
+Bin-sets
+
+Pore-C concatemers
+
+Contact frequency Superenhancers Active compartments
+
+CDK6
+
+Chr 1: 46.51– 56.75 Mb
+
+Bin-set
+
+70.4– 81.6 Mb
+
+30.7– 40.7 Mb
+
+1,000
+
+127.5 Chr 8
+
+Mb
+
+92.6
+
+92.7
+
+92.8
+
+Chr 7
+
+Mb
+
+Chr 15: 58.6–70 Mb
+
+Chr 20: 1–44 Mb
+
+Chr 10: 21.9–36 Mb
+
+GO biological process
+
+No. overlapping regions
+
+Full Hi-C
+
+Chr 4: Chr 3: 33– 45.2– 58.19 Mb 44.4 Mb
+
+Chr 12: 1.5–51.7 Mb
+
+Symbiosis, encompassing mutualism through parasitism Interspecies interation between organisms Signal transduction by protein phosphorylation Viral process Multiorganism cellular process MAPK cascade Regulation of sequence-specific DNA-binding TF activity Immune response-activating signal transduction Positive regulation of defense response Regulation of innate immune response Immune response-activating cell surface receptor signaling pathway Regulation of organelle assembly T cell receptor signaling pathway B cell differentiation Protein K48-linked ubiquitination
+
+EBV superenhancer
+
+Bin-set MYC
+
+Chr 8: 6.3– Chr 7: 47.4 Mb Chr 9:
+
+Enhancer
+
+Genomic features
+
+Promoter
+
+EBV superenhancer
+
+H3K27ac peaks
+
+Frequency of contacts
+
+Fig. 3 | De novo discovery of reference-distal and interchromosomal cooperativity with Chromunity. a, Schematic of the Chromunity algorithm for de novo discovery of synergies. Either (1) a sliding window of tiles with fixed width and stride or (2) regulatory elements (for example, enhancers and promoters) are used as input bins. A binary concatemer-by-bin interaction matrix is then created and used to populate a concatemer graph whose edges link similar concatemer pairs. Sets (that is, communities) of overlapping concatemers are detected by a standard graph community detection algorithm, and their consensus genomic footprint defines a candidate bin-set. This bin-set is then tested for cooperativity by the Synergy algorithm on a leave-out set of concatemers. b, Enrichment for specific epigenetic GM12878 annotations in synergistic (n = 3,120) relative to background (n = 7,502) bin-sets (logistic regression corrected for width; Methods). The bar plots represent estimates obtained from the model, with the error bars representing 95% confidence intervals; RNAPII, RNA polymerase II; Txn, transcription. c, GM12878 synergies associated with two loci (MYC and CDK4) previously shown to be activated during EBV transformation of B lymphocytes. From the top, a Pore-C contact map, a community contact map limited to pairwise interactions between concatemers in the community, a concatemer community supporting the given synergy, concatemer density along the genome, GM12878 H3K27ac peaks, regulatory elements, synergistic bin-set intervals, genes and a Hi-C contact map are shown. Contact map legends depict the number of VPCs overlapping the interval pair associated with a given pixel. d, An example of a multichromosomal synergy. From top to bottom, a community contact map, a concatemer community supporting the synergy, synergistic bin-set intervals, a histogram of concatemer density along the genome, superenhancer regions and active compartment boundaries are shown. e, Gene Ontology (GO) biological processes enriched among reference-distal E–P synergies uncovered by RE Chromunity. The bar plot shows the number of distinct regions associated with synergistic bin-sets that overlap a given Gene Ontology annotation.
+
+Cooperativity was found significantly more frequently for both promoters (Fisher’s exact test, OR = 3.6, P = 1.9 × 10–8; Fig. 2d, top row) and enhancers (OR = 2.73, P = 9.8 × 10–5; Fig. 2d, bottom row) than for random bin-sets (1.3% and 1.1%, respectively) of identical cardinality chosen from the same 2-Mb window. To additionally assess the specificity of the cooperativity signal, we applied a random walk over Pore-C monomers (Methods and Fig. 2c, top) to create shuffled data with an identical cardinality distribution and nearly identical pairwise contact map as the observed
+
+concatemers (Extended Data Fig. 3c–e). These shuffled data showed only rare synergies in both promoters (0.6% of windows, FDR < 0.1; Fig. 2c, top row, right) and enhancers (0.55% of windows; Fig. 2c, bottom row, right). This represented a significant enrichment in observed versus shuffled data (promoters: OR = 7.8, P = 1 × 10–11; enhancers: OR = 5.7, P = 1.3 × 10–7; Fig. 2d). Taken together, these results reveal a substantial burden of cooperative 3D interactions in the genome, which are specifically concentrated in promoters and enhancers.
+
+[Page 6]
+
+10–3
+
+10–4
+
+10–4
+
+0.005
+
+or de
+
+or de
+
+10–3
+
+0.010
+
+ig
+
+or Lo der or de
+
+0.015
+
+ig
+
+–2
+
+Methylation proportion
+
+–2
+
+0.020
+
+or de
+
+10–1
+
+MYC
+
+0.051
+
+10–1
+
+or de
+
+sy N ne on rg is ti c
+
+Sy ne
+
+sy N ne on rg is ti c
+
+10–4
+
+gi st ic
+
+−5
+
+1.6 × 10
+
+Non-synergistic
+
+–5
+
+Lo
+
+Synergistic
+
+Lo
+
+–16
+
+ig
+
+log (TPM)
+
+–3
+
+2.7 × 10
+
+Sy ne
+
+–2
+
+10–1
+
+gi st ic
+
+Methylation proportion
+
+0.0045
+
+Methylation proportion
+
+Genes Unexpressed genes Q1 TPM
+
+log (TPM)
+
+Q2 TPM Q3 TPM
+
+−2
+
+5.1 × 10
+
+–6
+
+10–2
+
+10–2
+
+10–2
+
+10–2
+
+10–3
+
+10–3
+
+10–3
+
+10–3
+
+10–4
+
+10–4
+
+10–4
+
+10–4
+
+ig
+
+Lo
+
+ig
+
+ig
+
+–6
+
+or de or de
+
+10–1
+
+or de or de
+
+10–1
+
+or de Lo or de
+
+10–1
+
+ig
+
+2 × 10
+
+10–1
+
+or de Lo or de
+
+Methylation proportion
+
+0.032
+
+Lo
+
+0.8
+
+Fig. 4 | High-order contacts in highly expressed genes are preferentially demethylated. a, Comparison of aggregated methylation signal between synergistic and non-synergistic bin-sets nominated by Chromunity. Methylation measured across all CGIs in the proximity of a TSS. TPM, transcripts per million. b, Comparison of expression between synergistic and non-synergistic bin-sets. c, Aggregate methylation signal from high-order (k > 2) versus low-order (k ≤ 2) concatemers in synergistic and non-synergistic bin-sets, respectively. d, Methylation signal at high- versus low-order concatemers overlapping individual gene-associated CGIs stratified on the basis of the expression level of the respective gene (unexpressed genes and three quantiles (Q1–Q3) of genes with nonzero expression). e, Example of a CGI within the MYC promoter showing a difference in aggregate methylation signal between high- and low-order concatemers. For all box plots, the center line corresponds to the mean, box limits correspond to the interquartile range (IQR), and the whiskers correspond to the last datum within 1.5× IQR. All comparisons were tested using a two-sided Wilcoxon rank sum test.
+
+Chromunity uncovers synergies at cell identity-specific loci. Having demonstrated significant cooperativity at enhancers and promoters, we sought to uncover specific synergies through genome-wide analysis of Pore-C data. High-order chromatin interactions reside in large combinatorial space that is intractable to exhaustive search. To enable de novo discovery of synergistic bin-sets, we combined community detection of concatemers with the Synergy model into an algorithm we call Chromunity (Fig. 3a). Chromunity begins with a graph of concatemers whose weighted edges quantify genomic overlap between concatemer pairs. This graph is used to build a second k-nearest neighbor concatemer graph, which is clustered using a standard community detection algorithm (Methods). Each concatemer community above a minimal size is evaluated to identify its genomic footprint and derive a candidate bin-set, which is evaluated by Synergy on an independent (leave-out) set of concatemers. Chromunity can be applied across the genome across a sliding window of genomic tiles (for example,
+
+10-kb bins tiling the genome, called ‘sliding window Chromunity’) or to a set of user-defined regulatory element (RE) targets (for example, enhancers and promoters, called ‘RE Chromunity’; Fig. 3a). We first applied sliding window Chromunity to 10-, 25- and 50-kb genome-wide tiles. Given the computational complexity of each analysis (≈85 million concatemers across 60,000–300,000 bins), we limited concatemer community detection to 2-Mb sliding windows (1-Mb stride) to uncover 3,120 candidate bin-sets, of which 21% showed cooperativity in a leave-out concatemer set. As in the previous analyses, this rate of cooperativity was significantly higher than for random bin-sets with the same characteristics and shuffled Pore-C concatemers (Extended Data Fig. 3f,g). We next asked whether synergistic bin-sets were epigenetically distinct from background. Analyzing histone mark chromatin immunoprecipitation assays with sequencing (ChIP–seq) overlap with Chromunity output (Fig. 3b and Supplementary Table 4), we found that synergies were enriched in regions associated with
+
+[Page 7]
+
+transcriptional elongation and were depleted in repressed chromatin and heterochromatin. Synergies colocalized with elongating (S2p), initiating (S5p) and total isoforms of RNA polymerase IIA. They also overlapped with active enhancer and promoter histone marks (Fig. 3b and Supplementary Table 4) and were enriched in genes in the top two quartiles of expression (highly expressed genes) and depleted in unexpressed genes. Synergistic bin-sets were preferentially bound by B cell-associated TFs, including PAX5, IKZF1 and EBF1. These results indicate that 3D cooperativity is concentrated at transcriptionally active and cell identity-specific loci. EBV-induced overexpression of MYC has previously been shown to be a hallmark of lymphoblastoid cell line (LCL) transformation29. Indeed, Chromunity analysis identified a nominally synergistic bin-set at the MYC locus (RR = 3.4, P = 0.016; Fig. 3c, left) overlapping a set of superenhancers previously associated with EBV lymphocyte transformation29. These superenhancers were located (~525 kb and ~428 kb) upstream of the MYC gene, which were brought together with the MYC promoter. This interaction has been previously shown to be essential for MYC expression in EBV-transformed LCLs29–31. This bin-set included an additional H3K27ac enhancer peak (black interval) not previously implicated in the EBV-driven activation of MYC. We also identified a nominal synergy linking EBV-associated enhancers to the promoter and gene body of CDK6 (RR = 5.09, P = 2.14 × 10–3; Fig. 3c, right), another known overexpressed target of EBV transformation29. These results suggest that cooperative 3D interactions may play a role in viral transformation. Significant cooperativity across reference-distal regulatory elements. To better understand cooperativity between more reference-distal (>2 Mb) regulatory elements, we applied RE Chromunity to a previously annotated set of GM12878-associated enhancers and promoters. The dimensions of the analysis (79,344 promoters and enhancers overlapping 5,394,087 concatemers) enabled genome-wide concatemer community detection without the need for sliding windows, allowing for the study of reference-distal (including interchromosomal) interactions (Methods). RE Chromunity analysis yielded 647 candidate bin-sets, of which 207 (32%) demonstrated significant cooperativity (FDR < 0.1) in the leave-out concatemer data. This represented a profound enrichment relative to shuffled concatemers (Fisher’s exact test, OR = 12.65, P < 2.2 × 10–16) and compared to random bin-sets with similar characteristics (Extended Data Fig. 3h,i and Methods). Among these 207 synergies, 94 spanned multiple chromosomes (Extended Data Fig. 3j). An example of an interchromosomal enhancer–promoter (E–P) synergy discovered by RE Chromunity is shown in Fig. 3d. The supporting concatemers spanned multiple interchromosomal and also reference-distal intrachromosomal active compartments and superenhancers on chromosomes 8, 12 and 20, including the promoters of several highly expressed and B cell-specific genes (IRAG2, CD72 and BLK32). Pathway analysis33 of the 207 synergies revealed enrichment of biological processes related to viral infection, immune response and B cell differentiation,
+
+consistent with GM12878’s B cell origins and EBV-transformed cell identity (Fig. 3e). Taken together, these results support the existence of cooperative and reference-distal E–P interactions at lineage-specific loci in GM12878 cells. Concatemer base modifications link synergy with hypomethylation at highly expressed genes. Because Pore-C libraries are composed of unamplified cellular DNA, the resulting concatemers retain base modifications such as DNA methylation, which can be detected by nanopore sequencing. Indeed, we found a close correlation between genome-wide DNA methylation fractions obtained from Pore-C and gold standard whole-genome bisulfite sequencing34 (WGBS; r = 0.92; Extended Data Fig. 4a) or nanopore WGS data (r = 0.94; Extended Data Fig. 4b), exceeding interreplicate correlations of WGBS ENCODE data (r = 0.86; Extended Data Fig. 4c). As biological validation of the Pore-C methylation signal, we investigated X chromosome inactivation (XCI) in GM12878 cells35,36. After assigning X chromosome Pore-C concatemers to known GM12878 single nucleotide polymorphism (SNP) haplotypes27, we found a clear methylated (Xi) and unmethylated (Xa) haplotype in regions subject to XCI (two-sided Wilcoxon rank sum test, P < 2.22 × 10–16) but not in regions previously shown to undergo X inactivation escape (two-sided Wilcoxon rank sum test, P = 0.26; Extended Data Fig. 4d). Xi-specific methylation enrichment was concentrated in CpG islands (CGIs) at promoters but absent from random genomic regions or CGIs in promoters of genes that escape XCI (Extended Data Fig. 4e). Xa-specific concatemers demonstrated robust A/B compartmentalization, while the Xi contact map demonstrated two megadomains lacking TADs but harboring a 16-Mb superloop linking the microsatellite repeat DXZ4 and long non-coding RNA gene FIRRE, consistent with previous findings8,37,38 (Extended Data Fig. 4f). Taken together, these results validate the ability of Pore-C to simultaneously assess phase, methylation and 3D structure. Having established the validity of the Pore-C methylation signal, we sought to explore the methylation footprint of 3D cooperativity. Specifically, we posited that loci engaging in cooperative high-order interactions may be preferentially bound to TFs and thus harbor demethylated promoters. To address this, we compared transcription start site (TSS)-proximal CGI methylation between synergistic and non-synergistic bin-sets and between high- and low-order (≤two-way) interactions in the same loci. Synergistic bin-sets uncovered by Chromunity were significantly demethylated at TSS-proximal CGIs compared to non-synergistic Chromunity candidates (P = 0.0045, two-sided Wilcoxon rank sum test; Fig. 4a), consistent with expression differences at the associated genes (Fig. 4b). We found that, in aggregate, high-order concatemers had significantly lower TSS-proximal CGI methylation than low-order (≤2) contacts at the same synergistic loci (two-sided Wilcoxon rank sum test, P = 1.6 × 10–5), an effect that was attenuated at non-synergistic loci (P = 0.051; Fig. 4c). We next asked whether the methylation differences between high- and low-order concatemers were modulated by levels of gene expression. Grouping genes into four categories on the basis of their
+
+Fig. 5 | Androgen stimulation induces enhancer and promoter cooperativity at androgen-dependent loci in prostate cells. a, Volcano plots showing the enrichment of AR-specific TF binding in synergistic bin-sets in DHT+ and DHT– prostate cells, with significant (FDR < 0.1) TFs highlighted in red. TF binding sites obtained from LNCaP ChIP–seq data and ENCODE consensus TF binding sites for 121 TFs assayed across 129 cell lines (Methods, logistic regression, corrected for width). b, DHT+ and DHT– RR estimates for bin-sets nominated in DHT+ and DHT– Chromunity analyses and tested for cooperativity in both conditions. c, Whole-genome circos plots showing all synergistic interactions for DHT– and DHT+ cells along with a histogram of AR enhancer density and ARGs in their vicinity. d, Fraction of previously annotated ARGs (n = 289)40 in the vicinity (10 kb) of synergistic bin-sets called specifically in DHT+ compared with those called in both DHT+ and DHT– conditions (DHT–/+) or DHT– only. A Fisher’s exact test was used to determine enrichment of synergy between various groups. Two-sided P values were obtained for each comparison. Error bars on bar plots represent 95% confidence intervals on the Bernoulli trial parameter; NS, not significant. e, Example of a DHT+ synergy that does not show cooperativity in DHT– cells. From top to bottom, a heat map showing the contact pattern among bins; DHT+ Pore-C concatemers; a histogram of the contacts in DHT+; TF binding sites for FOXA1, HOXB13 and AR; DHT– Pore-C concatemers for the same locus; a histogram of the contacts in DHT– cells; and ARGs. Contact map legends are in units of VPCs.
+
+[Page 8]
+
+DHT –
+
+DHT +
+
+Significant
+
+−log10 (P value)
+
+−log10 (P value)
+
+TRIM22 SMC3
+
+ZNF143
+
+NKX31 FOXA1 STAT3 PCBP2
+
+AR
+
+KDM1A
+
+HOXB13
+
+−2
+
+−1
+
+−2
+
+−1
+
+log2 (OR)
+
+P = 0.006
+
+Fraction of ARGs overlapping synergistic bin-sets
+
+log2 (RR) in DHT +
+
+Significant in DHT +
+
+Both DHT – Neither
+
+0.06
+
+0.04
+
+0.02
+
+DHT
+
+–
+
++
+
+–/+
+
+–
+
+Condition
+
+DHT –
+
+NS
+
+log2 (RR) in DHT
+
+log2 (OR)
+
+10 Mb
+
+AR enhancers
+
++
+
+DHT Pore-C community contact map
+
+SL S C2 SD LC3 A3 R9 8A C7 4
+
+CA
+
+DHT + Pore-C concatemers
+
+A1 CYP11 D G4 PLA2 G4E PLA2
+
+R1 PE T19 C1 KR T14 ALN A KRT6G
+
+KK
+
+DHT + frequency of contacts
+
+0.5
+
+DHT + footprint DHT +
+
+DHT – frequency of contacts
+
+LAT2
+
+DHT – Pore-C concatemers
+
+FOXA1
+
+SGK1
+
+KLK15
+
+DHT – footprint
+
+AR enhancers
+
+AKAP12
+
+0.5
+
+C16orf5
+
+KLK4 KLK2 KLK3
+
+HOXB13 100 1,000 AR
+
+KLK4
+
+C19orf48 ACPT
+
+KLK2
+
+ARGs
+
+SL
+
+GLY ZP ATL2
+
+GS 6 DE rf11 1 C1 C41 5A3 9 SL LC4 M7 TM
+
+SD
+
+C2
+
+R9
+
+KLK3
+
+SPDEF
+
+KLK15 C19orf48
+
+FKBP5
+
+A3
+
+ZNF812
+
+C7
+
+C9orf
+
+R1 PE RT19 K T14 KR
+
+ACPT
+
+G4E
+
+PLA2
+
+Chr 6: 21.54–41.9 Mb
+
+Chr 16: 1–13.3 Mb
+
+Chr 16: 57.9–78.2 Mb
+
+Chr 17: 1–11.5 Mb
+
+Chr 19: 2.7–58.6 Mb
+
+[Page 9]
+
+expression quantiles in GM12878 cells (Fig. 4d, top), we found that the difference in CGI methylation between high- and low-order concatemers was negligible around unexpressed genes (two-sided Wilcoxon rank sum test, P = 0.82). This difference was most profound among genes in the highest quantile of gene expression (two-sided Wilcoxon rank sum test, P = 2 × 10–6; Fig. 4d, bottom). Among these genes was MYC, which showed a drastic difference in TSS-proximal CGI methylation between low- and high-order concatemers (Fig. 4e). Taken together, these results suggest that high-order chromatin interactions at synergistic bin-sets represent a distinct molecular state relative to pairwise interactions, particularly at highly expressed genes. Androgen stimulation induces high-order chromatin interactions. The androgen receptor (AR) is the primary transcriptional effector of hormone stimulation in prostate cells, triggering growth and differentiation gene expression programs after binding distal regulatory elements in complex with other TFs (for example, FOXA1) in an androgen-dependent fashion39. To better understand the role of 3D cooperativity in androgen stimulation, we starved LNCaP cells of androgen for 72 h and treated with either vehicle (0.1% ethanol) or the androgen dihydrotestosterone (DHT; 10 nM) for 18 h, generating Pore-C profiles across two biological replicates for each condition (two PromethION flow cells per condition). Applying a sliding 2-Mb window (1-Mb stride) Chromunity analysis across 25-kb bins uncovered 213 and 66 synergies in DHT+ and DHT– conditions, respectively (Extended Data Fig. 5a). Bins contributing to DHT+ synergies significantly overlapped DHT+ AR ChIP–seq peaks (OR = 1.39, P = 0.0015, logistic regression; Fig. 5a and Methods). DHT– synergies displayed no AR enrichment (P = 0.23). Extending this analysis to additional publicly available TF ChIP–seq data (21 LNCaP TF profiles, 121 consensus TF profiles across 129 cell lines from ENCODE), we uncovered significant overlaps between DHT+ synergies and the binding sites of lineage-specific AR cofactors (HOXB13, ETV1 and FOXA1; Fig. 5a). Most of the remaining non-prostate lineage TF profiles did not show significant overlap with DHT+ or DHT– synergies, with the exception of ubiquitously expressed structural chromatin factors (SMC3, ZNF143 and TRIM22; Fig. 5a). To uncover additional reference-distal (2-Mb) synergies around AR binding, we applied RE Chromunity to 19,671 DHT+ AR enhancers and 19,886 genome-wide promoters (Extended Data Fig. 5b). Jointly analyzing 692 concatemer communities uncovered in either experimental condition with Synergy in independent leave-out concatemer sets uncovered 33 DHT+-specific, 16 DHT–-specific and 23 shared AR E–P synergies (Fig. 5b). Among these, we found many (23) interchromosomal AR enhancer synergies in the DHT+ condition that were absent in DHT– cells (Fig. 5c). We next tested these sets of loci for their proximity (10 kb) to 289 known androgen-responsive genes (ARGs)40. We found that DHT+-specific synergies were significantly enriched in ARG overlap relative to DHT– (Fisher’s exact test OR = 11.36, P = 0.006; Fig. 5d).
+
+As an example, we identified a DHT+-specific synergy spanning four chromosomes and 18 distinct loci linking reference-distal (>1 Mb) AR binding sites in the proximity of nine ARGs, including the prostate-specific genes FKBP5, KLK3 and KLK4, along with high density of relevant TFs (AR, FOXA1 and HOXB13; Fig. 5e). Taken together, these results implicate high-order chromatin interactions in hormone-dependent AR binding and gene regulation. Complex synergies induced by a breast cancer tyfonas. Cancer structural DNA variants create complex loci that harbor multiple copies of genomic intervals and rearrangement junctions in cis and trans41,42. The linear and 3D allelic structure at highly rearranged and amplified loci may have important biological consequences, including enhancer activation43–47. Tyfonas are a recently identified class of highly rearranged and chromosomally integrated amplicons comprising clusters of high-copy rearrangements, including fold back inversions42. To probe synergies associated with tyfonas, we analyzed publicly available short-read Illumina WGS data42,48 to identify a tyfonas in a breast cancer cell line HCC1954, which we then profiled with Pore-C and sequenced with one PromethION flow cell, yielding 160 million pairwise contacts and 13× genome-wide coverage. Applying RE Chromunity using genome-wide promoters and HCC1954 enhancers as targets, we uncovered five synergies spanning the majority of the tyfonas subgraph (Fig. 6a), spanning seven chromosomes and 30 amplified Cancer Gene Census (CGC) genes, including MYC, CCND1, TERT and so on. We next postulated that some of the observed synergies may be the direct consequence of altered allelic structure in this cancer genome. To explore this, we used a greedy traversal of the genome graph (Methods) to identify a walk that maximally overlapped the observed synergies. This analysis yielded a single continuous 202.5-Mb haplotype overlapping 3,655 concatemers spanning all five synergies (Fig. 6b). To validate whether linear and 3D proximities were the result of this rearranged allele, we performed three-color metaphase fluorescence in situ hybridization (FISH) on HCC1954 cells and the diploid ANA cell line. We designed probes against three discontiguous genomic regions overlapping the reference genomic location of three segments on the inferred tyfonas allele (Fig. 6c,d, highlighted walk, top). As predicted from our joint genome graph and Pore-C analysis, these three probes were proximal and amplified in the HCC1954 cell line and were distinct and diploid in ANA cells (Fig. 6d, bottom). These results confirmed the presence of a complex and amplified allele connecting chromosome 9, 12 and 20 enhancers in a chromosomally integrated locus. We concluded that the observed enhancer synergies were the direct result of altered linear contiguity and 3D proximity induced by this complex, amplified and rearranged allele. Discussion. Through the use of a straightforward 3C-based protocol and modest nanopore sequencing requirements (one to two PromethION flow cells per run), Pore-C assesses high-order
+
+Fig. 6 | Synergy associated with a complex cancer amplicon. a, Synergies uncovered around the genomic footprint of a tyfonas found in the breast cancer cell line HCC1954. Tyfonas are a recently characterized class of complex amplifications42. From top to bottom, Pore-C concatemers, a JaBbA/ gGnome-derived genome graph42 of the tyfonas locus and CGC genes falling within the tyfonas footprint are shown, labeled on the basis of those with low (Q1, 0–33%) versus high (Q3, 67–100%) expression tertiles in a database of cancer cell line gene expression48. In the legend, REF and ALT junctions refer to reference and alternate (i.e. non-reference) junctions, respectively. b, A 202.5-Mb allele inferred by identifying a path through the genome graph that maximally overlaps Pore-C concatemers. The walk is annotated with locations of multicolor FISH probes. The bottom track shows Pore-C concatemers associated with the walk. c, Model of a multichromosomal contiguity and synergy examined by FISH. From top to bottom, a contact map of concatemers contributing to the allele; Pore-C concatemers; targets used for input to Chromunity; constructed allele; and corresponding subgraph. Contact map legends are in units of VPCs. d, Design of a multicolor DNA FISH experiment (top) with red, green and magenta probes each targeting one of three locations on the putative derivative allele. Colocalization of probes yielded a yellow signal in HCC1954 metaphase spreads (bottom), confirming the three-way proximity of labeled loci on chromosomes 9, 12 and 20. This probe colocalization was not observed in the diploid (ANA) cell line. Representative images are shown from three independent FISH experiments.
+
+[Page 10]
+
+Chr 12: 29.93–56.8 Mb 10 Mb
+
+Chr 8: 78.7–144.8 Mb
+
+Chr 5: 1–192 Mb
+
+Chr 9: 1–29.5 Mb
+
+Chr 20: 43–71 Mb
+
+Chr 22: 9.8–33.3 Mb
+
+Chr 11: 49.2–105.9 Mb
+
+Tyfonas ALT junctions REF junction
+
+Pore-C concatemers
+
+Other ALT junction Q1 TPM CGC gene (0–33%) Q2 TPM CGC gene (34–66%) Q3 TPM CGC gene (67–100%)
+
+Copy number
+
+JaBbA
+
+CGC genes Walk footprint
+
+1 Mb
+
+10 Mb
+
+Pore-C
+
+Pore-C concatemers Targets Walk constructed using Pore-C concatemers
+
+Copy number
+
+Rearranged allele JaBbA
+
+41 53
+
+Chr 12
+
+55 17
+
+Chr 20
+
+19 Mb
+
+Chr 9
+
+DNA FISH probes Chr 9: 18,364,495–18,556,995
+
+Chr 12: 40,474,783–40,652,936 Chr 20: 54,362,807–54,556,515 40 40.5 Chr 12
+
+Chr 20
+
+Chr 9
+
+Mb
+
+HCC1954
+
+10 μm
+
+10 μm
+
+Pore-C concatemers
+
+Chr 5: 63.285–63.287 Mb
+
+Chr 22: 20.7–22.4 Mb
+
+Chr 5: 114–180 Mb
+
+Chr 8: 107.2–133.8 Mb
+
+Chr 9: 1.13–18.6 Mb
+
+Chr 11: 60.2–69.9 Mb
+
+Chr 20: 53.9–54.6 Mb Chr 12: 40.3–41.7 Mb
+
+ANA
+
+Chr 5: 491 kb– 2.8 Mb
+
+10 μm
+
+10 μm
+
+[Page 11]
+
+genome structure with substantially higher efficiency (70–80% of concatemers are high-order) than previous assays (<11%). The scalability of Pore-C can be attributed to recent increases in nanopore sequencing throughput, which enables the generation of 40–200 Gb of sequence with a comparable per gigabase reagent cost to that of a standard Illumina run. By capturing the same proximal (<200 nm) interactions as other 3C-based assays5, Pore-C may be the ideal method to study functional high-order 3D interactions at the genome scale. Pore-C may also provide insight into linear genome structure, where future algorithms that directly use the high-order contiguity information in Pore-C concatemers may further improve the scale of phased de novo assembly, particularly for polyploid and aneuploid genomes. Our results provide the first statistical evidence of widespread 3D cooperativity in proximal (<200 nm) 3D chromatin interactions across a mammalian genome. While previous methods (GAM13 and SPRITE11) have reported high-order interactions in 3D human genomes, these data represent long-range 3D proximities and thus are less likely to specifically reflect the direct binding events associated with genome function. By applying new analytics (Chromunity) to Pore-C data, we show across the genome that cooperativity is concentrated at enhancers and promoters around active chromatin regions and highly expressed lineage-defining genes (for example, B cell TF and EBV oncoprotein targets in LCLs and ARGs in LNCaP cells). The selective demethylation of CGIs at high-order, but not pairwise, contacts at highly expressed genes suggests that Pore-C synergies reflect a cooperative, activated and TF-bound 3D chromatin conformation. These findings validate long-held biological intuition about cooperativity in mammalian gene regulation4. Previous studies of gene regulatory cooperativity have been focused on the dynamics of TF aggregation at specific genes, both within and outside of the context of phase-separated transcriptional condensates4,15,49–53. A key question going forward is whether the enhancer synergy detected by Pore-C is linked to phase separation16 or other modes of cooperativity between enhancers, promoters and TFs4. Future Pore-C-guided superresolution microscopy-based investigations of 3D regulatory element cooperativity and phase separation will be needed to better delineate the relationship between these possibly distinct phenomena, particularly at steroid hormone receptors, including AR53,54. Our data demonstrate that high-order interactions with very significant cooperativity can show subtle deviations from background on a pairwise contact map (Fig. 3c). Indeed, we show that statistical signals of synergy disappear when concatemers are scrambled to generate high-order interactions with nearly identical pairwise contact frequencies (Extended Data Fig. 3c–e). The interaction patterns (TADs, CTCF loop domains) that dominate Hi-C contact maps at this scale are thought to be statistical echoes of a rapid and constant process of cohesin-mediated loop extrusion, whose role in gene regulation is still unclear3. A key question is how cooperative and regulatory high-order interactions nominated by Pore-C and Chromunity might physically coexist with loop extrusion. The mechanics of this interplay may be directly resolved by Pore-C-informed physical models that are constrained by concatemer alignment patterns. Our analysis of the aneuploid cancer cell line HCC1954 demonstrates that rearranged and amplified somatic alleles can create substantial synergies. Rearrangement-associated 3D interactions have been previously shown to give rise to new E–P interactions in cancer via enhancer hijacking17,55,56 or the mobilization of extrachromosomal circular DNA43,44. An outstanding conceptual and analytic challenge, highlighted by our analysis of a breast cancer tyfonas locus, is to understand which synergies are trivially explained by rearrangement-induced departure from reference contiguity and which reflect new transcriptional cooperativity induced by rearrangement. While such models have been developed for predicting
+
+Hi-C interactions in the context of simple (for example, constitutional) rearrangements55,56, the nomination of new and functional structural variant (SV)-induced high-order interactions in highly rearranged and copy number-altered genomes will likely require additional algorithmic development. The application of such models to joint long-molecule and Pore-C profiling of malignant cells may help identify new and recurrent noncoding SV cancer drivers, which may be particularly relevant to the biology of advanced and therapy-resistant cancers57.
+
+Online content
+
+Any methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/ s41587-022-01289-z. Received: 12 April 2020; Accepted: 16 March 2022; Published online: 30 May 2022
+
+References
+
+1. Stadhouders, R., Filion, G. J. & Graf, T. Transcription factors and 3D genome conformation in cell-fate decisions. Nature 569, 345–354 (2019). 2. Finn, E. H. & Misteli, T. A genome disconnect. Nat. Genet. 51, 1205–1206 (2019). 3. Mirny, L. & Dekker, J. Mechanisms of chromosome folding and nuclear organization: their interplay and open questions. Cold Spring Harb. Perspect. Biol. https://doi.org/10.1101/cshperspect.a040147 (2021). 4. Nollmann, M., Bennabi, I., Götz, M. & Gregor, T. The impact of space and time on the functional output of the genome. Cold Spring Harb. Perspect. Biol. https://doi.org/10.1101/cshperspect.a040378 (2021). 5. McCord, R. P., Kaplan, N. & Giorgetti, L. Chromosome conformation capture and beyond: toward an integrative view of chromosome structure and function. Mol. Cell 77, 688–708 (2020). 6. Oudelaar, A. M. et al. Single-allele chromatin interactions identify regulatory hubs in dynamic compartmentalized domains. Nat. Genet. 50, 1744–1751 (2018). 7. Ay, F. et al. Identifying multi-locus chromatin contacts in human cells using tethered multiple 3C. BMC Genomics 16, 121 (2015). 8. Darrow, E. M. et al. Deletion of DXZ4 on the human inactive X chromosome alters higher-order genome architecture. Proc. Natl Acad. Sci. USA 113, 4504–4512 (2016). 9. Olivares-Chauvet, P. et al. Capturing pairwise and multi-way chromosomal conformations using chromosomal walks. Nature 540, 296–300 (2016). 10. Allahyar, A. et al. Enhancer hubs and loop collisions identified from single-allele topologies. Nat. Genet. 50, 1151–1160 (2018). 11. Quinodoz, S. A. et al. Higher-order inter-chromosomal hubs shape 3D genome organization in the nucleus. Cell 174, 744–757 (2018). 12. Zheng, M. et al. Multiplex chromatin interactions with single-molecule precision. Nature 566, 558–562 (2019). 13. Beagrie, R. A. et al. Complex multi-enhancer contacts captured by genome architecture mapping. Nature 543, 519–524 (2017). 14. Kempfer, R. & Pombo, A. Methods for mapping 3D chromosome architecture. Nat. Rev. Genet. 21, 207–226 (2020). 15. Bhat, P., Honson, D. & Guttman, M. Nuclear compartmentalization as a mechanism of quantitative control of gene expression. Nat. Rev. Mol. Cell Biol. 22, 653–670 (2021). 16. Hnisz, D., Shrinivas, K., Young, R. A., Chakraborty, A. K. & Sharp, P. A. A phase separation model for transcriptional control. Cell 169, 13–23 (2017). 17. Spielmann, M., Lupiáñez, D. G. & Mundlos, S. Structural variation in the 3D genome. Nat. Rev. Genet. 19, 453–467 (2018). 18. Rao, S. S. P. et al. A 3D map of the human genome at kilobase resolution reveals principles of chromatin looping. Cell 159, 1665–1680 (2014). 19. Salameh, T. J. et al. A supervised learning framework for chromatin loop detection in genome-wide contact maps. Nat. Commun. 11, 3428 (2020). 20. Weinreb, C. & Raphael, B. J. Identification of hierarchical chromatin domains. Bioinformatics 32, 1601–1609 (2016). 21. Yang, T. et al. HiCRep: assessing the reproducibility of Hi-C data using a stratum-adjusted correlation coefficient. Genome Res. 27, 1939–1949 (2017). 22. Kaplan, N. & Dekker, J. High-throughput genome scaffolding from in vivo DNA interaction frequency. Nat. Biotechnol. 31, 1143–1147 (2013). 23. Burton, J. N. et al. Chromosome-scale scaffolding of de novo genome assemblies based on chromatin interactions. Nat. Biotechnol. 31, 1119–1125 (2013).
+
+[Page 12]
+
+24. Dudchenko, O. et al. De novo assembly of the Aedes aegypti genome using Hi-C yields chromosome-length scaffolds. Science 356, 92–95 (2017). 25. Ghurye, J. et al. Integrating Hi-C links with assembly graphs for chromosome-scale assembly. PLoS Comput. Biol. 15, e1007273 (2019). 26. Bickhart, D. M. et al. Single-molecule sequencing and chromatin conformation capture enable de novo reference assembly of the domestic goat genome. Nat. Genet. 49, 643–650 (2017). 27. Zook, J. M. et al. An open resource for accurately benchmarking small variant and reference calls. Nat. Biotechnol. 37, 561–566 (2019). 28. Shafin, K. et al. Nanopore sequencing and the Shasta toolkit enable efficient de novo assembly of eleven human genomes. Nat. Biotechnol. 38, 1044–1053 (2020). 29. Jiang, S. et al. The Epstein–Barr virus regulome in lymphoblastoid cells. Cell Host Microbe 22, 561–573 (2017). 30. Wood, C. D. et al. MYC activation and BCL2L11 silencing by a tumour virus through the large-scale reconfiguration of enhancer-promoter hubs. eLife 5, e18270 (2016). 31. Zhao, B. et al. Epstein–Barr virus exploits intrinsic B-lymphocyte transcription programs to achieve immortal cell growth. Proc. Natl Acad. Sci. USA 108, 14902–14907 (2011). 32. Palmer, C., Diehn, M., Alizadeh, A. A. & Brown, P. O. Cell-type specific gene expression profiles of leukocytes in human peripheral blood. BMC Genomics 7, 115 (2006). 33. McLean, C. Y. et al. GREAT improves functional interpretation of cis-regulatory regions. Nat. Biotechnol. 28, 495–501 (2010). 34. ENCODE Project Consortium. An integrated encyclopedia of DNA elements in the human genome. Nature 489, 57–74 (2012). 35. Disteche, C. M. & Berletch, J. B. X-chromosome inactivation and escape. J. Genet. 94, 591–599 (2015). 36. Lee, J. T. Gracefully ageing at 50, X-chromosome inactivation becomes a paradigm for RNA and chromatin control. Nat. Rev. Mol. Cell Biol. 12, 815–826 (2011). 37. Deng, X. et al. Bipartite structure of the inactive mouse X chromosome. Genome Biol. 16, 152 (2015). 38. Froberg, J. E., Pinter, S. F., Kriz, A. J., Jégu, T. & Lee, J. T. Megadomains and superloops form dynamically but are dispensable for X-chromosome inactivation and gene escape. Nat. Commun. 9, 5004 (2018). 39. Hankey, W., Chen, Z. & Wang, Q. Shaping chromatin states in prostate cancer by pioneer transcription factors. Cancer Res. 80, 2427–2436 (2020). 40. Augello, M. A. et al. CHD1 loss alters AR binding at lineage-specific enhancers and modulates distinct transcriptional programs to drive prostate tumorigenesis. Cancer Cell 35, 603–617 (2019).
+
+41. Maciejowski, J. & Imielinski, M. Modeling cancer rearrangement landscapes. Curr. Opin. Syst. Biol. 1, 54–61 (2017). 42. Hadi, K. et al. Distinct classes of complex structural variation uncovered across thousands of cancer genome graphs. Cell 183, 197–210 (2020). 43. Hung, K. L. et al. ecDNA hubs drive cooperative intermolecular oncogene expression. Nature 600, 731–736 (2021). 44. Zhu, Y. et al. Oncogenic extrachromosomal DNA functions as mobile enhancers to globally amplify chromosomal transcription. Cancer Cell 39, 694–707 (2021). 45. Koche, R. P. et al. Extrachromosomal circular DNA drives oncogenic genome remodeling in neuroblastoma. Nat. Genet. 52, 29–34 (2019). 46. Morton, A. R. et al. Functional enhancers shape extrachromosomal oncogene amplifications. Cell 179, 1330–1341 (2019). 47. Wu, S. et al. Circular ecDNA promotes accessible chromatin and high oncogene expression. Nature 575, 699–703 (2019). 48. Ghandi, M. et al. Next-generation characterization of the cancer cell line encyclopedia. Nature 569, 503–508 (2019). 49. Sabari, B. R. et al. Coactivator condensation at super-enhancers links phase separation and gene control. Science 361, eaar3958 (2018). 50. Guo, Y. E. et al. Pol II phosphorylation regulates a switch between transcriptional and splicing condensates. Nature 572, 543–548 (2019). 51. Basu, S. et al. Unblending of transcriptional condensates in human repeat expansion disease. Cell 181, 1062–1079 (2020). 52. Li, J. et al. Single-gene imaging links genome topology, promoter–enhancer communication and transcription control. Nat. Struct. Mol. Biol. 27, 1032–1040 (2020). 53. Boija, A. et al. Transcription factors activate genes through the phaseseparation capacity of their activation domains. Cell 175, 1842–1855 (2018). 54. Stortz, M., Presman, D. M., Pecci, A. & Levi, V. Phasing the intranuclear organization of steroid hormone receptors. Biochem. J 478, 443–461 (2021). 55. Dixon, J. R. et al. Integrative detection and analysis of structural variation in cancer genomes. Nat. Genet. 50, 1388–1398 (2018). 56. Wang, X. et al. Genome-wide detection of enhancer-hijacking events from chromatin interaction data in rearranged genomes. Nat. Methods 18, 661–668 (2021). 57. Rubin, M. A., Bristow, R. G., Thienger, P. D., Dive, C. & Imielinski, M. Impact of lineage plasticity to and from a neuroendocrine phenotype on progression and response in prostate and lung cancers. Mol. Cell 80, 562–577 (2020). Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. © The Author(s), under exclusive licence to Springer Nature America, Inc. 2022
+
+[Page 13]
+
+Methods
+
+Cell culture. Human B lymphocytes (GM12878; Coriell Institute, RRID:CVCL_7526) and HG002 cells (Coriell Institute, NA24385, RRID:CVCL_1C78) were each maintained in suspension at a concentration greater than 200,000 cells per ml in RPMI-1640 (ATCC, 30-2001) supplemented with 15% fetal bovine serum (FBS) and 1% penicillin/streptomycin. HCC1954 (ATCC, CRL-2388) human breast cancer cells were maintained using a subculture ratio of 1:4 every 3 d in RPMI-1640 (ATCC, 30-2001) supplemented with 10% FBS and 1% penicillin/streptomycin. LNCaP cells were purchased from ATCC (CRL-1740), grown on poly-l-lysine-coated plates in 5% FBS containing RPMI-1640 and incubated at 37 °C and 5% CO2. Cells were passaged twice weekly or once cultures reached 80% confluency. LNCaP cells were starved of hormone for 72 h and stimulated with vehicle or 1 nM DHT for the indicated time points (0 or 18 h) before fixing with 1% formaldehyde. ANA cells were obtained from peripheral blood mononuclear cells (ATCC, PCS-800-011) by immortalization using EBV. Cross-linking. Ten million cells were washed three times in chilled 1× PBS in a 50-ml centrifuge tube and pelleted by centrifugation at 500g for 5 min at 4 °C between each wash. Cells were resuspended in 10 ml of room temperature 1× PBS and 1% formaldehyde (EMD Millipore, 818708) by gently pipetting with a wide-bore tip and incubating at room temperature for 10 min. To quench the cross-linking reaction, 527 μl of 2.5 M glycine was added to achieve a final concentration of 1% (wt/vol) or 125 mM in 10.5 ml. Cells were incubated for 5 min at room temperature followed by 10 min on ice. The cross-linked cells were pelleted by centrifugation at 500g for 5 min at 4 °C. Restriction enzyme digest. Each cell pellet was resuspended in a mixture of 50 μl of protease inhibitor cocktail (Sigma-Aldrich, P8340) in 500 μl of cold permeabilization buffer (10 mM Tris-HCl pH 8.0, 10 mM NaCl, 0.2% IGEPAL CA-630) and placed on ice for 15 min. Cells were centrifuged at 500g for 10 min at 4 °C, after which the supernatant was aspirated and replaced with 200 μl of chilled 1.5× digestion reaction buffer (NEB) compatible with the restriction enzyme used. Cells were centrifuged again at 500g for 10 min at 4 °C and aspirated and resuspended in 300 μl of chilled 1.5× digestion reaction buffer. To denature the chromatin, 33.5 μl of 1% (wt/vol) SDS (Thermo Fisher Scientific, 15553027) was added to each cell suspension and incubated for exactly 10 min at 65 °C with gentle agitation and placed on ice immediately afterward. To quench the SDS, 37.5 μl of 10% (vol/vol) Triton X-100 (Sigma-Aldrich, 93443) was added for a final concentration of 1%, followed by incubation for 10 min on ice. Permeablized cells were then digested with a final concentration of 1 U μl–1 of DpnII, NlaIII or HindIII (NEB) brought to volume with nuclease-free water to achieve a final 1× digestion reaction buffer in 450 μl. Cells were then mixed by gentle inversion. Cell suspensions were incubated in a thermomixer at 37 °C for 18 h with periodic <1,000 r.p.m. rotation (<30 s every 15 min) to prevent condensation inside the lid. Proximity ligation and reverse cross-linking. DpnII and NlaIII restriction digests were heat inactivated at 65 °C for 20 min with 300 r.p.m. rotation. HindIII digests were chemically inactivated with a final concentration of 0.1% (wt/vol) SDS at 65 °C for 20 min with 300 r.p.m. rotation and quenched with a final concentration of 1% (vol/vol) Triton X-100 (Sigma-Aldrich, 93443). Proximity ligation was set up at room temperature with the addition of the following reagents: 100 μl of 10× T4 DNA ligase buffer (NEB), 10 μl of 10 mg ml–1 bovine serum albumin and 50 μl of T4 ligase (NEB, M0202L) in a total volume of 1,000 μl with nuclease-free water. The ligation was cooled to 16 °C and incubated for 6 h with gentle rotation. Protein degradation and DNA purification. To reverse cross-link, samples were treated with 100 μl of 20 mg ml–1 Proteinase K (Thermo Fisher Scientific, 25530049), 100 μl of 10% SDS (Thermo Fisher Scientific, 15553027) and 500 μl of 20% (vol/vol) Tween-20 (Sigma-Aldrich, P9416) in a total volume of 2,000 μl with nuclease-free water. Samples were incubated in a thermomixer at 56 °C for 18 h with <1,000 r.p.m. rotation (<30 s every 15 min) to prevent condensation inside the lid. To purify DNA, the sample was transferred to a 5-ml centrifuge tube. The original tube was rinsed with an additional 200 μl of nuclease-free water to collect any residual sample, bringing the total sample volume to 2.2 ml. DNA was then purified from the sample using a standard phenol–chloroform extraction and ethanol precipitation. Nanopore sequencing. Purified DNA was SPRI size selected for fragments >1.5 kb and prepared for sequencing using ONT SQK-LSK109 and sequenced on ONT’s MinION, GridION or PromethION platforms. In total, 31 sequencing runs were conducted, generating a total of 730 Gb of raw sequence from different tissue sources, including the human cell lines GM12878 and HG002 and the human breast cancer cell line HCC1954 and human prostate cancer cell line LNCaP. The runs produced a total of 4.9 billion pairwise contacts. Runs were conducted using DpnII, HindIII or NlaIII for restriction enzymes to optimize the Pore-C methodology. The complete details for the runs are available in Supplementary Tables 1 and 2.
+
+Pore-C pipeline. We developed a reproducible analytic pipeline for deriving high-order chromatin contacts from Pore-C concatemers (https://github.com/ nanoporetech/pore-c/) and a workflow that can be found at (https://github.com/ nanoporetech/Pore-C-Snakemake/), which uses the snakemake framework58. Briefly, the workflow involves alignment of Pore-C reads to a reference genome using bwa59 with alignment parameters that we adapted from another chromatin confirmation capture method, MC-4C10. The resulting alignments are filtered to identify a minimal alignment set that covers each Pore-C read. Each of the resulting filtered alignments is then annotated with the set of reference genome restriction fragments with which it overlaps based on an in silico restriction digest. From those fragment sets, each alignment is assigned to a single fragment based on the position of the alignment midpoint, which also serves to remove direct non-chimeric pairs that are caused by either incomplete digestion of the sample or ligation of cognate-free ends. With the assignment of each alignment along a Pore-C read to a single restriction fragment, a high-order contact is constituted, and this high-order contact can then be decomposed into pairwise contacts. Decomposition to pairwise contacts involves enumerating the number of high-order contacts containing a given pair of restriction fragments for every possible pair of restriction fragments in the genome. The fractions of alignments falling a given reference genomic distance from the predicted in silico restriction sites in the GRCh38 reference genome were computed for DpnII, NlaIII and HindIII Pore-C datasets. The pairwise contacts were assigned to genomic bins using conventional Hi-C workflows to generate a contact map, such as Hi-C explorer60 and cooler61. The workflow also includes an optional step to output the contact data in the bed format compatible with SALSA2 (ref. 25) for genome assembly correction and scaffolding as well as the ‘medium text format’ for conversion to the binary .hic format generated by the juicer-tools pre command (https://github.com/aidenlab/juicer/wiki/Download/) for use with the juicebox toolkit. Graph-based concatemer alignment. We developed an algorithm for Pore-C read alignment with the goal of identifying the most likely set of monomers comprising a given concatemer. Because each Pore-C read is a chimera of (potentially) distant monomeric sequences, the processing of these reads requires performing a multiway split alignment. The goal of our split alignment algorithm was to identify a set of minimally overlapping alignments that maximally cover the read sequence. In this algorithm, raw sequencing data are initially aligned with bwa bwasw with parameters –b 5 –q 2 –r 1 –T 15 –z 10, allowing supplementary and secondary alignments for each read. We remove low mapping quality (mapping quality = 0) alignments. In addition, for each set of alignments with identical positions on the read, we take the single highest scoring alignment. The remaining alignments are used to build a weighted directed acyclic graph whose optimal traversal determines the set of final, filtered alignments (that is, monomers) associated with the read (that is, concatemer). The nodes of this directed acyclic graph G = (V, E) are composed of the alignments as well two additional nodes (START, END) representing the start and end, respectively, of the read. Each node a ∈ V is associated with a start s(a) and end e(a) position on the read. Each alignment a ∈ V is also associated with an alignment score AS(a). Directed edges (a, b) ∈ E connect an alignment pair a, b ∈ V if e(a) < e(b) or otherwise if e(a) = e(b) and s(a) < s(b). Additional directed edges connect START to each alignment node and each alignment node to END. The resulting graph structure has a topological ordering from the START to the END node. Each edge (a, b) ∈ E is assigned a weight w((a, b)) as a function of the alignment score and start and end properties of the associated nodes. For edges (a, b), where a is the START node, w((a, b)) = s(b) − AS(b). For edges (a, b), where b is the END node, w((a, b)) = s(b) − e(a). Finally, for all remaining edges (a, b), where both a and b are alignments, w((a, b)) = ∣e(a) − s(b)∣ − AS(b). The Bellman–Ford algorithm is then applied to this weighted graph (G, w) to identify the minimal scoring path from the START to END node. In this formulation, edges between overlapping or distant alignment pairs are penalized. Similarly, edges connecting to low-scoring alignments will receive a higher weight. As a result, the minimally weighted path, as computed by the Bellman–Ford algorithm, will identify a set of minimally overlapping high-quality alignments that maximally cover the read. These are returned as the set of monomers associated with the given read/concatemer. Pore-C and Hi-C comparisons. Pore-C concatemers were decomposed into VPCs to enable analysis with Hi-C analytic tools. The resulting Pore-C contact matrix could be treated as a Hi-C pairwise contact matrix, enabling comparison with existing Hi-C datasets. For the purpose of creating a balanced contact matrix, we found it necessary to use a balancing blacklist (https://rdrr.io/bioc/ HiCcompare/man/hg38_blacklist.html). While Pore-C read monomers can confidently align to regions that are generally inaccessible to Hi-C, these regions are often represented by model sequences that differ, by design, in copy number from true biological samples. This results in artificial pileups of alignments that prevent proper matrix balancing and downstream analysis. The Pore-C aggregate dataset was composed of 13 NlaIII GM12878 Pore-C sequencing runs containing a total of 1.9 billion VPCs, and the Hi-C dataset (4DNFIXP4QG5B)18 contained 4 billion contacts. Matrix balancing was performed on both the Pore-C and Hi-C contact matrices using the Knight–Ruiz iterative correction algorithm62
+
+[Page 14]
+
+using cooler balance. A linear correlation between the Pore-C and Hi-C contact matrices measured three different similarity metrics: (1) raw contact matrices, (2) compartmental eigenvector scores identified using cooltools call-compartments and (3) TAD insulation scores calculated using the cooltools diamond-insulation tools. To further examine any variations between individual runs, the same three comparisons were made between each of the individual Pore-C runs, the complete Hi-C dataset and downsampled subsets of the Hi-C datasets. Downsampled Hi-C datasets were generated to match the contact count of each individual Pore-C run. Raw contact matrix, AB compartment and TAD correlations were performed between the downsampled sets and the whole set to establish an upper bound for the correlation between any dataset of that size and the whole set. Publicly available ENCODE ChIP–seq peaks for H3K27ac, H3K4me3 and H3K4me1 (ENCSR447YYN) were used to visually confirm the correlation of Pore-C A/B compartmentalization with other existing markers of active/inactive chromatin structure. ENCODE CTCF ChIP–seq peaks (ENCSR000Akb) were used to identify loop anchors. The juicer suites (https://github.com/aidenlab/juicer) APA tool was used to test for aggregate enrichment of Pore-C decomposed pairwise contacts within loop anchors identified in the Rao et al. GM12878 Hi-C dataset18. For the HiCRep comparisons, the SPRITE mcool file was obtained from the 4DN portal (4DNFIUOOYQC3). In addition, two replicates of the GM12878 Hi-C data were obtained from the 4DN portal as pairs files and then converted to mcool using cooler cload pairs (4DNFI3O82QVV and 4DNFI563E6GS). All the data were preprocessed using quantile transformation before running HiCRep to match matrices of different sources to similar value range and value distributions. This method transforms the features to follow a normal distribution, therefore making the comparison between independent features possible. TADTree20 was run with default parameters for all datasets. Peakachu19 was run with CTCF and H3K27ac peaks. For loop calling, the Hi-C replicates were downsampled to ~685 million cis contacts to match those of the Pore-C data. Synergy formulation. We developed the Synergy model to test whether a set B of genomic intervals (also called a bin-set) shows statistical evidence of cooperativity. Our goal is to identify sets B whose high-order (cardinality > 2) subsets show a higher frequency of simultaneous interactions than would be expected on the basis of their pairwise interaction frequency and genomic covariates (including GC content and distance). We approach this inference through a two-stage process. The first involves training a background model to predict the count of Pore-C concatemers overlapping the pairwise and high-order subsets of B. The second involves identifying sets B whose high-order subsets are specifically enriched in concatemer counts relative to their pairwise subsets. Training of the synergy background model. Given a collection of hypotheses B = {B} each representing a set of bins B = {r ∈ N3 } (where each bin r represents the chromosome, start and end of a genomic range), we would like to train a linear function f(X(b)) to predict the count y(b) of concatemers overlapping each subset b ⊆ B, 2 ≤ ∣b∣ ≤ K given a vector of subset covariates X(b) ⊂ Rm. These covariates comprise m features consisting of ‘core’ covariates XC(b), which comprise cardinality and set-wise aggregations (minimum, median, or maximum) of bin widths and bin-bin distances as well as additional genomic covariates XG(b), including mean GC content as well as other (user specified) reference genomic features associated with the interval set b, such that X(b) = [XC(b) XG(b)]. Next, we construct a data matrix to train the Synergy background model. To provide examples for model training, we generate a large collection B̂ = {B̂} of random bin-sets based on B such that the empirical distribution of the core covariates XC (b̂) of subsets b̂ ∈ B̂, 2 ≤ |b| ≤ K matches the empirical distribution of core covariates XC(b) associated with B. This is achieved by the SampleRandomBinsets procedure (Algorithm 1), which randomly samples sets of intervals that match the input collection B with respect to their cardinality, interval widths, bin-to-bin distances and interchromosomal jumps. The output of this algorithm is the bin-set collection B̂, which is used for model training. B̂ is then used to populate a data matrix whose rows represents each size 2 to K subset b̂ of each bin-set B̂ ∈ B̂. The count of concatemers y(b̂) overlapping each subset b̂ is predicted from the covariates X(b̂) by fitting a gamma-Poisson GLM with m + 2 parameters (including the dispersion parameter θ): E[ln y(b̂)] = f(X(b̂))
+
+(1)
+
+∀b̂ ∈ B̂, 2 ≤ |b̂| ≤ min(K, |B̂|), ∀B̂ ∈ B̂
+
+(2)
+
+where f is defined as f(X(b̂)) = α0 +
+
+∑m
+
+αi Xi (b̂)
+
+The default Synergy implementation uses K = 5 and uses m = 6 covariates for each bin-subset, the minimum and maximum bin distance, cardinality, mean GC content, total number of concatemers overlapping the bin-set and the sum of widths of the bins, all in log space. In practice, we set the size of training data |B̂| to be five times the size of B or 1,000, whichever is larger. We note that while the Nature Biotechnology | www.nature.com/naturebiotechnology
+
+(3)
+
+SampleRandomBinsets procedure (Algorithm 1) does not explicitly control for genomic covariates, we find that, in practice, the size 2 to K subsets of B and B̂ closely match for both core and genomic covariates (Supplementary Fig. 1). Testing the enrichment of high-order interaction in a given bin-set. In the second stage of the Synergy model, we apply the background model f to the covariates X(b) associated with bin-subsets b ⊆ B ∈ B, 2 ≤ |b| ≤ min(|B|, 5) to obtain expected counts f(X(b)). We use these results to test each individual set B ∈ B for enrichment of counts in high-order versus pairwise contacts. To do so, we populate a second data matrix comprising observed counts y(b), expected counts f(X(b)) and an indicator variable [|b| > 2] encoding whether a given set b is pairwise (0) or high order (1). Given this matrix, a second gamma-Poisson GLM is then fit to assess whether the ratio of observed to expected counts is significantly higher among high-order interactions than among pairwise interactions: E[ln y(b)] = [|b| > 2] ln β + ln f(X(b)), ∀b ⊆ B, 2 ≤ |b| ≤ min(K, |B|)
+
+(4)
+
+This second gamma-Poisson regression model fits only a single parameter ln β because we apply the dispersion parameter θ from the first stage background model f in this fit. The relative risk(β can be)interpreted to represent the average ratio of observed/expected counts f(yX((bb))) in high-order versus pairwise subsets of B.
+
+Hence, we interpret β as a measure of cooperativity in B. We then use the Wald test to obtain a P value to assess whether β significantly deviates from 1. We then tally P values across all sets B ∈ B and compute an FDR using the Benjamini–Hochberg procedure. We then label sets B synergistic or having significant cooperativity subject to an FDR threshold. As shorthand, we also refer to each such set B as a synergy. Chromunity framework. Given a universe of genomic intervals across the genome U = {r ∈ N3 } (for example, representing fixed-width genomic tiles or regions of interests, such as enhancers and promoters) and a concatemer dataset D = {d ⊂ U} (where each concatemer d is represented by a subset of U), our goal is to identify sets B ⊂ U with significant cooperativity under the Synergy model. The de novo discovery of high-cardinality sets from a large (for example, ∣U∣ > 1,000) universe of items presents a combinatorial challenge analogous to the search for frequent item sets and association rules from market basket data, a classic machine learning problem63. To overcome these combinatorial challenges, we developed the Chromunity framework, which (1) identifies candidate synergies de novo using a graph community detection approach in a subset of concatemer data D̃ ⊂ D and then (2) tests them for cooperativity by applying the Synergy model to the remaining concatemers D \ D̃. Concatemer community detection. Given a subset of concatemers D̃, we build a weighted graph G = (D̃, E, w) of bin-wise concatemer overlap, where the weight w(e) ∈ [0, 1] on each edge e = {d1, d2} ∈ E represents the Jaccard similarity of concatemer pair d1 , d2 ∈ D̃. A second weighted graph Ĝ = (D̃, Ê, ŵ) is then built with weights ŵ(e) that represent the number of k = 25 nearest (that is, most similar) neighbors that are shared by each concatemer pair e ∈ Ê . Only edges with weight above a certain cutoff (kmin = 5) are included in Ĝ . We then apply a community detection algorithm to Ĝ (greedy optimization of modularity64) to assign each concatemer a community label (Fig. 3a, middle). On the basis of these labels, we retain a collection of concatemer communities C = {C ⊂ D | |C| ≥ smin } supported by smin = 5 or more concatemers. We then associate each community C with a bin-set B by first associating bins B̃ = {∪d∈C d} that belong to at least one concatemer in C with a concatemer count y(u) ∈ N, u ∈ B̃. A bin-set B ⊂ B̃ is then defined as the bins having concatemer counts y(b) ≥ quantile({y(u) | u ∈ B̃}, qmin ) at or above some threshold qmin = 0.85 (Extended Data Fig. 3a). From communities to synergies. Bin-sets B in the collection B = {B} obtained through concatemer community detection each represent a ‘guess’ or hypothesis that a set of regions are cooperatively interacting. To statistically evaluate and validate these hypotheses, we apply Synergy using the left-out set of concatemers D \ D̃. Applying this analysis to B allows us to calculate cooperativity effect sizes and assess statistical significance (P values and FDRs) on an independent data sample. The Chromunity algorithm thus represents the composition of concatemer community detection with Synergy evaluation. Indeed while the majority of bin-sets nominated by community detection are not synergistic, the frequency of statistically significant cooperativity is much higher in Chromunity output (Extended Data Fig. 3) than when analyzing random bins or even enhancers and promoters within a sliding window (Fig. 2 and Extended Data Fig. 2). Scaling and optimization. Because concatemer community detection involves building a O(|D̃|2 ) graph, computational complexity can be limiting for the analysis of very large concatemer datasets (for example, |D̃| > 107). This may limit the portion of the dataset D that can be used for community detection and hence limit the power for de novo synergy discovery. We apply several approaches in practice to mitigate this complexity and scale the analysis:
+
+[Page 15]
+
+Capitalize on the fact that D is a multiset, namely, that there are multiple concatemers that represent identical subsets of U. As a result, nodes and edges in G can be collapsed around the unique concatemers in D̃, reducing dimension. This can especially reduce graph dimension when using wider bins (50-kb versus 10-kb tiles). Remove concatemers d ∈ D̃ that only target two or fewer locations in U, because these are unlikely to provide support for cooperative interactions across distinct bins in U. Limit U to regions that are spaced far apart (for example, enhancers and promoters, which are on average 100 kb apart). Combining this optimization with the previous two will reduce the number of nodes because fewer unique sets in D̃ will overlap three or more bins in U. Remove bins from U that overlap fewer than smin concatemers and remove concatemers that hit two or fewer bins in U (see 2). Repeat until a fixed point is reached. Limit U to a local region of the genome (for example, a 2-Mb window) and discard concatemers D that do not overlap with U. Community detection can then can be applied across the genome through a sliding window approach to generate B. The sliding window approach is most useful for the analysis of high-resolution (for example, 10-kb) genomic tiles, where the density and spacing of bins may generate large and densely connected concatemer graphs that prevent the analysis of very wide (or chromosome-scale) windows.
+
+In practice, we combine these strategies across two Chromunity modes, including (1) ‘Sliding window’ Chromunity where U is defined around (10-kb, 25-kb and/or 50-kb) tiles in each 2-Mb width, 1-Mb stride sliding window to study regional cooperativity. The benefit of this approach is that it enables a relatively unbiased discovery of cooperativity (that is, without needing to know specific annotations); however, it does not scale to the analysis of reference-distal or interchromosomal cooperativity. (2) Regulatory element (RE) Chromunity where U is defined around genome-wide enhancers, promoters, and TF binding sites. RE Chromunity is useful for the study of reference-distal and interchromosomal cooperativity but requires a hypothesis set of regulatory elements. In RE Chromunity, we combine the concatemer community detection results from a genome-wide U with additional analyses limiting U to a single chromosome. We then assess the joint collection of candidate bin-sets B for Synergy. Across each of the sliding window and RE Chromunity modes, we use about half of concatemers in D for concatemer community detection (|D̃| ≈ 15 million concatemers for two PromethION flow cells). Both the Chromunity framework and Synergy model are provided in the R package Chromunity (https://github.com/mskilab/Chromunity). GM12878 Synergy and Chromunity analyses. We applied Synergy to assess cooperativity across promoters and enhancers in the GM12878 cell line. Fifteen-state ChromHMM annotations for the GM12878 cell line were obtained from the hg19 ENCODE data resource (http://genome.ucsc.edu/ENCODE/downloads.html) and lifted to hg38 via the University of California Santa Cruz (UCSC) liftOver utility. We used the ChromHMM annotations ‘strong enhancer’ and ‘active promoter’ to define enhancers and promoters, respectively. For each enhancer (or promoter) analysis, we partitioned the genome into 10-kb tiles and applied a 2-Mb width and 1-Mb stride sliding window across the genome. Within each sliding window, we randomly sampled a set B of tiles overlapping an enhancer such that all pairs of tiles in B were at least 50 kb apart, and B had a maximum cardinality of 5. If no sets in the window satisfied this constraint, that window was not considered in the analysis. We then took all bin-sets across all windows to generate B, which was then tested using the Synergy model. The same analysis was performed for promoters. As a negative control, we also generated random bin-sets B̂ based on each of the enhancer and promoter collections, respectively, applying the SampleRandomBinsets procedure (Algorithm 1) to the corresponding Synergy input B. Sliding window Chromunity was applied to the GM12878 cell line across three separate analyses comprising distinct universes U of 10-, 25- and 50-kb-resolution tiles, respectively. Bin-sets passing FDR < 0.1 in any of the three Chromunity analyses were reported in the final results. We further analyzed sliding window Chromunity synergies (10-kb resolution) for overlap with epigenetic annotations. For this analysis, GM12878 A/B compartments, histone marks and TF binding site annotations were obtained from ENCODE34. We constructed a matrix whose rows represent bin-sets B ∈ B across a collection B of synergistic or control bin-sets (defined through the SampleRandomBinsets procedure; Algorithm 1). We then used logistic regression to define an independent variable encoding whether B was a synergistic (1) or control (0) bin-set and a response variable encoding the presence (1) or absence (0) of overlap between B and the collection of TF binding sites after correcting for the log width of B. We reported the OR for synergy and overlap for each bin-set B and computed its significance using the Wald test. For the RE Chromunity GM12878 analyses, U was built using promoter and enhancer annotations from the GM12878 ChromHMM results (described above). As additional negative controls for each sliding window and RE Chromunity analysis, we generated random bin-sets applying the SampleRandomBinsets procedure (Algorithm 1) bin-sets B produced at the concatemer community detection step of each respective Chromunity run. RE Chromunity-derived synergies were also analyzed for Gene Ontology enrichment using genomic
+
+regions enrichment of annotations tool (GREAT)33 analysis with default ‘basal plus extension’ settings. Algorithm 1. SampleRandomBinsets 1: procedure SampleRandomBinsets( B, N) ⊳ returns a set of N random bin-sets B̂ S(c) ← empDist(chromStarts(B)) ⊳ empirical distribution of lowest coordinate position per chromosome across B 3: W ← empDist(widths(B)) ⊳ empirical distribution of widths from B 4: C ← empDist(cards(B)) ⊳ empirical distribution of bin-set cardinality across B 5: J(c) ← empDist(chrJumps(B)) ⊳ conditional distribution of chromosome–chromosome jumps across B 6: D ← empDist(dists(B)) ⊳ empirical distribution of intrachromosomal distances from B 7: n ← 0, B̂ ← {} ⊳ initialize empty collection of sampled bin-sets 8: while n < N do 9: i ← 1, B̂ ← {} ⊳ initialize empty bin-set 10: chr, start) ← sample from S ⊳ sample full distribution of chromosomal starts 11: w ← sample from W 12: end = start + w ⊳ define first bin with width w 13: I ← sample from C 14: while end < End(chr) & i ≤ I do 15: B̂ ← B̂ ∪ {(chr, start, end)} 16: i = i + 1 chr ← sample from J(chr) 17: ˆ ˆ = chr, then ⊳ start d positions to right on the same 18: if chr chromosome 19: d ← sample from D 20: start ← end + d 21: else ⊳ otherwise restart on new chromosome ˆ ) 22: (chr, start) ← sample from S(chr 23: end if 24: w ← sample from W 25: end = start + w 26: end while 27: B̂ ← B̂ ∪ {B̂} 28: n = n + 1 29: end while 30: return B̂ 31: end procedure Negative-control concatemers. To assess the specificity of Synergy and Chromunity results, we developed a procedure to generate negative-control data composed of scrambled concatemers with preserved pairwise interaction frequencies. Given a collection of concatemers D defined as subsets of bins U, we defined a weighted complete graph with nodes U whose edge weight w(u1, u2) for bin pair u1 , u2 ∈ U represents the frequency that a concatemer in D that contains u1 also has u2. Given this graph, we set up a Markov chain traversing bins U with conditional probability P(u2∣u1) = w(u1, u2). We used this process to generate a length ∑d∈D∣d∣ random walk, which we partitioned into concatemers to generate the shuffled dataset D̂ with identical cardinality distribution to the input D. While the high-order structure of D̂ is randomized, the pairwise interaction frequencies of D and D̂ closely match (Fig. 2c and Extended Data Fig. 3c–e). To assess the specificity of sliding window Synergy and Chromunity, we applied this procedure separately to each 2-Mb sliding window. For RE Chromunity analyses, we applied this procedure across the 2-Mb padded genomic footprint of the bin-set collection B produced during concatemer community detection. Heterozygous SNP phasing. Phased, high-confidence variant calls for HG002 and GM12878 were obtained from the Genome in a Bottle consortium27. The variants used included calls within high-confidence regions that were globally phased by pedigree or trio methods (PS = PATMAT). Due to formatting incompatibility with WhatsHap65, variants where REF or ALT is multiple bases but the first base of each do not match were excluded from analysis. Each Pore-C monomer overlapping one or more heterozygous sites was assigned a preliminary haplotype using WhatsHap haplotag (https://github.com/whatshap/whatshap/)65. Consensus haplotypes were assigned on a per read, per chromosome basis. Monomers were assigned a consensus haplotype if all intrachromosomal monomers on the same read agreed or if less than one-fifth of the monomers were assigned to the minor haplotype. Pore-C methylation calls. Pore-C concatemers were assessed for CpG methylation using f5c (https://github.com/hasindu2008/f5c)66, an optimized and GPU-compatible reimplementation of the call-methylation module in Nanopolish (https://github.com/jts/nanopolish)67. Per concatemer calls were aggregated into per locus calls using f5c meth-freq -s with the default log-likelihood ratio
+
+[Page 16]
+
+threshold. Nanopolish’s compare_methylation.py script was used to find the correlation between Pore-C methylation and an ENCODE WGBS dataset for GM12878 cells (ENCFF835NTC)34.
+
+bin-sets that were synergistic in either or both DHT+ and DHT– condition(s). We used a Fisher’s exact test to associate the presence or absence of ARGs in the vicinity (10 kb) of DHT+- versus DHT–-specific synergies.
+
+XCI analyses. Using the phasing approach, concatemers were assigned to their constituent haplotypes. High-order contacts were melted into pairwise contacts using GxG (http://github.com/mskilab/GxG), a suite of GenomicRanges-based classes for representing, querying and manipulating matrices of genomic data. For the DXZ4–FIRRE loop, concatemers intersecting both genomic regions were filtered and plotted. For XCI-dependent methylation comparative analysis between genes subject to XCI and those that escape it, XCI status was determined from Cotton et al.68. Genes with variable XCI status were excluded. CGIs were obtained from the UCSC Genome Browser69. DNA methylation calls were aggregated across CGIs within 1 kb of the TSS, and a mean aggregate score was calculated for each gene. The difference between DNA methylation between active X (Xa) and inactive X (Xi) was tested by two-sided Wilcoxon rank sum test. For promoter-centric analysis, promoter annotations were obtained from H3K4me3 peaks. The first two bands of the X chromosome coincide with the pseudoautosomal region and invariably escape XCI70. The coordinate system was reoriented to place the promoter at coordinate 0 and the gene body in positive coordinates. CGI methylation calls were averaged at 1-kb windows within 50 kb of the promoters.
+
+HCC1954 cell line complex amplicon and Chromunity analysis. Short-read Illumina WGS data for the breast cancer cell line HCC1954 and matched normal HCC1954BL data were obtained from the genomic data commons (https://gdc.cancer.gov/). DNA rearrangement junctions were detected using SvABA71, and binned read depth was assessed using fragCounter (http://github. com/mskilab/fragCounter). Junction and read depth data were input into a junction-balanced genome graph inference algorithm JaBbA (https://github.com/ mskilab/JaBbA)42. JaBbA integrates read depth and SV junctions and produces a junction-balanced genome graph by solving a constrained optimization problem42. The junction-balanced graph allows annotation and querying of complex SVs via the R package gGnome (https://github.com/mskilab/gGnome). The resulting graph was queried for known SV classes using the gGnome events function, identifying a tyfonas42 spanning seven chromosomes (5, 8, 9, 11, 12, 20 and 22). Concatemers from Pore-C overlapping the nodes of the tyfonas subgraph were obtained. RE Chromunity was then run on promoters and 50-kb padded HCC1954 H3K27ac peaks (obtained from ENCODE34) overlapping the tyfonas nodes, which yielded five synergies (FDR < 0.1). We then searched the genome graph for a contiguous allele that maximally overlapped the observed synergies using a constrained optimization on the tyfonas subgraph (gGnome peel procedure; see ref. 42 for additional details). A 202.5-Mb allele was constructed using this approach and queried for overlap with CGC72 genes (https://cancer.sanger.ac.uk/census). A part of this walk connecting three loci on chromosomes 9, 12 and 20 was identified and validated by FISH.
+
+CGI methylation analyses. CGI annotations for hg38 were obtained from UCSC. TSSs were defined as the 1.5-kb region surrounding the 5′ start of each GENCODE release 38 (https://www.gencodegenes.org/human/) annotated transcript. We refer to coordinates C ∈ N2 representing the (chromosome, position) coordinates of CpG bases falling within the TSS-associated CGIs as ‘proximal CGI CpGs’. After methylation calling (see above), we associated each concatemer d ∈ D with a set of methylated m1(d) ⊂ C and unmethylated m0(d) ⊂ C proximal CGI CpGs, given concatemer data D defined around a universe U. To compute the proximal CGI methylation fraction F(Db) associated with concatemers Db ⊂ D overlapping bin-set b ⊂ U, we identified methylated M1 (b, Db ) = ∪d∈Db m1 (d) and unmethylated M0 (b, Db ) = ∪d∈Db m0 (d) bases associated with proximal CGI CpGs. For concatemer sets Db overlapping at least one base in C, we define the proximal CGI methylation fraction as F(Db ) =
+
+|M1 (b, Db )| |M1 (b, Db )| + |M0 (b, Db )|
+
+(5)
+
+Then, identifying the concatemers Dhigh = {d ∈ Db | |D ∩ b| > 2} that intersect high three or more bins in the bin-set b, we compute F(Dhigh ) and F(Db \ Db ) as the high- and low-order (respectively) proximal CpG fractions associated with b. The Wilcoxon rank sum test was used to test for differences in proximal CGI methylation fraction between groups of bin-sets and concatemer fractions (for example, synergistic versus non-synergistic, gene associated, high versus low order). We also compared high- versus low-order proximal CGI methylation fractions across four tranches of expression for the genes in the GM12878 cell line, unexpressed (TPM = 0) versus one of three quantiles (Q1, Q2, Q3) of non-zero expression. Bin-sets b overlapping the proximal CGI for each particular gene were obtained, and high- and low-order proximal CGI methylation fractions F(Dhigh ) and F(Db \ Dhigh ) were compared within each of the tranches using the Wilcoxon rank sum test. LNCaP Chromunity analysis. We applied sliding window Chromunity to both DHT+ and DHT– Pore-C data using windows with 2-Mb width and 1-Mb stride and U defined using 25-kb genomic tiles. To increase sensitivity, we used all synergies with P < 0.05 as synergistic bin-sets in each (DHT+ and DHT–) condition. We next tested each synergy output for TF binding site enrichment of synergistic bin-sets relative to control bin-sets (defined through the SampleRandomBinsets procedure; Algorithm 1). Specifically, we constructed a matrix whose rows represent bin-sets B ∈ B across a collection B of synergistic or control bin-sets. We then used logistic regression to define an independent variable encoding whether B was a synergistic (1) or control (0) bin-set and a response variable encoding presence (1) or absence (0) of overlap between B and the collection TF binding sites after correcting for the log width of B. We reported the OR for synergy and overlap for each bin-set B and computed its significance using the Wald test. The sources for all tested TFs are listed in Supplementary Table 5. To discover reference-distal and interchromosomal synergies associated with AR binding, we applied RE Chromunity, defining U around genome-wide promoters and LNCaP H3K27ac peaks overlapping LNCaP AR binding sites. We obtained AR binding site profiles for DHT+ LNCaP cells from GSE83860, which were lifted to hg38 coordinates. Summary statistics of differential gene expression between DHT+ and DHT– LNCaP cells were obtained from Augello et al.40. Genes with a fold change > 1.5 and FDR < 0.1 were used to define ARGs. Bin-sets identified during concatemer community detection in either (DHT+ and DHT–) condition were tested for synergies in both conditions using leave-out concatemers. The P values and cooperativity effect sizes of each analysis were used to identify Nature Biotechnology | www.nature.com/naturebiotechnology
+
+FISH. We validated the complex amplicon-associated interchromosomal synergy in HCC1954 cells using three-color DNA FISH. FISH probes were designed against synergistic and tyfonas-associated loci on chromosomes 9, 12 and 20 using the BAC clones (https://bacpacresources.org) RP11-341L12 (directly labeled green), RP11-476D10 (directly labeled red) and RP11-762A13 (directly labeled magenta). The HCC1954 and ANA cell lines were treated with colcemid (0.1 g ml–1) for 1 h to obtain a metaphase preparation. Cells were then fixed in methanol/acetic acid (3:1). The fixed cells were then allowed to dry for 1 week on a microscope slide. Prepped slides were placed in a denaturation solution (70% formamide/2× SSC) for 15 min at 73 °C followed by ethanol dehydration. Directly labeled probes were placed onto the slides, and cells on the slide were then denatured for 15 min at 74 °C followed by hybridization for 72 h at 37 °C. After hybridization, slides were washed in 2× SSC/0.3% NP-40 first at 73 °C and then at 23 °C. Metaphase cells were then stained with DAPI before visualization. A cell was determined to contain a fusion amplification event when it was observed to contain several green, red and magenta signals overlapping per nucleus or per chromosome. Before use on HCC1954 cells, all BAC clones were validated on metaphase spreads using the diploid ANA cell line. The nuclei and metaphase spreads were observed using a fluorescence microscope (Olympus BX51, Olympus Optical). Cytovision and Fiji software were used for imaging. The HCC1954 cell line (CRL-2338, available through ATCC) was cultured in ATCC-formulated RPMI-1640 medium (ATCC, 30-2001) with a final concentration of 10% FBS (ATCC, 30-2020). ANA cells were obtained through EBV transformation of peripheral blood mononuclear cells. The individual was consented under a protocol approved by the institutional review board of Weill Cornell Medicine (IRB number 1305013903) with written informed consent. Cells were maintained using a subculture ratio of 1:4 every 3 d in RPMI-1640 (ATCC, 30-2001) supplemented with 10% FBS and 1% penicillin/ streptomycin. Reporting summary. Further information on research design is available in the Nature Research Reporting Summary linked to this article.
+
+Data availability
+
+Sequence and pairwise and high-order contact data that support the findings of this study have been deposited in GEO with the accession code GSE149117.
+
+Code availability
+
+The source code of packages used in these analyses can be accessed at the following links along with dependencies: https://github.com/nanoporetech/pore-c, https:// github.com/mskilab/chromunity and https://github.com/mskilab/gGnome. Python (3.7.*) and R (3.6.0) were used for developing these tools. https://github.com/ mskilab/GxG
+
+References
+
+58. Koster, J. & Rahmann, S. Snakemake—a scalable bioinformatics workflow engine. Bioinformatics 28, 2520–2522 (2012). 59. Li, H. & Durbin, R. Fast and accurate long-read alignment with Burrows– Wheeler transform. Bioinformatics 26, 589–595 (2010). 60. Ramírez, F. et al. High-resolution TADs reveal DNA sequences underlying genome organization in flies. Nat. Commun. 9, 189 (2018).
+
+[Page 17]
+
+61. Abdennur, N. & Mirny, L. Cooler: scalable storage for Hi-C data and other genomically-labeled arrays. Bioinformatics 36, 311–316 (2020). 62. Knight, P. A. & Ruiz, D. A fast algorithm for matrix balancing. IMA J. Numer. Anal. 33, 1029–1047 (2013). 63. Agrawal, R., Imielinski, T. & Swami, A. Mining association rules between sets of items in large databases. ACM SIGMOD Record 22, 207–216 (1993). 64. Clauset, A., Newman, M. E. J. & Moore, C. Finding community structure in very large networks. Phys. Rev. 70, 066111 (2004). 65. Martin, M. et al. Whatshap: fast and accurate read-based phasing. Preprint at bioRxiv https://doi.org/10.1101/085050 (2016). 66. Gamaarachchi, H., Lam, C. W., Jayatilaka, G., Samarakoon, H. & Smith, M. A. GPU accelerated adaptive banded event alignment for rapid comparative nanopore signal analysis. BMC Bioinform. 21, 343 (2020). 67. Simpson, J. T. et al. Detecting DNA cytosine methylation using nanopore sequencing. Nat. Methods 14, 407–410 (2017). 68. Cotton, A. M. et al. Landscape of DNA methylation on the X chromosome reflects CpG density, functional chromatin state and X-chromosome inactivation. Hum. Mol. Genet. 24, 1528–1539 (2015). 69. Haeussler, M. et al. The UCSC Genome Browser database: 2019 update. Nucleic Acids Res. 47, D853–D858 (2019). 70. Raudsepp, T. & Chowdhary, B. P. The eutherian pseudoautosomal region. Cytogenet. Genome Res. 147, 81–94 (2015). 71. Wala, J. A. et al. SvABA: genome-wide detection of structural variants and indels by local assembly. Genome Res. 28, 581–591 (2018). 72. Tate, J. G. et al. COSMIC: the catalogue of somatic mutations in cancer. Nucleic Acids Res. 47, 941–947 (2019).
+
+Acknowledgements
+
+We thank J. Skok for helpful comments on the manuscript. M.I. is supported by a Burroughs Wellcome Fund Career Award for Medical Scientists, Doris Duke Clinical
+
+Foundation Clinical Scientist Development Award and The Pershing Square Sohn Prize for Young Investigators in Cancer Research.
+
+Author contributions
+
+A.S.D., N.U. and M.I. conceptualized the project. A.S.D., N.U., M.P., E.H. and M.I. curated the data. A.S.D., N.U., M.P., L.L., J.M.B., W.L., P.R., H.G.O., E.H. and M.I. performed the formal analysis. S.J., D.J.T. and M.I. acquired funding. A.S.D., N.U., M.P., S.S., X.D., M.A.A., C.E.B., A.M., E.H., S.J. and M.I. performed the investigations. A.S.D., N.U., M.P., L.L., P.R., S.S., D.S., C.T., S.J., E.H. and M.I. developed the methodology. E.H. and M.I. administered the project. S.J. and M.I. provided resources. A.S.D., M.P., E.H. and M.I. developed software. S.J. and M.I. supervised the project. A.S.D., N.U., M.P., X.D., S.K., H.T., E.A., D.W., J.M.M., E.H., S.J. and M.I. performed validations. A.S.D., M.P., E.H., and M.I. visualized the data. A.S.D., N.U., M.P., E.H. and M.I. wrote the original draft. All authors reviewed and edited the final draft.
+
+Competing interests
+
+M.P., S.S., X.D., L.L., C.T., P.R., D.S., D.T., S.J. and E.H. are employees of, and are stock option holders in, ONT. The remaining authors declare no competing interests.
+
+Additional information
+
+Extended data is available for this paper at https://doi.org/10.1038/s41587-022-01289-z. Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41587-022-01289-z. Correspondence and requests for materials should be addressed to Marcin Imieliński. Peer review information Nature Biotechnology thanks the anonymous reviewers for their contribution to the peer review of this work. Reprints and permissions information is available at www.nature.com/reprints.
+
+[Page 18]
+
+Extended Data Fig. 1 | See next page for caption.
+
+[Page 19]
+
+Extended Data Fig. 1 | Pore-C assay development. (a) An overview of Pore-C alignment. A directed acyclic graph (DAG) is built by partially ordering reference alignments on each concatemer query sequence. The final concatemer alignment comprises a greedy traversal of the DAG (see Methods for more details). (b) Comparison of cumulative fragment length distributions (left) and densities (right) associated with three different restriction enzyme based protocols (NlaIII, DpnIII and HindIII). (c) Comparison of virtual pairwise contacts generated per Gb sequenced for Pore-C for the three restriction enzyme based protocols (NlaIII: n = 13, DpnIII: n = 6, and HindIII: n = 2). P-values obtained using two-sided Wilcoxon rank sum test. For all boxplots, the centerline corresponds to the mean, box limits to the interquartile range (IQR) and the whiskers to the last datum within 1.5 * IQR. (d) Stratum adjusted correlation coefficients (SCC) comparing single MinION runs (M1 and M2), single PromethION runs (P1 and P2) and combination of P1 and P2 with the full GM12878 Hi-C data set (n = 23 chromosomes for each run). The bars represent mean SCC score for all chromosomes for each run with standard error of mean. (e) Comparison of 500 kb compartment scores (CS) between Pore-C (1.89 billion virtual pairwise contacts) and Hi-C ( ~ 4 billion pairwise contacts) for GM12878. (f) Comparison of 50 kb topologically associated domain insulation scores (IS) between Pore-C and Hi-C. (g) Jaccard similarity between TADtree TAD boundaries in gold standard Hi-C data and one of the four data sets on the X axis. (h) Aggregate peak analysis (APA) comparing Pore-C virtual pairwise and Hi-C pairwise contact density within 100 kb of Hi-C loop anchors. Each 10 kb by 10 kb pixel represents the total number of contacts detected across the entire loop set in a standard coordinate system centered around each loop anchor. (i) Number of structural loops called by Peakachu19 in two Hi-C replicate, SPRITE and Pore-C. (j) Precision and recall of structural loops called in Pore-C and Hi-C replicates relative to gold standard data Hi-C calls. (k) APA peaks for structural loops called in Pore-C separated by structural loop calling scores, showing stronger signal in higher confidence structural loops. (l) Stratum adjusted correlation coefficients (SCCs) between the full Hi-C dataset for GM12878 with GM12878 Pore-C, GM12878 SPRITE, after separating high order (3-way or higher) and pairwise contacts (n = 23 chromosomes for each run). For all boxplots, the centerline corresponds to the mean, box limits to the interquartile range (IQR) and the whiskers to the last datum within 1.5 * IQR.
+
+[Page 20]
+
+Extended Data Fig. 2 | See next page for caption.
+
+[Page 21]
+
+Extended Data Fig. 2 | Pore-C concatemers guide denovo human assembly correction and scaffolding. (a) The Shasta assembler was used to generate a draft assembly using a PromethION flow cell of nanopore WGS of the HG002 GIAB sample; the resulting contigs are plotted in length order (topmost track). Next, virtual pairwise contacts from a PromethION flow cell of Pore-C of HG002 and WGS-derived HG002 contigs were provided to the 3D-DNA tool (second track from the top) to generate scaffolds. A second round of scaffolding was carried out using SALSA2 followed by the ‘Purge Haplotigs’ tool to remove regional duplications caused by un-collapsed heterozygosity (third track from the top). The resulting assembly shows high congruity with the reference genome (bottom track). (b) Illustration of the scaffolding process for chromosomes 3, 4 and 5. The top contact map shows the contact density derived from Pore-C reads mapped against length ordered contigs from the draft assembly. The bottom contact map is derived from the same Pore-C reads mapped against the final scaffolds. The center track shows how the contigs have been ordered, re-oriented and merged into the final scaffolds, which are at or near chromosome length. (c) Performance of different assembly approaches with respect to contig/scaffold size. The combination of all three methods gives the best result with a scaffold NG50 of 125 Mb. The human reference genome with scaffold gaps removed is shown for comparison. (d) Top 5 scaffold alignments for each chromosome are plotted as a proportion of non-gap bases in each chromosome, showing that most chromosomes are assembled into a single large scaffold.
+
+[Page 22]
+
+Extended Data Fig. 3 | See next page for caption.
+
+[Page 23]
+
+Extended Data Fig. 3 | Chromunity and Synergy. (a) Example showing relationship between concatemer communities, contact frequency, and the resulting bin-set in the Chromunity analysis. The contact frequency is computed as the number of concatemers in the community within 1 kb of the given reference location. The bin-set is defined as the union of reference locations at or above 85th percentile contact frequency. (b) Volcano plots of Synergy model results for collections of random bin-sets chosen to match enhancers and promoters bin-sets in covariate space. (c) Contact map of an exemplar window with synergistic bin-sets before (top) and after (bottom) concatemer shuffling (see Methods). (d) Example distribution of concatemer order before and after shuffling in the window shown in the previous panel. Shuffled concatemers retain the original order distribution after shuffling. (e) HiCRep SCC of shuffled vs. original contact maps showing close correspondence of pairwise interaction frequencies after concatemer shuffling. The bar represents mean SCC score for chromosome 1 (n = 70 bin-sets) with standard error of mean. Each data point represents SCC score for single bin-set. (f) Volcano plots of Synergy results from sliding window Chromunity analysis of GM12878. Additional volcano plots represent identical analyses using (1) shuffled concatemers for identical bin-sets and (2) random bin-sets chosen to match candidate synergies in covariate space. (g) Fraction of synergies relative to total candidate bin-sets nominated by the concatemer community detection step of Chromunity (n = 3120 bin-sets). Shuffled (n = 2890) and random (n = 1852) analyses defined as in panel F. Fisher’s exact test was used to determine enrichment of synergy between various groups. Two-sided P values were obtained for each comparison. Error bars on bar plots represent 95% confidence intervals on the Bernoulli trial parameter. (h) Volcano plots of Synergy model results for de novo detected high order interactions for inter-chromosomal (red) and intra-chromosomal (blue) RE Chromunity derived bin-sets. Shuffled and random bin-sets defined as in F. (i) Similar to G, fraction of candidate bin-sets from sliding window Chromunity analysis of GM12878 showing synergy across inter- and intra-chromosomal interactions (n = 661) relative to shuffled concatemers (n = 661) and random bin-sets (n = 425). Fisher’s exact test was used to determine enrichment of synergy between various groups. Two-sided P values were obtained for each comparison. Error bars on bar plots represent 95% confidence intervals on the Bernoulli trial parameter. (j) Circos plots showing all inter- and intra-chromosomal synergies from Chromunity analysis of E-P targets in GM12878. The blue highlighted regions are approximate genomic locations shown to be interacting by SPRITE.
+
+[Page 24]
+
+Extended Data Fig. 4 | Methylation signal in Pore-C. (a) Correlation of methylation data obtained from Pore-C with whole genome bisulfite sequencing (WGBS, r = 0.92) and (b) Nanopore whole genome sequencing (r = 0.94). (c) Comparison of methylation signal from 2 Pore-C replicates with 2 ENCODE WGBS replicates with Pearson correlation coefficients shown in the upper right triangle. Very high correlation was observed between two replicates of Pore-C, exceeding that shown for the two ENCODE WGBS replicates. (d) Haplotype-specific CpG island methylation across genes present on the Xa and Xi chromosomes. Genes that escape X chromosome inactivation (XCI, n = 29) show no difference in methylation of promoter-proximal CpG islands (CGI) (left). Genes that undergo XCI (n = 208) show significantly elevated DNA methylation on Xi compared to Xa. For all boxplots, the centerline corresponds to the mean, box limits to the interquartile range (IQR) and the whiskers to the last datum within 1.5 * IQR. (e) Haplotype-specific methylation fraction at CpG islands relative to the transcription start site of X chromosome genes at three categories of loci on Xa and Xi. A dip in DNA methylation around the promoter in the pseudo-autosomal region (PAR), which escapes inactivation. The dip is present on Xa and in both haplotypes in the PAR, but not in other Xi regions. Random regions of genome with similar widths as the promoters are also shown for both Xa and Xi. (f) Haplotype-specific contact maps on chromosome X in GM12878. The inactive X (Xi) haplotype (top heat map) lacks the A/B compartmentalization present in the active X (Xa) haplotype (lowest heat map) but instead demonstrates two megadomains. The border of these two megadomains, called the ‘hinge region,’ shows a mega-loop of ~ 16 Mb between DXZ4 and FIRRE present in Xi but absent in Xa.
+
+[Page 25]
+
+Extended Data Fig. 5 | LNCaP Chromunity results and controls. (a) Volcano plot of Synergy results for bin-sets nominated by sliding-window Chromunity for LNCaP cells with (DHT+, bottom) and without (DHT-, top) androgen stimulation. Additional analyses represent negative controls: ‘Shuffled’ analysis shows Synergy results for the same candidate bin-sets using shuffled concatemers (see Methods). ‘Random’ analysis shows Synergy results on original concatemers using random bin-sets chosen to match candidate bin-sets in covariate space (see Methods). (b) Same as (a) but using regulatory element (RE) Chromunity.

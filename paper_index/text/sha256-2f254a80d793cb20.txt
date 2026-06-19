@@ -1,0 +1,133 @@
+[Page 1]
+
+A Data-driven Hydrophobicity Scale for Predicting Liquid-Liquid Phase Separation of Proteins Thomas Dannenhoffer-Lafage and Robert B. Best∗ Laboratory of Chemical Physics, National Institute of Diabetes and Digestive and Kidney Diseases, National Institutes of Health, Bethesda, MD 20892-0520 E-mail: robert.best2@nih.gov
+
+S1
+
+[Page 2]
+
+Supporting Figures
+
+Figure S1: Optimization error as a function of iteration. Error using Kyte-Doolittle hydrophobicities, or residue-averaged Kaptcha-Rossky hydrophobicities with = 0.1, are shown as blue and orange symbols respectively for reference.
+
+S2
+
+[Page 3]
+
+Figure S2: Optimization error as a function of iteration using regularization with varying strength, as indicated in legend.
+
+Figure S3: Validation error of original HPS model with Kapcha-Rossky hydrophobicities, and optimized HPS with and without regularization (see legend).
+
+S3
+
+[Page 4]
+
+Figure S4: Off-diagonal optimization: optimization error where every pair-wise interaction was allowed vary independently, starting from the end of the optimization where interactions were generated from hydrophobicities via mixing rules. Allowing for the more than ten-fold increase in paramters (20 vs 210) this only marginally improves the optimization error.
+
+Figure S5: Cross-validation error of the off-diagonal optimization. The cross-validation error of the off-diagonal optimisation is only marginally better than than the diagonal optimization.
+
+S4
+
+[Page 5]
+
+Supporting Tables Table S1: Optimization set Unfolded and Intrisically Disordered Proteins (DISP) ACTR 1 CspTm 2 fhua 3 hCyp 4 Histatin-5 5 hNHE1cdt 1 *ibb 6 *IN 4 *n49 6 *nls 6 *nul 6 *nus 6 *Prota-N 4 *R15 4 *R17 4 RNaseA 3 Sic1 7
+
+Rg (nm) 2.51 1.47 3.34 2.51 1.38 3.63 2.52 2.16 1.37 1.63 2.66 2.41 3.78 2.33 2.37 3.36 3.21
+
+Method SAXS FRET SAXS FRET SAXS SAXS FRET FRET FRET FRET FRET FRET FRET FRET FRET SAXS SAXS
+
+Notes Ensemble Fitting (temperature interpolation) SAW-ν MFF SAW-ν Ensemble Fitting Ensemble Fitting SAW-ν SAW-ν SAW-ν SAW-ν SAW-ν SAW-ν SAW-ν SAW-ν SAW-ν MFF Ensemble Fitting
+
+Phase-separating proteins (PSP) elF4GII 8 FIB1 9 hnRNPA1 10 LAF-1-WT 11
+
+Rg (nm)
+
+Notes
+
+S5
+
+[Page 6]
+
+Table S2: Validation set Unfolded and Intrisically Disordered Proteins (DISP) alpha-synuclein 12 AN16 13 K18 14 K19 14 p53 15 SH4-UD 16
+
+Rg (nm) 3.3 4.4 3.8 3.5 2.87 2.82
+
+Method FRET SAXS SAXS SAXS SAXS SAXS
+
+Notes SAW-ν Guinier Ensemble Fitting Ensemble Fitting Guinier Guinier
+
+Phase-separating proteins (PSP) cortactin 17 Ddx4 18 ELP11 19 EWSR1 20 FUS-WT 21 HBP-pep 22 hTIA1 10 Lsm4 10 Pub1 10 SYN1 23 TAF15 20 Tau 24
+
+Rg (nm) 3.697 3.613 1.699 3.965 3.000 1.154 2.309 2.309 2.160 3.972 3.153 2.538
+
+Notes Prediction for ν = 1/2
+
+S6
+
+[Page 7]
+
+Table S3: Sequences of non-PSP proteins in optimization set ACTR
+
+Sequence GTQNRPLLRNSLDDLVGPPSNLEGQSDERALLDQLHTLLSNTDATGLEEIDRALGIPELV NQGQALEPKQD CspTm GPGMRGKVKWFDSKKGYGFITKDEGGDVFVHWSAIEMEGFKTLKEGQVVEFEIQEGKKGG QAAHVKV fhua ESAWGPAATIAARQSATGTKTDTPIQKVPQSISVVTAEEMALHQPKSVKEALSYTPGVSV GTRGASNTYDHLIIRGFAAEGQSQNNYLNGLKLQGNFYNDAVIDPYMLERAEIMRGPVSV LYGKSSPGGLLNMVSKRPTTEPL hCyp GPMCNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSSFHRIIP GFMSQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFISTAK TEFLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADSGQLC Histatin-5 DSHAKRHHGYKRKFHEKHHSHRGY hNHE1cdt MVPAHKLDSPTMSRARIGSDPLAYEPKEDLPVITIDPASPQSPESVDLVNEELKGKVLGL SRDPAKVAEEDEDDDGGIMMRSKETSSPGTDDVFTPAPSDSPSSQRIQRCLSDPGPHPEP GEGEPFFPKGQ *ibb GCTNENANTPAARLHRFKNKGKDSTEMRRRRIEVNVELRKAKKDDQMLKRRNVSSFPDDA TSPLQENRNNQGTVNWSVDDIVKGINSSNVENQLQATFA *IN GSHCFLDGIDKAQEEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMHGQVDC *n49 GCQTSRGLFGNNNTNNINNSSSGMNNASAGLFGSKPFA *nls ACETNKRKREQISTDNEAKMQIQEEKSPKKKRKKRSSKANKPPEFA ACETNKRKREQIS TDNEAKMQIQEEKSPKKKRKKRSSKANKPPEFA *nul GCGFKGFDTSSSSSNSAASSSFKFGVSSSSSGPSQTLTSTGNFKFGDQGGFKIGVSSDSG SINPMSEGFKFSKPIGDFKFGVSSESKPEEVKKDSKNDNFKFGLSSGLSNPVFA *nus GCPSASPAFGANQTPTFGQSQGASQPNPPGFGSISSSTALFPTGSQPAPPTFGTVSSSSQ PPVFGQQPSQSAFGSGTTPNFA *Prota-N GPSDAAVDTSSEITTKDLKEKKEVVEEAENGRDAPANGNAENEENGEQEADNEVDEEEEE GGEEEEEEEEGDGEEEDGDEDEEAESATGKRAAEDDEDDDVDTKKQKTDEDD *R15 KLKEACKQQNFNTGIKDFDFWLSEVEALLASEDYGKDLASVNNLLKKHQLLEADISAHED RLKDLNSQADSLMTSSAFDTSQVKDKRETINGRFQRIKCMAAARRAKLNESHR *R17 GSRLEESCEYQQFVANVEEEEAWINEKMTLVASEDYGDTLAAIQGLLKKHEAFETDFTVH KDRVNDVAANGEDLIKKNNHHVENITAKMKGLKGKVSDLECAAAQRKAKLDENSAFLQ RNaseA KETAAAKFERQHMDSSTSAASSSNYCNQMMKSRNLTKDRCKPVNTFVHESLADVQAVCSQ KNVACKNGQTNCYQSYSTMSITDCRETGSSKYPNCAYKTTQANKHIIVACEGNPYVPVHF DAS Sic1 MTPSTPPRSRGTRYLAQPSGNTSSSALMQGQKTPQKPSQNLVPVTPSTTKSFKNAPLLAP PNSNMGMTSPFNGLTSPQRSPFPKSSVKRT
+
+S7
+
+[Page 8]
+
+Table S4: Sequences of PSP proteins in optimization set elF4GI
+
+Sequence QQANGYKKFPPHDNQYSGANNSQPNNHYNENLYSAREPHNNKQYQSKNGKYGTNKYNNRN NSQGNAQYYNNRFNNGYRLNNNDYN FIB1 MGRPEFNRGGGGGGFRGGRGGDRGGSRGGFGGGGRGGYGGGDRGSFGGGDRGGFRGGRGG GDRGGFRGGRGGGDRGGFGGRGSPRGGFGGRGSPRGGRGS hnRNPA1 MASASSSQRGRSGSGNFGGGRGGGFGGNDNFGRGGNFSGRGGFGGSRGGGGYGGSGDGYN GFGNDGSNFGGGGSYNDFGNYNNQSSNFGPMKGGNFGGRSSGPYGGGGQYFAKPRNQGGY GGSSSSSSYGSGRRF LAF-1-WT MGSSHHHHHHHHASASENLYFQSMESNQSNNGGSGNAALNRGGRYVPPHLRGGDGGAAAA ASAGGDDRRGGAGGGGYRRGGGNSGGGGGGGYDRGYNDNRDDRDNRGGSGGYGRDRNYED RGYNGGGGGGGNRGYNNNRGGGGGGYNRQDRGDGGSSNFSRGGYNNRDEGSDNRGSGRSY NNDRRDNGGDG
+
+Table S5: Sequences of non-PSP proteins in validation set Sequence alpha-synuclein MDVFMKGLSKAKEGVVAAAEKTKQGVAEAAGKTKEGVLYVGSKTKEGVVHGVATVAEKTK EQVTNVGGAVVTGVTAVAQKTVEGAGSIAAATGFVKKDQLGKNEEGAPQEGILEDMPVDP DNEAYEMPSEEGYQDYEPEA AN16 MHHHHHHPGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPS SQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGA PAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTPSSQYGAPAQTP SSQYV K18 MQTAPVPMPDLKNVKSKIGSTENLKHQPGGGKVQIINKKLDLSNVQSKCGSKDNIKHVPG GGSVQIVYKPVDLSKVTSKCGSLGNIHHKPGGGQVEVKSEKLDFKDRVQSKIGSLDNITH VPGGGNKKIE K19 MQTAPVPMPDLKNVKSKIGSTENLKHQPGGGKVQIVYKPVDLSKVTSKCGSLGNIHHKPG GGQVEVKSEKLDFKDRVQSKIGSLDNITHVPGGGNKKIE p53 MEEPQSDPSVEPPLSQETFSDLWKLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGP DEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPL SH4-UD MGSNKSKPKDASQRRRSLEPAENVHGAGGGAFPASQTPSKPASADGHRGPSAAFAPAAAE PKLFGGFNSSDTVTSPQRAGPLAGG
+
+S8
+
+[Page 9]
+
+Table S6: Sequences of PSP proteins in validation set cortactin
+
+Ddx4
+
+ELP11 EWSR1
+
+FUS-WT
+
+HBP-pep hTIA1 Lsm4 Pub1 SYN1
+
+TAF15
+
+Tau
+
+Sequence YGGKFGVEQDRMDRSAVGHEYQSKLSKHCSQVDSVRGFGGKFGVQMDRVDQSAVGFEYQG KTEKHASQKDYSSGFGGKYGVQADRVDKSAVGFDYQGKTEKHESQKDYSKGFGGKYGIDK DKVDKSAVGFEYQGKTEKHESQKDYVKGFGGKFGVQTDRQDKCALGWDHQEKLQLHESQK DYKTGFGGKFGVQSERQDSSAVGFDYKERLAKHESQQDYAKGFGGKYGVQKDRMDKNAST FEEVVQV MGDEDWEAEINPHMSSYVPIFEKDRYSGENGDNFNRTPASSSEMDDGPSRRDHFMKSGFA SGRNFGNRDAGECNKRDNTSTMGGFGVGKSFGNRGFSNSRFEDGDSSGFWRESSNDCEDN PTRNRGFSKRGGYRDGNNSEASGPYRRGGRGSFRGCRGGFGLGSPNNDLDPDECMQRTGG LFGSRRPVLSGTGNGDTSQSRSGSGSERGGYKGLNEEVITGSGKNSWKSEAEGGES GLVPGVGVAGVAPGVGVAGVAPGVGVAGVAPGVGVAGVAPGVGVAGVAGAIGP MASTDYSTYSQAAAQQGYSAYTAQPTQGYAQTTQAYGQQSYGTYGQPTDVSYTQAQTTAT YGQTAYATSYGQPPTGYTTPTAPQAYSQPVQGYGTGAYDTTTATVTTTQASYAAQSAYGT QPAYPAYGQQPAATAPTRPQDGNKPTETSQPQSSTGGYNQPSLGYGQSNYSYPQVPGSYP MQPVTAPPSYPPTSYSSTQPTSYDQSSYSQQNTYGQPSSYGQQSSYGQQSSYGQQPPTSY PPQTGSYSQAPSQYSQQSSSYGQQSSFRQDHPSSMGVYGQESGG MASNDYTQQATQSYGAYPTQPGQGYSQQSSQPYGQQSYSGYSQSTDTSGYGQSSYSSYGQ SQNTGYGTQSTPQGYGSTGGYGSSQSSQSSYGQQSSYPGYGQQPAPSSTSGSYGSSSQSS SYGQPQSGSYSQQPSYGGQQQSYGQQQSYNPPQGYGQQNQYNS GHGVYGHGVYGHGPYGHGPYGHGLY MINPVQQQNQIGYPQPYGQWGQWYGNAQQIGQYMPNGWQVPAYGMYGQAWNQQGFNQTQS SAPWMGPNYGVQPPQGQNGSMLPNQPSGYRVAGYETQ QQINSNNNSNSNGPGHKRYYNNRDSNNNRGNYNRRNNNNGNSNRRPYSQNRQYNNSNSSN INNSINSINSNNQNMNNGLGGSVQHHFNSSSPQKVEF NNNNNNYQQRRNYGNNNRGGFRQYNSNNNNNMNMGMNMNMNMNMNNSRGMPPSSMGMPIG AMPLPSQGQPQQSQTIGLPPQVNPQ QRQRDASPGRGSHGQTPSPGALPLGRQTSQQPAGPPAQQRPPPQGGPPQPGPGPQRQGPP LQQRPPPQGQQHLSGLGPPAGSPLPQRLPSPTSAPQQPASQAAPPTQGQGRQSRPVAGGP GAPPAARPPASPSPQRQAGPPQATRQTSVSGPAPPKASGAPPGGQQRQGPPQKPPGPAGP TRQASQAGPVPRTGPPTTQQPRPSGPGPAGRPKPQLAQKPSQDVPPPATAAAGGPPHPQL NKSQSLTNAFNLPEPAPPRPSLSQDEVKAETIRSLRKSFASLFSD MSDSGSYGQSGGEQQSYSTYGNPGSQGYGQASQSYSGYGQTTDSSYGQNYSGYSSYGQSY SQSYGGYENQKQSSYSQQPYNNQGQQQNMESSGSQGGRAPSYDQPDYGQQDSYDQQSGYD QHQGSYDEQSNYDQQHDSYSQNQQSYHSQRENYSHHTQDDRRDVSRYGEDNRGYGGSQGG MAEPRQEFEVMEDHAGTYGLGDRKDQGGYTMHQDQEGDTDAGLKESPLQTPTEDGSEEPG SETSDAKSTPTAEDVTAPLVDEGAPGKQAAAQPHTEIPEGTTAEEAGIGDTPSLEDE
+
+S9
+
+[Page 10]
+
+Table S7: Optimized FB-HPS parameters. Residue MET GLU SER ASN GLN GLY ALA ILE ARG TYR VAL PRO HIS ASP PHE THR LYS LEU TRP CYS
+
+λHPS 0.64648 0.42621 0.11195 0.78447 0.29516 1.24153 0.51507 0.83907 0.24025
+
+S10
+
+[Page 11]
+
+References (1) Kjaergaard, M.; Nørholm, A.; Hendus–Altenburger, R.; Pedersen, S. F.; Poulsen, F. M.; Kragelund, B. B. Temperature-dependent structural changes in intrinsically disordered proteins: Formation of –helices or loss of polyproline II? Protein Science 2010, 19, 1555–1564. (2) Müller-Späth, S.; Soranno, A.; Hirschfeld, V.; Hofmann, H.; Rüegger, S.; Reymond, L.; Nettels, D.; Schuler, B. Charge interactions can dominate the dimensions of intrinsically disordered proteins. Proc. Natl. Acad. Sci. U. S. A. 2010, 107, 14609–14614. (3) Riback, J. A.; Bowman, M. A.; Zmyslowski, A. M.; Knoverek, C. R.; Jumper, J. M.; Hinshaw, J. R.; Kaye, E. B.; Freed, K. F.; Clark, P. L.; Sosnick, T. R. Innovative scattering analysis shows that hydrophobic disordered proteins are expanded in water. Science 2017, 358, 238–241. (4) Hofmann, H.; Soranno, A.; Borgia, A.; Gast, K.; Nettels, D.; Schuler, B. Polymer scaling laws of unfolded and intrinsically disordered proteins quantified with single-molecule spectroscopy. Proc. Natl. Acad. Sci. U. S. A. 2012, 109, 16155–16160. (5) Cragnell, C.; Durand, D.; Cabane, B.; Skepö, M. Coarse-grained modeling of the intrinsically disordered protein Histatin 5 in solution: Monte Carlo simulations in combination with SAXS. Proteins 2016, 84, 777–791. (6) Fuertes, G.; Banterle, N.; Ruff, K. M.; Chowdhury, A.; Mercadante, D.; Koehler, C.; Kachala, M.; Estrada Girona, G.; Milles, S.; Mishra, A. et al. Decoupling of size and shape fluctuations in heteropolymeric sequences reconciles discrepancies in SAXS vs. FRET measurements. Proc. Natl. Acad. Sci. U. S. A. 2017, 114, E6342–E6351. (7) Mittag, T.; Marsh, J.; Grishaev, A.; Orlicky, S.; Lin, H.; Sicheri, F.; Tyers, M.; FormanKay, J. D. Structure/Function Implications in a Dynamic Complex of the Intrinsically
+
+S11
+
+[Page 12]
+
+Disordered Sic1 with the Cdc4 Subunit of an SCF Ubiquitin Ligase. Structure 2010, 18 . (8) Lin, Y.; Protter, D.; Rosen, M.; Parker, R. Mol. Cell 2015, 60 . (9) Feric, M.; Vaidya, N.; Harmon, T. S.; Mitrea, D. M.; Zhu, L.; Richardson, T. M.; Kriwacki, R. W.; Pappu, R. V.; Brangwynne, C. P. Coexisting Liquid Phases Underlie Nucleolar Subcompartments. Cell 2016, 165 . (10) AU Lin, D. . R. M. . P. R., Yuan Protter Formation and Maturation of Phase-Separated Liquid Droplets by RNA-Binding Proteins. Mol. Cell 2015, 60 . (11) Wei, M.-T.; Elbaum-Garfinkle, S.; Holehouse, A. S.; Chen, C. C.-H.; Feric, M.; Arnold, C. B.; Priestley, R. D.; Pappu, R. V.; Brangwynne, C. P. Phase behaviour of disordered proteins underlying low density and high permeability of liquid organelles. Nat. Chem. 2017, 9 . (12) Nath, A.; Sammalkorpi, M.; DeWitt, D. C.; Trexler, A.; Elbaum-Garfinkle, S.; O’Hern, C. S.; Rhoades, E. The Conformational Ensembles of alpha-Synuclein and Tau: Combining Single-Molecule FRET and Simulations. Biophys. J. 2012, 103, 1940–1949. (13) Balu, R.; Dutta, N. K.; Choudhury, N. R.; Elvin, C. M.; Lyons, R. E.; Knott, R.; Hill, A. J. An16-resilin: An advanced multi-stimuli-responsive resilin-mimetic protein polymer. Acta Biomaterialia 2014, 10, 4768 – 4777. (14) Mylonas, E.; Hascher, A.; Bernadó, P.; Blackledge, M.; Mandelkow, E.; Svergun, D. I. Domain Conformation of Tau Protein Studied by Solution Small-Angle X-ray Scattering. Biochemistry 2008, 47, 10345–10353. (15) Wells, M.; Tidow, H.; Rutherford, T. J.; Markwick, P.; Jensen, M. R.; Mylonas, E.; Svergun, D. I.; Blackledge, M.; Fersht, A. R. Structure of tumor suppressor p53 and its
+
+S12
+
+[Page 13]
+
+intrinsically disordered N-terminal transactivation domain. Proc. Natl. Acad. Sci. U. S. A. 2008, 105, 5762–5767. (16) Arbesú, M.; Maffei, M.; Cordeiro, T. N.; Teixeira, J. M.; Pérez, Y.; Bernadó, P.; Roche, S.; Pons, M. The Unique Domain Forms a Fuzzy Intramolecular Complex in Src Family Kinases. Structure 2017, 25 . (17) Saito, M.; Hess, D.; Eglinger, J.; Fritsch, A. W.; Kreysing, M.; Weinert, B. T.; Choudhary, C.; Matthias, P. Acetylation of intrinsically disordered regions regulates phase separation. Nat. Chem. Biol. 2019, 15 . (18) Nott, T.; Petsalaki, E.; Farber, P.; Jervis, D.; Fussner, E.; Plochowietz, A.; Craggs, T. D.; Bazett-Jones, D.; Pawson, T.; Forman-Kay, J. et al. Phase Transition of a Disordered Nuage Protein Generates Environmentally Responsive Membraneless Organelles. Mol. Cell 2015, 57 . (19) Muiznieks, L. D.; Cirulis, J. T.; van der Horst, A.; Reinhardt, D. P.; Wuite, G. J.; Pomès, R.; Keeley, F. W. Modulated growth, stability and interactions of liquid-like coacervate assemblies of elastin. Matrix Biol. 2014, 36, 39 – 50. (20) Wang, J.; Choi, J.-M.; Holehouse, A. S.; Lee, H. O.; Zhang, X.; Jahnel, M.; Maharana, S.; Lemaitre, R.; Pozniakovsky, A.; Drechsel, D. et al. A Molecular Grammar Governing the Driving Forces for Phase Separation of Prion-like RNA Binding Proteins. Cell 2018, 174 . (21) Burke, K.; Janke, A.; Rhine, C.; Fawzi, N. Residue-by-Residue View of In Vitro FUS Granules that Bind the C-Terminal Domain of RNA Polymerase II. Mol. Cell 2015, 60 . (22) Tan, Y.; Hoon, S.; Guerette, P. A.; Wei, W.; Ghadban, A.; Hao, C.; , A., Miserez; Waite, J. H. Infiltration of chitin by protein coacervates defines the squid beak mechanical gradient. Nat. Chem. Biol. 2015, 11 . S13
+
+[Page 14]
+
+(23) Milovanovic, D.; Wu, Y.; Bian, X.; De Camilli, P. A liquid phase of synapsin and lipid vesicles. Science 2018, 361, 604–607. (24) Boyko, S.; Qi, X.; Chen, T.-H.; Surewicz, K.; Surewicz, W. K. Liquid–liquid phase separation of tau protein: The crucial role of electrostatic interactions. J. Biol. Chem. 2019, 294, 11054–11059.
+
+S14

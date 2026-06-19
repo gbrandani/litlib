@@ -1,0 +1,2261 @@
+[Page 1]
+
+Cooperation of chromatin remodeling SWI/ SNF complex and pioneer factor AP-1 shapes 3D enhancer landscapes Received: 3 June 2021 Accepted: 25 October 2022
+
+Bennett K. Wolf1,2,6, Yanding Zhao3,4,5,6, Andrew McCray1,2,6, William H. Hawk1,2, Luke T. Deary1,2, Nicholas W. Sugiarto1, Ian S. LaCroix1,2, Scott A. Gerber1,2, Chao Cheng 3,4,5 & Xiaofeng Wang 1,2
+
+Published online: 15 December 2022 Check for updates
+
+The mechanism controlling the dynamic targeting of SWI/SNF has long been postulated to be coordinated by transcription factors (TFs), yet demonstrating a specific TF influence has proven difficult. Here we take a multi-omics approach to interrogate transient SWI/SNF interactors, chromatin targeting and the resulting three-dimensional epigenetic landscape. We utilize the labeling technique TurboID to map the SWI/SNF interactome and identify the activator protein-1 (AP-1) family members as critical interacting partners for SWI/SNF complexes. CUT&RUN profiling demonstrates SWI/SNF targeting enrichment at AP-1 bound loci, as well as SWI/SNF–AP-1 cooperation in chromatin targeting. HiChIP reveals AP-1– SWI/SNF-dependent restructuring of the three-dimensional promoter– enhancer architecture and generation of enhancer hubs. Through interrogation of the SWI/SNF–AP-1 interaction, we demonstrate an SWI/ SNF dependency on AP-1-mediated chromatin localization. We propose that pioneer factors, such as AP-1, bind and target SWI/SNF to inactive chromatin, where it restructures the genomic landscape into an active state through epigenetic rewiring spanning multiple dimensions.
+
+Switch/Sucrose-Nonfermentable (SWI/SNF) chromatin-remodeling complexes are multimeric chromatin remodelers composed of 10–15 subunits that are assembled through different combinations of over 25 proteins1–4. Three major SWI/SNF subcomplexes—BAF, PBAF and GBAF (also known as non-canonical BAF or ncBAF)—have been identified in human cells5–9. These are thought to accomplish functionally diverse epigenetic tasks specified by the structural heterogeneity after complex formation. These differentiated subcomplexes are speculated to interact with a multitude of transcription factors (TFs) and epigenetic factors to regulate gene expression4. Although it is well established that SWI/SNF complexes maintain an open and accessible chromatin
+
+environment10–14, the mechanism by which SWI/SNF complexes target to specific regions remains unclear. Many TFs have been reported to interact with SWI/SNF complexes and colocalize on chromatin via chromatin immunoprecipitation sequencing (ChIP-seq)4,15,16, but the mechanism governing this interaction and the implications for SWI/ SNF complex targeting are unknown. In line with other studies, our previous work and others have demonstrated SWI/SNF complex enrichment at enhancers17–19. As emerging data highlight the importance of higher-order enhancer interactions in regulating transcription20–23, the targeting of SWI/SNF complexes to enhancers may integrally regulate multidimensional enhancer landscapes.
+
+Department of Molecular & Systems Biology, Geisel School of Medicine at Dartmouth, Dartmouth College, Hanover, NH, USA. 2Dartmouth Cancer Center, Dartmouth College, Lebanon, NH, USA. 3Department of Medicine, Baylor College of Medicine, Houston, TX, USA. 4Dan L Duncan Comprehensive Cancer Center, Baylor College of Medicine, Houston, TX, USA. 5Institute for Clinical and Translational Sciences, Baylor College of Medicine, Houston, TX, USA. These authors contributed equally: Bennett K. Wolf, Yanding Zhao, Andrew McCray. e-mail: Chao.Cheng@bcm.edu; Xiaofeng.Wang@Dartmouth.edu
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 2]
+
+In this Article, using our previously validated SMARCB1 addback model, we take a multi-omics approach to investigate the dynamics of SWI/SNF complexes’ association with other epigenetic regulators, chromatin targeting and contribution to higher-order enhancer interactions.
+
+Results
+
+TurboID proximity-based labeling of SWI/SNF subunits Previous attempts to characterize SWI/SNF cofactor interactions have been limited in their sensitivity, especially with regard to transient interactions such as the binding of TFs5,17,24. To accurately profile SWI/ SNF complex interactors we used TurboID, a proximity labeling technique that utilizes an engineered biotin ligase fusion to label interacting proteins25. Because this method has not been validated in an SWI/ SNF context, we first sought to determine whether SWI/SNF-TurboID fusion proteins effectively recapitulate the biochemical behavior of normal subunits (Fig. 1a). We generated HEK293T lines expressing a set of core SWI/SNF subunits and subcomplex-specific members of BAF, PBAF and GBAF fused to the TurboID protein, including SMARCD1, SMARCB1, DPF2, BRD7, PHF10, GLTSCR1L/BICRAL and BRD9 (Extended Data Fig. 1). We then strove to determine whether fusion of TurboID to SWI/SNF subunits would interfere with complex assembly by performing co-immunoprecipitation with core subunit SMARCC1, which exists in all three subcomplexes9 (Extended Data Fig. 1). Fusion of TurboID negatively impacted complex assembly variably across each transgene, with the exception of Turbo-SMARCD1, which strongly associated with SMARCC1 (Extended Data Fig. 1), highlighting the importance of validating the efficacy of TurboID fusion to individual subunits. Our results demonstrate that Turbo-SMARCD1 is functionally incorporated into each SWI/SNF subcomplex, making it an excellent candidate for follow-up studies. The dynamics of SWI/SNF assembly are not directly observable through traditional biochemical assays, yet understanding this assembly is critical for assessment of the effects of SWI/SNF mutations. We have previously shown that SMARCB1 addback in G401 cells (a SMARCB1-deficient rhabdoid tumor cell line) restores the assembly of BAF and PBAF SWI/SNF subcomplexes17 (Extended Data Fig. 2a). We introduced proximity labeling in this model system to directly probe novel assembly dynamics and cofactors as canonical SWI/SNF complexes are rapidly restored. To accomplish this, we introduced Turbo-SMARCD1 into our G401 SMARCB1-inducible system via lentiviral vector, rendering a double-engineered cell line constitutively expressing Turbo-SMARCD1 while SMARCB1 re-expression is controlled by tetracycline treatment, thus allowing us to directly capture SWI/SNF interactions with temporal control during SMARCB1 addback and restoration of BAF and PBAF subcomplexes (Extended Data Fig. 2a). To further ensure that Turbo-SMARCD1 is both incorporated during reassembly and does not impair reassembly, we performed sedimentation assays in this double-engineered cell line and examined the migration pattern of Turbo-SMARCD1 (Fig. 1b and Extended Data Fig. 2b). We observed that expression of Turbo-SMARCD1 is lower than endogenous SMARCD1, but displays a migration pattern markedly similar to endogenous SMARCD1, whereby both proteins colocalized to the same fractions as other BAF-complex members (Fig. 1b and Extended Data Fig. 2b). Importantly the sedimentation patterns of other subunits
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+were not altered by the introduction of Turbo-SMARCD1. These results indicate that Turbo-SMARCD1 has similar biochemical activity to endogenous SMARCD1 and is incorporated into the SWI/SNF complex both before and after SMARCB1 addback. To uncover SWI/SNF-complex-interacting proteins throughout complex reassembly, we probed for SMARCD1 proximal proteins before and after SMARCB1 re-expression. Proteins biotinylated by Turbo-SMARCD1 at each time point were enriched by streptavidin beads and subjected to tandem mass tag–mass spectrometry (TMT-MS; Fig. 1c,d). Given the high activity of TurboID, we also made and included miniTurbo-SMARCD1 to mitigate artifacts of background labeling. There were minimal differences in hits identified by both Turbo and miniTurbo-SMARCD1 constructs, validating the specificity of labeling (Extended Data Fig. 2e). As expected, Turbo-SMARCD1 efficiently labeled known SWI/SNF subunits when compared with an NLS-Turbo control. Importantly, although SWI/SNF subunits are identified as true hits at day 0, there is a substantial enrichment for certain subunits upon re-expression of SMARCB1. This dependency was most noticeable in labeling of BAF subunits, further validating our previous report that SMARCB1 is essential for BAF-complex integrity (Fig. 1c,d)17. Preferential labeling of BAF subunits upon SMARCB1 addback was validated by western blot (Fig. 1e). Furthermore, hundreds of novel interactors identified by Turbo-SMARCD1 MS were also labeled in SMARCB1-dependent and -independent manners (Fig. 1f, Extended Data Fig. 2d and Supplementary Table 1). These hits include the Mediator complex, the DNA repair complex, the transcription elongation complex, MLL complexes, the NURD complex and activator protein-1 (AP-1) members, some of which have been implicated in previous studies24,26–29 (Fig. 1e,f and Extended Data Fig. 2c,d). Interestingly, the hits encompass a broad range of transcriptional regulators, such as transcriptional activators (TCF20), transcriptional repressors (YAP1), chromatin readers (BRD4), chromatin writers (CBP/P300) and even other chromatin remodelers (CHD4-6,8-9) (Extended Data Fig. 2d). These data demonstrate that, as a proof of concept, proximity-based labeling by Turbo-SMARCD1 can accurately measure the dynamics of SWI/SNF complex assembly and capture many transiently interacting partners, making it a valuable tool for the study of SWI/SNF complex biology.
+
+Dynamic targeting of SWI/SNF subcomplexes regulated by SMARCB1 Various epigenetic regulators, including SWI/SNF complexes, collaborate to establish the chromatin landscapes that govern gene regulatory networks27,30. Yet, how SWI/SNF interacts with the nuclear milieu to target and remodel specific genomic features is completely unclear. To connect the SWI/SNF interactome identified by TurboID experiments with SWI/SNF targeting at cis-regulatory elements during reconstitution of BAF and PBAF, we decided to profile the genomic features and chromatin landscapes that SWI/SNF targets during SMARCB1 addback by using CUT&RUN. CUT&RUN31 was used to profile the core and all subcomplexes: SMARCC1 (core subunit), ARID1A (BAF only), PBRM1 (PBAF only) and BRD9 (GBAF only). As expected, we observed increased targeting of SMARCC1 and ARID1A upon SMARCB1 addback in a time-dependent manner (Extended Data Fig. 3a,b). Surprisingly, BRD9 targeting was also enhanced on day 1 and day 3. PBRM1 targeting was minimally affected at day 1, but was also increased at day 3 (Extended
+
+Fig. 1 | SWI/SNF interactome via proximity-based labeling. a, Illustration of the experimental design. The indicated SWI/SNF subunits are fused with TurboID. Upon ectopic expression, constructs’ interaction with the core SWI/ SNF subunits are evaluated via immunoprecipitation. MS is used to assess their biotinylation ability, which leads to the identification of a lead candidate for follow-up study. b, A glycerol sedimentation (10–35%) assay to show that TurboSMARCD1 fusion behaves similarly to endogenous SMARCD1 in G401 cells upon SMARCB1 re-expression, indicating incorporation into fully assembled SWI/SNF complexes. c, Volcano blot showing Turbo-SMARCD1 labeled proteins in the
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+absence of SMARCB1 (residual SWI/SNF interactome). d, Volcano blot showing the SMARCB1-dependent SWI/SNF interactome identified by Turbo-SMARCD1. A t-test function was used with each group’s protein expression data as input, and P values were generated by two-sided tests. e, Validation of MS hits using western blot, showing SMARCB1-dependent SWI/SNF complex assembly as well as novel interacting proteins. f, Networks of novel SWI/SNF interacting epigenetic regulator complexes including the Mediator complex, NuRD complex, COMPASS complex and AP-1 complex. Uncropped images for b and e are available as source data.
+
+[Page 3]
+
+B1
+
+D1
+
+DPF1
+
+G1
+
+PHF10
+
+BRD9
+
+BRD7
+
+Relative intensity
+
+io at m/z in p ot re Mass spectrometry Bi st ty
+
+Dox D1
+
+BAF
+
+Glycerol
+
+35%
+
+8 9 10 11 12 13 14 15 16 17 18
+
+(kDa)
+
+SMARCD1 –
+
+SMARCD1 +
+
+SMARCD1 –
+
+SMARCD1 +
+
+ARID1A –
+
+ARID1A +
+
+(TurboID)
+
+2/4
+
+SMARCA
+
+PBRM
+
+SMARCB1 +
+
+SS18 2/4
+
+SMARCA
+
+ACTL6A ACTL6A
+
+E1
+
+/3 1/2
+
+SM
+
+RC
+
+E1
+
+RC
+
+SMAR CC1
+
+SMAR CC1
+
+SMAR CC1
+
+GLTSCR1
+
+/3 1/2
+
+ARC
+
+SM
+
+PH F10
+
+DP F2
+
+SMARCC
+
+ARID2
+
+D9 BR
+
+ARC
+
+AR CB
+
+D7 BR
+
+SM
+
+SMAR CC1
+
+ARID1A
+
+AR CB
+
+SMARCC2
+
+SM
+
+SM
+
+(TurboID)
+
+GBAF/ncBAF
+
+SS18
+
+ACTL6A
+
+(endogenous)
+
+PBAF
+
+A2/4 SMARC
+
+(endogenous)
+
+Co-immunoprecipitation
+
+Construction of TurboID fusion
+
+SMARCB1 –
+
+Lead candidate
+
+TurboID
+
+10%
+
+D1
+
+SM
+
+ARC
+
+SM
+
+NLS-Turbo versus SMARCD1-Turbo day 0
+
+JUNB YAP1
+
+GLTSCR1 ARID1A
+
+SMARCC1 ARID2
+
+EP300
+
+SMARCA4 ACTL6A
+
+ARID1B
+
+PBRM1
+
+MECOM
+
+DPF2
+
+SMARCD1-Turbo day 0 versus SMARCD1-Turbo day 3
+
+JUND
+
+–10log(P value)
+
+–10log(P value)
+
+BRD9
+
+DPF1
+
+DPF2
+
+JUND
+
+DPF1
+
+ARID1B
+
+SMARCC1
+
+EP300
+
+SMARCA4
+
+ARID1A
+
+BRD9
+
+ACTL6A
+
+GLTSCR1
+
+ARID2
+
+SMARCB1
+
+YAP1 PBRM1
+
+JUNB
+
+–5
+
+–2
+
+–1
+
+L2FC
+
+L2FC
+
+Beta catenin TCF
+
+RUNX transcriptional regulation
+
+BCL9
+
+YAP1 TEAD3
+
+TCF7L1
+
+Input Day: Biotin: SMARCB1
+
+–
+
++
+
++
+
+LDB1
+
+Strep IP +
+
++
+
+–
+
++
+
++
+
++
+
+TEAD1
+
+AP-1
+
++
+
+UBC
+
+BCL9L
+
+WWTR1
+
+(kDa)
+
+JUND
+
+PSMC3
+
+FOSL2
+
+JUNB
+
+MAML1
+
+Mediator complex
+
+MLL3/4
+
+SWI/SNF
+
+KMT2D WDR5
+
+MED12
+
+SMARCA4 SMARCC1
+
+MED15
+
+SMARCC2
+
+NuRD
+
+SMARCD3 KDM6A
+
+GLTSCR1L
+
+CHD5
+
+SMARCA4
+
+TAF4
+
+ACTL6A
+
+SMARCD1
+
+CHD8
+
+SMARCE1
+
+GATAD2A
+
+KMT2A
+
+PBRM1
+
+KANSL1
+
+SMARCC1
+
+ARID1A
+
+Transcription elongation
+
+ARID2
+
+GLTSCR1
+
+CCNT1
+
+ARID1B
+
+AFF4
+
+BRD7
+
+DPF1
+
+EPC1
+
+CREBBP
+
+CCNK
+
+EP400 RTF1
+
+MECOM
+
+YAP1
+
+MLL1
+
+MGA
+
+SMARCB1
+
+GATAD2B
+
+MBD3
+
+GLTSCR1
+
+KMT2C
+
+ZZZ3
+
+DPF2
+
+ARID1A
+
+CSRP2BP
+
+CDK13
+
+NCOA3
+
+SNW1
+
+NCOA1 CWF19L2
+
+DHX38
+
+BRIP1
+
+DDX5
+
+TEAD1
+
+YEATS2
+
+NCOA2
+
+EP300
+
+SUPT6H
+
+NELFA
+
+RBM22
+
+ECT2
+
+ANLN
+
+BLM
+
+HNRNPF
+
+WBP4
+
+NBN
+
+KPNA2
+
+BRCA2
+
+TPX2
+
+STAG2
+
+SLU7 PHF21A HNRNPM
+
+Spliceosome
+
+KIF23
+
+PRPF4
+
+IK
+
+RBBP8
+
+Histone acetyltransferase
+
+RACGAP1
+
+RPA1
+
+BRCA1
+
+SETX
+
+Mitotic spindle
+
+MSH6
+
+ERCC5
+
+DNA repair
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 4]
+
+Data Fig. 3a). We then set out to identify the genomic features bound by these subunits across time, through ChIPseeker32 analysis. Before SMARCB1 addback, subunits representing all three subcomplexes were enriched at promoter regions (Fig. 2a), representing 48%, 68% and 46% of all targets for BAF, PBAF and GBAF, respectively. SMARCB1 addback induced a shift of enrichment to distal regions for all three subcomplexes, with BAF and GBAF being the most profound (Fig. 2a), proving SMARCB1 dependency for SWI/SNF enhancer targeting. Although SMARCB1 is not present in the GBAF complex, reconstitution of BAF and PBAF through SMARCB1 expression has a major impact on GBAF complex targeting. Furthermore, the conserved nature of this shift in targeting of BAF, PBAF and GBAF indicates a potential cooperation among subcomplexes at enhancer regions. Taken as a whole, the CUT&RUN data allow us to deduce that the BAF-complex functions primarily at distal regions, the PBAF complex functions at promoter regions, and the GBAF complex functions at both, with a preference towards distal regions upon SMARCB1 addback. To further dissect the dynamic targeting of these three subcomplexes, we compared their binding profiles against each other (Fig. 2b and Extended Data Fig. 3b,c). Surprisingly, we found a substantial overlap of targeting between all three subcomplexes (Fig. 2b). Upon SMARCB1 addition, the core subunit SMARCC1 is primarily found at positions correlated with ARID1A, indicating that BAF is the predominant subcomplex (Fig. 2b). Interestingly, BRD9 is also consistently found at positions of ARID1A binding, further suggesting a potential cooperation of BAF and GBAF complexes at enhancers (Fig. 2b and Extended Data Fig. 3b,c). PBRM1 peaks also consistently overlap ARID1A peaks, preferentially at promoters (Fig. 2b and Extended Data Fig. 3b,c). The colocalization of all three subcomplexes indicates a cooperative nature, and further studies on this novel relationship could prove critical to understanding canonical SWI/SNF function. Although genomic features may lay the groundwork for SWI/SNF targeting, histone binding is also probably a major determinant of SWI/SNF occupancy. To accurately assign SWI/SNF complex targeting to chromatin states, we performed CUT&RUN of four major histone modifications over the previously described time course. Consistent with our previous report, we observed increased H3K27ac (K27ac) and H3K4me1 (K4me1) marks upon SMARCB1 addback, concurrent with gained SMARCC1 binding positions enriched at transcription start site (TSS)-distal regions, indicating enhancer activation (Fig. 2c,d). Our analysis additionally denotes novel interrelationships of subcomplex targeting and histone modifications. ARID1A encompasses the majority of gained enhancer peaks (K27ac and K4me1 signal increase), definitively implicating BAF complex in enhancer activation (Fig. 2c). Intriguingly, PBRM1 and BRD9 peaks in distal regions gained K27ac signal while K4me1 remains unaffected (Fig. 2c and Extended Data Fig. 4a,b). These histone modification fluctuations suggest that BAF complex may activate enhancer regions, PBAF and GBAF may activate primed enhancers (Extended Data Fig. 4d). To better understand the context of SWI/SNF genomic targeting in relation to TFs, we performed motif analysis of SMARCC1, ARID1A, PBRM1 and BRD9 peaks. We observed strong enrichment of AP-1 motifs in all four subunits upon SMARCB1 addback, with ARID1A showing the strongest AP-1 motif enrichment (Fig. 2e and Extended Data Fig. 3d). PBRM1 was enriched for SP1, ETS and Ronin, which are all known promoter motifs33,34. Interestingly, we also observed strong CCCTC-binding factor (CTCF) motif enrichment, consistent with the previous reports
+
+that SWI/SNF and CTCF may colocalize7,8. These results indicate a critical relationship with AP-1 across all SWI/SNF subcomplexes, and each additionally harbors a unique subset of TF motif enrichment.
+
+Fig. 2 | Dynamics of SWI/SNF subcomplex targeting. a, Genomic features of ARID1A, PBRM1, BRD9 and SMARCC1 using ChIPSeeker. b, Comparison of CUT&RUN peak numbers of SWI/SNF subunits: SMARCC1, ARID1A, PBRM1 and BRD9 in G401 cells without SMARCB1 (day 0) and with SMARCB1 addback time points (day 1 and day 3). c, Heatmaps of SWI/SNF subunits ARID1A, PBRM1, BRD9 and SMARCC1 and histone marks H3K4me3, H3K4me1 and H3K27ac, aligned to ARID1A peaks in G401 cells. TSS-proximal is defined as within ±2 kb of the TSS,
+
+and TSS-distal is all regions outside 2 kb of the TSS. d, Examples of SWI/SNF subunits targeting and histone marks using the WashU Epigenome Browser, showing gained ARID1A, and/or PBRM1, and/or BRD9 binding upon SMARCB1 addback co-occurring with gained enhancer mark K27ac and K4me. e, Motif analysis of SMARCC1, ARID1A, PBRM1 and BRD9 CUT&RUN peaks. Data for the plots in a are available as source data.
+
+Cooperation between the SWI/SNF complex and AP-1 complex We returned to the Turbo-SMARCD1 data to determine whether any of the proteins identified by motif analysis were also found to be in close proximity with SWI/SNF complexes. Although we did not identify factors such as CTCF or SP1 that were identified by SWI/SNF CUT&RUN motif analysis, AP-1 family members ( JUNB, JUND and FOSL2) were relatively strong hits within the TurboID dataset (Fig. 1f, Extended Data Fig. 2c and Supplementary Table 1). AP-1 members have been implicated in cooperation with the SWI/SNF complex in development24,35, although direct evaluation of the endogenous AP-1 and SWI/SNF subcomplex interactions and colocalization have not been studied. We selected three AP-1 members ( JUNB, JUND and JUN) for further validation by western blot, and confirmed their in vivo biotinylation (Fig. 3a). Interestingly, we found that JUND and JUNB are constitutively biotinylated, and the activated form of JUN (phospho-Ser73-Jun, pJUN)36,37 is only labeled following SMARCB1 re-expression. This suggests that AP-1 may associate with residual SWI/SNF complexes, whereas activated pJUN integration requires SMARCB1, resulting in enhanced SWI/SNF targeting. To test this hypothesis, we immunoprecipitated AP-1 members and blotted for SWI/SNF subunits, confirming an interaction with AP-1 that is drastically enhanced upon SMARCB1 addback (Fig. 3b and Extended Data Fig. 5a). We subsequently performed CUT&RUN of pJUN, JUND and JUNB over the previously described time course (Fig. 3c,d). As expected, we observed increased pJUN targeting in a SMARCB1-dependent manner, while JUND and JUNB targeting are minimally affected (Extended Data Fig. 5b). Consistent with our hypothesis, pJUN targeting is mostly shared with SWI/SNF-complex core subunit SMARCC1 (86–94%), and at day 3 most overlaps with BAF-complex subunit ARID1A (94%) rather than PBRM1 (68%) and BRD9 (58%) (Fig. 3c). Increased overlapping of SWI/SNF complex subunits with JUND is also observed, but only half of JUNB sites overlap with SWI/SNF subunits (Fig. 3c and Extended Data Fig. 5b). We performed heatmap analysis comparing the AP-1 and SWI/SNF subunit signal intensity at JUND (Fig. 4a and Extended Data Fig. 5c), JUNB (Extended Data Fig. 5d) and pJUN peaks (Fig. 4b). Interestingly we found that upon SMARCB1 addback, ARID1A, BRD9 and pJUN gained peaks colocalize with day 0 JUND peaks, whereas PBRM1 targeting at these loci remains static. Analysis of pJUN peak positions revealed enrichment of all SWI/SNF subcomplexes, particularly at distal regions (Fig. 4b). Consistent with these results, we identified example positions where (1) SMARCB1-dependent SWI/SNF subcomplexes gained regions were primed by JUNB and JUND (Fig. 3d); (2) shared BAF and GBAF subcomplexes gained regions colocalizing with AP-1; (3) GBAF and residual PBAF colocalize with AP-1 in the absence of SMARCB1; and (4) SMARCB1-dependent gained targeting of BAF complex, together with AP-1 binding and de novo formation of active enhancers (Fig. 3d). To further demonstrate this causal relationship, we performed AP-1 depletion using small interfering RNA (siRNA) against JUNB, JUND and JUN. As expected, AP-1 depletion leads to decreased SMARCB1-dependent recruitment of ARID1A and SMARCC1 at AP-1 regions (Fig. 4c,d and Extended Data Fig. 5e). Although several previous studies showed correlation between AP-1 and SWI/SNF-complex targeting, it remains inconclusive or controversial whether AP-1 acts as the guiding factor for SWI/SNF targeting14,24,35,38. To our knowledge,
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 5]
+
+30.9
+
+8.8
+
+29.0
+
+6.1
+
+6.8
+
+3.8 3.2
+
+5.5
+
+5.6
+
+27.4
+
+67.9
+
+61.3
+
+5.8
+
+50.6
+
+47.8 31.3
+
+27.8
+
+19.1 4.4 4.1
+
+5.8
+
+30.8
+
+25.16
+
+33.6
+
+29.28
+
+29.61
+
+PBRM1 vs
+
+6,768
+
+8,753
+
+4,543
+
+1,949
+
+ARID1A vs
+
+5,653
+
+4,806
+
+6,437
+
+1,880
+
+87.82% 74.66%
+
+BRD9 vs
+
+2,243
+
+2,065
+
+1,915
+
+2,543
+
+88.2%
+
+17.0 21.1
+
+15.3
+
+4.0 4.0
+
+3.6 2.4
+
+4.7 4.5
+
+31.03
+
+4.5 3.8
+
+4.5 4.5
+
+46.3
+
+41.2
+
+8.14
+
+7.1
+
+38.2
+
+35.8
+
+26.4
+
+31.0
+
+Day 1
+
+9.05
+
+6.23
+
+53.2
+
+31.09
+
+30.75
+
+25.32
+
+9.37
+
+9.5
+
+7.16
+
+7.2
+
+22.76
+
+23.1
+
+81.2%
+
+ARID1A
+
+Day:
+
+K4me3
+
+3,000
+
+K4me1
+
+18,780
+
+6,862 24,188 9,590
+
+77.64% 28.27%
+
+10,188
+
+6,376
+
+79.12% 49.51%
+
+6,000
+
+10,726 12,877
+
+18,000
+
+38,310 13,183 23,469 6,794
+
+34.41% 61.26% 17.73%
+
+16,000 14,000
+
+ARID1A vs
+
+26,551 15,275 34,327
+
+7,712
+
+77.35% 44.5%
+
+8,087
+
+9,544
+
+84.73% 77.24% 89.96%
+
+7,372
+
+15,118
+
+6,587
+
+8,586
+
+12,000
+
+14,329 18,476
+
+10,000
+
+81.83% 35.65%
+
+77.55%
+
+8,000
+
+22.47%
+
+Distal
+
+PBRM1
+
+BRD9
+
+39.65% 83.3%
+
+PBRM1 vs
+
+SMARCC1
+
+Distal 30,288
+
+All ARID1A peaks
+
+Proximal 7,387
+
+83.39% 70.5%
+
+80.35%
+
+K27ac
+
+BRD9
+
+24.14% 55.63% 27.64%
+
+8,000
+
+6,006
+
+Proximal
+
+29.21% 75.3%
+
+10,000
+
+BRD9 vs
+
+7,104
+
+14,000
+
+12,000
+
+ARID1A vs
+
+8,519
+
+51.9% 22.27%
+
+6,845
+
+BRD9 vs
+
+Day:
+
+18.34% 7.65%
+
+77.32%
+
+2,000
+
+PBRM1 vs
+
+SMARCC1 vs Day 3
+
+24.9%
+
+4,000
+
+3,000
+
+SMARCC1 vs 32,002 6,444 17,804 8,846
+
+27.93
+
+19.9
+
+24.5
+
+6,000
+
+5,000
+
+Overlap percentage
+
+1,902
+
+ARID1A
+
+4,551
+
+Day 0
+
+29.2
+
+SMARCC1
+
+6,451
+
+PBRM1
+
+25,910
+
+12.4
+
+15.3 26.8
+
+28.5
+
+32.5
+
+34.6
+
+3.4 2.7
+
+4.5 3.8
+
+21.7
+
+SMARCC1 vs
+
+Overlap percentage
+
+30.3
+
+21.8
+
+SMARCC1
+
+Overlap percentage
+
+28.7
+
+19.3
+
+BRD9
+
+Peak number
+
+PBRM1 17.3
+
+Distal
+
+Peak number
+
+ARID1A
+
+Intron
+
+Peak number
+
+Exon
+
+ARID1A
+
+5,3’UTR
+
+BRD9
+
+Promoter
+
+SMARCC1
+
+factors from the AP-1 complex directly guide SWI/SNF-subcomplex targeting, illustrating a key order of operations for the mechanism of highly dynamic SWI/SNF targeting.
+
+PBRM1
+
+this is the first demonstration of AP-1 members binding to genomic positions preceding and subsequently in conjunction with SWI/SNF binding. Accordingly, these results clearly demonstrate that pioneer
+
+–5 kb Center 5 kb
+
+–5 kb
+
+Center 5 kb
+
+4,000
+
+–5 kb Center 5 kb
+
+1,600
+
+–5 kb Center 5 kb
+
+1,400
+
+–5 kb Center 5 kb
+
+1,000
+
+–5 kb Center 5 kb
+
+Chr.12
+
+26,080 k
+
+Chr.8
+
+AC103,718.1
+
+TEX10
+
+130,690 k
+
+Chr.9
+
+SPRY1 103,100 k
+
+Chr.4
+
+–5 kb Center
+
+SMARCC1
+
+AC093821.1
+
+ARID1A ETS(ETS)
+
+124,300 k
+
+EIk4(ETS)
+
+SMARCC1
+
+7.0 k
+
+6.5 k
+
+3.0 k
+
+Sp1(Zf)
+
+5.0 k
+
+BORIS(Zf)
+
+ARID1A
+
+Ronin(THAP) CTCF(Zf) 10 k
+
+7.0 k
+
+5.0 k
+
+Fos(bZIP)
+
+4.0 k
+
+Fra1(bZIP)
+
+PBRM1
+
+JunB(bZIP) Bach2(bZIP) 2.5 k
+
+2.5 k
+
+2.0 k
+
+2.5 k
+
+Fra2(bZIP) Fosl2(bZIP)
+
+BRD9 1
+
+Jun-AP1(bZIP) D0 2.5 k
+
+3.5 k
+
+1.5 k
+
+1.5 k
+
+10 k
+
+10 k
+
+10 k
+
+10 k
+
+D1
+
+D3
+
+D7
+
+D0
+
+D1
+
+PBRM1
+
+D3
+
+D7
+
+BRD9
+
+K4me3
+
+ETS(ETS) EIk4(ETS) Sp1(Zf) BORIS(Zf)
+
+K27ac
+
+Ronin(THAP) 3.5 k
+
+2.5 k
+
+3.0 k
+
+CTCF(Zf)
+
+4.0 k
+
+Fos(bZIP)
+
+K4me1
+
+5 kb
+
+Fra1(bZIP) JunB(bZIP) 2.0 k
+
+2.5 k
+
+2.5 k
+
+3.5 k
+
+Bach2(bZIP) Fra2(bZIP)
+
+Fosl2(bZIP)
+
+BAF
+
+PBAF
+
+GBAF
+
+Shared & enhancer activation
+
+Super-enhancer
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+Jun-AP1(bZIP) D0
+
+D1
+
+D3
+
+D7
+
+D0
+
+D1
+
+D3
+
+D7
+
+[Page 6]
+
+Strep IP
+
+Input Day: Biotin:
+
+–
+
++
+
++
+
++
+
++
+
+–
+
++
+
++
+
++
+
+SMARCB1
+
+(kDa)
+
+JUND
+
+JUNB
+
+IgG
+
+JUNB
+
+pJUN
+
+JUN
+
+JUND
+
+– +
+
+– +
+
+– +
+
+– +
+
+– +
+
+– +
+
+SMARCC1
+
+(kDa) –250
+
+SMARCA4
+
+–250
+
+ARID1A
+
+–250
+
+PBRM1
+
+–250
+
+BRD9
+
+Day 1 vs
+
+92.71%
+
+Day 3 vs
+
+86.15% 68.38% 94.48% 58.39%
+
+Day 7 vs
+
+94%
+
+61.13% 96.89% 95.72%
+
+81.15% 95.32% 81.15%
+
+OTUD7B
+
+Day Chr.1
+
+Overlap percentage
+
+ARID1A
+
+PBRM1
+
+Day 0 vs 89.83% 80.59% 84.66% 82.94%
+
+Day 1 vs
+
+73.73% 37.08% 80.73% 61.33%
+
+Day 3 vs
+
+79.53% 59.38% 89.25% 44.32%
+
+Day 7 vs
+
+75.15% 48.03% 64.27% 21.54%
+
+JUND
+
+Day 1 vs 68.38% 35.82% 72.92% 65.76% Day 3 vs
+
+65.82%
+
+50.1%
+
+Day 7 vs
+
+39%
+
+30.19% 38.16% 31.57%
+
+69.41% 48.48%
+
+JUNB
+
+PBRM1
+
+K4me3 K27ac K4me1
+
+JunB Overlap percentage
+
+63.37% 41.51% 54.49% 46.17%
+
+ARID1A
+
+BRD9 Overlap percentage
+
+Day 0 vs 63.53% 45.05% 36.75% 16.13%
+
+SMARCC1
+
+pJUN
+
+Day 0 vs
+
+SMARCB1:
+
+pJUN
+
+SMARCC1
+
++
+
+IP Input
+
+JunD pJun
+
+149,910 k
+
+ATP9A Chr.20
+
+ST13P12
+
+50,270 k
+
+Chr.6
+
+110,850 k
+
+Chr.4
+
+166,500 k
+
+Chr.5
+
+82,270 k
+
+VGLL4 Chr.3
+
+11,640 k
+
+Chr.8
+
+6.0 k
+
+6.0 k
+
+9.0 k
+
+16 k
+
+8.0 k
+
+3.0 k
+
+5.0 k
+
+13 k
+
+5.5 k
+
+5.0 k
+
+12 k
+
+10 k
+
+7.0 k
+
+18 k
+
+3.0 k
+
+3.0 k
+
+3.0 k
+
+5.0 k
+
+5.0 k
+
+5.0 k
+
+5.0 k
+
+19 k
+
+3.0 k
+
+4.0 k
+
+5.0 k
+
+5.0 k
+
+3.0 k
+
+22 k
+
+10 k
+
+10 k
+
+10 k
+
+10 k
+
+10 k
+
+10 k
+
+10 k
+
+2.0 k
+
+2.0 k
+
+2.5 k
+
+4.0 k
+
+4.0 k
+
+4.0 k
+
+4.0 k
+
+3.0 k
+
+3.0 k
+
+2.5 k
+
+3.5 k
+
+3.5 k
+
+3.5 k
+
+3.5 k
+
+30 k
+
+7.0 k
+
+7.0 k
+
+18 k
+
+9.0 k
+
+9.0 k
+
+4.0 k
+
+40 k
+
+16 k
+
+12 k
+
+35 k
+
+20 k
+
+20 k
+
+50 k
+
+35 k
+
+7.0 k
+
+7.0 k
+
+22 k
+
+9k
+
+9k
+
+55 k
+
+AP-1 primed
+
+De novo recruitment & enhancer activation
+
+AP-1 primed; BAF & GBAF
+
+145,990 k
+
+BAF, PBAF and GBAF
+
+Fig. 3 | SWI/SNF complex interacts with the AP-1 complex and colocalizes on the genome. a, Western blot showing SMARCB1-dependent labeling of pJUN, and SMARCB1-independent labeling of JUND and JUNB via Turbo-SMARCD1. b, Co-immunoprecipitation of AP-1 members JUNB, pJUN, JUN and JUND with SWI/ SNF subunits SMARCC1, SMARCA4, ARID1A and PBRM1 in G401 cells, without and with SMARCB1 addback. c, Comparison of CUT&RUN peak numbers of AP-1
+
+subunits pJUN, JUND and JUNB in G401 cells without SMARCB1 (day 0) and with SMARCB1 addback time points (days 1, 3 and 7). d, Examples of SWI/SNF subunits, AP-1 subunits targeting, and histone marks using WashU Epigenome Browser, showing gained ARID1A, and/or PBRM1, and/or BRD9 binding upon SMARCB1 addback co-occurring with pJUN, JUND and JUNB binding. Uncropped images for a and b are available as source data.
+
+Recruitment of the SWI/SNF complex remodels nucleosomes
+
+of ~120–140 bp (equivalent to a mono-nucleosome) for histone marks K4me3, K27ac and K27me3. The average fragment length of all SWI/SNF subunits is ~140 bp, indicating that the primary target of the SWI/SNF complex is nucleosomal DNA. Surprisingly, we observed differential average fragment distributions for JUND (~150 bp), pJUN (bimodal distribution of <120 bp and ~140 bp) and JUNB (trimodal distribution of <40 bp, <120 bp and 140 bp) (Fig. 5b). These data indicate that nucleosome-bound DNA is the primary target of JUND, whereas pJUN and JUNB bind to both nucleosome-free DNA and nucleosomal DNA. Next, we asked whether recruitment of SWI/SNF leads to nucleosome remodeling, which would be seen by an increase in fragments below 120 bp in size. To focus our analysis towards regions of SWI/SNF activity, we took fragments under 120 bp from subunits in day 7 of SMARCB1 addback and examined the average fragment length at the same regions from day 0, day 1 and day 3 (Fig. 5c). Strikingly, we observed a gradual decrease in average fragment size from ARID1A CUT&RUN samples, strongly indicating the in vivo remodeling activity of the BAF complex (Fig. 5c and Extended Data Fig. 6a). Similar but less prominent decreases were observed in BRD9 peaks, but this result was not observed in PBRM1 peaks (Fig. 5c). Consistent with the previous observation that ARID1A targets to regions containing pJUN and JUND, we observed a similar
+
+Given our evidence that AP-1 guides SWI/SNF targeting to chromatin, we hypothesized that AP-1 recruits SWI/SNF to mobilize local nucleosomes, leading to an increase in DNA accessibility, which facilitates transcription (Fig. 5a). Although extensive work has been done to directly measure SWI/SNF chromatin remodeling activity in vitro or via indirect interpretation of ChIP-seq and assay for transposase-accessible chromatin (ATAC)-seq data12,24,35, direct in vivo remodeling activity of SWI/SNF remains to be investigated. To circumvent indirect experimentation and directly probe SWI/SNF remodeling, we adopted the recently developed tool known as enhanced chromatin occupancy (EChO)39, which directly analyzes the fragment size of reads at peaks from CUT&RUN experiments (Fig. 5a). EChO has previously been utilized to distinguish between CUT&RUN peaks representing nucleosome-bound (>120 bp) and free DNA-bound (<120 bp) pioneer factors39. We reasoned that EChO could reveal the in situ binding properties of SWI/SNF subunits, and, by analyzing the dynamic targeting of individual subunits in our SMARCB1 addback time course system, we could directly assess chromatin remodeling activity. First, we examined the average fragment length of the factors in our CUT&RUN experiments (Fig. 5b). As expected, we observed average fragment lengths
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 7]
+
+JUND Day 0 Day 1
+
+Proximal
+
+2,000
+
+1,000
+
+Proximal
+
+(5,568) (11,962)
+
+–5 Center (kb)
+
+JUNB Day 1
+
+Day 3
+
+(1,015) (6,353)
+
+Proximal
+
+1,000
+
+–5 Center (kb)
+
+pJUN Day 1
+
+–5 Center (kb)
+
+1,200
+
++5 kb –5 kb
+
+Center
+
++5 kb
+
+ARID1A at all AP-1 peaks, no dox (day 0) TSS-proximal
+
+–5 kb
+
+Day 0
+
+2,000
+
+SMARCC1 Day 0 Day 1 Day 3
+
+BRD9 Day 1 Day 3 1,000
+
+–5 Center (kb)
+
+–5 Center (kb) 1,200
+
+–5 Center (kb)
+
+Center
+
+TSS-distal
+
+2,000
+
++5 kb –5 kb
+
+Center
+
+Non-targeting control AP-1 depletion
+
++5 kb
+
+ARID1A at all AP-1 peaks, dox (day 3) TSS-proximal
+
+Non-targeting control AP-1 depletion
+
+TSS-distal
+
+1,000
+
+–5 kb
+
+1,000
+
+TSS-proximal
+
+1,200
+
+TSS-distal
+
+PBRM1 Day 1 Day 3
+
+–5 Center (kb)
+
+SMARCC1 at all AP-1 peaks, dox (day 3)
+
+1,000
+
+Day 0
+
+SMARCC1 Day 0 Day 1 Day 3
+
+1,000
+
+1,400
+
+–5 Center (kb)
+
+1,200
+
+1,000
+
+ARID1A Day 1 Day 3
+
+–5 Center (kb) 1,200
+
+1,000
+
+Signal intensity
+
+Day 0
+
+BRD9 Day 1 Day 3
+
+–5 Center (kb)
+
+1,000
+
+TSS-distal
+
+Day 0
+
+PBRM1 Day 1 Day 3
+
+1,500
+
+1,400
+
+Day 3
+
+Day 0 1,000
+
+–5 Center (kb)
+
+Center
+
+ARID1A Day 1 Day 3
+
+–5 kb
+
+Day 0
+
+SMARCC1 at all AP-1 peaks, no dox (day 0) TSS-proximal
+
+1,000
+
+Day 0
+
+5,000
+
+Day 3
+
+2,000
+
+Distal
+
+Signal intensity
+
+Day 0
+
+–5 Center (kb)
+
+1,000
+
+2,000
+
+–5 Center (kb)
+
+pJUN Day 1
+
+Day 3
+
+Day 0
+
+6,000
+
+Day 3
+
+–5 Center (kb)
+
+3,500
+
+JUND Day 0 Day 1
+
+JUNB Day 1
+
+1,000
+
+Day 0
+
+Distal
+
+JUND day 0 peaks
+
+Distal
+
+All pJUN peaks
+
+Day 3
+
+Center
+
++5 kb –5 kb
+
+Center
+
++5 kb
+
+–5 kb
+
+Center
+
++5 kb –5 kb
+
+Center
+
++5 kb
+
+Fig. 4 | Cooperative targeting between the SWI/SNF complex and AP-1 complex. a, Heatmaps of SWI/SNF subunits ARID1A, PBRM1, BRD9, SMARCC1, and AP-1 subunits pJUN and JUNB aligned to JUND day 0 peaks in G401 cells. TSS-proximal is defined as within ±2 kb of the TSS, and TSS-distal is all regions outside 2 kb of the TSS. b, Heatmaps of SWI/SNF subunits ARID1A, PBRM1, BRD9, SMARCC1, and AP-1 subunits pJUN and JUNB aligned to all pJUN peaks in G401
+
+cells. TSS-proximal is defined within ±2 kb of the TSS, and TSS-distal is all regions outside 2 kb of the TSS. c, Average profile of the SMARCC1 CUT&RUN signal before (‘No dox’, day 0) and after SMARCB1 addback (‘Dox’, day 3) following AP-1 depletion at all AP-1 peaks. d, Average profile of the ARID1A CUT&RUN signal before (‘No dox’, day 0) and after SMARCB1 addback (‘Dox’, day 3) following AP-1 depletion at all AP-1 peaks.
+
+decrease in fragment sizes from day 0 to day 3 in pJUN samples and from day 0 to day 3 in JUND samples (Fig. 5d and Extended Data Fig. 6b). This decrease is absent in JUNB samples, which suggests that much of JUNB-bound regions are nucleosome-free during the time course. Finally, we performed time-course ATAC-seq as an orthologous assay to
+
+validate these findings (Extended Data Fig. 6c). As expected, we identified 49,266 gained chromatin accessibility regions, the vast majority of which are at enhancers (47,726 versus 1,540 at promoters; Fig. 5e) and are enriched with AP-1 motifs (Extended Data Fig. 6d). Heatmap analysis shows concurrent recruitment of SWI/SNF subunits as well
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 8]
+
+Nucleosome remodeling
+
+Nucleosome binding
+
+Accessible DNA
+
+K27me3
+
+ARID1A
+
+JUND
+
+K4me3
+
+PBRM1
+
+pJUN
+
+K27ac
+
+BRD9
+
+JUNB
+
+AP1
+
+AP1
+
+CUT&RUN
+
+Average fragment size (bp)
+
+AP1
+
+CUT&RUN
+
+Fragment counts
+
+EChO
+
+Fragment size < 120 bp
+
+JU
+
+pJ
+
+UN
+
+JU
+
+D9
+
+BR
+
+RM
+
+1A ID
+
+PB
+
+AR
+
+Day 0 Day 1 Day 3 Day 7
+
+Average fragment size (bp)
+
+e3 K2 7A
+
+e3
+
+K2 7m
+
+120 bp cutoff
+
+Fragment size > 120 bp
+
+K4
+
+EChO
+
+BRD9
+
+K27me3
+
+Proximal 500
+
+JUND Day 1
+
+Day 3
+
+Day 0
+
+JUNB Day 1
+
+Day 3
+
+Day 0
+
+pJUN Day 1
+
+SMARCC1
+
+Day 3
+
+Day 0
+
+ARID1A Day 1
+
+K27me3
+
+Day 3
+
+Day 0
+
+PBRM1 Day 1
+
+Day 3
+
+pJUN
+
+Day 0
+
+BRD9 Day 1
+
+JUND
+
+Day 3
+
+Day 0
+
+SMARCC1 Day 1
+
+JUNB
+
+Day 3
+
+Day 0
+
+ATAC Day 1
+
+Day 3
+
+(1,540) proximal
+
+ARID1A
+
+(47,726) distal
+
+Gained ATAC peaks
+
+Distal
+
+Day 0
+
+PBRM1
+
+–5 Center 5 (kb)
+
+–5 Center 5 (kb)
+
+–5 Center 5 (kb)
+
+–5 Center 5 (kb)
+
+Fig. 5 | In vivo remodeling activity of the SWI/SNF complex measured by EChO. a, Model of SWI/SNF complex targeting guided by the AP-1 complex, where, upon recruitment to nucleosomes, SWI/SNF remodels the local chromatin structure. Corresponding CUT&RUN fragments of nucleosome-bound and nucleosome-free DNA are illustrated after EChO analysis. b–d, Violin plots of CUT&RUN fragment size distributions of various factors. Violin plots are defined by the minima and maxima of the fragment size, and the box is defined by the 25%, median and 75% quantiles. n = 2 independent experiments merged for histones and n = 3 independent experiments merged for AP-1 and SWI/SNF subunits. CUT&RUN fragment size distribution of SWI/SNF-complex subunits,
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+–5 Center 5 (kb)
+
+–5 Center 5 (kb)
+
+–5 Center 5 (kb)
+
+–5 Center 5 (kb)
+
+AP-1 subunits and histone marks at day 0 (b); CUT&RUN fragment size timecourse distribution of K27me3 and SWI/SNF complex subunits at subunit-specific regions where day 7 fragments were <120 bp (nucleosome-free regions) (c); CUT&RUN fragment size time-course distribution of K27me3 and AP-1 subunits at subunit-specific regions where day 7 ( JUND, pJUN and JUNB) fragments were <120 bp (d) e, Heatmaps of SWI/SNF subunits ARID1A, PBRM1, BRD9, SMARCC1, and AP-1 subunits pJUN and JUNB aligned to gained ATAC-seq peaks in G401 cells. TSS-proximal is defined as within ±2 kb of the TSS, and TSS-distal is all regions outside 2 kb of the TSS. Data for the graphs in b–d are available as source data.
+
+[Page 9]
+
+as AP-1 members at these gained regions (Fig. 5e and Extended Data Fig. 6e). This indicates that AP-1 members, probably JUND, bind first to nucleosomes and subsequently recruit the BAF complex to induce remodeling. These results suggest that EChO can be utilized to visualize the activity of chromatin remodeling complexes in vivo. Furthermore, we demonstrate that SWI/SNF binds primarily nucleosomal DNA in vivo. In line with our model, the enhancer-enriched BAF complex subsequently remodels nucleosomal DNA upon recruitment facilitated by AP-1 pioneer factors.
+
+After establishing AP-1-coordinated BAF complex targeting to enhancer regions and demonstrating subsequent chromatin remodeling and activation at these regions, we decided to investigate the consequences of this activity on higher-order chromatin interactions. Specifically, we wanted to ascertain how BAF complex targeting at enhancer regions affects enhancer–promoter interactions (enhancer loops). As enhancer regions gain K27ac and K4me1 signal upon BAF recruitment, we hypothesized that the BAF complex may aid in regulating, establishing and maintaining higher-order enhancer loops. To test this, we adopted a recently developed technique known as hi-chromatin immunoprecipitation (HiChIP)40,41, or proximity ligation-assisted ChIP (PLAC)-seq42, which allowed us to examine three-dimensional (3D) chromatin interactions defined by a single immunoprecipitated protein. To examine both active enhancer and active promoter interactions, we performed K27ac HiChIP at days 0 and 3 within our SMARCB1 addback G401 cell-line model (Fig. 6a,b). We used HiC-Pro43 and hichipper44 to process our samples as reported in previous papers, and identified ~25,000 K27ac loops (false discovery rate (FDR) < 0.01) at day 0 and ~70,000 loops (FDR < 0.01) at day 3 of SMARCB1 addback (Extended Data Fig. 7a,b). We then categorized the loops by their differential gain (logarithm of fold change (log2FC) > 0) or loss (log2FC < 0) at day 3 compared to day 0 (FDR < 0.01) and divided them into promoter–promoter (P-P), enhancer–promoter (E-P) and enhancer–enhancer (E-E) loop types based on anchor positions (Fig. 6c). We saw a drastic increase in all loop types at day 3 when compared to day 0, notably including 5,896 gained E-P loops (Fig. 6c). As SMARCB1 addback leads to enhancer activation and gained K27ac signal, it is expected that these gained loop anchors would also positively correlate with increased K27ac signal. To validate this, we plotted the FC in the loop signal against the CUT&RUN K27ac FC in the signal at loop anchors. Only 1,828 gained loops had a significant change (log2FC > 1) in K27ac signal at loop anchors (Fig. 6d). E-P loops that gain in strength without significant changes in K27ac signal have been previously ascribed to changes in 3D chromatin loop strength, yet the mechanism by which this would occur has yet to be determined41. As the only perturbation to our cell system was the addback of SMARCB1, we sought to identify whether the BAF complex may play a role in this strengthening of 3D chromatin features. By overlaying ARID1A CUT&RUN data (day 3/day 0) on the HiChIP loop anchors
+
+and plotting the log2FC of the ARID1A signal against the log2FC in loop strength, we were able to see that an increase in ARID1A signal (log2FC > 1) was found at 6,715 gained loops, a substantially larger amount than was found by the K27ac signal (Fig. 6e). In contrast, only 4,154 and 3,310 significantly gained loops were found in similar analyses of BRD9 and PBRM1, respectively, indicating that the BAF complex plays the major role in regulating enhancer loops, and PBAF and GBAF complexes play a notable but lesser role (Extended Data Fig. 7c–f). As BAF-complex enrichment correlated with K27ac enrichment, this result is not completely unsurprising, but we decided to further investigate whether the BAF enrichment alone would correlate with loop strength. To do this, we removed any loops that contained an enriched or decreased K27ac signal (day 3/day 0, log2FC < −1 or log2FC > 1) at the anchors and replotted the loop log2FC against the ARID1A signal log2FC. As we hypothesized, a significant gain (log2FC > 1) in ARID1A signal resulted in 4,892 loops also significantly increasing in strength, indicating that the BAF complex does in fact play a direct role in strengthening chromatin-loop interactions (Fig. 6f). This was further confirmed by assessing the overlap of ARID1A HiChIP loops at day 3 with K27ac HiChIP loops at days 0 and 3, and stratifying these loops by K27ac 1D signal and 3D loop strength (Fig. 6g). ARID1A loops defined 3,527 K27ac loops that were substantially strengthened without a significant change (log2FC > −1 or log2FC < 1) in K27ac signal, directly implicating ARID1A and the BAF complex as proteins affecting higher-order chromatin structure and dynamics (Fig. 6g). As our CUT&RUN analysis had demonstrated the importance of the AP-1 family in SWI/SNF targeting, we similarly analyzed K27ac loops in relation to pJUN, JUND and JUNB (Fig. 6h,i and Extended Data Fig. 7g–j). Notably, pJUN signal enrichment at day 3 was also found to correlate with K27ac loop strength increasing, with 6,950 significantly gained K27ac loops at pJUN signal enrichment, and, even in the absence of K27ac signal enrichment, 5,213 loops were still correlated with pJUN enrichment (Fig. 6h,i). To further examine how AP-1-guided BAF-complex targeting regulates enhancer interactions, we depleted AP-1 and performed H3K27ac HiChIP. As expected, we observed 8,468 lost loops upon SMARCB1 addback at day 3 in AP-1-depleted cells compared to control cells (Extended Data Fig. 7k), and, among these lost loops, the majority are E-P loops (5,588). To assess the transcriptional consequences of these K27ac loop changes, we performed RNA-seq for days 0 and 3 of our time-point experiment and annotated EP K27ac loops by the log2FC in gene expression. The assessment of all annotated loops demonstrated 2,340 upregulated genes and 1,831 downregulated genes, with 165 genes being significantly upregulated (log2FC > 1) and 29 significantly downregulated (log2FC < −1) (Fig. 6k). We then stratified the loops by loop log2FC > 1 and log2FC < −1, for gained loop genes and lost loop genes, respectively, as well as by K27ac or ARID1A log2FC in signal gain greater than 1, for K27ac gained genes and ARID1A gained genes, respectively. Gained loop genes and ARID1A gained genes each had 89 of the significantly upregulated genes, whereas K27ac gained genes only identified 53 of the significantly upregulated genes
+
+Fig. 6 | SWI/SNF-complex-mediated 3D enhancer landscapes. a, Illustration of the experimental design for K27ac and ARID1A HiChIP to examine how the SWI/SNF complex facilitates higher-order 3D enhancer interactions. b, Principal component analysis plot of K27ac and ARID1A HiChIP replicates at the indicated time points. c, Number and types of K27ac loops (FDR < 0.01) altered upon SMARCB1 addback (gained (log2FC > 0): E-P = 5,896 loops, E-E = 3,459 loops, P-P = 628 loops; lost (log2FC < 0): E-P = 788 loops, E-E = 421 loops, P-P = 90 loops). d–i, Density heatmaps showing the correlation of altered K27ac loops with various factors’ CUT&RUN signal changes at loop anchors. The heatmaps show the correlation of the K27ac loop log2FC compared to each designated factor’s log2FC (day 3/day 0) of the CUT&RUN signal at the corresponding anchor positions (d), K27ac CUT&RUN (e), ARID1A CUT&RUN (f) and ARID1A CUT&RUN at the corresponding anchor positions that had a static K27ac CUT&RUN signal across time (−1 < log2FC < 1) (g), loops shared by day-3 ARID1A, day-0 K27ac and day-3 K27ac HiChIP, stratified by the K27ac loop and K27ac CUT&RUN log2FC
+
+in the signal (h), and the pJUN CUT&RUN (i) at corresponding anchor positions that had a static K27ac CUT&RUN signal across time (−1 < log2FC < 1). j, Examples of SWI/SNF subunits SMARCC1, ARID1A, PBRM1 and BRD9 binding positions (CUT&RUN), and K27ac and ARID1A HiChIP using the WashU Epigenome Browser, highlighting colocalization of SWI/SNF complex enrichment at enhancer anchors as well as overlapping loops between K27ac and ARID1A HiChIP. k, Gene expression log2FC (adjusted P value (Padj) < 0.05) across different subsets of loops. Total loop genes contain all genes with E-P loops in day-3 and day-0 K27ac HiChIP. Gained loop genes contain total loop genes with a log2FC > 1 in loop strength (day 3/day 0). Lost loop genes contain total loop genes with a log2FC < −1 in loop strength (day 3/day 0). K27ac gained genes contain total loop genes with log2FC > 1 in the K27ac CUT&RUN signal at the anchor positions (day 3/day 0). ARID1A gained genes contain total loop genes with log2FC > 1 in the ARID1A CUT&RUN signal at the anchor positions (day 3/day 0). Data for the plots in c and k are available as source data.
+
+BAF complex recruitment facilitates 3D enhancer interactions
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 10]
+
+(Fig. 6k). These data are consistent with previous reports demonstrating that increased chromatin looping at promoters is correlated with an increase in gene expression. Consistent with our previous
+
+hypothesis, the ARID1A gained genes were more similar to gained loop genes than K27ac gained genes, a finding that corroborates that increased ARID1A binding is more correlated with gained loops than
+
+SMARCB1 addback
+
+Day 0 K27ac
+
+Day 3 ARID1A
+
+Rep2
+
+BAF K27ac
+
+HiChIP
+
+10,000
+
+Number of loops
+
+Principal component 2
+
+BAF K27ac
+
+E-P E-E P-P
+
+Rep1 Rep2
+
+K27ac
+
+Loop types 12,000
+
+Rep1
+
+–100
+
+8,000 6,000 4,000 2,000
+
+Day 3 K27ac Rep2 Rep1
+
+–200 –100
+
+–200 Chromatin contacts/anchors
+
+6,134
+
+Count
+
+–5
+
+–10
+
+–10
+
+–5
+
+log2FC in ARID1A binding at strongest FC anchor
+
+1,242
+
+Count
+
+–5
+
+–10
+
+–10
+
+–5 K27ac differential loops (D3/D0, log2FC)
+
+log2FC in pJUN binding at strongest FC anchor
+
+Count
+
+–5
+
+–10
+
+–10
+
+–5 K27ac differential loops (D3/D0, log2FC)
+
+BRD9 ATAC K27ac
+
+–5
+
+1,349
+
+3,527 Count
+
+–10
+
+–5 K27ac differential loops (D3/D0, log2FC)
+
+128 M
+
+CCDC26 130 M
+
+ARID1A HiChIP Day 3 Rep 1 ARID1A HiChIP Day 3 Rep 2
+
+4,500
+
+5,213
+
+–5
+
+–10
+
+–5 K27ac differential loops (D3/D0, log2FC)
+
+Gene expression stratified by loops
+
+4,000
+
+Count
+
+–10
+
+LINC000824
+
+PVT1
+
+K27ac HiChIP Day 3 Rep 1
+
+Loops with static K27ac signal
+
+MYC
+
+K27ac HiChIP Day 3 Rep 2
+
+–5
+
+–10
+
+CASC8
+
+K27ac HiChIP Day 0 Rep 2
+
+PCAT1
+
+K27ac HiChIP Day 0 Rep 1
+
+ARID1A and K27ac shared loops
+
+Count
+
+K27ac differential loops (D3/D0, log2FC)
+
+6,960
+
+PBRM1
+
+1,247
+
+–5
+
+Loops stratified by pJUN logFC
+
+–10
+
+ARID1A
+
+–10
+
+4,892
+
+Chr. 8
+
+6,715
+
+Loops with static K27ac signal
+
+PCAT1
+
+SMARCC1
+
+K27ac differential loops (D3/D0, log2FC)
+
+log2FC in ARID1A binding at strongest FC anchor
+
+log2FC in K27ac binding at strongest FC anchor
+
+log2FC in K27ac binding at strongest FC anchor
+
+1,828
+
+Gained Lost
+
+500 kb
+
+Loops stratified by ARID1A log2FC
+
+3,500
+
+Number of genes
+
+Loops with all K27ac signal
+
+Principal component 1
+
+log2FC in pJUN binding at strongest FC anchor
+
+3,000 2,500
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+Increased Decreased Significantly decreased
+
+2,000 1,500 1,000
+
+Significantly increased
+
+Total loop Gained loop Lost loop K27ac gained ARID1A genes genes genes genes gained genes
+
+[Page 11]
+
+increased K27ac binding. Therefore, we have demonstrated that SWI/ SNF, and specifically the BAF complex, is targeted to chromatin by AP-1, where it remodels both the 1D and 3D chromatin features and generates transcriptional changes during the process.
+
+Discussion
+
+This work presents an all-encompassing multi-omics study of SWI/SNF dynamics: their cofactor interactions via proximity-based labeling, genome-wide targeting of all subcomplexes, their correlation with histone modifications and pioneer factor AP-1 members, and their impact on higher-order chromatin architectures in vivo through HiChIP. Assessing our data as a whole, we propose a model where SMARCB1 addback stabilizes the BAF complex, allowing for interaction with and stabilization of pJUN. AP-1 acts as a pioneer factor to bind nucleosomes directly, and subsequently targets the BAF complex to these closed regions. The BAF complex stabilizes the pJUN-nucleosome interaction and begins remodeling the chromatin region. The BAF complex recruits histone acetyltransferases, which generate an enrichment in H3K27ac nucleosomes, as reported by others. At the same time, the BAF complex also attracts and interacts with loop-forming proteins such as the Mediator complex, forming and strengthening E-P hubs to generate transcriptional changes. Our development of a functional TurboID-SWI/SNF tool catalyzes broad interactome profiling of SWI/SNF partners in a variety of cell-state contexts. The temporally controlled use of this proximity-labeling system can support novel interactome profiling across a variety of models, such as development and cancer plasticity, allowing the field of chromatin remodeling to easily assess both homeostatic/normal and disease-specific SWI/SNF interactomes. Within this study alone, many of the hits found by Turbo-SMARCD1 have confirmed previously implicated interactions or discovered novel players in the chromatin remodeling field. The identification of interactions with histone acetyltransferase proteins, the NURD complex, AP-1 complex and the Mediator complex are of particular interest, as they both confirm previous hypotheses and support future areas of study. We hope further proximity-labeling experiments across different cell environments will aid in the identification of all SWI/SNF-pioneer factor interactions and define novel agonists and antagonists of SWI/SNF function. Through interactome and genome-wide profiling, we have established that SWI/SNF targeting is guided by the AP-1 complex. Although the system we utilized preferentially looks at novel BAF targeting, which demonstrated the most notable correlation with AP-1 binding, we also were able to identify AP-1 targeting of PBAF and GBAF to a lesser extent. As AP-1 TFs have previously been suggested to act as pioneer TFs35, a class of TFs that can bind nucleosomes directly to induce activation, it is not surprising that AP-1 would interact with SWI/SNF during the course of initial chromatin remodeling. Other studies utilizing SMARCA4 addback in SCOOHT cells found that the ATPase module defines BAF and PBAF subcomplexes identity and differential targeting at promoters and enhancers10, and determined that the AP-1 motif is enriched at promoters38. Taken together, we believe that it is likely that most pioneer TFs target SWI/SNF activity through nucleosome binding, as has been alluded to in previous studies14,24,35,38. SMARCB1 plays a major role in the stability of the BAF complex and is required for effective binding and activation of enhancer regions17,19. By utilizing this SMARCB1 addback system, we were able to dissect the process and identify the players involved in BAF targeting. Of key importance, the identification of pioneer factor binding by AP-1 to target reconstituted BAF indicates a broadly applicable model for chromatin landscape activation across normal development and chromatin landscape dysregulation in cancer development. The demonstration that this SWI/SNF targeting both stabilizes and generates higher-order chromatin interactions is also of great note and has implications in the study of diseases associated with SWI/SNF aberrations. Ranging from autism to cancer, SWI/SNF mutations have been identified as putative
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+drivers of disease states4, yet most research has focused solely on how these mutations affected the 1D chromatin landscape. Our results indicate that more focus should be placed on how SWI/SNF mutations impact changes within the 3D chromatin architecture, as these alterations will probably have broad effects across the transcriptome.
+
+Online content
+
+Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41594-022-00880-x.
+
+References
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+Wang, W. et al. Purification and biochemical heterogeneity of the mammalian SWI-SNF complex. EMBO J. 15, 5370–5382 (1996). Olave, I. A., Reck-Peterson, S. L. & Crabtree, G. R. Nuclear actin and actin-related proteins in chromatin remodeling. Annu. Rev. Biochem. 71, 755–781 (2002). Wang, X., Haswell, J. R. & Roberts, C. W. M. Molecular pathways: SWI/SNF (BAF) complexes are frequently mutated in cancer— mechanisms and potential therapeutic insights. Clin. Cancer Res. 20, 21–27 (2014). Mittal, P. & Roberts, C. W. M. The SWI/SNF complex in cancer-biology, biomarkers and therapy. Nat. Rev. Clin. Oncol. 17, 435–448 (2020). Mashtalir, N. et al. Modular organization and assembly of SWI/SNF family chromatin remodeling complexes. Cell 175, 1272–1288 (2018). Alpsoy, A. & Dykhuizen, E. C. Glioma tumor suppressor candidate region gene 1 (GLTSCR1) and its paralog GLTSCR1-like form SWI/ SNF chromatin remodeling subcomplexes. J. Biol. Chem. 293, 3892–3903 (2018). Michel, B. C. et al. A non-canonical SWI/SNF complex is a synthetic lethal target in cancers driven by BAF complex perturbation. Nat. Cell Biol. 20, 1410–1420 (2018). Gatchalian, J. et al. A non-canonical BRD9-containing BAF chromatin remodeling complex regulates naive pluripotency in mouse embryonic stem cells. Nat. Commun. 9, 5139 (2018). Wang, X. et al. BRD9 defines a SWI/SNF sub-complex and constitutes a specific vulnerability in malignant rhabdoid tumors. Nat. Commun. 10, 1881 (2019). Pan, J. et al. The ATPase module of mammalian SWI/SNF family complexes mediates subcomplex identity and catalytic activity-independent genomic targeting. Nat. Genet. 51, 618–626 (2019). Hodges, H. C. et al. Dominant-negative SMARCA4 mutants alter the accessibility landscape of tissue-unrestricted enhancers. Nat. Struct. Mol. Biol. 25, 61–72 (2018). Schick, S. et al. Acute BAF perturbation causes immediate changes in chromatin accessibility. Nat. Genet. 53, 269–278 (2021). Iurlaro, M. et al. Mammalian SWI/SNF continuously restores local accessibility to chromatin. Nat. Genet. 53, 279–287 (2021). Kelso, T. Chromatin accessibility underlies synthetic lethality of SWI/SNF subunits in ARID1A-mutant cancers. eLife 6, e30506 (2017). Yu, Y. et al. Olig2 targets chromatin remodelers to enhancers to initiate oligodendrocyte differentiation. Cell 152, 248–261 (2013). Ho, L. et al. An embryonic stem cell chromatin remodeling complex, esBAF, is an essential component of the core pluripotency transcriptional network. Proc. Natl Acad. Sci. USA 106, 5187–5191 (2009). Wang, X. et al. SMARCB1-mediated SWI/SNF complex function is essential for enhancer regulation. Nat. Genet. 49, 289–295 (2017).
+
+[Page 12]
+
+18. Alver, B. H. et al. The SWI/SNF chromatin remodelling complex is required for maintenance of lineage specific enhancers. Nat. Commun. 8, 14648 (2017). 19. Nakayama, R. T. et al. SMARCB1 is required for widespread BAF complex-mediated activation of enhancers and bivalent promoters. Nat. Genet. 49, 1613–1623 (2017). 20. Weintraub, A. S. et al. YY1 is a structural regulator of enhancer-promoter loops. Cell 171, 1573–1588 (2017). 21. Di Giammartino, D. C. et al. KLF4 is involved in the organization and regulation of pluripotency-associated three-dimensional enhancer networks. Nat. Cell Biol. 21, 1179–1190 (2019). 22. Dekker, J. & Misteli, T. Long-range chromatin interactions. Cold Spring Harb. Perspect. Biol. 7, a019356 (2015). 23. Tang, Z. et al. CTCF-mediated human 3D genome architecture reveals chromatin topology for transcription. Cell 163, 1611–1627 (2015). 24. Vierbuchen, T. et al. AP-1 transcription factors and the BAF complex mediate signal-dependent enhancer selection. Mol. Cell 68, 1067–1082 (2017). 25. Branon, T. C. et al. Efficient proximity labeling in living cells and organisms with TurboID. Nat. Biotechnol. 36, 880–898 (2018). 26. Soutourina, J. Transcription regulation by the Mediator complex. Nat. Rev. Mol. Cell Biol. 19, 262–274 (2018). 27. Cenik, B. K. & Shilatifard, A. COMPASS and SWI/SNF complexes in development and disease. Nat. Rev. Genet. 22, 38–58 (2021). 28. Bracken, A. P., Brien, G. L. & Verrijzer, C. P. Dangerous liaisons: interplay between SWI/SNF, NURD, and polycomb in chromatin regulation and cancer. Genes Dev. 33, 936–959 (2019). 29. Park, J.-H. et al. Mammalian SWI/SNF complexes facilitate DNA double-strand break repair by promoting γ-H2AX induction. EMBO J. 25, 3986–3997 (2006). 30. Brookes, E. & Shi, Y. Diverse epigenetic mechanisms of human disease. Annu. Rev. Genet. 48, 237–268 (2014). 31. Skene, P. J. & Henikoff, S. An efficient targeted nuclease strategy for high-resolution mapping of DNA binding sites. eLife 6, e21856 (2017). 32. Yu, G., Wang, L. G. & He, Q. Y. ChIP seeker: an R/Bioconductor package for ChIP peak annotation, comparison and visualization. Bioinformatics 31, 2382–2383 (2015). 33. Kaczynski, J., Cook, T. & Urrutia, R. Sp1- and Krüppel-like transcription factors. Genome Biol. 4, 206 (2003). 34. Hollenhorst, P. C., Shah, A. A., Hopkins, C. & Graves, B. J. Genome-wide analyses reveal properties of redundant and
+
+https://doi.org/10.1038/s41594-022-00880-x specific promoter occupancy within the ETS gene family. Genes Dev. 21, 1882–1894 (2007). 35. Gao, F. et al. Heterozygous mutations in SMARCA2 reprogram the enhancer landscape by global retargeting of SMARCA4. Mol. Cell 75, 891–904 (2019). 36. Herdegen, T. et al. Lasting N-terminal phosphorylation of c-Jun and activation of c-Jun N-terminal kinases after neuronal injury. J. Neurosci. 18, 5124–5135 (1998). 37. Shaulian, E. & Karin, M. AP-1 as a regulator of cell life and death. Nat. Cell Biol. 4, E131–E136 (2002). 38. Orlando, K. A. et al. Re-expression of SMARCA4/BRG1 in small cell carcinoma of ovary, hypercalcemic type (SCCOHT) promotes an epithelial-like gene signature through an AP-1-dependent mechanism. eLife 9, e59073 (2020). 39. Meers, M. P., Janssens, D. H. & Henikoff, S. Pioneer factor-nucleosome binding events during differentiation are motif encoded. Mol. Cell 75, 562–575 (2019). 40. Mumbach, M. R. et al. HiChIP: efficient and sensitive analysis of protein-directed genome architecture. Nat. Methods 13, 919–922 (2016). 41. Mumbach, M. R. et al. Enhancer connectome in primary human cells identifies target genes of disease-associated DNA elements. Nat. Genet. 49, 1602–1612 (2017). 42. Fang, R. et al. Mapping of long-range chromatin interactions by proximity ligation-assisted ChIP-seq. Cell Res. 26, 1345–1348 (2016). 43. Servant, N. et al. HiC-Pro: an optimized and flexible pipeline for Hi-C data processing. Genome Biol. 16, 259 (2015). 44. Lareau, C. A. & Aryee, M. J. hichipper: a preprocessing pipeline for calling DNA loops from HiChIP data. Nat. Methods 15, 155–156 (2018). Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law. © The Author(s), under exclusive licence to Springer Nature America, Inc. 2022
+
+Nature Structural & Molecular Biology | Volume 30 | January 2023 | 10–21
+
+[Page 13]
+
+Methods
+
+Cell culture G401 and 293T cell lines were purchased from American Type Culture Collection. Cell lines were cultured in DMEM with 10% FBS. The SMARCB1-inducible re-expression stable G401 cell line was created previously17 and was maintained in medium with Tet-free FBS (Gibco, cat. no. 16140071). To induce SMARCB1 re-expression, cells were treated with doxycycline (dox, 1 μg ml−1, EMD Millipore) for the indicated time. Cells underwent mycoplasma testing using a polymerase chain reaction (PCR) kit (E-Myco Mycoplasma PCR Kit, cat. no. NC0767644, Bulldog Bio). To knock down (KD) AP-1 member expression, cells were transfected with Lipofectamine RNAiMAX transfection reagent (Thermo Fisher, cat. no. 13778075) and collected at the indicated time points. SMARTpool ON-TARGETplus siRNA targeting JUND, JUNB and JUN and non-targeting control siRNA were purchased from Horizon Discovery (cat. nos. L-003269-00-0005, L-003900-00-0005, L-003268-00-0005 and D-001810-10-05, respectively).
+
+Immunoblotting Immunoblotting was performed as previously described17. Antibodies to the following proteins were used in the immunoprecipitation and immunoblots: SMARCC1/BAF155 (1:3,000 dilution; Santa Cruz, sc9746); ARID1A (1:3,000 dilution; Cell Signaling Technology, 12354 and home-made); ARID1B (1:1,000 dilution; Abcam, ab54761); SMARCA4/ BRG1 (1:500 dilution; Santa Cruz, sc17796 and home-made); SMARCC2/ BAF170 (1:3,000 dilution; Bethyl Laboratories, A301-039A); SMARCD1/ BAF60A (1:3,000 dilution; Bethyl Laboratories, A301-595A); SMARCE1/ BAF57 (1:3,000 dilution; Bethyl Laboratories, A300-810A); SMARCB1/ SNF5 (1:3,000 dilution; Bethyl Laboratories, A301-087A); ACTL6A/ BAF53A (1:3,000 dilution; Bethyl Laboratories, A301-391A); actin-HRP (1:3,000 dilution; Santa Cruz, sc-47778).
+
+Glycerol sedimentation assay Briefly, cells were collected at the indicated time points, then lysed and homogenized in hypotonic buffer (10 mM HEPES (pH 7.6), 25 mM KCl, 1 mM EDTA, 10% glycerol, 1 mM dithiothreitol (DTT) and protease inhibitors (complete tablets, Roche) supplemented with 1 mM PMSF) on ice. Nuclei were sedimented by centrifugation (1,000g for 10 min), resuspended in high salt extraction buffer (10 mM HEPES (pH 7.6), 3 mM MgCl2, 100 mM KCl, 0.1 mM EDTA, 1 mM DTT and protease inhibitors). Soluble nuclear proteins were separated from the insoluble chromatin fraction by centrifugation (100,000g for 20 min). Nuclear extract was carefully overlaid onto a 12-ml 10–35% glycerol (in buffer with protease inhibitors) gradient prepared in a 14-ml 14 × 95 mm polyallomer centrifuge tube (Beckman Coulter, cat. no. 331374). Tubes were placed in an SW-40Ti swing bucket rotor and centrifuged at 4 °C for 16 h at 285,000g (40,000 r.p.m.). Fractions were collected and used in gel electrophoresis and subsequent western blotting analyses.
+
+TurboID cloning, protein purification and mass spectrometry TurboID and miniTurboID plasmids were obtained from Addgene (plasmids 107171 and 107172). Fragments of SWI/SNF subunits were subcloned from Addgene plasmids (SMARCD1, 21034; BICRAL/GLTSCR1L, 107732) and TransOMIC (BRD7, BC094706; DPF2, BC014889; PHF10, BC020954). Fragments were cloned into the TurboID plasmid to be in-frame with TurboID fusion, and confirmed by sequencing. SMARCD1 with TurboID and miniTurboID fusion was subcloned into pLenti-Puro lentiviral vector (Addgene, plasmid 39481). 293T cells were transiently transfected with TurboID fusion proteins, and, 48 h post-transfection, cells were collected for immunoprecipitation assay. G401 cells were infected with lentivirus (Turbo-SMARCD1 fusion or miniTurbo-SMARCD1), selected, and maintained with puromycin (1 μg ml−1). We followed a TurboID benchmark study45 for biotin treatment, sample processing and data analysis. Briefly, the biotin treatment time was optimized via streptavidin-IP
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+followed by western blotting for biotin. Optimal treatment times for TurboID and miniTurboID were 6 and 12 h, respectively (Extended Data Fig. 2c). Cells were treated with biotin (50 μM) and/or doxycycline at the indicated times points and collected for MS. Protein purification. Cell were lysed and homogenized in hypotonic buffer (10 mM HEPES (pH 7.6), 25 mM KCl, 1 mM EDTA, 10% glycerol, 1 mM DTT and protease inhibitors (cOmplete tablets, Roche) supplemented with 1 mM PMSF) on ice. Nuclei were sedimented by centrifugation (1,000g for 10 min), resuspended in high salt extraction buffer (10 mM HEPES (pH 7.6), 3 mM MgCl2, 300 mM KCl, 0.1 mM EDTA, 1 mM DTT and protease inhibitors). Soluble nuclear proteins were separated by the insoluble chromatin fraction by centrifugation (100,000g for 20 min). The nuclear fraction was diluted 1:1 with extraction buffer (10 mM HEPES (pH 7.6), 3 mM MgCl2, 0.1 mM EDTA, 1 mM DTT and protease inhibitors) to bring down the salt concentration to 150 mM. The diluted nuclear fraction was incubated with Pierce streptavidin magnetic beads (cat. no. 88817, Thermo Fisher) overnight with rotation in a cold room. Beads were washed twice with IP buffer (10 mM HEPES (pH 7.6), 3 mM MgCl2, 150 mM KCl, 0.1 mM EDTA, 1 mM DTT and protease inhibitors), twice with high salt extraction buffer, twice with stringent wash buffer (10 mM HEPES (pH 7.6), 3 mM MgCl2, 300 mM KCl, 0.5% sodium dodecyl sulfate (SDS), 0.1 mM EDTA, 1 mM DTT and protease inhibitors) at 42 °C for 5 min, and three times with UltraPure water (cat. no. 10977015, Thermo Fisher). For regular MS, beads were eluted with reducing SDS-loading buffer and proteins were precipitated using trichloroacetic acid (TCA), trypsin-digested, and analyzed by nanoscale microcapillary LC-MS/MS on an LTQ-Orbitrap Fusion (Thermo Fisher Scientific), as described in ref. 46. Peptides were identified by spectral matching47 to the human proteome (www.uniprot.org; 20,352 proteins, download date 24 February 2020) and curated to a 1% FDR using the target-decoy strategy48. Spectral count numbers are reported as redundant spectral matches that uniquely map to the protein of interest. For TMT-MS, samples were submitted frozen on magnetic beads to the Thermo Fisher Center for Multiplexed Proteomics (TCMP) for TMT16 Quant-IP analysis49. Briefly, beads were washed once in 200 mM 3-[4-(2-hydroxyethyl)-1-piperazinyl]propanesulfonic acid (EPPS), pH 8.0 and resuspended in 200 μl of EPPS. Proteins were digested with 2 μg of Lys-C for 2 h. Supernatant was removed to a new tube and digested with 1.5 μg of trypsin overnight at 37 °C. Peptides were cleaned by stage tip, dried by speedvac, and resuspended in 200 mM EPPS. Peptides were labeled with TMT16 reagents for 2 h at room temperature. Labeling reactions were quenched with 0.5% hydroxylamine to reverse over-labeling for 15 min at room temperature and acidified with the addition of trifluoroacetic acid. Samples were combined, desalted and dried by speedvac. Peptides were resuspended in 5% acetonitrile and 5% formic acid and analyzed on an Orbitrap Eclipse mass spectrometer equipped with a FAIMS ion source. Peptides were separated using a gradient of 5–50% acetonitrile in 0.125% formic acid over 150 min. Peptides were detected (MS1), sequenced (MS2) and quantified (MS2) in the Orbitrap. MS2 spectra were searched using the SEQUEST algorithm against a UniProt composite database derived from the human proteome containing its reversed complement and known contaminants. Peptide spectral matches were filtered to a 1% FDR using the target-decoy strategy combined with linear discriminant analysis. The proteins were filtered to a <1% FDR. Proteins were quantified only from peptides with a summed signal-to-noise (SN) threshold of >150 and MS2 isolation specificity of 0.7. Of the 1,640 total collapsed proteins, 1,430 were able to be quantified by 8,193 peptides. The raw data for TMT-MS are provided as Supplementary Table 1. All proteins identified by more than one peptide were subjected to downstream analysis. Each TMT value and replicate was compared against the duplicate NLS-TurboID controls individually, calculating the
+
+[Page 14]
+
+log2FC and associated P value adjusted by Benjamini-Hochberg (BH)/ FDR. True hits were identified by FC > 1.5 and P < 0.05. Differentially labeled proteins upon SMARCB1 re-expression were identified by comparing day 0 and day 3 TMT values using the same FC and P-value cutoffs. Data were visualized using TMTMosaic V2.0. SMARCD1-TurboID true hits after SMARCB1 addback (Supplementary Table 1) were visualized on Cytoscape. Protein-protein interactions were determined by utilizing the string database with high-confidence interactions.
+
+CUT&RUN CUT&RUN was performed as described previously, with some modifications31,50,51. Briefly, cells were collected and washed three times with wash buffer (20 mM HEPES (pH 7.5), 150 mM, 0.5 mM spermidine, Roche Complete protease inhibitor-EDTA free) at room temperature to minimize stress and DNA breakage. After the final wash, the cells were resuspended in the wash buffer by gently pipetting. Concanavalin A-coated beads (Bang Laboratories) activated in binding buffer (20 mM HEPES (pH 7.5), 10 mM KCl, 1 mM CaCl2, MnCl2) were then added to the cell suspension (10 μl of beads per sample) and incubated with rotation at room temperature for 10 min. Tubes were then placed on a magnetic separator, liquid was aspirated and 100 μl of antibody buffer (wash buffer with 2 mM EDTA and 0.1% digitonin) was added. The digitonin concentration was determined based on >95% permeability of Trypan blue on G401 cells treated with increasing concentrations of digitonin. Primary antibodies were added and mixed by gentle tapping of the tubes, then incubated overnight in a cold room with rotation. Cells were then washed three times with digi wash buffer (wash buffer with 0.05% digitonin), and 100 μl of protein A/G-MNase fusion protein diluted in digi wash buffer was added. After 1 h of incubation in the cold room, the cells were washed three times with digi wash buffer. Prechilled incubation buffer (3.5 mM HEPES (pH 7.5), 10 mM CaCl2, 0.05% digitonin) was added to the cells, and incubated at 0 °C (ice block) for 30 min. The reaction was stopped by adding 2X stop buffer (340 mM NaCl, 40 mM EGTA, 0.1% digitonin, 100 μg ml−1 RNase, 50 μg ml−1 glycogen and proteinase K, 0.5% SDS) and vortexed immediately. The cells were incubated at 37 °C for 30 min, then 65 °C for 30 min. DNA was extracted using phenol:chloroform:isoamyl alcohol (cat. no. 15593031, Thermo Fisher) and purified using the ProNex purification system (cat. no. NG2003, Promega). The CUT&RUN library was prepared using the NEBNext Ultra II DNA Library Prep Kit for Illumina (cat. no. E7645L, New England Labs). Libraries were paired-end sequenced with read lengths of 150 bp (PE 2 × 150 on the Illumina HiSeq Genome Analyzer), with an average of 10 million reads per sample. Antibodies used in CUT&RUN: SMARCC1/BAF155 (1:100 dilution; Thermo Fisher, PA5-30174); ARID1A (1:100 dilution; home-made); BRD9 (1:100 dilution; Activemotif, 61537); PBRM1/BAF180 (1:100 dilution; Bethyl Laboratories, A700-019); pJUN-Ser73 (1:100 dilution; Cell Signaling Technology, 3270); JUND (1:100 dilution; Thermo Fisher, 720035); JUNB (1:100 dilution; Cell Signaling Technology, 3753); H3K4me1 (1:100 dilution; Cell Signaling Technology, 5326); H4K4me3 (1:100 dilution; Cell Signaling Technology, 9751); H3K27ac (1:100 dilution; Cell Signaling Technology, 8173); H3K27me3 (1:100 dilution; Cell Signaling Technology, 9733). For SWI/SNF and AP-1 CUT&RUN, three biological replicates were used. For siRNA treatment experiments, two biological replicates were used.
+
+Hi-chromatin immunoprecipitation HiChIP was performed as described previously, with some modifications40. Briefly, for K27ac HiChIP, 10 million cells were crosslinked for 10 min at room temperature with 1% formaldehyde. For ARID1A HiChIP, 30 million cells were first crosslinked with 3 mM disuccinimidyl glutarate (DSG) for 30 min followed by 10 min of 1% formaldehyde. Cells were then quenched with glycine for 5 min. The cells were washed with ice-cold phosphate buffered saline three times.
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+In situ contact generation. The cells were lysed using HiC lysis buffer (10 mM Tris-HCl (pH 7.5), 10 mM NaCl, 0.2% NP40 with Complete protease inhibitor cocktail) for 30 min on ice. The nuclei were pelleted and washed once with HiC lysis buffer, then resuspended in 100 μl of 0.5% SDS and incubated at 62 °C for 10 min (no shaking). SDS was quenched by adding 335 μl of 1.5% Triton X-100 and incubated for 15 min at 37 °C. A 50-μl volume of 10X NEB buffer 2 (cat. no. B7002, New England Biolabs) and 15 μl of 25 U μl−1 MboI restriction enzyme (cat. no. R0147, New England Biolabs) were added, and chromatin was digested at 37 °C for 2 h with rotation. MboI enzyme was heat-inactivated by incubating the nuclei at 62 °C for 20 min (no shaking). Biotin-dATP (cat. no. 19524016), together with dCTP, dGTP, dTTP, DNA polymerase I, large (Klenow) fragment (cat. no. M0210, New England Biolabs) were added, and the tubes were incubated at 37 °C for 1 h with rotation. Proximity ligation was performed by the addition of NEB T4 DNA ligase buffer with 10 mM ATP (cat. no. B0202, New England Biolabs), T4 DNA ligase (cat. no. M0202, New England Biolabs) and BSA. Tubes were incubated at room temperature for 4 h with rotation. After proximity ligation, nuclei with in situ-generated contacts were pelleted by centrifugation at 2,500 r.c.f. for 5 min. Sonication and ChIP. The nuclei were resuspended with Covaris shearing buffer (cat. no. PN520154, Covaris) and sonicated with a Covaris E220 system. Sonicated chromatin was clarified by centrifugation at 16,100 r.c.f. for 10 min at 4 °C, and the supernatant was transferred to new tubes with addition of ChIP dilution buffer. Primary antibody was added to the tubes, which were then incubated overnight in the cold room with rotation. Protein A/G Dyna beads (50 μl) were washed and added to the sample tube for another 2-h incubation in the cold room. The beads were separated on a magnetic stand and washed with low salt wash buffer, high salt wash buffer, LiCl wash buffer and Tris-EDTA (TE) buffer. The beads were then eluted twice with 100 μl of elution buffer at 65 °C for 15 min. The elutions were combined, then 15 μl of 20 mg ml−1 proteinase K was added (cat. no. 25530049, Invitrogen). The tubes were incubated at 55 °C for 45 min with shaking (ThermoMixer; 1,000 r.p.m.), then incubated at 65 °C for 5 h with shaking. DNA was purified using a Monarch PCR & DNA cleanup kit (cat. no. T1030S, New England Biolabs). Biotin capture and tagmentation. Streptavidin C1 magnetic beads (cat. no. 65001, Invitrogen) were washed and added to 10–150 ng of DNA (we used 150 ng DNA for K27ac and 30 ng for ARID1A). The samples were incubated at room temperature for 15 min, followed by washing twice with Tween wash buffer and once with 1× Tagment DNA (TD) buffer. To tagment the captured DNA, 1–4 μl Nextera tagment DNA enzyme 1 (Illumina) was added in TD buffer. The samples were incubated at 55 °C for 10 min with interval shaking. The beads were immediately washed with 50 mM EDTA at 50 °C for 30 min with interval shaking, followed by washing twice with Tween wash buffer and once with 10 mM Tris-HCl (pH 7.5). The DNA was indexed with Nextera index primers and PCR-amplified (9–10 cycles). After PCR, the libraries were purified and size-selected using the ProNex purification system (cat. no. NG2003, Promega). The libraries were then paired-end sequenced with read lengths of 150 bp (PE 2 × 150 on the Illumina HiSeq Genome Analyzer). Two biological replicates were used.
+
+Assay for transposase-accessible chromatin sequencing ATAC-seq (omni-ATAC) was performed as described previously. Briefly, 100,000 cells were collected and used for individual tagmentation experiments. The library was size-selected and cleaned up using the ProNex purification system (cat. no. NG2003, Promega) and was paired-end sequenced with the Illumina HiSeq genome analyzer (PE 2 × 150). Two biological replicates were used.
+
+RNA-sequencing RNA-seq was performed as described in ref. 17. Briefly, total RNA was extracted using TRIzol Reagent (Invitrogen) and further purified using
+
+[Page 15]
+
+the Monarch RNA cleanup kit (New England Biolabs). Total RNA (1 μg) was used to generate each RNA-seq library using the NEBNext Ultra II RNA Library Prep Kit for Illumina (New England Biolabs), and the libraries were paired-end sequenced with the Illumina HiSeq Genome Analyzer. Three biological replicates were used.
+
+Sample processing and data analysis
+
+CUT&RUN alignment and peak calling. Fastq files of the paired-end histone, TF and SWI/SNF CUT&RUN data were generated from the Illumina HiSeq platform. The samples were processed with the BBTools suite (version 38.42). Reads were deduplicated with the clumpify tool using flag -dedupe -subs=2, and subsequently trimmed with bbduk using the parameters --ktrim=r --k=21 --mink=11 --hdist=1 --tpe --tbo. The trimmed fastq files were then aligned to the Hg19 human genome using bowtie2 aligner52. Specifically, we used parameter ‘--end-to-end --very-sensitive --no-mixed --no-discordant -q -I 10 -X 700–phred33’ for the alignment. The aligned SAM files were further converted and sorted into BAM files using samtools software53. Bam files were converted to bed files after removing chrM, chrUn and reads containing ‘random’ as the chromosome position. Bed files were further cleaned by removing regions contained in the hg19 blacklist from ENCODE (v2)54. TF binding peaks were called by using the MACS2 software (v.2.1.1.20160309) with parameters at default ‘callpeak -g hs -f BAMPE -q 0.05 -B’55. Peaks were further cleaned by selecting signalValue greater than 5. Histones and SWI/SNF peaks were called by using the Epic2 software (v.0.0.41) with default parameters setting56,57. Peaks were further cleaned by the following criteria: FDR ≤ 0.05, log2FC (signal/background) ≥ 1, and read count > 20 within the peak (with a read count greater than 10 for BRD9 samples). Histone CUT&RUN was run with duplicates, and TF and SWI/SNF CUT&RUN was run in triplicate. For each factor, replicate bigwiggle files were merged using bigWigMerge, the resulting bedgraphs were sorted with the command ‘sort -k1,1 -k2,2n’, averages of the signal were calculated based on replicate quantity, and bedGraphToBigWig was used on the default parameters to convert the merged bedgraphs into merged bigwiggle files. Replicates correlation and peak merge and motif identification. To evaluate the reproducibility of sample replicates, two independent methods, bin enrichment analysis and correlation analysis, were used. In the bin enrichment analysis, we first identified all significant peaks binding with the SWI/SNF subunits in the two experimental batches. Following that, we divided all peaks into small bins, each of 100 bp in size, and then the number of shared bins was counted. Fisher’s exact test was used to estimate the statistical significance, and the percentage of shared bins indicates the level of consistency. The enrichment analysis at the bin level is robust compared with peak-level analysis—different peaks vary dramatically in their sizes and thus peak-based analysis is more sensitive to broader peaks. Using Pearson correlation analysis, we calculate the SWI/SNF subunit binding signals at each bin using the data from the two batches. The correlation of the bin signals between the two batches indicates the consistency. Our results from both bin enrichment analysis and correlation analysis indicate that the replicates are highly consistent, so the peaks were merged for downstream analysis. Peak files of each of the replicates were merged to create a conserved peak file for each histone modification, TF and SWI/SNF factor. Specifically, the bedtools ‘intersect’ function was used to take the overlapped peak regions from different replicates with a minimum length longer than 100 bp. We further separated the merged peak regions into TSS-proximal and -distal regions based on the distance to the TSS. TSS-proximal regions (±2 kb) were identified by utilizing the diffloop package function ‘getHumanTSS’ with 2 kb of padding on either side58. The bedtools ‘intersect’ function was then used to identify all peaks from each factor’s CUT&RUN merged peaks that overlapped TSS-proximal positions. Peaks that overlapped the TSS-proximal regions and peaks that did not have any overlap with TSS-proximal regions were separately concatenated and merged using bedtools
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+on default parameters for ‘intersect -wa’ to generate factor-specific proximal and distal peaksets, respectively. Heatmaps of other factors at these proximal and distal positions were then generated using the deepTools suite59,60 (v.3.3.1) functions ‘computeMatrix’, ‘plotHeatmap’ and ‘plotProfile’. The ‘findMotifsGenome’ function from the HOMER software (v4.11.1) was used to examine the motif enrichment of SWI/ SNF and AP-1 peaks with parameter ‘-size 200’. Enhanced chromatin occupancy analysis. EchO analysis has previously been utilized to identify whether TF-bound regions were nucleosomal or nucleosome-free. We thus used this program to identify whether our factors of interest were binding nucleosomal DNA or free DNA during the course of SMARCB1 addback. EChO analysis was conducted as described previously39. EChO (version 1.0) was applied to merged peak files and merged fragment bedpe files. EChO was used on default with the ‘foci’ parameter, resulting in an EChO bed file that contained the peak file’s local minima of read lengths within the original bedpe file. The day-7 EChO bed files were then selected for foci below 120 bp with the bash script ‘$4<120 {print $0}’ ‘BEGIN{s=1}; { if(s==1){ line=$0; chr=$1; stop=$3+50; size=$4; s++}else{ if(chr==$1 && $2<stop){ if($4<size) {line=$0; chr=$1; stop=$3+50; size=$4 } }else{ print line; line=$0; chr=$1; stop=$3+50; size=$4 }}}’’. This script identifies the true minima (foci) below 120 bp within a region by screening a 50-bp window on either side of the foci until finding the smallest fragment size foci within the local region. Bedtools ‘intersect’ was used with default parameters to map these identified foci onto the original peaksets that were used for EChO bed file generation. These peaks, from day 7, therefore contain the region identified by EChO to be the foci with average fragment size under 120 bp, which are considered to be nucleosome-free regions of DNA. EChO analysis was subsequently conducted on all other time point’s peak files in the same manner, to create EChO bed files containing all foci. For each individual factor, default bedtools ‘intersect’ was used on the day 7 < 120 bp peak file and the day 0/1/3 EChO bed files to identify foci from the factor’s previous time points that fell within the day 7 nucleosome-free peaks. As there can be multiple foci identified within a peak region, the smallest foci were determined for each peak and these foci were used to generate violin plots with ggplot2. RNA-sequencing analysis. Sequencing was performed on an Illumina HiSeq instrument to obtain an average of raw 150-bp paired-end reads per sample. Raw.bcl files were demultiplexed using the Illumina bcl2fastq2 pipeline. Briefly the adaptors were trimmed using ‘Trimmomatic’, and sample quality was assessed using fastqc. Trimmed reads passing quality assessment were then aligned to the hg19 human genome with STAR, and gene count matrices were generated with featureCounts. Differential gene expression analysis was then conducted using DESeq261, with each day in the time point being compared to day 0. Statistical significance was evaluated using the Wald test provided in DESeq2.
+
+Assay for transposase-accessible chromatin sequencing analysis Fastq files of the paired-end ATAC-seq data were acquired from illumina HiSeq. BBDuk software was used to trim the adaptors with the parameter ‘ktrim=r k=23 mink=11 hdist=1 tpe tbo’ (http://jgi.doe. gov/data-and-tools/bb-tools/). The trimmed fastq files were then aligned to the Hg19 human genome using bowtie2 aligner52. We used the ‘very-sensitive’ mode for alignment. The aligned SAM files were further converted to bedgraph files using Deeptools software with the function ‘bamCoverage’ and corrected for Tn5 insertion53. MACS2 software was used for calling peaks based on the bedgraph files from ATAC-seq data with the parameter ‘-g hs -q 0.01 --nomodel --shift 0’55. Hi-chromatin immunoprecipitation analysis. Hi-chromatin immunoprecipitation alignment and loop calling. Fastq files of the paired-end HiChIP data were acquired from Illumina HiSeq. The annotation file
+
+[Page 16]
+
+UCSC genome browser62. The HiChIP interaction pairs were identified by the HiC-Pro program with the following parameter setting: MIN_MAPQ = 10, BOWTIE2_GLOBAL_OPTIONS = --very-sensitive -L 30 --score-min L,−0.6,−0.2 --end-to-end --reorder, BOWTIE2_ LOCAL_OPTIONS = --very-sensitive -L 20–score-min L,−0.6,−0.2 --end-to-end–reorder, LIGATION_SITE = GATCGATC, GET_ALL_INTERACTION_CLASSES = 1, GET_PROCESS_SAM = 0, RM_SINGLETON = 1, RM_MULTI = 1, RM_DUP = 1, BIN_SIZE = 20000 40000 150000 500000 1000000, MATRIX_FORMAT = upper, MAX_ITER = 100, FILTER_LOW_ COUNT_PERC = 0.02, FILTER_HIGH_COUNT_PERC = 0, EPS = 0.1. DNA loop analysis was conducted using hichipper (v.0.7.5)44 with default parameters, utilizing the HiC-Pro allValidPairs file and the filtered CUT&RUN peaks for the corresponding factor and time point. Differential loop analysis and classification. The diffloop package (v.1.16.0)58 was used for all downstream analysis. Non-significant (FDR > 0.1) and self-ligated loops were filtered out. Loops present (≥5 paired-end tags) in one replicate but absent in the other were also removed. The function ‘quickAssoc’ was used to identify significantly differential loops (FDR < 0.01) for downstream analysis. For each protein HiChIP analyzed, corresponding merged bedgraph files from day-0 and day-3 CUT&RUN datasets were used with the function ‘annotateAnchors’ to annotate differential loop anchors by the log2FC (log2(day3/ day0)) in signal across the anchor. The anchor with the maximum absolute log2FC was used to represent the entire loop for annotation. Promoters were defined with the function ‘getHumanTSS’, with 2 kb of padding on either side. Enhancers were defined as the union of day-0 and day-3 K27ac CUT&RUN peaks, ±1 kb of padding, with the promoter regions removed. RNA annotation was conducted utilizing the ‘annotateLoops. dge’ function, and loops were annotated with CUT&RUN data as previously described. Gained loop genes were defined as log2FC > 1 for loop strength or CUT&RUN signal change, depending on the feature analyzed. Lost loop genes were defined as log2FC < −1 for loop strength. P values were calculated utilizing the Kruskal–Wallis method with the ‘ggpubr’ package (https://rpkgs.datanovia.com/ggpubr/).
+
+Peak overlap analysis The ChIPpeakAnno package was used to examine the overlap between peak files. The ‘findOverlapOfPeaks’ function was used with the parameter ‘maxgap = 0L, minoverlap = 1L, connectedPeaks = keepAll)’. The sizes of the peaks identified from CUT&RUN and ATAC-seq analysis vary substantially, causing bias in quantifying the statistical significance for peak overlap. To overcome the bias issue, we divided each merged peak set of ATAC-seq and CUT&RUN experiments into small bins (100 bp in size). The overlaps of two peaksets were then converted into a comparison of the bins covered by them. Shared bins were counted to be evaluated, and the statistical significance was examined using Fisher’s exact test.
+
+Quantify the SWI/SNF binding signal in ATAC-seq regions The binding of SWI/SNF in the chromatin accessibility region was calculated by the normalized reads of SWI/SNF factors. Specifically, the ‘multiBamSummary’ function provided in Deeptools software was used to calculate the read counts of each SWI/SNF subunit in the ATAC-seq peaks59,60. The raw counts matrix was further normalized by the sequencing depth for downstream analysis.
+
+Statistics and reproducibility MS, RNA-seq, ATAC-seq, CUT&RUN and HiChIP experiments were performed with two or three replicates to allow statistical analysis. Western blots are representative of two independent experiments. All attempts at replication were successful.
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+Reporting summary Further information on research design is available in the Nature Portfolio Reporting Summary linked to this Article.
+
+Data availability
+
+All next-generation sequencing data are available from the Gene Expression Omnibus (GEO) under accession nos. GSE175534 and GSE196960. Source data are provided with this paper.
+
+References
+
+45. Cho, K. F. et al. Proximity labeling in mammalian cells with TurboID and split-TurboID. Nat. Protoc. 15, 3971–3999 (2020). 46. Kettenbach, A. N. et al. Global assessment of its network dynamics reveals that the kinase Plk1 inhibits the phosphatase PP6 to promote Aurora A activity. Sci. Signal. 11, eaaq1441 (2018). 47. Eng, J. K., Jahan, T. A. & Hoopmann, M. R. Comet: an opensource MS/MS sequence database search tool. Proteomics 13, 22–24 (2013). 48. Elias, J. E. & Gygi, S. P. Target-decoy search strategy for mass spectrometry-based proteomics. Methods Mol. Biol. 604, 55–71 (2010). 49. Paek, J. et al. Multidimensional tracking of GPCR signaling via peroxidase-catalyzed proximity labeling. Cell 169, 338–349 (2017). 50. Skene, P. J., Henikoff, J. G. & Henikoff, S. Targeted in situ genome-wide profiling with high efficiency for low cell numbers. Nat. Protoc. 13, 1006–1019 (2018). 51. Meers, M. P., Bryson, T. D., Henikoff, J. G. & Henikoff, S. Improved CUT&RUN chromatin profiling tools. eLife 8, e46314 (2019). 52. Langmead, B. & Salzberg, S. L. Fast gapped-read alignment with Bowtie 2. Nat. Methods 9, 357–359 (2012). 53. Li, H. et al. The Sequence alignment/map format and SAMtools. Bioinformatics 25, 2078–2079 (2009). 54. Amemiya, H. M., Kundaje, A. & Boyle, A. P. The ENCODE blacklist: identification of problematic regions of the genome. Sci. Rep. 9, 9354 (2019). 55. Zhang, Y. et al. Model-based analysis of ChIP-Seq (MACS). Genome Biol. 9, R137 (2008). 56. Stovner, E. B. & Sætrom, P. Epic2 efficiently finds diffuse domains in ChIP-seq data. Bioinformatics 35, 4392–4393 (2019). 57. Zang, C. et al. A clustering approach for identification of enriched domains from histone modification ChIP-Seq data. Bioinformatics 25, 1952–1958 (2009). 58. Lareau, C. A. & Aryee, M. J. diffloop: a computational framework for identifying and analyzing differential DNA loops from sequencing data. Bioinformatics 34, 672–674 (2018). 59. Ramirez, F. deepTools2: a next generation web server for deep-sequencing data analysis. Nucleic Acids Res. 44, W160–W165 (2016). 60. Ramírez, F., Dündar, F., Diehl, S., Grüning, B. A. & Manke, T. deepTools: a flexible platform for exploring deep-sequencing data. Nucleic Acids Res. 42, W187–W191 (2014). 61. Love, M. I., Huber, W. & Anders, S. Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15, 550 (2014). 62. Kent, W. J. et al. The human genome browser at UCSC. Genome Res. 12, 996–1006 (2002).
+
+Acknowledgements
+
+We thank all members of the Wang laboratory for insightful and helpful discussions. We thank S. Henikoff (Fred Hutchinson Cancer Research Center) for providing the pA/G-MNase fusion protein, M. Meers (Fred Hutchinson Cancer Research Center) for helping with EChO analysis, and X. Zhang (Huntsman Cancer Institute) for helping with HiChIP analysis. This work was supported by the US National Institutes of Health (grants nos. R00CA197640 (X.W.), R01CA259850
+
+[Page 17]
+
+(X.W.) and R01GM122846 (S.A.G.)), the Cancer Prevention Research Institute of Texas (CPRIT, RR180061 to C.C.) and a Dartmouth College Norris Cotton Cancer Center Support Grant (P30CA023108).The Andrew McDonough B+ (Be Positive) Foundation provided additional support for X.W. C.C. is a CPRIT Scholar in Cancer Research.
+
+Author contributions
+
+B.K.W. and X.W. conceived the experiments and study design. A.M. and W.H.H. designed and performed the TurboID experiments. B.W.K., A.M. and X.W. performed the CUT&RUN, ATAC-seq, RNA-seq and HiChIP experiments. L.T.D., I.S.L. and S.A.G. helped with the TurboID experiments. B.K.W. and Y.Z. performed computational analyses. N.W.S. analyzed the RNA-seq data. C.C. supervised the computational analysis. All authors contributed to the interpretation of experiments. B.K.W., A.M. and X.W. wrote the manuscript, with input from all co-authors.
+
+Competing interests
+
+B.K.W. consults for SQZ Biotechnologies. The other authors declare no competing interests.
+
+https://doi.org/10.1038/s41594-022-00880-x
+
+Additional information
+
+Extended data is available for this paper at https://doi.org/10.1038/s41594-022-00880-x. Supplementary information The online version contains supplementary material available at Correspondence and requests for materials should be addressed to Chao Cheng or Xiaofeng Wang. Peer review information Nature Structural & Molecular Biology thanks the anonymous reviewers for their contribution to the peer review of this work. Primary Handling editor: Carolina Perdigoto, in collaboration with the Nature Structural & Molecular Biology team. Peer reviewer reports are available. Reprints and permissions information is available at
+
+[Page 18]
+
+Extended Data Fig. 1 | Co-immunoprecipitation of SMARCC1 with indicated TurboID fusion subunits. Co-immunoprecipitation of SMARCC1 with indicated TurboID fusion subunits and endogenous subunits showing how fusion of TurboID could impair subunit interaction with core subunit SMARCC1, indicating impaired ability to form intact complex.
+
+[Page 19]
+
+Extended Data Fig. 2 | See next page for caption.
+
+[Page 20]
+
+Extended Data Fig. 2 | SWI/SNF interactome via proximity-based labeling. a. Glycerol sedimentation (10–35%) assay of major SWI/SNF core subunits (SMARCC1, SMARCC2, SMARCA4, SMARCD1, ACTL6A), subcomplex specific subunits (BAF: ARID1A, ARID1B, DPF2; PBAF: ARID2, PBRM1, PHF10; GBAF/ ncBAF: BRD9, GLTSCR1) in G401 cells without SMARCB1 (Day 0) and SMARCB1 reexpression at Day 1, 3, and 7, showing rapid assembly of BAF and PBAF complexes and shift of subunits from GBAF to BAF and PBAF. b. Glycerol sedimentation assay of G401 SMARCD1-miniTurbo cells with and without SMARCB1, demonstrating SMARCD1-miniTurboID migrates similarly to endogenous SMARCD1. c. Western
+
+blot of Streptavidin IP of SMARCD1-TurboID and SMARCD1-miniTurboID nuclear lysate after different timepoints of exogenous biotin treatment. d. Volcano plot of TMT values for peptides labeled by SMARCD1-TurboID in G401 cells (Day 3 of SMARCB1 addback) compared to control NLS-TurboID G401 cells. e. Volcano plot of TMT values for peptides labeled by SMARCD1-TurboID in G401 cells (Day 3 of SMARCB1 addback) compared to SMARCD1-miniTurboID. T test function was used with each group’s protein expression data as input, and p values were generated by two-sided tests, no adjustment p values were used.
+
+[Page 21]
+
+Extended Data Fig. 3 | See next page for caption.
+
+[Page 22]
+
+Extended Data Fig. 3 | Dynamics of SWI/SNF subcomplexes targeting. a. CUT&RUN peak numbers of SWI/SNF subunits: SMARCC1, ARID1A, PBRM1, and BRD9 in G401 cells without SMARCB1 (Day 0) and with SMARCB1 addback time points (Day 1, 3, and 7). b. Venn diagram comparison of CUT&RUN peak numbers of SWI/SNF subunits: SMARCC1, ARID1A, PBRM1, and BRD9 in G401 cells without SMARCB1 (Day 0) and with SMARCB1 addback time points (Day 1, 3, and 7). c. Genomic features of ARID1A regions overlapped with PBRM1, BRD9, and SMARCC1 (Top left), SMARCC1 regions overlapped with PBR1, BRD9, and ARID1A
+
+(Top right), BRD9 regions overlapped with PBRM1, ARID1A, and SMARCC1 (Bottom left), PBRM1 regions overlapped with ARID1A, BRD9, and SMARCC1 (Bottom right). d. Heatmap of HOMER identified motifs enriched in ARID1A, BRD9, PBRM1, and SMARCC1 CUT&RUN peaks over a time-course of SMARCB1 addback. T test function was used and p values were generated by two-sided tests, no adjustment p values were used. e. Heatmap of the percentage of peaks containing the motifs identified in part D for each peak set.
+
+[Page 23]
+
+Extended Data Fig. 4 | See next page for caption.
+
+[Page 24]
+
+Extended Data Fig. 4 | Dynamics of SWI/SNF subcomplexes targeting. a. Heatmaps of GBAF specific subunit BRD9 with histone marks aligned to all BRD9 peaks in G401 cells. TSS-proximal is defined ± 2 Kb of TSS, TSS-distal is all regions outside 2 Kb of TSS. b. Heatmaps of PBAF specific subunit PBRM1 with histone marks aligned to all PBRM1 peaks in G401 cells. TSS-proximal is defined ±2 Kb of TSS, TSS-distal is all regions outside 2 Kb of TSS. c. Heatmaps of profiled SWI/SNF subunits and histone marks aligned to all SMARCC1 peaks. TSS-proximal is defined ±2 Kb of TSS, TSS-distal is all regions outside 2 Kb of
+
+TSS. d. Number of differential K27ac / K4me1 peaks over our time course (by DiffBind) at ARID1A, PBRM1, and BRD9 bound regions. The respective histone’s time point was compared against Day 0, specifically at peak regions contained by the respective SWI/SNF subunit. Differentially gained regions are defined as regions with an FDR < = 0.05, and log2FC > 0. e. Additional examples of SWI/SNF subunits targeting and histone marks using WashU Epigenome Browser, showing gained ARID1A, and/or PBRM1, and/or BRD9 binding upon SMARCB1 addback co-occurring with gained enhancer mark K27ac and K4me1.
+
+[Page 25]
+
+Extended Data Fig. 5 | See next page for caption.
+
+[Page 26]
+
+Extended Data Fig. 5 | SWI/SNF complex interacts with AP-1 complex and colocalizes on genome. a. Western blot of G401 cells at Day 0 and 3 of SMARCB1 addback Immuno-Precipitated with AP-1 family proteins. b. Venn diagram comparison of CUT&RUN peak numbers of AP-1 subunits pJUN, JUND, and JUNB with ARID1A, PBRM1, and BRD9 without SMARCB1 (Day 0) and SMARCB1 re-expression (Day 1 and Day 3). c. Heat maps of SWI/SNF subunits ARID1A, PBRM1, BRD9, SMARCC1, and AP-1 subunits pJUN and JUNB aligned to
+
+all JUND peaks in G401 cells. TSS-proximal is defined ±2 Kb of TSS, TSS-distal is all regions outside 2 Kb of TSS. d. Heat maps of SWI/SNF subunits ARID1A, PBRM1, BRD9, SMARCC1, and AP-1 subunits pJUN and JUNB aligned to all JUNB peaks in G401 cells. TSS-proximal is defined ±2 Kb of TSS, TSS-distal is all regions outside 2 Kb of TSS. e. Average profile of SMARCC1 and ARID1A CUT&RUN signal before and after SMARCB1 addback following AP-1 depletion compared to a non-targeting control.
+
+[Page 27]
+
+Extended Data Fig. 6 | Cooperative targeting between SWI/SNF complex and AP-1 complex. a. Proportion of fragments >120 bp in ARID1A, BRD9, PBRM1, and SMARCC1 CUT&RUN samples at indicated time points demonstrating the remodeling capacity of ARID1A-BAF complex (related to Fig. 5c). b. Proportion of fragments >120 bp in pJUN, JUND, and JUNB CUT&RUN samples at indicated time points (related to Fig. 5d). c. ChIPseeker genomic feature analysis of ATAC-seq
+
+peaks identified in G401 cells at each timepoint of SMARCB1 addback. d. HOMER Motif enrichment for ATAC-seq peaks identified in G401 cells at each timepoint of SMARCB1 addback. e. Specific examples using the WashU Epigenome browser showing regions that gain SWI/SNF and AP-1 binding after SMARCB1 addback, resulting in increased chromatin accessibility.
+
+[Page 28]
+
+Extended Data Fig. 7 | See next page for caption.
+
+[Page 29]
+
+Extended Data Fig. 7 | SWI/SNF complex mediated 3-D enhancer landscapes. a. Summary of loops identified in K27ac and ARID1A HiChIP experiments. b. Additional example of SWI/SNF subunits SMARCC1, ARID1A, PBRM1, and BRD9 binding positions (CUT&RUN), and K27ac and ARID1A HiChIP using WashU Epigenome Browser, highlighting colocalization of SWI/SNF complex enrichment at enhancer anchors as well as overlapping loops between K27ac and ARID1A HiChIP (Left); Shown in the volcano plots highlighting genes in this region (CEBPB, KCNB1, PREX1, NCOA3) that are upregulated (Right). P values were generated by two-sided tests. c-j. Density heat-map showing correlation of altered K27ac loops with various factors’ CUT&RUN signal change at loop anchors: correlation of K27ac loop log fold change compared to BRD9 CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions (C); correlation of K27ac loop log fold change compared to BRD9 CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions that had static K27ac CUT&RUN signal across time (−1 < log2FC < 1) (D); correlation of K27ac loop log fold change compared to PBRM1 CUT&RUN signal log2 fold change
+
+https://doi.org/10.1038/s41594-022-00880-x (Day3/Day0) at corresponding anchor positions (E); correlation of K27ac loop log fold change compared to PBRM1 CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions that had static K27ac CUT&RUN signal across time (−1 < log2FC < 1) (F); correlation of K27ac loop log fold change compared to JUNB CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions (G); correlation of K27ac loop log fold change compared to JUNB CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions that had static K27ac CUT&RUN signal across time (−1 < log2FC < 1) (H); correlation of K27ac loop log fold change compared to JUND CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions (I); correlation of K27ac loop log fold change compared to JUND CUT&RUN signal log2 fold change (Day3/Day0) at corresponding anchor positions that had static K27ac CUT&RUN signal across time (−1 < log2FC < 1) (J). k. Differential K27ac HiChIP Enhancer-Promoter, Enhancer-Enhancer, and Promoter-Promoter loops upon AP-1 depletion.

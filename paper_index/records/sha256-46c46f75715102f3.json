@@ -1,0 +1,653 @@
+{
+  "paper_id": "sha256-46c46f75715102f3",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/protein_folding_and_design/Baker 2004 - Protein structure prediction using Rosetta.pdf",
+  "pdf_sha256": "46c46f75715102f3f9031aaac95a857a004ebc73814e756813f3427e84f89d0b",
+  "filename": "Baker 2004 - Protein structure prediction using Rosetta.pdf",
+  "item_type": "article",
+  "title_query": "Protein structure prediction using Rosetta",
+  "filename_hints": {
+    "year_hint": 2004,
+    "venue_hint": "",
+    "prefix": "Baker 2004"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:36:23.808884+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "Protein structure prediction using Rosetta",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "ce557091070ef633a4bdff8dc94dcb42c485928b",
+      "externalIds": {
+        "DBLP": "books/el/04/RohlSMB04",
+        "MAG": "1548178570",
+        "DOI": "10.1016/S0076-6879(04)83004-0",
+        "CorpusId": 33163298,
+        "PubMed": "15063647"
+      },
+      "url": "https://www.semanticscholar.org/paper/ce557091070ef633a4bdff8dc94dcb42c485928b",
+      "title": "Protein Structure Prediction Using Rosetta",
+      "venue": "Numerical Computer Methods, Part D",
+      "year": 2004,
+      "openAccessPdf": {
+        "url": "",
+        "status": "CLOSED",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0076-6879(04)83004-0?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0076-6879(04)83004-0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": null,
+      "journal": {
+        "name": "Methods in enzymology",
+        "pages": "\n          66-93\n        ",
+        "volume": "383"
+      },
+      "authors": [
+        {
+          "authorId": "2132214",
+          "name": "C. Rohl"
+        },
+        {
+          "authorId": "144465303",
+          "name": "C. Strauss"
+        },
+        {
+          "authorId": "47457283",
+          "name": "Kira M. S. Misura"
+        },
+        {
+          "authorId": "2241617405",
+          "name": "D. Baker"
+        }
+      ],
+      "abstract": null
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "ce557091070ef633a4bdff8dc94dcb42c485928b",
+        "title": "Protein Structure Prediction Using Rosetta",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2004,
+        "candidate_year": 2004,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4924786e11790d28b65b2822d45ab5c6cdd5907e",
+        "title": "Multipass membrane protein structure prediction using Rosetta",
+        "score": 0.99,
+        "title_similarity": 0.92,
+        "query_year": 2004,
+        "candidate_year": 2005,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ab585020d9101c782ad0c05add0487f5264e6e6f",
+        "title": "Protein structure prediction using Rosetta in CASP12",
+        "score": 0.88,
+        "title_similarity": 0.92,
+        "query_year": 2004,
+        "candidate_year": 2018,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3d7cd86a4f31f9f23aa3a0e09a731b5c12b507c3",
+        "title": "Reduced Fragment Diversity for Alpha and Alpha-Beta Protein Structure Prediction using Rosetta.",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2004,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "833eb2dad1cca7840cc3cc5dba8afe2966eb9752",
+        "title": "A Multistage Simulated Annealing for Protein Structure Prediction Using Rosetta",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2004,
+        "candidate_year": 2018,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "39f03429a9eba47c4dbf99e7ea7727d214928510",
+        "title": "Ab initio protein structure prediction of CASP III targets using ROSETTA",
+        "score": 0.785,
+        "title_similarity": 0.825,
+        "query_year": 2004,
+        "candidate_year": 1999,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "539c35c5e2457c0344eceba333a4d6e6c32c19c2",
+        "title": "Protein structure prediction using sparse NOE and RDC restraints with Rosetta in CASP13",
+        "score": 0.745,
+        "title_similarity": 0.825,
+        "query_year": 2004,
+        "candidate_year": 2019,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5d01a7639129073742c71b96d1376cc14f8d7e05",
+        "title": "The Protein Structure Prediction Problem Approached by a Cascade Differential Evolution Algorithm Using ROSETTA",
+        "score": 0.7291,
+        "title_similarity": 0.8091,
+        "query_year": 2004,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7573c2f2637d7a23a3312d9f6b3669d3ae15074e",
+        "title": "Improved protein structure prediction using predicted interresidue orientations",
+        "score": 0.6356,
+        "title_similarity": 0.6756,
+        "query_year": 2004,
+        "candidate_year": 2019,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a4740114e69928ab0e2ba55f2a5df6a0d43e8b20",
+        "title": "Protein Structure Prediction Using Dynamic Speciation Evolutionary Algorithm with Aggregated Problem Information",
+        "score": 0.5567,
+        "title_similarity": 0.6367,
+        "query_year": 2004,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1016/s0076-6879(04)83004-0"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 31305,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "ce557091070ef633a4bdff8dc94dcb42c485928b",
+          "externalIds": {
+            "DBLP": "books/el/04/RohlSMB04",
+            "MAG": "1548178570",
+            "DOI": "10.1016/S0076-6879(04)83004-0",
+            "CorpusId": 33163298,
+            "PubMed": "15063647"
+          },
+          "url": "https://www.semanticscholar.org/paper/ce557091070ef633a4bdff8dc94dcb42c485928b",
+          "title": "Protein Structure Prediction Using Rosetta",
+          "venue": "Numerical Computer Methods, Part D",
+          "year": 2004,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0076-6879(04)83004-0?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0076-6879(04)83004-0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "Methods in enzymology",
+            "pages": "\n          66-93\n        ",
+            "volume": "383"
+          },
+          "authors": [
+            {
+              "authorId": "2132214",
+              "name": "C. Rohl"
+            },
+            {
+              "authorId": "144465303",
+              "name": "C. Strauss"
+            },
+            {
+              "authorId": "47457283",
+              "name": "Kira M. S. Misura"
+            },
+            {
+              "authorId": "2241617405",
+              "name": "D. Baker"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "ab585020d9101c782ad0c05add0487f5264e6e6f",
+          "externalIds": {
+            "MAG": "2757160879",
+            "DOI": "10.1002/prot.25390",
+            "CorpusId": 3390533,
+            "PubMed": "28940798"
+          },
+          "url": "https://www.semanticscholar.org/paper/ab585020d9101c782ad0c05add0487f5264e6e6f",
+          "title": "Protein structure prediction using Rosetta in CASP12",
+          "venue": "Proteins: Structure, Function, and Bioinformatics",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/prot.25390",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/prot.25390?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/prot.25390, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-03-01",
+          "journal": {
+            "name": "Proteins: Structure",
+            "pages": "113 - 121",
+            "volume": "86"
+          },
+          "authors": [
+            {
+              "authorId": "145154843",
+              "name": "S. Ovchinnikov"
+            },
+            {
+              "authorId": "2326313",
+              "name": "Hahnbeom Park"
+            },
+            {
+              "authorId": "1409917275",
+              "name": "David E. Kim"
+            },
+            {
+              "authorId": "2210247",
+              "name": "F. DiMaio"
+            },
+            {
+              "authorId": "2241617405",
+              "name": "D. Baker"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "4924786e11790d28b65b2822d45ab5c6cdd5907e",
+          "externalIds": {
+            "MAG": "2101810621",
+            "DOI": "10.1002/prot.20817",
+            "CorpusId": 6858755,
+            "PubMed": "16372357"
+          },
+          "url": "https://www.semanticscholar.org/paper/4924786e11790d28b65b2822d45ab5c6cdd5907e",
+          "title": "Multipass membrane protein structure prediction using Rosetta",
+          "venue": "Proteins: Structure, Function, and Bioinformatics",
+          "year": 2005,
+          "openAccessPdf": {
+            "url": "https://europepmc.org/articles/pmc1479309?pdf=render",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/prot.20817?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/prot.20817, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2005-12-21",
+          "journal": {
+            "name": "Proteins: Structure",
+            "volume": "62"
+          },
+          "authors": [
+            {
+              "authorId": "2286119361",
+              "name": "Vladimir Yarov-Yarovoy"
+            },
+            {
+              "authorId": "4874683",
+              "name": "J. Schonbrun"
+            },
+            {
+              "authorId": "2248742702",
+              "name": "David Baker"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "3d7cd86a4f31f9f23aa3a0e09a731b5c12b507c3",
+          "externalIds": {
+            "MAG": "2588345154",
+            "DOI": "10.2174/0929866523666161216124019",
+            "CorpusId": 44318730,
+            "PubMed": "27993124"
+          },
+          "url": "https://www.semanticscholar.org/paper/3d7cd86a4f31f9f23aa3a0e09a731b5c12b507c3",
+          "title": "Reduced Fragment Diversity for Alpha and Alpha-Beta Protein Structure Prediction using Rosetta.",
+          "venue": "Protein Peptide Letters",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "https://eprints.kingston.ac.uk/id/eprint/37129/1/Abbass-J-37129-AAM.pdf",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.2174/0929866523666161216124019?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.2174/0929866523666161216124019, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "Protein and peptide letters",
+            "pages": "\n          215-222\n        ",
+            "volume": "24 3"
+          },
+          "authors": [
+            {
+              "authorId": "2221049",
+              "name": "Jad F. Abbass"
+            },
+            {
+              "authorId": "3085605",
+              "name": "Jean-Christophe Nebel"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "833eb2dad1cca7840cc3cc5dba8afe2966eb9752",
+          "externalIds": {
+            "MAG": "2947641030",
+            "CorpusId": 191206557
+          },
+          "url": "https://www.semanticscholar.org/paper/833eb2dad1cca7840cc3cc5dba8afe2966eb9752",
+          "title": "A Multistage Simulated Annealing for Protein Structure Prediction Using Rosetta",
+          "venue": "",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://www6.univali.br/seer/index.php/acotb/article/download/12846/7341, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2018-05-10",
+          "journal": {
+            "name": "Anais do Computer on the Beach",
+            "pages": "850-859",
+            "volume": ""
+          },
+          "authors": [
+            {
+              "authorId": "31793331",
+              "name": "Renan Samuel da Silva"
+            },
+            {
+              "authorId": "9178751",
+              "name": "R. S. Parpinelli"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "7573c2f2637d7a23a3312d9f6b3669d3ae15074e",
+          "externalIds": {
+            "MAG": "2983571096",
+            "DOI": "10.1073/pnas.1914677117",
+            "CorpusId": 209563981,
+            "PubMed": "31896580"
+          },
+          "url": "https://www.semanticscholar.org/paper/7573c2f2637d7a23a3312d9f6b3669d3ae15074e",
+          "title": "Improved protein structure prediction using predicted interresidue orientations",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://www.pnas.org/doi/pdf/10.1073/pnas.1914677117",
+            "status": "BRONZE",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1914677117?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1914677117, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-11-18",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences",
+            "pages": "1496 - 1503",
+            "volume": "117"
+          },
+          "authors": [
+            {
+              "authorId": "49500220",
+              "name": "Jianyi Yang"
+            },
+            {
+              "authorId": "3175827",
+              "name": "I. Anishchenko"
+            },
+            {
+              "authorId": "2326313",
+              "name": "Hahnbeom Park"
+            },
+            {
+              "authorId": "2559811",
+              "name": "Zhenling Peng"
+            },
+            {
+              "authorId": "145154843",
+              "name": "S. Ovchinnikov"
+            },
+            {
+              "authorId": "2241617405",
+              "name": "D. Baker"
+            }
+          ],
+          "abstract": "Significance Protein structure prediction is a longstanding challenge in computational biology. Through extension of deep learning-based prediction to interresidue orientations in addition to distances, and the development of a constrained optimization by Rosetta, we show that more accurate models can be generated. Results on a set of 18 de novo-designed proteins suggests the proposed method should be directly applicable to current challenges in de novo protein design. The prediction of interresidue contacts and distances from coevolutionary data using deep learning has considerably advanced protein structure prediction. Here, we build on these advances by developing a deep residual network for predicting interresidue orientations, in addition to distances, and a Rosetta-constrained energy-minimization protocol for rapidly and accurately generating structure models guided by these restraints. In benchmark tests on 13th Community-Wide Experiment on the Critical Assessment of Techniques for Protein Structure Prediction (CASP13)- and Continuous Automated Model Evaluation (CAMEO)-derived sets, the method outperforms all previously described structure-prediction methods. Although trained entirely on native proteins, the network consistently assigns higher probability to de novo-designed proteins, identifying the key fold-determining residues and providing an independent quantitative measure of the “ideality” of a protein structure. The method promises to be useful for a broad range of protein structure prediction and design problems."
+        },
+        {
+          "paperId": "539c35c5e2457c0344eceba333a4d6e6c32c19c2",
+          "externalIds": {
+            "MAG": "2961631974",
+            "DOI": "10.1002/prot.25769",
+            "CorpusId": 133349343,
+            "PubMed": "31292988"
+          },
+          "url": "https://www.semanticscholar.org/paper/539c35c5e2457c0344eceba333a4d6e6c32c19c2",
+          "title": "Protein structure prediction using sparse NOE and RDC restraints with Rosetta in CASP13",
+          "venue": "bioRxiv",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/prot.25769",
+            "status": "BRONZE",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/prot.25769?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/prot.25769, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-04-03",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "48380780",
+              "name": "G. Kuenze"
+            },
+            {
+              "authorId": "1754226",
+              "name": "J. Meiler"
+            }
+          ],
+          "abstract": "Computational methods that produce accurate protein structure models from limited experimental data, e.g. from nuclear magnetic resonance (NMR) spectroscopy, hold great potential for biomedical research. The NMR-assisted modeling challenge in CASP13 provided a blind test to explore the capabilities and limitations of current modeling techniques in leveraging NMR data which had high sparsity, ambiguity and error rate for protein structure prediction. We describe our approach to predict the structure of these proteins leveraging the Rosetta software suite. Protein structure models were predicted de novo using a two-stage protocol. First, low-resolution models were generated with the Rosetta de novo method guided by non-ambiguous nuclear Overhauser effect (NOE) contacts and residual dipolar coupling (RDC) restraints. Second, iterative model hybridization and fragment insertion with the Rosetta comparative modeling method was used to refine and regularize models guided by all ambiguous and non-ambiguous NOE contacts and RDCs. Nine out of 16 of the Rosetta de novo models had the correct fold (GDT-TS score >45) and in three cases high-resolution models were achieved (RMSD <3.5 Å). We also show that a meta-approach applying iterative Rosetta+NMR refinement on server-predicted models which employed non-NMR-contacts and structural templates leads to substantial improvement in model quality. Integrating these data-assisted refinement strategies with innovative non-data-assisted approaches which became possible in CASP13 such as high precision contact prediction will in the near future enable structure determination for large proteins that are outside of the realm of conventional NMR."
+        },
+        {
+          "paperId": "5d01a7639129073742c71b96d1376cc14f8d7e05",
+          "externalIds": {
+            "MAG": "2783924029",
+            "DBLP": "conf/bracis/NarlochP17",
+            "DOI": "10.1109/BRACIS.2017.14",
+            "CorpusId": 21924191
+          },
+          "url": "https://www.semanticscholar.org/paper/5d01a7639129073742c71b96d1376cc14f8d7e05",
+          "title": "The Protein Structure Prediction Problem Approached by a Cascade Differential Evolution Algorithm Using ROSETTA",
+          "venue": "Brazilian Conference on Intelligent Systems",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/BRACIS.2017.14?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/BRACIS.2017.14, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2017-10-01",
+          "journal": {
+            "name": "2017 Brazilian Conference on Intelligent Systems (BRACIS)",
+            "pages": "294-299"
+          },
+          "authors": [
+            {
+              "authorId": "9501681",
+              "name": "P. H. Narloch"
+            },
+            {
+              "authorId": "9178751",
+              "name": "R. S. Parpinelli"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "a4740114e69928ab0e2ba55f2a5df6a0d43e8b20",
+          "externalIds": {
+            "DBLP": "conf/cibcb/ParpinelliWW24",
+            "DOI": "10.1109/CIBCB58642.2024.10702172",
+            "CorpusId": 273226456
+          },
+          "url": "https://www.semanticscholar.org/paper/a4740114e69928ab0e2ba55f2a5df6a0d43e8b20",
+          "title": "Protein Structure Prediction Using Dynamic Speciation Evolutionary Algorithm with Aggregated Problem Information",
+          "venue": "IEEE Symposium on Computational Intelligence in Bioinformatics and Computational Biology",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CIBCB58642.2024.10702172?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CIBCB58642.2024.10702172, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2024-08-27",
+          "journal": {
+            "name": "2024 IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology (CIBCB)",
+            "pages": "1-8"
+          },
+          "authors": [
+            {
+              "authorId": "2151561000",
+              "name": "R. S. Parpinelli"
+            },
+            {
+              "authorId": "2325086928",
+              "name": "Nicholas Wojeicchowski"
+            },
+            {
+              "authorId": "1581753080",
+              "name": "Nilcimar Neitzel Will"
+            }
+          ],
+          "abstract": "Protein structure prediction in three dimensions represents a fundamental challenge in Structural Bioinformatics. Leveraging problem-specific information such as fragment insertion, secondary structure, and contact maps can significantly enhance the exploration of the search space. In this study, an evolutionary algorithm is introduced, which incorporates such problem information for protein structure prediction. The proposed method employs a dynamic speciation technique alongside fragment insertion to foster population diversity. To ensure a rich variety of fragments, a fragment library is constructed using the Rosetta Quota protocol. Additionally, information from contact maps and secondary structure is integrated into two selection strategies to facilitate a more thorough exploration of the conformational search space. The results of an experimental evaluation involving 9 proteins are presented, demonstrating competitive performance compared to existing literature. Evaluation metrics include RMSD, GDT, and processing time."
+        },
+        {
+          "paperId": "39f03429a9eba47c4dbf99e7ea7727d214928510",
+          "externalIds": {
+            "MAG": "1989415425",
+            "DOI": "10.1002/(SICI)1097-0134(1999)37:3+<171::AID-PROT21>3.0.CO;2-Z",
+            "CorpusId": 5774447,
+            "PubMed": "10526365"
+          },
+          "url": "https://www.semanticscholar.org/paper/39f03429a9eba47c4dbf99e7ea7727d214928510",
+          "title": "Ab initio protein structure prediction of CASP III targets using ROSETTA",
+          "venue": "Proteins: Structure, Function, and Bioinformatics",
+          "year": 1999,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/(SICI)1097-0134(1999)37:3+<171::AID-PROT21>3.0.CO;2-Z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/(SICI)1097-0134(1999)37:3+<171::AID-PROT21>3.0.CO;2-Z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "Proteins: Structure",
+            "volume": "37"
+          },
+          "authors": [
+            {
+              "authorId": "36975577",
+              "name": "K. Simons"
+            },
+            {
+              "authorId": "144402510",
+              "name": "Richard Bonneau"
+            },
+            {
+              "authorId": "3295973",
+              "name": "I. Ruczinski"
+            },
+            {
+              "authorId": "2241617405",
+              "name": "D. Baker"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-46c46f75715102f3.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-46c46f75715102f3.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-46c46f75715102f3.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "9e5ec9438641105ec23ca263c54579a67c6d0532e82a8cc9e737b51bd364369f",
+    "chunk_count": 37,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

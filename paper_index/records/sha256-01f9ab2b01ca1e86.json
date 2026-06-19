@@ -1,0 +1,726 @@
+{
+  "paper_id": "sha256-01f9ab2b01ca1e86",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_MD/Wang 2024 Nature - Ab initio characterization of protein molecular dynamics with AI2BMD.pdf",
+  "pdf_sha256": "01f9ab2b01ca1e860dded27c9f2de5d27ef416b9b68006c0595e8a75f4ed859c",
+  "filename": "Wang 2024 Nature - Ab initio characterization of protein molecular dynamics with AI2BMD.pdf",
+  "item_type": "article",
+  "title_query": "Ab initio characterization of protein molecular dynamics with AI2BMD",
+  "filename_hints": {
+    "year_hint": 2024,
+    "venue_hint": "nature",
+    "prefix": "Wang 2024 Nature"
+  },
+  "doi_candidates": [
+    "10.1038/s41586-024-08127-z"
+  ],
+  "date_indexed": "2026-04-17T03:30:34.840722+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Ab initio characterization of protein molecular dynamics with AI2BMD",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "63f03dafe78b82501ed4a2545c07a3e295a309f2",
+      "externalIds": {
+        "PubMedCentral": "11602711",
+        "DOI": "10.1038/s41586-024-08127-z",
+        "CorpusId": 273876952,
+        "PubMed": "39506110"
+      },
+      "url": "https://www.semanticscholar.org/paper/63f03dafe78b82501ed4a2545c07a3e295a309f2",
+      "title": "Ab initio characterization of protein molecular dynamics with AI2BMD",
+      "venue": "Nature",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s41586-024-08127-z",
+        "status": "HYBRID",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11602711, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2024-11-06",
+      "journal": {
+        "name": "Nature",
+        "pages": "1019 - 1027",
+        "volume": "635"
+      },
+      "authors": [
+        {
+          "authorId": "2155339611",
+          "name": "Tong Wang"
+        },
+        {
+          "authorId": "2116555201",
+          "name": "Xinheng He"
+        },
+        {
+          "authorId": "2219645402",
+          "name": "Mingyu Li"
+        },
+        {
+          "authorId": "2329550311",
+          "name": "Yatao Li"
+        },
+        {
+          "authorId": "2329550451",
+          "name": "Ran Bi"
+        },
+        {
+          "authorId": "2130355145",
+          "name": "Yusong Wang"
+        },
+        {
+          "authorId": "2323256974",
+          "name": "Chaoran Cheng"
+        },
+        {
+          "authorId": "2329871657",
+          "name": "Xiangzhen Shen"
+        },
+        {
+          "authorId": "2330067966",
+          "name": "Jiawei Meng"
+        },
+        {
+          "authorId": "2331408206",
+          "name": "He Zhang"
+        },
+        {
+          "authorId": "2171794777",
+          "name": "Haiguang Liu"
+        },
+        {
+          "authorId": "2189440018",
+          "name": "Zun Wang"
+        },
+        {
+          "authorId": "2118846263",
+          "name": "Shaoning Li"
+        },
+        {
+          "authorId": "2322901575",
+          "name": "Bin Shao"
+        },
+        {
+          "authorId": "2149579639",
+          "name": "Tie-Yan Liu"
+        }
+      ],
+      "abstract": "Biomolecular dynamics simulation is a fundamental technology for life sciences research, and its usefulness depends on its accuracy and efficiency1, 2–3. Classical molecular dynamics simulation is fast but lacks chemical accuracy4,5. Quantum chemistry methods such as density functional theory can reach chemical accuracy but cannot scale to support large biomolecules6. Here we introduce an artificial intelligence-based ab initio biomolecular dynamics system (AI2BMD) that can efficiently simulate full-atom large biomolecules with ab initio accuracy. AI2BMD uses a protein fragmentation scheme and a machine learning force field7 to achieve generalizable ab initio accuracy for energy and force calculations for various proteins comprising more than 10,000 atoms. Compared to density functional theory, it reduces the computational time by several orders of magnitude. With several hundred nanoseconds of dynamics simulations, AI2BMD demonstrated its ability to efficiently explore the conformational space of peptides and proteins, deriving accurate 3J couplings that match nuclear magnetic resonance experiments, and showing protein folding and unfolding processes. Furthermore, AI2BMD enables precise free-energy calculations for protein folding, and the estimated thermodynamic properties are well aligned with experiments. AI2BMD could potentially complement wet-lab experiments, detect the dynamic processes of bioactivities and enable biomedical research that is impossible to conduct at present. A study introduces AI2BMD, an artificial intelligence-based dynamics simulation program that uses protein fragmentation with a machine learning force field to accurately and efficiently model the folding and unfolding of large proteins."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "63f03dafe78b82501ed4a2545c07a3e295a309f2",
+        "title": "Ab initio characterization of protein molecular dynamics with AI2BMD",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2024,
+        "candidate_year": 2024,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "46588708309da3139b2e6c829d1d8e01194b3806",
+        "title": "Author Correction: Ab initio characterization of protein molecular dynamics with AI2BMD",
+        "score": 0.99,
+        "title_similarity": 0.92,
+        "query_year": 2024,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d76b2ac177b43425ed403587a74dbb6a4856b3f8",
+        "title": "AI2BMD: efficient characterization of protein dynamics with ab initio accuracy",
+        "score": 0.8605,
+        "title_similarity": 0.7905,
+        "query_year": 2024,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41586-024-08127-z"
+    ],
+    "matching_extracted_doi": "10.1038/s41586-024-08127-z",
+    "raw_response": {
+      "total": 3,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "63f03dafe78b82501ed4a2545c07a3e295a309f2",
+          "externalIds": {
+            "PubMedCentral": "11602711",
+            "DOI": "10.1038/s41586-024-08127-z",
+            "CorpusId": 273876952,
+            "PubMed": "39506110"
+          },
+          "url": "https://www.semanticscholar.org/paper/63f03dafe78b82501ed4a2545c07a3e295a309f2",
+          "title": "Ab initio characterization of protein molecular dynamics with AI2BMD",
+          "venue": "Nature",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41586-024-08127-z",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11602711, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-11-06",
+          "journal": {
+            "name": "Nature",
+            "pages": "1019 - 1027",
+            "volume": "635"
+          },
+          "authors": [
+            {
+              "authorId": "2155339611",
+              "name": "Tong Wang"
+            },
+            {
+              "authorId": "2116555201",
+              "name": "Xinheng He"
+            },
+            {
+              "authorId": "2219645402",
+              "name": "Mingyu Li"
+            },
+            {
+              "authorId": "2329550311",
+              "name": "Yatao Li"
+            },
+            {
+              "authorId": "2329550451",
+              "name": "Ran Bi"
+            },
+            {
+              "authorId": "2130355145",
+              "name": "Yusong Wang"
+            },
+            {
+              "authorId": "2323256974",
+              "name": "Chaoran Cheng"
+            },
+            {
+              "authorId": "2329871657",
+              "name": "Xiangzhen Shen"
+            },
+            {
+              "authorId": "2330067966",
+              "name": "Jiawei Meng"
+            },
+            {
+              "authorId": "2331408206",
+              "name": "He Zhang"
+            },
+            {
+              "authorId": "2171794777",
+              "name": "Haiguang Liu"
+            },
+            {
+              "authorId": "2189440018",
+              "name": "Zun Wang"
+            },
+            {
+              "authorId": "2118846263",
+              "name": "Shaoning Li"
+            },
+            {
+              "authorId": "2322901575",
+              "name": "Bin Shao"
+            },
+            {
+              "authorId": "2149579639",
+              "name": "Tie-Yan Liu"
+            }
+          ],
+          "abstract": "Biomolecular dynamics simulation is a fundamental technology for life sciences research, and its usefulness depends on its accuracy and efficiency1, 2–3. Classical molecular dynamics simulation is fast but lacks chemical accuracy4,5. Quantum chemistry methods such as density functional theory can reach chemical accuracy but cannot scale to support large biomolecules6. Here we introduce an artificial intelligence-based ab initio biomolecular dynamics system (AI2BMD) that can efficiently simulate full-atom large biomolecules with ab initio accuracy. AI2BMD uses a protein fragmentation scheme and a machine learning force field7 to achieve generalizable ab initio accuracy for energy and force calculations for various proteins comprising more than 10,000 atoms. Compared to density functional theory, it reduces the computational time by several orders of magnitude. With several hundred nanoseconds of dynamics simulations, AI2BMD demonstrated its ability to efficiently explore the conformational space of peptides and proteins, deriving accurate 3J couplings that match nuclear magnetic resonance experiments, and showing protein folding and unfolding processes. Furthermore, AI2BMD enables precise free-energy calculations for protein folding, and the estimated thermodynamic properties are well aligned with experiments. AI2BMD could potentially complement wet-lab experiments, detect the dynamic processes of bioactivities and enable biomedical research that is impossible to conduct at present. A study introduces AI2BMD, an artificial intelligence-based dynamics simulation program that uses protein fragmentation with a machine learning force field to accurately and efficiently model the folding and unfolding of large proteins."
+        },
+        {
+          "paperId": "46588708309da3139b2e6c829d1d8e01194b3806",
+          "externalIds": {
+            "PubMedCentral": "11754089",
+            "DOI": "10.1038/s41586-024-08556-w",
+            "CorpusId": 275304076,
+            "PubMed": "39753905"
+          },
+          "url": "https://www.semanticscholar.org/paper/46588708309da3139b2e6c829d1d8e01194b3806",
+          "title": "Author Correction: Ab initio characterization of protein molecular dynamics with AI2BMD",
+          "venue": "Nature",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41586-024-08556-w",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11754089, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-01-03",
+          "journal": {
+            "name": "Nature",
+            "pages": "E25 - E25",
+            "volume": "637"
+          },
+          "authors": [
+            {
+              "authorId": "2155339611",
+              "name": "Tong Wang"
+            },
+            {
+              "authorId": "2116555201",
+              "name": "Xinheng He"
+            },
+            {
+              "authorId": "2219645402",
+              "name": "Mingyu Li"
+            },
+            {
+              "authorId": "2329550311",
+              "name": "Yatao Li"
+            },
+            {
+              "authorId": "2329550451",
+              "name": "Ran Bi"
+            },
+            {
+              "authorId": "2130355145",
+              "name": "Yusong Wang"
+            },
+            {
+              "authorId": "2323256974",
+              "name": "Chaoran Cheng"
+            },
+            {
+              "authorId": "2329871657",
+              "name": "Xiangzhen Shen"
+            },
+            {
+              "authorId": "2330067966",
+              "name": "Jiawei Meng"
+            },
+            {
+              "authorId": "2331408206",
+              "name": "He Zhang"
+            },
+            {
+              "authorId": "2171794777",
+              "name": "Haiguang Liu"
+            },
+            {
+              "authorId": "2189440018",
+              "name": "Zun Wang"
+            },
+            {
+              "authorId": "2118846263",
+              "name": "Shaoning Li"
+            },
+            {
+              "authorId": "2322901575",
+              "name": "Bin Shao"
+            },
+            {
+              "authorId": "2323575073",
+              "name": "Tie-Yan Liu"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "d76b2ac177b43425ed403587a74dbb6a4856b3f8",
+          "externalIds": {
+            "DOI": "10.1101/2023.07.12.548519",
+            "CorpusId": 259938488
+          },
+          "url": "https://www.semanticscholar.org/paper/d76b2ac177b43425ed403587a74dbb6a4856b3f8",
+          "title": "AI2BMD: efficient characterization of protein dynamics with ab initio accuracy",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2023/07/13/2023.07.12.548519.full.pdf",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2023.07.12.548519?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2023.07.12.548519, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2023-07-13",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2155339611",
+              "name": "Tong Wang"
+            },
+            {
+              "authorId": "2116555201",
+              "name": "Xinheng He"
+            },
+            {
+              "authorId": "2219645402",
+              "name": "Mingyu Li"
+            },
+            {
+              "authorId": "2130355145",
+              "name": "Yusong Wang"
+            },
+            {
+              "authorId": "2189440018",
+              "name": "Zun Wang"
+            },
+            {
+              "authorId": "2118846263",
+              "name": "Shaoning Li"
+            },
+            {
+              "authorId": "2064567675",
+              "name": "Bin Shao"
+            },
+            {
+              "authorId": "2149579639",
+              "name": "Tie-Yan Liu"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1038/s41586-024-08127-z",
+      "DOI": "10.1038/s41586-024-08127-z",
+      "type": "journal-article",
+      "issue": "8040",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-9483-0050",
+          "authenticated-orcid": false,
+          "given": "Tong",
+          "family": "Wang",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7813-5480",
+          "authenticated-orcid": false,
+          "given": "Xinheng",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Mingyu",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Yatao",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-3434-7386",
+          "authenticated-orcid": false,
+          "given": "Ran",
+          "family": "Bi",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Yusong",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Chaoran",
+          "family": "Cheng",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Xiangzhen",
+          "family": "Shen",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-0064-7039",
+          "authenticated-orcid": false,
+          "given": "Jiawei",
+          "family": "Meng",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "He",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7324-6632",
+          "authenticated-orcid": false,
+          "given": "Haiguang",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Zun",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Shaoning",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9790-5687",
+          "authenticated-orcid": false,
+          "given": "Bin",
+          "family": "Shao",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0476-8020",
+          "authenticated-orcid": false,
+          "given": "Tie-Yan",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "0028-0836",
+        "1476-4687"
+      ],
+      "page": "1019-1027",
+      "container-title": [
+        "Nature"
+      ],
+      "title": [
+        "Ab initio characterization of protein molecular dynamics with AI2BMD"
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            6
+          ]
+        ]
+      },
+      "volume": "635"
+    },
+    "accepted_score": 1.1600000000000001,
+    "accepted": true,
+    "accepted_doi": "10.1038/s41586-024-08127-z",
+    "best_candidate_doi": "10.1038/s41586-024-08127-z",
+    "crossref_attempts": [
+      {
+        "doi": "10.1038/s41586-024-08127-z",
+        "source_region": "first_page",
+        "position": 95,
+        "context": "1] Ab initio characterization of protein molecular dynamics with AI2BMD https://doi.org/10.1038/s41586-024-08127-z Received: 31 March 2023 Accepted: 26 September 2024 Published online: 6 November 2024 Ope",
+        "priority_score": 0.83,
+        "score": 1.1600000000000001,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1038/s41586-024-08127-z",
+          "DOI": "10.1038/s41586-024-08127-z",
+          "type": "journal-article",
+          "issue": "8040",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-9483-0050",
+              "authenticated-orcid": false,
+              "given": "Tong",
+              "family": "Wang",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-7813-5480",
+              "authenticated-orcid": false,
+              "given": "Xinheng",
+              "family": "He",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Mingyu",
+              "family": "Li",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Yatao",
+              "family": "Li",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0007-3434-7386",
+              "authenticated-orcid": false,
+              "given": "Ran",
+              "family": "Bi",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Yusong",
+              "family": "Wang",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Chaoran",
+              "family": "Cheng",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Xiangzhen",
+              "family": "Shen",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0004-0064-7039",
+              "authenticated-orcid": false,
+              "given": "Jiawei",
+              "family": "Meng",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "He",
+              "family": "Zhang",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-7324-6632",
+              "authenticated-orcid": false,
+              "given": "Haiguang",
+              "family": "Liu",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Zun",
+              "family": "Wang",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Shaoning",
+              "family": "Li",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-9790-5687",
+              "authenticated-orcid": false,
+              "given": "Bin",
+              "family": "Shao",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-0476-8020",
+              "authenticated-orcid": false,
+              "given": "Tie-Yan",
+              "family": "Liu",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "page": "1019-1027",
+          "container-title": [
+            "Nature"
+          ],
+          "title": [
+            "Ab initio characterization of protein molecular dynamics with AI2BMD"
+          ],
+          "publisher": "Springer Science and Business Media LLC",
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                11,
+                6
+              ]
+            ]
+          },
+          "volume": "635"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-01f9ab2b01ca1e86.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-01f9ab2b01ca1e86.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-01f9ab2b01ca1e86.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "b4fb4eed56739804054b932d5cd2abb96672604e3179f2c780776bfc13b4351e",
+    "chunk_count": 48,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1038/s41586-024-08127-z",
+      "source_region": "first_page",
+      "position": 95,
+      "context": "1] Ab initio characterization of protein molecular dynamics with AI2BMD https://doi.org/10.1038/s41586-024-08127-z Received: 31 March 2023 Accepted: 26 September 2024 Published online: 6 November 2024 Ope",
+      "priority_score": 0.83
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:08:47.099348+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1038/s41586-024-08127-z",
+    "score": 1.1600000000000001
+  }
+}

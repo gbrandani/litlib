@@ -1,0 +1,59 @@
+{
+  "paper_id": "sha256-51273e70a6ba11fe",
+  "content_kind": "pdf_backed",
+  "addition_mode": "pdf_guided",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/nucleosome_positioning/Gerland 2013 PNAS - Toward a unified physical model of nucleosome patterns flanking transcription start sites.pdf",
+  "pdf_sha256": "51273e70a6ba11fe19d6b611e7c4aef811bae30cc8e769375faf3c7af30fac86",
+  "filename": "Gerland 2013 PNAS - Toward a unified physical model of nucleosome patterns flanking transcription start sites.pdf",
+  "item_type": "article",
+  "title_query": "Toward a unified physical model of nucleosome patterns flanking transcription start sites",
+  "date_indexed": "2026-06-15T06:16:01.413776+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": null,
+  "metadata_source": "manual_bibtex",
+  "doi_candidates": [],
+  "doi_candidate_details": [],
+  "semantic_scholar": {
+    "query": "Toward a unified physical model of nucleosome patterns flanking transcription start sites",
+    "limit": 0,
+    "attempts": [],
+    "selected_paper_id": "",
+    "best_candidate": null,
+    "merged_candidates": []
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false,
+    "accepted_doi": "",
+    "best_candidate_doi": "",
+    "crossref_attempts": [],
+    "accepted_source": "",
+    "matched_by": ""
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-51273e70a6ba11fe.json",
+    "text_path": "paper_index/text/sha256-51273e70a6ba11fe.txt",
+    "chunk_path": "paper_index/chunks/sha256-51273e70a6ba11fe.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "f5c46e8b0cee068dbfc60766d2f4e77b8b912f7cb95531ad01dc28f093921343",
+    "chunk_count": 27,
+    "chunk_target_chars": 2000,
+    "chunk_overlap_chars": 200,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "raw_bibtex": "@article{bius2013flanking,\n  title = {Toward a unified physical model of nucleosome patterns flanking transcription start sites},\n  author = {Wolfram Möbius, Brendan Osberg, Alexander M. Tsankov, Oliver J. Rando, Ulrich Gerland},\n  year = {2013},\n  journal = {Proceedings of the National Academy of Sciences of the United States of America},\n  doi = {10.1073/pnas.1214048110},\n  url = {https://doi.org/10.1073/pnas.1214048110}\n}",
+    "parsed_bibtex_type": "article",
+    "source_note": "pasted into library_add.py pdf flow",
+    "bibtex_key": "bius2013flanking"
+  }
+}

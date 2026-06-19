@@ -1,0 +1,499 @@
+[Page 1]
+
+RES EARCH
+
+DYNAMIC GENOME
+
+A hold-and-feed mechanism drives directional DNA loop extrusion by condensin Indra A. Shaltiel1,2, Sumanjit Datta2,3†, Léa Lecomte2,3†, Markus Hassler1,2, Marc Kschonsak2‡, Sol Bravo2§, Catherine Stober2, Jenny Ormanns1, Sebastian Eustermann4*, Christian H. Haering1,2,4* Structural maintenance of chromosomes (SMC) protein complexes structure genomes by extruding DNA loops, but the molecular mechanism that underlies their activity has remained unknown. We show that the active condensin complex entraps the bases of a DNA loop transiently in two separate chambers. Single-molecule imaging and cryo–electron microscopy suggest a putative power-stroke movement at the first chamber that feeds DNA into the SMC–kleisin ring upon adenosine triphosphate binding, whereas the second chamber holds on upstream of the same DNA double helix. Unlocking the strict separation of “motor” and “anchor” chambers turns condensin from a one-sided into a bidirectional DNA loop extruder. We conclude that the orientation of two topologically bound DNA segments during the SMC reaction cycle determines the directionality of DNA loop extrusion.
+
+Department of Biochemistry and Cell Biology, Julius Maximilian University of Würzburg, 97074 Würzburg, Germany. 2Cell Biology and Biophysics Unit, European Molecular Biology Laboratory (EMBL), 69117 Heidelberg, Germany. 3Collaboration for joint PhD degree between EMBL and Heidelberg University, Faculty of Biosciences, 69120 Heidelberg, Germany. 4Structural and Computational Biology Unit, EMBL, 69117 Heidelberg, Germany. *Corresponding author. Email: sebastian.eustermann@embl.de (S.E.); christian.haering@uni-wuerzburg.de (C.H.H.) †These authors contributed equally to this work. ‡Present address: Genentech, South San Francisco, CA, USA. §Present address: FeedVax Oral Vaccines, Buenos Aires, Argentina.
+
+Shaltiel et al., Science 376, 1087–1094 (2022)
+
+the other end of the coils, which are flexibly connected by a largely unstructured kleisin subunit even in the absence of nucleotide. The central region of the kleisin is bound by two subunits that are composed of consecutive HEAT (Huntingtin, EF3A, PP2A, TOR) repeat motifs (10, 11) and have the capacity to interact with DNA and the SMC ATPase heads (12–18). Entrapment of DNA in a confined space is a widespread strategy to achieve processivity of enzymes with dynamic nucleic acid interactions, including DNA polymerase sliding clamps and replicative helicases (19), the damage repair enzymes MutS (20) and Rad50 (21), type II topoisomerases (22), or the bacterial motor protein FtsK (23). Biochemical and structural evidence supports the notion that cohesin (15–17, 24–26) and condensin (27) topologically constrain DNA but thus far has fallen short in revealing whether, and if so how, DNA entrapment can form and enlarge DNA loops. Here, we reconstituted the loading of active condensin complexes onto DNA, which enabled us to reconstruct their reaction cycle at molecular detail. We identified chambers within the protein complex that encircle the static and translocating segments of a growing DNA loop and resolved their DNA interactions at near-atomic resolution. We found that disruption of the bicameral separation converted condensin from a strictly unidirectional into a bidirectional DNA loop extruder. On the basis of these data, we propose a “hold-and-feed” reaction cycle that explains directional DNA loop extrusion by SMC protein complexes. None of the SMC–kleisin ring interfaces needs to open during topological loading of condensin onto DNA
+
+To define how the condensin complex binds DNA, we developed an in vitro system to recapitulate the salt-resistant topological inter-
+
+embers of the SMC (structural maintenance of chromosomes) family of protein complexes have recently emerged as a class of molecular motors that perform mechanical work on DNA (1, 2). In eukaryotes, the cohesin SMC complex delimits large intrachromosomal loops that are thought to control gene expression during interphase (3), and the condensin SMC complex creates arrays of loops that form the structural basis of rod-shaped mitotic chromosomes (4, 5). Single-molecule experiments have demonstrated that both complexes can create and processively enlarge DNA loops over tens of kilo–base pairs (kbp) in vitro (6–9). In these experiments, condensin primarily reeled in DNA from only one side, whereas cohesin incorporated DNA into the growing loop from both sides. The molecular mechanism by which these motors couple adenosine triphosphate (ATP) hydrolysis to DNA loop expansion remains unresolved and faces the challenge that it must account for both symmetric and asymmetric loop extrusion by architecturally similar protein complexes. Both complexes are built around a heterodimer of SMC protein subunits that dimerize at a “hinge” domain located at the end of ~40-nm–long antiparallel coiled coils (Fig. 1A). Sandwiching of two ATP molecules creates a temporary second dimerization interface between “head” domains at
+
+action of condensin–chromatin complexes isolated from cells (27). We incubated purified Saccharomyces cerevisiae (Sc) holo condensin with circular plasmid DNA in the presence of ATP and isolated the resulting complexes by immunoprecipitation (Fig. 1A). A subsequent high-salt wash (0.5 M) eliminated linear DNA (fig. S1A), which by its nature cannot be topologically confined. Only circular DNA molecules bound in a salt-resistant manner (Fig. 1B), and their formation strictly depended on ATP binding and hydrolysis by condensin (fig. S1B). Whereas relaxation of superhelical tension in circular DNA by nicking one strand of the double helix did not affect salt-resistant binding, linearization by endonuclease (XhoI) cleavage just before or during high-salt washes efficiently released DNA (Fig. 1B). We conclude that the interaction between DNA and condensin in the salt-resistant complexes reconstituted from purified components is topological in nature. The lumen of the Smc2–Smc4–Brn1kleisin (SMC–kleisin) ring creates a self-contained space that seems ideally suited to topologically entrap DNA. To test whether DNA enters the SMC–kleisin ring through the Smc2–Brn1 interface, we covalently fused Smc2 to Brn1 with a long peptide linker (fig. S2A), which prevents DNA passage but nevertheless allows ATPdependent dissociation of the two subunits (18). Condensin complexes with the Smc2–Brn1 fusion still formed salt-resistant complexes with circular DNA (Fig. 1C) and extruded DNA loops with similar efficiency and rates as their nonfused counterparts (fig. S3A and movie S1). Nevertheless, yeast strains that express the Smc2–Brn1 fusion construct as the sole source of either condensin subunit were recovered at submendelian ratios and supported cell proliferation only at significantly decreased rates (fig. S4). Whereas opening of the Smc2–Brn1 interface hence seems to be important for aspects of condensin function in vivo (see second to last paragraph), DNA passage through this interface is not strictly required for topological DNA binding or for loop extrusion. Peptide linker fusion of Brn1 to Smc4 (fig. S2B) neither abolished the in vitro formation of salt-resistant condensin–DNA complexes (Fig. 1D) nor affected DNA loop extrusion efficiencies or rates (fig. S3B and movie S1). The Brn1–Smc4 fusion furthermore supported condensin function in vivo (fig. S4). Dibromobimane (bBBr) cross-linking of cysteine residues engineered into the Smc2–Smc4 hinge domains (fig. S2C) also did not impair the formation of salt-resistant DNA complexes (Fig. 1E). Titration experiments with mixtures of wild-type condensin complexes and inactive complexes with strongly reduced affinity for ATP (Smc2Q147L; Smc4Q302L) ruled out that the remaining non– cross-linked complexes were responsible for retaining these DNA molecules (fig. S2D).
+
+[Page 2]
+
+Smc2
+
+Smc4
+
+Input (20 %)
+
+Salt-resistant binding
+
+DNA
+
+Linear
+
+Super coiled
+
+Brn1
+
+Nicked
+
+Nicked – –
+
+–
+
+Supercoiled
+
+– –
+
+–
+
+Linear – –
+
+XhoI
+
+–
+
++ATP 5 min
+
+IP Wash
+
+( XhoI linearize) Fraction DNA recovered
+
+0.5 M NaCl Salt-resistant Elute 1 % SDS, 65 °C
+
+X-link
+
+Fig. 1. ATP-dependent topological DNA loading of condensin without SMC–kleisin ring opening. (A) Schematic of the in vitro DNA loading assay. IP, immunoprecipitation. (B) Distinct DNA topoisomers bound to condensin after 0.5 M salt washing were eluted with 1% SDS, resolved by agarose gel electrophoresis, and quantitated after ethidium bromide staining (mean ± SD, n = 4 experiments). (C) Condensin with an Smc2–Brn1 fusion was incubated with nicked circular DNA as in panel A, and the DNA that was retained after washing with 0.5 M salt was quantified in relation to unmodified condensin loaded in the presence of ATP (mean ± SD, n = 4 experiments). (D) Condensin with a Brn1–Smc4 fusion as in panel C. (E) Unmodified condensin or condensin with a cysteine pair for hinge cross-linking (Smc2K609C; Smc4V721C) was incubated with dibromobimane (+bBBr) or dimethyl sulfoxide (DMSO) solvent before the addition of nicked circular DNA and ATP. The amounts of DNA retained after a 0.5 M salt wash were quantified as in (C) (mean ± SD, n = 3 experiments).
+
+Fusion Fusion Salt-resistant binding
+
+Fusion –
+
+Unmodified
+
+–
+
+Unmodified
+
+Fusion –
+
+Rel. DNA retained
+
+–
+
+Cys pair –
+
+Rel. DNA retained
+
+Rel. DNA retained
+
+–
+
+Together, these results suggest either that DNA can enter the SMC–kleisin ring through redundant interfaces when one interface has been blocked or that DNA is not topologically encircled by the SMC–kleisin ring at all. To test the latter possibility, we probed DNA entrapment in the SMC–kleisin ring by analyzing native complexes between condensin and circular minichromosomes isolated from yeast cells. We covalently circularized the SMC–kleisin ring by combining the Smc2– Brn1 fusion with cysteine cross-linking the Smc2–Smc4 and Smc4–Brn1 interfaces (fig. S5A). Addition of bBBr simultaneously crosslinked both cysteine pairs in ~20% of condensin molecules. Yet, unlike for cohesin (25), we failed to detect sodium dodecyl sulfate (SDS)– resistant catenanes between the covalently circularized condensin rings and circular minichromosomes. These findings are consistent with the finding that simultaneous closure of all three SMC–kleisin ring interfaces does not prevent DNA loop extrusion by cohesin (7) and call into question the hypothesis that DNA passes through the SMC–kleisin ring in a truly topological manner (fig. S5B) (27). Shaltiel et al., Science 376, 1087–1094 (2022)
+
+DNA is topologically entrapped in two kleisin chambers
+
+Mapping the connectivity of Brn1kleisin segments in structural models of the nucleotidefree apo state of condensin (28) indicates the presence of three alternative chambers, each suited to accommodate a DNA double helix (Fig. 2A). Chamber I is created by the first ~200 residues of Brn1, which bind the Smc2head region and contact the Ycs4HEAT-I subunit. Chamber II is created by a “safety belt” loop of ~130 Brn1 residues that forms within the groove of the Ycg1HEAT-II solenoid and has already been shown to entrap DNA (12). An intermediate (IA) chamber is created by Brn1 stretches that connect Ycs4 to Ycg1 and Ycg1 to Smc4head, respectively. The three kleisin chambers are separated by impermanent protein interfaces: Dissociation of Ycs4 from Smc4head (18) fuses chambers I and IA, whereas disengagement of the “latch” and “buckle” segments of the Brn1 safety belt (12) fuses chambers IA and II. We systematically explored the involvement in DNA binding of the three Brn1 chambers and the Smc2–Smc4 lumen by covalent closure
+
+of single or combinations of multiple chambers using bBBr cross-linking after condensin had been loaded onto circular DNA in vitro. These experiments probed the nucleotide-free apo state of the complex, because the ATP supplied for the loading reaction was washed away before cross-linking. Closure of Brn1 chamber I (fig. S6A), of chamber II (fig. S6B), or of combined chambers IA and II (fig. S6C) produced SDS-resistant DNA–condensin catenanes that were again resolved by opening with tobacco etch virus (TEV) protease cleavage (Fig. 2, B to D). Similar strategies to circularize chamber IA alone (fig. S6D), the entire Smc2–Smc4–Brn1 ring (fig. S6E), or the Smc2– Smc4 lumen (fig. S6F) failed to produce SDSresistant catenanes (Fig. 2, E to G), in contrast to a combination that created a circularized compartment between the Smc2–Smc4 lumen and kleisin chamber I (Fig. 2H and fig. S6G). The only configuration that meets the constraints set by these results (fig. S7) places a DNA loop enclosed simultaneously by chambers I and II into the apo conformation of the complex (Fig. 2I). We confirmed that DNA was entrapped in both Brn1 chambers at the same
+
+Unmodified
+
+Salt-resistant binding
+
+Salt-resistant binding
+
+[Page 3]
+
+Shaltiel et al., Science 376, 1087–1094 (2022)
+
+Smc2Q71C-linkerTEVBrn1E197C 2-4
+
+TEV141
+
+forms chamber I. Engagement of Smc2head and Smc4head domains by sandwiching ATP at both active sites (fig. S13A) results in a swivel motion, which increases the opening angle between the coiled coils by ~25° to create an open V shape (fig. S13B), resulting in a highly dynamic, opened lumen between the unzipped coils (fig. S13C). The finding that the coiled coils open in the presence of ATP is consistent with recent single-molecule Förster resonance energy transfer measurements of cohesin (29). Ycs4 undergoes a large conformational change (fig. S14), which is most likely caused by multivalent interactions with Brn1N, the Smc2 coiled coil, and approximately half of the 35 visible base pairs of DNA that are accommodated in the positively charged groove on the concave
+
+–
+
+2-4
+
+–
+
+TEV
+
+2-4
+
+Brn1S384C, TEV434, S524C
+
+TEV
+
+IA
+
+IA
+
+IA
+
+TEV434
+
+DNA (EtBr)
+
+2-4
+
+IA
+
+IA I+IA
+
+IA
+
+IA
+
+IA
+
+2-4
+
+2-4
+
+2-4
+
+IA
+
+Cleave open chamber
+
+IA
+
+I+II IA+II
+
+TEV373 TEV434
+
+2-4
+
+DNA (EtBr)
+
+TEV141 TEV434
+
+TEV434
+
+TEV373
+
+TEV373
+
+TEV141
+
+No site
+
+To gain detailed insight into the fate of DNA in kleisin chambers I and II upon ATP binding, we trapped a hydrolysis-deficient Walker B motif mutant (Smc2E1113Q; Smc4E1352Q) of the Sc condensin holo complex in the presence of 50-bp DNA duplexes and determined its structure by cryo–electron microscopy (cryoEM). Single-particle analysis revealed a high degree of flexibility among individual molecules. Neural network–based particle picking combined with three-dimensional classification procedures identified two well-ordered yet flexibly linked modules, each bound to a DNA duplex (figs. S9 and S10). The quality of cryo-EM reconstructions of each module allowed de novo model building for both modules (fig. S11 and table S1), which was facilitated by high-resolution crystal structures of the individual condensin subunits (12, 18). The catalytic “core” module is composed of Smc2head and Smc4head domains bound to the Ycs4HEAT-I subunit (Fig. 3A), whereas the “periphery” module contains the Ycg1HEAT-II subunit (Fig. 3B). Our cryo-EM reconstructions furthermore allowed unambiguous tracing of Brn1kleisin through the entire complex: Ordered segments of Brn1 ranging from its aminoterminal helix-turn-helix domain (Brn1N) to its
+
+Fraction DNA retained
+
+Cryo–electron microscopy of ATP-bound condensin reveals the structural mechanism of DNA entrapment
+
+carboxyl-terminal winged helix domain (Brn1C) thread through both modules (Fig. 3C). Disordered linker regions connect the segments and flexibly tether the two modules in the DNA-bound state. At both DNA binding sites, the only conceivable paths of the linker regions create chambers for the two double helices (fig. S12). Thus, our findings provide a structural basis for understanding the key role of the kleisin subunit: Brn1 mediates intersubunit interactions throughout the complex and simultaneously establishes the formation of two separate, yet flexibly linked, chambers that topologically entrap DNA. A comparison to nucleotide-free apo condensin (28) identifies profound conformational rearrangements at the core module, which
+
+Fig. 2. Condensin constrains DNA in two kleisin chambers. (A) Schematic representation of condensin in the ATP-free state. Kleisin chambers I, IA, and II and the positions of engineered TEV target sites are indicated. (B) Covalent circularization of chamber I (shaded area) by cysteine cross-linking (Smc2Q71C; Brn1E197C) of the Smc2–Brn1 fusion protein. Agarose gel electrophoresis mobility shift of SDS-resistant condensin–DNA catenanes stained with ethidium bromide (EtBr). (C) Electrophoresis as in panel B after the covalent circularization of chamber II (shaded area) by cysteine cross-linking (Brn1S384C, S524C). (D to H) Additional configurations tested for the formation of SDS-resistant catenanes. Checks and crosses indicate whether catenanes were detected or absent, respectively (fig. S6). (I) Schematic configuration of the condensin–DNA complex at equilibrium of chamber I and IA fusion. (J) Quantitation of salt-resistant condensin–DNA complexes retained after cleavage at the indicated TEV sites within Brn1 (mean ± SD, n ≥ 3 experiments). (K) Model of the DNA path through the ATP-free apo condensin complex.
+
+time by opening chambers either individually or in combination with site-specific TEV cleavage: Whereas opening individual chambers had only a minor effect, opening of chamber II in combination with chamber I or chamber IA released most of the bound DNA (Fig. 2J and fig. S8A). The latter result can be explained by the low affinity [dissociation constant Kd = 0.63 mM (18)] of the Ycs4–Smc4head interaction that separates chambers I and IA, which allows escape of DNA entrapped in chamber I through a gap created in chamber IA during the extended incubation period required for TEV protease cleavage (Fig. 2I). Consistent with the notion that kleisin chamber integrity is important for DNA binding by condensin, TEV cleavage of either chamber strongly reduced DNA-dependent stimulation of condensin’s ATPase activity without affecting basal hydrolysis rates (fig. S8B). Because the three kleisin chambers are located within the SMC–kleisin tripartite ring circumference, topological entrapment by two chambers as depicted in Fig. 2K places a DNA loop into the SMC–kleisin ring in a “pseudotopological” manner (fig. S5B), which explains why none of its interfaces needs to open for DNA entrapment and why ring circularization does not produce denaturation-resistant DNA catenanes—in contrast to cohesin involved in sister chromatid cohesion, which encircles DNA in a truly topological manner (24, 25).
+
+[Page 4]
+
+Core
+
+Smc2 Smc4
+
+Periphery Brn1Ycg1
+
+DNA
+
+DNA
+
+Brn1
+
+D DNA docked into chamber I 55 aa
+
+Chamber I
+
+Smc2 Smc4 K639C V721C
+
+Br
+
+Brn1
+
+2 ATP n1 s4 Yc
+
+51 aa
+
+Brn1Ycs4 N985C S238C
+
+Apo core
+
+110 aa
+
+Brn1C
+
+E356C K1170C
+
++ATP core
+
+Chamber IA
+
+– + + +
+
+65 aa
+
+2 ATP
+
+Safety belt
+
+AMP-PNP
+
+Fig. 3. Cryo-EM structure of ATP-engaged condensin with DNA bound in both kleisin chambers. (A) Density map of the DNA-bound condensin core module composed of Smc2head (blue), Smc4head (red), Ycs4 (yellow), and Brn1 (green) resolved to a nominal resolution of 3.5 Å. (B) Density maps of the DNA-bound condensin peripheral module composed of Ycg1 (orange) and Brn1 (green) resolved to a nominal resolution of 3.9 Å. (C) Path of the Brn1 kleisin subunit through the condensin holo complex. Of the 754 Sc Brn1 residues, 376 can be built into the model; unresolved connections are indicated as dotted lines. (D) Structural comparison of the core module in the nucleotide-free apo (PDB ID: 6YVU) and ATP-bound state (PDB ID: 7QEN). The DNA double helix has been docked into chamber I in the apo state. (E) Schematic representation of the tilting motion that feeds DNA held in kleisin chamber I into the coiled-coil lumen upon ATP binding. (F) Agarose gel electrophoresis mobility shift of SDS-resistant condensin–DNA catenanes after bBBr cross-linking the Smc2–Smc4–Ycs4 lumen in the absence or presence of nucleotide. AMP-PNP, adenylyl-imidodiphosphate.
+
+g1
+
+Yc
+
+ATP TP
+
+DNA (EtBr)
+
+Brn1TEV141
+
+Brn1 5s
+
+10 s 19 s 20 s 28 s
+
+0s
+
+5s
+
+Brn1TEV434
+
+10 s 27 s 28 s 32 s
+
+0s
+
+5s
+
+10 s 22 s 23 s 28 s
+
+DNA
+
+0s
+
+1 μm
+
+**** ****
+
+TEV141
+
+1 μm
+
+Loop rupture
+
+Brn1
+
+TEV434
+
+Counts
+
+Loop rupture events
+
+ns
+
+1 μm
+
+Loop rupture Counts
+
+Loop rupture
+
+TEV TEV 141 434
+
+Fig. 4. Identification of motor and anchor chambers. (A) Single-molecule DNA loop extrusion on Sytox orange (SxO)–stained surface-tethered l-phage DNA (48.5 kbp) molecules by ATTO647Nlabeled condensin with TEV cleavage sites in kleisin chambers I (Brn1TEV141) or II (Brn1TEV434). Starting and end positions of the DNA loop are highlighted by yellow and blue arrowheads, respectively. (B) The position of condensin 0.5 to 1 s after DNA loop rupture was scored as nondetectable (white), back at the loop start site (yellow), or on the translocating end of the loop (blue) (ns, not significant; ****p < 10−12; Fisher’s exact test). (C) Histogram of ATTO647N-condensin fluorescence lifetimes at the loop start site after loop rupture. (D) Schematic representation of the experiment and results.
+
+Brn1TEV141
+
+5 10 15 20 >20 s Fluorescence lifetime after rupture
+
+side of its HEAT-repeat solenoid (fig. S15A). Homologous DNA interactions are also conserved for cohesin (15–17). We confirmed the importance of these DNA interactions for in vivo condensin function (fig. S15B and table Shaltiel et al., Science 376, 1087–1094 (2022)
+
+Extrude loop
+
+Cut motor entity
+
+Cut anchor entity
+
+S2), DNA-dependent ATPase stimulation (fig. S15C), and DNA loop extrusion (fig. S15D). Although the nucleotide-free apo structure of condensin adapts a markedly different conformation, most of the local surface of Ycs4 that
+
+contacts the DNA backbone remains accessible and unchanged in the absence of nucleotide (fig. S15A), which supports the conclusion that kleisin chamber I entraps DNA also in the ATP-free state.
+
+n1
+
+Br
+
+Chamber II
+
+[Page 5]
+
+2 μm
+
+2 μm
+
+DNA size (kbp)
+
+10 s
+
+DNA size (kbp)
+
+DNA size (kbp)
+
+ΔYcg1
+
+D 3.0
+
+E 300
+
+Wild type Brn1BC
+
+Time (s)
+
+60 80 Time (s)
+
+Wild type Brn1Δ515–634 Brn1BC
+
+F 0.3
+
+Holo complex ΔYcg1
+
+Holo complex ΔYcg1
+
+Holo complex ΔYcg1
+
+Holo complex Fraction of DNA loops (%)
+
+20 s
+
+Stall force (pN)
+
+10 15 20 25 30 35 40 Time (s)
+
+Rate (kbp·s–1)
+
+ΔYcg1
+
+Lifetime of loops (s)
+
+Holo complex
+
+2 μm
+
+DNA size (kbp)
+
+2 μm
+
+% DNAs with loops
+
+10 s
+
+10 s
+
+10 20 30 40 50 60 70 80 Time (s)
+
+Holo complex
+
+100 120
+
+ΔYcg1
+
+UniBiUniBidirectional directional directional directional
+
+ΔYcg1
+
+Holo complex unidirectional
+
+ΔYcg1 bidirectional
+
+Fig. 5. Merge of DNA chambers enables condensin-mediated DNA loop extrusion to change direction. (A) Sample kymographs of DNA loop extrusion by Ct holo condensin on l-phage DNA stained with SxO. The fluorescence intensity plots represent DNA fluorescence above (yellow) or below (blue) the extruded loop (red), with arrows indicating the directions of loop extrusion events. (B) Sample kymographs of DNA loop extrusion by Ct DYcg1 condensin as in panel A. (C) Fraction of DNA molecules displaying loops created by Ct holo condensin (wild-type, Brn1BC, and Brn1fD; n = 509, 158, and 90 DNAs analyzed) and DYcg1 condensin (wild-type, Brn1D515–634, Brn1BC, and Brn1fD; n = 307, 70, 145, and 107). (D) Box plot of DNA loop extrusion rates for Ct holo and DYcg1 condensin
+
+Taken together, our cryo-EM structures in conjunction with biochemical mapping reveal a concerted opening of the coiled coils from a tightly zipped (28) into an open configuration in concert with a clamping motion of Ycs4, which presumably pushes the DNA in chamber I onto the newly formed binding surface of the engaged Smc2head and Smc4head domains (Fig. S3D, fig. S16A, and movie S2). This previously unanticipated movement explains how ATP binding fuels the motor function of condensin by feeding a new DNA loop into the opened intercoil lumen. Formation of a loop in such a manner would lead to a pseudotopologically entrapped DNA in the SMC lumen with Ycs4 separating the head-proximal and distal segments (Fig. 3E). Structure-based cross-linking of DNA-loaded condensin provides direct evidence for this model: SDSresistant DNA catenanes in the cross-linked Shaltiel et al., Science 376, 1087–1094 (2022)
+
+(n = 55 and 79 DNA loops analyzed). Lines indicate median, crosses indicate mean, boxes indicate first and third quartile, and whiskers mark the median ± 1.5 (third quartile − first quartile). (E) Box plot of lifetime of DNA loops as in panel D. (F) Box plot of stall forces as in panel D. (G) Fraction of unidirectional or bidirectional DNA loop extrusion events observed for Ct holo and DYcg1 condensin (n = 56 and 79 DNA loops analyzed). Shaded areas indicate events that displayed anchor slippage. (H) Illustration of a strict separation of motor and anchor DNA segments in holo condensin (left) or exchange of segments in the absence of Ycg1 (right). (I) Loop extrusion rates before and after direction switch by Ct DYcg1 condensin (mean ± SD, n = 56 direction switch events).
+
+Smc2–Smc4–Ycs4 lumen were only generated in the presence of nucleotide (Fig. 3F), whereas DNA catenanes with cross-linked chambers I and II were generated irrespective of the nucleotide state of condensin (fig. S16B). The peripheral module visualizes the structure of kleisin chamber II, which is created by Ycg1 bound to the Brn1 safety-belt segment and flexibly linked to the catalytic “core.” Whereas a comparison with previous crystal structures shows no major conformational rearrangements of the protein subunits (12, 30), we observed that the DNA double helix sharply bends almost 90° as it binds to a newly formed composite interface formed by Brn1 and the Ycg1 HEAT-repeat solenoid (fig. S17). This deformation might provide chamber II with the ability to resist longitudinal pulling forces acting on the bound DNA, which is consistent with a possible anchoring function.
+
+Before After direction switch
+
+The kleisin chambers provide anchor and motor functions for DNA loop extrusion
+
+Asymmetric DNA loop extrusion by condensin requires that a single complex must grasp both the immobile (“anchor”) and translocating (“motor”) DNA segments at the stem of the expanding loop (6). If the two identified kleisin chambers were—at least during part of the reaction cycle—responsible for these two functions, release of DNA from the motor chamber should retain condensin at the DNA position where extrusion was initiated. Release of DNA from the anchor chamber should, by contrast, retain condensin at the motor end of the original loop, distal from where loop extrusion started. We followed the fate of condensin complexes labeled with an ATTO647N fluorophore in single-molecule DNA loop extrusion assays in the presence of TEV protease (Fig. 4A). Noncleavable condensin on DNA loops that
+
+DNA reeling rate (kbp·s–1)
+
+[Page 6]
+
+Shaltiel et al., Science 376, 1087–1094 (2022)
+
+ATP-free apo state (pdb: 6yvu)
+
+ATP-bound state (pdb: 7qen)
+
+ATP-free ‘bridged’ state (pdb: 6yvv)
+
+n+1 Power stroke ADP+Pi
+
+n+2
+
+Chamber I ( motor core”)
+
+n + n+1 Chamber II ( peripheral anchor”)
+
+Fig. 6. A hold-and-feed mechanism for SMC-mediated DNA loop extrusion. Composite structural and schematic representation of the condensin reaction cycle. (A) ATP-free condensin entraps a preexisting DNA loop (n0) pseudotopologically between kleisin chambers I and II. (B) ATP binding induces SMC head dimerization, coiled-coil opening, and Ycs4HEAT-I repositioning to feed DNA held in kleisin chamber I between the SMC coiled coils at the SMC motor core (putative power stroke). The result is the pseudotopological entrapment of a new DNA loop (n+1) in the coiled-coil lumen. ADP, adenosine diphosphate; Pi, inorganic phosphate. (C) ATP hydrolysis then drives the transition into the ATP-free “bridged” state of the SMC motor to release the head-proximal DNA segment while the peripheral anchor remains bound upstream. This step merges the n0 and n+1 DNA loops. Return to the ground state configuration repositions the remaining n+1 DNA segment into chamber I. Condensin is then ready to extrude the next DNA loop (n+2).
+
+of condensin with a TEV site in one of the two helices of the Smc4 coiled coil (27) (88 of 158), or of noncleavable condensin (106 of 111). The anchor chamber defines DNA loop extrusion directionality
+
+Our TEV cleavage experiments imply that the anchor and motor activities of condensin can be functionally separated. We were able to generate a separation-of-function version for the condensin complex from the filamentous fungus Chaetomium thermophilum (Ct) (fig. S20A), which displayed DNA-stimulated ATPase activity at temperatures up to 50°C (fig. S20B) and retained much of its affinity for DNA even in the absence of Ycg1, in contrast to Sc condensin (fig. S20C). Ct holo condensin induced local DNA compaction events on tethered DNA molecules (Fig. 5A) that emerged as DNA loops upon changing the direction of buffer flow (fig. S21A). DNA loop formation required ATP and Mg2+ and was abolished by mutation of the Smc2 and Smc4 ATP-binding sites (Smc2Q147L, Smc4Q421L) (fig. S21B). Ct DYcg1 condensin initiated the formation of DNA loops (Fig. 5B) with even greater efficiency than Ct holo condensin (Fig. 5C) and in contrast to Sc DYcg1 condensin (fig. S21C). Only when we also deleted the kleisin safety belt (Brn1D515–634) or mutated conserved positively charged residues (Brn1BC) or “latch” and “buckle” contact
+
+residues (Brn1fD) within the safety belt was loop extrusion abolished (Fig. 5C). Quantitation of the DNA loop extrusion parameters revealed that Ct DYcg1 and holo condensin generated loops at similar rates (Fig. 5D). Yet, the lifetime of loops generated by Ct DYcg1 condensin was significantly increased when compared to loops generated by Ct holo condensin (Fig. 5E), which otherwise snapped soon after the complex reached the stall force for loop extrusion (Fig. 5F). We conclude that kleisin chamber II, but not the presence of Ycg1, is essential for condensin-mediated DNA loop extrusion. Like condensin from other species (6, 9), Ct holo condensin almost exclusively reeled in DNA unidirectionally (53 of 56 DNA loops) (Fig. 5G, fig. S22A, and movie S6). By contrast, Ct DYcg1 condensin frequently switched directions during loop extrusion (57 of 79) (Fig. 5G, fig. S22B, and movie S7). On some DNA molecules, the DNA loop changed direction as many as six times within a 120-s imaging window (fig. S22B and movie S8). The changes in direction were sometimes difficult to discern when they overlapped with anchor slippage events, which were more frequent for DNA loops generated by Ct DYcg1 condensin than for loops generated by holo condensin (Fig. 5G), but could clearly be identified in most cases when the loop size further increased as condensin reeled in DNA from the opposite direction (fig. S23A). The change in
+
+ruptured spontaneously was in most cases (55 of 59 dissolved loops) retained where loop extrusion had originated and in the remaining few cases (4 of 59) dissociated upon loop rupture (Fig. 4B, fig. S18A, and movie S3). We confirmed that condensin remained anchored at its starting position when loops snapped on DNA molecules arched by side flow (fig. S18B). Spontaneous liberation of condensin-mediated DNA loops thus primarily involved release of DNA from the motor entity, occasionally from both motor and anchor, but never from the anchor entity alone. DNA loops created by condensin with a TEV cleavage site in chamber I released in a similar manner as spontaneous rupture events (Fig. 4, A and B; fig. S18, A and B; and movie S4), with condensin retained at the anchor position (60 of 70 dissolved loops) or lost from the DNA (10 of 70). These events were attributable to opening of chamber I, because we detected the ATTO647N fluorophore attached to Brn1N, which is released from the complex upon TEV cleavage (18), for a considerably shorter time than after spontaneous rupture of noncleavable condensin (Fig. 4C). We conclude that opening of kleisin chamber I releases the motor segment of the DNA loop (Fig. 4D). By contrast, when loops made by condensin with a TEV cleavage site in kleisin chamber II dissolved, condensin was released from the anchoring position and retained at the translocating site in nearly half of the observed cases (36 of 76 dissolved loops) (Fig. 4, A and B; fig. S18, A and B; and movie S5). In rare instances, condensin continued to translocate in the same direction after loop rupture, trailing a small DNA density that it was no longer able to expand (fig. S18C). We observed several cases of condensin translocation without DNA loop expansion after prolonged incubation with TEV protease (fig. S18D). Consistent with the previous finding that mutation of the kleisin safety belt results in DNA loop slippage (6), our experiments demonstrate that chamber II creates the anchor segment of the DNA loop (Fig. 4D). The remaining loop rupture events, in which condensin remained at the anchor position (32 of 76) or dissociated (8 of 76), presumably correspond to spontaneous loop ruptures, which we still expect to occur with TEV-cleavable As expected, the fraction of DNA molecules that displayed loop formation was substantially reduced when we preincubated with TEV protease condensin that contained a TEV site in chamber I (0 of 143 DNA molecules) or chamber II (35 of 172), although we frequently observed that cleaved complexes still bound to DNA (fig. S19). This strong reduction in looping efficiency contrasts the effect of preincubation with TEV protease of condensin with a TEV site in chamber IA (57 of 69),
+
+[Page 7]
+
+loop extrusion direction is hence not simple backtracking of condensin’s motor entity. It can also not be explained by the action of a second condensin complex that moves into the opposite direction, as such an event would have resulted in the formation of Z-loop structures, which are easily recognizable by the elongated DNA density (31) and were rare under the conditions of our assay (fig. S23B). We propose that the observed turns instead reflect an exchange of motor and anchor DNA segments within the extruding condensin complex (Fig. 5H). If this were the case, the speed of loop extrusion should be identical in either direction. Loop extrusion rates after switching direction were indeed very similar to the original translocation rates (Fig. 5I). A hold-and-feed mechanism drives SMC-mediated DNA loop extrusion
+
+Shaltiel et al., Science 376, 1087–1094 (2022)
+
+capture in a chromatin context, which might explain the strong reduction in fitness of cells that express an Smc2–Brn1 fusion protein (fig. S4). In our model, DNA entrapment in kleisin chamber II is responsible for anchoring condensin to DNA and presumably accounts for the high-salt–resistant DNA binding observed in vitro (Fig. 1). The finding that Ct condensin complexes that lack Ycg1HEAT-II can still extrude DNA loops (Fig. 5) is inconsistent with the recent proposal that the homologous subunit of cohesin is an integral part of the translocation mechanism by creating a dynamic DNA-binding module at the SMC hinge domain (33), an interaction that we do not observe for Ycg1 in our cryo-EM structure of DNA-bound condensin (Fig. 3). Ycg1 is, however, required to close off the kleisin safety belt and thereby separate anchor and motor strands of the DNA loop, because its absence from the condensin complex turns an exclusively unidirectional DNA loop extruder into one that frequently switches direction. The natural merge of chambers II and IA in the possible absence of a kleisin safety belt in cohesin (12, 13) presumably allows for a frequent exchange of motor and anchor strands (7, 8), which explains how monomeric cohesin can extrude DNA loops bidirectionally. It is similarly conceivable that opening of the safety belt allows changes in the direction of loop formation by human condensin (44). Binding of the cohesin HEAT-II subunit to the CCCTC binding factor (CTCF) most likely prevents strand exchange and thereby provides a molecular account for the CTCF convergence rule for topologically associating domains (45). Confinement of the DNA in two kleisin chambers thus not only forms the basis of DNA translocation but also dictates the directionality of loop extrusion by SMC protein complexes.
+
+REFERENCES AND NOTES
+
+1. I. F. Davidson, J. M. Peters, Nat. Rev. Mol. Cell Biol. 22, 445–464 (2021). 2. S. Yatskevich, J. Rhodes, K. Nasmyth, Organization of Chromosomal DNA by SMC Complexes, Annu. Rev. Genet. 53, 445–482 (2019). 3. M. S. van Ruiten, B. D. Rowland, Curr. Opin. Cell Biol. 70, 84–90 (2021). 4. T. Hirano, Nat. Genet. 49, 1419–1420 (2017). 5. J. H. Gibcus et al., Science 359, eaao6135 (2018). 6. M. Ganji et al., Science 360, 102–105 (2018). 7. I. F. Davidson et al., Science 366, 1338–1345 (2019). 8. Y. Kim, Z. Shi, H. Zhang, I. J. Finkelstein, H. Yu, Science 366, 1345–1349 (2019). 9. S. Golfier, T. Quail, H. Kimura, J. Brugués, eLife 9, e53885 (2020). 10. C. H. Haering, J. Löwe, A. Hochwagen, K. Nasmyth, Mol. Cell 9, 773–788 (2002). 11. I. Onn, N. Aono, M. Hirano, T. Hirano, EMBO J. 26, 1024–1034 (2007). 12. M. Kschonsak et al., Cell 171, 588–600.e24 (2017). 13. Y. Li et al., eLife 7, e38356 (2018). 14. I. Piazza et al., Nat. Struct. Mol. Biol. 21, 560–568 (2014). 15. Z. Shi, H. Gao, X. C. Bai, H. Yu, Science 368, 1454–1459 (2020). 16. T. L. Higashi et al., Mol. Cell 79, 917–933.e9 (2020).
+
+SMC complexes stand out from conventional DNA motor proteins by their ability to translocate in steps of kilobase pairs in length (6–8). A central challenge to all models that attempt to describe the mechanism of DNA loop extrusion is that they need to explain how such large consecutive steps proceed in a directional manner on a DNA substrate that lacks intrinsic polarity (32). Recent “swing and clamp” (29) or Brownian ratchet (33) models predict that distant DNA binding sites, created by HEAT-repeat subunits at the SMC hinge and head modules, are brought into the vicinity upon coiled-coil folding. The DNA-segment-capture model (34), by contrast, suggests that SMC dimers grasp DNA loops that are generated by random thermal motion between their coiled coils and then merge the entrapped loop with a second loop that is held at the head module upon zipping up of the coils. Biochemical mapping of the path of DNA through two kleisin chambers (Fig. 2), structures of the identical protein complex in nucleotide-free (28) and ATP-bound states (Fig. 3) (35), and the assignment of motor and anchor functions to the DNA binding sites by single-molecule imaging (Fig. 4) provide the foundation for a different mechanistic description of the SMC-mediated DNA loop extrusion cycle (fig. S24 and movie S9): The concerted tilting of a DNA double helix that is entrapped in kleisin chamber I actively feeds DNA between the unzipped coiled coils upon ATP-mediated SMC head engagement (Fig. 6A). The large-scale DNA movement upon nucleotide binding is presumably accomplished by the repositioning of HEAT-repeat subunit I (fig. S14) and the generation of a DNA-binding surface on top of the engaged head domains (fig. S16) (15–17, 36, 37). As a result, two DNA loops are pseudotopologically entrapped by the condensin complex (Fig. 6B). After head disengagement upon nucleotide hydrolysis, reset of the complex to the apo state most
+
+likely proceeds through the “bridged” conformation (Fig. 6C) (28). Consequently, the head-proximal segment of the newly captured loop releases from kleisin chamber I. Simultaneously, zipping up of the SMC coiled coils (34, 38) and/or tilting of the folded coils (28, 29, 39, 40) move the distal loop segment toward the ATPase heads, where it remains confined between HEAT-repeat subunit I and the SMC coiled coils. To regenerate the initial conformation with DNA in kleisin chamber I, this DNA segment merely needs to tilt into the DNA-binding groove of the HEAT-repeat subunit, which is only possible in one direction because of geometric constraints. DNA entrapment in kleisin chamber I hence ensures that translocation proceeds processively and in a single direction, always threading the next DNA segment into the SMC coiled-coil lumen from the same end of the DNA loop. Because condensin complexes capable of binding but not hydrolyzing ATP take a single step on DNA (41), the pseudotopological insertion of a new DNA loop between the SMC coiled coils upon ATP-induced SMC head dimerization might constitute the forcegenerating step in the condensin reaction cycle—without the need that the flexible coiled-coil arms per se transduce mechanical force (40). Although future experiments that directly assess forces of the ATP-induced DNA feeding motion will need to confirm this conclusion, we designate this step the power-stroke motion of the condensin reaction cycle, in analogy to ATP-binding cassette (ABC) transporters (42). The size of this newly formed DNA loop depends on the tension in the DNA double helix, as modeled (34) and observed previously (6). This translocation mechanism explains how condensin can continue to extrude loops even when it encounters tethered obstacles that are many times its size (43), as transient dissociation of Ycs4 from Smc4head would allow the expanding DNA loop that contains the tether to move into the intermediate (IA) chamber, where it would not interfere with further extrusion steps (see fig. S25 for a detailed description). Because ATP binding, but not hydrolysis, is required for the salt-resistant association of condensin with DNA in vitro (fig. S1), we envision that condensin loading onto chromosomes takes place in the ATP-bound state of the reaction cycle. Loading might initiate by entrapment of one DNA segment in chamber II upon temporary disengagement of the kleisin safety-belt loop, possibly positioned close to Smc2head by a direct interaction with Ycg1 (28). Reassociation of Ycs4 with the head module then encloses the second DNA segment within chamber I and simultaneously feeds a DNA loop between the coils (fig. S24). In this model, opening of the Smc2–Brn1 interface, although not strictly required, sterically facilitates DNA
+
+[Page 8]
+
+17. J. E. Collier et al., eLife 9, e59560 (2020). 18. M. Hassler et al., Mol. Cell 74, 1175–1188.e9 (2019). 19. T. R. Beattie, S. D. Bell, Curr. Opin. Chem. Biol. 15, 614–619 (2011). 20. M. H. Lamers et al., Nature 407, 711–717 (2000). 21. L. Käshammer et al., Mol. Cell 76, 382–394.e6 (2019). 22. G. Hauk, J. M. Berger, Curr. Opin. Struct. Biol. 36, 85–96 (2016). 23. T. H. Massey, C. P. Mercogliano, J. Yates, D. J. Sherratt, J. Löwe, Mol. Cell 23, 457–469 (2006). 24. T. G. Gligoris et al., Science 346, 963–967 (2014). 25. C. H. Haering, A. M. Farcas, P. Arumugam, J. Metson, K. Nasmyth, Nature 454, 297–301 (2008). 26. M. Srinivasan et al., Cell 173, 1508–1519.e18 (2018). 27. S. Cuylen, J. Metz, C. H. Haering, Nat. Struct. Mol. Biol. 18, 894–901 (2011). 28. B. G. Lee et al., Nat. Struct. Mol. Biol. 27, 743–751 (2020). 29. B. W. Bauer et al., Cell 184, 5448–5464.e22 (2021). 30. K. Hara et al., EMBO Rep. 20, e47183 (2019). 31. E. Kim, J. Kerssemakers, I. A. Shaltiel, C. H. Haering, C. Dekker, Nature 579, 438–442 (2020). 32. M. Hassler, I. A. Shaltiel, C. H. Haering, Curr. Biol. 28, R1266–R1281 (2018). 33. T. L. Higashi, G. Pobegalov, M. Tang, M. I. Molodtsov, F. Uhlmann, eLife 10, e67530 (2021). 34. J. F. Marko, P. De Los Rios, A. Barducci, S. Gruber, Nucleic Acids Res. 47, 6956–6972 (2019). 35. B. G. Lee, J. Rhodes, J. Löwe, Proc. Natl. Acad. Sci. U.S.A. 119, e2120006119 (2022). 36. A. Rojowska et al., EMBO J. 33, 2847–2859 (2014).
+
+37. R. Vazquez Nunez, L. B. Ruiz Avila, S. Gruber, Mol. Cell 75, 209–223.e6 (2019). 38. M. L. Diebold-Durand et al., Mol. Cell 67, 334–347.e5 (2017). 39. F. Bürmann et al., Nat. Struct. Mol. Biol. 26, 227–236 (2019). 40. J. K. Ryu et al., Nat. Struct. Mol. Biol. 27, 1134–1141 (2020). 41. J. K. Ryu et al., Nucleic Acids Res. 50, 820–832 (2022). 42. E. Stefan, S. Hofmann, R. Tampé, eLife 9, e55943 (2020). 43. B. Pradhan et al., bioRxiv 452501 [Preprint]. 16 July 2021. https://doi.org/10.1101/2021.07.15.452501. 44. M. Kong et al., Mol. Cell 79, 99–114.e9 (2020). 45. Y. Li et al., Nature 578, 472–476 (2020). ACKN OWLED GMEN TS
+
+We thank J. Metz for assistance with the generation of yeast strains, S. Bisht for protein purification, F. Merkel for advice and help with cryo-EM, R. Stipp for help setting up insect cell expression, T. Hoffmann for scientific computing support, E. S. Alonso (Scixel) for animation production, M. Lampe of the EMBL Advanced Light Microscopy Facility, F. Weis of the EMBL Cryo-Electron Microscopy Platform, and the Proteomics Core Facilities. Funding: European Research Council (grant 681365 to C.H.H.); Dutch Research Council Rubicon (grant 019.2015.1.310.025 to I.A.S.); and Jeff-Schell Darwin Trust PhD Studentship (S.D.). Author contributions: I.A.S., S.D., M.K., and S.B. purified condensin complexes; I.A.S. performed in vitro DNA loading assays; I.A.S. and S.D. performed single-molecule experiments; L.L. and S.E. performed cryo-EM experiments and processed data; L.L., S.E., and M.H. built structure models; I.A.S., J.O., and C.S. performed yeast experiments;
+
+S.E. and C.H.H. supervised the work and acquired funding; and I.A.S., S.E., and C.H.H. wrote the manuscript with input from all authors. Competing interests: The authors declare that they have no competing interests. Data and materials availability: All data are available in the main text or the supplementary materials. Plasmids, yeast strains, and image analysis scripts will be made available upon request. Cryo-EM maps have been deposited in the Electron Microscopy Data Bank under accession codes EMD-13934 (core) and EMD-13950 (periphery). Atomic coordinates of DNA-bound condensin are available in the Protein Data Bank (PDB) under accession numbers 7QEN (core) and 7QFW (periphery). License information: American Association for the Advancement of Science. No claim to original US government works. https://www.science.org/about/ science-licenses-journal-article-reuse SUPPLEMENTARY MATERIALS
+
+science.org/doi/10.1126/science.abm4012 Materials and Methods Figs. S1 to S25 Tables S1 and S2 References (46–63) MDAR Reproducibility Checklist Movies S1 to S9 View/request a protocol for this paper from Bio-protocol. Submitted 19 September 2021; accepted 26 April 2022 10.1126/science.abm4012
+
+Shaltiel et al., Science 376, 1087–1094 (2022)
+
+[Page 9]
+
+A hold-and-feed mechanism drives directional DNA loop extrusion by condensin Indra A. ShaltielSumanjit DattaLéa LecomteMarkus HasslerMarc KschonsakSol BravoCatherine StoberJenny OrmannsSebastian EustermannChristian H. Haering
+
+Science, 376 (6597), • DOI: 10.1126/science.abm4012
+
+Lots of loops Protein complexes of the structural maintenance of chromosomes (SMC) family organize genomes by extruding DNA loops that are hundreds of thousands of base pairs in length. Molecular biologists have wondered how these motor complexes move in consecutive steps that are several times their own size while consuming only a minimal amount of ATP energy, as well as why some reel in DNA from only one side whereas others do so symmetrically. By identifying the path of DNA though the condensin SMC complex at single-molecule resolution, Shaltiel et al. uncovered a solution for how condensin leapfrogs on chromosomes as its core folds DNA ahead of its track, whereas its peripheral part specifies directionality by holding onto the DNA double helix. —DJ
+
+Use of this article is subject to the Terms of service Science (ISSN ) is published by the American Association for the Advancement of Science. 1200 New York Avenue NW, Washington, DC 20005. The title Science is a registered trademark of AAAS. to original U.S. Government Works
+
+View the article online https://www.science.org/doi/10.1126/science.abm4012 Permissions https://www.science.org/help/reprints-and-permissions

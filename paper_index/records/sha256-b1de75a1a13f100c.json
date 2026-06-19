@@ -1,0 +1,802 @@
+{
+  "paper_id": "sha256-b1de75a1a13f100c",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_mechanism/sasai_2022_pnas_genome_simulation_phase_separation.pdf",
+  "pdf_sha256": "b1de75a1a13f100cc04414e5f788d77afa768253d0c67af3a447b2456be23811",
+  "filename": "sasai_2022_pnas_genome_simulation_phase_separation.pdf",
+  "item_type": "article",
+  "title_query": "genome simulation phase separation",
+  "filename_hints": {
+    "year_hint": 2022,
+    "venue_hint": "proceedingsofthenationalacademyofsciences",
+    "prefix": "sasai 2022 pnas genome simulation phase separation"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:17:10.626741+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": 0.5925,
+  "warnings": [
+    "year_hint_mismatch:2022!=2025",
+    "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=separationscienceandtechnology"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "manual_verified",
+  "semantic_scholar": {
+    "query": "genome simulation phase separation",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "genome simulation phase separation",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2022!=2025",
+          "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=separationscienceandtechnology"
+        ],
+        "best_score": 0.5925,
+        "candidate_count": 10
+      },
+      {
+        "query": "Generation of dynamic three dimensional genome structure through phase separation of chromatin Shin Fujishiroa,b",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "Three dimensional genome structure and dynamics play critical roles in regulating DNA functions",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2022!=2014",
+          "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=internationaljournalofmolecularsciences"
+        ],
+        "best_score": 0.2325,
+        "candidate_count": 10
+      },
+      {
+        "query": "Significance DNA functions in living cells are crucially affected by the three dimensional genome structure and dynamics",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "genome organization | A/B compartments | chromatin domains | lamina associated domains | nucleolus associated domains",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2022!=2018",
+          "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=nucleicacidsresearch"
+        ],
+        "best_score": 0.5035,
+        "candidate_count": 10
+      }
+    ],
+    "best_candidate": {
+      "paperId": "cca7aa0a94f932880ecc37e3ce6b2243b0795604",
+      "externalIds": {
+        "DOI": "10.1080/01496395.2025.2576539",
+        "CorpusId": 282798405
+      },
+      "url": "https://www.semanticscholar.org/paper/cca7aa0a94f932880ecc37e3ce6b2243b0795604",
+      "title": "Investigation of phase separation of mixture of oil and water in Monte Carlo simulation",
+      "venue": "Separation Science and Technology",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/01496395.2025.2576539?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/01496395.2025.2576539, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2025-11-02",
+      "journal": {
+        "name": "Separation Science and Technology",
+        "pages": "703 - 714",
+        "volume": "61"
+      },
+      "authors": [
+        {
+          "authorId": "2390842006",
+          "name": "Mehabaw Fikrie"
+        },
+        {
+          "authorId": "1388647179",
+          "name": "Tibebesilasse Birhanu"
+        },
+        {
+          "authorId": "100893240",
+          "name": "Y. Bassie"
+        },
+        {
+          "authorId": "9143362",
+          "name": "Yoseph Abebe"
+        },
+        {
+          "authorId": "2390835815",
+          "name": "Yeniesil Temare"
+        }
+      ],
+      "abstract": "ABSTRACT Phase separation refers to the segregation of a uniform mixture into distinct regions with unique physical and chemical properties. This phenomenon plays a crucial role in systems containing immiscible fluids such as oil and water, with significant implications for petroleum refining, chemical manufacturing, food science, and biological processes. In this study, Monte Carlo simulations were employed to investigate phase separation phenomena in mixed oil-water particle systems. Simulations were conducted on systems with 500–2,500 particles (in increments of 500), confined within square domains with side lengths from 25 to 40 units at 5-unit intervals. Key parameters such as box size, particle density, and interaction strength were systematically varied to evaluate their influence on phase behavior and dynamics. Results indicate that a box size of L = 30 and particle number N = 2,000 produce the most distinct oil-water phase separation. Larger systems and stronger interactions facilitate the transition from homogeneous to phase-separated states. Extended simulation durations further improve phase clarity, underscoring the critical importance of equilibration at MCstep = 106 from the tested Monte Carlo time steps of 103-106. These results guide simulation optimization and deepen molecular insights into phase separation and wettability, supporting improved enhanced oil recovery (EOR) strategies."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "cca7aa0a94f932880ecc37e3ce6b2243b0795604",
+        "title": "Investigation of phase separation of mixture of oil and water in Monte Carlo simulation",
+        "score": 0.5925,
+        "title_similarity": 0.5925,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e699ba0dfaa5f85350d104f0ad341fa7245c1197",
+        "title": "Photomodulated phase-separation kinetics in block copolymer melts: a DPD simulation study",
+        "score": 0.583,
+        "title_similarity": 0.583,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "186d7145a6f6fcec240d73b7e2c1ce0c525a7ade",
+        "title": "Non-canonical MLL1 activity regulates centromeric phase separation and genome stability",
+        "score": 0.583,
+        "title_similarity": 0.583,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "281d3a3e6f8f0a85018f8a0c6345a130259dc517",
+        "title": "Toward Accurate Simulation of Coupling between Protein Secondary Structure and Phase Separation.",
+        "score": 0.583,
+        "title_similarity": 0.583,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "31232ad15a5bbe1f53a63b161e4995dffb413cfa",
+        "title": "Dissipative Particle Dynamics Simulation for Reaction-Induced Phase Separation of Thermoset/Thermoplastic Blends",
+        "score": 0.575,
+        "title_similarity": 0.575,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b6ede47181095d19ed36219f7e83b398138225d4",
+        "title": "Three-Dimensional Simulation of Whole-Genome Structuring Through the Transition from Anaphase to Interphase.",
+        "score": 0.4233,
+        "title_similarity": 0.3833,
+        "query_year": null,
+        "candidate_year": null,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5d84d86b264f5c1ad8de5c81e2ae317173c400dd",
+        "title": "Sequence-dependent co-condensation of Lsr2 with DNA elucidates the mechanism of genome compaction in Mycobacterium tuberculosis",
+        "score": 0.1858,
+        "title_similarity": 0.1858,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c9fe9c6575903dcbbc1b5c771711d6f1e938d3c5",
+        "title": "Sequence-dependent co-condensation of Lsr2 with DNA elucidates the mechanism of genome compaction in Mycobacterium tuberculosis",
+        "score": 0.1858,
+        "title_similarity": 0.1858,
+        "query_year": null,
+        "candidate_year": 2026,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7808e848f8064b3b9285801a73313de56e858211",
+        "title": "Three-dimensional memory of nuclear organization through cell cycles",
+        "score": 0.04,
+        "title_similarity": 0.0,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "53c8d55b81ab5cc00a0c8b0f04a128dd31c454c6",
+        "title": "Mechanistic insights into the spatial organization of RNA polymerase proteins and the chromosome in E. coli cells",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": null,
+        "candidate_year": 2026,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1080/01496395.2025.2576539"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 19449,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "5d84d86b264f5c1ad8de5c81e2ae317173c400dd",
+          "externalIds": {
+            "DOI": "10.1101/2025.01.06.631453",
+            "CorpusId": 284582326
+          },
+          "url": "https://www.semanticscholar.org/paper/5d84d86b264f5c1ad8de5c81e2ae317173c400dd",
+          "title": "Sequence-dependent co-condensation of Lsr2 with DNA elucidates the mechanism of genome compaction in Mycobacterium tuberculosis",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.01.06.631453?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.01.06.631453, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-01-06",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2201678959",
+              "name": "Thejas Satheesh"
+            },
+            {
+              "authorId": "2287981459",
+              "name": "R. Singh"
+            },
+            {
+              "authorId": "2338995424",
+              "name": "Prakshi Gaur"
+            },
+            {
+              "authorId": "113575518",
+              "name": "Sneha Shahu"
+            },
+            {
+              "authorId": "2261086141",
+              "name": "Saminathan Ramakrishnan"
+            },
+            {
+              "authorId": "2295894694",
+              "name": "Mansi Srivastava"
+            },
+            {
+              "authorId": "2338995684",
+              "name": "Shreyasi Neogi"
+            },
+            {
+              "authorId": "2267907735",
+              "name": "Sandeep Choubey"
+            },
+            {
+              "authorId": "2295894752",
+              "name": "Mahipal Ganji"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "c9fe9c6575903dcbbc1b5c771711d6f1e938d3c5",
+          "externalIds": {
+            "PubMedCentral": "12781881",
+            "DOI": "10.1093/nar/gkaf1428",
+            "CorpusId": 275357087,
+            "PubMed": "41505096"
+          },
+          "url": "https://www.semanticscholar.org/paper/c9fe9c6575903dcbbc1b5c771711d6f1e938d3c5",
+          "title": "Sequence-dependent co-condensation of Lsr2 with DNA elucidates the mechanism of genome compaction in Mycobacterium tuberculosis",
+          "venue": "Nucleic Acids Research",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12781881, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-01-05",
+          "journal": {
+            "name": "Nucleic Acids Research",
+            "volume": "54"
+          },
+          "authors": [
+            {
+              "authorId": "2338995424",
+              "name": "Prakshi Gaur"
+            },
+            {
+              "authorId": "2201678959",
+              "name": "Thejas Satheesh"
+            },
+            {
+              "authorId": "2287981459",
+              "name": "R. Singh"
+            },
+            {
+              "authorId": "2235805100",
+              "name": "Hussain Beig"
+            },
+            {
+              "authorId": "113575518",
+              "name": "Sneha Shahu"
+            },
+            {
+              "authorId": "2261086141",
+              "name": "Saminathan Ramakrishnan"
+            },
+            {
+              "authorId": "2295894694",
+              "name": "Mansi Srivastava"
+            },
+            {
+              "authorId": "2338995684",
+              "name": "Shreyasi Neogi"
+            },
+            {
+              "authorId": "2145875273",
+              "name": "Ayesha Dash"
+            },
+            {
+              "authorId": "2267322809",
+              "name": "Amit Singh"
+            },
+            {
+              "authorId": "2267907735",
+              "name": "Sandeep Choubey"
+            },
+            {
+              "authorId": "2295894752",
+              "name": "Mahipal Ganji"
+            }
+          ],
+          "abstract": "Abstract The xenogeneic silencer protein Lsr2 from Mycobacterium tuberculosis plays a critical role in its survival and pathogenesis. Lsr2 is a nucleoid-associated protein (NAP) that interacts with DNA in vivo and regulates many genes. Purified Lsr2 forms nucleoprotein filaments with DNA molecules, leading to highly compacted DNA conformations. However, the physical mechanism underlying Lsr2-mediated DNA compaction, resulting in gene regulation, remains elusive. We employed a combination of biochemical assay, single-molecule imaging, and molecular dynamics simulations to investigate the governing principles of Lsr2-mediated DNA compaction. We show that, while Lsr2 alone undergoes phase separation, addition of DNA substantially lowers the required concentration for its phase separation. Strikingly, our single-molecule and simulation data establish that Lsr2 forms condensates with long stretches of AT-rich DNA, providing strong evidence for sequence-dependent co-condensation. We further validate our findings by carrying out in vivo imaging of endogenously expressing Lsr2 tagged with eGFP in Mtb cells. This observation is contrary to the classical view of sequence-dependent binding of individual protein molecules to DNA; our findings rather suggest that protein–DNA co-condensates “sense” the average binding energy landscape. We present a physical model for Lsr2-mediated DNA compaction and gmycene regulation, describing a novel mechanism for NAP-mediated genome organization in bacteria."
+        },
+        {
+          "paperId": "b6ede47181095d19ed36219f7e83b398138225d4",
+          "externalIds": {
+            "DOI": "10.1007/978-1-0716-4136-1_18",
+            "CorpusId": 272692890,
+            "PubMed": "39283460"
+          },
+          "url": "https://www.semanticscholar.org/paper/b6ede47181095d19ed36219f7e83b398138225d4",
+          "title": "Three-Dimensional Simulation of Whole-Genome Structuring Through the Transition from Anaphase to Interphase.",
+          "venue": "Methods in molecular biology",
+          "year": null,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-1-0716-4136-1_18?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-1-0716-4136-1_18, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "Methods in molecular biology",
+            "pages": "\n          293-308\n        ",
+            "volume": "2856"
+          },
+          "authors": [
+            {
+              "authorId": "2303069709",
+              "name": "Shin Fujishiro"
+            },
+            {
+              "authorId": "2303074172",
+              "name": "Masaki Sasai"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "53c8d55b81ab5cc00a0c8b0f04a128dd31c454c6",
+          "externalIds": {
+            "ArXiv": "2604.02838",
+            "CorpusId": 287121325
+          },
+          "url": "https://www.semanticscholar.org/paper/53c8d55b81ab5cc00a0c8b0f04a128dd31c454c6",
+          "title": "Mechanistic insights into the spatial organization of RNA polymerase proteins and the chromosome in E. coli cells",
+          "venue": "",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2604.02838, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2026-04-03",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "1491907485",
+              "name": "Debarshi Mitra"
+            },
+            {
+              "authorId": "2248409208",
+              "name": "Jens-Uwe Sommer"
+            }
+          ],
+          "abstract": "Along the bacterial chromosome, regions called rrn operons contain genes that are transcribed into ribosomal RNA. These operons are among the most transcriptionally active sites in the genome. It has been observed in E. coli that RNA polymerase (RNAP), while binding to these genetic loci along the chromosome during transcription, forms dense clusters, leading to spatial colocalization of the operons within the cell. Recent experimental evidence suggests that liquid-liquid phase separation contributes to the formation of RNAP clusters, with the antitermination factor NusA playing a key role. We present a simulation model to investigate the mechanisms underlying the formation of these biomolecular condensates. We propose that mutual attraction between NusA proteins, which exhibit a miscibility gap at higher concentrations, drives condensate formation via a polymer-assisted condensation pathway, and we demonstrate how these condensates promote the colocalization of rrn operons. Our results reconcile seemingly disparate experimental observations of chromosomal organization reported in fluorescence-based imaging and Hi-C experiments."
+        },
+        {
+          "paperId": "7808e848f8064b3b9285801a73313de56e858211",
+          "externalIds": {
+            "DOI": "10.1101/2024.10.25.620158",
+            "CorpusId": 273649205,
+            "PubMed": "39945369"
+          },
+          "url": "https://www.semanticscholar.org/paper/7808e848f8064b3b9285801a73313de56e858211",
+          "title": "Three-dimensional memory of nuclear organization through cell cycles",
+          "venue": "bioRxiv",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2024/10/25/2024.10.25.620158.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.10.25.620158?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.10.25.620158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-12-21",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2303069709",
+              "name": "Shin Fujishiro"
+            },
+            {
+              "authorId": "2303074172",
+              "name": "Masaki Sasai"
+            }
+          ],
+          "abstract": "The genome in the cell nucleus is organized by a dynamic process influenced by structural memory from mitosis. In this study, we develop a model of human genome dynamics through cell cycles by extending the previously developed whole-genome model to cover the mitotic phase. With this extension, we focus on the role of mitotic and cell cycle memory in genome organization. The simulation progresses from mitosis to interphase and the subsequent mitosis, leading to successive cell cycles. During mitosis, our model describes microtubule dynamics, showing how forces orchestrate the assembly of chromosomes into a rosette ring structure at metaphase. The model explains how the positioning of chromosomes depends on their size in metaphase. The memory of the metaphase configuration persists through mitosis and into interphase in dimensions perpendicular to the cell division axis, effectively guiding the distribution of chromosome territories over multiple cell cycles. At the onset of each G1 phase, phase separation of active and inactive chromatin domains occurs, leading to A/B compartmentalization. Our cycling simulations show that the compartments are unaffected by structural memory from previous cycles and are consistently established in each cell cycle. The genome model developed in this study highlights the interplay between chromosome dynamics and structural memory across cell cycles, providing insights for the analyses of cellular processes."
+        },
+        {
+          "paperId": "cca7aa0a94f932880ecc37e3ce6b2243b0795604",
+          "externalIds": {
+            "DOI": "10.1080/01496395.2025.2576539",
+            "CorpusId": 282798405
+          },
+          "url": "https://www.semanticscholar.org/paper/cca7aa0a94f932880ecc37e3ce6b2243b0795604",
+          "title": "Investigation of phase separation of mixture of oil and water in Monte Carlo simulation",
+          "venue": "Separation Science and Technology",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/01496395.2025.2576539?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/01496395.2025.2576539, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-11-02",
+          "journal": {
+            "name": "Separation Science and Technology",
+            "pages": "703 - 714",
+            "volume": "61"
+          },
+          "authors": [
+            {
+              "authorId": "2390842006",
+              "name": "Mehabaw Fikrie"
+            },
+            {
+              "authorId": "1388647179",
+              "name": "Tibebesilasse Birhanu"
+            },
+            {
+              "authorId": "100893240",
+              "name": "Y. Bassie"
+            },
+            {
+              "authorId": "9143362",
+              "name": "Yoseph Abebe"
+            },
+            {
+              "authorId": "2390835815",
+              "name": "Yeniesil Temare"
+            }
+          ],
+          "abstract": "ABSTRACT Phase separation refers to the segregation of a uniform mixture into distinct regions with unique physical and chemical properties. This phenomenon plays a crucial role in systems containing immiscible fluids such as oil and water, with significant implications for petroleum refining, chemical manufacturing, food science, and biological processes. In this study, Monte Carlo simulations were employed to investigate phase separation phenomena in mixed oil-water particle systems. Simulations were conducted on systems with 500–2,500 particles (in increments of 500), confined within square domains with side lengths from 25 to 40 units at 5-unit intervals. Key parameters such as box size, particle density, and interaction strength were systematically varied to evaluate their influence on phase behavior and dynamics. Results indicate that a box size of L = 30 and particle number N = 2,000 produce the most distinct oil-water phase separation. Larger systems and stronger interactions facilitate the transition from homogeneous to phase-separated states. Extended simulation durations further improve phase clarity, underscoring the critical importance of equilibration at MCstep = 106 from the tested Monte Carlo time steps of 103-106. These results guide simulation optimization and deepen molecular insights into phase separation and wettability, supporting improved enhanced oil recovery (EOR) strategies."
+        },
+        {
+          "paperId": "31232ad15a5bbe1f53a63b161e4995dffb413cfa",
+          "externalIds": {
+            "PubMedCentral": "10911110",
+            "DOI": "10.1021/acs.jpcb.3c07756",
+            "CorpusId": 267758770,
+            "PubMed": "38373192"
+          },
+          "url": "https://www.semanticscholar.org/paper/31232ad15a5bbe1f53a63b161e4995dffb413cfa",
+          "title": "Dissipative Particle Dynamics Simulation for Reaction-Induced Phase Separation of Thermoset/Thermoplastic Blends",
+          "venue": "Journal of Physical Chemistry B",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10911110, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-19",
+          "journal": {
+            "name": "The Journal of Physical Chemistry. B",
+            "pages": "2018 - 2027",
+            "volume": "128"
+          },
+          "authors": [
+            {
+              "authorId": "2239193487",
+              "name": "Yoshiaki Kawagoe"
+            },
+            {
+              "authorId": "3218379",
+              "name": "G. Kikugawa"
+            },
+            {
+              "authorId": "46608614",
+              "name": "K. Shirasu"
+            },
+            {
+              "authorId": "2284751115",
+              "name": "Yuuki Kinugawa"
+            },
+            {
+              "authorId": "2239193002",
+              "name": "Tomonaga Okabe"
+            }
+          ],
+          "abstract": "Reaction-induced phase separation occurs during the curing reaction when a thermoplastic resin is dissolved in a thermoset resin, which enables toughening of the thermoset resin. As resin properties vary significantly depending on the morphology of the phase-separated structure, controlling the morphology formation is of critical importance. Reaction-induced phase separation is a phenomenon that ranges from the chemical reaction scale to the mesoscale dynamics of polymer molecules. In this study, we performed curing simulations using dissipative particle dynamics (DPD) coupled with a reaction model to reproduce reaction-induced phase separation. The curing reaction properties of the thermoset resin were determined by ab initio quantum chemical calculations, and the DPD parameters were determined by all-atom molecular dynamics simulations. This enabled mesoscopic simulations, including reactions that reflect the intrinsic material properties. The effects of the thermoplastic resin concentration, molecular weight, and curing conditions on the phase-separation morphology were evaluated, and the cure shrinkage and stiffness of each cured resin were confirmed to be consistent with the experimental trends. Furthermore, the local strain field under tensile deformation was visualized, and the inhomogeneous strain field caused by the phase-separated structures of two resins with different stiffnesses was revealed. These results can aid in understanding the toughening properties of thermoplastic additives at the molecular level."
+        },
+        {
+          "paperId": "e699ba0dfaa5f85350d104f0ad341fa7245c1197",
+          "externalIds": {
+            "DOI": "10.1080/08927022.2024.2316819",
+            "CorpusId": 267691223
+          },
+          "url": "https://www.semanticscholar.org/paper/e699ba0dfaa5f85350d104f0ad341fa7245c1197",
+          "title": "Photomodulated phase-separation kinetics in block copolymer melts: a DPD simulation study",
+          "venue": "Molecular Simulation",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/08927022.2024.2316819?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/08927022.2024.2316819, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-14",
+          "journal": {
+            "name": "Molecular Simulation",
+            "pages": "394 - 403",
+            "volume": "50"
+          },
+          "authors": [
+            {
+              "authorId": "2044669434",
+              "name": "Avinash Chauhan"
+            },
+            {
+              "authorId": "2278790458",
+              "name": "Ashish Kumar Singh"
+            },
+            {
+              "authorId": "47264596",
+              "name": "Awaneesh Singh"
+            }
+          ],
+          "abstract": "ABSTRACT We study phase-separation kinetics of symmetric diblock copolymer (BCP) melt in $3d$3d subjected to sequential light on/off cycles. The incompatible blocks of each BCP chain are connected by a photosensitive bond, which undergoes breakage during photo-illumination (on-cycle) and recombination during the off-cycle. We set a shorter fixed time limit for each on-cycles and focus on analysing how the much longer duration of the light off-cycles affects the segregation kinetics. We explore two scenarios for each off-cycle time variation: one with equal and another with increasing durations. For both cases, we determine the rate constants for bond formation and degradation reactions and assess their influence on the dynamical scaling functions and the growth scale of evolving morphologies. The average domain size typically exhibits diffusive growth ($R\\lpar t\\rpar \\sim t^{1/3}$R(t)∼t1/3) for a couple of cycles in the beginning. However, the domain growth nearly freezes during the rest of the cycles, resulting in bicontinuous and nearly frozen isotropic morphologies."
+        },
+        {
+          "paperId": "186d7145a6f6fcec240d73b7e2c1ce0c525a7ade",
+          "externalIds": {
+            "DOI": "10.1038/s41556-023-01270-1",
+            "CorpusId": 265070096,
+            "PubMed": "37945831"
+          },
+          "url": "https://www.semanticscholar.org/paper/186d7145a6f6fcec240d73b7e2c1ce0c525a7ade",
+          "title": "Non-canonical MLL1 activity regulates centromeric phase separation and genome stability",
+          "venue": "Nature Cell Biology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41556-023-01270-1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41556-023-01270-1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-11-01",
+          "journal": {
+            "name": "Nature Cell Biology",
+            "pages": "1637 - 1649",
+            "volume": "25"
+          },
+          "authors": [
+            {
+              "authorId": "2265767187",
+              "name": "Liang Sha"
+            },
+            {
+              "authorId": "2397272618",
+              "name": "Zi-Tao Yang"
+            },
+            {
+              "authorId": "47237884",
+              "name": "S. An"
+            },
+            {
+              "authorId": "2265831417",
+              "name": "Wentao Yang"
+            },
+            {
+              "authorId": "2109514237",
+              "name": "Sungmin Kim"
+            },
+            {
+              "authorId": "2360164216",
+              "name": "Hoon Oh"
+            },
+            {
+              "authorId": "49394885",
+              "name": "Jing Xu"
+            },
+            {
+              "authorId": "2170790913",
+              "name": "Jun Yin"
+            },
+            {
+              "authorId": "2155263964",
+              "name": "Hengan Wang"
+            },
+            {
+              "authorId": "2254255708",
+              "name": "H. Lenz"
+            },
+            {
+              "authorId": "2265770891",
+              "name": "Woojin An"
+            },
+            {
+              "authorId": "2243237365",
+              "name": "Uhn-Soo Cho"
+            },
+            {
+              "authorId": "2145036327",
+              "name": "Y. Dou"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "281d3a3e6f8f0a85018f8a0c6345a130259dc517",
+          "externalIds": {
+            "DOI": "10.1021/jacs.3c09195",
+            "CorpusId": 266373053,
+            "PubMed": "38112495"
+          },
+          "url": "https://www.semanticscholar.org/paper/281d3a3e6f8f0a85018f8a0c6345a130259dc517",
+          "title": "Toward Accurate Simulation of Coupling between Protein Secondary Structure and Phase Separation.",
+          "venue": "Journal of the American Chemical Society",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/jacs.3c09195?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/jacs.3c09195, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-12-19",
+          "journal": {
+            "name": "Journal of the American Chemical Society"
+          },
+          "authors": [
+            {
+              "authorId": "2121292766",
+              "name": "Yumeng Zhang"
+            },
+            {
+              "authorId": "2275617370",
+              "name": "Shanlong Li"
+            },
+            {
+              "authorId": "46809982",
+              "name": "Xiping Gong"
+            },
+            {
+              "authorId": "2155289858",
+              "name": "Jianhan Chen"
+            }
+          ],
+          "abstract": "Intrinsically disordered proteins (IDPs) frequently mediate phase separation that underlies the formation of a biomolecular condensate. Together with theory and experiment, efficient coarse-grained (CG) simulations have been instrumental in understanding the sequence-specific phase separation of IDPs. However, the widely used Cα-only models are limited in capturing the peptide nature of IDPs, particularly backbone-mediated interactions and effects of secondary structures, in phase separation. Here, we describe a hybrid resolution (HyRes) protein model toward a more accurate description of the backbone and transient secondary structures in phase separation. With an atomistic backbone and coarse-grained side chains, HyRes can semiquantitatively capture the residue helical propensity and overall chain dimension of monomeric IDPs. Using GY-23 as a model system, we show that HyRes is efficient enough for the direct simulation of spontaneous phase separation and, at the same time, appears accurate enough to resolve the effects of single His to Lys mutations. HyRes simulations also successfully predict increased β-structure formation in the condensate, consistent with available experimental CD data. We further utilize HyRes to study the phase separation of TPD-43, where several disease-related mutants in the conserved region (CR) have been shown to affect residual helicities and modulate the phase separation propensity as measured by the saturation concentration. The simulations successfully recapitulate the effect of these mutants on the helicity and phase separation propensity of TDP-43 CR. Analyses reveal that the balance between backbone and side chain-mediated interactions, but not helicity itself, actually determines phase separation propensity. These results support that HyRes represents an effective protein model for molecular simulation of IDP phase separation and will help to elucidate the coupling between transient secondary structures and phase separation."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-b1de75a1a13f100c.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-b1de75a1a13f100c.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-b1de75a1a13f100c.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "49a8f62111732fc0e4782843113267c5372f47fdd101705874ff62b7dbc5b111",
+    "chunk_count": 33,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "title": "Generation of dynamic three-dimensional genome structure through phase separation of chromatin",
+    "authors": "Shin Fujishiro, Masaki Sasai",
+    "year": "2022",
+    "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.2109838119",
+    "url": "https://doi.org/10.1073/pnas.2109838119",
+    "abstract": "",
+    "source_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC9295772/"
+    ],
+    "source_note": "verified from first-page text and PNAS/PMC record; local filename title was wrong",
+    "bibtex_key": "fujishiro2022chromatin"
+  },
+  "content_kind": "pdf_backed"
+}

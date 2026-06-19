@@ -1,0 +1,1266 @@
+{
+  "paper_id": "sha256-f9a14a698fcc75ec",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/DNA_mechanics/Zhou 2013 NAR - DNAshape a method for the high-throughput prediction of DNA structural features on a genomic scale.pdf",
+  "pdf_sha256": "f9a14a698fcc75ec1ed139d4b027c43dec35447adc5d35cc37866cdd52a969ec",
+  "filename": "rohs_2013_NAR_DNAshape.pdf",
+  "item_type": "article",
+  "title_query": "NAR DNAshape",
+  "filename_hints": {
+    "year_hint": 2013,
+    "venue_hint": "",
+    "prefix": "rohs 2013 NAR DNAshape"
+  },
+  "doi_candidates": [
+    "10.1093/nar/gkt437"
+  ],
+  "date_indexed": "2026-04-17T03:18:32.769954+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.3919,
+  "warnings": [
+    "year_hint_mismatch:2013!=2024"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "NAR DNAshape",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "8e57f2f769f7ca9b9845777a2f34fe5199d0eb64",
+      "externalIds": {
+        "PubMedCentral": "11223853",
+        "DOI": "10.1093/nar/gkae433",
+        "CorpusId": 270056387,
+        "PubMed": "38801070"
+      },
+      "url": "https://www.semanticscholar.org/paper/8e57f2f769f7ca9b9845777a2f34fe5199d0eb64",
+      "title": "Deep DNAshape webserver: prediction and real-time visualization of DNA shape considering extended k-mers",
+      "venue": "Nucleic Acids Research",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1093/nar/gkae433",
+        "status": "GOLD",
+        "license": "CCBYNC",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11223853, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2024-05-27",
+      "journal": {
+        "name": "Nucleic Acids Research",
+        "pages": "W7 - W12",
+        "volume": "52"
+      },
+      "authors": [
+        {
+          "authorId": "2109374668",
+          "name": "Jinsen Li"
+        },
+        {
+          "authorId": "3209392",
+          "name": "R. Rohs"
+        }
+      ],
+      "abstract": "Abstract Sequence-dependent DNA shape plays an important role in understanding protein–DNA binding mechanisms. High-throughput prediction of DNA shape features has become a valuable tool in the field of protein–DNA recognition, transcription factor–DNA binding specificity, and gene regulation. However, our widely used webserver, DNAshape, relies on statistically summarized pentamer query tables to query DNA shape features. These query tables do not consider flanking regions longer than two base pairs, and acquiring a query table for hexamers or higher-order k-mers is currently still unrealistic due to limitations in achieving sufficient statistical coverage in molecular simulations or structural biology experiments. A recent deep-learning method, Deep DNAshape, can predict DNA shape features at the core of a DNA fragment considering flanking regions of up to seven base pairs, trained on limited simulation data. However, Deep DNAshape is rather complicated to install, and it must run locally compared to the pentamer-based DNAshape webserver, creating a barrier for users. Here, we present the Deep DNAshape webserver, which has the benefits of both methods while being accurate, fast, and accessible to all users. Additional improvements of the webserver include the detection of user input in real time, the ability of interactive visualization tools and different modes of analyses. URL: https://deepdnashape.usc.edu"
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "8e57f2f769f7ca9b9845777a2f34fe5199d0eb64",
+        "title": "Deep DNAshape webserver: prediction and real-time visualization of DNA shape considering extended k-mers",
+        "score": 0.3919,
+        "title_similarity": 0.3519,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "fcc771bff3619e3d27e9ac6ec2e842551c1d78a8",
+        "title": "BERT-NAR-BERT: A Non-Autoregressive Pre-Trained Sequence-to-Sequence Model Leveraging BERT Checkpoints",
+        "score": 0.3568,
+        "title_similarity": 0.3568,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0ca56104150f09c7391037ba89023fc4cd1b1061",
+        "title": "Introducing NAR Molecular Medicine, a new journal in the Nucleic Acids Research family",
+        "score": 0.3568,
+        "title_similarity": 0.3568,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "23795ef76c2155796b6c1e00f72ebf1103c9e9f4",
+        "title": "Traffic Flow Prediction Method Based on Seasonal Characteristics and SARIMA-NAR Model",
+        "score": 0.3568,
+        "title_similarity": 0.3568,
+        "query_year": null,
+        "candidate_year": 2022,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "388414c7e17e4ddc4dfb249a90cb77a3c378366c",
+        "title": "ARIMA and NAR based prediction model for time series analysis of COVID-19 cases in India",
+        "score": 0.3519,
+        "title_similarity": 0.3519,
+        "query_year": null,
+        "candidate_year": 2020,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8794e4b047ad8e2a4b846f3fcf2fb074f483fa40",
+        "title": "Analysis of Hybrid NAR-RBFs Networks for complex non-linear Covid-19 model with fractional operators",
+        "score": 0.35,
+        "title_similarity": 0.35,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a0d7764867169df20a7efbd9d1d1145bc5a0057a",
+        "title": "Nesting the SIRV model with NAR, LSTM and statistical methods to fit and predict COVID-19 epidemic trend in Africa",
+        "score": 0.3483,
+        "title_similarity": 0.3483,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "9feca10c481c20a44f825d21c74128a248ebf534",
+        "title": "Culturally responsive research ethics: How the socio-ethical norms of Arr-nar/Kreng-jai inform research participation at the Thai-Myanmar border",
+        "score": 0.3444,
+        "title_similarity": 0.3444,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7d474c9c436bcbe54755bd4108b2ead9d808abfc",
+        "title": "The Neutrophil-to-Albumin Ratio (NAR): A Novel Index in Relation to Clinical Symptoms, Quality of Life, and Psychological Status in Diarrhea-Predominant Irritable Bowel Syndrome (IBS-D)",
+        "score": 0.3425,
+        "title_similarity": 0.3425,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7980aee134ae864804c314965ee0819bbfe702a9",
+        "title": "Systematic prediction of DNA shape changes due to CpG methylation explains epigenetic effects on protein–DNA binding",
+        "score": 0.04,
+        "title_similarity": 0.0,
+        "query_year": null,
+        "candidate_year": 2018,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1093/nar/gkae433"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 46691,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "7980aee134ae864804c314965ee0819bbfe702a9",
+          "externalIds": {
+            "MAG": "2792170325",
+            "PubMedCentral": "5800008",
+            "DOI": "10.1186/s13072-018-0174-4",
+            "CorpusId": 3309201,
+            "PubMed": "29409522"
+          },
+          "url": "https://www.semanticscholar.org/paper/7980aee134ae864804c314965ee0819bbfe702a9",
+          "title": "Systematic prediction of DNA shape changes due to CpG methylation explains epigenetic effects on protein–DNA binding",
+          "venue": "Epigenetics & Chromatin",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://epigeneticsandchromatin.biomedcentral.com/track/pdf/10.1186/s13072-018-0174-4",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5800008, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-02-06",
+          "journal": {
+            "name": "Epigenetics & Chromatin",
+            "volume": "11"
+          },
+          "authors": [
+            {
+              "authorId": "145186918",
+              "name": "Satyanarayan Rao"
+            },
+            {
+              "authorId": "37749677",
+              "name": "Tsu-Pei Chiu"
+            },
+            {
+              "authorId": "11919403",
+              "name": "J. Kribelbauer"
+            },
+            {
+              "authorId": "2833697",
+              "name": "R. Mann"
+            },
+            {
+              "authorId": "1706951",
+              "name": "H. Bussemaker"
+            },
+            {
+              "authorId": "3209392",
+              "name": "R. Rohs"
+            }
+          ],
+          "abstract": "DNA shape analysis has demonstrated the potential to reveal structure-based mechanisms of protein–DNA binding. However, information about the influence of chemical modification of DNA is limited. Cytosine methylation, the most frequent modification, represents the addition of a methyl group at the major groove edge of the cytosine base. In mammalian genomes, cytosine methylation most frequently occurs at CpG dinucleotides. In addition to changing the chemical signature of C/G base pairs, cytosine methylation can affect DNA structure. Since the original discovery of DNA methylation, major efforts have been made to understand its effect from a sequence perspective. Compared to unmethylated DNA, however, little structural information is available for methylated DNA, due to the limited number of experimentally determined structures. To achieve a better mechanistic understanding of the effect of CpG methylation on local DNA structure, we developed a high-throughput method, methyl-DNAshape, for predicting the effect of cytosine methylation on DNA shape. Using our new method, we found that CpG methylation significantly altered local DNA shape. Four DNA shape features—helix twist, minor groove width, propeller twist, and roll—were considered in this analysis. Distinct distributions of effect size were observed for different features. Roll and propeller twist were the DNA shape features most strongly affected by CpG methylation with an effect size depending on the local sequence context. Methylation-induced changes in DNA shape were predictive of the measured rate of cleavage by DNase I and suggest a possible mechanism for some of the methylation sensitivities that were recently observed for human Pbx-Hox complexes. CpG methylation is an important epigenetic mark in the mammalian genome. Understanding its role in protein–DNA recognition can further our knowledge of gene regulation. Our high-throughput methyl-DNAshape method can be used to predict the effect of cytosine methylation on DNA shape and its subsequent influence on protein–DNA interactions. This approach overcomes the limited availability of experimental DNA structures that contain 5-methylcytosine."
+        },
+        {
+          "paperId": "8e57f2f769f7ca9b9845777a2f34fe5199d0eb64",
+          "externalIds": {
+            "PubMedCentral": "11223853",
+            "DOI": "10.1093/nar/gkae433",
+            "CorpusId": 270056387,
+            "PubMed": "38801070"
+          },
+          "url": "https://www.semanticscholar.org/paper/8e57f2f769f7ca9b9845777a2f34fe5199d0eb64",
+          "title": "Deep DNAshape webserver: prediction and real-time visualization of DNA shape considering extended k-mers",
+          "venue": "Nucleic Acids Research",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1093/nar/gkae433",
+            "status": "GOLD",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11223853, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-05-27",
+          "journal": {
+            "name": "Nucleic Acids Research",
+            "pages": "W7 - W12",
+            "volume": "52"
+          },
+          "authors": [
+            {
+              "authorId": "2109374668",
+              "name": "Jinsen Li"
+            },
+            {
+              "authorId": "3209392",
+              "name": "R. Rohs"
+            }
+          ],
+          "abstract": "Abstract Sequence-dependent DNA shape plays an important role in understanding protein–DNA binding mechanisms. High-throughput prediction of DNA shape features has become a valuable tool in the field of protein–DNA recognition, transcription factor–DNA binding specificity, and gene regulation. However, our widely used webserver, DNAshape, relies on statistically summarized pentamer query tables to query DNA shape features. These query tables do not consider flanking regions longer than two base pairs, and acquiring a query table for hexamers or higher-order k-mers is currently still unrealistic due to limitations in achieving sufficient statistical coverage in molecular simulations or structural biology experiments. A recent deep-learning method, Deep DNAshape, can predict DNA shape features at the core of a DNA fragment considering flanking regions of up to seven base pairs, trained on limited simulation data. However, Deep DNAshape is rather complicated to install, and it must run locally compared to the pentamer-based DNAshape webserver, creating a barrier for users. Here, we present the Deep DNAshape webserver, which has the benefits of both methods while being accurate, fast, and accessible to all users. Additional improvements of the webserver include the detection of user input in real time, the ability of interactive visualization tools and different modes of analyses. URL: https://deepdnashape.usc.edu"
+        },
+        {
+          "paperId": "7d474c9c436bcbe54755bd4108b2ead9d808abfc",
+          "externalIds": {
+            "PubMedCentral": "11177865",
+            "DOI": "10.2147/JIR.S458363",
+            "CorpusId": 270405430,
+            "PubMed": "38882187"
+          },
+          "url": "https://www.semanticscholar.org/paper/7d474c9c436bcbe54755bd4108b2ead9d808abfc",
+          "title": "The Neutrophil-to-Albumin Ratio (NAR): A Novel Index in Relation to Clinical Symptoms, Quality of Life, and Psychological Status in Diarrhea-Predominant Irritable Bowel Syndrome (IBS-D)",
+          "venue": "Journal of Inflammation Research",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://www.dovepress.com/getfile.php?fileID=99826",
+            "status": "GOLD",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11177865, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-06-01",
+          "journal": {
+            "name": "Journal of Inflammation Research",
+            "pages": "3685 - 3695",
+            "volume": "17"
+          },
+          "authors": [
+            {
+              "authorId": "2209770040",
+              "name": "Xijing Huang"
+            },
+            {
+              "authorId": "2158877939",
+              "name": "An Li"
+            },
+            {
+              "authorId": "2382021173",
+              "name": "Ping Long"
+            },
+            {
+              "authorId": "2248811241",
+              "name": "Ya Liu"
+            },
+            {
+              "authorId": "2157561266",
+              "name": "Zhou Zhou"
+            },
+            {
+              "authorId": "2111245311",
+              "name": "Yan Pan"
+            }
+          ],
+          "abstract": "Introduction Irritable bowel syndrome (IBS) is a common gastrointestinal disorder characterized by chronic abdominal pain and alterations in bowel habits. Despite the importance of biomarkers in disease management, the quest for precise and non-invasive biomarkers for IBS continues. Methods This study focuses on investigating the clinical significance of the neutrophil-to-albumin ratio (NAR) as a potential biomarker in IBS. A cohort of 86 patients diagnosed with diarrhea-predominant IBS (IBS-D) and 106 healthy individuals were assessed for clinical symptoms, quality of life (QOL), psychological status, as well as serum and mucosal cytokine production. Results Our findings revealed that NAR levels were notably elevated in patients with IBS-D compared to healthy controls. Positive correlations were observed between NAR levels and IBS clinical symptoms, while negative correlations were noted with QOL. Additionally, NAR showed positive associations with anxiety and depression scores, along with significant relationships with cytokine production (serum IL-6, TNF-α, IL-1β, IL-17A, GM-CSF, IFN-γ, MCP-1; mucosal IL-6, TNF-α, IL-1β, IL-17A) in IBS-D. Interestingly, patients with lower baseline NAR levels demonstrated potentially better clinical outcomes. Conclusion The study underscores the potential utility of NAR as a novel biomarker in IBS, emphasizing its role in enhancing disease monitoring, understanding disease pathophysiology, and tailoring treatment strategies for patients with IBS-D."
+        },
+        {
+          "paperId": "fcc771bff3619e3d27e9ac6ec2e842551c1d78a8",
+          "externalIds": {
+            "DBLP": "journals/access/SohrabARM24",
+            "DOI": "10.1109/ACCESS.2023.3346952",
+            "CorpusId": 266591839
+          },
+          "url": "https://www.semanticscholar.org/paper/fcc771bff3619e3d27e9ac6ec2e842551c1d78a8",
+          "title": "BERT-NAR-BERT: A Non-Autoregressive Pre-Trained Sequence-to-Sequence Model Leveraging BERT Checkpoints",
+          "venue": "IEEE Access",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10373869.pdf",
+            "status": "GOLD",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2023.3346952?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2023.3346952, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "IEEE Access",
+            "pages": "23-33",
+            "volume": "12"
+          },
+          "authors": [
+            {
+              "authorId": "2171444",
+              "name": "M. G. Sohrab"
+            },
+            {
+              "authorId": "2191886798",
+              "name": "Masaki Asada"
+            },
+            {
+              "authorId": "2260748266",
+              "name": "Matīss Rikters"
+            },
+            {
+              "authorId": "2269459906",
+              "name": "Makoto Miwa"
+            }
+          ],
+          "abstract": "We introduce BERT-NAR-BERT (BnB) – a pre-trained non-autoregressive sequence-to-sequence model, which employs BERT as the backbone for the encoder and decoder for natural language understanding and generation tasks. During the pre-training and fine-tuning with BERT-NAR-BERT, two challenging aspects are considered by adopting the length classification and connectionist temporal classification models to control the output length of BnB. We evaluate it using a standard natural language understanding benchmark GLUE and three generation tasks – abstractive summarization, question generation, and machine translation. Our results show substantial improvements in inference speed (on average 10x faster) with only little deficiency in output quality when compared to our direct autoregressive baseline BERT2BERT model. Our code is publicly released on GitHub (https://github.com/aistairc/BERT-NAR-BERT) under the Apache 2.0 License."
+        },
+        {
+          "paperId": "8794e4b047ad8e2a4b846f3fcf2fb074f483fa40",
+          "externalIds": {
+            "PubMedCentral": "11430756",
+            "DOI": "10.1186/s12879-024-09329-6",
+            "CorpusId": 272928609,
+            "PubMed": "39333907"
+          },
+          "url": "https://www.semanticscholar.org/paper/8794e4b047ad8e2a4b846f3fcf2fb074f483fa40",
+          "title": "Analysis of Hybrid NAR-RBFs Networks for complex non-linear Covid-19 model with fractional operators",
+          "venue": "BMC Infectious Diseases",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1186/s12879-024-09329-6",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11430756, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-09-27",
+          "journal": {
+            "name": "BMC Infectious Diseases",
+            "volume": "24"
+          },
+          "authors": [
+            {
+              "authorId": "47679469",
+              "name": "Aqeel Ahmad"
+            },
+            {
+              "authorId": "49769211",
+              "name": "M. Farman"
+            },
+            {
+              "authorId": "2270199116",
+              "name": "Muhammad Sultan"
+            },
+            {
+              "authorId": "2258620620",
+              "name": "Hijaz Ahmad"
+            },
+            {
+              "authorId": "2009491318",
+              "name": "Sameh S. Askar"
+            }
+          ],
+          "abstract": "The Hybrid NAR-RBFs Networks for COVID-19 fractional order model is examined in this scientific study. Hybrid NAR-RBFs Networks for COVID-19, that is more infectious which is appearing in numerous areas as people strive to stop the COVID-19 pandemic. It is crucial to figure out how to create strategies that would stop the spread of COVID-19 with a different age groups. We used the epidemic scenario in the Hybrid NAR-RBFs Networks as a case study in order to replicate the propagation of the modified COVID-19. In this research work, existence and stability are verified for COVID-19 as well as proved unique solutions by applying some results of fixed point theory. The developed approach to investigate the impact of Hybrid NAR-RBFs Networks due to COVID-19 at different age groups is relatively advanced. Also obtain solutions for a proposed model by utilizing Atanga Toufik technique and fractal fractional which are the advanced techniques for such type of infectious problems for continuous monitoring of spread of COVID-19 in different age groups. Comparisons has been made to check the efficiency of techniques as well as for finding the reliable solutions to understand the dynamical behavior of Hybrid NAR-RBFs Networks for non-linear COVID-19. Finally, the parameters are evaluated to see the impact of illness and present numerical simulations using Matlab to see actual behavior of this infectious disease for Hybrid NAR-RBFs Networks of COVID-19 for different age groups."
+        },
+        {
+          "paperId": "0ca56104150f09c7391037ba89023fc4cd1b1061",
+          "externalIds": {
+            "PubMedCentral": "12430022",
+            "DOI": "10.1093/narmme/ugad002",
+            "CorpusId": 267219920,
+            "PubMed": "41255567"
+          },
+          "url": "https://www.semanticscholar.org/paper/0ca56104150f09c7391037ba89023fc4cd1b1061",
+          "title": "Introducing NAR Molecular Medicine, a new journal in the Nucleic Acids Research family",
+          "venue": "NAR molecular medicine",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/narmolmed/article-pdf/1/1/ugad002/56326054/ugad002.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12430022, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Editorial"
+          ],
+          "publicationDate": "2024-01-01",
+          "journal": {
+            "name": "NAR Molecular Medicine",
+            "volume": "1"
+          },
+          "authors": [
+            {
+              "authorId": "2266887494",
+              "name": "M. Spies"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "9feca10c481c20a44f825d21c74128a248ebf534",
+          "externalIds": {
+            "PubMedCentral": "10159138",
+            "DOI": "10.1371/journal.pgph.0001875",
+            "CorpusId": 258486293,
+            "PubMed": "37141207"
+          },
+          "url": "https://www.semanticscholar.org/paper/9feca10c481c20a44f825d21c74128a248ebf534",
+          "title": "Culturally responsive research ethics: How the socio-ethical norms of Arr-nar/Kreng-jai inform research participation at the Thai-Myanmar border",
+          "venue": "PLOS Global Public Health",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://journals.plos.org/globalpublichealth/article/file?id=10.1371/journal.pgph.0001875&type=printable",
+            "status": "CLOSED",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10159138, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-05-04",
+          "journal": {
+            "name": "PLOS Global Public Health",
+            "volume": "3"
+          },
+          "authors": [
+            {
+              "authorId": "82343963",
+              "name": "N. Khirikoekkong"
+            },
+            {
+              "authorId": "1721058875",
+              "name": "Supa-at Asarath"
+            },
+            {
+              "authorId": "5284978",
+              "name": "S. Nosten"
+            },
+            {
+              "authorId": "5155751",
+              "name": "B. Hanboonkunupakarn"
+            },
+            {
+              "authorId": "80835635",
+              "name": "Nattapat Jatupornpimol"
+            },
+            {
+              "authorId": "119453119",
+              "name": "J. Roest"
+            },
+            {
+              "authorId": "143800399",
+              "name": "M. Parker"
+            },
+            {
+              "authorId": "143778187",
+              "name": "F. Nosten"
+            },
+            {
+              "authorId": "6609404",
+              "name": "R. McGready"
+            },
+            {
+              "authorId": "14711734",
+              "name": "P. Cheah"
+            },
+            {
+              "authorId": "66838832",
+              "name": "M. Kelley"
+            }
+          ],
+          "abstract": "Despite advances, international research ethics guidelines still tend to consist of high-level ethical principles reflecting residual influence from North American and European traditions of ethics. Local ethics committees and community advisory boards can offer more culturally-sensitive approaches to training but most institutions lack substantive practical ethics guidance to engage rich moral understandings in day-to-day research practice in diverse cultural contexts. To address this gap, we conducted an international series of qualitative research ethics case studies, linked prospectively to active research programs in diverse settings. Here, we share findings from two case studies with a research team working on malaria and hepatitis B prevention with pregnant women in clinics serving migrants along the Thai-Myanmar border. In this sociocultural ethical analysis, we consider how core ethical requirements of voluntary participation, provision of fair benefits, and understandings of research risks and burdens are shaped, enriched, and in some instances challenged, by deep-seated and widespread Burmese, Karen and Thai cultural norms known as Arr-nar (in Burmese and Karen) or Kreng-jai (in Thai), encompassing multiple meanings including consideration for others and graciousness. We offer a model illustrating how one might map ethically significant sociocultural influences across the research practice pathway and close with lessons for developing a more culturally responsive research ethics practice in other international settings."
+        },
+        {
+          "paperId": "a0d7764867169df20a7efbd9d1d1145bc5a0057a",
+          "externalIds": {
+            "PubMedCentral": "9851734",
+            "DOI": "10.1186/s12889-023-14992-6",
+            "CorpusId": 256030975,
+            "PubMed": "36658494"
+          },
+          "url": "https://www.semanticscholar.org/paper/a0d7764867169df20a7efbd9d1d1145bc5a0057a",
+          "title": "Nesting the SIRV model with NAR, LSTM and statistical methods to fit and predict COVID-19 epidemic trend in Africa",
+          "venue": "BMC Public Health",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://bmcpublichealth.biomedcentral.com/counter/pdf/10.1186/s12889-023-14992-6",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9851734, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-01-19",
+          "journal": {
+            "name": "BMC Public Health",
+            "volume": "23"
+          },
+          "authors": [
+            {
+              "authorId": "2202172854",
+              "name": "Xu-dong Liu"
+            },
+            {
+              "authorId": "47825073",
+              "name": "Wen Wang"
+            },
+            {
+              "authorId": "2143685066",
+              "name": "Yi Yang"
+            },
+            {
+              "authorId": "2202111658",
+              "name": "Bo-han Hou"
+            },
+            {
+              "authorId": "134801706",
+              "name": "T. Olasehinde"
+            },
+            {
+              "authorId": "1379978377",
+              "name": "Ning Feng"
+            },
+            {
+              "authorId": "46966427",
+              "name": "Xiao Dong"
+            }
+          ],
+          "abstract": "Objective Compared with other regions in the world, the transmission characteristics of the COVID-19 epidemic in Africa are more obvious, has a unique transmission mode in this region; At the same time, the data related to the COVID-19 epidemic in Africa is characterized by low data quality and incomplete data coverage, which makes the prediction method of COVID-19 epidemic suitable for other regions unable to achieve good results in Africa. In order to solve the above problems, this paper proposes a prediction method that nests the in-depth learning method in the mechanism model. From the experimental results, it can better solve the above problems and better adapt to the transmission characteristics of the COVID-19 epidemic in African countries. Methods Based on the SIRV model, the COVID-19 transmission rate and trend from September 2021 to January 2022 of the top 15 African countries (South Africa, Morocco, Tunisia, Libya, Egypt, Ethiopia, Kenya, Zambia, Algeria, Botswana, Nigeria, Zimbabwe, Mozambique, Uganda, and Ghana) in the accumulative number of COVID-19 confirmed cases was fitted by using the data from Worldometer. Non-autoregressive (NAR), Long-short term memory (LSTM), Autoregressive integrated moving average (ARIMA) models, Gaussian and polynomial functions were used to predict the transmission rate β in the next 7, 14, and 21 days. Then, the predicted transmission rate βs were substituted into the SIRV model to predict the number of the COVID-19 active cases. The error analysis was conducted using root-mean-square error (RMSE) and mean absolute percentage error (MAPE). Results The fitting curves of the 7, 14, and 21 days were consistent with and higher than the original curves of daily active cases (DAC). The MAPE between the fitted and original 7-day DAC was only 1.15% and increased with the longer of predict days. Both the predicted β and DAC of the next 7, 14, and 21 days by NAR and LSTM nested models were closer to the real ones than other three ones. The minimum RMSEs for the predicted number of COVID-19 active cases in the next 7, 14, and 21 days were 12,974, 14,152, and 12,211 people, respectively when the order of magnitude for was 10^6, with the minimum MAPE being 1.79%, 1.97%, and 1.64%, respectively. Conclusion Nesting the SIRV model with NAR, LSTM, ARIMA methods etc. through functionalizing β respectively could obtain more accurate fitting and predicting results than these models/methods alone for the number of confirmed COVID-19 cases in Africa in which nesting with NAR had the highest accuracy for the 14-day and 21-day predictions. The nested model was of high significance for early understanding of the COVID-19 disease burden and preparedness for the response."
+        },
+        {
+          "paperId": "23795ef76c2155796b6c1e00f72ebf1103c9e9f4",
+          "externalIds": {
+            "DOI": "10.3390/app12042190",
+            "CorpusId": 247041013
+          },
+          "url": "https://www.semanticscholar.org/paper/23795ef76c2155796b6c1e00f72ebf1103c9e9f4",
+          "title": "Traffic Flow Prediction Method Based on Seasonal Characteristics and SARIMA-NAR Model",
+          "venue": "Applied Sciences",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/2076-3417/12/4/2190/pdf?version=1645521490",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app12042190?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app12042190, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2022-02-19",
+          "journal": {
+            "name": "Applied Sciences"
+          },
+          "authors": [
+            {
+              "authorId": "2115726340",
+              "name": "You Wang"
+            },
+            {
+              "authorId": "2155700456",
+              "name": "Ruxue Jia"
+            },
+            {
+              "authorId": "2105588019",
+              "name": "Fang Dai"
+            },
+            {
+              "authorId": "2114057385",
+              "name": "Yunxia Ye"
+            }
+          ],
+          "abstract": "Traffic flow is used as an essential indicator to measure the performance of the road network and a pivotal basis for road classification. However, the combined prediction model of traffic flow based on seasonal characteristics has been given little attention at present. Because the seasonal autoregressive integrated moving average model (SARIMA) has superior linear fitting characteristics, it is often used to process seasonal time series. In contrast, the non-autoregressive dynamic neural network (NAR) has a vital memory function and nonlinear interpretation capabilities. They are suitable for constructing combined forecasting models. The traffic flow time series of a highway in southwest China is taken as the research object in this paper. Combining the SARIMA (0,1,2) (0,1,2)12 model and the NAR model with 15 hidden layer neurons and fourth-order delay, two combined models are constructed: the linear and nonlinear component combination method is realized by the SARIMA-NAR combination model 1, and the MSE weight combination method is used by the SARIMA-NAR combination model 2. We calculated that the prediction accuracy of SARIMA-NAR combined model 1 is as high as 0.92, and the prediction accuracy of SARIMA-NAR combined model 2 is 0.90. In addition, the traffic flow forecast under the influence of the epidemic is also discussed. Through a comprehensive comparison of multiple indicators, the results show that the SARIMA-NAR combined model 1 has better road traffic flow fitting and prediction effects and is suitable for the greater volatility of traffic flow during the epidemic. This model improves the effectiveness and reliability of traffic flow forecasting, and the forecasting process is more convenient and efficient."
+        },
+        {
+          "paperId": "388414c7e17e4ddc4dfb249a90cb77a3c378366c",
+          "externalIds": {
+            "PubMedCentral": "7321776",
+            "MAG": "3040069140",
+            "DOI": "10.1016/j.jnlssr.2020.06.007",
+            "CorpusId": 220128611,
+            "PubMed": "40476984"
+          },
+          "url": "https://www.semanticscholar.org/paper/388414c7e17e4ddc4dfb249a90cb77a3c378366c",
+          "title": "ARIMA and NAR based prediction model for time series analysis of COVID-19 cases in India",
+          "venue": "Journal of safety science and resilience = An quan ke xue yu ren xing",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1016/j.jnlssr.2020.06.007",
+            "status": "GOLD",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7321776, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-06-29",
+          "journal": {
+            "name": "Journal of Safety Science and Resilience",
+            "pages": "12 - 18",
+            "volume": "1"
+          },
+          "authors": [
+            {
+              "authorId": "145296105",
+              "name": "F. Khan"
+            },
+            {
+              "authorId": "153382032",
+              "name": "R. Gupta"
+            }
+          ],
+          "abstract": "In this paper, we have applied the univariate time series model to predict the number of COVID-19 infected cases that can be expected in upcoming days in India. We adopted an Auto-Regressive Integrated Moving Average (ARIMA) model on the data collected from 31st January 2020 to 25th March 2020 and verified it using the data collected from 26th March 2020 to 04th April 2020. A nonlinear autoregressive (NAR) neural network was developed to compare the accuracy of predicted models. The model has been used for daily prediction of COVID-19 cases for next 50 days without any additional intervention. Statistics from various sources, including the Ministry of Health and Family Welfare (MoHFW) and http://covid19india.org/ are used for the study. The results showed an increasing trend in the actual and forecasted numbers of COVID-19 cases with approximately 1500 cases per day, based on available data as on 04th April 2020. The appropriate ARIMA (1,1,0) model was selected based on the Bayesian Information Criteria (BIC) values and the overall highest R2 values of 0.95. The NAR model architecture constitutes ten neurons, which was optimized using the Levenberg-Marquardt optimization training algorithm (LM) with the overall highest R2 values of 0.97."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            11
+          ]
+        ],
+        "date-time": "2026-04-11T02:37:48Z",
+        "timestamp": 1775875068242,
+        "version": "3.50.1"
+      },
+      "reference-count": 30,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "W1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2016,
+                10,
+                4
+              ]
+            ],
+            "date-time": "2016-10-04T00:00:00Z",
+            "timestamp": 1475539200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 1231,
+          "URL": "http://creativecommons.org/licenses/by/3.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1093/nar/gkt437",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            24
+          ]
+        ],
+        "date-time": "2013-05-24T01:31:48Z",
+        "timestamp": 1369359108000
+      },
+      "page": "W56-W62",
+      "source": "Crossref",
+      "is-referenced-by-count": 307,
+      "title": [
+        "DNAshape: a method for the high-throughput prediction of DNA structural features on a genomic scale"
+      ],
+      "prefix": "10.1093",
+      "volume": "41",
+      "author": [
+        {
+          "given": "Tianyin",
+          "family": "Zhou",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Lin",
+          "family": "Yang",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Yan",
+          "family": "Lu",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Iris",
+          "family": "Dror",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Ana Carolina",
+          "family": "Dantas Machado",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Tahereh",
+          "family": "Ghane",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Rosa",
+          "family": "Di Felice",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Remo",
+          "family": "Rohs",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            22
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1248",
+          "DOI": "10.1038/nature08473",
+          "article-title": "The role of DNA shape in protein-DNA recognition",
+          "volume": "461",
+          "author": "Rohs",
+          "year": "2009",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B2",
+          "doi-asserted-by": "crossref",
+          "first-page": "233",
+          "DOI": "10.1146/annurev-biochem-060408-091030",
+          "article-title": "Origins of specificity in protein-DNA recognition",
+          "volume": "79",
+          "author": "Rohs",
+          "year": "2010",
+          "journal-title": "Annu. Rev. Biochem."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B3",
+          "doi-asserted-by": "crossref",
+          "first-page": "530",
+          "DOI": "10.1016/j.cell.2007.09.024",
+          "article-title": "Functional specificity of a Hox protein mediated by the recognition of minor groove structure",
+          "volume": "131",
+          "author": "Joshi",
+          "year": "2007",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B4",
+          "doi-asserted-by": "crossref",
+          "first-page": "1093",
+          "DOI": "10.1016/j.celrep.2013.03.014",
+          "article-title": "Genomic regions flanking E-box binding sites influence DNA binding specificity of bHLH transcription factors through DNA shape",
+          "volume": "3",
+          "author": "Gordan",
+          "year": "2013",
+          "journal-title": "Cell Rep."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B5",
+          "doi-asserted-by": "crossref",
+          "first-page": "861",
+          "DOI": "10.1080/07391102.2010.10508587",
+          "article-title": "Electrostatic interactions between arginines and the minor groove in the nucleosome",
+          "volume": "27",
+          "author": "West",
+          "year": "2010",
+          "journal-title": "J. Biomol. Struct. Dyn."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B6",
+          "doi-asserted-by": "crossref",
+          "first-page": "814",
+          "DOI": "10.1101/gad.1900610",
+          "article-title": "The shape of the DNA minor groove directs binding by the DNA-bending protein Fis",
+          "volume": "24",
+          "author": "Stella",
+          "year": "2010",
+          "journal-title": "Genes Dev."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B7",
+          "doi-asserted-by": "crossref",
+          "first-page": "1117",
+          "DOI": "10.1016/j.celrep.2013.03.002",
+          "article-title": "Mechanism of origin DNA recognition and assembly of an initiator-helicase complex by SV40 large tumor antigen",
+          "volume": "3",
+          "author": "Chang",
+          "year": "2013",
+          "journal-title": "Cell Rep."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B8",
+          "doi-asserted-by": "crossref",
+          "first-page": "6376",
+          "DOI": "10.1073/pnas.1216822110",
+          "article-title": "Probing DNA shape and methylation state on a genomic scale with DNase I",
+          "volume": "110",
+          "author": "Lazarovici",
+          "year": "2013",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B9",
+          "doi-asserted-by": "crossref",
+          "first-page": "389",
+          "DOI": "10.1126/science.1169050",
+          "article-title": "Local DNA topography correlates with functional noncoding regions of the human genome",
+          "volume": "324",
+          "author": "Parker",
+          "year": "2009",
+          "journal-title": "Science"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B10",
+          "doi-asserted-by": "crossref",
+          "first-page": "11163",
+          "DOI": "10.1073/pnas.95.19.11163",
+          "article-title": "DNA sequence-dependent deformability deduced from protein-DNA crystal complexes",
+          "volume": "95",
+          "author": "Olson",
+          "year": "1998",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B11",
+          "doi-asserted-by": "crossref",
+          "first-page": "171",
+          "DOI": "10.1016/j.sbi.2009.03.002",
+          "article-title": "Nuance in the double-helix and its role in protein-DNA recognition",
+          "volume": "19",
+          "author": "Rohs",
+          "year": "2009",
+          "journal-title": "Curr. Opin. Struct. Biol."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B12",
+          "doi-asserted-by": "crossref",
+          "first-page": "6063",
+          "DOI": "10.1093/nar/gkm627",
+          "article-title": "Sequence-dependent DNA deformability studied using molecular dynamics simulations",
+          "volume": "35",
+          "author": "Fujii",
+          "year": "2007",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B13",
+          "doi-asserted-by": "crossref",
+          "first-page": "299",
+          "DOI": "10.1093/nar/gkp834",
+          "article-title": "A systematic molecular dynamics study of nearest-neighbor effects on base pair and base pair step conformations and fluctuations in B-DNA",
+          "volume": "38",
+          "author": "Lavery",
+          "year": "2010",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B14",
+          "doi-asserted-by": "crossref",
+          "first-page": "1499",
+          "DOI": "10.1016/j.str.2005.07.005",
+          "article-title": "Structural and energetic origins of sequence-specific DNA bending: Monte Carlo simulations of papillomavirus E2-DNA binding sites",
+          "volume": "13",
+          "author": "Rohs",
+          "year": "2005",
+          "journal-title": "Structure"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B15",
+          "doi-asserted-by": "crossref",
+          "first-page": "7048",
+          "DOI": "10.1093/nar/gki1008",
+          "article-title": "Molecular flexibility in ab initio drug docking to DNA: binding-site and binding-mode transitions in all-atom Monte Carlo simulations",
+          "volume": "33",
+          "author": "Rohs",
+          "year": "2005",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B16",
+          "doi-asserted-by": "crossref",
+          "first-page": "309",
+          "DOI": "10.1002/jcc.20345",
+          "article-title": "Using internal and collective variables in Monte Carlo simulations of nucleic acid structures: chain breakage/closure algorithm and associated Jacobians",
+          "volume": "27",
+          "author": "Sklenar",
+          "year": "2006",
+          "journal-title": "J. Comput. Chem."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B17",
+          "doi-asserted-by": "crossref",
+          "first-page": "2760",
+          "DOI": "10.1016/S0006-3495(99)77429-1",
+          "article-title": "Unraveling proteins: a molecular mechanics study",
+          "volume": "76",
+          "author": "Rohs",
+          "year": "1999",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B18",
+          "doi-asserted-by": "crossref",
+          "first-page": "1270",
+          "DOI": "10.1016/j.cell.2011.10.053",
+          "article-title": "Cofactor binding evokes latent differences in DNA binding specificity between Hox proteins",
+          "volume": "147",
+          "author": "Slattery",
+          "year": "2011",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B19",
+          "doi-asserted-by": "crossref",
+          "first-page": "1314",
+          "DOI": "10.1021/cb200155t",
+          "article-title": "A map of minor groove shape and electrostatic potential from hydroxyl radical cleavage patterns of DNA",
+          "volume": "6",
+          "author": "Bishop",
+          "year": "2011",
+          "journal-title": "ACS Chem. Biol."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B20",
+          "doi-asserted-by": "crossref",
+          "first-page": "655",
+          "DOI": "10.1080/07391102.1989.10507728",
+          "article-title": "Defining the structure of irregular nucleic acids: conventions and principles",
+          "volume": "6",
+          "author": "Lavery",
+          "year": "1989",
+          "journal-title": "J. Biomol. Struct. Dyn."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B21",
+          "doi-asserted-by": "crossref",
+          "first-page": "297",
+          "DOI": "10.1023/A:1024047103398",
+          "article-title": "Overall structure and sugar dynamics of a DNA dodecamer from homo- and heteronuclear dipolar couplings and 31P chemical shift anisotropy",
+          "volume": "26",
+          "author": "Wu",
+          "year": "2003",
+          "journal-title": "J. Biomol. NMR"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B22",
+          "doi-asserted-by": "crossref",
+          "first-page": "e1000216",
+          "DOI": "10.1371/journal.pcbi.1000216",
+          "article-title": "Distinct modes of regulation by chromatin encoded through nucleosome positioning signals",
+          "volume": "4",
+          "author": "Field",
+          "year": "2008",
+          "journal-title": "PLoS Comput. Biol."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B23",
+          "doi-asserted-by": "crossref",
+          "first-page": "358",
+          "DOI": "10.1038/nature06929",
+          "article-title": "Nucleosome organization in the Drosophila genome",
+          "volume": "453",
+          "author": "Mavrich",
+          "year": "2008",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B24",
+          "doi-asserted-by": "crossref",
+          "first-page": "3816",
+          "DOI": "10.1073/pnas.77.7.3816",
+          "article-title": "The pitch of chromatin DNA is reflected in its nucleotide sequence",
+          "volume": "77",
+          "author": "Trifonov",
+          "year": "1980",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B25",
+          "doi-asserted-by": "crossref",
+          "first-page": "659",
+          "DOI": "10.1016/0022-2836(86)90452-3",
+          "article-title": "Sequence periodicities in chicken nucleosome core DNA",
+          "volume": "191",
+          "author": "Satchwell",
+          "year": "1986",
+          "journal-title": "J. Mol. Biol."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B26",
+          "doi-asserted-by": "crossref",
+          "first-page": "2379",
+          "DOI": "10.1093/nar/gkn082",
+          "article-title": "Towards a molecular dynamics consensus view of B-DNA flexibility",
+          "volume": "36",
+          "author": "Perez",
+          "year": "2008",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B27",
+          "doi-asserted-by": "crossref",
+          "first-page": "9882",
+          "DOI": "10.1021/jp1035663",
+          "article-title": "Molecular dynamics of DNA: comparison of force fields and terminal nucleotide definitions",
+          "volume": "114",
+          "author": "Ricci",
+          "year": "2010",
+          "journal-title": "J. Phys. Chem. B"
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B28",
+          "doi-asserted-by": "crossref",
+          "first-page": "3817",
+          "DOI": "10.1529/biophysj.106.097782",
+          "article-title": "Refinement of the AMBER force field for nucleic acids: improving the description of alpha/gamma conformers",
+          "volume": "92",
+          "author": "Perez",
+          "year": "2007",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B29",
+          "doi-asserted-by": "crossref",
+          "first-page": "5179",
+          "DOI": "10.1021/ja00124a002",
+          "article-title": "A 2nd generation force-field for the simulation of proteins, nucleic-acids, and organic-molecules",
+          "volume": "117",
+          "author": "Cornell",
+          "year": "1995",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "key\n\t\t\t\t20171013124522_gkt437-B30",
+          "doi-asserted-by": "crossref",
+          "first-page": "10693",
+          "DOI": "10.1021/jp304818s",
+          "article-title": "Optical properties of triplex DNA from time-dependent density functional theory",
+          "volume": "116",
+          "author": "Ghane",
+          "year": "2012",
+          "journal-title": "J. Phys. Chem. B"
+        }
+      ],
+      "container-title": [
+        "Nucleic Acids Research"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://academic.oup.com/nar/article-pdf/41/W1/W56/16943506/gkt437.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2018,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2018-04-02T14:41:19Z",
+        "timestamp": 1522680079000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "http://academic.oup.com/nar/article/41/W1/W56/1105326/DNAshape-a-method-for-the-highthroughput"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            22
+          ]
+        ]
+      },
+      "references-count": 30,
+      "journal-issue": {
+        "issue": "W1",
+        "published-online": {
+          "date-parts": [
+            [
+              2013,
+              5,
+              22
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              1
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1093/nar/gkt437",
+      "relation": {},
+      "ISSN": [
+        "1362-4962",
+        "0305-1048"
+      ],
+      "issn-type": [
+        {
+          "value": "1362-4962",
+          "type": "electronic"
+        },
+        {
+          "value": "0305-1048",
+          "type": "print"
+        }
+      ],
+      "subject": [],
+      "published-other": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            1
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            5,
+            22
+          ]
+        ]
+      }
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-f9a14a698fcc75ec.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-f9a14a698fcc75ec.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-f9a14a698fcc75ec.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "f42d9345382909976e1370bc7eea3bdd6345bbe105189e4c62dda08060dec02a",
+    "chunk_count": 17,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

@@ -1,0 +1,983 @@
+[Page 1]
+
+PHYSICAL REVIEW X 14, 031011 (2024) Featured in Physics
+
+Predicting Heteropolymer Interactions: Demixing and Hypermixing of Disordered Protein Sequences Kyosuke Adachi
+
+1,2
+
+and Kyogo Kawaguchi1,3,4,5
+
+Nonequilibrium Physics of Living Matter RIKEN Hakubi Research Team, RIKEN Center for Biosystems Dynamics Research, 2-2-3 Minatojima-minamimachi, Chuo-ku, Kobe 650-0047, Japan RIKEN Interdisciplinary Theoretical and Mathematical Sciences Program, 2-1 Hirosawa, Wako 351-0198, Japan RIKEN Cluster for Pioneering Research, 2-2-3 Minatojima-minamimachi, Chuo-ku, Kobe 650-0047, Japan Institute for Physics of Intelligence, The University of Tokyo, 7-3-1 Hongo, Tokyo 113-0033, Japan Universal Biology Institute, The University of Tokyo, Bunkyo-ku, Tokyo 113-0033, Japan (Received 19 January 2024; revised 30 April 2024; accepted 28 May 2024; published 18 July 2024) Cells contain multiple condensates which spontaneously form due to the heterotypic interactions between their components. Although the proteins and disordered region sequences that are responsible for condensate formation have been extensively studied, the rule of interactions between the components that allow demixing, i.e., the coexistence of multiple condensates, is yet to be elucidated. Here, we construct an effective theory of the interaction between heteropolymers by fitting it to the molecular dynamics simulation results obtained for more than 200 sequences sampled from the disordered regions of human proteins. We find that the sum of amino acid pair interactions across two heteropolymers predicts the Boyle temperature qualitatively well, which can be quantitatively improved by the dimer pair approximation, where we incorporate the effect of neighboring amino acids in the sequences. The improved theory, combined with the finding of a metric that captures the effective interaction strength between distinct sequences, allowed the selection of up to three disordered region sequences that demix with each other in multicomponent simulations, as well as the generation of artificial sequences that demix with a given sequence. The theory points to a generic sequence design strategy to demix or hypermix thanks to the lowdimensional nature of the space of the interactions that we identify. As a consequence of the geometric arguments in the space of interactions, we find that the number of distinct sequences that can demix with each other is strongly constrained, irrespective of the choice of the coarse-grained model. Altogether, we construct a theoretical basis for methods to estimate the effective interaction between heteropolymers, which can be utilized in predicting phase separation properties as well as rules of assignment in the localization and functions of disordered proteins. DOI: 10.1103/PhysRevX.14.031011
+
+Subject Areas: Biological Physics, Soft Matter
+
+I. INTRODUCTION Proteins play a pivotal role in the spontaneous formation of membraneless organelles within cells, driving the condensation process through a series of intricate molecular interactions [1–6]. Intrinsically disordered regions (IDRs), characterized by the absence of canonical folded structures within protein sequences [7,8], have emerged as key mediators in orchestrating protein-protein and proteinRNA interactions, ultimately leading to the formation of
+
+Published by the American Physical Society under the terms of the Creative Commons Attribution 4.0 International license. Further distribution of this work must maintain attribution to the author(s) and the published article’s title, journal citation, and DOI.
+
+2160-3308=24=14(3)=031011(26)
+
+these cellular condensates. Interestingly, while these disordered regions lack well-defined structures, their sequence-specific interactions can rule subcellular localizations and organelle functionality. An outstanding question remains as to how the sequence-specific interactions, limited in diversity by the possible interactions between amino acid residues, can facilitate the coexistence of multiple phases within a cell. Efforts have focused on understanding how the formation of condensates is driven by IDR in sequencedependent manners. Researchers have identified specific segments within IDRs, commonly referred to as “charge blocks,” characterized by regions enriched in either positively or negatively charged amino acids [9,10]. Other studies have emphasized the significance of the overall amino acid composition, particularly the presence of
+
+Published by the American Physical Society
+
+[Page 2]
+
+charged and aromatic residues, in driving condensate formation rather than relying on precise sequence information [11]. Regular spacing between specific amino acid residues, often termed “stickers” (e.g., aromatic residues) [12], have been shown to play a role in facilitating multivalent yet weak interactions between proteins, which is crucial for the formation of condensates exhibiting liquidlike properties, distinguishing them from protein aggregates [13]. A simplified model of IDR chains has been introduced as heteropolymers composed of monomers with bonds, where specific interactions are assigned between the monomers, representing amino acid residues, depending on their chemical properties. In employing this scheme in molecular dynamics (MD) simulations, the hydrophobicity scale (HPS) model [14] uses the hydropathy parameter measured from the all-atom force field [15] or tuned to fit with in vitro experiments on single-chain properties [16]. Another form of interaction has been introduced in the Mpipi model [17], where the interactions involving aromatic residues have been designed to account for the role they play in IDR interactions [18]. Because of the cost effectiveness, these models have been utilized in large-scale simulations aiming to characterize the properties of IDRs in the proteome [19,20] as well as in designing multiphase condensates by combining with genetic algorithms [21,22]. While numerical simulations have provided valuable insights into IDR condensation, challenges remain in determining optimal interaction parameters, particularly considering the significant differences between in vitro and in vivo environments, due, for example, to the crowdedness and nonequilibriumness of the intracellular environment [23,24]. A theoretical framework for IDR interactions that transcends specific models is essential to understanding selective condensation patterns observed in cells, represented by stress-responding bodies that incorporate only a certain set of molecules [25], the coordination between transcription factors upon gene expression [26], and the unmixing nature of membraneless organelles [27]. For an analytical approach toward estimating the interactions between polypeptide chains, the direct calculation of free energy in heteropolymer mixtures has been undertaken using the random phase approximation (RPA), with a primary focus on the charged residues and their long-range Coulomb interactions [28]. Another approach involves utilizing single-polymer properties to predict polymer-polymer interactions; studies have demonstrated correlations between the critical temperature and the Boyle temperature obtained from coarse-grained simulations, with single-molecule compactness [29] as well as the theta temperature [14]. These findings highlight the utility of parameters derived from individual sequences, such as κ [9], sequence charge [30], and hydropathy [31] decorations. Although there have been attempts to use these theories to predict and explain
+
+multiphase coexistence [32,33], there remains a gap in the theoretical framework that can incorporate both charge and noncharge patterning to calculate interactions across distinct heteropolymers. Considering the close-to-real interactions across residues will be crucial in understanding sequence-dependent selective condensation patterns observed in cells [34,35] as well as in designing sequences or chemicals that will interact specifically with condensates [36,37]. In this study, we take an empirical approach, employing MD simulations to construct and identify an analytical method that is useful in predicting interactions between heteropolymers. Our findings indicate that the effective interaction between polypeptides can be qualitatively estimated by considering the sum of interactions between monomers, with improvements achieved through the inclusion of neighboring pair contributions. We demonstrate the utility of this method in predicting demixing and hypermixing phenomena in multicomponent simulations and provide insights into generating multiple coexisting phases. II. THEORY OF IDR POLYMER INTERACTIONS FIT BY SIMULATION A coarse-grained polymer model treats an IDR as a chain of N amino acid monomers, which involves monomermonomer interaction potentials U ab ðrÞ that depend on the amino acid pair fa; bg [14,16,17]. For the HPS model, we DH AH consider U ab ðrÞ 1⁄4 U AH ab ðrÞ þ U ab ðrÞ, where U ab ðrÞ is the pairwise potential of the Ashbaugh-Hatch form [38] and UDH ab ðrÞ is the electrostatic potential with the Debye-Hückel screening:
+
+UAH ab ðrÞ ≔
+
+ULJ ðr;ε;σ ab Þ þ εð1 − λab Þ ðr ≤ 21=6 σ ab Þ; λab ULJ ðr;ε;σ ab Þ
+
+ðotherwiseÞ;
+
+ð1Þ
+
+where ULJ ðr; ε; σÞ ≔ 4ε1⁄2ðσ=rÞ12 − ðσ=rÞ6 is the LennardJones potential and σ ab ≔ ðσ a þ σ b Þ=2 and λab ≔ ðλa þ λb Þ=2 are the average size and hydrophobicity scale of amino acid pair fa; bg, respectively. The electrostatic potential is defined as U DH ab ðrÞ ≔
+
+qa qb e2 −r=D ; 4πε0 εr r
+
+ð2Þ
+
+where qa is the integer charge (þ1 for a ∈ fK; Rg, −1 for a ∈ fD; Eg, and 0 otherwise), e is the elementary charge, ε0 is thep vacuum permittivity, εr is the relative permittivity, ffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi D ≔ ε0 εr kB T=ð2e2 cs Þ is the Debye length, kB is the Boltzmann constant, T is the temperature, and cs is the salt ionic strength. It has been shown that tuning the parameters (i.e., ε, fσ a g, and fλa g) of this model can lead to predictions in simulations of real experiments [16,19]. Hereafter, kB is set to unity.
+
+[Page 3]
+
+To predict how two polymer chains will interact, we can calculate the quantity called the (second) virial coefficient Z ∞ ð3Þ drr2 1 − e−UPMF ðrÞ=T ; BðTÞ 1⁄4 2π
+
+Original YK AK A E E
+
+Sorted
+
+A A E E K K Y
+
+which reflects their overall attraction or repulsion. Here, UPMF ðrÞ is the potential of mean force between two polymers, which is formally derived from Uab ðrÞ as D P ð4Þ e−UPMF ðrÞ=T 1⁄4 e− 1≤n;m≤N Uan am ðjr1;n −r2;m jÞ=T ;
+
+Shuffled
+
+E AK YK E A
+
+(c) Monomer pair approximation
+
+Sorted Shuffled
+
+200 400 600 800
+
+Dimer pair approximation
+
+vMP an am ðTÞ:
+
+ð5Þ
+
+Sorted Shuffled
+
+Sorted Shuffled
+
+(simulation)
+
+(simulation)
+
+Rescaled dimer pair approximation
+
+(f) 1000
+
+(theory)
+
+(theory)
+
+The Boyle temperature T B is defined as the zero point of BðTÞ [39], which is the temperature where two polymer chains, on average, neither attract nor repel each other. To understand how the specific types and order of amino acids influence the interactions between chains, we conduct MD simulations using the parameter set given in Ref. [16] (HPS-Tesei) for over 50 different IDR sequences with N 1⁄4 50. To seek an effective theory that predicts the phase separation properties of realistic protein sequences, we select the disordered region sequences taken from the human proteome [Fig. 1(a); see Appendix C for the selection of IDR sequences and the method of calculation]. We also generate some of their variants: alphabetically sorted and randomly shuffled sequences. In Fig. 1(b), we show how T B changes with sorting (red dots) or shuffling (yellow dots); sorting increases T B while shuffling typically decreases T B , indicating that the effective interaction between the polymers is significantly different even with the same composition. To begin explaining these simulation results, we use a simplified model that focuses on pairwise interactions between individual amino acids that appear when we expand the exponential factor in Eq. (4) (Mayer f-function expansion; see Appendix A): X N
+
+A. Boyle temperature predicted from amino acid composition
+
+BMP ðTÞ ≔
+
+(theory)
+
+(theory)
+
+where r1;n (r2;m ) is the coordinate of the nth (mth) amino acid monomer that constitutes the first (second) polymer and an (am ) is the corresponding amino acid type. The canonical average h ir is taken with a fixed distance r between the centers of mass of the two polymers.
+
+Sorted Shuffled
+
+Sorted Shuffled
+
+200 400 600 800 1000
+
+(simulation)
+
+(simulation)
+
+FIG. 1. Prediction of the Boyle temperature. (a) Examples of the original, sorted, and shuffled polypeptide sequences. (b) The Boyle temperatures for the sorted (red) and shuffled (yellow) IDR sequences compared with the original sequences, obtained by simulations of the HPS-Tesei model. (c),(d) The Boyle temperatures predicted by the (c) monomer pair or (d) dimer pair DP approximation, T MP B or T B , respectively, for the original (black), sorted (red), and shuffled (yellow) sequences compared with the simulation result T B for the HPS-Tesei model. The thick gray line DP is T MP B 1⁄4 T B or T B 1⁄4 T B , and the thin gray lines connect the sorted or shuffled sequence to the corresponding original seagainst the quence. (e),(f) The predicted Boyle temperatures T RDP observed T B when using the rescaled dimer pair approximation with the rescaling parameter α 1⁄4 0.75 for the (e) HPS-Tesei and (f) HPS-Dignon models.
+
+n1⁄41 m1⁄41
+
+Here, n and m are the monomer indices along the polymer, N is the polymer length, and vMP ab ðTÞ is the virial coefficient calculated at the monomer pair level: Z ∞ vMP ðTÞ ≔ 2π drr2 1⁄21 − e−Uab ðrÞ=T : ð6Þ ab
+
+To explicitly see how BMP ðTÞ depends on the amino acid composition, we can write
+
+BMP ðTÞ 1⁄4
+
+N a N b vMP ab ðTÞ; a;b
+
+ð7Þ
+
+[Page 4]
+
+where N a is the total number of amino acids of type a contained in a single IDR polymer. This simplified value BMP ðTÞ is easier to calculate than the actual BðTÞ, because it ignores the details of how the polymer chain is shaped in 3D space. Importantly, we can show that the approximation BðTÞ ≃ BMP ðTÞ becomes valid when taking the limit where the bond interaction within the polymer is very weak or the bond length is much longer than the interaction range between the monomers (see Appendix A for the details). BMP has been used as one of the features to predict the properties of polypeptides [40]. To test how Eq. (5) does well as an approximation, we compare T B obtained from simulations (see Appendix G 2) MP and T MP ðTÞ for over B calculated as the zero point of B 250 different IDR sequences with N 1⁄4 50, including the sequences used in Fig. 1(b) (see Appendix C for the selection of IDR sequences). As plotted in Fig. 1(c) with black dots, T MP systematically underestimates T B . Nevertheless, we find a positive correlation between T MP and T B with the Pearson correlation coefficient rP 1⁄4 0.82 and Spearman’s rank correlation coefficient rS 1⁄4 0.81, suggesting that BMP ðTÞ qualitatively captures the composition dependence of T B . B. Improved prediction using dimer pair approximation The obvious shortcoming of BMP ðTÞ is that it depends on only the amino acid composition and, therefore, would fail to capture the numerical and experimental results with chains with the same compositions but with distinct sequences. To incorporate the sequence dependence in the calculation of the effective interactions, we consider the sum of the virial coefficients for the pair of two neighboring amino acids (i.e., heterodimers), instead of the monomer pairs used in the simplest formula (5). We introduce BDP ðTÞ ≔
+
+−1 N −1
+
+vDP dn;nþ1 dm;mþ1 ðTÞ;
+
+ð8Þ
+
+n1⁄41 m1⁄41
+
+where the virial coefficient for a dimer pair fdn;nþ1 ; dm;mþ1 g is given as vDP dn;nþ1 dm;mþ1 ðTÞ ≔ 2π
+
+Z ∞
+
+−U DP ðrÞ=T drr2 1 − e dn;nþ1 dm;mþ1 ð9Þ
+
+and the dimer-dimer interaction is defined as UDP dn;nþ1 dm;mþ1 ≔ U an am þ U an amþ1 þ U anþ1 am þ U anþ1 amþ1 : ð10Þ In essence, the dimer pair approximation [Eq. (8)] is nothing but the monomer pair approximation [Eq. (5)] except that the monomers are substituted with dimers. The
+
+intuition behind this procedure is that the effective bond interaction range will be enlarged (close to being doubled) while the interaction range is kept the same, which will bring the situation closer to the range where the monomer pair approximation is justified. This approximation is distinct from calculating the next order of expansion of the exponential factor in the virial coefficient. In fact, calculating the next order in the Mayer f-function expansion results in a useless approximation, as its temperature dependence becomes nonmonotonic (see Appendix B). An analogy can be found, however, in the calculation of annealing temperatures of nucleic acid sequences, where the interactions between the adjacent nucleotides are taken into account to improve the accuracy [41]. In Fig. 1(d), we compare T B obtained from simulations DP with T DP B calculated as the zero point of B ðTÞ. Although DP T B systematically overestimates T B for the original sequences (black dots), we find a correlation between T B and T DP B with rP 1⁄4 0.94 and rS 1⁄4 0.94, which are higher than the result obtained from the monomer pair approximation. Importantly, as shown with red and yellow dots in Fig. 1(d), the current formula qualitatively captures the change upon ordering and shuffling the sequence, in contrast to Eq. (5) [Fig. 1(c)]. To fine-tune the accuracy of our model from Fig. 1(d) by removing the systematic deviation, we introduce a scaling factor α that adjusts the strength of the interaction between dimer pairs. In calculating the virial coefficient for a dimer pair fdn;nþ1 ; dm;mþ1 g, we use URDP dn;nþ1 dm;mþ1 ≔ αðU an am þ U an amþ1 þ U anþ1 am þ U anþ1 amþ1 Þ; ð11Þ instead of Eq. (10), and write the corresponding effective interaction and Boyle temperature as BRDP ðTÞ and T RDP B , respectively. Here, the parameter α can be interpreted as tuning the dimer-dimer interaction potential that is overcounted when calculating Eq. (10). In Fig. 1(e), we show the comparison of T B and T RDP for α 1⁄4 0.75, which is approximately optimized to reduce the mean square relative error (MSRE) of T RDP for the original sequences (see Appendix D for the details). We see a quantitative agreement between T B and T RDP (MSRE 1⁄4 0.018) while retainB ing a high correlation (rP 1⁄4 0.93 and rS 1⁄4 0.92). To test whether this method of estimating T B is independent of the detail of the coarse-grained model, we change the parameters of the amino acid size and hydrophobicity scale (fσ a g and fλa g) to values proposed in Ref. [14] (HPS-Dignon). When we use a different set of parameters to describe the interactions between amino acids, the simulation results for T B change considerably (Fig. 10 in Appendix G). Nevertheless, T B can be correctly predicted by T RDP calculated with the same α (1⁄4 0.75) [Fig. 1(f)]. This result indicates that the composition
+
+[Page 5]
+
+of dimers is an important element in predicting Boyle temperatures for IDRs calculated by coarse-grained simulations. We also find that the simulation results go off from the predictions by T RDP B , especially for the sorted sequences. This is likely due to the sorted sequences having longer regions of the same amino acids, represented by extended charged blocks. To see this, we test how the error in the prediction of T B depends on representative features: charge proportion, aromatic proportion, and sequence charge decoration (SCD) [30], which quantifies the charge blockRDP iness. In Figs. 2(a)–2(f), we plot T MP against the B or T B observed T B for the HPS-Tesei model, where the brightness
+
+(theory)
+
+Brightness: charge proportion
+
+Brightness: aromatic proportion
+
+(theory)
+
+(simulation)
+
+(h)
+
+(j)
+
+Used IDR
+
+IDRome
+
+(k)
+
+Used IDR
+
+Charge proportion
+
+(i)
+
+(l)
+
+Used IDR IDRome
+
+Brightness: negative SCD
+
+IDRome
+
+(f)
+
+(simulation)
+
+(simulation)
+
+(g)
+
+Brightness: aromatic proportion
+
+Brightness: negative SCD
+
+Brightness: charge proportion
+
+MSD of
+
+indicates the value of each feature. The gray line is the MPðRDPÞ þb linear regression line, where we fit T B 1⁄4 aT B with the parameters a and b. From Figs. 2(c) and 2(f), we see that negatively large SCD indicates higher T B, which is captured by the monomer pair or the rescaled dimer pair approximation. This tendency suggests that polymers with enhanced charge blocks (i.e., negatively large SCD) interact more attractively with each other [30]. To examine whether the rescaled dimer pair approximation improves the prediction for sequences with a specific feature, we plot the mean square deviation (MSD) of T B from the linear regression line against the value of each feature [Figs. 2(g)–2(i)]. We find that T RDP (red lines) is
+
+Distribution
+
+Aromatic proportion
+
+SCD
+
+FIG. 2. Feature dependence of the predicted Boyle temperature. (a)–(f) Boyle temperature predicted by the (a)–(c) monomer pair and (d)–(f) rescaled dimer pair approximations for the HPS-Tesei model [the same as black dots in Figs. 1(c) and 1(e), respectively], colored with the feature of each sequence: (a),(d) charge proportion, (b),(e) aromatic proportion, or (c),(f) negative SCD. The gray line is the linear regression line. (g)–(i) MSD of T B measured from the regression line as a function of each feature with binning for the monomer pair (gray) and rescaled dimer pair (red) approximations. We plot the points with a count greater than 5 in each bin. The shadow suggests the standard error. (j)–(l) Distribution of each feature for the IDR sequences used in simulations, compared with the distribution in the IDRome database [19].
+
+[Page 6]
+
+ð12Þ
+
+Here, Ω is the total number of sites in the lattice setup, N is the polymer length, φ is the volume fraction of polymers, and χðTÞ represents dimensionless interaction strength between polymers. Since the FH theory considers polymers in a lattice system, the correspondence to the lattice-free polymer models requires further specification. Assuming the correspondence in the dilute regime where the two-body interaction is dominant, we obtain χðTÞ 1⁄4 BðTÞ=ðN 2 l3 Þ − 1=2. Here, l is the lattice constant that needs to be specified in comparing with the FH theory, which we here treat as a fitting parameter that should be on the order of the bond length in the simulated IDR polymers, lb ≔ 0.38 nm. We further assume that χðTÞ has the form χðTÞ 1⁄4 A0 − 1=2 − B0 =T, where we subtract 1=2 for convenience, which is often used [42] and has been verified in IDR simulations [43]. This form can be derived when we assume that the exclusive part of the interaction potential is diverging and the attractive part is small [39,42]. Under this setup, we obtain
+
+BðTÞ 1⁄4 N 2 l3 A0 − 0 ; ð13Þ which leads to T B 1⁄4 B0 =A0 . According to the FH theory [42], the critical temperature for phase separation, T c , is
+
+Mpipi
+
+Mpipi
+
+(theory)
+
+F 1⁄4 TΩ1⁄2N −1 φ ln φ þ ð1 − φÞ lnð1 − φÞ þ χðTÞφ2 :
+
+(simulation)
+
+(simulation)
+
+(d) 1.0
+
+Mpipi
+
+Correlation coeff.
+
+In the simulations of IDR polymers [14], the Boyle temperature T B has been found to be highly correlated with the critical temperature for phase separation, T c , which suggests that T c can be estimated from the effective two-body interaction BðTÞ. To connect BðTÞ to T c for IDR polymers, we consider the Flory-Huggins (FH) free energy [42]:
+
+(theory)
+
+C. Critical temperature estimated from two-body interaction
+
+obtained as T c 1⁄4 B0 =1⁄2A0 þ N −1=2 þ ð2NÞ−1 . Thus, fitting the functional form of BðTÞ around T B for a given l, we can find the optimal A0 and B0 , from which we obtain the value of T c . Following this procedure, we obtain the estimated critical temperature T RDP by assuming BðTÞ ≃ BRDP ðTÞ with α 1⁄4 0.75. To compare T RDP with T c from numerics, we run phase separation simulations of IDR polymers using the interaction functions and parameters from Ref. [16] (HPS-Tesei) (see Appendix G 1 for the details of the simulation). In Fig. 3(a) (with blue circles), we compare T c obtained from numerical simulations and T RDP for a similar set of IDRs as used in Figs. 1(c)–1(e) and find that the correlation is high (rP 1⁄4 0.97 and rS 1⁄4 0.97). Here, we select l as l 1⁄4 3lb by fitting so that the error between T c and T RDP is approximately minimized, as plotted in Fig. 3(c) (MSRE 1⁄4 0.0052; see Appendix E for the detail). Furthermore, as shown with orange squares in Fig. 3(a), we find that T c and T RDP obtained for distinct model parameters [14] (HPSc Dignon) are highly correlated (rP 1⁄4 0.95 and rS 1⁄4 0.92) when using the same α 1⁄4 0.75 and l 1⁄4 3lb .
+
+Error of
+
+typically improved from T MP (gray lines) regardless of the feature type, suggesting that the rescaled dimer pair approximation is useful for a broad spectrum of IDR sequences. As shown in Figs. 2(j)–2(l), the feature distribution for the sequences used in this study is similar to that for a large IDR database (IDRome [19]), indicating that, within the distribution of natural IDR sequences, the rescaled dimer pair approximation gives a reliable prediction of T B . The accurate prediction of the property of sequences, including those with a high fraction of charged or aromatic residues or extended charged blocks, would likely require taking into account the longer-range interactions beyond the dimer pair approximation. Nevertheless, we continue here with the dimer pair approximation, as it captures the sequence-dependent property of a majority of IDR sequences pooled from the human proteome.
+
+Mpipi
+
+FIG. 3. Prediction of the critical temperature for phase separation. (a),(b) Predicted critical temperatures T RDP against T c observed in simulations for the HPS-Tesei (blue circles), HPSDignon (orange squares), and Mpipi (green triangles) models. The gray line is T RDP 1⁄4 T c . In (a), we use the lattice constant parameter l=lb 1⁄4 3 for all the models. In (b), we take l=lb 1⁄4 3, 3.2, and 3.6 for the HPS-Tesei, HPS-Dignon, and Mpipi models, respectively, so that the error of T c is approximately minimized (see Appendix E for the definition of the error). (c) Error of T c against l=lb for each model. (d) Spearman’s rank correlation coefficient rS against l=lb for each model.
+
+[Page 7]
+
+Using the same procedure, we compare T c and T RDP from the Mpipi model introduced in Ref. [17], which has the WF DH residue-level interaction potential U ab ðrÞ 1⁄4 U ab ðrÞ þ U ab ðrÞ, where the pairwise potential U WF ab ðrÞ is a type of WangFrenkel potential defined by
+
+U WF ab ðrÞ ≔
+
+ε̃ab 1⁄2ðσ̃ ab =rÞ2μab − 11⁄2ð3σ̃ ab =rÞ2μab − 12
+
+ðr ≤ 3σ̃ ab Þ;
+
+ðotherwiseÞ:
+
+We use the parameter values for fε̃ab g, fσ̃ ab g, and fμab g proposed in Ref. [17]. The electrostatic potential U DH ab ðrÞ is given by Eq. (2) as before but with different values of qa (0.75 for a ∈ fK; Rg, −0.75 for a ∈ fD; Eg, 0.375 for a 1⁄4 H, and 0 otherwise) and fixed values of the Debye length and relative permittivity (D 1⁄4 0.795 nm and εr 1⁄4 80, respectively). This model has been shown to quantitatively reproduce the experimental result of the change in T c for several variants of the low-complexity domain of heterogeneous nuclear ribonucleoprotein A1 (hnRNPA1) [17]. The comparison between the prediction and numerical experiment is plotted with green triangles in Fig. 3(a), showing a high correlation (rP 1⁄4 0.97 and rS 1⁄4 0.95) and a good agreement even though the potential form is different from the HPS model. Overall, the obtained results show that BRDP ðTÞ, using two parameters obtained from a single model fitting (α 1⁄4 0.75 and l 1⁄4 3lb ), is practically useful in estimating T c and T B even under the switching of residuelevel interaction rules. For the HPS-Dignon and Mpipi models, we can tune the parameter l=lb to minimize the error of T c [Fig. 3(c)] instead of using the same l 1⁄4 3lb as optimized for the HPSTesei model. In Fig. 3(b), with the approximately optimized l=lb for each model, we plot the predicted T RDP against T c from simulations, which suggests a better fit than the prediction with l=lb 1⁄4 3 [Fig. 3(a)]. The appropriate lattice constant parameter l is likely determined by the details of the interaction potential; the Wang-Frenkel potential in the Mpipi model has a slightly longer range compared with the HPS models, although it is not enough to explain the difference (the simple mean of σ̃ is 0.614 in Mpipi, whereas the mean of σ is 0.588 in HPS). Nevertheless, the high correlation is maintained for a wide range of l=lb [Fig. 3(d)]. III. EFFECTIVE INTERACTION PARAMETER ACROSS DISTINCT SEQUENCES As the approximated virial coefficient [Eq. (8)] is useful in predicting the Boyle and critical temperatures, we expect that the virial coefficient can also account for two-body interactions between distinct IDR polymers. To capture the interactions between different polymer types (i and j), we introduce a matrix that summarizes the pairwise interactions between their dimer units:
+
+BRDP ij ðTÞ ≔
+
+−1 Ni −1 N j n1⁄41 m1⁄41
+
+ð14Þ
+
+vRDP di dj
+
+ðTÞ;
+
+ð15Þ
+
+n;nþ1 m;mþ1
+
+where N i and N j are the polymer lengths of components i and j, respectively. Here, vRDP is the virial coefficient di dj n;nþ1 m;mþ1
+
+for a dimer pair: ðTÞ ≔ 2π vRDP din;nþ1 djm;mþ1 with URDP di dj
+
+Z ∞
+
+−U RDP ðrÞ=T di n;nþ1 m;mþ1 ; ð16Þ drr 1 − e
+
+being the rescaled dimer-dimer interaction:
+
+n;nþ1 m;mþ1
+
+URDP di dj
+
+n;nþ1 m;mþ1
+
+≔ αðU ain ajm þ U ain aj
+
+mþ1
+
+þ Uai
+
+aj nþ1 m
+
+þ U ai
+
+aj nþ1 mþ1
+
+Þ;
+
+ð17Þ where ain is the amino acid type of the nth monomer in the polymer labeled by i. To understand if different polymer types will separate into distinct phases, we introduce the effective interaction parameter: χ̃ RDP ij ðTÞ ≔
+
+BRDP BRDP 1 BRDP ij ðTÞ jj ðTÞ ii ðTÞ ; − N i N j l3 2 N i 2 l3 N j 2 l3
+
+ð18Þ
+
+which quantifies the intercomponent interaction strength between components i and j relative to the intracomponent interaction strength. Here, we assume the correspondence between the interaction parameter and the virial coefficient, χ ij 1⁄4 Bij =ðN i N j l3 Þ − 1=2, as used in the prediction of T c (see Sec. II C), and define the effective interaction parameter as χ̃ ij ≔ χ ij − ðχ ii þ χ jj Þ=2. If the effective interaction parameter χ̃ RDP between two sequences is largely negative, ij they are likely to attract each other. Conversely, a large positive value indicates repulsion. In Fig. 4(a), we plot the distribution of χ̃ RDP (1⁄4 χ̃ RDP ij ji ) for some pairs of distinct IDR sequences (i ≠ j). For the temperature used in the evaluation of the interaction parameter, we choose T 1⁄4 minfT c;i ; T c;j g, where T c;i is the critical temperature obtained by single-component MD simulations for sequence i. We find that most of the effective interactions are negative and positive interactions are rare, suggesting that randomly selected pairs of IDRs tend to have a high affinity with each other. As
+
+[Page 8]
+
+10 3 10 3 10 10 1 10 0 10 2
+
+Q9NRA8_836_886
+
+0.16 0.32
+
+10 1
+
+HPS-Tesei + HPS-Dignon
+
+P18858_104_154
+
+Distribution
+
+Count
+
+10 4
+
+O15440_496_546
+
+Q15303_1020_1070
+
+Q9HCK8_0_50
+
+Q8IZP0_184_234
+
+FIG. 4. Prediction of hypermixing and demixing for two-component IDR polymers. (a) The histogram of the effective intercomponent RDP interaction parameter χ̃ RDP ij , at T 1⁄4 minfT c;i ; T c;j g. The inset is the enlarged view of the positive region of χ̃ ij . (b) Snapshots of the RDP simulated two-component IDR sequences (green and magenta), which are sampled from the three regions of χ̃ ij : χ̃ RDP ij l < −0.04 nm RDP 3 RDP 3 (bottom left), −0.04 nm < χ̃ ij l < 0.04 nm (bottom right), and χ̃ ij l > 0.04 nm (top). The sequences with their names are shown above each configuration. The bottom left and top configurations show hypermixing (with Sdemix < 0.5) and demixing (with Sdemix > 0.5), respectively. (c) The distribution of the demixing score Sdemix for the three regions of χ̃ RDP ij . The gray line suggests Sdemix 1⁄4 0.5, which should be realized for a random mixture of the two components. The regions with Sdemix < 0.5 and Sdemix > 0.5 indicate hypermixing and demixing, respectively.
+
+we discuss in Sec. III D, the typicality of high affinity across IDR sequences comes from the strong interaction yielded by the charge difference. We observe that the temperature dependence of χ̃ RDP ij ðTÞ is low (Fig. 19 in Appendix G), making it a robust indicator of repulsiveness between the two polymers. Another method called RPA also allows the calculation of interactions between distinct polymers in a sequencedependent manner [33]. In RPA, where only Coulomb interactions are typically considered, the interaction strength between two different polymers depends only on their individual self-interactions, irrespective of the choice of the residue-level interaction potential. This results in the χ parameter becoming a rank-one matrix [44], satisfying the geometric mean rule, χ 2ij ∼ χ ii χ jj [33]. It then follows that χ̃ ij ≔ χ ij − ðχ ii þ χ jj Þ=2 is close to zero for all pairs of sequences, unless one of the self-interaction parameters is significantly larger than the other (e.g., χ ii ≫ χ jj ). In the case of χ RDP ij , on the other hand, the geometric mean rule is clearly violated even without this imbalance in the self-interactions, as shown in Fig. 18 in Appendix G, indicating that the predicted interaction strength is distinct from the RPA results. As we see in Sec. III D, the χ parameters calculated for the monomer pair and dimer pair approximations are also low rank, except
+
+that there are at least several nonzero eigenvalues, which is why the effective interaction parameter can deviate from zero. A. Predicting demixing and hypermixing in two-component simulations To see how χ̃ RDP relates to the behavior of condensates, ij we conduct MD simulations of mixtures containing two types of sequences. The simulation is conducted similarly to the critical temperature estimation but with 200 molecules each and for 500 ns. For the temperature, we choose minfT c;i ; T c;j g rounded down to the nearest 10 K, where T c;i is the critical temperature obtained by singlecomponent MD simulations for a sequence i. In Fig. 4(b), we show examples of snapshots for equilibrated two-component polymers (green and magenta). For a negatively large χ̃ RDP [1⁄4 −0.56 nm3 =l3 , ij bottom left in Fig. 4(b)], we find that polymers show condensation with a highly uniform distribution of the two components, which we call a hypermixed condensate, suggesting that the intercomponent affinity exceeds the intracomponent affinity. In contrast, for a positively large χ̃ RDP [1⁄4 0.060 nm3 =l3 , top in Fig. 4(b)], the two compoij nents are demixed; the two species form separate
+
+[Page 9]
+
+condensates that do not mix. For an intermediate χ̃ RDP ij [1⁄4 −0.017 nm3 =l3 , bottom right in Fig. 4(b)], the two components seem to be mixed randomly within a single condensate. To quantify the degree of separation between polymer types, we develop the demixing score Sdemix , which measures how often neighboring polymer chains belong to the same type (see Appendix G 3). A demixing score Sdemix of 0.5 indicates a well-mixed state where the two polymer types are randomly distributed. A lower score suggests they prefer to be near each other (hypermixing), while a higher score indicates separation (demixing). This is confirmed for each configuration in Fig. 4(b). To examine the general predictability of demixing by χ̃ RDP ij , we further perform multiple simulations and calculate Sdemix for two-component polymer systems for the HPS-Tesei [16] and HPS-Dignon [14] models. As shown in Fig. 4(c), the distributions of Sdemix for negatively large χ̃ RDP (< −0.04 nm3 =l3 ), near-zero χ̃ RDP ( ∈ 1⁄2−0.04; ij ij 3 3 RDP 0.04 nm =l ), and positively large χ̃ ij (> 0.04 nm3 =l3 ) pairs are distinct, confirming that larger χ̃ RDP indicates ij larger Sdemix, i.e., a higher tendency toward demixing. Spearman’s rank correlation coefficient between Sdemix and χ̃ RDP is rS 1⁄4 0.67. Although the correlation is lower than ij RDP χ̃ ij , we find that χ̃ MP ij , the effective interaction parameter calculated from the monomer pair approximation: χ̃ MP ij ðTÞ ≔
+
+BMP BMP 1 BMP ij ðTÞ jj ðTÞ ii ðTÞ ; ð19Þ − N i N j l3 2 N i 2 l3 N j 2 l3
+
+also positively correlates with Sdemix (rS 1⁄4 0.52; see Fig. 20 in Appendix G). As we show in Sec. III C, χ̃ MP ij is useful in practice when designing demixing sequences. We note that other quantities have been introduced to measure the extent of demixing, such as Sproj ≔ jρi;center − ρj;center j in Ref. [21]. Here, ρi;center is the number density of component i at the center of the condensate, calculated using the number density projected onto the z axis. As expected, the two scores, Sdemix and Sproj correlate significantly when calculated for the configurations obtained in the two-component simulations. We here nevertheless continue using Sdemix over Sproj, since it can discriminate hypermixing states from randomly mixed states (see the region corresponding to Sdemix ≃ 0.5 and below in Fig. 16 in Appendix G). There is also the advantage that Sdemix does not rely on the projection of the density to an axis; it can probe the segregation of components even when the condensates have not reached a one-dimensional profile, due, for example, to the aggregate state [45] (see bottom right examples in Fig. 16). The demixing score Sdemix can also be generalized to multicomponent cases, as we see later.
+
+Theoretical and experimental analysis regarding the twocomponent Flory-Huggins theory has pointed out that the angle of the tie line can indicate whether two components will mix or separate [46–49]. This scheme predicts that the extent of demixing depends on the raw Bij or, specifically, the angle of the tie line which can be approximated by the angle θ̄ij ∈ 1⁄2−π=2; π=2Þ of the eigenvector (measured from the first axis) for the smaller eigenvalue of the 2 × 2 matrix ! Bii ðTÞ Bij ðTÞ ; ð20Þ Bji ðTÞ Bjj ðTÞ when assuming equal density. To remove the arbitrariness in choosing the first axis, we define an angle θij ≔ −sgnðθ̄ij Þ minfjθ̄ij j; π=2 − jθ̄ij jg ( ∈ 1⁄2−π=4; π=4), which is expected to be positive in the case of demixing and negative in the case of mixing. We test how these quantities correlate with the demixing score using the estimated BRDP ðTÞ and BMP ðTÞ at T 1⁄4 minfT c;i ; T c;j g and find that the effective interaction parameters [Eqs. (18) and (19)] perform better in terms of predicting demixing [Figs. 20(e) and 20(f) in Appendix G]. B. Demixing more than two components We then explore whether our method could predict the separation of mixtures containing more than two types of polymer (M > 2), where each pair of components i and j has a positive value for χ̃ ij (see Appendix G 3 for the method to select the sequences). For mixtures with three polymer types (M 1⁄4 3), we find that some of the predicted set of sequences indeed undergo demixing, as demonstrated in Figs. 5(a) and 5(b) for the HPS-Tesei and HPS-Dignon models, respectively. The extent of demixing is quantified by the demixing matrix S whose components represent the fraction of edges within the P k-nearest-neighbor graph, which is normalized as 1≤i;j≤M Sij 1⁄4 1. The demixing matrix is the generalization of the demixing score, as it satisfies Sdemix 1⁄4 TrS for M 1⁄4 2 and should become Sij 1⁄4 1=M2 when the configuration of polymers is random. As seen in the examples [Figs. 5(a)–5(c)], the large positive values of χ̃ RDP for each ij set of sequences lead to demixing matrix components that are lower than random, 1=M2 1⁄4 1=9, although mixed pairs of polymers (>1=9) can appear in some cases [Fig. 5(c)]. Testing with 32 triplets for both the HPS-Tesei and HPS-Dignon models, we find the trend that χ̃ RDP is ij negatively correlated with Sdemix , more significantly compared with χ̃ MP ij [Figs. 5(d) and 5(e)]. We further tested if we can achieve demixing of M 1⁄4 4 sequences using similar criteria for selecting sequences. Unfortunately, we could not find a demixing quadruplet within the set of IDRs that we tested; in all the 16 cases that
+
+[Page 10]
+
+Q96S59_0_50
+
+Q16204_0_50
+
+O14497_480_530
+
+Q96PK6_616_666
+
+Q9HCK8_560_610
+
+Q63HN8_264_314
+
+Q5T3I0_224_274
+
+Q9UBW7_876_926
+
+Q92575_448_498
+
+(f)
+
+P46937_4_54
+
+Q9HCK8_560_610 Q9UBW7_876_926 Q15058_1592_1642
+
+FIG. 5. Prediction of demixing for three-component IDR polymers. (a)–(c) The upper panels show snapshots of the simulated threecomponent IDR sequences. The sequences with their names are shown above each configuration. The left and middle cases show the demixing of all the components, and the right case is where one of the components (magenta) is well separated from the other two. The extent of separation is quantified in the bottom left panels of the demixing matrix elements, Sij . Compared to the random configuration where Sij 1⁄4 1=9 (white), Sij < 1=9 (red) suggests that sequences i and j are spatially distant from each other (i.e., demixed if i ≠ j), and Sij > 1=9 (blue) suggests that sequences i and j tend to be neighbors. The bottom right panels represent the effective intercomponent (at T 1⁄4 300 K). Sequences with positively large χ̃ RDP (for i ≠ j), shown with red color, are expected to interaction parameter χ̃ RDP ij ij undergo demixing and are used for simulations. (d),(e) The demixing score Sdemix against the effective intercomponent interaction parameter at 300 K obtained by the (d) monomer pair or (e) rescaled dimer pair approximation for 32 sequence triplets in total using RDP 1⁄4 0), the HPS-Tesei and HPS-Dignon models. The gray horizontal and vertical lines represent Sij 1⁄4 1=9 and χ̃ MP ij 1⁄4 0 (or χ̃ ij RDP respectively. Spearman’s rank correlation coefficient rS is shown in each panel. (f) Snapshot, Sij , and χ̃ ij (at T 1⁄4 300 K) for fourcomponent IDR polymers.
+
+we have tried, we obtained three phases with one including two species of polymers [Fig. 5(f)]. This can be due to the limitation of our IDR library, as we could not find quadruplets of which all the pairs within it have large positive values of χ̃ RDP ij , but can also be due to the theoretical bound in the number of demixing components, as we discuss in Sec. III E. C. Generation of antagonistic sequence for demixing We can use our approximation scheme to design new polymer sequences that will repel and separate from a specific given sequence. The results in Secs. III A and III B RDP suggest that χ̃ MP can work as indicators of the ij and χ̃ ij tendency toward demixing. Here, we use χ̃ MP ij for simplicity as well as for interpretability, as it can be calculated solely from the amino acid compositions.
+
+For a given IDR sequence i, the aim is to generate a second sequence j that demixes with it. To observe demixing at the temperature regime comparable to the condensing regime for sequence i, we maximize χ̃ MP ij ðTÞ calculated at T 1⁄4 T c;i , the critical temperature for sequence MP i, while constraining χ MP ii ðT c;i Þ 1⁄4 χ jj ðT c;i Þ. Without the constraint, we would typically obtain sequence j with MP χ̃ MP ij ðT c;i Þ and χ jj ðT c;i Þ both being large, in which case sequence j will not undergo phase separation at T c;i . We also set N replace , the total number of amino acid compositional differences between sequences i and j. We can represent each sequence as a vector, ni , where each element ni;a corresponds to the proportion of a specific aminoP acid type a contained in the sequence i, and satisfying a ni;a 1⁄4 1. Using this representation, the effective interaction parameter can be expressed as
+
+[Page 11]
+
+Q99614_0_50
+
+Q9UBW7_876_926
+
+Antagonistic
+
+Antagonistic
+
+(c) 12.5 Distribution
+
+FIG. 6. Demixing of IDR polymers and the generated antagonistic polymers. (a),(b) Snapshots of the simulated IDR (green) and antagonistic (magenta) sequences shown with the sequence and its name. (c) The distribution of the demixing score Sdemix for the pairs MP 3 of IDR and antagonistic sequences with positively large χ̃ MP ij . We test 13 sequence pairs (with mean χ̃ ij l 1⁄4 0.022 nm ) using the HPSMP 3 Tesei model and 16 sequence pairs (with mean χ̃ ij l 1⁄4 0.024 nm ) using the HPS-Dignon model.
+
+χ̃ MP ij 1⁄4 −
+
+ðni − nj ÞT vMP ðni − nj Þ: 2l3
+
+ð21Þ
+
+Here, vMP is a 20 × 20 matrix with the elements defined by Eq. (6). The formula (21) indicates that χ̃ MP ij depends only on the difference in the amino acid fraction between the sequences. The three constraints we impose are N i 1⁄4 N j 1⁄4 N;
+
+ð22Þ
+
+ni T vMP ni 1⁄4 nj T vMP nj ;
+
+ð23Þ
+
+jN i;a − N j;a j 1⁄4 2N replace :
+
+ð24Þ
+
+and
+
+To maximize χ̃ MP ij ðT c;i Þ with respect to nj under the constraints (22)–(24), we employ a PYTHON package for optimization (scipy.optimize.differential_evolution [50]) using the default parameters, with N 1⁄4 50 and N replace 1⁄4 25. We round decimals of the obtained elements of N j nj and add or remove randomly chosen amino acids so that the length of the sequence becomes 50. We generate sequence j by randomly shuffling the order of amino acids from this sequence. In Figs. 6(a) and 6(b), we show simulation results of the obtained sequences that indeed show demixing with the given sequences. For 13 (16) pairs of given and generated sequences with positively large χ̃ MP ij that are tested using the HPS-Tesei (HPS-Dignon) model, we show the distribution of the demixing score Sdemix in Fig. 6(c). The distribution suggests that the proposed approach is useful in generating the antagonistic sequence that will demix with a given sequence; most of them have Sdemix > 0.5, and the majority achieves Sdemix > 0.6.
+
+D. Rules of demixing and hypermixing deduced from the eigenspectrum of virial coefficient matrix From the formula of χ̃ MP ij in Eq. (21), we can understand what drives two sequences to mix or separate by analyzing vMP and the differences in amino acid fraction between two sequences, ni − nj . In Figs. 7(a) and 7(b), we show vMP calculated at T 1⁄4 300 K and its eigenspectrum fλn g20 n1⁄41 for the HPS-Tesei model, respectively. As expected, the charged residues dominate the interactions, which is seen as the largest eigenvalue λ20 and its corresponding eigenvector e20 [Fig. 7(c)], where en is the normalized eigenvector for the nth smallest eigenvalue λn . This explains why many pairs tend to have low χ̃ MP ij (Fig. 17 in Appendix G) as RDP well as χ̃ ij [Fig. 4(a)] and, therefore, tend to hypermix as shown in the bottom left panel in Fig. 4(b); difference in charge is itself already a strong driver of cocondensation. On the other hand, demixing is rare, since ni − nj must align closely with the few eigenvectors that correspond to negative eigenvalues of vMP . For the HPS-Tesei model, e1 [Fig. 7(e)] indicates that demixing from a condensing sequence i can be achieved by making sequence j by exchanging charged residues (marked by the red and blue shadows) with aromatic residues (marked by the green shadow) from sequence i, or vice versa. This is a plausible strategy given that charged residues and aromatic residues are indeed both known to be abundant in proteins forming condensates, and these condensates seem to attract distinct components inside cells [51]. The second eigenvector e2 [Fig. 7(f)] indicates that exchanging charged and aromatic residues with other weaker interacting residues (A, Q, P, etc.) can also lead to demixing. To examine if the demixing and hypermixing pairs found in simulations respect these eigenvectors, we compare ni − nj for the 62 sequence pairs used in plotting Fig. 4(c) for the HPS-Tesei model. In Fig. 7(g), we plot Pn , calculated by
+
+Pn ≔ jen · ðni − nj Þj=kni − nj k;
+
+ð25Þ
+
+[Page 12]
+
+– DE + KHR
+
+D E R K H S T N Q C G P A V I LM F YW
+
+Eigenspectrum of 10 0
+
+200K 300K 400K
+
+D E R K H S T N Q C G P A V I LM F YW
+
+D E R K H S T N Q C G P A V I LM F YW
+
+D E R K H S T N Q C G P A V I LM F YW
+
+(g) Two-component simulation:
+
+(f)
+
+D E R K H S T N Q C G P A V I LM F YW
+
+FIG. 7. Molecular insights for the mechanism of demixing and hypermixing. (a) Virial coefficient matrix calculated at 300 K in the monomer pair approximation using the HPS-Tesei parameters. (b) Eigenspectrum of the virial coefficient matrix. The inset shows the absolute values of the eigenvalues with logscale. (c) Eigenvector with the largest eigenvalue. (d) Eigenvector with the second largest eigenvalue. (e) Eigenvector with the most negative eigenvalue. (f) Eigenvector with the second most negative eigenvalue. For all the plots of eigenvectors, the component for amino acid D is taken as positive. (g) Eigendecomposition of the amino acid fraction difference vector ni − nj for the pairs tested in the two-component simulation (Fig. 4). The three panels represent the hypermixing (Sdemix < 0.47), random (Sdemix ∈ 1⁄20.47; 0.53), and demixing (Sdemix > 0.53) pairs.
+
+as a heat map for hypermixed (Sdemix < 0.47), randomly mixed (Sdemix ∈ 1⁄20.47; 0.53), and demixed (Sdemix > 0.53) sequence pairs (see Fig. 21 for Pn and Sdemix for all the sequence pairs). We find that most of the demixing pairs [Sdemix > 0.53, right panel in Fig. 7(g)] have the fraction difference vector that has large components of not only e1, but also e2 , highlighting the fact that both directions, including their mixtures, can be practical ways in achieving demixing. The hypermixing pairs (Sdemix < 0.47) have large e20 [Fig. 7(c)] components as expected, whereas neutrally interacting pairs (Sdemix ∈ 1⁄20.47; 0.53) have nonzero components scattered within the eigenvectors corresponding to close-to-zero eigenvalues [left panels in Fig. 7(g)]. Here, none of the fraction difference vectors have a large e19 [Fig. 7(d)] component, since e19 is close to uniform, which means that the difference vectorP is approximately orthogonal to it by definition [i.e., a ðni;a − nj;a Þ 1⁄4 0]. The effective interaction parameter has the useful property that it does not depend strongly on the temperature (Fig. 19 in Appendix G); this can be explained by the weak temperature dependence of the eigenspectrum as shown with different marks in Fig. 7(b) except for the 19th eigenvalue, which is irrelevant as explained. We conduct the same eigenspectrum analysis on vMP from the HPS-Dignon parameter set (Fig. 22 in Appendix G) as well as the Mpipi model (Fig. 23 in
+
+Appendix G). Apart from the difference in the charge of histidine (0 in HPS-Tesei, þ0.5 in HPS-Dignon, and þ0.375 in Mpipi), the situation is similar to the HPSTesei model in the positive (hypermixing) eigenvectors. For the negative (demixing) eigenvectors, the Mpipi model has e1 and e2 that treat the combination of aromatic residues and charged residues in a distinct manner, highlighting the difference between arginine (R) and lysine (K) in terms of the interaction with the aromatic residues (F, Y, and W). Nevertheless, the prominent feature that there are at most only two vectors that span the demixing space is shared across the three models. Previous studies have also highlighted the limited number of ways that amino acids can interact with each other [52,53]. E. Maximum number of demixing sequences Seeing that the number of demixing vectors is limited (in fact, only two), we wondered how demixing of more than two components can be achieved. In the three-component simulations (Fig. 5), the chosen pairs have large values of e1 and e2 components in the difference vectors fni − nj g [Fig. 8(a)]. For the mixtures where the three polymer types separate well, their corresponding points projected on the space spanned by e1 and e2 form a larger triangle [Figs. 8(a)–8(c)]. This indicates that, within this twodimensional space, the difference vectors can utilize the
+
+[Page 13]
+
+(a) Three-component simulation:
+
+Projection of
+
+P46937_4_54
+
+P46937_4_54
+
+Q96PK6_616_666
+
+Q6PML9_56_106
+
+Q5T3I0_224_274
+
+Q92575_448_498
+
+Rescaled projection
+
+0.2 W
+
+LT HN VP
+
+(g)
+
+Charged residues
+
+240K 230K 220K 210K
+
+240K
+
+220K
+
+(f)
+
+FIG. 8. Region spanned by the sequence vectors in the demixing plane. (a) Projection of the difference vectors of the pairs of fractions in the tested triplets in the two-dimensional space spanned by e1 and e2 (demixing plane) for the HPS-Tesei model (see Fig. 7). We translate the position of each triangle for comparison. (b),(c) Examples of (b) high demixing score and (c) relatively low demixing score with the corresponding triangles. (d) Projection of the single amino acid vectors onto the demixing plane with the axes rescaled by the eigenvalues. The region surrounded by the dotted line is the convex hull calculated from the 20 single amino acid vectors, which corresponds to the region explorable by all the sequences. The region defined by the bold line is obtained by enforcing pffiffiffiffiffiffi ñi;19 1⁄4 0.24 λ19 1⁄4 0.46 nm3=2 ð1⁄4 constÞ and ñi;20 1⁄4 0. The value for ñi;19 is selected to roughly maximize the area of the space after the restriction. The triangle corresponding to the sequence triplet in (b) is shown to confirm that it fits within this region. (e) The possible combination of sequences that can be packed within the restricted space in the demixing plane when setting the minimum distance pffiffiffiffiffiffiffiffiffiffiffiffiffiffi MP 3 between the points as 2χ̃ MP min l with χ̃ min l 1⁄4 0.008 nm . This number M 1⁄4 6 seems to be the maximum for this condition. (f) The same restricted space in the demixing plane with circles representing T c ≈ const, as suggested by the temperature written near each circle. Here, the relation between T c and χ MP Appendix F). (g) If enforcing the condition that all M ii is estimated by linear fitting (seep ffiffiffiffiffiffiffiffiffiffiffi sequences should be sitting inside the restricted space, separated by at least 0.016 nm3=2 from each other, and should be sitting between two circles that correspond to T c ≈ 220 K and T c ≈ 240 K, then M 1⁄4 3 is the maximum; without the constraint on the upper limit of T c , M 1⁄4 4 is the maximum (e.g., a sequence corresponding to the blue point is allowed).
+
+combination of distinct directions to achieve demixing of more than two components. For multiple polymer types to separate, the effective interaction parameter χ̃ MP ij between each pair must be sufficiently large to drive them apart. To see if there is a theoretical maximum in the number of components that are demixed, here we seek a geometricalprepresentation of the problem. ffiffiffiffiffiffiffi By introducing ñi;n ≔ jλn jen · ni , the effective interaction parameter can be approximated by χ̃ MP ij ≃
+
+1 X 1 X − − ðñi;n − ñj;n Þ2 ; i;n j;n 2l3 n1⁄41;2 2l3 n1⁄419;20
+
+ð26Þ
+
+since λ1 and λ2 are negative, λ19 and λ20 are positive, and λn ≃ 0 for all other n [Fig. 7(b)]. Seeing this representation, we observe that χ̃ MP can become large by setting the ij Euclidian distance between the sequences large in the demixing space (spanned by e1 and e2 ) while minimizing the Euclidian distance in the hypermixing space (spanned by e19 and e20 ).
+
+Any fraction vector can be written as ni 1⁄4 a ni;a ea , where ea is the single amino acid vector with the component at amino acid a being one and all other components zero and ni;a ≥ 0. The projection ñi;n is written as pffiffiffiffiffiffiffi ñi;n 1⁄4 a ni;a ẽa;n , where ẽa;n ≔ jλn jen · ea is the projection of the single amino acid vector. The point ðñi;1 ; ñi;2 Þ is then restricted within the convex hull that is formed by the 20 points of projections fðẽa;1 ; ẽa;2 Þga in the demixing space [Fig. 8(d), dotted line]. We find that the top right region in this convex hull is spanned by the charged residues, the left region is dominated by the aromatic residues, and the bottom region is dominated by the others including proline and glutamine. A further constraint is set by restricting ñi;19 and ñi;20 to be all the same across sequences to make the second term in Eq. (26) to be minimal. The possible region within the demixing plane that the sequences can take is then calculated by first obtaining the convex hull formed by 20 points fðẽa;1 ; ẽa;2 ; ẽa;19 ; ẽa;20 Þga in the four-dimensional space and obtaining the cross section with ñi;19 1⁄4 const and
+
+[Page 14]
+
+ñi;20 1⁄4 const (see Appendix H for details). The resulting region is shown as the bold line region in Fig. 8(d), where pffiffiffiffiffiffi we take ñi;19 1⁄4 0.24 λ19 1⁄4 0.46 nm3=2 and ñi;20 1⁄4 0 [i.e., restriction to almost charge neutral sequences as seen from e20 in Fig. 7(c)]. Finding multiple polymer types that demix with each other is then equivalent to placing points within a confined area, ensuring that they are sufficiently far apart from each other. If the minimum value required for χ̃ MP ij to demix is MP χ̃ min , we need to place points keeping the distance of at least pffiffiffiffiffiffiffiffiffiffi 2χ̃ MP min in the metric of the rescaled projection, according to Eq. (26). In p Fig. 8(e), we plot nonoverlapping circles ffiffiffiffiffiffiffiffiffiffi MP with diameter 2χ̃ min within the restricted space corre3 sponding to χ̃ MP min l 1⁄4 0.008 nm . This figure suggests that M 1⁄4 6 is the maximum number of points that can be taken this way. We can, in principle, take the points (i.e., sequences) in the upper right area in Fig. 8(e) [i.e., sequences with a high percentage of charged amino acids; see also Fig. 8(d)]. However, those points will be away from the origin [i.e., (0, 0) in the demixing plane], meaning that the diagonal element of χ MP , 1 X 2 1 X 2 χ MP ñi;n þ 3 ñi;n − ; ii ≃ − 3 l n1⁄41;2 l n1⁄419;20
+
+bring the effective interaction parameter large. This seems unavoidable, since a small proportion of these components will bring the effective interaction parameter significantly lower; it is seen that the e19 and e20 components are indeed small for the pairs with high demixing scores [Fig. 7(g)]. The third assumption is to restrict the set of sequences to those that have sufficient self-interactions, which can undergo phase separation at realistic temperatures. Since all sequences will ultimately undergo condensate formation for a low enough temperature, it is unnatural to allow arbitrary levels of self-interactions. Where to set this minimum critical temperature is arbitrary [see the example case depicted in Fig. 8(g)]. Nevertheless, we still have the limitation of six sequences as the maximum number of demixable elements, even without the restriction on the critical temperature [Fig. 8(e)]. The limitations on the number of demixing components seem to be a general principle, holding true even when we use different models or consider the rescaled dimer pair approximation. Writing the amino acid dimer fraction of sequence i as nD i , where the element ni;d is the number of amino acid dimers of type d ( ∈ fAA; AC; AD; ...; YW; YYg) contained in sequence i, we can express χ̃ RDP as ij
+
+ð27Þ χ̃ RDP 1⁄4− ij
+
+would become smaller due to the first term and, therefore, have a higher critical temperature T c;i . In Fig. 8(f), we show concentric circles in the demixing space that approximately correspond to fixed critical temperatures (see Appendix F for the derivation). When restricting the critical temperature for each sequence to be similar to each other, we should place all the points between two circles that represent the upper and lower limits of T c;i . For example, if we assume 220 K ≤ T c;i ≤ 240 K, we find that M 1⁄4 3 is the maximum number for demixing under this restriction [three brown dots in Fig. 8(g)]; without the upper limit of T c;i , M 1⁄4 4 is the maximum [additional blue dot in Fig. 8(g)]. In summary, we have found that there is a limitation in the number of demixable components when assuming the following points. The first assumption is that the effective interaction parameter calculated from the monomer pair approximation has to be larger than a certain value for the two sequences to demix with each other. This is based on the positive correlation between the effective interaction parameter and the demixing score that we have observed (Figs. 4 and 20 in Appendix G). Seeing that not all triplet simulations that we tested underwent demixing, this assumption is likely a required condition rather than a sufficient condition, meaning that the real restriction should be even stronger. The second assumption is that the components of the hypermixing dimensions (e19 and e20 ) in the difference vector (ni − nj ) must be suppressed to zero to
+
+1 D T RDP D ðn − nD ðnj − nD i Þ v i Þ: 2l3 j
+
+ð28Þ
+
+Here, vRDP is a 400 × 400 matrix with the elements constructed using Eq. (16). The number of dimensions of the demixing space, which is the number of eigenvectors of vRDP with negative eigenvalues, is no more than two for the HPS-Tesei, HPS-Dignon, and Mpipi models (Fig. 24 in Appendix G), indicating that the restriction in placing points in the demixing space is similar even for the rescaled dimer pair approximation model. IV. DISCUSSION AND CONCLUSION Here, we have shown that the prediction of heteropolymer interactions including demixing upon condensation is possible for the coarse-grained models of disordered region sequences. The method we propose allows the estimation of the Boyle temperature, critical temperature, and the selection of IDR sequences that will demix or hypermix, as well as the generation of antagonistic (demixing) components for a given sequence. We have shown how the monomer pair approximation captures the basic properties of the interactions but can be improved quantitatively by the dimer pair approximation. This indicates that the essential interaction range is slightly beyond a monomer, which is plausible given that the bond length (lb 1⁄4 0.38 nm) is comparable to the range of residue-level interactions (σ ∼ 0.6 nm). To our knowledge, the dimer pair approximation, although intuitive, is novel in
+
+[Page 15]
+
+that it cannot be reduced to known expansion schemes such as the cluster expansion [54] or the expansion proposed by Zimm [55]. The same approximation should work in other biomolecules, for example, when considering interactions between proteins and RNAs, where coarse-grained simulations have already been conducted [17,22]. Studies on the phase separation behavior of multicomponent systems have used random matrix as the complex interaction between biomolecules [46,56,57]. Real interactions between biomolecules and especially IDRs should be more restricted compared with a random matrix, since the possible interaction types between amino acids are limited [44]. As we have seen, there are only two effective directions that lead to demixing in terms of the difference in the amino acid components, according to the three simulation models that we have tested. Nevertheless, we found that demixing more than two sequences is possible by appropriately choosing the right directions in the residue difference vector space. We could not, however, demix more than three distinct sequences in our simulations, consistent with the bound due to the restricted space in the demixing plane. It will be interesting to see how increasing more components, such as RNAs and phosphorylation of the residues, can rescue the situation in order to explain the nature of the intracellular environment, where there seem to be more than three distinct phases coexisting within just the nucleus. The prediction of the interactions especially across distinct heteropolymers clearly has room for improvement, as they are still far from perfectly predicting demixing even for the MD simulation results. This is likely due to the difficulty in approximating the interaction strength of sequences with large charge blocks, which tended to appear frequently in the demixing candidates. We also note that our framework is assuming phase separation and does not predict aggregates [45] in the current form. Nevertheless, we consider it important to have an analytical model in these calculations, as it allows us to construct insights into the rules of demixing. In particular, the geometrical argument we proposed in Sec. III E was applicable due to the quadratic form of the effective interaction parameter [Eqs. (21) and (28)]. It should be useful to consider improved approximation methods that still satisfy this form. Given the recent intensive studies of protein demixing [58,59], a crucial step based on our formulation is the experimental validation of the sequences predicted to undergo demixing. Details on the residue-level interactions in simulation models, however, matter when comparing with the experimental results. An interesting approach would be to assess the validity of a microscopic model without relying on MD simulations, which should be beneficial when results of experiments are provided from different conditions including from in vivo. For example, from a large dataset of sequence-to-sequence level interactions in cells, we should be able to restrict and fit the parameters and
+
+functional forms of the microscopic model to consistently explain the data by employing optimization methods. See Ref. [60] for the functions and example code to calculate the estimates of virial coefficients, Boyle temperatures, and critical temperatures for a given sequence. ACKNOWLEDGMENTS We thank Tomoya Hayata and Takuya Nomoto for their helpful comments. We also acknowledge Cheng Tan and Yuji Sugita for their helpful comments on the simulation methods. We acknowledge support by the RIKEN Information systems division for the use of the Supercomputer HOKUSAI BigWaterfall. This work was supported by JSPS KAKENHI Grants No. JP20K14435 (to K. A.), No. JP19H05795, No. JP19H05275, No. JP21H01007, and No. JP23H00095 (to K. K.).
+
+APPENDIX A: MONOMER PAIR APPROXIMATION The virial coefficient between two heteropolymers [Eq. (3)] can be expressed as BðTÞ 1⁄4
+
+D P Ei Vh − n;m Uan am ðjr1;n −r2;m jÞ=T 1− e ;
+
+ðA1Þ
+
+where V is the total volume of the system, r1;n (r2;m ) is the coordinate of the nth (mth) amino acid monomer that constitutes the first (second) polymer, and an (am ) is the corresponding amino acid type. The canonical average h i is defined as h i ≔
+
+Z Y d r1;n d r2;m ð Þ n;m
+
+× e−1⁄2Hintra ðfr1;n gÞþHintra ðfr2;m gÞ=T ;
+
+ðA2Þ
+
+R Q where Z ≔ ð n;m d3 r1;n d3 r2;m Þe−1⁄2Hintra ðfr1;n gÞþHintra ðfr2;m gÞ=T . Here, Hintra ðfr1ð2Þ;nðmÞ gÞ is the intrapolymer Hamiltonian for the first (second) polymer, which consists of the bond interactions between neighboring monomers and the intrapolymer interactions [i.e., Uan an0 ðjr1;n − r1;n0 jÞ for the first polymer]. We introduce the Mayer f function [42] between amino acids a and b as f ab ðrÞ ≔ e−Uab ðrÞ=T − 1:
+
+ðA3Þ
+
+Then, we can expand Eq. (A1) by the power of f ab as
+
+[Page 16]
+
+hf ðjr − r jÞi 2 n;m an am 1;n 2;m V X hf ðjr − r jÞf ðjr 0 − r2;m0 jÞi − 4 ðn;mÞ≠ðn0 ;m0 Þ an am 1;n 2;m an0 am0 1;n
+
+BðTÞ 1⁄4 −
+
+BðTÞ → BMP ðTÞ for R=l0 → 0. In the weak bond limit where monomers can freely move as a gas, l0 is regarded as V 1=3 , and BðTÞ → BMP ðTÞ for large systems with R=V 1=3 ≪ 1.
+
+n;m;n0 ;m0
+
+þ Oðf 3 Þ;
+
+APPENDIX B: CORRECTION TO MONOMER PAIR APPROXIMATION
+
+ðA4Þ
+
+where Oðf 3 Þ represents the third- and higher-order terms of f ab . The first-order terms in Eq. (A4) are reduced to X Z ∞ BMP ðTÞ 1⁄4 − 2π drr2 f an am ðrÞ; ðA5Þ n;m
+
+which is equivalent to Eq. (5). Let us introduce the maximum range of the monomer-monomer interaction, R. Given that f ab ðrÞ ≃ 0 unless r < R since Uab ðrÞ ≃ 0 for r > R, BMP ðTÞ is on the order of R3 . The monomer pair approximation [BðTÞ ≃ BMP ðTÞ as considered in Sec. II A] should be valid in the following limiting cases. The first case is when the bond is rigid, and R is much smaller than the bond length lb (i.e., R=lb ≪ 1). The second case is when the bond is thermally fluctuating with a typical length l0 larger than the natural length, and R is much smaller than l0 (i.e., R=l0 ≪ 1). For the first case, focusing on the second-order terms in Eq. (A4) for n < n0 and m < m0 , we consider the integrals regarding the monomer positions fr1;n00 gnn00 1⁄4n and fr2;m00 gm m00 1⁄4m in hf an am ðjr1;n − r2;m jÞf an0 am0 ðjr1;n − r2;m jÞi. We see that hf an am ðjr1;n − r2;m jÞf an0 am0 ðjr1;n0 − r2;m0 jÞi ≃ 0 unless both the pairs ðn; mÞ and ðn0 ; m0 Þ are spatially close within the distance R. Because of this spatial constraint and the constant bond length, if fr1;n00 gnn00 1⁄4n and r2;m are fixed, the integration by fr2;m00 gm m00 1⁄4mþ1 involves a factor on the order of ðR=lb Þ2 or higher, compared to the corresponding integration in partition function Z. After the integration by fr1;n00 gnn00 1⁄4nþ1 , the remaining integrals regarding fr1;n ; r2;m g involve a factor on the order of R3 =V compared to the counterpart in Z. Similar arguments are applied to the cases with n ≥ n0 or m ≥ m0. Overall, the second-order terms in Eq. (A4) should be on the order of ðR=lb Þ2 R3 . In the same way, the higher-order terms Oðf 3 Þ should be on the order of ðR=lb Þ4 R3 or higher. Thus, in the limit of R=lb → 0, we obtain BðTÞ → BMP ðTÞ. For the second case, with the same setup for the monomer coordinates as in the first case, if fr1;n00 gnn00 1⁄4n and r2;m are fixed, the integration by fr2;m00 gm m00 1⁄4mþ1 involves a factor on the order of ðR=l0 Þ3 or higher, compared to the counterpart in Z. The remaining integrals involve a factor on the order of R3 =V compared to the counterpart in Z. Thus, in a similar way to the first case, the second- or higher-order terms in Eq. (A4) should be on the order of ðR=l0 Þ3 R3 or higher, respectively, leading to
+
+As an approximation scheme to correct the monomer pair approximation (Appendix A), we consider the method proposed in Ref. [55] to calculate the second-order term in Eq. (A4). To use this method, we neglect the intrapolymer interactions and replace the bond Hamiltonian (with the natural length lb and the spring constant k) Hbond ≔
+
+N −1 kX ðjr − rn j − lb Þ2 2 n1⁄41 nþ1
+
+ðB1Þ
+
+N −1 3T X jrnþ1 − rn j2 : 2lb 2 n1⁄41
+
+ðB2Þ
+
+by H 0bond ≔
+
+The coefficient of H0bond is chosen such that hjrnþ1 − rn j2 i 1⁄4 lb 2 in equilibrium for a single polymer. Using d3 rnþ1 e−ajrnþ1 −rn j −bjrnþ2 −rnþ1 j 1⁄4
+
+π 3=2 e−abjrnþ2 −rn j =ðaþbÞ 3=2 ða þ bÞ
+
+ðB3Þ
+
+repeatedly (a, b > 0), we can obtain hf an am ðjr1;n − r2;m jÞf an0 am0 ðjr1;n0 − r2;m0 jÞi
+
+d3 r̄1 d3 r̄2 d3 r̄3 1⁄4 V 2πlb 2 jn0 − nj3=2 jm0 − mj3=2 × f an am ðjr̄2 jÞf an0 am0 ðjr̄3 − r̄1 jÞ
+
+× e−3jr̄1 j =ð2lb jn −njÞ−3jr̄3 −r̄2 j =ð2lb jm −mjÞ ;
+
+ðB4Þ
+
+where r̄1 ≔ r1;n0 − r1;n , r̄2 ≔ r2;m − r1;n , r̄3 ≔ r2;m0 − r1;n , and we assume n ≠ n0 and m ≠ m0 . Then we replace r̄3 − r̄2 by r̄1 (i.e., r2;m0 − r2;m by r1;n0 − r1;n ) in the exponential factor in Eq. (B4), which is justified when the monomer interaction range is much shorter than lb , similarly to the condition where the monomer pair approximation is valid. With this replacement, we can perform the integration by r̄3 in Eq. (B4), which leads to hf an am ðjr1;n − r2;m jÞf an0 am0 ðjr1;n0 − r2;m0 jÞi
+
+3=2 MP vMP an am van0 am0 ; 1⁄4 V 2πlb 2 ðjn0 − nj þ jm0 − mjÞ3=2 where vMP ab 1⁄4 −2π drr f ab ðrÞ [Eq. (6)].
+
+ðB5Þ
+
+[Page 17]
+
+50 repeats of G
+
+(a) 0.150
+
+50 repeats of Y
+
+MSRE
+
+(HPS-Dignon)
+
+FIG. 9. Comparison of virial coefficients calculated by the monomer pair approximation and the method proposed in Ref. [55]. (a),(b) As examples, we plot the temperature dependence of BMP (black solid line) and BMPþZ (red dashed line) for 50 repeats of (a) G and (b) Y, using the HPS-Tesei model.
+
+0.5 0.6 0.7 0.8 0.9 1.0
+
+0.5 0.6 0.7 0.8 0.9 1.0
+
+FIG. 11. The error and correlation for the Boyle temperature with the rescaled dimer pair approximation. (a) The MSRE between T RDP and T B as a function of the rescaling parameter α. (b) The corresponding Pearson correlation coefficient rP (blue) and Spearman’s rank correlation coefficient rS (orange).
+
+APPENDIX C: SELECTION OF DISORDERED REGION SEQUENCES FOR SIMULATION
+
+Correlation for
+
+200 400 600 800
+
+(HPS-Tesei)
+
+FIG. 10. Comparison of the Boyle temperatures between the HPS-Tesei and HPS-Dignon models. For 217 IDR sequences, we plot T B obtained by simulations of each model. The gray line is T B ðHPS-TeseiÞ 1⁄4 T B ðHPS-DignonÞ.
+
+Using Eq. (B5) in the second-order terms of Eq. (A4) and neglecting the n 1⁄4 n0 or m 1⁄4 m0 terms, we obtain an approximation BðTÞ ≈ BMPþZ ðTÞ that corrects the monomer pair approximation as
+
+We aim to use disordered region sequences from a wide variety of proteins with identified spatial clustering inside cells. To this end, we took data from the Human Cell Map [61] which provides a list of 4145 human proteins clustered into 20 compartments (“MMF localization”) based on proximity labels by biotinylation in HEK293 cells. We took between 2 and 39 proteins from each compartment that have long IDR regions (i.e., pLDDT score from ALPHAFOLD2 [62,63] lower than 0.7 for at least 50 consecutive residues) and selected 270 amino acid sequences of length 50 from these regions. The list of the selected sequences is presented in Supplemental Tables 1 (for the HPS-Tesei model) and 2 (for the HPSDignon model) [64]. APPENDIX D: SELECTION OF α We define the MSRE between T RDP calculated using Eq. (11) and T B obtained by simulations:
+
+MPþZ
+
+≔B
+
+MP
+
+− 2πlb 2
+
+3=2 X
+
+N seq RDP T B;i − T B;i 2 1 X ; MSREðT B Þ ≔ N seq i1⁄41 T B;i
+
+MP vMP an am van0 am0
+
+: ðjn0 − nj þ jm0 − mjÞ3=2 n;m;n0 ;m0
+
+ðn≠n0 ;m≠m0 Þ
+
+ðB6Þ In Fig. 9, we plot the temperature dependence of BMPþZ , compared with that of BMP for example sequences. We find that BMPþZ ðTÞ shows a nonmonotonic temperature dependence and is spuriously negative for high temperatures due to the quadratic contribution of vMP in Eq. (B6). This result indicates that Eq. (A4) is not useful as an expansion scheme; we must take in multiple higher-order terms in f in order to recover even the monotonic T dependence of BðTÞ. We, therefore, consider the dimer pair approximation as an alternative proxy to estimate the temperature dependence of the virial coefficient (Sec. II B).
+
+ðD1Þ
+
+where the subscript i of T RDP B;i and T B;i is the label for the polymer sequence and N seq is the total number of examined sequences. In Fig. 11(a), we show MSREðT B Þ as a function of the rescaling parameter α, which is obtained for N seq 1⁄4 275 using the HPS model with the parameter values proposed in Ref. [16] (see Sec. II). MSREðT B Þ is minimized at α 1⁄4 0.75, which is used in Figs. 1(e) and 1(f). In Fig. 11(b), we show the α dependence of the Pearson correlation coefficient rP and Spearman’s rank correlation coefficient rS for the same dataset as used in Fig. 11(a). We find that rP and rS are still high (rP 1⁄4 0.926 and rS 1⁄4 0.919) when tuning α to 0.75.
+
+[Page 18]
+
+FIG. 12. The diagonal interaction parameter χ MP ii at T 1⁄4 300 K against T c;i in numerics for the HPS-Tesei model. The red line is the result of linear fitting, which we use to convert the distance in Fig. 8 to T c . We take l=lb 1⁄4 3, to determine the values of χ MP ii in this plot, but the radii of circles plotted in Fig. 8(f) do not depend on this choice.
+
+Similar to Eq. (D1), we define the MSRE between T RDP calculated theoretically and T c obtained by simulations:
+
+N seq RDP T c;i − T c;i 2 1 X : N seq i1⁄41 T c;i
+
+1. Critical temperature To predict the critical temperature of phase separation, T c , we conduct numerical simulations at various temperatures.
+
+APPENDIX E: SELECTION OF l
+
+MSREðT c Þ ≔
+
+and fλa g for the HPS models that we use are presented in Supplemental Tables 3 (for the HPS-Tesei model) and 4 (for the HPS-Dignon model) [64]. The parameters for the Mpipi model we use are presented in Supplemental Tables 5 and 6 [64]. For simulation as well as in theoretical calculations, we take ε 1⁄4 0.8368 kJ=mol, εr 1⁄4 ð249.4 − 0.788T þ 7.2 × 10−4 T 2 Þð1 − 0.2551cs þ 5.151× 10−2 cs 2 − 6.889 × 10−3 cs 3 Þ for TðKÞ and cs ðmol=lÞ, following Ref. [65], and set cs 1⁄4 0.15 mol=l. For visualization, we used napari [68] in PYTHON. For the Mpipi simulations, we used the LAMMPS code provided in Ref. [17] but with 65 distinct IDR sequences taken from the IDRome [19] that have the length of 135 residues.
+
+ðE1Þ
+
+In Fig. 3(c), we show the l=lb dependence of MSREðT c Þ as the error of the T c prediction for each model for the same dataset as used in Figs. 3(a) and 3(b). Specifically, we use α 1⁄4 0.75 for all models and take N seq 1⁄4 233, 154, and 73 for the HPS-Tesei, HPS-Dignon, and Mpipi models, respectively. For the HPS-Tesei, HPS-Dignon, and Mpipi models, the errors are minimized at l=lb values of approximately 3.0, 3.2, and 3.6, respectively, based on tests performed at increments of 0.2. APPENDIX F: ESTIMATION OF THE RELATION BETWEEN T c;i AND χ MP ii To connect the value of χ MP ii at T 1⁄4 300 K with T c;i in numerics, we calculate χ MP in the HPS-Tesei model for the ii same sequence set as used in Fig. 3. In Fig. 12, we plot χ MP ii against T c;i from simulations (black dots), showing negative correlation (rP 1⁄4 −0.78 and rS 1⁄4 −0.82). By linear fitting (red line), we calculate the typical value of χ MP ii for a given T c;i . For T c;i 1⁄4 210, 220, 230, and 240 K, we obtain χ MP ii , which is transformed into circles in the demixing plane [Fig. 8(f)] using Eq. (27) with fixed ñi;19 1⁄4 0.46 nm3=2 and ñi;20 1⁄4 0. APPENDIX G: SIMULATION We use GENESIS2.0.0 [65–67] to conduct MD simulations of the coarse-grained polypeptide chains. We use the Langevin thermostat with a friction coefficient of 0.01 ps−1 , with 0.01 ps time steps. The parameters fqa g, fσ a g,
+
+a. HPS-Tesei and HPS-Dignon model simulation using GENESIS For the HPS-Tesei and HPS-Dignon model simulations, we use the periodic boundary condition with 18 nm × 18 nm × 200 nm containing N molecules. As the initial condition, we first conduct a simulation of a single chain at 150 K for 10 ns (106 steps) and copy that configuration N times within a small region inside the box, utilizing duplication_generator.jl provided in GENESIS. We conduct a binary search scheme at 10 K resolution between 0 and 630 K to run the simulations at appropriate temperatures. We first conduct simulations at T 0 1⁄4 320 K for 200 ns (2 × 107 steps). The density profile is obtained by first projecting the distribution of the molecules to the z axis. The density of the high-density region ρH ðtÞ is calculated as the peak value of the z profile, and the density of the low-density region ρL ðtÞ as the density at the position 100 nm away from the position that was used to calculate ρH ðtÞ. Both of these densities are calculated for the whole time course for each time point t. Looking at ΔρðtÞ ≔ ρH ðtÞ − ρL ðtÞ and its mean value for a set time f 0 ; t1 Þ ≔ t ≤t<t ΔρðtÞ=ðt1 − t0 Þ, we decide interval Δρðt to increase the temperature in the next simulation when f m ; te Þ Δρðt > 0.7 f ti Þ Δρð0;
+
+and minΔρðtÞ > 100 t≥tm
+
+ðG1Þ
+
+and decrease the temperature otherwise. The condition (G1) is set empirically with ti 1⁄4 10 ns and tm 1⁄4 150 ns to capture whether the equilibrated state is phase separated or not within the finite time of the simulation. After deciding to raise (or lower) the temperature for the simulation, we select the midpoint between the most recently simulated temperature and the nearest larger (or smaller) value with a maximum of 630 K (or the minimum of 10 K) and simulate
+
+[Page 19]
+
+1e6
+
+1e6
+
+160K 200K 210K 220K 240K 320K
+
+Density difference (molecules / μm3)
+
+Density difference (molecules / μm3)
+
+(Ref. [17])
+
+Temperature (K)
+
+Distance (Å)
+
+FIG. 14. Comparison of T c for the variants of hnRNPA1 sequences between Ref. [17] and our simulations.
+
+(our simulation)
+
+220K 246K 272K 299K 325K 352K 378K 404K 431K 457K
+
+B (nm3)
+
+(c) 4.0
+
+Time (ns)
+
+Temperature (K)
+
+FIG. 13. T c and T B calculated from MD simulation of the HPSTesei model for an example sequence Q9ULK5_0_50. (a) Density difference between the high-density region and the low-density region as a function of time for simulations at different temperatures. (b) Density difference fit with f Δρ 1⁄4 AðT c − TÞβ θðT c − TÞ with β 1⁄4 0.326 and θð·Þ being the step function. (c) g̃ðrÞ for various temperatures obtained by umbrella sampling and replica exchange. (d) BðTÞ calculated from g̃ðrÞ according to Eq. (G3), fit with BðTÞ 1⁄4 A0 ð1 − T=T B Þ.
+
+another 200 ns (2 × 107 steps) after repreparing the initial condition described above. Following this procedure, the simulation stops after running for six distinct temperatures [e.g., 320, 160, 240, 200, 220, and 210 K in the case of Q9ULK5_0_50, as shown in Fig. 13(a)]. After gathering all the simulation results for the six rounds, we fit the density difference to Δρðtm ; te Þ 1⁄4 AðT c − TÞβ
+
+ðG2Þ
+
+with β 1⁄4 0.326 using the recent result of the threedimensional Ising critical exponent [69] [see Fig. 13(b) for the example case of Q9ULK5_0_50]. We obtain the goodness of fit measured by the reduced χ 2 and the monotonicity of the plot by calculating Spearman’s rank correlation coefficient (rS ) between f Δρðtm ; te Þ and T. On top of the filtering we apply in calculating T B (see next section), we filter out the data of the sequences that had reduced χ 2 > 20 or the error of fit in T c that are larger than 50 K considering that the T c fits cannot be reliable in those cases. b. Mpipi model simulation using LAMMPS For the Mpipi model simulations, we use the initial condition profile as well as the parameters for the time
+
+evolution as provided in the code from Ref. [17]. The periodic boundary condition is set as 10 nm × 10 nm × 44 nm containing 63 molecules, and the simulations are run up to 40 ns after 5 ns of equilibration. To calculate T c , we first estimate its value using the rescaled dimer pair approximation, using l=lb 1⁄4 3.0. Then, we take up to 12 points around this value with at least 10 K intervals between them and calculate the projected density in the z axis after the simulation to obtain the density difference and fit using Eq. (G2) as in the case of the HPS-Tesei and HPS-Dignon model simulations. We check the validity of this approach by comparing it to the values of T c provided in Ref. [17] for the variants of hnRNPA1 sequences (Fig. 14). 2. Calculating BðTÞ We employ umbrella sampling with exchange Monte Carlo simulation to obtain BðTÞ using two chains of the same species. To determine the range of temperatures to conduct the simulation, we assume that T B should be roughly between T c and 2T c and select T 1⁄4 ð1 þ 0.12nÞT̃ c for n 1⁄4 0; 1; ...; 10. For the exchange Monte Carlo simulation with umbrella sampling, we apply the harmonic biasing potential to the
+
+Time (ns)
+
+Time (ns)
+
+FIG. 15. Time evolution of the demixing score Sdemix in MD simulations. (a) For different sequences, we plot Sdemix as a function of time for the HPS-Tesei model. The colors correspond RDP 3 to χ̃ RDP ij l < −0.04 nm (blue), −0.04 nm < χ̃ ij l < 0.04 nm (orange), and χ̃ RDP ij l > 0.04 nm (green). (b) The corresponding plot for the HPS-Dignon model.
+
+[Page 20]
+
+Q6ZNJ1_1320_1370
+
+Q92793_0_50
+
+Q12816_896_946
+
+Q9NX58_236_286
+
+Q9P2N5_688_738
+
+O15013_232_282
+
+Q92794_1204_1254
+
+Q6P4F7_312_362 50
+
+O95104_672_722
+
+Q9HCK8_560_610
+
+O15440_496_546
+
+Q9HCK8_0_50
+
+FIG. 16. Comparison of the demixing score Sdemix and another indicator of demixing Sproj (e.g., Ref. [21]). We plot the value for each sequence pair, tested with the HPS-Tesei model (circles) and HPS-Dignon model (crosses). The brightness indicates the number density at the angular mean position, which should be high for phase-separated condensates and low when there are multiple regions of highdensity regions, which is typical in the presence of aggregatelike structures. We also show typical configurations of the sequence pair mixtures.
+
+center of mass distance between the two proteins with a spring constant of 0.1 kcal/(mol Å2 ). We choose 20 values for d0, the center of the distance in the umbrella sampling, as d0 1⁄4 0; 4; 8; ...; 60; 68; 76; 84; 92; 100 Å. The simulation is conducted in 25 nm × 25 nm × 25 nm periodic boundary boxes, with the exchange period set as 1 ns (105 steps) and the total run of 100 ns (107 steps). Trajectory extraction and the weighted histogram analysis method are conducted using the pipelines in GENESIS [65]. From the obtained potential of mean force (PMF) between 0 Å ≤ r < N max Å with N max 1⁄4 118 at δr 1⁄4 1 Å resolution, we calculate BðTÞ by the integral up to 70 Å: BðTÞ 1⁄4 2πδr
+
+and normalize it as g̃ðrÞ ≔ gðrÞ= N B ≤i<N max gðri Þ= ðN max − N B Þ [see Fig. 13(c) for the example case of Q9ULK5_0_50]. We numerically obtain the Boyle temperature T B by fitting BðTÞ to A0 ð1 − T=T B Þ [see Fig. 13(d) for the
+
+1⁄21 − g̃ðri Þr2i ;
+
+ðG3Þ
+
+0≤i<N B
+
+with ri 1⁄4 iδr and N B 1⁄4 70. For g̃ðrÞ, we first obtain gðrÞ from the PMF using the temperature of each simulation
+
+Count
+
+0.50 0.75 1.00
+
+0.01 0.02
+
+0.50 0.75 1.00
+
+0.5 1.0 1.5 2.0 2.5 3.0
+
+0.5 1.0 1.5 2.0 2.5 3.0
+
+FIG. 18. Comparison between the off-diagonal interaction parameter and the geometric mean of the diagonal interaction qffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+
+parameters. (a),(b) We compare jχ MP ij j and FIG. 17. Histogram of the effective intercomponent interaction parameter calculated by the monomer pair approximation, χ̃ MP ij , at T 1⁄4 minfT c;i ; T c;j g. The inset is the enlarged view of the positive region of χ̃ MP ij . See Fig. 4 for the counterpart when using the rescaled dimer pair approximation.
+
+MP jχ MP ii χ jj j at T 1⁄4
+
+minfT c;i ; T c;j g obtained by the monomer pair approximation for the (a) HPS-Tesei and (b) HPS-Dignon models. The gray line is qffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi jχ MP ij j 1⁄4
+
+MP jχ MP ii χ jj j, and each inset is an enlarged view. (c),(d)
+
+The corresponding plots with the rescaled dimer pair approximation. We take l=lb 1⁄4 3 for all the results here.
+
+[Page 21]
+
+example case of Q9ULK5_0_50]. To see the goodness of fit, we calculate the coefficient of determination (R2 ) and the error for T B due to the curve fitting. We exclude the data for sequences where R2 is smaller than 0.6 or the error of T B is larger than 50 K considering that those values are unreliable. We provide the result of the T B and T c obtained from the MD simulation as Supplemental Tables 1 (for the HPSTesei model) and 2 (for the HPS-Dignon model) [64].
+
+wide, setting a fixed temperature across simulations causes certain sequences to be deep in the phase-separated regime whereas other sequences to be marginal or even nonphase separating. For the demixing matrix S, we first calculate the mean position of each polymer (indexed by n, n0 ) and construct a k-nearest-neighbor (k-NN) graph with k 1⁄4 8 and a cutoff distance 3 nm while taking into account the periodic boundary condition. We then symmetrize the graph by taking the union of k-NN graph, where we denote the
+
+3. Multicomponent demixing We conduct the M-component simulations by using the same boundary condition and similar slab initial condition for the T c estimation but with 200 molecules each. For the two-component simulations, we take the pairs of sequences with a difference in T c (estimated from simulation) smaller than 60 K and select the pairs that had the largest (>0.04 nm3 ), midranged (between −0.04 and 0.04 nm3 ), and negative values (<−0.04 nm3 ) of χ̃ ij ðTÞl3 . Simulations are conducted for 500 ns for each pair. For the temperature in the simulation, we choose T 1⁄4 bminfT c;i ; T c;j g=10c × 10 K, where T c;i is the critical temperature obtained by single-component MD simulations for a sequence i. We choose this sequence-dependent temperature setting for the multicomponent simulation to avoid the potential artifact that can arise when fixing a temperature; since the range of critical temperatures is
+
+0.8 0.7
+
+0.7 0.5
+
+0.7 0.5
+
+(f)
+
+FIG. 19. Temperature dependence of the effective intercomponent interaction parameters calculated by the monomer and rescaled dimer pair approximations. (a) For 62 sequence pairs used for Fig. 4(c), we plot the temperature dependence of χ̃ MP ij ðTÞ and χ̃ RDP ðTÞ obtained for the model, with the overall ij (upper) and enlarged (lower) views. (b) For 94 sequence pairs used for Fig. 4(c), we plot the counterpart of (a) for the HPSDignon model.
+
+0.7 0.5
+
+0.8 0.7
+
+0.7 0.5
+
+0.8 0.7
+
+0.8 0.7
+
+FIG. 20. Comparison between the demixing score Sdemix and the off-diagonal interaction parameter. (a),(b) We compare Sdemix and χ̃ MP ij at T 1⁄4 minfT c;i ; T c;j g obtained by the monomer pair approximation for the (a) HPS-Tesei and (b) HPS-Dignon models. The gray horizontal and vertical lines are Sdemix 1⁄4 0.5 and χ̃ MP ij 1⁄4 0, respectively, and each inset is a reduced view that covers a wider range in the horizontal axis. (c),(d) The corresponding plots with the rescaled dimer pair approximation. (e),(f) Spearman’s rank correlation coefficient rS between Sdemix and each quantity defined in Sec. III A for the (e) HPS-Tesei and (f) HPS-Dignon models.
+
+[Page 22]
+
+– +
+
+D E R K H S T N Q C G P A V I LM F YW
+
+FIG. 21. Full result on the eigendecomposition of the amino acid fraction difference vector nj − ni for the pairs tested in the two-component simulation (Fig. 4).
+
+obtained adjacency (symmetric) matrix as s with components snn0 . The components of the demixing matrix ð1 ≤ i; j ≤ MÞ is then Sij 1⁄4
+
+snn0 P n ∈j ; n;n0 snn0
+
+n∈i
+
+ðG4Þ
+
+where n ∈ i means that molecule n is species i. The demixing score Sdemix ≔ TrS used to quantify the extent of demixing in the M 1⁄4 2 component case is Sdemix 1⁄4 S11 þ S22 , which is the fraction of edges in the union symmetrized k-NN graph that connects the same species of molecules over the total edges. For the case of M 1⁄4 2, we compare the demixing score Sdemix with Sproj ≔ jρi;center − ρj;center j (see Fig. 16), where ρi;center is the number density of component i at the center of the condensate. The center of the condensate is calculated as the angular mean position of the density profile, where we use the sum of the z-projected number densities, ρi þ ρj . We show in Fig. 15 how Sdemix equilibrates quickly within around 100 ns in simulation. The values used in Figs. 4 and 6 for the two-component simulations are the time average between 300 and 500 ns. For Fig. 4(c), we use
+
+10 4
+
+10 8
+
+D E R K H S T N Q C G P A V I LM F YW
+
+10 0
+
+Eigenspectrum of
+
+D E R K H S T N Q C G P A V I LM F YW
+
+(f)
+
+D E R K H S T N Q C G P A V I LM F YW
+
+D E R K H S T N Q C G P A V I LM F YW
+
+FIG. 22. (a) Virial coefficient matrix calculated at 300 K in the monomer pair approximation using the HPS-Dignon parameters. (b) Eigenspectrum of the virial coefficient matrix. The inset shows the absolute values of the eigenvalues with logscale. (c) Eigenvector with the largest eigenvalue. (d) Eigenvector with the second largest eigenvalue. (e) Eigenvector with the most negative eigenvalue. (f) Eigenvector with the second most negative eigenvalue. For all the plots of eigenvectors, the component for amino acid D is taken as positive.
+
+the data of sequence pairs with the mean polymer-polymer distance for either type of sequence shorter than 2.65 nm to exclude the case with no or weak phase separation. For the M 1⁄4 3 component simulation with both HPS-Tesei and HPS-Dignon, we select the sets of three sequences that have either all the pairs satisfying 3 3 χ̃ MP ij ðminfT c ; T c gÞ > 0.0044 nm =l or all the pairs satj 3 3 isfying χ̃ RDP ij ðminfT c ; T c gÞ > 0.018 nm =l . These positive lower bounds on the effective interaction parameters are set to narrow down the candidate sets to the order of tens and finally select the top eight candidate triplets 3 and in terms of the values of χ̃ MP ij ðminfT c ; T c gÞl 3 for both HPS-Tesei and HPSχ̃ RDP ij ðminfT c ; T c gÞl Dignon, resulting in 32 sets in total. The simulations are conducted for at least 150 ns and up to 500 ns at the
+
+[Page 23]
+
+Mpipi
+
+– DRE + KH
+
+D E R K H S T N Q C G P A V I LM F YW
+
+D E R K H S T N Q C G P A V I LM F YW
+
+D E R K H S T N Q C G P A V I LM F YW
+
+(f)
+
+10 4
+
+10 0
+
+2 10
+
+temperature corresponding to the lowest critical temperature in the set, and the demixing matrix S is calculated as the time average of simulations after 150 ns. For the M 1⁄4 4 component simulation with HPS-Tesei, we select the sets of four sequences that have either all the 3 3 pairs satisfying χ̃ MP ij ðminfT c ; T c gÞ > 0.0022 nm =l or all 3 3 the pairs satisfying χ̃ RDP ij ðminfT c ; T c gÞ > 0.0112 nm =l . For HPS-Dignon, we select the sets of four sequences that have either all the pairs contained satisfying 3 3 χ̃ MP ij ðminfT c ; T c gÞ > 0.0024 nm =l or all the pairs conj 3 3 tained satisfying χ̃ RDP ij ðminfT c ; T c gÞ > 0.014 nm =l . These positive lower bounds on the effective interaction parameters are set to narrow down the candidate sets to the order of five to ten and finally select the top four candidate triplets in terms of the values of χ̃ MP ij ðminfT c ; T c gÞl RDP and χ̃ ij ðminfT c ; T c gÞl for both HPS-Tesei and HPSDignon, resulting in 16 sets in total. The simulations are conducted for 500 ns at the temperature corresponding to the lowest critical temperature in the set, and the demixing matrix S is calculated as the time average of simulations after 300 ns.
+
+Eigenspectrum of
+
+D E R K H S T N Q C G P A V I LM F YW
+
+APPENDIX H: PROJECTION AND RESTRICTION OF THE SEQUENCE VECTORS To obtain the region for ðñi;1 ; ñi;2 Þ where ñi;19 and ñi;20 are constants (a and b, respectively) [bold line region in Fig. 8(d)], we first calculate the convex hull formed by 20 points fðẽa;1 ; ẽa;2 ; ẽa;19 ; ẽa;20 Þga in the four-dimensional space. In the following, we explain the remaining procedure to find the cross section of this convex hull and the three-dimensional hyperplanes, ñi;19 1⁄4 a and ñi;20 1⁄4 b. For simplicity, we rewrite the four-dimensional coordinate ðñi;1 ; ñi;2 ; ñi;19 ; ñi;20 Þ as ðx; y; z; wÞ. The obtained convex hull K is a four-dimensional polytope with three-dimensional faces that are represented by triangulation as a union of three-dimensional simplices
+
+D E R K H S T N Q C G P A V I LM F YW
+
+FIG. 23. (a) Virial coefficient matrix calculated at 300 K in the monomer pair approximation using the Mpipi parameters. (b) Eigenspectrum of the virial coefficient matrix. The inset shows the absolute values of the eigenvalues with logscale. (c) Eigenvector with the largest eigenvalue. (d) Eigenvector with the second largest eigenvalue. (e) Eigenvector with the most negative eigenvalue. (f) Eigenvector with the second most negative eigenvalue. For all the plots of eigenvectors, the component for amino acid D is taken as positive.
+
+Eigenspectrum of
+
+Eigenspectrum of
+
+105 210
+
+10 6
+
+10 6
+
+Mpipi Eigenspectrum of
+
+10 3
+
+10 3
+
+10 0
+
+105 210
+
+10 3
+
+10 6
+
+105 210
+
+FIG. 24. Eigenspectrum of vRDP ðT 1⁄4 300 KÞ, the virial coefficient matrix calculated by the rescaled dimer pair approximation, for the (a) HPS-Tesei, (b) HPS-Dignon, and (c) Mpipi models. Each inset shows the absolute values of the eigenvalues with logscale. We omit 190 zero eigenvalues that are derived from vRDP 1⁄4 vRDP for d ≠ d̄, where the dimer d̄ is the reverse of d [e.g., dd̄ d̄d d̄ 1⁄4 ðF; AÞ for d 1⁄4 ðA; FÞ].
+
+[Page 24]
+
+(i.e., tetrahedra) fSl gl , each of which consists of four vertices fvl;1 ; vl;2 ; vl;3 ; vl;4 g. Each vertex is a point in the l;1 l;1 l;1 four-dimensional space, e.g., vl;1 1⁄4 ðvl;1 x ; vy ; vz ; vw Þ. There are four two-dimensional faces (i.e., triangles) fFl;m g4m1⁄41 of each simplex Sl , and a point on the face Fl;m can be expressed as ð1 − sl;m − tl;m Þvl;m þ sl;m vl;mþ1 þ tl;m vl;mþ2 , where vl;5 ≔ vl;1 , vl;6 ≔ vl;2 , and ðsl;m ; tl;m Þ is the barycentric coordinate that should satisfy sl;m ; tl;m ≥ 0 and sl;m þ tl;m ≤ 1. To calculate the coordinate of a possible intersection of the face Fl;m and the two hyperplanes, z 1⁄4 a and w 1⁄4 b, we solve ðxl;m ; yl;m ; a; bÞ 1⁄4 ð1 − sl;m − tl;m Þvl;m þ l;m l;mþ1 l;m l;mþ2 s v þt v for the four variables fxl;m ; yl;m ; l;m l;m s ; t g. We can explicitly solve the equations as l;m
+
+1⁄4
+
+tl;m
+
+vl;mþ1 − vl;m
+
+vl;mþ2 − vl;m
+
+vl;mþ1 − vl;m
+
+vl;mþ2 − vl;m
+
+!−1
+
+a − vl;m
+
+b − vl;m ðH1Þ
+
+and then xl;m yl;m
+
+! 1⁄4
+
+l;m l;mþ1 þ tl;m vl;mþ2 ð1 − sl;m − tl;m Þvl;m x þ s vx l;m l;mþ1 ð1 − sl;m − tl;m Þvl;m þ tl;m vl;mþ2 y þ s vy
+
+! :
+
+ðH2Þ If and only if the solution satisfies sl;m ; tl;m ≥ 0 and sl;m þ tl;m ≤ 1, the face Fl;m has the intersection ul;m ≔ ðxl;m ; yl;m ; a; bÞ. Repeating this procedure for all l and m, we can obtain all the intersections, ful;m gl;m . Finally, we can obtain the cross section of the convex hull K and the hyperplanes z 1⁄4 a and w 1⁄4 b as the convex hull formed by ful;m gl;m. For the numerical calculation of the convex hull, we use a PYTHON package (scipy.spatial.ConvexHull [50]).
+
+[1] S. F. Banani, H. O. Lee, A. A. Hyman, and M. K. Rosen, Biomolecular condensates: organizers of cellular biochemistry, Nat. Rev. Mol. Cell Biol. 18, 285 (2017). [2] Y. Shin and C. P. Brangwynne, Liquid phase condensation in cell physiology and disease, Science 357, eaaf4382 (2017). [3] S. Alberti, A. Gladfelter, and T. Mittag, Considerations and challenges in studying liquid-liquid phase separation and biomolecular condensates, Cell 176, 419 (2019). [4] B. R. Sabari, A. Dall’Agnese, and R. A. Young, Biomolecular condensates in the nucleus, Trends Biochem. Sci. 45, 961 (2020). [5] T. Hirose, K. Ninomiya, S. Nakagawa, and T. Yamazaki, A guide to membraneless organelles and their various roles in gene regulation, Nat. Rev. Mol. Cell Biol. 24, 288 (2023).
+
+[6] A. S. Holehouse and B. B. Kragelund, The molecular basis for cellular function of intrinsically disordered protein regions, Nat. Rev. Mol. Cell Biol. 25, 187 (2024). [7] R. van der Lee, M. Buljan, B. Lang, R. J. Weatheritt, G. W. Daughdrill, A. K. Dunker, M. Fuxreiter, J. Gough, J. Gsponer, D. T. Jones, P. M. Kim, R. W. Kriwacki, C. J. Oldfield, R. V. Pappu, P. Tompa, V. N. Uversky, P. E. Wright, and M. M. Babu, Classification of intrinsically disordered regions and proteins, Chem. Rev. 114, 6589 (2014). [8] V. N. Uversky, Intrinsically disordered proteins in overcrowded milieu: Membrane-less organelles, phase separation, and intrinsic disorder, Curr. Opin. Struct. Biol. 44, 18 (2017). [9] R. K. Das and R. V. Pappu, Conformations of intrinsically disordered proteins are influenced by linear sequence distributions of oppositely charged residues, Proc. Natl. Acad. Sci. U.S.A. 110, 13392 (2013). [10] T. J. Nott, T. D. Craggs, and A. J. Baldwin, Membraneless organelles can melt nucleic acid duplexes and act as biomolecular filters, Nat. Chem. 8, 569 (2016). [11] C. W. Pak, M. Kosno, A. S. Holehouse, S. B. Padrick, A. Mittal, R. Ali, A. A. Yunus, D. R. Liu, R. V. Pappu, and M. K. Rosen, Sequence determinants of intracellular phase separation by complex coacervation of a disordered protein, Mol. Cell 63, 72 (2016). [12] Y. Lin, S. L. Currie, and M. K. Rosen, Intrinsically disordered sequences enable modulation of protein phase separation through distributed tyrosine motifs, J. Biol. Chem. 292, 19110 (2017). [13] J. Wang, J.-M. Choi, A. S. Holehouse, H. O. Lee, X. Zhang, M. Jahnel, S. Maharana, R. Lemaitre, A. Pozniakovsky, D. Drechsel, I. Poser, R. V. Pappu, S. Alberti, and A. A. Hyman, A molecular grammar governing the driving forces for phase separation of prion-like RNA binding proteins, Cell 174, 688 (2018). [14] G. L. Dignon, W. Zheng, R. B. Best, Y. C. Kim, and J. Mittal, Relation between single-molecule properties and phase behavior of intrinsically disordered proteins, Proc. Natl. Acad. Sci. U.S.A. 115, 9929 (2018). [15] L. H. Kapcha and P. J. Rossky, A simple atomic-level hydrophobicity scale reveals protein interfacial structure, J. Mol. Biol. 426, 484 (2014). [16] G. Tesei, T. K. Schulze, R. Crehuet, and K. Lindorff-Larsen, Accurate model of liquid-liquid phase behavior of intrinsically disordered proteins from optimization of single-chain properties, Proc. Natl. Acad. Sci. U.S.A. 118, e2111696118 (2021). [17] J. A. Joseph, A. Reinhardt, A. Aguirre, P. Y. Chew, K. O. Russell, J. R. Espinosa, A. Garaizar, and R. CollepardoGuevara, Physics-driven coarse-grained model for biomolecular phase separation with near-quantitative accuracy, Nat. Comput. Sci. 1, 732 (2021). [18] R. M. Vernon, P. A. Chong, B. Tsang, T. H. Kim, A. Bah, P. Farber, H. Lin, and J. D. Forman-Kay, Pi-Pi contacts are an overlooked protein feature relevant to phase separation, eLife 7, e31486 (2018). [19] G. Tesei, A. I. Trolle, N. Jonsson, J. Betz, F. E. Knudsen, F. Pesce, K. E. Johansson, and K. Lindorff-Larsen,
+
+[Page 25]
+
+Conformational ensembles of the human intrinsically disordered proteome, Nature (London) 626, 897 (2024). [20] J. M. Lotthammer, G. M. Ginell, D. Griffith, R. J. Emenecker, and A. S. Holehouse, Direct prediction of intrinsically disordered protein conformational properties from sequence, Nat. Methods 21, 465 (2024). [21] P. Y. Chew, J. A. Joseph, R. Collepardo-Guevara, and A. Reinhardt, Thermodynamic origins of two-component multiphase condensates of proteins, Chem. Sci. 14, 1820 (2023). [22] P. Y. Chew, J. A. Joseph, R. Collepardo-Guevara, and A. Reinhardt, Aromatic and arginine content drives multiphasic condensation of protein-RNA mixtures, Biophys. J. 123, 1342 (2024). [23] F. Höfling and T. Franosch, Anomalous transport in the crowded world of biological cells, Rep. Prog. Phys. 76, 046602 (2013). [24] R. Harada, N. Tochio, T. Kigawa, Y. Sugita, and M. Feig, Reduced native state stability in crowded cellular environment due to protein-protein interactions, J. Am. Chem. Soc. 135, 3696 (2013). [25] E. R. Kuechler, P. M. Budzyńska, J. P. Bernardini, J. Gsponer, and T. Mayor, Distinct features of stress granule proteins predict localization in membraneless organelles, J. Mol. Biol. 432, 2349 (2020). [26] B. R. Sabari et al., Coactivator condensation at superenhancers links phase separation and gene control, Science 361, aar3958 (2018). [27] H. Takakuwa, T. Yamazaki, S. Souquere, S. Adachi, H. Yoshino, N. Fujiwara, T. Yamamoto, T. Natsume, S. Nakagawa, G. Pierron, and T. Hirose, Shell protein composition specified by the lncRNA NEAT1 domains dictates the formation of paraspeckles as distinct membraneless organelles, Nat. Cell Biol. 25, 1664 (2023). [28] Y.-H. Lin, J. D. Forman-Kay, and H. S. Chan, SequenceSpecific polyampholyte phase separation in membraneless organelles, Phys. Rev. Lett. 117, 178101 (2016). [29] Y.-H. Lin and H. S. Chan, Phase separation and singlechain compactness of charged disordered proteins are strongly correlated, Biophys. J. 112, 2043 (2017). [30] L. Sawle and K. Ghosh, A theoretical method to compute sequence dependent configurational properties in charged polymers and proteins, J. Chem. Phys. 143, 085101 (2015). [31] W. Zheng, G. Dignon, M. Brown, Y. C. Kim, and J. Mittal, Hydropathy patterning complements charge patterning to describe conformational preferences of disordered proteins, J. Phys. Chem. Lett. 11, 3408 (2020). [32] Y.-H. Lin, J. D. Forman-Kay, and H. S. Chan, Theories for sequence-dependent phase behaviors of biomolecular condensates, Biochemistry 57, 2499 (2018). [33] Y.-H. Lin, J. P. Brady, J. D. Forman-Kay, and H. S. Chan, Charge pattern matching as a ‘fuzzy’ mode of molecular recognition for the functional phase separations of intrinsically disordered proteins, New J. Phys. 19, 115003 (2017). [34] J. A. Greig, T. A. Nguyen, M. Lee, A. S. Holehouse, A. E. Posey, R. V. Pappu, and G. Jedd, Arginine-enriched mixedcharge domains provide cohesion for nuclear speckle condensation, Mol. Cell 77, 1237 (2020). [35] A. Z. Lin, K. M. Ruff, F. Dar, A. Jalihal, M. R. King, J. M. Lalmansingh, A. E. Posey, N. A. Erkamp, I. Seim, A. S. Gladfelter, and R. V. Pappu, Dynamical control enables
+
+the formation of demixed biomolecular condensates, Nat. Commun. 14, 7678 (2023). [36] K. Kamagata, E. Mano, Y. Itoh, T. Wakamoto, R. Kitahara, S. Kanbayashi, H. Takahashi, A. Murata, and T. Kameda, Rational design using sequence information only produces a peptide that binds to the intrinsically disordered region of p53, Sci. Rep. 9, 8584 (2019). [37] H. R. Kilgore and R. A. Young, Learning the chemical grammar of biomolecular condensates, Nat. Chem. Biol. 18, 1298 (2022). [38] H. S. Ashbaugh and H. W. Hatch, Natively unfolded protein stability as a coil-to-globule transition in charge/hydropathy space, J. Am. Chem. Soc. 130, 9536 (2008). [39] L. D. Landau and E. M. Lifshitz, Statistical Physics, 3rd ed., Course of Theoretical Physics Vol. 5 (ButterworthHeinemann, London, 1980). [40] Y. An, M. A. Webb, and W. M. Jacobs, Active learning of the thermodynamics-dynamics trade-off in protein condensates, Sci. Adv. 10, eadj2448 (2024). [41] J. SantaLucia Jr, A unified view of polymer, dumbbell, and oligonucleotide DNA nearest-neighbor thermodynamics, Proc. Natl. Acad. Sci. U.S.A. 95, 1460 (1998). [42] M. Rubinstein and R. H. Colby, Polymer Physics (Oxford University Press, New York, 2003). [43] G. L. Dignon, W. Zheng, Y. C. Kim, R. B. Best, and J. Mittal, Sequence determinants of protein phase behavior from a coarse-grained model, PLoS Comput. Biol. 14, e1005941 (2018). [44] W. M. Jacobs, Theory and simulation of multiphase coexistence in biomolecular mixtures, J. Chem. Theory Comput. 19, 3429 (2023). [45] U. Rana, C. P. Brangwynne, and A. Z. Panagiotopoulos, Phase separation vs aggregation behavior for model disordered proteins, J. Chem. Phys. 155, 125101 (2021). [46] R. P. Sear and J. A. Cuesta, Instabilities in complex mixtures with a large number of components, Phys. Rev. Lett. 91, 245701 (2003). [47] W. M. Jacobs and D. Frenkel, Predicting phase behavior in multicomponent mixtures, J. Chem. Phys. 139, 024108 (2013). [48] W. M. Jacobs and D. Frenkel, Phase transitions in biological systems with many components, Biophys. J. 112, 683 (2017). [49] D. Qian, T. J. Welsh, N. A. Erkamp, S. Qamar, J. NixonAbell, G. Krainer, P. S. George-Hyslop, T. C. T. Michaels, and T. P. J. Knowles, Tie-line analysis reveals interactions driving heteromolecular condensate formation, Phys. Rev. X 12, 041038 (2022). [50] P. Virtanen et al., SCIPY1.0: Fundamental algorithms for scientific computing in python, Nat. Methods 17, 261 (2020). [51] H. Lyons, R. T. Veettil, P. Pradhan, C. Fornero, N. De La Cruz, K. Ito, M. Eppert, R. G. Roeder, and B. R. Sabari, Functional partitioning of transcriptional regulators by patterned charge blocks, Cell 186, 327 (2023). [52] H. Li, C. Tang, and N. S. Wingreen, Nature of driving force for protein folding: A result from analyzing the statistical potential, Phys. Rev. Lett. 79, 765 (1997).
+
+[Page 26]
+
+[53] I. R. Graf and B. B. Machta, Thermodynamic stability and critical points in multicomponent mixtures with structured interactions, Phys. Rev. Res. 4, 033144 (2022). [54] J. P. Hansen and I. R. McDonald, Theory of Simple Liquids: With Applications to Soft Matter, 4th ed. (Academic, New York, 2013). [55] B. H. Zimm, Application of the methods of molecular distribution to solutions of large molecules, J. Chem. Phys. 14, 164 (1946). [56] K. Shrinivas and M. P. Brenner, Phase separation in fluids with many interacting components, Proc. Natl. Acad. Sci. U.S.A. 118, e2108551118 (2021). [57] D. Zwicker and L. Laan, Evolved interactions stabilize many coexisting phases in multicomponent liquids, Proc. Natl. Acad. Sci. U.S.A. 119, e2201250119 (2022). [58] R. M. Welles, K. A. Sojitra, M. V. Garabedian, B. Xia, W. Wang, M. Guan, R. M. Regy, E. R. Gallagher, D. A. Hammer, J. Mittal et al., Determinants that enable disordered protein assembly into discrete condensed phases, Nat. Chem. (2024), 10.1038/s41557-023-01423-7. [59] U. Rana, K. Xu, A. Narayanan, M. T. Walls, A. Z. Panagiotopoulos, J. L. Avalos, and C. P. Brangwynne, Asymmetric oligomerization state and sequence patterning can tune multiphase condensate miscibility, Nat. Chem. (2024), 10.1038/s41557-024-01456-6. [60] https://github.com/adachi24/virialcoeff. [61] C. D. Go et al., A proximity-dependent biotinylation map of a human cell, Nature (London) 595, 120 (2021).
+
+[62] C. J. Wilson, W.-Y. Choy, and M. Karttunen, ALPHAFOLD2: A role for disordered protein/region prediction?, Int. J. Mol. Sci. 23, 4591 (2022). [63] J. Jumper et al., Highly accurate protein structure prediction with ALPHAFOLD, Nature (London) 596, 583 (2021). [64] See Supplemental Material at http://link.aps.org/ supplemental/10.1103/PhysRevX.14.031011 for the tables of the selected sequences, parameters for the HPS models, and Boyle and critical temperatures obtained from simulations. [65] C. Tan, J. Jung, C. Kobayashi, D. U. L. Torre, S. Takada, and Y. Sugita, Implementation of residue-level coarse-grained models in GENESIS for large-scale molecular dynamics simulations, PLoS Comput. Biol. 18, e1009578 (2022). [66] J. Jung, T. Mori, C. Kobayashi, Y. Matsunaga, T. Yoda, M. Feig, and Y. Sugita, GENESIS: A hybrid-parallel and multiscale molecular dynamics simulator with enhanced sampling algorithms for biomolecular and cellular simulations, Comput. Mol. Sci. 5, 310 (2015). [67] C. Kobayashi, J. Jung, Y. Matsunaga, T. Mori, T. Ando, K. Tamura, M. Kamiya, and Y. Sugita, GENESIS1.1: A hybridparallel molecular dynamics simulator with enhanced sampling algorithms on multiple computational platforms, J. Comput. Chem. 38, 2193 (2017). [68] J. Ahlers et al., napari: A multi-dimensional image viewer for Python, Zenodo (2019), 10.5281/zenodo.3555620. [69] D. Simmons-Duffin, A semidefinite program solver for the conformal bootstrap, J. High Energy Phys. 06 (2015)

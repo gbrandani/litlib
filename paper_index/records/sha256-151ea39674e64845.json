@@ -1,0 +1,1910 @@
+{
+  "paper_id": "sha256-151ea39674e64845",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_exp/rakapakse_2022_NatCommun_chromatin_multi-way_interactions.pdf",
+  "pdf_sha256": "151ea39674e64845d83e4bb22cb813bf8676d4e8cc67959c708e9b07fbbd4e92",
+  "filename": "rakapakse_2022_NatCommun_chromatin_multi-way_interactions.pdf",
+  "item_type": "article",
+  "title_query": "chromatin multi way interactions",
+  "filename_hints": {
+    "year_hint": 2022,
+    "venue_hint": "naturecommunications",
+    "prefix": "rakapakse 2022 NatCommun chromatin multi-way interactions"
+  },
+  "doi_candidates": [
+    "10.1038/s41467-022-32980-z"
+  ],
+  "date_indexed": "2026-04-17T03:13:55.022242+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.825,
+  "warnings": [
+    "year_hint_mismatch:2022!=2023",
+    "venue_hint_mismatch:naturecommunications!=biology"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "chromatin multi way interactions",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "83c3f883125254ea3b0329e5fed4eab98f8625b5",
+      "externalIds": {
+        "PubMedCentral": "10525350",
+        "DOI": "10.3390/biology12091203",
+        "CorpusId": 261543190,
+        "PubMed": "37759602"
+      },
+      "url": "https://www.semanticscholar.org/paper/83c3f883125254ea3b0329e5fed4eab98f8625b5",
+      "title": "EpiMCI: Predicting Multi-Way Chromatin Interactions from Epigenomic Signals",
+      "venue": "Biology",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://www.mdpi.com/2079-7737/12/9/1203/pdf?version=1693801814",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10525350, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2023-09-01",
+      "journal": {
+        "name": "Biology",
+        "volume": "12"
+      },
+      "authors": [
+        {
+          "authorId": "2212213094",
+          "name": "Jinsheng Xu"
+        },
+        {
+          "authorId": "2237947604",
+          "name": "Ping Zhang"
+        },
+        {
+          "authorId": "3069698",
+          "name": "Weicheng Sun"
+        },
+        {
+          "authorId": "2237814751",
+          "name": "Junying Zhang"
+        },
+        {
+          "authorId": "2237820156",
+          "name": "Wenxue Zhang"
+        },
+        {
+          "authorId": "46620527",
+          "name": "Chunhui Hou"
+        },
+        {
+          "authorId": "2156061052",
+          "name": "Li Li"
+        }
+      ],
+      "abstract": "Simple Summary Dissecting the relationship between epigenome signals and three-dimensional multi-way chromatin interactions remains a challenging problem. The emergence of high-throughput Pore-C technology offers promising hope for tackling this issue. In this study, we proposed the EpiMCI, a framework based on a hypergraph neural network, aiming to reconstruct multi-way chromatin interactions from epigenomic signals. The model obtained AUCs of 0.981 and 0.984 using the GM12878 and K562 datasets, outperforming the existing methods. The EpiMCI can be used to denoise multi-way contact sequencing data and improve data quality. The embeddings obtained from the EpiMCI reflect the exact genome structure, confirming the rationality of the EpiMCI from a biological perspective. Thus, the EpiMCI is a promising framework for reconstructing multi-way chromatin interactions from epigenomic signals and can be applied to studies related to multi-way chromatin interactions reconstruction. Abstract The recently emerging high-throughput Pore-C (HiPore-C) can identify whole-genome high-order chromatin multi-way interactions with an ultra-high output, contributing to deciphering three-dimensional (3D) genome organization. However, it also brings new challenges to relevant data analysis. To alleviate this problem, we proposed the EpiMCI, a model for multi-way chromatin interaction prediction based on a hypergraph neural network with epigenomic signals as the input. The EpiMCI integrated separate hyperedge representations with coupling hyperedge information and obtained AUCs of 0.981 and 0.984 in the GM12878 and K562 datasets, respectively, which outperformed the current available method. Moreover, the EpiMCI can be applied to denoise the HiPore-C data and improve the data quality efficiently. Furthermore, the vertex embeddings extracted from the EpiMCI reflected the global chromatin architecture accurately. The principal component analysis suggested that it was well aligned with the activities of genomic regions at the chromatin compartment level. Taken together, the EpiMCI can accurately predict multi-way chromatin interactions and can be applied to studies relying on chromatin architecture."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "83c3f883125254ea3b0329e5fed4eab98f8625b5",
+        "title": "EpiMCI: Predicting Multi-Way Chromatin Interactions from Epigenomic Signals",
+        "score": 0.825,
+        "title_similarity": 0.825,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ccaeb6657cceb795af6cdd115c63f095beb0a1aa",
+        "title": "A revised model for promoter competition based on multi-way chromatin interactions at the α-globin locus",
+        "score": 0.7773,
+        "title_similarity": 0.7773,
+        "query_year": null,
+        "candidate_year": 2019,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "96cf8d31bba49601344eb7e5135281aeb83317b5",
+        "title": "MINTsC learns multi-way chromatin interactions from single cell high throughput chromatin conformation data",
+        "score": 0.7667,
+        "title_similarity": 0.7667,
+        "query_year": null,
+        "candidate_year": 2026,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e343f36a261cd22a9c96f356bc55057cde00c5ae",
+        "title": "Deciphering multi-way interactions in the human genome",
+        "score": 0.6375,
+        "title_similarity": 0.6375,
+        "query_year": null,
+        "candidate_year": 2021,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "13345aef8d643307965c1ee009ab0339c6d426fc",
+        "title": "Probing multi-way chromatin interaction with hypergraph representation learning",
+        "score": 0.6042,
+        "title_similarity": 0.6042,
+        "query_year": null,
+        "candidate_year": 2020,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f9275472e3061601855bac782696ec7f2ae0cab0",
+        "title": "Statistical modeling and significance estimation of multi-way chromatin contacts with HyperloopFinder",
+        "score": 0.5925,
+        "title_similarity": 0.5925,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d05b23dbec4c947337dc48d3b156f83001ee6d32",
+        "title": "Does multi-way, long-range chromatin contact data advance 3D genome reconstruction?",
+        "score": 0.5683,
+        "title_similarity": 0.5683,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "93650a623f4ce9079fe0a399be5d1f36a61b65de",
+        "title": "MCIBox: A Toolkit for Single-molecule Multi-way Chromatin Interaction Visualization and Micro-Domains Identification",
+        "score": 0.5683,
+        "title_similarity": 0.5683,
+        "query_year": null,
+        "candidate_year": 2022,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7fcf574fffc85d7dcfe2d2059e2c3cb2c46e7789",
+        "title": "CTCF and Its Multi-Partner Network for Chromatin Regulation",
+        "score": 0.4028,
+        "title_similarity": 0.4028,
+        "query_year": null,
+        "candidate_year": 2023,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "cfc2107839027b3ea20b094ebcb742df75918711",
+        "title": "CTCF depletion decouples enhancer-mediated gene activation from chromatin hub formation",
+        "score": 0.1894,
+        "title_similarity": 0.1894,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.3390/biology12091203"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 21150,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "e343f36a261cd22a9c96f356bc55057cde00c5ae",
+          "externalIds": {
+            "PubMedCentral": "9489732",
+            "DOI": "10.1038/s41467-022-32980-z",
+            "CorpusId": 237155742,
+            "PubMed": "36127324"
+          },
+          "url": "https://www.semanticscholar.org/paper/e343f36a261cd22a9c96f356bc55057cde00c5ae",
+          "title": "Deciphering multi-way interactions in the human genome",
+          "venue": "bioRxiv",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41467-022-32980-z.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9489732, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-08-15",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "13"
+          },
+          "authors": [
+            {
+              "authorId": "8663011",
+              "name": "Gabrielle A. Dotson"
+            },
+            {
+              "authorId": "27102821",
+              "name": "Stephen Lindsly"
+            },
+            {
+              "authorId": "2123502340",
+              "name": "Anthony Cicalo"
+            },
+            {
+              "authorId": "2116907209",
+              "name": "Can Chen"
+            },
+            {
+              "authorId": "2025479708",
+              "name": "Samuel Dilworth"
+            },
+            {
+              "authorId": "2033311444",
+              "name": "C. Ryan"
+            },
+            {
+              "authorId": "1621747471",
+              "name": "Sivakumar Jeyarajan"
+            },
+            {
+              "authorId": "46479189",
+              "name": "W. Meixner"
+            },
+            {
+              "authorId": "4629945",
+              "name": "N. Beckloff"
+            },
+            {
+              "authorId": "8093727",
+              "name": "A. Surana"
+            },
+            {
+              "authorId": "3621310",
+              "name": "M. Wicha"
+            },
+            {
+              "authorId": "40424505",
+              "name": "Lindsey A. Muir"
+            },
+            {
+              "authorId": "3134436",
+              "name": "I. Rajapakse"
+            }
+          ],
+          "abstract": "Chromatin architecture, a key regulator of gene expression, can be inferred using chromatin contact data from chromosome conformation capture, or Hi-C. However, classical Hi-C does not preserve multi-way contacts. Here we use long sequencing reads to map genome-wide multi-way contacts and investigate higher order chromatin organization in the human genome. We use hypergraph theory for data representation and analysis, and quantify higher order structures in neonatal fibroblasts, biopsied adult fibroblasts, and B lymphocytes. By integrating multi-way contacts with chromatin accessibility, gene expression, and transcription factor binding, we introduce a data-driven method to identify cell type-specific transcription clusters. We provide transcription factor-mediated functional building blocks for cell identity that serve as a global signature for cell types. Mapping higher order chromatin architecture is important. Here the authors use long sequencing reads to map genome-wide multi-way contacts and investigate higher order chromatin organisation; they use hypergraph theory for data representation and analysis, and apply this to different cell types."
+        },
+        {
+          "paperId": "96cf8d31bba49601344eb7e5135281aeb83317b5",
+          "externalIds": {
+            "PubMedCentral": "13041876",
+            "DOI": "10.1101/2024.04.08.588641",
+            "CorpusId": 269088327
+          },
+          "url": "https://www.semanticscholar.org/paper/96cf8d31bba49601344eb7e5135281aeb83317b5",
+          "title": "MINTsC learns multi-way chromatin interactions from single cell high throughput chromatin conformation data",
+          "venue": "bioRxiv",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2024/04/11/2024.04.08.588641.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC13041876, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2026-03-28",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2203724115",
+              "name": "Kwangmoon Park"
+            },
+            {
+              "authorId": "2152078522",
+              "name": "Tianchuan Gao"
+            },
+            {
+              "authorId": "3325036",
+              "name": "Jingwen Yan"
+            },
+            {
+              "authorId": "2488490",
+              "name": "S. Keleş"
+            }
+          ],
+          "abstract": "A number of foundational analysis methods have emerged for single cell high throughput chromatin conformation (scHi-C) datasets capturing 3D organizations of genomes with pairwise measurements at the single cell or nuclei resolution; however, these datasets are currently under-utilized. The canonical analyses of scHi-C data encompass, beyond standard cell type identification, inference of chromosomal structures and pairwise interactions. However, multi-way chromatin interactions among genomic elements are entirely overlooked. We introduce MINTsC to learn Multi-way INTeractions from single cell Hi-C. MINTsC builds on a dirichlet-multinomial spline model and yields multi-way interaction scores by aggregating pairwise interactions across cells of a context and summarizing them using order statistics of pairwise test statistics. MINTsC yields well-calibrated p-values for controlling the false discovery rate. Evaluation of MINTsC with scHi-C datasets from cell lines and complex tissues using multiple external genomic and epigenomic datasets support multi-way interactions inferred by MINTsC. Application of MINTsC to scHi-C data from human prefrontal cortex revealed multi-way chromatin interactions with biological implications of gene regulation by multiple enhancers. Most notably, MINTsC-inferred multi-way interactions demonstrate its potential for probing molecular QTL and association studies for epistatic SNP effects by significantly reducing the multiple-testing burden. MINTsC is publicly available at https://github.com/keleslab/mintsc."
+        },
+        {
+          "paperId": "83c3f883125254ea3b0329e5fed4eab98f8625b5",
+          "externalIds": {
+            "PubMedCentral": "10525350",
+            "DOI": "10.3390/biology12091203",
+            "CorpusId": 261543190,
+            "PubMed": "37759602"
+          },
+          "url": "https://www.semanticscholar.org/paper/83c3f883125254ea3b0329e5fed4eab98f8625b5",
+          "title": "EpiMCI: Predicting Multi-Way Chromatin Interactions from Epigenomic Signals",
+          "venue": "Biology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/2079-7737/12/9/1203/pdf?version=1693801814",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10525350, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-09-01",
+          "journal": {
+            "name": "Biology",
+            "volume": "12"
+          },
+          "authors": [
+            {
+              "authorId": "2212213094",
+              "name": "Jinsheng Xu"
+            },
+            {
+              "authorId": "2237947604",
+              "name": "Ping Zhang"
+            },
+            {
+              "authorId": "3069698",
+              "name": "Weicheng Sun"
+            },
+            {
+              "authorId": "2237814751",
+              "name": "Junying Zhang"
+            },
+            {
+              "authorId": "2237820156",
+              "name": "Wenxue Zhang"
+            },
+            {
+              "authorId": "46620527",
+              "name": "Chunhui Hou"
+            },
+            {
+              "authorId": "2156061052",
+              "name": "Li Li"
+            }
+          ],
+          "abstract": "Simple Summary Dissecting the relationship between epigenome signals and three-dimensional multi-way chromatin interactions remains a challenging problem. The emergence of high-throughput Pore-C technology offers promising hope for tackling this issue. In this study, we proposed the EpiMCI, a framework based on a hypergraph neural network, aiming to reconstruct multi-way chromatin interactions from epigenomic signals. The model obtained AUCs of 0.981 and 0.984 using the GM12878 and K562 datasets, outperforming the existing methods. The EpiMCI can be used to denoise multi-way contact sequencing data and improve data quality. The embeddings obtained from the EpiMCI reflect the exact genome structure, confirming the rationality of the EpiMCI from a biological perspective. Thus, the EpiMCI is a promising framework for reconstructing multi-way chromatin interactions from epigenomic signals and can be applied to studies related to multi-way chromatin interactions reconstruction. Abstract The recently emerging high-throughput Pore-C (HiPore-C) can identify whole-genome high-order chromatin multi-way interactions with an ultra-high output, contributing to deciphering three-dimensional (3D) genome organization. However, it also brings new challenges to relevant data analysis. To alleviate this problem, we proposed the EpiMCI, a model for multi-way chromatin interaction prediction based on a hypergraph neural network with epigenomic signals as the input. The EpiMCI integrated separate hyperedge representations with coupling hyperedge information and obtained AUCs of 0.981 and 0.984 in the GM12878 and K562 datasets, respectively, which outperformed the current available method. Moreover, the EpiMCI can be applied to denoise the HiPore-C data and improve the data quality efficiently. Furthermore, the vertex embeddings extracted from the EpiMCI reflected the global chromatin architecture accurately. The principal component analysis suggested that it was well aligned with the activities of genomic regions at the chromatin compartment level. Taken together, the EpiMCI can accurately predict multi-way chromatin interactions and can be applied to studies relying on chromatin architecture."
+        },
+        {
+          "paperId": "ccaeb6657cceb795af6cdd115c63f095beb0a1aa",
+          "externalIds": {
+            "MAG": "2989914470",
+            "PubMedCentral": "6881440",
+            "DOI": "10.1038/s41467-019-13404-x",
+            "CorpusId": 145875312,
+            "PubMed": "31776347"
+          },
+          "url": "https://www.semanticscholar.org/paper/ccaeb6657cceb795af6cdd115c63f095beb0a1aa",
+          "title": "A revised model for promoter competition based on multi-way chromatin interactions at the α-globin locus",
+          "venue": "Nature Communications",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41467-019-13404-x.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6881440, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-04-17",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "10"
+          },
+          "authors": [
+            {
+              "authorId": "8802345",
+              "name": "A. M. Oudelaar"
+            },
+            {
+              "authorId": "34167335",
+              "name": "Caroline L. Harrold"
+            },
+            {
+              "authorId": "5106682",
+              "name": "Lars L P Hanssen"
+            },
+            {
+              "authorId": "3696313",
+              "name": "Jelena M. Telenius"
+            },
+            {
+              "authorId": "2238957471",
+              "name": "D. Higgs"
+            },
+            {
+              "authorId": "2254174318",
+              "name": "Jim R. Hughes"
+            }
+          ],
+          "abstract": "Specific communication between gene promoters and enhancers is critical for accurate regulation of gene expression. However, it remains unclear how specific interactions between multiple regulatory elements contained within a single chromatin domain are coordinated. Recent technological advances which can detect multi-way chromatin interactions at single alleles can provide insights into how multiple regulatory elements cooperate or compete for transcriptional activation. Here, we use such an approach to investigate how interactions of the α-globin enhancers are distributed between multiple promoters in a mouse model in which the α-globin domain is extended to include several additional genes. Our data show that gene promoters do not form mutually exclusive interactions with enhancers, but all interact simultaneously in a single complex. These findings suggest that promoters do not structurally compete for interactions with enhancers, but form a regulatory hub structure, which is consistent with recent models of transcriptional activation occurring in non-membrane bound nuclear compartments. The coordination of interactions between multiple regulatory elements and genes within a chromatin domain remains poorly understood. Here, the authors use a method to detect multi-way chromatin interactions in a mouse model in which the α-globin domain is extended to include several additional genes, finding that the promoters do not form mutually exclusive interactions with the enhancers, but all interact simultaneously in a single complex."
+        },
+        {
+          "paperId": "f9275472e3061601855bac782696ec7f2ae0cab0",
+          "externalIds": {
+            "PubMedCentral": "11246602",
+            "DBLP": "journals/bib/WangYG24",
+            "DOI": "10.1093/bib/bbae341",
+            "CorpusId": 271199342,
+            "PubMed": "39003726"
+          },
+          "url": "https://www.semanticscholar.org/paper/f9275472e3061601855bac782696ec7f2ae0cab0",
+          "title": "Statistical modeling and significance estimation of multi-way chromatin contacts with HyperloopFinder",
+          "venue": "Briefings Bioinform.",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/bib/article-pdf/25/4/bbae341/58537946/bbae341.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11246602, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-05-23",
+          "journal": {
+            "name": "Briefings in Bioinformatics",
+            "volume": "25"
+          },
+          "authors": [
+            {
+              "authorId": "2311458213",
+              "name": "Weibing Wang"
+            },
+            {
+              "authorId": "5026374",
+              "name": "Yusen Ye"
+            },
+            {
+              "authorId": "2275975827",
+              "name": "Lin Gao"
+            }
+          ],
+          "abstract": "Abstract Recent advances in chromatin conformation capture technologies, such as SPRITE and Pore-C, have enabled the detection of simultaneous contacts among multiple chromatin loci. This has made it possible to investigate the cooperative transcriptional regulation involving multiple genes and regulatory elements at the resolution of a single molecule. However, these technologies are unavoidably subject to the random polymer looping effect and technical biases, making it challenging to distinguish genuine regulatory relationships directly from random polymer interactions. Here, we present HyperloopFinder, a method for identifying regulatory multi-way chromatin contacts (hyperloops) by jointly modeling the random polymer looping effect and technical biases to estimate the statistical significance of multi-way contacts. The results show that our model can accurately estimate the expected interaction frequency of multi-way contacts based on the distance distribution of pairwise contacts, revealing that most multi-way contacts can be formed by randomly linking the pairwise contacts adjacent to each other. Moreover, we observed the spatial colocalization of the interaction sites of hyperloops from image-based data. Our results also revealed that hyperloops can function as scaffolds for the cooperation among multiple genes and regulatory elements. In summary, our work contributes novel insights into higher-order chromatin structures and functions and has the potential to enhance our understanding of transcriptional regulation and other cellular processes."
+        },
+        {
+          "paperId": "d05b23dbec4c947337dc48d3b156f83001ee6d32",
+          "externalIds": {
+            "DBLP": "journals/bmcbi/OlshenS23",
+            "PubMedCentral": "9951495",
+            "DOI": "10.1186/s12859-023-05170-x",
+            "CorpusId": 257106659,
+            "PubMed": "36829114"
+          },
+          "url": "https://www.semanticscholar.org/paper/d05b23dbec4c947337dc48d3b156f83001ee6d32",
+          "title": "Does multi-way, long-range chromatin contact data advance 3D genome reconstruction?",
+          "venue": "BMC Bioinformatics",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-023-05170-x",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9951495, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-02-24",
+          "journal": {
+            "name": "BMC Bioinformatics",
+            "volume": "24"
+          },
+          "authors": [
+            {
+              "authorId": "2923001",
+              "name": "A. Olshen"
+            },
+            {
+              "authorId": "3013332",
+              "name": "M. Segal"
+            }
+          ],
+          "abstract": "Background Methods for inferring the three-dimensional (3D) configuration of chromatin from conformation capture assays that provide strictly pairwise interactions, notably Hi-C, utilize the attendant contact matrix as input. More recent assays, in particular split-pool recognition of interactions by tag extension (SPRITE), capture multi-way interactions instead of solely pairwise contacts. These assays yield contacts that straddle appreciably greater genomic distances than Hi-C, in addition to instances of exceptionally high-order chromatin interaction. Such attributes are anticipated to be consequential with respect to 3D genome reconstruction, a task yet to be undertaken with multi-way contact data. However, performing such 3D reconstruction using distance-based reconstruction techniques requires framing multi-way contacts as (pairwise) distances. Comparing approaches for so doing, and assessing the resultant impact of long-range and multi-way contacts, are the objectives of this study. Results We obtained 3D reconstructions via multi-dimensional scaling under a variety of weighting schemes for mapping SPRITE multi-way contacts to pairwise distances. Resultant configurations were compared following Procrustes alignment and relationships were assessed between associated Procrustes root mean square errors and key features such as the extent of multi-way and/or long-range contacts. We found that these features had surprisingly limited influence on 3D reconstruction, a finding we attribute to their influence being diminished by the preponderance of pairwise contacts. Conclusion Distance-based 3D genome reconstruction using SPRITE multi-way contact data is not appreciably affected by the weighting scheme used to convert multi-way interactions to pairwise distances."
+        },
+        {
+          "paperId": "93650a623f4ce9079fe0a399be5d1f36a61b65de",
+          "externalIds": {
+            "DBLP": "journals/bib/TianLNJXYFYHPZD22",
+            "DOI": "10.1101/2022.04.28.489957",
+            "CorpusId": 248497809,
+            "PubMed": "36094071"
+          },
+          "url": "https://www.semanticscholar.org/paper/93650a623f4ce9079fe0a399be5d1f36a61b65de",
+          "title": "MCIBox: A Toolkit for Single-molecule Multi-way Chromatin Interaction Visualization and Micro-Domains Identification",
+          "venue": "bioRxiv",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://dr.ntu.edu.sg/bitstream/10356/169673/2/MCIBox_main_Latex-final.pdf",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2022.04.28.489957?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2022.04.28.489957, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-04-30",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "37424638",
+              "name": "S. Tian"
+            },
+            {
+              "authorId": "2306493887",
+              "name": "Guoliang Li"
+            },
+            {
+              "authorId": "2164042108",
+              "name": "Duo Ning"
+            },
+            {
+              "authorId": "2056776919",
+              "name": "Kai Jing"
+            },
+            {
+              "authorId": "2142733484",
+              "name": "Yewen Xu"
+            },
+            {
+              "authorId": "2152920461",
+              "name": "Yang Yang"
+            },
+            {
+              "authorId": "3360880",
+              "name": "M. Fullwood"
+            },
+            {
+              "authorId": "2055975557",
+              "name": "Pengfei Yin"
+            },
+            {
+              "authorId": "2164059624",
+              "name": "Guangyu Huang"
+            },
+            {
+              "authorId": "2182087",
+              "name": "Dariusz M Plewczynski"
+            },
+            {
+              "authorId": "1700283",
+              "name": "J. Zhai"
+            },
+            {
+              "authorId": "3345376",
+              "name": "Ziwei Dai"
+            },
+            {
+              "authorId": "2154938902",
+              "name": "Wei Chen"
+            },
+            {
+              "authorId": "38637356",
+              "name": "Meizhen Zheng"
+            }
+          ],
+          "abstract": "The emerging ligation-free three-dimensional (3D) genome mapping technologies can identify multiplex chromatin interactions with single-molecule precision. These technologies offer new insight into high-dimensional chromatin organization and gene regulation, but also introduce new challenges in data visualization and analysis. To overcome these challenges, we developed MCIBox, a toolkit for Multi-way Chromatin Interaction (MCI) analysis, including a visualization tool and a platform for identifying micro-domains with clustered single-molecule chromatin complexes. MCIBox is based on various clustering algorithms integrated with dimensionality reduction methods that can display multiplex chromatin interactions at single-molecule level, allowing users to explore chromatin extrusion patterns and super-enhancers regulation modes in transcription, and to identify single-molecule chromatin complexes that are clustered into micro-domains. Furthermore, MCIBox incorporates a two-dimensional kernel density estimation algorithm to identify micro-domains boundaries automatically. These micro-domains were stratified with distinctive signatures of transcription activity and contained different cell cycle associated genes. MCIBox could potentially distinguish the specificity of single-molecule chromatin interaction patterns in various phases of a cell cycle or cell types."
+        },
+        {
+          "paperId": "13345aef8d643307965c1ee009ab0339c6d426fc",
+          "externalIds": {
+            "MAG": "3027437691",
+            "DBLP": "conf/recomb/Zhang020",
+            "DOI": "10.1101/2020.01.22.916171",
+            "CorpusId": 212945062,
+            "PubMed": "32550271"
+          },
+          "url": "https://www.semanticscholar.org/paper/13345aef8d643307965c1ee009ab0339c6d426fc",
+          "title": "Probing multi-way chromatin interaction with hypergraph representation learning",
+          "venue": "bioRxiv",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://www.cell.com/article/S2405471220301472/pdf",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2020.01.22.916171?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2020.01.22.916171, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-01-23",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "144906126",
+              "name": "Ruochi Zhang"
+            },
+            {
+              "authorId": "153155904",
+              "name": "Jian Ma"
+            }
+          ],
+          "abstract": "Advances in high-throughput mapping of 3D genome organization have enabled genome-wide characterization of chromatin interactions. However, proximity ligation based mapping approaches for pairwise chromatin interaction such as Hi-C cannot capture multi-way interactions, which are informative to delineate higher-order genome organization and gene regulation mechanisms at single-nucleus resolution. The very recent development of ligation-free chromatin interaction mapping methods such as SPRITE and ChIA-Drop has offered new opportunities to uncover simultaneous interactions involving multiple genomic loci within the same nuclei. Unfortunately, methods for analyzing multi-way chromatin interaction data are significantly underexplored. Here we develop a new computational method, called MATCHA, based on hypergraph representation learning where multi-way chromatin interactions are represented as hyperedges. Applications to SPRITE and ChIA-Drop data suggest that MATCHA is effective to denoise the data and make de novo predictions of multi-way chromatin interactions, reducing the potential false positives and false negatives from the original data. We also show that MATCHA is able to distinguish between multi-way interaction in a single nucleus and combination of pairwise interactions in a cell population. In addition, the embeddings from MATCHA reflect 3D genome spatial localization and function. MATCHA provides a promising framework to significantly improve the analysis of multi-way chromatin interaction data and has the potential to offer unique insights into higher-order chromosome organization and function."
+        },
+        {
+          "paperId": "7fcf574fffc85d7dcfe2d2059e2c3cb2c46e7789",
+          "externalIds": {
+            "PubMedCentral": "10216408",
+            "DOI": "10.3390/cells12101357",
+            "CorpusId": 258645377,
+            "PubMed": "37408191"
+          },
+          "url": "https://www.semanticscholar.org/paper/7fcf574fffc85d7dcfe2d2059e2c3cb2c46e7789",
+          "title": "CTCF and Its Multi-Partner Network for Chromatin Regulation",
+          "venue": "Cells",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/2073-4409/12/10/1357/pdf?version=1683712254",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10216408, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-05-01",
+          "journal": {
+            "name": "Cells",
+            "volume": "12"
+          },
+          "authors": [
+            {
+              "authorId": "1441300052",
+              "name": "Aylin del Moral-Morales"
+            },
+            {
+              "authorId": "1382498861",
+              "name": "Marisol Salgado-Albarrán"
+            },
+            {
+              "authorId": "1399481751",
+              "name": "Y. Sánchez-Pérez"
+            },
+            {
+              "authorId": "4405456",
+              "name": "N. Wenke"
+            },
+            {
+              "authorId": "50663740",
+              "name": "J. Baumbach"
+            },
+            {
+              "authorId": "1382498865",
+              "name": "E. Soto-Reyes"
+            }
+          ],
+          "abstract": "Architectural proteins are essential epigenetic regulators that play a critical role in organizing chromatin and controlling gene expression. CTCF (CCCTC-binding factor) is a key architectural protein responsible for maintaining the intricate 3D structure of chromatin. Because of its multivalent properties and plasticity to bind various sequences, CTCF is similar to a Swiss knife for genome organization. Despite the importance of this protein, its mechanisms of action are not fully elucidated. It has been hypothesized that its versatility is achieved through interaction with multiple partners, forming a complex network that regulates chromatin folding within the nucleus. In this review, we delve into CTCF’s interactions with other molecules involved in epigenetic processes, particularly histone and DNA demethylases, as well as several long non-coding RNAs (lncRNAs) that are able to recruit CTCF. Our review highlights the importance of CTCF partners to shed light on chromatin regulation and pave the way for future exploration of the mechanisms that enable the finely-tuned role of CTCF as a master regulator of chromatin."
+        },
+        {
+          "paperId": "cfc2107839027b3ea20b094ebcb742df75918711",
+          "externalIds": {
+            "PubMedCentral": "12263429",
+            "DOI": "10.1038/s41594-025-01555-z",
+            "CorpusId": 278596420,
+            "PubMed": "40360814"
+          },
+          "url": "https://www.semanticscholar.org/paper/cfc2107839027b3ea20b094ebcb742df75918711",
+          "title": "CTCF depletion decouples enhancer-mediated gene activation from chromatin hub formation",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41594-025-01555-z",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12263429, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-01-23",
+          "journal": {
+            "name": "Nature Structural & Molecular Biology",
+            "pages": "1268 - 1281",
+            "volume": "32"
+          },
+          "authors": [
+            {
+              "authorId": "2065672555",
+              "name": "Magdalena A. Karpinska"
+            },
+            {
+              "authorId": "2332963031",
+              "name": "Yi Zhu"
+            },
+            {
+              "authorId": "2364605530",
+              "name": "Zahra Fakhraei Ghazvini"
+            },
+            {
+              "authorId": "2170776542",
+              "name": "Shyam Ramasamy"
+            },
+            {
+              "authorId": "2274404295",
+              "name": "Mariano Barbieri"
+            },
+            {
+              "authorId": "46926457",
+              "name": "B. Cao"
+            },
+            {
+              "authorId": "2342105450",
+              "name": "Natalie Varahram"
+            },
+            {
+              "authorId": "1789699257",
+              "name": "Abrar Aljahani"
+            },
+            {
+              "authorId": "2622090",
+              "name": "Michael Lidschreiber"
+            },
+            {
+              "authorId": "3966230",
+              "name": "A. Papantonis"
+            },
+            {
+              "authorId": "15024230",
+              "name": "Marieke Oudelaar"
+            }
+          ],
+          "abstract": "Enhancers and promoters interact in 3D chromatin structures to regulate gene expression. Here, we characterize the mechanisms that drive the formation of these structures and their function in gene regulation in a lymphoid-to-myeloid transdifferentiation system. Based on analyses at base-pair resolution, we demonstrate a close correlation between binding of regulatory proteins, formation of chromatin interactions, and gene expression. Integration of multi-way interaction analyses and computational modeling shows that tissue-specific gene loci are organized into chromatin hubs, characterized by cooperative interactions between multiple enhancers, promoters, and CTCF-binding sites. Depletion of CTCF strongly impairs the formation of these structures. However, the effects of CTCF depletion on gene expression are modest and can be explained by rewired enhancer-promoter interactions. This demonstrates an instructive role for enhancer-promoter interactions in gene regulation that is independent of cooperative interactions in chromatin hubs. Together, these results contribute to a mechanistic understanding of the structure-function relationship of the genome during cellular differentiation."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            9
+          ]
+        ],
+        "date-time": "2026-03-09T16:24:25Z",
+        "timestamp": 1773073465425,
+        "version": "3.50.1"
+      },
+      "reference-count": 66,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                20
+              ]
+            ],
+            "date-time": "2022-09-20T00:00:00Z",
+            "timestamp": 1663632000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2022,
+                9,
+                20
+              ]
+            ],
+            "date-time": "2022-09-20T00:00:00Z",
+            "timestamp": 1663632000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000181",
+          "name": "United States Department of Defense | United States Air Force | AFMC | Air Force Office of Scientific Research",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "FA9550-18-1-0028"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "FA9550-18-1-0028"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000181",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000185",
+          "name": "United States Department of Defense | Defense Advanced Research Projects Agency",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "140D6319C0020"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "140D6319C0020"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000185",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000001",
+          "name": "National Science Foundation",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "2035827"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "2035827"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000001",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        },
+        {
+          "DOI": "10.13039/100000051",
+          "name": "U.S. Department of Health & Human Services | NIH | National Human Genome Research Institute",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "5T32HG000040-27"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "5T32HG000040-27"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000051",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Commun"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Chromatin architecture, a key regulator of gene expression, can be inferred using chromatin contact data from chromosome conformation capture, or Hi-C. However, classical Hi-C does not preserve multi-way contacts. Here we use long sequencing reads to map genome-wide multi-way contacts and investigate higher order chromatin organization in the human genome. We use hypergraph theory for data representation and analysis, and quantify higher order structures in neonatal fibroblasts, biopsied adult fibroblasts, and B lymphocytes. By integrating multi-way contacts with chromatin accessibility, gene expression, and transcription factor binding, we introduce a data-driven method to identify cell type-specific transcription clusters. We provide transcription factor-mediated functional building blocks for cell identity that serve as a global signature for cell types.</jats:p>",
+      "DOI": "10.1038/s41467-022-32980-z",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            20
+          ]
+        ],
+        "date-time": "2022-09-20T01:03:53Z",
+        "timestamp": 1663635833000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 39,
+      "title": [
+        "Deciphering multi-way interactions in the human genome"
+      ],
+      "prefix": "10.1038",
+      "volume": "13",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6624-5332",
+          "authenticated-orcid": false,
+          "given": "Gabrielle A.",
+          "family": "Dotson",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2310-0074",
+          "authenticated-orcid": false,
+          "given": "Can",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8787-1746",
+          "authenticated-orcid": false,
+          "given": "Stephen",
+          "family": "Lindsly",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Anthony",
+          "family": "Cicalo",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Sam",
+          "family": "Dilworth",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Charles",
+          "family": "Ryan",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Sivakumar",
+          "family": "Jeyarajan",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Walter",
+          "family": "Meixner",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Cooper",
+          "family": "Stansbury",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Joshua",
+          "family": "Pickard",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Nicholas",
+          "family": "Beckloff",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Amit",
+          "family": "Surana",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4180-7727",
+          "authenticated-orcid": false,
+          "given": "Max",
+          "family": "Wicha",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Lindsey A.",
+          "family": "Muir",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6160-9168",
+          "authenticated-orcid": false,
+          "given": "Indika",
+          "family": "Rajapakse",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            20
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "32980_CR1",
+          "doi-asserted-by": "publisher",
+          "first-page": "289",
+          "DOI": "10.1126/science.1181369",
+          "volume": "326",
+          "author": "E Lieberman-Aiden",
+          "year": "2009",
+          "unstructured": "Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions reveals folding principles of the human genome. Science 326, 289–293 (2009).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "32980_CR2",
+          "doi-asserted-by": "publisher",
+          "first-page": "28",
+          "DOI": "10.1016/j.cell.2020.09.014",
+          "volume": "183",
+          "author": "T Misteli",
+          "year": "2020",
+          "unstructured": "Misteli, T. The self-organizing genome: Principles of genome architecture and function. Cell 183, 28–45 (2020).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR3",
+          "doi-asserted-by": "publisher",
+          "first-page": "8002",
+          "DOI": "10.1073/pnas.1505822112",
+          "volume": "112",
+          "author": "H Chen",
+          "year": "2015",
+          "unstructured": "Chen, H. et al. Functional organization of the human 4d nucleome. Proc. Natl Acad. Sci. 112, 8002–8007 (2015).",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "32980_CR4",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1186/s12864-015-1236-7",
+          "volume": "16",
+          "author": "F Ay",
+          "year": "2015",
+          "unstructured": "Ay, F. et al. Identifying multi-locus chromatin contacts in human cells using tethered multiple 3c. BMC genomics 16, 1–17 (2015).",
+          "journal-title": "BMC genomics"
+        },
+        {
+          "key": "32980_CR5",
+          "doi-asserted-by": "publisher",
+          "first-page": "296",
+          "DOI": "10.1038/nature20158",
+          "volume": "540",
+          "author": "P Olivares-Chauvet",
+          "year": "2016",
+          "unstructured": "Olivares-Chauvet, P. et al. Capturing pairwise and multi-way chromosomal conformations using chromosomal walks. Nature 540, 296–300 (2016).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "1744",
+          "DOI": "10.1038/s41588-018-0253-2",
+          "volume": "50",
+          "author": "AM Oudelaar",
+          "year": "2018",
+          "unstructured": "Oudelaar, A. M. et al. Single-allele chromatin interactions identify regulatory hubs in dynamic compartmentalized domains. Nat. Genet. 50, 1744–1751 (2018).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "32980_CR7",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1009669",
+          "DOI": "10.1371/journal.pcbi.1009669",
+          "volume": "17",
+          "author": "L Liu",
+          "year": "2021",
+          "unstructured": "Liu, L., Zhang, B. & Hyeon, C. Extracting multi-way chromatin contacts from hi-c data. PLoS Computational Biol. 17, e1009669 (2021).",
+          "journal-title": "PLoS Computational Biol."
+        },
+        {
+          "key": "32980_CR8",
+          "doi-asserted-by": "publisher",
+          "first-page": "E4504",
+          "DOI": "10.1073/pnas.1609643113",
+          "volume": "113",
+          "author": "EM Darrow",
+          "year": "2016",
+          "unstructured": "Darrow, E. M. et al. Deletion of dxz4 on the human inactive x chromosome alters higher-order genome architecture. Proc. Natl Acad. Sci. 113, E4504–E4512 (2016).",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "32980_CR9",
+          "doi-asserted-by": "publisher",
+          "first-page": "519",
+          "DOI": "10.1038/nature21411",
+          "volume": "543",
+          "author": "RA Beagrie",
+          "year": "2017",
+          "unstructured": "Beagrie, R. A. et al. Complex multi-enhancer contacts captured by genome architecture mapping. Nature 543, 519–524 (2017).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR10",
+          "doi-asserted-by": "publisher",
+          "first-page": "744",
+          "DOI": "10.1016/j.cell.2018.05.024",
+          "volume": "174",
+          "author": "SA Quinodoz",
+          "year": "2018",
+          "unstructured": "Quinodoz, S. A. et al. Higher-order inter-chromosomal hubs shape 3d genome organization in the nucleus. Cell 174, 744–757 (2018).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR11",
+          "doi-asserted-by": "publisher",
+          "first-page": "558",
+          "DOI": "10.1038/s41586-019-0949-1",
+          "volume": "566",
+          "author": "M Zheng",
+          "year": "2019",
+          "unstructured": "Zheng, M. et al. Multiplex chromatin interactions with single-molecule precision. Nature 566, 558–562 (2019).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR12",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Deshpande, A. S. et al. Identifying synergistic high-order 3d chromatin conformations from genome-scale nanopore concatemer sequencing. Nature Biotechnology, pages 1–12, 2022.",
+          "DOI": "10.1038/s41587-022-01289-z"
+        },
+        {
+          "key": "32980_CR13",
+          "doi-asserted-by": "publisher",
+          "first-page": "207",
+          "DOI": "10.1038/s41576-019-0195-2",
+          "volume": "21",
+          "author": "R Kempfer",
+          "year": "2020",
+          "unstructured": "Kempfer, R. & Pombo, A. Methods for mapping 3d chromosome architecture. Nat. Rev. Genet. 21, 207–226 (2020).",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "32980_CR14",
+          "doi-asserted-by": "publisher",
+          "first-page": "1151",
+          "DOI": "10.1038/s41588-018-0161-5",
+          "volume": "50",
+          "author": "A Allahyar",
+          "year": "2018",
+          "unstructured": "Allahyar, A. et al. Enhancer hubs and loop collisions identified from single-allele topologies. Nat. Genet. 50, 1151–1160 (2018).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "32980_CR15",
+          "doi-asserted-by": "publisher",
+          "first-page": "163",
+          "DOI": "10.1126/science.aad9029",
+          "volume": "353",
+          "author": "AR Benson",
+          "year": "2016",
+          "unstructured": "Benson, A. R., Gleich, D. F. & Leskovec, J. Higher-order organization of complex networks. Science 353, 163–166 (2016).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "32980_CR16",
+          "doi-asserted-by": "publisher",
+          "first-page": "1646",
+          "DOI": "10.1109/TNSE.2021.3068203",
+          "volume": "8",
+          "author": "C Chen",
+          "year": "2020",
+          "unstructured": "Chen, C., Surana, A., Bloch, A. M. & Rajapakse, I. Controllability of hypergraphs. IEEE Trans. Netw. Sci. Eng. 8, 1646–1657 (2020).",
+          "journal-title": "IEEE Trans. Netw. Sci. Eng."
+        },
+        {
+          "key": "32980_CR17",
+          "doi-asserted-by": "publisher",
+          "first-page": "2889",
+          "DOI": "10.1109/TNSE.2020.3002963",
+          "volume": "7",
+          "author": "C Chen",
+          "year": "2020",
+          "unstructured": "Chen, C. & Rajapakse, I. Tensor entropy for uniform hypergraphs. IEEE Trans. Netw. Sci. Eng. 7, 2889–2900 (2020).",
+          "journal-title": "IEEE Trans. Netw. Sci. Eng."
+        },
+        {
+          "key": "32980_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "397",
+          "DOI": "10.1016/j.cels.2020.04.004",
+          "volume": "10",
+          "author": "R Zhang",
+          "year": "2020",
+          "unstructured": "Zhang, R. & Ma, J. Matcha: Probing multi-way chromatin interaction with hypergraph representation learning. Cell Syst. 10, 397–407 (2020).",
+          "journal-title": "Cell Syst."
+        },
+        {
+          "key": "32980_CR19",
+          "doi-asserted-by": "publisher",
+          "first-page": "1065",
+          "DOI": "10.1038/ng1423",
+          "volume": "36",
+          "author": "CS Osborne",
+          "year": "2004",
+          "unstructured": "Osborne, C. S. et al. Active genes dynamically colocalize to shared sites of ongoing transcription. Nat. Genet. 36, 1065–1071 (2004).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "32980_CR20",
+          "doi-asserted-by": "publisher",
+          "first-page": "1553",
+          "DOI": "10.1002/jcb.21750",
+          "volume": "104",
+          "author": "CS Osborne",
+          "year": "2008",
+          "unstructured": "Osborne, C. S. & Eskiw, C. H. Where shall we meet? a role for genome organisation and nuclear sub-compartments in mediating interchromosomal interactions. J. Cell. Biochem. 104, 1553–1561 (2008).",
+          "journal-title": "J. Cell. Biochem."
+        },
+        {
+          "key": "32980_CR21",
+          "doi-asserted-by": "publisher",
+          "first-page": "53",
+          "DOI": "10.1038/ng.496",
+          "volume": "42",
+          "author": "S Schoenfelder",
+          "year": "2010",
+          "unstructured": "Schoenfelder, S. et al. Preferential associations between co-regulated genes reveal a transcriptional interactome in erythroid cells. Nat. Genet. 42, 53–61 (2010).",
+          "journal-title": "Nat. Genet."
+        },
+        {
+          "key": "32980_CR22",
+          "doi-asserted-by": "publisher",
+          "first-page": "4493",
+          "DOI": "10.1093/nar/gkab235",
+          "volume": "49",
+          "author": "I Zhu",
+          "year": "2021",
+          "unstructured": "Zhu, I., Song, W., Ovcharenko, I. & Landsman, D. A model of active transcription hubs that unifies the roles of active promoters and enhancers. Nucleic acids Res. 49, 4493–4505 (2021).",
+          "journal-title": "Nucleic acids Res."
+        },
+        {
+          "key": "32980_CR23",
+          "doi-asserted-by": "publisher",
+          "first-page": "345",
+          "DOI": "10.1038/s41586-019-1182-7",
+          "volume": "569",
+          "author": "R Stadhouders",
+          "year": "2019",
+          "unstructured": "Stadhouders, R., Filion, G. J. & Graf, T. Transcription factors and 3d genome conformation in cell-fate decisions. Nature 569, 345–354 (2019).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR24",
+          "doi-asserted-by": "publisher",
+          "first-page": "440",
+          "DOI": "10.1038/30918",
+          "volume": "393",
+          "author": "DJ Watts",
+          "year": "1998",
+          "unstructured": "Watts, D. J. & Strogatz, S. H. Collective dynamics of ’small-world’networks. Nature 393, 440–442 (1998).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR25",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1038/s41467-021-25875-y",
+          "volume": "12",
+          "author": "CA Brackley",
+          "year": "2021",
+          "unstructured": "Brackley, C. A. et al. Complex small-world regulatory networks emerge from the 3d organisation of the human genome. Nat. Commun. 12, 1–14 (2021).",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "32980_CR26",
+          "doi-asserted-by": "publisher",
+          "first-page": "376",
+          "DOI": "10.1038/nature11082",
+          "volume": "485",
+          "author": "JR Dixon",
+          "year": "2012",
+          "unstructured": "Dixon, J. R. et al. Topological domains in mammalian genomes identified by analysis of chromatin interactions. Nature 485, 376–380 (2012).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR27",
+          "doi-asserted-by": "publisher",
+          "first-page": "1665",
+          "DOI": "10.1016/j.cell.2014.11.021",
+          "volume": "159",
+          "author": "SSP Rao",
+          "year": "2014",
+          "unstructured": "Rao, S. S. P. et al. A 3d map of the human genome at kilobase resolution reveals principles of chromatin looping. Cell 159, 1665–1680 (2014).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR28",
+          "doi-asserted-by": "publisher",
+          "first-page": "2151",
+          "DOI": "10.1093/bioinformatics/btw221",
+          "volume": "32",
+          "author": "J Chen",
+          "year": "2016",
+          "unstructured": "Chen, J., Hero, A. O. III & Rajapakse, I. Spectral identification of topological domains. Bioinformatics 32, 2151–2158 (2016).",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "32980_CR29",
+          "doi-asserted-by": "publisher",
+          "first-page": "472",
+          "DOI": "10.1126/science.1198817",
+          "volume": "332",
+          "author": "DM Suter",
+          "year": "2011",
+          "unstructured": "Suter, D. M. et al. Mammalian genes are transcribed with widely different bursting kinetics. Science 332, 472–474 (2011).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "32980_CR30",
+          "doi-asserted-by": "publisher",
+          "first-page": "1790",
+          "DOI": "10.1126/science.284.5421.1790",
+          "volume": "284",
+          "author": "PR Cook",
+          "year": "1999",
+          "unstructured": "Cook, P. R. The organization of replication and transcription. Science 284, 1790–1795 (1999).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "32980_CR31",
+          "doi-asserted-by": "publisher",
+          "first-page": "9895",
+          "DOI": "10.1093/nar/gky763",
+          "volume": "46",
+          "author": "PR Cook",
+          "year": "2018",
+          "unstructured": "Cook, P. R. & Marenduzzo, D. Transcription-driven genome organization: a model for chromosome structure and the regulation of gene expression tested through simulations. Nucleic Acids Res. 46, 9895–9906 (2018).",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "32980_CR32",
+          "doi-asserted-by": "publisher",
+          "first-page": "207",
+          "DOI": "10.1038/s41576-018-0089-8",
+          "volume": "20",
+          "author": "SL Klemm",
+          "year": "2019",
+          "unstructured": "Klemm, S. L., Shipony, Z. & Greenleaf, W. J. Chromatin accessibility and the regulatory epigenome. Nat. Rev. Genet. 20, 207–220 (2019).",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "32980_CR33",
+          "doi-asserted-by": "publisher",
+          "first-page": "825",
+          "DOI": "10.1016/j.molcel.2013.01.038",
+          "volume": "49",
+          "author": "E Calo",
+          "year": "2013",
+          "unstructured": "Calo, E. & Wysocka, J. Modification of enhancer chromatin: what, how, and why? Mol. cell 49, 825–837 (2013).",
+          "journal-title": "Mol. cell"
+        },
+        {
+          "key": "32980_CR34",
+          "doi-asserted-by": "publisher",
+          "first-page": "613",
+          "DOI": "10.1038/nrg3207",
+          "volume": "13",
+          "author": "F Spitz",
+          "year": "2012",
+          "unstructured": "Spitz, F. & Furlong, E. E. M. Transcription factors: from enhancer binding to developmental control. Nat. Rev. Genet. 13, 613–626 (2012).",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "32980_CR35",
+          "doi-asserted-by": "publisher",
+          "first-page": "1194",
+          "DOI": "10.1016/j.cell.2009.06.001",
+          "volume": "137",
+          "author": "JE Phillips",
+          "year": "2009",
+          "unstructured": "Phillips, J. E. & Corces, V. G. Ctcf: master weaver of the genome. Cell 137, 1194–1211 (2009).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR36",
+          "doi-asserted-by": "publisher",
+          "first-page": "234",
+          "DOI": "10.1038/nrg3663",
+          "volume": "15",
+          "author": "C-T Ong",
+          "year": "2014",
+          "unstructured": "Ong, C.-T. & Corces, V. G. Ctcf: an architectural protein bridging genome topology and function. Nat. Rev. Genet. 15, 234–246 (2014).",
+          "journal-title": "Nat. Rev. Genet."
+        },
+        {
+          "key": "32980_CR37",
+          "doi-asserted-by": "publisher",
+          "first-page": "796",
+          "DOI": "10.1038/nature06634",
+          "volume": "451",
+          "author": "KS Wendt",
+          "year": "2008",
+          "unstructured": "Wendt, K. S. et al. Cohesin mediates transcriptional insulation by ccctc-binding factor. Nature 451, 796–801 (2008).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR38",
+          "doi-asserted-by": "publisher",
+          "first-page": "422",
+          "DOI": "10.1016/j.cell.2008.01.011",
+          "volume": "132",
+          "author": "V Parelho",
+          "year": "2008",
+          "unstructured": "Parelho, V. et al. Cohesins functionally associate with ctcf on mammalian chromosome arms. Cell 132, 422–433 (2008).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR39",
+          "doi-asserted-by": "publisher",
+          "first-page": "11202",
+          "DOI": "10.1093/nar/gks925",
+          "volume": "40",
+          "author": "E Alipour",
+          "year": "2012",
+          "unstructured": "Alipour, E. & Marko, J. F. Self-organization of domain structures by dna-loop-extruding enzymes. Nucleic acids Res. 40, 11202–11212 (2012).",
+          "journal-title": "Nucleic acids Res."
+        },
+        {
+          "key": "32980_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "693",
+          "DOI": "10.1016/j.cell.2017.04.013",
+          "volume": "169",
+          "author": "JHI Haarhuis",
+          "year": "2017",
+          "unstructured": "Haarhuis, J. H. I. et al. The cohesin release factor wapl restricts chromatin loop extension. Cell 169, 693–707 (2017).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR41",
+          "doi-asserted-by": "publisher",
+          "first-page": "74",
+          "DOI": "10.1006/excr.1994.1061",
+          "volume": "211",
+          "author": "HC Tsou",
+          "year": "1994",
+          "unstructured": "Tsou, H. C., Lee, X., Si, S. P. & Peacocke, M. Regulation of retinoic acid receptor expression in dermal fibroblasts. Exp. cell Res. 211, 74–81 (1994).",
+          "journal-title": "Exp. cell Res."
+        },
+        {
+          "key": "32980_CR42",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Ruschil, C. et al. Specific induction of double negative B cells during protective and pathogenic immune responses. Front Immunol. 11, 606338 (2020).",
+          "DOI": "10.3389/fimmu.2020.606338"
+        },
+        {
+          "key": "32980_CR43",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1006786",
+          "DOI": "10.1371/journal.pcbi.1006786",
+          "volume": "15",
+          "author": "J Zhang",
+          "year": "2019",
+          "unstructured": "Zhang, J. et al. Spatial clustering and common regulatory elements correlate with coordinated gene expression. PLoS computational Biol. 15, e1006786 (2019).",
+          "journal-title": "PLoS computational Biol."
+        },
+        {
+          "key": "32980_CR44",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Surana, A., Chen, C. & Rajapakse, I. Hypergraph dissimilarity measures. arXiv preprint arXiv:2106.08206 (2021).",
+          "DOI": "10.1109/TNSE.2022.3217185"
+        },
+        {
+          "key": "32980_CR45",
+          "doi-asserted-by": "publisher",
+          "first-page": "17257",
+          "DOI": "10.1073/pnas.1113249108",
+          "volume": "108",
+          "author": "I Rajapakse",
+          "year": "2011",
+          "unstructured": "Rajapakse, I., Groudine, M. & Mesbahi, M. Dynamics and control of state-dependent networks for probing genomic organization. Proc. Natl Acad. Sci. 108, 17257–17262 (2011).",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "32980_CR46",
+          "doi-asserted-by": "publisher",
+          "first-page": "268",
+          "DOI": "10.1038/35065725",
+          "volume": "410",
+          "author": "SH Strogatz",
+          "year": "2001",
+          "unstructured": "Strogatz, S. H. Exploring complex networks. Nature 410, 268–276 (2001).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR47",
+          "doi-asserted-by": "publisher",
+          "first-page": "211",
+          "DOI": "10.1038/s41586-021-03634-9",
+          "volume": "596",
+          "author": "A Rao",
+          "year": "2021",
+          "unstructured": "Rao, A., Barkley, D., França, G. S. & Yanai, I. Exploring tissue architecture using spatial transcriptomics. Nature 596, 211–220 (2021).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR48",
+          "doi-asserted-by": "publisher",
+          "first-page": "1185",
+          "DOI": "10.1126/science.1235249",
+          "volume": "340",
+          "author": "C Guillot",
+          "year": "2013",
+          "unstructured": "Guillot, C. & Lecuit, T. Mechanics of epithelial tissue homeostasis and morphogenesis. Science 340, 1185–1189 (2013).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "32980_CR49",
+          "unstructured": "Berge, C. Hypergraphs: combinatorics of finite sets, volume 45. (Elsevier, 1984)."
+        },
+        {
+          "key": "32980_CR50",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Wolf, M. M., Klinvex, A. M. & Dunlavy, D. M. Advantages to modeling relational data using hypergraphs versus graphs. In 2016 IEEE High Performance Extreme Computing Conference (HPEC), 1–7 (IEEE, 2016).",
+          "DOI": "10.1109/HPEC.2016.7761624"
+        },
+        {
+          "key": "32980_CR51",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1109/TVCG.2019.2933196",
+          "volume": "27",
+          "author": "P Valdivia",
+          "year": "2019",
+          "unstructured": "Valdivia, P., Buono, P., Plaisant, C., Dufournaud, N. & Fekete, J.-D. Analyzing dynamic hypergraphs with parallel aggregated ordered hypergraph visualization. IEEE Trans. Vis. computer Graph. 27, 1–13 (2019).",
+          "journal-title": "IEEE Trans. Vis. computer Graph."
+        },
+        {
+          "key": "32980_CR52",
+          "doi-asserted-by": "publisher",
+          "first-page": "1274",
+          "DOI": "10.1016/j.cell.2012.04.040",
+          "volume": "150",
+          "author": "S Neph",
+          "year": "2012",
+          "unstructured": "Neph, S. et al. Circuitry and dynamics of human transcription factor regulatory networks. Cell 150, 1274–1286 (2012).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR53",
+          "doi-asserted-by": "publisher",
+          "first-page": "650",
+          "DOI": "10.1016/j.cell.2018.01.029",
+          "volume": "172",
+          "author": "SA Lambert",
+          "year": "2018",
+          "unstructured": "Lambert, S. A. et al. The human transcription factors. Cell 172, 650–665 (2018).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR54",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Passerini, F. & Severini, S. The von neumann entropy of networks. arXiv preprint arXiv:0812.2597 (2008).",
+          "DOI": "10.2139/ssrn.1382662"
+        },
+        {
+          "key": "32980_CR55",
+          "doi-asserted-by": "publisher",
+          "first-page": "491",
+          "DOI": "10.1093/comnet/cny028",
+          "volume": "7",
+          "author": "G Minello",
+          "year": "2019",
+          "unstructured": "Minello, G., Rossi, L. & Torsello, A. On the von neumann entropy of graphs. J. Complex Netw. 7, 491–514 (2019).",
+          "journal-title": "J. Complex Netw."
+        },
+        {
+          "key": "32980_CR56",
+          "first-page": "1601",
+          "volume": "19",
+          "author": "D Zhou",
+          "year": "2006",
+          "unstructured": "Zhou, D., Huang, J. & Schölkopf, B. Learning with hypergraphs: Clustering, classification, and embedding. Adv. Neural Inf. Process. Syst. 19, 1601–1608 (2006).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "32980_CR57",
+          "unstructured": "Strang, G. Introduction to linear algebra, Vol. 3 (Wellesley-Cambridge Press, Wellesley, MA, 2016)."
+        },
+        {
+          "key": "32980_CR58",
+          "doi-asserted-by": "publisher",
+          "first-page": "484",
+          "DOI": "10.1016/j.cell.2013.07.024",
+          "volume": "154",
+          "author": "BD MacArthur",
+          "year": "2013",
+          "unstructured": "MacArthur, B. D. & Lemischka, I. R. Statistical mechanics of pluripotency. Cell 154, 484–489 (2013).",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "32980_CR59",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1002543",
+          "DOI": "10.1371/journal.pcbi.1002543",
+          "volume": "8",
+          "author": "I Rajapakse",
+          "year": "2012",
+          "unstructured": "Rajapakse, I., Groudine, M. & Mesbahi, M. What can systems theory of networks offer to biology? PLoS Computational Biol. 8, e1002543 (2012).",
+          "journal-title": "PLoS Computational Biol."
+        },
+        {
+          "key": "32980_CR60",
+          "doi-asserted-by": "publisher",
+          "first-page": "58",
+          "DOI": "10.1080/19491034.2021.1910437",
+          "volume": "12",
+          "author": "S Lindsly",
+          "year": "2021",
+          "unstructured": "Lindsly, S. et al. 4dnvestigator: time series genomic data analysis toolbox. Nucleus 12, 58–64 (2021).",
+          "journal-title": "Nucleus"
+        },
+        {
+          "key": "32980_CR61",
+          "doi-asserted-by": "publisher",
+          "first-page": "971",
+          "DOI": "10.1214/18-AOAS1176",
+          "volume": "12",
+          "author": "C Donnat",
+          "year": "2018",
+          "unstructured": "Donnat, C. & Holmes, S. Tracking network dynamics: a survey using graph distances. Ann. Appl. Stat. 12, 971–1012 (2018).",
+          "journal-title": "Ann. Appl. Stat."
+        },
+        {
+          "key": "32980_CR62",
+          "doi-asserted-by": "publisher",
+          "first-page": "267",
+          "DOI": "10.1111/1467-9531.00118",
+          "volume": "32",
+          "author": "K Faust",
+          "year": "2002",
+          "unstructured": "Faust, K. & Skvoretz, J. Comparing networks across space and time, size and species. Sociological Methodol. 32, 267–299 (2002).",
+          "journal-title": "Sociological Methodol."
+        },
+        {
+          "key": "32980_CR63",
+          "doi-asserted-by": "publisher",
+          "first-page": "e0228728",
+          "DOI": "10.1371/journal.pone.0228728",
+          "volume": "15",
+          "author": "P Wills",
+          "year": "2020",
+          "unstructured": "Wills, P. & Meyer, F. G. Metrics for graph comparison: a practitioner’s guide. PloS One 15, e0228728 (2020).",
+          "journal-title": "PloS One"
+        },
+        {
+          "key": "32980_CR64",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Koutra, D., Vogelstein, J. T. & Faloutsos, C. Deltacon: A principled massive-graph similarity function. In Proceedings of the 2013 SIAM international conference on data mining. 162–170 (SIAM, 2013).",
+          "DOI": "10.1137/1.9781611972832.18"
+        },
+        {
+          "key": "32980_CR65",
+          "doi-asserted-by": "publisher",
+          "first-page": "57",
+          "DOI": "10.1038/nature11247",
+          "volume": "489",
+          "author": "ENCODE Project Consortium.",
+          "year": "2012",
+          "unstructured": "ENCODE Project Consortium. et al. An integrated encyclopedia of dna elements in the human genome. Nature 489, 57 (2012).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "32980_CR66",
+          "doi-asserted-by": "crossref",
+          "first-page": "D58",
+          "DOI": "10.1093/nar/gkaa197",
+          "volume": "48",
+          "author": "T Gao",
+          "year": "2020",
+          "unstructured": "Gao, T. & Qian, J. Enhanceratlas 2.0: an updated resource with enhancer annotation in 586 tissue/cell types across nine species. Nucleic Acids Res. 48, D58–D64 (2020).",
+          "journal-title": "Nucleic Acids Res."
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41467-022-32980-z.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41467-022-32980-z",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41467-022-32980-z.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2022,
+            11,
+            19
+          ]
+        ],
+        "date-time": "2022-11-19T05:08:37Z",
+        "timestamp": 1668834517000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41467-022-32980-z"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            20
+          ]
+        ]
+      },
+      "references-count": 66,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2022,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "32980"
+      ],
+      "URL": "https://doi.org/10.1038/s41467-022-32980-z",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/2021.08.15.456363",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "2041-1723"
+      ],
+      "issn-type": [
+        {
+          "value": "2041-1723",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            20
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "6 September 2021",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "26 August 2022",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "20 September 2022",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "S.D. is an employee of iReprogram, L.L.C. L.M. and I.R. are co-founders of iReprogram, L.L.C. N.B. is an employee of Oxford Nanopore Technologies. S.L., C.C., and I.R. have submitted a patent application for the computational framework (2115-008250-US-PS1). The remaining authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing interests"
+          }
+        }
+      ],
+      "article-number": "5498"
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-151ea39674e64845.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-151ea39674e64845.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-151ea39674e64845.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "7f4bd42f89ece3508a76e1e2094772d597fab1c98998b79872d6b9c34835873e",
+    "chunk_count": 44,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

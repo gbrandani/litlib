@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.mypy_cache/
+.pytest_cache/
+
+# Node / Frontend dependencies
+web-app/node_modules/
+web-app/.eslintcache
+
+# macOS system files
+.DS_Store
+
+# SSL Certificates (private credentials)
+cert.pem
+key.pem
+
+# Environment variables / API keys
+.env
+
+# Personal library files (PDFs and books)
+articles/
+books/

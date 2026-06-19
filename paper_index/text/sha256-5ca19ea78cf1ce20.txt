@@ -1,0 +1,445 @@
+[Page 1]
+
+Annual Review of Biophysics
+
+Biophysics of Chromatin Remodeling Ilana M. Nodelman and Gregory D. Bowman
+
+T.C. Jenkins Department of Biophysics, Johns Hopkins University, Baltimore, Maryland 21218, USA; email: gdbowman@jhu.edu
+
+Annu. Rev. Biophys. 2021. 50:73–93
+
+Keywords
+
+The Annual Review of Biophysics is online at biophys.annualreviews.org
+
+nucleosome, histone, SF2 superfamily, Snf2-type ATPase motor, twist defect, bulge/loop propagation
+
+https://doi.org/10.1146/annurev-biophys-082520080201
+
+Abstract As primary carriers of epigenetic information and gatekeepers of genomic DNA, nucleosomes are essential for proper growth and development of all eukaryotic cells. Although they are intrinsically dynamic, nucleosomes are actively reorganized by ATP-dependent chromatin remodelers. Chromatin remodelers contain helicase-like ATPase motor domains that can translocate along DNA, and a long-standing question in the field is how this activity is used to reposition or slide nucleosomes. In addition to ratcheting along DNA like their helicase ancestors, remodeler ATPases appear to dictate specific alternating geometries of the DNA duplex, providing an unexpected means for moving DNA past the histone core. Emerging evidence supports twist-based mechanisms for ATP-driven repositioning of nucleosomes along DNA. In this review, we discuss core experimental findings and ideas that have shaped the view of how nucleosome sliding may be achieved.
+
+[Page 2]
+
+Contents INTRODUCTION . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . MOBILITY OF REMODELERS AND NUCLEOSOMES ALONG DNA . . . . . . . . Architecture and DNA Translocation of Remodeler ATPase Motors . . . . . . . . . . . . . . . DNA Movement on the Nucleosome via Twist Defects . . . . . . . . . . . . . . . . . . . . . . . . . . . BULGE/LOOP PROPAGATION MECHANISMS OF NUCLEOSOME SLIDING BY CHROMATIN REMODELERS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Early Support for the Bulge/Loop Propagation Model . . . . . . . . . . . . . . . . . . . . . . . . . . . . Diversification and Challenges of the Bulge/Loop Propagation Model . . . . . . . . . . . . . TWIST DIFFUSION MECHANISMS OF NUCLEOSOME SLIDING BY CHROMATIN REMODELERS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Uncovering Timing of DNA Movements on the Nucleosome . . . . . . . . . . . . . . . . . . . . . Initiating DNA Movement Around the Nucleosome Through Twist Defects . . . . . . . Inchworming DNA Past the Histone Core . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Pumping DNA with Twist Defects . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . The Gating Helix Is a Remodeler-Specific Element Poised to Create Twist Defects on the Nucleosome . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . OUTLOOK . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+INTRODUCTION Nucleosomes are the fundamental packaging units of eukaryotic chromosomes. They consist of approximately 146 base pairs (bp) of DNA intimately associated with a central histone core (Figure 1). With these tight interactions, nucleosomes are inherently repressive, as they antagonize most other DNA-binding factors by both blocking access to and altering the geometry of H3-H4 Dyad tetramer
+
+Major (Dyad) groove
+
+0.5
+
+6.5
+
+SHL1.5
+
+DNA duplex
+
+1.5
+
+SHLs
+
+5.5
+
+70 ̊
+
+4.5
+
+H2A-H2B dimer
+
+2.5
+
+SHL2.5 3.5
+
+Minor groove
+
+Figure 1 The structure of the nucleosome. (a) Overview of a high-resolution nucleosome crystal structure (Protein Data Bank code 1KX5) (29). The 147–base pair DNA duplex wraps around the histone octamer approximately 1.65 times. The dyad indicates the central twofold axis of symmetry. (b) With each turn of the DNA duplex, the histone core intimately interacts with DNA where the phosphate backbone faces the core. Yellow surfaces represent regions of the histone core that hydrogen bond and make van der Waals contacts with the DNA backbone. (c) DNA sites around the nucleosome are referred to by their superhelix location (SHL). SHL0 defines where the inward-facing major groove aligns with the central twofold or dyad axis of the nucleosome, and each successive major or minor groove is given integer (major) or half-integer (minor) values (80).
+
+[Page 3]
+
+the DNA duplex (65). Additionally, through post-translational modifications, the histone core is extensively used for storing epigenetic information, critical for providing both short- and long-term memory that allows cells to differentiate and respond to environmental cues (3). To dynamically alter their positions and composition, nucleosomes rely on chromatin remodelers. Chromatin remodelers are ATP-driven enzymes that are essential for maintaining and driving changes in the epigenetic landscape. As demonstrated by their established roles in many developmental disorders and dozens of cancers, chromatin remodelers are critical for normal cell physiology and determination of cellular identity (2, 43, 52, 60, 72, 84, 110). Chromatin remodelers are defined by the presence of a Snf2-type ATPase motor, named for the ATPase-containing subunit of the founding SWI/SNF remodeler (34, 40). The ATPase motor can be flanked by a variety of different domains and sequence motifs that allow remodelers to be classified into distinct families. Whereas some Snf2-type ATPases, such as Rad54 and CSB/Rad26, can also include non-nucleosomal targets, enzymes referred to as ATP-dependent chromatin remodelers are typically ATPases that primarily act on nucleosomal substrates. The most extensively studied remodeler families include SWI/SNF (SWI/SNF, RSC, BAF, PBAF), ISWI (ISWI, ACF, CHRAC, NURF), CHD (CHD1–9, Mi-2, NURD), and INO80 (INO80, SWR1, SRCAP, p400/Tip60, DOMINO). In addition to family-specific signatures surrounding the ATPase motor, most remodelers also possess unique non-ATPase subunits that further distinguish remodeling complexes from one another (8, 12, 25, 45, 52). Consistent with their diverse compositions, remodelers can catalyze a range of remodeling outcomes such as nucleosome disassembly, nucleosome assembly, histone exchange, and nucleosome sliding (8, 26, 87). In this review, we focus on nucleosome sliding, an extensively studied aspect of chromatin remodeling that can now be explained through changes in DNA twist. We first review early ideas and results demonstrating dynamic and spontaneous changes in DNA twists on the nucleosome. We then describe supportive and challenging findings for the bulge/loop propagation model, which was proposed to describe how remodelers shift nucleosomes along DNA. Finally, we explore more recent findings showing how the ATPase motors of remodelers stimulate unique changes in DNA twist, supporting viable alternatives for a nucleosome sliding mechanism.
+
+MOBILITY OF REMODELERS AND NUCLEOSOMES ALONG DNA Architecture and DNA Translocation of Remodeler ATPase Motors Chromatin remodelers constitute a defined class of Snf2-type ATPase motors that are themselves part of a larger family of helicase-like enzymes known as superfamily 2 (SF2) (34, 40, 46, 107). As was initially suggested by sequence conservation and is now apparent in multiple structures, remodelers share several characteristic features in common with both SF2 and the related SF1 ATPases that underlie basic principles of how these enzymes work. Many SF1 and SF2 proteins are true helicases and disrupt duplexes either by clamping onto and distorting one nucleic acid strand, as seen for RNA DEAD Box helicases (74), or by translocating along one strand while displacing the other, as seen for RecBCD and NS3 helicases (48, 106, 107). Whereas chromatin remodelers can move along naked duplex DNA and therefore have more similarity to translocating helicases (55, 73, 100, 101, 109), all SF1 and SF2 proteins share common architectural features (107). At their core, SF1 and SF2 proteins consist of two RecA-type domains: Lobe 1 binds to ATP/Mg+2 through the classical Walker A (P-loop) and Walker B (DExx box) motifs, whereas lobe 2 presents arginine finger residues needed for catalysis. Together, both ATPase lobes present a conserved binding surface for cradling one strand of DNA or RNA, which lays over the motor with its 5 end on lobe 2 and its 3 end on lobe 1 (102). To hydrolyze ATP, the ATPase motor
+
+[Page 4]
+
+must achieve a specific, tightly packed organization, where the phosphate tail of the bound ATP is buried and coordinated by conserved residues at the lobe 1–lobe 2 interface. ATP hydrolysis is typically stimulated when the ATPase motor binds to nucleic acid substrates, which help to properly organize the two lobes for catalysis. Relative to the ATP-bound state, which is tightly closed, the ATPase motor favors a more open conformation in ADP-bound and nucleotide-free states. For translocating SF1 and SF2 enzymes, the ATPase motor alternates between open and closed states that ratchet it along DNA or RNA through what has been termed an inchworm mechanism (48, 69, 126). For translocation to occur, the two halves of the ATPase motor must alternate their grip on the nucleic acid upon switching between open and closed states. For translocating helicases that move in a 3 →5 direction, lobe 2 is on the front edge, and lobe 1 trails behind. ATPase opening is stimulated by ATP hydrolysis, whereas closure is favored by ATP binding. In transitioning from a closed to an open state, lobe 2 shifts forward on the nucleic acid by 1 nucleotide. After ATP binding, lobe 2 keeps its position on the nucleic acid, and lobe 1 shifts upon closure of the ATPase motor. Although some SF2 proteins, like chromatin remodelers, travel along duplex rather than singlestranded nucleic acids, these motors make nucleotide-dependent motions and interactions similar to those of single-stranded translocases; the strand corresponding to the single-stranded substrate is called the tracking strand, and its complement is called the guide strand. For chromatin remodelers that shift nucleosomes, the ATPase motor not only has to travel along a duplex but also has the added challenge of moving double-stranded DNA around the histone core.
+
+DNA Movement on the Nucleosome via Twist Defects
+
+Early studies showed that nucleosomes can spontaneously slide along DNA over long distances (10, 111) and that nucleosomal DNA displays similar twist dynamics as free DNA (129). Subsequent work demonstrated that shorter-range nucleosome repositioning (over several turns of the DNA duplex) can be driven by thermal motion (41, 42, 83, 94). An early idea to explain such spontaneous repositioning, put forth more than a decade before the first high-resolution nucleosome crystal structure, was the twist diffusion model proposed by van Holde & Yager (123, 124). In this model, they postulated that a helical turn of nucleosomal DNA may transiently support the gain or loss of a bp—a so-called twist defect. Creation of a twist defect would result from a local, right-handed corkscrew shift of DNA (Figure 2a). Such a shift of DNA toward the nucleosome would add a bp (decreasing local twist), whereas a shift away would remove a bp (increasing local twist). Once made, a twist defect can likewise be passed on to neighboring DNA segments in the helix with a subsequent corkscrew shift, which would locally restore the canonical twist of the duplex while conveying the bp gain or loss to a new location. A central aspect of this model is that, although some histone–DNA contacts must transiently shift due to repositioning of backbone DNA contacts, the resulting twist defect allows canonical histone–DNA interactions to be maintained. Support for the twist defect idea was obtained with the first nucleosome crystal structure and reinforced through many subsequent structures (23, 29, 53, 80, 81, 90, 98, 117, 118, 125). Although palindromic in sequence, the 146-bp DNA in the first nucleosome structure was unequally distributed on the two halves of the histone octamer, with 1 bp at the dyad, 72 bp on one side, and 73 bp on the other. Both halves of the nucleosome showed essentially the same interactions at each histone–DNA contact, with the 1-bp difference between the two sides localized to a region called superhelix location (SHL) 2 (see Figure 1c). Comparison of the two SHL2 sites showed that the +/−1 bp was staggered on the two strands by approximately 5 nucleotides, such that the insertion or removal of phosphates occurred where each strand was farthest from histone contacts
+
+[Page 5]
+
++1 bp +1 bp
+
+Corkscrew shift Minor grooves Histone core
+
+10 bp
+
+11 bp
+
+Dyad
+
+Dyad
+
+SHL1.5 SHL2
+
+SHL2
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+–1 bp
+
+SHL5 bp
+
+SHL2.5
+
+1AOI
+
+72 bp side
+
+73 bp side
+
+bp
+
+SHL5
+
+bp
+
+bp
+
+Nucleosome structure 1AOI
+
+Nucleosome structure 1M18
+
+Figure 2 Twist defects on the nucleosome. (a) The twist diffusion model for nucleosome repositioning (123, 124). A corkscrew shift of the duplex causes a DNA segment between two minor groove contacts to absorb an additional base pair (bp), which locally changes DNA twist (a twist defect). Once formed, a corkscrew shift on the other side transfers the twist defect further onto the nucleosome, accompanied by a 1-bp translation of DNA. (b) Changes in DNA geometry accompanying twist defects. Comparison of the two sides of the first 146-bp nucleosome structure at superhelix location (SHL) 2 shows that the 1-bp difference is distributed on the two strands, approximately 5 nucleotides apart, where the phosphate backbone is farthest from histone core. (c) As highlighted by the rectangular boxes, the shift in the DNA backbone at the farthest point from the histone core correlates with bp tilting. (d) Two nucleosome crystal structures that captured twist defects at two separated locations, SHL2 and SHL5 (80, 117). These nucleosomes had the same DNA sequence and length, only differing by the presence or absence of a pyrrole-imidazole polyamide at SHL4 (1M18 structure). Red arrows represent expected corkscrew rotations of intervening DNA needed for a twist defect to be eliminated at one location and appear at the other.
+
+(Figure 2b). The SHL2 site with one fewer bp (10 bp versus 11 bp) is stretched with increased twist, which gives rise to both bp buckling and bp tilting in the major groove to accommodate the different placements of nucleotides (Figure 2c). Analysis of several nucleosome crystal structures has shown that such heterogeneity in DNA twist commonly occurs at SHL2 and SHL5, suggesting that it is relatively easy for the histone core to accommodate 10 or 11 bp at these sites (23, 29, 53, 80, 81, 90, 98, 117, 118, 125). Interestingly, one nucleosome crystal structure showing DNA stretching at SHL5 used the same 146-bp DNA sequence as the first structure (117). The SHL5-stretched structure differed by having a pyrrole-imidazole polyamide bound in the minor groove at SHL4, but since the sequence was the same, this structure demonstrated the ability to transmit the twist defect between SHL2 and SHL5 (Figure 2d). Through the use of polyamides that favor particular phases of DNA on the nucleosome, twist defects were shown to be in dynamic equilibrium (33, 47). Although the extent to which other SHLs might accommodate changes in twist is not currently known, molecular modeling suggests that transmission around the nucleosome may not require a twist defect to occupy each successive SHL. Instead, a twist defect could transfer to a non-neighboring site through a coordinated corkscrew shift of the intervening DNA (19). The dynamic oscillations suggest that only modest energies are required to transfer twist defects between different sites on the nucleosome, making it a natural mechanism to relieve strain caused by DNA translocating motors (33, 117, 123).
+
+[Page 6]
+
+BULGE/LOOP PROPAGATION MECHANISMS OF NUCLEOSOME SLIDING BY CHROMATIN REMODELERS In concert with the discovery in the 1990s that SWI/SNF is a nucleosome-disrupting complex involved in gene regulation (27, 57, 66, 91, 95), the chromatin remodeling field rapidly expanded with discoveries of additional remodelers and detailed biochemical analyses (20, 30, 35, 58, 76, 86, 93, 120–122, 136). Two elegant studies in this early period provided a link between DNA twist and remodeling: One showed that SWI/SNF generates negative superhelical torsion on naked DNA (55), and the other showed that torsionally constrained DNA blocks nucleosome sliding (44). However, the idea that DNA twisting was mechanistically important for nucleosome mobility was overshadowed by the idea that DNA was shifted around the histone core in large (≥10 bp) loops or bulges.
+
+Early Support for the Bulge/Loop Propagation Model Access provided by Kyoto University on 01/07/21. For personal use only.
+
+The bulge/loop propagation model differs from twist diffusion in that DNA loops are proposed to lift off the surface of the histone octamer, locally breaking one or more minor groove contacts (11, 25, 112) (Figure 3a). Being a high-energy conformation of DNA, such a bulge or loop is expected to rapidly travel around the nucleosome, maintaining the same number of histone–DNA contacts during loop propagation, since contacts on the trailing edge of the loop reform as new contacts are disrupted at the leading edge. Passage of a loop from one side of the nucleosome to the other, which was predicted to be theoretically feasible (103), would reposition the histone core along DNA by the size of the loop. An attractive aspect of the bulge/loop propagation model was that it paralleled the explanation for nucleosome repositioning by RNA polymerases (64, 115). When bacteriophage RNA polymerase or eukaryotic RNA polymerase III were loaded to transcribe through nucleosomes in vitro, the histone cores shifted toward the side of the invading polymerase motor (113, 114). This phenomenon can be explained by DNA unwrapping as the polymerase enters and then DNA rewrapping to a shifted site as polymerase travels further into the nucleosome (Figure 3b). In agreement with this idea, chromatin remodelers were observed to translocate along DNA (55, 73, 100, 101, 109, 131, 141). Translocation by remodelers was proposed to occur at the edge of the nucleosome, which, like RNA polymerases, could create a loop by stimulating unwrapping and rewrapping of DNA around the histone core (67, 76, 131). The bulge/loop propagation model was also consistent with several other experimental findings. SWI/SNF was shown to create large DNA loops with naked DNA and also with long DNA segments containing 1–2 nucleosomes (9, 73, 141). Large loops on the nucleosome surface were proposed to explain otherwise perplexing restriction cutting experiments, where SWI/SNF and RSC made more central DNA sites accessible even for nucleosomes flanked by little or no linker DNA (1, 37, 76, 86) (Figure 3c). Further support for the existence of DNA loops rather than twist defects came from experiments suggesting that DNA rotation was unnecessary for nucleosome sliding (4, 5, 112). Without rotation, DNA should maintain its phasing, and therefore, loops would be expected to form in approximately 10-bp increments. Consistent with this idea, ISWI and SWI/SNF remodelers were first estimated to shift nucleosomes in approximately 10-bp and 50-bp steps, respectively (61, 104). Another observation that appeared to favor DNA loops over twists was that DNA nicks did not block nucleosome sliding by remodelers (4, 67, 77). Since DNA nicks relieve torsional strain in naked DNA, these results were interpreted to mean that a DNA translocase, especially one located just outside the nucleosome, could not impart twist into nucleosomal DNA as a primary means of shifting DNA onto the histone core.
+
+[Page 7]
+
+RNA polymerase
+
+× 10 bp
+
+Intermediate
+
+Stable products
+
+d Conformation
+
+Release and rebind
+
+change
+
+DBD
+
+State 1
+
+State 4 New remodeling cycle
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+ii
+
+iii
+
+Tr
+
+Tr
+
+Dyad
+
+Hinge
+
+Hinge
+
+e i
+
+DBD
+
+DNA loop propagation in the second half of the nucleosome
+
+DBD
+
+State 3
+
+DBD
+
+Synchronized DNA translocation and nucleosome sliding
+
+Rem
+
+Nucleosome binding or release
+
+Hinge Tr
+
+DNA translocation
+
+Shifted nucleosome Tr
+
+Nuc Rem
+
+Tr
+
+Nuc Rem
+
+Reverse translocation or DNA sliding
+
+Loop extension
+
+DNA loop propagation Hinge
+
+Force sensitive
+
+Nuc Tr
+
+State 2
+
+Tr
+
+Rem Tr
+
+DNA loop formation
+
+Translocation initiation
+
+Nuc
+
+iv Large-loop propagation Nucleosome jumping
+
+Tr
+
+Nuc Rem
+
+Figure 3 Bulge/loop propagation models of nucleosome sliding. (a) A loop recapture model. In this model, DNA unwraps and then rewraps with a shifted position, trapping a loop of DNA that then propagates around the histone core. Panel adapted with permission from Reference 68. (b) Nucleosome repositioning resulting from transcription by an RNA polymerase around the histone core. Panel adapted with permission from Reference 114. (c) Possible models for how the SWI/SNF remodeler alters nucleosome structure, creating persistent DNA loops on the histone surface. Panel adapted with permission from Reference 37. (d) A loop propagation model where the entry-side loop is created by cooperation between the ATPase motor at superhelix location (SHL) 2 (Tr) and a DNA-binding domain (DBD) at the nucleosome edge. DNA movement past the ATPase motor occurs between states 2 and 3, highlighted by the shift of an asterisk (∗ ) reference point. Panel adapted with permission from Reference 25. (e) A model where translocation of the RSC ATPase motor (Tr) at the internal SHL2 site directly spools out DNA into a loop at the dyad. Panel adapted with permission from Reference 141.
+
+Diversification and Challenges of the Bulge/Loop Propagation Model Several subsequent experimental findings turned out to be inconsistent with initial interpretations and assumptions supporting the original bulge/loop propagation model. One important finding was that SWI/SNF was shown to slide nucleosomes approximately 50 bp farther than the DNA ends, such that one DNA end was pulled to an internal position approximately 20 bp from the dyad (41, 61, 101, 142). This off-the-end sliding, not observed for ISWI or Chd1 remodelers, can explain the peculiar restriction site accessibility without invoking large internal DNA loops (41, 59, 101). Another result contradicting initial assumptions and interpretations, which also explained the off-the-end sliding, was the finding that the ATPase motors of SWI/SNF, RSC, ISWI, and Chd1 act at the internal SHL2 site rather than the edge of the nucleosome (82, 101, 104, 142). Two variants of the bulge/loop propagation model were put forth to address the ATPase motor being
+
+[Page 8]
+
+in a more internal location. The first proposes that the DNA loop still forms at the entry side, but additionally requires a DNA-binding domain that holds entry DNA tightly in place, either to help generate tension (in collaboration with the ATPase motor) or to provide a barrier that prevents the loop from escaping on the side that it just entered (25, 26, 142) (Figure 3d). Both Chd1 and ISWI remodelers have a DNA-binding domain that binds to entry DNA, but we and others have shown that insertion of flexible segments between the ATPase motor and DNA-binding domain did not disrupt sliding, arguing against mechanical coupling to the ATPase motor (79, 89). Furthermore, the structures of these DNA-binding domains with DNA only show limited interactions via the sugar–phosphate backbone (105, 137), which is suggestive of easy diffusion and inconsistent with an ability to tightly grip and release DNA in a coordinated way to regulate buildup of torsional strain. In addition, the native DNA-binding domain of Chd1 is dispensable for robust sliding when substituted by foreign binding domains that target either entry DNA or histone tails, suggesting that the native DNA-binding domain has a regulatory rather than mechanical role (82, 92). Although not applicable to Chd1 and ISWI remodelers, this idea that two separated domains cooperate to create a constrained loop of DNA on the entry side is consistent with nucleosomebound structures of the large multisubunit INO80 and SWR1 complexes (7, 36, 132). In each of these complexes, two ATPases bound nucleosomal DNA on either side of the entry H2A-H2B dimer. One ATPase was the remodeler motor, and the other, approximately 30–50 bp away, was an actin-related protein (Arp): Arp6 with Swc6 for SWR1 and Arp5 with Ies2 for INO80. Creating torsional strain through this dual grip could be an attractive mechanism for stimulating H2A-H2B dimer exchange (7, 36, 132). Regarding the site of ATPase motor action on the nucleosome, it is important to point out that INO80 differs from remodelers in the SWI/SNF, ISWI, and CHD families, as well as SWR1 in the INO80 family. Instead of SHL2, the INO80 ATPase motor binds close to the nucleosome edge and appears to translocate on DNA near SHL5 (7, 18, 36). This result implies that remodelers target the two sites on the nucleosome shown to accommodate twist defects (SHL2 and SHL5), while also indicating that sliding can be accomplished by translocases engaging DNA at more than one site on the nucleosome. Based on the ATPase motor acting at SHL2, the second variant of the bulge/loop propagation model proposes that the DNA loop is directly created by the ATPase motor at the dyad (25, 141) (Figure 3e). This model is consistent with interpretations of single-molecule data but departs from the original idea of an invading DNA translocase, stimulating unwrapping and rewrapping at the nucleosome edge. A potential complication for this variation is the negative supercoiling that would be created with a dyad-placed loop. On naked DNA, the RSC remodeler was shown to translocate in approximately 2-bp steps (109), close to the 1-bp stepsize expected for an inchwormbased mechanism of translocation (48, 69, 107, 126). With this small stepsize, a loop at the nucleosome dyad would be increasingly negatively supercoiled due to the corkscrew motions of DNA being fed into it. Although it does not preclude loop propagation, a supercoiled loop should be highly sensitive to breaks in the DNA backbone. Yet nicks and single-stranded DNA gaps outside the ATPase site, which would allow relaxation and thus alter energetics of an extruded loop, have little effect on nucleosome sliding (4, 67, 77, 82, 101, 104, 142). Although the nick and gap findings have been used to argue against twist diffusion, twist defects differ from loops in that DNA does not detach from the histone surface, and therefore, nucleosomal DNA is not free to rotate but is constrained to a defined helical path (123). Adding further challenges to interpreting nucleosome sliding by loop propagation, remodelers have been found to shift DNA off the nucleosome in approximately 1-bp steps (31, 51). Such movement is most consistent with a corkscrew shift of the duplex out the exit side. Thus, we can assume that DNA most likely rotates as it is shifted by remodelers, despite the results of previous
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+[Page 9]
+
+a Entry
+
+Exit Dyad
+
+ATPase
+
+SHL2 binding site
+
+Twist defect
+
+Closed state
+
+Open state
+
++1 nt ATP hydrolysis
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+ATP binding
+
+Closed state
+
++1-bp twist defect
+
+Closed state
+
+?
+
+Repeated cycles of hydrolysis and translocation
+
++1-bp twist defect
+
+Figure 4 Models of nucleosome sliding via twist defects. (a) Overview of remodeler-catalyzed DNA motions, showing that DNA first shifts onto the nucleosome from the entry side, is transiently absorbed on the nucleosome after being expelled from superhelix location (SHL) 2, and then shifts off the exit side. (b) Possible pathways for how remodeler ATPases stimulate 1–base pair (bp) shifts of DNA around the nucleosome.
+
+experimental designs blocking rotation with DNA hairpins and streptavidin, which appeared to allow nucleosome sliding (4, 5, 112, 123).
+
+TWIST DIFFUSION MECHANISMS OF NUCLEOSOME SLIDING BY CHROMATIN REMODELERS Uncovering Timing of DNA Movements on the Nucleosome Recent single-molecule experiments using three-color Förster resonance energy transfer (FRET) have revealed real-time, asynchronous movement of entry and exit DNA during sliding by remodelers (99). These results have impacted our understanding of chromatin remodeling in several ways. First, by simultaneously monitoring movements of entry and exit DNA, the threecolor FRET experiments showed unequivocally that entry DNA is pulled onto the nucleosome before exit DNA is pushed off (Figure 4a). This ordering of DNA movements corrects a mistaken interpretation from previous two-color FRET experiments, where DNA was proposed to shift off the nucleosome before new DNA was pulled on (31). The previous interpretation arose from comparison of time delays between nucleosomes with two different orientations of the Widom 601 positioning sequence. The Widom 601 sequence (78) is asymmetric in terms of the strength of histone–DNA contacts (49) and unwrapping propensity (88), with one side possessing a higher number of TA dinucleotide steps at minor groove contacts that correlate with
+
+[Page 10]
+
+stronger histone–DNA interactions. Although this was not known at the time, Chd1 and ISWI remodelers shift 601 nucleosomes faster or slower when the TA-rich side is on the exit or entry half of the nucleosome, respectively (70, 133). The previous two-color model for DNA timing arose from comparing nucleosomes having the TA-rich sequence on the same side as the DNA fluorophore—on the front half with the entry-side probe (slower) and on the back half with the exit-side probe (faster) (31). In subsequent two-color single-molecule FRET experiments, where the 601 was maintained in the same orientation when entry and exit probes were separately observed, the time delays were similar for entry and exit DNA movement (63). Another important finding from the three-color FRET experiments was that nucleosomes transiently absorb DNA during the sliding reaction (Figure 4a). The time delay between movement of entry- and exit-side DNA was ATP dependent, which means that, after the remodeler pulled entry DNA onto the nucleosome, the nucleosome absorbed at least one extra bp before a subsequent ATP-binding event stimulated movement of DNA out the exit side (99). As suggested by cross-linking experiments using gapped substrates, as few as 3–4 bp of DNA could be shifted around the nucleosome, indicating that large loops are not necessary for ATP-driven repositioning (99). Although not direct proof of twist diffusion, the small increments and delays between entry and exit DNA movements are consistent with twist defect intermediates.
+
+Initiating DNA Movement Around the Nucleosome Through Twist Defects
+
+Strong support for remodeler-induced twist defects on the nucleosome came from cross-linking studies with the Chd1 remodeler (134). Simply through binding and without ATP hydrolysis, the remodeler altered DNA twist on the nucleosome in a nucleotide-dependent manner. In nucleotide-free and ADP-bound conditions, the ATPase motor reduced DNA twist at SHL2, corresponding with a shift of nucleosomal DNA on the entry side toward the remodeler. This result was unanticipated, as a pure inchworm mode of translocation would predict DNA movement toward the remodeler upon ATPase closure, achieved by ATP binding. By alternating between different conformations of DNA, the remodeler has been proposed to behave as a Brownian ratchet, using changes in DNA twist as the core mechanism of DNA translocation (16, 17, 134) (Figure 4a). Our understanding of chromatin remodelers has been pushed to a new level with an explosion of nucleosome-bound complexes solved by cryo-electron microscopy (cryo-EM) (6, 7, 21, 36, 38, 39, 50, 71, 75, 116, 128, 132, 139, 140). With regard to the nucleosome sliding mechanism, several cryo-EM structures have beautifully revealed how initial DNA movements prior to ATP binding are achieved (21, 71, 139), bringing us to an exciting new level of understanding. Strikingly, the open state of the ATPase creates a DNA bulge at SHL2 that shifts the register of the tracking but not the guide strand of DNA on the entry side. In the open state, ATPase lobe 2 presents its DNA-binding surface approximately 6 Å from the surface of unbound nucleosomal DNA at SHL2, effectively forcing the tracking strand to shift by one phosphate to take this detour (Figure 5a). The DNA backbone occupies the same path outside the ATPase binding site, yet this shift appears to change the register of histone-DNA contacts for just the tracking strand by 1 nucleotide over the entire 50-bp segment on the entry side (Figure 4b, step 1). Although the path of the guide strand is also perturbed at the ATPase binding site, it maintains its original register. This unexpected shift of only one strand is reminiscent of earlier single-molecule unzipping studies, which showed that each minor groove binding site on the histone core binds to one DNA strand independently of the other (49). To maintain base pairing, the shift of the tracking strand causes tilting of stacked bp (Figure 5b). Interestingly, the bp tilt appears to be analogous to the tilt accompanying the
+
+[Page 11]
+
+ATPase lobe 1
+
+5'
+
+3'
+
+5'
+
+3'
+
+Gating helix
+
+Open
+
+(SHL3)
+
+SHL2 Histone core
+
+Tracking strand
+
+Histone H3 (SHL4)
+
+(SHL2.5)
+
+Guide strand
+
+5'
+
+Histone H4 5'
+
+3' Aligned on histone core
+
+Open ATPase (ISWI bound to ADP, 6IRO)
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+Snf2-specific insertions
+
+3'
+
+Closed
+
+ATPase lobe 2
+
+5'
+
+5'
+
+3'
+
+3'
+
+5'
+
+3'
+
+Aligned on ATPase lobe 2 Closed ATPase (ISWI bound to ADP•BeF3–, 6JYL)
+
+Figure 5 Contacts and structural changes associated with the open-state ATPase at superhelix location (SHL) 2. (a) In the open state, the shifted position of ATPase lobe 2 on the nucleosome alters the path for the tracking strand, which correlates with a change in register (red ovals) of the tracking strand (orange) but not the guide strand (yellow). (b) Due to the shift in register of the tracking strand, DNA base pairs show a marked tilting, which continues outside of the SHL2 binding site. (c) Base pair tilting originates in the ATPase motor. Superpositioning lobe 2 from a closed ATPase (gray; 6JYL) onto that of an open ATPase (colored; 6IRO) shows a similar path of the DNA backbone even though the register of the two strands differs by 1 nucleotide, evident as base pair (bp) tilting. This is consistent with a change in DNA geometry due to contacts made by both ATPase lobes. (d) Snf2-specific insertions on lobe 2 contact the histone core. In most nucleosome-bound structures, the polypeptide segment immediately preceding the gating helix contacts residues on the L1 loop of histone H3 (sticks). The loop prior to this segment is often disordered; however, in nucleosome-bound complexes of Chd1 (116), CHD4 (38), and SNF2h (6), this loop was ordered and appeared to make more extensive contacts with histone H3.
+
+1-bp difference at SHL2 in isolated nucleosome structures (Figure 2c). In fact, the bp tilting caused by the tracking strand shift is what one would expect for a +1-bp twist defect at each SHL, since a staggered bp insertion would place the tracking strand locally ahead of the guide strand, favoring bp tilting in the same direction. Aside from bp tilting, however, DNA geometry for a +1-bp insertion would require greater untwisting of the duplex and therefore would differ from the effects of tracking-strand-only movement seen in this case. Nonetheless, the propagation of bp tilting throughout the entry side shows that a new and unexpected geometry of DNA is possible on the nucleosome. Since it has not been seen in any previous nucleosome structures, such bp tilting can be assumed to have an energetic cost that is paid for by binding of the ATPase motor. The strain from bp tilting may therefore assist in subsequent movement of the guide strand (16, 17, 138). The origin of the bp tilting is intrinsic to the ATPase conformation itself. Both DNA strands at SHL2 are contacted by both lobes of the ATPase motor. Importantly, however, the tracking strand segment bound by lobe 2 base pairs with the guide strand segment bound by lobe 1. As it transitions between closed and open states, the ATPase motor appears to constrain the duplex to two different geometries. When these two states are aligned on ATPase lobe 2, both ATPase lobes appear to keep a similar grip on the DNA duplex, yet the register of the phosphate backbone for one strand differs between these two states, demonstrating the existence of bp tilting within the ATPase binding site (Figure 5c). Thus, the ATPase motor likely behaves as a nucleotidedependent clamp, enforcing two distinct geometries of duplex DNA at its binding site as it alternates between open and closed states. Whereas the tracking strand shifts by 1 nucleotide upon binding of the ATPase motor in the open state, the guide strand likely shifts upon closure of the ATPase motor, stabilized by ATP
+
+[Page 12]
+
+binding. Guide strand movement would be favored by both the two-lobed grip of the ATPase motor, which locally restricts the DNA duplex to a more canonical bp tilt, and the strain from bp tilting due to the tracking and guide strands being out of register in the open state. Thus, conformational changes in DNA induced by the ATPase motor can explain a 1-bp shift of entryside DNA up to the remodeler binding site.
+
+Inchworming DNA Past the Histone Core
+
+How are movements of nucleosomal DNA propagated past the remodeler binding site? A key question is whether the DNA geometry and energetics permit a twist defect at SHL2 in the presence of a translocating ATPase motor. In the simplest scenario, where a +1-bp twist defect is disfavored, closure of the ATPase would simultaneously shift the tracking and guide strand toward the dyad as the entry-side guide strand is pulled in (71, 138, 139) (Figure 4, step 1→3). This shift would push a bp toward the dyad in a corkscrew motion, creating a twist defect in another location. This simultaneous shift would be driven by the geometrical constraints placed on DNA by the ATPase motor as it transitions from an open to closed (ATP-bound) state, as well as by histone–DNA contacts and DNA duplex geometry outside the ATPase binding site. In this case, the remodeler ATPase would shift DNA toward the dyad in concert with the inchworm motions expected for a 3 →5 single-stranded translocase, with closure of the ATPase motor ratcheting DNA past lobe 1. Since sliding requires DNA to shift relative to the histone core, lobe 1 must remain in a similar location on the nucleosome during this process. When bound at SHL2, ATPase lobe 1 contacts DNA at SHL6 on the opposite gyre (21, 38, 39, 71, 75, 116, 139), and it has been suggested that this may help anchor lobe 1 in place during translocation (75, 138). Consistent with a functional importance of the SHL6 contact, basic residues on lobe 1 facing the opposite gyre are conserved across different remodeler families and were shown to be necessary for full nucleosome sliding activity of an isolated SWI/SNF ATPase subunit (75). Yet these secondary DNA contacts are much less extensive than those in the primary DNA-binding cleft, making it unclear whether these residues have an anchoring role. However, movement of nucleosomal DNA relative to the histone core could be ensured by contacts that lobe 2 makes with the histone core (71). In the open state, where the tracking strand has already shifted by 1 nucleotide, lobe 2 contacts the histone core in a manner that could block a backsliding of DNA toward the entry side (21, 71, 139). In particular, lobe 2 contains several helical elements uniquely inserted in remodeler-type ATPases, called HD2 or the B2 domain (32, 119). The loop immediately preceding one helix of this Snf2-specific insertion, called the gating helix (71), packs against histone H3 residues at the L1/L2 loops that coordinate SHL2.5 (Figure 5d). In addition to the open state, similar contacts have also been observed for several remodeler ATPases in the closed state (6, 38, 39, 50, 71, 116, 139, 140). Thus, as the DNA duplex is pressed back into a more canonical geometry with closure of the ATPase motor, lobe 2 may ensure that the 1-nucleotide bulge of the tracking strand and compensatory movement of the guide strand are directed from SHL2.5 toward the dyad.
+
+Pumping DNA with Twist Defects
+
+Instead of entry DNA moving in concert with DNA shifting toward the dyad, another possibility is that DNA movement is discontinuous, with a shift of only DNA on the entry side creating a twist defect (Figure 4, step 1→2). In this scenario, DNA could be pumped toward the dyad with repeated formation and elimination of twist defects, with a 1-bp corkscrew shift toward the dyad removing each twist defect at SHL2 (Figure 4, step 2→3). In this case, the ATPase motor, which binds duplex DNA tightly in the closed ATP-bound form, would remain clamped on DNA
+
+[Page 13]
+
+during relaxation back to canonical twist. Importantly, a canonical twist of DNA at SHL2 was shown to be reinforced by the Chd1 remodeler in the presence of ADP·BeF3 − and transition state analogs, suggesting that the relaxation back to canonical twist could potentially be a trigger for ATP hydrolysis (17, 134). In this fashion, the ATPase motor would behave as a Brownian ratchet, with the open and closed states of the ATPase stabilizing otherwise high-energy states of DNA that relax to new positions through thermal motion. ATP binding and hydrolysis drive the cycle forward by switching the ATPase between open and closed states, resetting the position of the motor for another round as the neighboring segment corkscrew shifts toward the dyad. This twist defect mechanism notably differs from other translocation models by not requiring an anchoring domain to shift DNA.
+
+The Gating Helix Is a Remodeler-Specific Element Poised to Create Twist Defects on the Nucleosome Access provided by Kyoto University on 01/07/21. For personal use only.
+
+An example of a remodeler-induced twist defect on the nucleosome was revealed with the structure of the SWR1-nucleosome complex (Figure 6a), which provided unique insight into how a more extreme DNA distortion can be created by a remodeler ATPase and accommodated by the nucleosome (132). SWR1 is a large, multisubunit complex dedicated to histone replacement (H2A/H2B with H2A.Z/H2B) and is incapable of repositioning nucleosomes (85, 97). Nonetheless, this complex reveals intriguing structural features that might apply to other remodeler-type ATPases, including those that slide nucleosomes. The twist defect observed in the SWR1–nucleosome structure corresponds to a 1-bp shift of DNA on the entry side onto SHL2, with the ATPase-bound DNA bulging away from its canonical path on the nucleosome. The ATPase appears to induce a structural distortion of the duplex at the edge of its binding site that manifests as a widening and flattening of the minor groove, which sets DNA on a unique trajectory compared to other remodeler–nucleosome complexes (Figure 6b). Trapped in an ADP·BeF3 − -bound state, the SWR1 ATPase has a closed conformation that is nearly identical to those of other remodelers bound to nucleosomes with ADP·BeF3 − (132). With this matching domain arrangement, the ATPase motor locally coordinates the majority of the bound duplex DNA along a similar path as other remodelers. A striking difference in local DNA trajectory, however, occurs where the gating helix of SWR1 packs into the widened minor groove (Figure 6c). In the SWR1 structure, the N-terminal end of the gating helix is sterically incompatible with the canonical path of the guide strand, and this steric conflict is relieved by a sharp bend of the guide strand, which redirects the trajectory of the DNA duplex. In all other structures of remodeler ATPases solved to date, the gating helix and accompanying Snf2-specific insertions occupy a similar location as in the SWR1 structure. However, the N-terminal end of the gating helix is unwound in all other structures bound to nucleosomal DNA compared to the same remodeler types solved in isolation (Figure 6d). This structural incompatibility between canonical placement of the guide strand and the gating helix N terminus suggests a possible conformational switch, where helical extension of the gating helix N terminus is coupled to kinking of the guide strand and local distortion of the duplex, as observed in the SWR1–nucleosome structure. Although the underlying mechanisms remain to be clarified, point mutations of the gating helix in SWI/SNF and a deletion of the loop preceding the gating helix in Chd1 dramatically slowed or stopped nucleosome sliding (71, 116). In addition to the gating helix, two other aspects contribute to the localized DNA distortion in the SWR1 structure: the tight grip of the closed ATPase on the duplex and the 1-bp insertion. The 1-bp insertion at SHL2 reduced the twist of DNA. However, since the closed ATPase enforces a canonical twist of the duplex for approximately 6–7 bp, reduced twist was not distributed over
+
+[Page 14]
+
+Tracking strand
+
+Guide strand
+
+SHL2 Snf2-specific insertion ATPase motor Gating helix SWR1-nucleosome (6GEJ) ISWI-nucleosome (6JYL)
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+SWR1-nucleosome complex (6GEJ) Chd1
+
+SWR1 (6GEJ) ISWI (6JYL)
+
+Nucleosome alone (1KX5)
+
+ISWI
+
+SWI/SNF
+
+Gating helix 5O9G (ADP•BeF3–) 3MWY
+
+6IRO (ADP) 5JRX
+
+5Z3O (ADP) 5HRZ
+
+SHL2.5
+
+Gating helix
+
+SWR1-nucleosome (6GEJ) Nucleosome alone (1KX5)
+
+6FTX (ADP•BeF3–) 3MWY
+
+6JYL (ADP•BeF3–) 5JRX
+
+5Z3T (ADP•BeF3–) 5HRZ
+
+Figure 6 SWR1 distorts DNA on the nucleosome. (a) Overview of the SWR1–nucleosome complex, bound with ADP·BeF3 − (132). (b) Comparison of DNA conformations at superhelix location (SHL) 2. Histone and remodeler proteins are omitted for clarity. (c) A kink in the guide strand alters the path of the DNA duplex in the SWR1 complex. Shown is a surface–backbone representation of the SWR1 ATPase motor (tan, blue; 6GEJ) bound to a segment of DNA surrounding SHL2. The position of the gray DNA results from superimposing the ATPase motor of an ISWI remodeler (6JYL), also bound to ADP·BeF3 − , with the SWR1 ATPase motor. For clarity, the ISWI ATPase motor is not shown. (d) Comparison Snf2-specific insertions on ATPase lobe 2 for remodelers bound to nucleosomes (solid) to nucleosome-free structures (red outlines). For each pair, superpositioning ATPase lobe 2 of each unbound structure onto the nucleosome complex suggests steric incompatibility between the gating helix N terminus and the guide strand. (e) The SWR1 ATPase lifts the DNA backbone away from SHL2.5, partially disrupting histone contacts. This shifts the minor groove away from H3 arginine 83, which appears to no longer be inserted (not shown). The structure of the nucleosome alone (white; 1KX5) is shown for comparison.
+
+the full helical turn but instead was localized to a short segment between the ATPase motor and histone contacts at SHL2.5. Due to the distorted conformation of the DNA duplex, one of the DNA strands was pulled away from the histone core at SHL2.5 (Figure 6e). Compared to other remodelers bound to the nucleosome, the SWR1 ATPase sits 1 bp closer to the dyad. Therefore, for remodeler ATPases that bind closer to SHL2.5, a similar distortion of the double helix could have a more significant impact on SHL2.5 histone–DNA contacts. Interestingly, when a disulfide bond was introduced at this L1/L2 loop of H3 and H4, immediately beneath the contact made
+
+[Page 15]
+
+by the gating helix, nucleosome sliding by ISWI and RSC was blocked or perturbed, respectively, suggesting that the conformation and/or dynamics of this region may be coupled to sliding activity (108). If the gating helix of other remodeler ATPases were used to kink the guide strand on the nucleosome, then such localized DNA distortion may assist DNA translocation in several ways. For one, this +1-bp twist defect could constitute the basic step of DNA translocation through twist diffusion (Figure 4b, step 1→2→3). Since DNA untwisting is focused into a short segment, the +1-bp insertion would be more energetically costly than if it were allowed to be distributed, making transfer to another location on the nucleosome energetically downhill. Another possibility is that the gating helix remains extended, distorting the DNA duplex, which may enable the ATPase motor to cycle through multiple rounds of ATP hydrolysis in a rapid translocation phase (Figure 4b, step 2). Although it remains to be demonstrated for a remodeler translocating on the nucleosome, an extended gating helix has been observed for CSB/Rad26 bound to the double-stranded–singlestranded DNA junction behind RNA polymerase II (Pol II) (135). CSB/Rad26 helps Pol II transcribe through pauses on undamaged DNA, and, consistent with this role, it was oriented to translocate toward Pol II, which could assist a stalled polymerase by pushing it in the direction of transcription (135). In the structure, the extended gating helix, which would be incompatible with duplex DNA, appears like a rudder just ahead of where the two DNA strands reanneal. In addition to assisting Pol II, CSB/Rad26 can reposition nucleosomes (22, 24, 130), raising the possibility that translocation on DNA with an extended gating helix may also occur on the nucleosome. More generally, the gating helix and Snf2-specific insertions are positioned analogously to the duplex-melting pin elements of true helicases, immediately in front of the translocating ATPase motor (54). Unlike helicases, however, Snf2-type motors bind and appear to define a structural template for duplex DNA, as would be expected for annealing helicases. Thus, the gating helix could be used to distort the duplex, and thus antagonize DNA-bound factors immediately in the path of the motor, without melting DNA. Most DNA-binding factors are extremely sensitive to DNA groove width (62), and therefore, a groove-widening and duplex-kinking element like the Snf2-specific insertions would be an ideal tool to stimulate dissociation. Such a mechanism could explain action of remodeler-type ATPases like Rad54 (28) and Mot1 (127) that disrupt nonnucleosomal DNA binding proteins.
+
+OUTLOOK Ever since the discovery of ATP-dependent enzymes that alter chromatin structure, understanding the mechanistic basis of nucleosome sliding has remained a major goal of the remodeling field. Equipped with new insights into initiation of the nucleosome remodeling process, we are now entering an exciting new phase. Further advancing our understanding will require exploring unresolved questions for both nucleosomes and remodelers. For nucleosomes, what capacity exists for twist defects beyond what has been observed in crystal structures? How do DNA sequence and histone variants affect the location and dynamics of twist defects? The histone core has been captured with alternative structures beneath the DNA wrapping (13, 14), yet how such dynamic changes affect DNA are presently unknown. For remodelers, do the ATPases that translocate DNA at SHL2 create twist defects analogous to those seen with SWR1? What is the trigger for ATP hydrolysis? Unlike the RSC remodeler, ISWI and Chd1 shift DNA in multi-bp bursts (15, 31, 51, 56, 63, 96). Does this reflect differences in the translocation process at SHL2, or does it arise from unique regulation? Does INO80, acting around SHL5, utilize a mechanism similar to those of remodelers that slide nucleosomes from SHL2? Addressing these and other emerging questions will no doubt continue to reveal fascinating secrets of these remarkable machines.
+
+[Page 16]
+
+DISCLOSURE STATEMENT The authors are not aware of any affiliations, memberships, funding, or financial holdings that might be perceived as affecting the objectivity of this review.
+
+ACKNOWLEDGMENTS We apologize to colleagues whose work was not included due to space constraints. This work was supported by the National Institutes of Health (R01 GM084192). LITERATURE CITED
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+1. Aalfs JD, Narlikar GJ, Kingston RE. 2001. Functional differences between the human ATP-dependent nucleosome remodeling proteins BRG1 and SNF2H. J. Biol. Chem. 276:34270–78 2. Alfert A, Moreno N, Kerl K. 2019. The BAF complex in development and disease. Epigenet. Chromatin 3. CD Allis, Jenuwein T. 2016. The molecular hallmarks of epigenetic control. Nat. Rev. Genet. 17:487–500 4. Aoyagi S, Hayes JJ. 2002. hSWI/SNF-catalyzed nucleosome sliding does not occur solely via a twistdiffusion mechanism. Mol. Cell. Biol. 22:7484–90 5. Aoyagi S, Wade PA, Hayes JJ. 2003. Nucleosome sliding induced by the xMi-2 complex does not occur exclusively via a simple twist-diffusion mechanism. J. Biol. Chem. 278:30562–68 6. Armache JP, Gamarra N, Johnson SL, Leonard JD, Wu S, et al. 2019. Cryo-EM structures of remodelernucleosome intermediates suggest allosteric control through the nucleosome. eLife 8:e46057 7. Ayala R, Willhoft O, Aramayo RJ, Wilkinson M, McCormack EA, et al. 2018. Structure and regulation of the human INO80-nucleosome complex. Nature 556:391–95 8. Bartholomew B. 2014. Regulating the chromatin landscape: structural and mechanistic perspectives. Annu. Rev. Biochem. 83:671–96 9. Bazett-Jones DP, Côté J, Landel CC, Peterson CL, Workman JL. 1999. The SWI/SNF complex creates loop domains in DNA and polynucleosome arrays and can disrupt DNA-histone contacts within these domains. Mol. Cell. Biol. 19:1470–78 10. Beard P. 1978. Mobility of histones on the chromosome of simian virus 40. Cell 15:955–67 11. Becker PB, Hörz W. 2002. ATP-dependent nucleosome remodeling. Annu. Rev. Biochem. 71:247–73 12. Becker PB, Workman JL. 2013. Nucleosome remodeling and epigenetics. Cold Spring Harb. Perspect. Biol. 5:a017905 13. Bilokapic S, Strauss M, Halic M. 2018. Histone octamer rearranges to adapt to DNA unwrapping. Nat. Struct. Mol. Biol. 25:101–8 14. Bilokapic S, Strauss M, Halic M. 2018. Structural rearrangements of the histone octamer translocate DNA. Nat. Commun. 9:1330 15. Blosser TR, Yang JG, Stone MD, Narlikar GJ, Zhuang X. 2009. Dynamics of nucleosome remodelling by individual ACF complexes. Nature 462:1022–27 16. Bowman GD. 2019. Uncovering a new step in sliding nucleosomes. Trends Biochem. Sci. 44:643–45 17. Bowman GD, Deindl S. 2019. Remodeling the genome with DNA twists. Science 366:35–36 18. Brahma S, Udugama MI, Kim J, Hada A, Bhardwaj SK, et al. 2017. INO80 exchanges H2A.Z for H2A by translocating on DNA proximal to histone dimers. Nat. Commun. 8:15616 19. Brandani GB, Niina T, Tan C, Takada S. 2018. DNA sliding in nucleosomes via twist defect propagation revealed by molecular simulations. Nucleic Acids Res. 46:2788–801 20. Cairns BR, Lorch Y, Li Y, Zhang M, Lacomis L, et al. 1996. RSC, an essential, abundant chromatinremodeling complex. Cell 87:1249–60 21. Chittori S, Hong J, Bai Y, Subramaniam S. 2019. Structure of the primed state of the ATPase domain of chromatin remodeling factor ISWI bound to the nucleosome. Nucleic Acids Res. 47:9400–9 22. Cho I, Tsai PF, Lake RJ, Basheer A, Fan HY. 2013. ATP-dependent chromatin remodeling by Cockayne syndrome protein B and NAP1-like histone chaperones is required for efficient transcription-coupled DNA repair. PLOS Genet. 9:e1003407
+
+[Page 17]
+
+23. Chua EY, Vasudevan D, Davey GE, Wu B, Davey CA. 2012. The mechanics behind DNA sequencedependent properties of the nucleosome. Nucleic Acids Res. 40:6338–52 24. Citterio E, Van Den Boom V, Schnitzler G, Kanaar R, Bonte E, et al. 2000. ATP-dependent chromatin remodeling by the Cockayne syndrome B DNA repair-transcription-coupling factor. Mol. Cell. Biol. 20:7643–53 25. Clapier CR, Cairns BR. 2009. The biology of chromatin remodeling complexes. Annu. Rev. Biochem. 78:273–304 26. Clapier CR, Iwasa J, Cairns BR, Peterson CL. 2017. Mechanisms of action and regulation of ATPdependent chromatin-remodelling complexes. Nat. Rev. Mol. Cell Biol. 18:407–22 27. Côté J, Quinn J, Workman JL, Peterson CL. 1994. Stimulation of GAL4 derivative binding to nucleosomal DNA by the yeast SWI/SNF complex. Science 265:53–60 28. Crickard JB, Greene EC. 2019. Helicase mechanisms during homologous recombination in Saccharomyces cerevisiae. Annu. Rev. Biophys. 48:255–73 29. Davey CA, Sargent DF, Luger K, Maeder AW, Richmond TJ. 2002. Solvent mediated interactions in the structure of the nucleosome core particle at 1.9 a resolution. J. Mol. Biol. 319:1097–113 30. Dechassa ML, Sabri A, Pondugula S, Kassabov SR, Chatterjee N, et al. 2010. SWI/SNF has intrinsic nucleosome disassembly activity that is dependent on adjacent nucleosomes. Mol. Cell 38:590–602 31. Deindl S, Hwang WL, Hota SK, Blosser TR, Prasad P, et al. 2013. ISWI remodelers slide nucleosomes with coordinated multi-base-pair entry steps and single-base-pair exit steps. Cell 152:442–52 32. Dürr H, Korner C, Muller M, Hickmann V, Hopfner KP. 2005. X-ray structures of the Sulfolobus solfataricus SWI2/SNF2 ATPase core and its complex with DNA. Cell 121:363–73 33. Edayathumangalam RS, Weyermann P, Dervan PB, Gottesfeld JM, Luger K. 2005. Nucleosomes in solution exist as a mixture of twist-defect states. J. Mol. Biol. 345:103–14 34. Eisen JA, Sweder KS, Hanawalt PC. 1995. Evolution of the SNF2 family of proteins: subfamilies with distinct sequences and functions. Nucleic Acids Res. 23:2715–23 35. Engeholm M, de Jager M, Flaus A, Brenk R, van Noort J, Owen-Hughes T. 2009. Nucleosomes can invade DNA territories occupied by their neighbors. Nat. Struct. Mol. Biol. 16:151–58 36. Eustermann S, Schall K, Kostrewa D, Lakomek K, Strauss M, et al. 2018. Structural basis for ATPdependent chromatin remodelling by the INO80 complex. Nature 556:386–90 37. Fan HY, He X, Kingston RE, Narlikar GJ. 2003. Distinct strategies to make nucleosomal DNA accessible. Mol. Cell 11:1311–22 38. Farnung L, Ochmann M, Cramer P. 2020. Nucleosome-CHD4 chromatin remodeler structure maps human disease mutations. eLife 9:e56178 39. Farnung L, Vos SM, Wigge C, Cramer P. 2017. Nucleosome-Chd1 structure and implications for chromatin remodelling. Nature 550:539–42 40. Flaus A, Martin DM, Barton GJ, Owen-Hughes T. 2006. Identification of multiple distinct Snf2 subfamilies with conserved structural motifs. Nucleic Acids Res. 34:2887–905 41. Flaus A, Owen-Hughes T. 2003. Dynamic properties of nucleosomes during thermal and ATP-driven mobilization. Mol. Cell. Biol. 23:7767–79 42. Flaus A, Richmond TJ. 1998. Positioning and stability of nucleosomes on MMTV 3 LTR sequences. J. Mol. Biol. 275:427–41 43. Gaspar-Maia A, Alajem A, Meshorer E, Ramalho-Santos M. 2011. Open chromatin in pluripotency and reprogramming. Nat. Rev. Mol. Cell Biol. 12:36–47 44. Gavin I, Horn PJ, Peterson CL. 2001. SWI/SNF chromatin remodeling requires changes in DNA topology. Mol. Cell 7:97–104 45. Giaimo BD, Ferrante F, Herchenröther A, Hake SB, Borggrefe T. 2019. The histone variant H2A.Z in gene regulation. Epigenet. Chromatin 12:37 46. Gorbalenya AE, Koonin EV. 1993. Helicases: amino acid sequence comparisons and structure-function relationships. Curr. Opin. Struct. Biol. 3:419–29 47. Gottesfeld JM, Belitsky JM, Melander C, Dervan PB, Luger K. 2002. Blocking transcription through a nucleosome with synthetic DNA ligands. J. Mol. Biol. 321:249–63 48. Gu M, Rice CM. 2010. Three conformational snapshots of the hepatitis C virus NS3 helicase reveal a ratchet translocation mechanism. PNAS 107:521–28
+
+[Page 18]
+
+49. Hall MA, Shundrovsky A, Bai L, Fulbright RM, Lis JT, Wang MD. 2009. High-resolution dynamic mapping of histone-DNA interactions in a nucleosome. Nat. Struct. Mol. Biol. 16:124–29 50. Han Y, Reyes AA, Malik S, He Y. 2020. Cryo-EM structure of SWI/SNF complex bound to a nucleosome. Nature 579:452–55 51. Harada BT, Hwang WL, Deindl S, Chatterjee N, Bartholomew B, Zhuang X. 2016. Stepwise nucleosome translocation by RSC remodeling complexes. eLife 5:e10051 52. Hargreaves DC, Crabtree GR. 2011. ATP-dependent chromatin remodeling: genetics, genomics and mechanisms. Cell Res. 21:396–420 53. Harp JM, Hanson BL, Timm DE, Bunick GJ. 2000. Asymmetries in the nucleosome core particle at 2.5 Å resolution. Acta Crystallogr. D 56:1513–34 54. Hauk G, Bowman GD. 2011. Structural insights into regulation and action of SWI2/SNF2 ATPases. Curr. Opin. Struct. Biol. 21:719–27 55. Havas K, Flaus A, Phelan M, Kingston R, Wade PA, et al. 2000. Generation of superhelical torsion by ATP-dependent chromatin remodeling activities. Cell 103:1133–42 56. Hwang WL, Deindl S, Harada BT, Zhuang X. 2014. Histone H4 tail mediates allosteric regulation of nucleosome remodelling by linker DNA. Nature 512:213–17 57. Imbalzano AN, Kwon H, Green MR, Kingston RE. 1994. Facilitated binding of TATA-binding protein to nucleosomal DNA. Nature 370:481–85 58. Ito T, Levenstein ME, Fyodorov DV, Kutach AK, Kobayashi R, Kadonaga JT. 1999. ACF consists of two subunits, Acf1 and ISWI, that function cooperatively in the ATP-dependent catalysis of chromatin assembly. Genes Dev. 13:1529–39 59. Jaskelioff M, Gavin IM, Peterson CL, Logie C. 2000. SWI-SNF-mediated nucleosome remodeling: role of histone octamer mobility in the persistence of the remodeled state. Mol. Cell. Biol. 20:3058–68 60. Kadoch C, Crabtree GR. 2015. Mammalian SWI/SNF chromatin remodeling complexes and cancer: mechanistic insights gained from human genomics. Sci. Adv. 1:e1500447 61. Kassabov SR, Zhang B, Persinger J, Bartholomew B. 2003. SWI/SNF unwraps, slides, and rewraps the nucleosome. Mol. Cell 11:391–403 62. Kim S, Brostromer E, Xing D, Jin J, Chong S, et al. 2013. Probing allostery through DNA. Science 339:816–19 63. Kirk J, Lee JY, Lee Y, Shin S, Lee E, et al. 2018. Yeast Chd1p remodels nucleosomes with unique DNA unwrapping and translocation dynamics. bioRxiv 376806. https://doi.org/10.1101/376806 64. Kornberg RD, Lorch Y. 1995. Interplay between chromatin structure and transcription. Curr. Opin. Cell Biol. 7:371–75 65. Kornberg RD, Lorch Y. 1999. Twenty-five years of the nucleosome, fundamental particle of the eukaryote chromosome. Cell 98:285–94 66. Kwon H, Imbalzano AN, Khavari PA, Kingston RE, Green MR. 1994. Nucleosome disruption and enhancement of activator binding by a human SW1/SNF complex. Nature 370:477–81 67. Längst G, Becker PB. 2001. ISWI induces nucleosome sliding on nicked DNA. Mol. Cell 8:1085–92 68. Längst G, Becker PB. 2004. Nucleosome remodeling: one mechanism, many phenomena? Biochim. Biophys. Acta 1677:58–63 69. Lee JY, Yang W. 2006. UvrD helicase unwinds DNA one base pair at a time by a two-part power stroke. Cell 127:1349–60 70. Levendosky RF, Bowman GD. 2019. Asymmetry between the two acidic patches dictates the direction of nucleosome sliding by the ISWI chromatin remodeler. eLife 8:e45472 71. Li M, Xia X, Tian Y, Jia Q, Liu X, et al. 2019. Mechanism of DNA translocation underlying chromatin remodelling by Snf2. Nature 567:409–13 72. Li W, Mills AA. 2014. Architects of the genome: CHD dysfunction in cancer, developmental disorders and neurological syndromes. Epigenomics 6:381–95 73. Lia G, Praly E, Ferreira H, Stockdale C, Tse-Dinh YC, et al. 2006. Direct observation of DNA distortion by the RSC complex. Mol. Cell 21:417–25 74. Linder P, Jankowsky E. 2011. From unwinding to clamping—the DEAD box RNA helicase family. Nat. Rev. Mol. Cell Biol. 12:505–16
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+[Page 19]
+
+75. Liu X, Li M, Xia X, Li X, Chen Z. 2017. Mechanism of chromatin remodelling revealed by the Snf2nucleosome structure. Nature 544:440–45 76. Lorch Y, Cairns BR, Zhang M, Kornberg RD. 1998. Activated RSC-nucleosome complex and persistently altered form of the nucleosome. Cell 94:29–34 77. Lorch Y, Davis B, Kornberg RD. 2005. Chromatin remodeling by DNA bending, not twisting. PNAS 102:1329–32 78. Lowary PT, Widom J. 1998. New DNA sequence rules for high affinity binding to histone octamer and sequence-directed nucleosome positioning. J. Mol. Biol. 276:19–42 79. Ludwigsen J, Klinker H, Mueller-Planitz F. 2013. No need for a power stroke in ISWI-mediated nucleosome sliding. EMBO Rep. 14:1092–97 80. Luger K, Mader AW, Richmond RK, Sargent DF, Richmond TJ. 1997. Crystal structure of the nucleosome core particle at 2.8 Å resolution. Nature 389:251–60 81. Makde RD, England JR, Yennawar HP, Tan S. 2010. Structure of RCC1 chromatin factor bound to the nucleosome core particle. Nature 467:562–66 82. McKnight JN, Jenkins KR, Nodelman IM, Escobar T, Bowman GD. 2011. Extranucleosomal DNA binding directs nucleosome sliding by Chd1. Mol. Cell. Biol. 31:4746–59 83. Meersseman G, Pennings S, Bradbury EM. 1992. Mobile nucleosomes—a general behavior. EMBO J. 11:2951–59 84. Mills AA. 2017. The chromodomain helicase DNA-binding chromatin remodelers: family traits that protect from and promote cancer. Cold Spring Harb. Perspect. Med. 7:a026450 85. Mizuguchi G, Shen X, Landry J, Wu WH, Sen S, Wu C. 2004. ATP-driven exchange of histone H2AZ variant catalyzed by SWR1 chromatin remodeling complex. Science 303:343–48 86. Narlikar GJ, Phelan ML, Kingston RE. 2001. Generation and interconversion of multiple distinct nucleosomal states as a mechanism for catalyzing chromatin fluidity. Mol. Cell 8:1219–30 87. Narlikar GJ, Sundaramoorthy R, Owen-Hughes T. 2013. Mechanisms and functions of ATP-dependent chromatin-remodeling enzymes. Cell 154:490–503 88. Ngo TT, Zhang Q, Zhou R, Yodh JG, Ha T. 2015. Asymmetric unwrapping of nucleosomes under tension directed by DNA local flexibility. Cell 160:1135–44 89. Nodelman IM, Bowman GD. 2013. Nucleosome sliding by Chd1 does not require rigid coupling between DNA-binding and ATPase domains. EMBO Rep. 14:1098–103 90. Ong MS, Richmond TJ, Davey CA. 2007. DNA stretching and extreme kinking in the nucleosome core. J. Mol. Biol. 368:1067–74 91. Owen-Hughes T, Utley RT, Côté J, Peterson CL, Workman JL. 1996. Persistent site-specific remodeling of a nucleosome array by transient action of the SWI/SNF complex. Science 273:513–16 92. Patel A, Chakravarthy S, Morrone S, Nodelman IM, McKnight JN, Bowman GD. 2013. Decoupling nucleosome recognition from DNA binding dramatically alters the properties of the Chd1 chromatin remodeler. Nucleic Acids Res. 41:1637–48 93. Pazin MJ, Kamakaka RT, Kadonaga JT. 1994. ATP-dependent nucleosome reconfiguration and transcriptional activation from preassembled chromatin templates. Science 266:2007–11 94. Pennings S, Meersseman G, Bradbury EM. 1991. Mobility of positioned nucleosomes on 5 S rDNA. J. Mol. Biol. 220:101–10 95. Peterson CL, Herskowitz I. 1992. Characterization of the yeast SWI1, SWI2, and SWI3 genes, which encode a global activator of transcription. Cell 68:573–83 96. Qiu Y, Levendosky RF, Chakravarthy S, Patel A, Bowman GD, Myong S. 2017. The Chd1 chromatin remodeler shifts nucleosomal DNA bidirectionally as a monomer. Mol. Cell 68:76–88.e6 97. Ranjan A, Wang F, Mizuguchi G, Wei D, Huang Y, Wu C. 2015. H2A histone-fold and DNA elements in nucleosome activate SWR1-mediated H2A.Z replacement in budding yeast. eLife 4:e06845 98. Richmond TJ, Davey CA. 2003. The structure of DNA in the nucleosome core. Nature 423:145–50 99. Sabantsev A, Levendosky RF, Zhuang X, Bowman GD, Deindl S. 2019. Direct observation of coordinated DNA movements on the nucleosome during chromatin remodelling. Nat. Commun. 10:1720 100. Saha A, Wittmeyer J, Cairns BR. 2002. Chromatin remodeling by RSC involves ATP-dependent DNA translocation. Genes Dev. 16:2120–34
+
+[Page 20]
+
+101. Saha A, Wittmeyer J, Cairns BR. 2005. Chromatin remodeling through directional DNA translocation from an internal nucleosomal site. Nat. Struct. Mol. Biol. 12:747–55 102. Saikrishnan K, Powell B, Cook NJ, Webb MR, Wigley DB. 2009. Mechanistic basis of 5 -3 translocation in SF1B helicases. Cell 137:849–59 103. Schiessel H, Widom J, Bruinsma RF, Gelbart WM. 2001. Polymer reptation and nucleosome repositioning. Phys. Rev. Lett. 86:4414–17 104. Schwanbeck R, Xiao H, Wu C. 2004. Spatial contacts and nucleosome step movements induced by the NURF chromatin remodeling complex. J. Biol. Chem. 279:39933–41 105. Sharma A, Jenkins KR, Héroux A, Bowman GD. 2011. Crystal structure of the chromodomain helicase DNA-binding protein 1 (Chd1) DNA-binding domain in complex with DNA. J. Biol. Chem. 286:42099– 106. Singleton MR, Dillingham MS, Gaudier M, Kowalczykowski SC, Wigley DB. 2004. Crystal structure of RecBCD enzyme reveals a machine for processing DNA breaks. Nature 432:187–93 107. Singleton MR, Dillingham MS, Wigley DB. 2007. Structure and mechanism of helicases and nucleic acid translocases. Annu. Rev. Biochem. 76:23–50 108. Sinha KK, Gross JD, Narlikar GJ. 2017. Distortion of histone octamer core promotes nucleosome mobilization by a chromatin remodeler. Science 355:aaa3761 109. Sirinakis G, Clapier CR, Gao Y, Viswanathan R, Cairns BR, Zhang Y. 2011. The RSC chromatin remodelling ATPase translocates DNA with high force and small step size. EMBO J. 30:2364–72 110. Sokpor G, Xie Y, Rosenbusch J, Tuoc T. 2017. Chromatin remodeling BAF (SWI/SNF) complexes in neural development and disorders. Front. Mol. Neurosci. 10:243 111. Spadafora C, Oudet P, Chambon P. 1979. Rearrangement of chromatin structure induced by increasing ionic strength and temperature. Eur. J. Biochem. 100:225–35 112. Strohner R, Wachsmuth M, Dachauer K, Mazurkiewicz J, Hochstatter J, et al. 2005. A “loop recapture” mechanism for ACF-dependent nucleosome remodeling. Nat. Struct. Mol. Biol. 12:683–90 113. Studitsky VM, Clark DJ, Felsenfeld G. 1994. A histone octamer can step around a transcribing polymerase without leaving the template. Cell 76:371–82 114. Studitsky VM, Kassavetis GA, Geiduschek EP, Felsenfeld G. 1997. Mechanism of transcription through the nucleosome by eukaryotic RNA polymerase. Science 278:1960–63 115. Studitsky VM, Walter W, Kireeva M, Kashlev M, Felsenfeld G. 2004. Chromatin remodeling by RNA polymerases. Trends Biochem. Sci. 29:127–35 116. Sundaramoorthy R, Hughes AL, El-Mkami H, Norman DG, Ferreira H, Owen-Hughes T. 2018. Structure of the chromatin remodelling enzyme Chd1 bound to a ubiquitinylated nucleosome. eLife 7:e35720 117. Suto RK, Edayathumangalam RS, White CL, Melander C, Gottesfeld JM, et al. 2003. Crystal structures of nucleosome core particles in complex with minor groove DNA-binding ligands. J. Mol. Biol. 326:371– 118. Tan S, Davey CA. 2011. Nucleosome structural studies. Curr. Opin. Struct. Biol. 21:128–36 119. Thomä NH, Czyzewski BK, Alexeev AA, Mazin AV, Kowalczykowski SC, Pavletich NP. 2005. Structure of the SWI2/SNF2 chromatin-remodeling domain of eukaryotic Rad54. Nat. Struct. Mol. Biol. 12:350–56 120. Tong JK, Hassig CA, Schnitzler GR, Kingston RE, Schreiber SL. 1998. Chromatin deacetylation by an ATP-dependent nucleosome remodelling complex. Nature 395:917–21 121. Tsukiyama T, Palmer J, Landel CC, Shiloach J, Wu C. 1999. Characterization of the imitation switch subfamily of ATP-dependent chromatin-remodeling factors in Saccharomyces cerevisiae. Genes Dev. 13:686–97 122. Tsukiyama T, Wu C. 1995. Purification and properties of an ATP-dependent nucleosome remodeling factor. Cell 83:1011–20 123. van Holde K, Yager T. 2003. Models for chromatin remodeling: a critical comparison. Biochem. Cell Biol. 81:169–72 124. van Holde KE, Yager TD. 1985. Nucleosome motion: evidence and models. In Structure and Function of the Genetic Apparatus, ed. C Nicolini, POP Ts’o, pp. 35–53. New York: Plenum Press 125. Vasudevan D, Chua EYD, Davey CA. 2010. Crystal structures of nucleosome core particles containing the “601” strong positioning sequence. J. Mol. Biol. 403:1–10
+
+Access provided by Kyoto University on 01/07/21. For personal use only.
+
+[Page 21]
+
+126. Velankar SS, Soultanas P, Dillingham MS, Subramanya HS, Wigley DB. 1999. Crystal structures of complexes of PcrA DNA helicase with a DNA substrate indicate an inchworm mechanism. Cell 97:75– 127. Viswanathan R, Auble DT. 2011. One small step for Mot1; one giant leap for other Swi2/Snf2 enzymes? Biochim. Biophys. Acta 1809:488–96 128. Wagner FR, Dienemann C, Wang H, Stützer A, Tegunov D, et al. 2020. Structure of SWI/SNF chromatin remodeller RSC bound to a nucleosome. Nature 579:448–51 129. Wang J, Hogan M, Austin RH. 1982. DNA motions in the nucleosome core particle. PNAS 79:5896–900 130. Wang W, Xu J, Limbo O, Fei J, Kassavetis GA, et al. 2019. Molecular basis of chromatin remodeling by Rhp26, a yeast CSB ortholog. PNAS 116:6120–29 131. Whitehouse I, Stockdale C, Flaus A, Szczelkun MD, Owen-Hughes T. 2003. Evidence for DNA translocation by the ISWI chromatin-remodeling enzyme. Mol. Cell. Biol. 23:1935–45 132. Willhoft O, Ghoneim M, Lin CL, Chua EYD, Wilkinson M, et al. 2018. Structure and dynamics of the yeast SWR1-nucleosome complex. Science 362:eaat7716 133. Winger J, Bowman GD. 2017. The direction that the Chd1 chromatin remodeler slides nucleosomes can be influenced by DNA sequence. J. Mol. Biol. 429:808–22 134. Winger J, Nodelman IM, Levendosky RF, Bowman GD. 2018. A twist defect mechanism for ATPdependent translocation of nucleosomal DNA. eLife 7:e34100 135. Xu J, Lahiri I, Wang W, Wier A, Cianfrocco MA, et al. 2017. Structural basis for the initiation of eukaryotic transcription-coupled DNA repair. Nature 551:653–57 136. Xue Y, Wong J, Moreno GT, Young MK, Côté J, Wang W. 1998. NURD, a novel complex with both ATP-dependent chromatin-remodeling and histone deacetylase activities. Mol. Cell 2:851–61 137. Yamada K, Frouws TD, Angst B, Fitzgerald DJ, DeLuca C, et al. 2011. Structure and mechanism of the chromatin remodelling factor ISW1a. Nature 472:448–53 138. Yan L, Chen Z. 2020. A unifying mechanism of DNA translocation underlying chromatin remodeling. Trends Biochem. Sci. 45:217–27 139. Yan L, Wu H, Li X, Gao N, Chen Z. 2019. Structures of the ISWI-nucleosome complex reveal a conserved mechanism of chromatin remodeling. Nat. Struct. Mol. Biol. 26:258–66 140. Ye Y, Wu H, Chen K, Clapier CR, Verma N, et al. 2019. Structure of the RSC complex bound to the nucleosome. Science 366:838–43 141. Zhang Y, Smith CL, Saha A, Grill SW, Mihardja S, et al. 2006. DNA translocation and loop formation mechanism of chromatin remodeling by SWI/SNF and RSC. Mol. Cell 24:559–68 142. Zofall M, Persinger J, Kassabov SR, Bartholomew B. 2006. Chromatin remodeling by ISW2 and SWI/SNF requires DNA translocation inside the nucleosome. Nat. Struct. Mol. Biol. 13:339–46

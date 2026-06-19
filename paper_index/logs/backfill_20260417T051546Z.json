@@ -1,0 +1,74 @@
+{
+  "timestamp": "2026-04-17T05:15:46.813999+00:00",
+  "scan_root": "/Users/brandani/Dropbox/documents/library/articles",
+  "discovered_pdfs": 595,
+  "selected_pdfs": 8,
+  "counts": {
+    "ok": 8,
+    "failed": 0
+  },
+  "match_status_filter": [
+    "api_error",
+    "needs_manual_review",
+    "not_found"
+  ],
+  "force": false,
+  "processed": [
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_mechanism/mirny_2022_science_loopoing_dynamics_imaging.pdf",
+      "reason": "status:needs_manual_review",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-2526a52e3b78fd02\n[library_ingest] match_status=needs_manual_review confidence=1.0000\n[library_ingest] text_status=ok chunks=22\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-2526a52e3b78fd02.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_mechanism/sasai_2022_pnas_genome_simulation_phase_separation.pdf",
+      "reason": "status:not_found",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-b1de75a1a13f100c\n[library_ingest] match_status=not_found confidence=0.5925\n[library_ingest] text_status=ok chunks=33\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-b1de75a1a13f100c.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_theory/Polovnikov 2026 PNAS - A universal polymer signature in Hi-C resolves cohesin loop density and supports monomeric extrusion.pdf",
+      "reason": "status:needs_manual_review",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-5b293e90261b690e\n[library_ingest] match_status=needs_manual_review confidence=1.0000\n[library_ingest] text_status=ok chunks=34\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-5b293e90261b690e.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_theory/Shinkai 2020 NARGAB - PHi-C- deciphering Hi-C data into polymer dynamics - SI.pdf",
+      "reason": "status:needs_manual_review",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-ef09163a1950ed80\n[library_ingest] match_status=matched_supplement confidence=1.0000\n[library_ingest] text_status=ok chunks=9\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-ef09163a1950ed80.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/AI_general/Friederich 2026 NatMachIntell - Predicting new research directions in materials science using large language models and concept graphs.pdf",
+      "reason": "status:needs_manual_review",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-8746e8dbd272a3a3\n[library_ingest] match_status=needs_manual_review confidence=1.0000\n[library_ingest] text_status=ok chunks=33\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-8746e8dbd272a3a3.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/DNA_mechanics/olson_1994_JMolBiol_nucleic_acids_structure_analysis.pdf",
+      "reason": "status:not_found",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-1564dc6b5e855f7a\n[library_ingest] match_status=matched confidence=0.9600\n[library_ingest] text_status=ok chunks=76\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-1564dc6b5e855f7a.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/DNA_mechanics/olson_1998_PNAS_DNA_deformability.pdf",
+      "reason": "status:needs_manual_review",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-6275906ac18181c4\n[library_ingest] match_status=matched confidence=1.0000\n[library_ingest] text_status=ok chunks=20\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-6275906ac18181c4.json"
+    },
+    {
+      "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/IDPs_theory/Schuler 2010 PNAS - charge-interactions-can-dominate-the-dimensions-of-intrinsically-disordered-proteins.pdf",
+      "reason": "status:not_found",
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "[library_ingest] paper_id=sha256-2d21fd2490e039eb\n[library_ingest] match_status=matched confidence=1.0000\n[library_ingest] text_status=ok chunks=22\n[library_ingest] record=/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-2d21fd2490e039eb.json"
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+[Page 1]
+
+Supplementary Material for:
+
+Loop extrusion creates rare, long-lived encounters underlying enhancerpromoter communication Mattia Ubertini, Nessim Louafi et al. Corresponding author: Luca Giorgetti: luca.giorgetti@fmi.ch
+
+This PDF file includes: Materials and Methods Supplementary Table 1: Oligonucleotides Supplementary Table 2: Numbers of experimental replicates Supplementary References
+
+Materials and Methods Culture of mouse embryonic stem cells (mESC) For genome engineering, cells were cultured on gelatin-coated culture plates in Glasgow Minimum Essential Medium (GMEM) (Sigma-Aldrich, G5154) supplemented with 15% foetal calf serum (Eurobio Abcys), 1%LGlutamine (Thermo Fisher Scientific, 25030024), 1% Sodium Pyruvate MEM (Thermo Fisher Scientific, 11360039), 1% MEM Non-Essential Amino Acids (Thermo Fisher Scientific, 11140035), 100μM βmercaptoethanol (Thermo Fisher Scientific, 31350010), 20U/ml leukemia inhibitory factor (Miltenyi Biotec, premium grade) in 8% CO2 with 2i inhibitors (1μM MEK inhibitor PDO35901 (Axon, 1408) and 3μM GSK3 inhibitor CHIR 99021 (Axon, 1386)) at 37°C. For live-cell imaging experiments, 106 cells were seeded on 35mm glass-bottom dishes (Mattek, P35G1.5-14-C) coated with 2 μg ml−1 laminin (Sigma-Aldrich, L2020) in PBS at 37 °C overnight and cultured for 24 h in Fluorobrite Dulbecco’s Modified Eagle Medium (DMEM) (Gibco, A1896701) supplemented with 15% foetal calf serum (Eurobio Abcys), 1% L-Glutamine (Thermo Fisher Scientific, 25030024), 1% Sodium Pyruvate MEM (Thermo Fisher Scientific, 11360039), 1% MEM NonEssential Amino Acids (Thermo Fisher Scientific, 11140035), 100μM β-mercaptoethanol (Thermo Fisher Scientific, 31350010), 20U/ml leukemia inhibitfory factor (Miltenyi Biotec, premium grade) and 2i inhibitors. For depletion of RAD21, the medium was replaced with Fluorobrite medium containing 500 nM dTAG-13 (Sigma-Aldrich, SML2601-1MG) 2 hours before imaging. Generation of mESC lines All cell lines are based on E14Tg2a mouse embryonic stem cells (karyotype 19, XY, 129/Ola isogenic background; E14 for brevity). The cell line with TetO and LacO separated by 150kb (1A2) was established in previous work (1). LacO and TetO insertion coordinates (mm39) were chr15:11567240 and chr15:11717704, respectively. The cell line with reduced distance (50kb) between the operators (1D9) was generated from a modified version of the 1A2 line in which the homologous untargeted chr15 allele was further engineered by removing the entire ‘neutral’ TAD (sgRNA sequences in Supplementary Table 1). To reduce the distance between operators on the targeted allele, two gRNAs were designed using the IDT online designing tool (https://www.idtdna.com/site/order/designtool/index/CRISPR_SEQUENCE) to target two genomic locations
+
+[Page 2]
+
+separated by 100kb between the LacO and TetO sequences ( sequences in Supplementary Table 1). Cells were cultured as described above. 500'000 cells were transfected with Lipofectamine3000 according to the manufacturer’s instructions (Thermo Fisher Scientific, L3000008) using 0.5 μg of each gRNA. The media was changed the day after transfection and six days post-transfection the cells were sorted by FACS into single clones in a 96-well plate. At 12 days after sorting, the plates were merged and genomic DNA was extracted on the plate using a lysis buffer (100 mM Tris-HCl pH 8.0, 5 mM EDTA, 0.2% SDS, 50 mM NaCl and 0.05 mg ml−1 proteinase K (Macherey-Nagel, 740506) and 0.05 mg ml−1 RNase A (Thermo Fisher Scientific, EN0531) followed by an incubation at 55°C for 1h and 5 minutes at 94°C. The clones were then checked for deletion of genomic DNA by PCR (sequences of the primers used can be found in Supplementary Table 1). Positive clones were further verified after extraction and purification of genomic DNA from 6-well plate and sanger sequencing. Clone 1D9 was further used for imaging. In order to generate a control cell line allowing to measure experimental uncertainty on green-red distances, a clone previously engineered (1F11, Mach et al.) containing a TetO and LacO inserted on chromosome 15 separated by 150kb, but not expressing any fluorescent repressors, was used. 500’000 cells were transfected with PBase and two piggyBac vectors containing TetR-tdTomato and TetR-eGFP using Lipofectamine300 using 200ng of each plasmids. The media was changed 24h after transfection and cells were FACS sorted onto 96-well plates containing culture media supplemented with primocin antibiotics (InvivoGen, ant-pm-1). Clones were selected on the microscope for comparable signal to noise in both channels and compared to the dual operator lines.Clone 1B2 was then selected for imaging. Microscope setup Cells were imaged with a Nikon Eclipse Ti2 inverted widefield microscope equipped with a Total Internal Reflection Microscopy iLAS2 module (Gataca systems) for azimuthal illumination (2), a Perfect Focus System (Nikon) and motorized Z-Piezo stage (ASI) using a CFI APO TIRF 100×, 1.49NA oil immersion objective (Nikon). The microscope was operated in oblique illumination mode with a nominal incidence angle of 54 degrees. Excitation sources were a 473nm and a 552nm Omicron laserbench laser. Cells were maintained at 37 °C and 8% CO2 using an enclosed microscope environmental control setup (Cube) and CO2 control (Brick) from Life science instruments. The microscope was equipped with two dual back-illuminated 95% quantum efficiency scientific CMOS cameras (Orca-fusion-BT, Hamamatsu) with a pixel size of 6.5 μm. A dichroic longpass (550, Chroma) was added to separate red from green to the two cameras. Furthermore, two bandpass (514/44, Semrock, 595/65, Chroma, respectively) filters were added to the green and red channel. Live-cell image acquisition The microscope was controlled using NIS-Elements software (Nikon, version 5.42.07). Laser power was set to 1.5% of the maximum power for the 473nm and 552nm lasers which approximately corresponds to powers of 231 μW and 345 μW at the objective. The power was measured weekly using a power meter (Thorlabs, PM400) and a Silicon Photodiode (Thorlabs, S170C). The two cameras were aligned manually using TetraSpeck beads (100nm, Thermo Fisher Scientific, T7279) and finer correction was performed using the data collected as described below (‘Correction of chromatic aberrations’). The field of view was binned 2 × 2 in the x and y directions which resulted in an effective pixel size of 130nm. Images were acquired for 15 minutes at 0.5 Hz (2 seconds between frames) and a Z-step size of 0.3 μm for 9 stacks. The total displacement of the Z-stage was 2.4 μm and the total time of acquisition was 15 minutes. Acquisition of the control cell line (1B2) was performed at 10% laser power in both channels to visually match signal-to-noise levels observed in the 1A2 cell line. The exact number of movies and tracks can be found in Supplementary Table 2.
+
+Fixed-cell image acquisition For fixed cell measurements to estimate the localization error, 106 cells were seeded onto Mattek dishes and incubated for 24 h at 37 °C, 8% CO2. The medium was removed and the cells were fixed in 4% paraformaldehyde (Electron Microscopy Sciences, 15710) in PBS for 20 min at room temperature. The cells
+
+[Page 3]
+
+were washed three times in PBS and Fluorobrite medium was added to the Mattek dish to achieve comparable background fluorescence levels. The laser power in the red channel (552nm) was increased to 5% of the maximum power to achieve a comparable signal to noise ratio as in live cells. Images were acquired as described for live-cell image acquisition above. Image processing and construction of LacO-TetO distance tracks Images were saved in the NIS-Elements format (.nd2) and processed in Python using the nd2 library available on GitHub. Due to the large size of the images, image analysis was parallelized using the Dask library. The imaging analysis pipeline was written in Python using the Snakemake library (3) for workflow management, and is available on GitHub at https://github.com/NessLfy/localization_precision_estimation. Nuclei segmentation Nuclei were segmented using the Stardist cell segmentation algorithm (4) with the pretrained “2D_versatile_fluo” model. Since the nuclei were not independently stained, segmentation was performed in the 552 nm channel on the maximum-intensity projection of the nucleoplasmic TetR-TdTomato signal. Segmentation was performed at each individual time point, and the resulting masks were converted to .zarr format using the zarr_tools (https://github.com/BaroudLab/zarr-tools) library for efficient storage and processing. Tracking of nuclei Nuclear segmentation yielded images with labeled nuclei. We tracked the nuclei using a custom algorithm that matches cells based on the distance between the centroids of segmented nuclei in consecutive frames. In short, a nucleus in frame n is assigned to the closest nucleus in frame n+1 only if the relationship is reciprocal— that is, if nucleus A in frame n is closest to nucleus B in frame n+1 and vice versa. Spot detection Raw 3D images in each channel were first preprocessed with a low-pass filter (preprocessing.lowpass from trackpy (https://doi.org/10.5281/zenodo.11522100), with σ = 1) to reduce high-frequency noise. The filtered images were then processed with a white top-hat filter (white_tophat from skimage.morphology), using a cylindrical structuring element with a radius of 2 pixels and a height of 9 z-slices. To minimize biases arising from uneven intensity distributions across the field of view, subsequent analysis was performed on a per-nucleus basis.
+
+Spots were identified using a custom local maxima detection algorithm. A voxel was considered a local maximum if its intensity matched the maximum within a spherical neighborhood of radius 7 pixels. The detected local maxima were ranked by intensity, and the top five were retained as candidate spots. Each candidate spot was then fitted to a 3D Gaussian function of the form: "
+
+"
+
+"
+
+"
+
+"
+
+"
+
+A e !(#!#!) /(& ( #$))(*!*!) /(& ( #$))(+!+!) /(& ( %) +offset where A is the amplitude, σ#* and σ+ are the standard deviations in the lateral and axial directions, respectively, and (x, ,y, ,z, ) denotes the Gaussian center, providing sub-pixel spot localization. Fitting was performed using the curve_fit function from scipy.optimize (5). Tracking of arrays Candidate tracks were generated by selecting the highest-intensity spot from each channel at every time point. Based on previously measured frame-to-frame displacements (at 30s frame rates) and spatial distances
+
+[Page 4]
+
+between the operators (1), tracks were retained only if the following conditions were met for more than 80% of the frames: • The displacement between consecutive frames in each channel was less than 1 μm. • The distance between corresponding spots in the two channels was less than 1.5 μm. Tracks that did not meet these criteria were excluded from further analysis. For tracks that passed the filters, we refined the frames that initially failed by evaluating the remaining four candidate spots in both channels. We computed the distances between all pairs of candidate spots and selected the closest pair. If this new pair met the original criteria, it was added to the track; otherwise, the frame was marked as a gap. Exclusion of doublet signals We selected bona fide G1 (unreplicated) cells by assessing the presence of doublet signals from any of the two arrays, which is indicative of a replicated allele . By visual inspection of cells with replicated arrays, we noticed that they were systematically closer than 1μm. Thus for each nucleus and frame, we measured the distances between the first and second highest intensity pixels in a spherical radius of XX pixels. We excluded a nucleus from analysis if the proportion of time points where the distance was less than 1 μm was larger than a threshold of 16%, which qualitatively corresponds to the proportion of tracks where the two most intense pixels are part of the same singlet signal. As further validation for the selected bona fide G1 nuclei, we manually inspected a subset of time frames from all movies and discarded any remaining nuclei presenting doublets. Correction of chromatic aberrations Because the two arrays were imaged in different channels (green and red), the measured distances between them were affected by chromatic aberration, due to wavelength-dependent refraction in the optical system. We corrected for these aberrations following the procedure described in Ref. (6). This approach exploits the fact that, in the absence of aberrations, the components of the distance vectors between the two spots should be symmetrically distributed around zero, as there is no spatial bias favoring one configuration over another. Chromatic aberrations introduce a systematic bias that shifts the mean away from zero and distorts the symmetry of the distribution (Materials and Methods Fig. 1, right panels). To correct this bias, as in Ref. (6), for each day of acquisition we fit a linear regression model to each coordinate component (x, y, z) of the distance vectors and extract a 3×3 correction matrix. This matrix is then applied to compensate for the bias introduced by chromatic aberrations. Additionally, on each acquisition day we imaged 3D stacks of TetraSpeck beads (100 nm, Thermo Fisher Scientific, T7279) to validate the correction. This control confirmed that the linear model effectively corrected chromatic aberrations (Materials and Methods Fig. 1, top two panels). Putting together all the acquisitions of beads across days, the standard deviations of the X and Y components of the distance vectors between the green and red signals of the beads were reduced to 9 nm and 10 nm, respectively. The mean distance between the two colors decreased from 112 nm before correction to 10 nm after correction.
+
+[Page 5]
+
+0.2 Beads 0.0
+
+x position (um)
+
+Cells
+
+0.0
+
+y position (um)
+
+−1
+
+1.5
+
+2.0
+
+2.5
+
+y position (um)
+
+−0.5
+
+0.0
+
+0.5
+
+1.0
+
+0.5
+
+1.0
+
+0.5
+
+1.0
+
+0.5
+
+1.0
+
+dx (um)
+
+0.0
+
+−0.2
+
+0.0
+
+0.5
+
+1.0
+
+1.5
+
+2.0
+
+2.5
+
+z position (um)
+
+−1.0
+
+−0.5
+
+0.0
+
+dy (um)
+
+0.0
+
+0.5
+
+1.0
+
+1.5
+
+2.0
+
+2.5
+
+z position (um)
+
+−1.0
+
+−0.5
+
+0.0
+
+dx (um)
+
+−1
+
+x position (um)
+
+−1.0
+
+0.2
+
+−1
+
+1.0
+
+z position (um)
+
+y position (um)
+
+dy (um)
+
+Cells
+
+0.5
+
+−1
+
+0.0
+
+x position (um)
+
+Density
+
+dx (um)
+
+−1
+
+dy (um)
+
+0.2
+
+y position (um)
+
+−0.2
+
+−1
+
+dz (um)
+
+dx (um)
+
+Density
+
+Density
+
+Density
+
+0.0
+
+−0.2
+
+dy (um)
+
+0.0
+
+0.2
+
+dx (um)
+
+0.2
+
+−0.2
+
+dy (um)
+
+dy (um)
+
+x position (um)
+
+−0.2
+
+dx (um)
+
+0.0
+
+−0.2
+
+Uncorrected Corrected
+
+Beads 0.2
+
+dx (um)
+
+dx (um)
+
+0.0
+
+0.5
+
+1.0
+
+1.5
+
+2.0
+
+z position (um)
+
+2.5
+
+−1.0
+
+−0.5
+
+0.0
+
+dy (um)
+
+Materials and Methods Figure 1: Correction of chromatic aberration for one representative acquisition day. Top two panels: TetraSpeck beads; bottom panels: cells. A-C. X-component of the distance vectors of the beads between the red and green channels (dx) against the X, Y, and Z positions of the beads in the green channel before (blue) and after (orange) chromatic aberration correction. D. Distribution of dx before (blue) and after (orange) correction. E-G. Y-component of the distance vectors of the beads between the red and green channels (dy) against the X, Y, and Z positions of the beads in the green channel before (blue) and after (orange) chromatic aberration correction. H. Distribution of dy before (blue) and after (orange) correction. HK. X-component of the distance vectors between the red and green operators (dx) against the X, Y, and Z positions of the green operators before (blue) and after (orange) chromatic aberration correction. L. Distribution of dx before (blue) and after (orange) correction. M-O. Y-component of the distance vectors between the red and green operators (dy) against the X, Y, and Z positions of the green operators before (blue) and after (orange) chromatic aberration correction. P. Distribution of dy before (blue) and after (orange) correction.
+
+Polymer model and simulations Polymer model. The chromatin fiber is modeled as an unknotted polymer ring consisting of 4000 monomers, with each monomer representing 1 kilobase (kb) of chromatin. We define the unit of length as σ and the unit of temperature as T. By denoting k- the Boltzmann constant, the energy unit becomes ε = k- T. All units are expressed in terms of these reduced units. Polymer connectivity is maintained via harmonic bonds, described by the potential U./01 , which connects consecutive monomers along the chain:
+
+where K = 100 ε/σ & is the bond stiffness, and r, = 0.8 σ is the equilibrium bond length. To enforce bending rigidity, an angular potential U20345 is applied between consecutive bonds:
+
+[Page 6]
+
+where K20345 = 0.5ε is the angular stiffness, θ is the angle between two consecutive bonds, and θ, = 0 is the equilibrium angle. This potential promotes slight alignment of neighboring bonds. Excluded volume interactions between monomers is simulated using a truncated and shifted Lennard-Jones (LJ) potential:
+
+Finally, the polymer ring is simulated at a monomer volume concentration of ρσ 6 = 0.3 in periodic boundary conditions. Simulation of loop extrusion. We simulate the one-dimensional loop extrusion process of cohesin using the Gillespie algorithm. The algorithm simulates the stochastic 1) binding, 2) unbinding, 3) stepping of cohesin. Given the rates associated with each of these processes, the Gillespie algorithm generates trajectories consistent with the underlying stochastic dynamics. Specifically, the algorithm assumes that the waiting time between successive events follows an exponential distribution, meaning that the temporal behavior of binding, unbinding, and stepping events is fully determined by their respective rates. Cohesin is modeled as a bidirectional extruder, composed of two subunits that move in opposite directions along the polymer. In our simulations, we consider two scenarios for cohesin–cohesin encounters: (i) cohesins bypass one another, or (ii) they stall upon contact. Throughout the text, we explicitly state which of these conditions applies to each set of results. Cohesin stalling at CTCF sites is modeled in two ways: either as a complete barrier that prevents passage, or as a localized reduction in the stepping rate. The specific implementation used is always detailed alongside the corresponding results. Finally, the coupling between the extrusion dynamics and the three-dimensional polymer simulation is achieved by representing extruders as additional harmonic bonds that connect the monomers occupied by the two cohesin subunits. These bonds are updated dynamically, based on the one-dimensional stochastic trajectories generated by the Gillespie algorithm. Simulation details. As specified before, we consider one chain consisting of 4000 monomers at a fixed concentration ρσ 6 = 0.3 in a cubic box with periodic boundary conditions. The static and kinetic properties of the system are studied using fixed-volume and constant-temperature molecular dynamics (MD) simulations with implicit solvent and periodic boundary conditions. All MD simulations are performed using the LAMMPS package (7). The equations of motion are integrated using the velocity-Verlet algorithm. Time is expressed in MD units, where τ78 = σ:m/k- T, and the integration time step is set to Δt = 0.005 τ78 to ensure numerical stability. The friction coefficient is set to γ = 1/τ78 . For each system analyzed, we first equilibrate the polymer by integrating the equations of motion for 5 × 109 to 1 × 10: time steps. After equilibration, we collect polymer configurations over an additional 5 × 109 time steps for production analysis. Each condition is simulated with 10 to 40 independent replicas.
+
+[Page 7]
+
+Supplementary Table 1: Oligonucleotides Oligonucleotides
+
+Sequence (5’ - 3’)
+
+Primer number
+
+gRNA_KO_inside_TAD
+
+CACGTTTGGCAACACCCTGC
+
+gRNA_100kb_inside_TAD
+
+CTGCTACTACGTCCATCCAT
+
+geno_100kb_F
+
+CGCACAAAGCCTCCTTG
+
+geno_KO_50-100kb_R
+
+GACATGCTTGTGCTAGAGG
+
+Supplementary Table 2: Number of replicates Name of the cell line
+
+number of movies
+
+condition
+
+number of tracks
+
+number of unique data points
+
+1A2 (150 kb)
+
+dTAG
+
+WT
+
+Fixed
+
+dTAG
+
+WT
+
+WT
+
+1D9 (50 kb)
+
+1B2 (control)
+
+Supplementary References
+
+P. Mach, P. I. Kos, Y. Zhan, J. Cramard, S. Gaudin, J. Tünnermann, E. Marchi, J. Eglinger, J. Zuin, M. Kryzhanovska, S. Smallwood, L. Gelman, G. Roth, E. P. Nora, G. Tiana, L. Giorgetti, Cohesin and CTCF control the dynamics of chromosome folding. Nat Genet 54, 1907–1918 (2022). J. Boulanger, C. Gueudry, D. Münch, B. Cinquin, P. Paul-Gilloteaux, S. Bardin, C. Guérin, F. Senger, L. Blanchoin, J. Salamero, Fast high-resolution 3D total internal reflection fluorescence microscopy by incidence angle scanning and azimuthal averaging. Proceedings of the National Academy of Sciences 111, 17164–17169 (2014). F. Mölder, K. P. Jablonski, B. Letcher, M. B. Hall, C. H. Tomkins-Tinch, V. Sochat, J. Forster, S. Lee, S. O. Twardziok, A. Kanitz, A. Wilm, M. Holtgrewe, S. Rahmann, S. Nahnsen, J. Köster, Sustainable data analysis with Snakemake. F1000Research (2021). https://doi.org/10.12688/f1000research.29032.2. U. Schmidt, M. Weigert, C. Broaddus, G. Myers, “Cell Detection with Star-Convex Polygons” in Medical Image Computing and Computer Assisted Intervention – MICCAI 2018, A. F. Frangi, J. A. Schnabel, C. Davatzikos, C. Alberola-López, G. Fichtinger, Eds. (Springer International Publishing, Cham, 2018), pp. 265–273. P. Virtanen, R. Gommers, T. E. Oliphant, M. Haberland, T. Reddy, D. Cournapeau, E. Burovski, P. Peterson, W. Weckesser, J. Bright, S. J. van der Walt, M. Brett, J. Wilson, K. J. Millman, N. Mayorov, A. R. J. Nelson, E. Jones, R. Kern, E. Larson, C. J. Carey, İ. Polat, Y. Feng, E. W. Moore, J. VanderPlas, D. Laxalde, J. Perktold, R. Cimrman, I. Henriksen, E. A. Quintero, C. R. Harris, A. M. Archibald, A. H. Ribeiro, F. Pedregosa, P. van Mulbregt, SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat Methods 17, 261–272 (2020).
+
+[Page 8]
+
+D. B. Brückner, H. Chen, L. Barinov, B. Zoller, T. Gregor, Stochastic motion and transcriptional dynamics of pairs of distal DNA loci on a compacted chromosome. Science 380, 1357–1362 (2023). LAMMPS - a flexible simulation tool for particle-based materials modeling at the atomic, meso, and continuum scales. Computer Physics Communications 271, 108171 (2022).

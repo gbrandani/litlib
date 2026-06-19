@@ -1,0 +1,368 @@
+{
+  "paper_id": "sha256-fa72d20c56336429",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/IDPs_theory/Mittal 2023 MolSysDesEng - Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence.pdf",
+  "pdf_sha256": "fa72d20c56336429165731f4e2251ec01cb0781e0d2785a45951aba50cf3b4d6",
+  "filename": "Mittal 2023 MolSysDesEng - Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence.pdf",
+  "item_type": "article",
+  "title_query": "Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence",
+  "filename_hints": {
+    "year_hint": 2023,
+    "venue_hint": "",
+    "prefix": "Mittal 2023 MolSysDesEng"
+  },
+  "doi_candidates": [
+    "10.1039/d3me00053b"
+  ],
+  "date_indexed": "2026-04-17T03:18:36.142017+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "dd82f4b43ab9a55b26b3091d07f35bd3e5c383ce",
+      "externalIds": {
+        "DOI": "10.1039/d3me00053b",
+        "CorpusId": 259170526,
+        "PubMed": "38222029"
+      },
+      "url": "https://www.semanticscholar.org/paper/dd82f4b43ab9a55b26b3091d07f35bd3e5c383ce",
+      "title": "Data-Driven Models for Predicting Intrinsically Disordered Protein Polymer Physics Directly from Composition or Sequence.",
+      "venue": "Molecular Systems Design & Engineering",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10786636",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1039/d3me00053b?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1039/d3me00053b, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2023-09-01",
+      "journal": {
+        "name": "Molecular systems design & engineering",
+        "pages": "\n          1146-1155\n        ",
+        "volume": "8 9"
+      },
+      "authors": [
+        {
+          "authorId": "2220118076",
+          "name": "Tzu-Hsuan Chao"
+        },
+        {
+          "authorId": "94353068",
+          "name": "Shiv Rekhi"
+        },
+        {
+          "authorId": "2924668",
+          "name": "J. Mittal"
+        },
+        {
+          "authorId": "16233814",
+          "name": "Daniel P. Tabor"
+        }
+      ],
+      "abstract": "The molecular-level understanding of intrinsically disordered proteins is challenging due to experimental characterization difficulties. Computational understanding of IDPs also requires fundamental advances, as the leading tools for predicting protein folding (e.g., AlphaFold), typically fail to describe the structural ensembles of IDPs. The focus of this paper is to 1) develop new representations for intrinsically disordered proteins and 2) pair these representations with classical machine learning and deep learning models to predict the radius of gyration and derived scaling exponent of IDPs. Here, we build a new physically-motivated feature called the bag of amino acid interactions representation, which encodes pairwise interactions explicitly into the representation. This feature essentially counts and weights all possible non-bonded interactions in a sequence and thus is, in principle, compatible with arbitrary sequence lengths. To see how well this new feature performs, both categorical and physically-motivated featurization techniques are tested on a computational dataset containing 10,000 sequences simulated at the coarse-grained level. The results indicate that this new feature outperforms the other purely categorical and physically-motivated features and possesses solid extrapolation capabilities. For future use, this feature can potentially provide physical insights into amino acid interactions, including their temperature dependence, and be applied to other protein spaces."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "dd82f4b43ab9a55b26b3091d07f35bd3e5c383ce",
+        "title": "Data-Driven Models for Predicting Intrinsically Disordered Protein Polymer Physics Directly from Composition or Sequence.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2023,
+        "candidate_year": 2023,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1039/d3me00053b"
+    ],
+    "matching_extracted_doi": "10.1039/d3me00053b",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "dd82f4b43ab9a55b26b3091d07f35bd3e5c383ce",
+          "externalIds": {
+            "DOI": "10.1039/d3me00053b",
+            "CorpusId": 259170526,
+            "PubMed": "38222029"
+          },
+          "url": "https://www.semanticscholar.org/paper/dd82f4b43ab9a55b26b3091d07f35bd3e5c383ce",
+          "title": "Data-Driven Models for Predicting Intrinsically Disordered Protein Polymer Physics Directly from Composition or Sequence.",
+          "venue": "Molecular Systems Design & Engineering",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10786636",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1039/d3me00053b?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1039/d3me00053b, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-09-01",
+          "journal": {
+            "name": "Molecular systems design & engineering",
+            "pages": "\n          1146-1155\n        ",
+            "volume": "8 9"
+          },
+          "authors": [
+            {
+              "authorId": "2220118076",
+              "name": "Tzu-Hsuan Chao"
+            },
+            {
+              "authorId": "94353068",
+              "name": "Shiv Rekhi"
+            },
+            {
+              "authorId": "2924668",
+              "name": "J. Mittal"
+            },
+            {
+              "authorId": "16233814",
+              "name": "Daniel P. Tabor"
+            }
+          ],
+          "abstract": "The molecular-level understanding of intrinsically disordered proteins is challenging due to experimental characterization difficulties. Computational understanding of IDPs also requires fundamental advances, as the leading tools for predicting protein folding (e.g., AlphaFold), typically fail to describe the structural ensembles of IDPs. The focus of this paper is to 1) develop new representations for intrinsically disordered proteins and 2) pair these representations with classical machine learning and deep learning models to predict the radius of gyration and derived scaling exponent of IDPs. Here, we build a new physically-motivated feature called the bag of amino acid interactions representation, which encodes pairwise interactions explicitly into the representation. This feature essentially counts and weights all possible non-bonded interactions in a sequence and thus is, in principle, compatible with arbitrary sequence lengths. To see how well this new feature performs, both categorical and physically-motivated featurization techniques are tested on a computational dataset containing 10,000 sequences simulated at the coarse-grained level. The results indicate that this new feature outperforms the other purely categorical and physically-motivated features and possesses solid extrapolation capabilities. For future use, this feature can potentially provide physical insights into amino acid interactions, including their temperature dependence, and be applied to other protein spaces."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "issue": "9",
+      "title": [
+        "Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence"
+      ],
+      "type": "journal-article",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1345-0938",
+          "authenticated-orcid": false,
+          "given": "Tzu-Hsuan",
+          "family": "Chao",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0007-3625-903X",
+          "authenticated-orcid": false,
+          "given": "Shiv",
+          "family": "Rekhi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+            },
+            {
+              "name": "Artie McFerrin Department of Chemical Engineering, Texas A&M University, College Station, TX, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9725-6402",
+          "authenticated-orcid": false,
+          "given": "Jeetain",
+          "family": "Mittal",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+            },
+            {
+              "name": "Artie McFerrin Department of Chemical Engineering, Texas A&M University, College Station, TX, USA"
+            },
+            {
+              "name": "Interdisciplinary Graduate Program in Genetics and Genomics, Texas A&M University, College Station, TX, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8680-6667",
+          "authenticated-orcid": false,
+          "given": "Daniel P.",
+          "family": "Tabor",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+            }
+          ]
+        }
+      ],
+      "abstract": "<jats:p>A new representation for intrinsically disordered protein sequences is developed for usage in both classical and deep learning machine learning models.</jats:p>",
+      "volume": "8",
+      "DOI": "10.1039/d3me00053b",
+      "ISSN": [
+        "2058-9689"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2023
+          ]
+        ]
+      },
+      "page": "1146-1155",
+      "URL": "https://doi.org/10.1039/d3me00053b",
+      "container-title": [
+        "Molecular Systems Design &amp; Engineering"
+      ],
+      "publisher": "Royal Society of Chemistry (RSC)"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1039/d3me00053b",
+    "best_candidate_doi": "10.1039/d3me00053b",
+    "crossref_attempts": [
+      {
+        "doi": "10.1039/d3me00053b",
+        "source_region": "first_page",
+        "position": 1397,
+        "context": "y-motivated featurization techniques Received 5th April 2023, Accepted 6th June 2023 DOI: 10.1039/d3me00053b rsc.li/molecular-engineering are tested on a computational dataset containing 10 000 seq",
+        "priority_score": 0.68,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "issue": "9",
+          "title": [
+            "Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence"
+          ],
+          "type": "journal-article",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-1345-0938",
+              "authenticated-orcid": false,
+              "given": "Tzu-Hsuan",
+              "family": "Chao",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0009-0007-3625-903X",
+              "authenticated-orcid": false,
+              "given": "Shiv",
+              "family": "Rekhi",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+                },
+                {
+                  "name": "Artie McFerrin Department of Chemical Engineering, Texas A&M University, College Station, TX, USA"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-9725-6402",
+              "authenticated-orcid": false,
+              "given": "Jeetain",
+              "family": "Mittal",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+                },
+                {
+                  "name": "Artie McFerrin Department of Chemical Engineering, Texas A&M University, College Station, TX, USA"
+                },
+                {
+                  "name": "Interdisciplinary Graduate Program in Genetics and Genomics, Texas A&M University, College Station, TX, USA"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-8680-6667",
+              "authenticated-orcid": false,
+              "given": "Daniel P.",
+              "family": "Tabor",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Department of Chemistry, Texas A&M University, PO Box 30012, College Station, TX 77842-3012, USA"
+                }
+              ]
+            }
+          ],
+          "abstract": "<jats:p>A new representation for intrinsically disordered protein sequences is developed for usage in both classical and deep learning machine learning models.</jats:p>",
+          "volume": "8",
+          "DOI": "10.1039/d3me00053b",
+          "ISSN": [
+            "2058-9689"
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2023
+              ]
+            ]
+          },
+          "page": "1146-1155",
+          "URL": "https://doi.org/10.1039/d3me00053b",
+          "container-title": [
+            "Molecular Systems Design &amp; Engineering"
+          ],
+          "publisher": "Royal Society of Chemistry (RSC)"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-fa72d20c56336429.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-fa72d20c56336429.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-fa72d20c56336429.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "b1943d412fefbde0ce46494020049772fbbf6c1b47b1052e50da0f9e7de10479",
+    "chunk_count": 22,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1039/d3me00053b",
+      "source_region": "first_page",
+      "position": 1397,
+      "context": "y-motivated featurization techniques Received 5th April 2023, Accepted 6th June 2023 DOI: 10.1039/d3me00053b rsc.li/molecular-engineering are tested on a computational dataset containing 10 000 seq",
+      "priority_score": 0.68
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:04:41.186223+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1039/d3me00053b",
+    "score": 1.08
+  }
+}

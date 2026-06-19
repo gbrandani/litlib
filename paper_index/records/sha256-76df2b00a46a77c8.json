@@ -1,0 +1,951 @@
+{
+  "paper_id": "sha256-76df2b00a46a77c8",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/TF-DNA_interactions/Bussemaker 2022 NatBiotec - Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning.pdf",
+  "pdf_sha256": "76df2b00a46a77c804cafd81e69a002f9b4411709c0b8c9676e4066b973522bc",
+  "filename": "Bussemaker 2022 NatBiotec - Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning.pdf",
+  "item_type": "article",
+  "title_query": "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning",
+  "filename_hints": {
+    "year_hint": 2022,
+    "venue_hint": "",
+    "prefix": "Bussemaker 2022 NatBiotec"
+  },
+  "doi_candidates": [
+    "10.1038/s41587-022-01307-0"
+  ],
+  "date_indexed": "2026-04-17T03:23:42.660607+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "2d2460fbe8306c4c2cdae3d027b93812db4821e8",
+      "externalIds": {
+        "PubMedCentral": "9546773",
+        "DOI": "10.1038/s41587-022-01307-0",
+        "CorpusId": 249015505,
+        "PubMed": "35606422"
+      },
+      "url": "https://www.semanticscholar.org/paper/2d2460fbe8306c4c2cdae3d027b93812db4821e8",
+      "title": "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning",
+      "venue": "Nature Biotechnology",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41587-022-01307-0.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9546773, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-05-23",
+      "journal": {
+        "name": "Nature Biotechnology",
+        "pages": "1520 - 1527",
+        "volume": "40"
+      },
+      "authors": [
+        {
+          "authorId": "4281133",
+          "name": "H. T. Rube"
+        },
+        {
+          "authorId": "6201210",
+          "name": "Chaitanya Rastogi"
+        },
+        {
+          "authorId": "3793447",
+          "name": "Siqian Feng"
+        },
+        {
+          "authorId": "11919403",
+          "name": "J. Kribelbauer"
+        },
+        {
+          "authorId": "2123247196",
+          "name": "Allyson Li"
+        },
+        {
+          "authorId": "89534265",
+          "name": "Basheer Becerra"
+        },
+        {
+          "authorId": "2117557208",
+          "name": "Lucas A. N. Melo"
+        },
+        {
+          "authorId": "120646610",
+          "name": "Bach-Viet Do"
+        },
+        {
+          "authorId": "2116234551",
+          "name": "Xiaoting Li"
+        },
+        {
+          "authorId": "2088443295",
+          "name": "Hammaad Adam"
+        },
+        {
+          "authorId": "145414315",
+          "name": "Neel H. Shah"
+        },
+        {
+          "authorId": "2833697",
+          "name": "R. Mann"
+        },
+        {
+          "authorId": "1706951",
+          "name": "H. Bussemaker"
+        }
+      ],
+      "abstract": "Protein–ligand interactions are increasingly profiled at high throughput using affinity selection and massively parallel sequencing. However, these assays do not provide the biophysical parameters that most rigorously quantify molecular interactions. Here we describe a flexible machine learning method, called ProBound, that accurately defines sequence recognition in terms of equilibrium binding constants or kinetic rates. This is achieved using a multi-layered maximum-likelihood framework that models both the molecular interactions and the data generation process. We show that ProBound quantifies transcription factor (TF) behavior with models that predict binding affinity over a range exceeding that of previous resources; captures the impact of DNA modifications and conformational flexibility of multi-TF complexes; and infers specificity directly from in vivo data such as ChIP-seq without peak calling. When coupled with an assay called KD-seq, it determines the absolute affinity of protein–ligand interactions. We also apply ProBound to profile the kinetics of kinase–substrate interactions. ProBound opens new avenues for decoding biological networks and rationally engineering protein–ligand interactions. Protein–ligand binding affinity is predicted quantitatively from sequencing data."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "2d2460fbe8306c4c2cdae3d027b93812db4821e8",
+        "title": "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2022,
+        "candidate_year": 2022,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "046070890a66bb9b386b51e57a2b57fd39924014",
+        "title": "Probing molecular specificity with deep sequencing and biophysically interpretable machine learning",
+        "score": 0.4233,
+        "title_similarity": 0.3533,
+        "query_year": 2022,
+        "candidate_year": 2021,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5f7a8d1ff0d5c5ec0463d4f145c851cdb6ebc42a",
+        "title": "A Comparative Study of Deep Learning and Classical Modeling Approaches for Protein–Ligand Binding Pose and Affinity Prediction in Coronavirus Main Proteases",
+        "score": 0.415,
+        "title_similarity": 0.495,
+        "query_year": 2022,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e6c189b58bbb83a709d5fd31d53cbbb34da65efc",
+        "title": "Sfcnn: a novel scoring function based on 3D convolutional neural network for accurate and stable protein–ligand affinity prediction",
+        "score": 0.4067,
+        "title_similarity": 0.3267,
+        "query_year": 2022,
+        "candidate_year": 2022,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "597c6c4b574de2c8f2b653b9aa59b2bb0b538242",
+        "title": "A new paradigm for applying deep learning to protein–ligand interaction prediction",
+        "score": 0.3833,
+        "title_similarity": 0.3533,
+        "query_year": 2022,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "96fafe18057e1a529c05055dac59070379392fcf",
+        "title": "Predicting Affinity Through Homology (PATH): Interpretable binding affinity prediction with persistent homology",
+        "score": 0.2733,
+        "title_similarity": 0.3533,
+        "query_year": 2022,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "bebcf97fd7b76f27767316ed0f9c0c34759c77c1",
+        "title": "ResDTA: Predicting Drug-Target Binding Affinity Using Residual Skip Connections",
+        "score": 0.1989,
+        "title_similarity": 0.1689,
+        "query_year": 2022,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d0b422a6d129fe05261dc13c1610f08931fc4d62",
+        "title": "GBP1 as a machine learning-prioritized biomarker and therapeutic target for epstein-barr virus-induced clear cell renal cell carcinoma: multi-omics causal validation.",
+        "score": 0.0759,
+        "title_similarity": 0.1559,
+        "query_year": 2022,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41587-022-01307-0"
+    ],
+    "matching_extracted_doi": "10.1038/s41587-022-01307-0",
+    "raw_response": {
+      "total": 8,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "2d2460fbe8306c4c2cdae3d027b93812db4821e8",
+          "externalIds": {
+            "PubMedCentral": "9546773",
+            "DOI": "10.1038/s41587-022-01307-0",
+            "CorpusId": 249015505,
+            "PubMed": "35606422"
+          },
+          "url": "https://www.semanticscholar.org/paper/2d2460fbe8306c4c2cdae3d027b93812db4821e8",
+          "title": "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning",
+          "venue": "Nature Biotechnology",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41587-022-01307-0.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9546773, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-05-23",
+          "journal": {
+            "name": "Nature Biotechnology",
+            "pages": "1520 - 1527",
+            "volume": "40"
+          },
+          "authors": [
+            {
+              "authorId": "4281133",
+              "name": "H. T. Rube"
+            },
+            {
+              "authorId": "6201210",
+              "name": "Chaitanya Rastogi"
+            },
+            {
+              "authorId": "3793447",
+              "name": "Siqian Feng"
+            },
+            {
+              "authorId": "11919403",
+              "name": "J. Kribelbauer"
+            },
+            {
+              "authorId": "2123247196",
+              "name": "Allyson Li"
+            },
+            {
+              "authorId": "89534265",
+              "name": "Basheer Becerra"
+            },
+            {
+              "authorId": "2117557208",
+              "name": "Lucas A. N. Melo"
+            },
+            {
+              "authorId": "120646610",
+              "name": "Bach-Viet Do"
+            },
+            {
+              "authorId": "2116234551",
+              "name": "Xiaoting Li"
+            },
+            {
+              "authorId": "2088443295",
+              "name": "Hammaad Adam"
+            },
+            {
+              "authorId": "145414315",
+              "name": "Neel H. Shah"
+            },
+            {
+              "authorId": "2833697",
+              "name": "R. Mann"
+            },
+            {
+              "authorId": "1706951",
+              "name": "H. Bussemaker"
+            }
+          ],
+          "abstract": "Protein–ligand interactions are increasingly profiled at high throughput using affinity selection and massively parallel sequencing. However, these assays do not provide the biophysical parameters that most rigorously quantify molecular interactions. Here we describe a flexible machine learning method, called ProBound, that accurately defines sequence recognition in terms of equilibrium binding constants or kinetic rates. This is achieved using a multi-layered maximum-likelihood framework that models both the molecular interactions and the data generation process. We show that ProBound quantifies transcription factor (TF) behavior with models that predict binding affinity over a range exceeding that of previous resources; captures the impact of DNA modifications and conformational flexibility of multi-TF complexes; and infers specificity directly from in vivo data such as ChIP-seq without peak calling. When coupled with an assay called KD-seq, it determines the absolute affinity of protein–ligand interactions. We also apply ProBound to profile the kinetics of kinase–substrate interactions. ProBound opens new avenues for decoding biological networks and rationally engineering protein–ligand interactions. Protein–ligand binding affinity is predicted quantitatively from sequencing data."
+        },
+        {
+          "paperId": "5f7a8d1ff0d5c5ec0463d4f145c851cdb6ebc42a",
+          "externalIds": {
+            "PubMedCentral": "12801289",
+            "DBLP": "journals/jcisd/LiuTNW26",
+            "DOI": "10.1021/acs.jcim.5c02481",
+            "CorpusId": 284130008,
+            "PubMed": "41429653"
+          },
+          "url": "https://www.semanticscholar.org/paper/5f7a8d1ff0d5c5ec0463d4f145c851cdb6ebc42a",
+          "title": "A Comparative Study of Deep Learning and Classical Modeling Approaches for Protein–Ligand Binding Pose and Affinity Prediction in Coronavirus Main Proteases",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12801289, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-12-22",
+          "journal": {
+            "name": "Journal of Chemical Information and Modeling",
+            "pages": "731 - 743",
+            "volume": "66"
+          },
+          "authors": [
+            {
+              "authorId": "2364735440",
+              "name": "Yueping Liu"
+            },
+            {
+              "authorId": "2346993417",
+              "name": "Haocheng Tang"
+            },
+            {
+              "authorId": "2206421013",
+              "name": "Taoyu Niu"
+            },
+            {
+              "authorId": "2238204615",
+              "name": "Junmei Wang"
+            }
+          ],
+          "abstract": "The accurate prediction of protein–ligand binding poses and affinities is central to structure-based drug design. In this study, we first benchmarked three distinct pose generation strategies for data sets from the ASAP Antiviral Challenge 2025: molecular docking (Glide and AutoDock Vina), ligand-based superposition (FlexS), and deep learning-based modeling (AlphaFold3, Boltz-2, DiffDock and Gnina). We evaluated their performance on binding pose prediction for ligands targeting SARS-CoV-2 and MERS-CoV main protease (Mpro). For binding affinity estimation, we implemented a machine learning-based scoring approach called ligand–residue interaction profile scoring function (LRIP-SF), which integrates molecular mechanics generalized Born surface area (MM-GBSA) energy decomposition with machine learning algorithms. Our results showed that deep learning-based modeling with AlphaFold3 achieved the highest pose prediction accuracy with a success rate of 88.1% and an average ligand root-mean-square deviation (LRMSD) of 1.12 Å. Moreover, binding poses predicted by AlphaFold3 enabled the most accurate potency predictions by LRIP-SF, with the lowest mean absolute error (MAE) and root-mean-square error (RMSE) in pIC50 units across both targets: the MAE and RMSE are 0.606 and 0.813, respectively, for MERS-CoV Mpro and 0.724 and 0.894 respectively for SARS-CoV-2 Mpro. Although ligand-based superposition method (FlexS) was less accurate in pose prediction, it offered competitive potency prediction performance with significantly lower computational cost. To interpret model predictions by LRIP-SF and identify critical binding determinants, we performed global sensitivity analysis (GSA), revealing key residues that contributed most significantly to ligand binding. These findings highlight the importance of pose quality and interaction profiling in affinity prediction and demonstrate the great potential of deep learning-based methods for drug discovery, especially in the absence of cocrystal structures."
+        },
+        {
+          "paperId": "96fafe18057e1a529c05055dac59070379392fcf",
+          "externalIds": {
+            "PubMedCentral": "12226026",
+            "DBLP": "journals/ploscb/LongD25",
+            "DOI": "10.1371/journal.pcbi.1013216",
+            "CorpusId": 279615902,
+            "PubMed": "40577377"
+          },
+          "url": "https://www.semanticscholar.org/paper/96fafe18057e1a529c05055dac59070379392fcf",
+          "title": "Predicting Affinity Through Homology (PATH): Interpretable binding affinity prediction with persistent homology",
+          "venue": "PLoS Comput. Biol.",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12226026, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-06-01",
+          "journal": {
+            "name": "PLOS Computational Biology",
+            "volume": "21"
+          },
+          "authors": [
+            {
+              "authorId": "2267349389",
+              "name": "Yuxi Long"
+            },
+            {
+              "authorId": "2249570237",
+              "name": "Bruce R. Donald"
+            }
+          ],
+          "abstract": "Accurate binding affinity prediction (BAP) is crucial to structure-based drug design. We present PATH+, a novel, generalizable machine learning algorithm for BAP that exploits recent advances in computational topology. Compared to current binding affinity prediction algorithms, PATH+ shows similar or better accuracy and is more generalizable across orthogonal datasets. PATH+ is not only one of the most accurate algorithms for BAP, it is also the first algorithm that is inherently interpretable. Interpretability is a key factor of trust for an algorithm and alongside generalizability, which allows PATH+ to be trusted in critical applications, such as inhibitor design. We visualized the features captured by PATH+ for two clinically relevant protein-ligand complexes and find that PATH+ captures binding-relevant structural mutations that are corroborated by biochemical data. Our work also sheds light on the features captured by current computational topology BAP algorithms that contributed to their high performance, which have been poorly understood. PATH+ also offers an improvement of 𝒪 (m + n)3 in computational complexity and is empirically over 10 times faster than the dominant (uninterpretable) computational topology algorithm for BAP. Based on insights from PATH+, we built PATH−, a scoring function for differentiating between binders and non-binders that has outstanding accuracy against 11 current algorithms for BAP. In summary, we report progress in a novel combination of interpretability, speed, and accuracy that should further empower topological screening of large virtual inhibitor libraries to protein targets, and allow binding affinity predictions to be understood and trusted. The source code for PATH+ and PATH− is released open-source as part of the OSPREY protein design software package."
+        },
+        {
+          "paperId": "046070890a66bb9b386b51e57a2b57fd39924014",
+          "externalIds": {
+            "DOI": "10.1101/2021.06.30.450414",
+            "CorpusId": 235725200
+          },
+          "url": "https://www.semanticscholar.org/paper/046070890a66bb9b386b51e57a2b57fd39924014",
+          "title": "Probing molecular specificity with deep sequencing and biophysically interpretable machine learning",
+          "venue": "bioRxiv",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1101/2021.06.30.450414",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2021.06.30.450414?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2021.06.30.450414, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-07-01",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2117557173",
+              "name": "H. Tomas Rube"
+            },
+            {
+              "authorId": "6201210",
+              "name": "Chaitanya Rastogi"
+            },
+            {
+              "authorId": "3793447",
+              "name": "Siqian Feng"
+            },
+            {
+              "authorId": "11919403",
+              "name": "J. Kribelbauer"
+            },
+            {
+              "authorId": "2123247196",
+              "name": "Allyson Li"
+            },
+            {
+              "authorId": "89534265",
+              "name": "Basheer Becerra"
+            },
+            {
+              "authorId": "2117557208",
+              "name": "Lucas A. N. Melo"
+            },
+            {
+              "authorId": "120646610",
+              "name": "Bach-Viet Do"
+            },
+            {
+              "authorId": "2116234551",
+              "name": "Xiaoting Li"
+            },
+            {
+              "authorId": "2088443295",
+              "name": "Hammaad Adam"
+            },
+            {
+              "authorId": "145414315",
+              "name": "Neel H. Shah"
+            },
+            {
+              "authorId": "2833697",
+              "name": "R. Mann"
+            },
+            {
+              "authorId": "1706951",
+              "name": "H. Bussemaker"
+            }
+          ],
+          "abstract": "Quantifying sequence-specific protein-ligand interactions is critical for understanding and exploiting numerous cellular processes, including gene regulation and signal transduction. Next-generation sequencing (NGS) based assays are increasingly being used to profile these interactions with high-throughput. However, these assays do not provide the biophysical parameters that have long been used to uncover the quantitative rules underlying sequence recognition. We developed a highly flexible machine learning framework, called ProBound, to define sequence recognition in terms of biophysical parameters based on NGS data. ProBound quantifies transcription factor (TF) behavior with models that accurately predict binding affinity over a range exceeding that of previous resources, captures the impact of DNA modifications and conformational flexibility of multi-TF complexes, and infers specificity directly from in vivo data such as ChIP-seq without peak calling. When coupled with a new assay called Kd-seq, it determines the absolute affinity of protein-ligand interactions. It can also profile the kinetics of kinase-substrate interactions. By constructing a biophysically robust foundation for profiling sequence recognition, ProBound opens up new avenues for decoding biological networks and rationally engineering protein-ligand interactions."
+        },
+        {
+          "paperId": "e6c189b58bbb83a709d5fd31d53cbbb34da65efc",
+          "externalIds": {
+            "DBLP": "journals/bmcbi/WangWX22",
+            "PubMedCentral": "9178885",
+            "DOI": "10.1186/s12859-022-04762-3",
+            "CorpusId": 249477421,
+            "PubMed": "35676617"
+          },
+          "url": "https://www.semanticscholar.org/paper/e6c189b58bbb83a709d5fd31d53cbbb34da65efc",
+          "title": "Sfcnn: a novel scoring function based on 3D convolutional neural network for accurate and stable protein–ligand affinity prediction",
+          "venue": "BMC Bioinformatics",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/s12859-022-04762-3",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9178885, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-06-08",
+          "journal": {
+            "name": "BMC Bioinformatics",
+            "volume": "23"
+          },
+          "authors": [
+            {
+              "authorId": "47074904",
+              "name": "Yu Wang"
+            },
+            {
+              "authorId": "2150995910",
+              "name": "Zhengxiao Wei"
+            },
+            {
+              "authorId": "2343719455",
+              "name": "Lei Xi"
+            }
+          ],
+          "abstract": "Computer-aided drug design provides an effective method of identifying lead compounds. However, success rates are significantly bottlenecked by the lack of accurate and reliable scoring functions needed to evaluate binding affinities of protein–ligand complexes. Therefore, many scoring functions based on machine learning or deep learning have been developed to improve prediction accuracies in recent years. In this work, we proposed a novel featurization method, generating a new scoring function model based on 3D convolutional neural network. This work showed the results from testing four architectures and three featurization methods, and outlined the development of a novel deep 3D convolutional neural network scoring function model. This model simplified feature engineering, and in combination with Grad-CAM made the intermediate layers of the neural network more interpretable. This model was evaluated and compared with other scoring functions on multiple independent datasets. The Pearson correlation coefficients between the predicted binding affinities by our model and the experimental data achieved 0.7928, 0.7946, 0.6758, and 0.6474 on CASF-2016 dataset, CASF-2013 dataset, CSAR_HiQ_NRC_set, and Astex_diverse_set, respectively. Overall, our model performed accurately and stably enough in the scoring power to predict the binding affinity of a protein–ligand complex. These results indicate our model is an excellent scoring function, and performs well in scoring power for accurately and stably predicting the protein–ligand affinity. Our model will contribute towards improving the success rate of virtual screening, thus will accelerate the development of potential drugs or novel biologically active lead compounds."
+        },
+        {
+          "paperId": "597c6c4b574de2c8f2b653b9aa59b2bb0b538242",
+          "externalIds": {
+            "DBLP": "journals/bib/WangWLGWMZL24",
+            "PubMedCentral": "10998640",
+            "DOI": "10.1093/bib/bbae145",
+            "CorpusId": 268990140,
+            "PubMed": "38581420"
+          },
+          "url": "https://www.semanticscholar.org/paper/597c6c4b574de2c8f2b653b9aa59b2bb0b538242",
+          "title": "A new paradigm for applying deep learning to protein–ligand interaction prediction",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/bib/article-pdf/25/3/bbae145/57165950/bbae145.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10998640, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-11-03",
+          "journal": {
+            "name": "Briefings in Bioinformatics",
+            "volume": "25"
+          },
+          "authors": [
+            {
+              "authorId": "2118402822",
+              "name": "Zechen Wang"
+            },
+            {
+              "authorId": "2265651862",
+              "name": "Sheng Wang"
+            },
+            {
+              "authorId": "2295496010",
+              "name": "Yangyang Li"
+            },
+            {
+              "authorId": "2290659180",
+              "name": "Jingjing Guo"
+            },
+            {
+              "authorId": "2265716571",
+              "name": "Yanjie Wei"
+            },
+            {
+              "authorId": "2067254620",
+              "name": "Yuguang Mu"
+            },
+            {
+              "authorId": "2256609295",
+              "name": "Liangzhen Zheng"
+            },
+            {
+              "authorId": "2265724342",
+              "name": "Weifeng Li"
+            }
+          ],
+          "abstract": "Protein-ligand interaction prediction poses a significant challenge in the field of drug design. Numerous machine learning and deep learning models have been developed to identify the most accurate docking poses of ligands and active compounds against specific targets. However, the current models often suffer from inadequate accuracy and lack practical physical significance in their scoring systems. In this research paper, we introduce IGModel, a novel approach that leverages the geometric information of protein-ligand complexes as input for predicting the root mean square deviation (RMSD) of docking poses and the binding strength (the negative value of the logrithm of binding affinity, pKd) with the same prediction framework. By incorporating the geometric information, IGModel ensures that its scores carry intuitive meaning. The performance of IGModel has been extensively evaluated on various docking power test sets, including the CASF-2016 benchmark, PDBbind-CrossDocked-Core, and DISCO set, consistently achieving state-of-theart accuracies. Furthermore, we assess IGModel’s generalization ability and robustness by evaluating it on unbiased test sets and sets containing target structures generated by AlphaFold2. The exceptional performance of IGModel on these sets demonstrates its efficacy. Additionally, we visualize the latent space of protein-ligand interactions encoded by IGModel and conduct interpretability analysis, providing valuable insights. This study presents a novel framework for deep learning-based prediction of protein-ligand interactions, contributing to the advancement of this field. Key Messages We introduce the first framework for simultaneously predicting the RMSD of the ligand docking pose and its binding strength to the target. IGModel can effectively improve the accuracy of identifying the near-native binding poses of the ligands, and can still outperform most baseline models in scoring power, ranking power and screening power tasks. IGModel is still ahead of other state-of-the-art models in the unbiased data set and the target structure predicted by AlphaFold2, proving its excellent generalization ability. Latent space provided by IGModel learns the physical interactions, thus indicating the robustness of the model."
+        },
+        {
+          "paperId": "bebcf97fd7b76f27767316ed0f9c0c34759c77c1",
+          "externalIds": {
+            "ArXiv": "2303.11434",
+            "DBLP": "journals/corr/abs-2303-11434",
+            "DOI": "10.48550/arXiv.2303.11434",
+            "CorpusId": 257636782
+          },
+          "url": "https://www.semanticscholar.org/paper/bebcf97fd7b76f27767316ed0f9c0c34759c77c1",
+          "title": "ResDTA: Predicting Drug-Target Binding Affinity Using Residual Skip Connections",
+          "venue": "arXiv.org",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "http://arxiv.org/pdf/2303.11434",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.11434, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-03-20",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2303.11434"
+          },
+          "authors": [
+            {
+              "authorId": "2070469939",
+              "name": "Partho Ghosh"
+            },
+            {
+              "authorId": "8386628",
+              "name": "M. Haque"
+            }
+          ],
+          "abstract": "The discovery of novel drug target (DT) interactions is an important step in the drug development process. The majority of computer techniques for predicting DT interactions have focused on binary classification, with the goal of determining whether or not a DT pair interacts. Protein ligand interactions, on the other hand, assume a continuous range of binding strength values, also known as binding affinity, and forecasting this value remains a difficulty. As the amount of affinity data in DT knowledge-bases grows, advanced learning techniques such as deep learning architectures can be used to predict binding affinities. In this paper, we present a deep-learning-based methodology for predicting DT binding affinities using just sequencing information from both targets and drugs. The results show that the proposed deep learning-based model that uses the 1D representations of targets and drugs is an effective approach for drug target binding affinity prediction and it does not require additional chemical domain knowledge to work with. The model in which high-level representations of a drug and a target are constructed via CNNs that uses residual skip connections and also with an additional stream to create a high-level combined representation of the drug-target pair achieved the best Concordance Index (CI) performance in one of the largest benchmark datasets, outperforming the recent state-of-the-art method AttentionDTA and many other machine-learning and deep-learning based baseline methods for DT binding affinity prediction that uses the 1D representations of targets and drugs."
+        },
+        {
+          "paperId": "d0b422a6d129fe05261dc13c1610f08931fc4d62",
+          "externalIds": {
+            "DOI": "10.1097/JS9.0000000000004393",
+            "CorpusId": 283735419,
+            "PubMed": "41376480"
+          },
+          "url": "https://www.semanticscholar.org/paper/d0b422a6d129fe05261dc13c1610f08931fc4d62",
+          "title": "GBP1 as a machine learning-prioritized biomarker and therapeutic target for epstein-barr virus-induced clear cell renal cell carcinoma: multi-omics causal validation.",
+          "venue": "International Journal of Surgery",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1097/JS9.0000000000004393?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1097/JS9.0000000000004393, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-12-10",
+          "journal": {
+            "name": "International journal of surgery"
+          },
+          "authors": [
+            {
+              "authorId": "2380444917",
+              "name": "Guangqiang Zhu"
+            },
+            {
+              "authorId": "2379603993",
+              "name": "Chunlin Tan"
+            },
+            {
+              "authorId": "2378724618",
+              "name": "Yugen Li"
+            }
+          ],
+          "abstract": "BACKGROUND\nThis study aims to explore the oncogenic mechanisms of Epstein-Barr virus (EBV) in clear cell renal cell carcinoma (ccRCC) and to identify actionable biomarkers.\n\n\nMETHODS\nMendelian randomization (MR) was employed to analyze the causal effects of EBV on ccRCC and to explore the mediating role of immune cells. Single-cell RNA sequencing (scRNA-seq) data of ccRCC were combined with EBV bulk-mRNA data to screen candidate genes for machine learning model construction. The SHapley Additive exPlanations (SHAP) framework was introduced to interpret feature contributions. High-confidence identification and validation of core targets were achieved through multi-omics MR, Summary-data-based MR (SMR), colocalization, drug prediction, and molecular docking.\n\n\nRESULTS\nMR analysis demonstrated that regulatory T cells (Tregs) and B cells mediated EBV-specific antibody-driven ccRCC risk elevation. Through machine learning, we prioritized seven key genes (GBP1, IFI16, RECQL, GBP5, STK39, TAP2, and IL12RB1) from 24 EBV-ccRCC related Treg&B cell co-expressed genes. SHAP and multi-omics validation highlighted GBP1 as the core target (SHAP value = 0.191), with MR and colocalization (PP.H4 > 0.80) corroborating its causal involvement. Drug prediction revealed that finasteride exerts an inhibitory effect on GBP1, and molecular docking provided strong evidence of binding affinity (-7.6 kcal/mol).\n\n\nCONCLUSION\nThis work reveals a causal relationship between EBV infection and ccRCC pathogenesis, establishing GBP1 as a top-priority candidate molecule through a multi-level, multi-dimensional evidence framework. Drug prediction and molecular docking suggest finasteride as a potential inhibitor of GBP1, offering new strategies for the precise prevention and treatment of ccRCC."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "issue": "10",
+      "title": [
+        "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning"
+      ],
+      "type": "journal-article",
+      "author": [
+        {
+          "given": "H. Tomas",
+          "family": "Rube",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9155-9341",
+          "authenticated-orcid": false,
+          "given": "Chaitanya",
+          "family": "Rastogi",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0650-9134",
+          "authenticated-orcid": false,
+          "given": "Siqian",
+          "family": "Feng",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8072-7773",
+          "authenticated-orcid": false,
+          "given": "Judith F.",
+          "family": "Kribelbauer",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2359-7703",
+          "authenticated-orcid": false,
+          "given": "Allyson",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4403-7959",
+          "authenticated-orcid": false,
+          "given": "Basheer",
+          "family": "Becerra",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7563-7554",
+          "authenticated-orcid": false,
+          "given": "Lucas A. N.",
+          "family": "Melo",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Bach Viet",
+          "family": "Do",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Xiaoting",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Hammaad H.",
+          "family": "Adam",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1186-0626",
+          "authenticated-orcid": false,
+          "given": "Neel H.",
+          "family": "Shah",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4749-2765",
+          "authenticated-orcid": false,
+          "given": "Richard S.",
+          "family": "Mann",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7274-5277",
+          "authenticated-orcid": false,
+          "given": "Harmen J.",
+          "family": "Bussemaker",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Protein–ligand interactions are increasingly profiled at high throughput using affinity selection and massively parallel sequencing. However, these assays do not provide the biophysical parameters that most rigorously quantify molecular interactions. Here we describe a flexible machine learning method, called ProBound, that accurately defines sequence recognition in terms of equilibrium binding constants or kinetic rates. This is achieved using a multi-layered maximum-likelihood framework that models both the molecular interactions and the data generation process. We show that ProBound quantifies transcription factor (TF) behavior with models that predict binding affinity over a range exceeding that of previous resources; captures the impact of DNA modifications and conformational flexibility of multi-TF complexes; and infers specificity directly from in vivo data such as ChIP-seq without peak calling. When coupled with an assay called\n                    <jats:italic>K</jats:italic>\n                    <jats:sub>D</jats:sub>\n                    -seq, it determines the absolute affinity of protein–ligand interactions. We also apply ProBound to profile the kinetics of kinase–substrate interactions. ProBound opens new avenues for decoding biological networks and rationally engineering protein–ligand interactions.\n                  </jats:p>",
+      "volume": "40",
+      "DOI": "10.1038/s41587-022-01307-0",
+      "ISSN": [
+        "1087-0156",
+        "1546-1696"
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            5,
+            23
+          ]
+        ]
+      },
+      "page": "1520-1527",
+      "URL": "https://doi.org/10.1038/s41587-022-01307-0",
+      "container-title": [
+        "Nature Biotechnology"
+      ],
+      "publisher": "Springer Science and Business Media LLC"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1038/s41587-022-01307-0",
+    "best_candidate_doi": "10.1038/s41587-022-01307-0",
+    "crossref_attempts": [
+      {
+        "doi": "10.1038/s41587-022-01307-0",
+        "source_region": "first_page",
+        "position": 26,
+        "context": "[Page 1] https://doi.org/10.1038/s41587-022-01307-0 Prediction of protein–ligand binding affinity from sequencing data with interpretable ma",
+        "priority_score": 0.83,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "issue": "10",
+          "title": [
+            "Prediction of protein–ligand binding affinity from sequencing data with interpretable machine learning"
+          ],
+          "type": "journal-article",
+          "author": [
+            {
+              "given": "H. Tomas",
+              "family": "Rube",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-9155-9341",
+              "authenticated-orcid": false,
+              "given": "Chaitanya",
+              "family": "Rastogi",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0650-9134",
+              "authenticated-orcid": false,
+              "given": "Siqian",
+              "family": "Feng",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-8072-7773",
+              "authenticated-orcid": false,
+              "given": "Judith F.",
+              "family": "Kribelbauer",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-2359-7703",
+              "authenticated-orcid": false,
+              "given": "Allyson",
+              "family": "Li",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-4403-7959",
+              "authenticated-orcid": false,
+              "given": "Basheer",
+              "family": "Becerra",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-7563-7554",
+              "authenticated-orcid": false,
+              "given": "Lucas A. N.",
+              "family": "Melo",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Bach Viet",
+              "family": "Do",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Xiaoting",
+              "family": "Li",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Hammaad H.",
+              "family": "Adam",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-1186-0626",
+              "authenticated-orcid": false,
+              "given": "Neel H.",
+              "family": "Shah",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-4749-2765",
+              "authenticated-orcid": false,
+              "given": "Richard S.",
+              "family": "Mann",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-7274-5277",
+              "authenticated-orcid": false,
+              "given": "Harmen J.",
+              "family": "Bussemaker",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    Protein–ligand interactions are increasingly profiled at high throughput using affinity selection and massively parallel sequencing. However, these assays do not provide the biophysical parameters that most rigorously quantify molecular interactions. Here we describe a flexible machine learning method, called ProBound, that accurately defines sequence recognition in terms of equilibrium binding constants or kinetic rates. This is achieved using a multi-layered maximum-likelihood framework that models both the molecular interactions and the data generation process. We show that ProBound quantifies transcription factor (TF) behavior with models that predict binding affinity over a range exceeding that of previous resources; captures the impact of DNA modifications and conformational flexibility of multi-TF complexes; and infers specificity directly from in vivo data such as ChIP-seq without peak calling. When coupled with an assay called\n                    <jats:italic>K</jats:italic>\n                    <jats:sub>D</jats:sub>\n                    -seq, it determines the absolute affinity of protein–ligand interactions. We also apply ProBound to profile the kinetics of kinase–substrate interactions. ProBound opens new avenues for decoding biological networks and rationally engineering protein–ligand interactions.\n                  </jats:p>",
+          "volume": "40",
+          "DOI": "10.1038/s41587-022-01307-0",
+          "ISSN": [
+            "1087-0156",
+            "1546-1696"
+          ],
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                5,
+                23
+              ]
+            ]
+          },
+          "page": "1520-1527",
+          "URL": "https://doi.org/10.1038/s41587-022-01307-0",
+          "container-title": [
+            "Nature Biotechnology"
+          ],
+          "publisher": "Springer Science and Business Media LLC"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-76df2b00a46a77c8.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-76df2b00a46a77c8.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-76df2b00a46a77c8.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "0cc470f5c5ed0ca291608819323b1693e2ddd02d5c983b723426c5991510f29d",
+    "chunk_count": 65,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1038/s41587-022-01307-0",
+      "source_region": "first_page",
+      "position": 26,
+      "context": "[Page 1] https://doi.org/10.1038/s41587-022-01307-0 Prediction of protein–ligand binding affinity from sequencing data with interpretable ma",
+      "priority_score": 0.83
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:05:08.975927+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1038/s41587-022-01307-0",
+    "score": 1.08
+  }
+}

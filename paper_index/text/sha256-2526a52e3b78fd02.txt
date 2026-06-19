@@ -1,0 +1,409 @@
+[Page 1]
+
+RES EARCH
+
+REPO R T
+
+◥
+
+DYNAMIC GENOME
+
+Dynamics of CTCF- and cohesin-mediated chromatin looping revealed by live-cell imaging Michele Gabriele1,2,3†, Hugo B. Brandão1,2,3†‡, Simon Grosse-Holz4,5†, Asmita Jha1,2,3, Gina M. Dailey6, Claudia Cattoglio6,7, Tsung-Han S. Hsieh6,7, Leonid Mirny,4,5,8*, Christoph Zechner9,10,11,12*, Anders S. Hansen1,2,3* Animal genomes are folded into loops and topologically associating domains (TADs) by CTCF and loop-extruding cohesins, but the live dynamics of loop formation and stability remain unknown. Here, we directly visualized chromatin looping at the Fbn2 TAD in mouse embryonic stem cells using super-resolution live-cell imaging and quantified looping dynamics by Bayesian inference. Unexpectedly, the Fbn2 loop was both rare and dynamic, with a looped fraction of approximately 3 to 6.5% and a median loop lifetime of approximately 10 to 30 minutes. Our results establish that the Fbn2 TAD is highly dynamic, and about 92% of the time, cohesin-extruded loops exist within the TAD without bridging both CTCF boundaries. This suggests that single CTCF boundaries, rather than the fully CTCF-CTCF looped state, may be the primary regulators of functional interactions.
+
+Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. 2The Broad Institute of MIT and Harvard, Cambridge, MA 02139, USA. 3Koch Institute for Integrative Cancer Research, Cambridge, MA 02139, USA. 4Department of Physics, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. 5Institut Curie, 75005 Paris, France. Department of Molecular and Cell Biology, University of California, Berkeley, Berkeley, CA 94720, USA. 7Howard Hughes Medical Institute, University of California, Berkeley, Berkeley, CA 94720, USA. 8Institute for Medical Engineering and Sciences, Massachusetts Institute of Technology, Cambridge, MA 02139, USA. 9Max Planck Institute of Molecular Cell Biology and Genetics, 01307 Dresden, Germany. 10Center for Systems Biology Dresden, 01307 Dresden, Germany. 11Cluster of Excellence Physics of Life, TU Dresden, 01307 Dresden, Germany. 12Faculty of Computer Science, TU Dresden, 01187 Dresden, Germany. *Corresponding author. Email: leonid@mit.edu (L.M.); zechner@ mpi-cbg.de (C.Z.); ashansen@mit.edu (A.S.H.) †These authors contributed equally to this work. ‡Present address: Illumina Inc., San Diego, CA 92122, USA.
+
+Gabriele et al., Science 376, 496–501 (2022)
+
+Although recent advances in single-cell genomics and fixed-cell imaging have made it possible to generate static snapshots of threedimensional (3D) genome structures in single cells (8–13), live-cell imaging is required to understand the dynamics of chromatin looping (14). Furthermore, previous studies have yielded conflicting results as to whether loops are well defined in single cells (8–13), perhaps because of the difficulty associated with distinguishing bona fide CTCF- and cohesinmediated loops from mere proximity that emerges stochastically (14). Recent pioneering work has visualized enhancer-promoter interactions (15–17) and long-range V(D)J–chromatin interactions (18) in live cells. However, the dynamics of loop formation and the lifetime of CTCF- and cohesin-mediated loops have not yet been quantified in living cells. To visualize the dynamics of CTCF- and cohesin-mediated looping, we chose as our model system the loop holding together the two CTCFbound boundaries of the 505-kb Fbn2 TAD in mouse embryonic stem cells (mESCs). This TAD is verified to be CTCF dependent (19) and relatively simple because it only contains a single gene, Fbn2, which is not expressed in mESCs (Fig. 1A). We used genome editing to homozygously label the left and right CTCF sites of the Fbn2 TAD with TetO and Anchor3 arrays, which we then visualized by coexpressing the fluorescently tagged binding proteins TetR-3x-mScarlet and EGFP-OR3 (20) [clone C36 (Fig. 1, B to D)]. We developed a comprehensive image analysis framework, ConnectTheDots, to extract trajectories of 3D loop anchor positions from the acquired movies (fig. S1). By optimizing 3D super-resolution live-cell imaging conditions (14), we could track Fbn2 looping dynamics at 20-s resolution for >2 hours
+
+ammalian genomes are folded into loops and domains known as topologically associating domains (TADs) by the proteins CTCF and cohesin (1). Mechanistically, cohesin is thought to load on DNA and bidirectionally extrude loops until it is blocked by CTCF such that CTCF establishes TAD boundaries (2–6). Functionally, CTCF- and cohesin-mediated looping and TADs play critical roles in multiple nuclear processes, including regulation of gene expression, somatic recombination, and DNA repair (1). For example, TADs are thought to regulate gene expression by increasing the frequency of enhancer-promoter interactions within a TAD and by decreasing enhancer-promoter interactions between TADs (7). However, to understand how TADs and loops are formed and maintained and how they function, it is necessary to understand the dynamics of CTCFand cohesin-mediated loop formation and loop lifetime.
+
+(Fig. 1D and movies S1 to S4). After DNA replication in the S/G2 phase, it is no longer possible to reliably distinguish intrachromosomal from sister-chromosomal interactions (14). We therefore filtered out replicated and low-quality dots using a convolutional neural network (fig. S2). Thus, we only considered G1 and early S-phase cells. To validate our system for tracking Fbn2 loop dynamics, we performed a series of control experiments. First, we confirmed using Micro-C (21, 22) that our locus-labeling approach did not measurably perturb the Fbn2 loop (Fig. 1A). Second, to “mimic” the looped state, we deleted the 505 kb between the CTCF sites, generating clone C27 (“DTAD”; Fig. 1C). As expected, this reduced the 3D distance (Fig. 1E; the nonzero 3D distance distribution for C27 was expected because of localization noise and the 5-kb tether between CTCF sites and fluorescent labels; see fig. S3). Third, as a negative control for CTCF-mediated looping, we generated clone C65 (“DCTCFsites”; Fig. 1C) by homozygously deleting the three CTCF motifs in the Fbn2 TAD (L1, L2, R1; Fig. 1A) and validated that this resulted in a loss of CTCF binding and cohesin colocalization using chromatin immunoprecipitation sequencing [ChIP-seq (fig. S4)]. As expected, the 3D distance increased in C65 (Fig. 1E). Next, we calculated mean-squared displacements (MSDs) of the relative positions of the two loci (twopoint MSD), which are unaffected by cell movement. Chromatin dynamics were consistent with Rouse polymer dynamics, with a scaling of MSD ~ t0.5 for all three clones (23) (Fig. 1F). We conclude that our approach faithfully reports on CTCF looping dynamics in live cells without noticeable artifacts. To elucidate the specific roles of CTCF and cohesin, we endogenously tagged RAD21, CTCF, and the cohesin unloader WAPL with mAID in the C36 (WT) line, allowing for degradation with indole-3-acetic acid (24). For RAD21 and CTCF, we achieved near-complete depletion in 2 hours (fig. S5), long-term depletion led to cell death (fig. S6), Micro-C analysis revealed loss of the Fbn2 loop or corner peak as expected (25–28) (Fig. 2A), and ChIP-Seq analysis showed a loss of chromatin binding (fig. S7). For WAPL, depletion took 4 hours and was less complete (fig. S5), long-term depletion occasionally yielded visibly compacted “vermicelli” chromosomes (29) (fig. S6C), and Micro-C analysis revealed increased corner peak strength (27, 28, 30) (Fig. 2A). All three AID lines exhibited lower protein abundance, likely because of leaky protein depletion (fig. S8). Having validated the AID cell lines, we next performed live-cell imaging to study the specific roles of RAD21, CTCF, and WAPL in loop extrusion in vivo. Consistent with RAD21 being required for loop extrusion, RAD21 depletion
+
+[Page 2]
+
+B Tracking Fbn2 loop dynamics using 3D distance
+
+parental untagged mESC line
+
+TetO :: TetR-3x-mScarlet
+
+C36 (WT)
+
+Anchor3 :: EGFP-OR3
+
+10-2
+
+10-3
+
+Reads per genomic input
+
+C36 L1 L2
+
+CTCF motifs
+
+R1
+
+RNAseq
+
+57.8 58.0 58.2 58.4 58.6 Genome position [Mb]
+
+x 10
+
+Representative C36 cell with labelled Fbn2 CTCF anchors EGFP/mScarlet overlay
+
+“WT” C36 5 kb
+
+505 kb
+
+5 kb
+
+“∆TAD” 10 kb
+
+pair 1
+
+pair 2
+
+“∆CTCFsites” C65
+
+Transcripts
+
+5 kb
+
+505 kb
+
+5 kb
+
+5 μm
+
+C27 (∆TAD) mean = 267 nm
+
+C36 (WT) mean = 361 nm
+
+C65 (∆CTCFsites) mean = 467 nm
+
+Lower 3D distance
+
+C Genome-edited cell lines
+
+C27
+
+3D distance distributions (PDF)
+
+Higher 3D distance
+
+Input
+
+CTCF site
+
+Fbn2 looping dynamics?
+
+SMC1a
+
+Fbn2
+
+Probability density [nm-1]
+
+Micro-C +/- Fbn2 locus labeling
+
+2-point mean squared displacement (MSD) [μm2]
+
+750 1000 1250 3D distance, R [nm]
+
+Localization error corrected MSD
+
+C65 (∆CTCFsites; n=147) C36 (WT; n=491) C27 (∆TAD; n=358) t 0.5
+
+Time [s]
+
+Representative C36 trajectory tracking CTCF anchor dynamics 0.5 μm
+
+ZX
+
+Fig. 1. Endogenous labeling and tracking of the Fbn2 loop with super-resolution live-cell imaging. (A) Fluorescent labeling of Fbn2 loop anchors does not perturb the Fbn2 TAD. Shown is a Micro-C contact map comparing the parental untagged (C59, top left) and tagged (C36, bottom right) cell lines. Red triangles are CTCF motifs with orientation. C36 ChIP-seq shows CTCF (GSM3508478) and cohesin (SMC1A; GSM3508477) binding compared with input (GSM3508475). Fbn2 is not expressed (RNA-seq GSE123636; annotation: GRCm38). Genome coordinates: mm10. (B) Overview of tagging and readout using 3D distance.
+
+strongly increased the 3D distances (Fig. 2, B and C). Consistent with CTCF being the boundary factor that is required for Fbn2 loop formation (Fig. 1B) but not required for loop extrusion, CTCF depletion increased 3D distances, albeit less than RAD21 depletion (6). Finally, consistent with prior observations that WAPL depletion increases cohesin residence time and abundance on chromatin (29), potentially allowing it to extrude longer and more stable loops (27, 30), WAPL depletion decreased the 3D distances (Fig. 2, B and C). To quantify the extent of loop extrusion of the Fbn2 TAD, we turned to polymer physics theory. The Rouse model predicts a linear relationship between chain length and mean squared distance (<R2>) between the fluorescent labels (dashed lines in Fig. 2D; see also fig. S9). By assuming that DRAD21 represents the fully unextruded state with a genomic separation of 515 kb (Fig. 1C), we could then assign an “effective tether length” (i.e., the Gabriele et al., Science 376, 496–501 (2022)
+
+(C) Overview of the genome-edited cell lines (left) and a representative maximum intensity projection (MIP) of a cell nucleus showing two pairs of “dots” (right). (D) Representative 3D trajectory over time of a dot pair. MIPs of the 3D voxels centered on the mScarlet dot (top) and 3D distances between dots (bottom) are shown. (E) 3D distance probability density functions of dot pairs (n = 32,171, n = 46,163, and n = 13,566 distance measurements for C27, C36, and C65, respectively). (F) Localization error–corrected two-point MSD plots (n = 358, n = 491, and n = 147 trajectories in C27, C36, and C65, respectively).
+
+unextruded fraction) to each condition. We found an effective tether length of ~200 kb in C36 (WT) and ~280 kb in DCTCF, corresponding to ~39 and ~54% of the full genomic separation, respectively. By subtraction, the genomic separation between the two labels shortened by ~46% due to extrusion alone (DRAD21 versus DCTCF) and by ~61% due to extrusion with boundaries (DRAD21 versus C36). This shows that by blocking extruding cohesins, CTCF increases the fraction extruded between the two CTCF boundaries. Overall, we estimate that, on average, just over half of the Fbn2 TAD is extruded. By combining these measurements (Fig. 2, B to D) with our Micro-C data (Fig. 2A), we were then able to determine dynamic parameters of our polymer model of loop extrusion (Fig. 2, E and F), including spacing between cohesins and their processivity, as well as the total strength of the CTCF boundaries (see the supplementary materials). Consistent with
+
+our DRAD21 data, our polymer simulations resulted in chromosome decompaction after near-complete RAD21 depletion (Fig. 2E) and accurately matched our experimental data (Fig. 2F). Next, we sought to identify where and when CTCF-CTCF loops occured in our trajectories. Because of localization noise and substantial temporal correlations in the data, simple analysis methods failed when benchmarked on simulations (see the supplementary text). Therefore, we developed Bayesian inference of looping dynamics (BILD). In BILD, we coarse-grained the possible conformations of the TAD (Fig. 3A) into two states: (i) a state of sustained contact between the CTCF sites, presumably mediated by cohesin (the “looped state”), and (ii) all other possible conformations, including partial extrusion, random contacts, and the fully unlooped conformation (the “unlooped state”). While the looped state relies on CTCF activity, the unlooped
+
+YX YZ
+
+[Page 3]
+
+A Auxin-induced degradation of chromosome structural factors depletion
+
+Control
+
+Control
+
+Fbn2 dot ∆CTCF (3 hr IAA)
+
+∆RAD21 59.0 (3 hr IAA)
+
+∆WAPL (3 hr IAA)
+
+Contact freq. [arb.]
+
+∆CTCF (2 hr) No IAA
+
+3D distance, R [nm]
+
+E 3D polymer simulations of structural factor depletion RAD21 depletion simulation
+
+CTCF depletion simulation
+
+∆WAPL (4 hr) No IAA
+
+20 40 60 80 100 120 0
+
+20 40 60 80 100 120 0
+
+steady-state
+
+∆WAPL ∆CTCF ∆RAD21 2<R2>
+
+10-1
+
+10-2
+
+Estimating the effective tether length
+
+0.82 μm2 0.44 μm2 0.31 μm2 Effective tether length (as fraction of chain): C36 (WT): 200 kb (39%) ∆CTCF: 280 kb (54%)
+
+<R2> ~ tether Time [s]
+
+Fig. 2. Degradation of CTCF, cohesin, and WAPL reveals their role in loop extrusion and looping-mediated chromosome compaction. (A) Micro-C data for the AID-tagged clones for RAD21 (left), CTCF (middle), and WAPL (right) showing control data [no indole-3-acetic acid (IAA) treatment; top half] and protein degradation data (3 hours after IAA; bottom half), with schematics illustrating the expected effect. (B) Representative trajectories with (colored lines) or without (gray lines) IAA treatment for each AID-tagged clone. (C) 3D distance probability density functions of dot pairs [n = 45,379, n = 10,469, and n = 18,153 distance measurements for DRAD21 (2 hours), DCTCF (2 hours), and DWAPL (4 hours) depletion conditions, respectively, and n = 17,605, n = 11,631, and n = 21,001 for the same clones without treatment]. (D) Localization error–corrected two-point MSD plots for the AID-tagged
+
+state reflects extrusion without bridged CTCF boundaries, resembling the DCTCF condition. On the basis of the MSD~t0.5 scaling observed in Fig. 2D, we modeled the unlooped state as a free Rouse chain calibrated to the DCTCF data (fig. S10). To model the looped state, we introduced an additional bond between the two CTCF sites (Fig. 3B); this bond is switchable, allowing transitions between the looped and unlooped states. The length of the bond was set to reproduce the 10-kb distance between the fluorophores, using DRAD21 as reference for a free 515-kb chain (see the supplementary text). Finally, by using a hierarchical Bayesian model (31), BILD then exploited the different spatiotemporal dynamics of the looped state to infer which segments of each Gabriele et al., Science 376, 496–501 (2022)
+
+F 3D polymer simulations infer loop extrusion parameters loop size ~ 150 kb density ~ 1/300 kb
+
+10-1 10-2
+
+Polymer sim ∆CTCF (2 hr) Genomic distance [bp]
+
+10-1
+
+Time [s]
+
+clones (left) [n = 537, n = 137, and n = 215 trajectories in DRAD21 (2 hours), DCTCF (2 hours), and DWAPL (4 hours) depletion conditions, respectively, and n = 183, n = 151, and n = 257 for the same clones without treatment (gray lines)]. The effective tether length was obtained by computing the ratio of the steady-state variance of each clone to the value in the RAD21-depletion condition (note that 2<R2> is also the asymptotic value of the MSD; see also the supplementary materials). (E) Representative 3D polymer conformation from simulations mimicking the DRAD21 (95% cohesin depletion) (left) and DCTCF (100% CTCF depletion) (right) depletion conditions. Red is the unextruded segment, blue the extruded segment. (F) Matching simulations to the data to obtain loop-extrusion parameters (three fit parameters; see the supplementary materials).
+
+trajectory were in the looped state (purple segment in Fig. 3A). When tested on 3D polymer simulations with experimentally realistic noise, BILD accurately inferred both the looped fraction and the loop lifetime (Fig. 2, E and F, and figs. S11 and S12). In summary, BILD allows us to distinguish CTCF- and cohesin-mediated looping from mere proximity. We next used BILD to infer looping in our experimental trajectory data (Fig. 3, C to F). BILD revealed that the Fbn2 TAD was fully looped ~6.5% (~3%) of the time, but spent ~93.5% (97%) of the time in a fully unlooped or partially extruded conformation (Fig. 3E). We use brackets to indicate the looped fraction after false-positive correction (fig. S12;
+
+the corrected looped fraction was ~6% when we calibrated BILD using a 15-kb fluorophore distance; fig. S13). By contrast, we observed a minimal looped fraction of ~2% (~0%) in DRAD21 and DCTCF and ~4% (~1%) in C65 (DCTCFsites), whereas the looped fraction was increased to ~10% (~6%) in DWAPL, consistent with WAPL unloading cohesin from chromatin (29). Finally, we estimated the lifetime of the looped state (Fig. 3, D and F). Accurate measurement of loop lifetimes from finite trajectories can be challenging when trajectories begin or end in the looped state, so that it is unclear how long the looped period truly lasted (e.g., the looped state in the DWAPL trajectory in Fig. 3D existed an unknown time before the
+
+2-point mean squared displacement (MSD) [μm2]
+
+D Localization error corrected MSD
+
+Extruded Unextruded
+
+20 40 60 80 100 120
+
+∆RAD21 (2 hr) No IAA
+
+No IAA, means = 375-398 nm ΔWAPL (4 hr), mean = 337 nm ΔCTCF (2 hr), mean = 447 nm ΔRAD21 (2 hr), mean = 588 nm
+
+B Sample trajectories +/- auxin-induced degradation
+
+x 10
+
+2-point MSD [μm2]
+
+Genome position [Mb]
+
+Clone: F1 RAD21-mAID-BFP-V5 C58 FLAG-BFP-mAID-CTCF C40 HA-BFP-mAID-WAPL Control
+
+3D distance distributions (PDF)
+
+WAPL depletion
+
+Probability density [nm-1]
+
+RAD21 depletion
+
+[Page 4]
+
+A Inference on simulated loop extrusion trajectory
+
+BILD: Bayesian Inference of Looping Dynamics Trajectory Fluorophores
+
+fully looped
+
+True looping Inferred looping
+
+0 20 40 60 80 100
+
+0 20 40 60 80 100
+
+∆CTCF (2 hr)
+
+∆WAPL (4 hr)
+
+20 40 60 80
+
+Switchable bond
+
+C27 (∆TAD)
+
+0 20 40 60 80 100
+
+0 20 40 60 80 100
+
+Rescaled Kaplan-Meier survival curves
+
+start of the movie). This problem, known in medical statistics as “censoring,” can be solved using the Kaplan-Meier survival estimator. Using this approach, we obtained censoringcorrected survival curves (Fig. 3D) of the looped state, from which we estimated the median loop lifetime (Fig. 3F). Orthogonal to this nonparametric analysis, we also fitted an exponential model, yielding similar estimates. Together, these results give an estimate of the median loop lifetime of ~10 to 30 min in C36 (WT) (Fig. 3F and fig. S12D). These results revealed the fully looped state to be both rare (~3 to 6%) and dynamic (median ~10 to 30 min; mean ~15 to 45 min). Thus, during an average ~12-hour mESC cell cycle, the looped state will occur approximately one or two times, lasting cumulatively ~20 to 45 min, but the remaining ~11.5 hours will be in the partially extruded or fully unlooped conformations. To understand whether a low looped fraction of ~3% is consistent with a clear and
+
+C36 (WT; n=122) ∆WAPL (n=154) C65 (n=17) ∆CTCF (n=36) ∆RAD21 (n=43) confidence intervals (95%) MLE exponential distribution
+
+Fraction of time in looped state
+
+confidence interval (95%)
+
+Looped fraction [%]
+
+Median loop lifetimes with confidence intervals at 95%
+
+C36 (WT) ∆WAPL C65 ∆CTCF ∆RAD21
+
+Kaplan-Meier Exponential
+
+Loop lifetime [min]
+
+Median lifetime [min]
+
+inferred looped fraction. Gray lines are maximum likelihood fits of a single exponential to the data, accounting for censoring. (E) Fraction of time the Fbn2 locus spends in the fully looped conformation. Error bars are bootstrapped 95% confidence intervals. (F) Median loop lifetimes from the Kaplan-Meier survival curves (squares) or exponential fits (crosses). Confidence intervals are determined from the confidence intervals on the Kaplan-Meier curve and the likelihood function of the exponential fit, respectively. Where the upper confidence limit on the survival curve did not cross below 50%, an arrowhead indicates a semi-infinite confidence interval.
+
+strong corner peak in the Micro-C map, we set up polymer simulations with loop extrusion. Consistent with recent reports, we found that CTCF-mediated stabilization of cohesin was necessary to reproduce both of these features in our simulations (Fig. 4 and fig. S14). We confirmed this effect using inverse fluorescence recovery after photobleaching (iFRAP) of cohesin, finding that CTCF depletion decreased cohesin residence time (fig. S15). Incorporating this effect, we then simulated loop extrusion with a cohesin density of 1/240 kb and processivity of 150 kb (processivity = lifetime × extrusion speed). When cohesin reaches a CTCF site, it has a 12.5% probability of stalling, which, using the estimate of 50% CTCF occupancy (34), translates into an ~25% capture efficiency of CTCF. Once stalled on one side by CTCF, cohesin is stabilized fourfold beyond its base lifetime of ~20 min (35) (fig. S14), facilitating the formation of longer loops
+
+C36 (WT) ∆WAPL C65 ∆CTCF ∆RAD21
+
+Fig. 3. BILD reveals rare and dynamic CTCF loops. (A) Example trajectory from polymer simulations with loop extrusion. Extrusion shortens the effective tether (red is the unextruded length, ground truth from simulations) between the CTCF sites. A ground truth loop is formed when the tether is minimal and cohesin is stalled at both CTCF sites (black bar). BILD captures these accurately (purple bar). (B) Schematic overview of BILD. Building on the analytical solution to the Rouse model, we used a hierarchical Bayesian model to determine the optimal looping profile for single trajectories. (C) Illustrative examples of inferred looping on real trajectory data. (D) Kaplan-Meier survival curves rescaled by the
+
+Gabriele et al., Science 376, 496–501 (2022)
+
+Looping profile
+
+because the other side of cohesin may continue to extrude. These simulations reproduced both our experimental Micro-C maps (Fig. 4A) and the median loop lifetime and low looped fraction (Fig. 4B). Together, these results allow us to paint a comprehensive mechanistic picture of the Fbn2 TAD (Fig. 4, C and D). Most of the time (~92%), the TAD is partially extruded, with ~57 to 61% of the Fbn2 region captured in one to three extruding cohesin loops, whereas ~39 to 43% remain unextruded. The fully unlooped conformation, as would be found in the absence of cohesin, occurs only ~6% of the time, whereas the fully looped state is even more rare at ~3% (~2% in simulations) and has a median lifetime of ~10 to 30 min. Our simulations reveal that the looped state is sometimes held together by multiple cohesins (Fig. 4C), which also explains why the loop lifetime can be substantially shorter than the CTCF-stabilized cohesin lifetime. We stress
+
+Inferred looping
+
+C65 (∆CTCFsites)
+
+∆RAD21 (2 hr)
+
+Bayesian Inference of Looping Dynamics
+
+Rouse likelihood
+
+C Inference on experimental trajectories C36 (WT)
+
+Survival probability x looped fraction
+
+Unextruded length [kb]
+
+unlooped
+
+partially extruded
+
+[Page 5]
+
+59.0 experiment
+
+BILD results on simulations match experiment
+
+simulation Looped fraction [%]
+
+Fully looped state likely
+
+5 10 15 Median lifetime [min]
+
+Partially extruded and fully unlooped state less likely
+
+probability to stall cohesin at site: ~12.5%
+
+“True” looped fraction: ~3%; ~2% Loop lifetime: median: ~10-30 min; mean: ~15-45 min
+
+Partially extruded: ~92% of the time
+
+that both the mechanistic assumptions of our polymer models and the experimental data constraining them are associated with uncertainty, resulting in uncertainty of the inferred parameters (Fig. 4D). For example, if we allow extruding cohesins to bypass each other in our simulations (36, 37), then our estimates of the fold stabilization of cohesin by CTCF would change from approximately fourfold to approximately twofold, the CTCF stalling probability would change from 12.5 to 25%, and the looped state would now be held together by a single cohesin (fig. S16). We also note that TADs smaller than the 505-kb Fbn2 TAD and TADs with stronger CTCF boundaries may have a higher looped fraction (38). Accordingly, we propose that our absolute quantification of the Fbn2 looped fraction may now allow calibrated inference of absolute looped fractions genome wide on the basis of Micro-C (13). Our findings reveal that the CTCF- and cohesin-mediated looped state that holds together CTCF boundaries of TADs is rare, dynamic, and transient. A key limitation of our study is that it represents just one loop in one cell type. Nevertheless, the Fbn2 loop is among the strongest quartile of “corner peaks” in Micro-C maps, suggesting that most other similarly sized loops in mESCs are likely weaker than Fbn2 (fig. S17). Our results thus rule out static models of TADs that exist in either a fully unlooped state or a fully looped state stably bridged by one cohesin (Fig. 1B).
+
+1 2 3 4 5 Number of cohesins
+
+Average values Fraction of TAD extruded: ~61%; ~57% Fraction of TAD unextruded: ~39%; ~43% Cohesins within Fbn2 ~1.7 fully within TAD ~2.7 with at least one leg Values estimated from: experimental data polymer simulations
+
+data (blue) and our best-fit simulation (green). Cohesin processivity and density and CTCF stalling probability and lifetime boost are simulation parameters. Fraction of time in different conformations was extracted from simulation ground truth using effective tether lengths of 1.1 and 505 kb as cutoffs to define “fully looped” and “fully unlooped,” respectively. The fraction of TAD that was unextruded was calculated using the mean tether length over the full simulation.
+
+Instead, we show that the Fbn2 TAD most often exists in a partially extruded state formed by a few cohesins in live cells (~92%; Fig. 4D), and that when the rare looped state is formed, it is transient (~10 to 30 min median lifetime; Fig. 4B). Because the partially extruded state dominates, this may be the functionally important TAD state. Thus, we suggest that CTCFmediated transcriptional insulation may be mediated more by individual extrusion-blocking CTCF boundaries than by the rare fully looped state. Similarly, this suggests that regulatory interactions, such as those between enhancers and promoters, may depend more on frequent cohesin-mediated contacts within a TAD rather than rare CTCF-CTCF loops. This dynamic picture of TADs in live cells (Fig. 4D) may also help to explain cell-to-cell variation in 3D genome structure, and consequently stochasticity in downstream processes such as gene expression and cell differentiation. RE FERENCES AND NOTES
+
+1. J. A. Beagan, J. E. Phillips-Cremins, Nat. Genet. 52, 8–16 (2020). 2. M. Ganji et al., Science 360, 102–105 (2018). 3. Y. Kim, Z. Shi, H. Zhang, I. J. Finkelstein, H. Yu, Science 366, 1345–1349 (2019). 4. I. F. Davidson et al., Science 366, 1338–1345 (2019). 5. S. Golfier, T. Quail, H. Kimura, J. Brugués, eLife 9, e53885 (2020). 6. G. Fudenberg et al., Cell Rep. 15, 2038–2049 (2016). 7. O. Symmons et al., Genome Res. 24, 390–400 (2014). 8. M. V. Arrastia et al., Nat. Biotechnol. 40, 64–73 (2022). 9. Q. Szabo et al., Sci. Adv. 4, eaar8082 (2018). 10. T. J. Stevens et al., Nature 544, 59–64 (2017).
+
+Fully unlooped: ~6%
+
+11. E. H. Finn et al., Cell 176, 1502–1515.e10 (2019). 12. B. Bintu et al., Science 362, eaau1783 (2018). 13. D. I. Cattoni et al., Nat. Commun. 8, 1753 (2017). 14. H. B. Brandão, M. Gabriele, A. S. Hansen, Curr. Opin. Cell Biol. 70, 18–26 (2021). 15. H. Chen et al., Nat. Genet. 50, 1296–1303 (2018). 16. J. M. Alexander et al., eLife 8, e41769 (2019). 17. Z. Hensel, X. Weng, A. C. Lagda, J. Xiao, PLOS Biol. 11, e1001591 (2013). 18. N. Khanna, Y. Zhang, J. S. Lucas, O. K. Dudko, C. Murre, Nat. Commun. 10, 2771 (2019). 19. E. de Wit et al., Mol. Cell 60, 676–684 (2015). 20. T. Germier et al., Biophys. J. 113, 1383–1394 (2017). 21. T. S. Hsieh et al., Mol. Cell 78, 539–553.e8 (2020). 22. A. S. Hansen et al., Mol. Cell 76, 395–411.e13 (2019). 23. H. Hajjoul et al., Genome Res. 23, 1829–1838 (2013). 24. T. Natsume, T. Kiyomitsu, Y. Saga, M. T. Kanemaki, Cell Rep. 15, 210–218 (2016). 25. S. S. P. Rao et al., Cell 171, 305–320.e24 (2017). 26. E. P. Nora et al., Cell 169, 930–944.e22 (2017). 27. G. Wutz et al., EMBO J. 36, 3573–3599 (2017). 28. T.-H. S. Hsieh et al., Enhancer-promoter interactions and transcription are maintained upon acute loss of CTCF, cohesin, WAPL, and YY1. bioRxiv 2021.07.14.452365 [Preprint] (2021); https://www.biorxiv.org/content/10.1101/2021.07.14. 452365v1. 29. A. Tedeschi et al., Nature 501, 564–568 (2013). 30. J. H. I. Haarhuis et al., Cell 169, 693–707.e14 (2017). 31. C. M. Bishop, Pattern Recognition and Machine Learning (Information Science and Statistics) (Springer-Verlag, 2006). 32. Y. Li et al., Nature 578, 472–476 (2020). 33. G. Wutz et al., eLife 9, e52091 (2020). 34. C. Cattoglio et al., eLife 8, e40164 (2019). 35. A. S. Hansen, I. Pustova, C. Cattoglio, R. Tjian, X. Darzacq, eLife 6, e25776 (2017). 36. E. Kim, J. Kerssemakers, I. A. Shaltiel, C. H. Haering, C. Dekker, Nature 579, 438–442 (2020). 37. H. B. Brandão, Z. Ren, X. Karaboja, L. A. Mirny, X. Wang, Nat. Struct. Mol. Biol. 28, 642–651 (2021). 38. P. Mach et al., Live-cell imaging and physical modeling reveal control of chromosome folding dynamics by cohesin and CTCF. bioRxiv 2022.03.03.482826 [Preprint] (2022);
+
+Fig. 4. Comprehensive picture of the Fbn2 TAD. (A) Comparison of Micro-C data for the C36 (WT) line with in silico Micro-C of our best-fit simulation map (left) and contact probability scaling (right). (B) BILD applied to the same simulation (green) compared with C36 (WT) experimental data (blue). (C) Number of cohesins forming the looped state in simulations (n = 18,789). (D) “Anatomy” of the Fbn2 TAD. Quantitative description of the Fbn2 TAD is shown using both real
+
+Gabriele et al., Science 376, 496–501 (2022)
+
+experiment
+
+processivity: ~150 kb density: ~1/240 kb
+
+Cohesin lifetime-boost due to CTCF: 4x
+
+Cohesins at loop base
+
+experiment
+
+Genomic distance [bp]
+
+most likely
+
+experiment simulation 95% conf.
+
+simulation
+
+Anatomy of a TAD
+
+Chr18 position [Mb]
+
+experiment simulation
+
+Probability
+
+Chr18 position [Mb]
+
+simulation
+
+Survival x looped fraction
+
+A 3D polymer simulations with rare looping recapitulate Micro-C data
+
+[Page 6]
+
+https://www.biorxiv.org/content/10.1101/2022.03.03. 482826v1. 39. H. B. Brandão, ConnectTheDots: A chromosome locus pair tracking library, Zenodo (2022); https://zenodo.org/record/6224612. 40. S. Grosse-Holz, SGrosse-Holz/tracklib: initial release, Zenodo (2022); https://zenodo.org/record/6144781. 41. M. Gabriele et al., Trajectory data for: Dynamics of CTCF and cohesin mediated chromatin looping revealed by live-cell imaging, Zenodo (2021); https://doi.org/10.5281/zenodo.5770531. ACKN OW LEDG MEN TS We thank R. Tjian and X. Darzacq for hosting early parts of this work; J. Alexander for providing the RNA destabilization elements; L. Joh for assistance with cloning; and members of the Hansen, Zechner, and Mirny laboratories for insightful discussions. Funding: This work was supported by the National Institutes of Health (grants R00GM130896, DP2GM140938, and R33CA257878 to A.S.H.; grant UM1HG011536 to A.S.H. and L.M.; and grant R01GM114190 to L.M.); the National Science Federation (grant 2036037 to A.S.H.); the Mathers’ Foundation (A.S.H.); a Pew-Stewart Cancer Research Scholar grant (A.S.H.); Chaires d'excellence internationale Blaise Pascal (L.M.); an American-Italian Cancer Foundation research fellowship (M.G.); and core funding from the Max Planck Institute of Molecular Cell Biology and Genetics (C.Z.). Author contributions: A.S.H. conceived and
+
+initiated the project. H.B.B., M.G., S.G.H., L.M., C.Z., and A.S.H. designed the project. A.S.H. performed genome editing and generated the cell lines. G.M.D. cloned plasmids. M.G., A.J., C.C., and A.S.H. characterized and validated the cell lines. T.H.S.H. performed Micro-C. C.C. performed ChIP-Seq. M.G., A.J., and H.B.B. optimized imaging experiments with input from A.S.H. M.G., A.J., and H.B.B. collected the imaging data, with acquisition led by M.G. and A.J.; M.G. and A.J. performed control experiments and characterized the AID cell lines. H.B.B. developed the imageprocessing pipeline and analyzed the imaging data, with input from A.S.H., S.G.H., M.G., and A.J.; H.B.B. and S.G.H. developed the convolutional neural network, with input from A.S.H., M.G., and A.J.; H.B.B. performed polymer simulations with input from S.G.H. and L.M. M.G., A.J., H.B.B., and A.S.H. annotated trajectory data. S.G.H. and C.Z. designed BILD with input from H.B.B., L.M., and A.S.H. S.G.H. developed and benchmarked BILD, applied BILD to trajectory data, and developed MSD analysis with input from H.B.B., L.M., A.S.H., and C.Z. H.B.B. and S.G.H. analyzed polymer simulations. A.S.H., L.M., and C.Z. supervised the project. H.B.B., M.G., S.G.H., A.J., and A.S.H. drafted the manuscript and figures. All authors edited the manuscript and figures. Competing interests: The authors declare no competing interests. Data and materials availability: Cell lines, plasmids, and other materials are available upon request. All cell lines used in this study use the ANCHOR3 system for DNA locus visualization licensed from
+
+NeoVirTech. Recipients of the cell lines will need to execute a materials transfer agreement with NeoVirTech. The code and software used in this study, including the image-processing framework ConnectTheDots (39) and BILD (part of tracklib) (40), are freely available as described in table S5. The Micro-C and ChIP-Seq data associated with this study are available at the Gene Expression Omnibus (https://www.ncbi.nlm.nih.gov/geo/) under accession number GSE187487. The raw trajectory data are available through Zenodo (41). For a list of all datasets used in this study, please see table S6. SUPPLEMENTARY MATERIALS
+
+science.org/doi/10.1126/science.abn6583 Materials and Methods Supplementary Text Figs. S1 to S17 Tables S1 to S6 References (42–90) Movies S1 to S4 MDAR Reproducibility Checklist View/request a protocol for this paper from Bio-protocol. 12 December 2021; accepted 31 March 2022 10.1126/science.abn6583
+
+Gabriele et al., Science 376, 496–501 (2022)
+
+[Page 7]
+
+Dynamics of CTCF- and cohesin-mediated chromatin looping revealed by live-cell imaging Michele GabrieleHugo B. BrandãoSimon Grosse-HolzAsmita JhaGina M. DaileyClaudia CattoglioTsung-Han S. HsiehLeonid MirnyChristoph ZechnerAnders S. Hansen
+
+Science, 376 (6592), • DOI: 10.1126/science.abn6583
+
+Fleeting chromatin loops The genome is organized into three-dimensional (3D) domains that are widely thought to be stable, fully looped structures, although this organization has not been directly observed in living cells. Gabriele et al. report the direct visualization of chromatin looping in living cells and use Bayesian inference to quantify looping dynamics. Loops were found to be both rare and short-lived, overturning static models of looping. Instead of being fully looped, 3D genome domains existed overwhelmingly in partially folded configurations. This more dynamic view of 3D genome domains may ultimately allow a deeper understanding of why disruption of some domains and loops causes dysregulation of gene expression in disease. —DJ
+
+Use of this article is subject to the Terms of service Science (ISSN ) is published by the American Association for the Advancement of Science. 1200 New York Avenue NW, Washington, DC 20005. The title Science is a registered trademark of AAAS. to original U.S. Government Works
+
+View the article online https://www.science.org/doi/10.1126/science.abn6583 Permissions https://www.science.org/help/reprints-and-permissions

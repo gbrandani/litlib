@@ -1,0 +1,766 @@
+{
+  "paper_id": "sha256-d87d482d5ae7960e",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_theory/Polosukhin 2017 NIPS - attention-is-all-you-need.pdf",
+  "pdf_sha256": "d87d482d5ae7960e2e43d7dd6d21377e60e73e8fce1bf2a01aff7aca8a08c537",
+  "filename": "Polosukhin 2017 NIPS - attention-is-all-you-need.pdf",
+  "item_type": "article",
+  "title_query": "attention is all you need",
+  "filename_hints": {
+    "year_hint": 2017,
+    "venue_hint": "",
+    "prefix": "Polosukhin 2017 NIPS"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:24:14.385065+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "attention is all you need",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "attention is all you need",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 1.0,
+        "candidate_count": 10
+      }
+    ],
+    "best_candidate": {
+      "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "externalIds": {
+        "DBLP": "journals/corr/VaswaniSPUJGKP17",
+        "MAG": "2963403868",
+        "ArXiv": "1706.03762",
+        "CorpusId": 13756489
+      },
+      "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+      "title": "Attention is All you Need",
+      "venue": "Neural Information Processing Systems",
+      "year": 2017,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1706.03762, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "publicationDate": "2017-06-12",
+      "journal": {
+        "pages": "5998-6008"
+      },
+      "authors": [
+        {
+          "authorId": "40348417",
+          "name": "Ashish Vaswani"
+        },
+        {
+          "authorId": "1846258",
+          "name": "Noam Shazeer"
+        },
+        {
+          "authorId": "3877127",
+          "name": "Niki Parmar"
+        },
+        {
+          "authorId": "39328010",
+          "name": "Jakob Uszkoreit"
+        },
+        {
+          "authorId": "145024664",
+          "name": "Llion Jones"
+        },
+        {
+          "authorId": "19177000",
+          "name": "Aidan N. Gomez"
+        },
+        {
+          "authorId": "40527594",
+          "name": "Lukasz Kaiser"
+        },
+        {
+          "authorId": "3443442",
+          "name": "I. Polosukhin"
+        }
+      ],
+      "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+        "title": "Attention is All you Need",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2017,
+        "candidate_year": 2017,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "51c9d4d2f50ac5707c1f889aa97f08350d549132",
+        "title": "Attention Is All You Need In Speech Separation",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b4f9e9130b29754c526c454ab54043b49bdd387d",
+        "title": "Tensor Product Attention Is All You Need",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "bb4a9650ca3946c70a7e92007cc61dc0dfd75522",
+        "title": "Channel Attention Is All You Need for Video Frame Interpolation",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b02159650df9813f25db4afd4f094e53bccd526c",
+        "title": "[CLS] Attention is All You Need for Training-Free Visual Token Pruning: Make VLM Inference Faster",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5d5cf18a381a7869715da6c04236c87e7ed566a8",
+        "title": "TransMLA: Multi-Head Latent Attention Is All You Need",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "56e5f5810441f0ce72641cc8db2217510fd5f48d",
+        "title": "Attention is all you need: utilizing attention in AI-enabled drug discovery",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2023,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d48610e731b93dbc1fb7320e25e2d143049a77fb",
+        "title": "Attention is all you need to solve chiral superconductivity",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "fa67ce14393ce96ece7d7732e90f579e23382b21",
+        "title": "Attention Is All You Need for KV Cache in Diffusion LLMs",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3e32139deb17761a25075f8839daa61ad5992fc9",
+        "title": "Cross-Attention is All You Need: Adapting Pretrained Transformers for Machine Translation",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2021,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 7324,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+          "externalIds": {
+            "DBLP": "journals/corr/VaswaniSPUJGKP17",
+            "MAG": "2963403868",
+            "ArXiv": "1706.03762",
+            "CorpusId": 13756489
+          },
+          "url": "https://www.semanticscholar.org/paper/204e3073870fae3d05bcbc2f6a8e263d9b72e776",
+          "title": "Attention is All you Need",
+          "venue": "Neural Information Processing Systems",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1706.03762, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2017-06-12",
+          "journal": {
+            "pages": "5998-6008"
+          },
+          "authors": [
+            {
+              "authorId": "40348417",
+              "name": "Ashish Vaswani"
+            },
+            {
+              "authorId": "1846258",
+              "name": "Noam Shazeer"
+            },
+            {
+              "authorId": "3877127",
+              "name": "Niki Parmar"
+            },
+            {
+              "authorId": "39328010",
+              "name": "Jakob Uszkoreit"
+            },
+            {
+              "authorId": "145024664",
+              "name": "Llion Jones"
+            },
+            {
+              "authorId": "19177000",
+              "name": "Aidan N. Gomez"
+            },
+            {
+              "authorId": "40527594",
+              "name": "Lukasz Kaiser"
+            },
+            {
+              "authorId": "3443442",
+              "name": "I. Polosukhin"
+            }
+          ],
+          "abstract": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data."
+        },
+        {
+          "paperId": "51c9d4d2f50ac5707c1f889aa97f08350d549132",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2010-13154",
+            "ArXiv": "2010.13154",
+            "MAG": "3094280184",
+            "DOI": "10.1109/ICASSP39728.2021.9413901",
+            "CorpusId": 225068152
+          },
+          "url": "https://www.semanticscholar.org/paper/51c9d4d2f50ac5707c1f889aa97f08350d549132",
+          "title": "Attention Is All You Need In Speech Separation",
+          "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/2010.13154",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.13154, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2020-10-25",
+          "journal": {
+            "name": "ICASSP 2021 - 2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "pages": "21-25"
+          },
+          "authors": [
+            {
+              "authorId": "1389581270",
+              "name": "Cem Subakan"
+            },
+            {
+              "authorId": "34924498",
+              "name": "M. Ravanelli"
+            },
+            {
+              "authorId": "1381145668",
+              "name": "Samuele Cornell"
+            },
+            {
+              "authorId": "1760944",
+              "name": "Mirko Bronzi"
+            },
+            {
+              "authorId": "2693593",
+              "name": "Jianyuan Zhong"
+            }
+          ],
+          "abstract": "Recurrent Neural Networks (RNNs) have long been the dominant architecture in sequence-to-sequence learning. RNNs, however, are inherently sequential models that do not allow parallelization of their computations. Transformers are emerging as a natural alternative to standard RNNs, replacing recurrent computations with a multi-head attention mechanism.In this paper, we propose the SepFormer, a novel RNN-free Transformer-based neural network for speech separation. The Sep-Former learns short and long-term dependencies with a multi-scale approach that employs transformers. The proposed model achieves state-of-the-art (SOTA) performance on the standard WSJ0-2/3mix datasets. It reaches an SI-SNRi of 22.3 dB on WSJ0-2mix and an SI-SNRi of 19.5 dB on WSJ0-3mix. The SepFormer inherits the parallelization advantages of Transformers and achieves a competitive performance even when downsampling the encoded representation by a factor of 8. It is thus significantly faster and it is less memory-demanding than the latest speech separation systems with comparable performance."
+        },
+        {
+          "paperId": "b4f9e9130b29754c526c454ab54043b49bdd387d",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2501-06425",
+            "ArXiv": "2501.06425",
+            "DOI": "10.48550/arXiv.2501.06425",
+            "CorpusId": 275470886
+          },
+          "url": "https://www.semanticscholar.org/paper/b4f9e9130b29754c526c454ab54043b49bdd387d",
+          "title": "Tensor Product Attention Is All You Need",
+          "venue": "arXiv.org",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.06425, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-01-11",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2501.06425"
+          },
+          "authors": [
+            {
+              "authorId": "2324068754",
+              "name": "Yifan Zhang"
+            },
+            {
+              "authorId": "2331256240",
+              "name": "Yifeng Liu"
+            },
+            {
+              "authorId": "2269043785",
+              "name": "Huizhuo Yuan"
+            },
+            {
+              "authorId": "2342254044",
+              "name": "Zhen Qin"
+            },
+            {
+              "authorId": "2294673772",
+              "name": "Yang Yuan"
+            },
+            {
+              "authorId": "2324043551",
+              "name": "Quanquan Gu"
+            },
+            {
+              "authorId": "2279754345",
+              "name": "A. C. Yao"
+            }
+          ],
+          "abstract": "Scaling language models to handle longer input sequences typically necessitates large key-value (KV) caches, resulting in substantial memory overhead during inference. In this paper, we propose Tensor Product Attention (TPA), a novel attention mechanism that uses tensor decompositions to represent queries, keys, and values compactly, substantially shrinking the KV cache size at inference time. By factorizing these representations into contextual low-rank components and seamlessly integrating with Rotary Position Embedding (RoPE), TPA achieves improved model quality alongside memory efficiency. Based on TPA, we introduce the Tensor ProducT ATTenTion Transformer (T6), a new model architecture for sequence modeling. Through extensive empirical evaluation on language modeling tasks, we demonstrate that T6 surpasses or matches the performance of standard Transformer baselines including Multi-Head Attention (MHA), Multi-Query Attention (MQA), Grouped-Query Attention (GQA), and Multi-Head Latent Attention (MLA) across various metrics, including perplexity and a range of established evaluation benchmarks. Notably, TPA's memory efficiency and computational efficiency at decoding stage enables processing longer sequences under fixed resource constraints, addressing a critical scalability challenge in modern language models. Project Page: https://github.com/tensorgi/TPA."
+        },
+        {
+          "paperId": "bb4a9650ca3946c70a7e92007cc61dc0dfd75522",
+          "externalIds": {
+            "DBLP": "conf/aaai/ChoiKHXL20",
+            "MAG": "2997150500",
+            "DOI": "10.1609/AAAI.V34I07.6693",
+            "CorpusId": 213099044
+          },
+          "url": "https://www.semanticscholar.org/paper/bb4a9650ca3946c70a7e92007cc61dc0dfd75522",
+          "title": "Channel Attention Is All You Need for Video Frame Interpolation",
+          "venue": "AAAI Conference on Artificial Intelligence",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://ojs.aaai.org/index.php/AAAI/article/download/6693/6547",
+            "status": "GOLD",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1609/AAAI.V34I07.6693?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1609/AAAI.V34I07.6693, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2020-04-03",
+          "journal": {
+            "pages": "10663-10671"
+          },
+          "authors": [
+            {
+              "authorId": "83500873",
+              "name": "Myungsub Choi"
+            },
+            {
+              "authorId": "48206011",
+              "name": "Heewon Kim"
+            },
+            {
+              "authorId": "40030651",
+              "name": "Bohyung Han"
+            },
+            {
+              "authorId": "2072804831",
+              "name": "N. Xu"
+            },
+            {
+              "authorId": "2135837",
+              "name": "Kyoung Mu Lee"
+            }
+          ],
+          "abstract": "Prevailing video frame interpolation techniques rely heavily on optical flow estimation and require additional model complexity and computational cost; it is also susceptible to error propagation in challenging scenarios with large motion and heavy occlusion. To alleviate the limitation, we propose a simple but effective deep neural network for video frame interpolation, which is end-to-end trainable and is free from a motion estimation network component. Our algorithm employs a special feature reshaping operation, referred to as PixelShuffle, with a channel attention, which replaces the optical flow computation module. The main idea behind the design is to distribute the information in a feature map into multiple channels and extract motion information by attending the channels for pixel-level frame synthesis. The model given by this principle turns out to be effective in the presence of challenging motion and occlusion. We construct a comprehensive evaluation benchmark and demonstrate that the proposed approach achieves outstanding performance compared to the existing models with a component for optical flow computation."
+        },
+        {
+          "paperId": "b02159650df9813f25db4afd4f094e53bccd526c",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2412-01818",
+            "DOI": "10.48550/arXiv.2412.01818",
+            "CorpusId": 282940877
+          },
+          "url": "https://www.semanticscholar.org/paper/b02159650df9813f25db4afd4f094e53bccd526c",
+          "title": "[CLS] Attention is All You Need for Training-Free Visual Token Pruning: Make VLM Inference Faster",
+          "venue": "arXiv.org",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2412.01818?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2412.01818, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2412.01818"
+          },
+          "authors": [
+            {
+              "authorId": "2118051520",
+              "name": "Qizhe Zhang"
+            },
+            {
+              "authorId": "2292408664",
+              "name": "Aosong Cheng"
+            },
+            {
+              "authorId": "2331417542",
+              "name": "Ming Lu"
+            },
+            {
+              "authorId": "2333364107",
+              "name": "Zhiyong Zhuo"
+            },
+            {
+              "authorId": "2391997201",
+              "name": "Minqi Wang"
+            },
+            {
+              "authorId": "2268711797",
+              "name": "Jiajun Cao"
+            },
+            {
+              "authorId": "2333442704",
+              "name": "Shaobo Guo"
+            },
+            {
+              "authorId": "2331326229",
+              "name": "Qi She"
+            },
+            {
+              "authorId": "2332857566",
+              "name": "Shanghang Zhang"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "5d5cf18a381a7869715da6c04236c87e7ed566a8",
+          "externalIds": {
+            "ArXiv": "2502.07864",
+            "CorpusId": 276287474
+          },
+          "url": "https://www.semanticscholar.org/paper/5d5cf18a381a7869715da6c04236c87e7ed566a8",
+          "title": "TransMLA: Multi-Head Latent Attention Is All You Need",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.07864, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-02-11",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2256983328",
+              "name": "Fanxu Meng"
+            },
+            {
+              "authorId": "2343516672",
+              "name": "Pingzhi Tang"
+            },
+            {
+              "authorId": "2189014540",
+              "name": "Xiaojuan Tang"
+            },
+            {
+              "authorId": "2346477669",
+              "name": "Zengwei Yao"
+            },
+            {
+              "authorId": "2367145111",
+              "name": "Xing Sun"
+            },
+            {
+              "authorId": "2257092769",
+              "name": "Muhan Zhang"
+            }
+          ],
+          "abstract": "In this paper, we present TransMLA, a framework that seamlessly converts any GQA-based pre-trained model into an MLA-based model. Our approach enables direct compatibility with DeepSeek's codebase, allowing these models to fully leverage DeepSeek-specific optimizations such as vLLM and SGlang. By compressing 93% of the KV cache in LLaMA-2-7B, TransMLA achieves a 10.6x inference speedup at an 8K context length while preserving meaningful output quality. Additionally, the model requires only 6 billion tokens for fine-tuning to regain performance on par with the original across multiple benchmarks. TransMLA offers a practical solution for migrating GQA-based models to the MLA structure. When combined with DeepSeek's advanced features, such as FP8 quantization and Multi-Token Prediction, even greater inference acceleration can be realized."
+        },
+        {
+          "paperId": "56e5f5810441f0ce72641cc8db2217510fd5f48d",
+          "externalIds": {
+            "DBLP": "journals/bib/ZhangLLLLHN24",
+            "PubMedCentral": "10772984",
+            "DOI": "10.1093/bib/bbad467",
+            "CorpusId": 266841707,
+            "PubMed": "38189543"
+          },
+          "url": "https://www.semanticscholar.org/paper/56e5f5810441f0ce72641cc8db2217510fd5f48d",
+          "title": "Attention is all you need: utilizing attention in AI-enabled drug discovery",
+          "venue": "Briefings Bioinform.",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/bib/article-pdf/25/1/bbad467/55123365/bbad467.pdf",
+            "status": "HYBRID",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10772984, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2023-11-22",
+          "journal": {
+            "name": "Briefings in Bioinformatics",
+            "volume": "25"
+          },
+          "authors": [
+            {
+              "authorId": "2261392945",
+              "name": "Yang Zhang"
+            },
+            {
+              "authorId": "2290859362",
+              "name": "Caiqi Liu"
+            },
+            {
+              "authorId": "103435297",
+              "name": "Mujiexin Liu"
+            },
+            {
+              "authorId": "2278980540",
+              "name": "Tianyuan Liu"
+            },
+            {
+              "authorId": "2152783347",
+              "name": "Hao Lin"
+            },
+            {
+              "authorId": "2278623552",
+              "name": "Cheng-Bing Huang"
+            },
+            {
+              "authorId": "2265026058",
+              "name": "Lin Ning"
+            }
+          ],
+          "abstract": "Abstract Recently, attention mechanism and derived models have gained significant traction in drug development due to their outstanding performance and interpretability in handling complex data structures. This review offers an in-depth exploration of the principles underlying attention-based models and their advantages in drug discovery. We further elaborate on their applications in various aspects of drug development, from molecular screening and target binding to property prediction and molecule generation. Finally, we discuss the current challenges faced in the application of attention mechanisms and Artificial Intelligence technologies, including data quality, model interpretability and computational resource constraints, along with future directions for research. Given the accelerating pace of technological advancement, we believe that attention-based models will have an increasingly prominent role in future drug discovery. We anticipate that these models will usher in revolutionary breakthroughs in the pharmaceutical domain, significantly accelerating the pace of drug development."
+        },
+        {
+          "paperId": "d48610e731b93dbc1fb7320e25e2d143049a77fb",
+          "externalIds": {
+            "ArXiv": "2509.03683",
+            "CorpusId": 281103473
+          },
+          "url": "https://www.semanticscholar.org/paper/d48610e731b93dbc1fb7320e25e2d143049a77fb",
+          "title": "Attention is all you need to solve chiral superconductivity",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.03683, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-09-03",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2268821239",
+              "name": "Chun-Tse Li"
+            },
+            {
+              "authorId": "2267393484",
+              "name": "T. Ong"
+            },
+            {
+              "authorId": "2309248728",
+              "name": "Max Geier"
+            },
+            {
+              "authorId": "2268796763",
+              "name": "Hsin Lin"
+            },
+            {
+              "authorId": "2348074269",
+              "name": "Liang Fu"
+            }
+          ],
+          "abstract": "Recent advances on neural quantum states have shown that correlations between quantum particles can be efficiently captured by {\\it attention} -- a foundation of modern neural architectures that enables neural networks to learn the relation between objects. In this work, we show that a general-purpose self-attention Fermi neural network is able to find chiral $p_x \\pm i p_y$ superconductivity in an attractive Fermi gas by energy minimization, {\\it without prior knowledge or bias towards pairing}. The superconducting state is identified from the optimized wavefunction by measuring various physical observables: the pair binding energy, the total angular momentum of the ground state, and off-diagonal long-range order in the two-body reduced density matrix. Our work paves the way for AI-driven discovery of unconventional and topological superconductivity in strongly correlated quantum materials."
+        },
+        {
+          "paperId": "fa67ce14393ce96ece7d7732e90f579e23382b21",
+          "externalIds": {
+            "ArXiv": "2510.14973",
+            "DBLP": "journals/corr/abs-2510-14973",
+            "DOI": "10.48550/arXiv.2510.14973",
+            "CorpusId": 282139245
+          },
+          "url": "https://www.semanticscholar.org/paper/fa67ce14393ce96ece7d7732e90f579e23382b21",
+          "title": "Attention Is All You Need for KV Cache in Diffusion LLMs",
+          "venue": "arXiv.org",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.14973, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-10-16",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2510.14973"
+          },
+          "authors": [
+            {
+              "authorId": "2386027005",
+              "name": "Quan Nguyen-Tri"
+            },
+            {
+              "authorId": "2346835688",
+              "name": "Mukul Ranjan"
+            },
+            {
+              "authorId": "2276491016",
+              "name": "Zhiqiang Shen"
+            }
+          ],
+          "abstract": "This work studies how to adaptively recompute key-value (KV) caches for diffusion large language models (DLMs) to maximize prediction accuracy while minimizing decoding latency. Prior methods'decoders recompute QKV for all tokens at every denoising step and layer, despite KV states changing little across most steps, especially in shallow layers, leading to substantial redundancy. We make three observations: (1) distant ${\\bf MASK}$ tokens primarily act as a length-bias and can be cached block-wise beyond the active prediction window; (2) KV dynamics increase with depth, suggesting that selective refresh starting from deeper layers is sufficient; and (3) the most-attended token exhibits the smallest KV drift, providing a conservative lower bound on cache change for other tokens. Building on these, we propose ${\\bf Elastic-Cache}$, a training-free, architecture-agnostic strategy that jointly decides ${when}$ to refresh (via an attention-aware drift test on the most-attended token) and ${where}$ to refresh (via a depth-aware schedule that recomputes from a chosen layer onward while reusing shallow-layer caches and off-window MASK caches). Unlike fixed-period schemes, Elastic-Cache performs adaptive, layer-aware cache updates for diffusion LLMs, reducing redundant computation and accelerating decoding with negligible loss in generation quality. Experiments on LLaDA-Instruct, LLaDA-1.5, and LLaDA-V across mathematical reasoning and code generation tasks demonstrate consistent speedups: $8.7\\times$ on GSM8K (256 tokens), and $45.1\\times$ on longer sequences, while consistently maintaining higher accuracy than the baseline. Our method achieves significantly higher throughput ($6.8\\times$ on GSM8K) than existing confidence-based approaches while preserving generation quality, enabling practical deployment of diffusion LLMs."
+        },
+        {
+          "paperId": "3e32139deb17761a25075f8839daa61ad5992fc9",
+          "externalIds": {
+            "ACL": "2021.emnlp-main.132",
+            "DBLP": "conf/emnlp/Gheini0M21",
+            "ArXiv": "2104.08771",
+            "DOI": "10.18653/v1/2021.emnlp-main.132",
+            "CorpusId": 237500542
+          },
+          "url": "https://www.semanticscholar.org/paper/3e32139deb17761a25075f8839daa61ad5992fc9",
+          "title": "Cross-Attention is All You Need: Adapting Pretrained Transformers for Machine Translation",
+          "venue": "Conference on Empirical Methods in Natural Language Processing",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://aclanthology.org/2021.emnlp-main.132.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2104.08771, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2021-04-18",
+          "journal": {
+            "pages": "1754-1765"
+          },
+          "authors": [
+            {
+              "authorId": "151114702",
+              "name": "Mozhdeh Gheini"
+            },
+            {
+              "authorId": "1384550891",
+              "name": "Xiang Ren"
+            },
+            {
+              "authorId": "143823227",
+              "name": "Jonathan May"
+            }
+          ],
+          "abstract": "We study the power of cross-attention in the Transformer architecture within the context of transfer learning for machine translation, and extend the findings of studies into cross-attention when training from scratch. We conduct a series of experiments through fine-tuning a translation model on data where either the source or target language has changed. These experiments reveal that fine-tuning only the cross-attention parameters is nearly as effective as fine-tuning all parameters (i.e., the entire translation model). We provide insights into why this is the case and observe that limiting fine-tuning in this manner yields cross-lingually aligned embeddings. The implications of this finding for researchers and practitioners include a mitigation of catastrophic forgetting, the potential for zero-shot translation, and the ability to extend machine translation models to several new language pairs with reduced parameter storage overhead."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-d87d482d5ae7960e.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-d87d482d5ae7960e.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-d87d482d5ae7960e.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "329c62f03cc16aa6c48fcf1eb98f4eabaa83afb8ab7c98bf2448d9e705ac820f",
+    "chunk_count": 19,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

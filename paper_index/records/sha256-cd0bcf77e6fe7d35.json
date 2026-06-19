@@ -1,0 +1,1259 @@
+{
+  "paper_id": "sha256-cd0bcf77e6fe7d35",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/polymer_theory/Laradji 2007 JCP - Hydrodynamic interaction in polymer solutions simulatedwith dissipative particle dynamics.pdf",
+  "pdf_sha256": "cd0bcf77e6fe7d35a3752dc0f0f7b253c4b23451627b0fa3b5dbb5fdaf0aed55",
+  "filename": "Laradji 2007 JCP - Hydrodynamic interaction in polymer solutions simulatedwith dissipative particle dynamics.pdf",
+  "item_type": "article",
+  "title_query": "Hydrodynamic interaction in polymer solutions simulatedwith dissipative particle dynamics",
+  "filename_hints": {
+    "year_hint": 2007,
+    "venue_hint": "",
+    "prefix": "Laradji 2007 JCP"
+  },
+  "doi_candidates": [
+    "10.1063/1.2428307"
+  ],
+  "date_indexed": "2026-04-17T03:35:53.658927+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.911,
+  "warnings": [
+    "year_hint_mismatch:2007!=2006"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Hydrodynamic interaction in polymer solutions simulatedwith dissipative particle dynamics",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "a70988ff86a350eecfd8478147bcf8bf6ddce947",
+      "externalIds": {
+        "MAG": "2063922196",
+        "ArXiv": "cond-mat/0610439",
+        "DOI": "10.1063/1.2428307",
+        "CorpusId": 8394006,
+        "PubMed": "17286503"
+      },
+      "url": "https://www.semanticscholar.org/paper/a70988ff86a350eecfd8478147bcf8bf6ddce947",
+      "title": "Hydrodynamic interaction in polymer solutions simulated with dissipative particle dynamics.",
+      "venue": "Journal of Chemical Physics",
+      "year": 2006,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/cond-mat/0610439",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/cond-mat/0610439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2006-10-16",
+      "journal": {
+        "name": "The Journal of chemical physics",
+        "pages": "\n          044901\n        ",
+        "volume": "126 4"
+      },
+      "authors": [
+        {
+          "authorId": "34326730",
+          "name": "Wen‐hua Jiang"
+        },
+        {
+          "authorId": "50535064",
+          "name": "Jianhua Huang"
+        },
+        {
+          "authorId": "49415708",
+          "name": "Yongmei Wang"
+        },
+        {
+          "authorId": "152505707",
+          "name": "M. Laradji"
+        }
+      ],
+      "abstract": "The authors analyzed extensively the dynamics of polymer chains in solutions simulated with dissipative particle dynamics (DPD), with a special focus on the potential influence of a low Schmidt number of a typical DPD fluid on the simulated polymer dynamics. It has been argued that a low Schmidt number in a DPD fluid can lead to underdevelopment of the hydrodynamic interaction in polymer solutions. The authors' analyses reveal that equilibrium polymer dynamics in dilute solution, under typical DPD simulation conditions, obey the Zimm [J. Chem. Phys. 24, 269 (1956)] model very well. With a further reduction in the Schmidt number, a deviation from the Zimm model to the Rouse model is observed. This implies that the hydrodynamic interaction between monomers is reasonably developed under typical conditions of a DPD simulation. Only when the Schmidt number is further reduced, the hydrodynamic interaction within the chains becomes underdeveloped. The screening of the hydrodynamic interaction and the excluded volume interaction as the polymer volume fraction is increased are well reproduced by the DPD simulations. The use of soft interaction between polymer beads and a low Schmidt number do not produce noticeable problems for the simulated dynamics at high concentrations, except for the entanglement effect which is not captured in the simulations."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "a70988ff86a350eecfd8478147bcf8bf6ddce947",
+        "title": "Hydrodynamic interaction in polymer solutions simulated with dissipative particle dynamics.",
+        "score": 0.911,
+        "title_similarity": 0.841,
+        "query_year": 2007,
+        "candidate_year": 2006,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "038d51b2c4de9196ad273520ec5af1a733ad041d",
+        "title": "Hydrodynamic Interactions and Entanglements of Polymer Solutions in Many-Body Dissipative Particle Dynamics",
+        "score": 0.5825,
+        "title_similarity": 0.6625,
+        "query_year": 2007,
+        "candidate_year": 2016,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "170fcd5c58165e79287bfcce2373d3abb88d38c6",
+        "title": "Dissipative particle dynamics simulation of dilute polymer solutions—Inertial effects and hydrodynamic interactions",
+        "score": 0.569,
+        "title_similarity": 0.649,
+        "query_year": 2007,
+        "candidate_year": 2014,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e6c8a1bbc036cbbe270a50aefab6a7e975e6a64b",
+        "title": "Many-Body Dissipative Particle Dynamics Simulations of Polymer Solutions: Hydrodynamic Interactions and Entanglements",
+        "score": 0.569,
+        "title_similarity": 0.649,
+        "query_year": 2007,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0dc1372daa3dc70cf9748070d3ca23bbb1eb168e",
+        "title": "Tunability of Dissipative Particle Dynamics simulations for Excluded Volume and Hydrodynamic Interactions in polymer solutions and Rheological predictions",
+        "score": 0.5475,
+        "title_similarity": 0.6275,
+        "query_year": 2007,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "fe4e87df695c9d6cf0d0e424b68b656c987abc09",
+        "title": "Simulation of Individual Polymer Chains and Polymer Solutions with Smoothed Dissipative Particle Dynamics",
+        "score": 0.4721,
+        "title_similarity": 0.5521,
+        "query_year": 2007,
+        "candidate_year": 2016,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ff2d805507fd449afa0050ed2b1b934ffcd75511",
+        "title": "Computer simulation of dilute polymer solutions with the dissipative particle dynamics method",
+        "score": 0.4721,
+        "title_similarity": 0.5521,
+        "query_year": 2007,
+        "candidate_year": 1995,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "1e51cb09f7601523ee508da256f54ac4918f5a90",
+        "title": "Modeling aspects of excluded volume and hydrodynamic interactions in dissipative particle dynamics simulations of highly resolved polymer chains in flow fields",
+        "score": 0.4184,
+        "title_similarity": 0.4984,
+        "query_year": 2007,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5f1317308e5fc897cd08c2d680b207bac9c65668",
+        "title": "A single-particle energy-conserving dissipative particle dynamics approach for simulating thermophoresis of nanoparticles in polymer networks.",
+        "score": 0.3325,
+        "title_similarity": 0.4125,
+        "query_year": 2007,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "9a7888788a7af41a4cae1ed45871a78cddac24b5",
+        "title": "Lagrangian Heterogeneous Multiscale Method (LHMM) for Simulating Polymer Solutions/Melts Behavior under Complex Flows using DPD-SPH",
+        "score": 0.1143,
+        "title_similarity": 0.1943,
+        "query_year": 2007,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1063/1.2428307"
+    ],
+    "matching_extracted_doi": "10.1063/1.2428307",
+    "raw_response": {
+      "total": 32,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "a70988ff86a350eecfd8478147bcf8bf6ddce947",
+          "externalIds": {
+            "MAG": "2063922196",
+            "ArXiv": "cond-mat/0610439",
+            "DOI": "10.1063/1.2428307",
+            "CorpusId": 8394006,
+            "PubMed": "17286503"
+          },
+          "url": "https://www.semanticscholar.org/paper/a70988ff86a350eecfd8478147bcf8bf6ddce947",
+          "title": "Hydrodynamic interaction in polymer solutions simulated with dissipative particle dynamics.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2006,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/cond-mat/0610439",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/cond-mat/0610439, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2006-10-16",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "pages": "\n          044901\n        ",
+            "volume": "126 4"
+          },
+          "authors": [
+            {
+              "authorId": "34326730",
+              "name": "Wen‐hua Jiang"
+            },
+            {
+              "authorId": "50535064",
+              "name": "Jianhua Huang"
+            },
+            {
+              "authorId": "49415708",
+              "name": "Yongmei Wang"
+            },
+            {
+              "authorId": "152505707",
+              "name": "M. Laradji"
+            }
+          ],
+          "abstract": "The authors analyzed extensively the dynamics of polymer chains in solutions simulated with dissipative particle dynamics (DPD), with a special focus on the potential influence of a low Schmidt number of a typical DPD fluid on the simulated polymer dynamics. It has been argued that a low Schmidt number in a DPD fluid can lead to underdevelopment of the hydrodynamic interaction in polymer solutions. The authors' analyses reveal that equilibrium polymer dynamics in dilute solution, under typical DPD simulation conditions, obey the Zimm [J. Chem. Phys. 24, 269 (1956)] model very well. With a further reduction in the Schmidt number, a deviation from the Zimm model to the Rouse model is observed. This implies that the hydrodynamic interaction between monomers is reasonably developed under typical conditions of a DPD simulation. Only when the Schmidt number is further reduced, the hydrodynamic interaction within the chains becomes underdeveloped. The screening of the hydrodynamic interaction and the excluded volume interaction as the polymer volume fraction is increased are well reproduced by the DPD simulations. The use of soft interaction between polymer beads and a low Schmidt number do not produce noticeable problems for the simulated dynamics at high concentrations, except for the entanglement effect which is not captured in the simulations."
+        },
+        {
+          "paperId": "0dc1372daa3dc70cf9748070d3ca23bbb1eb168e",
+          "externalIds": {
+            "ArXiv": "2412.15807",
+            "CorpusId": 274965294
+          },
+          "url": "https://www.semanticscholar.org/paper/0dc1372daa3dc70cf9748070d3ca23bbb1eb168e",
+          "title": "Tunability of Dissipative Particle Dynamics simulations for Excluded Volume and Hydrodynamic Interactions in polymer solutions and Rheological predictions",
+          "venue": "",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2412.15807, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2024-12-20",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2234829046",
+              "name": "Sanjay Jana"
+            },
+            {
+              "authorId": "2066224237",
+              "name": "V. Krishna"
+            },
+            {
+              "authorId": "152934215",
+              "name": "Praphul Kumar"
+            },
+            {
+              "authorId": "11622818",
+              "name": "I. S. Dalal"
+            }
+          ],
+          "abstract": "Even though the Dissipative Particle Dynamics (DPD) has shown its worth in a variety of research areas, it has been rarely used for polymer dynamics, particularly in dilute and semi-dilute conditions and under imposed flow fields. For such applications, the most popular technique has been Brownian dynamics (BD), even though the formulation of the same may be complicated for flow in complex geometries, which is straightforward for DPD. This is partly due to the flexibility of BD simulations to mimic any dynamic regime for polymer solutions by independently tuning hydrodynamic interactions (HI) and excluded volume (EV). In this study, we reveal that DPD also offers a similar flexibility and the regimes with respect to dominant EV and HI can be selected as conveniently as BD. This flexibility is achieved by tuning the repulsive interaction parameter of polymer beads and the spring length (which determines the chain resolution). Our results show that the former sets the chain size (and thus, EV) while the latter can be used to set the HI, nearly independently of each other. Thus, any rheological regime of certain level of EV and HI can be attained by appropriately tuning only these two parameters, providing a flexibility of similar levels as BD simulations. We further indicate the suitability of DPD by comparing rheological predictions with equivalent models in BD. For this, we imposed startup uniaxial extensional flows and steady shear flows on the system. Our results indicate the consistency of DPD with BD simulations, which is known to agree well with experiments."
+        },
+        {
+          "paperId": "1e51cb09f7601523ee508da256f54ac4918f5a90",
+          "externalIds": {
+            "DOI": "10.1007/s10965-025-04562-2",
+            "CorpusId": 282503026
+          },
+          "url": "https://www.semanticscholar.org/paper/1e51cb09f7601523ee508da256f54ac4918f5a90",
+          "title": "Modeling aspects of excluded volume and hydrodynamic interactions in dissipative particle dynamics simulations of highly resolved polymer chains in flow fields",
+          "venue": "Journal of polymer research",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10965-025-04562-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10965-025-04562-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-09-01",
+          "journal": {
+            "name": "Journal of Polymer Research",
+            "volume": "32"
+          },
+          "authors": [
+            {
+              "authorId": "2234829046",
+              "name": "Sanjay Jana"
+            },
+            {
+              "authorId": "2388605899",
+              "name": "Venkata Siva Krishna"
+            },
+            {
+              "authorId": "152934215",
+              "name": "Praphul Kumar"
+            },
+            {
+              "authorId": "11622818",
+              "name": "I. S. Dalal"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "5f1317308e5fc897cd08c2d680b207bac9c65668",
+          "externalIds": {
+            "ArXiv": "2402.18834",
+            "DOI": "10.1063/5.0227060",
+            "CorpusId": 268063211,
+            "PubMed": "39513437"
+          },
+          "url": "https://www.semanticscholar.org/paper/5f1317308e5fc897cd08c2d680b207bac9c65668",
+          "title": "A single-particle energy-conserving dissipative particle dynamics approach for simulating thermophoresis of nanoparticles in polymer networks.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/2402.18834",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.18834, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-29",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "volume": "161 18"
+          },
+          "authors": [
+            {
+              "authorId": "2257830214",
+              "name": "Yu Lu"
+            },
+            {
+              "authorId": "2110123556",
+              "name": "Zhen Li"
+            },
+            {
+              "authorId": "2302368190",
+              "name": "Jun Song"
+            },
+            {
+              "authorId": "2258318080",
+              "name": "Guo-hui Hu"
+            }
+          ],
+          "abstract": "The transport of nanoparticles in polymer networks has critical implications in biology and medicine, especially through thermophoresis in response to temperature gradients. This study presents a single-particle energy-conserving dissipative particle dynamics (seDPD) method by integrating a single-particle model into the energy-conserving DPD model to simulate the mesoscopic thermophoretic behavior of nanoparticles in polymer matrices. We first validate the newly developed seDPD model through comparisons with analytical solutions for nanoparticle viscosity, thermal diffusivity, and hydrodynamic drag and then demonstrate the effectiveness of the seDPD model in capturing thermophoretic forces induced by temperature gradients. The results show that nanoparticles driven by the Soret forces exhibit unique transport characteristics, such as drift velocity and diffusivity, leading to a significant acceleration of nanoparticle diffusion in the polymer network, which has been known as the giant acceleration of diffusion. Quantifying how nanoparticles move in flexible polymer networks sheds light on the interaction dynamics of nanoparticles within polymer networks, providing insight into nanoparticle behavior in complex environments that could be leveraged in various applications from drug delivery to material design."
+        },
+        {
+          "paperId": "038d51b2c4de9196ad273520ec5af1a733ad041d",
+          "externalIds": {
+            "PubMedCentral": "6431898",
+            "MAG": "2560279273",
+            "DOI": "10.3390/polym8120426",
+            "CorpusId": 2871208,
+            "PubMed": "30974702"
+          },
+          "url": "https://www.semanticscholar.org/paper/038d51b2c4de9196ad273520ec5af1a733ad041d",
+          "title": "Hydrodynamic Interactions and Entanglements of Polymer Solutions in Many-Body Dissipative Particle Dynamics",
+          "venue": "Polymers",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/2073-4360/8/12/426/pdf?version=1481276655",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6431898, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2016-12-01",
+          "journal": {
+            "name": "Polymers",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "144978027",
+              "name": "Xin Yong"
+            }
+          ],
+          "abstract": "Using many-body dissipative particle dynamics (MDPD), polymer solutions with concentrations spanning dilute and semidilute regimes are modeled. The parameterization of MDPD interactions for systems with liquid–vapor coexistence is established by mapping to the mean-field Flory–Huggins theory. The characterization of static and dynamic properties of polymer chains is focused on the effects of hydrodynamic interactions and entanglements. The coil–globule transition of polymer chains in dilute solutions is probed by varying solvent quality and measuring the radius of gyration and end-to-end distance. Both static and dynamic scaling relations for polymer chains in poor, theta, and good solvents are in good agreement with the Zimm theory with hydrodynamic interactions considered. Semidilute solutions with polymer volume fractions up to 0.7 exhibit the screening of excluded volume interactions and subsequent shrinking of polymer coils. Furthermore, entanglements become dominant in the semidilute solutions, which inhibit diffusion and relaxation of chains. Quantitative analysis of topology violation confirms that entanglements are correctly captured in the MDPD simulations."
+        },
+        {
+          "paperId": "170fcd5c58165e79287bfcce2373d3abb88d38c6",
+          "externalIds": {
+            "MAG": "1965305221",
+            "DOI": "10.1122/1.4883745",
+            "CorpusId": 119374676
+          },
+          "url": "https://www.semanticscholar.org/paper/170fcd5c58165e79287bfcce2373d3abb88d38c6",
+          "title": "Dissipative particle dynamics simulation of dilute polymer solutions—Inertial effects and hydrodynamic interactions",
+          "venue": "",
+          "year": 2014,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1122/1.4883745?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1122/1.4883745, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2014-06-19",
+          "journal": {
+            "name": "Journal of Rheology",
+            "pages": "1039-1058",
+            "volume": "58"
+          },
+          "authors": [
+            {
+              "authorId": "2088210995",
+              "name": "T. Zhao"
+            },
+            {
+              "authorId": "13867228",
+              "name": "Xiaogong Wang"
+            },
+            {
+              "authorId": "2112654268",
+              "name": "Lei Jiang"
+            },
+            {
+              "authorId": "33593095",
+              "name": "R. Larson"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "e6c8a1bbc036cbbe270a50aefab6a7e975e6a64b",
+          "externalIds": {
+            "MAG": "2609726578",
+            "CorpusId": 125487163
+          },
+          "url": "https://www.semanticscholar.org/paper/e6c8a1bbc036cbbe270a50aefab6a7e975e6a64b",
+          "title": "Many-Body Dissipative Particle Dynamics Simulations of Polymer Solutions: Hydrodynamic Interactions and Entanglements",
+          "venue": "",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null
+          },
+          "publicationTypes": null,
+          "publicationDate": "2017-03-16",
+          "journal": {
+            "name": "Bulletin of the American Physical Society",
+            "volume": "2017"
+          },
+          "authors": [
+            {
+              "authorId": "144978027",
+              "name": "Xin Yong"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "fe4e87df695c9d6cf0d0e424b68b656c987abc09",
+          "externalIds": {
+            "MAG": "2253488006",
+            "DOI": "10.3390/FLUIDS1010007",
+            "CorpusId": 15306535
+          },
+          "url": "https://www.semanticscholar.org/paper/fe4e87df695c9d6cf0d0e424b68b656c987abc09",
+          "title": "Simulation of Individual Polymer Chains and Polymer Solutions with Smoothed Dissipative Particle Dynamics",
+          "venue": "",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://www.mdpi.com/2311-5521/1/1/7/pdf?version=1454751644",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/FLUIDS1010007?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/FLUIDS1010007, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2016-02-06",
+          "journal": {
+            "name": "Fluids",
+            "pages": "7",
+            "volume": "1"
+          },
+          "authors": [
+            {
+              "authorId": "144779650",
+              "name": "S. Litvinov"
+            },
+            {
+              "authorId": "3326486",
+              "name": "Qingguang Xie"
+            },
+            {
+              "authorId": "33907116",
+              "name": "Xiangyu Y. Hu"
+            },
+            {
+              "authorId": "1686492",
+              "name": "N. Adams"
+            },
+            {
+              "authorId": "2778310",
+              "name": "M. Ellero"
+            }
+          ],
+          "abstract": "In an earlier work (Litvinov et al., Phys.Rev.E 77, 066703 (2008)), a model for a polymer molecule in solution based on the smoothed dissipative particle dynamics method (SDPD) has been presented. In the present paper, we show that the model can be extended to three-dimensional situations and simulate effectively diluted and concentrated polymer solutions. For an isolated suspended polymer, calculated static and dynamic properties agree well with previous numerical studies and theoretical predictions based on the Zimm model. This implies that hydrodynamic interactions are fully developed and correctly reproduced under the current simulated conditions. Simulations of polymer solutions and melts are also performed using a reverse Poiseuille flow setup. The resulting steady rheological properties (viscosity, normal stress coefficients) are extracted from the simulations and the results are compared with the previous numerical studies, showing good results."
+        },
+        {
+          "paperId": "ff2d805507fd449afa0050ed2b1b934ffcd75511",
+          "externalIds": {
+            "MAG": "2009776840",
+            "DOI": "10.1122/1.550713",
+            "CorpusId": 11820844
+          },
+          "url": "https://www.semanticscholar.org/paper/ff2d805507fd449afa0050ed2b1b934ffcd75511",
+          "title": "Computer simulation of dilute polymer solutions with the dissipative particle dynamics method",
+          "venue": "",
+          "year": 1995,
+          "openAccessPdf": {
+            "url": "https://pubs.aip.org/sor/jor/article-pdf/39/3/567/12640180/567_1_online.pdf",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1122/1.550713?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1122/1.550713, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "1995-05-01",
+          "journal": {
+            "name": "Journal of Rheology",
+            "pages": "567-579",
+            "volume": "39"
+          },
+          "authors": [
+            {
+              "authorId": "40802880",
+              "name": "A. Schlijper"
+            },
+            {
+              "authorId": "3247593",
+              "name": "P. Hoogerbrugge"
+            },
+            {
+              "authorId": "47949685",
+              "name": "C. Manke"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "9a7888788a7af41a4cae1ed45871a78cddac24b5",
+          "externalIds": {
+            "ArXiv": "2512.13267",
+            "CorpusId": 283897064
+          },
+          "url": "https://www.semanticscholar.org/paper/9a7888788a7af41a4cae1ed45871a78cddac24b5",
+          "title": "Lagrangian Heterogeneous Multiscale Method (LHMM) for Simulating Polymer Solutions/Melts Behavior under Complex Flows using DPD-SPH",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.13267, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-12-15",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "1419287641",
+              "name": "E. Patino-Narino"
+            },
+            {
+              "authorId": "2372430202",
+              "name": "Nicolás Moreno"
+            },
+            {
+              "authorId": "2323035608",
+              "name": "M. Ellero"
+            }
+          ],
+          "abstract": "We present a Lagrangian Heterogeneous Multiscale Method (LHMM) for simulating the non-Newtonian rheology of polymer melts in complex two-dimensional flows. The method couples Dissipative Particle Dynamics (DPD) at the microscale with a GENERIC-compliant Smoothed Particle Hydrodynamics (SPH) at the macroscale, in a concurrent framework, overcoming the limitations of traditional Eulerian-based methods in capturing long-memory and history-dependent effects. At the microscale, DPD serves as a virtual rheometer, employing FENE (Finitely Extensible Nonlinear Elastic) bead-spring polymer chains. This approach provides key rheological properties, including shear-thinning and zero-shear-rate viscosities, relaxation times, and viscoelastic dynamics, which are quantified via Carreau-Yasuda fitting and spectral analysis. The LHMM couples SPH-derived strain rates with microscopic stress responses using the Irving-Kirkwood formalism. This approach enables a concurrent interaction between macroscopic strain rates and microscopic stress tensors, ensuring a consistent viscoelastic response across scales. The method is validated against benchmark flows, including Reverse Poiseuille Flow and flow through a Periodic Array of Cylinders, across Weissenberg numbers $0.5<\\text{Wi}<30$ and low Reynolds numbers ($\\text{Re}<1$). A final demonstration of flow in a 2D porous medium highlights LHMM's capability to handle highly heterogeneous geometries. The LHMM is implemented in LAMMPS, making it suitable for integrating multiple models to describe microscales. In contrast, large-scale simulations efficiently utilize GPU and CPU resources, managing multiple coupling and time-scaling levels to maintain numerical stability and accuracy. The framework offers a predictive, constitutive-free tool that links microscopic polymer dynamics to macroscopic flow behavior, making it suitable for multiscale applications."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            28
+          ]
+        ],
+        "date-time": "2026-03-28T05:01:26Z",
+        "timestamp": 1774674086470,
+        "version": "3.50.1"
+      },
+      "reference-count": 48,
+      "publisher": "AIP Publishing",
+      "issue": "4",
+      "content-domain": {
+        "domain": [
+          "pubs.aip.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            28
+          ]
+        ]
+      },
+      "abstract": "<jats:p>The authors analyzed extensively the dynamics of polymer chains in solutions simulated with dissipative particle dynamics (DPD), with a special focus on the potential influence of a low Schmidt number of a typical DPD fluid on the simulated polymer dynamics. It has been argued that a low Schmidt number in a DPD fluid can lead to underdevelopment of the hydrodynamic interaction in polymer solutions. The authors’ analyses reveal that equilibrium polymer dynamics in dilute solution, under typical DPD simulation conditions, obey the Zimm [J. Chem. Phys. 24, 269 (1956)] model very well. With a further reduction in the Schmidt number, a deviation from the Zimm model to the Rouse model is observed. This implies that the hydrodynamic interaction between monomers is reasonably developed under typical conditions of a DPD simulation. Only when the Schmidt number is further reduced, the hydrodynamic interaction within the chains becomes underdeveloped. The screening of the hydrodynamic interaction and the excluded volume interaction as the polymer volume fraction is increased are well reproduced by the DPD simulations. The use of soft interaction between polymer beads and a low Schmidt number do not produce noticeable problems for the simulated dynamics at high concentrations, except for the entanglement effect which is not captured in the simulations.</jats:p>",
+      "DOI": "10.1063/1.2428307",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            25
+          ]
+        ],
+        "date-time": "2007-01-25T16:08:57Z",
+        "timestamp": 1169741337000
+      },
+      "update-policy": "https://doi.org/10.1063/aip-crossmark-policy-page",
+      "source": "Crossref",
+      "is-referenced-by-count": 128,
+      "title": [
+        "Hydrodynamic interaction in polymer solutions simulated with dissipative particle dynamics"
+      ],
+      "prefix": "10.1063",
+      "volume": "126",
+      "author": [
+        {
+          "given": "Wenhua",
+          "family": "Jiang",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "The University of Memphis Chemistry Department, , Memphis, Tennessee 38152-3390"
+            }
+          ]
+        },
+        {
+          "given": "Jianhua",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Memphis Chemistry Department, , Memphis, Tennessee 38152-3390 and Chemistry Department, , Hangzhou 310018, China"
+            },
+            {
+              "name": "Zhejiang Sci-Tech University Chemistry Department, , Memphis, Tennessee 38152-3390 and Chemistry Department, , Hangzhou 310018, China"
+            }
+          ]
+        },
+        {
+          "given": "Yongmei",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Memphis Chemistry Department, , Memphis, Tennessee 38152-3390"
+            }
+          ]
+        },
+        {
+          "given": "Mohamed",
+          "family": "Laradji",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The University of Memphis Physics Department, , Memphis, Tennessee 37152-3390 and MEMPHYS-Center for Biomembrane Physics, , DK-5230 Odense M, Denmark"
+            },
+            {
+              "name": "University of Southern Denmark Physics Department, , Memphis, Tennessee 37152-3390 and MEMPHYS-Center for Biomembrane Physics, , DK-5230 Odense M, Denmark"
+            }
+          ]
+        }
+      ],
+      "member": "317",
+      "published-online": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            23
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "2023073119590904200_c1",
+          "volume-title": "Polymer Physics",
+          "year": "2003"
+        },
+        {
+          "key": "2023073119590904200_c2",
+          "volume-title": "Scaling Concepts of Polymer Physics",
+          "year": "1979"
+        },
+        {
+          "key": "2023073119590904200_c3",
+          "volume-title": "The Theory of Polymer Dynamics",
+          "year": "1986"
+        },
+        {
+          "key": "2023073119590904200_c4",
+          "doi-asserted-by": "publisher",
+          "first-page": "1272",
+          "DOI": "10.1063/1.1699180",
+          "volume": "21",
+          "year": "1953",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c5",
+          "doi-asserted-by": "publisher",
+          "first-page": "269",
+          "DOI": "10.1063/1.1742462",
+          "volume": "24",
+          "year": "1956",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c6",
+          "doi-asserted-by": "publisher",
+          "first-page": "1372",
+          "DOI": "10.1021/ma951455p",
+          "volume": "29",
+          "year": "1996",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c7",
+          "doi-asserted-by": "publisher",
+          "first-page": "011915",
+          "DOI": "10.1103/PhysRevE.66.011915",
+          "volume": "66",
+          "year": "2002",
+          "journal-title": "Phys. Rev. E"
+        },
+        {
+          "key": "2023073119590904200_c8",
+          "doi-asserted-by": "publisher",
+          "first-page": "713",
+          "DOI": "10.1122/1.551115",
+          "volume": "44",
+          "year": "2000",
+          "journal-title": "J. Rheol."
+        },
+        {
+          "key": "2023073119590904200_c9",
+          "doi-asserted-by": "publisher",
+          "first-page": "1724",
+          "DOI": "10.1126/science.283.5408.1724",
+          "volume": "283",
+          "year": "1999",
+          "journal-title": "Science"
+        },
+        {
+          "key": "2023073119590904200_c10",
+          "doi-asserted-by": "publisher",
+          "first-page": "5078",
+          "DOI": "10.1063/1.477122",
+          "volume": "109",
+          "year": "1998",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c11",
+          "doi-asserted-by": "publisher",
+          "first-page": "2996",
+          "DOI": "10.1103/PhysRevLett.66.2996",
+          "volume": "66",
+          "year": "1991",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "2023073119590904200_c12",
+          "doi-asserted-by": "publisher",
+          "first-page": "2992",
+          "DOI": "10.1103/PhysRevLett.66.2992",
+          "volume": "61",
+          "year": "1991",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "2023073119590904200_c13",
+          "doi-asserted-by": "publisher",
+          "first-page": "6983",
+          "DOI": "10.1063/1.465445",
+          "volume": "99",
+          "year": "1993",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c14",
+          "doi-asserted-by": "publisher",
+          "first-page": "184905",
+          "DOI": "10.1063/1.2194903",
+          "volume": "124",
+          "year": "2006",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c15",
+          "doi-asserted-by": "publisher",
+          "first-page": "7752",
+          "DOI": "10.1063/1.1466831",
+          "volume": "116",
+          "year": "2002",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c16",
+          "doi-asserted-by": "publisher",
+          "first-page": "038102",
+          "DOI": "10.1103/PhysRevLett.91.038102",
+          "volume": "91",
+          "year": "2003",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "2023073119590904200_c17",
+          "doi-asserted-by": "publisher",
+          "first-page": "1165",
+          "DOI": "10.1063/1.1575200",
+          "volume": "119",
+          "year": "2003",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c18",
+          "doi-asserted-by": "publisher",
+          "first-page": "2513",
+          "DOI": "10.1063/1.1637331",
+          "volume": "120",
+          "year": "2004",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c19",
+          "doi-asserted-by": "publisher",
+          "first-page": "8225",
+          "DOI": "10.1063/1.480156",
+          "volume": "111",
+          "year": "1999",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c20",
+          "doi-asserted-by": "publisher",
+          "first-page": "031703",
+          "DOI": "10.1063/1.2186591",
+          "volume": "18",
+          "year": "2006",
+          "journal-title": "Phys. Fluids"
+        },
+        {
+          "key": "2023073119590904200_c21",
+          "doi-asserted-by": "publisher",
+          "first-page": "094902",
+          "DOI": "10.1063/1.1854151",
+          "volume": "122",
+          "year": "2005",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c22",
+          "doi-asserted-by": "crossref",
+          "first-page": "155",
+          "DOI": "10.1209/0295-5075/19/3/001",
+          "volume": "19",
+          "year": "1992",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c23",
+          "doi-asserted-by": "crossref",
+          "first-page": "191",
+          "DOI": "10.1209/0295-5075/30/4/001",
+          "volume": "30",
+          "year": "1995",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c24",
+          "doi-asserted-by": "publisher",
+          "first-page": "631",
+          "DOI": "10.1209/epl/i1997-00515-8",
+          "volume": "40",
+          "year": "1997",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c25",
+          "doi-asserted-by": "publisher",
+          "first-page": "7271",
+          "DOI": "10.1063/1.1402989",
+          "volume": "115",
+          "year": "2001",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c26",
+          "doi-asserted-by": "publisher",
+          "first-page": "9739",
+          "DOI": "10.1063/1.478939",
+          "volume": "110",
+          "year": "1999",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c27",
+          "doi-asserted-by": "publisher",
+          "first-page": "10641",
+          "DOI": "10.1063/1.1806815",
+          "volume": "121",
+          "year": "2004",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c28",
+          "doi-asserted-by": "publisher",
+          "first-page": "198105",
+          "DOI": "10.1103/PhysRevLett.93.198105",
+          "volume": "93",
+          "year": "2004",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "2023073119590904200_c29",
+          "doi-asserted-by": "publisher",
+          "first-page": "7138",
+          "DOI": "10.1021/ma020086b",
+          "volume": "35",
+          "year": "2002",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c30",
+          "doi-asserted-by": "crossref",
+          "first-page": "5546",
+          "DOI": "10.1021/ma060628f",
+          "volume": "39",
+          "year": "2006",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c31",
+          "doi-asserted-by": "publisher",
+          "first-page": "4423",
+          "DOI": "10.1063/1.474784",
+          "volume": "107",
+          "year": "1997",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c32",
+          "doi-asserted-by": "crossref",
+          "first-page": "231",
+          "DOI": "10.1142/S0217979203017400",
+          "volume": "17",
+          "year": "2003",
+          "journal-title": "Int. J. Mod. Phys. B"
+        },
+        {
+          "key": "2023073119590904200_c33",
+          "doi-asserted-by": "publisher",
+          "first-page": "592",
+          "DOI": "10.1063/1.474420",
+          "volume": "107",
+          "year": "1997",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c34",
+          "doi-asserted-by": "publisher",
+          "first-page": "1221",
+          "DOI": "10.1122/1.1498285",
+          "volume": "46",
+          "year": "2002",
+          "journal-title": "J. Rheol."
+        },
+        {
+          "key": "2023073119590904200_c35",
+          "doi-asserted-by": "publisher",
+          "first-page": "534",
+          "DOI": "10.1209/epl/i2000-00183-2",
+          "volume": "49",
+          "year": "2000",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c36",
+          "doi-asserted-by": "publisher",
+          "first-page": "377",
+          "DOI": "10.1209/epl/i1998-00258-6",
+          "volume": "42",
+          "year": "1998",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c37",
+          "doi-asserted-by": "publisher",
+          "first-page": "1978",
+          "DOI": "10.1063/1.473341",
+          "volume": "106",
+          "year": "1997",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c38",
+          "doi-asserted-by": "publisher",
+          "first-page": "384",
+          "DOI": "10.1209/epl/i2003-10314-9",
+          "volume": "68",
+          "year": "2004",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c39",
+          "doi-asserted-by": "publisher",
+          "first-page": "567",
+          "DOI": "10.1122/1.550713",
+          "volume": "39",
+          "year": "1995",
+          "journal-title": "J. Rheol."
+        },
+        {
+          "key": "2023073119590904200_c40",
+          "doi-asserted-by": "publisher",
+          "first-page": "076001",
+          "DOI": "10.1103/PhysRevLett.95.076001",
+          "volume": "95",
+          "year": "2005",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "2023073119590904200_c41",
+          "doi-asserted-by": "publisher",
+          "first-page": "914",
+          "DOI": "10.1063/1.1483296",
+          "volume": "117",
+          "year": "2002",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c42",
+          "doi-asserted-by": "publisher",
+          "first-page": "5057",
+          "DOI": "10.1063/1.458541",
+          "volume": "92",
+          "year": "1990",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "2023073119590904200_c43",
+          "doi-asserted-by": "publisher",
+          "first-page": "3478",
+          "DOI": "10.1021/ma991856v",
+          "volume": "33",
+          "year": "2000",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c44",
+          "doi-asserted-by": "crossref",
+          "first-page": "971",
+          "DOI": "10.1021/ma00134a075",
+          "volume": "17",
+          "year": "1984",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c45",
+          "doi-asserted-by": "crossref",
+          "first-page": "843",
+          "DOI": "10.1021/ma60065a001",
+          "volume": "11",
+          "year": "1978",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c46",
+          "doi-asserted-by": "crossref",
+          "first-page": "4382",
+          "DOI": "10.1021/ma00043a022",
+          "volume": "25",
+          "year": "1992",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "2023073119590904200_c47",
+          "doi-asserted-by": "publisher",
+          "first-page": "311",
+          "DOI": "10.1209/epl/i2004-10010-4",
+          "volume": "66",
+          "year": "2004",
+          "journal-title": "Europhys. Lett."
+        },
+        {
+          "key": "2023073119590904200_c48",
+          "doi-asserted-by": "publisher",
+          "first-page": "063102",
+          "DOI": "10.1063/1.2206595",
+          "volume": "18",
+          "year": "2006",
+          "journal-title": "Phys. Fluids"
+        }
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.2428307/15394854/044901_1_online.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.2428307/15394854/044901_1_online.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            31
+          ]
+        ],
+        "date-time": "2023-07-31T19:59:20Z",
+        "timestamp": 1690833560000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://pubs.aip.org/jcp/article/126/4/044901/914129/Hydrodynamic-interaction-in-polymer-solutions"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            23
+          ]
+        ]
+      },
+      "references-count": 48,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              2007,
+              1,
+              28
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1063/1.2428307",
+      "relation": {},
+      "ISSN": [
+        "0021-9606",
+        "1089-7690"
+      ],
+      "issn-type": [
+        {
+          "value": "0021-9606",
+          "type": "print"
+        },
+        {
+          "value": "1089-7690",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published-other": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            28
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2007,
+            1,
+            23
+          ]
+        ]
+      },
+      "article-number": "044901"
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-cd0bcf77e6fe7d35.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-cd0bcf77e6fe7d35.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-cd0bcf77e6fe7d35.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "cdd8fd1db51d6972e1850c14a5098dc004f213ea7398d79798dfc748586543e8",
+    "chunk_count": 31,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

@@ -1,0 +1,59 @@
+{
+  "paper_id": "sha256-525bbfd9e0c01d06",
+  "content_kind": "pdf_backed",
+  "addition_mode": "pdf_guided",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/protein_aggregation/Shakhnovich 2020 eLife - Dynamic metastable long-living droplets formed by sticker-spacer proteins.pdf",
+  "pdf_sha256": "525bbfd9e0c01d06b898f5c86dc39d39669c02e6bf3dc67c2d67ca5ed68796d8",
+  "filename": "Shakhnovich 2020 eLife - Dynamic metastable long-living droplets formed by sticker-spacer proteins.pdf",
+  "item_type": "article",
+  "title_query": "Dynamic metastable long living droplets formed by sticker spacer proteins",
+  "date_indexed": "2026-06-15T08:06:15.913226+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": null,
+  "metadata_source": "manual_bibtex",
+  "doi_candidates": [],
+  "doi_candidate_details": [],
+  "semantic_scholar": {
+    "query": "Dynamic metastable long living droplets formed by sticker spacer proteins",
+    "limit": 0,
+    "attempts": [],
+    "selected_paper_id": "",
+    "best_candidate": null,
+    "merged_candidates": []
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false,
+    "accepted_doi": "",
+    "best_candidate_doi": "",
+    "crossref_attempts": [],
+    "accepted_source": "",
+    "matched_by": ""
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-525bbfd9e0c01d06.json",
+    "text_path": "paper_index/text/sha256-525bbfd9e0c01d06.txt",
+    "chunk_path": "paper_index/chunks/sha256-525bbfd9e0c01d06.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "09ebfc7dd7339036f848591597c67ee22ff89ad4418cbfdf3d0c8c37f1f29819",
+    "chunk_count": 54,
+    "chunk_target_chars": 2000,
+    "chunk_overlap_chars": 200,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "raw_bibtex": "@article{ranganathan2020dynamic,\n  title = {Dynamic metastable long-living droplets formed by sticker-spacer proteins},\n  author = {Ranganathan, Srivastav and Shakhnovich, Eugene I},\n  year = {2020},\n  journal = {Elife},\n  volume = {9},\n  pages = {e56159},\n  publisher = {eLife Sciences Publications, Ltd}\n}",
+    "parsed_bibtex_type": "article",
+    "source_note": "pasted into library_add.py pdf flow",
+    "bibtex_key": "ranganathan2020dynamic"
+  }
+}

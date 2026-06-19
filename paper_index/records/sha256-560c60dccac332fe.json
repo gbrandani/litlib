@@ -1,0 +1,839 @@
+{
+  "paper_id": "sha256-560c60dccac332fe",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/nucleosome_positioning/Hughes - BMC Bioinformatics 2009 - GC content dominates intrinsic nucleosome occupancy.pdf",
+  "pdf_sha256": "560c60dccac332feb353b9ac0c057392d3fcc13b15d4965282f08d232671981d",
+  "filename": "Hughes - BMC Bioinformatics 2009 - GC content dominates intrinsic nucleosome occupancy.pdf",
+  "item_type": "article",
+  "title_query": "GC content dominates intrinsic nucleosome occupancy",
+  "filename_hints": {
+    "year_hint": null,
+    "venue_hint": "",
+    "prefix": "Hughes"
+  },
+  "doi_candidates": [
+    "10.1186/1471-2105-10-442"
+  ],
+  "date_indexed": "2026-04-17T03:33:56.918274+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.9533,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "GC content dominates intrinsic nucleosome occupancy",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "85502a4c2cf558388badd4984ef51e5902b89020",
+      "externalIds": {
+        "PubMedCentral": "2808325",
+        "DBLP": "journals/bmcbi/TilloH09",
+        "MAG": "2080569293",
+        "DOI": "10.1186/1471-2105-10-442",
+        "CorpusId": 1513660,
+        "PubMed": "20028554"
+      },
+      "url": "https://www.semanticscholar.org/paper/85502a4c2cf558388badd4984ef51e5902b89020",
+      "title": "G+C content dominates intrinsic nucleosome occupancy",
+      "venue": "BMC Bioinformatics",
+      "year": 2009,
+      "openAccessPdf": {
+        "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-10-442",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC2808325, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2009-12-22",
+      "journal": {
+        "name": "BMC Bioinformatics",
+        "pages": "442 - 442",
+        "volume": "10"
+      },
+      "authors": [
+        {
+          "authorId": "2354077934",
+          "name": "Desiree Tillo"
+        },
+        {
+          "authorId": "51212782",
+          "name": "T. Hughes"
+        }
+      ],
+      "abstract": "BackgroundThe relative preference of nucleosomes to form on individual DNA sequences plays a major role in genome packaging. A wide variety of DNA sequence features are believed to influence nucleosome formation, including periodic dinucleotide signals, poly-A stretches and other short motifs, and sequence properties that influence DNA structure, including base content. It was recently shown by Kaplan et al. that a probabilistic model using composition of all 5-mers within a nucleosome-sized tiling window accurately predicts intrinsic nucleosome occupancy across an entire genome in vitro. However, the model is complicated, and it is not clear which specific DNA sequence properties are most important for intrinsic nucleosome-forming preferences.ResultsWe find that a simple linear combination of only 14 simple DNA sequence attributes (G+C content, two transformations of dinucleotide composition, and the frequency of eleven 4-bp sequences) explains nucleosome occupancy in vitro and in vivo in a manner comparable to the Kaplan model. G+C content and frequency of AAAA are the most important features. G+C content is dominant, alone explaining ~50% of the variation in nucleosome occupancy in vitro.ConclusionsOur findings provide a dramatically simplified means to predict and understand intrinsic nucleosome occupancy. G+C content may dominate because it both reduces frequency of poly-A-like stretches and correlates with many other DNA structural characteristics. Since G+C content is enriched or depleted at many types of features in diverse eukaryotic genomes, our results suggest that variation in nucleotide composition may have a widespread and direct influence on chromatin structure."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "85502a4c2cf558388badd4984ef51e5902b89020",
+        "title": "G+C content dominates intrinsic nucleosome occupancy",
+        "score": 0.9533,
+        "title_similarity": 0.8333,
+        "query_year": 2009,
+        "candidate_year": 2009,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8c1b00665a95d16f52e28a5e4b5545a45dfb0688",
+        "title": "The relationships among GC content, nucleosome occupancy, and exon size",
+        "score": 0.4933,
+        "title_similarity": 0.5733,
+        "query_year": 2009,
+        "candidate_year": 2014,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "50e508b0076eff6ee3e83bbaede3d1e0c5ed681b",
+        "title": "DNA Sequence Complexity Reveals Structure Beyond GC Content in Nucleosome Occupancy",
+        "score": 0.47,
+        "title_similarity": 0.55,
+        "query_year": 2009,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "31052a5553a5ae6d52c073ffca1d0345d42e5f47",
+        "title": "GC content strongly influences the role of poly(dA) in the intrinsic nucleosome positioning in Saccharomyces cerevisiae",
+        "score": 0.4533,
+        "title_similarity": 0.5333,
+        "query_year": 2009,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2c0494247cbd36cefef25200e80cb07311ffea9a",
+        "title": "GC content, but not nucleosome positioning, directly contributes to intron splicing efficiency in Paramecium",
+        "score": 0.315,
+        "title_similarity": 0.395,
+        "query_year": 2009,
+        "candidate_year": 2021,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b918c6aa85434e801851063513f30e57a37908de",
+        "title": "Human exonization through differential nucleosome occupancy",
+        "score": 0.2067,
+        "title_similarity": 0.2867,
+        "query_year": 2009,
+        "candidate_year": 2018,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0922d0fd1c7fae87e2fb095bdb3f9ad93d7680c6",
+        "title": "GC Content Heterogeneity Transition of Conserved Noncoding Sequences Occurred at the Emergence of Vertebrates",
+        "score": 0.1867,
+        "title_similarity": 0.2667,
+        "query_year": 2009,
+        "candidate_year": 2016,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a61e37292ce8297ec3cd1fea8d3a55f0e9dfaa47",
+        "title": "Training-free measures based on algorithmic probability identify high nucleosome occupancy in DNA sequences",
+        "score": 0.1804,
+        "title_similarity": 0.2604,
+        "query_year": 2009,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "74c0e9459fc700fa13b18d4a97ad66f4359f0c19",
+        "title": "Differential GC content between exons and introns establishes distinct strategies of splice-site recognition.",
+        "score": 0.1804,
+        "title_similarity": 0.2604,
+        "query_year": 2009,
+        "candidate_year": 2012,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "904f7dd0922a912ffc3b4bfb5bfffde6f2a84ff5",
+        "title": "HDGS-Net: nucleosome occupancy prediction based on a hybrid dilated gated separable convolutional neural network",
+        "score": 0.1778,
+        "title_similarity": 0.2578,
+        "query_year": 2009,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1186/1471-2105-10-442"
+    ],
+    "matching_extracted_doi": "10.1186/1471-2105-10-442",
+    "raw_response": {
+      "total": 68,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "85502a4c2cf558388badd4984ef51e5902b89020",
+          "externalIds": {
+            "PubMedCentral": "2808325",
+            "DBLP": "journals/bmcbi/TilloH09",
+            "MAG": "2080569293",
+            "DOI": "10.1186/1471-2105-10-442",
+            "CorpusId": 1513660,
+            "PubMed": "20028554"
+          },
+          "url": "https://www.semanticscholar.org/paper/85502a4c2cf558388badd4984ef51e5902b89020",
+          "title": "G+C content dominates intrinsic nucleosome occupancy",
+          "venue": "BMC Bioinformatics",
+          "year": 2009,
+          "openAccessPdf": {
+            "url": "https://bmcbioinformatics.biomedcentral.com/counter/pdf/10.1186/1471-2105-10-442",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC2808325, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2009-12-22",
+          "journal": {
+            "name": "BMC Bioinformatics",
+            "pages": "442 - 442",
+            "volume": "10"
+          },
+          "authors": [
+            {
+              "authorId": "2354077934",
+              "name": "Desiree Tillo"
+            },
+            {
+              "authorId": "51212782",
+              "name": "T. Hughes"
+            }
+          ],
+          "abstract": "BackgroundThe relative preference of nucleosomes to form on individual DNA sequences plays a major role in genome packaging. A wide variety of DNA sequence features are believed to influence nucleosome formation, including periodic dinucleotide signals, poly-A stretches and other short motifs, and sequence properties that influence DNA structure, including base content. It was recently shown by Kaplan et al. that a probabilistic model using composition of all 5-mers within a nucleosome-sized tiling window accurately predicts intrinsic nucleosome occupancy across an entire genome in vitro. However, the model is complicated, and it is not clear which specific DNA sequence properties are most important for intrinsic nucleosome-forming preferences.ResultsWe find that a simple linear combination of only 14 simple DNA sequence attributes (G+C content, two transformations of dinucleotide composition, and the frequency of eleven 4-bp sequences) explains nucleosome occupancy in vitro and in vivo in a manner comparable to the Kaplan model. G+C content and frequency of AAAA are the most important features. G+C content is dominant, alone explaining ~50% of the variation in nucleosome occupancy in vitro.ConclusionsOur findings provide a dramatically simplified means to predict and understand intrinsic nucleosome occupancy. G+C content may dominate because it both reduces frequency of poly-A-like stretches and correlates with many other DNA structural characteristics. Since G+C content is enriched or depleted at many types of features in diverse eukaryotic genomes, our results suggest that variation in nucleotide composition may have a widespread and direct influence on chromatin structure."
+        },
+        {
+          "paperId": "31052a5553a5ae6d52c073ffca1d0345d42e5f47",
+          "externalIds": {
+            "PubMedCentral": "9541940",
+            "DOI": "10.1002/yea.3701",
+            "CorpusId": 247777063,
+            "PubMed": "35348238"
+          },
+          "url": "https://www.semanticscholar.org/paper/31052a5553a5ae6d52c073ffca1d0345d42e5f47",
+          "title": "GC content strongly influences the role of poly(dA) in the intrinsic nucleosome positioning in Saccharomyces cerevisiae",
+          "venue": "Yeast",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/yea.3701",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9541940, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-03-29",
+          "journal": {
+            "name": "Yeast (Chichester, England)",
+            "pages": "262 - 271",
+            "volume": "39"
+          },
+          "authors": [
+            {
+              "authorId": "86982642",
+              "name": "E. Trotta"
+            }
+          ],
+          "abstract": "The nucleosome is the basic structural element of genomic DNA packaging and plays a role in transcription, replication, and recombination. Poly(dA) tracts are considered major sequence determinants of nucleosome positioning, although their role is not well understood. Here, we show that the homopolymeric character and the low GC content of poly(dA)s play different roles in nucleosome formation. We found that the inherent low GC content of poly(dA) alone can account for the deep and anisotropic nucleosome depletion at structurally and functionally important regions of promoters and origins of replication. We also show that the level of nucleosome occupancy at poly(dA) is strongly related to the local nucleotide background and its high frequency of occurrence in Saccharomyces cerevisiae does not appear merely to be associated with its intrinsic nucleosome‐excluding properties. In addition, we show that the GC content alone can predict more than 60% of the in vitro nucleosome map, providing further evidence that the intrinsic nucleosome positioning is more greatly determined by GC content than poly(dA) stretches. Our results are consistent with a model in which poly(dA) stretches act at two distinct levels: first, by its low GC content, which intrinsically contributes to hinder nucleosome formation, and second, by its contiguous runs of dA that selectively drive the recruitment of non‐histone proteins with structural and functional roles."
+        },
+        {
+          "paperId": "50e508b0076eff6ee3e83bbaede3d1e0c5ed681b",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-1708-01751",
+            "MAG": "2744257179",
+            "ArXiv": "1708.01751",
+            "CorpusId": 35432511
+          },
+          "url": "https://www.semanticscholar.org/paper/50e508b0076eff6ee3e83bbaede3d1e0c5ed681b",
+          "title": "DNA Sequence Complexity Reveals Structure Beyond GC Content in Nucleosome Occupancy",
+          "venue": "arXiv.org",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1708.01751, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2017-08-05",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/1708.01751"
+          },
+          "authors": [
+            {
+              "authorId": "66445647",
+              "name": "H. Zenil"
+            },
+            {
+              "authorId": "49202103",
+              "name": "P. Minary"
+            }
+          ],
+          "abstract": "We introduce methods that rapidly evaluate a battery of information-theoretic and algorithmic complexity measures on DNA sequences in application to potential binding sites for nucleosomes. The first application of this new tool demonstrates structure beyond GC content on DNA sequences in the context of nucleosome binding. We tested the measures on well-studied genomic sequences of size 20K and 100K bps. The measures reveal the known in vivo versus in vitro predictive discrepancies, but they also uncover the internal structure of G and C within the nucleosome length, thus disclosing more than simply GC content when one examines alphabet transformations that separate and scramble the GC content signal and the DNA sequence. Most current prediction methods are based upon training (e.g. $k$-mer discovery), the one here advanced, however, is a training-free approach to investigating informative measures of DNA information content in connection with structural nucleosomic packing."
+        },
+        {
+          "paperId": "2c0494247cbd36cefef25200e80cb07311ffea9a",
+          "externalIds": {
+            "PubMedCentral": "8997360",
+            "DOI": "10.1101/2021.08.05.455221",
+            "CorpusId": 236961785,
+            "PubMed": "35264448"
+          },
+          "url": "https://www.semanticscholar.org/paper/2c0494247cbd36cefef25200e80cb07311ffea9a",
+          "title": "GC content, but not nucleosome positioning, directly contributes to intron splicing efficiency in Paramecium",
+          "venue": "bioRxiv",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://genome.cshlp.org/content/32/4/699.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8997360, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-08-06",
+          "journal": {
+            "name": "Genome Research",
+            "pages": "699 - 709",
+            "volume": "32"
+          },
+          "authors": [
+            {
+              "authorId": "2026111140",
+              "name": "Stefano Gnan"
+            },
+            {
+              "authorId": "5874985",
+              "name": "Mélody Matelot"
+            },
+            {
+              "authorId": "2162969",
+              "name": "Marion Weiman"
+            },
+            {
+              "authorId": "3129499",
+              "name": "O. Arnaiz"
+            },
+            {
+              "authorId": "39946196",
+              "name": "F. Guérin"
+            },
+            {
+              "authorId": "35101516",
+              "name": "L. Sperling"
+            },
+            {
+              "authorId": "4406101",
+              "name": "M. Bétermier"
+            },
+            {
+              "authorId": "1921231",
+              "name": "C. Thermes"
+            },
+            {
+              "authorId": "48239939",
+              "name": "Chun-long Chen"
+            },
+            {
+              "authorId": "6024934",
+              "name": "S. Duharcourt"
+            }
+          ],
+          "abstract": "Eukaryotic genes are interrupted by introns that must be accurately spliced from mRNA precursors. With an average length of 25 nt, the >90,000 introns of Paramecium tetraurelia stand among the shortest introns reported in eukaryotes. The mechanisms specifying the correct recognition of these tiny introns remain poorly understood. Splicing can occur co-transcriptionally and it has been proposed that chromatin structure might influence splice site recognition. To investigate the roles of nucleosome positioning in intron recognition, we determined the nucleosome occupancy along the P. tetraurelia genome. We showed that P. tetraurelia displays a regular nucleosome array with a nucleosome repeat length of ∼151 bp, amongst the smallest periodicities reported. Our analysis revealed that introns are frequently associated with inter-nucleosomal DNA, pointing to an evolutionary constraint to locate introns at the AT-rich nucleosome edge sequences. Using accurate splicing efficiency data from cells depleted for the nonsense-mediated decay effectors, we showed that introns located at the edge of nucleosomes display higher splicing efficiency than those at the centre. However, multiple regression analysis indicated that the GC content, rather than nucleosome positioning, directly contributes to intron splicing efficiency. Our data reveal a complex link between GC content, nucleosome positioning and intron evolution in Paramecium."
+        },
+        {
+          "paperId": "8c1b00665a95d16f52e28a5e4b5545a45dfb0688",
+          "externalIds": {
+            "MAG": "1600604293",
+            "ArXiv": "1404.2487",
+            "CorpusId": 11169304
+          },
+          "url": "https://www.semanticscholar.org/paper/8c1b00665a95d16f52e28a5e4b5545a45dfb0688",
+          "title": "The relationships among GC content, nucleosome occupancy, and exon size",
+          "venue": "",
+          "year": 2014,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1404.2487, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2014-04-09",
+          "journal": {
+            "name": "arXiv: Genomics",
+            "volume": ""
+          },
+          "authors": [
+            {
+              "authorId": "49681163",
+              "name": "Liya Wang"
+            },
+            {
+              "authorId": "24917093",
+              "name": "L. Stein"
+            },
+            {
+              "authorId": "145575011",
+              "name": "D. Ware"
+            }
+          ],
+          "abstract": "The average size of internal translated exons, ranging from 120 to 165 nt across metazoans, is approximately the size of the typical mononucleosome (147 nt). Genome-wide study has also shown that nucleosome occupancy is significantly higher in exons than in introns, which might indicate that the evolution of exon size is related to its nucleosome occupancy. By grouping exons by the GC contents of their flanking introns, we show that the average exon size is positively correlated with its GC content. Using the sequencing data from direct mapping of Homo sapiens nucleosomes with limited nuclease digestion, we show that the level of nucleosome occupancy is also positively correlated with the exon GC content in a similar fashion. We then demonstrated that exon size is positively correlated with their nucleosome occupancy. The strong correlation between exon size and the nucleosome occupancy suggests that chromatin organization may be related to the evolution of exon sizes."
+        },
+        {
+          "paperId": "904f7dd0922a912ffc3b4bfb5bfffde6f2a84ff5",
+          "externalIds": {
+            "PubMedCentral": "12910957",
+            "DOI": "10.1186/s12864-026-12523-2",
+            "CorpusId": 284980509,
+            "PubMed": "41580672"
+          },
+          "url": "https://www.semanticscholar.org/paper/904f7dd0922a912ffc3b4bfb5bfffde6f2a84ff5",
+          "title": "HDGS-Net: nucleosome occupancy prediction based on a hybrid dilated gated separable convolutional neural network",
+          "venue": "BMC Genomics",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12910957, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-01-24",
+          "journal": {
+            "name": "BMC Genomics",
+            "volume": "27"
+          },
+          "authors": [
+            {
+              "authorId": "2406823524",
+              "name": "Fuquan Shi"
+            },
+            {
+              "authorId": "2358886767",
+              "name": "Meizhi Wang"
+            },
+            {
+              "authorId": "2843526",
+              "name": "Zhixia Teng"
+            },
+            {
+              "authorId": "2263933510",
+              "name": "L. Cai"
+            },
+            {
+              "authorId": "2271954008",
+              "name": "Guoqing Liu"
+            },
+            {
+              "authorId": "2370887279",
+              "name": "Yongqiang Xing"
+            },
+            {
+              "authorId": "2270274314",
+              "name": "Xiangjun Cui"
+            },
+            {
+              "authorId": "2358997006",
+              "name": "Guojun Liu"
+            },
+            {
+              "authorId": "2406755303",
+              "name": "Zhihua Yang"
+            },
+            {
+              "authorId": "2270099327",
+              "name": "Hu Meng"
+            }
+          ],
+          "abstract": "Nucleosome positioning plays a central role in chromatin organization and gene regulation, yet its accurate computational prediction remains challenging. This study introduces a Hybrid Dilated Gated Separable Convolutional Neural Network (HDGS-Net), which integrates dilated convolution, gated convolution, and depthwise separable convolution to achieve continuous prediction of in vitro nucleosome occupancy at single-base resolution across the entire Saccharomyces cerevisiae genome. On benchmark datasets, HDGS-Net attained an average Pearson correlation coefficient of 0.87, outperforming conventional methods and demonstrating excellent cross-chromosome generalization capability. Sequence analysis confirms that DNA dinucleotide physical properties dominate nucleosome positioning, with AT-rich sequences inhibiting binding and GC-rich sequences promoting binding. Analysis of transcription start regions verifies that flanking nucleosome sequence features are highly conserved across different chromatin environments, supporting the universal regulatory role of sequence preference. Cross-species analysis demonstrates that the guiding efficacy of DNA sequence on nucleosome positioning varies among species, showing quantitatively decreasing contributions in Caenorhabditis elegans, Saccharomyces cerevisiae, and Schizosaccharomyces pombe. This study provides a high-accuracy predictive tool for investigating dynamic nucleosome positioning."
+        },
+        {
+          "paperId": "0922d0fd1c7fae87e2fb095bdb3f9ad93d7680c6",
+          "externalIds": {
+            "MAG": "2567615039",
+            "PubMedCentral": "5203776",
+            "DOI": "10.1093/gbe/evw231",
+            "CorpusId": 7643956,
+            "PubMed": "28040773"
+          },
+          "url": "https://www.semanticscholar.org/paper/0922d0fd1c7fae87e2fb095bdb3f9ad93d7680c6",
+          "title": "GC Content Heterogeneity Transition of Conserved Noncoding Sequences Occurred at the Emergence of Vertebrates",
+          "venue": "Genome Biology and Evolution",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1093/gbe/evw231",
+            "status": "GOLD",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5203776, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2016-09-16",
+          "journal": {
+            "name": "Genome Biology and Evolution",
+            "pages": "3377 - 3392",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "4056134",
+              "name": "N. Hettiarachchi"
+            },
+            {
+              "authorId": "3300328",
+              "name": "N. Saitou"
+            }
+          ],
+          "abstract": "Abstract Conserved non-coding sequences (CNSs) of Eukaryotes are known to be significantly enriched in regulatory sequences. CNSs of diverse lineages follow different patterns in abundance, sequence composition, and location. Here, we report a thorough analysis of CNSs in diverse groups of Eukaryotes with respect to GC content heterogeneity. We examined 24 fungi, 19 invertebrates, and 12 non-mammalian vertebrates so as to find lineage specific features of CNSs. We found that fungi and invertebrate CNSs are predominantly GC rich as in plants we previously observed, whereas vertebrate CNSs are GC poor. This result suggests that the CNS GC content transition occurred from the ancestral GC rich state of Eukaryotes to GC poor in the vertebrate lineage due to the enrollment of GC poor transcription factor binding sites that are lineage specific. CNS GC content is closely linked with the nucleosome occupancy that determines the location and structural architecture of DNAs."
+        },
+        {
+          "paperId": "b918c6aa85434e801851063513f30e57a37908de",
+          "externalIds": {
+            "PubMedCentral": "6126743",
+            "MAG": "2885836936",
+            "DOI": "10.1073/pnas.1802561115",
+            "CorpusId": 51971803,
+            "PubMed": "30104384"
+          },
+          "url": "https://www.semanticscholar.org/paper/b918c6aa85434e801851063513f30e57a37908de",
+          "title": "Human exonization through differential nucleosome occupancy",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://www.pnas.org/content/pnas/115/35/8817.full.pdf",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6126743, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-08-13",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences of the United States of America",
+            "pages": "8817 - 8822",
+            "volume": "115"
+          },
+          "authors": [
+            {
+              "authorId": "2111175814",
+              "name": "Yumei Li"
+            },
+            {
+              "authorId": "2116520468",
+              "name": "Chen C. Li"
+            },
+            {
+              "authorId": "2146355711",
+              "name": "Shuxian Li"
+            },
+            {
+              "authorId": "2093212621",
+              "name": "Qi Peng"
+            },
+            {
+              "authorId": "2090879172",
+              "name": "Ni A. An"
+            },
+            {
+              "authorId": "2082962",
+              "name": "Aibin He"
+            },
+            {
+              "authorId": "2050989",
+              "name": "Chuan-Yun Li"
+            }
+          ],
+          "abstract": "Significance Nucleosomal modifications have been implicated in fundamental epigenetic regulation, whereas the roles of nucleosome binding in shaping changes through evolution remain to be addressed. Here we performed a comparative study to clarify the roles of nucleosome occupancy in exon origination. By profiling a high-resolution, cross-species mononucleosome landscape for mammalian tissues, we found nucleosome occupancy profiles are conserved across tissues and species. Further, through a phylogenetic approach, we found that the feature of differential nucleosome occupancy appears prior to the origination of new exons and, presumably, facilitates the origin of new exons by increasing the splice strength of the ancestral nonexonic regions through driving a local difference in GC content, which suggests the function of nucleosome binding in exonization. Nucleosomal modifications have been implicated in fundamental epigenetic regulation, but the roles of nucleosome occupancy in shaping changes through evolution remain to be addressed. Here we present high-resolution nucleosome occupancy profiles for multiple tissues derived from human, macaque, tree shrew, mouse, and pig. Genome-wide comparison reveals conserved nucleosome occupancy profiles across both different species and tissue types. Notably, we found significantly higher levels of nucleosome occupancy in exons than in introns, a pattern correlated with the different exon–intron GC content. We then determined whether this biased occupancy may play roles in the origination of new exons through evolution, rather than being a downstream effect of exonization, through a comparative approach to sequentially trace the order of the exonization and biased nucleosome binding. By identifying recently evolved exons in human but not in macaque using matched RNA sequencing, we found that higher exonic nucleosome occupancy also existed in macaque regions orthologous to these exons. Presumably, such biased nucleosome occupancy facilitates the origination of new exons by increasing the splice strength of the ancestral nonexonic regions through driving a local difference in GC content. These data thus support a model that sites bound by nucleosomes are more likely to evolve into exons, which we term the “nucleosome-first” model."
+        },
+        {
+          "paperId": "a61e37292ce8297ec3cd1fea8d3a55f0e9dfaa47",
+          "externalIds": {
+            "PubMedCentral": "6846163",
+            "MAG": "2972795600",
+            "DOI": "10.1093/nar/gkz750",
+            "CorpusId": 125522075,
+            "PubMed": "31511887"
+          },
+          "url": "https://www.semanticscholar.org/paper/a61e37292ce8297ec3cd1fea8d3a55f0e9dfaa47",
+          "title": "Training-free measures based on algorithmic probability identify high nucleosome occupancy in DNA sequences",
+          "venue": "Nucleic Acids Research",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/nar/article-pdf/47/20/e129/30623592/gkz750.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6846163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2017-08-05",
+          "journal": {
+            "name": "Nucleic Acids Research",
+            "pages": "e129 - e129",
+            "volume": "47"
+          },
+          "authors": [
+            {
+              "authorId": "66445647",
+              "name": "H. Zenil"
+            },
+            {
+              "authorId": "49202103",
+              "name": "P. Minary"
+            }
+          ],
+          "abstract": "Abstract We introduce and study a set of training-free methods of an information-theoretic and algorithmic complexity nature that we apply to DNA sequences to identify their potential to identify nucleosomal binding sites. We test the measures on well-studied genomic sequences of different sizes drawn from different sources. The measures reveal the known in vivo versus in vitro predictive discrepancies and uncover their potential to pinpoint high and low nucleosome occupancy. We explore different possible signals within and beyond the nucleosome length and find that the complexity indices are informative of nucleosome occupancy. We found that, while it is clear that the gold standard Kaplan model is driven by GC content (by design) and by k-mer training; for high occupancy, entropy and complexity-based scores are also informative and can complement the Kaplan model."
+        },
+        {
+          "paperId": "74c0e9459fc700fa13b18d4a97ad66f4359f0c19",
+          "externalIds": {
+            "MAG": "2105360874",
+            "DOI": "10.1016/j.celrep.2012.03.013",
+            "CorpusId": 9192676,
+            "PubMed": "22832277"
+          },
+          "url": "https://www.semanticscholar.org/paper/74c0e9459fc700fa13b18d4a97ad66f4359f0c19",
+          "title": "Differential GC content between exons and introns establishes distinct strategies of splice-site recognition.",
+          "venue": "Cell Reports",
+          "year": 2012,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S2211124712000988/pdf",
+            "status": "GOLD",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://core.ac.uk/download/pdf/81976641.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Study"
+          ],
+          "publicationDate": "2012-05-31",
+          "journal": {
+            "name": "Cell reports",
+            "pages": "\n          543-56\n        ",
+            "volume": "1 5"
+          },
+          "authors": [
+            {
+              "authorId": "6306619",
+              "name": "Maayan Amit"
+            },
+            {
+              "authorId": "6669603",
+              "name": "Maya Donyo"
+            },
+            {
+              "authorId": "49122476",
+              "name": "Dror Hollander"
+            },
+            {
+              "authorId": "144854908",
+              "name": "Amir Goren"
+            },
+            {
+              "authorId": "3346216",
+              "name": "E. Kim"
+            },
+            {
+              "authorId": "49927702",
+              "name": "S. Gelfman"
+            },
+            {
+              "authorId": "1402226236",
+              "name": "Galit Lev-Maor"
+            },
+            {
+              "authorId": "48688893",
+              "name": "D. Burstein"
+            },
+            {
+              "authorId": "40434210",
+              "name": "Schraga Schwartz"
+            },
+            {
+              "authorId": "50531030",
+              "name": "Benny Postolsky"
+            },
+            {
+              "authorId": "1963380",
+              "name": "T. Pupko"
+            },
+            {
+              "authorId": "2763748",
+              "name": "G. Ast"
+            }
+          ],
+          "abstract": "During evolution segments of homeothermic genomes underwent a GC content increase. Our analyses reveal that two exon-intron architectures have evolved from an ancestral state of low GC content exons flanked by short introns with a lower GC content. One group underwent a GC content elevation that abolished the differential exon-intron GC content, with introns remaining short. The other group retained the overall low GC content as well as the differential exon-intron GC content, and is associated with longer introns. We show that differential exon-intron GC content regulates exon inclusion level in this group, in which disease-associated mutations often lead to exon skipping. This group's exons also display higher nucleosome occupancy compared to flanking introns and exons of the other group, thus \"marking\" them for spliceosomal recognition. Collectively, our results reveal that differential exon-intron GC content is a previously unidentified determinant of exon selection and argue that the two GC content architectures reflect the two mechanisms by which splicing signals are recognized: exon definition and intron definition."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1186/1471-2105-10-442",
+      "DOI": "10.1186/1471-2105-10-442",
+      "type": "journal-article",
+      "issue": "1",
+      "author": [
+        {
+          "given": "Desiree",
+          "family": "Tillo",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Timothy R",
+          "family": "Hughes",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "1471-2105"
+      ],
+      "container-title": [
+        "BMC Bioinformatics"
+      ],
+      "title": [
+        "G+C content dominates intrinsic nucleosome occupancy"
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            12
+          ]
+        ]
+      },
+      "volume": "10"
+    },
+    "accepted_score": 1.0,
+    "accepted": true,
+    "accepted_doi": "10.1186/1471-2105-10-442",
+    "best_candidate_doi": "10.1186/1471-2105-10-442",
+    "crossref_attempts": [
+      {
+        "doi": "10.1186/1471-2105-10-442",
+        "source_region": "first_page",
+        "position": 518,
+        "context": "R Hughes* - t.hughes@utoronto.ca * Corresponding author Published: 22 December 2009 doi:10.1186/1471-2105-10-442 Received: 15 June 2009 Accepted: 22 December 2009 This article is available from: http:",
+        "priority_score": 0.75,
+        "score": 1.0,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1186/1471-2105-10-442",
+          "DOI": "10.1186/1471-2105-10-442",
+          "type": "journal-article",
+          "issue": "1",
+          "author": [
+            {
+              "given": "Desiree",
+              "family": "Tillo",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Timothy R",
+              "family": "Hughes",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "1471-2105"
+          ],
+          "container-title": [
+            "BMC Bioinformatics"
+          ],
+          "title": [
+            "G+C content dominates intrinsic nucleosome occupancy"
+          ],
+          "publisher": "Springer Science and Business Media LLC",
+          "issued": {
+            "date-parts": [
+              [
+                2009,
+                12
+              ]
+            ]
+          },
+          "volume": "10"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-560c60dccac332fe.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-560c60dccac332fe.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-560c60dccac332fe.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "8438c1fa5b6f20e6d8eca0e5514d152570b85d8e61fce171bf586b161d8dbc5d",
+    "chunk_count": 24,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1186/1471-2105-10-442",
+      "source_region": "first_page",
+      "position": 518,
+      "context": "R Hughes* - t.hughes@utoronto.ca * Corresponding author Published: 22 December 2009 doi:10.1186/1471-2105-10-442 Received: 15 June 2009 Accepted: 22 December 2009 This article is available from: http:",
+      "priority_score": 0.75
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:09:39.631855+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1186/1471-2105-10-442",
+    "score": 1.0
+  }
+}

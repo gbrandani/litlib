@@ -1,0 +1,836 @@
+{
+  "paper_id": "sha256-138ba032e5cd775a",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_MD/Thaler 2022 JChemPhys - Deep coarse-grained potentials via relative entropy minimization.pdf",
+  "pdf_sha256": "138ba032e5cd775acdcfde23f0c3fe0dae189528b6f1152dd4963f1b22e12608",
+  "filename": "Thaler 2022 JChemPhys - Deep coarse-grained potentials via relative entropy minimization.pdf",
+  "item_type": "article",
+  "title_query": "Deep coarse-grained potentials via relative entropy minimization",
+  "filename_hints": {
+    "year_hint": 2022,
+    "venue_hint": "",
+    "prefix": "Thaler 2022 JChemPhys"
+  },
+  "doi_candidates": [
+    "10.1063/5.0124538"
+  ],
+  "date_indexed": "2026-04-17T03:30:33.571351+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Deep coarse-grained potentials via relative entropy minimization",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "d116c8e40d34a52235bc5f9d26979d6eef5bc6de",
+      "externalIds": {
+        "ArXiv": "2208.10330",
+        "DOI": "10.1063/5.0124538",
+        "CorpusId": 251718927,
+        "PubMed": "36586977"
+      },
+      "url": "https://www.semanticscholar.org/paper/d116c8e40d34a52235bc5f9d26979d6eef5bc6de",
+      "title": "Deep coarse-grained potentials via relative entropy minimization.",
+      "venue": "Journal of Chemical Physics",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/2208.10330",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2208.10330, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-08-22",
+      "journal": {
+        "name": "The Journal of chemical physics",
+        "pages": "\n          244103\n        ",
+        "volume": "157 24"
+      },
+      "authors": [
+        {
+          "authorId": "19892816",
+          "name": "Stephan Thaler"
+        },
+        {
+          "authorId": "2182292978",
+          "name": "Maximilian Stupp"
+        },
+        {
+          "authorId": "4817767",
+          "name": "J. Zavadlav"
+        }
+      ],
+      "abstract": "Neural network (NN) potentials are a natural choice for coarse-grained (CG) models. Their many-body capacity allows highly accurate approximations of the potential of mean force, promising CG simulations of unprecedented accuracy. CG NN potentials trained bottom-up via force matching (FM), however, suffer from finite data effects: They rely on prior potentials for physically sound predictions outside the training data domain, and the corresponding free energy surface is sensitive to errors in the transition regions. The standard alternative to FM for classical potentials is relative entropy (RE) minimization, which has not yet been applied to NN potentials. In this work, we demonstrate, for benchmark problems of liquid water and alanine dipeptide, that RE training is more data efficient, due to accessing the CG distribution during training, resulting in improved free energy surfaces and reduced sensitivity to prior potentials. In addition, RE learns to correct time integration errors, allowing larger time steps in CG molecular dynamics simulation, while maintaining accuracy. Thus, our findings support the use of training objectives beyond FM, as a promising direction for improving CG NN potential's accuracy and reliability."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "d116c8e40d34a52235bc5f9d26979d6eef5bc6de",
+        "title": "Deep coarse-grained potentials via relative entropy minimization.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2022,
+        "candidate_year": 2022,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c1c9ad4ccc69b37849700a22dc34b50bf0987610",
+        "title": "Configurational entropy, transition rates, and optimal interactions for rapid folding in coarse-grained model proteins.",
+        "score": 0.3855,
+        "title_similarity": 0.3055,
+        "query_year": 2022,
+        "candidate_year": 2022,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "adcf1c7fdf16e033ecf412588e9ed1a32a13ad41",
+        "title": "Inferring functional units in ion channel pores via relative entropy",
+        "score": 0.3488,
+        "title_similarity": 0.3188,
+        "query_year": 2022,
+        "candidate_year": 2021,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "06a1607fc354e2795689b69635de45f1c7c16d6e",
+        "title": "Coarse graining of the fully atomic methane models to monatomic isotropic models using relative entropy minimization",
+        "score": 0.3325,
+        "title_similarity": 0.4125,
+        "query_year": 2022,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6d1c299d5cbc13e25c4dc999951cf95e897aece4",
+        "title": "Coarse-Graining of TIP4P/2005, TIP4P-Ew, SPC/E, and TIP3P to Monatomic Anisotropic Water Models Using Relative Entropy Minimization.",
+        "score": 0.3187,
+        "title_similarity": 0.3987,
+        "query_year": 2022,
+        "candidate_year": 2014,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0a9900f96a5375d1d6df55c1996e174825763014",
+        "title": "Relative Entropy and Optimization-Driven Coarse-Graining Methods in VOTCA",
+        "score": 0.2445,
+        "title_similarity": 0.3245,
+        "query_year": 2022,
+        "candidate_year": 2015,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8ae2c2eeea6a38e21ed021e18c660bb2a0216dd0",
+        "title": "Systematic Coarse-Grained Lipid Force Fields with Semiexplicit Solvation via Virtual Sites",
+        "score": 0.2294,
+        "title_similarity": 0.3094,
+        "query_year": 2022,
+        "candidate_year": 2019,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "29027ee6aabb5967ee01fa7508af8dd937da14ab",
+        "title": "Bottom-Up Informed and Iteratively Optimized Coarse-Grained Non-Markovian Water Models with Accurate Dynamics",
+        "score": 0.2293,
+        "title_similarity": 0.1993,
+        "query_year": 2022,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+        "title": "Relative Resolution: An Analysis with the Kullback-Leibler Entropy.",
+        "score": 0.1408,
+        "title_similarity": 0.2208,
+        "query_year": 2022,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "08993edac284caaf53770147bf5ba7a6effab0b9",
+        "title": "Formalizing Coarse-Grained Representations of Anisotropic Interactions at Multimeric Protein Interfaces Using Virtual Sites.",
+        "score": 0.1214,
+        "title_similarity": 0.2014,
+        "query_year": 2022,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1063/5.0124538"
+    ],
+    "matching_extracted_doi": "10.1063/5.0124538",
+    "raw_response": {
+      "total": 71,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "d116c8e40d34a52235bc5f9d26979d6eef5bc6de",
+          "externalIds": {
+            "ArXiv": "2208.10330",
+            "DOI": "10.1063/5.0124538",
+            "CorpusId": 251718927,
+            "PubMed": "36586977"
+          },
+          "url": "https://www.semanticscholar.org/paper/d116c8e40d34a52235bc5f9d26979d6eef5bc6de",
+          "title": "Deep coarse-grained potentials via relative entropy minimization.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/2208.10330",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2208.10330, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-08-22",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "pages": "\n          244103\n        ",
+            "volume": "157 24"
+          },
+          "authors": [
+            {
+              "authorId": "19892816",
+              "name": "Stephan Thaler"
+            },
+            {
+              "authorId": "2182292978",
+              "name": "Maximilian Stupp"
+            },
+            {
+              "authorId": "4817767",
+              "name": "J. Zavadlav"
+            }
+          ],
+          "abstract": "Neural network (NN) potentials are a natural choice for coarse-grained (CG) models. Their many-body capacity allows highly accurate approximations of the potential of mean force, promising CG simulations of unprecedented accuracy. CG NN potentials trained bottom-up via force matching (FM), however, suffer from finite data effects: They rely on prior potentials for physically sound predictions outside the training data domain, and the corresponding free energy surface is sensitive to errors in the transition regions. The standard alternative to FM for classical potentials is relative entropy (RE) minimization, which has not yet been applied to NN potentials. In this work, we demonstrate, for benchmark problems of liquid water and alanine dipeptide, that RE training is more data efficient, due to accessing the CG distribution during training, resulting in improved free energy surfaces and reduced sensitivity to prior potentials. In addition, RE learns to correct time integration errors, allowing larger time steps in CG molecular dynamics simulation, while maintaining accuracy. Thus, our findings support the use of training objectives beyond FM, as a promising direction for improving CG NN potential's accuracy and reliability."
+        },
+        {
+          "paperId": "adcf1c7fdf16e033ecf412588e9ed1a32a13ad41",
+          "externalIds": {
+            "PubMedCentral": "7872957",
+            "DOI": "10.1007/s00249-020-01480-7",
+            "CorpusId": 231768113,
+            "PubMed": "33523249"
+          },
+          "url": "https://www.semanticscholar.org/paper/adcf1c7fdf16e033ecf412588e9ed1a32a13ad41",
+          "title": "Inferring functional units in ion channel pores via relative entropy",
+          "venue": "European Biophysics Journal",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://link.springer.com/content/pdf/10.1007/s00249-020-01480-7.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7872957, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-01-01",
+          "journal": {
+            "name": "European Biophysics Journal",
+            "pages": "37 - 57",
+            "volume": "50"
+          },
+          "authors": [
+            {
+              "authorId": "2116564467",
+              "name": "Michael Schmidt"
+            },
+            {
+              "authorId": "144008389",
+              "name": "I. Schroeder"
+            },
+            {
+              "authorId": "2061639391",
+              "name": "Daniela Bauer"
+            },
+            {
+              "authorId": "144171233",
+              "name": "G. Thiel"
+            },
+            {
+              "authorId": "46578592",
+              "name": "K. Hamacher"
+            }
+          ],
+          "abstract": "Coarse-grained protein models approximate the first-principle physical potentials. Among those modeling approaches, the relative entropy framework yields promising and physically sound results, in which a mapping from the target protein structure and dynamics to a model is defined and subsequently adjusted by an entropy minimization of the model parameters. Minimization of the relative entropy is equivalent to maximization of the likelihood of reproduction of (configurational ensemble) observations by the model. In this study, we extend the relative entropy minimization procedure beyond parameter fitting by a second optimization level, which identifies the optimal mapping to a (dimension-reduced) topology. We consider anisotropic network models of a diverse set of ion channels and assess our findings by comparison to experimental results."
+        },
+        {
+          "paperId": "08993edac284caaf53770147bf5ba7a6effab0b9",
+          "externalIds": {
+            "DOI": "10.1021/acs.jpcb.3c07023",
+            "CorpusId": 267498248,
+            "PubMed": "38316012"
+          },
+          "url": "https://www.semanticscholar.org/paper/08993edac284caaf53770147bf5ba7a6effab0b9",
+          "title": "Formalizing Coarse-Grained Representations of Anisotropic Interactions at Multimeric Protein Interfaces Using Virtual Sites.",
+          "venue": "Journal of Physical Chemistry B",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jpcb.3c07023?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jpcb.3c07023, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-05",
+          "journal": {
+            "name": "The journal of physical chemistry. B"
+          },
+          "authors": [
+            {
+              "authorId": "2275227122",
+              "name": "Luc F Christians"
+            },
+            {
+              "authorId": "2282934975",
+              "name": "Ethan V Halingstad"
+            },
+            {
+              "authorId": "2282930854",
+              "name": "Emiel Kram"
+            },
+            {
+              "authorId": "2282931168",
+              "name": "Evan M Okolovitch"
+            },
+            {
+              "authorId": "35798926",
+              "name": "Alexander J. Pak"
+            }
+          ],
+          "abstract": "Molecular simulations of biomacromolecules that assemble into multimeric complexes remain a challenge due to computationally inaccessible length and time scales. Low-resolution and implicit-solvent coarse-grained modeling approaches using traditional nonbonded interactions (both pairwise and spherically isotropic) have been able to partially address this gap. However, these models may fail to capture the complex anisotropic interactions present at macromolecular interfaces unless higher-order interaction potentials are incorporated at the expense of the computational cost. In this work, we introduce an alternate and systematic approach to represent directional interactions at protein-protein interfaces by using virtual sites restricted to pairwise interactions. We show that virtual site interaction parameters can be optimized within a relative entropy minimization framework by using only information from known statistics between coarse-grained sites. We compare our virtual site models to traditional coarse-grained models using two case studies of multimeric protein assemblies and find that the virtual site models predict pairwise correlations with higher fidelity and, more importantly, assembly behavior that is morphologically consistent with experiments. Our study underscores the importance of anisotropic interaction representations and paves the way for more accurate yet computationally efficient coarse-grained simulations of macromolecular assembly in future research."
+        },
+        {
+          "paperId": "feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+          "externalIds": {
+            "ArXiv": "2403.09061",
+            "DOI": "10.1021/acs.jctc.3c01052",
+            "CorpusId": 268038878,
+            "PubMed": "38416535"
+          },
+          "url": "https://www.semanticscholar.org/paper/feda9fdaf5250e502af61fb81f7f6697b4501b8d",
+          "title": "Relative Resolution: An Analysis with the Kullback-Leibler Entropy.",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.09061, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-02-28",
+          "journal": {
+            "name": "Journal of chemical theory and computation"
+          },
+          "authors": [
+            {
+              "authorId": "2173598",
+              "name": "M. Chaimovich"
+            },
+            {
+              "authorId": "4000654",
+              "name": "Aviel Chaimovich"
+            }
+          ],
+          "abstract": "A novel type of a multiscale approach, called Relative Resolution (RelRes), can correctly retrieve the behavior of various nonpolar liquids while speeding up molecular simulations by almost an order of magnitude. In this approach in a single system, molecules switch their resolution in terms of their relative separation, with near neighbors interacting via fine-grained potentials, yet far neighbors interacting via coarse-grained potentials; notably, these two potentials are analytically parametrized by a multipole approximation. Our current work focuses on analyzing RelRes by relating it with the Kullback-Leibler (KL) entropy, which is a useful metric for multiscale errors. In particular, we thoroughly examine the exact and approximate versions of this informatic measure for several alkane systems. By analyzing its dependency on the system size, we devise a formula for predicting the exact KL entropy of an \"infinite\" system via the computation of the approximate KL entropy of an \"infinitesimal\" system. Demonstrating that the KL entropy can holistically capture many multiscale errors, we settle bounds for the KL entropy that ensure a sufficient representation of the structural and thermal behavior by the RelRes algorithm. This, in turn, allows the scientific community to readily determine the ideal switching distance for an arbitrary RelRes system."
+        },
+        {
+          "paperId": "06a1607fc354e2795689b69635de45f1c7c16d6e",
+          "externalIds": {
+            "MAG": "2739076609",
+            "DOI": "10.1016/J.MOLLIQ.2017.07.112",
+            "CorpusId": 104037407
+          },
+          "url": "https://www.semanticscholar.org/paper/06a1607fc354e2795689b69635de45f1c7c16d6e",
+          "title": "Coarse graining of the fully atomic methane models to monatomic isotropic models using relative entropy minimization",
+          "venue": "",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.MOLLIQ.2017.07.112?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.MOLLIQ.2017.07.112, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2017-09-01",
+          "journal": {
+            "name": "Journal of Molecular Liquids",
+            "pages": "1138-1147",
+            "volume": "242"
+          },
+          "authors": [
+            {
+              "authorId": "40340491",
+              "name": "Chuntao Jiang"
+            },
+            {
+              "authorId": "48635252",
+              "name": "Ouyang Jie"
+            },
+            {
+              "authorId": "2108740270",
+              "name": "Lihua Wang"
+            },
+            {
+              "authorId": "2145921807",
+              "name": "Qingsheng Liu"
+            },
+            {
+              "authorId": "2108768564",
+              "name": "Wuming Li"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "8ae2c2eeea6a38e21ed021e18c660bb2a0216dd0",
+          "externalIds": {
+            "MAG": "2912548979",
+            "PubMedCentral": "6416712",
+            "DOI": "10.1021/acs.jctc.8b01033",
+            "CorpusId": 73423743,
+            "PubMed": "30702887"
+          },
+          "url": "https://www.semanticscholar.org/paper/8ae2c2eeea6a38e21ed021e18c660bb2a0216dd0",
+          "title": "Systematic Coarse-Grained Lipid Force Fields with Semiexplicit Solvation via Virtual Sites",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1021/acs.jctc.8b01033",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6416712, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-01-31",
+          "journal": {
+            "name": "Journal of Chemical Theory and Computation",
+            "pages": "2087 - 2100",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "35798926",
+              "name": "Alexander J. Pak"
+            },
+            {
+              "authorId": "1398796804",
+              "name": "Thomas Dannenhoffer-Lafage"
+            },
+            {
+              "authorId": "6137938",
+              "name": "Jesper J. Madsen"
+            },
+            {
+              "authorId": "2634229",
+              "name": "G. Voth"
+            }
+          ],
+          "abstract": "Despite the central role of lipids in many biophysical functions, the molecular mechanisms that dictate macroscopic lipid behavior remain elusive to both experimental and computational approaches. As such, there has been much interest in the development of low-resolution, implicit-solvent coarse-grained (CG) models to dynamically simulate biologically relevant spatiotemporal scales with molecular fidelity. However, in the absence of solvent, a key challenge for CG models is to faithfully emulate solvent-mediated forces, which include both hydrophilic and hydrophobic interactions that drive lipid aggregation and self-assembly. In this work, we provide a new methodological framework to incorporate semiexplicit solvent effects through the use of virtual CG particles, which represent structural features of the solvent-lipid interface. To do so, we leverage two systematic coarse-graining approaches, multiscale coarse-graining (MS-CG) and relative entropy minimization (REM), in a hybrid fashion to construct our virtual-site CG (VCG) models. As a proof-of-concept, we focus our efforts on two lipid species, 1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC) and 1,2-dipalmitoyl-sn-glycero-3-phosphocholine (DPPC), which adopt a liquid-disordered and gel phase, respectively, at room temperature. Through our analysis, we also present, to our knowledge, the first direct comparison between the MS-CG and REM methods for a complex biomolecule and highlight each of their strengths and weaknesses. We further demonstrate that VCG models recapitulate the rich biophysics of lipids, which enable self-assembly, morphological diversity, and multiple phases. Our findings suggest that the VCG framework is a powerful approach for investigation into macromolecular biophysics."
+        },
+        {
+          "paperId": "c1c9ad4ccc69b37849700a22dc34b50bf0987610",
+          "externalIds": {
+            "ArXiv": "2205.05799",
+            "DOI": "10.1063/5.0098612",
+            "CorpusId": 248721677,
+            "PubMed": "36182418"
+          },
+          "url": "https://www.semanticscholar.org/paper/c1c9ad4ccc69b37849700a22dc34b50bf0987610",
+          "title": "Configurational entropy, transition rates, and optimal interactions for rapid folding in coarse-grained model proteins.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/2205.05799",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2205.05799, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-05-11",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "pages": "\n          125101\n        ",
+            "volume": "157 12"
+          },
+          "authors": [
+            {
+              "authorId": "7242418",
+              "name": "M. Colberg"
+            },
+            {
+              "authorId": "32533514",
+              "name": "J. Schofield"
+            }
+          ],
+          "abstract": "Under certain conditions, the dynamics of coarse-grained models of solvated proteins can be described using a Markov state model, which tracks the evolution of populations of configurations. The transition rates among states that appear in the Markov model can be determined by computing the relative entropy of states and their mean first passage times. In this paper, we present an adaptive method to evaluate the configurational entropy and the mean first passage times for linear chain models with discontinuous potentials. The approach is based on event-driven dynamical sampling in a massively parallel architecture. Using the fact that the transition rate matrix can be calculated for any choice of interaction energies at any temperature, it is demonstrated how each state's energy can be chosen such that the average time to transition between any two states is minimized. The methods are used to analyze the optimization of the folding process of two protein systems: the crambin protein and a model with frustration and misfolding. It is shown that the folding pathways for both systems are comprised of two regimes: first, the rapid establishment of local bonds, followed by the subsequent formation of more distant contacts. The state energies that lead to the most rapid folding encourage multiple pathways, and they either penalize folding pathways through kinetic traps by raising the energies of trapping states or establish an escape route from the trapping states by lowering free energy barriers to other states that rapidly reach the native state."
+        },
+        {
+          "paperId": "29027ee6aabb5967ee01fa7508af8dd937da14ab",
+          "externalIds": {
+            "PubMedCentral": "9979609",
+            "DOI": "10.1021/acs.jctc.2c00871",
+            "CorpusId": 256614930,
+            "PubMed": "36745567"
+          },
+          "url": "https://www.semanticscholar.org/paper/29027ee6aabb5967ee01fa7508af8dd937da14ab",
+          "title": "Bottom-Up Informed and Iteratively Optimized Coarse-Grained Non-Markovian Water Models with Accurate Dynamics",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1021/acs.jctc.2c00871",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9979609, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-02-06",
+          "journal": {
+            "name": "Journal of Chemical Theory and Computation",
+            "pages": "1099 - 1110",
+            "volume": "19"
+          },
+          "authors": [
+            {
+              "authorId": "48547157",
+              "name": "Viktoria Klippenstein"
+            },
+            {
+              "authorId": "9817322",
+              "name": "N. V. D. van der Vegt"
+            }
+          ],
+          "abstract": "Molecular dynamics (MD) simulations based on coarse-grained (CG) particle models of molecular liquids generally predict accelerated dynamics and misrepresent the time scales for molecular vibrations and diffusive motions. The parametrization of Generalized Langevin Equation (GLE) thermostats based on the microscopic dynamics of the fine-grained model provides a promising route to address this issue, in conjunction with the conservative interactions of the CG model obtained with standard coarse graining methods, such as iterative Boltzmann inversion, force matching, or relative entropy minimization. We report the application of a recently introduced bottom-up dynamic coarse graining method, based on the Mori–Zwanzig formalism, which provides accurate estimates of isotropic GLE memory kernels for several CG models of liquid water. We demonstrate that, with an additional iterative optimization of the memory kernels (IOMK) for the CG water models based on a practical iterative optimization technique, the velocity autocorrelation function of liquid water can be represented very accurately within a few iterations. By considering the distinct Van Hove function, we demonstrate that, with the presented methods, an accurate representation of structural relaxation can be achieved. We consider several distinct CG potentials to study how the choice of the CG potential affects the performance of bottom-up informed and iteratively optimized models."
+        },
+        {
+          "paperId": "0a9900f96a5375d1d6df55c1996e174825763014",
+          "externalIds": {
+            "MAG": "1892911143",
+            "PubMedCentral": "4507862",
+            "DOI": "10.1371/journal.pone.0131754",
+            "CorpusId": 2607228,
+            "PubMed": "26192992"
+          },
+          "url": "https://www.semanticscholar.org/paper/0a9900f96a5375d1d6df55c1996e174825763014",
+          "title": "Relative Entropy and Optimization-Driven Coarse-Graining Methods in VOTCA",
+          "venue": "PLoS ONE",
+          "year": 2015,
+          "openAccessPdf": {
+            "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0131754&type=printable",
+            "status": "GOLD",
+            "license": "public-domain",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4507862, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2015-07-20",
+          "journal": {
+            "name": "PLoS ONE",
+            "volume": "10"
+          },
+          "authors": [
+            {
+              "authorId": "3829993",
+              "name": "S. Y. Mashayak"
+            },
+            {
+              "authorId": "3814041",
+              "name": "M. Jochum"
+            },
+            {
+              "authorId": "4703031",
+              "name": "Konstantin Koschke"
+            },
+            {
+              "authorId": "2440204",
+              "name": "N. Aluru"
+            },
+            {
+              "authorId": "50176568",
+              "name": "Victor Rühle"
+            },
+            {
+              "authorId": "1711228",
+              "name": "Christoph Junghans"
+            }
+          ],
+          "abstract": "We discuss recent advances of the VOTCA package for systematic coarse-graining. Two methods have been implemented, namely the downhill simplex optimization and the relative entropy minimization. We illustrate the new methods by coarse-graining SPC/E bulk water and more complex water-methanol mixture systems. The CG potentials obtained from both methods are then evaluated by comparing the pair distributions from the coarse-grained to the reference atomistic simulations. In addition to the newly implemented methods, we have also added a parallel analysis framework to improve the computational efficiency of the coarse-graining process."
+        },
+        {
+          "paperId": "6d1c299d5cbc13e25c4dc999951cf95e897aece4",
+          "externalIds": {
+            "MAG": "2031709116",
+            "DOI": "10.1021/ct500487h",
+            "CorpusId": 23551041,
+            "PubMed": "26588552"
+          },
+          "url": "https://www.semanticscholar.org/paper/6d1c299d5cbc13e25c4dc999951cf95e897aece4",
+          "title": "Coarse-Graining of TIP4P/2005, TIP4P-Ew, SPC/E, and TIP3P to Monatomic Anisotropic Water Models Using Relative Entropy Minimization.",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2014,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1021/ct500487h",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1021/ct500487h?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/ct500487h, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2014-08-01",
+          "journal": {
+            "name": "Journal of chemical theory and computation",
+            "pages": "\n          4104-20\n        ",
+            "volume": "10 9"
+          },
+          "authors": [
+            {
+              "authorId": "9827406",
+              "name": "Jibao Lu"
+            },
+            {
+              "authorId": "1791434",
+              "name": "Yuqing Qiu"
+            },
+            {
+              "authorId": "2688238",
+              "name": "R. Baron"
+            },
+            {
+              "authorId": "5007446",
+              "name": "V. Molinero"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1063/5.0124538",
+      "DOI": "10.1063/5.0124538",
+      "type": "journal-article",
+      "issue": "24",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5383-1615",
+          "authenticated-orcid": false,
+          "given": "Stephan",
+          "family": "Thaler",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Multiscale Modeling of Fluid Materials, Department of Engineering Physics and Computation, TUM School of Engineering and Design, Technical University of Munich , Munich, Germany"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1657-3060",
+          "authenticated-orcid": false,
+          "given": "Maximilian",
+          "family": "Stupp",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Multiscale Modeling of Fluid Materials, Department of Engineering Physics and Computation, TUM School of Engineering and Design, Technical University of Munich , Munich, Germany"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4495-9956",
+          "authenticated-orcid": false,
+          "given": "Julija",
+          "family": "Zavadlav",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Multiscale Modeling of Fluid Materials, Department of Engineering Physics and Computation, TUM School of Engineering and Design, Technical University of Munich , Munich, Germany"
+            }
+          ]
+        }
+      ],
+      "ISSN": [
+        "0021-9606",
+        "1089-7690"
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "title": [
+        "Deep coarse-grained potentials via relative entropy minimization"
+      ],
+      "publisher": "AIP Publishing",
+      "abstract": "<jats:p>Neural network (NN) potentials are a natural choice for coarse-grained (CG) models. Their many-body capacity allows highly accurate approximations of the potential of mean force, promising CG simulations of unprecedented accuracy. CG NN potentials trained bottom-up via force matching (FM), however, suffer from finite data effects: They rely on prior potentials for physically sound predictions outside the training data domain, and the corresponding free energy surface is sensitive to errors in the transition regions. The standard alternative to FM for classical potentials is relative entropy (RE) minimization, which has not yet been applied to NN potentials. In this work, we demonstrate, for benchmark problems of liquid water and alanine dipeptide, that RE training is more data efficient, due to accessing the CG distribution during training, resulting in improved free energy surfaces and reduced sensitivity to prior potentials. In addition, RE learns to correct time integration errors, allowing larger time steps in CG molecular dynamics simulation, while maintaining accuracy. Thus, our findings support the use of training objectives beyond FM, as a promising direction for improving CG NN potential’s accuracy and reliability.</jats:p>",
+      "issued": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            28
+          ]
+        ]
+      },
+      "volume": "157"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1063/5.0124538",
+    "best_candidate_doi": "10.1063/5.0124538",
+    "crossref_attempts": [
+      {
+        "doi": "10.1063/5.0124538",
+        "source_region": "first_page",
+        "position": 221,
+        "context": "Maximilian Stupp ; Julija Zavadlav  J. Chem. Phys. 157, 244103 (2022) https://doi.org/10.1063/5.0124538  View Online CrossMark Export Citation",
+        "priority_score": 0.83,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1063/5.0124538",
+          "DOI": "10.1063/5.0124538",
+          "type": "journal-article",
+          "issue": "24",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-5383-1615",
+              "authenticated-orcid": false,
+              "given": "Stephan",
+              "family": "Thaler",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Multiscale Modeling of Fluid Materials, Department of Engineering Physics and Computation, TUM School of Engineering and Design, Technical University of Munich , Munich, Germany"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-1657-3060",
+              "authenticated-orcid": false,
+              "given": "Maximilian",
+              "family": "Stupp",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Multiscale Modeling of Fluid Materials, Department of Engineering Physics and Computation, TUM School of Engineering and Design, Technical University of Munich , Munich, Germany"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-4495-9956",
+              "authenticated-orcid": false,
+              "given": "Julija",
+              "family": "Zavadlav",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Multiscale Modeling of Fluid Materials, Department of Engineering Physics and Computation, TUM School of Engineering and Design, Technical University of Munich , Munich, Germany"
+                }
+              ]
+            }
+          ],
+          "ISSN": [
+            "0021-9606",
+            "1089-7690"
+          ],
+          "container-title": [
+            "The Journal of Chemical Physics"
+          ],
+          "title": [
+            "Deep coarse-grained potentials via relative entropy minimization"
+          ],
+          "publisher": "AIP Publishing",
+          "abstract": "<jats:p>Neural network (NN) potentials are a natural choice for coarse-grained (CG) models. Their many-body capacity allows highly accurate approximations of the potential of mean force, promising CG simulations of unprecedented accuracy. CG NN potentials trained bottom-up via force matching (FM), however, suffer from finite data effects: They rely on prior potentials for physically sound predictions outside the training data domain, and the corresponding free energy surface is sensitive to errors in the transition regions. The standard alternative to FM for classical potentials is relative entropy (RE) minimization, which has not yet been applied to NN potentials. In this work, we demonstrate, for benchmark problems of liquid water and alanine dipeptide, that RE training is more data efficient, due to accessing the CG distribution during training, resulting in improved free energy surfaces and reduced sensitivity to prior potentials. In addition, RE learns to correct time integration errors, allowing larger time steps in CG molecular dynamics simulation, while maintaining accuracy. Thus, our findings support the use of training objectives beyond FM, as a promising direction for improving CG NN potential’s accuracy and reliability.</jats:p>",
+          "issued": {
+            "date-parts": [
+              [
+                2022,
+                12,
+                28
+              ]
+            ]
+          },
+          "volume": "157"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-138ba032e5cd775a.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-138ba032e5cd775a.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-138ba032e5cd775a.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "92a9f90f073e4609af8ce62f15ee1d56f62fa9a3555d55c19aa2d0e687f9676a",
+    "chunk_count": 29,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1063/5.0124538",
+      "source_region": "first_page",
+      "position": 221,
+      "context": "Maximilian Stupp ; Julija Zavadlav  J. Chem. Phys. 157, 244103 (2022) https://doi.org/10.1063/5.0124538  View Online CrossMark Export Citation",
+      "priority_score": 0.83
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:08:45.687923+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1063/5.0124538",
+    "score": 1.08
+  }
+}

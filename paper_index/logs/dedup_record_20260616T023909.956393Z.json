@@ -1,0 +1,1501 @@
+{
+  "action": "dedup",
+  "timestamp": "2026-06-16T02:39:09.956381+00:00",
+  "keep_before": {
+    "abstract": "Over the past decade, 3C-related methods, complemented by increasingly detailed microscopic views of the nucleus, have provided unprecedented insights into chromosome folding in vivo. Here, to overcome the resolution limits inherent to the majority of genome-wide chromosome architecture mapping studies, we extend a recently-developed Hi-C variant, Micro-C, to map chromosome architecture at nucleosome resolution in human embryonic stem cells and fibroblasts. Micro-C maps robustly capture well-described features of mammalian chromosome folding including A/B compartment organization, topologically associating domains (TADs), and cis interaction peaks anchored at CTCF binding sites, while also providing a detailed 1-dimensional map of nucleosome positioning and phasing genome-wide. Compared to high-resolution in situ Hi-C, Micro-C exhibits substantially improved signal-to-noise with an order of magnitude greater dynamic range, enabling not only localization of domain boundaries with single-nucleosome accuracy, but also resolving more than 20,000 additional looping interaction peaks in each cell type. Intriguingly, many of these newly-identified peaks are localized along stripe patterns and form transitive grids, consistent with their anchors being pause sites impeding the process of cohesin-dependent loop extrusion. Together, our analyses provide the highest resolution maps of chromosome folding in human cells to date, and provide a valuable resource for studies of chromosome folding mechanisms.",
+    "abstract_norm": "over the past decade 3c related methods complemented by increasingly detailed microscopic views of the nucleus have provided unprecedented insights into chromosome folding in vivo here to overcome the resolution limits inherent to the majority of genome wide chromosome architecture mapping studies we extend a recently developed hi c variant micro c to map chromosome architecture at nucleosome resolution in human embryonic stem cells and fibroblasts micro c maps robustly capture well described features of mammalian chromosome folding including a b compartment organization topologically associating domains tads and cis interaction peaks anchored at ctcf binding sites while also providing a detailed 1 dimensional map of nucleosome positioning and phasing genome wide compared to high resolution in situ hi c micro c exhibits substantially improved signal to noise with an order of magnitude greater dynamic range enabling not only localization of domain boundaries with single nucleosome accuracy but also resolving more than 20 000 additional looping interaction peaks in each cell type intriguingly many of these newly identified peaks are localized along stripe patterns and form transitive grids consistent with their anchors being pause sites impeding the process of cohesin dependent loop extrusion together our analyses provide the highest resolution maps of chromosome folding in human cells to date and provide a valuable resource for studies of chromosome folding mechanisms",
+    "abstract_tokens": [
+      "000",
+      "20",
+      "3c",
+      "accuracy",
+      "additional",
+      "along",
+      "also",
+      "analyses",
+      "anchored",
+      "anchors",
+      "architecture",
+      "are",
+      "associating",
+      "being",
+      "binding",
+      "boundaries",
+      "but",
+      "capture",
+      "cell",
+      "cells",
+      "chromosome",
+      "cis",
+      "cohesin",
+      "compared",
+      "compartment",
+      "complemented",
+      "consistent",
+      "ctcf",
+      "date",
+      "decade",
+      "dependent",
+      "described",
+      "detailed",
+      "developed",
+      "dimensional",
+      "domain",
+      "domains",
+      "dynamic",
+      "each",
+      "embryonic",
+      "enabling",
+      "exhibits",
+      "extend",
+      "extrusion",
+      "features",
+      "fibroblasts",
+      "folding",
+      "form",
+      "genome",
+      "greater",
+      "grids",
+      "have",
+      "here",
+      "hi",
+      "high",
+      "highest",
+      "human",
+      "identified",
+      "impeding",
+      "improved",
+      "including",
+      "increasingly",
+      "inherent",
+      "insights",
+      "interaction",
+      "intriguingly",
+      "limits",
+      "localization",
+      "localized",
+      "loop",
+      "looping",
+      "magnitude",
+      "majority",
+      "mammalian",
+      "many",
+      "map",
+      "mapping",
+      "maps",
+      "mechanisms",
+      "methods",
+      "micro",
+      "microscopic",
+      "more",
+      "newly",
+      "noise",
+      "not",
+      "nucleosome",
+      "nucleus",
+      "only",
+      "order",
+      "organization",
+      "our",
+      "over",
+      "overcome",
+      "past",
+      "patterns",
+      "pause",
+      "peaks",
+      "phasing",
+      "positioning",
+      "process",
+      "provide",
+      "provided",
+      "providing",
+      "range",
+      "recently",
+      "related",
+      "resolution",
+      "resolving",
+      "resource",
+      "robustly",
+      "signal",
+      "single",
+      "sites",
+      "situ",
+      "stem",
+      "stripe",
+      "studies",
+      "substantially",
+      "tads",
+      "than",
+      "their",
+      "these",
+      "together",
+      "topologically",
+      "transitive",
+      "type",
+      "unprecedented",
+      "valuable",
+      "variant",
+      "views",
+      "vivo",
+      "we",
+      "well",
+      "while",
+      "wide"
+    ],
+    "author_tokens": [
+      "abdennur",
+      "abraham",
+      "dekker",
+      "gibcus",
+      "han",
+      "hsieh",
+      "job",
+      "johan",
+      "krietenstein",
+      "krishna",
+      "leonid",
+      "liyan",
+      "maehr",
+      "mirny",
+      "mohan",
+      "nezar",
+      "nils",
+      "oliver",
+      "parsi",
+      "rando",
+      "ren",
+      "sameer",
+      "sergey",
+      "tsung",
+      "venev",
+      "yang"
+    ],
+    "authors": "Nils Krietenstein, Sameer Abraham, Sergey V. Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han S. Hsieh, Krishna Mohan Parsi, Liyan Yang, René Maehr, Leonid A. Mirny, Job Dekker, Oliver J. Rando",
+    "authors_norm": "nils krietenstein sameer abraham sergey v venev nezar abdennur johan gibcus tsung han s hsieh krishna mohan parsi liyan yang ren maehr leonid a mirny job dekker oliver j rando",
+    "bibtex_key": "krietenstein2020architecture",
+    "bibtex_key_norm": "krietenstein2020architecture",
+    "canonical_url": "https://doi.org/10.1016/j.molcel.2020.03.003",
+    "chunk_path": "paper_index/chunks/sha256-b63866078b35c07e.jsonl",
+    "content_kind": "pdf_backed",
+    "doi": "10.1016/j.molcel.2020.03.003",
+    "filename": "Hsieh 2020 MolCell - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "filename_norm": "hsieh 2020 molcell ultrastructural details of mammalian chromosome architecture pdf",
+    "filename_tokens": [
+      "2020",
+      "architecture",
+      "chromosome",
+      "details",
+      "hsieh",
+      "mammalian",
+      "molcell",
+      "pdf",
+      "ultrastructural"
+    ],
+    "item_type": "article",
+    "paper_id": "sha256-b63866078b35c07e",
+    "paper_id_norm": "sha256b63866078b35c07e",
+    "pdf_path": "articles/3d_genome_exp/Hsieh 2020 MolCell - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "text_path": "paper_index/text/sha256-b63866078b35c07e.txt",
+    "title": "Ultrastructural Details of Mammalian Chromosome Architecture",
+    "title_norm": "ultrastructural details of mammalian chromosome architecture",
+    "title_tokens": [
+      "architecture",
+      "chromosome",
+      "details",
+      "mammalian",
+      "ultrastructural"
+    ],
+    "venue": "Molecular Cell",
+    "venue_norm": "molecular cell",
+    "venue_tokens": [
+      "cell",
+      "mol",
+      "molecular"
+    ],
+    "year": "2020"
+  },
+  "keep_after": {
+    "paper_id": "sha256-b63866078b35c07e",
+    "item_type": "article",
+    "content_kind": "pdf_backed",
+    "pdf_path": "articles/3d_genome_exp/Hsieh 2020 MolCell - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "pdf_sha256": "b63866078b35c07e75df50d9046f91ef9dd0aa501c1fa8dea23402b4726b5267",
+    "filename": "Hsieh 2020 MolCell - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "title_query": "Ultrastructural Details of Mammalian Chromosome Architecture",
+    "resolved_title": "Ultrastructural Details of Mammalian Chromosome Architecture",
+    "authors": "Nils Krietenstein, Sameer Abraham, Sergey V. Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han S. Hsieh, Krishna Mohan Parsi, Liyan Yang, René Maehr, Leonid A. Mirny, Job Dekker, Oliver J. Rando",
+    "year": "2020",
+    "venue": "Molecular Cell",
+    "doi": "10.1016/j.molcel.2020.03.003",
+    "semantic_scholar_paper_id": "2a4265cfbbbc75d2452ddcd7418d2cd85bc9f1e6",
+    "match_confidence": "1.0",
+    "match_status": "matched_via_doi",
+    "bibtex_type": "article",
+    "canonical_url": "https://doi.org/10.1016/j.molcel.2020.03.003",
+    "bibtex_key": "krietenstein2020architecture",
+    "text_path": "paper_index/text/sha256-b63866078b35c07e.txt",
+    "chunk_path": "paper_index/chunks/sha256-b63866078b35c07e.jsonl",
+    "abstract_source": "semantic_scholar",
+    "date_indexed": "2026-04-17T03:12:34.974814+00:00",
+    "notes": "year_hint_mismatch:2020!=2019 | venue_hint_mismatch:molecularcell!=biorxiv"
+  },
+  "drop_row": {
+    "abstract": "Over the past decade, 3C-related methods, complemented by increasingly detailed microscopic views of the nucleus, have provided unprecedented insights into chromosome folding in vivo. Here, to overcome the resolution limits inherent to the majority of genome-wide chromosome architecture mapping studies, we extend a recently-developed Hi-C variant, Micro-C, to map chromosome architecture at nucleosome resolution in human embryonic stem cells and fibroblasts. Micro-C maps robustly capture well-described features of mammalian chromosome folding including A/B compartment organization, topologically associating domains (TADs), and cis interaction peaks anchored at CTCF binding sites, while also providing a detailed 1-dimensional map of nucleosome positioning and phasing genome-wide. Compared to high-resolution in situ Hi-C, Micro-C exhibits substantially improved signal-to-noise with an order of magnitude greater dynamic range, enabling not only localization of domain boundaries with single-nucleosome accuracy, but also resolving more than 20,000 additional looping interaction peaks in each cell type. Intriguingly, many of these newly-identified peaks are localized along stripe patterns and form transitive grids, consistent with their anchors being pause sites impeding the process of cohesin-dependent loop extrusion. Together, our analyses provide the highest resolution maps of chromosome folding in human cells to date, and provide a valuable resource for studies of chromosome folding mechanisms.",
+    "abstract_norm": "over the past decade 3c related methods complemented by increasingly detailed microscopic views of the nucleus have provided unprecedented insights into chromosome folding in vivo here to overcome the resolution limits inherent to the majority of genome wide chromosome architecture mapping studies we extend a recently developed hi c variant micro c to map chromosome architecture at nucleosome resolution in human embryonic stem cells and fibroblasts micro c maps robustly capture well described features of mammalian chromosome folding including a b compartment organization topologically associating domains tads and cis interaction peaks anchored at ctcf binding sites while also providing a detailed 1 dimensional map of nucleosome positioning and phasing genome wide compared to high resolution in situ hi c micro c exhibits substantially improved signal to noise with an order of magnitude greater dynamic range enabling not only localization of domain boundaries with single nucleosome accuracy but also resolving more than 20 000 additional looping interaction peaks in each cell type intriguingly many of these newly identified peaks are localized along stripe patterns and form transitive grids consistent with their anchors being pause sites impeding the process of cohesin dependent loop extrusion together our analyses provide the highest resolution maps of chromosome folding in human cells to date and provide a valuable resource for studies of chromosome folding mechanisms",
+    "abstract_tokens": [
+      "000",
+      "20",
+      "3c",
+      "accuracy",
+      "additional",
+      "along",
+      "also",
+      "analyses",
+      "anchored",
+      "anchors",
+      "architecture",
+      "are",
+      "associating",
+      "being",
+      "binding",
+      "boundaries",
+      "but",
+      "capture",
+      "cell",
+      "cells",
+      "chromosome",
+      "cis",
+      "cohesin",
+      "compared",
+      "compartment",
+      "complemented",
+      "consistent",
+      "ctcf",
+      "date",
+      "decade",
+      "dependent",
+      "described",
+      "detailed",
+      "developed",
+      "dimensional",
+      "domain",
+      "domains",
+      "dynamic",
+      "each",
+      "embryonic",
+      "enabling",
+      "exhibits",
+      "extend",
+      "extrusion",
+      "features",
+      "fibroblasts",
+      "folding",
+      "form",
+      "genome",
+      "greater",
+      "grids",
+      "have",
+      "here",
+      "hi",
+      "high",
+      "highest",
+      "human",
+      "identified",
+      "impeding",
+      "improved",
+      "including",
+      "increasingly",
+      "inherent",
+      "insights",
+      "interaction",
+      "intriguingly",
+      "limits",
+      "localization",
+      "localized",
+      "loop",
+      "looping",
+      "magnitude",
+      "majority",
+      "mammalian",
+      "many",
+      "map",
+      "mapping",
+      "maps",
+      "mechanisms",
+      "methods",
+      "micro",
+      "microscopic",
+      "more",
+      "newly",
+      "noise",
+      "not",
+      "nucleosome",
+      "nucleus",
+      "only",
+      "order",
+      "organization",
+      "our",
+      "over",
+      "overcome",
+      "past",
+      "patterns",
+      "pause",
+      "peaks",
+      "phasing",
+      "positioning",
+      "process",
+      "provide",
+      "provided",
+      "providing",
+      "range",
+      "recently",
+      "related",
+      "resolution",
+      "resolving",
+      "resource",
+      "robustly",
+      "signal",
+      "single",
+      "sites",
+      "situ",
+      "stem",
+      "stripe",
+      "studies",
+      "substantially",
+      "tads",
+      "than",
+      "their",
+      "these",
+      "together",
+      "topologically",
+      "transitive",
+      "type",
+      "unprecedented",
+      "valuable",
+      "variant",
+      "views",
+      "vivo",
+      "we",
+      "well",
+      "while",
+      "wide"
+    ],
+    "author_tokens": [
+      "abdennur",
+      "abraham",
+      "dekker",
+      "gibcus",
+      "han",
+      "hsieh",
+      "job",
+      "johan",
+      "krietenstein",
+      "krishna",
+      "leonid",
+      "liyan",
+      "maehr",
+      "mirny",
+      "mohan",
+      "nezar",
+      "nils",
+      "oliver",
+      "parsi",
+      "rando",
+      "ren",
+      "sameer",
+      "sergey",
+      "tsung",
+      "venev",
+      "yang"
+    ],
+    "authors": "Nils Krietenstein, Sameer Abraham, Sergey V. Venev, Nezar Abdennur, Johan Gibcus, Tsung-Han S. Hsieh, Krishna Mohan Parsi, Liyan Yang, René Maehr, Leonid A. Mirny, Job Dekker, Oliver J. Rando",
+    "authors_norm": "nils krietenstein sameer abraham sergey v venev nezar abdennur johan gibcus tsung han s hsieh krishna mohan parsi liyan yang ren maehr leonid a mirny job dekker oliver j rando",
+    "bibtex_key": "krietenstein2019mammalian",
+    "bibtex_key_norm": "krietenstein2019mammalian",
+    "canonical_url": "https://doi.org/10.1016/j.molcel.2020.03.003",
+    "chunk_path": "paper_index/chunks/sha256-100014769eee2da3.jsonl",
+    "content_kind": "pdf_backed",
+    "doi": "10.1016/j.molcel.2020.03.003",
+    "filename": "Dekker - Mol Cell 2020 - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "filename_norm": "dekker mol cell 2020 ultrastructural details of mammalian chromosome architecture pdf",
+    "filename_tokens": [
+      "2020",
+      "architecture",
+      "cell",
+      "chromosome",
+      "dekker",
+      "details",
+      "mammalian",
+      "mol",
+      "pdf",
+      "ultrastructural"
+    ],
+    "item_type": "article",
+    "paper_id": "sha256-100014769eee2da3",
+    "paper_id_norm": "sha256100014769eee2da3",
+    "pdf_path": "articles/genome_folding_phase_separation/Dekker - Mol Cell 2020 - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "text_path": "paper_index/text/sha256-100014769eee2da3.txt",
+    "title": "Ultrastructural Details of Mammalian Chromosome Architecture",
+    "title_norm": "ultrastructural details of mammalian chromosome architecture",
+    "title_tokens": [
+      "architecture",
+      "chromosome",
+      "details",
+      "mammalian",
+      "ultrastructural"
+    ],
+    "venue": "Molecular Cell",
+    "venue_norm": "molecular cell",
+    "venue_tokens": [
+      "cell",
+      "mol",
+      "molecular"
+    ],
+    "year": "2020"
+  },
+  "identity_signals": [
+    "same_doi"
+  ],
+  "deleted_drop_pdf": true,
+  "drop_record": {
+    "paper_id": "sha256-100014769eee2da3",
+    "library_root": "/Users/brandani/Dropbox/documents/library",
+    "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/genome_folding_phase_separation/Dekker - Mol Cell 2020 - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "pdf_sha256": "100014769eee2da3a379ab83b251381c407ffb1a8cc55e9c4c9368d1f2110d1e",
+    "filename": "Dekker - Mol Cell 2020 - Ultrastructural Details of Mammalian Chromosome Architecture.pdf",
+    "item_type": "article",
+    "title_query": "Ultrastructural Details of Mammalian Chromosome Architecture",
+    "filename_hints": {
+      "year_hint": null,
+      "venue_hint": "",
+      "prefix": "Dekker"
+    },
+    "doi_candidates": [
+      "10.1016/j.molcel.2020.03.003"
+    ],
+    "date_indexed": "2026-04-17T03:32:17.646560+00:00",
+    "match_status": "matched_via_doi",
+    "match_confidence": 1.0,
+    "warnings": [],
+    "crossref_warnings": [],
+    "metadata_source": "crossref_doi_plus_semantic_enrichment",
+    "semantic_scholar": {
+      "query": "Ultrastructural Details of Mammalian Chromosome Architecture",
+      "limit": 10,
+      "api_error": "",
+      "best_candidate": {
+        "paperId": "2a4265cfbbbc75d2452ddcd7418d2cd85bc9f1e6",
+        "externalIds": {
+          "MAG": "3013371767",
+          "DOI": "10.1101/639922",
+          "CorpusId": 181323237,
+          "PubMed": "32213324"
+        },
+        "url": "https://www.semanticscholar.org/paper/2a4265cfbbbc75d2452ddcd7418d2cd85bc9f1e6",
+        "title": "Ultrastructural details of mammalian chromosome architecture",
+        "venue": "bioRxiv",
+        "year": 2019,
+        "openAccessPdf": {
+          "url": "https://doi.org/10.1016/j.molcel.2020.03.003",
+          "status": "GREEN",
+          "license": "publisher-specific-oa",
+          "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/639922?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/639922, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+        },
+        "publicationTypes": [
+          "JournalArticle"
+        ],
+        "publicationDate": "2019-05-17",
+        "journal": {
+          "name": "bioRxiv"
+        },
+        "authors": [
+          {
+            "authorId": "4357405",
+            "name": "Nils Krietenstein"
+          },
+          {
+            "authorId": "145343581",
+            "name": "S. Abraham"
+          },
+          {
+            "authorId": "47867760",
+            "name": "Sergey V. Venev"
+          },
+          {
+            "authorId": "88992497",
+            "name": "Nezar Abdennur"
+          },
+          {
+            "authorId": "5264761",
+            "name": "J. Gibcus"
+          },
+          {
+            "authorId": "2058059865",
+            "name": "Tsung-Han S. Hsieh"
+          },
+          {
+            "authorId": "39780121",
+            "name": "K. Parsi"
+          },
+          {
+            "authorId": "2129736202",
+            "name": "Liyan Yang"
+          },
+          {
+            "authorId": "3584087",
+            "name": "R. Maehr"
+          },
+          {
+            "authorId": "1988955",
+            "name": "L. Mirny"
+          },
+          {
+            "authorId": "145696688",
+            "name": "J. Dekker"
+          },
+          {
+            "authorId": "6052195",
+            "name": "O. Rando"
+          }
+        ],
+        "abstract": "Over the past decade, 3C-related methods, complemented by increasingly detailed microscopic views of the nucleus, have provided unprecedented insights into chromosome folding in vivo. Here, to overcome the resolution limits inherent to the majority of genome-wide chromosome architecture mapping studies, we extend a recently-developed Hi-C variant, Micro-C, to map chromosome architecture at nucleosome resolution in human embryonic stem cells and fibroblasts. Micro-C maps robustly capture well-described features of mammalian chromosome folding including A/B compartment organization, topologically associating domains (TADs), and cis interaction peaks anchored at CTCF binding sites, while also providing a detailed 1-dimensional map of nucleosome positioning and phasing genome-wide. Compared to high-resolution in situ Hi-C, Micro-C exhibits substantially improved signal-to-noise with an order of magnitude greater dynamic range, enabling not only localization of domain boundaries with single-nucleosome accuracy, but also resolving more than 20,000 additional looping interaction peaks in each cell type. Intriguingly, many of these newly-identified peaks are localized along stripe patterns and form transitive grids, consistent with their anchors being pause sites impeding the process of cohesin-dependent loop extrusion. Together, our analyses provide the highest resolution maps of chromosome folding in human cells to date, and provide a valuable resource for studies of chromosome folding mechanisms."
+      },
+      "candidate_scores": [
+        {
+          "paper_id": "2a4265cfbbbc75d2452ddcd7418d2cd85bc9f1e6",
+          "title": "Ultrastructural details of mammalian chromosome architecture",
+          "score": 1.0,
+          "title_similarity": 1.0,
+          "query_year": 2020,
+          "candidate_year": 2019,
+          "year_bonus": 0.03,
+          "author_bonus": 0.04,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "6cff8eed2a2788409d9e7ebc2151f8df602c9c09",
+          "title": "A critical role for X-chromosome architecture in mammalian X-chromosome dosage compensation.",
+          "score": 0.4267,
+          "title_similarity": 0.5067,
+          "query_year": 2020,
+          "candidate_year": 2024,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "9d39dd2560b46f0a1f85afd6eb1aee2b36a7b745",
+          "title": "X-Chromosome Inactivation: A Crossroads Between Chromosome Architecture and Gene Regulation.",
+          "score": 0.25,
+          "title_similarity": 0.33,
+          "query_year": 2020,
+          "candidate_year": 2018,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "ed70f88e670dc123bcc87d561e252e56a4ffda51",
+          "title": "Scanning electron microscopy in the ultrastructural analysis of the mammalian cerebral ventricular system.",
+          "score": 0.2383,
+          "title_similarity": 0.3183,
+          "query_year": 2020,
+          "candidate_year": 1974,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "82c63d459fb43a4a742761bda4744078f9ed2050",
+          "title": "Ultrastructural Characterization and Three-Dimensional Architecture of Replication Sites in Dengue Virus-Infected Mosquito Cells",
+          "score": 0.2267,
+          "title_similarity": 0.3067,
+          "query_year": 2020,
+          "candidate_year": 2014,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "f009e5b712698b1938c3defb5bb7cca8cc37561a",
+          "title": "Ultrastructural features of minute chromosomes in a methotrexate-resistant mouse 3 T 3 cell line ( electron microscopy / amplification / chromosome organization )",
+          "score": 0.2212,
+          "title_similarity": 0.3012,
+          "query_year": 2020,
+          "candidate_year": 2003,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "6843d049c7fc2a323e459e2909c7dfa905e5be80",
+          "title": "Atomic force microscopy of Mammalian urothelial surface.",
+          "score": 0.085,
+          "title_similarity": 0.165,
+          "query_year": 2020,
+          "candidate_year": 2007,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "989a9b949419cb3c1e02c41b4d52307800b90080",
+          "title": "Comparative analysis of the molecular mechanisms controlling the initiation of chromosomal DNA replication in yeast and in mammalian cells.",
+          "score": 0.0719,
+          "title_similarity": 0.1519,
+          "query_year": 2020,
+          "candidate_year": 2012,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "ba159ad115b69df81f688df2fe66d8b9dc7fc3a3",
+          "title": "From mice to rhinos: Whole-organ quantification of 3D mammalian placental structure using correlative multiscale imaging.",
+          "score": 0.0706,
+          "title_similarity": 0.1506,
+          "query_year": 2020,
+          "candidate_year": 2026,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        },
+        {
+          "paper_id": "2d464b230be6dec90d72b1830864f34178d37e5d",
+          "title": "Elucidation of synaptonemal complex organization by super-resolution imaging with isotropic resolution",
+          "score": 0.0,
+          "title_similarity": 0.0,
+          "query_year": 2020,
+          "candidate_year": 2015,
+          "year_bonus": -0.08,
+          "author_bonus": 0.0,
+          "venue_penalty": 0.0
+        }
+      ],
+      "candidate_dois": [
+        "10.1016/j.molcel.2020.03.003",
+        "10.1101/639922"
+      ],
+      "matching_extracted_doi": "10.1016/j.molcel.2020.03.003",
+      "raw_response": {
+        "total": 43,
+        "offset": 0,
+        "next": 10,
+        "data": [
+          {
+            "paperId": "2a4265cfbbbc75d2452ddcd7418d2cd85bc9f1e6",
+            "externalIds": {
+              "MAG": "3013371767",
+              "DOI": "10.1101/639922",
+              "CorpusId": 181323237,
+              "PubMed": "32213324"
+            },
+            "url": "https://www.semanticscholar.org/paper/2a4265cfbbbc75d2452ddcd7418d2cd85bc9f1e6",
+            "title": "Ultrastructural details of mammalian chromosome architecture",
+            "venue": "bioRxiv",
+            "year": 2019,
+            "openAccessPdf": {
+              "url": "https://doi.org/10.1016/j.molcel.2020.03.003",
+              "status": "GREEN",
+              "license": "publisher-specific-oa",
+              "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/639922?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/639922, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "JournalArticle"
+            ],
+            "publicationDate": "2019-05-17",
+            "journal": {
+              "name": "bioRxiv"
+            },
+            "authors": [
+              {
+                "authorId": "4357405",
+                "name": "Nils Krietenstein"
+              },
+              {
+                "authorId": "145343581",
+                "name": "S. Abraham"
+              },
+              {
+                "authorId": "47867760",
+                "name": "Sergey V. Venev"
+              },
+              {
+                "authorId": "88992497",
+                "name": "Nezar Abdennur"
+              },
+              {
+                "authorId": "5264761",
+                "name": "J. Gibcus"
+              },
+              {
+                "authorId": "2058059865",
+                "name": "Tsung-Han S. Hsieh"
+              },
+              {
+                "authorId": "39780121",
+                "name": "K. Parsi"
+              },
+              {
+                "authorId": "2129736202",
+                "name": "Liyan Yang"
+              },
+              {
+                "authorId": "3584087",
+                "name": "R. Maehr"
+              },
+              {
+                "authorId": "1988955",
+                "name": "L. Mirny"
+              },
+              {
+                "authorId": "145696688",
+                "name": "J. Dekker"
+              },
+              {
+                "authorId": "6052195",
+                "name": "O. Rando"
+              }
+            ],
+            "abstract": "Over the past decade, 3C-related methods, complemented by increasingly detailed microscopic views of the nucleus, have provided unprecedented insights into chromosome folding in vivo. Here, to overcome the resolution limits inherent to the majority of genome-wide chromosome architecture mapping studies, we extend a recently-developed Hi-C variant, Micro-C, to map chromosome architecture at nucleosome resolution in human embryonic stem cells and fibroblasts. Micro-C maps robustly capture well-described features of mammalian chromosome folding including A/B compartment organization, topologically associating domains (TADs), and cis interaction peaks anchored at CTCF binding sites, while also providing a detailed 1-dimensional map of nucleosome positioning and phasing genome-wide. Compared to high-resolution in situ Hi-C, Micro-C exhibits substantially improved signal-to-noise with an order of magnitude greater dynamic range, enabling not only localization of domain boundaries with single-nucleosome accuracy, but also resolving more than 20,000 additional looping interaction peaks in each cell type. Intriguingly, many of these newly-identified peaks are localized along stripe patterns and form transitive grids, consistent with their anchors being pause sites impeding the process of cohesin-dependent loop extrusion. Together, our analyses provide the highest resolution maps of chromosome folding in human cells to date, and provide a valuable resource for studies of chromosome folding mechanisms."
+          },
+          {
+            "paperId": "6cff8eed2a2788409d9e7ebc2151f8df602c9c09",
+            "externalIds": {
+              "DOI": "10.1016/j.gde.2024.102235",
+              "CorpusId": 271457712,
+              "PubMed": "39053028"
+            },
+            "url": "https://www.semanticscholar.org/paper/6cff8eed2a2788409d9e7ebc2151f8df602c9c09",
+            "title": "A critical role for X-chromosome architecture in mammalian X-chromosome dosage compensation.",
+            "venue": "Current Opinion in Genetics and Development",
+            "year": 2024,
+            "openAccessPdf": {
+              "url": "https://doi.org/10.1016/j.gde.2024.102235",
+              "status": "HYBRID",
+              "license": "CCBYNC",
+              "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.gde.2024.102235?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.gde.2024.102235, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "Review",
+              "JournalArticle"
+            ],
+            "publicationDate": "2024-07-24",
+            "journal": {
+              "name": "Current opinion in genetics & development",
+              "pages": "\n          102235\n        ",
+              "volume": "87"
+            },
+            "authors": [
+              {
+                "authorId": "2250791668",
+                "name": "I. Dror"
+              },
+              {
+                "authorId": "2340407484",
+                "name": "Tiao Tan"
+              },
+              {
+                "authorId": "2251738816",
+                "name": "Kathrin Plath"
+              }
+            ],
+            "abstract": "To regulate gene expression, the macromolecular components of the mammalian interphase nucleus are spatially organized into a myriad of functional compartments. Over the past decade, increasingly sophisticated genomics, microscopy, and functional approaches have probed this organization in unprecedented detail. These investigations have linked chromatin-associated noncoding RNAs to specific nuclear compartments and uncovered mechanisms by which these RNAs establish such domains. In this review, we focus on the long non-coding RNA Xist and summarize new evidence demonstrating the significance of chromatin reconfiguration in creating the inactive X-chromosome compartment. Differences in chromatin compaction correlate with distinct levels of gene repression on the X-chromosome, potentially explaining how human XIST can induce chromosome-wide dampening and silencing of gene expression at different stages of human development."
+          },
+          {
+            "paperId": "9d39dd2560b46f0a1f85afd6eb1aee2b36a7b745",
+            "externalIds": {
+              "MAG": "2892669206",
+              "DOI": "10.1146/annurev-genet-120116-024611",
+              "CorpusId": 52841948,
+              "PubMed": "30256677"
+            },
+            "url": "https://www.semanticscholar.org/paper/9d39dd2560b46f0a1f85afd6eb1aee2b36a7b745",
+            "title": "X-Chromosome Inactivation: A Crossroads Between Chromosome Architecture and Gene Regulation.",
+            "venue": "Annual Review of Genetics",
+            "year": 2018,
+            "openAccessPdf": {
+              "url": "https://www.annualreviews.org/doi/pdf/10.1146/annurev-genet-120116-024611",
+              "status": "BRONZE",
+              "license": null,
+              "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1146/annurev-genet-120116-024611?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1146/annurev-genet-120116-024611, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "JournalArticle",
+              "Review"
+            ],
+            "publicationDate": "2018-11-23",
+            "journal": {
+              "name": "Annual review of genetics",
+              "pages": "\n          535-566\n        ",
+              "volume": "52"
+            },
+            "authors": [
+              {
+                "authorId": "6597533",
+                "name": "Rafael Galupa"
+              },
+              {
+                "authorId": "2099250",
+                "name": "E. Heard"
+              }
+            ],
+            "abstract": "In somatic nuclei of female therian mammals, the two X chromosomes display very different chromatin states: One X is typically euchromatic and transcriptionally active, and the other is mostly silent and forms a cytologically detectable heterochromatic structure termed the Barr body. These differences, which arise during female development as a result of X-chromosome inactivation (XCI), have been the focus of research for many decades. Initial approaches to define the structure of the inactive X chromosome (Xi) and its relationship to gene expression mainly involved microscopy-based approaches. More recently, with the advent of genomic techniques such as chromosome conformation capture, molecular details of the structure and expression of the Xi have been revealed. Here, we review our current knowledge of the 3D organization of the mammalian X-chromosome chromatin and discuss its relationship with gene activity in light of the initiation, spreading, and maintenance of XCI, as well as escape from gene silencing."
+          },
+          {
+            "paperId": "ba159ad115b69df81f688df2fe66d8b9dc7fc3a3",
+            "externalIds": {
+              "DOI": "10.1016/j.placenta.2026.02.006",
+              "CorpusId": 285528086,
+              "PubMed": "41690818"
+            },
+            "url": "https://www.semanticscholar.org/paper/ba159ad115b69df81f688df2fe66d8b9dc7fc3a3",
+            "title": "From mice to rhinos: Whole-organ quantification of 3D mammalian placental structure using correlative multiscale imaging.",
+            "venue": "Placenta",
+            "year": 2026,
+            "openAccessPdf": {
+              "url": "",
+              "status": null,
+              "license": null,
+              "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.placenta.2026.02.006?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.placenta.2026.02.006, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "JournalArticle",
+              "Review"
+            ],
+            "publicationDate": "2026-02-01",
+            "journal": {
+              "name": "Placenta"
+            },
+            "authors": [
+              {
+                "authorId": "91309138",
+                "name": "Davis Laundon"
+              },
+              {
+                "authorId": "2314313304",
+                "name": "Ella Proudley"
+              },
+              {
+                "authorId": "2160925408",
+                "name": "Avery Pennington"
+              },
+              {
+                "authorId": "2410265616",
+                "name": "Aaron Grewal"
+              },
+              {
+                "authorId": "50793445",
+                "name": "P. Basford"
+              },
+              {
+                "authorId": "49600576",
+                "name": "O. Katsamenis"
+              },
+              {
+                "authorId": "2223370872",
+                "name": "James Thompson"
+              },
+              {
+                "authorId": "121635778",
+                "name": "P. Goggin"
+              },
+              {
+                "authorId": "2314214850",
+                "name": "J. Norman"
+              },
+              {
+                "authorId": "2380918435",
+                "name": "Dolapo Adebo"
+              },
+              {
+                "authorId": "2410260644",
+                "name": "Samuel Kersley"
+              },
+              {
+                "authorId": "2240195771",
+                "name": "Anandita Umapathy"
+              },
+              {
+                "authorId": "2410265360",
+                "name": "Lottie Nesbitt"
+              },
+              {
+                "authorId": "2293571696",
+                "name": "Georgina Constable-Dakeyne"
+              },
+              {
+                "authorId": "2410258671",
+                "name": "W. Irvine"
+              },
+              {
+                "authorId": "2240180299",
+                "name": "Neil J Gostling"
+              },
+              {
+                "authorId": "2240018993",
+                "name": "P. Chavatte-Palmer"
+              },
+              {
+                "authorId": "2255786033",
+                "name": "Bram G Sengers"
+              },
+              {
+                "authorId": "2326518808",
+                "name": "Michele C. Darrow"
+              },
+              {
+                "authorId": "2255425072",
+                "name": "Rohan M Lewis"
+              }
+            ],
+            "abstract": "The mammalian placenta displays extraordinary structural diversity across scales of measurement, yet the quantitative basis and functional consequences of this variation remain poorly understood. Traditional approaches rely on qualitative categories or simple metrics such as length or depth which obscure the complexity of three-dimensional (3D) tissue architecture. Here, we review methods for quantifying whole-organ placental volume, surface area, and vascular organisation, highlighting trade-offs between speed, expense, labour, precision, scalability, destructivity, and specificity. We then demonstrate how correlative multiscale 3D imaging techniques can overcome these limitations, enabling whole-organ quantification across species spanning several orders of magnitude in placental volume-from mouse to rhinoceros. Using integrated workflows that combine X-ray microfocus tomography (microCT), light (H&E histology), and electron (SBF-SEM) microscopy, we generate quantitative structural datasets across spatial scales. In a mouse placenta, correlative 3D X-ray histology (3D-XRH) links histological features directly to their 3D tissue context. In a human placenta, multimodal imaging integrates whole-organ microCT with correlative X-ray and electron microscopy (CXEM) to quantify the total exchange surface area, bridging organ-scale structure and ultrastructural detail. Finally, using placentas from giraffes and rhinos, we show how microCT can be used to quantify the whole organ structure of placentas from even very large mammals, quantifying metrics such as cotyledon volume distribution and blood vessel architecture. Together, these examples illustrate the power of correlative multiscale 3D imaging to resolve mammalian placental structure, bridging cellular and organ-level organisation. This integrative approach provides a unified framework for quantitative comparative placentation, linking structural diversity to physiological function."
+          },
+          {
+            "paperId": "6843d049c7fc2a323e459e2909c7dfa905e5be80",
+            "externalIds": {
+              "MAG": "2082872495",
+              "DOI": "10.1016/J.JMB.2007.09.040",
+              "CorpusId": 23061752,
+              "PubMed": "17936789"
+            },
+            "url": "https://www.semanticscholar.org/paper/6843d049c7fc2a323e459e2909c7dfa905e5be80",
+            "title": "Atomic force microscopy of Mammalian urothelial surface.",
+            "venue": "Journal of Molecular Biology",
+            "year": 2007,
+            "openAccessPdf": {
+              "url": "https://europepmc.org/articles/pmc2096708?pdf=render",
+              "status": "GREEN",
+              "license": null,
+              "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.JMB.2007.09.040?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.JMB.2007.09.040, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "JournalArticle"
+            ],
+            "publicationDate": "2007-11-23",
+            "journal": {
+              "name": "Journal of molecular biology",
+              "pages": "\n          365-73\n        ",
+              "volume": "374 2"
+            },
+            "authors": [
+              {
+                "authorId": "4990893",
+                "name": "L. Kreplak"
+              },
+              {
+                "authorId": "49527992",
+                "name": "Huaibin Wang"
+              },
+              {
+                "authorId": "3626267",
+                "name": "U. Aebi"
+              },
+              {
+                "authorId": "2837066",
+                "name": "X. Kong"
+              }
+            ],
+            "abstract": null
+          },
+          {
+            "paperId": "82c63d459fb43a4a742761bda4744078f9ed2050",
+            "externalIds": {
+              "MAG": "1969968028",
+              "DOI": "10.1128/JVI.00118-14",
+              "CorpusId": 8261109,
+              "PubMed": "24522909"
+            },
+            "url": "https://www.semanticscholar.org/paper/82c63d459fb43a4a742761bda4744078f9ed2050",
+            "title": "Ultrastructural Characterization and Three-Dimensional Architecture of Replication Sites in Dengue Virus-Infected Mosquito Cells",
+            "venue": "Journal of Virology",
+            "year": 2014,
+            "openAccessPdf": {
+              "url": "https://jvi.asm.org/content/jvi/88/9/4687.full.pdf",
+              "status": "BRONZE",
+              "license": null,
+              "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1128/JVI.00118-14?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1128/JVI.00118-14, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "JournalArticle"
+            ],
+            "publicationDate": "2014-02-12",
+            "journal": {
+              "name": "Journal of Virology",
+              "pages": "4687 - 4697",
+              "volume": "88"
+            },
+            "authors": [
+              {
+                "authorId": "9816381",
+                "name": "Jiraphan Junjhon"
+              },
+              {
+                "authorId": "36953965",
+                "name": "J. Pennington"
+              },
+              {
+                "authorId": "2074789039",
+                "name": "Thomas J. Edwards"
+              },
+              {
+                "authorId": "3557245",
+                "name": "R. Perera"
+              },
+              {
+                "authorId": "49600871",
+                "name": "J. Lanman"
+              },
+              {
+                "authorId": "1721636",
+                "name": "R. Kuhn"
+              }
+            ],
+            "abstract": null
+          },
+          {
+            "paperId": "ed70f88e670dc123bcc87d561e252e56a4ffda51",
+            "externalIds": {
+              "MAG": "2190026999",
+              "DOI": "10.1016/S0074-7696(08)61362-5",
+              "CorpusId": 46365315,
+              "PubMed": "4209574"
+            },
+            "url": "https://www.semanticscholar.org/paper/ed70f88e670dc123bcc87d561e252e56a4ffda51",
+            "title": "Scanning electron microscopy in the ultrastructural analysis of the mammalian cerebral ventricular system.",
+            "venue": "International Review of Cytology",
+            "year": 1974,
+            "openAccessPdf": {
+              "url": "",
+              "status": "CLOSED",
+              "license": null,
+              "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S0074-7696(08)61362-5?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S0074-7696(08)61362-5, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "Review",
+              "JournalArticle"
+            ],
+            "publicationDate": null,
+            "journal": {
+              "name": "International review of cytology",
+              "pages": "\n          349-88\n        ",
+              "volume": "37 0"
+            },
+            "authors": [
+              {
+                "authorId": "30541796",
+                "name": "D. Scott"
+              },
+              {
+                "authorId": "1791191",
+                "name": "G. Kozlowski"
+              },
+              {
+                "authorId": "38058763",
+                "name": "M. Sheridan"
+              }
+            ],
+            "abstract": null
+          },
+          {
+            "paperId": "f009e5b712698b1938c3defb5bb7cca8cc37561a",
+            "externalIds": {
+              "CorpusId": 249428596
+            },
+            "url": "https://www.semanticscholar.org/paper/f009e5b712698b1938c3defb5bb7cca8cc37561a",
+            "title": "Ultrastructural features of minute chromosomes in a methotrexate-resistant mouse 3 T 3 cell line ( electron microscopy / amplification / chromosome organization )",
+            "venue": "",
+            "year": 2003,
+            "openAccessPdf": {
+              "url": "",
+              "status": null,
+              "license": null,
+              "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://web.archive.org/web/20190502084458/https://www.pnas.org/content/pnas/82/4/1126.full.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": null,
+            "publicationDate": null,
+            "journal": null,
+            "authors": [
+              {
+                "authorId": "5945925",
+                "name": "B. Hamkalo"
+              },
+              {
+                "authorId": "78504696",
+                "name": "J. Peggy"
+              },
+              {
+                "authorId": "2168425643",
+                "name": "FARNHAMt"
+              },
+              {
+                "authorId": "117627954",
+                "name": "R. JOHNSTONt"
+              },
+              {
+                "authorId": "90150538",
+                "name": "Robert T. SCHIMKEt"
+              }
+            ],
+            "abstract": null
+          },
+          {
+            "paperId": "989a9b949419cb3c1e02c41b4d52307800b90080",
+            "externalIds": {
+              "MAG": "1982343660",
+              "DOI": "10.1016/j.biotechadv.2011.09.009",
+              "CorpusId": 30059218,
+              "PubMed": "21963686"
+            },
+            "url": "https://www.semanticscholar.org/paper/989a9b949419cb3c1e02c41b4d52307800b90080",
+            "title": "Comparative analysis of the molecular mechanisms controlling the initiation of chromosomal DNA replication in yeast and in mammalian cells.",
+            "venue": "Biotechnology Advances",
+            "year": 2012,
+            "openAccessPdf": {
+              "url": "",
+              "status": "CLOSED",
+              "license": null,
+              "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.biotechadv.2011.09.009?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.biotechadv.2011.09.009, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "Review",
+              "JournalArticle",
+              "Study"
+            ],
+            "publicationDate": null,
+            "journal": {
+              "name": "Biotechnology advances",
+              "pages": "\n          73-98\n        ",
+              "volume": "30 1"
+            },
+            "authors": [
+              {
+                "authorId": "4369326",
+                "name": "Elena Sacco"
+              },
+              {
+                "authorId": "144015307",
+                "name": "M. Hasan"
+              },
+              {
+                "authorId": "3143014",
+                "name": "L. Alberghina"
+              },
+              {
+                "authorId": "34958166",
+                "name": "M. Vanoni"
+              }
+            ],
+            "abstract": null
+          },
+          {
+            "paperId": "2d464b230be6dec90d72b1830864f34178d37e5d",
+            "externalIds": {
+              "MAG": "1984378355",
+              "DOI": "10.1073/pnas.1414814112",
+              "CorpusId": 9575337,
+              "PubMed": "25646409"
+            },
+            "url": "https://www.semanticscholar.org/paper/2d464b230be6dec90d72b1830864f34178d37e5d",
+            "title": "Elucidation of synaptonemal complex organization by super-resolution imaging with isotropic resolution",
+            "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+            "year": 2015,
+            "openAccessPdf": {
+              "url": "https://europepmc.org/articles/pmc4343094?pdf=render",
+              "status": "GREEN",
+              "license": "other-oa",
+              "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/pnas.1414814112?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/pnas.1414814112, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+            },
+            "publicationTypes": [
+              "JournalArticle"
+            ],
+            "publicationDate": "2015-02-02",
+            "journal": {
+              "name": "Proceedings of the National Academy of Sciences",
+              "pages": "2029 - 2033",
+              "volume": "112"
+            },
+            "authors": [
+              {
+                "authorId": "6750092",
+                "name": "Katharina Schücker"
+              },
+              {
+                "authorId": "4023367",
+                "name": "Thorge Holm"
+              },
+              {
+                "authorId": "48210293",
+                "name": "Christian Franke"
+              },
+              {
+                "authorId": "31909089",
+                "name": "M. Sauer"
+              },
+              {
+                "authorId": "71636996",
+                "name": "R. Benavente"
+              }
+            ],
+            "abstract": null
+          }
+        ]
+      }
+    },
+    "crossref": {
+      "error": "",
+      "metadata": {
+        "URL": "https://doi.org/10.1016/j.molcel.2020.03.003",
+        "DOI": "10.1016/j.molcel.2020.03.003",
+        "type": "journal-article",
+        "issue": "3",
+        "author": [
+          {
+            "given": "Nils",
+            "family": "Krietenstein",
+            "sequence": "first",
+            "affiliation": []
+          },
+          {
+            "given": "Sameer",
+            "family": "Abraham",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Sergey V.",
+            "family": "Venev",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Nezar",
+            "family": "Abdennur",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Johan",
+            "family": "Gibcus",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Tsung-Han S.",
+            "family": "Hsieh",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Krishna Mohan",
+            "family": "Parsi",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Liyan",
+            "family": "Yang",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "René",
+            "family": "Maehr",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Leonid A.",
+            "family": "Mirny",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Job",
+            "family": "Dekker",
+            "sequence": "additional",
+            "affiliation": []
+          },
+          {
+            "given": "Oliver J.",
+            "family": "Rando",
+            "sequence": "additional",
+            "affiliation": []
+          }
+        ],
+        "ISSN": [
+          "1097-2765"
+        ],
+        "page": "554-565.e7",
+        "container-title": [
+          "Molecular Cell"
+        ],
+        "title": [
+          "Ultrastructural Details of Mammalian Chromosome Architecture"
+        ],
+        "publisher": "Elsevier BV",
+        "issued": {
+          "date-parts": [
+            [
+              2020,
+              5
+            ]
+          ]
+        },
+        "volume": "78"
+      },
+      "accepted_score": 1.0,
+      "accepted": true,
+      "accepted_doi": "10.1016/j.molcel.2020.03.003",
+      "best_candidate_doi": "10.1016/j.molcel.2020.03.003",
+      "crossref_attempts": [
+        {
+          "doi": "10.1016/j.molcel.2020.03.003",
+          "source_region": "first_page",
+          "position": 1064,
+          "context": "et al., 2020, Molecular Cell 78, 554–565 May 7, 2020 a 2020 Elsevier Inc. https://doi.org/10.1016/j.molcel.2020.03.003",
+          "priority_score": 0.55,
+          "score": 1.0,
+          "warnings": [],
+          "error": "",
+          "accepted": false,
+          "metadata": {
+            "URL": "https://doi.org/10.1016/j.molcel.2020.03.003",
+            "DOI": "10.1016/j.molcel.2020.03.003",
+            "type": "journal-article",
+            "issue": "3",
+            "author": [
+              {
+                "given": "Nils",
+                "family": "Krietenstein",
+                "sequence": "first",
+                "affiliation": []
+              },
+              {
+                "given": "Sameer",
+                "family": "Abraham",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Sergey V.",
+                "family": "Venev",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Nezar",
+                "family": "Abdennur",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Johan",
+                "family": "Gibcus",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Tsung-Han S.",
+                "family": "Hsieh",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Krishna Mohan",
+                "family": "Parsi",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Liyan",
+                "family": "Yang",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "René",
+                "family": "Maehr",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Leonid A.",
+                "family": "Mirny",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Job",
+                "family": "Dekker",
+                "sequence": "additional",
+                "affiliation": []
+              },
+              {
+                "given": "Oliver J.",
+                "family": "Rando",
+                "sequence": "additional",
+                "affiliation": []
+              }
+            ],
+            "ISSN": [
+              "1097-2765"
+            ],
+            "page": "554-565.e7",
+            "container-title": [
+              "Molecular Cell"
+            ],
+            "title": [
+              "Ultrastructural Details of Mammalian Chromosome Architecture"
+            ],
+            "publisher": "Elsevier BV",
+            "issued": {
+              "date-parts": [
+                [
+                  2020,
+                  5
+                ]
+              ]
+            },
+            "volume": "78"
+          }
+        }
+      ],
+      "accepted_source": "crossref_doi",
+      "matched_by": "doi_text_validation"
+    },
+    "artifacts": {
+      "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-100014769eee2da3.json",
+      "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-100014769eee2da3.txt",
+      "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-100014769eee2da3.jsonl",
+      "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+      "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+      "text_kind": "pdf_text"
+    },
+    "text_extraction": {
+      "status": "ok",
+      "error": "",
+      "text_sha256": "6c6a8b5dac5e04239bcee31989e004755c9b105dd89d289db52dbf65e80d8066",
+      "chunk_count": 39,
+      "chunk_target_chars": 2200,
+      "chunk_overlap_chars": 250,
+      "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+    },
+    "content_kind": "pdf_backed",
+    "doi_candidate_details": [
+      {
+        "doi": "10.1016/j.molcel.2020.03.003",
+        "source_region": "first_page",
+        "position": 1064,
+        "context": "et al., 2020, Molecular Cell 78, 554–565 May 7, 2020 a 2020 Elsevier Inc. https://doi.org/10.1016/j.molcel.2020.03.003",
+        "priority_score": 0.55
+      }
+    ],
+    "metadata_reconciliation": {
+      "last_applied": "2026-05-11T06:08:57.719895+00:00",
+      "tool": "library_reconcile_metadata.py",
+      "accepted_doi": "10.1016/j.molcel.2020.03.003",
+      "score": 1.0
+    }
+  }
+}

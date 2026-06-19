@@ -1,0 +1,635 @@
+[Page 1]
+
+SMC complexes can traverse physical roadblocks bigger than their ring size Graphical abstract
+
+Authors Biswajit Pradhan, Roman Barth, Eugene Kim, ..., Jaco van der Torre, Jan-Michael Peters, Cees Dekker
+
+Correspondence c.dekker@tudelft.nl
+
+In brief If and how SMC proteins perform DNA loop extrusion on protein-decorated DNA is an ongoing debate. Pradhan et al. show that DNA-binding proteins do not pose barriers to DNA-loop-extruding SMC complexes. Roadblocks larger than the SMC ring size cannot inhibit loop extrusion, which points to a nontopological loop extrusion mechanism.
+
+Highlights
+
+Nucleosomes, RNA polymerase, and dCas9 pose no barrier to DNA loop extruding condensin
+
+Loop extruding condensin and cohesin can bypass 200-nm nanoparticles
+
+Cohesin with a covalently closed SMC-kleisin ring can pass 200-nm particles into loops
+
+The roadblock traversals point to a nontopological mechanism of DNA loop extrusion
+
+Pradhan et al., 2022, Cell Reports 41, 111491 October 18, 2022 a 2022 The Author(s). https://doi.org/10.1016/j.celrep.2022.111491
+
+[Page 2]
+
+SMC complexes can traverse physical roadblocks bigger than their ring size Biswajit Pradhan,1,4 Roman Barth,1 Eugene Kim,1,4 Iain F. Davidson,3 Benedikt Bauer,3 Theo van Laar,1,2 Wayne Yang,1 Je-Kyung Ryu,1,5 Jaco van der Torre,1 Jan-Michael Peters,3 and Cees Dekker1,6,* 1Department of Bionanoscience, Kavli Institute of Nanoscience Delft, Delft University of Technology, Delft, the Netherlands 2Nynke Dekker Lab, Department of Bionanoscience, Kavli Institute of Nanoscience Delft, Delft University of Technology, Delft, the Netherlands 3Research Institute of Molecular Pathology (IMP), Vienna Biocenter (VBC), Vienna, Austria 4Present address: Max-Planck Institute of Biophysics, Frankfurt am Main, Germany 5Present address: Department of Physics and Astronomy, Seoul National University (SNU), 1 Gwanak-ro, Gwanak-gu, Seoul 08826, South Korea 6Lead contact *Correspondence: c.dekker@tudelft.nl https://doi.org/10.1016/j.celrep.2022.111491
+
+SUMMARY
+
+Ring-shaped structural maintenance of chromosomes (SMC) complexes like condensin and cohesin extrude loops of DNA. It remains, however, unclear how they can extrude DNA loops in chromatin that is bound with proteins. Here, we use in vitro single-molecule visualization to show that nucleosomes, RNA polymerase, and dCas9 pose virtually no barrier to loop extrusion by yeast condensin. We find that even DNA-bound nanoparticles as large as 200 nm, much bigger than the SMC ring size, also translocate into DNA loops during extrusion by condensin and cohesin. This even occurs for a single-chain version of cohesin in which the ring-forming subunits are covalently linked and cannot open to entrap DNA. The data show that SMC-driven loop extrusion has surprisingly little difficulty in accommodating large roadblocks into the loop. The findings also show that the extruded DNA does not pass through the SMC ring (pseudo)topologically, hence pointing to a nontopological mechanism for DNA loop extrusion.
+
+INTRODUCTION Chromosome organization in eukaryotic cells is vital for genome segregation, gene regulation, and recombination (Nasmyth, 2001; Spector, 2003). Structural maintenance of chromosome (SMC) complexes such as condensin and cohesin play a key role in the three-dimensional organization of the chromosome (Naumova et al., 2013; Uhlmann, 2016; Xiang and Koshland, 2021). These SMC complexes are DNA-binding adenosine triphosphatase, in which an SMC heterodimer and kleisin subunit form a ring-like structure (Hirano, 2016; Lee et al., 2020). SMC complexes organize the genome by extruding DNA loops in a processive and adenosine triphosphate (ATP)-dependent manner (Davidson and Peters, 2021; Goloborodko et al., 2016; Hassler et al., 2018; van Ruiten and Rowland, 2018). Both cohesin and condensin have been shown to extrude loops in vitro on bare DNA molecules that were tethered onto a surface (Davidson et al., 2019; Ganji et al., 2018; Golfier et al., 2020; Kim et al., 2019; Kong et al., 2020). It remains unclear, however, how SMC complexes deal with the abundant proteins that are part of chromatin in cells. In vivo, SMC complexes will encounter lots of DNA-binding proteins such as nucleosomes as well as large obstacles such as the DNA replisome, with a size of approximately 20 nm (Sun et al.,
+
+2015), or a transcribing RNA polymerase that, with its RNA transcript and spliceosome, can have a globular diameter of more than 70 nm (Watson, 2004), i.e., even bigger than the approximately 35-nm ring size of SMCs. Some data indicate that SMCs can bypass DNA-bound objects; e.g., Kim et al. (2019) and Kong et al. (2020) found that nucleosomal DNA was compacted by cohesin and condensin, and yeast condensin was shown to be able to bypass another condensin to form higher-order DNA loops (Kim et al., 2020). Yet, other evidence has indicated a slowing down or blocking of DNA loop extrusion by specific proteins. For example, the DNA-binding protein CCCTC-binding factor (CTCF) regulates topologically associating domains and long-range interactions by blocking loop extrusion through specific binding to cohesin (Li et al., 2020). Furthermore, in vivo data suggest that transcribing RNA polymerases are able to push cohesin to the 30 -end of highly transcribed genes in eukaryotes (Busslinger et al., 2017; Heinz et al., 2018), and Brand~ ao et al. (2019) theoretically predicted that transcription slows SMC complexes down but does not block SMC translocation in Bacillus subtilis. Under conditions in which cohesin diffuses along DNA, SMCs were reported to be blocked by objects larger than 20 nm (Davidson et al., 2016; Stigler et al., 2016). Overall, it therefore remains unresolved whether loop-extruding SMC complexes will block, stall,
+
+Cell Reports 41, 111491, October 18, 2022 a 2022 The Author(s). 1 This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+[Page 3]
+
+Figure 1. Visualization of a condensin encountering an obstacle while extruding a DNA loop (A) Loop extrusion assay. (B) Two scenarios for condensin encountering an obstacle during loop extrusion: the obstacle can either pass into the loop or get blocked. (C) Snapshots of condensin bypassing a DNA-bound protein (dCas9) and including it in the loop during DNA loop extrusion with side flow. (D) Snapshots of DNA loop extrusion where the loop encounter accommodates a protein. (E) Kymograph for the event in (D). (F) Localizations of the protein (magenta) and DNA puncta (green) from the kymograph.
+
+(legend continued on next page)
+
+2 Cell Reports 41, 111491, October 18, 2022
+
+[Page 4]
+
+bypass, dissociate, or push obstacles that are present on the DNA upon encounter. One might expect that this relates to the topology of the SMC complex during DNA loop extrusion. SMCs can embrace DNA in their ring structure, as cohesin was found to mediate sister chromatid cohesion through topological entrapment (Ivanov and Nasmyth, 2005), while condensin was reported to topologically link chromatid arms for their structural rigidity in mitosis (Cuylen et al., 2011a). Whether topological entrapment is necessary for €rmann loop extrusion is under debate. While most models (Bu et al., 2019, 2021; Cuylen et al., 2011b; Gruber et al., 2017; Haering et al., 2008; Higashi et al., 2020; Marko et al., 2019; Nichols and Corces, 2018; Wilhelm et al., 2015) assume some form of DNA entrapment, recent data on human cohesin with a covalently closed-ring structure indicated its ability to extrude loops (Davidson et al., 2019), suggesting a possible pseudo- or nontopological loading of the SMC complex during DNA loop extrusion, where, respectively, the DNA gets inserted into the SMC ring without opening the ring or where the DNA loop does not get embraced by the SMC ring at all but DNA binding occurs externally. Here, we systematically study the effect of DNA-binding proteins on DNA-loop extrusion for both yeast condensin and (covalently closed) human cohesin. Strikingly, we find that particles as large as 200 nm, i.e., much bigger than the approximately 35-nm condensin ring size, can be translocated into DNA loops during extrusion. This demonstrates that SMCs can handle proteinloaded chromatin substrates for loop extrusion without any problems, and provides evidence for a nontopological mechanism of SMC-driven DNA loop extrusion. RESULTS Visualization of a condensin encountering an obstacle while extruding a DNA loop Loop extrusion was visualized in vitro by monitoring an Alexa 647 fluorescently labeled roadblock protein on fluorescently labeled DNA (sytox orange [SxO]) (Figure 1A). Roadblock proteins were bound to 48.5-kb l-DNA, which was anchored onto a streptavidin-coated passivated glass surface at both its ends through biotin linkers (Figure S1) and imaged with homebuilt highly inclined and laminated optical sheet microscopy. Upon addition of condensin (0.5 nM) and ATP (5 mM), fluorescence spots locally formed on DNA, whose intensity grew until the slack was removed between the two DNA ends. Inplane buffer flow perpendicular to the DNA confirmed that these were extruded DNA loops. Consistent with previous findings (Ganji et al., 2018), condensin extruded a DNA loop asymmetrically, and consequently, the DNA-bound roadblock was reeled toward the loop or remained fixed with respect to the loop position (Figures 1C and S1I–S1L). Events where the roadblock was mov-
+
+ing toward the loop to subsequently co-localize with the loop were identified as an encounter and considered for further analysis. Upon encounter, loop extrusion by condensin either blocked, or the roadblock traversed the stem of the condensin-mediated DNA loop to subsequently translocate into the extruded DNA loop (Figure 1B). Figure 1C shows an example of such a traversal, where the DNA formed a loop that grew in size until it encountered the roadblock (here dCas9), whereupon it continued to grow such that the loop encompassed the roadblock protein (Video S1). When the loop spontaneously disrupted after 9 min, the protein was still bound to the DNA and, as expected, at its initial position. Alternatively, a roadblock can be blocked at the stem of the loop upon encounter (Video S2). We never observed pushing of the roadblock along the DNA or disruption of the loop upon the encounter. To avoid imposing additional tension within the DNA by the side flow, which can slow down or stall loop extrusion (Ganji et al., 2018; Je-Kyung et al., 2021), most roadblock experiments were performed without side flow (Figure 1D). Kymographs were used to visualize loop formation and roadblock positions over time (see Figures 1E and 1F). Upon encounter, a continued movement of the now co-localized loop and roadblock signaled the passing of the roadblock into the loop, since the SMC still drove the loop expansion. Quantification of the loop size from the intensities (Figure 1G) provided further details; see Figures 1I, 1J and 1K for examples of a passage, a stalling and passing, and a blocking event, respectively. We found that the mean square displacement (MSD) of the roadblock along the DNA serves as a good marker for discriminating whether the roadblock got blocked or passed into the extruded loop. For a passage event, the MSD (Figure 1I, bottom) could be seen to rapidly decrease until the condensin-roadblock encounter, and rapidly increasing again after the encounter. This is explained from, respectively, the tightening up of the DNA between its two ends in the early phase of loop extrusion (i.e., going from I to II in Figure 1H) and the increased distance from the roadblock (inside the loop) to the loop stem, which is associated with an increased Brownian motion (III in Figure 1H), since the DNA within the loop is not under tension. The MSD (Figure 1I, bottom) changes much more distinctly over time than the loop size (Figure 1I, top), making it a discriminating measure for inferring whether the roadblock did or did not become incorporated into the extruded DNA loop. Loop-extruding condensin traverses DNA-bound proteins such as nucleosomes, RNA polymerase, and dCas9 In probing the effects of roadblocks on condensin-driven DNA loop extrusion, we first examined nucleosomes, the basic building block of chromatin with a diameter of approximately 11 nm
+
+(G) Color scheme denoting the various fluorescence intensities of different regions on DNA. (H) Illustration of the Brownian fluctuations of the roadblock at different stages of the encounter. (I) Kinetics of the DNA loop size formation for a passing event. Intensities are denoted in colors outlined in (G). Bottom curve shows the MSD (moving average; black) and SMC-roadblock distance (orange). (J) Same as (I), but for a stalling and subsequent passing event. (K) Same as (I), but for a blocking event.
+
+Cell Reports 41, 111491, October 18, 2022 3
+
+[Page 5]
+
+Figure 2. Loop-extruding condensin traverses nucleosomes and other DNA-bound proteins
+
+(A) Schematic of nucleosomes on DNA. (B) AFM image of single nucleosomes on DNA. (C) Kymograph for a passage event. (D) Corresponding loop kinetics and MSD traces. (E and F) Kymograph (E) and corresponding loop kinetics and MSD traces (F) for a blocking event. (G) Fraction of the roadblocks passed (blue) and blocked (orange) for nucleosomes, RNAP, and dCas9. (H) Schematics of RNAP and dCas9 (adapted from Wikimedia Commons).
+
+the nucleosome, namely 92% ± 5% and 87% ± 8%, respectively. This indicates that approximately 10-nm-sized DNAbinding proteins can be readily accommodated into the extruded loop.
+
+(Figure 2A). Nucleosomes were reconstituted from yeast histone octamers with Alexa 647 on H3A (see STAR Methods) and assembled as single nucleosomes on DNA (Figures 2B and S2A–S2D), yielding 2–5 isolated nucleosomes per l-DNA in our optical assay. Both passing and blocking events were observed (Figures 2C–2G), but passing events were much more frequent (88% ± 4%) (Figure 2I). A small fraction of the encounters showed stalling and passing with pausing time of approximately 10 s (Figure S2P). Notably, the blocking events almost always occurred at the end of a loop extrusion where the forces within the DNA were approximately similar to the stalling force for condensin (Figure S2M). Other proteins with similar diameters, specifically RNA polymerase (RNAP) from Escherichia coli and dCas9 (Figure 2H), showed similar passing fractions as
+
+4 Cell Reports 41, 111491, October 18, 2022
+
+Condensin and ohesion can pass roadblocks bigger than their ring size Next, we asked if yet larger obstacles on DNA would block DNA-extruding condensin. Gold nanoparticles were chosen to controllably vary the size of the roadblocks, as they can be obtained with a narrow size distribution with a median diameter of 10–125 nm. Gold particles were functionalized with SH-PEG-NH2/ SH-PEG-COOH (see STAR Methods), which minimized interactions with DNA, condensin, and the glass surface. The amine (–NH2) groups facilitated binding to Alexa 647 and to a dCas9-Snaptag that allowed sequence-specific anchoring of the nanoparticle to the DNA via dCas9. Transmission electron microscopy (TEM) imaging (Figures 3B–3D), which visualized the gold core but not the outer organic layer, showed a narrow size distribution. The hydrodynamic diameter was estimated from fluorescence correlation curves (Figure S2J), and a comparison of the TEM and hydrodynamic diameters yielded a thickness of 7.9 ± 1.2 nm for the passivation layer. For the largest particle in our study, we used polystyrene nanoparticles with the same functionalization that added 16 ± 2 nm to the 182 ± 8 nm diameter as measured by EM, leading to a 198 ± 10 nm total diameter of these 200-nm polystyrene nanoparticles. Condensin-driven loop extrusion was examined for functionalized nanoparticles of different sizes that were bound onto DNA. Figure 3F–3M provides examples for gold nanoparticles with a hydrodynamic diameter of 39 nm. We observed different outcomes upon encounter of the condensin with the roadblock, viz., passing (Figures 3F–3I; Videos S3 and S4), stalling and passing (Figures 3J, 3K, and S2P), and blocking (Figures 3L
+
+[Page 6]
+
+(legend on next page)
+
+Cell Reports 41, 111491, October 18, 2022 5
+
+[Page 7]
+
+and 3M). The application of a side flow unequivocally demonstrated that a 39-nm particle can be inserted into the loop (Figure 3F). From the statistics of passing versus blocking, 39-nm particles show similar high passing fractions (94% ± 6%; including stalling and passing events) to the nucleosomes (88% ± 4%). The most striking finding of our study is that DNA-bound particles with a diameter as large as 200 nm can pass into the loop during the process of DNA loop extrusion. Figure 4C shows representative side-flow images of DNA loop extrusion in the presence of a 200-nm particle, where the particle can be seen moving toward the loop, then encountering the loop, and subsequently passing into the loop (Video S5). Figures 4C–4E show another example of a passage event where a 200-nm particle gets incorporated into the extruded DNA loop, as evidenced from the increase in both the loop size and the clear minimum in the MSD at the encounter. Notably, this 200-nm size is much larger than the condensin ring (cf. Figure 4A for a comparison to scale), as the circular SMC complex has a diameter of approximately 35 nm (Gruber et al., 2003), as is evident from atomic force microscopy imaging (Figures S2E and S2F), whereas theoretically one could imagine an approximately 110-nm ring diameter (Figure S2I) when combining the approximately 50-nm long smc arms and stretching the kleisin to its full maximal length, which, however, is nonphysiological. As displayed in Figure 4B, the fraction of DNA-bound nanoparticles that traversed the condensin to get incorporated into the DNA loop decreased from more than 90% for particle sizes up to 40 nm, to 57% ± 9% for the 200-nm particles. The very large passing fractions for the smaller particles indicate that the vast majority of biologically relevant DNA-binding proteins will be readily accommodated into extruded DNA loops. While the passing fraction decreases with increasing particle size, it is remarkable that more than 50% of the 200-nm particles still get translocated into the extruded loop, implying that very large protein complexes on DNA will traverse into the DNA loops. Approximately 10%–20% of all encounters exhibited stalling before subsequent passing, with a characteristic stalling time of approximately 40 s (Figure S2P). To explore the generality of these findings, we performed similar experiments with human cohesin, which was also shown to extrude DNA loops (Davidson et al., 2019; Kim et al., 2019). For both 30-nm and 200-nm DNA-bound nanoparticles, we observed that these roadblocks were able to pass the cohesin complex during loop extrusion. Figure 4G shows a typical
+
+example of a passage event that shows that cohesin behaves very similar to condensin, although the encounter and MSD analysis is slightly more involved because of the two-sided nature of loop extrusion for cohesin (see SI and Figure S3). Interestingly, both the 30-nm and 200-nm particles traverse cohesin to pass into the loop with similar efficiencies of 47% ± 8% and 45% ± 15% respectively, (Figure 4B, right). Our observation that 200-nm particles can be translocated into DNA loops by extruding SMC complexes suggests that the DNA that is being extruded is not encompassed by the approximately 35-nm SMC ring structure. Alternatively, it is possible that large obstacles get translocated across an SMC complex by transiently opening the SMC ring structure. To rigorously test this important question, we examined a single-chain variant of human cohesin in the roadblock assay. In this engineered version of cohesin (Figure S2G), the three ring-forming subunits SMC3, SCC1, and SMC1 are expressed as a single fused polypeptide chain. Similar to wild-type cohesin, this fusion protein folds into a ring-like structure in which SMC1 and SMC3 heterodimerize via the hinge domain to close the ring. This hingehinge interaction is furthermore cross-linked via cysteine residues, resulting in the formation of a covalently closed ring structure to which the other holocomplex subunits (STAG1 and NIPBL) can bind (Davidson et al., 2019). Remarkably, our data (Figures 4B, 4F, and 4G) show that these single-chain cohesin complexes do pass the 30-nm and 200-nm particles during loop extrusion with a similar efficiency (40% ± 6% and 44% ± 16%, respectively) to that of wild-type cohesin. These data demonstrate that the roadblock passage during loop extrusion does not involve ring opening of the SMC complex. DISCUSSION From systematically investigating the effects of DNA-binding roadblocks on DNA loop extrusion by SMC complexes, we conclude that an SMC complex can effectively traverse roadblocks, a finding that even holds for surprisingly large obstacles. Our results directly show that DNA-bound protein complexes such as nucleosomes and other approximately 10-nm sized DNA-binding proteins pose no barrier to condensin-induced loop extrusion. Our finding that RNAPs do not block DNA loop extrusion is consistent with Hi-C experiments on bacterial con~o et al., 2019), and the approximately 14-s stalling densin (Branda times that we observed are similar to the estimated in vivo stalling time of approximately 10 s for highly transcribed operons (Brand~ ao et al., 2019).
+
+Figure 3. Functionalized gold nanoparticles as controlled steric obstacles (A) Schematic showing the binding of a functionalized gold nanoparticle to the DNA through dCas9. (B) TEM image of functionalized gold nanoparticles of sizes 14 nm showing uniform sizes and absence of aggregates. (C) Idem for 186-nm polysterene beads. (D) Size distribution of the functionalized gold nanoparticles from the TEM images. (E) Correlation between hydrodynamic diameter obtained from fluorescence correlation spectroscopy and diameters obtained from TEM. A linear fit shows an additional thickness of 15.7 nm on the nanoparticles. (F) Snapshots of DNA loop extrusion with side flow for a 39-nm gold nanoparticle (red) on the DNA (green) that ends up within the loop. (G) Snapshots of loop extrusion without side flow with a 39-nm gold nanoparticle (red) on the DNA (green). (H–M) Kymograph of DNA (green) and nanoparticle (red) corresponding to passing (H), stalling before passing (J) and blocking (L) events. (I, K, M) Loop kinetics and MSD traces corresponding to passing (I), stalling before passing (K), and blocking (M) events.
+
+6 Cell Reports 41, 111491, October 18, 2022
+
+[Page 8]
+
+Figure 4. Condensin and cohesin can pass roadblocks bigger than their ring size (A) Sketch of a Cas9 200-nm nanoparticle and condensin on DNA, to scale. (B) Fraction of roadblocks passed into the loop or blocked by yeast condensin, human cohesin, and single-chain cohesin, for different particle sizes. (C) Snapshots of loop extrusion by condensin on a DNA that accommodates a 200-nm roadblock in a passing event. At 54.7 s, a side flow was applied and the particle can be seen inside the loop. (D) Kymograph of a passage event where condensin traverses a 200-nm roadblock.
+
+(legend continued on next page)
+
+Cell Reports 41, 111491, October 18, 2022 7
+
+[Page 9]
+
+Our data have important consequences for understanding the activity of SMCs in cells, since the ability of SMC complexes to overcome very large protein complexes on DNA has obvious advantages in its processing of cellular chromatin. Vice versa, the finding that SMC complexes are largely unobstructed by physical barriers along the DNA indicates that SMC barriers such as CTCF must function according to other principles, e.g., must be governed by biochemical interactions, similar to what was recently proposed for how CTCF blocks cohesin by binding to the SA2-SCC1 subcomplex of cohesin (Li et al., 2020). The very large size of nanoparticles that can be accommodated in loop extrusion also has consequences for the mechanistic modeling of the SMC motor proteins, as it indicates that SMC complexes can readily bypass obstacles that are clearly larger than its approximately 35-nm ring size. Covalent linking of the interfaces of cohesin did not affect its passing ability, showing that a temporary opening of the ring structure is not needed for the loop extrusion process and roadblock traversals. This has implications for our understanding of the topology through which the SMC complex interacts with DNA during loop extrusion (cf. Figure 4H for a visual explanation of the possible topological modes). Early molecular models for loop extrusion suggested that the SMC ring topologically embraces the DNA upon loading and during DNA loop extrusion (see, e.g., B€ urmann et al., 2019, 2021; Marko et al., 2019). More recently, also pseudotopological (Davidson et al., 2019; Davidson and Peters, 2021; Higashi et al., 2021) and nontopological loading (Davidson et al., 2019; Srinivasan et al., 2018) of the DNA were considered. Furthermore, after releasing the findings of this article on a preprint server (Pradhan et al., 2021), new models were proposed (Shaltiel et al., 2022; Nomidis et al., 2022) that considered a pseudotopological mechanism for loop extrusion. Prompted by our preprint data, these authors attempted to account for the passage of large obstacles within their model (SI Figure S25 in Shaltiel et al., 2022, and SI Figure S6 in Nomidis et al., 2022). However, this alternative interpretation of our data makes a number of predictions that are not supported by the experimental results (Pradhan et al., 2022a). Specifically, when the SMC encounters a large roadblock, these models predict the appearance of two loops, not one, since the roadblock—with its size that cannot pass the ring structure—obstructs the merging of the two preformed loops postulated in the models, and hence leads to the formation of a second loop. One could assume (as these authors appear to do) that the preformed loop might slip into the new loop, to again form one joint loop, but this is not the case, as can be seen from considering the force balance for the extruded DNA loop (which in our experiments are typically >10 kb). Summing up, the recently proposed pseudotopological models imply the appearance of two loops upon roadblock encounter as well as that the particle gets stuck at the SMC. Both predictions are, however, not confirmed by our experimental observations. Instead, the data from the current study provide evidence in favor of a nontopolog-
+
+ical mode for DNA loop extrusion, where DNA binds externally to the SMC complex. The inclusion of large DNA-bound particles into extruded loop that are produced by SMCs (most strikingly, even by singlechain cohesin) discards the possibility of (pseudo)topological entrapment of the extruded DNA in the process of loop extrusion (in the strict definition of Figure 4H where the extruded DNA passes through the SMC ring). Notably, however, these experiments are agnostic about the question of whether or not a DNA is entrapped in other biological processes involving SMCs, where such a topological loading likely is very relevant. It will be interesting to expand the approach of the current roadblock study even further, e.g., by examining Smc5/6 SMC complexes (Pradhan et al., 2022b) or cohesin for a variety of co-factor conditions to examine the generality of our findings and to gain further understanding of the control of chromosome structure by SMC-driven DNA loop extrusion. Limitations of the study Our experiments provide a visually striking demonstration that SMC-driven loop extrusion has surprisingly little difficulty in accommodating large DNA-bound protein complexes into the extruded DNA loop. The experiments unambiguously show that these large objects do not block loop extrusion by SMC proteins. Like every technique, however, our methodology also has its technical challenges and limitations. For example, experiments on protein roadblocks (nucleosomes, RNAP, and dCas9) can be hindered by the photobleaching and a low signal-to-noise ratio (SNR): The fluorescence of the roadblock protein has to survive long enough for the encounter with the SMC complex to be observed, and the SNR of protein roadblocks can be low as the signal comes from a single fluorophore on a single molecule that is fluctuating in position within the field of view. Such a lower SNR adds uncertainty to the localization precision of the protein roadblock, thus increasing the noise of the calculated MSD, which can make it challenging to precisely localize the time point for the encounter between the roadblock and condensin. More generally, we present in vitro experiments, and inevitably, it is always a question to what extent in vitro data resemble the in vivo behavior of SMC complexes. While our experiments clearly demonstrate the intrinsic capabilities of SMCs to bypass huge roadblocks and accommodate them into the extruded DNA loops, it remains of interest to see how this plays out in the crowded environment of chromatin in the nucleus. STAR+METHODS Detailed methods are provided in the online version of this paper and include the following: d KEY RESOURCES TABLE d RESOURCE AVAILABILITY
+
+B Lead contact
+
+(E) Loop kinetics and MSD trace for the event in (D). (F) Kymograph of a passage event where single-chain human cohesin traverses a 200-nm roadblock. (G) Loop kinetics and MSD trace for event (F). (H) Models of topological, pseudotopological, and nontopological embracing of DNA underlying DNA loop extrusion.
+
+8 Cell Reports 41, 111491, October 18, 2022
+
+[Page 10]
+
+B Materials availability B Data and code availability d EXPERIMENTAL MODEL AND SUBJECT DETAILS
+
+B Yeast strains B Insect cells B Bacterial strains d METHOD DETAILS
+
+B DNA and condensin preparation B Protein roadblocks B Gold and polystyrene nanoparticle functionalization B Single molecule loop extrusion assay and data analysis B Human cohesin and single-chain cohesin experiments d QUANTIFICATION AND STATISTICAL ANALYSIS
+
+SUPPLEMENTAL INFORMATION Supplemental information can be found online at https://doi.org/10.1016/j. celrep.2022.111491.
+
+ACKNOWLEDGMENTS The authors thank E. van der Sluis and A. van den Berg for protein purification; H. Sánchez for plasmid design; N.H. Dekker for supervision of H. Sánchez and T.L.; and M. Ti sma, A. Katan I. Shaltiel, and C. Haering for discussions. This work was supported by the ERC Advanced Grant 883684 (DNA looping), NWO grant OCENW.GROOT.2019.012, and the NanoFront and BaSyC programs. Research in the laboratory of J.-M.P. was supported by Boehringer Ingelheim, the Austrian Research Promotion Agency (Headquarter grant FFG852936), the European Research Council under the European Union’s Horizon 2020 research and innovation program GA No 693949, the Human Frontier Science Program (grant RGP0057/2018), and the Vienna Science and Technology Fund (grant LS19-029). J.-M.P. is also an adjunct professor at the Medical University of Vienna.
+
+B€ urmann, F., Funke, L.F., Chin, J.W., and Löwe, J. (2021). Cryo-EM Structure of MukBEF Reveals DNA Loop Entrapment at Chromosomal 2 Unloading Sites. Busslinger, G.A., Stocsits, R.R., Van Der Lelij, P., Axelsson, E., Tedeschi, A., Galjart, N., and Peters, J.M. (2017). Cohesin is positioned in mammalian genomes by transcription, CTCF and Wapl. Nature 544, 503–507. Cuylen, S., Metz, J., and Haering, C.H. (2011a). Condensin structures chromosomal DNA through topological links. Nat. Struct. Mol. Biol. 18, 894–901. Cuylen, S., Metz, J., and Haering, C.H. (2011b). Condensin structures chromosomal DNA through topological links. Nat. Struct. Mol. Biol. 18, 894–901. Davidson, I.F., and Peters, J.-M. (2021). Genome folding through loop extrusion by SMC complexes. Nat. Rev. Mol. Cell Biol., 1–20. Davidson, I.F., Goetz, D., Zaczek, M.P., Molodtsov, M.I., Huis in ’t Veld, P.J., Weissmann, F., Litos, G., Cisneros, D.A., Ocampo-Hafalla, M., Ladurner, R., et al. (2016). Rapid movement and transcriptional re-localization of human cohesin on DNA. EMBO J. 35, 2671–2685. Davidson, I.F., Bauer, B., Goetz, D., Tang, W., Wutz, G., and Peters, J. (2019). DNA loop extrusion by human cohesin. Science 3418, eaaz3418. Ganji, M., Shaltiel, I.A., Bisht, S., Kim, E., Kalichava, A., Haering, C.H., and Dekker, C. (2018). Real-time imaging of DNA loop extrusion by condensin. Science (New York, N.Y.) 360, 102–105. Golfier, S., Quail, T., Kimura, H., and Brugués, J. (2020). Cohesin and condensin extrude DNA loops in a cell cycle-dependent manner. Elife 9, 1–16. Goloborodko, A., Imakaev, M.V., Marko, J.F., and Mirny, L. (2016). Compaction and segregation of sister chromatids via active loop extrusion. Elife 5. Gruber, S., Haering, C.H., and Nasmyth, K. (2003). Chromosomal cohesin forms a ring. Cell 112, 765–777. Gruber, S., B€ urmann, F., Noh, H., Basfeld, A., Ham, S., Lee, H., Bock, F.P., Diebold-Durand, M.-L., Im, H., Ruiz Avila, L.B., et al. (2017). Structure of full-length SMC and Rearrangements required for chromosome organization. Mol. Cell 67, 334–347.e5. Haering, C.H., Farcas, A.-M., Arumugam, P., Metson, J., and Nasmyth, K. (2008). The cohesin ring concatenates sister DNA molecules. Nature 454, 297–301.
+
+AUTHOR CONTRIBUTIONS
+
+Hassler, M., Shaltiel, I.A., and Haering, C.H. (2018). Towards a Unified model of SMC complex function. Curr. Biol. 28, R1266–R1281.
+
+B.P., E.K., J.T., and C.D. designed the experiments. B.P. and R.B. performed most single-molecule experiments and analyzed the data. E.K. performed experiments on dCas9 and RNA polymerase. I.F.D. and B.D. purified labeled cohesin and single chain cohesin, under the supervision of J.M.P. J.T. prepared the DNA, labeled histone octamers, and reconstituted nucleosomes. T.L. purified histone octamers. W.W. imaged and analyzed functionalized particles in electron microscopy. J.K.R. did AFM imaging. C.D. supervised the project. All authors contributed to the writing of the manuscript.
+
+Heinz, S., Texari, L., Hayes, M.G.B., Urbanowski, M., Chang, M.W., Givarkes, N., Rialdi, A., White, K.M., Albrecht, R.A., Pache, L., et al. (2018). Transcription elongation can affect genome 3D structure. Cell 174, 1522–1536.e22.
+
+DECLARATION OF INTERESTS The authors declare no competing interests. Received: May 15, 2022 Revised: May 19, 2022 Accepted: September 21, 2022 Published: October 18, 2022 REFERENCES ~o, H.B., Paul, P., van den Berg, A.A., Rudner, D.Z., Wang, X., and Mirny, Branda L.A. (2019). RNA polymerases as moving barriers to condensin loop extrusion. Proc. Natl. Acad. Sci. USA. https://doi.org/10.1073/pnas.1907009116. €rmann, F., Lee, B.-G., Than, T., Sinn, L., O’reilly, F.J., Yatskevich, S., RapBu psilber, J., Hu, B., Nasmyth, K., and Löwe, J. (2019). A Folded Conformation of MukBEF and Cohesin.
+
+Higashi, T., Eickhoff, P., Simoes, J., Locke, J., Nans, A., Flynn, H., Snijders, A., Papageorgiou, G., O’Reilly, N., Chen, Z., et al. (2020). A structure-based mechanism for DNA entry into the cohesin ring. Mol. Cell 79, 1–17. Higashi, T.L., Tang, M., Pobegalov, G., Uhlmann, F., and Molodtsov, M. (2021). A Brownian ratchet model for DNA loop extrusion by the cohesin complex. Preprint at bioRxiv. https://doi.org/10.7554/2FeLife.67530. Hirano, T. (2016). Condensin-based chromosome organization from Bacteria to Vertebrates. Cell 164, 847–857. Ivanov, D., and Nasmyth, K. (2005). A topological interaction between cohesin rings and a circular minichromosome. Cell 122, 849–860. Je-Kyung, R., Sang-Hyun, R., Janissen, R., Kerssemakers, J.W.J., and Dekker, C. (2021). Condensin extrudes DNA loops in steps up to hundreds of base pairs that are generated by ATP binding events. Nucleic Acids Res. 50, 820–832. Kim, E., Kerssemakers, J., Shaltiel, I.A., Haering, C.H., and Dekker, C. (2020). DNA-loop extruding condensin complexes can traverse one another. Nature 579, 438–442. Kim, E., Gonzalez, A.M., Pradhan, B., Torre, J. van der, and Dekker, C. (2022). Condensin-driven loop extrusion on supercoiled DNA. Nat. Struct. Mol. Biol., 1–9. https://doi.org/10.1038/s41594-022-00802-x. Kim, Y., Shi, Z., Zhang, H., Finkelstein, I.J., and Yu, H. (2019). Human cohesin compacts DNA by loop extrusion. Science 4475, eaaz4475.
+
+Cell Reports 41, 111491, October 18, 2022 9
+
+[Page 11]
+
+Kingston, I.J., Yung, J.S.Y., and Singleton, M.R. (2011). Biophysical characterization of the centromere-specific nucleosome from budding yeast. J. Biol. Chem. 286, 4021–4026. https://doi.org/10.1074/jbc.M110.189340. Kong, M., Cutts, E.E., Pan, D., Beuron, F., Kaliyappan, T., Xue, C., Morris, E.P., Musacchio, A., Vannini, A., and Greene, E.C. (2020). Human condensin I and II drive extensive ATP-dependent compaction of nucleosome-bound DNA. Mol. Cell 79, 99–114.e9. Krull, A., Buchholz, T.O., and Jug, F. (2019). Noise2void-Learning denoising from single noisy images. IEEE Comput. Soc. Conf. Comput. Vis. Pattern Recogn., 2124–2132. https://doi.org/10.1109/CVPR.2019.00223. Lee, B.G., Merkel, F., Allegretti, M., Hassler, M., Cawood, C., Lecomte, L., O’Reilly, F.J., Sinn, L.R., Gutierrez-Escribano, P., Kschonsak, M., et al. (2020). Cryo-EM structures of holo condensin reveal a subunit flip-flop mechanism. Nat. Struct. Mol. Biol. 27, 743–751. Li, Y., Haarhuis, J.H.I., Sedeño Cacciatore, Á., Oldenkamp, R., van Ruiten, M.S., Willems, L., Teunissen, H., Muir, K.W., de Wit, E., Rowland, B.D., et al. (2020). The structural basis for cohesin–CTCF-anchored loops. Nature 578, 472–476.
+
+extruding motor. Preprint at bioRxiv. https://doi.org/10.1101/2022.05.13. 491800. Ryu, J.K., Katan, A.J., van der Sluis, E.O., Wisse, T., de Groot, R., Haering, C.H., and Dekker, C. (2020). The condensin holocomplex cycles dynamically between open and collapsed states. Nat. Struct. Mol. Biol. 27, 1134–1141. Ryu, J.-K., Bouchoux, C., Liu, H.W., Kim, E., Minamino, M., Groot, R. de, Katan, A.J., Bonato, A., Marenduzzo, D., Michieletto, D., et al. (2021). Bridginginduced phase separation induced by cohesin SMC protein complexes. Sci. Adv. 7, eabe5905. van Ruiten, M.S., and Rowland, B.D. (2018). SMC complexes: Universal DNA looping machines with distinct regulators. Trends Genet. 34, 477–487. Shaltiel, I.A., Datta, S., Lecomte, L., Hassler, M., Kschonsak, M., Bravo, S., Stober, C., Ormanns, J., Eustermann, S., and Haering, C.H. (2022). A holdand-feed mechanism drives directional DNA loop extrusion by condensin. Science 376, 1087–1094. https://doi.org/10.1126/science.abm4012. Spector, D.L. (2003). The dynamics of chromosome organization and gene regulation. Annu. Rev. Biochem. 72, 573–608.
+
+Marko, J.F., De Los Rios, P., Barducci, A., and Gruber, S. (2019). DNAsegment-capture model for loop extrusion by structural maintenance of chromosome (SMC) protein complexes. Nucleic Acids Res. 47, 6956–6972.
+
+Srinivasan, M., Scheinost, J.C., Petela, N.J., Gligoris, T.G., Wissler, M., Ogushi, S., Collier, J.E., Voulgaris, M., Kurze, A., Chan, K.-L., et al. (2018). The cohesin ring uses its hinge to organize DNA using non-topological as well as topological mechanisms. Cell 173, 1508–1519.
+
+Nasmyth, K. (2001). Disseminating the genome: Joining, resolving, and separating sister chromatids during mitosis and meiosis. Annu. Rev. Genet. 35, 673–745.
+
+Stigler, J., Çamdere, G.Ö., Koshland, D.E., and Greene, E.C. (2016). Singlemolecule imaging reveals a collapsed conformational state for DNA-bound cohesin. Cell Rep. 15, 988–998.
+
+Naumova, N., Imakaev, M., Fudenberg, G., Zhan, Y., Lajoie, B.R., Mirny, L.A., and Dekker, J. (2013). Organization of the mitotic chromosome. Science 342, 948–953.
+
+Sun, J., Shi, Y., Georgescu, R.E., Yuan, Z., Chait, B.T., Li, H., and O’Donnell, M.E. (2015). The architecture of a eukaryotic replisome. Nat. Struct. Mol. Biol. 22, 976–982.
+
+Nayak, D., Voss, M., Windgassen, T., Mooney, R.A., and Landick, R. (2013). Cys-pair reporters detect a constrained trigger loop in a paused RNA polymerase. Mol. Cell 50, 882–893. https://doi.org/10.1016/j.molcel.2013.05.015.
+
+Tisma, M., Panoukidou, M., Antar, H., Soh, Y.-M., Barth, R., Pradhan, B., Barth, A., Torre, J. van der, Michieletto, D., Gruber, S., et al. (2022). ParB proteins can bypass DNA-bound roadblocks via dimer-dimer recruitment. Sci. Adv. 8, eabn3299. https://doi.org/10.1126/sciadv.abn3299.
+
+Nichols, M.H., and Corces, V.G. (2018). A tethered-inchworm model of SMC DNA translocation. Nat. Struct. Mol. Biol. https://doi.org/10.1038/s41594018-0135-4. Nomidis, S.K., Carlon, E., Gruber, S., and Marko, J.F. (2022). DNA tensionmodulated translocation and loop extrusion by SMC complexes revealed by molecular dynamics simulations. Nucleic Acids Res. https://doi.org/10.1093/ nar/gkac268. Pradhan, B., Barth, R., Kim, E., Davidson, I.F., Bauer, B., van Laar, T., Yang, W., Ryu, J.-K., van der Torre, J., Peters, J.-M., and Dekker, C. (2021). SMC complexes can traverse physical roadblocks bigger than their ring size. Preprint at bioRxiv. https://doi.org/10.1101/2021.07.15.452501.
+
+Tokunaga, M., Imamoto, N., and Sakata-Sogawa, K. (2008). Highly inclined thin illumination enables clear single-molecule imaging in cells. Nat. Methods 5, 159–161. https://doi.org/10.1038/nmeth1171. Uhlmann, F. (2016). SMC complexes: from DNA to chromosomes. Nat. Rev. Mol. Cell Biol. 17, 399–412. Virtanen, P., Gommers, R., Oliphant, T.E., Haberland, M., Reddy, T., Cournapeau, D., Burovski, E., Peterson, P., Weckesser, W., Bright, J., et al. (2020). SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat. Methods 17, 261–272. https://doi.org/10.1038/s41592-019-0686-2. Watson, J.D. (2004). Molecular Biology of the Gene (Pearson Education India).
+
+Pradhan, B., Barth, R., Kim, E., Davidson, I.F., Torre, J.v.d., Peters, J.-M., and Dekker, C. (2022a). Can pseudotopological models for SMC-driven DNA loop extrusion explain the traversal of physical roadblocks bigger than the SMC ring size?. Preprint at bioRxiv. https://doi.org/10.1101/2022.08.02.502451.
+
+€rmann, F., Minnen, A., Shin, H.-C., Toseland, C.P., Oh, B.-H., Wilhelm, L., Bu and Gruber, S. (2015). SMC condensin entraps chromosomal DNA by an ATP hydrolysis dependent loading mechanism in Bacillus subtilis. Elife 4. https://doi.org/10.7554/eLife.06659.
+
+Pradhan, B., Kanno, T., Igarashi, M.U., Baaske, M.D., Wong, J.S.K., Jeppsson, K., Björkegren, C., and Kim, E. (2022b). The Smc5/6 complex is a DNA loop
+
+Xiang, S., and Koshland, D. (2021). Cohesin architecture and clustering in vivo. Elife 10, 1–49.
+
+10 Cell Reports 41, 111491, October 18, 2022
+
+[Page 12]
+
+STAR+METHODS KEY RESOURCES TABLE
+
+REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+Bacterial and virus strains E. Coli strain, BL21-codonplus-DE3-RIL
+
+Agilent
+
+Cat#230245
+
+E. Coli strain, BLR(DE3)
+
+Novagen
+
+Cat#69450
+
+Chemicals, peptides, and recombinant proteins Lambda DNA
+
+New England Biolabs
+
+Cat# N3011S
+
+dCas9 (SNAP-tag)
+
+New England Biolabs
+
+Cat# M0652T
+
+13NEBuffer3.1
+
+New England Biolabs
+
+Cat# B7203S
+
+Alexa647 NHS
+
+ThermoFisher Scientific
+
+Cat# A20006
+
+Benzyl guanine NHS
+
+New England Biolabs
+
+Cat# S9151S
+
+Gold nanoparticles
+
+NanoPartz Inc.
+
+N/A
+
+Sytox Orange
+
+ThermoFisher Scientific
+
+Cat# S11368
+
+Pfu-turbo
+
+Agilant
+
+600410
+
+DpnI
+
+New England Biolabs
+
+NEB R0176S
+
+TCEP
+
+Sigma-Aldrich
+
+646547-10x1ML
+
+IPTG
+
+Santa Cruz Biotechnology
+
+Sc-202185
+
+Protease complete inhibitor
+
+Roche
+
+11836145001
+
+C2-Maleimide Alexa647
+
+ThermoFisher Scientific
+
+Cat# A20347
+
+NoLimit 10kb DNA
+
+ThermoFisher Scientific
+
+SM1751
+
+Slide-A-Lyzer mini 3.5K
+
+ThermoFisher Scientific
+
+88400
+
+Taq DNA ligase
+
+New England Biolabs
+
+M0208L
+
+C2-Maleimide-Alexa647
+
+ThermoFisher Scientific
+
+A20347
+
+LB Broth (Lennox)
+
+Sigma-Aldrich
+
+L3022-1KG
+
+Saccharomyces Cerevisiae
+
+Ganji et al. (2018)
+
+N/A
+
+SF9 insect cells
+
+Thermo Scientific
+
+B82501 1072532
+
+Experimental models: Organisms/strains
+
+Oligonucleotides tracrRNA: Alt-R CRISPR-Cas9 tracrRNA
+
+Integrated DNA Technologies
+
+CR10643: AAGTGATGCGAAAAAAACAGCGG
+
+Integrated DNA Technologies
+
+N/A
+
+CR19879: TGTATGAAGATTCACAACCGGGG
+
+Integrated DNA Technologies
+
+N/A
+
+CR31232: GAAATCCACTGAAAGCACAGCGG
+
+Integrated DNA Technologies
+
+N/A
+
+CR38428: GCTTGGAACTGAGAAGACAGCGG
+
+Integrated DNA Technologies
+
+N/A
+
+3BiotinPrimer: P-GGGCGGCGACCT-Bio
+
+Integrated DNA Technologies
+
+N/A
+
+5BiotinPrimer: P-AGGTCGCCGCCC-Bio
+
+Integrated DNA Technologies
+
+N/A
+
+TL-CH-13 : GCGCAGGATTTCAAAACC TGTCTGCGTTTTCAGAGCAGCG
+
+Integrated DNA Technologies
+
+N/A
+
+TL-CH-14: CGCTGCTCTGAAAACGC AGACAGGTTTTGAAATCCTGCGC
+
+Integrated DNA Technologies
+
+N/A
+
+TL-CH-5: CAAAACTTGTTGCCATGCA AGTCTGCCAAGACTGC
+
+Integrated DNA Technologies
+
+N/A
+
+TL-CH-6: GCAGTCTTGGCAGACTTGCAT GGCAACAAGTTTTG
+
+Integrated DNA Technologies
+
+N/A
+
+pET-Duet.H3(D82C)-H4
+
+This work
+
+N/A
+
+pCDFduet.H2A(K120C)-H2B
+
+This work
+
+N/A
+
+pET-Duet.H3-H4
+
+This work
+
+N/A
+
+pCDFduet.H2A-H2B
+
+This work
+
+Recombinant DNA
+
+N/A (Continued on next page)
+
+Cell Reports 41, 111491, October 18, 2022 e1
+
+[Page 13]
+
+Continued REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+pET-Duet.H3(D82C)-H4
+
+This work
+
+N/A
+
+pCDFduet.H2A-H2B
+
+This work
+
+N/A
+
+pET-Duet.H3-H4
+
+This work
+
+N/A
+
+pCDFduet.H2A(K120C)-H2B
+
+This work
+
+N/A
+
+Software and algorithms python
+
+Python Software Foundation
+
+Python 3.8
+
+Custom analysis
+
+This work
+
+https://doi.org/10.5281/ zenodo.6959500
+
+FCS data fitting
+
+https://pam.readthedocs.io/ en/latest/pam.html
+
+N/A
+
+FCS data collection
+
+https://www.picoquant.com/
+
+SymPhoTime 64
+
+Micromanager: data recording
+
+https://micro-manager.org/
+
+Micro-Manager 2.0.0
+
+RESOURCE AVAILABILITY Lead contact Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Cees Dekker (c.dekker@tudelft.nl). Materials availability Most reagents were obtained commercially and are described in the manuscript. All unique reagents generated in this study are available from the lead contact with a completed Materials Transfer Agreement as applicable. Data and code availability d All data reported in this paper will be shared by the lead contact upon request. d Custom codes and representative data are available at Zenodo: https://doi.org/10.5281/zenodo.6959501. The repository contains statistical data in the file ‘‘AuNP_RoadBlock.xlsx’’ and the code to obtain the statistics figures (Figures 2G and 4B) in ‘‘le_stasticis_stalling_force.ipynb’’. d Any additional information required to analyze the data reported in this paper is available from the lead contact upon request. EXPERIMENTAL MODEL AND SUBJECT DETAILS Yeast strains Pentameric S. cerevisiae condensin complexes were purified from Saccharomyces cerevisiae strains are derived of W303. Cultures were grown at 30 C in –URA–TRP dropout media containing 2% raffinose to OD600 of 1. Expression was induced with 2% galactose for 8 h. Insect cells SF9 insect cells were used to express cohesin. After expression, cultures were harvested after 48–60 h at 27 C, washed in PBS, frozen in liquid nitrogen and stored at 80 C. Bacterial strains BL21-codonplus-DE3-RIL: Species: E. coli B, Genotype: F– ompT hsdS(rB – mB –) dcm + Tetr gal l(DE3) endA Hte [argU ileY leuW Camr ], Growth Conditions: LB Broth (Lennox), 37 C 180RPM BLR(DE3): Species: E. Coli, Genotype: F-ompT hsdSB(rB mB) gal lac ile dcm D(srl recA)i306:Tn10 (tetR) (DE3), Growth Conditions: LB Broth (Lennox), 37 C 180RPM. METHOD DETAILS DNA and condensin preparation Condensin holocomplex from S. cerevisiae was purified using our previously published protocol (Ganji et al., 2018). Lambda DNA containing a biotin on both ends, was made by hybridizing and ligating short oligonucleotides containing 50 phosphate and 30 Biotin on the single-stranded DNA ends of Lambda DNA (NEB, N3011S). For this we used oligonucleotides, JT41 (P-GGGCGGCGACCTBio) and JT42 (P-AGGTCGCCGCCC-Bio) (IDT). Taq DNA ligase (NEB, M0208L) was used to ligate the oligonucleotide on
+
+e2 Cell Reports 41, 111491, October 18, 2022
+
+[Page 14]
+
+Lambda, using 10 times molar access of oligonucleotide to Lambda DNA. The mixture was incubated for 100 at 65 C and then 1hour at 50 C in Taq DNA ligase buffer. The biotin-Lambda DNA was then cleaned up from free oligonucleotides and enzymes using an AKTA pure system (Cytiva), with a homemade gel filtration column containing approximately 46mL of Sephacryl S-1000 SF gel filtration media (Cytiva), run with TE + 150mM NaCl buffer at 0.2mL/min. The fractions containing the Biotin-Lambda DNA were aliquoted and stored at 20 C. Protein roadblocks Nucleosome reconstitution and AFM imaging Histone octamers were purified and assembled as established by Sanchez et al. (in preparation). pET-Duet.H3(D82C)-H4 and pCDFduet.H2A(K120C)-H2B were made, using site-directed mutagenesis with pfu-Turbo (Agilent) and Dpn1 (NEB), from pETDuet.H3-H4 with primers TL-CH-13 (GCGCAGGATTTCAAAACCTGTCTGCGTTTTCAGAGCAGCG), TL-CH-14 (CGCTGCTCTGAAA ACGCAGACAGGTTTTGAAATCCTGCGC) and pCDFduet.H2A-H2B with primers TL-CH-5 (CAAAACTTGTTGCCATGCAAGTCTGC CAAGACTGC), TL-CH-6 (GCAGTCTTGGCAGACTTGCATGGCAACAAGTTTTG). Histone proteins were co-expressed in Escherichia Coli strain BL21-codonplus-DE3-RIL (Agilent) from pET-Duet.H3(D82C)-H4 and pCDFduet.H2A-H2B or pET-Duet.H3-H4 and pCDFduet.H2A(K120C)-H2B (Kingston et al., 2011). Cells were grown to OD 0.4 and expression was induced by adding 0.4 mM isopropyl 1-thio-ß-D-galactopyranoside (Santa Cruz Biotechnology Inc), and shaking at 180 rpm for 16h at 18 C. Cells were subsequently sonicated in a Qsonica Q500 sonicator for 2 min with cycles of 5 s on and 5 s off and an amplitude of 40%, in 0.5M NaCl, 20mM Tris-HCl pH8, 0.1mM EDTA, 1mM DTT, 0.3mM PMSF and protease complete inhibitor (Roche). Supernatant containing the Histone complexes were purified on a 5mL Hi-Trap Heparin column (Cytiva) and eluted with a gradient of 0.5–2M NaCl, 20mM Tris-HCl pH8, 0.1mM EDTA, 1mM DTT. Fractions were analyzed using SDS-Page and further purified on a Superdex 200 increase (Cytiva) in 2M NaCl, 20mM Tris-HCl pH8, 0.1mM EDTA and 1mM DTT, analyzed on a 12% SDS-Page gel, concentrated and then labeled with C2-Maleimide-Alexa647 (ThermoFisher). For labeling, 1 mg/mL Histone-octamers were dialyzed in 50mM MOPS pH7, 2M NaCl. TCEP (Sigma-aldrich) was added to 1mM and 0.2mM C2-Maleimide-Alexa647 was added. This was incubated for 2hours at 21 C, quenched with 1mM DTT and then purified on a Superdex 200 increase column and checked with an SDS-page gel for intact labeled Histone-octamers. Nucleosome assembly was done using salt dialysis (Kong et al., 2020). For every assembly several different ratios of Alexa 647-Histone-octamere/DNA were made. 136nM Alexa 647-Histone-octamere, 0.15nM Biotin-Lambda DNA and 2.5-15nM 10kb DNA (ThermoFisher, SM1751) where combined in 2M NaCl, 10mM Tris-HCL pH8, 1mM EDTA and transferred to a slide-A-lyzer mini dialysis device, 3.5K MWCO (ThermoFisher, 88,400). It was then dialyzed at 4 C in 100mL of 2M NaCl, 10mM Tris-HCl pH8, 1mM EDTA, 5mM b– mercaptoethanol. We added 10 mM Tris-HCl pH 8.0, 1 mM EDTA, pH 8, 5 mM b–mercaptoethanol at a rate of 0.5mL/min using a peristaltic pump until the buffer reached 0.4M NaCl. We then transferred the slide-A-lyzer to a beaker glass with 100mL 10mM Tris-HCl pH 8.0, 1mM EDTA, pH 8.0, 5mM b–mercaptoethanol and incubated for another 2hours. Subsequently we analyzed the sample on an agarose gel and checked on a typhoon if labeled histones where comigrating with the DNA and checked proper nucleosome assembly on the AFM. After treating a mica with 0.0001% (wt/vol) poly-L-Ornithine for 1.5 min, we rinsed the mica using 3 mL MiliQ water and dried it using N2 gas. Then, the sample of the nucleosome assembly was deposited onto the mica for 1 min and rinsed by 3 mL MilliQ water. After drying the sample using N2 gas, we imaged it using a Bruker Multimode AFM, with a Nanoscope V controller and Nanoscope version 9.2 software (Ryu et al., 2020). Using Bruker ScanAsyst-Air-HR cantilevers (stiffness: 0.4 N/m, tip radius: 2 nm). PeakForce Tapping mode was used with an 8-kHz oscillation frequency. To reduce sample distortion induced by tip-sample interaction, we used low a peak force set-point value (<100 pN). To obtain high resolution images, 2.5 3 2.5 mm2 scan areas with 2,500 3 2,500 pixels2 were scanned at 0.5-Hz scanning speed. For imaging condensin and cohesin holocomplexes, we deposited 2 nM protein complexes onto a 0.00001% (wt/vol) poly-L-Ornithine treated mica for 10 s, and the mica was washed using 3 mL MiliQ water and dried using N2 gas. Then, the sample was imaged with the same AFM parameters described above. We performed image processing of the AFM images using Gwyddion version 2.53 by removing background subtraction and filtering transient noise (Ryu et al., 2021). Afterward, we subtracted (planar and line by line) background polynomials after excluding the masked grains of DNA-protein images and applied plane background subtraction. Finally, we de-convoluted the AFM images using a blind tip estimation and surface reconstruction to minimize the tip convolution effect, the widening of images induced by non-zero AFM tip size. To measure the diameter of nucleosomes (Figures S2C and S2D), we masked each nucleosome complex bound to DNA on the AFM images and performed mean diameter measurement in the Gwyddion software. RNA polymerase labeling and binding to DNA Wild-type E. coli RNA polymerase core-enzyme (a2bb0 u) with an SNAP-tag and transcription initiation factor s70 were purified and expressed as previously described (Nayak et al., 2013). Purified RNAP was covalently attached to Alexa 647-benzylguanne according to the protocol provided by the provider and further purified using a Sepharose 6 gel-filtration column (Cytiva). The labeling efficiency of the core-enzyme was 35%. RNAP holoenzyme was reconstituted by incubating labeled RNAP with s70 in 1:10 ratio in a buffer containing 10 mM Tris-HCl, pH 8, 150 mM NaCl, 0.1 mM EDTA, 5 mM ZnCl2, 1 mM DTT, 5% glycerol. Prior to anchoring l-DNA onto the surface, 1 nM l-DNA was incubated with 10 nM RNAP holoenzyme in imaging buffer (50 mM TrisHCl pH 7.5, 50 mM NaCl, 2.5 mM MgCl2, 1 mM DTT, 5%(w/v) D-dextrose, 2 mM Trolox, 40 mg/mL glucose oxidase, 17 mg/mL catalse) for 5 min at room temperature.
+
+Cell Reports 41, 111491, October 18, 2022 e3
+
+[Page 15]
+
+dCas9 binding to DNA The protocol for dCas9 binding to DNA was adapted from the protocol described by Ti sma et al. (2022). gRNA was obtained by annealing a mixture of Alt-R Crispr-Cas9 tracrRNA and crRNA (IDT) at 90 C for 1 min. To prepare dCas9/gRNA construct, 120 nM of dCas9-Snaptag and 1.2 mM gRNA were incubated in NEBuffer3.1 for 30 min at 37 C for 30 min. The dCas9/gRNA construct were stored in aliquots at 80 C until further use. crRNA target sequences were chosen using the Chopchop webtool (https:// chopchop.cbu.uib.no/). The dCas9/gRNA was attached to the target sequences on l-DNA by incubating 120 pM biotinylated l-DNA and 12 nM dCas9/ gRNA in NEBuffer3.1 for 45 min at room temperature. We call this construct ‘‘l-DNA/dCas9’’ in short. To add a label on dCas9 attached to l-DNA, 100 nM SNAP-Surface Alexa Fluor 647 was incubated with the ‘‘l-DNA/dCas9’’ for 45 min at room temperature. Target sequences for binding dCas9 to lambda DNA, related to Figures 2–4 ChopChop Rank
+
+Target sequence including PAM
+
+Lambda DNA location
+
+Efficiency by ChopChop
+
+16
+
+AAGTGATGCGAAAAAAACAGCGG
+
+seq:10643
+
+75.57
+
+5
+
+TGTATGAAGATTCACAACCGGGG
+
+seq:19879
+
+79.29
+
+3
+
+GAAATCCACTGAAAGCACAGCGG
+
+seq:31232
+
+81.03
+
+12
+
+GCTTGGAACTGAGAAGACAGCGG
+
+seq:38428
+
+76.97
+
+Gold and polystyrene nanoparticle functionalization For each size, 100 mL of gold nanoparticles (Nanopartz) stock was incubated on a shaker at 4 C overnight with SH-PEG-COOH and SH-PEG-NH2 with concentrations given on the table below. Unbound PEG was removed by dilution (15x) with MilliQ water, centrifugation (speeds in the table below), and removal of the liquid supernatant after centrifugation. The dilution and centrifugation step was repeated at least five time to get rid of the unbound PEG. The PEG functionalized gold nanoparticles were incubated with 10 mM Alexa 647 NHS and 0.1 mM Benzyl Guanine NHS (BG-NHS) in 50 mM borate buffer at 4 C overnight. The unbound dye and BG-NHS was removed by dilution with MilliQ water, centrifugation and removal of the supernatant. The dilution and concentration step was repeated for at least five times to remove most of BG-NHS. We estimate around 1 to 10 BG and around 100 Alexa 647 molecules per nanoparticle. The dye functionalized gold nanoparticles were stored at 4 C for further use.200 nm amine functionalized polystyrene particles (Nanocs) were incubated with 10 mM SMCC (succinimidyl4-[N-maleimidomethyl]cyclohexane-1-carboxylate) in borate buffer pH 8 for 30 min in ice bath which leaves maleimide groups on the surface for further reaction with thiol groups. The unreacted SMCC were removed by dialysis. The maleimide functionalized polystyrene particles were immediately functionalized with Alexa 647 and BG-NHS as per the table below. Functionalized gold nanoparticles were incubated with 0.5 mg/mL BSA for 5 min and then mixed with l-DNA/dCas9 for 45 min at room temperature at a ratio of 10:1 (particles: DNA). l-DNAs with nanoparticles bound on them were then used to anchor onto the functionalized glass substrate.
+
+Concentration of functionalization groups for particle functionalization, related to Figures 3 and 4 Size/nm
+
+SH-PEG-COOH/mM
+
+SH-PEG-NH2/mM
+
+Alexa 647-NHS/mM
+
+BG-NHS/mM
+
+Centrifugation speed/g
+
+14
+
+10
+
+5
+
+10
+
+0.1
+
+20000
+
+21
+
+10
+
+2.5
+
+10
+
+0.1
+
+10000
+
+29
+
+10
+
+1
+
+10
+
+0.1
+
+2500
+
+50
+
+10
+
+0.4
+
+10
+
+0.1
+
+1100
+
+125
+
+10
+
+0.2
+
+10
+
+0.1
+
+400
+
+200 (polystyrene)
+
+10
+
+1
+
+10
+
+0.1
+
+400
+
+Nanoparticle size measurement from TEM images and FCS Hydrodynamic diameters were estimated through FCS measurement. Fluorescence time traces and autocorrelations were recorded in a Picoquant MicroTime 200 confocal microscope. The functionalized gold nanoparticles with Alexa 647 on their surface were excited with 640 nm laser with powers giving to 10000 photons per second in average at the detector. The concentration of the particles was kept around 1 nM. The autocorrelation curves (Figure S2J) were fitted with vffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+
+GðtÞ = 1⁄21 t + te tT t 2 Nð1 tÞ 1 + tD 1 + tD uu0z
+
+e4 Cell Reports 41, 111491, October 18, 2022
+
+[Page 16]
+
+where t is the lag time, tT is the triplet blinking time of the Alexa 647 fluorophore, N is the number of molecules in the detection volume, u0 and uz are the lateral and longitudinal width of the point spread function of the microscope, and tD is the diffusion time of the particle. u0 and uz were determined by calibrating the microscope with the known diffusion coefficient (3.3 mm2s1) of Alexa 647. The hyu2
+
+kB T drodynamic diameter (2Rh) was calculated from that as Rh = 6prD , where D = 4t0D and T is the temperature, r is the viscosity and
+
+D is the diffusion coefficient. Functionalized gold nanoparticles were incubated with 0.5 mg/mL BSA for 5 min and then mixed with l-DNA/dCas9 for 45 min at room temperature at a ratio of 10:1 (particles: DNA). These l-DNAs with nanoparticles bound on them were then used to anchor onto the functionalized glass substrate. We performed TEM and SEM imaging to verify the sizes of the nanoparticles. The functionalized nanoparticles were diluted 1:20 times with MilliQ and then deposited on carbon grids coated copper TEM grids (Ted Pella) using a JEOL JEM-1400 transmission electron microscope with an acceleration voltage of 120 keV. For particles larger than 100nm, the nanoparticles were deposited on a copper tape and imaged using a FEI Helios G4 CX in SEM mode at 10KeV. Single molecule loop extrusion assay and data analysis Flow cells were prepared with PEG/PEG-biotin passivated glass slides as described previously (Ganji et al., 2018). Microscope slides were cleaned with acid piranha (sulfuric acid (5parts) and hydrogen peroxide (1 part)) and silanized with 3- (2-aminoethyl) aminopropyl] trimethoxysilane in methanol containing 5% glacial acetic acid which leaves free amine groups on the surface. The slides were then treated with 5 mg/mL methoxy-PEG-N-hydroxysuccinimide (MW 3500, Laysan Bio) and 0.05 mg/mL biotinPEG-N-hydroxysuccinimide (MW3400, Laysan Bio) in 50 mM Borate buffer, pH 9. The pegylated slides were dried with a gentle flow of nitrogen, sealed, and stored at 20 C until further use. Flow cells were then assembled with the functionalized glass slides as described before (Ganji et al., 2018). The channels in the flow cell were incubated with 100 nM streptavidin in Tris20 buffer (40 mM TrisHCl pH7.5, 20 mM NaCl, 0.2 mM EDTA) for 1 min. The unbound streptavidin was washed with Tris20 buffer. The surface was further passivated by incubating the channel with 0.25 mg/mL BSA in Tris20 for 10 min 30 mL of 5 pM of l-DNA with the roadblock on the DNA and 20 nM SxO in Tris20 was flowed into the channel at 4 mL/min. The free DNA in the channel were removed by flowing 100 mL Tris20. The buffer in the channel was replaced with imaging buffer containing 100 nM SxO. The imaging buffer scavenges oxygen and lengthens the observation time of the fluorophores by reducing photo bleaching. We visualized the DNA and roadblocks in a home built Highly Inclined and Laminated Optical sheet (HILO) microscope (Tokunaga et al., 2008) with a 60x oil immersion, 1.49NA CFI APO TIRF (Nikon) objective. HILO allows excitation of molecules in a thin sheet of light that is 1-10 mm above the glass substrate; hence reducing background from free floating dyes in the solution and increasing signal-to-noise ratio of the SxO on DNA and Alexa 647 labeled roadblocks. The SxO on DNA was excited with 0.1 W/cm2 561 nm laser light and single Alexa 647 on proteins were excited with 100 W/cm2 637 nm in alternative excitation (ALEX) mode to simultaneously visualize the DNA and roadblock proteins. The gold nanoparticles with 10–100 Alexa 647 molecules on the surface were excited with 10–100 W/cm2 637 nm laser light. The two lasers were illuminated alternatively with exposure time of 100 ms allowing simultaneous observation of the DNA and the roadblocks. Data analysis Fluorescence images were analyzed in a custom written software in python programming language (Kim et al., 2022). The images were denoised using a machine-learning-based method called ‘‘Noise2void’’, as published before (Krull et al., 2019). Fluorescence intensities along the DNA axis were averaged with 5 pixels on both side of the axis to obtain a kymograph (e.g. Figure 4D). Kymographs for the roadblock were obtained with the same axis as the DNA. The intensities of the kymographs was corrected such that non-DNA part of the kymograph had zero intensity. Each vertical line on the kymograph represent a snapshot of the DNA at one time point. Peaks on each line were obtained using the ‘‘find_peaks’’ algorithm in scipy (Virtanen et al., 2020) which finds all the local maxima by comparing the neighboring values. The intense peaks from all the peaks obtained were selected with >50% threshold of the peak prominence (relative peak intensities). The peak position represents the loop positon and the loop intensity (Intloop) was determined by summing intensities from 7 pixels around the peak position. The intensities of regions ahead (Intahead) and behind the loop(Intbehind), and loop-to-roadblock (Intloop to roadblock) were determined. The intensities were converted to DNA bases as follows: Intloop 348502 d DNA size in the loop (bp), Iloop = Total DNA intensity Intahead 348502 d DNA size ahead of the loop (bp), Iup = Total DNA intensity Intbehind 348502 d DNA size below the loop (bp), Idown = Total DNA intensity ðIntloop + Intloop to roadblock Þ348502 d DNA size roadblock to and including loop (bp), Idist = Total DNA intensity
+
+Cell Reports 41, 111491, October 18, 2022 e5
+
+[Page 17]
+
+Mean square displacement of the roadblock was obtained from the positions of the roadblock at different times as below:
+
+1 t+
+
+MSDðtÞ = xðt + 1Þ xðtÞj 50 t where the number 50 denotes the window size of 50 frames. The loop kinetics were smoothed using the Savitzky-Golay method with a second order polynomial with a moving window of 50-100 points. The result of the encounter between a roadblock and an SMC complex was inferred from both the kinetics and MSD traces. The event was considered an encounter when a roadblock moved toward a loop during loop extrusion and colocalized with the loop. The encounter was inferred from the kymograph. We categorized the results of the encounters into three options: i) the roadblock ended up inside the loop, corresponding to ‘‘passing’’, ii) it remained at the stem of the loop corresponding to ‘‘blocking’’, and iii) a transient pause occurred at the stem of the loop followed by passing into the loop, corresponding to ‘‘stalling and passing’’. An increase in both loop size and MSD after the encounter indicated passing. A constant loop size and MSD upon encounter indicated blocking. An increase in loop size and a constant MSD was also observed occasionally (particularly for cohesin) and was counted as blocking. A constant loop size and MSD, occurring for more than a second, followed by an increase in both corresponded to stalling and passing. Dissociation of roadblock upon encounter with SMC complex was observed only very rarely. Human cohesin and single-chain cohesin experiments Recombinant human cohesinSTAG1, NIPBL-MAU2, STAG1 and single-chain cohesin were expressed and purified as described previously (Davidson et al., 2019). Recombinant cohesin was diluted to 10 nM and NIPBL-MAU2 was diluted to 50 nM in ice-cold storage buffer (25 mM sodium phosphate pH 7.5, 150 mM NaCl, 50 mM imidazole, 5% glycerol) on ice and briefly mixed by pipetting. Cohesin and NIPBL were then immediately added to imaging buffer (40 mM Tris pH 7.5, 50 mM NaCl, 2.5 mM MgCl2, 5% glucose, 0.25 mg/mL BSA, 1 mM DTT, 0.05% Tween 20, 2 mM ATP) supplemented with the oxygen scavenging buffer as described above, equilibrated to 37 C. Imaging buffer supplemented with protein was then immediately introduced in the flow cell at 10–30 pM final concentration with a 4-fold molar excess of NIPBL-MAU2 at high flow rate (20-40 mL/min) for 30 s and flow was turned off to observe loop extrusion events. Single-chain cohesin was crosslinked by incubation with 0.23 mM BMOE for 10 min on ice. The reaction was quenched by the addition of DTT to 10 mM. For crosslinking controls, BMOE was either omitted or BMOE was quenched with DTT before addition of single-chain trimer (Figure S3A). Crosslinked single-chain cohesin was then incubated with 12-fold molar excess of recombinant STAG1 on ice for at least 30 min (up to 8h). Single-chain cohesin was then added to imaging buffer at 10-30 pM with 4-fold molar excess of NIPBL-MAU2 as for recombinant human cohesin. To check the crosslinking efficiency, 500 fmol of non-crosslinked and crosslinked cohesin were run on a 6% Tris-Glycin protein gel and stained by Coomassie. All experiments with recombinant human cohesin and single-chain cohesin were performed at 37 C. Analysis of cohesin roadblock encounters Loop extrusion by recombinant human cohesin and single-chain cohesin has been reported to be two-sided (Davidson et al., 2019; Kim et al., 2019), in contrast to loop extrusion by yeast condensin that extrudes DNA asymmetrically (3). This fact makes analysis of roadblock encounters with cohesin slightly more involved compared to encounters of roadblocks with condensin. For example, we found that cohesin has a tendency to start extruding loops close to the roadblock on the DNA (60% of loops initiate at the position on the DNA that colocalizes with a roadblock). For loops which initiate sufficiently far from the roadblock, moving of the loop toward the roadblock makes it unequivocally possible to determine which side of the loop encounters the roadblock. However, this is not possible for loops initiating too close to the roadblock. Furthermore, two-sided extruders may keep extruding DNA into the loop from the non-blocked side, thus making loop growth not a sufficient proxy to classify encounters as passing or blocking. To carefully dissect roadblock encounters with two-sided loop extruders, we distinguish four scenarios, which are illustrated in Figure S3B. Blocking of the loop extrusion process (case 1) is demarcated by a colocalized DNA loop and roadblock puncta in the kymograph, by halting loop growth and by a decrease of roadblock MSD during initial loop extrusion, and a continuously low MSD as the roadblock is located at the loop base. This case is analogous to the blocking scenario for one-sided extruders. Alternatively, cohesin loop extrusion may be blocked on the side of the roadblock, but continue to extrude on the other side (case 2), in which case DNA loop and roadblock appear to translocate together in the kymograph. The loop keeps growing, yet the MSD of the particle decreases steadily as the loop grows, which allows assignment of the event as blocking, rather than passing as would be judged from the growing loop intensity on its own. A similar argumentation holds for passing events. In the case where the loop continues to grow on the side of the roadblock (case 3), loop and roadblock translocate together, the loop grows and the MSD shows a characteristic minimum at the moment of encounter. For situations in which the loop grows or slips from both sides (case 4), loop and MSD translocate together in the kymograph, yet not necessarily unidirectionally, and the loop size can both grow and shrink. In these cases, a passing event is characterized by a minimum in the MSD as the loop size either remains constant (loop grows on the roadblock side and shrinks on the other side, effectively keeping the loop size constant; we refer to this as ‘loop diffusion’, see Figure S3F) or increases. A minimum in MSD might also be associated with a decrease in loop size (slipping of DNA out the loop), which releases
+
+e6 Cell Reports 41, 111491, October 18, 2022
+
+[Page 18]
+
+tension in the DNA, in which case the event cannot be attributed as ‘passing’. Thus, the combination of a minimum in MSD and a kymograph with a constant or rising loop size is used as a proxy to distinguish passing and blocking events. QUANTIFICATION AND STATISTICAL ANALYSIS The fitting of curves (e.g. Figure 3E) was done with Scipy package in Python (version 3.8). Smoothing of data (e.g. Figures 1I, 1J, and 1K) were done with interpolation by Savitzky-Golay method in Scipy. Error bars (Figure 4B) of distribution were calculated using ‘‘binomial proportion confidence interval’’. Violin plots showing the kernel probability density were obtained using ‘‘seaborn’’ package in Python. Plots were created using matplotlib and seaborn packages.
+
+Cell Reports 41, 111491, October 18, 2022 e7

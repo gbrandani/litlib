@@ -1,0 +1,767 @@
+{
+  "paper_id": "sha256-bd477847d4dc1b6d",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/Terakawa 2011 BiophysJ - Multiscale Ensemble Modeling of Intrinsically Disordered Proteins- p53 N-Terminal Domain.pdf",
+  "pdf_sha256": "bd477847d4dc1b6d5b25c2aa7e3a16389a385b832887409a2ae4222348a4fe4f",
+  "filename": "Terakawa 2011 BiophysJ - Multiscale Ensemble Modeling of Intrinsically Disordered Proteins- p53 N-Terminal Domain.pdf",
+  "item_type": "article",
+  "title_query": "Multiscale Ensemble Modeling of Intrinsically Disordered Proteins- p53 N-Terminal Domain",
+  "filename_hints": {
+    "year_hint": 2011,
+    "venue_hint": "",
+    "prefix": "Terakawa 2011 BiophysJ"
+  },
+  "doi_candidates": [
+    "10.1016/j.bpj.2011.08.003"
+  ],
+  "date_indexed": "2026-04-17T03:29:32.239839+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Multiscale Ensemble Modeling of Intrinsically Disordered Proteins- p53 N-Terminal Domain",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "e901a9c649eae850b8fe7dfe0934c73d9f236d69",
+      "externalIds": {
+        "MAG": "1966431081",
+        "DOI": "10.1016/j.bpj.2011.08.003",
+        "CorpusId": 20530054,
+        "PubMed": "21943426"
+      },
+      "url": "https://www.semanticscholar.org/paper/e901a9c649eae850b8fe7dfe0934c73d9f236d69",
+      "title": "Multiscale ensemble modeling of intrinsically disordered proteins: p53 N-terminal domain.",
+      "venue": "Biophysical Journal",
+      "year": 2011,
+      "openAccessPdf": {
+        "url": "http://www.cell.com/article/S0006349511009428/pdf",
+        "status": "HYBRID",
+        "license": "publisher-specific-oa",
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.bpj.2011.08.003?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.bpj.2011.08.003, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2011-09-21",
+      "journal": {
+        "name": "Biophysical journal",
+        "pages": "\n          1450-8\n        ",
+        "volume": "101 6"
+      },
+      "authors": [
+        {
+          "authorId": "2353425",
+          "name": "Tsuyoshi Terakawa"
+        },
+        {
+          "authorId": "2941900",
+          "name": "S. Takada"
+        }
+      ],
+      "abstract": null
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "e901a9c649eae850b8fe7dfe0934c73d9f236d69",
+        "title": "Multiscale ensemble modeling of intrinsically disordered proteins: p53 N-terminal domain.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2011,
+        "candidate_year": 2011,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4e9124f402880a8867813ed8c694e3ce4d2757c1",
+        "title": "Improving the Performance of Simulations of the Intrinsically Disordered N-Terminal Domain from P53",
+        "score": 0.4269,
+        "title_similarity": 0.5069,
+        "query_year": 2011,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5ecb8e445ee378c5ffe90dfee8a0c14d3ee7be1d",
+        "title": "The Allosteric Regulation of the DNA-Binding Domain of p53 by the Intrinsically Disordered C-Terminal Domain",
+        "score": 0.4157,
+        "title_similarity": 0.4957,
+        "query_year": 2011,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f28c24f3a58bbcfff8e65952aea4bbdaeb6cb7be",
+        "title": "Characterization of partially ordered states in the intrinsically disordered N-terminal domain of p53 using millisecond molecular dynamics simulations",
+        "score": 0.3783,
+        "title_similarity": 0.4583,
+        "query_year": 2011,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "df8fb34d4ac3651358e6aa92bc34d6b1b05caa5b",
+        "title": "Modulation of p53 N-terminal transactivation domain 2 conformation ensemble and kinetics by phosphorylation",
+        "score": 0.3089,
+        "title_similarity": 0.3889,
+        "query_year": 2011,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a08b68d6f667214ad45400e174b2723fe61157be",
+        "title": "Quantitative prediction of ensemble dynamics, shapes and contact propensities of intrinsically disordered proteins",
+        "score": 0.3022,
+        "title_similarity": 0.3822,
+        "query_year": 2011,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c157bb76eee918ed44d1792bf7518ba0b9252427",
+        "title": "Ensemble structure of the N-terminal domain (1–267) of FUS in a biomolecular condensate",
+        "score": 0.2117,
+        "title_similarity": 0.2917,
+        "query_year": 2011,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0f2da0c3357bc692a5743139434ed41a34d8186a",
+        "title": "Resolving Conformational Heterogeneity in Intrinsically Disordered Proteins via Experimentally Guided Multi-Replica Simulations",
+        "score": 0.195,
+        "title_similarity": 0.275,
+        "query_year": 2011,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7da286d3253889652b08945b88438127bba1e9cb",
+        "title": "Ensemblify: a user-friendly tool for generating ensembles of intrinsically disordered regions of AlphaFold and user-defined models",
+        "score": 0.1013,
+        "title_similarity": 0.1813,
+        "query_year": 2011,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "afe87ed6e4e86861593ce5dce3bdc429bd0ea220",
+        "title": "Molecular dynamics study of the impact of glycosylation on conformational properties of trimeric N-terminal domain of human copper transporter 1.",
+        "score": 0.0994,
+        "title_similarity": 0.1794,
+        "query_year": 2011,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1016/j.bpj.2011.08.003"
+    ],
+    "matching_extracted_doi": "10.1016/j.bpj.2011.08.003",
+    "raw_response": {
+      "total": 84,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "e901a9c649eae850b8fe7dfe0934c73d9f236d69",
+          "externalIds": {
+            "MAG": "1966431081",
+            "DOI": "10.1016/j.bpj.2011.08.003",
+            "CorpusId": 20530054,
+            "PubMed": "21943426"
+          },
+          "url": "https://www.semanticscholar.org/paper/e901a9c649eae850b8fe7dfe0934c73d9f236d69",
+          "title": "Multiscale ensemble modeling of intrinsically disordered proteins: p53 N-terminal domain.",
+          "venue": "Biophysical Journal",
+          "year": 2011,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S0006349511009428/pdf",
+            "status": "HYBRID",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.bpj.2011.08.003?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.bpj.2011.08.003, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2011-09-21",
+          "journal": {
+            "name": "Biophysical journal",
+            "pages": "\n          1450-8\n        ",
+            "volume": "101 6"
+          },
+          "authors": [
+            {
+              "authorId": "2353425",
+              "name": "Tsuyoshi Terakawa"
+            },
+            {
+              "authorId": "2941900",
+              "name": "S. Takada"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "5ecb8e445ee378c5ffe90dfee8a0c14d3ee7be1d",
+          "externalIds": {
+            "PubMedCentral": "12845269",
+            "DOI": "10.3390/ph19010124",
+            "CorpusId": 284750325,
+            "PubMed": "41599722"
+          },
+          "url": "https://www.semanticscholar.org/paper/5ecb8e445ee378c5ffe90dfee8a0c14d3ee7be1d",
+          "title": "The Allosteric Regulation of the DNA-Binding Domain of p53 by the Intrinsically Disordered C-Terminal Domain",
+          "venue": "Pharmaceuticals",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12845269, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-01-01",
+          "journal": {
+            "name": "Pharmaceuticals",
+            "volume": "19"
+          },
+          "authors": [
+            {
+              "authorId": "2059880110",
+              "name": "Shangbo Ning"
+            },
+            {
+              "authorId": "2242595452",
+              "name": "Chen Zeng"
+            },
+            {
+              "authorId": "2108976857",
+              "name": "Huiwen Wang"
+            },
+            {
+              "authorId": "2326249162",
+              "name": "Junfeng Zhang"
+            },
+            {
+              "authorId": "2306195961",
+              "name": "Yun Xue"
+            },
+            {
+              "authorId": "2283432027",
+              "name": "Yunjie Zhao"
+            }
+          ],
+          "abstract": "Background: Intrinsically disordered regions (IDRs) within proteins often act as pivotal linkage units for the interaction of functional domains. The p53 tumor suppressor protein contains intrinsically disordered N-terminal and C-terminal domains (NTD and CTD), playing crucial regulatory roles in cellular processes. Furthermore, experimental approaches have encountered challenges in elucidating the structural regulation by the IDRs. Methods: In this work, we employed microsecond-scale molecular dynamics simulations to explore the allosteric regulation mechanism of the p53 DNA binding domain (DBD) induced by the CTD and the DNA binding. Subsequently, we integrated dynamic cross-correlation analysis with binding free energy calculations to evaluate the interaction between the CTD and DNA. Results: The free energy landscapes (FELs) were utilized to identify the conformational ensemble of the p53 DBD. The FELs revealed that the CTD enhances the allosteric regulatory mechanisms. Conclusions: Firstly, the conformation of DBD changes on the S6-S7 loop and L1 upon DNA binding. Then the CTD directly interacts with DNA and further regulates the allosteric network (involving the S6-S7 loop, L1 loop, S4, S10, H1, and H3) to promote the binding of DBD to DNA. The allosteric mechanisms presented in this work will provide new insights into the functional mechanisms of the p53 CTD and inform the rational design of p53-targeted drugs."
+        },
+        {
+          "paperId": "c157bb76eee918ed44d1792bf7518ba0b9252427",
+          "externalIds": {
+            "PubMedCentral": "10938082",
+            "DOI": "10.1016/j.bpj.2024.01.023",
+            "CorpusId": 267268336,
+            "PubMed": "38279531"
+          },
+          "url": "https://www.semanticscholar.org/paper/c157bb76eee918ed44d1792bf7518ba0b9252427",
+          "title": "Ensemble structure of the N-terminal domain (1–267) of FUS in a biomolecular condensate",
+          "venue": "Biophysical Journal",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S0006349524000390/pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10938082, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-01-01",
+          "journal": {
+            "name": "Biophysical Journal",
+            "pages": "538 - 554",
+            "volume": "123"
+          },
+          "authors": [
+            {
+              "authorId": "2052089177",
+              "name": "Laura Esteban-Hofer"
+            },
+            {
+              "authorId": "9831272",
+              "name": "L. Emmanouilidis"
+            },
+            {
+              "authorId": "3575561",
+              "name": "M. Yulikov"
+            },
+            {
+              "authorId": "2169449554",
+              "name": "F. Allain"
+            },
+            {
+              "authorId": "2246484615",
+              "name": "G. Jeschke"
+            }
+          ],
+          "abstract": "Solutions of some proteins phase separate into a condensed state of high protein concentration and a dispersed state of low concentration. Such behavior is observed in living cells for a number of RNA-binding proteins that feature intrinsically disordered domains. It is relevant for cell function via the formation of membraneless organelles and transcriptional condensates. On a basic level, the process can be studied in vitro on protein domains that are necessary and sufficient for liquid-liquid phase separation (LLPS). We have performed distance distribution measurements by electron paramagnetic resonance for 13 sections in an N-terminal domain (NTD) construct of the protein fused in sarcoma (FUS), consisting of the QGSY-rich domain and the RGG1 domain, in the denatured, dispersed, and condensed state. Using 10 distance distribution restraints for ensemble modeling and three such restraints for model validation, we have found that FUS NTD behaves as a random-coil polymer under good-solvent conditions in both the dispersed and condensed state. Conformation distribution in the biomolecular condensate is virtually indistinguishable from the one in an unrestrained ensemble, with the latter one being based on only residue-specific Ramachandran angle distributions. Over its whole length, FUS NTD is slightly more compact in the condensed than in the dispersed state, which is in line with the theory for random coils in good solvent proposed by de Gennes, Daoud, and Jannink. The estimated concentration in the condensate exceeds the overlap concentration resulting from this theory. The QGSY-rich domain is slightly more extended, slightly more hydrated, and has slightly higher propensity for LLPS than the RGG1 domain. Our results support previous suggestions that LLPS of FUS is driven by multiple transient nonspecific hydrogen bonding and π−sp2 interactions."
+        },
+        {
+          "paperId": "a08b68d6f667214ad45400e174b2723fe61157be",
+          "externalIds": {
+            "DBLP": "journals/ploscb/YuB22",
+            "PubMedCentral": "9491582",
+            "DOI": "10.1101/2022.03.21.485081",
+            "CorpusId": 247631737,
+            "PubMed": "36084124"
+          },
+          "url": "https://www.semanticscholar.org/paper/a08b68d6f667214ad45400e174b2723fe61157be",
+          "title": "Quantitative prediction of ensemble dynamics, shapes and contact propensities of intrinsically disordered proteins",
+          "venue": "bioRxiv",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2022/03/22/2022.03.21.485081.full.pdf",
+            "status": "GREEN",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9491582, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-03-22",
+          "journal": {
+            "name": "PLoS Computational Biology",
+            "volume": "18"
+          },
+          "authors": [
+            {
+              "authorId": "34654547",
+              "name": "Lei Yu"
+            },
+            {
+              "authorId": "144430752",
+              "name": "R. Brüschweiler"
+            }
+          ],
+          "abstract": "Intrinsically disordered proteins (IDPs) are highly dynamic systems that play an important role in cell signaling processes and their misfunction often causes human disease. Proper understanding of IDP function not only requires the realistic characterization of their three-dimensional conformational ensembles at atomic-level resolution but also of the time scales of interconversion between their conformational substates. Large sets of experimental data are often used in combination with molecular modeling to restrain or bias models to improve agreement with experiment. It is shown here for the N-terminal transactivation domain of p53 (p53TAD) and Pup how the latest advancements in molecular dynamics (MD) simulations methodology produces native conformational ensembles by combining replica exchange with series of microsecond MD simulations. They closely reproduce experimental data at the global conformational ensemble level, in terms of the distribution properties of the radius of gyration tensor, and at the local level, in terms of NMR properties including 15N spin relaxation, without the need for reweighting. The IDP ensembles were analyzed by graph theory to identify dominant inter-residue contact clusters and characteristic amino-acid contact propensities. These findings indicate that modern MD force fields with residue-specific backbone potentials can produce highly realistic IDP ensembles sampling a hierarchy of nano- and picosecond time scales providing new insights into their biological function. AUTHOR SUMMARY Accurate prediction of the conformational ensemble dynamics sans bias is shown for intrinsically disordered proteins including the transactivation domain of p53."
+        },
+        {
+          "paperId": "afe87ed6e4e86861593ce5dce3bdc429bd0ea220",
+          "externalIds": {
+            "DOI": "10.1016/j.carres.2025.109708",
+            "CorpusId": 282234448,
+            "PubMed": "41130030"
+          },
+          "url": "https://www.semanticscholar.org/paper/afe87ed6e4e86861593ce5dce3bdc429bd0ea220",
+          "title": "Molecular dynamics study of the impact of glycosylation on conformational properties of trimeric N-terminal domain of human copper transporter 1.",
+          "venue": "Carbohydrate Research",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.carres.2025.109708?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.carres.2025.109708, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-10-01",
+          "journal": {
+            "name": "Carbohydrate research",
+            "pages": "\n          109708\n        ",
+            "volume": "558"
+          },
+          "authors": [
+            {
+              "authorId": "1872132",
+              "name": "S. Samsonov"
+            },
+            {
+              "authorId": "3939173",
+              "name": "T. Frączyk"
+            },
+            {
+              "authorId": "3497197",
+              "name": "Iwona Ufnalska"
+            },
+            {
+              "authorId": "2237518406",
+              "name": "Wojciech Bal"
+            }
+          ],
+          "abstract": "In this study, we investigate how N- and O-glycosylation affect the structure and dynamics of the disordered N-terminal extracellular domain of human copper transporter 1 (hCtr1), a trimeric transmembrane protein responsible for cellular copper uptake. Copper is an essential trace element, with both deficiency and excess linked to severe disorders. In mammals, its homeostasis is tightly regulated by proteins involved in copper transport and storage. The N-terminal region of hCtr1, comprising 65 amino acids, contains specific copper-binding motifs critical for its function but remains structurally uncharacterized due to its intrinsically disordered nature. This domain can be N- and O-glycosylated at Asn15 and Thr27, respectively, with the latter potentially influencing its physiological function. However, the structural consequences of these modifications remain unclear. We built a trimeric model of the hCtr1 N-terminal domain and performed microsecond-scale molecular dynamics simulations for both glycosylated and non-glycosylated forms. The resulting conformational ensembles revealed unimodal distributions across structural and dynamical descriptors, consistent with disordered behaviour and showing no significant impact of glycosylation. These findings enhance our understanding of the structural flexibility of hCtr1 and provide a foundation for future studies into its structure, function and regulation."
+        },
+        {
+          "paperId": "0f2da0c3357bc692a5743139434ed41a34d8186a",
+          "externalIds": {
+            "PubMedCentral": "12889523",
+            "DOI": "10.64898/2026.01.29.702558",
+            "CorpusId": 285304937,
+            "PubMed": "41676592"
+          },
+          "url": "https://www.semanticscholar.org/paper/0f2da0c3357bc692a5743139434ed41a34d8186a",
+          "title": "Resolving Conformational Heterogeneity in Intrinsically Disordered Proteins via Experimentally Guided Multi-Replica Simulations",
+          "venue": "bioRxiv",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12889523, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-02-03",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2329308491",
+              "name": "Wangfei Yang"
+            },
+            {
+              "authorId": "2339429610",
+              "name": "Sichun Yang"
+            },
+            {
+              "authorId": "2283648092",
+              "name": "Wenwei Zheng"
+            }
+          ],
+          "abstract": "The conformational landscapes of intrinsically disordered proteins (IDPs) remain obscured by the ensemble averaging inherent to experimental observables. Here, we present Multi-replica Averaged Restraint Simulation (MARS), a data-driven modeling framework that reconstructs these landscapes by enforcing ensemble-averaged restraints across multiple replicas without imposing prior structural knowledge. Using the N-terminal domain of estrogen receptor alpha (ERα-NTD) as a model system, MARS simultaneously integrates small-angle X-ray scattering (SAXS) and six paramagnetic relaxation enhancement (PRE) profiles, comprising over 600 pairwise restraints, to generate ensembles that quantitatively fit all input structural restraints. The resulting ensemble is consistent with independent backbone relaxation measurements and reveals two major conformational states: a dominant extended state and a low-populated yet functionally relevant compact state whose structural features align with prior mutagenesis studies. Systematic benchmarking demonstrates that SAXS and PRE provide orthogonal global and local constraints, that each PRE profile contributes non-redundant structural information, and that multi-replica sampling is essential for preserving conformational heterogeneity. MARS offers a scalable framework for integrating orthogonal biophysical measurements to resolve both dominant and rare functional states in IDPs."
+        },
+        {
+          "paperId": "4e9124f402880a8867813ed8c694e3ce4d2757c1",
+          "externalIds": {
+            "MAG": "2585391606",
+            "DOI": "10.1016/J.BPJ.2016.11.1146",
+            "CorpusId": 100575995
+          },
+          "url": "https://www.semanticscholar.org/paper/4e9124f402880a8867813ed8c694e3ce4d2757c1",
+          "title": "Improving the Performance of Simulations of the Intrinsically Disordered N-Terminal Domain from P53",
+          "venue": "",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S0006349516321762/pdf",
+            "status": "HYBRID",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.BPJ.2016.11.1146?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.BPJ.2016.11.1146, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2017-02-03",
+          "journal": {
+            "name": "Biophysical Journal",
+            "volume": "112"
+          },
+          "authors": [
+            {
+              "authorId": "2314918218",
+              "name": "Nicholas A Ezzell"
+            },
+            {
+              "authorId": "10111838",
+              "name": "Yue Zhang"
+            },
+            {
+              "authorId": "3387941",
+              "name": "S. Whitten"
+            },
+            {
+              "authorId": "4548721",
+              "name": "Nicholas C. Fitzkee"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "f28c24f3a58bbcfff8e65952aea4bbdaeb6cb7be",
+          "externalIds": {
+            "MAG": "3044832731",
+            "PubMedCentral": "7382488",
+            "DOI": "10.1038/s41598-020-69322-2",
+            "CorpusId": 220720723,
+            "PubMed": "32709860"
+          },
+          "url": "https://www.semanticscholar.org/paper/f28c24f3a58bbcfff8e65952aea4bbdaeb6cb7be",
+          "title": "Characterization of partially ordered states in the intrinsically disordered N-terminal domain of p53 using millisecond molecular dynamics simulations",
+          "venue": "Scientific Reports",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41598-020-69322-2.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7382488, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-07-24",
+          "journal": {
+            "name": "Scientific Reports",
+            "volume": "10"
+          },
+          "authors": [
+            {
+              "authorId": "1512154986",
+              "name": "Pablo Herrera-Nieto"
+            },
+            {
+              "authorId": "2110379857",
+              "name": "Adrià Pérez"
+            },
+            {
+              "authorId": "80939744",
+              "name": "G. de Fabritiis"
+            }
+          ],
+          "abstract": "The exploration of intrinsically disordered proteins in isolation is a crucial step to understand their complex dynamical behavior. In particular, the emergence of partially ordered states has not been explored in depth. The experimental characterization of such partially ordered states remains elusive due to their transient nature. Molecular dynamics mitigates this limitation thanks to its capability to explore biologically relevant timescales while retaining atomistic resolution. Here, millisecond unbiased molecular dynamics simulations were performed in the exemplar N-terminal region of p53. In combination with state-of-the-art Markov state models, simulations revealed the existence of several partially ordered states accounting for ∼\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\sim $$\\end{document} 40% of the equilibrium population. Some of the most relevant states feature helical conformations similar to the bound structure of p53 to Mdm2, as well as novel β\\documentclass[12pt]{minimal} \\usepackage{amsmath} \\usepackage{wasysym} \\usepackage{amsfonts} \\usepackage{amssymb} \\usepackage{amsbsy} \\usepackage{mathrsfs} \\usepackage{upgreek} \\setlength{\\oddsidemargin}{-69pt} \\begin{document}$$\\beta $$\\end{document}-sheet elements. This highlights the potential complexity underlying the energy surface of intrinsically disordered proteins."
+        },
+        {
+          "paperId": "df8fb34d4ac3651358e6aa92bc34d6b1b05caa5b",
+          "externalIds": {
+            "MAG": "2953521586",
+            "DOI": "10.1080/07391102.2019.1637784",
+            "CorpusId": 195759193,
+            "PubMed": "31248328"
+          },
+          "url": "https://www.semanticscholar.org/paper/df8fb34d4ac3651358e6aa92bc34d6b1b05caa5b",
+          "title": "Modulation of p53 N-terminal transactivation domain 2 conformation ensemble and kinetics by phosphorylation",
+          "venue": "Journal of Biomolecular Structure and Dynamics",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1080/07391102.2019.1637784?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1080/07391102.2019.1637784, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-06-01",
+          "journal": {
+            "name": "Journal of Biomolecular Structure and Dynamics",
+            "pages": "2613 - 2623",
+            "volume": "38"
+          },
+          "authors": [
+            {
+              "authorId": "2321586899",
+              "name": "Likun Zhao"
+            },
+            {
+              "authorId": "8172420",
+              "name": "Y. Ouyang"
+            },
+            {
+              "authorId": "2117125453",
+              "name": "Qian Li"
+            },
+            {
+              "authorId": "2109107533",
+              "name": "Zhuqing Zhang"
+            }
+          ],
+          "abstract": "Abstract Phosphorylation of protein is critical for various cell processes, which preferentially happens in intrinsically disordered proteins (IDPs). How phosphorylation modulates structural ensemble of disordered peptide remains largely unexplored. Here, using replica exchange molecular dynamics (REMD) and Markov state model (MSM), the conformational distribution and kinetics of p53 N-terminal transactivation domain (TAD) 2 as well as its dual-site phosphorylated form (pSer46, pThr55) were simulated. It reveals that the dual phosphorylation does not change overall size and secondary structure element fraction, while a change in the distribution of hydrogen bonds induces slightly more pre-existing bound helical conformations. MSM analysis indicates that the dual phosphorylation accelerates conformation exchange between disordered and order-like states in target-binding region. It suggests that p53 TAD2 after phosphorylation would be more apt to bind to both the human p62 pleckstrin homology (PH) domain and the yeast tfb1 PH domain through different binding mechanism, where experimentally it exhibits an extended and α-helix conformation, respectively, with increased binding strength in both complexes. Our study implies except binding interface, both conformation ensemble and kinetics should be considered for the effects of phosphorylation on IDPs. AbbreviationsIDPs intrinsically disordered proteinsREMD replica exchange molecular dynamicsMSM Markov state modelTAD transactivation domainPH pleckstrin homologyPRR proline-rich regionDBD DNA-binding domainTET Tetramerization domainREG regulatory domainMD molecular dynamicsPME particle-mesh EwaldTICA time-lagged independent component analysisCK Chapman–KolmogorovGMRQ generalized matrix Rayleigh quotientSARW self-avoiding random walkKID kinase-inducible domainMFPT mean first passage timeDSSP definition of secondary structure of proteinsRMSD root mean square deviationRg radius of gyrationRee end to end distance Communicated by Ramaswamy H. Sarma"
+        },
+        {
+          "paperId": "7da286d3253889652b08945b88438127bba1e9cb",
+          "externalIds": {
+            "DOI": "10.1101/2025.08.26.672300",
+            "CorpusId": 282310950
+          },
+          "url": "https://www.semanticscholar.org/paper/7da286d3253889652b08945b88438127bba1e9cb",
+          "title": "Ensemblify: a user-friendly tool for generating ensembles of intrinsically disordered regions of AlphaFold and user-defined models",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.08.26.672300?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.08.26.672300, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": "2025-08-30",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2333430982",
+              "name": "Nuno P. Fernandes"
+            },
+            {
+              "authorId": "2284040331",
+              "name": "Tiago Gomes"
+            },
+            {
+              "authorId": "2256236082",
+              "name": "Tiago N. Cordeiro"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1016/j.bpj.2011.08.003",
+      "DOI": "10.1016/j.bpj.2011.08.003",
+      "type": "journal-article",
+      "issue": "6",
+      "author": [
+        {
+          "given": "Tsuyoshi",
+          "family": "Terakawa",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Shoji",
+          "family": "Takada",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "0006-3495"
+      ],
+      "page": "1450-1458",
+      "container-title": [
+        "Biophysical Journal"
+      ],
+      "title": [
+        "Multiscale Ensemble Modeling of Intrinsically Disordered Proteins: p53 N-Terminal Domain"
+      ],
+      "publisher": "Elsevier BV",
+      "issued": {
+        "date-parts": [
+          [
+            2011,
+            9
+          ]
+        ]
+      },
+      "volume": "101"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1016/j.bpj.2011.08.003",
+    "best_candidate_doi": "10.1016/j.bpj.2011.08.003",
+    "crossref_attempts": [
+      {
+        "doi": "10.1016/j.bpj.2011.08.003",
+        "source_region": "first_page",
+        "position": 5211,
+        "context": "e systematic multiscale theory and a more general MD simulation approach. We combine doi: 10.1016/j.bpj.2011.08.003",
+        "priority_score": 0.63,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1016/j.bpj.2011.08.003",
+          "DOI": "10.1016/j.bpj.2011.08.003",
+          "type": "journal-article",
+          "issue": "6",
+          "author": [
+            {
+              "given": "Tsuyoshi",
+              "family": "Terakawa",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Shoji",
+              "family": "Takada",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "0006-3495"
+          ],
+          "page": "1450-1458",
+          "container-title": [
+            "Biophysical Journal"
+          ],
+          "title": [
+            "Multiscale Ensemble Modeling of Intrinsically Disordered Proteins: p53 N-Terminal Domain"
+          ],
+          "publisher": "Elsevier BV",
+          "issued": {
+            "date-parts": [
+              [
+                2011,
+                9
+              ]
+            ]
+          },
+          "volume": "101"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-bd477847d4dc1b6d.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-bd477847d4dc1b6d.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-bd477847d4dc1b6d.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "040d42863ae38a026a46e2d7ad6b7d7a375ce1dff24cb115e5bac60152b432c2",
+    "chunk_count": 25,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1016/j.bpj.2011.08.003",
+      "source_region": "first_page",
+      "position": 5211,
+      "context": "e systematic multiscale theory and a more general MD simulation approach. We combine doi: 10.1016/j.bpj.2011.08.003",
+      "priority_score": 0.63
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:08:35.376542+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1016/j.bpj.2011.08.003",
+    "score": 1.08
+  }
+}

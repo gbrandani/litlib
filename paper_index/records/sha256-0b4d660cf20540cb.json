@@ -1,0 +1,1641 @@
+{
+  "paper_id": "sha256-0b4d660cf20540cb",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/bayesian_methods/Covino 2023 MLST - Simulation-based inference of single-molecule force spectroscopy.pdf",
+  "pdf_sha256": "0b4d660cf20540cb2a71a53a1a2efc9eff3f887d12413ee619d0e620ca4bfe61",
+  "filename": "Covino 2023 MLST - Simulation-based inference of single-molecule force spectroscopy.pdf",
+  "item_type": "article",
+  "title_query": "Simulation-based inference of single-molecule force spectroscopy",
+  "filename_hints": {
+    "year_hint": 2023,
+    "venue_hint": "",
+    "prefix": "Covino 2023 MLST"
+  },
+  "doi_candidates": [
+    "10.1088/2632-2153/acc8b8"
+  ],
+  "date_indexed": "2026-04-17T03:25:28.099169+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2023!=2022"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Simulation-based inference of single-molecule force spectroscopy",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "50b0e472c2d0c296ecf4bc1f55668088b8c22549",
+      "externalIds": {
+        "DBLP": "journals/mlst/DingeldeinCC23",
+        "ArXiv": "2209.10392",
+        "DOI": "10.1088/2632-2153/acc8b8",
+        "CorpusId": 252407755,
+        "PubMed": "36782639"
+      },
+      "url": "https://www.semanticscholar.org/paper/50b0e472c2d0c296ecf4bc1f55668088b8c22549",
+      "title": "Simulation-based inference of single-molecule force spectroscopy",
+      "venue": "Machine Learning: Science and Technology",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.10392, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-09-21",
+      "journal": {
+        "name": "Machine Learning: Science and Technology",
+        "volume": "4"
+      },
+      "authors": [
+        {
+          "authorId": "2185584844",
+          "name": "Lars Dingeldein"
+        },
+        {
+          "authorId": "50608041",
+          "name": "Pilar Cossio"
+        },
+        {
+          "authorId": "3272460",
+          "name": "Roberto Covino"
+        }
+      ],
+      "abstract": "Single-molecule force spectroscopy (smFS) is a powerful approach to studying molecular self-organization. However, the coupling of the molecule with the ever-present experimental device introduces artifacts, that complicate the interpretation of these experiments. Performing statistical inference to learn hidden molecular properties is challenging because these measurements produce non-Markovian time series, and even minimal models lead to intractable likelihoods. To overcome these challenges, we developed a computational framework built on novel statistical methods called simulation-based inference (SBI). SBI enabled us to directly estimate the Bayesian posterior, and extract reduced quantitative models from smFS, by encoding a mechanistic model into a simulator in combination with probabilistic deep learning. Using synthetic data, we could systematically disentangle the measurement of hidden molecular properties from experimental artifacts. The integration of physical models with machine-learning density estimation is general, transparent, easy to use, and broadly applicable to other types of biophysical experiments."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "50b0e472c2d0c296ecf4bc1f55668088b8c22549",
+        "title": "Simulation-based inference of single-molecule force spectroscopy",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2023,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d41992fc8b2f484cfe2fd68cbdf797dbfc7796b5",
+        "title": "Simulation-based inference of single-molecule experiments.",
+        "score": 0.753,
+        "title_similarity": 0.683,
+        "query_year": 2023,
+        "candidate_year": 2024,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "90902bbb24fc8b2a11eecd84433c2aa4e4c6f61f",
+        "title": "Quantitative and Predictive Folding Models from Limited Single-Molecule Data Using Simulation-Based Inference",
+        "score": 0.5493,
+        "title_similarity": 0.5893,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "724137f94da81655fe5b7e46e75c04270dcd91a8",
+        "title": "Complex Dynamics in Single Molecule Force Spectroscopy from Simple Simulation Models",
+        "score": 0.5434,
+        "title_similarity": 0.6234,
+        "query_year": 2023,
+        "candidate_year": 2017,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d3e26344cf71f41fd30aa87c45396bcd9575607a",
+        "title": "Automatic Identification of Fold in Optical Tweezers‐Based Single‐Molecule Force Spectroscopy",
+        "score": 0.5301,
+        "title_similarity": 0.6101,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "81809638c0e5b686876d69ed8f039df5b2fb1961",
+        "title": "Single-molecule force spectroscopy of toehold-mediated strand displacement",
+        "score": 0.5287,
+        "title_similarity": 0.4987,
+        "query_year": 2023,
+        "candidate_year": 2024,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e8195d8cc7755ea56d073f44ed28632d93e5f8f1",
+        "title": "Molecular interpretation of single-molecule force spectroscopy experiments with computational approaches.",
+        "score": 0.5181,
+        "title_similarity": 0.4881,
+        "query_year": 2023,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6af3d0d7a1b6d161216c2ba078602a394efdfc46",
+        "title": "Ultrahigh Adhesion Force Between Silica-Binding Peptide SB7 and Glass Substrate Studied by Single-Molecule Force Spectroscopy and Molecular Dynamic Simulation",
+        "score": 0.4764,
+        "title_similarity": 0.5564,
+        "query_year": 2023,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3334b18a31be9d3eaf06adfef82f0c5a366dfff6",
+        "title": "Accurate drift-invariant single-molecule force calibration using the Hadamard variance",
+        "score": 0.3836,
+        "title_similarity": 0.3536,
+        "query_year": 2023,
+        "candidate_year": 2024,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "565b51e82373f576a713fb2da568023b566c47b3",
+        "title": "Multi-barrier unfolding of the double-knotted protein, TrmD–Tm1570, revealed by single-molecule force spectroscopy and molecular dynamics",
+        "score": 0.3692,
+        "title_similarity": 0.4492,
+        "query_year": 2023,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1088/2632-2153/acc8b8",
+      "10.1088/2632-2153/acc8b8/pdf"
+    ],
+    "matching_extracted_doi": "10.1088/2632-2153/acc8b8",
+    "raw_response": {
+      "total": 240,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "50b0e472c2d0c296ecf4bc1f55668088b8c22549",
+          "externalIds": {
+            "DBLP": "journals/mlst/DingeldeinCC23",
+            "ArXiv": "2209.10392",
+            "DOI": "10.1088/2632-2153/acc8b8",
+            "CorpusId": 252407755,
+            "PubMed": "36782639"
+          },
+          "url": "https://www.semanticscholar.org/paper/50b0e472c2d0c296ecf4bc1f55668088b8c22549",
+          "title": "Simulation-based inference of single-molecule force spectroscopy",
+          "venue": "Machine Learning: Science and Technology",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.10392, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-09-21",
+          "journal": {
+            "name": "Machine Learning: Science and Technology",
+            "volume": "4"
+          },
+          "authors": [
+            {
+              "authorId": "2185584844",
+              "name": "Lars Dingeldein"
+            },
+            {
+              "authorId": "50608041",
+              "name": "Pilar Cossio"
+            },
+            {
+              "authorId": "3272460",
+              "name": "Roberto Covino"
+            }
+          ],
+          "abstract": "Single-molecule force spectroscopy (smFS) is a powerful approach to studying molecular self-organization. However, the coupling of the molecule with the ever-present experimental device introduces artifacts, that complicate the interpretation of these experiments. Performing statistical inference to learn hidden molecular properties is challenging because these measurements produce non-Markovian time series, and even minimal models lead to intractable likelihoods. To overcome these challenges, we developed a computational framework built on novel statistical methods called simulation-based inference (SBI). SBI enabled us to directly estimate the Bayesian posterior, and extract reduced quantitative models from smFS, by encoding a mechanistic model into a simulator in combination with probabilistic deep learning. Using synthetic data, we could systematically disentangle the measurement of hidden molecular properties from experimental artifacts. The integration of physical models with machine-learning density estimation is general, transparent, easy to use, and broadly applicable to other types of biophysical experiments."
+        },
+        {
+          "paperId": "d41992fc8b2f484cfe2fd68cbdf797dbfc7796b5",
+          "externalIds": {
+            "ArXiv": "2410.15896",
+            "DOI": "10.1016/j.sbi.2025.102988",
+            "CorpusId": 273502589,
+            "PubMed": "39921963"
+          },
+          "url": "https://www.semanticscholar.org/paper/d41992fc8b2f484cfe2fd68cbdf797dbfc7796b5",
+          "title": "Simulation-based inference of single-molecule experiments.",
+          "venue": "Current Opinion in Structural Biology",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1016/j.sbi.2025.102988",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.15896, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-10-21",
+          "journal": {
+            "name": "Current opinion in structural biology",
+            "pages": "\n          102988\n        ",
+            "volume": "91"
+          },
+          "authors": [
+            {
+              "authorId": "2185584844",
+              "name": "Lars Dingeldein"
+            },
+            {
+              "authorId": "2251021211",
+              "name": "Pilar Cossio"
+            },
+            {
+              "authorId": "2283674211",
+              "name": "Roberto Covino"
+            }
+          ],
+          "abstract": "Single-molecule experiments are a unique tool to characterize the structural dynamics of biomolecules. However, reconstructing molecular details from noisy single-molecule data is challenging. Simulation-based inference (SBI) is a powerful framework for analyzing complex experimental data, integrating statistical inference, physics-based simulators, and machine learning. Recent advances in deep learning have accelerated the development of new SBI methods, enabling the application of Bayesian inference to an ever-increasing number of scientific problems. Here, we review the nascent application of SBI to the analysis of single-molecule experiments. We introduce parametric Bayesian inference and discuss its limitations. We then overview emerging deep learning-based SBI methods to perform Bayesian inference for complex models encoded in computer simulators. We illustrate the first applications of SBI to single-molecule force spectroscopy and cryo-electron microscopy experiments. SBI allows us to leverage powerful computer algorithms modeling complex biomolecular phenomena to connect scientific models and experiments in a principled way."
+        },
+        {
+          "paperId": "90902bbb24fc8b2a11eecd84433c2aa4e4c6f61f",
+          "externalIds": {
+            "ArXiv": "2508.02509",
+            "CorpusId": 280421455
+          },
+          "url": "https://www.semanticscholar.org/paper/90902bbb24fc8b2a11eecd84433c2aa4e4c6f61f",
+          "title": "Quantitative and Predictive Folding Models from Limited Single-Molecule Data Using Simulation-Based Inference",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.02509, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-08-04",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2185584844",
+              "name": "Lars Dingeldein"
+            },
+            {
+              "authorId": "38032221",
+              "name": "A. Lyons"
+            },
+            {
+              "authorId": "2251021211",
+              "name": "Pilar Cossio"
+            },
+            {
+              "authorId": "2374473174",
+              "name": "M. Woodside"
+            },
+            {
+              "authorId": "2283674211",
+              "name": "Roberto Covino"
+            }
+          ],
+          "abstract": "The study of biomolecular folding has been greatly advanced by single-molecule force spectroscopy (SMFS), which enables the observation of the dynamics of individual molecules. However, extracting quantitative models of fundamental properties such as folding landscapes from SMFS data is very challenging due to instrumental noise, linker artifacts, and the inherent stochasticity of the process, often requiring extensive datasets and complex calibration. Here, we introduce a framework based on simulation-based inference (SBI) that overcomes these limitations by integrating physics-based modeling with deep learning. We first apply this framework to analyze constant-force measurements of a DNA hairpin. From a single experimental trajectory of only two seconds, we successfully reconstruct the hairpin's free energy landscape and folding dynamics, obtaining results in close agreement with established deconvolution methods that require 10 - 100 times more data. Furthermore, we demonstrate the generality of our approach by applying it to a riboswitch aptamer featuring multiple states and tertiary contacts, resolving the profile of a landscape featuring four metastable states from a single trajectory. The Bayesian nature of this approach robustly quantifies uncertainties for all inferred parameters, including diffusion coefficients and linker stiffness, without needing independent measurements of instrument properties. The inferred models are predictive, generating simulated trajectories that quantitatively reproduce experimental thermodynamics and kinetics. The ability to derive statistically robust models from minimal datasets is crucial for investigating complex biomolecular systems where extensive data collection is impractical, paving the way for novel applications of SMFS."
+        },
+        {
+          "paperId": "d3e26344cf71f41fd30aa87c45396bcd9575607a",
+          "externalIds": {
+            "DOI": "10.1002/adts.202500522",
+            "CorpusId": 280605275
+          },
+          "url": "https://www.semanticscholar.org/paper/d3e26344cf71f41fd30aa87c45396bcd9575607a",
+          "title": "Automatic Identification of Fold in Optical Tweezers‐Based Single‐Molecule Force Spectroscopy",
+          "venue": "Advanced Theory and Simulations",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/adts.202500522?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/adts.202500522, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-08-04",
+          "journal": {
+            "name": "Advanced Theory and Simulations",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "2375743335",
+              "name": "Linyao Chen"
+            },
+            {
+              "authorId": "2119797891",
+              "name": "Hao Wu"
+            },
+            {
+              "authorId": "2375714398",
+              "name": "Hao Huang"
+            },
+            {
+              "authorId": "2376010567",
+              "name": "Jingru Sun"
+            },
+            {
+              "authorId": "2375690529",
+              "name": "Yanghui Li"
+            }
+          ],
+          "abstract": "Single‐Molecule Force Spectroscopy (SMFS) provides crucial insights into molecular mechanical properties and interactions. However, the localization of folding events relies on manual operations, which are inefficient and susceptible to subjective errors. Existing automated methods also face limitations in accuracy and robustness. To overcome these challenges, this study introduces an Inception‐based Self‐attention Skip Network (ISSN), combining Inception blocks with a Self‐attention mechanism to classify and localize folding events, including initiation and termination sites. And proposed a Force‐Distance Curve (FDC) simulation method to address the issue of insufficient datasets. Validation on Deoxyribonucleic Acid (DNA) hairpin Force‐Distance Curves (FDCs) demonstrates that ISSN achieves outstanding performance, including 99.8% classification accuracy, a low mean absolute error (MAE) of 0.176 pN for the force site, and 1.57 nm MAE for the distance site, even under high noise conditions. Compared to other classic models, ISSN not only delivers superior accuracy but also exhibits strong generalization and robustness for automated optical tweezers SMFS analysis."
+        },
+        {
+          "paperId": "81809638c0e5b686876d69ed8f039df5b2fb1961",
+          "externalIds": {
+            "PubMedCentral": "11365964",
+            "DOI": "10.1038/s41467-024-51813-9",
+            "CorpusId": 267052327,
+            "PubMed": "39217165"
+          },
+          "url": "https://www.semanticscholar.org/paper/81809638c0e5b686876d69ed8f039df5b2fb1961",
+          "title": "Single-molecule force spectroscopy of toehold-mediated strand displacement",
+          "venue": "bioRxiv",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41467-024-51813-9",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11365964, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-01-17",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "2173422953",
+              "name": "A. Walbrun"
+            },
+            {
+              "authorId": "2118913965",
+              "name": "Tianhe Wang"
+            },
+            {
+              "authorId": "2236918000",
+              "name": "Michael Matthies"
+            },
+            {
+              "authorId": "2279990078",
+              "name": "Petr Šulc"
+            },
+            {
+              "authorId": "2635863",
+              "name": "F. Simmel"
+            },
+            {
+              "authorId": "2279990081",
+              "name": "Matthias Rief"
+            }
+          ],
+          "abstract": "Toehold-mediated strand displacement (TMSD) is extensively utilized in dynamic DNA nanotechnology and is the foundation for a wide range of DNA or RNA-based reaction circuits. Previous studies have typically relied on bulk fluorescence measurements to investigate the kinetics of TMSD, which only provide effective, bulk-averaged reaction rates and do not resolve the process on the level of individual molecules or even base pairs. In this work, we addressed this limitation by exploring the dynamics of strand displacement processes at the single-molecule level using single-molecule force spectroscopy (SMFS) with an optical trap supported by state-of-the-art coarse-grained simulations. By probing the ends of the hairpin of a toehold structure, we can trigger and observe TMSD in real time with microsecond and nanometer resolution. Using a microfluidic assay where we expose the hairpin to a solution of trigger strands, we find that under load, TMSD proceeds very rapidly, with single step times of 1 μs. Introducing mismatches into the invader sequence allows us to tune stability such that invasion and re-invasion occur in equilibrium, even under load. This allows us to study thousands of invasion/re-invasion events on a single molecule and analyze the kinetics of the invasion process. Extrapolating our findings to zero load, we find single step times for DNA invading DNA four times faster than for RNA invading RNA. Moreover, we used force to study the kinetics of DNA invading RNA, a process that in the absence of force would rarely occur. Our results reveal the importance of sequence effects for the TMSD process and have importance for a wide range of applications in nucleic acid nanotechnology and synthetic biology."
+        },
+        {
+          "paperId": "3334b18a31be9d3eaf06adfef82f0c5a366dfff6",
+          "externalIds": {
+            "PubMedCentral": "11617635",
+            "DOI": "10.1101/2024.06.17.599270",
+            "CorpusId": 270689571,
+            "PubMed": "39473184"
+          },
+          "url": "https://www.semanticscholar.org/paper/3334b18a31be9d3eaf06adfef82f0c5a366dfff6",
+          "title": "Accurate drift-invariant single-molecule force calibration using the Hadamard variance",
+          "venue": "bioRxiv",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2024/06/17/2024.06.17.599270.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11617635, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-06-17",
+          "journal": {
+            "name": "Biophysical Journal",
+            "pages": "3964 - 3976",
+            "volume": "123"
+          },
+          "authors": [
+            {
+              "authorId": "15217186",
+              "name": "Stefanie D. Pritzl"
+            },
+            {
+              "authorId": "2307924334",
+              "name": "A. Ulugöl"
+            },
+            {
+              "authorId": "2283936642",
+              "name": "Caroline Körösy"
+            },
+            {
+              "authorId": "40536007",
+              "name": "L. Filion"
+            },
+            {
+              "authorId": "2949266",
+              "name": "J. Lipfert"
+            }
+          ],
+          "abstract": "Single-molecule force spectroscopy (SMFS) techniques play a pivotal role in unraveling the mechanics and conformational transitions of biological macromolecules under external forces. Among these techniques, multiplexed magnetic tweezers (MTs) are particularly well suited to probe very small forces, ≤1 pN, critical for studying non-covalent interactions and regulatory conformational changes at the single-molecule level. However, to apply and measure such small forces, a reliable and accurate force calibration procedure is crucial. Here, we introduce a new approach to calibrate MTs based on thermal motion using the Hadamard variance (HV). To test our method, we develop a bead-tether Brownian dynamics simulation that mimics our experimental system and compare the performance of the HV method against two established techniques: power spectral density (PSD) and Allan variance (AV) analyses. Our analysis includes an assessment of each method’s ability to mitigate common sources of additive noise, such as white and pink noise, as well as drift, which often complicate experimental data analysis. Our findings demonstrate that the HV method exhibits overall similar or even higher precision and accuracy, yielding lower force estimation errors across a wide range of signal-to-noise ratios (SNR) and drift speeds compared to the PSD and AV methods. Notably, the HV method remains robust against drift, maintaining consistent uncertainty levels across the entire studied SNR and drift speed spectrum. We also explore the HV method using experimental MT data, where we find overall smaller force estimation errors compared to PSD and AV approaches. Overall, the HV method offers a robust method for achieving sub-pN resolution and precision in multiplexed MT measurements. Its potential extends to other SMFS techniques, presenting exciting opportunities for advancing our understanding of mechano-sensitivity and force generation in biological systems. Therefore, we provide a well-documented Python implementation of the HV method as an extension to the Tweezepy package. Statement of Signiﬁcance Single-molecule force spectroscopy techniques are vital for studying the mechanics and conformations of bio-macromolecules under external forces. Multiplexed magnetic tweezers (MTs) excel in applying forces ≤ 1 pN, which are critical for examining non-covalent interactions and regulatory changes at the single-molecule level. Precise and reliable force calibration is essential for these measurements. In this study, we present a new force calibration method for multiplexed MTs using Hadamard variance (HV) based on thermal motion. The HV method shows similar or even higher precision and accuracy to established techniques like power spectral density and Allan variance. Most significantly, it is drift-invariant, maintaining consistent performance across varying experimental conditions. This robustness against drift ensures reliable force application and measurements at sub-pN resolution."
+        },
+        {
+          "paperId": "6af3d0d7a1b6d161216c2ba078602a394efdfc46",
+          "externalIds": {
+            "MAG": "3108929848",
+            "PubMedCentral": "7729015",
+            "DOI": "10.3389/fchem.2020.600918",
+            "CorpusId": 227172050,
+            "PubMed": "33330393"
+          },
+          "url": "https://www.semanticscholar.org/paper/6af3d0d7a1b6d161216c2ba078602a394efdfc46",
+          "title": "Ultrahigh Adhesion Force Between Silica-Binding Peptide SB7 and Glass Substrate Studied by Single-Molecule Force Spectroscopy and Molecular Dynamic Simulation",
+          "venue": "Frontiers in Chemistry",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://www.frontiersin.org/articles/10.3389/fchem.2020.600918/pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC7729015, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-11-27",
+          "journal": {
+            "name": "Frontiers in Chemistry",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "2144504822",
+              "name": "Xiaoxu Zhang"
+            },
+            {
+              "authorId": "2130344287",
+              "name": "Jialin Chen"
+            },
+            {
+              "authorId": "2053810263",
+              "name": "Enci Li"
+            },
+            {
+              "authorId": "7402995",
+              "name": "Chunguang Hu"
+            },
+            {
+              "authorId": "37135519",
+              "name": "S. Luo"
+            },
+            {
+              "authorId": "49640763",
+              "name": "Chengzhi He"
+            }
+          ],
+          "abstract": "Many proteins and peptides have been identified to effectively and specifically bind on certain surfaces such as silica, polystyrene and titanium dioxide. It is of great interest, in many areas such as enzyme immobilization, surface functionalization and nanotechnology, to understand how these proteins/peptides bind to solid surfaces. Here we use single-molecule force spectroscopy (SMFS) based on atomic force microscopy to directly measure the adhesion force between a silica-binding peptide SB7 and glass surface at single molecule level. SMFS results show that the adhesion force of a single SB7 detaching from the glass surface distributes in two populations at ~220 pN and 610 pN, which is higher than the unfolding forces of most mechanically stable proteins and the unbinding forces of most stable protein-protein interactions. Molecular dynamics simulation reveals that the electrostatic interactions between positively charged arginine residues and the silica surface dominates the binding of SB7 on silica. Our study provides experimental evidence and molecular mechanism at the single-molecule level for the SB7-based immobilization of proteins on silica-based surface, which is able to withstand high mechanical forces, making it an ideal fusion tag for silica surface immobilization or peptide-base adhesive materials."
+        },
+        {
+          "paperId": "565b51e82373f576a713fb2da568023b566c47b3",
+          "externalIds": {
+            "DOI": "10.1101/2025.08.27.672562",
+            "CorpusId": 282316674
+          },
+          "url": "https://www.semanticscholar.org/paper/565b51e82373f576a713fb2da568023b566c47b3",
+          "title": "Multi-barrier unfolding of the double-knotted protein, TrmD–Tm1570, revealed by single-molecule force spectroscopy and molecular dynamics",
+          "venue": "bioRxiv",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.08.27.672562?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.08.27.672562, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2026-02-16",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "32254249",
+              "name": "Fernando Bruno da Silva"
+            },
+            {
+              "authorId": "10666277",
+              "name": "S. Niewieczerzał"
+            },
+            {
+              "authorId": "146982495",
+              "name": "I. Lewandowska"
+            },
+            {
+              "authorId": "2387349016",
+              "name": "Mateusz Fortunka"
+            },
+            {
+              "authorId": "2223594499",
+              "name": "Maciej Sikora"
+            },
+            {
+              "authorId": "2225837122",
+              "name": "Laura-Marie Silbermann"
+            },
+            {
+              "authorId": "2238567570",
+              "name": "K. Tych"
+            },
+            {
+              "authorId": "2290287970",
+              "name": "Joanna I. Sulkowska"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "e8195d8cc7755ea56d073f44ed28632d93e5f8f1",
+          "externalIds": {
+            "DOI": "10.1039/d2cc01350a",
+            "CorpusId": 249520761,
+            "PubMed": "35678696"
+          },
+          "url": "https://www.semanticscholar.org/paper/e8195d8cc7755ea56d073f44ed28632d93e5f8f1",
+          "title": "Molecular interpretation of single-molecule force spectroscopy experiments with computational approaches.",
+          "venue": "Chemical Communications",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://hal.science/hal-03826637/file/rsc-articletemplate.pdf",
+            "status": "GREEN",
+            "license": "other-oa",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1039/d2cc01350a?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1039/d2cc01350a, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-06-09",
+          "journal": {
+            "name": "Chemical communications"
+          },
+          "authors": [
+            {
+              "authorId": "6210083",
+              "name": "Guillaume Stirnemann"
+            }
+          ],
+          "abstract": "Single molecule force-spectroscopy techniques have granted access to unprecedented molecular-scale details about biochemical and biological mechanisms. However, the interpretation of the experimental data is often challenging. Computational and simulation approaches (all-atom steered MD simulations in particular) are key to provide molecular details about the associated mechanisms, to help test different hypotheses and to predict experimental results. In this review, particular recent efforts directed towards the molecular interpretation of single-molecule force spectroscopy experiments on proteins and protein-related systems (often in close collaboration with experimental groups) will be presented. These results will be discussed in the broader context of the field, highlighting the recent achievements and the ongoing challenges for computational biophysicists and biochemists. In particular, I will focus on the input gained from molecular simulations approaches to rationalize the origin of the unfolded protein elasticity and the protein conformational behavior under force, to understand how force denaturation differs from chemical, thermal or shear unfolding, and to unravel the molecular details of unfolding events for a variety of systems. I will also discuss the use of models based on Langevin dynamics on a 1-D free-energy surface to understand the effect of protein segmentation on the work exerted by a force, or, at the other end of the spectrum of computational techniques, how quantum calculations can help to understand the reactivity of disulfide bridges exposed to force."
+        },
+        {
+          "paperId": "724137f94da81655fe5b7e46e75c04270dcd91a8",
+          "externalIds": {
+            "MAG": "2584224000",
+            "DOI": "10.1016/J.BPJ.2016.11.1085",
+            "CorpusId": 102432169
+          },
+          "url": "https://www.semanticscholar.org/paper/724137f94da81655fe5b7e46e75c04270dcd91a8",
+          "title": "Complex Dynamics in Single Molecule Force Spectroscopy from Simple Simulation Models",
+          "venue": "",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "https://www.cell.com/article/S0006349516321154/pdf",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.BPJ.2016.11.1085?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.BPJ.2016.11.1085, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2017-02-03",
+          "journal": {
+            "name": "Biophysical Journal",
+            "volume": "112"
+          },
+          "authors": [
+            {
+              "authorId": "2082221081",
+              "name": "David de Sancho"
+            },
+            {
+              "authorId": "2931059",
+              "name": "R. Best"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            10,
+            29
+          ]
+        ],
+        "date-time": "2025-10-29T18:38:26Z",
+        "timestamp": 1761763106989,
+        "version": "3.37.3"
+      },
+      "reference-count": 62,
+      "publisher": "IOP Publishing",
+      "issue": "2",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                18
+              ]
+            ],
+            "date-time": "2023-04-18T00:00:00Z",
+            "timestamp": 1681776000000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                4,
+                18
+              ]
+            ],
+            "date-time": "2023-04-18T00:00:00Z",
+            "timestamp": 1681776000000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://iopscience.iop.org/info/page/text-and-data-mining"
+        }
+      ],
+      "funder": [
+        {
+          "name": "Frankfurt Institute of Advanced Studies"
+        },
+        {
+          "name": "Center for Scientiﬁc Computing of the Goethe University"
+        },
+        {
+          "name": "LOEWE Center for Multiscale Modelling in Life Sciences of the state of Hesse"
+        },
+        {
+          "DOI": "10.13039/100000893",
+          "name": "Simons Foundation",
+          "doi-asserted-by": "crossref",
+          "id": [
+            {
+              "id": "10.13039/100000893",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        },
+        {
+          "name": "International Max Planck Research School on Cellular Biophysics"
+        },
+        {
+          "DOI": "10.13039/501100023739",
+          "name": "Jülich Supercomputing Centre",
+          "doi-asserted-by": "crossref",
+          "id": [
+            {
+              "id": "10.13039/501100023739",
+              "id-type": "DOI",
+              "asserted-by": "crossref"
+            }
+          ]
+        },
+        {
+          "name": "CRC1507"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "iopscience.iop.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Mach. Learn.: Sci. Technol."
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            6,
+            1
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>Single-molecule force spectroscopy (smFS) is a powerful approach to studying molecular self-organization. However, the coupling of the molecule with the ever-present experimental device introduces artifacts, that complicate the interpretation of these experiments. Performing statistical inference to learn hidden molecular properties is challenging because these measurements produce non-Markovian time series, and even minimal models lead to intractable likelihoods. To overcome these challenges, we developed a computational framework built on novel statistical methods called simulation-based inference (SBI). SBI enabled us to directly estimate the Bayesian posterior, and extract reduced quantitative models from smFS, by encoding a mechanistic model into a simulator in combination with probabilistic deep learning. Using synthetic data, we could systematically disentangle the measurement of hidden molecular properties from experimental artifacts. The integration of physical models with machine-learning density estimation is general, transparent, easy to use, and broadly applicable to other types of biophysical experiments.</jats:p>",
+      "DOI": "10.1088/2632-2153/acc8b8",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            3,
+            29
+          ]
+        ],
+        "date-time": "2023-03-29T22:38:58Z",
+        "timestamp": 1680129538000
+      },
+      "page": "025009",
+      "update-policy": "https://doi.org/10.1088/crossmark-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 4,
+      "title": [
+        "Simulation-based inference of single-molecule force spectroscopy"
+      ],
+      "prefix": "10.1088",
+      "volume": "4",
+      "author": [
+        {
+          "given": "Lars",
+          "family": "Dingeldein",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Pilar",
+          "family": "Cossio",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0884-0402",
+          "authenticated-orcid": true,
+          "given": "Roberto",
+          "family": "Covino",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "266",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            18
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "mlstacc8b8bib1",
+          "doi-asserted-by": "publisher",
+          "first-page": "110",
+          "DOI": "10.1016/j.sbi.2017.06.007",
+          "article-title": "Structural biology outside the box-inside the cell",
+          "volume": "46",
+          "author": "Plitzko",
+          "year": "2017",
+          "journal-title": "Curr. Opin. Struct. Biol."
+        },
+        {
+          "key": "mlstacc8b8bib2",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.jmb.2021.167207",
+          "article-title": "Single-molecule force spectroscopy of protein folding",
+          "volume": "433",
+          "author": "Petrosyan",
+          "year": "2021",
+          "journal-title": "J. Mol. Biol."
+        },
+        {
+          "key": "mlstacc8b8bib3",
+          "doi-asserted-by": "publisher",
+          "first-page": "2784",
+          "DOI": "10.1038/s41467-022-30448-8",
+          "article-title": "Templated folding of the RTX domain of the bacterial toxin adenylate cyclase revealed by single molecule force spectroscopy",
+          "volume": "13",
+          "author": "Wang",
+          "year": "2022",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "mlstacc8b8bib4",
+          "doi-asserted-by": "publisher",
+          "first-page": "2828",
+          "DOI": "10.1038/s41467-020-16702-x",
+          "article-title": "DNA origami-based single-molecule force spectroscopy elucidates RNA Polymerase III pre-initiation complex stability",
+          "volume": "11",
+          "author": "Kramm",
+          "year": "2020",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "mlstacc8b8bib5",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/ncomms10848",
+          "article-title": "Subnanometre enzyme mechanics probed by single-molecule force spectroscopy",
+          "volume": "7",
+          "author": "Pelz",
+          "year": "2016",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "mlstacc8b8bib6",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1038/s43586-021-00021-6",
+          "article-title": "Optical tweezers in single-molecule biophysics",
+          "volume": "1",
+          "author": "Bustamante",
+          "year": "2021",
+          "journal-title": "Nat. Rev. Methods Primers"
+        },
+        {
+          "key": "mlstacc8b8bib7",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1073/pnas.2010213118",
+          "article-title": "Unfolded and intermediate states of PrP play a key role in the mechanism of action of an antiprion chaperone",
+          "volume": "118",
+          "author": "Petrosyan",
+          "year": "2021",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib8",
+          "doi-asserted-by": "publisher",
+          "first-page": "3540",
+          "DOI": "10.1021/ja5119368",
+          "article-title": "Dynamics of equilibrium folding and unfolding transitions of titin immunoglobulin domain under constant forces",
+          "volume": "137",
+          "author": "Chen",
+          "year": "2015",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "mlstacc8b8bib9",
+          "doi-asserted-by": "publisher",
+          "first-page": "4525",
+          "DOI": "10.1038/ncomms5525",
+          "article-title": "Force-dependent conformational switch of α-catenin controls vinculin binding",
+          "volume": "5",
+          "author": "Yao",
+          "year": "2014",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "mlstacc8b8bib10",
+          "doi-asserted-by": "publisher",
+          "first-page": "65",
+          "DOI": "10.1111/boc.201700061",
+          "article-title": "Mechanical responses of the mechanosensitive unstructured domains in cardiac titin",
+          "volume": "110",
+          "author": "Pang",
+          "year": "2018",
+          "journal-title": "Biol. Cell"
+        },
+        {
+          "key": "mlstacc8b8bib11",
+          "doi-asserted-by": "publisher",
+          "first-page": "4159",
+          "DOI": "10.1039/C9NR09054A",
+          "article-title": "A single-molecule study reveals novel rod-like structures formed by a thrombin aptamer repeat sequence",
+          "volume": "12",
+          "author": "Liu",
+          "year": "2020",
+          "journal-title": "Nanoscale"
+        },
+        {
+          "key": "mlstacc8b8bib12",
+          "doi-asserted-by": "publisher",
+          "first-page": "1541",
+          "DOI": "10.1016/S0006-3495(97)78802-7",
+          "article-title": "Dynamic strength of molecular adhesion bonds",
+          "volume": "72",
+          "author": "Evans",
+          "year": "1997",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "mlstacc8b8bib13",
+          "doi-asserted-by": "publisher",
+          "first-page": "5",
+          "DOI": "10.1016/S0006-3495(03)74449-X",
+          "article-title": "Kinetics from nonequilibrium single-molecule pulling experiments",
+          "volume": "85",
+          "author": "Hummer",
+          "year": "2003",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "mlstacc8b8bib14",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.96.108101",
+          "article-title": "Intrinsic rates and activation free energies from single-molecule pulling experiments",
+          "volume": "96",
+          "author": "Dudko",
+          "year": "2006",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "mlstacc8b8bib15",
+          "doi-asserted-by": "publisher",
+          "first-page": "832",
+          "DOI": "10.1016/j.bpj.2016.05.054",
+          "article-title": "Kinetic ductility and force-spike resistance of proteins from single-molecule force spectroscopy",
+          "volume": "111",
+          "author": "Cossio",
+          "year": "2016",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "mlstacc8b8bib16",
+          "doi-asserted-by": "publisher",
+          "first-page": "1836",
+          "DOI": "10.1039/C0CP01528H",
+          "article-title": "Influence of pulling handles and device stiffness in single-molecule force spectroscopy",
+          "volume": "13",
+          "author": "Maitra",
+          "year": "2011",
+          "journal-title": "Phys. Chem. Chem. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib17",
+          "doi-asserted-by": "publisher",
+          "first-page": "13573",
+          "DOI": "10.1073/pnas.1202946109",
+          "article-title": "Interpreting the widespread nonlinear force spectra of intermolecular bonds",
+          "volume": "109",
+          "author": "Friddle",
+          "year": "2012",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib18",
+          "doi-asserted-by": "publisher",
+          "first-page": "L19",
+          "DOI": "10.1016/j.bpj.2013.09.023",
+          "article-title": "Kinetics and energetics of biomolecular folding and binding",
+          "volume": "105",
+          "author": "Pierse",
+          "year": "2013",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "mlstacc8b8bib19",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.4904895",
+          "article-title": "Communication: does force spectroscopy of biomolecules probe their intrinsic dynamic properties?",
+          "volume": "141",
+          "author": "Makarov",
+          "year": "2014",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib20",
+          "doi-asserted-by": "publisher",
+          "first-page": "4500",
+          "DOI": "10.1073/pnas.1214051110",
+          "article-title": "From mechanical folding trajectories to intrinsic energy landscapes of biopolymers",
+          "volume": "110",
+          "author": "Hinczewski",
+          "year": "2013",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib21",
+          "doi-asserted-by": "publisher",
+          "first-page": "14248",
+          "DOI": "10.1073/pnas.1519633112",
+          "article-title": "On artifacts in single-molecule force spectroscopy",
+          "volume": "112",
+          "author": "Cossio",
+          "year": "2015",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib22",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.5004767",
+          "article-title": "Transition paths in single-molecule force spectroscopy",
+          "volume": "148",
+          "author": "Cossio",
+          "year": "2018",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib23",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.5118362",
+          "article-title": "Molecular free energy profiles from force spectroscopy experiments by inversion of observed committors",
+          "volume": "151",
+          "author": "Covino",
+          "year": "2019",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib24",
+          "doi-asserted-by": "publisher",
+          "first-page": "27116",
+          "DOI": "10.1073/pnas.2008307117",
+          "article-title": "Broad distributions of transition-path times are fingerprints of multidimensionality of the underlying free energy landscapes",
+          "volume": "117",
+          "author": "Satija",
+          "year": "2020",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib25",
+          "doi-asserted-by": "publisher",
+          "first-page": "512",
+          "DOI": "10.1126/science.1207598",
+          "article-title": "The complex folding network of single calmodulin molecules",
+          "volume": "334",
+          "author": "Stigler",
+          "year": "2011",
+          "journal-title": "Science"
+        },
+        {
+          "key": "mlstacc8b8bib26",
+          "doi-asserted-by": "publisher",
+          "first-page": "2288",
+          "DOI": "10.1016/j.bpj.2012.01.063",
+          "article-title": "A Bayesian inference scheme to extract diffusivity and potential fields from confined single-molecule trajectories",
+          "volume": "102",
+          "author": "Türkcan",
+          "year": "2012",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "mlstacc8b8bib27",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.5144523",
+          "article-title": "Inferring effective forces for Langevin dynamics using Gaussian processes",
+          "volume": "152",
+          "author": "Bryan",
+          "year": "2020",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib28",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.isci.2022.104731",
+          "article-title": "Inferring potential landscapes from noisy trajectories of particles within an optical feedback trap",
+          "volume": "25",
+          "author": "Bryan",
+          "year": "2022",
+          "journal-title": "iScience"
+        },
+        {
+          "key": "mlstacc8b8bib29",
+          "doi-asserted-by": "publisher",
+          "first-page": "945",
+          "DOI": "10.1126/science.aah7124",
+          "article-title": "Hidden dynamics in the unfolding of individual bacteriorhodopsin proteins",
+          "volume": "355",
+          "author": "Yu",
+          "year": "2017",
+          "journal-title": "Science"
+        },
+        {
+          "key": "mlstacc8b8bib30",
+          "doi-asserted-by": "publisher",
+          "first-page": "6190",
+          "DOI": "10.1073/pnas.0511048103",
+          "article-title": "Nanomechanical measurements of the sequence-dependent folding landscapes of single nucleic acid hairpins",
+          "volume": "103",
+          "author": "Woodside",
+          "year": "2006",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib31",
+          "doi-asserted-by": "publisher",
+          "first-page": "30055",
+          "DOI": "10.1073/pnas.1912789117",
+          "article-title": "The frontier of simulation-based inference",
+          "volume": "117",
+          "author": "Cranmer",
+          "year": "2020",
+          "journal-title": "Proc. Natl Acad. Sci. USA"
+        },
+        {
+          "key": "mlstacc8b8bib32",
+          "first-page": "pp 343",
+          "article-title": "Benchmarking simulation-based inference",
+          "author": "Lueckmann",
+          "year": "2021"
+        },
+        {
+          "key": "mlstacc8b8bib33",
+          "first-page": "pp 1036",
+          "article-title": "Fast ɛ-free inference of simulation models with Bayesian conditional density estimation",
+          "author": "Papamakarios",
+          "year": "2016"
+        },
+        {
+          "key": "mlstacc8b8bib34",
+          "doi-asserted-by": "publisher",
+          "first-page": "193",
+          "DOI": "10.1038/s43588-022-00214-3",
+          "article-title": "A flexible Bayesian framework for unbiased estimation of timescales",
+          "volume": "2",
+          "author": "Zeraati",
+          "year": "2022",
+          "journal-title": "Nat. Comput. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib35",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/2632-2153/ac6286",
+          "article-title": "Simulation-based inference with approximately correct parameters via maximum entropy",
+          "volume": "3",
+          "author": "Barrett",
+          "year": "2022",
+          "journal-title": "Mach. Learn.: Sci. Technol."
+        },
+        {
+          "key": "mlstacc8b8bib36",
+          "doi-asserted-by": "publisher",
+          "first-page": "305",
+          "DOI": "10.1038/s42254-021-00305-6",
+          "article-title": "Simulation-based inference in particle physics",
+          "volume": "3",
+          "author": "Brehmer",
+          "year": "2021",
+          "journal-title": "Nat. Rev. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib37",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.127.241103",
+          "article-title": "Real-time gravitational wave science with neural posterior estimation",
+          "volume": "127",
+          "author": "Dax",
+          "year": "2021",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "mlstacc8b8bib38",
+          "doi-asserted-by": "publisher",
+          "first-page": "03LT01",
+          "DOI": "10.1088/2632-2153/abfaed",
+          "article-title": "Complete parameter inference for gw150914 using deep learning",
+          "volume": "2",
+          "author": "Green",
+          "year": "2021",
+          "journal-title": "Mach. Learn.: Sci. Technol."
+        },
+        {
+          "article-title": "Robust simulation-based inference in cosmology with Bayesian neural networks",
+          "year": "2022",
+          "author": "Lemos",
+          "key": "mlstacc8b8bib39"
+        },
+        {
+          "key": "mlstacc8b8bib40",
+          "doi-asserted-by": "publisher",
+          "first-page": "04LT04",
+          "DOI": "10.1088/2632-2153/ac98f4",
+          "article-title": "Digs: deep inference of galaxy spectra with neural posterior estimation",
+          "volume": "3",
+          "author": "Khullar",
+          "year": "2022",
+          "journal-title": "Mach. Learn.: Sci. Technol."
+        },
+        {
+          "key": "mlstacc8b8bib41",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/1361-6587/ac828d",
+          "article-title": "Normalizing flows for likelihood-free inference with fusion simulations",
+          "volume": "64",
+          "author": "Furia",
+          "year": "2022",
+          "journal-title": "Plasma Phys. Control. Fusion"
+        },
+        {
+          "key": "mlstacc8b8bib42",
+          "doi-asserted-by": "publisher",
+          "first-page": "64",
+          "DOI": "10.1186/s13059-021-02289-z",
+          "article-title": "Addressing uncertainty in genome-scale metabolic model reconstruction and analysis",
+          "volume": "22",
+          "author": "Bernstein",
+          "year": "2021",
+          "journal-title": "Genome Biol."
+        },
+        {
+          "key": "mlstacc8b8bib43",
+          "first-page": "pp 1290",
+          "article-title": "Flexible statistical inference for mechanistic models of neural dynamics",
+          "author": "Lueckmann",
+          "year": "2017"
+        },
+        {
+          "key": "mlstacc8b8bib44",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.7554/eLife.56261",
+          "article-title": "Training deep neural density estimators to identify mechanistic models of neural dynamics",
+          "volume": "9",
+          "author": "Gonçalves",
+          "year": "2020",
+          "journal-title": "eLife"
+        },
+        {
+          "key": "mlstacc8b8bib45",
+          "doi-asserted-by": "publisher",
+          "first-page": "21441",
+          "DOI": "10.1073/pnas.1015661107",
+          "article-title": "Free energy profiles from single-molecule pulling experiments",
+          "volume": "107",
+          "author": "Hummer",
+          "year": "2010",
+          "journal-title": "Proc. Natl Acad. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib46",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1371/journal.pcbi.1005659",
+          "article-title": "OpenMM 7: rapid development of high performance algorithms for molecular dynamics",
+          "volume": "13",
+          "author": "Eastman",
+          "year": "2017",
+          "journal-title": "PLoS Comput. Biol."
+        },
+        {
+          "key": "mlstacc8b8bib47",
+          "doi-asserted-by": "publisher",
+          "first-page": "2505",
+          "DOI": "10.21105/joss.02505",
+          "article-title": "SBI: a toolkit for simulation-based inference",
+          "volume": "5",
+          "author": "Tejero-Cantero",
+          "year": "2020",
+          "journal-title": "J. Open Source Softw."
+        },
+        {
+          "article-title": "Mixture density networks",
+          "year": "1994",
+          "author": "Bishop",
+          "key": "mlstacc8b8bib48"
+        },
+        {
+          "key": "mlstacc8b8bib49",
+          "first-page": "pp 2404",
+          "article-title": "Automatic posterior transformation for likelihood-free inference",
+          "author": "Greenberg",
+          "year": "2019"
+        },
+        {
+          "key": "mlstacc8b8bib50",
+          "doi-asserted-by": "publisher",
+          "first-page": "3964",
+          "DOI": "10.1109/TPAMI.2020.2992934",
+          "article-title": "Normalizing flows: an introduction and review of current methods",
+          "volume": "43",
+          "author": "Kobyzev",
+          "year": "2021",
+          "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell."
+        },
+        {
+          "key": "mlstacc8b8bib51",
+          "article-title": "Neural spline flows",
+          "volume": "vol 32",
+          "author": "Durkan",
+          "year": "2019"
+        },
+        {
+          "key": "mlstacc8b8bib52",
+          "doi-asserted-by": "publisher",
+          "first-page": "357",
+          "DOI": "10.1038/s41586-020-2649-2",
+          "article-title": "Array programming with NumPy",
+          "volume": "585",
+          "author": "Harris",
+          "year": "2020",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "mlstacc8b8bib53",
+          "doi-asserted-by": "publisher",
+          "first-page": "261",
+          "DOI": "10.1038/s41592-019-0686-2",
+          "article-title": "SciPy 1.0: fundamental algorithms for scientific computing in Python",
+          "volume": "17",
+          "author": "Virtanen",
+          "year": "2020",
+          "journal-title": "Nat. Methods"
+        },
+        {
+          "key": "mlstacc8b8bib54",
+          "first-page": "pp 1",
+          "article-title": "Numba: a LLVM-based python JIT compiler",
+          "author": "Lam",
+          "year": "2015"
+        },
+        {
+          "key": "mlstacc8b8bib55",
+          "doi-asserted-by": "publisher",
+          "first-page": "31",
+          "DOI": "10.1109/MCSE.2010.118",
+          "article-title": "Cython: the best of both worlds",
+          "volume": "13",
+          "author": "Behnel",
+          "year": "2010",
+          "journal-title": "Comput. Sci. Eng."
+        },
+        {
+          "key": "mlstacc8b8bib56",
+          "article-title": "Pytorch: an imperative style, high-performance deep learning library",
+          "volume": "vol 32",
+          "author": "Paszke",
+          "year": "2019"
+        },
+        {
+          "key": "mlstacc8b8bib57",
+          "doi-asserted-by": "publisher",
+          "first-page": "90",
+          "DOI": "10.1109/MCSE.2007.55",
+          "article-title": "Matplotlib: a 2D graphics environment",
+          "volume": "9",
+          "author": "Hunter",
+          "year": "2007",
+          "journal-title": "Comput. Sci. Eng."
+        },
+        {
+          "year": "2002",
+          "author": "Galassi",
+          "key": "mlstacc8b8bib58"
+        },
+        {
+          "key": "mlstacc8b8bib59",
+          "doi-asserted-by": "publisher",
+          "first-page": "34",
+          "DOI": "10.1088/1367-2630/7/1/034",
+          "article-title": "Position-dependent diffusion coefficients and free energies from Bayesian analysis of equilibrium and replica molecular dynamics simulations",
+          "volume": "7",
+          "author": "Hummer",
+          "year": "2005",
+          "journal-title": "New J. Phys."
+        },
+        {
+          "key": "mlstacc8b8bib60",
+          "doi-asserted-by": "publisher",
+          "first-page": "102",
+          "DOI": "10.1038/s43588-022-00197-1",
+          "article-title": "Diffraction-limited molecular cluster quantification with Bayesian nonparametrics",
+          "volume": "2",
+          "author": "Bryan ISathyV",
+          "year": "2022",
+          "journal-title": "Nat. Comput. Sci."
+        },
+        {
+          "key": "mlstacc8b8bib61",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevResearch.4.033097",
+          "article-title": "Reversible bond kinetics from single-molecule force spectroscopy experiments close to equilibrium",
+          "volume": "4",
+          "author": "Bullerjahn",
+          "year": "2022",
+          "journal-title": "Phys. Rev. Res."
+        },
+        {
+          "article-title": "Simulation-based inference for single-molecule force-spectroscopy: code and data Zenodo",
+          "year": "2022",
+          "author": "Dingeldein",
+          "key": "mlstacc8b8bib62"
+        }
+      ],
+      "container-title": [
+        "Machine Learning: Science and Technology"
+      ],
+      "original-title": [],
+      "link": [
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8",
+          "content-type": "text/html",
+          "content-version": "am",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+          "content-type": "application/pdf",
+          "content-version": "am",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+          "content-type": "application/pdf",
+          "content-version": "am",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+          "content-type": "application/pdf",
+          "content-version": "am",
+          "intended-application": "similarity-checking"
+        },
+        {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8/pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            3
+          ]
+        ],
+        "date-time": "2023-07-03T11:23:16Z",
+        "timestamp": 1688383396000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://iopscience.iop.org/article/10.1088/2632-2153/acc8b8"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            18
+          ]
+        ]
+      },
+      "references-count": 62,
+      "journal-issue": {
+        "issue": "2",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              4,
+              18
+            ]
+          ]
+        },
+        "published-print": {
+          "date-parts": [
+            [
+              2023,
+              6,
+              1
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1088/2632-2153/acc8b8",
+      "relation": {},
+      "ISSN": [
+        "2632-2153"
+      ],
+      "issn-type": [
+        {
+          "type": "electronic",
+          "value": "2632-2153"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4,
+            18
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Simulation-based inference of single-molecule force spectroscopy",
+          "name": "article_title",
+          "label": "Article Title"
+        },
+        {
+          "value": "Machine Learning: Science and Technology",
+          "name": "journal_title",
+          "label": "Journal Title"
+        },
+        {
+          "value": "paper",
+          "name": "article_type",
+          "label": "Article Type"
+        },
+        {
+          "value": "© 2023 The Author(s). Published by IOP Publishing Ltd",
+          "name": "copyright_information",
+          "label": "Copyright Information"
+        },
+        {
+          "value": "2022-12-06",
+          "name": "date_received",
+          "label": "Date Received",
+          "group": {
+            "name": "publication_dates",
+            "label": "Publication dates"
+          }
+        },
+        {
+          "value": "2023-03-29",
+          "name": "date_accepted",
+          "label": "Date Accepted",
+          "group": {
+            "name": "publication_dates",
+            "label": "Publication dates"
+          }
+        },
+        {
+          "value": "2023-04-18",
+          "name": "date_epub",
+          "label": "Online publication date",
+          "group": {
+            "name": "publication_dates",
+            "label": "Publication dates"
+          }
+        }
+      ]
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-0b4d660cf20540cb.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-0b4d660cf20540cb.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-0b4d660cf20540cb.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "ce9d5d9bc3999f7f799be6ac32ff147263b60c97bb628f2680005161fc26b6bf",
+    "chunk_count": 29,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

@@ -1,0 +1,366 @@
+{
+  "paper_id": "sha256-d79239433422860d",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/dePablo 2019 JChemPhys - 1CPN- A coarse-grained multi-scale model of chromatin.pdf",
+  "pdf_sha256": "d79239433422860d7a708e64ae5ae912e807c2fd757e44645d78d590a2469c61",
+  "filename": "dePablo 2019 JChemPhys - 1CPN- A coarse-grained multi-scale model of chromatin.pdf",
+  "item_type": "article",
+  "title_query": "1CPN- A coarse-grained multi-scale model of chromatin",
+  "filename_hints": {
+    "year_hint": 2019,
+    "venue_hint": "",
+    "prefix": "dePablo 2019 JChemPhys"
+  },
+  "doi_candidates": [
+    "10.1063/1.5092976"
+  ],
+  "date_indexed": "2026-04-17T03:31:35.601051+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "1CPN- A coarse-grained multi-scale model of chromatin",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "f6a9c4efa90464c55c4972117acbdbf7cacc11b1",
+      "externalIds": {
+        "MAG": "2948526042",
+        "DOI": "10.1063/1.5092976",
+        "CorpusId": 182948400,
+        "PubMed": "31176328"
+      },
+      "url": "https://www.semanticscholar.org/paper/f6a9c4efa90464c55c4972117acbdbf7cacc11b1",
+      "title": "1CPN: A coarse-grained multi-scale model of chromatin.",
+      "venue": "Journal of Chemical Physics",
+      "year": 2019,
+      "openAccessPdf": {
+        "url": "https://www.osti.gov/biblio/1557992",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1063/1.5092976?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1063/1.5092976, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2019-06-04",
+      "journal": {
+        "name": "The Journal of chemical physics",
+        "pages": "\n          215102\n        ",
+        "volume": "150 21"
+      },
+      "authors": [
+        {
+          "authorId": "1879001",
+          "name": "Joshua Lequieu"
+        },
+        {
+          "authorId": "2145091635",
+          "name": "A. Córdoba"
+        },
+        {
+          "authorId": "50114130",
+          "name": "Joshua Moller"
+        },
+        {
+          "authorId": "2058945",
+          "name": "J. D. de Pablo"
+        }
+      ],
+      "abstract": "A central question in epigenetics is how histone modifications influence the 3D structure of eukaryotic genomes and, ultimately, how this 3D structure is manifested in gene expression. The wide range of length scales that influence the 3D genome structure presents important challenges; epigenetic modifications to histones occur on scales of angstroms, yet the resulting effects of these modifications on genome structure can span micrometers. There is a scarcity of computational tools capable of providing a mechanistic picture of how molecular information from individual histones is propagated up to large regions of the genome. In this work, a new molecular model of chromatin is presented that provides such a picture. This new model, referred to as 1CPN, is structured around a rigorous multiscale approach, whereby free energies from an established and extensively validated model of the nucleosome are mapped onto a reduced coarse-grained topology. As such, 1CPN incorporates detailed physics from the nucleosome, such as histone modifications and DNA sequence, while maintaining the computational efficiency that is required to permit kilobase-scale simulations of genomic DNA. The 1CPN model reproduces the free energies and dynamics of both single nucleosomes and short chromatin fibers, and it is shown to be compatible with recently developed models of the linker histone. It is applied here to examine the effects of the linker DNA on the free energies of chromatin assembly and to demonstrate that these free energies are strongly dependent on the linker DNA length, pitch, and even DNA sequence. The 1CPN model is implemented in the LAMMPS simulation package and is distributed freely for public use."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "f6a9c4efa90464c55c4972117acbdbf7cacc11b1",
+        "title": "1CPN: A coarse-grained multi-scale model of chromatin.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2019,
+        "candidate_year": 2019,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1063/1.5092976"
+    ],
+    "matching_extracted_doi": "10.1063/1.5092976",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "f6a9c4efa90464c55c4972117acbdbf7cacc11b1",
+          "externalIds": {
+            "MAG": "2948526042",
+            "DOI": "10.1063/1.5092976",
+            "CorpusId": 182948400,
+            "PubMed": "31176328"
+          },
+          "url": "https://www.semanticscholar.org/paper/f6a9c4efa90464c55c4972117acbdbf7cacc11b1",
+          "title": "1CPN: A coarse-grained multi-scale model of chromatin.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "https://www.osti.gov/biblio/1557992",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1063/1.5092976?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1063/1.5092976, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2019-06-04",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "pages": "\n          215102\n        ",
+            "volume": "150 21"
+          },
+          "authors": [
+            {
+              "authorId": "1879001",
+              "name": "Joshua Lequieu"
+            },
+            {
+              "authorId": "2145091635",
+              "name": "A. Córdoba"
+            },
+            {
+              "authorId": "50114130",
+              "name": "Joshua Moller"
+            },
+            {
+              "authorId": "2058945",
+              "name": "J. D. de Pablo"
+            }
+          ],
+          "abstract": "A central question in epigenetics is how histone modifications influence the 3D structure of eukaryotic genomes and, ultimately, how this 3D structure is manifested in gene expression. The wide range of length scales that influence the 3D genome structure presents important challenges; epigenetic modifications to histones occur on scales of angstroms, yet the resulting effects of these modifications on genome structure can span micrometers. There is a scarcity of computational tools capable of providing a mechanistic picture of how molecular information from individual histones is propagated up to large regions of the genome. In this work, a new molecular model of chromatin is presented that provides such a picture. This new model, referred to as 1CPN, is structured around a rigorous multiscale approach, whereby free energies from an established and extensively validated model of the nucleosome are mapped onto a reduced coarse-grained topology. As such, 1CPN incorporates detailed physics from the nucleosome, such as histone modifications and DNA sequence, while maintaining the computational efficiency that is required to permit kilobase-scale simulations of genomic DNA. The 1CPN model reproduces the free energies and dynamics of both single nucleosomes and short chromatin fibers, and it is shown to be compatible with recently developed models of the linker histone. It is applied here to examine the effects of the linker DNA on the free energies of chromatin assembly and to demonstrate that these free energies are strongly dependent on the linker DNA length, pitch, and even DNA sequence. The 1CPN model is implemented in the LAMMPS simulation package and is distributed freely for public use."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1063/1.5092976",
+      "DOI": "10.1063/1.5092976",
+      "type": "journal-article",
+      "issue": "21",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-9480-0989",
+          "authenticated-orcid": false,
+          "given": "Joshua",
+          "family": "Lequieu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8775-5251",
+          "authenticated-orcid": false,
+          "given": "Andrés",
+          "family": "Córdoba",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+            }
+          ]
+        },
+        {
+          "given": "Joshua",
+          "family": "Moller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3526-516X",
+          "authenticated-orcid": false,
+          "given": "Juan J.",
+          "family": "de Pablo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+            },
+            {
+              "name": "Materials Science Division, Argonne National Laboratory 2 , Argonne, Illinois 60439, USA"
+            }
+          ]
+        }
+      ],
+      "ISSN": [
+        "0021-9606",
+        "1089-7690"
+      ],
+      "container-title": [
+        "The Journal of Chemical Physics"
+      ],
+      "title": [
+        "1CPN: A coarse-grained multi-scale model of chromatin"
+      ],
+      "publisher": "AIP Publishing",
+      "abstract": "<jats:p>A central question in epigenetics is how histone modifications influence the 3D structure of eukaryotic genomes and, ultimately, how this 3D structure is manifested in gene expression. The wide range of length scales that influence the 3D genome structure presents important challenges; epigenetic modifications to histones occur on scales of angstroms, yet the resulting effects of these modifications on genome structure can span micrometers. There is a scarcity of computational tools capable of providing a mechanistic picture of how molecular information from individual histones is propagated up to large regions of the genome. In this work, a new molecular model of chromatin is presented that provides such a picture. This new model, referred to as 1CPN, is structured around a rigorous multiscale approach, whereby free energies from an established and extensively validated model of the nucleosome are mapped onto a reduced coarse-grained topology. As such, 1CPN incorporates detailed physics from the nucleosome, such as histone modifications and DNA sequence, while maintaining the computational efficiency that is required to permit kilobase-scale simulations of genomic DNA. The 1CPN model reproduces the free energies and dynamics of both single nucleosomes and short chromatin fibers, and it is shown to be compatible with recently developed models of the linker histone. It is applied here to examine the effects of the linker DNA on the free energies of chromatin assembly and to demonstrate that these free energies are strongly dependent on the linker DNA length, pitch, and even DNA sequence. The 1CPN model is implemented in the LAMMPS simulation package and is distributed freely for public use.</jats:p>",
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            4
+          ]
+        ]
+      },
+      "volume": "150"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1063/1.5092976",
+    "best_candidate_doi": "10.1063/1.5092976",
+    "crossref_attempts": [
+      {
+        "doi": "10.1063/1.5092976",
+        "source_region": "first_page",
+        "position": 220,
+        "context": "a ; Joshua Moller; Juan J. de Pablo  J. Chem. Phys. 150, 215102 (2019) https://doi.org/10.1063/1.5092976  CHORUS  View Online CrossMark Export Citation",
+        "priority_score": 0.83,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1063/1.5092976",
+          "DOI": "10.1063/1.5092976",
+          "type": "journal-article",
+          "issue": "21",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-9480-0989",
+              "authenticated-orcid": false,
+              "given": "Joshua",
+              "family": "Lequieu",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-8775-5251",
+              "authenticated-orcid": false,
+              "given": "Andrés",
+              "family": "Córdoba",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+                }
+              ]
+            },
+            {
+              "given": "Joshua",
+              "family": "Moller",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+                }
+              ]
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-3526-516X",
+              "authenticated-orcid": false,
+              "given": "Juan J.",
+              "family": "de Pablo",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute for Molecular Engineering, University of Chicago 1 , Chicago, Illinois 60637, USA"
+                },
+                {
+                  "name": "Materials Science Division, Argonne National Laboratory 2 , Argonne, Illinois 60439, USA"
+                }
+              ]
+            }
+          ],
+          "ISSN": [
+            "0021-9606",
+            "1089-7690"
+          ],
+          "container-title": [
+            "The Journal of Chemical Physics"
+          ],
+          "title": [
+            "1CPN: A coarse-grained multi-scale model of chromatin"
+          ],
+          "publisher": "AIP Publishing",
+          "abstract": "<jats:p>A central question in epigenetics is how histone modifications influence the 3D structure of eukaryotic genomes and, ultimately, how this 3D structure is manifested in gene expression. The wide range of length scales that influence the 3D genome structure presents important challenges; epigenetic modifications to histones occur on scales of angstroms, yet the resulting effects of these modifications on genome structure can span micrometers. There is a scarcity of computational tools capable of providing a mechanistic picture of how molecular information from individual histones is propagated up to large regions of the genome. In this work, a new molecular model of chromatin is presented that provides such a picture. This new model, referred to as 1CPN, is structured around a rigorous multiscale approach, whereby free energies from an established and extensively validated model of the nucleosome are mapped onto a reduced coarse-grained topology. As such, 1CPN incorporates detailed physics from the nucleosome, such as histone modifications and DNA sequence, while maintaining the computational efficiency that is required to permit kilobase-scale simulations of genomic DNA. The 1CPN model reproduces the free energies and dynamics of both single nucleosomes and short chromatin fibers, and it is shown to be compatible with recently developed models of the linker histone. It is applied here to examine the effects of the linker DNA on the free energies of chromatin assembly and to demonstrate that these free energies are strongly dependent on the linker DNA length, pitch, and even DNA sequence. The 1CPN model is implemented in the LAMMPS simulation package and is distributed freely for public use.</jats:p>",
+          "issued": {
+            "date-parts": [
+              [
+                2019,
+                6,
+                4
+              ]
+            ]
+          },
+          "volume": "150"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-d79239433422860d.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-d79239433422860d.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-d79239433422860d.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "9cf70cc5f86fa0abbe42bdf3ef75a42116cc44b485f7b30e36240dbf682bbba1",
+    "chunk_count": 51,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "maintenance": [
+    {
+      "action": "move",
+      "timestamp": "2026-04-22T04:46:35.409843+00:00",
+      "from_pdf_path": "/Users/brandani/Dropbox/documents/library/articles/for_sam/dePablo 2019 JChemPhys - 1CPN- A coarse-grained multi-scale model of chromatin.pdf",
+      "to_pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/dePablo 2019 JChemPhys - 1CPN- A coarse-grained multi-scale model of chromatin.pdf"
+    }
+  ],
+  "doi_candidate_details": [
+    {
+      "doi": "10.1063/1.5092976",
+      "source_region": "first_page",
+      "position": 220,
+      "context": "a ; Joshua Moller; Juan J. de Pablo  J. Chem. Phys. 150, 215102 (2019) https://doi.org/10.1063/1.5092976  CHORUS  View Online CrossMark Export Citation",
+      "priority_score": 0.83
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:08:38.064767+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1063/1.5092976",
+    "score": 1.08
+  }
+}

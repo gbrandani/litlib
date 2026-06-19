@@ -1,0 +1,731 @@
+{
+  "paper_id": "sha256-6275906ac18181c4",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/DNA_mechanics/olson_1998_PNAS_DNA_deformability.pdf",
+  "pdf_sha256": "6275906ac18181c4efbde165116ebed4675b2fe31e708ea91210e603201cbdf5",
+  "filename": "olson_1998_PNAS_DNA_deformability.pdf",
+  "item_type": "article",
+  "title_query": "DNA sequence dependent deformability deduced from protein DNA crystal complexes",
+  "filename_hints": {
+    "year_hint": 1998,
+    "venue_hint": "proceedingsofthenationalacademyofsciences",
+    "prefix": "olson 1998 PNAS DNA deformability"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:15:42.230706+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "DNA sequence dependent deformability deduced from protein DNA crystal complexes",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "DNA deformability",
+        "status": "needs_manual_review",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:1998!=2025",
+          "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=researchsquare"
+        ],
+        "best_score": 0.96,
+        "candidate_count": 10
+      },
+      {
+        "query": "Proc. Natl. Acad. Sci. USA Vol. 95, pp. 11163 11168, September 1998 Biophysics",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:1998!=2017"
+        ],
+        "best_score": 0.0,
+        "candidate_count": 1
+      },
+      {
+        "query": "DNA sequence dependent deformability deduced from protein DNA crystal complexes",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 1.0,
+        "candidate_count": 10
+      }
+    ],
+    "best_candidate": {
+      "paperId": "85700a588a8c9dde66c2f53827e9686554175392",
+      "externalIds": {
+        "MAG": "2095994064",
+        "DOI": "10.1073/PNAS.95.19.11163",
+        "CorpusId": 21076442,
+        "PubMed": "9736707"
+      },
+      "url": "https://www.semanticscholar.org/paper/85700a588a8c9dde66c2f53827e9686554175392",
+      "title": "DNA sequence-dependent deformability deduced from protein-DNA crystal complexes.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 1998,
+      "openAccessPdf": {
+        "url": "https://europepmc.org/articles/pmc21613?pdf=render",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/PNAS.95.19.11163?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/PNAS.95.19.11163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "1998-09-15",
+      "journal": {
+        "name": "Proceedings of the National Academy of Sciences of the United States of America",
+        "pages": "\n          11163-8\n        ",
+        "volume": "95 19"
+      },
+      "authors": [
+        {
+          "authorId": "1712918",
+          "name": "W. Olson"
+        },
+        {
+          "authorId": "152882852",
+          "name": "A. Gorin"
+        },
+        {
+          "authorId": "145517616",
+          "name": "Xiang-Jun Lu"
+        },
+        {
+          "authorId": "3098090",
+          "name": "L. Hock"
+        },
+        {
+          "authorId": "2141750",
+          "name": "V. Zhurkin"
+        }
+      ],
+      "abstract": null
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "85700a588a8c9dde66c2f53827e9686554175392",
+        "title": "DNA sequence-dependent deformability deduced from protein-DNA crystal complexes.",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": null,
+        "candidate_year": 1998,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4ff8cc4f2907a49183add7991f6aba7f5bb24008",
+        "title": "DNA Bends in TATA-binding Protein·TATA Complexes in Solution Are DNA Sequence-dependent*",
+        "score": 0.5409,
+        "title_similarity": 0.5409,
+        "query_year": null,
+        "candidate_year": 2001,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2c7ee700835e87397fa2dd37c548aa5ce12cf626",
+        "title": "DNA Sequence-dependent Differences in TATA-binding Protein-induced DNA Bending in Solution Are Highly Sensitive to Osmolytes*",
+        "score": 0.4028,
+        "title_similarity": 0.4028,
+        "query_year": null,
+        "candidate_year": 2001,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "44e7dc36bb988de6bee3327bee2e542e290e9dc7",
+        "title": "Sequence-Dependent T:G Base Pair Opening in DNA Double Helix Bound by Cren7, a Chromatin Protein Conserved among Crenarchaea",
+        "score": 0.3987,
+        "title_similarity": 0.3987,
+        "query_year": null,
+        "candidate_year": 2016,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6bb32ef4564d4d5bc93a74e2ebb2a1ef6f35eecc",
+        "title": "Sequence-dependent motions of DNA: a normal mode analysis at the base-pair level.",
+        "score": 0.3538,
+        "title_similarity": 0.3138,
+        "query_year": null,
+        "candidate_year": 2002,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "58a58f4684e6cb95b8553ce02f22d537dd4844d5",
+        "title": "Protein-DNA interactions in the initiation of transcription: The Role of Flexibility and Dynamics of the TATA Recognition Sequence and the TATA Box Binding Protein",
+        "score": 0.3021,
+        "title_similarity": 0.3021,
+        "query_year": null,
+        "candidate_year": 2001,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6e2a9cd651fafef3b3e47f3eb662ceaf09c378dd",
+        "title": "Nucleic-acid structural deformability deduced from anisotropic displacement parameters.",
+        "score": 0.2525,
+        "title_similarity": 0.2125,
+        "query_year": null,
+        "candidate_year": 2011,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2fd5234e07c58c58432a633344f4af61d3c1a58b",
+        "title": "DNA mismatches reveal widespread conformational penalties in protein-DNA recognition",
+        "score": 0.2125,
+        "title_similarity": 0.2125,
+        "query_year": null,
+        "candidate_year": 2019,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4d4cbce631b3ac71797420572593c37a0a253233",
+        "title": "The Role of DNA “Bendability” in the Indirect Read-Out Mechanism of Protein-DNA Interactions",
+        "score": 0.2092,
+        "title_similarity": 0.2092,
+        "query_year": null,
+        "candidate_year": 2009,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4655e6e54f35e65d594433b2170102b455f520ab",
+        "title": "Experimental maps of DNA structure at nucleotide resolution distinguish intrinsic from protein-induced DNA deformations",
+        "score": 0.2037,
+        "title_similarity": 0.2037,
+        "query_year": null,
+        "candidate_year": 2018,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1073/pnas.95.19.11163"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 501,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "85700a588a8c9dde66c2f53827e9686554175392",
+          "externalIds": {
+            "MAG": "2095994064",
+            "DOI": "10.1073/PNAS.95.19.11163",
+            "CorpusId": 21076442,
+            "PubMed": "9736707"
+          },
+          "url": "https://www.semanticscholar.org/paper/85700a588a8c9dde66c2f53827e9686554175392",
+          "title": "DNA sequence-dependent deformability deduced from protein-DNA crystal complexes.",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 1998,
+          "openAccessPdf": {
+            "url": "https://europepmc.org/articles/pmc21613?pdf=render",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1073/PNAS.95.19.11163?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1073/PNAS.95.19.11163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "1998-09-15",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences of the United States of America",
+            "pages": "\n          11163-8\n        ",
+            "volume": "95 19"
+          },
+          "authors": [
+            {
+              "authorId": "1712918",
+              "name": "W. Olson"
+            },
+            {
+              "authorId": "152882852",
+              "name": "A. Gorin"
+            },
+            {
+              "authorId": "145517616",
+              "name": "Xiang-Jun Lu"
+            },
+            {
+              "authorId": "3098090",
+              "name": "L. Hock"
+            },
+            {
+              "authorId": "2141750",
+              "name": "V. Zhurkin"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "4ff8cc4f2907a49183add7991f6aba7f5bb24008",
+          "externalIds": {
+            "MAG": "1494314295",
+            "DOI": "10.1074/JBC.M004402200",
+            "CorpusId": 26120675,
+            "PubMed": "11278276"
+          },
+          "url": "https://www.semanticscholar.org/paper/4ff8cc4f2907a49183add7991f6aba7f5bb24008",
+          "title": "DNA Bends in TATA-binding Protein·TATA Complexes in Solution Are DNA Sequence-dependent*",
+          "venue": "Journal of Biological Chemistry",
+          "year": 2001,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1074/jbc.m004402200",
+            "status": "CLOSED",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1074/JBC.M004402200?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1074/JBC.M004402200, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2001-05-04",
+          "journal": {
+            "name": "The Journal of Biological Chemistry",
+            "pages": "14614 - 14622",
+            "volume": "276"
+          },
+          "authors": [
+            {
+              "authorId": "2109159391",
+              "name": "Jiong Wu"
+            },
+            {
+              "authorId": "15116773",
+              "name": "K. M. Parkhurst"
+            },
+            {
+              "authorId": "49640853",
+              "name": "Robyn M. Powell"
+            },
+            {
+              "authorId": "3327102",
+              "name": "M. Brenowitz"
+            },
+            {
+              "authorId": "1945678",
+              "name": "L. Parkhurst"
+            }
+          ],
+          "abstract": "The TATA-binding protein (TBP) initiates assembly of transcription preinitiation complexes on eukaryotic class II promoters, binding to and restructuring consensus and variant “TATA box” sequences. The sequence dependence of the DNA structure in TBP·TATA complexes has been investigated in solution using fluorescence resonance energy transfer. The mean 5′dye-3′dye distance varies significantly among oligomers bearing the adenovirusmajor late promoter sequence (AdMLP) and five single-site variants bound to Saccharomyces cerevisiae TBP, consistent with solution bend angles for AdMLP of 76° and for the variants ranging from 30° to 62°. These solution bends contrast sharply with the corresponding co-crystal structures, which show ∼80° bends for all sequences. Transcription activities for these TATA sequences are strongly correlated with the solution bend angles but not with TBP·DNA binding affinities. Our results support a model in which transcription efficiency derives primarily from the sequence-dependent structure of the TBP·TATA binary complex. Specifically, the distance distribution for the average solution structure of the TBP·TATA complex may reflect the sequence-dependent probability for the complex to assume a conformation in which the TATA box DNA is severely bent. Upon assumption of this geometry, the binary complex becomes a target for binding and correctly orienting the other components of the preinitiation complex."
+        },
+        {
+          "paperId": "44e7dc36bb988de6bee3327bee2e542e290e9dc7",
+          "externalIds": {
+            "MAG": "2524961671",
+            "PubMedCentral": "5042384",
+            "DOI": "10.1371/journal.pone.0163361",
+            "CorpusId": 15048723,
+            "PubMed": "27685992"
+          },
+          "url": "https://www.semanticscholar.org/paper/44e7dc36bb988de6bee3327bee2e542e290e9dc7",
+          "title": "Sequence-Dependent T:G Base Pair Opening in DNA Double Helix Bound by Cren7, a Chromatin Protein Conserved among Crenarchaea",
+          "venue": "PLoS ONE",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1371/journal.pone.0163361",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5042384, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2016-09-29",
+          "journal": {
+            "name": "PLoS ONE",
+            "volume": "11"
+          },
+          "authors": [
+            {
+              "authorId": "2087115487",
+              "name": "L. Tian"
+            },
+            {
+              "authorId": "2976452",
+              "name": "Zhenfeng Zhang"
+            },
+            {
+              "authorId": "2113290322",
+              "name": "Hanqian Wang"
+            },
+            {
+              "authorId": "50396742",
+              "name": "Mohan Zhao"
+            },
+            {
+              "authorId": "2501296",
+              "name": "Yuhui Dong"
+            },
+            {
+              "authorId": "145571752",
+              "name": "Y. Gong"
+            }
+          ],
+          "abstract": "T:G base pair arising from spontaneous deamination of 5mC or polymerase errors is a great challenge for DNA repair of hyperthermophilic archaea, especially Crenarchaea. Most strains in this phylum lack the protein homologues responsible for the recognition of the mismatch in the DNA repair pathways. To investigate whether Cren7, a highly conserved chromatin protein in Crenarchaea, serves a role in the repair of T:G mispairs, the crystal structures of Cren7-GTAATTGC and Cren7-GTGATCGC complexes were solved at 2.0 Å and 2.1 Å. In our structures, binding of Cren7 to the AT-rich DNA duplex (GTAATTGC) induces opening of T2:G15 but not T10:G7 base pair. By contrast, both T:G mispairs in the GC-rich DNA duplex (GTGATCGC) retain the classic wobble type. Structural analysis also showed DNA helical changes of GTAATTGC, especially in the steps around the open T:G base pair, as compared to GTGATCGC or the matched DNAs. Surface plasmon resonance assays revealed a 4-fold lower binding affinity of Cren7 for GTAATTGC than that for GTGATCGC, which was dominantly contributed by the decrease of association rate. These results suggested that binding of Cren7 to DNA leads to T:G mispair opening in a sequence dependent manner, and therefore propose the potential roles of Cren7 in DNA repair."
+        },
+        {
+          "paperId": "2c7ee700835e87397fa2dd37c548aa5ce12cf626",
+          "externalIds": {
+            "MAG": "2023295965",
+            "DOI": "10.1074/JBC.M004401200",
+            "CorpusId": 38068605,
+            "PubMed": "11278275"
+          },
+          "url": "https://www.semanticscholar.org/paper/2c7ee700835e87397fa2dd37c548aa5ce12cf626",
+          "title": "DNA Sequence-dependent Differences in TATA-binding Protein-induced DNA Bending in Solution Are Highly Sensitive to Osmolytes*",
+          "venue": "Journal of Biological Chemistry",
+          "year": 2001,
+          "openAccessPdf": {
+            "url": "http://www.jbc.org/article/S0021925819567412/pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1074/JBC.M004401200?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1074/JBC.M004401200, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2001-05-04",
+          "journal": {
+            "name": "The Journal of Biological Chemistry",
+            "pages": "14623 - 14627",
+            "volume": "276"
+          },
+          "authors": [
+            {
+              "authorId": "2109159391",
+              "name": "Jiong Wu"
+            },
+            {
+              "authorId": "15116773",
+              "name": "K. M. Parkhurst"
+            },
+            {
+              "authorId": "49640853",
+              "name": "Robyn M. Powell"
+            },
+            {
+              "authorId": "1945678",
+              "name": "L. Parkhurst"
+            }
+          ],
+          "abstract": "The complex formed between the TATA-binding protein (TBP) and the “TATA box” of eukaryotic class II promoters is the foundation for assembly of the complex to which RNA polymerase II is ultimately recruited. TBP binds productively to canonical and diverse variant TATA sequences with >100-fold differences in transcription efficiency. Co-crystals of canonical sequences and >11 variant sequences bound to various TBP molecules all have ∼80° bends. In contrast, the bend angles for TBP·TATA complexes in solution, derived from distance distributions, are ∼80° for a canonical sequence but range from 30° to 62° for five variant sequences (1). We show in this study that the osmolytes used to crystallize TBP·TATA complexes induce profound increases in the DNA bends of two transcriptionally active TBP-bound variant sequences to a common angle of ∼80° but have little effect on a transcriptionally inactive variant. The effect of osmolyte on the TBP-induced DNA bend of a variant TATA box sequence is also manifest in the kinetics of association, demonstrating a functional consequence of an osmolyte-induced structural change."
+        },
+        {
+          "paperId": "6e2a9cd651fafef3b3e47f3eb662ceaf09c378dd",
+          "externalIds": {
+            "MAG": "1963481191",
+            "DOI": "10.1002/bip.21570",
+            "CorpusId": 205494916,
+            "PubMed": "21280021"
+          },
+          "url": "https://www.semanticscholar.org/paper/6e2a9cd651fafef3b3e47f3eb662ceaf09c378dd",
+          "title": "Nucleic-acid structural deformability deduced from anisotropic displacement parameters.",
+          "venue": "Biopolymers",
+          "year": 2011,
+          "openAccessPdf": {
+            "url": "https://europepmc.org/articles/pmc4163913?pdf=render",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1002/bip.21570?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/bip.21570, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2011-04-01",
+          "journal": {
+            "name": "Biopolymers",
+            "pages": "\n          254-69\n        ",
+            "volume": "95 4"
+          },
+          "authors": [
+            {
+              "authorId": "4870074",
+              "name": "H. Peckham"
+            },
+            {
+              "authorId": "1712918",
+              "name": "W. Olson"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "4655e6e54f35e65d594433b2170102b455f520ab",
+          "externalIds": {
+            "MAG": "2794294274",
+            "PubMedCentral": "5946862",
+            "DOI": "10.1093/nar/gky033",
+            "CorpusId": 4144741,
+            "PubMed": "29390080"
+          },
+          "url": "https://www.semanticscholar.org/paper/4655e6e54f35e65d594433b2170102b455f520ab",
+          "title": "Experimental maps of DNA structure at nucleotide resolution distinguish intrinsic from protein-induced DNA deformations",
+          "venue": "Nucleic Acids Research",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/nar/article-pdf/46/5/2636/25332202/gky033.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5946862, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-01-30",
+          "journal": {
+            "name": "Nucleic Acids Research",
+            "pages": "2636 - 2647",
+            "volume": "46"
+          },
+          "authors": [
+            {
+              "authorId": "35592446",
+              "name": "Robert N. Azad"
+            },
+            {
+              "authorId": "35304396",
+              "name": "D. Zafiropoulos"
+            },
+            {
+              "authorId": "2072769718",
+              "name": "Douglas C. Ober"
+            },
+            {
+              "authorId": "116503616",
+              "name": "Yining Jiang"
+            },
+            {
+              "authorId": "37749677",
+              "name": "Tsu-Pei Chiu"
+            },
+            {
+              "authorId": "12872670",
+              "name": "Jared M. Sagendorf"
+            },
+            {
+              "authorId": "3209392",
+              "name": "R. Rohs"
+            },
+            {
+              "authorId": "2888908",
+              "name": "T. Tullius"
+            }
+          ],
+          "abstract": "Abstract Recognition of DNA by proteins depends on DNA sequence and structure. Often unanswered is whether the structure of naked DNA persists in a protein–DNA complex, or whether protein binding changes DNA shape. While X-ray structures of protein–DNA complexes are numerous, the structure of naked cognate DNA is seldom available experimentally. We present here an experimental and computational analysis pipeline that uses hydroxyl radical cleavage to map, at single-nucleotide resolution, DNA minor groove width, a recognition feature widely exploited by proteins. For 11 protein–DNA complexes, we compared experimental maps of naked DNA minor groove width with minor groove width measured from X-ray co-crystal structures. Seven sites had similar minor groove widths as naked DNA and when bound to protein. For four sites, part of the DNA in the complex had the same structure as naked DNA, and part changed structure upon protein binding. We compared the experimental map with minor groove patterns of DNA predicted by two computational approaches, DNAshape and ORChID2, and found good but not perfect concordance with both. This experimental approach will be useful in mapping structures of DNA sequences for which high-resolution structural data are unavailable. This approach allows probing of protein family-dependent readout mechanisms."
+        },
+        {
+          "paperId": "58a58f4684e6cb95b8553ce02f22d537dd4844d5",
+          "externalIds": {
+            "MAG": "1551467614",
+            "DOI": "10.1016/S1380-7323(01)80011-X",
+            "CorpusId": 94355072
+          },
+          "url": "https://www.semanticscholar.org/paper/58a58f4684e6cb95b8553ce02f22d537dd4844d5",
+          "title": "Protein-DNA interactions in the initiation of transcription: The Role of Flexibility and Dynamics of the TATA Recognition Sequence and the TATA Box Binding Protein",
+          "venue": "",
+          "year": 2001,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/S1380-7323(01)80011-X?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/S1380-7323(01)80011-X, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "Theoretical and Computational Chemistry",
+            "pages": "377-407",
+            "volume": "9"
+          },
+          "authors": [
+            {
+              "authorId": "2382409",
+              "name": "N. Pastor"
+            },
+            {
+              "authorId": "50028113",
+              "name": "H. Weinstein"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "2fd5234e07c58c58432a633344f4af61d3c1a58b",
+          "externalIds": {
+            "MAG": "2960658601",
+            "DOI": "10.1101/705558",
+            "CorpusId": 203893520
+          },
+          "url": "https://www.semanticscholar.org/paper/2fd5234e07c58c58432a633344f4af61d3c1a58b",
+          "title": "DNA mismatches reveal widespread conformational penalties in protein-DNA recognition",
+          "venue": "bioRxiv",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/705558?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/705558, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2019-07-17",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "14623700",
+              "name": "Ariel Afek"
+            },
+            {
+              "authorId": "21804808",
+              "name": "Honglue Shi"
+            },
+            {
+              "authorId": "11013189",
+              "name": "A. Rangadurai"
+            },
+            {
+              "authorId": "1411790947",
+              "name": "Harshit Sahay"
+            },
+            {
+              "authorId": "122297244",
+              "name": "H. Al‐Hashimi"
+            },
+            {
+              "authorId": "2029857",
+              "name": "Raluca Gordân"
+            }
+          ],
+          "abstract": "Transcription-factor (TF) proteins recognize specific genomic sequences, despite an overwhelming excess of non-specific DNA, to regulate complex gene expression programs1–3. While there have been significant advances in understanding how DNA sequence and shape contribute to recognition, some fundamental aspects of protein-DNA binding remain poorly understood2,3. Many DNA-binding proteins induce changes in the DNA structure outside the intrinsic B-DNA envelope. How the energetic cost associated with distorting DNA contributes to recognition has proven difficult to study and measure experimentally because the distorted DNA structures exist as low-abundance conformations in the naked B-DNA ensemble4–10. Here, we use a novel high-throughput assay called SaMBA (Saturation Mismatch-Binding Assay) to investigate the role of DNA conformational penalties in TF-DNA recognition. The approach introduces mismatched base-pairs (i.e. mispairs) within TF binding sites to pre-induce a variety of DNA structural distortions much larger than those induced by changes in Watson-Crick sequence. Strikingly, while most mismatches either weakened TF binding (~70%) or had negligible effects (~20%), approximately 10% of mismatches increased binding and at least one mismatch was found that increased the binding affinity for each of 21 examined TFs. Mismatches also converted sites from the non-specific affinity range into specific sites, and high-affinity sites into “super-sites” stronger than any known canonical binding site. These findings reveal a complex binding landscape that cannot be explained based on DNA sequence alone. Analysis of crystal structures together with NMR and molecular dynamics simulations revealed that many of the mismatches that increase binding induce distortions similar to those induced by TF binding, thus pre-paying some of the energetic cost to deform the DNA. Our work indicates that conformational penalties are a major determinant of protein-DNA recognition, and reveals mechanisms by which mismatches can recruit TFs and thus modulate replication and repair activities in the cell11,12."
+        },
+        {
+          "paperId": "6bb32ef4564d4d5bc93a74e2ebb2a1ef6f35eecc",
+          "externalIds": {
+            "MAG": "2069008858",
+            "DOI": "10.1016/S0006-3495(02)75147-3",
+            "CorpusId": 25887715,
+            "PubMed": "12080098"
+          },
+          "url": "https://www.semanticscholar.org/paper/6bb32ef4564d4d5bc93a74e2ebb2a1ef6f35eecc",
+          "title": "Sequence-dependent motions of DNA: a normal mode analysis at the base-pair level.",
+          "venue": "Biophysical Journal",
+          "year": 2002,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S0006349502751473/pdf",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: Paper or abstract available at https://core.ac.uk/download/pdf/82051524.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2002-07-01",
+          "journal": {
+            "name": "Biophysical journal",
+            "pages": "\n          22-41\n        ",
+            "volume": "83 1"
+          },
+          "authors": [
+            {
+              "authorId": "47292686",
+              "name": "A. Matsumoto"
+            },
+            {
+              "authorId": "1712918",
+              "name": "W. Olson"
+            }
+          ],
+          "abstract": "Computer simulation of the dynamic structure of DNA can be carried out at various levels of resolution. Detailed high resolution information about the motions of DNA is typically collected for the atoms in a few turns of double helix. At low resolution, by contrast, the sequence-dependence features of DNA are usually neglected and molecules with thousands of base pairs are treated as ideal elastic rods. The present normal mode analysis of DNA in terms of six base-pair \"step\" parameters per chain residue addresses the dynamic structure of the double helix at intermediate resolution, i.e., the mesoscopic level of a few hundred base pairs. Sequence-dependent effects are incorporated into the calculations by taking advantage of \"knowledge-based\" harmonic energy functions deduced from the mean values and dispersion of the base-pair \"step\" parameters in high-resolution DNA crystal structures. Spatial arrangements sampled along the dominant low frequency modes have end-to-end distances comparable to those of exact polymer models which incorporate all possible chain configurations. The normal mode analysis accounts for the overall bending, i.e., persistence length, of the double helix and shows how known discrepancies in the measured twisting constants of long DNA molecules could originate in the deformability of neighboring base-pair steps. The calculations also reveal how the natural coupling of local conformational variables affects the global motions of DNA. Successful correspondence of the computed stretching modulus with experimental data requires that the DNA base pairs be inclined with respect to the direction of stretching, with chain extension effected by low energy transverse motions that preserve the strong van der Waals' attractions of neighboring base-pair planes. The calculations further show how one can \"engineer\" the macroscopic properties of DNA in terms of dimer deformability so that polymers which are intrinsically straight in the equilibrium state exhibit the mesoscopic bending anisotropy essential to DNA curvature and loop formation."
+        },
+        {
+          "paperId": "4d4cbce631b3ac71797420572593c37a0a253233",
+          "externalIds": {
+            "MAG": "2009542276",
+            "DOI": "10.1016/J.BPJ.2008.12.211",
+            "CorpusId": 95386853
+          },
+          "url": "https://www.semanticscholar.org/paper/4d4cbce631b3ac71797420572593c37a0a253233",
+          "title": "The Role of DNA “Bendability” in the Indirect Read-Out Mechanism of Protein-DNA Interactions",
+          "venue": "",
+          "year": 2009,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1016/j.bpj.2008.12.211",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1016/J.BPJ.2008.12.211?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/J.BPJ.2008.12.211, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2009-02-01",
+          "journal": {
+            "name": "Biophysical Journal",
+            "volume": "96"
+          },
+          "authors": [
+            {
+              "authorId": "3478074",
+              "name": "P. Vivas"
+            },
+            {
+              "authorId": "87492969",
+              "name": "Velmurugu Yogambigai"
+            },
+            {
+              "authorId": "152938115",
+              "name": "S. V. Kuznetsov"
+            },
+            {
+              "authorId": "145006646",
+              "name": "A. Ansari"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-6275906ac18181c4.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-6275906ac18181c4.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-6275906ac18181c4.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "ca2f7413783880de612dfcc858e2f817fc6e1820451216394c37931198789341",
+    "chunk_count": 20,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

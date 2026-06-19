@@ -1,0 +1,740 @@
+{
+  "paper_id": "sha256-384624231b22e266",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_theory/Ho 2020 arxiv - Denoising Diffusion Probabilistic Models.pdf",
+  "pdf_sha256": "384624231b22e2665a99702a676cf99c1e11e1732b2916cc46c121996fc2a637",
+  "filename": "Ho 2020 arxiv - Denoising Diffusion Probabilistic Models.pdf",
+  "item_type": "article",
+  "title_query": "Denoising Diffusion Probabilistic Models",
+  "filename_hints": {
+    "year_hint": 2020,
+    "venue_hint": "",
+    "prefix": "Ho 2020 arxiv"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:31:20.743366+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "Denoising Diffusion Probabilistic Models",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+      "externalIds": {
+        "DBLP": "conf/nips/HoJA20",
+        "MAG": "3100572490",
+        "ArXiv": "2006.11239",
+        "CorpusId": 219955663
+      },
+      "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "venue": "Neural Information Processing Systems",
+      "year": 2020,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.11239, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2020-06-19",
+      "journal": {
+        "name": "ArXiv",
+        "volume": "abs/2006.11239"
+      },
+      "authors": [
+        {
+          "authorId": "2126278",
+          "name": "Jonathan Ho"
+        },
+        {
+          "authorId": "1623995772",
+          "name": "Ajay Jain"
+        },
+        {
+          "authorId": "1689992",
+          "name": "P. Abbeel"
+        }
+      ],
+      "abstract": "We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at this https URL"
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+        "title": "Denoising Diffusion Probabilistic Models",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2020,
+        "candidate_year": 2020,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "de18baa4964804cf471d85a5a090498242d2e79f",
+        "title": "Improved Denoising Diffusion Probabilistic Models",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2021,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "cda3fbbac6734b603bee363b0938e9baa924aa78",
+        "title": "ILVR: Conditioning Method for Denoising Diffusion Probabilistic Models",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2021,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "1e91fa21b890a8f5d615578f4ddf46c3cb394691",
+        "title": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "20f6fce7726e7b3ab4ca45ef40d92b79f093f825",
+        "title": "AnoDDPM: Anomaly Detection with Denoising Diffusion Probabilistic Models using Simplex Noise",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "be76657b6cb3afc0286b5ef961dd83c410592ef5",
+        "title": "DDPM-CD: Denoising Diffusion Probabilistic Models as Feature Extractors for Remote Sensing Change Detection",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0b5f7df8dddf317d8fac8f809721193fe383f23a",
+        "title": "Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7803024f80343ae7b042080252fb353ce0744328",
+        "title": "Denoising diffusion probabilistic models for 3D medical image generation",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2023,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2a43f920e4f1f869a9db402a50135f9f8df06f32",
+        "title": "A multimodal comparison of latent denoising diffusion probabilistic models and generative adversarial networks for medical image synthesis",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e793a1c2b98c655eb20a1fe253b5eb2971e48917",
+        "title": "Three-Dimensional Medical Image Synthesis with Denoising Diffusion Probabilistic Models",
+        "score": 0.84,
+        "title_similarity": 0.92,
+        "query_year": 2020,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 13227,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+          "externalIds": {
+            "DBLP": "conf/nips/HoJA20",
+            "MAG": "3100572490",
+            "ArXiv": "2006.11239",
+            "CorpusId": 219955663
+          },
+          "url": "https://www.semanticscholar.org/paper/5c126ae3421f05768d8edd97ecd44b1364e2c99a",
+          "title": "Denoising Diffusion Probabilistic Models",
+          "venue": "Neural Information Processing Systems",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2006.11239, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-06-19",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2006.11239"
+          },
+          "authors": [
+            {
+              "authorId": "2126278",
+              "name": "Jonathan Ho"
+            },
+            {
+              "authorId": "1623995772",
+              "name": "Ajay Jain"
+            },
+            {
+              "authorId": "1689992",
+              "name": "P. Abbeel"
+            }
+          ],
+          "abstract": "We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at this https URL"
+        },
+        {
+          "paperId": "de18baa4964804cf471d85a5a090498242d2e79f",
+          "externalIds": {
+            "ArXiv": "2102.09672",
+            "DBLP": "conf/icml/NicholD21",
+            "CorpusId": 231979499
+          },
+          "url": "https://www.semanticscholar.org/paper/de18baa4964804cf471d85a5a090498242d2e79f",
+          "title": "Improved Denoising Diffusion Probabilistic Models",
+          "venue": "International Conference on Machine Learning",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2102.09672, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2021-02-18",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2102.09672"
+          },
+          "authors": [
+            {
+              "authorId": "38967461",
+              "name": "Alex Nichol"
+            },
+            {
+              "authorId": "6515819",
+              "name": "Prafulla Dhariwal"
+            }
+          ],
+          "abstract": "Denoising diffusion probabilistic models (DDPM) are a class of generative models which have recently been shown to produce excellent samples. We show that with a few simple modifications, DDPMs can also achieve competitive log-likelihoods while maintaining high sample quality. Additionally, we find that learning variances of the reverse diffusion process allows sampling with an order of magnitude fewer forward passes with a negligible difference in sample quality, which is important for the practical deployment of these models. We additionally use precision and recall to compare how well DDPMs and GANs cover the target distribution. Finally, we show that the sample quality and likelihood of these models scale smoothly with model capacity and training compute, making them easily scalable. We release our code at https://github.com/openai/improved-diffusion"
+        },
+        {
+          "paperId": "1e91fa21b890a8f5d615578f4ddf46c3cb394691",
+          "externalIds": {
+            "ArXiv": "2201.09865",
+            "DBLP": "journals/corr/abs-2201-09865",
+            "DOI": "10.1109/CVPR52688.2022.01117",
+            "CorpusId": 246240274
+          },
+          "url": "https://www.semanticscholar.org/paper/1e91fa21b890a8f5d615578f4ddf46c3cb394691",
+          "title": "RePaint: Inpainting using Denoising Diffusion Probabilistic Models",
+          "venue": "Computer Vision and Pattern Recognition",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://lirias.kuleuven.be/bitstream/20.500.12942/728757/2/Lugmayr_RePaint_Inpainting_Using_Denoising_Diffusion_Probabilistic_Models_CVPR_2022_paper.pdf",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2201.09865, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2022-01-24",
+          "journal": {
+            "name": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+            "pages": "11451-11461"
+          },
+          "authors": [
+            {
+              "authorId": "1387970700",
+              "name": "Andreas Lugmayr"
+            },
+            {
+              "authorId": "2129520569",
+              "name": "Martin Danelljan"
+            },
+            {
+              "authorId": "145848547",
+              "name": "Andrés Romero"
+            },
+            {
+              "authorId": "1807197",
+              "name": "F. Yu"
+            },
+            {
+              "authorId": "1732855",
+              "name": "R. Timofte"
+            },
+            {
+              "authorId": "1681236",
+              "name": "L. Gool"
+            }
+          ],
+          "abstract": "Free-form inpainting is the task of adding new content to an image in the regions specified by an arbitrary binary mask. Most existing approaches train for a certain distribution of masks, which limits their generalization capabilities to unseen mask types. Furthermore, training with pixel-wise and perceptual losses often leads to simple textural extensions towards the missing areas instead of semantically meaningful generation. In this work, we propose RePaint: A Denoising Diffusion Probabilistic Model (DDPM) based inpainting approach that is applicable to even extreme masks. We employ a pretrained unconditional DDPM as the generative prior. To condition the generation process, we only alter the reverse diffusion iterations by sampling the unmasked regions using the given image infor-mation. Since this technique does not modify or condition the original DDPM network itself, the model produces high-quality and diverse output images for any inpainting form. We validate our method for both faces and general-purpose image inpainting using standard and extreme masks. Re-Paint outperforms state-of-the-art Autoregressive, and GAN approaches for at least five out of six mask distributions. Github Repository: git.io/RePaint"
+        },
+        {
+          "paperId": "cda3fbbac6734b603bee363b0938e9baa924aa78",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2108-02938",
+            "ArXiv": "2108.02938",
+            "DOI": "10.1109/iccv48922.2021.01410",
+            "CorpusId": 236950721
+          },
+          "url": "https://www.semanticscholar.org/paper/cda3fbbac6734b603bee363b0938e9baa924aa78",
+          "title": "ILVR: Conditioning Method for Denoising Diffusion Probabilistic Models",
+          "venue": "IEEE International Conference on Computer Vision",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "http://arxiv.org/pdf/2108.02938",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2108.02938, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2021-08-06",
+          "journal": {
+            "name": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+            "pages": "14347-14356"
+          },
+          "authors": [
+            {
+              "authorId": "2155367203",
+              "name": "Jooyoung Choi"
+            },
+            {
+              "authorId": "2109687230",
+              "name": "Sungwon Kim"
+            },
+            {
+              "authorId": "112953122",
+              "name": "Yonghyun Jeong"
+            },
+            {
+              "authorId": "2163133",
+              "name": "Youngjune Gwon"
+            },
+            {
+              "authorId": "2999019",
+              "name": "Sungroh Yoon"
+            }
+          ],
+          "abstract": "Denoising diffusion probabilistic models (DDPM) have shown remarkable performance in unconditional image generation. However, due to the stochasticity of the generative process in DDPM, it is challenging to generate images with the desired semantics. In this work, we propose Iterative Latent Variable Refinement (ILVR), a method to guide the generative process in DDPM to generate high-quality images based on a given reference image. Here, the refinement of the generative process in DDPM enables a single DDPM to sample images from various sets directed by the reference image. The proposed ILVR method generates high-quality images while controlling the generation. The controllability of our method allows adaptation of a single DDPM without any additional learning in various image generation tasks, such as generation from various downsampling factors, multi-domain image translation, paint-to-image, and editing with scribbles."
+        },
+        {
+          "paperId": "20f6fce7726e7b3ab4ca45ef40d92b79f093f825",
+          "externalIds": {
+            "DBLP": "conf/cvpr/WyattLSW22",
+            "DOI": "10.1109/CVPRW56347.2022.00080",
+            "CorpusId": 251020113
+          },
+          "url": "https://www.semanticscholar.org/paper/20f6fce7726e7b3ab4ca45ef40d92b79f093f825",
+          "title": "AnoDDPM: Anomaly Detection with Denoising Diffusion Probabilistic Models using Simplex Noise",
+          "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://durham-repository.worktribe.com/preview/1136728/36134.pdf",
+            "status": "GREEN",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/CVPRW56347.2022.00080?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/CVPRW56347.2022.00080, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2022-06-01",
+          "journal": {
+            "name": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)",
+            "pages": "649-655"
+          },
+          "authors": [
+            {
+              "authorId": "2311112841",
+              "name": "Julian Wyatt"
+            },
+            {
+              "authorId": "2038533343",
+              "name": "Adam Leach"
+            },
+            {
+              "authorId": "90958313",
+              "name": "Sebastian M. Schmon"
+            },
+            {
+              "authorId": "2240006",
+              "name": "Chris G. Willcocks"
+            }
+          ],
+          "abstract": "Generative models have been shown to provide a powerful mechanism for anomaly detection by learning to model healthy or normal reference data which can subsequently be used as a baseline for scoring anomalies. In this work we consider denoising diffusion probabilistic models (DDPMs) for unsupervised anomaly detection. DDPMs have superior mode coverage over generative adversarial networks (GANs) and higher sample quality than variational autoencoders (VAEs). However, this comes at the expense of poor scalability and increased sampling times due to the long Markov chain sequences required. We observe that within reconstruction-based anomaly detection a full-length Markov chain diffusion is not required. This leads us to develop a novel partial diffusion anomaly detection strategy that scales to high-resolution imagery, named AnoDDPM. A secondary problem is that Gaussian diffusion fails to capture larger anomalies; therefore we develop a multi-scale simplex noise diffusion process that gives control over the target anomaly size. AnoDDPM with simplex noise is shown to significantly outperform both f-AnoGAN and Gaussian diffusion for the tumorous dataset of 22 T1-weighted MRI scans (CCBS Edinburgh) qualitatively and quantitatively (improvement of +25.5% Sørensen–Dice coefficient, +17.6% IoU and +7.4% AUC)."
+        },
+        {
+          "paperId": "be76657b6cb3afc0286b5ef961dd83c410592ef5",
+          "externalIds": {
+            "DBLP": "conf/wacv/BandaraNP25",
+            "DOI": "10.1109/WACV61041.2025.00513",
+            "CorpusId": 249953553
+          },
+          "url": "https://www.semanticscholar.org/paper/be76657b6cb3afc0286b5ef961dd83c410592ef5",
+          "title": "DDPM-CD: Denoising Diffusion Probabilistic Models as Feature Extractors for Remote Sensing Change Detection",
+          "venue": "IEEE Workshop/Winter Conference on Applications of Computer Vision",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/WACV61041.2025.00513?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/WACV61041.2025.00513, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2025-02-26",
+          "journal": {
+            "name": "2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+            "pages": "5250-5262"
+          },
+          "authors": [
+            {
+              "authorId": "151389742",
+              "name": "W. G. C. Bandara"
+            },
+            {
+              "authorId": "2132076159",
+              "name": "Nithin Gopalakrishnan Nair"
+            },
+            {
+              "authorId": "1741177",
+              "name": "Vishal M. Patel"
+            }
+          ],
+          "abstract": "Remote sensing change detection is crucial for understanding the dynamics of our planet's surface, facilitating the monitoring of environmental changes, evaluating human impact, predicting future trends, and supporting decision-making. In this work, we introduce a novel approach for change detection that can leverage off-the-shelf, unlabeled remote sensing images in the training process by pre-training a Denoising Diffusion Probabilistic Model (DDPM) - a class of generative models used in image synthesis. DDPMs learn the training data distribution by gradually converting training images into a Gaussian distribution using a Markov chain. During inference (i.e., sampling), they can generate a diverse set of samples closer to the training distribution, starting from Gaussian noise, achieving state-of-the-art image synthesis results. However, in this work, our focus is not on image synthesis but on utilizing it as a pre-trained feature extractor for the downstream application of change detection. Specifically, we fine-tune a lightweight change classifier utilizing the feature representations produced by the pre-trained DDPM alongside change labels. Experiments conducted on the LEVIR-CD, WHU-CD, DSIFN-CD, and CDD datasets demonstrate that the proposed DDPM-CD method significantly outperforms the existing self supervised state-of-the-art change detection methods in terms of F1 score, IoU, and overall accuracy, highlighting the pivotal role of pre-trained DDPM as a feature extractor for downstream applications. Code and pre-trained models available at https://github.com/wgcban/ddpm-cd"
+        },
+        {
+          "paperId": "0b5f7df8dddf317d8fac8f809721193fe383f23a",
+          "externalIds": {
+            "DBLP": "journals/titb/JiangIZZLGS25",
+            "ArXiv": "2405.14802",
+            "DOI": "10.1109/JBHI.2025.3565183",
+            "CorpusId": 269983696,
+            "PubMed": "40293895"
+          },
+          "url": "https://www.semanticscholar.org/paper/0b5f7df8dddf317d8fac8f809721193fe383f23a",
+          "title": "Fast-DDPM: Fast Denoising Diffusion Probabilistic Models for Medical Image-to-Image Generation",
+          "venue": "IEEE journal of biomedical and health informatics",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1109/jbhi.2025.3565183",
+            "status": "HYBRID",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.14802, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-05-23",
+          "journal": {
+            "name": "IEEE Journal of Biomedical and Health Informatics",
+            "pages": "7326-7335",
+            "volume": "29"
+          },
+          "authors": [
+            {
+              "authorId": "2299294637",
+              "name": "Hongxu Jiang"
+            },
+            {
+              "authorId": "2279978360",
+              "name": "M. Imran"
+            },
+            {
+              "authorId": "2302811525",
+              "name": "Teng Zhang"
+            },
+            {
+              "authorId": "2292087255",
+              "name": "Yuyin Zhou"
+            },
+            {
+              "authorId": "2218743631",
+              "name": "Muxua Liang"
+            },
+            {
+              "authorId": "2302805897",
+              "name": "Kuang Gong"
+            },
+            {
+              "authorId": "2279953538",
+              "name": "W. Shao"
+            }
+          ],
+          "abstract": "Denoising diffusion probabilistic models (DDPMs) have achieved unprecedented success in computer vision. However, they remain underutilized in medical imaging, a field crucial for disease diagnosis and treatment planning. This is primarily due to the high computational cost associated with the use of large number of time steps (e.g., 1,000) in diffusion processes. Training a diffusion model on medical images typically takes days to weeks, while sampling each image volume takes minutes to hours. To address this challenge, we introduce Fast-DDPM, a simple yet effective approach capable of simultaneously improving training speed, sampling speed, and generation quality. Unlike DDPM, which trains the image denoiser across 1,000 time steps, Fast-DDPM trains and samples using only 10 time steps. The key to our method lies in aligning the training and sampling procedures to optimize time-step utilization. Specifically, we introduced two efficient noise schedulers with 10 time steps: one with uniform time step sampling and another with non-uniform sampling. We evaluated Fast-DDPM across three medical image-to-image generation tasks: multi-image super-resolution, image denoising, and image-to-image translation. Fast-DDPM outperformed DDPM and current state-of-the-art methods based on convolutional networks and generative adversarial networks in all tasks. Additionally, Fast-DDPM reduced the training time to 0.2× and the sampling time to 0.01× compared to DDPM."
+        },
+        {
+          "paperId": "7803024f80343ae7b042080252fb353ce0744328",
+          "externalIds": {
+            "PubMedCentral": "10163245",
+            "DOI": "10.1038/s41598-023-34341-2",
+            "CorpusId": 253384524,
+            "PubMed": "37147413"
+          },
+          "url": "https://www.semanticscholar.org/paper/7803024f80343ae7b042080252fb353ce0744328",
+          "title": "Denoising diffusion probabilistic models for 3D medical image generation",
+          "venue": "Scientific Reports",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41598-023-34341-2.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10163245, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-05-05",
+          "journal": {
+            "name": "Scientific Reports",
+            "volume": "13"
+          },
+          "authors": [
+            {
+              "authorId": "2047524297",
+              "name": "Firas Khader"
+            },
+            {
+              "authorId": "2179698320",
+              "name": "G. Mueller-Franzes"
+            },
+            {
+              "authorId": "150291268",
+              "name": "Soroosh Tayebi Arasteh"
+            },
+            {
+              "authorId": "2031129360",
+              "name": "T. Han"
+            },
+            {
+              "authorId": "1731835",
+              "name": "Christoph Haarburger"
+            },
+            {
+              "authorId": "1403931899",
+              "name": "M. Schulze-Hagen"
+            },
+            {
+              "authorId": "1581907759",
+              "name": "P. Schad"
+            },
+            {
+              "authorId": "10805740",
+              "name": "S. Engelhardt"
+            },
+            {
+              "authorId": "1924789",
+              "name": "B. Baessler"
+            },
+            {
+              "authorId": "6234552",
+              "name": "S. Foersch"
+            },
+            {
+              "authorId": "3011220",
+              "name": "J. Stegmaier"
+            },
+            {
+              "authorId": "2064331880",
+              "name": "C. Kuhl"
+            },
+            {
+              "authorId": "6280924",
+              "name": "S. Nebelung"
+            },
+            {
+              "authorId": "3955759",
+              "name": "Jakob Nikolas Kather"
+            },
+            {
+              "authorId": "3228050",
+              "name": "D. Truhn"
+            }
+          ],
+          "abstract": "Recent advances in computer vision have shown promising results in image generation. Diffusion probabilistic models have generated realistic images from textual input, as demonstrated by DALL-E 2, Imagen, and Stable Diffusion. However, their use in medicine, where imaging data typically comprises three-dimensional volumes, has not been systematically evaluated. Synthetic images may play a crucial role in privacy-preserving artificial intelligence and can also be used to augment small datasets. We show that diffusion probabilistic models can synthesize high-quality medical data for magnetic resonance imaging (MRI) and computed tomography (CT). For quantitative evaluation, two radiologists rated the quality of the synthesized images regarding \"realistic image appearance\", \"anatomical correctness\", and \"consistency between slices\". Furthermore, we demonstrate that synthetic images can be used in self-supervised pre-training and improve the performance of breast segmentation models when data is scarce (Dice scores, 0.91 [without synthetic data], 0.95 [with synthetic data])."
+        },
+        {
+          "paperId": "2a43f920e4f1f869a9db402a50135f9f8df06f32",
+          "externalIds": {
+            "PubMedCentral": "10372018",
+            "ArXiv": "2212.07501",
+            "DOI": "10.1038/s41598-023-39278-0",
+            "CorpusId": 254685566,
+            "PubMed": "37495660"
+          },
+          "url": "https://www.semanticscholar.org/paper/2a43f920e4f1f869a9db402a50135f9f8df06f32",
+          "title": "A multimodal comparison of latent denoising diffusion probabilistic models and generative adversarial networks for medical image synthesis",
+          "venue": "Scientific Reports",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41598-023-39278-0.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.07501, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-12-14",
+          "journal": {
+            "name": "Scientific Reports",
+            "volume": "13"
+          },
+          "authors": [
+            {
+              "authorId": "1840484052",
+              "name": "Gustav Müller-Franzes"
+            },
+            {
+              "authorId": "48627286",
+              "name": "J. Niehues"
+            },
+            {
+              "authorId": "2047524297",
+              "name": "Firas Khader"
+            },
+            {
+              "authorId": "150291268",
+              "name": "Soroosh Tayebi Arasteh"
+            },
+            {
+              "authorId": "1731835",
+              "name": "Christoph Haarburger"
+            },
+            {
+              "authorId": "2064331880",
+              "name": "C. Kuhl"
+            },
+            {
+              "authorId": "2187873077",
+              "name": "Tian Wang"
+            },
+            {
+              "authorId": "2031129360",
+              "name": "T. Han"
+            },
+            {
+              "authorId": "6280924",
+              "name": "S. Nebelung"
+            },
+            {
+              "authorId": "3955759",
+              "name": "Jakob Nikolas Kather"
+            },
+            {
+              "authorId": "3228050",
+              "name": "D. Truhn"
+            }
+          ],
+          "abstract": "Although generative adversarial networks (GANs) can produce large datasets, their limited diversity and fidelity have been recently addressed by denoising diffusion probabilistic models, which have demonstrated superiority in natural image synthesis. In this study, we introduce Medfusion, a conditional latent DDPM designed for medical image generation, and evaluate its performance against GANs, which currently represent the state-of-the-art. Medfusion was trained and compared with StyleGAN-3 using fundoscopy images from the AIROGS dataset, radiographs from the CheXpert dataset, and histopathology images from the CRCDX dataset. Based on previous studies, Progressively Growing GAN (ProGAN) and Conditional GAN (cGAN) were used as additional baselines on the CheXpert and CRCDX datasets, respectively. Medfusion exceeded GANs in terms of diversity (recall), achieving better scores of 0.40 compared to 0.19 in the AIROGS dataset, 0.41 compared to 0.02 (cGAN) and 0.24 (StyleGAN-3) in the CRMDX dataset, and 0.32 compared to 0.17 (ProGAN) and 0.08 (StyleGAN-3) in the CheXpert dataset. Furthermore, Medfusion exhibited equal or higher fidelity (precision) across all three datasets. Our study shows that Medfusion constitutes a promising alternative to GAN-based models for generating high-quality medical images, leading to improved diversity and less artifacts in the generated images."
+        },
+        {
+          "paperId": "e793a1c2b98c655eb20a1fe253b5eb2971e48917",
+          "externalIds": {
+            "CorpusId": 249535354
+          },
+          "url": "https://www.semanticscholar.org/paper/e793a1c2b98c655eb20a1fe253b5eb2971e48917",
+          "title": "Three-Dimensional Medical Image Synthesis with Denoising Diffusion Probabilistic Models",
+          "venue": "",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=Oz7lKWVh45H, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2169508223",
+              "name": "Zolnamar Dorjsembe"
+            },
+            {
+              "authorId": "7839387",
+              "name": "Furen Xiao"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-384624231b22e266.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-384624231b22e266.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-384624231b22e266.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "c54275b8f5c595b493b821e57f5678fcbec75c89f41c07e553676927bfc65fdb",
+    "chunk_count": 32,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

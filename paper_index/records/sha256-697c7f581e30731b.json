@@ -1,0 +1,751 @@
+{
+  "paper_id": "sha256-697c7f581e30731b",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/protein_folding_and_design/Listgarten 2026 Science - How artificial intelligence isreengineering protein engineering.pdf",
+  "pdf_sha256": "697c7f581e30731be35758fe2a55819671352988613f01ac089c3c51418a31e6",
+  "filename": "Listgarten 2026 Science - How artificial intelligence isreengineering protein engineering.pdf",
+  "item_type": "article",
+  "title_query": "How artificial intelligence is reengineering protein engineering",
+  "filename_hints": {
+    "year_hint": 2026,
+    "venue_hint": "science",
+    "prefix": "Listgarten 2026 Science"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:25:40.846111+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "How artificial intelligence is reengineering protein engineering",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "How artificial intelligence isreengineering protein engineering",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2026!=2025",
+          "venue_hint_mismatch:science!=alrafidainjournalofengineeringsciences"
+        ],
+        "best_score": 0.4717,
+        "candidate_count": 10
+      },
+      {
+        "query": "How artificial intelligence is reengineering protein engineering",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 1.0,
+        "candidate_count": 10
+      },
+      {
+        "query": "How artificial intelligence is reengineering protein engineering Jennifer Listgarten1,2,3* and Hanlun Jiang1",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "Given that proteins are key drivers of all forms of life, it is no surprise that humans have long sought to tinker with them",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "What is the hope that AI brings to the field of protein engineering?",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      }
+    ],
+    "best_candidate": {
+      "paperId": "01f05f0b6bef2dbfb03d3541403ff5a37aa3941b",
+      "externalIds": {
+        "DOI": "10.1126/science.aec8444",
+        "CorpusId": 287421055
+      },
+      "url": "https://www.semanticscholar.org/paper/01f05f0b6bef2dbfb03d3541403ff5a37aa3941b",
+      "title": "How artificial intelligence is reengineering protein engineering",
+      "venue": "Science",
+      "year": 2026,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1126/science.aec8444?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1126/science.aec8444, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2026-04-09",
+      "journal": {
+        "name": "Science"
+      },
+      "authors": [
+        {
+          "authorId": "2261919343",
+          "name": "Jennifer Listgarten"
+        },
+        {
+          "authorId": null,
+          "name": "Hanlun Jiang"
+        }
+      ],
+      "abstract": "Over the past decades, protein engineering has matured into a field of its own, driven by computational modeling and high-throughput wet lab experiments, with broad application in therapeutics, diagnostics, agriculture, and manufacturing. In recent years, artificial intelligence (AI) has further propelled protein engineering by enabling more efficient search through high-dimensional sequence space for proteins with desired properties. Notable AI-based advances encompass generative modeling of sequences, backbone structure, and atoms; tailoring general versions of such models to design proteins with specific properties; modeling for extraction of protein representations and scoring candidate protein sequences; and developing techniques for library design, including synthesis-aware approaches. Herein we discuss these advances, emphasizing a unifying view through a statistical interpretation of modern AI approaches."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "01f05f0b6bef2dbfb03d3541403ff5a37aa3941b",
+        "title": "How artificial intelligence is reengineering protein engineering",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2026,
+        "candidate_year": 2026,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "62d7c63ff48368cf9ad651fbafc3f5183d954d9c",
+        "title": "Artificial intelligence-driven metabolic engineering is applied to the development of active ingredients in Traditional Chinese Medicine",
+        "score": 0.4889,
+        "title_similarity": 0.4589,
+        "query_year": 2026,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c9fe9ce1330a46075cfefb9e3c83b5eee685adb1",
+        "title": "Artificial intelligence in enzyme catalysis: Emerging trends and applications in biocatalyst engineering",
+        "score": 0.4393,
+        "title_similarity": 0.3593,
+        "query_year": 2026,
+        "candidate_year": 2026,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "38ce63470babd5a1613c39848de1d22d5ee47c83",
+        "title": "Artificial Intelligence-Driven Enzyme Engineering from Structural Prediction to De Novo Design.",
+        "score": 0.4336,
+        "title_similarity": 0.3536,
+        "query_year": 2026,
+        "candidate_year": 2026,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "86d5686ee30efd3b7f84cedeb241059c30314fa9",
+        "title": "Generative artificial intelligence for de novo protein design",
+        "score": 0.294,
+        "title_similarity": 0.374,
+        "query_year": 2026,
+        "candidate_year": 2023,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "99da0317c1a131f342749f0065c240b807551878",
+        "title": "Revolutionizing CRISPR technology with artificial intelligence",
+        "score": 0.2857,
+        "title_similarity": 0.2557,
+        "query_year": 2026,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "dfda68400467d6f44f3c7a8bab88e1e1d08e6d40",
+        "title": "From thermodynamics to protein design: Diffusion models for biomolecule generation towards autonomous protein engineering",
+        "score": 0.2624,
+        "title_similarity": 0.2324,
+        "query_year": 2026,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "1723972628579be69cb24b67a1418b5c845b0483",
+        "title": "Electrochemical techniques in protein engineering: Innovations in redox-active protein design and electron transfer mechanisms.",
+        "score": 0.2595,
+        "title_similarity": 0.2295,
+        "query_year": 2026,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4b460b66ca03f91d220e48b7e9268ad6aa39748b",
+        "title": "Enhancing Activity and Stability of Cytokines for Immune Cell Therapy Workflows Using Advanced Protein Engineering 3247",
+        "score": 0.2546,
+        "title_similarity": 0.2246,
+        "query_year": 2026,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "379c778be23da81a96e774a320462db6dc44d1ec",
+        "title": "Integrating chemical artificial intelligence and cognitive computing for predictive analysis of biological pathways: a case for intrinsically disordered proteins",
+        "score": 0.2526,
+        "title_similarity": 0.2226,
+        "query_year": 2026,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1126/science.aec8444"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 108,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "01f05f0b6bef2dbfb03d3541403ff5a37aa3941b",
+          "externalIds": {
+            "DOI": "10.1126/science.aec8444",
+            "CorpusId": 287421055
+          },
+          "url": "https://www.semanticscholar.org/paper/01f05f0b6bef2dbfb03d3541403ff5a37aa3941b",
+          "title": "How artificial intelligence is reengineering protein engineering",
+          "venue": "Science",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1126/science.aec8444?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1126/science.aec8444, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-04-09",
+          "journal": {
+            "name": "Science"
+          },
+          "authors": [
+            {
+              "authorId": "2261919343",
+              "name": "Jennifer Listgarten"
+            },
+            {
+              "authorId": null,
+              "name": "Hanlun Jiang"
+            }
+          ],
+          "abstract": "Over the past decades, protein engineering has matured into a field of its own, driven by computational modeling and high-throughput wet lab experiments, with broad application in therapeutics, diagnostics, agriculture, and manufacturing. In recent years, artificial intelligence (AI) has further propelled protein engineering by enabling more efficient search through high-dimensional sequence space for proteins with desired properties. Notable AI-based advances encompass generative modeling of sequences, backbone structure, and atoms; tailoring general versions of such models to design proteins with specific properties; modeling for extraction of protein representations and scoring candidate protein sequences; and developing techniques for library design, including synthesis-aware approaches. Herein we discuss these advances, emphasizing a unifying view through a statistical interpretation of modern AI approaches."
+        },
+        {
+          "paperId": "62d7c63ff48368cf9ad651fbafc3f5183d954d9c",
+          "externalIds": {
+            "DOI": "10.1051/bioconf/202517403013",
+            "CorpusId": 278554037
+          },
+          "url": "https://www.semanticscholar.org/paper/62d7c63ff48368cf9ad651fbafc3f5183d954d9c",
+          "title": "Artificial intelligence-driven metabolic engineering is applied to the development of active ingredients in Traditional Chinese Medicine",
+          "venue": "BIO Web of Conferences",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1051/bioconf/202517403013?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1051/bioconf/202517403013, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference",
+            "Review"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "BIO Web of Conferences"
+          },
+          "authors": [
+            {
+              "authorId": "2265818864",
+              "name": "Guoqi Zhang"
+            },
+            {
+              "authorId": "2298932597",
+              "name": "Juan Wang"
+            }
+          ],
+          "abstract": "Metabolic engineering serves as a pivotal component in establishing microbial platforms for the effective biosynthesis of expensive compounds, therapeutic agents, and vegetative production systems. This field necessitates thorough comprehension of intracellular biochemical networks (encompassing molecular transformation routes and corresponding catalytic proteins). Nevertheless, the biochemical routes and critical catalysts that control numerous high-value target molecules have not been fully characterized, which is the main bottleneck for the heterologous synthesis of high-value chemicals. To address this limitation, scientists have devised optimized production circuits through the engineering of artificial biocatalysts and de novo biochemical reaction sequences. With the continuous accumulation of biological big data, the data-driven methods of artificial intelligence (AI) technology are promoting the further development of protein and metabolic pathway design. In this paper, we introduce AI-driven machine learning algorithms in prediction models, and also review recent research progress on AI-assisted metabolic engineering design and production of high-value compounds, focusing on how to use AI methods to achieve directed evolution of strains."
+        },
+        {
+          "paperId": "dfda68400467d6f44f3c7a8bab88e1e1d08e6d40",
+          "externalIds": {
+            "ArXiv": "2501.02680",
+            "DBLP": "journals/corr/abs-2501-02680",
+            "DOI": "10.48550/arXiv.2501.02680",
+            "CorpusId": 275336164
+          },
+          "url": "https://www.semanticscholar.org/paper/dfda68400467d6f44f3c7a8bab88e1e1d08e6d40",
+          "title": "From thermodynamics to protein design: Diffusion models for biomolecule generation towards autonomous protein engineering",
+          "venue": "arXiv.org",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.02680, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2025-01-05",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2501.02680"
+          },
+          "authors": [
+            {
+              "authorId": "2338864258",
+              "name": "Wen-Ran Li"
+            },
+            {
+              "authorId": "83579257",
+              "name": "Xavier F. Cadet"
+            },
+            {
+              "authorId": "1490936339",
+              "name": "David Medina-Ortiz"
+            },
+            {
+              "authorId": "2285363901",
+              "name": "Mehdi D. Davari"
+            },
+            {
+              "authorId": "2245512623",
+              "name": "Ramanathan Sowdhamini"
+            },
+            {
+              "authorId": "2282961524",
+              "name": "Cédric Damour"
+            },
+            {
+              "authorId": "2338896535",
+              "name": "Yu Li"
+            },
+            {
+              "authorId": "2338826107",
+              "name": "Alain Miranville"
+            },
+            {
+              "authorId": "2282957729",
+              "name": "Frédéric Cadet"
+            }
+          ],
+          "abstract": "Protein design with desirable properties has been a significant challenge for many decades. Generative artificial intelligence is a promising approach and has achieved great success in various protein generation tasks. Notably, diffusion models stand out for their robust mathematical foundations and impressive generative capabilities, offering unique advantages in certain applications such as protein design. In this review, we first give the definition and characteristics of diffusion models and then focus on two strategies: Denoising Diffusion Probabilistic Models and Score-based Generative Models, where DDPM is the discrete form of SGM. Furthermore, we discuss their applications in protein design, peptide generation, drug discovery, and protein-ligand interaction. Finally, we outline the future perspectives of diffusion models to advance autonomous protein design and engineering. The E(3) group consists of all rotations, reflections, and translations in three-dimensions. The equivariance on the E(3) group can keep the physical stability of the frame of each amino acid as much as possible, and we reflect on how to keep the diffusion model E(3) equivariant for protein generation."
+        },
+        {
+          "paperId": "1723972628579be69cb24b67a1418b5c845b0483",
+          "externalIds": {
+            "DOI": "10.1016/j.ijbiomac.2025.149750",
+            "CorpusId": 283964454,
+            "PubMed": "41418956"
+          },
+          "url": "https://www.semanticscholar.org/paper/1723972628579be69cb24b67a1418b5c845b0483",
+          "title": "Electrochemical techniques in protein engineering: Innovations in redox-active protein design and electron transfer mechanisms.",
+          "venue": "International Journal of Biological Macromolecules",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.ijbiomac.2025.149750?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.ijbiomac.2025.149750, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-12-01",
+          "journal": {
+            "name": "International journal of biological macromolecules",
+            "pages": "\n          149750\n        "
+          },
+          "authors": [
+            {
+              "authorId": "2190539820",
+              "name": "N. P. Dalbanjan"
+            },
+            {
+              "authorId": "2186718288",
+              "name": "Karuna Korgaonkar"
+            },
+            {
+              "authorId": "2190541348",
+              "name": "A. J. Kadapure"
+            },
+            {
+              "authorId": "2279798179",
+              "name": "Maruti J. Gurav"
+            },
+            {
+              "authorId": "3620315",
+              "name": "V. Chachadi"
+            },
+            {
+              "authorId": "2203621754",
+              "name": "S. K. Praveen Kumar"
+            }
+          ],
+          "abstract": "Redox-active protein engineering has emerged as a promising field with applications in biosensing, bioelectrocatalysis, synthetic biology, and bioelectronics. Electrochemical techniques such as impedance spectroscopy, cyclic voltammetry, chronoamperometry, and scanning electrochemical microscopy are central to probing electron transfer mechanisms, tuning redox potentials, and analyzing protein-electrode interactions. This review highlights recent advances in electrochemical approaches that support the design and functional optimization of engineered redox proteins. It discusses how artificial intelligence and computational modelling facilitate the identification of mutations that enhance electron transfer efficiency. Additionally, the review examines how synthetic biology enables the construction of artificial electron transport pathways, and how nanostructured materials such as carbon nanotubes, metal-organic frameworks, and conductive polymers improve protein immobilization and charge conduction. Scalable production methods like recombinant expression and cell-free synthesis have increased the accessibility of these proteins for industrial applications. Their integration into wearable and real-time diagnostic platforms reflects growing utility in healthcare monitoring. However, challenges such as protein stability, precise control of tunneling, and effective electronic integration remain. Addressing these through interdisciplinary strategies will be key to advancing protein-based bioelectronic systems."
+        },
+        {
+          "paperId": "86d5686ee30efd3b7f84cedeb241059c30314fa9",
+          "externalIds": {
+            "ArXiv": "2310.09685",
+            "DBLP": "journals/corr/abs-2310-09685",
+            "DOI": "10.48550/arXiv.2310.09685",
+            "CorpusId": 264147097,
+            "PubMed": "38663170"
+          },
+          "url": "https://www.semanticscholar.org/paper/86d5686ee30efd3b7f84cedeb241059c30314fa9",
+          "title": "Generative artificial intelligence for de novo protein design",
+          "venue": "Current Opinion in Structural Biology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.09685, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-10-15",
+          "journal": {
+            "name": "Current opinion in structural biology",
+            "pages": "\n          102794\n        ",
+            "volume": "86"
+          },
+          "authors": [
+            {
+              "authorId": "2258723020",
+              "name": "Adam Winnifrith"
+            },
+            {
+              "authorId": "51112526",
+              "name": "C. Outeiral"
+            },
+            {
+              "authorId": "2252876545",
+              "name": "Brian Hie"
+            }
+          ],
+          "abstract": "Engineering new molecules with desirable functions and properties has the potential to extend our ability to engineer proteins beyond what nature has so far evolved. Advances in the so-called 'de novo' design problem have recently been brought forward by developments in artificial intelligence. Generative architectures, such as language models and diffusion processes, seem adept at generating novel, yet realistic proteins that display desirable properties and perform specified functions. State-of-the-art design protocols now achieve experimental success rates nearing 20%, thus widening the access to de novo designed proteins. Despite extensive progress, there are clear field-wide challenges, for example, in determining the best in silico metrics to prioritise designs for experimental testing, and in designing proteins that can undergo large conformational changes or be regulated by post-translational modifications. With an increase in the number of models being developed, this review provides a framework to understand how these tools fit into the overall process of de novo protein design. Throughout, we highlight the power of incorporating biochemical knowledge to improve performance and interpretability."
+        },
+        {
+          "paperId": "379c778be23da81a96e774a320462db6dc44d1ec",
+          "externalIds": {
+            "DOI": "10.1007/s12551-025-01286-x",
+            "CorpusId": 276402728,
+            "PubMed": "40727659"
+          },
+          "url": "https://www.semanticscholar.org/paper/379c778be23da81a96e774a320462db6dc44d1ec",
+          "title": "Integrating chemical artificial intelligence and cognitive computing for predictive analysis of biological pathways: a case for intrinsically disordered proteins",
+          "venue": "Biophysical Reviews",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s12551-025-01286-x?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s12551-025-01286-x, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-02-15",
+          "journal": {
+            "name": "Biophysical Reviews",
+            "pages": "737 - 758",
+            "volume": "17"
+          },
+          "authors": [
+            {
+              "authorId": "1403660262",
+              "name": "Orkid Coskuner-Weber"
+            },
+            {
+              "authorId": "34356934",
+              "name": "P. Gentili"
+            },
+            {
+              "authorId": "2261823665",
+              "name": "V. Uversky"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "4b460b66ca03f91d220e48b7e9268ad6aa39748b",
+          "externalIds": {
+            "DOI": "10.1093/jimmun/vkaf283.1065",
+            "CorpusId": 283232021
+          },
+          "url": "https://www.semanticscholar.org/paper/4b460b66ca03f91d220e48b7e9268ad6aa39748b",
+          "title": "Enhancing Activity and Stability of Cytokines for Immune Cell Therapy Workflows Using Advanced Protein Engineering 3247",
+          "venue": "Journal of Immunology",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1093/jimmun/vkaf283.1065?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1093/jimmun/vkaf283.1065, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-11-01",
+          "journal": {
+            "name": "The Journal of Immunology"
+          },
+          "authors": [
+            {
+              "authorId": "2073502031",
+              "name": "N. Otto"
+            },
+            {
+              "authorId": "2358524662",
+              "name": "D. Nedrud"
+            },
+            {
+              "authorId": "2053600759",
+              "name": "S. Nielsen"
+            },
+            {
+              "authorId": "2358525237",
+              "name": "A. Sarne"
+            },
+            {
+              "authorId": "49378603",
+              "name": "K. Wetzel"
+            }
+          ],
+          "abstract": "\n \n \n Recombinant cytokines are indispensable reagents in the manufacture of immune-based therapies. Dependable and stable reagents are required for consistency in culture conditions and standardization of developmental procedures to produce efficient and cost-effective therapies. Although improvements have been made through manufacturing and cell process development, little attention has been given to how enhancing recombinant proteins could alleviate common pinch points like operational and process development costs in immune cell therapy. In this study, we utilized Artificial Intelligence (AI)/predictive analytics to develop hyper-stable and hyper-active cytokines for TIL, T/NK cell workflows. Our method improved upon the unstable regions in IL-2 while maintaining efficient engagement and activation of the IL-2βγ receptors. The resulting Heat IL-2 provides superior heat stability, duration in media, and delivers comparable or greater results in purified CD4/CD8 T cell or TIL outgrowth assays compared to standard IL-2 proteins. Furthermore, we used cutting-edge protein engineering techniques to enhance the performance of other commonly used gamma chain cytokines, ideal for extended immune cell workflows, such as TIL and allogeneic cell therapies. Overall, our study demonstrates the importance of protein engineering for enhancing the performance of cytokines in operational and immune cell process development, delivering efficient and cost-effective immune cell manufacturing.\n \n \n \n N/A\n \n \n \n Cytokines and Chemokines and Their Receptors (CCR)\n"
+        },
+        {
+          "paperId": "c9fe9ce1330a46075cfefb9e3c83b5eee685adb1",
+          "externalIds": {
+            "DOI": "10.1002/cjce.70383",
+            "CorpusId": 287042555
+          },
+          "url": "https://www.semanticscholar.org/paper/c9fe9ce1330a46075cfefb9e3c83b5eee685adb1",
+          "title": "Artificial intelligence in enzyme catalysis: Emerging trends and applications in biocatalyst engineering",
+          "venue": "Canadian Journal of Chemical Engineering",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/cjce.70383?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/cjce.70383, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2026-03-30",
+          "journal": {
+            "name": "The Canadian Journal of Chemical Engineering"
+          },
+          "authors": [
+            {
+              "authorId": "2152681105",
+              "name": "M. B. Sales"
+            },
+            {
+              "authorId": "2298372365",
+              "name": "Francisco Izaias da Silva Aires"
+            },
+            {
+              "authorId": "2374534387",
+              "name": "P. D. de Sousa"
+            },
+            {
+              "authorId": "2367165176",
+              "name": "Caleb da Silva"
+            },
+            {
+              "authorId": "2427244286",
+              "name": "Emanuel Lino Rodrigues"
+            },
+            {
+              "authorId": "47662255",
+              "name": "M. C. M. de Souza"
+            },
+            {
+              "authorId": "2127252719",
+              "name": "J. D. dos Santos"
+            }
+          ],
+          "abstract": "\n This study systematically explores the applications of artificial intelligence (AI) in enzyme research, emphasizing its role in enzyme design, catalytic function prediction, stability, discovery of novel enzymes, and process optimization. Using bibliometric review techniques, we quantified research subfields, mapped global scientific trends, and identified the machine learning (ML) approaches most frequently employed in enzymology. Our analysis reveals that algorithms such as random forests, support vector machines, decision trees, and K‐nearest neighbours are predominantly applied to predict protein solubility, enzyme stability after mutations, catalytic mechanisms, and drug‐enzyme interactions. These findings demonstrate how AI enables more accurate predictions of enzymatic behaviour, accelerates drug discovery pipelines, and supports the identification of new metabolic pathways for industrial biotechnology. Beyond mapping current applications, this work highlights significant challenges, including the scarcity of high‐quality datasets and the limited generalization of models across enzyme classes. Nonetheless, the results underscore the transformative potential of AI when integrated into experimental workflows, particularly with advances in laboratory automation and the emerging synergy between AI and quantum computing. By consolidating state‐of‐the‐art knowledge and identifying future directions, this study contributes to guiding research strategies in data‐driven enzyme engineering and promotes the development of sustainable biotechnological solutions."
+        },
+        {
+          "paperId": "38ce63470babd5a1613c39848de1d22d5ee47c83",
+          "externalIds": {
+            "DOI": "10.1021/acs.jafc.6c01781",
+            "CorpusId": 286673037,
+            "PubMed": "41851020"
+          },
+          "url": "https://www.semanticscholar.org/paper/38ce63470babd5a1613c39848de1d22d5ee47c83",
+          "title": "Artificial Intelligence-Driven Enzyme Engineering from Structural Prediction to De Novo Design.",
+          "venue": "Journal of Agricultural and Food Chemistry",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jafc.6c01781?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jafc.6c01781, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2026-03-18",
+          "journal": {
+            "name": "Journal of agricultural and food chemistry"
+          },
+          "authors": [
+            {
+              "authorId": "2293549664",
+              "name": "Hongling Shi"
+            },
+            {
+              "authorId": "2340950258",
+              "name": "Xueyang Bai"
+            },
+            {
+              "authorId": "2424659530",
+              "name": "Fangyuan Tian"
+            },
+            {
+              "authorId": "2329114868",
+              "name": "Yangwang Li"
+            },
+            {
+              "authorId": "2373728929",
+              "name": "Dandan Li"
+            },
+            {
+              "authorId": "2305209498",
+              "name": "Lunguang Yao"
+            },
+            {
+              "authorId": "2260660818",
+              "name": "Chuang Xue"
+            },
+            {
+              "authorId": "2148323135",
+              "name": "Cunduo Tang"
+            }
+          ],
+          "abstract": "The rapid maturation of artificial intelligence (AI) has catalyzed a fundamental transition in biocatalysis, moving from structural analysis toward the prescriptive design of bespoke enzymes. This review synthesizes this AI-driven revolution, evaluating breakthroughs like AlphaFold2 and CLEAN that now bridge sequences with catalytic properties, including kinetic parameters and substrate specificity. We critically compare rational design strategies, contrasting evolutionary-guided redesign with the emerging generative de novo paradigm, where diffusion models and protein language models (PLMs) explore uncharacterized sequence space. By dissecting algorithms such as Graph Neural Networks and Transformers, we illustrate their role in deciphering protein chemistry's linguistic \"grammar\". Grounded in industrial cases, we demonstrate how AI overcomes bottlenecks like the stability-activity trade-off. Finally, we delineate the trajectory toward autonomous biofoundries and virtual cell modeling, envisioning engineered biocatalysts systematically integrated into complex metabolic networks─providing a roadmap for next-generation computational enzymology."
+        },
+        {
+          "paperId": "99da0317c1a131f342749f0065c240b807551878",
+          "externalIds": {
+            "PubMedCentral": "12322281",
+            "DOI": "10.1038/s12276-025-01462-9",
+            "CorpusId": 280406275,
+            "PubMed": "40745000"
+          },
+          "url": "https://www.semanticscholar.org/paper/99da0317c1a131f342749f0065c240b807551878",
+          "title": "Revolutionizing CRISPR technology with artificial intelligence",
+          "venue": "Experimental and Molecular Medicine",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12322281, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-01",
+          "journal": {
+            "name": "Experimental & Molecular Medicine",
+            "pages": "1419 - 1431",
+            "volume": "57"
+          },
+          "authors": [
+            {
+              "authorId": "2344430750",
+              "name": "Min-gyeong Kim"
+            },
+            {
+              "authorId": "2149748607",
+              "name": "M. Go"
+            },
+            {
+              "authorId": "2374483419",
+              "name": "Seung-Hun Kang"
+            },
+            {
+              "authorId": "2358587929",
+              "name": "Soo-Hwan Jeong"
+            },
+            {
+              "authorId": "9754606",
+              "name": "Kayeong Lim"
+            }
+          ],
+          "abstract": "Genome engineering has made remarkable strides, evolving from DNA-binding proteins such as zinc fingers and transcription activator-like effectors to CRISPR–Cas systems. CRISPR technology has revolutionized the field through its simplicity and ability to target specific genome regions via guide RNA and Cas proteins. Progress in CRISPR tools—CRISPR nucleases, base editors and prime editors—has expanded the toolkit to induce targeted insertions or deletions, nucleotide conversions and a wider array of genetic alterations. Nevertheless, variations in editing outcomes across cell types and unintended off-target effects still present substantial hurdles. Artificial intelligence (AI), which has seen rapid advances, provides high-level solutions to these problems. By leveraging large datasets from diverse experiments, AI enhances guide RNA design, predicts off-target activities and improves editing efficiency. In addition, AI aids in discovering and designing novel CRISPR systems beyond natural limitations. These developments provide new modalities essential for the innovation of personalized therapies and help to ensure efficiency, precision and safety. Here we discuss the transformative role of AI in advancing CRISPR technology. We highlight how AI contributes to refining nuclease-based editing, base editing and prime editing. Integrating AI with CRISPR technology enhances existing tools and opens doors to next-generation medicine for gene therapy. Early methods of genome editing used complex proteins, but the discovery of CRISPR–Cas9 simplified the process. CRISPR–Cas9 uses a guide RNA to direct the Cas9 protein to specific DNA sites for precise editing. However, CRISPR can sometimes make mistakes. To improve accuracy, researchers are using artificial intelligence (AI) to enhance CRISPR technology. AI is helping scientists to design better guide RNAs and predict potential errors in CRISPR editing. This involves using machine learning to analyze large datasets and improve the precision of genome editing tools. The integration of AI has led to more accurate predictions of CRISPR’s effects and has helped in designing new proteins for genome editing. These advancements make CRISPR efficient and safer for use in research and potential medical applications. In conclusion, AI is substantially enhancing CRISPR technology by improving its precision and efficiency. This summary was initially drafted using artificial intelligence, then revised and fact-checked by the author."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-697c7f581e30731b.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-697c7f581e30731b.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-697c7f581e30731b.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "744dc8706e09e794c8604e038ace338b08fbfa1aa2a2fcab5704f00ed13489e8",
+    "chunk_count": 31,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

@@ -1,0 +1,1080 @@
+{
+  "paper_id": "sha256-c037156de9969469",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/quantum_computing/Bombin 2024 PRXQuantum - Fault-Tolerant Postselection for Low-Overhead Magic State Preparation.pdf",
+  "pdf_sha256": "c037156de9969469131919633862b89b72e086d6cd85034179690a0a915b08e8",
+  "filename": "Bombin 2024 PRXQuantum - Fault-Tolerant Postselection for Low-Overhead Magic State Preparation.pdf",
+  "item_type": "article",
+  "title_query": "Fault-Tolerant Postselection for Low-Overhead Magic State Preparation",
+  "filename_hints": {
+    "year_hint": 2024,
+    "venue_hint": "",
+    "prefix": "Bombin 2024 PRXQuantum"
+  },
+  "doi_candidates": [
+    "10.1103/PRXQuantum.5.010302"
+  ],
+  "date_indexed": "2026-04-17T03:37:28.003807+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 0.92,
+  "warnings": [
+    "year_hint_mismatch:2024!=2022"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Fault-Tolerant Postselection for Low-Overhead Magic State Preparation",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "27b40f0300a22b8a50fb2816abd3d50d61922fc5",
+      "externalIds": {
+        "ArXiv": "2212.00813",
+        "DOI": "10.1103/PRXQuantum.5.010302",
+        "CorpusId": 254221213
+      },
+      "url": "https://www.semanticscholar.org/paper/27b40f0300a22b8a50fb2816abd3d50d61922fc5",
+      "title": "Fault-Tolerant Postselection for Low-Overhead Magic State Preparation",
+      "venue": "PRX Quantum",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "http://link.aps.org/pdf/10.1103/PRXQuantum.5.010302",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.00813, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-12-01",
+      "journal": {
+        "name": "PRX Quantum"
+      },
+      "authors": [
+        {
+          "authorId": "2060383630",
+          "name": "H'ector Bomb'in"
+        },
+        {
+          "authorId": "102479055",
+          "name": "M. Pant"
+        },
+        {
+          "authorId": "2112235934",
+          "name": "S. Roberts"
+        },
+        {
+          "authorId": "144323813",
+          "name": "K. Seetharam"
+        }
+      ],
+      "abstract": "We introduce a framework for fault-tolerant post-selection (FTPS) of fault-tolerant codes and channels -- such as those based on surface-codes -- using soft-information metrics based on visible syndrome and erasure information. We introduce several metrics for ranking configurations of syndromes and erasures. In particular, we introduce the \\emph{logical gap} (and variants thereof) as a powerful soft-information metric for predicting logical error rates of fault-tolerant channels based on topological error-correcting codes. The logical gap is roughly the unsigned weight difference between inequivalent logical corrections and is adaptable to any tailored noise model or decoder. We deploy this framework to prepare high-quality surface code magic states with low overhead under a model of independent and identically distributed (\\emph{i.i.d.}) Pauli and erasure errors. Post-selection strategies based on the logical gap can suppress the encoding error rate of a magic state preparation channel to the level of the physical error rate with low overhead. For example, when operating at $60\\%$ the bulk threshold of the corresponding surface code, an overall reduction of the encoding error rate by a factor of $15$ is achievable with a relative overhead factor of ${<2}$ (approximately $23$ times less than that of simple syndrome-counting rules). We analyze a schematic buffer architecture for implementing post-selection rules on magic state factories in the context of magic state distillation. The FTPS framework can be utilized for mitigating errors in more general fault-tolerant logical channels."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "27b40f0300a22b8a50fb2816abd3d50d61922fc5",
+        "title": "Fault-Tolerant Postselection for Low-Overhead Magic State Preparation",
+        "score": 0.92,
+        "title_similarity": 1.0,
+        "query_year": 2024,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "9d7c219a8c0d3ea7c6c5536355452cb71f35483e",
+        "title": "Using redundant ancilla encoding and flags for very low overhead fault-tolerant magic state preparation",
+        "score": 0.6637,
+        "title_similarity": 0.7437,
+        "query_year": 2024,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "130cdd7f13e942457b4b747a0c44a9f0adac4eb4",
+        "title": "Very low overhead fault-tolerant magic state preparation using redundant ancilla encoding and flag qubits",
+        "score": 0.6521,
+        "title_similarity": 0.7321,
+        "query_year": 2024,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2dc37e2b7d4432c68b290a9ab037915c0be05f57",
+        "title": "Fault-tolerant magic state preparation with flag qubits",
+        "score": 0.5013,
+        "title_similarity": 0.5813,
+        "query_year": 2024,
+        "candidate_year": 2018,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "146438f292040e1fd951071789ba279f35ac1021",
+        "title": "Low-overhead Magic State Circuits with Transversal CNOTs",
+        "score": 0.4823,
+        "title_similarity": 0.4523,
+        "query_year": 2024,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7060648d19b271e9474d268bd134e4301bf1b8f8",
+        "title": "Magic state distillation and cost analysis in fault-tolerant universal quantum computation",
+        "score": 0.455,
+        "title_similarity": 0.425,
+        "query_year": 2024,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "cf779dea51315fb57f6f28e6d25f5012084ce8b8",
+        "title": "Unfolded distillation: very low-cost magic state preparation for biased-noise qubits",
+        "score": 0.4483,
+        "title_similarity": 0.4183,
+        "query_year": 2024,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "bb3e433e8fd45d585b489c54ce8323a5ecd00910",
+        "title": "Fault-tolerant one-bit addition with the smallest interesting color code",
+        "score": 0.2392,
+        "title_similarity": 0.2092,
+        "query_year": 2024,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a54ff6f9955a06af858aeb66af560c96a9425155",
+        "title": "Fast magic state preparation by gauging higher-form transversal gates in parallel",
+        "score": 0.2338,
+        "title_similarity": 0.3138,
+        "query_year": 2024,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "502e800b9ca133cd607fb40a449885ee153423fc",
+        "title": "Magic tricycles: Efficient magic state generation with finite block-length quantum LDPC codes",
+        "score": 0.2337,
+        "title_similarity": 0.2037,
+        "query_year": 2024,
+        "candidate_year": 2025,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1103/prxquantum.5.010302"
+    ],
+    "matching_extracted_doi": "10.1103/PRXQuantum.5.010302",
+    "raw_response": {
+      "total": 21,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "27b40f0300a22b8a50fb2816abd3d50d61922fc5",
+          "externalIds": {
+            "ArXiv": "2212.00813",
+            "DOI": "10.1103/PRXQuantum.5.010302",
+            "CorpusId": 254221213
+          },
+          "url": "https://www.semanticscholar.org/paper/27b40f0300a22b8a50fb2816abd3d50d61922fc5",
+          "title": "Fault-Tolerant Postselection for Low-Overhead Magic State Preparation",
+          "venue": "PRX Quantum",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "http://link.aps.org/pdf/10.1103/PRXQuantum.5.010302",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.00813, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-12-01",
+          "journal": {
+            "name": "PRX Quantum"
+          },
+          "authors": [
+            {
+              "authorId": "2060383630",
+              "name": "H'ector Bomb'in"
+            },
+            {
+              "authorId": "102479055",
+              "name": "M. Pant"
+            },
+            {
+              "authorId": "2112235934",
+              "name": "S. Roberts"
+            },
+            {
+              "authorId": "144323813",
+              "name": "K. Seetharam"
+            }
+          ],
+          "abstract": "We introduce a framework for fault-tolerant post-selection (FTPS) of fault-tolerant codes and channels -- such as those based on surface-codes -- using soft-information metrics based on visible syndrome and erasure information. We introduce several metrics for ranking configurations of syndromes and erasures. In particular, we introduce the \\emph{logical gap} (and variants thereof) as a powerful soft-information metric for predicting logical error rates of fault-tolerant channels based on topological error-correcting codes. The logical gap is roughly the unsigned weight difference between inequivalent logical corrections and is adaptable to any tailored noise model or decoder. We deploy this framework to prepare high-quality surface code magic states with low overhead under a model of independent and identically distributed (\\emph{i.i.d.}) Pauli and erasure errors. Post-selection strategies based on the logical gap can suppress the encoding error rate of a magic state preparation channel to the level of the physical error rate with low overhead. For example, when operating at $60\\%$ the bulk threshold of the corresponding surface code, an overall reduction of the encoding error rate by a factor of $15$ is achievable with a relative overhead factor of ${<2}$ (approximately $23$ times less than that of simple syndrome-counting rules). We analyze a schematic buffer architecture for implementing post-selection rules on magic state factories in the context of magic state distillation. The FTPS framework can be utilized for mitigating errors in more general fault-tolerant logical channels."
+        },
+        {
+          "paperId": "130cdd7f13e942457b4b747a0c44a9f0adac4eb4",
+          "externalIds": {
+            "MAG": "3105633983",
+            "ArXiv": "2003.03049",
+            "DOI": "10.1038/s41534-020-00319-5",
+            "CorpusId": 212628614
+          },
+          "url": "https://www.semanticscholar.org/paper/130cdd7f13e942457b4b747a0c44a9f0adac4eb4",
+          "title": "Very low overhead fault-tolerant magic state preparation using redundant ancilla encoding and flag qubits",
+          "venue": "npj Quantum Information",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41534-020-00319-5.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.03049, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2020-03-06",
+          "journal": {
+            "name": "npj Quantum Information",
+            "volume": "6"
+          },
+          "authors": [
+            {
+              "authorId": "144923793",
+              "name": "C. Chamberland"
+            },
+            {
+              "authorId": "30689325",
+              "name": "Kyungjoo Noh"
+            }
+          ],
+          "abstract": "Fault-tolerant quantum computing promises significant computational speedup over classical computing for a variety of important problems. One of the biggest challenges for realizing fault-tolerant quantum computing is preparing magic states with sufficiently low error rates. Magic state distillation is one of the most efficient schemes for preparing high-quality magic states. However, since magic state distillation circuits are not fault-tolerant, all the operations in the distillation circuits must be encoded in a large distance error-correcting code, resulting in a significant resource overhead. Here, we propose a fault-tolerant scheme for directly preparing high-quality magic states, which makes magic state distillation unnecessary. In particular, we introduce a concept that we call redundant ancilla encoding. The latter combined with flag qubits allows for circuits to both measure stabilizer generators of some code, while also being able to measure global operators to fault-tolerantly prepare magic states, all using nearest neighbor interactions. We apply such schemes to a planar architecture of the triangular color code family and demonstrate that our scheme requires at least an order of magnitude fewer qubits and space–time overhead compared to the most competitive magic state distillation schemes. Since our scheme requires only nearest-neighbor interactions in a planar architecture, it is suitable for various quantum computing platforms currently under development."
+        },
+        {
+          "paperId": "146438f292040e1fd951071789ba279f35ac1021",
+          "externalIds": {
+            "ArXiv": "2501.10291",
+            "CorpusId": 275606447
+          },
+          "url": "https://www.semanticscholar.org/paper/146438f292040e1fd951071789ba279f35ac1021",
+          "title": "Low-overhead Magic State Circuits with Transversal CNOTs",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.10291, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-01-17",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2193196310",
+              "name": "Nicholas Fazio"
+            },
+            {
+              "authorId": "2323373988",
+              "name": "Mark A. Webster"
+            },
+            {
+              "authorId": "2390443856",
+              "name": "Zhenyu Cai"
+            }
+          ],
+          "abstract": "With the successful demonstration of transversal CNOTs in many recent experiments, it is the right moment to examine its implications on one of the most critical parts of fault-tolerant computation -- magic state preparation. Using an algorithm that can recompile and simplify a circuit of consecutive multi-qubit phase rotations, we manage to construct fault-tolerant circuits for CCZ, CS and T states with much lower CNOT depths and qubit counts than before and minimal T-depth for the given workspace. These circuits can play crucial roles in fault-tolerant computation with transversal CNOTs, and we hope that the algorithms and methods developed in this paper can be used to further simplify other protocols in similar contexts."
+        },
+        {
+          "paperId": "9d7c219a8c0d3ea7c6c5536355452cb71f35483e",
+          "externalIds": {
+            "CorpusId": 233285327
+          },
+          "url": "https://www.semanticscholar.org/paper/9d7c219a8c0d3ea7c6c5536355452cb71f35483e",
+          "title": "Using redundant ancilla encoding and flags for very low overhead fault-tolerant magic state preparation",
+          "venue": "",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://assets.amazon.science/3b/d4/d8c06c554df0912d42f88b6dafe0/using-redundant-ancilla-encoding-and-flags-for-very-low-overhead-fault-tolerant-magic-state-preparation.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "144923793",
+              "name": "C. Chamberland"
+            },
+            {
+              "authorId": "30689325",
+              "name": "Kyungjoo Noh"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "cf779dea51315fb57f6f28e6d25f5012084ce8b8",
+          "externalIds": {
+            "ArXiv": "2507.12511",
+            "DOI": "10.1038/s41534-026-01197-z",
+            "CorpusId": 280284456
+          },
+          "url": "https://www.semanticscholar.org/paper/cf779dea51315fb57f6f28e6d25f5012084ce8b8",
+          "title": "Unfolded distillation: very low-cost magic state preparation for biased-noise qubits",
+          "venue": "npj Quantum Information",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.12511, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-16",
+          "journal": {
+            "name": "npj Quantum Information"
+          },
+          "authors": [
+            {
+              "authorId": "2205658101",
+              "name": "Diego Ruiz"
+            },
+            {
+              "authorId": "103021557",
+              "name": "Jérémie Guillaud"
+            },
+            {
+              "authorId": "24752374",
+              "name": "Christophe Vuillot"
+            },
+            {
+              "authorId": "2257800",
+              "name": "M. Mirrahimi"
+            }
+          ],
+          "abstract": "Magic state distillation enables universal fault-tolerant quantum computation by implementing non-Clifford gates via the preparation of high-fidelity magic states. However, it comes at the cost of substantial logical-level overhead in both space and time. In this work, we propose a very low-cost magic state distillation scheme for biased-noise qubits. By leveraging the noise bias, our scheme enables the preparation of a magic state with a logical error rate of $3 \\times 10^{-7}$, using only 53 qubits and 5.5 error correction rounds, under a noise bias of $\\eta \\gtrsim 5 \\times 10^6$ and a phase-flip noise rate of $0.1\\%$. This reduces the circuit volume by more than one order of magnitude relative to magic state cultivation for unbiased-noise qubits and by more than two orders of magnitude relative to standard magic state distillation. Moreover, our scheme provides three key advantages over previous proposals for biased-noise qubits. First, it only requires nearest-neighbor two-qubit gates on a 2D lattice. Second, the logical fidelity remains nearly identical even at a more modest noise bias of $\\eta \\gtrsim 80$, at the cost of a slightly increased circuit volume. Third, the scheme remains effective even at high physical phase-flip rates, in contrast to previously proposed approaches whose circuit volume grows exponentially with the error rate. Our construction is based on unfolding the $X$ stabilizer group of the Hadamard 3D quantum Reed-Muller code in 2D, enabling distillation at the physical level rather than the logical level, and is therefore referred to as $\\textit{unfolded}$ distillation."
+        },
+        {
+          "paperId": "a54ff6f9955a06af858aeb66af560c96a9425155",
+          "externalIds": {
+            "ArXiv": "2601.22939",
+            "CorpusId": 285240989
+          },
+          "url": "https://www.semanticscholar.org/paper/a54ff6f9955a06af858aeb66af560c96a9425155",
+          "title": "Fast magic state preparation by gauging higher-form transversal gates in parallel",
+          "venue": "",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.22939, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2026-01-30",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2324054324",
+              "name": "Dominic J. Williamson"
+            }
+          ],
+          "abstract": "Magic states are a foundational resource for universal quantum computation. To survive in a realistic noisy environment, magic states must be prepared fault-tolerantly and protected by a quantum error-correcting code. The recent discovery of highly efficient quantum low-density parity-check codes, together with efficient logic gates, lays the groundwork for low-overhead fault-tolerant quantum computation. This motivates the search for fast and parallel protocols for logical magic state preparation to enable universal quantum computation. Here, we introduce a fast code surgery procedure that performs a fault-tolerant measurement of many transversal logic gates in parallel. This is achieved by performing a generalized gauging measurement on a quantum code that supports a higher-form transversal gate. The time overhead of our procedure is constant, and the qubit overhead is linear. The procedure inherits fault-tolerance properties from the base code and the structure of the higher-form transversal gate. When applied to codes that support higher-form Clifford gates our procedure achieves fast and fault-tolerant preparation of many magic states in parallel. This motivates the search for good quantum low-density parity-check codes that support higher-form Clifford gates."
+        },
+        {
+          "paperId": "2dc37e2b7d4432c68b290a9ab037915c0be05f57",
+          "externalIds": {
+            "ArXiv": "1811.00566",
+            "MAG": "2963324581",
+            "DBLP": "journals/quantum/ChamberlandC19",
+            "DOI": "10.22331/q-2019-05-20-143",
+            "CorpusId": 53604388
+          },
+          "url": "https://www.semanticscholar.org/paper/2dc37e2b7d4432c68b290a9ab037915c0be05f57",
+          "title": "Fault-tolerant magic state preparation with flag qubits",
+          "venue": "Quantum",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://quantum-journal.org/papers/q-2019-05-20-143/pdf/",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1811.00566, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-11-01",
+          "journal": {
+            "name": "Quantum",
+            "pages": "143",
+            "volume": "3"
+          },
+          "authors": [
+            {
+              "authorId": "144923793",
+              "name": "C. Chamberland"
+            },
+            {
+              "authorId": "153905080",
+              "name": "Andrew W. Cross"
+            }
+          ],
+          "abstract": "Magic state distillation is one of the leading candidates for implementing universal fault-tolerant logical gates. However, the distillation circuits themselves are not fault-tolerant, so there is additional cost to first implement encoded Clifford gates with negligible error. In this paper we present a scheme to fault-tolerantly and directly prepare magic states using flag qubits. One of these schemes requires only three ancilla qubits, even with noisy Clifford gates. We compare the physical qubit and gate cost of our scheme to the magic state distillation protocol of Meier, Eastin, and Knill (MEK), which is efficient and uses a small stabilizer circuit. For low enough noise rates, we show that in some regimes the overhead can be improved by several orders of magnitude compared to the MEK scheme which uses Clifford operations encoded in the codes considered in this work."
+        },
+        {
+          "paperId": "7060648d19b271e9474d268bd134e4301bf1b8f8",
+          "externalIds": {
+            "DOI": "10.1088/2058-9565/ace6ca",
+            "CorpusId": 259876643
+          },
+          "url": "https://www.semanticscholar.org/paper/7060648d19b271e9474d268bd134e4301bf1b8f8",
+          "title": "Magic state distillation and cost analysis in fault-tolerant universal quantum computation",
+          "venue": "Quantum Science and Technology",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://iopscience.iop.org/article/10.1088/2058-9565/ace6ca/pdf",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/2058-9565/ace6ca?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/2058-9565/ace6ca, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2023-07-12",
+          "journal": {
+            "name": "Quantum Science and Technology",
+            "volume": "8"
+          },
+          "authors": [
+            {
+              "authorId": "2198357374",
+              "name": "Yiting Liu"
+            },
+            {
+              "authorId": "145630529",
+              "name": "Lan Luo"
+            },
+            {
+              "authorId": "145227314",
+              "name": "Zhi Ma"
+            },
+            {
+              "authorId": "2052176249",
+              "name": "Chao Du"
+            },
+            {
+              "authorId": "37298184",
+              "name": "Yang-yang Fei"
+            },
+            {
+              "authorId": "48016237",
+              "name": "Hong Wang"
+            },
+            {
+              "authorId": "122561003",
+              "name": "Qianheng Duan"
+            },
+            {
+              "authorId": "2143852274",
+              "name": "Jing Yang"
+            }
+          ],
+          "abstract": "Magic states have been widely studied in recent years as resource states that help quantum computers achieve fault-tolerant universal quantum computing. The fault-tolerant quantum computing requires fault-tolerant implementation of a set of universal logical gates. Stabilizer code, as a commonly used error correcting code with good properties, can apply the Clifford gates transversally which is fault tolerant. But only Clifford gates cannot realize universal computation. Magic states are introduced to construct non-Clifford gates that combine with Clifford operations to achieve universal quantum computing. Since the preparation of quantum states is inevitably accompanied by noise, preparing the magic state with high fidelity and low overhead is the crucial problem to realizing universal quantum computation. In this paper, we survey the related literature in the past 20 years and introduce the common types of magic states, the protocols to obtain high-fidelity magic states, and overhead analysis for these protocols. Finally, we discuss the future directions of this field."
+        },
+        {
+          "paperId": "502e800b9ca133cd607fb40a449885ee153423fc",
+          "externalIds": {
+            "ArXiv": "2508.10714",
+            "CorpusId": 280649804
+          },
+          "url": "https://www.semanticscholar.org/paper/502e800b9ca133cd607fb40a449885ee153423fc",
+          "title": "Magic tricycles: Efficient magic state generation with finite block-length quantum LDPC codes",
+          "venue": "",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.10714, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-08-14",
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2375901343",
+              "name": "Varun Menon"
+            },
+            {
+              "authorId": "2229339232",
+              "name": "J. P. Bonilla-Ataides"
+            },
+            {
+              "authorId": "29711883",
+              "name": "Rohan K. Mehta"
+            },
+            {
+              "authorId": "2317959973",
+              "name": "A. Gu"
+            },
+            {
+              "authorId": "2375913334",
+              "name": "D. Tan"
+            },
+            {
+              "authorId": "2256610922",
+              "name": "M. Lukin"
+            }
+          ],
+          "abstract": "The preparation of high-fidelity non-Clifford (magic) states is an essential subroutine for universal quantum computation, but imposes substantial space-time overhead. Magic state factories based on high rate and distance quantum low-density parity check (LDPC) codes equipped with transversal non-Clifford gates can potentially reduce these overheads significantly, by circumventing the need for multiple rounds of distillation and by producing a large number of magic states in a single code-block. As a step towards realizing efficient, fault-tolerant magic state production, we introduce a class of finite block-length quantum LDPC codes which we name tricycle codes, generalizing the well-known bicycle codes to three homological dimensions. These codes can support constant-depth physical circuits that implement logical $CCZ$ gates between three code blocks. To construct these constant-depth $CCZ$ circuits, we develop new analytical and numerical techniques that apply to a broad class of three-dimensional homological and balanced product codes. We further show that tricycle codes enable single-shot state-preparation and error correction, leading to a highly efficient magic-state generation protocol. Numerical simulations of specific codes confirm robust performance under circuit-level noise, demonstrating a high circuit-noise threshold of $>0.5\\%$. With modest post-selection, certain tricycle codes of block-lengths of only $50-100$ qubits are shown to achieve logical error-rates of $6\\times 10^{-10}$ or lower. Finally, we construct optimal depth syndrome extraction circuits for tricycle codes and present a protocol for implementing them efficiently on a reconfigurable neutral atom platform."
+        },
+        {
+          "paperId": "bb3e433e8fd45d585b489c54ce8323a5ecd00910",
+          "externalIds": {
+            "ArXiv": "2309.09893",
+            "PubMedCentral": "11259164",
+            "DOI": "10.1126/sciadv.ado9024",
+            "CorpusId": 262044009,
+            "PubMed": "39028817"
+          },
+          "url": "https://www.semanticscholar.org/paper/bb3e433e8fd45d585b489c54ce8323a5ecd00910",
+          "title": "Fault-tolerant one-bit addition with the smallest interesting color code",
+          "venue": "Science Advances",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1126/sciadv.ado9024",
+            "status": "GOLD",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.09893, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-09-18",
+          "journal": {
+            "name": "Science Advances",
+            "volume": "10"
+          },
+          "authors": [
+            {
+              "authorId": "2153696188",
+              "name": "Yang Wang"
+            },
+            {
+              "authorId": "1664335781",
+              "name": "Selwyn Simsek"
+            },
+            {
+              "authorId": "2119551957",
+              "name": "T. Gatterman"
+            },
+            {
+              "authorId": "2243190689",
+              "name": "Justin A Gerber"
+            },
+            {
+              "authorId": "2243131657",
+              "name": "Kevin Gilmore"
+            },
+            {
+              "authorId": "38252833",
+              "name": "D. Gresh"
+            },
+            {
+              "authorId": "2122956626",
+              "name": "N. Hewitt"
+            },
+            {
+              "authorId": "2204466274",
+              "name": "C. V. Horst"
+            },
+            {
+              "authorId": "153661360",
+              "name": "M. Matheny"
+            },
+            {
+              "authorId": "2186112612",
+              "name": "T. Mengle"
+            },
+            {
+              "authorId": "2633037",
+              "name": "B. Neyenhuis"
+            },
+            {
+              "authorId": "7291074",
+              "name": "B. Criger"
+            }
+          ],
+          "abstract": "Fault-tolerant operations based on stabilizer codes are the state of the art in suppressing error rates in quantum computations. Most such codes do not permit a straightforward implementation of non-Clifford logical operations, which are necessary to define a universal gate set. As a result, implementations of these operations must use either error-correcting codes with more complicated error correction procedures or gate teleportation and magic states, which are prepared at the logical level, increasing overhead to a degree that precludes near-term implementation. Here, we implement a small quantum algorithm, one-qubit addition, fault-tolerantly on a trapped-ion quantum computer, using the [[8, 3, 2]] color code. By removing unnecessary error correction circuits and using low-overhead techniques for fault-tolerant preparation and measurement, we reduce the number of error-prone two-qubit gates and measurements to 36. We observe arithmetic errors with a rate of ∼1.1 × 10−3 for the fault-tolerant circuit and ∼9.5 × 10−3 for the unencoded circuit."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            2
+          ]
+        ],
+        "date-time": "2026-04-02T15:48:46Z",
+        "timestamp": 1775144926967,
+        "version": "3.50.1"
+      },
+      "reference-count": 41,
+      "publisher": "American Physical Society (APS)",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2024,
+                1,
+                4
+              ]
+            ],
+            "date-time": "2024-01-04T00:00:00Z",
+            "timestamp": 1704326400000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "journals.aps.org"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "PRX Quantum"
+      ],
+      "accepted": {
+        "date-parts": [
+          [
+            2023,
+            9,
+            11
+          ]
+        ]
+      },
+      "abstract": "<jats:p>We introduce a framework for fault-tolerant postselection (FTPS) of fault-tolerant codes and channels—such as those based on surface codes—using soft-information metrics based on visible syndrome and erasure information. We introduce several metrics for ranking configurations of syndromes and erasures. In particular, we introduce the  (and variants thereof) as a powerful soft-information metric for predicting logical error rates of fault-tolerant channels based on topological error-correcting codes. The logical gap is roughly the unsigned weight difference between inequivalent logical corrections and is adaptable to any tailored noise model or decoder. We deploy this framework to prepare high-quality surface-code magic states with low overhead under a model of independent and identically distributed (IID) Pauli and erasure errors. Postselection strategies based on the logical gap can suppress the encoding error rate (EER) of a magic state preparation channel to the level of the physical error rate with low overhead. For example, when operating at <a:math xmlns:a=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\" overflow=\"scroll\"><a:mn>60</a:mn><a:mi mathvariant=\"normal\">%</a:mi></a:math> of the bulk threshold of the corresponding surface code, an overall reduction of the EER by a factor of <e:math xmlns:e=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\" overflow=\"scroll\"><e:mn>15</e:mn></e:math> is achievable with a relative overhead factor of <h:math xmlns:h=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\" overflow=\"scroll\"><h:mo>&lt;</h:mo><h:mn>2</h:mn></h:math> (approximately <k:math xmlns:k=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\" overflow=\"scroll\"><k:mn>23</k:mn></k:math> times less than that of simple syndrome-counting rules). We analyze a schematic buffer architecture for implementing postselection rules on magic state factories in the context of magic state distillation. The FTPS framework can be utilized for mitigating errors in more general fault-tolerant logical channels.</jats:p>\n          <jats:sec>\n            <jats:title/>\n            <jats:supplementary-material>\n              <jats:permissions>\n                <jats:copyright-statement>Published by the American Physical Society</jats:copyright-statement>\n                <jats:copyright-year>2024</jats:copyright-year>\n              </jats:permissions>\n            </jats:supplementary-material>\n          </jats:sec>",
+      "DOI": "10.1103/prxquantum.5.010302",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            4
+          ]
+        ],
+        "date-time": "2024-01-04T15:22:55Z",
+        "timestamp": 1704381775000
+      },
+      "update-policy": "https://doi.org/10.1103/crossmark-policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 16,
+      "title": [
+        "Fault-Tolerant Postselection for Low-Overhead Magic State Preparation"
+      ],
+      "prefix": "10.1103",
+      "volume": "5",
+      "author": [
+        {
+          "given": "Héctor",
+          "family": "Bombín",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "PsiQuantum, Palo Alto, California 94304, USA"
+            }
+          ]
+        },
+        {
+          "given": "Mihir",
+          "family": "Pant",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PsiQuantum, Palo Alto, California 94304, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4652-389X",
+          "authenticated-orcid": true,
+          "given": "Sam",
+          "family": "Roberts",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PsiQuantum, Palo Alto, California 94304, USA"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1928-8019",
+          "authenticated-orcid": true,
+          "given": "Karthik I.",
+          "family": "Seetharam",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "PsiQuantum, Palo Alto, California 94304, USA"
+            }
+          ]
+        }
+      ],
+      "member": "16",
+      "published-online": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            4
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "PRXQuantum.5.010302Cc1R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2021-04-15-433"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc2R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevResearch.3.033055"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc3R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2021-06-01-463"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc6R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1063/1.1499754"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc7R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/S0003-4916(02)00018-0"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc8R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.aop.2005.10.005"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc9R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/1751-8113/42/9/095302"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc10R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.105.030403"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc11R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.98.190504"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc12R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/1367-2630/9/6/199"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc13R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/1367-2630/14/12/123011"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc15R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/RevModPhys.87.307"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc16R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevX.7.021029"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc17R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2019-03-05-128"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc19R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.97.180501"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc21R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevB.88.241103"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc22R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevB.87.045130"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc23R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2017-04-25-2"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc26R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevA.98.052319"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc28R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevA.102.022403"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc33R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevX.8.021054"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc34R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevA.71.022316"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc35R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevA.86.052329"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc36R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/srep01939"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc37R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2017-10-03-31"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc38R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevA.95.022316"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc39R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2018-06-07-71"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc40R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2019-04-30-135"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc41R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2019-12-02-205"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc42R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1016/j.micpro.2019.02.007"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc43R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.22331/q-2020-07-16-296"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc45R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevResearch.4.023019"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc47R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1088/1367-2630/17/2/023037"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc48R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevA.105.052410"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc53R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.90.016803"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc54R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevLett.107.270502"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc55R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/srep08975"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc56R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1103/PhysRevResearch.2.033305"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc61R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1007/s12532-009-0002-8"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc64R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1126/science.abi8378"
+        },
+        {
+          "key": "PRXQuantum.5.010302Cc65R1",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41586-021-03928-y"
+        }
+      ],
+      "container-title": [
+        "PRX Quantum"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://link.aps.org/article/10.1103/PRXQuantum.5.010302",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "http://harvest.aps.org/v2/journals/articles/10.1103/PRXQuantum.5.010302/fulltext",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            11,
+            12
+          ]
+        ],
+        "date-time": "2024-11-12T23:10:37Z",
+        "timestamp": 1731453037000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://link.aps.org/doi/10.1103/PRXQuantum.5.010302"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            4
+          ]
+        ]
+      },
+      "references-count": 41,
+      "journal-issue": {
+        "issue": "1",
+        "published-print": {
+          "date-parts": [
+            [
+              2024,
+              1
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1103/prxquantum.5.010302",
+      "relation": {},
+      "ISSN": [
+        "2691-3399"
+      ],
+      "issn-type": [
+        {
+          "value": "2691-3399",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            1,
+            4
+          ]
+        ]
+      },
+      "article-number": "010302"
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-c037156de9969469.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-c037156de9969469.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-c037156de9969469.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "ce549e0f15690061d41ed8670d94477cded9a16a343647b1b117af378fa6aa03",
+    "chunk_count": 43,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

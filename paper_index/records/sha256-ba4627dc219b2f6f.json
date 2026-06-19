@@ -1,0 +1,231 @@
+{
+  "paper_id": "sha256-ba4627dc219b2f6f",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/protein_stability_mutagenesis/Dieckhaus 2024 PNAS - transfer-learning-to-leverage-larger-datasets-for-improved-prediction-of-protein-stability-changes.pdf",
+  "pdf_sha256": "ba4627dc219b2f6f68b4dc36b2146521a098300cc294f743fa5184b4cf4bd68b",
+  "filename": "Dieckhaus 2024 PNAS - transfer-learning-to-leverage-larger-datasets-for-improved-prediction-of-protein-stability-changes.pdf",
+  "item_type": "article",
+  "title_query": "transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+  "filename_hints": {
+    "year_hint": 2024,
+    "venue_hint": "proceedingsofthenationalacademyofsciences",
+    "prefix": "Dieckhaus 2024 PNAS"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:26:00.371246+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2024!=2023",
+    "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=biorxiv"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "manual_verified",
+  "semantic_scholar": {
+    "query": "transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+        "status": "needs_manual_review",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2024!=2023",
+          "venue_hint_mismatch:proceedingsofthenationalacademyofsciences!=biorxiv"
+        ],
+        "best_score": 1.0,
+        "candidate_count": 1
+      },
+      {
+        "query": "| BIOPHYSICS AND COMPUTATIONAL BIOLOGY",
+        "status": "needs_manual_review",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2024!=2009"
+        ],
+        "best_score": 0.92,
+        "candidate_count": 10
+      },
+      {
+        "query": "Transfer learning to leverage larger datasets for improved prediction of protein stability changes Henry Dieckhausa,b",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": ", Michael Brocidiaconob, Nicholas Z. Randolpha,c",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "Significance Single amino acid mutations can have a dramatic effect on protein thermostability and, therefore, function",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2024!=2019"
+        ],
+        "best_score": 0.0,
+        "candidate_count": 7
+      }
+    ],
+    "best_candidate": {
+      "paperId": "4a6b75269fe989b199d995019b97552e4e7bb90b",
+      "externalIds": {
+        "PubMedCentral": "10402116",
+        "DOI": "10.1101/2023.07.27.550881",
+        "CorpusId": 260355596,
+        "PubMed": "37547004"
+      },
+      "url": "https://www.semanticscholar.org/paper/4a6b75269fe989b199d995019b97552e4e7bb90b",
+      "title": "Transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+      "venue": "bioRxiv",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10402116",
+        "status": "GREEN",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10402116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2023-07-30",
+      "journal": {
+        "name": "bioRxiv"
+      },
+      "authors": [
+        {
+          "authorId": "2336276466",
+          "name": "Henry Dieckhaus"
+        },
+        {
+          "authorId": "2224621034",
+          "name": "Michael Brocidiacono"
+        },
+        {
+          "authorId": "1388066280",
+          "name": "Nicholas Z. Randolph"
+        },
+        {
+          "authorId": "144226889",
+          "name": "B. Kuhlman"
+        }
+      ],
+      "abstract": "Amino acid mutations that lower a protein’s thermodynamic stability are implicated in numerous diseases, and engineered proteins with enhanced stability are important in research and medicine. Computational methods for predicting how mutations perturb protein stability are therefore of great interest. Despite recent advancements in protein design using deep learning, in silico prediction of stability changes has remained challenging, in part due to a lack of large, high-quality training datasets for model development. Here we introduce ThermoMPNN, a deep neural network trained to predict stability changes for protein point mutations given an initial structure. In doing so, we demonstrate the utility of a newly released mega-scale stability dataset for training a robust stability model. We also employ transfer learning to leverage a second, larger dataset by using learned features extracted from a deep neural network trained to predict a protein’s amino acid sequence given its three-dimensional structure. We show that our method achieves competitive performance on established benchmark datasets using a lightweight model architecture that allows for rapid, scalable predictions. Finally, we make ThermoMPNN readily available as a tool for stability prediction and design."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "4a6b75269fe989b199d995019b97552e4e7bb90b",
+        "title": "Transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2024,
+        "candidate_year": 2023,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1101/2023.07.27.550881"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "4a6b75269fe989b199d995019b97552e4e7bb90b",
+          "externalIds": {
+            "PubMedCentral": "10402116",
+            "DOI": "10.1101/2023.07.27.550881",
+            "CorpusId": 260355596,
+            "PubMed": "37547004"
+          },
+          "url": "https://www.semanticscholar.org/paper/4a6b75269fe989b199d995019b97552e4e7bb90b",
+          "title": "Transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10402116",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10402116, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-07-30",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2336276466",
+              "name": "Henry Dieckhaus"
+            },
+            {
+              "authorId": "2224621034",
+              "name": "Michael Brocidiacono"
+            },
+            {
+              "authorId": "1388066280",
+              "name": "Nicholas Z. Randolph"
+            },
+            {
+              "authorId": "144226889",
+              "name": "B. Kuhlman"
+            }
+          ],
+          "abstract": "Amino acid mutations that lower a protein’s thermodynamic stability are implicated in numerous diseases, and engineered proteins with enhanced stability are important in research and medicine. Computational methods for predicting how mutations perturb protein stability are therefore of great interest. Despite recent advancements in protein design using deep learning, in silico prediction of stability changes has remained challenging, in part due to a lack of large, high-quality training datasets for model development. Here we introduce ThermoMPNN, a deep neural network trained to predict stability changes for protein point mutations given an initial structure. In doing so, we demonstrate the utility of a newly released mega-scale stability dataset for training a robust stability model. We also employ transfer learning to leverage a second, larger dataset by using learned features extracted from a deep neural network trained to predict a protein’s amino acid sequence given its three-dimensional structure. We show that our method achieves competitive performance on established benchmark datasets using a lightweight model architecture that allows for rapid, scalable predictions. Finally, we make ThermoMPNN readily available as a tool for stability prediction and design."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-ba4627dc219b2f6f.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-ba4627dc219b2f6f.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-ba4627dc219b2f6f.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "23e21fb97c14456e5d3dee0f14201e111366454543944fb75bbcadb34023febf",
+    "chunk_count": 33,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "title": "Transfer learning to leverage larger datasets for improved prediction of protein stability changes",
+    "authors": "Henry Dieckhaus, Michael Brocidiacono, Nicholas Z Randolph, Brian Kuhlman",
+    "year": "2024",
+    "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+    "doi": "10.1073/pnas.2314853121",
+    "url": "https://doi.org/10.1073/pnas.2314853121",
+    "abstract": "",
+    "source_urls": [
+      "https://pubmed.ncbi.nlm.nih.gov/38285937/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10861915/"
+    ],
+    "source_note": "verified against published PNAS article; replaces preprint DOI",
+    "bibtex_key": "dieckhaus2024learning"
+  },
+  "content_kind": "pdf_backed"
+}

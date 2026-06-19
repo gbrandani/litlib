@@ -1,0 +1,583 @@
+[Page 1]
+
+Cohesin prevents local mixing of condensed euchromatic domains in living human cells
+
+Shiori Iida1,2†, Masa A. Shimazoe1,2†, Katsuhiko Minami1,2, Sachiko Tamura1, S. S. Ashwin3, Koichi Higashi2,4, Tomoko Nishiyama5, Masato T. Kanemaki2,6,7, Masaki Sasai8,9, Lothar Schermelleh10,11, Atsushi Toyoda12, Ken Kurokawa2,4, and Kazuhiro Maeshima1,2*
+
+Genome Dynamics Laboratory, National Institute of Genetics, ROIS, Mishima, Shizuoka 4118540, Japan. Graduate Institute for Advanced Studies, SOKENDAI (Graduate University for Advanced Studies), Mishima, Shizuoka 411-8540, Japan. Department of Physics, Gandhi Institute of Technology and Management (GITAM) University, Bengaluru 561203, India Genome Evolution Laboratory, National Institute of Genetics, Mishima, Shizuoka 411-8540, Japan. Division of Biological Sciences, Graduate School of Science, Kyoto University, Kyoto 6068502, Japan Molecular Cell Engineering Laboratory, National Institute of Genetics, ROIS, Mishima, Shizuoka 411-8540, Japan. Department of Biological Science, Graduate School of Science, The University of Tokyo, Tokyo 113-0033, Japan. Fukui Institute for Fundamental Chemistry, Kyoto University, Kyoto 606-8103, Japan Department of Complex Systems Science, Nagoya University, Nagoya 464-8603, Japan Department of Biochemistry, University of Oxford, Oxford OX1 3QU, UK. Micron Oxford Advanced Bioimaging Unit, University of Oxford, Oxford OX1 3QU, UK. Comparative Genomics Laboratory, National Institute of Genetics, ROIS, Mishima, Shizuoka 411-8540, Japan.
+
+†
+
+These authors contributed equally to this work. *Corresponding author. Email: kmaeshim@nig.ac.jp
+
+[Page 2]
+
+Abstract The human genome is folded into chromatin loops by the cohesin complex, forming functional chromatin domains that underlie transcription and DNA replication/repair. However, the physical properties of these domains in living cells, especially in active euchromatin, and how they are
+
+regulated by cohesin remain elusive. To address these questions, we combined singlenucleosome imaging/tracking and super-resolution 3D-structured illumination microscopy (3DSIM) with euchromatin-specific labeling of histone H3.3. Using this nanoscopic approach, we revealed that euchromatin is organized into condensed domains constrained by cohesin-mediated loops, challenging the established textbook view of euchromatin as largely open. Transcription
+
+machinery appear to be located near the condensed domain surfaces. Cohesin loss increased nucleosome fluidity of these domains without altering their compaction, leading to local mixing of domains and compromising transcriptional insulation. These findings uncover an unexpected physical role of cohesin in maintaining the integrity of condensed euchromatic domains and ensuring proper higher-order regulation of gene expression.
+
+[Page 3]
+
+Introduction In human cells, two meters of genomic DNA are wrapped around core histones to form nucleosomes 1,2. Various imaging studies have long suggested that a string of nucleosomes is folded irregularly into functional chromatin domains in the interphase nucleus 3-10. Genomics
+
+analyses, such as Hi-C 11, have also identified similar domains or topologically associating domains, TADs, with distinct epigenetic marks 12-15. The textbook view of genome chromatin describes that transcriptionally inactive heterochromatin forms condensed domains, whereas active euchromatin forms open ones, thereby supposedly making euchromatin accessible to transcription machinery 16,17. However, the expression profile of euchromatic genes varies
+
+greatly from cell to cell 18 19, implying that transcriptional regulation may be governed by higherorder chromatin organization rather than a simple “open-or-closed” binary model. Consistent with this, recent evidence challenges this established textbook view, suggesting that euchromatin is also organized into largely condensed domains, which may contribute to higher-order gene regulation 7,8,10,20-22.
+
+While interactions between genomic sequences within and between domains are well recognized as crucial for transcriptional regulation 13,22-24, DNA replication 25, and repair 26, the physical properties of chromatin domains have been comparatively overlooked. Yet, they are equally important. Chromatin dynamics and their physical properties directly influence genomic
+
+accessibility 27,28 and can modulate the efficiency and probability of these biochemical reactions. Therefore, elucidating how the physical properties of chromatin domains are regulated is crucial.
+
+A key factor influencing both chromatin organization and dynamics is the cohesin complex, composed of four subunits (SMC1, SMC3, RAD21, and STAG1/STAG2)29-33. Cohesin has two
+
+[Page 4]
+
+main roles in organizing genome chromatin. One is to hold replicated sister chromatids together for their proper segregation during cell division (“cohesion”) and the other is to form chromatin loops within individual chromosomes to create the domains described above 34-36. Cohesin may also regulate the physical properties of chromatin in living cells. Indeed, pioneering work using
+
+the lacO/LacI-GFP system in budding yeast demonstrated that cohesin loss increases chromatin motion, presumably via the loss of sister chromatid cohesion 37,38. Subsequent studies revealed that in higher eukaryotic cells, cohesin depletion also increases chromatin motion 5,19,39-41. However, it is still unclear how cohesin constrains chromatin, whether primarily through sister chromatid cohesion or loop formation, and which chromatin domains, euchromatin or
+
+heterochromatin, are most constrained. Furthermore, how cohesin-mediated constraints affect the physical properties of chromatin domains and their genome functions remains poorly understood.
+
+To address these questions, we developed a combined approach of single-nucleosome imaging 5,27,42,43
+
+and 3D-structured illumination microscopy (3D-SIM) 7,44 45, incorporating a specific
+
+labeling strategy with the histone variant H3.3, which is enriched in active chromatin regions 4648
+
+. Using these advanced nanoscopic imaging techniques, we uncovered condensed euchromatic
+
+domains in living human cells, providing further critical evidence that challenges the established view of euchromatin as largely open. We also demonstrated that cohesin governs the fluidity of these euchromatic domains without affecting their compaction. Together, these findings
+
+highlight a previously underappreciated role of cohesin in preventing local mixing of condensed euchromatin domains, and thus ensuring the effective insulation of transcription among them.
+
+[Page 5]
+
+Results Rapid depletion of cohesin increases local nucleosome motion in living human cells To explore how cohesin organizes chromatin domains in living human cells, we combined single-nucleosome imaging/tracking 5,27,42,43,49 with rapid cohesin depletion using the auxin5
+
+inducible degron system 50. Single-nucleosome imaging/tracking can sensitively detect changes in the chromatin state in living cells. We used HCT116 cells expressing H2B-HaloTag (H2BHalo) 43 and RAD21-mAID-mClover (mAC) 50. H2B-Halo was labeled with tetramethylrhodamine (TMR) to visualize nucleosomes genome-wide, including those in both euchromatin and heterochromatin (Fig. S1a,b). Oblique illumination microscopy 51 enabled
+
+imaging of individual nucleosomes as TMR-labeled dots (Fig. 1a–c), which were precisely tracked in 2D at 50 ms/frame for 15–20 s, yielding ~1400 trajectories per cell (Figs. 1b,d, S1d,e; see Methods for further details on nucleosome tracking). Tracking was specific to nucleosomeincorporated H2B-Halo, as free molecules diffused too fast to be observed (Movie S1). Mean squared displacement (MSD) analysis revealed sub-diffusive nucleosome motion with an
+
+anomalous exponent (α) of 0.43, suggesting constrained motion (black plots in Figs. 1e and S1f). Fixation nearly abolished this motion (gray plot, Fig. 1e).
+
+Cohesin depletion via 5Ph-IAA treatment for 1 hour led to significantly increased motion, with the MSD exponent rising to 0.48 (Figs. 1e, S1f; Movie S2). Turning angle distributions of
+
+nucleosome trajectories and asymmetry coefficient (AC) analysis 43,52 showed reduced pullingback forces of nucleosomes after cohesin loss, suggesting that cohesin constrains nucleosome movement (Fig. 1g–i). RAD21 depletion did not induce DNA damage (Fig. S1g). Similar results were obtained in HeLa cells via siRNA (Fig. S1h). These findings confirm that cohesin constrains local nucleosome motion in living cells, consistent with previous reports 5,19,40,41.
+
+[Page 6]
+
+Cohesin constrains local nucleosome motion mainly via loop formation To determine whether cohesin constrains chromatin via loop domains or sister chromatid cohesion (Fig. 2a), we knocked down Sororin, which is required for sister chromatid cohesion
+
+but not for loop formation 53-55. Knockdown of Sororin disrupted cohesion in late S–G2 synchronized HCT116 cells (Figs. 2b, S2a) but did not alter nucleosome motion (Fig. 2c), indicating that global constraints arise from loop formation, not sister chromatid cohesion. To confirm whether cohesion affects local nucleosome motion near cohesion sites, we used a genome labeling system with tetO/lacO arrays 250 kb apart in chromosome 5 of HT1080 cells
+
+(Fig. 2d) 56. In this system, the lacO array, but not tetO array, was located near a cohesinenriched site (Fig. 2e) 57. The lacO array more frequently appeared as two separate dots than the tetO array, suggesting that the lacO array lies near a cohesion site 56. These arrays were visualized with TetR-4XmCherry and LacI-EGFP, respectively (Fig. 2d,e). Sororin knockdown (Fig. S2b) significantly increased LacI-EGFP mobility but not TetR-4XmCherry (Fig. 2f,g),
+
+whereas RAD21 depletion (Fig. S2c) affected both (Fig. 2f,g), suggesting that cohesion constrains local regions near cohesion sites as previously reported in yeast 38, while loop-forming cohesin globally constrains chromatin.
+
+We tested whether increasing the number of loops enhances constraint. Since WAPL releases
+
+cohesin from chromatin, WAPL depletion increases the number of loops 58-60, particularly when depletion is induced after the completion of DNA replication. WAPL depletion in HCT116WAPL-mAC cells (Fig. 3a) 61 synchronized in late S-G2 phase (Fig. S3a) reduced the WAPLmClover signal (Fig. 3b) and increased RAD21 chromatin binding (Fig. S3b), which led to decreased MSD and AC values (Fig. 3c,d). A similar finding was also observed in asynchronous
+
+[Page 7]
+
+HCT116 cells and siRNA-treated asynchronous HeLa cells (Fig. S3c–e). Thus, more cohesin loops constrain chromatin more strongly. To assess whether loop boundaries contribute to chromatin constraint, we acutely depleted CTCF in HCT116 cells (Fig. 3e) 50. Despite its role in TAD boundary formation 62, CTCF loss did not affect nucleosome motion (Figs. 3f–h, S3f,g),
+
+consistent with unchanged cohesin binding levels 63,64 and previous genomic array data 40,41. Finally, to examine whether cohesin translocation or active loop extrusion 32,65 is required, we used a head-tethered cohesin system 66 that stabilizes cohesin via forced head domain closure using AP21967 (Fig. 3i) 67,68. Head-tethering alone did not change nucleosome motion, but the combination of RAD21 depletion with closed-head cohesin increased motion (Fig. 3j,k, S3h).
+
+These results suggest that chromatin constraint by cohesin does not require active loop extrusion.
+
+We previously observed heterogeneous nucleosome motions (Fig. 4a,b), which suggested the presence of domain subpopulations, potentially linked to chromatin context28,24. To get a clue of whether cohesin preferentially constrains euchromatin or heterochromatin, we used motion
+
+classification with the Bayesian-based Richardson-Lucy algorithm (RL algorithm) 69. For RL algorithm analysis, we obtained a 10-fold increase in H2B-Halo nucleosome trajectory data (Fig. S4a,b) using the PA-JF646 HaloTag ligand 70 and constant photoactivation with weak 405 nm illumination (Fig. 4c). We then classified H2B-Halo trajectories into four motion types: “Superslow,” “Slow,” “Fast,” and “Super-fast” (Fig. 4d; Movie S3). The “Fast” and “Super-fast”
+
+subpopulations, likely euchromatic, localized within the nucleoplasm (Fig. 4e; Movie S3). Cohesin depletion shifted these populations rightward (Fig. 4d), increasing their mobility and anomalous exponent α values (Fig. 4f,g, S4c), while the proportions remained similar (Fig. 4h), implying that cohesin constrains movements of nucleosomes mainly in euchromatin.
+
+[Page 8]
+
+Euchromatin-specific nucleosome labeling reveals that cohesin constrains euchromatin To investigate euchromatin more specifically, we labeled nucleosomes using a euchromatinspecific histone variant H3.3 46-48. We stably expressed H3.3-Halo in HeLa cells (Figs. 5a, S5a). Expressed H3.3-Halo was properly incorporated into the nucleosome (Fig. S5b) and localized to
+
+DAPI-poor regions in nuclei (Fig. 5a). Pull-down of H3.3-Halo-incorporated nucleosomes and genomic sequencing (Fig. 5b) confirmed enrichment in Hi-C A compartments (93.1%) with active histone marks, and depletion from repressive marks (Figs. 5c,d, S5c–e, S6). Notably, 75.3% of H3.3-Halo nucleosome regions overlapped with Hi-C contact domains (Figs. S5e and S6a).
+
+Single-nucleosome imaging showed that H3.3-Halo nucleosomes were more mobile than H2BHalo ones (Fig. 5e) and had a stronger response to RAD21 or WAPL depletion (Fig. S7a), indicating a greater cohesin impact in euchromatin. In contrast, H2B-labeled nucleosomes around the nuclear periphery (basal nuclear surface; for details, see Methods), which is enriched
+
+with heterochromatin, or lamin-associated domains (LAD) 71, remained largely unaffected (Figs. 5e, S7b). A similar observation was found in acute depletion experiments of RAD21 and WAPL using HCT116 cells 50,61 expressing H3.3-Halo (Fig. S7c, S7e) and H2B-Halo around the nuclear periphery (Fig. S7d, S7f). These results demonstrate that cohesin primarily constrains euchromatic regions.
+
+3D-SIM uncovers condensed euchromatic domains in live human cells The finding that cohesin constrains euchromatic nucleosome motion motivated us to explore how cohesin affects the structure and physical properties of euchromatic domains. For this purpose, we used 3D-structured illumination microscopy (3D-SIM)7,44 45 for HCT116 cells expressing
+
+[Page 9]
+
+H3.3-Halo and observed euchromatic domain structures in live or formaldehyde (FA)-fixed cells at super-resolution. 3D-SIM enables fast multicolor 3D acquisition of whole cells with higher resolution (xy ~130 nm; z ~250 nm) and strongly enhanced contrast compared to conventional fluorescence microscopy (panels 1–2 and 4–5 in Fig. 6a; Movie S4) 7,44.
+
+Using quality-controlled 3D-SIM (Fig. S8 and Methods)72, we observed that euchromatin in live HCT116 cells appeared as connected, condensed chromatin domains with irregular shapes and diameters in the range of a few hundred nanometers (Fig. 6b; Movie S5). A similar architecture was observed in FA-fixed cells labeled with H3.3-Halo (panel 5 in Fig. 6a). This finding of
+
+condensed euchromatic domains in living human cells provides compelling evidence that challenges the established view of euchromatin as largely open.
+
+Preferential localization of cohesin to euchromatin domains We observed high-resolution chromatin structures labeled with DAPI and H3.3-Halo-TMR in
+
+FA-fixed HCT116 cells using 3D-SIM (panels 4–6 in Fig. 6a; Movie S4). Notably, euchromatin domains were more clearly visualized with H3.3-Halo-TMR labeling than with DAPI staining. Based on a reported chromatin signal classification analysis 7,10,73,74, we classified DAPI and H3.3-Halo-TMR signals into seven classes (Figs. 6c–d). Regions with lower DAPI staining showed stronger H3.3-Halo-TMR signals (Fig. 6e), consistent with the preferential incorporation
+
+of H3.3 into euchromatin. Notably, although the lowest DAPI regions (DAPI-Class 1) were previously described as interchromatin regions 7,10,73,74, we observed H3.3-Halo signals there, indicating the presence of euchromatin (Fig. 6e–f). This suggests that DAPI staining may overlook euchromatin structures due to its preference for AT-rich DNA 75.
+
+[Page 10]
+
+We investigated the spatial distributions of cohesin and active transcription sites within the nucleus by combining 3D-SIM with immunostaining. RAD21 immunostaining revealed that cohesin appeared as punctate foci in SIM images (panel 7 in Fig 6a), likely representing chromatin-bound cohesin. The centroids of these foci were frequently located near the edges of
+
+H3.3-Halo domains, suggesting that cohesin localizes to the surfaces of euchromatin domains (enlarged images in Fig. 6a). Classification analysis confirmed that cohesin is enriched in highdensity H3.3 regions (classes 3–7; Fig. 6g), indicating a preferential localization of cohesin to euchromatin domains. Consistently, cohesin enrichment was observed in low-density DAPI regions (classes 1–2) and depleted in denser regions (Fig. 6h), in good agreement with previous
+
+observations 7. This spatial distribution of cohesin also supports our finding that euchromatic nucleosome motion is more sensitive to cohesin depletion (Fig. S7c,d).
+
+Active RNAP II localizes around the euchromatic domain surface We next examined the localization of active transcription sites. We performed immunostaining
+
+using antibodies against the C-terminal domain (CTD) of RNA polymerase II (RNAP II) and its phosphorylated forms at serine 5 (Ser5P) and serine 2 (Ser2P) to visualize RNAP II signals composed predominantly of inactive, active paused, and elongating RNAP II, respectively (Fig. 6i). All signals appeared as punctate foci (Fig. 6i). These signals were enriched in DAPI-poor regions (classes 1–2; Fig. 6j) and in H3.3-Halo-rich regions (classes 4–7; Fig. 6k), indicating a
+
+euchromatin-biased localization.
+
+We observed distinct differences in nuclear localization among cohesin and RNAP II forms. Cohesin showed a relatively uniform distribution with a preference for euchromatin (Fig. 6l). In contrast, RNAP II showed increased localization to H3.3-denser areas upon transcriptional
+
+[Page 11]
+
+activation (Fig. 6m–o). Within the H3.3-Halo classification, CTD signals peaked at classes 4–5 (Fig. 6m), Ser5P at class 5 (Fig. 6n), and Ser2P at classes 6–7 (Fig. 6o). These patterns suggest that inactive RNAP II remains at the periphery (or outside) of euchromatic domains, paused active RNAP II localizes near the domain surface, and elongating RNAP II may penetrate the
+
+domain.
+
+Cohesin depletion does not alter compaction of euchromatic domains To assess the effect of cohesin depletion on chromatin organization, especially euchromatic domains, we acutely depleted RAD21 in HCT116 cells expressing H3.3-Halo and observed their
+
+chromatin organization using 3D-SIM. Interestingly, no obvious qualitative changes were observed in the overall chromatin organization (DAPI; Fig. 7a; Movies S6–S7) or in the euchromatic domains (H3.3-Halo; Fig. 7b) upon cohesin depletion. For quantitative analysis, we classified DAPI and H3.3-Halo signals. Cohesin depletion did not change the relative volumes of each class, i.e., the compaction levels of DAPI-stained chromatin (Fig. 7c), in good agreement
+
+with previous findings 7. Likewise, cohesin depletion did not affect the compaction levels of H3.3-Halo-labeled euchromatin domains (Fig. 7d). Together, these 3D-SIM results demonstrate that cohesin depletion does not alter the overall compaction of euchromatin domains.
+
+Cohesin regulates the fluidity of nucleosomes inside condensed euchromatic domains
+
+Although euchromatic nucleosome movement increases upon cohesin depletion, euchromatic domain compaction does not change. This raised the question of whether nucleosomes might gain mobility within the domains. To address this, we introduced dual-color labeling (Fig. 7e) and tracking of two spatially neighboring single H3.3-Halo-nucleosomes (Fig. 7f,g; Movie S8). Since simple single-nucleosome imaging cannot distinguish whether individual nucleosomes
+
+[Page 12]
+
+fluctuate within the domain or whether the domain itself moves, we measured the distances between two neighboring H3.3-Halo-nucleosomes within euchromatic domains (average <150 nm; Fig. 7e)8 and obtained the MSD of their relative positions (two-point MSD) 8,28,40.
+
+Two-point MSD analysis showed much greater motion between neighboring H3.3-Halonucleosomes in living cells than in FA-fixed cells (Fig. 7i), suggesting that nucleosomes fluctuate within the domain. Notably, the two-point MSD further increased upon acute cohesin depletion (Fig. 7i), indicating that nucleosomes move more inside condensed euchromatic domains and suggesting a transition to a more liquid-like state of chromatin.
+
+[Page 13]
+
+Discussion In this study, we employed a combined approach of single-nucleosome imaging/tracking and 3D-SIM super-resolution imaging to explore how cohesin regulates euchromatic chromatin organization in living human cells. Our approach provides a more comprehensive view of both
+
+global and local changes in chromatin dynamics and organization than previous studies that primarily focused on specific chromatin loci 40,41. Our results show that cohesin constrains local chromatin motion mainly through loop formation, particularly in euchromatin, rather than through sister chromatid cohesion (Fig. 2). This aligns with previous studies reporting increased chromatin motion upon cohesin depletion 5,40,41. Furthermore, our results using head-tethering
+
+cohesin suggest that cohesin constrains euchromatin loop domains without performing active loop extrusion (Fig. 3i,j). On the other hand, disruption of sister chromatid cohesion had minimal effects on local chromatin motion, and only the putative cohesion site or its neighbor was affected (Fig. 2), presumably because only a limited number of sister regions are aligned in human interphase cells 76,77. This contrasts with yeast studies showing that chromatin motion
+
+decreases as sister chromatid cohesion develops with the cell cycle progression 37,38.
+
+To our knowledge, this study is the first single-nucleosome imaging analysis of replicationindependent histone variants. Histone variants, including H3.3, are known to have distinct deposition pathways and unique roles in transcriptional regulation and chromatin structure 78-80.
+
+Similarly, mutations in key residues of core histones profoundly alter chromatin organization and gene expression, contributing to oncogenesis 81,82. Single-nucleosome tracking data provide insights into how these histone variants and mutants influence local chromatin structure and dynamics 49,83,84. Such measurements reveal not only average mobility changes across the nucleus but also heterogeneity that could reflect variant-specific effects on nucleosome packing
+
+[Page 14]
+
+and chromatin accessibility. In future studies, this approach will decipher how histone variants and histone mutations modulate chromatin phase separation, loop formation, and higher-order genome organization in living cells.
+
+In the present study, we developed euchromatin-specific labeling using histone H3.3-Halo (Fig. 5). The labeled genomic regions correspond to Hi-C A-compartment contact domains 15 with active histone marks (Fig. 5). Combining this euchromatin labeling with 3D-SIM 7,44 45 enabled super-resolution imaging of euchromatic domains in live and fixed cells, revealing their condensed nature. Since the typical textbook model describes euchromatin as open and
+
+heterochromatin as closed and condensed, our findings provide critical evidence that revises the established notion of euchromatin as largely open.
+
+Condensed chromatin seems to be the default chromatin state in higher eukaryotic cells 22. Possible formation mechanisms are as follows. First, chromatin is inherently sticky due to
+
+electrostatic nucleosome–nucleosome interactions because one nucleosome has ten long positively charged tails 1, which can bind to neighboring negatively charged DNA. Second, free cations such as Mg2+ in the cell or positively charged proteins like linker histone H1 contribute to condensed domain formation. Physiological concentrations of cations (~1 mM Mg2+ and ~100 mM K+/Na+) or H1 can condense chromatin by neutralizing its negative charge 85-89. Finally,
+
+depletion attraction/macromolecular crowding effects 90-92 also play a role in compaction, because the cell is filled with high concentrations (100–200 mg/mL) of macromolecules (proteins, RNAs, lipids, etc.), which can induce an entropy-driven attractive force between nucleosomes.
+
+[Page 15]
+
+The physically condensed euchromatic domains can provide higher-order regulation of various DNA transaction reactions, including transcription and DNA replication, whereas extended fiber loops cannot. As shown in Fig. 6, condensed euchromatic domains likely hinder the access of transcriptional protein complexes to their target sequences, such as promoters or enhancers
+
+located in the inner core of chromatin domains 7. These findings support the notion of higherorder gene regulation within a domain, such as a “buoy” model 22,93. Partial decondensation of such condensed domains through histone modifications may also serve as a regulatory mechanism to turn on gene transcription. In addition, condensed domains are more resistant to radiation than decondensed forms, presumably because condensed chromatin generates lower
+
+levels of reactive radicals 94,95. This feature is especially important for maintaining the integrity of actively transcribed euchromatic regions, which are directly connected to essential genome activities. Together, these two features highlight the biological relevance of condensed euchromatic chromatin.
+
+While previous studies suggested that cohesin is involved in long-distance promoter–enhancer interactions, particularly those spanning domain boundaries 96,97, our findings highlight a previously underappreciated role of cohesin in constraining the conformational freedom of condensed euchromatic domains (Fig. 8). We revealed how these physical properties of euchromatin domains are regulated by cohesin, and how they are coupled to genome
+
+organization and function. 3D-SIM imaging of euchromatic domains and two-point MSD measurements between neighboring euchromatic nucleosomes showed that while cohesin depletion does not alter the compaction level of euchromatin domains, the depletion increases nucleosome fluidity within these domains (Fig. 7). We consider that nucleosome–nucleosome interactions via histone tails discussed above remain intact upon cohesin depletion 8, maintaining
+
+[Page 16]
+
+compaction levels within euchromatin domains. The increase in nucleosome fluidity upon cohesin loss may promote mixing of chromatin domains (Fig. 8). Indeed, cohesin depletion has been shown to promote the clustering of super-enhancers 98 and induce clustering of accessible chromatin domains (ACDs) and co-activation of gene transcription 19. Loss of cohesin has also
+
+been reported to increase “entropy” in genome folding and variation in gene expression 99. Together, these findings establish cohesin as a key factor that preserves the stiffness of condensed euchromatic domains and prevents domain intermingling. This physical constraint ensures effective insulation of transcriptional programs, particularly between neighboring genes.
+
+[Page 17]
+
+Methods Establishment of stable cell lines HeLa S3 cells 101 and HT1080 cells with lacO/LacI-EGFP and tetO/TetR-4×mCherry (a clone of TT75, TT165, kindly provided by Dr. T. Tanaka, University of Dundee, UK) 56 were cultured at
+
+37 °C in 5% CO2 in DMEM (D5796-500ML; Sigma-Aldrich) supplemented with 10% FBS (FB1061/500; Biosera). All HCT116 cells (CCL-247; ATCC) with AID2 for rapid depletion 50 were cultured at 37 °C in 5% CO2 in McCoy’s 5A medium (SH30200.01; HyClone) supplemented with 10% FBS.
+
+For the establishment of HeLa cells stably expressing H2B-HaloTag or H3.3-HaloTag, the Flp-In system (V602020; Invitrogen) was used. pFRT-bla was first transfected into HeLa cells to integrate into the genome using the Effectene transfection reagent kit (301425; QIAGEN). Cells containing the FRT site were selected with 5 μg/mL blasticidin S (029-18701; Wako) and used for isolation of stable transformants. The isolation procedure using the Flp-In system was as
+
+previously described 102. pEF1-H2B-Halo-FRT or pEF1-H3.3-Halo-FRT was then transfected into HeLa cells harboring an FRT site, and transformants were selected with 200 μg/mL hygromycin B (10687-010; Invitrogen).
+
+To stably express H2B-Halo or H3.3-Halo in the HCT116 cell line, the PiggyBac transposon
+
+system was used. The constructed plasmid pPB-CAG-IB-H2B-HaloTag or pPB-EF1α-H3.3HaloTag was co-transfected with pCMV-hyPBase (provided by the Sanger Institute under a materials transfer agreement) into HCT116 cells using the Effectene transfection reagent kit. Transfected cells were selected with 10 μg/mL blasticidin S. HCT116 cells expressing OsTIR1(F74G) and endogenously tagged RAD21-mAID-mClover, CTCF-mAID-mClover, or
+
+[Page 18]
+
+WAPL-mAID-mClover 50,103 were used as parental cells. To stably express H2B-Halo in the HCT116 cell line with the head-tethering cohesin system 66, pPB-CAG-IB-H2B-HaloTag was co-transfected with pCMV-hyPBase into HCT116 cells using the Effectene transfection reagent kit. In this system, endogenous SMC1 is tagged with FK506-binding protein (FKBP) and
+
+endogenous SMC3 is tagged with a mutated FKBP–rapamycin-binding domain (FRB*). Addition of the non-toxic rapamycin analog C16-(S)-7-methylindolerapamycin (AP21967/C16AiRap), which selectively binds FRB* 67,68, induces forced head domain closure of cohesin (Fig. 3i). Cells expressing H2B-Halo were sorted based on fluorescence, as described in 28. Two weeks after transfection, cells expressing H2B-Halo were labeled with 50 nM HaloTag TMR
+
+ligand overnight at 37 °C in 5% CO2. HaloTag TMR-positive cells were collected by flow cytometry (SH800S, Sony Biotechnology). The collected cells were subcloned, and clones stably expressing H2B-HaloTag were selected.
+
+Expression and localization of H2B-HaloTag or H3.3-HaloTag
+
+To examine the expression level of H2B-HaloTag or H3.3-HaloTag, transfected cells were lysed in Laemmli sample buffer 104 supplemented with 10% 2-mercaptoethanol (133-1457; Wako) and incubated at 95 °C for 5 min to denature proteins. Cell lysates, equivalent to 1 × 105 cells per well, were subjected to 12.5% SDS–PAGE and subsequent western blotting. For western blotting, the fractionated proteins were transferred to a PVDF membrane (IPVH00010;
+
+Millipore) using a semi-dry blotter (BE-320; BIO CRAFT). After blocking with 5% skim milk (190-12865; Fujifilm Wako), the membrane was probed with rabbit anti-H2B (1:10000; ab1790; Abcam), rabbit anti-H3 (1:100000; ab1791; Abcam), or mouse anti-HaloTag (1:1000; G9211; Promega) antibodies, followed by horseradish peroxidase–conjugated secondary antibodies: antirabbit (1:5000; 170-6515; Bio-Rad) or anti-mouse (1:5000; 170-6516; Bio-Rad).
+
+[Page 19]
+
+Chemiluminescence was detected using WBKLS0100 (Millipore) and EZ-Capture MG (AE9300H-CSP; ATTO).
+
+To examine the cellular localization of the H2B-HaloTag or H3.3-HaloTag, cells grown on poly5
+
+L-lysine–coated coverslips (P1524-500MG; Sigma-Aldrich; C018001; Matsunami) were treated with 5 nM HaloTag TMR ligand (8251; Promega) overnight at 37 °C in 5% CO2. The cells were fixed with 1.85% formaldehyde (064-00406; Wako) at room temperature for 15 min, permeabilized with 0.5% Triton X-100 (T-9284; Sigma-Aldrich) for 15 min, and stained with 0.5 μg/mL DAPI (10236276001; Roche) for 5 min. Samples were mounted with PPDI (20 mM
+
+HEPES [pH 7.4], 1 mM MgCl2, 100 mM KCl, 78% glycerol, and 1 mg/mL paraphenylenediamine [695106-1G; Sigma-Aldrich]) 101. Z-stack images (0.2 μm steps, 30 sections) were acquired using a DeltaVision Ultra microscope (Applied Precision) equipped with an Olympus PlanApoN 60× objective (NA 1.42), an sCMOS camera, an InsightSSI light source (~50 mW), and a four-color standard filter set. Generally, H2B-Halo shows genome-wide
+
+localization, due to the frequent replacement of histone H2B within a few hours 105, while H3.3Halo shows euchromatic localization 46-48.
+
+Biochemical fractionation of nuclei from cells expressing H2B-HaloTag or H3.3-HaloTag Nuclei were isolated from HeLa S3 or HCT116 cells expressing H2B-HaloTag or H3.3-HaloTag
+
+as described previously 100,106,107. Briefly, collected cells were suspended in nuclei isolation buffer (3.75 mM Tris-HCl [pH 7.5], 20 mM KCl, 0.5 mM EDTA, 0.05 mM spermine, 0.125 mM spermidine, 1 μg/mL Aprotinin [T010A; TaKaRa] and 0.1 mM PMSF [P7626-1G; SigmaAldrich]) and centrifuged at 1,936 g for 7 min at room temperature. The cell pellets were resuspended in nuclei isolation buffer and again centrifuged at 1,936 g for 7 min at room
+
+[Page 20]
+
+temperature. Subsequent steps were performed at 4 °C, unless otherwise noted. Cell pellets were resuspended in nuclei isolation buffer containing 0.025% Empigen (45165-50ML; SigmaAldrich; nuclei isolation buffer+) and homogenized immediately with 10 downward strokes of a tight Dounce-pestle (357546, Wheaton). The cell lysates were centrifuged at 4,336 g for 5 min.
+
+Nuclear pellets were washed in nuclei isolation buffer+. The nuclei were incubated on ice for 15 min in the following buffers containing various concentrations of salt: HE (10 mM HEPESNaOH [pH 7.5], 1 mM EDTA, and 0.1 mM PMSF), HE + 100 mM NaCl, HE + 500 mM NaCl, HE + 1 M NaCl, and HE + 2 M NaCl. After each buffer incubation with increasing concentrations of salt, centrifugation was performed to separate the nuclear suspensions into
+
+supernatant and pellet fractions. The proteins in the supernatant fractions were precipitated by using 17% trichloroacetic acid (208-08081; Wako) and cold acetone. Both pellets were suspended in a Laemmli sample buffer and subjected to 12.5% SDS-PAGE, followed by Coomassie brilliant blue (031-17922; Wako) staining and western blotting using rabbit anti–H2B (1:10000; ab1790; Abcam), rabbit anti-H3 (1:100,000; ab1791; Abcam) or mouse anti–HaloTag
+
+(1:1000; G9211; Promega) antibodies, followed by the appropriate secondary antibody: antirabbit (1:5000 dilution; 170-6515; Bio-Rad) or anti-mouse (1:5000 dilution; 170-6516; Bio-Rad) horseradish peroxidase-conjugated goat antibody. Target protein depletion by AID2 To rapidly degrade RAD21-mAID-mClover, CTCF-mAID-mClover, and WAPL-mAID-
+
+mClover, HCT116 cells expressing OsTIR1(F74G) were treated with 1 μM 5-Ph-IAA (provided by the Kanemaki Lab, National Institute of Genetics, Japan) for 1 h (RAD21), 2 h (CTCF), or 4 h (WAPL), respectively 50,103. Control cells were treated with 0.1% dimethyl sulfoxide (DMSO; D2650-5X5ML; Sigma-Aldrich). Degradation of the target proteins was confirmed by the loss of
+
+[Page 21]
+
+mClover fluorescence. After treatment, cells were fixed, permeabilized, and stained with DAPI as described in the “Expression and localization of H2B-HaloTag or H3.3-HaloTag in HeLa cells” section. Z-stack images (30 sections at 0.2 μm intervals along the z-axis) were acquired using a DeltaVision Ultra microscope (Applied Precision) equipped with an Olympus PlanApoN
+
+60× objective lens (NA 1.42). Nuclear mClover fluorescence intensity was quantified using Fiji, with background signal subtracted. RAD21-mAC, WAPL-mAC, or CTCF-mAC degradation was also confirmed by western blotting. The procedure was the same as described in the “Expression and localization of H2BHaloTag or H3.3-HaloTag in HeLa cells” section. Membranes were probed with mouse anti-
+
+RAD21 (1:1000; 05-908, Upstate), rabbit anti-WAPL (1:1000; A301-779A-T), rabbit anti-CTCF (1:1000; 10915-1-AP; PGI Proteintech), and mouse anti-mAID (1:1000; M214-3; MBL) antibodies, followed by horseradish peroxidase–conjugated goat anti-mouse secondary antibody (1:5000; 170-6516; Bio-Rad), or anti-rabbit IgG DyLight 800 (1:5000; SA5-35571; Invitrogen). As a loading control, a goat anti-GAPDH antibody (1:2500; Bio-rad; 12004158; StarBright
+
+Blue700 conjugated) was used. Single-nucleosome imaging Established cell lines were cultured on poly-L-lysine–coated glass-based dishes (3970-035; Iwaki). H2B-Halo or H3.3-Halo incorporated into nucleosomes was fluorescently labeled with 80 pM HaloTag TMR ligand for 20 min at 37 °C in 5% CO2, washed three times with 1× HBSS
+
+(H1387; Sigma-Aldrich), and then incubated in the following media overnight before singlenucleosome imaging. HeLa S3 cells were observed in DMEM (21063-029; Thermo Fisher Scientific), and HCT116 cells in McCoy’s 5A (1-18F23-1; BioConcept). These media were phenol red–free and supplemented with 10% FBS. To increase the number of tracked
+
+[Page 22]
+
+nucleosomes when applying the RL algorithm for motion classification, H2B-Halo was labeled with 50 nM PA-JF646 (provided by the Lavis Lab, Janelia Research Campus, VA, USA) 70 overnight using the same labeling procedure. A live-cell chamber (INU-TIZ-F1; Tokai Hit) and digital gas mixer (GM-8000; Tokai Hit) were
+
+used to maintain cell culture conditions (37 °C, 5% CO2, and humidity) during microscopy. Single nucleosomes were observed using an inverted Nikon Eclipse Ti microscope equipped with a 100-mW Sapphire 561-nm laser (Coherent) and an sCMOS ORCA-Flash 4.0 or ORCAFusion BT camera (Hamamatsu Photonics). Live cells labeled with TMR were excited with the 561-nm laser through an objective lens (100× PlanApo TIRF, NA 1.49; Nikon) and detected at
+
+575–710 nm. An oblique illumination system with a TIRF unit (Nikon) was used to excite fluorescent nucleosome molecules within a thin area of the cell nucleus and reduce background noise (Fig. 1a). Sequential image frames were acquired using NIS-Elements (Nikon) at a frame rate of 50 ms under continuous illumination. Note that freely diffusing, non-nucleosomal histones cannot be tracked at this frame rate. For PA-JF646–labeled nucleosome tracking, the
+
+cells were continuously photoactivated with weak 405-nm illumination (1.0 mW, 25% AOTF attenuation) together with 640-nm laser excitation. To visualize the basal nuclear surface (nuclear periphery), we adjusted the angle of laser illumination to efficiently capture a nuclear membrane marker, NUP107-Venus 108. As reported previously 109,110, nucleosome dynamics on the nuclear surface were lower than those of the
+
+nuclear interior, which contained more euchromatin regions. Single-nucleosome tracking analysis Image processing, single-nucleosome tracking, and single-nucleosome movement analysis were
+
+[Page 23]
+
+performed as previously described 5,39,43,110. Briefly, sequential images were converted to a 16-bit grayscale, and background noise was subtracted using the rolling-ball background subtraction (radius, 50 pixels) in ImageJ. Nuclear regions in the images were manually extracted. The fluorescent dots were fitted with a 2D Gaussian function 111,112 and tracked using u-track
+
+software 113, or their centers were determined by LoG detector in Fiji plugin Trackmate 114. To assess positional accuracy, we calculated the standard deviation of the two-dimensional movement of immobilized nucleosomes per 50 ms in FA-fixed HeLa S3 cells (N = 10 nucleosomes). We found that 12.5 nm (the mean of SDx and SDy) was the localization accuracy (also see Fig. S1d). Single-step photobleaching profile confirmed that the individual dots
+
+represent single nucleosomes (Fig. 1c). For single-nucleosome movement analysis, the displacement distribution and mean square displacement (MSD) of fluorescent dots were calculated based on their trajectories using a Python program. The first detected coordinates were excluded due to reduced positional accuracy. Only trajectories lasting more than three frames (including the first excluded frame)
+
+were used for analysis. All pairwise squared displacements within each trajectory were computed, and the average MSD was calculated for each cell. The originally calculated MSD was in 2D; to obtain the 3D value, the 2D value was multiplied by 1.5 (4 to 6 Dt). Graphs and statistical analyses of single-nucleosome MSD under different conditions were performed using R.
+
+Angle-distribution analysis For the tracked consecutive points {(x! , y! ), (x" , y" ), ⋯ , (x# , y# ), ⋯ } of a single nucleosome on the XY plane, we converted the data into a set of displacement vectors, ∆r# = (x#$" − x# ,
+
+[Page 24]
+
+y#$" − y# )% . Then, we calculated the angle between two vectors ∆r# and ∆r#$" . This procedure was carried out for all points in each trajectory. Finally, we plotted the normalized polar histogram by our Python program. The angle distribution was normalized by 2π, and the values correspond to the probability density. The colors indicate the angles. Asymmetric coefficient
+
+(AC) was calculated as indicated in Fig. 1h. Verification of DNA damage To verify the level of DNA damage caused by rapid RAD21 depletion, the γH2AX immunostaining signal was quantified. HCT116 RAD21-mAID-mClover cells were treated with 1 μM 5Ph-IAA or 0.1% DMSO. As a positive control, cells were treated with 10 μg/mL
+
+bleomycin (4234400D4032; Nippon Kayaku) for 1 h. Immunostaining was performed as follows, with all steps carried out at room temperature. Cells grown on coverslips were fixed and permeabilized as described in the section “Expression and localization of H2B-HaloTag or H3.3HaloTag.” After washing twice with HMK (20 mM Hepes [pH 7.5], 1 mM MgCl2, and 100 mM KCl) for 5 min, the cells were incubated with 10% normal goat serum (NGS; 143-06561; Wako)
+
+in HMK for 30 min. The cells were then incubated for 1 h with rabbit anti-γH2AX (phospho S139) (1:1000, ab2893; Abcam) primary antibody diluted in 1% NGS in HMK. After four washes with HMK, the cells were incubated for 1 h with goat anti–rabbit IgG Alexa Fluor 594 (1:1000, A11037; Invitrogen) secondary antibody diluted in 1% NGS in HMK, followed by four washes with HMK.
+
+DNA staining and mounting were performed as described in the section “Expression and localization of H2B-HaloTag or H3.3-HaloTag.” Optical section images were acquired at a 0.2 μm step size using a DeltaVision microscope (Applied Precision) as described in the same section. The number of γH2AX foci per nucleus was automatically quantified using Fiji. A fixed
+
+[Page 25]
+
+threshold value, determined by the Otsu method, was applied to segment the foci, which were then counted within each nucleus. Chemical treatment in single-nucleosome imaging For chemical fixation, cells grown on poly-L-lysine coated glass-based dishes were incubated in
+
+2% formaldehyde (diluted pure 16% formaldehyde) in 1 × PBS at room temperature for 15 min and washed with 1 ×PBS. For head-tethering of the cohesin experiment, cells were treated with 1.5 μM AP21967 (A/C Heterodimerizer; 635057; Clontech) for 2 h. For RAD21 depletion in the head-tetherable cohesin cell line, cells were treated with 1 μg/mL doxycycline (631311; Clontech) overnight, followed by 500 μM indole-3-acetic acid (IAA; a natural auxin, 19119-61;
+
+nacalai) for 1 h. Subsequently, 1.5 μM AP21967 was added for 2 h in the continued presence of both doxycycline and IAA (total IAA exposure: 3 h). Control cells were treated with 0.1% MQ (solvent used to dissolve doxycycline), 0.3% EtOH (for AP21967), and 0.1% DMSO (for IAA). RAD21 depletion was confirmed by the loss of mClover fluorescence during single-nucleosome imaging, and only cells with confirmed depletion were used for analysis.
+
+RNA interference siRNA reverse transfections into HeLa, HCT116, and HT1080 cells grown on poly-L-lysine– coated glass-based dishes were performed using Lipofectamine RNAiMAX (13778-075; Invitrogen) according to the manufacturer’s instructions. The medium was replaced with fresh medium 16 h after transfection. The transfected cells were used for subsequent experiments 48 h
+
+(RAD21, CTCF) or 72 h (WAPL, Sororin) after transfection. As a control, an oligonucleotide (4390843; Ambion; sequence undisclosed) was used. The siRNA oligo sequences were as follows: RAD21 (5'-CAGCUUGAAUCAGAGUAGAGUGGAAdTdT-3'), CTCF (5'GCGCUCUAAGAAAGAAGAUUCCUCUdTdT-3'), WAPL (5'25
+
+[Page 26]
+
+GGUUAAGUGUUCCUCUUAUdTdT-3'), Sororin (5'-GCCUAGGUGUCCUUGAGCUdTdT3'). Knockdown of target proteins was confirmed by immunostaining, performed as described in the section “Verification of DNA damage.” Cells were incubated for 1 h with primary antibodies
+
+diluted in 1% NGS in HMK: mouse anti-RAD21 (1:1000; 05-908; Upstate), mouse anti-CTCF (1:3000; 07-729; Millipore), mouse anti-WAPL (1:20000; MABE1106; Millipore), or rabbit anti-Sororin (CDCA5) (1:2500; ab192237; Abcam). After four washes with HMK, cells were incubated for 1 h with secondary antibodies diluted in 1% NGS in HMK: goat anti–mouse IgG Alexa Fluor 488 (1:1000, A11029; Invitrogen), goat anti–mouse IgG Alexa Fluor 594 (1:1000,
+
+A11032; Invitrogen), goat anti–rabbit IgG Alexa Fluor 594 (1:1000, A11037; Invitrogen), or goat anti–rabbit IgG Alexa Fluor 647 (1:1000, A21245; Invitrogen). Optical section images were acquired at a 0.2 μm step size using a DeltaVision microscope (Applied Precision) as described in the section “Expression and localization of H2B-HaloTag or H3.3-HaloTag in HeLa cells.” To quantify the knockdown effect, the mean nuclear signal
+
+intensities were calculated after background subtraction (signals outside nuclei) and plotted.
+
+Cell cycle synchronization For synchronization of HCT116 cells treated with siSororin RNA in the late S–G2 phase, cells (1.0 × 105 cells/dish) were plated in medium containing siSororin RNA. Cells were then treated
+
+with 9 μM RO3306 (CS-3790; Funakoshi) for 16 h before observation. For synchronization of HCT116 or HT1080 cells in the late S–G2 phase, cells were initially plated at a concentration of 1.0 × 105 cells/mL, incubated for one day, and then treated with 9 μM RO3306 for 16 h.
+
+[Page 27]
+
+Chromosome spreads To assess the formation of sister chromatid cohesion, mitotic chromosome spreads were prepared. Cells (treated with siControl or siSororin RNA) were incubated with 0.2 μg/mL colcemid (045-16963; Wako) for 1 h at 37 °C. The following steps were performed at room
+
+temperature, except for the final fixation step. After washing with PBS, cells were trypsinized and resuspended in hypotonic buffer (75 mM KCl) for 10 min. Cells were then gently fixed by repeating the following treatment three times: incubation in fixation buffer (methanol:acetic acid, 3:1) for 5 min, centrifugation at 850 g for 4 min, and resuspension in fresh fixation buffer. Finally, the cells were completely fixed by incubation in 200 μL of fixation buffer at –30 °C for
+
+at least 30 min.
+
+For imaging, 5 μL of the fixed cell suspension was dropped onto coverslips, mixed, and completely dried at 60 °C for 30 min. Dried cells were stained with 0.5 μg/mL DAPI for 5 min, followed by PPDI mounting. Images of mitotic chromosome spreads were obtained using a
+
+DeltaVision Ultra microscope with an Olympus PlanApoN 60× objective (NA 1.42) and an sCMOS camera. The number of chromosomes per cell was counted manually. We confirmed the loss of sister chromatid cohesion in Sororin-depleted cells: the percentage of separated or Xshaped sister chromatids increased (Fig. 2b), consistent with a previous report 54.
+
+lacO/LacI-EGFP and tetO/TetR-4×mCherry foci imaging and tracking lacO/LacI-EGFP and tetO/TetR-4×mCherry foci in live HT1080 cells were imaged under the same conditions as described in “Single-nucleosome imaging,” except that a lower laser power was used due to the higher fluorescence intensity of the foci compared with TMR-labeled single nucleosomes. LacI-EGFP was excited with a 488 nm laser, and TetR-mCherry with a 561 nm
+
+[Page 28]
+
+laser. Imaging was performed sequentially, first acquiring the 561 nm channel, followed by the 488 nm channel. Movies were recorded at a frame rate of 50 ms per frame, with a total of 1200 frames (1 min). Cells were treated with siRNA (see “RNA interference”) and synchronized to the late S–G2 phase (see “Cell cycle synchronization”). The precise positions of the labeled genomic
+
+loci were identified and tracked using the TrackMate plugin 114,115. Mean squared displacement (MSD) of the foci was calculated from the trajectories using the same procedure described in “Single-nucleosome tracking analysis.” The tetO array, visualized with TetR-4XmCherry, more frequently appears as two separate dots compared to the lacO array, visualized with LacI-EGFP. This suggests that the lacO array is located near a cohesin site, which likely prevents the sister
+
+loci from separating 56. Consistently, ENCODE data 57 indicated that the lacO site lies within 5 kb of a cohesin-enriched region (e.g., SMC3 and RAD21; Fig. 2e), as shown in 56.
+
+Bayesian-based Richardson-Lucy algorithm (RL algorithm) The RL algorithm is the iterative algorithm of Richardson 116 and Lucy 117 (RL) to derive smooth
+
+distributions from the noisy data used in image processing 118,119. With sufficient observation, the algorithm converts raw, noisy trajectories into a smooth distribution of MSD, providing a denoised, population-level view of heterogeneous nucleosome mobility.
+
+For the convenience of the reader, we briefly explain the mathematical principles of the RL
+
+algorithm. A more detailed description has been reported previously 69. . = 〈M& 〉, where 〈⋯ 〉 is the average taken over i and Here, the average MSD of nucleosomes, M along the observed trajectories. The distribution of MSD is captured by P(M, t) = 〈δ(M − M& (t))〉
+
+[Page 29]
+
+Due to the short lifetime of observed fluorescence of single nucleosomes, the individual nucleosome MSD data are insufficient to provide for a clear P(M, t). However, this problem is overcome by using the RL algorithm. From the observed data, we first calculate the self-part of the van Hove correlation function (vHC),
+
+G' (r, t ) = A' 〈δ(r − |r& (t + t! ) − r& (t! )|)〉, where r& is the projected coordinate of the ith nucleosome on the 2-dimensional imaging plane and A' is a constant to normalize G' as ∫ d ) rG' (r, t) = 1. The calculated vHC is shown at t =0.5 ,!
+
+"
+
+s. G' is expanded in Gaussian bases, q(r, M) = ?*+@ exp ?− + @, as G' (r, t) = D dMP(M, t)q(r, M)
+
+Given a noisy estimate of G' (r, t), P(M, t) is extracted as coefficients of expansion using the RL iterative scheme. For this, P(M, t) was calculated in an iterative way with the RL algorithm: +
+
+starting from the initial distribution, P" (M, t) = 1/M! exp (− + ), P#$" (M, t) at the (n+1)-th "
+
+- (,,%)
+
+iteration was obtained by P#$" (M, t) = P# (M, t) ∫ F- $# (,,%)G q(r, M)d ) r, with G'# (r, t) = #
+
+∫ P# (M, t)q(r, M)dM. This equation was iterated under the constraints P#$" (M, t) > 0 and
+
+∫ P#$" (M, t)dM = 1. The obtained distribution curves were fitted with multiple Gaussian functions, and the peak position and area of each Gaussian component were calculated. Subpopulation boundaries were estimated from the RL-curve: using the local minima for the "Super slow"–"Slow" and "Slow"– "Fast" transitions, and the midpoint between peaks for the "Fast"–"Super fast" transition. For
+
+MSD analysis, trajectories within each cell were categorized based on their MSD at Δt = 0.5 s, and mean squared displacement (MSD) was calculated separately for each subpopulation. Centroids of the categorized trajectories were mapped to visualize their localization. It should be
+
+[Page 30]
+
+noted that reliable fitting of α values for the “Super slow” and “Slow” categories is difficult due to their limited mobility.
+
+H3.3-Halo labeled nucleosome pulldown, purification of nucleosomal DNA, and library
+
+preparation Cell nuclei were isolated as previously described 100,106,107, with minor modifications. Briefly, HeLa cells were maintained at 37 °C and 5% CO2 in DMEM supplemented with 10% FBS. Collected cells were washed with nuclei isolation buffer (3.75 mM Tris–HCl pH 7.5, 20 mM KCl, 0.5 mM EDTA, 0.05 mM spermine, 0.125 mM spermidine, 0.1% Trasylol (14716; Cayman
+
+Chemical), 0.1 mM PMSF (P7626-1G; Sigma-Aldrich)) with two cycles of centrifugation at 193 × g for 7 min at 23 °C. Pellets were resuspended in nuclei isolation buffer containing 0.05% Empigen BB detergent (45165-50ML; Sigma-Aldrich) (nuclei isolation buffer+) and homogenized with ten downward strokes using a tight Dounce pestle. After centrifugation at 440 × g for 5 min, the pellets were washed with nuclei isolation buffer+. This step was repeated four
+
+times before nucleosome purification. Chromatin purification was performed as described by 43,120, with modifications. Nuclei (equivalent to ~2 mg of DNA) in buffer (10 mM Tris–HCl pH 7.5, 1.5 mM MgCl2, 1.0 mM CaCl2, 0.25 M sucrose, 0.1 mM PMSF) were digested with 50 U micrococcal nuclease (MNase, LS004797; Worthington) at 30 °C for 1 h. During digestion, 1 μM HaloTag PEG-Biotin Ligand
+
+(G859A; Promega) or an equivalent volume of DMSO was added. After centrifugation at 440 × g for 5 min at 4 °C, nuclei were lysed in lysis buffer (10 mM Tris–HCl pH 8.0, 5 mM EDTA, 0.1 mM PMSF) on ice for 5 min. Lysates were dialyzed overnight at 4 °C against dialysis buffer (10 mM HEPES–NaOH pH 7.5, 0.1 mM EDTA, 0.1 mM PMSF) using Slide-A-Lyzer (66380;
+
+[Page 31]
+
+Thermo Fisher Scientific). After centrifugation at 20,400 × g for 10 min at 4 °C, the supernatant was recovered as the purified nucleosome fraction (mainly mononucleosomes). To verify MNase digestion, DNA was purified, run on a 1.5% agarose gel, and stained with ethidium bromide. The biotinylated or untreated nucleosome fraction (28 μg) was diluted with an
+
+equal volume of 2× binding buffer (10 mM HEPES–NaOH pH 7.5, 200 mM NaCl, 2 mM DTT, and cOmplete EDTA-free protease inhibitor cocktail (11873580001; Roche)). As described 121, chromatin solution was added to streptavidin-FG beads (TAS8848 N1170; Tamagawa-Seiki) pre-equilibrated with coating buffer (PBS, 2.5% BSA, 0.05% Tween 20) for 1 h. Mixtures were incubated at 5 °C for 2 h with shaking. Beads were collected with a magnetic rack and washed as
+
+described 122. In brief cells were washed once with cold 1× binding buffer (10 mM HEPES– NaOH pH 7.5, 100 mM NaCl, 1 mM DTT), twice with cold wash buffer 1 (10 mM HEPES– NaOH pH 7.5, 140 mM NaCl, 1% Triton X-100, 0.5% NP-40 (11332473001; Roche), 0.1% SDS), twice with cold wash buffer 2 (10 mM HEPES–NaOH pH 7.5, 360 mM NaCl, 1% Triton X-100, 0.5% NP-40, 0.1% SDS), twice with cold wash buffer 3 (10 mM HEPES–NaOH pH 7.5,
+
+250 mM LiCl, 0.5% Triton X-100, 0.5% NP-40), and once with TE buffer (10 mM Tris–HCl pH 8.0, 1 mM EDTA). Beads were resuspended in 50 μL TE buffer. For DNA extraction, 40 μL of beads were treated with RNase A (1 mg/mL , 10109169001; Roche, 4 μL) for 30 min at 37 °C, followed by proteinase K digestion (20 mg/mL, 169-21041; FUJIFILM Wako, 4 μL) with 10 μL of 10% SDS
+
+at 50 °C for 1 h with shaking (1,200 rpm). After magnetic separation, DNA was extracted using AMPure XP beads (A63880; Beckman Coulter) and eluted in Milli-Q water. DNA concentration was quantified with the Qubit system (Q32851; Thermo Fisher Scientific), and quality was assessed by Agilent 2100 Bioanalyzer using a High Sensitivity DNA kit (5067-4626; Agilent).
+
+[Page 32]
+
+Libraries were prepared using the ThruPLEX DNA-seq Kit (R400675; Takara Bio) and checked with an Agilent 2100 Bioanalyzer. Pooled libraries were sequenced (paired-end, 2 × 100 bp) on the Illumina NovaSeq 6000 platform. For protein analysis, the remaining 10 μL of beads were resuspended in an equal volume of 2×
+
+Laemmli sample buffer 104 containing 10% 2-mercaptoethanol (133-1457; FUJIFILM Wako) and incubated at 99 °C for 10 min. After centrifugation at 10000 × g for 3 min, input and pulldown samples (biotinylated and negative control) were separated by SDS–PAGE and analyzed by western blotting with anti-HaloTag antibody (G9211; Promega). For data analysis of purified H3.3-Halo nucleosomal DNA, the nf-core ChIP-seq pipeline
+
+(nfcore/chipseq v2.0.0) 123,124 was used with Docker configuration and default parameters. The human genome hg19 (Illumina iGenomes) was used as a reference. Peaks were called using MACS2 (broad mode) 125. Overlap between H3.3-Halo regions and contact domains (Hi-C Acompartments, histone modifications) was assessed against published datasets 8. Hi-C domains from HeLa 15 were obtained from GEO (GSE63525). Compartment annotations were from
+
+ENCODE 57,127: H3K4me2 (ENCFF108DAJ), H3K4me3 (ENCFF447CLK), H3K9ac (ENCFF723WDR), H3K27ac (ENCFF144EOJ), H3K79me2 (ENCFF916VLX), H3K36me3 (ENCFF001SVY), H3K4me1 (ENCFF162RSB), and H3K27me3 (ENCFF252BLX).
+
+Sample preparation for SIM imaging Two days before labeling, cells were grown on poly-L-lysine-coated, super-resolution–grade coverslips (No. 1S; 0.17 mm thickness; CS01803; Matsunami). H3.3-Halo in HCT116 cells was fluorescently labeled by incubating the cells for more than 1 h with 50 nM TMR. Cell fixation
+
+[Page 33]
+
+and immunostaining were performed as described in the section “Verification of DNA damage.” Fixed cells were observed at room temperature.
+
+For live imaging, cells were grown poly-L-lysine–coated glass-based dishes. H3.3-Halo
+
+incorporated into nucleosomes was fluorescently labeled with 50 nM HaloTag TMR ligand for 1 h at 37 °C in 5% CO2, washed three times with 1× HBSS, and then observed in phenol red–free McCoy’s 5A at 37 °C in 5% CO2. For immunostaining, cells were incubated with diluted primary antibodies in 1% NGS in HMK for 1 h: mouse anti-RAD21 (1:1000; 05-908, Upstate), mouse anti-RNAPII CTD (1:1000; ab817,
+
+Abcam), mouse anti-RNAPII Ser5P (1:1000; provided by Kimura Lab, Science Tokyo, Japan), or mouse anti-RNAPII Ser2P (1:1000; provided by Kimura Lab, Science Tokyo, Japan) antibody. After four washes with HMK, cells were incubated with diluted secondary antibodies in 1% NGS in HMK for 1 h: goat anti–mouse IgG Alexa Fluor 488 (1:500; A11029, Invitrogen) or goat anti–mouse IgG Alexa Fluor 647 (1:500; A21236, Invitrogen), followed by four
+
+additional washes with HMK. DNA staining and mounting were performed as described in the section “Expression and localization of H2B-HaloTag or H3.3-HaloTag.” 3D-SIM microscopy Structured illumination microscopy (SIM) was performed on a Nikon N-SIM S system (Ti-2 stand; Hamamatsu ORCA Fusion BT camera; Nikon Perfect Focus; Chroma ET525/50m,
+
+ET595/50m, and ET700/75m emission filters). A Nikon 100× PlanApo TIRF oil-immersion objective (NA 1.49) was used. NIS-Elements (Nikon) software was used to control the system and acquire 3D-SIM images. Illumination was provided by ZIVA light engines (Lumencor)
+
+[Page 34]
+
+containing 405 nm, 476 nm, 545 nm, and 637 nm lasers. Light was directed to the sample via a specific filter for each channel. 3D image stacks were acquired over the entire cell volume in z, with 15 raw images per plane (five phases and three angles). Optical sectioning images were acquired at 0.12 μm intervals,
+
+with a total of 51 sections covering the entire nucleus (6 μm in thickness). Images acquired on the Nikon N-SIM-S system were reconstructed and corrected for chromatic aberrations using stack reconstruction in the NIS-Elements software. System performance and both raw and reconstructed data quality were carefully assessed and optimized using the SIMcheck ImageJ plugin (Fig. S8) 72. To exclude potential false-positive
+
+nuclear marker signals, we applied the MCNR map function of SIMcheck, which generates a metric of local stripe contrast across different regions of the raw data and directly correlates this with the level of high-frequency information content in the reconstructed data 72. Only immunofluorescent spot signals with MCNR values above a stringent quality threshold were considered, whereas localizations with low MCNR values were discarded as unreliable SIM
+
+signals. Classification analysis for 3D-SIM images 3D assessment of DAPI intensity classes or H3.3-Halo intensity classes as a proxy for chromatin compaction was performed as previously described 74. First, 1000 was subtracted from all voxel intensity values to remove background noise, and nuclei were cropped. Nuclear voxels were
+
+automatically identified from the DAPI channel using Gaussian filtering and thresholding via the dapimask function in the nucim R package.
+
+[Page 35]
+
+For chromatin quantification, a 3D nuclear mask was generated to define the region for segmenting DAPI or H3.3-Halo signals into seven intensity classes with equal variance, following the method of 74. In brief, voxel-wise classification was performed using a hidden Markov random field model that combines a finite Gaussian mixture model with a spatial Potts
+
+model, implemented in R. This approach enables threshold-independent classification of chromatin compaction states at the voxel level based on DAPI or H3.3-Halo intensity. Heat maps of the seven intensity classes in individual nuclei were generated using Fiji and displayed in either color or grayscale. The relative volume of each class was calculated as the volume of that class divided by the total nuclear volume detected by DAPI staining.
+
+Dual-color labeling and imaging HCT116 RAD21-mAID-mClover H3.3-Halo cells were cultured on poly-L-lysine–coated glassbased dishes (3970-035; Iwaki). H3.3-Halo incorporated into nucleosomes was sequentially labeled, first with 200 nM PA-JF549 70 for 20 min and then with 50 nM PA-JF646 70 for 20 min at 37 °C in 5% CO2. Cells were washed three times with 1× HBSS (H1387; Sigma-Aldrich) and
+
+incubated in phenol red–free McCoy’s 5A medium for more than 1 h before single-nucleosome imaging (Fig. S9). Simultaneous dual-color imaging in live HCT116 cells was performed under the same conditions as described in “Single-nucleosome imaging,” except that a beam splitter (W-VIEW GEMINI; Hamamatsu Photonics) was used, equipped with an image-splitting dichroic beamsplitter
+
+(FF640-FDi01-25×36; Hamamatsu Photonics) and bandpass filters (FF01-593/40-25 and FF01676/29-25; Hamamatsu Photonics). The cells were continuously photoactivated with weak 405 nm illumination (1.0 mW, 25% AOTF attenuation).
+
+[Page 36]
+
+Two-point MSD analysis In our single-nucleosome tracking, trajectories of PA-JF549 and PA-JF646 labeled nucleosomes +6" on the XY-plane, {S123 (t4 )}+6" 45! and {S728 (t4 )}45! , were simultaneously acquired, with a time
+
+interval of Δt = 0.05 s and t4 = m Δt (m = 0, 1, 2, ⋯ , M − 1). To evaluate dynamic
+
+fluctuations between two points, we considered the relative vector between two trajectories, Q(t4 ) = S123 (t4 ) − S728 (t4 ). Then, we calculated the two-point MSD for the lag time t# = n Δt by +6"6#
+
+MSD(t# ) = S T [Q(t4$# ) − Q(t4 )]) W M−n 45!
+
+× %$
+
+where ⟨⋅⟩%$ represents the ensemble average for trajectories at the lag time t# and the coefficient
+
+3/2 is a correction factor for conversion from 2-dimensional to 3-dimensional values.
+
+[Page 37]
+
+Acknowledgments We are grateful to Dr. K. M. Marshall and Mr. Y. Nagata for critical reading of this manuscript and Mr. A. Tsurumune (NIKON) for setting up 3D-SIM. We thank Dr. H. Kimura for providing antibodies, Dr. T. Tanaka for providing a cell line, and Dr. S. Ide for technical assistance with
+
+pull-down and library preparation. We also thank Mr. A. Otsuka and Ms. H. Ochi for establishing HeLa and HCT116 cells expressing H3.3-Halo, Dr. S. Shinkai for assistance with angle-distribution and two-point MSD analyses, and Dr. K. Hibino for establishing HCT116 cells expressing H2B-Halo and for helpful discussions. Finally, we thank Dr. T. Cremer, Dr. C. Cremer, Dr. M. Cremer, Dr. Y. Shimamoto, Dr. H. Niki, and all members of the Maeshima
+
+laboratory for valuable discussions and continuous support.
+
+Funding This work was supported by the Japan Society for the Promotion of Science (JSPS) and MEXT KAKENHI grants (20H05937, JP23K17398, JP22H04925 (PAGS), and JP24H00061), and the
+
+Takeda Science Foundation to K. Maeshima, and KAKENHI grants (20H05937 and 21H04767) to T.N. S.I. and K. Minami were SOKENDAI Special Researchers (JST SPRING JPMJSP2104). S.I. (23KJ0996) and K. Minami (JP23KJ0998) were JSPS Fellows. M.A.S. is a JSPS Fellow (24KJ1161). S.I. is also supported by ROIS.
+
+Author contributions S.I., M.A.S., and K. Maeshima designed the research. S.I. performed most of the experiments, including cell generation, imaging, and analyses. M.A.S. established the 2-point MSD analysis, RL analysis, and 3D-SIM. S.T. performed some biochemical experiments. S.S.A. and M.S. developed the RL analysis. S.T., K. Maeshima, and K. Minami purified H3.3-Halo-labeled
+
+[Page 38]
+
+nucleosomal DNA and prepared the sequencing library. L.S. assisted with 3D-SIM setup and analysis. A.T. performed sequencing. K.H. and K.K. analyzed the sequencing data. M.T.K. contributed to AID2 cell generation. T.N. generated the head-tethering cohesin cells. S.I., M.A.S., and K. Maeshima wrote the manuscript with input from all authors.
+
+Competing interests The authors declare that they have no competing interests, financial, or otherwise.
+
+Data and materials availability
+
+The data have been deposited with links to BioProject accession numbers PRJDB17378 (H2BHaloTag pull-down) 100 and PRJDB17380 (H3.3-HaloTag pull-down) in the DDBJ BioProject database. The scripts for RL-algorithm classification, Trackmate Batch Tracker, SIM image analysis, and two-point MSD calculation are available at https://doi.org/10.5281/zenodo.16959115. Other data are available in the main text or the
+
+supplementary materials.
+
+Supplementary Materials Figs. S1 to S9 Movies S1 to S8
+
+[Page 39]
+
+References
+
+Luger, K., Mader, A.W., Richmond, R.K., Sargent, D.F. & Richmond, T.J. Crystal structure of the nucleosome core particle at 2.8 A resolution. Nature 389, 251-60 (1997). Koyama, M. & Kurumizaka, H. Structural diversity of the nucleosome. J Biochem 163, 85-95 (2018). Xu, J. et al. Super-Resolution Imaging of Higher-Order Chromatin Structures at Different Epigenomic States in Single Mammalian Cells. Cell Rep 24, 873-882 (2018). Belmont, A.S. & Bruce, K. Visualization of G1 chromosomes: a folded, twisted, supercoiled chromonema model of interphase chromatid structure. J Cell Biol 127, 287302 (1994). Nozaki, T. et al. Dynamic Organization of Chromatin Domains Revealed by SuperResolution Live-Cell Imaging. Mol Cell 67, 282-293 e7 (2017). Bintu, B. et al. Super-resolution chromatin tracing reveals domains and cooperative interactions in single cells. Science 362(2018). Miron, E. et al. Chromatin arranges in chains of mesoscale domains with nanoscale functional topography independent of cohesin. Sci Adv 6(2020). Nozaki, T. et al. Condensed but liquid-like domain organization of active chromatin regions in living human cells. Sci Adv 9, eadf1488 (2023). Li, Y. et al. Analysis of three-dimensional chromatin packing domains by chromatin scanning transmission electron microscopy (ChromSTEM). Sci Rep 12, 12198 (2022). Gelleri, M. et al. True-to-scale DNA-density maps correlate with major accessibility differences between active and inactive chromatin. Cell Rep 42, 112567 (2023). Lieberman-Aiden, E. et al. Comprehensive mapping of long-range interactions reveals folding principles of the human genome. Science 326, 289-93 (2009). Nora, E.P. et al. Spatial partitioning of the regulatory landscape of the X-inactivation centre. Nature 485, 381-5 (2012). Dixon, J.R. et al. Topological domains in mammalian genomes identified by analysis of chromatin interactions. Nature 485, 376-80 (2012). Sexton, T. et al. Three-dimensional folding and functional organization principles of the Drosophila genome. Cell 148, 458-72 (2012). Rao, S.S. et al. A 3D map of the human genome at kilobase resolution reveals principles of chromatin looping. Cell 159, 1665-80 (2014). Alberts, B. et al. Molecular Biology of the Cell, Seventh Edition (2022). Pollard, T.D., Earnshaw, W.C., Lippincott-Schwartz, J. & Johnson, G. Cell Biology, 4th Edition. (2022). Blake, W.J., M, K.A., Cantor, C.R. & Collins, J.J. Noise in eukaryotic gene expression. Nature 422, 633-7 (2003). Dong, P. et al. Cohesin prevents cross-domain gene coactivation. Nat Genet 56, 16541664 (2024). Paggi, J.M. & Zhang, B. Euchromatin forms condensed domains with short active regions on the surface. bioRxiv (2025). Zakirov, A.N. et al. Fiber-Like Organization as a Basic Principle for Euchromatin Higher-Order Structure. Front Cell Dev Biol 9, 784440 (2021). Maeshima, K., Iida, S., Shimazoe, M.A., Tamura, S. & Ide, S. Is euchromatin really open in the cell? Trends Cell Biol 34, 7-17 (2024).
+
+[Page 40]
+
+Schoenfelder, S. & Fraser, P. Long-range enhancer-promoter contacts in gene expression control. Nat Rev Genet 20, 437-455 (2019). Minami, K., Semeigazin, A., Nakazato, K. & Maeshima, K. Euchromatin and Heterochromatin: Implications for DNA Accessibility and Transcription. Journal of Molecular Biology, 169270 (2025). Pope, B.D. et al. Topologically associating domains are stable units of replication-timing regulation. Nature 515, 402-5 (2014). Sebastian, R. et al. Mechanism for local attenuation of DNA replication at double-strand breaks. Nature 639, 1084-1092 (2025). Hihara, S. et al. Local nucleosome dynamics facilitate chromatin accessibility in living mammalian cells. Cell Rep 2, 1645-56 (2012). Minami, K. et al. Replication-dependent histone labeling dissects the physical properties of euchromatin/heterochromatin in living human cells. Sci Adv 11, eadu8400 (2025). Nasmyth, K. & Haering, C.H. The structure and function of SMC and kleisin complexes. Annu Rev Biochem 74, 595-648 (2005). Uhlmann, F. SMC complexes: from DNA to chromosomes. Nat Rev Mol Cell Biol 17, 399-412 (2016). Nishiyama, T. Cohesion and cohesin-dependent chromatin organization. Curr Opin Cell Biol 58, 8-14 (2019). Davidson, I.F. & Peters, J.M. Genome folding through loop extrusion by SMC complexes. Nat Rev Mol Cell Biol 22, 445-464 (2021). Murayama, Y. Sister chromatid cohesion through the lens of biochemical experiments. Curr Opin Cell Biol 93, 102464 (2025). Dekker, J. & Heard, E. Structural and functional diversity of Topologically Associating Domains. FEBS Lett 589, 2877-84 (2015). Rowley, M.J. & Corces, V.G. Organizational principles of 3D genome architecture. Nat Rev Genet 19, 789-800 (2018). Nagasaka, K. et al. Cohesin mediates DNA loop extrusion and sister chromatid cohesion by distinct mechanisms. Molecular Cell 83, 3049-3063.e6 (2023). Heun, P., Laroche, T., Shimada, K., Furrer, P. & Gasser, S.M. Chromosome dynamics in the yeast interphase nucleus. Science 294, 2181-6 (2001). Dion, V., Kalck, V., Seeber, A., Schleker, T. & Gasser, S.M. Cohesin and the nucleolus constrain the mobility of spontaneous repair foci. EMBO Rep 14, 984-91 (2013). Itoh, Y. et al. 1,6-hexanediol rapidly immobilizes and condenses chromatin in living human cells. Life Sci Alliance 4, e202001005 (2021). Gabriele, M. et al. Dynamics of CTCF- and cohesin-mediated chromatin looping revealed by live-cell imaging. Science 376, 496-501 (2022). Mach, P. et al. Cohesin and CTCF control the dynamics of chromosome folding. Nat Genet 54, 1907-1918 (2022). Lerner, J. et al. Two-Parameter Mobility Assessments Discriminate Diverse Regulatory Factor Behaviors in Chromatin. Mol Cell 79, 677-688 e6 (2020). Iida, S. et al. Single-nucleosome imaging reveals steady-state motion of interphase chromatin in living human cells. Science Advances. 8, eabn5626 (2022). Schermelleh, L. et al. Subdiffraction multicolor imaging of the nuclear periphery with 3D structured illumination microscopy. Science 320, 1332-6 (2008). Ochs, F. et al. Sister chromatid cohesion is mediated by individual cohesin complexes. Science 383, 1122-1130 (2024).
+
+[Page 41]
+
+Mito, Y., Henikoff, J.G. & Henikoff, S. Genome-scale profiling of histone H3.3 replacement patterns. Nat Genet 37, 1090-7 (2005). Goldberg, A.D. et al. Distinct factors control histone variant H3.3 localization at specific genomic regions. Cell 140, 678-91 (2010). Clement, C. et al. High-resolution visualization of H3 variants during replication reveals their controlled recycling. Nat Commun 9, 3181 (2018). Lakadamyali, M. Single nucleosome tracking to study chromatin plasticity. Curr Opin Cell Biol 74, 23-28 (2022). Yesbolatova, A. et al. The auxin-inducible degron 2 technology provides sharp degradation control in yeast, mammalian cells, and mice. Nat Commun 11, 5701 (2020). Tokunaga, M., Imamoto, N. & Sakata-Sogawa, K. Highly inclined thin illumination enables clear single-molecule imaging in cells. Nat Methods 5, 159-61 (2008). Izeddin, I. et al. Single-molecule tracking in live cells reveals distinct target-search strategies of transcription factors in the nucleus. Elife 3(2014). Rankin, S., Ayad, N.G. & Kirschner, M.W. Sororin, a substrate of the anaphasepromoting complex, is required for sister chromatid cohesion in vertebrates. Mol Cell 18, 185-200 (2005). Nishiyama, T. et al. Sororin mediates sister chromatid cohesion by antagonizing Wapl. Cell 143, 737-49 (2010). Mitter, M. et al. Conformation of sister chromatids in the replicated human genome. Nature 586, 139-144 (2020). Eykelenboom, J.K. et al. Live imaging of marked chromosome regions reveals their dynamic resolution and compaction in mitosis. J Cell Biol 218, 1531-1552 (2019). Consortium, E.P. An integrated encyclopedia of DNA elements in the human genome. Nature 489, 57-74 (2012). Tedeschi, A. et al. Wapl is an essential regulator of chromatin structure and chromosome segregation. Nature 501, 564-8 (2013). Wutz, G. et al. Topologically associating domains and chromatin loops depend on cohesin and are regulated by CTCF, WAPL, and PDS5 proteins. EMBO J 36, 3573-3599 (2017). Haarhuis, J.H.I. et al. The Cohesin Release Factor WAPL Restricts Chromatin Loop Extension. Cell 169, 693-707 e14 (2017). Klein, K.N. et al. Replication timing maintains the global epigenetic state in human cells. Science 372, 371-378 (2021). Nora, E.P. et al. Targeted Degradation of CTCF Decouples Local Insulation of Chromosome Domains from Genomic Compartmentalization. Cell 169, 930-944.e22 (2017). Wendt, K.S. et al. Cohesin mediates transcriptional insulation by CCCTC-binding factor. Nature 451, 796-801 (2008). Hsieh, T.S. et al. Enhancer-promoter interactions and transcription are largely maintained upon acute loss of CTCF, cohesin, WAPL or YY1. Nat Genet 54, 1919-1932 (2022). Uhlmann, F. A unified model for cohesin function in sisterchromatid cohesion and chromatin loop formation. Mol Cell 85, 1058-1071 (2025). Sakata, R. et al. Opening of cohesin's SMC ring is essential for timely DNA replication and DNA loop formation. Cell Rep 35, 108999 (2021). Bayle, J.H. et al. Rapamycin analogs with differential binding specificity permit orthogonal control of protein activity. Chem Biol 13, 99-107 (2006).
+
+[Page 42]
+
+Grunberg, R., Ferrar, T.S., van der Sloot, A.M., Constante, M. & Serrano, L. Building blocks for protein interaction devices. Nucleic Acids Res 38, 2645-62 (2010). Ashwin, S.S., Nozaki, T., Maeshima, K. & Sasai, M. Organization of fast and slow chromatin revealed by single-nucleosome dynamics. Proc Natl Acad Sci U S A 116, 19939-19944 (2019). Grimm, J.B. et al. Bright photoactivatable fluorophores for single-molecule imaging. Nature Methods 13, 985-988 (2016). van Steensel, B. & Belmont, A.S. Lamina-Associated Domains: Links with Chromosome Architecture, Heterochromatin, and Gene Repression. Cell 169, 780-791 (2017). Ball, G. et al. SIMcheck: a Toolbox for Successful Super-resolution Structured Illumination Microscopy. Scientific Reports 5, 15915 (2015). Cremer, M. et al. Initial high-resolution microscopic mapping of active and inactive regulatory sequences proves non-random 3D arrangements in chromatin domain clusters. Epigenetics Chromatin 10, 39 (2017). Schmid, V.J., Cremer, M. & Cremer, T. Quantitative analyses of the 3D nuclear landscape recorded with super-resolved fluorescence microscopy. Methods 123, 33-46 (2017). Eriksson, S., Kim, S.K., Kubista, M. & Norden, B. Binding of 4',6-diamidino-2phenylindole (DAPI) to AT regions of DNA: evidence for an allosteric conformational change. Biochemistry 32, 2987-98 (1993). Volpi, E.V., Sheer, D. & Uhlmann, F. Cohesion, but not too close. Curr Biol 11, R378 (2001). Stanyte, R. et al. Dynamics of sister chromatid resolution during cell cycle progression. J Cell Biol 217, 1985-2004 (2018). Henikoff, S. & Smith, M.M. Histone variants and epigenetics. Cold Spring Harb Perspect Biol 7, a019364 (2015). Buschbeck, M. & Hake, S.B. Variants of core histones and their roles in cell fate decisions, development and cancer. Nat Rev Mol Cell Biol 18, 299-314 (2017). Kurumizaka, H., Kujirai, T. & Takizawa, Y. Contributions of Histone Variants in Nucleosome Structure and Function. J Mol Biol 433, 166678 (2021). Nacev, B.A. et al. The expanding landscape of 'oncohistone' mutations in human cancers. Nature 567, 473-478 (2019). Bennett, R.L. et al. A Mutation in Histone H2B Represents a New Class of Oncogenic Driver. Cancer Discov 9, 1438-1451 (2019). Ide, S., Tamura, S. & Maeshima, K. Chromatin behavior in living cells: lessons from single-nucleosome imaging and tracking. . BioEssays 44, e2200043 (2022). Presman, D.M., Benitez, B., Lafuente, A.L. & Vazquez Lareu, A. Chromatin structure and dynamics: one nucleosome at a time. Histochem Cell Biol 162, 79-90 (2024). Hansen, J.C. Conformational dynamics of the chromatin fiber in solution: determinants, mechanisms, and functions. Annu Rev Biophys Biomol Struct 31, 361-92 (2002). Maeshima, K. et al. Nucleosomal arrays self-assemble into supramolecular globular structures lacking 30-nm fibers. EMBO J 35, 1115-32 (2016). Maeshima, K. et al. A Transient Rise in Free Mg(2+) Ions Released from ATP-Mg Hydrolysis Contributes to Mitotic Chromosome Condensation. Curr Biol 28, 444-451 e6 (2018). Gibson, B.A. et al. Organization of Chromatin by Intrinsic and Regulated Phase Separation. Cell 179, 470-484 e21 (2019).
+
+[Page 43]
+
+Shimazoe, M.A. et al. Linker histone H1 functions as a liquid-like glue to organize chromatin in living human cells. . bioRxiv (2025). Marenduzzo, D., Finan, K. & Cook, P.R. The depletion attraction: an underappreciated force driving cellular organization. J Cell Biol 175, 681-6 (2006). Hancock, R. Packing of the polynucleosome chain in interphase chromosomes: evidence for a contribution of crowding and entropic forces. Semin Cell Dev Biol 18, 668-75 (2007). Iida, S. et al. Orientation-independent-DIC imaging reveals that a transient rise in depletion attraction contributes to mitotic chromosome condensation. Proc Natl Acad Sci U S A 121, e2403153121 (2024). Maeshima, K. et al. The physical size of transcription factors is key to transcriptional regulation in the chromatin domains. . Journal of Physics: condensed matters 27, 064116 (10 pp) (2015). Takata, H. et al. Chromatin compaction protects genomic DNA from radiation damage. PLoS One 8, e75622 (2013). Minami, K., Iida, S. & Maeshima, K. Chromatin organization and DNA damage. in The Enzymes “DNA Damage and Double Strand Breaks”, Vol. 51 (ed. Tamanoi, K.Y.a.F.) (Elsevier, 2022). Luppino, J.M. et al. Cohesin promotes stochastic domain intermingling to ensure proper regulation of boundary-proximal genes. Nature Genetics 52, 840-848 (2020). Hung, T.-C., Kingsley, D.M. & Boettiger, A.N. Boundary stacking interactions enable cross-TAD enhancer–promoter communication during limb development. Nature Genetics 56, 306-314 (2024). Rao, S.S.P. et al. Cohesin Loss Eliminates All Loop Domains. Cell 171, 305-320 e24 (2017). Hafner, A. et al. Loop stacking organizes genome folding from TADs to chromosomes. Mol Cell 83, 1377-1392 e6 (2023). Semeigazin, A. et al. Behaviors of nucleosomes with mutant histone H4s in euchromatic domains of living human cells. Histochem Cell Biol (2024). Maeshima, K. et al. Cell-cycle-dependent dynamics of nuclear pores: pore-free islands and lamins. J Cell Sci 119, 4442-51 (2006). Yahata, K. et al. cHS4 insulator-mediated alleviation of promoter interference during cell-based expression of tandemly associated transgenes. J Mol Biol 374, 580-90 (2007). Emerson, D.J. et al. Cohesin-mediated loop anchors confine the locations of human replication origins. Nature 606, 812-819 (2022). Laemmli, U.K. Cleavage of structural proteins during the assembly of the head of bacteriophage T4. Nature 227, 680-5 (1970). Kimura, H. & Cook, P.R. Kinetics of core histones in living human cells: little exchange of H3 and H4 and some rapid exchange of H2B. J Cell Biol 153, 1341-53 (2001). Lewis, C.D. & Laemmli, U.K. Higher order metaphase chromosome structure: evidence for metalloprotein interactions. Cell 29, 171-81 (1982). Shimamoto, Y., Tamura, S., Masumoto, H. & Maeshima, K. Nucleosome-nucleosome interactions via histone tails and linker DNA regulate nuclear rigidity. Mol Biol Cell 28, 1580-1589 (2017). Maeshima, K. et al. Nuclear pore formation but not nuclear growth is governed by cyclin-dependent kinases (Cdks) during interphase. Nat Struct Mol Biol 17, 1065-71 (2010).
+
+[Page 44]
+
+Shinkai, S., Nozaki, T., Maeshima, K. & Togashi, Y. Dynamic Nucleosome Movement Provides Structural Information of Topological Chromatin Domains in Living Human Cells. PLoS Comput Biol 12, e1005136 (2016). Nagashima, R. et al. Single nucleosome imaging reveals loose genome chromatin networks via active RNA polymerase II. J Cell Biol 218, 1511-1530 (2019). Betzig, E. et al. Imaging intracellular fluorescent proteins at nanometer resolution. Science 313, 1642-5 (2006). Rust, M.J., Bates, M. & Zhuang, X. Sub-diffraction-limit imaging by stochastic optical reconstruction microscopy (STORM). Nat Methods 3, 793-5 (2006). Jaqaman, K. et al. Robust single-particle tracking in live-cell time-lapse sequences. Nat Methods 5, 695-702 (2008). Tinevez, J.-Y. et al. TrackMate: An open and extensible platform for single-particle tracking. Methods 115, 80-90 (2017). Tinevez, J.Y. et al. TrackMate: An open and extensible platform for single-particle tracking. Methods 115, 80-90 (2017). Richardson, W.H. Bayesian-Based Iterative Method of Image Restoration*. Journal of the Optical Society of America 62, 55-59 (1972). Lucy, L.B. An iterative technique for the rectification of observed distributions. The Astronomical Journal 79, 745-754 (1974). Dey, N. et al. Richardson-Lucy algorithm with total variation regularization for 3D confocal microscope deconvolution. Microsc Res Tech 69, 260-6 (2006). Laasmaa, M., Vendelin, M. & Peterson, P. Application of regularized Richardson-Lucy algorithm for deconvolution of confocal microscopy images. J Microsc 243, 124-40 (2011). Ura, K. & Kaneda, Y. Reconstitution of chromatin in vitro. Methods Mol Biol 181, 30925 (2001). Ide, S. et al. Telomere-specific chromatin capture using a pyrrole-imidazole polyamide probe for the identification of proteins and non-coding RNAs. Epigenetics Chromatin 14, 46 (2021). Gatto, A., Forest, A., Quivy, J.P. & Almouzni, G. HIRA-dependent boundaries between H3 variants shape early replication in mammals. Mol Cell 82, 1909-1923 e5 (2022). Ewels, P.A. et al. The nf-core framework for community-curated bioinformatics pipelines. Nat Biotechnol 38, 276-278 (2020). Ewels, P.A. et al. The nf-core framework for community-curated bioinformatics pipelines. Zenodo. (2022). Zhang, Y. et al. Model-based analysis of ChIP-Seq (MACS). Genome Biol 9, R137 (2008). Xiong, K. & Ma, J. Revealing Hi-C subcompartments by imputing inter-chromosomal chromatin interactions. Nat Commun 10, 5069 (2019). Davis, C.A. et al. The Encyclopedia of DNA elements (ENCODE): data portal update. Nucleic Acids Res 46, D794-D801 (2018).
+
+[Page 45]
+
+Fig. 1: Single-nucleosome imaging revealed increased nucleosome motion upon cohesin depletion. a, Upper, a small fraction of H2B-Halo was fluorescently labeled with the TMR-HaloTag ligand (magenta star) and used to track nucleosome movements at super-resolution. Lower, oblique illumination microscopy. The illumination laser (green) excites fluorescent molecules within a thin optical layer (purple) of the nucleus, reducing background noise. b, Single-nucleosome (H2B-Halo-TMR) image of a living HeLa nucleus after background subtraction. Red circles highlight the 160 tracked dots. Dots observed for more than three frames were tracked. c, Singlestep photobleaching of nucleosome (H2B-Halo-TMR) dots. The vertical axis shows fluorescence intensity of individual TMR dots (± SD among nucleosomes); the horizontal axis is the tracking time series (N = 30 nucleosomes). d, Representative trajectories of three tracked single nucleosomes. e, MSD plots (± SD among cells) of H2B-Halo in HCT116 RAD21-mAC cells under the indicated conditions: DMSO (black, N = 20 cells), 5Ph-IAA (ΔRAD21, red, N = 20 cells), and FA-fixed (gray, N = 15 cells). ***, P = 2.1 × 10−3 (DMSO vs 5Ph-IAA) and P = 5.8 × 10−12 (DMSO vs FA-fixed) by two-sided Kolmogorov-Smirnov test. f, Verification of RAD21 depletion by mClover signal in live nuclei. Mean intensity values: 1.6 × 103 for DMSO (N = 20 cells) and 0.010 for +5Ph-IAA (ΔRAD21, N = 20 cells). ***, P < 0.0001 (P = 1.1 × 10−8) by two-sided Wilcoxon rank-sum test. g, Schematic for angle-distribution analysis. h, Schematic for
+
+[Page 46]
+
+the asymmetric coefficient (AC). AC indicates deviation from a homogeneous distribution and is negative for angular distributions where the pulling-back force is dominant. i, Angle distributions of DMSO (816,941 angles) and 5Ph-IAA (ΔRAD21; 828,733 angles).
+
+[Page 47]
+
+Fig. 2: Sister chromatid cohesion does not affect global chromatin motion. a, Schematic of loop-forming cohesin and cohesive cohesin. b, Chromosome spreads of HCT116 cells with siControl or siSororin. Lower, fraction of chromosomes with the three morphologies. c, MSD plots (± SD among cells) of H2B-Halo in late S–G2 synchronized HCT116 cells (N = 20 cells) under the indicated conditions: siControl (black), siSororin (purple), and siRAD21 (red). P = 7.9 × 10−4 by the Kruskal–Wallis test, indicating significant overall differences among the groups. **, P < 0.01 by Holm-adjusted Dunn’s test for siControl vs siRAD21 (P = 1.1 × 10−3). N.S., not significant for siControl vs siSororin (P = 0.47). d, Schematic depicting the locations of tetO (×250) and lacO (×250) repeats inserted into human chromosome 5. e, ChIP-seq data showing the distribution of SMC3 and RAD21 across the genomic region around the integration sites of lacO and tetO. ChIP-seq data are from published data 57. # shows the position of SMC3 and RAD21 peaks. f, MSD plots (± SD among cells) of tetO–TetR–4×mCherry in late S–G2 synchronized HT1080 cells under the indicated conditions: siControl (black, N = 34 cells), siSororin (purple, N = 36 cells), and siRAD21 (red, N = 37 cells). P = 3.7 × 10−5 by the Kruskal–Wallis test, indicating significant overall differences among the groups. ***, P < 0.001 by Holm-adjusted Dunn’s test for siControl vs siRAD21 (P = 1.9 × 10−5). N.S., not significant for siControl vs siSororin (P = 0.10). g, MSD plots (± SD among cells) of lacO–EGFP–LacI in late S–G2 synchronized HT1080 cells under the indicated conditions: siControl (black, N = 22 cells), siSororin (purple, N = 31 cells), and siRAD21 (red, N = 26 cells). P = 1.1 × 10−2 by the Kruskal–Wallis test, indicating significant overall differences among the groups. **, P < 0.01 by Holm-adjusted Dunn’s test for siControl vs siRAD21 (P = 4.0 × 10−3). N.S., not significant for siRAD21 vs siSororin (P = 0.11). f and g were derived from pooled data from two experiments.
+
+[Page 48]
+
+Fig. 3: Nucleosome motion changes in response to altered cohesin activity. a,b, Verification of WAPL depletion by western blot (a) and mClover (mC) fluorescent signal (b). Mean intensity values: 2.8 × 103 for DMSO (N = 118 cells) and 2.5 × 102 for 5Ph-IAA (ΔWAPL, N = 124 cells). ***, P < 0.0001 (P = 4.7 × 10−41) by Wilcoxon rank-sum test. c, MSD plots (± SD among cells) of H2B-Halo in late S–G2 synchronized HCT116 cells (N = 30 cells) with indicated conditions: DMSO (black) or 5Ph-IAA (light-blue). ***, P = 8.3 × 10−12 for DMSO vs 5Ph-IAA by the two-sided Kolmogorov–Smirnov test. d, Angle distribution of DMSO (937,130 angles) and 5Ph-IAA (ΔWAPL; 903,756 angles). e,f, Verification of CTCF depletion by western blot (e) and mClover fluorescent signal (f). Mean intensity values: 4.0 × 103 for DMSO (N = 47) and 1.6 × 102 for 5Ph-IAA (N = 46). ***, P < 0.0001 (P = 1.0 × 10−16) by Wilcoxon rank-sum test. g, MSD plots (± SD among cells) of H2B-Halo in HCT116 cells with indicated conditions: DMSO (black, N = 21 cells) or 5Ph-IAA (light-green, N = 30 cells). N.S., not significant for DMSO vs 5Ph-IAA (P = 0.67) by the two-sided Kolmogorov–Smirnov test. h, Angle distributions of DMSO (441,472 angles) and 5Ph-IAA (ΔCTCF; 404,244 angles). i, Verification of RAD21 depletion by mClover signal. Mean intensity values: 3.9 × 103 for Control (N = 184 cells), 4.1 × 103 for AP21967 (AP; N = 161 cells), and 1.5 × 103 for AP+IAA (N = 157 cells, DOX pre-treated for the expression of OsTIR1 ubiquitin ligase). N.S., not
+
+[Page 49]
+
+significant for Control vs AP (P = 0.073). ***, P < 0.0001 for Control vs AP+IAA (P = 2.3 × 10−28) by Wilcoxon rank-sum test. Note that only half of the population depleted RAD21. For single-nucleosome imaging, we selected depleted cells for analysis. j, MSD plots (± SD among cells) of H2B-Halo in HCT116 cells with indicated conditions: Control (black, N = 20 cells), AP (blue, N = 30 cells), and AP+IAA (orange, N = 20 cells). P = 1.0 × 10−3 by Kruskal–Wallis test, indicating significant overall differences among the groups. ***, P < 0.001 by Holm-adjusted Dunn’s test for Control vs AP+IAA (P = 1.4 × 10−5). N.S., not significant for Control vs AP (P = 0.11). k, Angle distributions of Control (383,848 angles), AP (371,425 angles), and AP+IAA (251,144 angles).
+
+[Page 50]
+
+Fig. 4: Nucleosome motion classified with subpopulations with the RL-algorithm. a, Representative trajectories of four tracked single nucleosomes, each belonging to a different subpopulation. b, Schematic of the RL algorithm. c, Schematic for PA-JF646 labeling and photoactivation of labeled nucleosomes. d, Distributions of MSD (Δt = 0.5 s) from H2B-Halo trajectories were denoised using the RL algorithm and fitted with four Gaussian components: “Super-slow” (blue), “Slow” (green), “Fast” (yellow), and “Super-fast” (orange). Black lines indicate the denoised raw data, while colored lines represent the fitted Gaussians. The peak of each Gaussian is marked with a dotted line. Notably, only the “Fast” (yellow) and “Super-fast” (orange) peaks shifted rightward upon cohesin depletion (+5Ph-IAA), indicating further acceleration of these subpopulations. e, Nuclear localization of nucleosomes categorized into each subpopulation. Each dot represents the centroid of a trajectory. “Super-slow” and “Slow” trajectories are biased toward the nuclear periphery, presumably corresponding to heterochromatin. f, MSD plots (± SD among cells) of subpopulations classified using the RL algorithm based on the 0.5-second MSD distribution. g, Peak MSD values of the four Gaussian components. Each dot represents data from a single nucleus. N = 12 cells per condition. *, P < 0.05 for “Super-fast” (P = 0.025) and for “Fast” (P = 0.015). N.S., not significant for “Slow” (P = 0.19) and “Super-slow” (P = 0.24) by the two-sided Student’s t-test. h, Fractions of each subpopulation. Cohesin depletion did not alter the relative proportions of the subpopulations.
+
+[Page 51]
+
+Fig. 5: H3.3-Halo is enriched in euchromatin (Hi-C A-compartment). a, (Upper) HeLa cells expressing H2B-Halo labeled with DAPI and TMR. Right, intensity line profiles of DAPI and H2B-Halo at the white line of the merged image. Note that the localization of H2B-Halo is similar to the DAPI-stained DNA. (Lower) HeLa cells expressing H3.3-Halo labeled with DAPI and TMR. Right, intensity line profiles of DAPI and H3.3-Halo at the white line of the merged image. Note that H3.3-Halo is enriched at DAPI-less (euchromatin) regions. b, A purification scheme for nucleosomes with H3.3-Halo or H2B-Halo and their associated genomic DNA. The enriched DNA fractions were then indexed, amplified, and sequenced. c, H3.3-Halo–incorporated genomic regions were enriched with active histone marks and excluded from an inactive mark: view from chr8, 24,300,000–29,100,000 (also see Fig. S5c,d). d, Overlap of the detected H3.3-Halo peaks and the A-compartment 126. e, MSD plots (± SD among cells) of H2B-Halo (nuclear interior; N = 15 cells), H2B-Halo (nuclear periphery (basal nuclear surface); N = 14 cells), or H3.3-Halo (nuclear interior; N = 14 cells) in HeLa cells. P = 1.1 × 10−8 by Kruskal–Wallis test, indicating significant overall differences among the groups. **, P < 0.01 by Holm-adjusted Dunn’s test for H2B-Halo, Interior vs H3.3-Halo, Interior (P =1.4 × 10−3) and H2B-Halo, Interior vs H2B-Halo, Periphery (P = 1.6 × 10−3).
+
+[Page 52]
+
+Fig. 6: 3D-SIM imaging revealed condensed euchromatic domains in human cells and localization of cohesin and RNA polymerase II. a, Representative wide-field view (panels 1–3) and 3D-SIM reconstructed view (panels 4–6) of FA-fixed HCT116 cells. Chromatin was labeled with DAPI (panels 1, 4) and H3.3-Halo-TMR (panels 2, 5). Immunostaining wide-field image of RAD21 is also shown (panel 3). Panel 6 is a merged image of panels 4 and 5. Bottom images are enlarged views of the boxed regions in panels 4–6. Panel 7 is a SIM image of RAD21 immunostaining. The wide-field image (panels 1– 3) represents the total intensity projection of 15 raw SIM frames. Green dots in the enlarged images indicate the centroids of RAD21 immunostaining signals from panel 7. b, Representative wide-field view (top row) and 3D-SIM reconstructed view (bottom row) of live HCT116 cells. c, Heatmap of DAPI or H3.3-Halo compaction proxies, based on intensity classification into seven classes 74. The color code assigns DAPI or H3.3-Halo signals into seven classes with equal intensity variance. This approach enables threshold-independent signal intensity classification based on the intensity of individual voxels. d, Histogram of the DAPI (upper) or H3.3-Halo (lower) intensity from a representative nucleus image (gray), overlaid with probability density
+
+[Page 53]
+
+functions of the seven Gaussians generated by the classification analysis. A.U., arbitrary units. e, Proportion of nuclear volume across 7 × 7 categories based on DAPI and H3.3-Halo intensity classes in a representative nucleus. f, DAPI-Class 1 does not necessarily correspond to interchromatin regions. Representative 3D-SIM reconstructed images of DAPI (panel 1), H3.3Halo-TMR (panel 2), and a merge (panel 3) of FA-fixed HCT116 cells. Note that the H3.3-Halo signal is present in low DAPI intensity regions. Heat maps of DAPI-Class 1 regions overlaid on H3.3-Class regions (panel 4). Blue shows DAPI-Class 1 and H3.3-Halo-Class 1, likely representing interchromatin spaces. Magenta shows DAPI-Class 1 and H3.3-Halo-Classes 2–3. Red shows DAPI-Class 1 and H3.3-Halo-Classes 4–7. Gray shows DAPI-Classes 2–7. Combined classification of DAPI and H3.3-Halo intensities (panel 5). Color code is shown below. g,h, Bar plots of the log2-fold enrichment or depletion of RAD21 in each of the segmented H3.3-Halo-TMR chromatin classes (g) and DAPI chromatin classes (h), relative to chromatin class volume. N = 37 cells. i, Representative images of immunostaining signals of various RNA polymerase II (RNAP II) antibodies. Wide-field view (top), 3D-SIM reconstructed view (middle), and detected centroids of immunostaining signals (bottom). The wide-field image represents the total intensity projection of 15 raw SIM frames. Note that 3D-SIM reconstruction appears to suppress background signal from unbound molecules. j,k, Bar plots of the log2-fold enrichment or depletion of RNAP II forms in each of the segmented chromatin classes, relative to chromatin class volume. j and k were based on DAPI-Class and H3.3-Halo-Class, respectively. CTD, N = 15 cells; Ser5P, N = 19 cells; and Ser2P, N = 23 cells. l–o, Each voxel within a single nucleus was classified into 7 × 7 categories based on DAPI and H3.3-Halo intensity classes. Target signal enrichment/depletion is shown as the log2 ratio of the signal in each class to the relative volume of that class. The displayed values represent the median across multiple cells. For categories with no detected signal, a small constant was added to avoid undefined log values; these categories, with resulting values below –5, are shown in blue. (l) RAD21, (m) RNAP II CTD, (n) RNAP II Ser5P, (o) RNAP II Ser2P enrichment/depletion. The same data are used as in (f,g,j,k).
+
+[Page 54]
+
+Fig. 7: 3D-SIM imaging and two-point MSD analysis of condensed euchromatic domains. a, Representative single z-slices of 3D-SIM images on chromatin labeled with DAPI (panels 1 and 2) or H3.3-Halo-TMR (panels 3 and 4) with DMSO treatment (panels 1 and 3) or cohesin depletion (panels 2 and 4). Panels 5 and 6 are merged images. Their Z-X views are also shown below each image. b, Heatmaps of DAPI or H3.3-Halo compaction proxies, based on intensity classification into seven classes. Panels 1-4 correspond to the same panel number in (a). Enlarged images from the corresponding squared regions in panels 1-4 are also shown below each panel. c,d, Proportion of nuclear volume for each class of DAPI (c) and H3.3-Halo (d),
+
+[Page 55]
+
+showing no significant change after cohesin depletion (mean ± 95% CI). Each dot represents data from a single nucleus. DMSO: N = 35 cells. 5Ph-IAA: N = 39 cells. e, Scheme for dualcolor imaging of H3.3-Halo and two-point MSD. f, A single-nucleosome (H3.3-Halo-PAJF dyes) image of a living HCT116 nucleus after background subtraction. Magenta circles highlight the tracked dots. A pair of dots with an average inter-point distance d < 150 nm (square) is shown in the zoomed-in panel with red trajectories. g, Schematic for dual-color imaging with a beam splitter system (W-VIEW GEMINI, Hamamatsu Photonics). The images of two singlenucleosomes with different colors were acquired with a single sCMOS camera (left half, orange; right half, far-red.). h, Representative pair trajectories with average distance d < 150 nm. Darker color: PA-JF549 labeled H3.3-Halo; lighter color: PA-JF647 labeled H3.3-Halo. Trajectories are shown with a yellow-to-navy gradation from starting to ending points. i, Two-point MSD plots (d < 150 nm; ± SD among cells) of H3.3-Halo in HCT116 cells with indicated conditions: DMSO (black, N = 20 cells), 5Ph-IAA (ΔRAD21, red, N = 25 cells), FA-fixed (gray, N = 25 cells). ***, P < 0.001 by the two-sided Kolmogorov-Smirnov test for DMSO vs 5Ph-IAA (P = 1.2 × 10-4), for DMSO vs FA-fixed (P < 2.2 × 10-16).
+
+[Page 56]
+
+Fig. 8: Cohesin prevents local mixing of condensed euchromatic domains. Cohesin holds chromatin fibers together and constrains chromatin motion within condensed euchromatic domains. While cohesin depletion does not alter the compaction level of these domains, it increases nucleosome fluidity (conformational freedom). This enhanced fluidity upon cohesin loss may promote mixing between chromatin domains. Thus, cohesin stiffens condensed euchromatic domains, preventing domain intermingling and ensuring effective insulation of transcriptional programs.

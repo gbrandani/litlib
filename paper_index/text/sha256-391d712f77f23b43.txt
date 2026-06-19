@@ -1,0 +1,683 @@
+[Page 1]
+
+Conformational ensembles of the human intrinsically disordered proteome https://doi.org/10.1038/s41586-023-07004-5 Received: 12 May 2023
+
+Giulio Tesei1,2 ✉, Anna Ida Trolle1,2, Nicolas Jonsson1, Johannes Betz1, Frederik E. Knudsen1, Francesco Pesce1, Kristoffer E. Johansson1 & Kresten Lindorff-Larsen1 ✉
+
+Accepted: 19 December 2023 Published online: xx xx xxxx Check for updates
+
+Intrinsically disordered proteins and regions (collectively, IDRs) are pervasive across proteomes in all kingdoms of life, help to shape biological functions and are involved in numerous diseases. IDRs populate a diverse set of transiently formed structures and defy conventional sequence–structure–function relationships1. Developments in protein science have made it possible to predict the three-dimensional structures of folded proteins at the proteome scale2. By contrast, there is a lack of knowledge about the conformational properties of IDRs, partly because the sequences of disordered proteins are poorly conserved and also because only a few of these proteins have been characterized experimentally. The inability to predict structural properties of IDRs across the proteome has limited our understanding of the functional roles of IDRs and how evolution shapes them. As a supplement to previous structural studies of individual IDRs3, we developed an efficient molecular model to generate conformational ensembles of IDRs and thereby to predict their conformational properties from sequences4,5. Here we use this model to simulate nearly all of the IDRs in the human proteome. Examining conformational ensembles of 28,058 IDRs, we show how chain compaction is correlated with cellular function and localization. We provide insights into how sequence features relate to chain compaction and, using a machine-learning model trained on our simulation data, show the conservation of conformational properties across orthologues. Our results recapitulate observations from previous studies of individual protein systems and exemplify how to link—at the proteome scale—conformational ensembles with cellular function and localization, amino acid sequence, evolutionary conservation and disease variants. Our freely available database of conformational properties will encourage further experimental investigation and enable the generation of hypotheses about the biological roles and evolution of IDRs.
+
+Developments in protein structural prediction have given researchers a transformative ability to predict the structures of folded proteins, and to perform structure-based analyses of protein function at the proteome level2. When methods such as AlphaFold are applied to IDRs, however, they result in a single configuration or few configurations of low confidence, which do not represent the conformational heterogeneity and functional states of IDRs6. Indeed, the AlphaFold pLDDT confidence score is an accurate predictor of disorder, because the structures of disordered proteins are generally predicted with low confidence2. AlphaFold has, however, been shown to provide information about local regions of proteins that may fold conditionally7,8, and can be used to provide starting points for the refinement of IDR ensembles against experimental data9. Structural studies of disordered proteins generally rely on combining molecular simulations with experimental data to correct for intrinsic biases in simulation methods10. Such studies have provided a wealth of insights for individual IDRs3 and have revealed sequence–ensemble relationships for individual types of proteins11,12, but they do not provide
+
+information about structural properties across the proteome. As a supplement to these one-by-one studies of IDRs, we recently took an alternative approach in which we used experimental data on more than 50 proteins to learn the parameters in a molecular energy function to predict conformational properties of IDRs. By globally optimizing a transferable model, called CALVADOS, we can study the conformational ensemble of any IDR in the absence of experimental data, and have validated the model extensively4,5. In developing CALVADOS, we focused on predicting conformational properties such as long-range interactions and overall compaction, because these properties are known to be important for function13 and for the ability of IDRs to self-associate to form biomolecular condensates12; other methods already exist to predict local structuring or binding regions in disordered proteins from sequence alone14. We here make use of the speed and accuracy of CALVADOS to perform molecular simulations and generate conformational ensembles of 28,058 IDRs from the human proteome. We analyse the conformational properties of the ensembles and relate them to the biological
+
+Structural Biology and NMR Laboratory, Linderstrøm-Lang Centre for Protein Science, Department of Biology, University of Copenhagen, Copenhagen, Denmark. 2These authors contributed equally: Giulio Tesei, Anna Ida Trolle. ✉e-mail: giulio.tesei@bio.ku.dk; lindorff@bio.ku.dk
+
+Nature | www.nature.com | 1
+
+[Page 2]
+
+−3
+
+−6
+
+−9
+
+30 60 90 Residue
+
+2.5
+
+MD simulations of IDRs
+
+–6
+
+–9 1 40 80 120 Residue
+
+NP1L3
+
+5.0 Rg (nm)
+
+7.5
+
+0.4 P(Rg)
+
+Residue
+
+Residues 164–307
+
+–3
+
+U (J mol−1)
+
+2%
+
+32%
+
+P(Rg)
+
+Number of sequences
+
+Residues 1–97
+
+Residue
+
+Very high Confident Low Very low
+
+U (J mol−1)
+
+a AlphaFold2 model confidence:
+
+2.5
+
+5.0 Rg (nm)
+
+7.5
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+0.6
+
+0.7
+
+Fig. 1 | Schematic illustration of the approach used to obtain conformational properties for all of the IDRs in the human proteome. a, Selection of IDRs on the basis of the confidence of AlphaFold2 structural prediction, showing the selection of two IDRs from nucleosome assembly protein 1-like 3 (NP1L3; UniProt ID: Q99457) as an example. b, Molecular dynamics (MD) simulations of IDRs and calculation of conformational properties, showing interaction energy maps and distribution of the radius of gyration from the simulations of
+
+the two IDRs in NP1L3. Simulation data in b are averaged over five independent simulation replicates. c, Distribution of the Flory scaling exponent, ν, for 28,058 IDRs in the human proteome; note the logarithmic scale. A few IDRs have very small values of ν (0.3% have ν < 0.33); these IDRs show conformational properties that are not well described by a simple scaling law. We note that we do not find evidence for a significant enrichment of misclassified structured sequences in compact IDRs (Extended Data Fig. 1f).
+
+functions of the proteins. For example, we find that some functions— such as DNA-binding ability, or localization in nuclear speckles—are enriched in proteins that have compact IDRs, whereas components of mitochondria and endosomes are enriched in expanded IDRs. Our large sequence–ensemble dataset reveals the sequence properties that determine conformational ensembles, including the interplay between overall hydrophobicity and charge patterning. We take advantage of this knowledge and our ensembles to train a machine-learning model to predict protein compaction from sequence only, and use it to show that IDRs in orthologues of human proteins have conserved conformational properties. In a cellular context, many IDRs form interactions with other molecules, and chain compaction and charge properties of the monomer quantify key aspects of a protein’s ability to form both intra- and intermolecular interactions. Therefore, our work sheds light on the diverse biological roles of IDRs.
+
+We then performed molecular dynamics simulations of all 28,058 sequences using the experimentally parameterized and broadly validated residue-level CALVADOS model4,5 to generate conformational ensembles for each disordered sequence, and calculated distributions of conformational properties from these ensembles (Fig. 1b and Extended Data Fig. 2). The model was trained on experimental data reporting on single-chain conformational properties5, and predicts the radii of gyration of an independent test set of IDRs with a median relative error of 6% (Extended Data Fig. 3a,b). Although the model does not account for the formation of transient secondary structural elements, this limitation has a small effect on the accuracy of our predictions of the global dimensions of IDRs. To show this point, we examined the conformational ensembles of eight IDRs deposited in the Protein Ensemble Database3 that were refined against data from different experimental techniques, including small-angle X-ray scattering (SAXS) and Förster resonance energy transfer (FRET). We found that CALVADOS accurately predicts average FRET efficiencies as well as the radii of gyration from SAXS (Extended Data Fig. 3c–k), irrespective of the presence of persistent secondary structural elements. In line with recent findings9, we also observed that, for short separations along the linear sequence, the variance of the residue–residue distances sampled in our CALVADOS simulations correlates with the confidence of the relative positions of residue pairs in AlphaFold predictions (Extended Data Fig. 4). As measures of chain compaction that are independent of sequence length, we calculated the apparent Flory scaling exponent, ν, and the ratio of the mean-squared end-to-end distance and the mean-squared radius of gyration, ⟨Ree ⟩/⟨R 2g ⟩; the accuracy of our model corresponds to an accuracy of predicting ν with an average error of around 0.02 for proteins of the lengths that we studied (Extended Data Fig. 3a). For a so-called ‘ideal-chain’ polymer, the residue–residue, residue– solvent and solvent–solvent interactions balance out and the polymer conformations are described by a Gaussian chain with ν = 0.5 and ⟨Ree ⟩/⟨R 2g ⟩ = 6 (ref. 15). For most of the simulated IDRs, we find conformational ensembles that approximate this ideal reference state. Only 2% of the IDRs are substantially more compact (ν ≤ 0.45), whereas 32% of the sequences adopt more extended conformations (ν > 0.55) (Fig. 1c). Although the relationship between ⟨Ree ⟩/⟨R 2g ⟩ and ν is complex and sequence-dependent (Extended Data Fig. 5e), we obtain a similar distribution using ⟨Ree ⟩/⟨R 2g ⟩ as a measurement of chain compaction (Extended Data Fig. 5f). We also calculated other properties of the
+
+Selection and characterization of IDRs We analysed AlphaFold2 models for 20,588 full-length human proteins and selected IDRs using low window-averaged pLDDT confidence scores as predictors of disorder2,7,8 (Fig. 1a and Extended Data Fig. 1a–c). We obtained 28,058 sequences from 15,424 distinct proteins, corresponding to 35% of the residues in the human proteome. The selected IDRs range in length between 30 and 1,500 residues, with a median of 80 residues. Although window-averaged pLDDT scores outperform many other disorder predictors, previous studies have highlighted that AlphaFold2 assigns high pLDDT scores to a fraction of individual residues in known IDRs, possibly reflecting conditional folding upon binding or after post-translational modifications7,8. Therefore, we also analysed a set of human IDRs obtained using a different disorder predictor (SPOT-Disorder v.1; see Methods and Extended Data Fig. 1a). The SPOT-based set contains a smaller fraction of the residues in the human proteome (26%) and 83% of its sequences overlap with the IDRs of the pLDDT-based set. To test the generality of our findings, we performed our analyses on both the pLDDT-based and the SPOT-based sets of IDRs. Moreover, we extracted annotations of ‘Domain’, ‘Zinc finger’, ‘Coiled coil’ and ‘Transmembrane’ in UniProt to estimate the fraction of residues within structural or topological features ( fdomain), and found that residues overlapping substantially with annotated features amount to around 6% in both the pLDDT-based and the SPOT-based sets of IDRs (Extended Data Fig. 1d–j). 2 | Nature | www.nature.com
+
+[Page 3]
+
+2,696 IDRs DoF: 3,618 Cohen’s d: –0.22 ± 0.02 P < 1 × 10–10
+
+Nuclear body
+
+G-protein-coupled receptor activity
+
+P(Q)
+
+P(Q)
+
+Transcription cis-regulatory region binding
+
+745 IDRs DoF: 828 Cohen’s d: 0.15 ± 0.03 P = 1 × 10–6
+
+P(Q)
+
+1,456 IDRs DoF: 1,607 Cohen’s d: –0.17 ± 0.03 P = 7 × 10–7
+
+0.4
+
+0.5
+
+0.6
+
+0.4
+
+0.5
+
+0.6
+
+0.4
+
+0.5
+
+0.6
+
+Nuclear speckle Chromatin binding
+
+326 IDRs DoF: 334 Cohen’s d: 0.22 ± 0.07 P = 2 × 10–8
+
+P(Q)
+
+1,175 IDRs DoF: 1,282 Cohen’s d: –0.16 ± 0.03 P = 5 × 10–8
+
+P(Q)
+
+P(Q)
+
+GTP binding
+
+0.4
+
+0.5
+
+0.6
+
+0.4
+
+0.5
+
+0.6
+
+0.4 Mitochondrial matrix
+
+10.0
+
+10.5
+
+9.5
+
+Sconf/N (kB)
+
+10.0
+
+10.5
+
+Sconf/N (kB)
+
+9.5
+
+Endosome 1,518 IDRs DoF: 1,775 Cohen’s d: 0.21 ± 0.02 P < 1 × 10–10
+
+P(Q)
+
+1,902 IDRs DoF: 2,422 Cohen’s d: 0.12 ± 0.02 P < 1 × 10–10
+
+453 IDRs DoF: 475 Cohen’s d: 0.48 ± 0.04 P < 1 × 10–10
+
+P(Q)
+
+P(Q)
+
+Signalling receptor activity P(Sconf/N)
+
+P(Sconf/N)
+
+ATP binding 2,851 IDRs DoF: 3,794 Cohen’s d: 0.17 ± 0.02 P < 1 × 10–10
+
+715 IDRs DoF: 746 Cohen’s d: –0.21 ± 0.04 P = 2 × 10–5
+
+0.5
+
+0.6
+
+0.6
+
+2,439 IDRs DoF: 3,000 Cohen’s d: –0.09 ± 0.02 P = 1 × 10–9
+
+0.4
+
+0.5 Chromatin
+
+0.4
+
+0.5
+
+0.6
+
+0.4
+
+0.5
+
+0.6
+
+Fig. 2 | Analysis of the association between IDR compaction and GO annotations. a,b, Normalized distributions of the Flory scaling exponent, ν, and of the conformational entropy per residue, Sconf/N, for IDRs in proteins with selected molecular function (a) and cellular localization (b) (shaded bars) and in proteins with different annotations (black lines). The statistical significance of the association is estimated using P values from one-sided Brunner–Munzel tests of whether, in proteins with a given GO term, the probability of finding
+
+IDRs with small or large ν or Sconf/N values is higher than it is in proteins with any annotations that are not a part of the examined term. Histograms for proteins enriched in IDRs with small or large ν or Sconf/N values are shown in orange and teal, respectively. DoF, degrees of freedom. The schematic illustration of an animal cell in b shows examples of cellular components enriched in compact (orange) and expanded (teal) IDRs. Image adapted from the animal cell template from SwissBioPics61, under a Creative Commons licence CC BY 4.0.
+
+28,058 conformational ensembles including interaction energy maps, asphericity (Δ), prolateness (S) and an estimate of the conformational entropy per residue (Sconf/N). We find that Δ, S and Sconf/N are correlated with ν (Extended Data Fig. 2 and Extended Data Fig. 5g–j) so that the most compact ensembles are also most spherical and least prolate, and are well represented by smaller conformational ensembles. We show 12 representative examples (Extended Data Fig. 2) and provide access to all simulation trajectories and conformational properties in an online database. It is possible to generate additional ensembles by running CALVADOS using Google Colab (see Methods).
+
+association between proteins with compact IDRs and their localization to the chromatin and nuclear bodies (Fig. 2b and Supplementary Table 2). Conversely, expanded IDRs are significantly associated with proteins that have G-protein-coupled activity, or that bind GTP, and are enriched in mitochondria and endosomes (Fig. 2 and Supplementary Tables 1 and 2). For IDRs that fold upon binding or act as diffuse interaction sites, conformational entropy could be a key factor for the function of the full-length protein1,20. Therefore, we repeated the GO analysis using Sconf/N, and found that GO terms with statistically significant associations with ν largely overlap with those associated with Sconf/N, and that the effect sizes are generally larger for Sconf/N than for ν. Control analyses performed (i) excluding all IDRs with fdomain > 0 and (ii) using the SPOT-based set indicate that the associations are robust with respect to the IDR selection procedure (Supplementary Tables 1 and 2). We note that the significant associations emerging from our GO analysis do not imply that different IDRs in the same protein have similar conformational properties. Although the distributions of the absolute difference in compaction, ∣Δν∣, show greater probabilities of large ∣Δν∣ values for IDRs of different proteins than within the same protein (Extended Data Fig. 5k), the differences between the distributions are small. Indeed, both ν and Sconf/N vary considerably depending on the location of the IDR in the protein, with N- and C-terminal IDRs being on average more compact than are IDRs between folded domains (Extended Data Fig. 5l,m). Throughout this work we analyse the conformational ensembles of the isolated IDRs, noting that IDR properties may, for example, be affected by interactions of the IDR with other protein regions and folded domains1, and that the function of a protein
+
+Function–compaction relationships The compaction of an IDR can have a role in protein function13,16. Chain compaction also indicates poor solvation, and might correlate with increased attractive chain–chain interactions and propensity to phase separate12,17. Although the coupling between conformational properties and phase behaviour may break for sequences with different net charges18, IDRs of proteins that undergo homotypic phase separation tend to have lower ν values than do IDRs of proteins that do not phase separate19. For these reasons, we sought to investigate the association of IDR compaction with the biological function and cellular localization of the corresponding full-length proteins. We used Brunner–Munzel tests to evaluate the significance of whether, in proteins with a given Gene Ontology (GO) term, the probability of finding IDRs with large or small ν values is greater than it is in proteins without the examined term. Our GO analysis shows significant enrichments of compact IDRs in proteins that bind chromatin and DNA cis-regulatory sequences (Fig. 2a and Supplementary Table 1). These data resonate with the
+
+Nature | www.nature.com | 3
+
+[Page 4]
+
+(as reflected also by its GO terms) is determined by the properties of all of its folded and disordered domains together. Among the IDRs from proteins that bind cis-regulatory DNA elements, we identified 107 previously analysed21 activation domains of transcription factors, of which 20 are in the most compact 5% (1,384 sequences with ν ≤ 0.475), such as pancreas transcription factor 1 subunit alpha, forkhead box proteins O4 and O6 and the zinc finger proteins 473, 561, 644 and 777. Furthermore, as examples of compact IDRs of RNA-binding proteins, we find the well-characterized low-complexity domains of hnRNPA1, hnRNPA2 and FUS, the compaction of which correlates with their ability to form biomolecular condensates12,18. Multivalent interactions between IDRs are one of the driving forces for the formation of membraneless organelles1, and our GO analysis suggests a strong association between IDR compaction and protein partitioning into nuclear condensates. We identified IDRs in the most compact 5% for 441 proteins that localize to intracellular membraneless organelles and for 224 proteins that are annotated to localize to nucleoli, nuclear speckles, nuclear bodies and promyelocytic leukaemia (PML) bodies. For example, we predicted compact IDRs for nucleophosmin, a component of the nucleolus22; the nuclear speckle protein snRNP (small ribonucleoprotein) subunit U1-70k, which is a splicing factor and forms insoluble aggregates in Alzheimer’s disease23,24; DAXX, which is involved in chromatin remodelling and localizes to PML bodies25; and CTR9, which is a positive regulator of RNA-polymerase-II-mediated transcription26. To further quantify the association between conformational ensembles and localization to membraneless organelles, we queried the CD-CODE database27 and identified, in the pLDDT-based set, 172 IDRs from ‘driver’ proteins that are annotated to help induce the formation of human biomolecular condensates, and 5,696 IDRs from ‘member’ proteins that are recruited to but not essential for the condensates. Driver proteins are likely to contain IDRs with low Sconf/N (one-tailed P = 2 × 10−7) and also show a weak association with IDR compaction (one-tailed P = 0.01). Conversely, member proteins display a small enrichment (Cohen’s d < 0.1) in IDRs with large ν or Sconf/N values (Extended Data Fig. 6a–d).
+
+Sequence–compaction relationships Although the positional sequence identity of IDRs is generally poorly conserved1, amino acid composition and patterning have been proven to be useful for predicting conformational and phase properties, as well as for identifying functionally similar IDRs12,21,24,26,28–35. Segregation of charged residues into oppositely charged blocks has been identified as a key driver of chain compaction30,31,33 and condensate formation28,29. Conversely, high net charge per residue and uniform charge distribution result in expanded conformations30,31,36 and disfavour phase separation4,18,37. Studies have highlighted that IDRs with pronounced charge segregation are enriched in proteins that are involved in the regulation of gene expression and mRNA processing. Specifically, for the IDRs of RNA polymerase II regulators, splicing factors and polyadenylation factors, the extent of charge segregation has been shown to influence the selective partitioning of these proteins into transcription condensates26, nuclear speckles24 and nucleoli35. Moreover, charge blockiness has been identified as a conserved sequence feature32; for example, in homologous IDRs of the transcription elongation factors CTR9 and SPT6 (ref. 26). Likewise, hydrophobic patterning modulates chain compaction and the propensity of IDRs to form condensates and avoid aggregation12,33. Proteome-wide analyses have shown that the distribution of aromatic residues in prion-like IDRs is significantly more uniform than it is for random sequences12,38. This finding suggests an evolutionary bias towards multivalent interactions between aromatic residues that underlie condensate formation, as opposed to stronger interactions between aromatic clusters that promote 4 | Nature | www.nature.com
+
+irreversible aggregation12. However, hydrophobic clusters have also been related to specific biological functions, as for the activation domains of transcription factors that bind coactivators. In these IDRs, clusters of aromatic and leucine residues are embedded in sequences that are rich in negatively charged residues39, which may prevent chain collapse through electrostatic repulsion21 and possibly degradation40. Inspired by these previous studies of individual protein families, we sought to examine the relationship between sequence and compaction across the entire set of human IDRs. For each sequence, we estimated the average residue stickiness, ⟨λ⟩ (ref. 5), as a measurement of the strength of attractive intra-chain interactions relative to solvent–protein interactions, and quantified the patterning of hydrophobic residues through the sequence hydropathy decoration (SHD)33, using the amino-acid-specific stickiness parameters of the CALVADOS model. As metrics of charge segregation, we calculated the κ parameter30 and the sequence charge decoration (SCD)31; κ and SCD capture different aspects of how uniformly the charged residues are distributed along the polypeptide chain. For fixed sequence composition and length, more pronounced charge segregation is indicated by increasing κ values and decreasing SCD values. The κ parameter is normalized on the basis of the composition of each sequence and ranges from 0 to 1, whereas SCD values correlate with the absolute net charge of the sequences. Therefore, κ and SCD are both influenced by sequence length and composition41. This limitation is overcome by the z-scores calculated with the NARDINI method38, which quantify the deviation of the patterning parameters of a given sequence from a distribution obtained from scrambled sequences of the same composition and length. Specifically, we turn to z-scores for estimating the segregation between positively and negatively charged residues, z(δ+−), and the clustering of negatively charged, z(Ω−), and aromatic residues, z(Ωπ), with respect to all other residues. We used the full set of IDR sequences to determine the sequence properties that affect chain compaction in human IDRs (Fig. 3). With increasing compaction, sequences show increasing average stickiness, ⟨λ⟩, up to ν ≈ 0.55, after which ⟨λ⟩ plateaus and further decreases for ν < 0.45 (Fig. 3a). On the other hand, the segregation of charged residues abruptly increases with increasing compaction for sequences with ν < 0.55 (Fig. 3b,c,g). Specifically, the calculated z(δ+−), SCD and κ values show that, in sequences of compact IDRs, oppositely charged residues are often segregated with respect to each other (Fig. 3b and Extended Data Fig. 6h,l), whereas z(Ω−) and κ values indicate clustering of negatively charged residues in the sequences of expanded IDRs (Fig. 3c and Extended Data Fig. 6l). These trends suggest that although hydrophobicity is used to drive some compaction, more extreme compaction is driven by electrostatic interactions between blocks of oppositely charged residues, in agreement with results from smaller sets of designed sequence variants11,30,36, and with the analysis of simulations of 23,127 synthetic sequences of equal chain length in an analysis performed in parallel with ours42. We hypothesized that nature evolved the most compact IDRs by exploiting charge segregation rather than increased hydrophobicity because sequences with large ⟨λ⟩ might lead to aggregation or degradation by the quality-control apparatus40. To investigate this hypothesis, we used a predictor of quality-control degradation signals, QCDPred, to estimate the propensities of the IDRs to be degraded40. The average QCDPred scores are low across the whole range of compaction, and more so for both compact and extended IDRs (Extended Data Fig. 7a). We note that, although QCDPred scores correlate with the hydrophobicity of the sequence, the dependency of QCDPred scores on ⟨λ⟩ is complex, and small degradation propensities can be predicted for both large and small ⟨λ⟩ values (Extended Data Fig. 7b). Besides average stickiness, the low QCDPred scores of compact IDRs can be attributed to the excess of negatively charged residues with respect to arginine
+
+[Page 5]
+
+z(G+–)
+
+〈O〉
+
+Blocky
+
+0.2
+
+0.4
+
+0.6
+
+0.2
+
+0.4
+
+Well-mixed
+
+Well-mixed –1.5
+
+0.6
+
+0.2
+
+0.4
+
+0.6
+
+0.4
+
+0.5
+
+0.6
+
+–0.5
+
+–1.0
+
+Well-mixed
+
+Blocky
+
+z(Ωπ)
+
+0.4
+
+z(Ω–)
+
+0.45
+
+0.50
+
+0.55
+
+0.4
+
+0.5
+
+0.6
+
+11.25 0.7
+
+0.5
+
+z(G+–)
+
+10.50
+
+0.4
+
+10.25
+
+0.3
+
+10.00
+
+11.0 Sconf/N (kB)
+
+0.6
+
+10.75 FCR
+
+Sconf/N (kB)
+
+11.00
+
+10.5 10.0
+
+−5 0.2
+
+0.4
+
+0.6
+
+0.2
+
+0.4
+
+0.6
+
+Fig. 3 | Sequence features that determine compaction. a–f, Average stickiness, ⟨λ⟩ (a); NARDINI z-scores for basic–acidic patterning, z(δ+−) (b), acidic patterning, z(Ω−) (c) and aromatic patterning, z(Ω π) (d); conformational entropy per residue, S conf/N (e); and FCR (f), as a function of the Flory scaling exponent, ν. Data are mean ± s.e.m. calculated within bins of width Δν = 0.015 for the IDRs in the pLDDT-based set. The sample sizes in each bin are n = 4; 3; 5; 3; 5; 6; 9; 11; 8; 16; 14; 26; 23; 28; 41; 49; 98; 135; 212; 473; 854; 1,921; 3,319; 4,724; 5,393; 4,987; 3,405;
+
+and lysine residues (Extended Data Fig. 7c–f), which have been shown to contribute to weakening the degradation signal in both human and yeast cells40. For most human IDRs in the range 0.45 ≤ ν < 0.55, ⟨λ⟩ is relatively constant whereas both z(δ+−) and z(Ω−) monotonically decrease with increasing ν. Conversely, z(Ωπ) and SHD show that the extent of aromatic clustering increases with decreasing compaction up to ν ≈ 0.5, which is consistent with previous observations that aromatic residues are well mixed in many compact prion-like domains12,38 (Fig. 3d and Extended Data Fig. 6n). Notably, the conformational entropy per residue, Sconf/N, has a minimum around ν ≈ 0.5 and takes larger values for extremely compact chains with small ⟨λ⟩ values than for stickier chains with 0.4 < ν < 0.5 (Fig. 3e,h), which suggests that electrostatically driven compaction leads to more heterogeneous conformational ensembles than does hydrophobicity-driven collapse. Whereas both compact and expanded IDRs are characterized by large fractions of charged residues (FCR) (Fig. 3f), expanded sequences are short, acidic and depleted in arginine residues. Conversely, compact IDRs are considerably longer, charge segregated and richer in positively charged residues, although they have on average a negative net charge per residue (Extended Data Fig. 6q–s and Extended Data 7d–f). Notably, IDRs in the most compact 5% have more arginine residues (⟨fR⟩ = 7.7 ± 0.1%) than lysine residues (⟨fK⟩ = 6.5 ± 0.1%). Because of the amphiphilic character of the guanidinium side chain, and its ability to favourably interact with aromatic residues18, this imbalance might contribute to stabilizing compact conformations as well as protein– protein and protein–nucleotide interactions43,44. We compared the pLDDT- and SPOT-based sets of IDRs and found that the sequence–compaction relationships presented herein are robust with respect to the procedure used to select the IDRs (Extended Data Fig. 6). We observed similar dependencies of ν and Sconf/N on chain length, N, in both sets of IDRs (Extended Data Fig. 6q–s), and attribute the greater expansion and conformational entropy of short chains to the large absolute net charge per residue of IDRs with N ≤ 100 (Extended Data Fig. 6t).
+
+0.1
+
+0.3
+
+0.5
+
+0.7
+
+0.1
+
+〈O〉
+
+0.3
+
+0.5
+
+0.7
+
+〈O〉
+
+1,461; 484; 182; 76; 43; 16; 9; 4 (a,e,f,); n = 4; 3; 5; 3; 5; 6; 7; 11; 8; 14; 12; 24; 22; 22; 37; 39; 81; 106; 150; 323; 543; 1,077; 1,570; 1,909; 1,858; 1,615; 951; 352; 84; 19; 5; 5 (b); n = 4; 3; 5; 3; 5; 6; 8; 11; 8; 16; 13; 26; 23; 26; 38; 43; 91; 119; 181; 379; 637; 1,316; 2,061; 2,737; 3,001; 2,855; 2,051; 991; 379; 145; 63; 31; 15; 9; 4 (c); and n = 10, 15, 34, 68, 112, 242, 342, 538, 602, 487, 223, 72 (d). g,h, Average ν as a function of z(δ+−) and ⟨λ⟩ (g) and Sconf/N and ⟨λ⟩ (h).
+
+Conservation across orthologues Prompted by the observed relationships between sequence, compaction and biological function, we investigated the conservation of ν and sequence descriptors across a selected set of 1,088,250 orthologues that we identified for 26,839 human IDRs in the pLDDT-based set. To estimate ν and Sconf/N of all the sequences, we trained support vector regression (SVR) models against the values obtained from our simulations. Using permutation feature importance testing, we ranked the sequence descriptors on the basis of their effect on model performance and selected as input variables SHD > SCD > FCR > ⟨λ⟩ > κ for ν, and ⟨λ⟩ > SHD > SCD for Sconf/N (Extended Data Fig. 8a,g). For a test set of 2,795 IDRs, the ν and Sconf/N values predicted by the developed models have Pearson correlation coefficients with the simulation data of 0.88 ± 0.02 and 0.91 ± 0.01 and mean absolute errors of 0.01 and 0.04 kB, respectively (Extended Data Fig. 8k,m). Moreover, the SVR models accurately recapitulate the relationships between sequence features and ensemble properties obtained directly from simulations (Extended Data Fig. 8). We note, however, that the accuracy of the SVR models might be limited to naturally occurring sequences and that the effect of the sequence descriptors on model performance does not imply a direct role as order parameters determining chain compaction. Instead, the permutation importance also reflects a complex interdependence of compaction, Sconf/N, sequence patterning, length and composition observed in our dataset (Fig. 3 and Extended Data Figs. 6 and 7). Using the SVR model, we calculated ν and Sconf/N for the set of the homologous IDRs (26,839 human IDRs and their 1,088,250 orthologues) and found that both compaction and conformational entropy per residue are highly correlated between human sequences and their orthologues (Fig. 4a,b). We also found a high correlation between the sequence features that determine compaction in human and orthologous sequences, especially for average chain stickiness and charge patterning (Fig. 4c–f). These findings are in agreement with previous sequence analyses on homologous transcriptional regulators and prion-like domains of hnRNPA1 and FET family proteins, which showed Nature | www.nature.com | 5
+
+[Page 6]
+
+–2
+
+–4 –6 –2.5
+
+2.5
+
+IDRs
+
+Orthologue’s z(Ωπ)
+
+r = 0.697 ± 0.003
+
+0.4
+
+IDRs
+
+0.2
+
+10.0
+
+10.5
+
+11.0
+
+0.2
+
+r = 0.822 ± 0.001
+
+–5 –5
+
+Human z(Ωπ)
+
+Human z(G+–)
+
+0.4
+
+0.6
+
+Human 〈O〉
+
+Human Sconf,SVR/N/kB
+
+–5.0
+
+10.0
+
+0.75
+
+Human QSVR
+
+0.6
+
+IDRs
+
+0.25
+
+10.5
+
+r = 0.725 ± 0.001
+
+IDRs
+
+11.0
+
+Orthologue’s 〈O〉
+
+0.4
+
+r = 0.8445 ± 0.0004
+
+Orthologue’s z(Ω–)
+
+r = 0.9076 ± 0.0004
+
+IDRs
+
+0.6
+
+Orthologue’s Sconf,SVR/N (kB)
+
+r = 0.809 ± 0.001
+
+Orthologue’s z(Ω+–)
+
+Orthologue’s QSVR
+
+0.8
+
+IDRs
+
+−5 −5
+
+Human z(Ω–)
+
+Fig. 4 | Conservation of conformational and sequence properties. a–f, Correlation of ν (a), S conf/N (b), ⟨λ⟩ (c), z(Ω π) (d), z(δ +−) (e) and z(Ω −) (f) between human IDRs and their orthologues from a set of 1,088,250
+
+homologous IDRs, ranging in sequence length from 30 to 3,265 residues. r is the Pearson correlation coefficient with the standard error estimated through 1,000 bootstraps.
+
+that sequence features that govern selective compartmentalization and chain compaction are evolutionarily constrained12,18,26,38,45. The results above show that global chain properties such as the scaling exponent are generally conserved across evolution; however, this is not always the case. For IDRs that connect short linear motifs and folded domains, sequence length can vary considerably across orthologues, whereas the global physical dimensions of the IDR can be evolutionarily restrained13,46. This effect is the result of a compensatory mechanism, known as conformational buffering, between sequence length, composition and patterning13, and is observed for multidomain proteins in which the IDR regulates processes such as auto-inhibition47, binding13,46 and the formation of biomolecular condensates12,48. Using our set of homologous IDRs, we performed a proteome-wide search for families of orthologues in which increasing sequence lengths, N, is compensated by decreasing ν values. We selected families of orthologues comprising more than ten sequences of different lengths and in which the length of the shortest and that of the longest sequence differed by at least 50 residues. For each family, we calculated the Pearson correlation coefficient, r, between ν and N and the two-sided P value. Because of the intrinsic N-dependence of ν observed for the IDRs in the human proteome (Extended Data Fig. 6q–s), we compared the slope of the linear fit of ν versus N, α, with the corresponding slope for human IDRs in the pLDDT-based set within the same range of N as in the examined family, αref. Out of 15,235 families matching our selection criteria, we found 1,137 with α/αref > 1.5 and two-sided P values below the threshold of 3.282 × 10−6 (0.05/15,235), which we use to assess the significance of the correlation (Fig. 5a–d). As examples of IDRs exhibiting potential conformational buffering, we found (i) an IDR (residues 811–918) in the stalk domain of the kinesin motor protein KIF21B (ref. 49); (ii) the proline- and glycine-rich linker (residues 303–484) connecting the phosphotyrosine-binding (PTB) domain to the Src homology 2 (SH2) domain in SHC-transforming protein 2 (SHC2) (ref. 50); and (iii) the proline- and serine-rich linker (residues 251–339) between the PDZ and the kinase domain of LIM domain kinase 1 (LIMK1) (ref. 51). The global dimensions of the linker of SHC2 might be a determining factor for the binding affinity of the PTB and SH2 to cell-surface receptors, and thereby for the role of SHC family adaptor proteins in various signalling pathways50. For both KIF21B and LIMK1, the IDRs showing evolutionarily
+
+restrained global dimensions might be involved in auto-inhibition49,51. Specifically, in KIF21B, the IDR is located between the second coiled-coil domain and a regulatory segment that binds to the N-terminal motor domain49, whereas in LIMK1, the linker mediates the binding between the LIM and PDZ domains and the C-terminal kinase domain51. In both proteins, these interactions inhibit enzymatic action and, in KIF21B, mutations disrupting intramolecular binding are associated with neurodevelopmental disorders49. These findings suggest that conformational buffering is widespread across many families of disordered proteins, although we note that assessing the statistical significance of each example is complicated by the fact that the sequences of the orthologues are not fully independent of each other.
+
+6 | Nature | www.nature.com
+
+Incidence of pathogenic variants Given the observed evolutionary conservation of compaction, and its significant association with biological functions and cellular localization, we sought to investigate the potential relationship between the compaction of the wild-type sequence of an IDR and the incidence of pathogenic variants. We searched the ClinVar database for missense variants in the human IDRs, and found 2,888 pathogenic and 15,557 benign variants in 4,292 distinct proteins and 6,217 IDRs, which is less than a fourth of the IDRs in our set. Using Brunner–Munzel tests, we found that known pathogenic variants are significantly more likely than benign variants to be in IDRs with low conformational entropy per residue (Fig. 5e). Examples of pathogenic variants in IDRs with Sconf/N < 9.8 kB are P211S in elastin, M254V in FUS and P340A in hnRNPA1, which were found in patients with cutis laxa52, frontotemporal lobar degeneration53 and amyotrophic lateral sclerosis54, respectively. Moreover, pathogenic variants tend to be in regions with higher pLDDT scores than those of benign variants55 (Fig. 5f), which might, in part, reflect increased sensitivity in conserved regions of IDRs or in those that may fold upon binding to their targets7, and the presence of a small fraction of folded regions within our set of IDRs (Extended Data Fig. 9a,b). By contrast, the significance of the association between pathogenicity and compaction (Fig. 5g) decreases substantially after excluding 100 variants that involve cysteine residues in the extracellular region of neurogenic locus notch homologue protein 3 (Extended Data Fig. 9c).
+
+[Page 7]
+
+D/Dref
+
+0.60
+
+0.56 0.54
+
+KIF21B
+
+0.54
+
+0.52
+
+0.48
+
+0.50
+
+0.52
+
+0.46 –0.75
+
+–0.50
+
+–0.25
+
+0.25
+
+0.50
+
+0.75
+
+1.00
+
+Pearson r
+
+Normalized distribution
+
+Cohen’s d: –0.27 ± 0.02 DoF: 3,359 P < 1 × 10–10 Benign Pathogenic
+
+0.06
+
+0.04
+
+0.02
+
+10.0
+
+10.2
+
+10.4
+
+Sconf/N of the WT (kB)
+
+10.6
+
+Cohen’s d: 0.61 ± 0.02 DoF: 4,170 P < 1 × 10–10 Benign Pathogenic
+
+9.8
+
+175 200 225
+
+Normalized distribution
+
+Normalized distribution
+
+–1.00
+
+0.52 0.50
+
+0.54
+
+SHC2 LIMK1
+
+0.56
+
+0.58
+
+–log10(P)
+
+Cohen’s d: –0.06 ± 0.02 DoF: 4,536 P = 0.0009 Benign Pathogenic
+
+pLDDT score of the substituted residue
+
+0.40
+
+0.45
+
+0.50
+
+0.55
+
+0.60
+
+Q of the WT
+
+Fig. 5 | Proteome-wide search for conformational buffering, and relationship between conformational properties of IDRs and incidence of pathogenic missense variants. a, Volcano plot of −log10(two-sided P value) versus Pearson correlation coefficient, r, for the linear correlation between ν and sequence length, N, in 15,235 selected families of orthologues. The horizontal dashed line shows a threshold of 3.282 × 10−6 (0.05/15,235) used to assess the significance of the correlation. b–d, Black open circles in a highlight examples of IDRs exhibiting conformational buffering: loop in the stack domain of KIF21B (b), proline- and glycine-rich linker of SHC2 (c) and linker between the PDZ and kinase domains of LIMK1 (d). ν values in b–d were calculated from simulations (squares) and using the SVR model (circles). ν values from simulations are
+
+shown as the mean ± s.d. over n = 5 independent simulation replicas. Symbols in a–d are coloured on the basis of the ratio α/αref between the slopes of the linear fits of ν versus N in the family of orthologues and for human IDRs in the pLDDT-based set within the same range of N as in the examined family. e–g, Distributions of conformational entropy per residue, Sconf/N (e), windowaveraged pLDDT scores of the substituted residues (f) and scaling exponent, ν (g) for 15,557 benign (black lines) and 2,888 pathogenic (grey bars) variants. P values are estimated from one-sided Brunner–Munzel tests using t-distributions and the reported degrees of freedom. Standard errors of Cohen’s d values are estimated through 105 bootstraps. WT, wild type.
+
+We used our SVR model to predict changes in ν and Sconf/N for the pathogenic and benign missense variants in ClinVar, and found that both Δν and ΔSconf/N tend to increase for pathogenic substitutions. However, the changes are small and the distributions of ν and Sconf/N for wild type and variants are very similar, suggesting that changes in compaction and conformational entropies of IDRs are not a general disease mechanism for these variants (Extended Data Fig. 9d,e). Similar results were obtained for 5,676 frameshift variants that have recently been described to lead to modified disordered C-terminal regions56 (Extended Data Fig. 9g,h). The sparsity of clinical data for IDRs could be a result of the fact that the functions of many IDRs are unknown, and/or that computational methods for predicting the effects of variants on the basis of their structure and sequence conservation are less applicable14. Nonetheless, pathogenic variants in IDRs have been associated with many diseases, such as autism spectrum disorder, cancer and neurodegenerative disorders57. Specifically, several disease-associated variants in IDRs have been shown to alter the formation, composition and material properties of biomolecular condensates56,57. Our analysis shows that expanded IDRs have, on average, more known missense variants per residue than do compact IDRs (Extended Data Fig. 9f). Because the ability to study biological functions and assign functional status to missense variants depends on our knowledge of protein function, which varies substantially across the proteome58, we asked whether certain proteins are less studied than others depending on the compaction of the IDRs they contain59. We calculated an average of 35 publications per IDR and observed an uneven distribution with respect to chain compaction, which suggests that proteins with the most compact IDRs have
+
+received less research attention than those with more expanded IDRs (Extended Data Fig. 9i), perhaps because they are longer and more difficult to characterize experimentally.
+
+Conclusions IDRs are found in all kingdoms of life, and have essential roles in human biology and pathology. Our ability to study IDRs is, however, hampered by the fact that the relationship between sequence and structure is different from the more clearly defined patterns in folded proteins. This, in turn, makes it difficult to design experiments to test sequence– ensemble–function studies, and to understand the evolutionary processes that shape these. We have here performed a systematic analysis of the relationship between the sequence, conformational ensembles and biological functions of human IDRs. Our conformational ensembles help to rationalize previously observed relationships between sequence and function, and provide a unique dataset to continue to expand our knowledge of this understudied class of proteins, including training models to predict conformational properties42 or generate conformational ensembles60. Whereas in a cellular context IDRs interact with other molecules and function in tandem with other IDRs and folded domains, our work provides a starting point for understanding both homotypic and heterotypic interactions in IDR biology. Together with our and related methods42 for predicting conformational properties from sequences and for mapping biological observations onto our ensembles, we hope that our database of conformational ensembles will encourage further investigation into the biological function, cellular localization, evolution and variant effects of IDRs. Nature | www.nature.com | 7
+
+[Page 8]
+
+Online content Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41586-023-07004-5.
+
+Holehouse, A. S. & Kragelund, B. B. The molecular basis for cellular function of intrinsically disordered protein regions. Nat. Rev. Mol. Cell Biol. https://doi.org/10.1038/s41580-02300673-0 (2023). Akdel, M. et al. A structural biology community assessment of AlphaFold2 applications. Nat. Struct. Mol. Biol. 29, 1056–1067 (2022). Ghafouri, H. et al. PED in 2024: improving the community deposition of structural ensembles for intrinsically disordered proteins. Nucleic Acids Res. 52, D536–D544 (2024). Tesei, G., Schulze, T. K., Crehuet, R. & Lindorff-Larsen, K. Accurate model of liquid–liquid phase behavior of intrinsically disordered proteins from optimization of single-chain properties. Proc. Natl Acad. Sci. USA 118, e2111696118 (2021). Tesei, G. & Lindorff-Larsen, K. Improved predictions of phase behaviour of intrinsically disordered proteins by tuning the interaction range. Open Res. Europe 2, 94 (2023). Ruff, K. M. & Pappu, R. V. AlphaFold and implications for intrinsically disordered proteins. J. Mol. Biol. 433, 167208 (2021). Alderson, T. R., Pritišanac, I., Kolarić, D., Moses, A. M. & Forman-Kay, J. D. Systematic identification of conditionally folded intrinsically disordered regions by AlphaFold2. Proc. Natl Acad. Sci. USA 120, e2304302120 (2023). Piovesan, D., Monzon, A. M. & Tosatto, S. C. E. Intrinsic protein disorder and conditional folding in AlphaFoldDB. Protein Sci. 31, e4466 (2022). Brotzakis, Z. F., Zhang, S. & Vendruscolo, M. AlphaFold prediction of structural ensembles of disordered proteins. Preprint at bioRxiv https://doi.org/10.1101/2023.01.19.524720 (2023). Thomasen, F. E. & Lindorff-Larsen, K. Conformational ensembles of intrinsically disordered proteins and flexible multidomain proteins. Biochem. Soc. Trans. 50, 541–554 (2022). Das, R. K., Huang, Y., Phillips, A. H., Kriwacki, R. W. & Pappu, R. V. Cryptic sequence features within the disordered protein p27Kip1 regulate cell cycle signaling. Proc. Natl Acad. Sci. USA 113, 5616–5621 (2016). Martin, E. W. et al. Valence and patterning of aromatic residues determine the phase behavior of prion-like domains. Science 367, 694–699 (2020). González-Foutel, N. S. et al. Conformational buffering underlies functional selection in intrinsically disordered protein regions. Nature Struct. Mol. Biol. 29, 781–790 (2022). Lindorff-Larsen, K. & Kragelund, B. B. On the potential of machine learning to examine the relationship between sequence, structure, dynamics and function of intrinsically disordered proteins. J. Mol. Biol. 433, 167196 (2021). Zheng, W. et al. Inferring properties of disordered chains from FRET transfer efficiencies. J. Chem. Phys. 148, 123329 (2018). Sherry, K. P., Das, R. K., Pappu, R. V. & Barrick, D. Control of transcriptional activity by design of charge patterning in the intrinsically disordered ram region of the notch receptor. Proc. Natl Acad. Sci. USA 114, E9243–E9252 (2017). Riback, J. A. et al. Stress-triggered phase separation is an adaptive, evolutionarily tuned response. Cell 168, 1028–1040 (2017). Bremer, A. et al. Deciphering how naturally occurring sequence features impact the phase behaviours of disordered prion-like domains. Nat. Chem. 14, 196–207 (2022). Ibrahim, A. Y. et al. Intrinsically disordered regions that drive phase separation form a robustly distinct protein class. J. Biol. Chem. 299, 102801 (2023). Teilum, K., Olsen, J. G. & Kragelund, B. B. Globular and disordered—the non-identical twins in protein-protein interactions. Front. Mol. Biosci. 2, 40 (2015). Staller, M. V. et al. Directed mutational scanning reveals a balance between acidic and hydrophobic residues in strong human activation domains. Cell Syst. 13, 334–345 (2022). Sabari, B. R., Dall’Agnese, A. & Young, R. A. Biomolecular condensates in the nucleus. Trends Biochem. Sci. 45, 961–977 (2020). Diner, I. et al. Aggregation properties of the small nuclear ribonucleoprotein U1-70K in Alzheimer disease. J. Biol. Chem. 289, 35296–35313 (2014). Greig, J. A. et al. Arginine-enriched mixed-charge domains provide cohesion for nuclear speckle condensation. Mol. Cell 77, 1237–1250 (2020). Chang, F. T. M. et al. PML bodies provide an important platform for the maintenance of telomeric chromatin integrity in embryonic stem cells. Nucleic Acids Res. 41, 4447–4458 (2013). Lyons, H. et al. Functional partitioning of transcriptional regulators by patterned charge blocks. Cell 186, 327–345 (2023). Rostam, N. et al. CD-CODE: crowdsourcing condensate database and encyclopedia. Nat. Methods 20, 673–676 (2023). Nott, T. J. et al. Phase transition of a disordered nuage protein generates environmentally responsive membraneless organelles. Mol. Cell 57, 936–947 (2015). Pak, C. W. et al. Sequence determinants of intracellular phase separation by complex coacervation of a disordered protein. Mol. Cell 63, 72–85 (2016). Das, R. K. & Pappu, R. V. Conformations of intrinsically disordered proteins are influenced by linear sequence distributions of oppositely charged residues. Proc. Natl Acad. Sci. USA 110, 13392–13397 (2013).
+
+8 | Nature | www.nature.com
+
+Sawle, L. & Ghosh, K. A theoretical method to compute sequence dependent configurational properties in charged polymers and proteins. J. Chem. Phys. 143, 085101 (2015). Zarin, T. et al. Proteome-wide signatures of function in highly diverged intrinsically disordered regions. eLife 8, e46883 (2019). Zheng, W., Dignon, G., Brown, M., Kim, Y. C. & Mittal, J. Hydropathy patterning complements charge patterning to describe conformational preferences of disordered proteins. J. Phys. Chem. Lett. 11, 3408–3415 (2020). Huihui, J. & Ghosh, K. Intrachain interaction topology can identify functionally similar intrinsically disordered proteins. Biophys. J. 120, 1860–1868 (2021). Yamazaki, H., Takagi, M., Kosako, H., Hirano, T. & Yoshimura, S. H. Cell cycle-specific phase separation regulated by protein charge blockiness. Nat. Cell Biol. 24, 625–632 (2022). Mao, A. H., Crick, S. L., Vitalis, A., Chicoine, C. L. & Pappu, R. V. Net charge per residue modulates conformational ensembles of intrinsically disordered proteins. Proc. Natl Acad. Sci. USA 107, 8183–8188 (2010). Lin, Y.-H. & Chan, H. S. Phase separation and single-chain compactness of charged disordered proteins are strongly correlated. Biophys. J. 112, 2043–2046 (2017). Cohan, M. C., Shinn, M. K., Lalmansingh, J. M. & Pappu, R. V. Uncovering non-random binary patterns within sequences of intrinsically disordered proteins. J. Mol. Biol. 434, 167373 (2022). DelRosso, N. et al. Large-scale mapping and mutagenesis of human transcriptional effector domains. Nature 616, 365–372 (2023). Johansson, K. E., Mashahreh, B., Hartmann-Petersen, R., Ravid, T. & Lindorff-Larsen, K. Prediction of quality-control degradation signals in yeast proteins. J. Mol. Biol. 435, 167915 (2023). Ruff, K. M. in Intrinsically Disordered Proteins (eds Kragelund, B. B. & Skriver, K.) Ch. 18, 347–389 (Springer, 2020). Lotthammer, J. M. et al. Direct prediction of intrinsically disordered protein conformational properties from sequences. Nat. Methods https://doi.org/10.1038/s41592-023-02159-5 (2024). Wang, J. et al. A molecular grammar governing the driving forces for phase separation of prion-like RNA binding proteins. Cell 174, 688–699 (2018). Fisher, R. S. & Elbaum-Garfinkle, S. Tunable multiphase dynamics of arginine and lysine liquid condensates. Nat. Commun. 11, 4628 (2020). Schmidt, H. B., Barreau, A. & Rohatgi, R. Phase separation-deficient TDP43 remains functional in splicing. Nat. Commun. 10, 4890 (2019). Sørensen, C. S. & Kjaergaard, M. Effective concentrations enforced by intrinsically disordered linkers are governed by polymer physics. Proc. Natl Acad. Sci. USA 116, 23124–23131 (2019). Hantschel, O. et al. A myristoyl/phosphotyrosine switch regulates c-Abl. Cell 112, 845–857 (2003). Harmon, T. S., Holehouse, A. S., Rosen, M. K. & Pappu, R. V. Intrinsically disordered linkers determine the interplay between phase separation and gelation in multivalent proteins. eLife 6, e30294 (2017). Asselin, L. et al. Mutations in the KIF21B kinesin gene cause neurodevelopmental disorders through imbalanced canonical motor activity. Nat. Commun. 11, 2441 (2020). Ahmed, S. B. M. & Prigent, S. A. Insights into the Shc family of adaptor proteins. J. Mol. Signal. 12, 2 (2017). Manetti, F. LIM kinases are attractive targets with many macromolecular partners and only a few small molecule regulators. Med. Res. Rev. 32, 968–998 (2011). Mégarbané, H. et al. An autosomal-recessive form of cutis laxa is due to homozygous elastin mutations, and the phenotype may be modified by a heterozygous fibulin 5 polymorphism. J. Invest. Dermatol. 129, 1650–1655 (2009). Langenhove, T. V. et al. Genetic contribution of FUS to frontotemporal lobar degeneration. Neurology 74, 366–371 (2010). Liu, Q. et al. Whole-exome sequencing identifies a missense mutation in hnRNPA1 in a family with flail arm ALS. Neurology 87, 1763–1769 (2016). Schmidt, A. et al. Predicting the pathogenicity of missense variants using features derived from AlphaFold2. Bioinformatics 39, btad280 (2023). Mensah, M. A. et al. Aberrant phase separation and nucleolar dysfunction in rare genetic diseases. Nature 614, 564–571 (2023). Banani, S. F. et al. Genetic variation associated with condensate dysregulation in disease. Dev. Cell 57, 1776–1788 (2022). Rocha, J. J. et al. Functional unknomics: systematic screening of conserved genes of unknown function. PLOS Biol. 21, e3002222 (2023). Richardson, R. A. K., Navarro, H. T., Amaral, L. A. N. & Stoeger, T. Meta-research: understudied genes are lost in a leaky pipeline between genome-wide assays and reporting of results. eLife 12, RP93429 (2023). Janson, G., Valdes-Garcia, G., Heo, L. & Feig, M. Direct generation of protein conformational ensembles via machine learning. Nat. Commun. 14, 774 (2023). Le Mercier, P. et al. SwissBioPics—an interactive library of cell images for the visualization of subcellular location data. Database 2022, baac026 (2022).
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law. © The Author(s), under exclusive licence to Springer Nature Limited 2024
+
+[Page 9]
+
+Methods Selection of IDRs Window-averaged AlphaFold2 pLDDT scores2 were mapped to 20,215 sequences from the human proteome (more than 98%) as defined in UniProt (release 2021_04)62. Residues with ⟨pLDDT⟩ > 0.8, ⟨pLDDT⟩ < 0.7 and 0.7 ≤ ⟨pLDDT⟩ ≤ 0.8 were first labelled as folded, disordered and gap regions, respectively. Next, folded and disordered regions shorter than ten residues were reclassified as gaps. Gap regions were relabelled as disordered if (i) flanked by disordered regions or (ii) terminal and preceded or followed by disordered regions. All other gap regions were instead relabelled as folded. IDRs smaller than 30 residues or longer than 1,500 residues were discarded. This set of IDRs contains 35% of the residues in the UniProt proteome. A different selection of IDRs was obtained from the intrinsic disorder predictions calculated in a previous study7 using SPOT-Disorder v.1 (ref. 63). IDRs shorter than 30 residues or longer than 1,500 residues were discarded. The resulting set contains 21,383 IDRs corresponding to 26% of the residues in the UniProt proteome. Analysis of domain annotations AlphaFold2 might in some cases assign high pLDDT scores to IDRs, possibly reflecting conditional folding upon binding or after posttranslational modifications7,8. Moreover, the absence of cofactors or ions in AlphaFold2 predictions might lead to low pLDDT scores for domains such as zinc fingers, EF-hand motifs and C2 domains64. To assess the extent of folded residues in the selected IDRs, we analysed domain annotations in UniProt62; for each IDR, we calculated the fraction of residues within annotated domains and structural motifs, fdomain. Specifically, we obtained ‘Zinc finger’, ‘Coiled coil’, ‘Transmembrane’ and ‘Domain’ annotations for the selected IDRs from UniProt (https:// residues was used to evaluate the presence of the domains in the IDRs. We found that only 5.1% of the sequences have fdomain > 0.5, whereas 3.4% have fdomain > 0.9 (Extended Data Fig. 1d). These putative folded sequences generally have a short sequence length (Extended Data Fig. 1e) and often include zinc- or calcium-binding sites, loops in protein kinase and myosin motor domains, and disulfide bonds in extracellular protein domains (Extended Data Fig. 1j). Molecular simulations Molecular dynamics simulations were conducted in the NVT ensemble at 37 °C using the Langevin integrator with a time step of 10 fs and friction coefficient of 0.01 ps−1. The Cα-based model was implemented using the CALVADOS 2 parameters and functional forms as previously detailed5. Salt-screened electrostatic interactions were modelled assuming a dielectric constant of 74.2 and an ionic strength of 0.15 M. Single chains of N ≤ 500 residues were simulated using HOOMD-blue (v.2.9.3)65 in a cubic box of side length 0.38 × (N − 1) + 4 nm under periodic boundary conditions, starting from the fully extended linear conformation. Longer chains were simulated in a cubic box of side length 200 nm, starting from an Archimedean spiral arrangement of the chain in the xy plane. The initial structures were relaxed by running 10,000 integration steps with a time step of 5 fs. The charge number of the first or last residue of the simulated sequences was increased or decreased by one unit when it coincides with the N or C terminus of the full-length protein, respectively. Histidine residues were modelled in the neutral form. Conformations were saved every Δt ≈ 3 × N2 fs if N > 150 and Δt = 70 ps otherwise. Each chain was simulated for a simulation time of 1,010 × Δt and the first 10 frames were discarded so as to obtain 1,000 weakly correlated conformations for each protein (Extended Data Fig. 5a); in this way we ensure that longer IDRs—the global motions of which decorrelate more slowly—are sampled for a longer period of time. The uncertainty of the averages of the radius of
+
+gyration, Rg, and of the end-to-end distance, Ree, over the conformational ensembles was estimated as the standard error obtained from the blocking approach66 implemented in BLOCKING (release-tag v.0.1; https://github.com/fpesceKU/BLOCKING). Apparent Flory scaling exponents, ν, were obtained by fitting ⟨Rij2⟩ = R0∣i − j∣ν to root-meansquare residue–residue distances, ⟨Rij2⟩ , calculated for separations along the linear sequence, ∣i − j∣, greater than five residues67. Asphericity, Δ, and prolateness, S, were obtained from the gyration tensor as described previously68. The conformational entropy per residue, Sconf/N, was estimated from the covariance matrix of the nonbonded (Ashbaugh–Hatch and Debye–Hückel) forces using the quasi-harmonic approximation69. We used the Ledoit–Wolf shrinkage covariance estimator implemented in scikit-learn (v.1.0.2)70 to estimate the force covariance matrix for chains of any length. Intra-chain distances were calculated from simulation trajectories using MDTraj (v.1.9.5)71. The sampling error on ν , ⟨Ree ⟩/⟨R 2g⟩ and Sconf/N was estimated to be 0.02, 0.1 and 0.02 kB, respectively, from the standard deviation over five independent replicas averaged over a subset of 34 IDRs (Extended Data Fig. 5b–d). The charge segregation parameter κ was calculated using localCIDER (v.0.1.19)72 or set to zero for sequences without charged residues. The z-scores z(δ+−), z(Ω−) and z(Ωπ) were calculated with NARDINI (v.1.1.1) using ensembles of 105 scrambled sequences to generate the null model38. The NARDINI z-scores z(δ+−), z(Ω−) and z(Ωπ) are set to zero for sequences with fractions of, respectively, charged, acidic and aromatic residues of 10% or less38. FRET efficiencies were obtained using FRETpredict (v.0.1.8)73 after converting from coarse-grained to all-atom trajectories using PULCHRA (v.3.06)74. The calculations were performed assuming that the correlation times of the donor–acceptor distances and orientations are much shorter than the fluorescence lifetime (the ‘dynamic+’ averaging regime in FRETpredict). Fluorescent dyes were modelled using rotamer libraries for AlexaFluor 488 – C1R (donor), AlexaFluor 594 – C1R (acceptor for Nup49, NLS, NUS, IBB and NUL)75, and AlexaFluor 647 – C1R (acceptor for Sic1)76. The molecular visualization of Fig. 1 was generated using VMD (v.1.9.4)77. We make it easy to access resources for generating conformational ensembles using CALVADOS simulations by providing a Notebook that can be run, for example, using Google Colab (https://github.com/ KULL-Centre/_2023_Tesei_IDRome/blob/main/IDRLab.ipynb). Typical simulation times range from around 5 min (a 71-ns-long simulation of a protein of 70 residues) and 7 min (71-ns-long simulation of 140 residues) to 34 min for a 373-ns-long simulation of a protein with 351 residues.
+
+GO analysis GO terms for the selected IDRs were obtained directly from UniProt (https://www.uniprot.org/help/api) through API calls (release 2022_05). The basic version of the GO78,79 was downloaded in OBO format from the GO Consortium (https://current.geneontology.org/ontology/ go-basic.obo) and the Python package for complex network analysis NetworkX (v.3.0)80 was used to read the file as a directed acyclic graph. The graph has a hierarchical structure with three root nodes: ‘cellular component’, ‘biological process’ and ‘molecular function’. In this work, we analysed the ‘molecular function’ and ‘cellular component’ domains and discarded all child terms of the ‘biological process’ domain. For each IDR, the GO terms of the corresponding full-length protein were mapped onto the 68 parent ‘molecular function’ terms and the 94 parent ‘cellular component’ terms that occur at least 200 times in the set of IDRs. For the pLDDT-based set of IDRs, this filtering resulted in 22,449 and 25,368 IDRs with GO annotations of the corresponding full-length proteins pertaining to ‘molecular function’ and ‘cellular component’, respectively. GO terms that are not a part of any of the selected parent terms were labelled as ‘other’. Brunner–Munzel tests81 were used to evaluate the statistical significance of whether the probability of finding IDRs with large or small ν or Sconf/N values is higher in proteins with a given GO annotation than in proteins that are not a part of the examined subset. Asymptotic P values were calculated using t-distributions
+
+[Page 10]
+
+as implemented in SciPy (v.1.10.1)82. We find these P values to be consistent with those estimated from the confidence interval of the distributions of the Brunner–Munzel statistic that we obtained using 105 bootstraps83. To investigate how the P values are affected by the difference in size between the sample of IDRs in proteins with a given GO term and the sample with all other IDRs, we also performed a bootstrap procedure in which we sampled with replacement both sets using the sample size of the smaller set. This subsampling procedure confirmed the statistical significance of the observed associations, despite the systematic increase in the resulting P values compared to those from the whole samples. Effect sizes were estimated as Cohen’s d = (μ1 − μ2 )/ (σ 12 + σ 22)/2 , in which μi and σi are the mean and standard deviations of samples i = 1 and i = 2 (ref. 84). The standard error of Cohen’s d was estimated as the standard deviation over 105 bootstraps. The schematic illustration of Fig. 2b was adapted from SwissBioPics61.
+
+QCD calculations We used QCDPred40 to predict quality-control degrons for all IDR sequences, and report the mean degron score across each IDR as representing its degron potential. In brief, this method considers all possible 17-residue segments of an IDR and predicts a degron score on the basis of the amino acid composition, with hydrophobic residues acting to promote degradation and negatively charged residues to counteract degradation. Although QCDPred is based on data in yeast85, similar patterns for degrons are found in human cells86. SVR models SVR models with radial basis function kernel87,88 were developed to predict ν and Sconf/N using as input features the SCD31; the SHD33; the mean stickiness ⟨λ⟩; the κ parameter30; and the FCR. The models were generated by randomly splitting the simulated sequences into training (30%), validation (60%) and test sets (10%). The sequence descriptors SCD, SHD, ⟨λ⟩, κ and FCR were selected from a larger set that also included the net charge per residue, NCPR; and the fraction of aromatic ( faro), arginine ( fR), lysine ( fK), glutamate ( fE) and aspartate ( fD) residues. The selection was based on their effect on model performance, estimated using permutation feature importance testing89. Optimal hyperparameters (ε = 0.021 and C = 67 for ν; ε = 0.007 and C = 188 for Sconf/N) were obtained using grid searches with the Pearson correlation coefficient as a performance metric. All model training and applications, including permutation feature importance testing89, were performed using scikit-learn70. We note that a similar model was previously described90 using simulations with a different force field91 that generally puts emphasis on sequence hydrophobicity and does not capture experiments as accurately as CALVADOS does4. We make it easy to access resources to predict ν and Sconf/N using the SVR models by providing a Notebook that can be run, for example, using Google Colab (https://github.com/KULL-Centre/_2023_Tesei_IDRome/ blob/main/IDR_SVR_predictor.ipynb). Selection of orthologues We obtained sets of orthologues for the IDRs through a procedure inspired by previous work92. Our approach differs mainly in (i) the use of the fraction of identical amino acids as a measure of evolutionary distance and (ii) the requirement for all orthologues to have a maximum of 90% identical residues with respect to each other. For each full-length human protein that contains an IDR, we retrieved orthologous sequences from the OMA database93 downloaded as flat files on 12 June 2023 (see idr_orthologs/oma_homologs.py in the GitHub repository supporting the analyses of this paper). For each human protein, we performed a multiple sequence alignment (MSA) using the program MAFFT (v.7.520)94 with the argument –maxiterate 1000 and obtained 14,547 MSAs for 94% of proteins containing IDRs. The regions of the orthologues that aligned to human IDRs were extracted and filtered in two steps (see idr_orthologs/oma_homologs.py). First, we removed
+
+sequences that (i) contained ‘X’ characters; (ii) were shorter than 30 residues; (iii) were 3 times shorter or 3 times longer than the human IDR; or (iv) had more than 90% of residues identical to the human IDR (count of identical residues in alignment divided by shortest sequence length). Similarly to a previous study92, the orthologues were ordered according to the identity distance to the human IDR and sequentially included, starting with the closest orthologue, using the following criteria: (i) the orthologue has at most a sequence identity of 90% with respect to any orthologue included so far; and (ii) the orthologue is required to have a distance to any previously included orthologue that is greater than one-fifth of the distance to the human IDR. In addition, we required all orthologues to have a maximum identity of 90% to any previously included orthologue to reduce redundancy. We stopped including orthologues when the total number of substitutions exceeded 20 times the length of the human IDR. This procedure resulted in 1,088,250 orthologues for 26,839 IDRs (96% of the pLDDT-based set).
+
+ClinVar analysis ClinVar data95 were obtained by parsingftp.ncbi.nlm.nih.gov/ pub/clinvar/tab_delimited/archive/variant_summary_2020-11.txt.gz as described previously96. Using the scripts available at https:// github.com/KULL-Centre/PRISM/tree/main/software/make_prism_files (release-tag v0.1.1), we included only entries that (i) have a rating of at least one star; (ii) are single-nucleotide variants; and (iii) are mapped to the Genome Reference Consortium Human Build 38 (GRCh38.p13). Next, we retained only ClinVar missense variants within the selected IDRs and omitted all deletion variants. All ‘likely benign’ and ‘likely pathogenic’ variants were reclassified as ‘benign’ and ‘pathogenic’, respectively. Subsequently, variants with categorical labels other than ‘benign’ and ‘pathogenic’ were discarded. Brunner–Munzel P values81 were calculated using t-distributions as implemented in SciPy (v.1.10.1)82. Effect sizes were estimated as Cohen’s d = (μ1 − μ2 )/ (σ 12 + σ 22)/2 , in which μi and σi are the mean and standard deviations of samples i = 1 and i = 2 (ref. 84). The standard error of Cohen’s d was estimated as the standard deviation over 105 bootstraps. Reporting summary Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.
+
+Data availability Simulation trajectories and precalculated conformational properties for the 28,058 IDRs of the pLDDT-based set are available at https://sid. erda.dk/cgi-sid/ls.py?share_id=AVZAJvJnCO, which also includes a full list of amino acid sequences, sequence features and conformational properties of the 28,058 IDRs in the pLDDT-based set (Supplementary Table 3). In the online database, directories are organized by splitting UniProt IDs into two-character units (XX/XX/XX), followed by an additional four-character unit for UniProt IDs of ten characters (XX/XX/XX/ XXXX). For example, data for the IDRs of UniProt ID A0A494C086 can be accessed by entering IDRome/A0/A4/94/C086 in the Filter paths. Raw data to reproduce the results presented in this work are available at https://github.com/KULL-Centre/_2023_Tesei_IDRome and have been deposited at Zenodo (https://doi.org/10.5281/zenodo.10251736). Window-averaged pLDDT scores were obtained from Supplementary Table 1 of a previous study2. SPOT-Disorder v.1 predictions were obtained from https://github.com/IPritisanac/AF2.IDR (ref. 7). Orthologous sequences were retrieved from the OMA database (Nov 2022 release). UniProt releases 2021_04, 2022_05 and 2023_03 were accessed as described previously62 and as detailed in the Methods. AlphaFold predicted aligned errors were retrieved from https://alphafold.ebi. ac.uk/ (refs. 97,98). The Gene Ontology Data Archive version 202311-15 (https://doi.org/10.5281/zenodo.10162580) was obtained from https://current.geneontology.org/ontology/go-basic.obo. UniProt IDs
+
+[Page 11]
+
+of proteins in membraneless organelles were retrieved from CD-CODE v.1_04 (ref. 27). Missense variants were obtained from ClinVar (release 2020-11). Frameshift variants were retrieved from Zenodo (https://doi. org/10.5281/zenodo.7311150; ref. 56). The number of publications per gene was obtained from Find My Understudied Genes (v.1.0.0; https:// fmug.amaral.northwestern.edu/).
+
+Code availability Custom code to reproduce the results and figures of this study is available at https://github.com/KULL-Centre/_2023_Tesei_IDRome and at Zenodo (https://doi.org/10.5281/zenodo.10251736). CALVADOS is available at Zenodo (https://doi.org/10.5281/zenodo.6914053) and can be run using Google Colab through https://github.com/ KULL-Centre/_2023_Tesei_IDRome/blob/main/IDRLab.ipynb. 62. The UniProt Consortium. Uniprot: the universal protein knowledgebase in 2023. Nucleic Acids Res. 51, D523–D531 (2023). 63. Hanson, J., Yang, Y., Paliwal, K. & Zhou, Y. Improving protein disorder prediction by deep bidirectional long short-term memory recurrent neural networks. Bioinformatics 33, 685–692 (2016). 64. Hekkelman, M. L., de Vries, I., Joosten, R. P. & Perrakis, A. AlphaFill: enriching AlphaFold models with ligands and cofactors. Nat. Methods 20, 205–213 (2022). 65. Anderson, J. A., Glaser, J. & Glotzer, S. C. HOOMD-blue: a Python package for highperformance molecular dynamics and hard particle Monte Carlo simulations. Comput. Mater. Sci. 173, 109363 (2020). 66. Flyvbjerg, H. & Petersen, H. G. Error estimates on averages of correlated data. J. Chem. Phys. 91, 461–466 (1989). 67. Borgia, A. et al. Consistent view of polypeptide chain expansion in chemical denaturants from multiple experimental methods. J. Am. Chem. Soc. 138, 11714–11726 (2016). 68. Aronovitz, J. & Nelson, D. Universal features of polymer shapes. Journal de Physique 47, 1445–1456 (1986). 69. Hensen, U., Gräter, F. & Henchman, R. H. Macromolecular entropy can be accurately computed from force. J. Chem. Theory Comput. 10, 4777–4781 (2014). 70. Pedregosa, F. et al. Scikit-learn: machine learning in Python. J. Mach. Learn. Res. 12, 2825–2830 (2011). 71. McGibbon, R. T. et al. MDTraj: a modern open library for the analysis of molecular dynamics trajectories. Biophys. J. 109, 1528 – 1532 (2015). 72. Holehouse, A. S., Das, R. K., Ahad, J. N., Richardson, M. O. & Pappu, R. V. CIDER: resources to analyze sequence-ensemble relationships of intrinsically disordered proteins. Biophys. J. 112, 16–21 (2017). 73. Montepietra, D. et al. FRETpredict: a Python package for FRET efficiency predictions using rotamer libraries. Preprint at bioRxiv https://doi.org/10.1101/2023.01.27.525885 (2023). 74. Rotkiewicz, P. & Skolnick, J. Fast procedure for reconstruction of full-atom protein models from reduced representations. J. Comput. Chem. 29, 1460–1465 (2008). 75. Fuertes, G. et al. Decoupling of size and shape fluctuations in heteropolymeric sequences reconciles discrepancies in SAXS vs. FRET measurements. Proc. Natl Acad. Sci. USA 114, E6342–E6351 (2017). 76. Gomes, G.-N. W. et al. Conformational ensembles of an intrinsically disordered protein consistent with NMR, SAXS, and single-molecule FRET. J. Am. Chem. Soc. 142, 15697–15710 (2020). 77. Humphrey, W., Dalke, A. & Schulten, K. VMD—Visual Molecular Dynamics. J. Mol. Graph. 14, 33–38 (1996). 78. Ashburner, M. et al. Gene Ontology: tool for the unification of biology. Nat. Genet. 25, 25–29 (2000). 79. The Gene Ontology Consortium. The Gene Ontology knowledgebase in 2023. Genetics 224, iyad031 (2023). 80. Hagberg, A. A., Schult, D. A. & Swart, P. J. Exploring network structure, dynamics, and function using networkx. In Proc. 7th Python in Science Conference (eds Varoquaux, G., Vaught, T. & Millman, J.) 11–15 (2008). 81. Brunner, E. & Munzel, U. The nonparametric Behrens–Fisher problem: asymptotic theory and a small-sample approximation. Biom. J. 42, 17–25 (2000).
+
+82. Virtanen, P. et al. SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat. Methods 17, 261–272 (2020). 83. Thulin, M. Modern Statistics with R (Eos Chasma Press, 2021). 84. Noguchi, K., Konietschke, F., Marmolejo-Ramos, F. & Pauly, M. Permutation tests are robust and powerful at 0.5% and 5% significance levels. Behav. Res. Meth. 53, 2712–2724 (2021). 85. Mashahreh, B. et al. Conserved degronome features governing quality control associated proteolysis. Nat. Commun. 13, 7588 (2022). 86. Koren, I. et al. The eukaryotic proteome is shaped by E3 ubiquitin ligases targeting C-terminal degrons. Cell 173, 1622–1635 (2018). 87. Chang, Y.-W., Hsieh, C.-J., Chang, K.-W., Ringgaard, M. & Lin, C.-J. Training and testing low-degree polynomial data mappings via linearSVM. J. Mach. Learn. Res. 11, 1471–1490 (2010). 88. Schölkopf, B., Smola, A., Williamson, R. & Bartlett, P. New support vector algorithms. Neural Comput. 12, 1207–1245 (2000). 89. Breiman, L. Random forests. Machine Learning 45, 5–32 (2001). 90. Chao, T.-H., Rekhi, S., Mittal, J. & Tabor, D. P. Data-driven models for predicting intrinsically disordered protein polymer physics directly from composition or sequence. Mol. Syst. Des. Eng. 8, 1146–1155 (2023). 91. Dignon, G. L., Zheng, W., Kim, Y. C., Best, R. B. & Mittal, J. Sequence determinants of protein phase behavior from a coarse-grained model. PLOS Comput. Biol. 14, e1005941 (2018). 92. Lu, A. X. et al. Discovering molecular features of intrinsically disordered regions by using evolution for contrastive learning. PLOS Comput. Biol. 18, e1010238 (2022). 93. Altenhoff, A. M. et al. OMA orthology in 2021: website overhaul, conserved isoforms, ancestral gene order and more. Nucleic Acids Res. 49, D373–D379 (2020). 94. Katoh, K. MAFFT: a novel method for rapid multiple sequence alignment based on fast Fourier transform. Nucleic Acids Res. 30, 3059–3066 (2002). 95. Landrum, M. J. et al. ClinVar: improving access to variant interpretations and supporting evidence. Nucleic Acids Res. 46, D1062–D1067 (2017). 96. Tiemann, J. K. S., Zschach, H., Lindorff-Larsen, K. & Stein, A. Interpreting the molecular mechanisms of disease variants in human transmembrane proteins. Biophys. J. 122, 2176–2191 (2023). 97. Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021). 98. Varadi, M. et al. AlphaFold protein structure database: massively expanding the structural coverage of protein-sequence space with high-accuracy models. Nucleic Acids Res. 50, D439–D444 (2021). Acknowledgements We thank T. Mittag, X. Salvatella, J. Riback, and R. Pappu for comments and suggestions, and A. Holehouse for discussions and sharing work before publication. We acknowledge access to computational resources from the Biocomputing Core Facility at the Department of Biology, University of Copenhagen, from the Resource for Biomolecular Simulations (ROBUST; supported by the Novo Nordisk Foundation; NNF18OC0032608), and the Danish National Supercomputer for Life Sciences (Computerome). This work is a contribution from the PRISM (Protein Interactions and Stability in Medicine and Genomics) centre funded by the Novo Nordisk Foundation (to K.L.-L.; NNF18OC0033950). This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement no. 101025063. Author contributions G.T., K.E.J. and K.L.-L. conceived and planned the study. G.T. and A.I.T. performed and analysed molecular simulations and performed GO analyses. N.J. generated the set of missense variants. G.T. and J.B. developed the machine-learning models. G.T. and F.E.K. analysed orthologous sequences. F.P. developed the Google Colab notebooks. K.E.J. generated the sets of human and orthologous sequences. G.T. performed the other analyses with input from N.J., F.P., K.E.J. and K.L.-L. G.T. and K.L.-L. wrote the manuscript with contributions from all authors. K.L.-L. supervised the study. Competing interests K.L.-L. holds stock options in and is a consultant for Peptone. The remaining authors declare no competing interests. Additional information Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41586-023-07004-5. Correspondence and requests for materials should be addressed to Giulio Tesei or Kresten Lindorff-Larsen. Peer review information Nature thanks David De Sancho and the other, anonymous, reviewer(s) for their contribution to the peer review of this work. Reprints and permissions information is available at http://www.nature.com/reprints.
+
+[Page 12]
+
+Extended Data Fig. 1 | Analyses of pLDDT scores and UniProt annotations. a, Distributions of the window-averaged pLDDT score of residues in the pLDDTbased set (grey), in the SPOT-based set (red), and in IDRs from 531 proteins unique to the SPOT-based set (magenta). b,c, Window-averaged pLDDT scores in (b) all IDRs and in (c) IDRs between folded domains with ν ≤ 0.45 (orange), 0.45 < ν ≤ 0.55 (cyan), and ν > 0.55 (teal). Hatched and open violin plots show results for the pLDDT-based and SPOT-based sets, respectively. Horizontal lines show medians and quartiles calculated over (b) n = 161, 748; 88,325; 3,278,851; 2,442,776; 511,556; 429,591 and (c) n = 13, 988; 8,534; 374,190; 275,164; 92,770; 66,276 pLDDT scores. d,e, Fraction of IDRs (d) and average sequence length of IDRs (e) as a function of the fraction of residues within UniProt “Zinc finger”, “Coiled coil”, “Transmembrane”, and “Domain” annotations longer than ten amino acids, fdomain. Results for the pLDDT-based
+
+(6,204 IDRs with fdomain > 0, 22%) and SPOT-based sets (4,095 IDRs with fdomain > 0, 19%) are shown in grey and red, respectively. f–i, fdomain averaged over (f) all IDRs (n = 616, 361, 18546, 13292, 8896, and 7730), (g) IDRs between folded domains (n = 91; 56; 2,470; 1,613; 1,777; and 1,214), (h) N- and C-terminal IDRs (n = 415; 203; 12,144; 6,531; 4,776; and 3,601), and (i) IDPs (n = 43; 12; 1,346; 517; 74; and 50) with ν ≤ 0.45 (orange), 0.45 < ν ≤ 0.55 (cyan), and ν > 0.55 (teal). Hatched and empty bars show results for the pLDDT-based and SPOT-based sets, respectively. Data in e–i are displayed as mean ± s.e.m. j, Comparison between the number of residues within UniProt “Zinc finger”, “Coiled coil”, “Transmembrane”, and “Domain” annotations longer than ten amino acids in the pLDDT-based (grey) and SPOT-based (red) sets of IDRs, and in the full-length proteins of both sets (blue). IDP, fully intrinsically disordered protein.
+
+[Page 13]
+
+Extended Data Fig. 2 | Representative intra-chain energy maps, and distributions of the conformational parameters asphericity, Δ, and prolateness, S, for a selection of IDRs from our database. The UniProt IDs of the IDRs are (a) P08621, (b) P06748, (c) Q5VUA4, (d) Q6PD62, (e) Q15648, (f) Q13148, (g) P98177, (h) Q7KZ85, (i) P06454, ( j) Q5BKZ1, (k) O60763, and (l) Q99733. The data are averaged over five ensembles of 1,000 weakly
+
+correlated conformations (Extended Data Fig. 5a), each obtained from an independent molecular dynamics simulation. (Top) Energy maps are calculated using the non-ionic Ashbaugh–Hatch potential of the CALVADOS 2 model. Bottom, lines and vertical shaded areas show distributions and confidence intervals of the ensemble averages estimated from the standard deviation of Δ (light shade) and S (dark shade) over five independent simulations.
+
+[Page 14]
+
+Extended Data Fig. 3 | Validation of the CALVADOS model. a, Relative difference between predicted and experimental radii of gyration for a set of 64 proteins that were not used in training the CALVADOS 2 model, and for Sic1. exp exp calc Bars show (R calc g − R g )/R g where R g is averaged over n = 5 independent simulation replicas. Data are displayed as the mean ± s.d. b, Correlation calc between R exp g and R g for the same proteins shown in a. c, Correlation of predicted and experimental average FRET efficiencies, ⟨EFRET ⟩, for a set of 64 proteins that were not used in training the CALVADOS 2 model, and for Sic1. d–k, Comparison between Rg distributions from CALVADOS simulations
+
+(colour) and from ensembles from the Protein Ensemble Database (black) for (d) Nup49, (e) NLS, (f) NUS, (g) IBB, (h) NUL, (i) Sic1, ( j) KISS1 and (k) NWASPV. Vertical lines show the average radius of gyration from simulations (colour), from the Protein Ensemble Database (solid black), and from experiments (dashed black); we note that some of the ensembles in the Protein Ensemble Database may have been generated by so-called reweighting methods, but that the ensembles in the database correspond to the unweighted structures. In Supplementary Table 4, we provide the full list of references for the experimental Rg and ⟨EFRET ⟩ values shown in this figure.
+
+[Page 15]
+
+Extended Data Fig. 4 | Correlation between the variance of residue–residue distances in CALVADOS simulations and the confidence of the relative positions of residue pairs in AlphaFold predictions. a–d, Standard deviation (s.d.) of intra-chain distances calculated from simulations (a,c) and AlphaFold predicted aligned errors (PAE) (b,d) for IDRs of nucleophosmin (UniProt ID P06748) (a,b) and transcription elongation factor SPT6 (UniProt ID Q7KZ85) (c,d). e–l, PAE as a function of s.d. for IDRs in proteins with UniProt IDs (e) P08621, (f) P06748, (g) Q5VUA4, (h) Q6PD62, (i) Q15648, ( j) Q13148, (k) P98177,
+
+and (l) Q7KZ85. Pearson correlation coefficients, r, and linear fits (solid lines) are calculated for separations along the linear sequence, ∣i − j∣, in the range ∣i − j∣min ≤ ∣i − j∣ ≤ N, where ∣i − j∣min = 4 and N is the sequence length. m–t, Pearson r for the correlation between PAE and s.d. as a function of the shortest separation along the linear chain, ∣i − j∣min, included in the analysis; data are shown for IDRs in proteins with UniProt IDs (m) P08621, (n) P06748, (o) Q5VUA4, (p) Q6PD62, (q) Q15648, (r) Q13148, (s) P98177, and (t) Q7KZ85.
+
+[Page 16]
+
+Extended Data Fig. 5 | Sampling, distributions and dependence on the location within the full-length protein of conformational properties in the pLDDT-based set of IDRs. a, Values of the autocorrelation function (ACF) of the Rg for lag times of one (grey), two (red), and three (blue) frames as a function of sequence length. Data are displayed as mean ± s.d. over n = 5 independent simulation replicas. b, S.d. of the apparent Flory scaling exponent, ν, as a function of ν for proteins of different sequence length. c, S.d. of the ratio of the mean-squared end-to-end distance and the mean-squared radius of gyration, ⟨R 2ee⟩/⟨R 2g⟩, as a function of ⟨R 2ee⟩/⟨R 2g⟩ for proteins of different sequence length. d, S.d. of the conformational entropy per residue, S conf/N, as a function of Sconf/N for proteins of different sequence length. S.d. values are calculated over n = 5 independent simulation replicas. Dotted lines show the average s.d. e, Correlation between ⟨R 2ee⟩ / ⟨R 2g⟩ calculated from simulation trajectories and the approximate relation ⟨R 2ee⟩ / ⟨R 2g⟩ = (2ν + 1) × (2ν + 2). (ref. 15). f,g, Distributions
+
+of (f) ⟨R 2ee⟩ / ⟨R 2g⟩ and (g) the conformational entropy per residue, Sconf/N, for IDRs in the human proteome; note the logarithmic scale. h–j, Correlation between (h) asphericity, Δ, and ν; (i) prolateness, S, and ν; and ( j) Sconf/N and ν. r is the Pearson correlation coefficient. k, Normalized distributions of the absolute difference between ν values, ∣Δν∣, for IDRs from different proteins (grey), within the same protein (blue), and separated by folded domains within the same protein (teal). Vertical bars show mean ± s.e.m. of ∣Δν∣. l,m, Distributions of (l) ν and (m) Sconf/N for IDRs in the different categories of localization within the full-length protein: N-terminal (32.2%), C-terminal (24.8%), between folded domains (15.5%), and IDPs (5.2%). For this analysis we annotated IDRs to be located between folded domains if they are preceded and followed by at least 100 residues which do not overlap with any of the IDRs identified in this work. IDP, fully intrinsically disordered protein.
+
+[Page 17]
+
+Extended Data Fig. 6 | Analysis of the CD-CODE database, and relationships between sequence and conformational properties for IDRs in the pLDDTbased and SPOT-based sets. a,b, Analysis of the association between IDR conformational properties and protein localization in membraneless organelles (as reported in the CD-CODE database27). Distributions of (a) ν and (b) Sconf/N for IDRs in ‘driver’ proteins (shaded bars) and in proteins that are not a part of the examined subset (black lines). c,d, Distributions of (c) ν and (d) Sconf/N for IDRs in ‘member’ proteins (shaded bars) and in proteins that are not a part of the examined subset (black lines). Histograms for proteins enriched in compact and expanded IDRs are shown in orange and teal, respectively. P values are estimated from one-sided Brunner–Munzel tests using t-distributions and the reported degrees of freedom (DoF). Standard errors of Cohen’s d values are estimated through 105 bootstraps. e–q, Comparison between sequence features that affect compaction in pLDDT-based and SPOT-based sets of IDRs.
+
+We show NARDINI z-scores for (e) basic–acidic patterning, z(δ+−), (f) acidic patterning, z(Ω−), and (g) aromatic patterning, z(Ω π); (h) sequence charge decoration, SCD; (l) charge segregation, κ; (m) Sconf/N; (n) sequence hydropathy decoration, SHD; (o) average stickiness, ⟨λ⟩; (p) fraction of charged residues, FCR; and (q) sequence length, N, as a function of ν. i–k: (i) z(δ+−), ( j) z(Ω−), and (k) z(Ω π) as a function of Sconf/N. Results are shown for all IDRs in the pLDDT-based (grey) and SPOT-based (red) sets, and for IDRs with fdomain = 0 in the pLDDT-based set (blue). r,s, Short IDRs are on average more highly charged and expanded than longer IDRs. (r) ν and (s) Sconf/N as a function of sequence length, N, for the human IDRs in the pLDDT-based (grey) and SPOT-based (red) sets. Data are displayed as mean ± s.e.m. t, Normalized distributions of the NCPR for IDRs with N≤200 (full lines) and with N > 200 (dotted lines) in the pLDDT-based (grey) and SPOT-based (red) sets.
+
+[Page 18]
+
+Extended Data Fig. 7 | Analyses of QCDPred scores and charged residues for IDRs in the pLDDT-based set. a, QCDPred score (red) and ⟨λ⟩ (grey) as a function of ν. b, Average QCDPred score as a function of ν and ⟨λ⟩. c, QCDPred score (red) and fraction of negatively charged residues, f− (black) as a function of ν. d,g, Average fraction of positively charged residues Arg (red) and Lys (black) as a function of (d) ν and (g) Sconf/N. e,h, Average fraction of negatively charged residues Glu (red) and Asp (black) as a function of (e) ν and (h) Sconf/N.
+
+f,i, Average net charge per residue, NCPR, as a function of (f) ν and (i) Sconf/N. Data are displayed as mean ± s.e.m. calculated within bins of width Δν = 0.015 and ΔSconf/N = 0.05 k B . The samples sizes in each bin are (a,c–f) n = 4, 3; 5; 3; 5; 6; 9; 11; 8; 16; 14; 26; 23; 28; 41; 49; 98; 135; 212; 473; 854; 1,921; 3,319; 4,724; 5,393; 4,987; 3,405; 1,461; 484; 182; 76; 43; 16; 9; 4; and (g–i) n = 5; 9; 4; 20; 29; 93; 406; 1,290; 2,555; 3,204; 3,520; 3,483; 3,415; 3,005; 2,517; 1,895; 1,208; 686; 320; 161; 90; 49; 29; 20; 12; 6; 8; 4; 3; 3; 3.
+
+[Page 19]
+
+Extended Data Fig. 8 | SVR models for ν and Sconf/N. a,g, Permutation importance of the sequence features used in the SVR models for the prediction of (a) ν and (g) Sconf/N. b–f, Average sequence features as a function of ν calculated from simulations (grey) and using the SVR model (red); data are shown for (b) sequence hydropathy decoration, SHD; (c) sequence charge decoration, SCD; (d) fraction of charged residues, FCR; (e) average stickiness, ⟨λ⟩; and (f) charge segregation, κ. h–j, Average sequence features as a function of Sconf/N calculated from simulations (grey) and using the SVR model (red); data are shown for (h) ⟨λ⟩; (i) SHD; and ( j) SCD. Data are displayed as mean ± s.e.m. calculated within bins of width Δν = 0.015 and ΔSconf/N = 0.05 k B . The samples
+
+sizes in each bin are (b–f) n = 4; 3; 5; 3; 5; 6; 9; 11; 8; 16; 14; 26; 23; 28; 41; 49; 98; 135; 212; 473; 854; 1,921; 3,319; 4,724; 5,393; 4,987; 3,405; 1,461; 484; 182; 76; 43; 16; 9; 4; and (h–j) n = 5; 9; 4; 20; 29; 93; 406; 1,290; 2,555; 3,204; 3,520; 3,483; 3,415; 3,005; 2,517; 1,895; 1,208; 686; 320; 161; 90; 49; 29; 20; 12; 6; 8; 4; 3; 3; 3. k–n, Testing the SVR models. k,m, Correlation between (k) ν and (m) Sconf/N from simulations and corresponding predictions of the SVR models for a heldout test set of 2,795 distinct sequences from the set of 28,058 IDRs identified in this work. l,n, Correlation between (l) ν and (n) Sconf/N values from simulations and corresponding predictions of the SVR models for 611 IDRs in the 531 proteins that are unique to the SPOT-based set of IDRs.
+
+[Page 20]
+
+Extended Data Fig. 9 | Relationships between the conformational properties of IDRs and the incidence of pathogenic missense and frameshift variants. a–c, Distributions of (a) the conformational entropy per residue, S conf/N; (b) the pLDDT scores of the substituted residues; and (c) the scaling exponent, ν, for 11,173 benign (black line) and 1,656 pathogenic (grey bars) variants of IDRs without UniProt domain annotations ( fdomain = 0). d,e, Distributions of the difference in (d) ΔS conf,SVR /N and (e) ΔνSVR between variant and wild type for benign (black line) and pathogenic (grey bars) variants of IDRs with fdomain = 0. g,h, Distributions of the difference in (g) ΔSconf,SVR /N and (h) ΔνSVR between
+
+variant and wild type for 5,039 benign (or of unknown significance, black line) and 637 pathogenic (grey bars) frameshift variants identified by Mensah et al. 56. P values are estimated from one-sided Brunner–Munzel tests using t-distributions and the reported degrees of freedom (DoF). Standard errors of Cohen’s d values are estimated through 105 bootstraps. f, Average number of ClinVar missense variants per IDR. i, Average number of publications per IDR obtained from the “Find my Understudied Gene” tool59. Data in f and i are displayed as mean ± s.e.m. calculated over n = 25; 87; 498; 18,546; 8,864; and 32 IDRs.

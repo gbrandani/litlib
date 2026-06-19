@@ -1,0 +1,377 @@
+[Page 1]
+
+Supporting Information: Two for One: Diffusion Models and Force Fields for Coarse-Grained Molecular Dynamics Marloes Arts,∗,†,‡,@ Victor Garcia Satorras,∗,¶,@ Chin-Wei Huang,¶ Daniel Zügner,§ Marco Federici,†,∥ Cecilia Clementi,§,⊥ Frank Noé,§ Robert Pinsler,# and Rianne van den Berg¶ †Work done during an internship at Microsoft Research (Amsterdam). ‡University of Copenhagen, Department of Computer Science, Universitetsparken 1, Copenhagen, 2100, Denmark. ¶AI4Science, Microsoft Research, Evert van de Beekstraat 354, Amsterdam, 1118 CZ, The Netherlands. §AI4Science, Microsoft Research, Karl-Liebknecht-Straße 32, Berlin, 10178, Germany. ∥University of Amsterdam, Informatics Institute, Science Park 904, Amsterdam, 1098 XH, The Netherlands. ⊥Freie Universität Berlin, Department of Physics, Arnimalle 12, Berlin, 14195, Germany. #AI4Science, Microsoft Research, 21 Station Road, Cambridge, CB1 2FB, United Kingdom. @Equal contribution. * E-mail: ma@di.ku.dk; victorgar@microsoft.com
+
+[Page 2]
+
+Derivations
+
+A.1
+
+Relation between Score Function sθ (zi , i) and Noise Predicting Network εθ (zi , i)
+
+In this section, we show that Eq. 3 and 4 in the main paper are equal up to a reweighting of the summands by setting: ε(zi , i) . sθ (zi , i) = − √ 1 − ᾱi We start from Eq. 4:
+
+Ezi ,z0 ∥sθ (zi , i) − ∇zi log q(zi | z0 )∥2 " # √ zi − ᾱi z0 =Ezi ,z0 sθ (zi , i) + 1 − ᾱi " √ √ =Eε,z0 sθ ( ᾱi z0 + 1 − ᾱi ε, i) + √
+
+ᾱi z0 +
+
+√
+
+1 − ᾱi ε − 1 − ᾱi
+
+√ Substitute q(zi | z0 ) = N ( ᾱi z0 , (1 − ᾱi )I)
+
+# √ ᾱi z0
+
+Reparameterize zi =
+
+# √ √ =Eε,z0 sθ ( ᾱi z0 + 1 − ᾱi ε, i) + √ 1 − ᾱi " # √ √ εθ ( ᾱi z0 + 1 − ᾱi ε, i) √ =Eε,z0 − +√ 1 − ᾱi 1 − ᾱi √ √ = Eε,z0 ε − εθ ( ᾱi z0 + 1 − ᾱi , i) . 1 − ᾱi
+
+√
+
+ᾱi z0 +
+
+√
+
+1 − ᾱi ε
+
+"
+
+εθ (·, i) Substitute sθ (·, i) = − √ 1 − ᾱi Reorganize
+
+That is, the noise-prediction loss of Eq. 3 can be seen as a reweighted denoising score matching loss, and vice versa.
+
+A.2
+
+Connecting Denoising Diffusion and the Brownian Dynamics
+
+Recall from Section 3 that a denoising-diffusion model consists of an iterative diffusion √ process q(zi | zi−1 ) = N (zi ; 1 − βi zi−1 , βi I) and a denoising process p(zi−1 | zi ) =
+
+[Page 3]
+
+N (zi−1 ; μθ (zi , i), σi2 I) of L steps, where βi and σi2 are the variance coefficients of the diffusion and denoising steps, respectively, and i ∈ [1, . . . , L]. In this section, we show that iteratively performing a diffusion step followed by a denoising step at a low-noise level (e.g. i = 1) approximates the Brownian dynamics of a molecular system. We demonstrate that by tuning the first diffusion noise level β1 , we effectively modify the step size of a Brownian dynamics simulation, as the two can be related by β1 = 1 − ᾱ1 = ∆t kMB Tγ . We start by re-parameterizing the diffusion step z1 ∼ q(z1 | z0 ) as:
+
+z1 =
+
+1 − β1 z0 + β1 wa ,
+
+(S1)
+
+where wa ∼ N (0, I). Similarly, we re-parameterize z0 ∼ p(z0 | z1 ) = N (z0 ; μθ (z1 , 1), σ12 I) and rewrite μθ using the noise-predicting network εθ from Section 3 as: √ √ z0 = √ z1 − σ1 εθ (z1 , 1) + σ1 wb . 1 − σ1
+
+(S2)
+
+Following Ho et al. S1 , we set σi = βi . We now introduce a superscript index (t) to denote the sequence of states that unfold the diffusion-denoising process through time. Combining this notation with both Eq. S1 and S2 we obtain the following recursive update:
+
+[Page 4]
+
+(t+1) z1 =
+
+(t) (t) z1 − β1 εθ (z1 , 1) + 1 − β1 √ 1 − β1
+
+β1 wb + β1 wa
+
+(t) (t) = z1 − β1 εθ (z1 , 1) + 1 − β1 β1 wb + β1 wa d (t) (t) = z1 − β1 εθ (z1 , 1) + 2β1 − β12 wc (t) (t) ≈ z1 − β1 εθ (z1 , 1) + 2β1 wc
+
+Combine Eq. S1 and S2
+
+Re-arrange terms Sum of the squares of the standard devs. Taylor of 2β1 − β12 at (β1 = 0) → 2β1
+
+(t) εθ (z1 , 1) p (t) + 2β1 wc , = z 1 − β1 √ β1
+
+Re-arrange
+
+where wc ∼ N (0, I) and = denotes equal in distribution. To make the relation to Brownian dynamics more explicit, we can discretize the overdamped limit of the Langevin dynamics from Eq. 6 using the Euler-Maruyama scheme:
+
+z(t+1) = z(t) − ∆t
+
+∇z V (z) + γM
+
+∆t
+
+2kB T w, γM
+
+(S3)
+
+where w ∼ N (0, I) and ∆t is the simulation time step. By comparing the two equations, we see that the denoising-diffusion process corresponds to simulating a Brownian dynamics BT of a force field ∇z V (z) = k√BβT1 εθ (z, i) = √k1− ε (z, i) and an implicit step size ∆t = kMB Tγ β1 . ᾱ1 θ
+
+Note that the force field is the same as the denoising force field (Eq. 5). Furthermore, the variance of the denoising-diffusion process β1 = 1 − ᾱ1 is proportional to the simulation time step ∆t.
+
+[Page 5]
+
+Additional Experiments
+
+B.1
+
+Ablation on Conservative Forces
+
+Designing our neural network to approximate a conservative force is necessary to satisfy the following property in physics: “A conservative force is a force with the property that the total work done in moving a particle between two points is independent of the path taken.”. This property can be satisfied by computing the force as the gradient of a scalar with respect to the input coordinates. In this section, we empirically show the benefits of using a conservative network when simulating dynamics (for DFF sim.). In contrast, the benefits for i.i.d. generation (DFF i.i.d.) are smaller. We build a non-conservative network by replacing the last linear layer and average pooling operation of the conservative network, such that the network ˆ nnθ : Rn×3 → Rn×3 outputs a three-dimensional vector for each node (instead of a scalar). The non-conservative noise prediction network is then defined as εθ = nn ˆ θ. Next, we compare the performance of both variants on the proteins Chignolin and Trpcage using the same experimental settings as in Section C.5. DFF sim. non-cons.
+
+DFF sim. cons.
+
+DFF i.i.d. non-cons.
+
+DFF i.i.d. cons.
+
+Trp-cage
+
+Reference (MD)
+
+Figure S1: Ablation on TICA plots for chignolin and trp-cage fast folders comparing conservative vs non-conservative neural networks for simulated and i.i.d. data with our DFF model. As illustrated in Figure S1, and numerically shown in Table S1, the conservative variant
+
+[Page 6]
+
+Table S1: Ablation study on conservative versus non-conservative variants in Chignolin and Trp-cage. We report the JS divergence between TICA distributions and pairwise distance distributions. Trp-cage TIC JS PWD JS TIC JS PWD JS Reference
+
+DFF (non-conservative) i.i.d. DFF
+
+DFF (non-conservative) sim. DFF
+
+outperforms the non-conservative case in most metrics for Chignolin and Trp-cage. Notice this difference is very significant in Chignolin simulated data where the TIC JS performance differs by an order of magnitude and even more for PWD JS. In Chignolin, we also tried using a more powerful non-conservative network, and while the non-conservative dynamics would improve for deeper networks, the performance would still be quite far from the conservative DFF sim. metric reported in the current experiment. On the other hand, the performance gap between conservative and non-conservative force fields in i.i.d. generation was reduced when we increased the size of the network.
+
+B.2
+
+Ablation on Number of Hidden Features
+
+In Section C.5, we mention that the expressivity of the neural network (e.g. number of hidden features) has a notable influence on the quality of the simulated dynamics. More specifically, while i.i.d. generation tends to perform better as we increase the expressivity of our network, dynamics simulations may become worse. We found that properly choosing the number of features in our network plays an important role in the quality of the generated samples. Here, we show that the sweet spot in the bias/variance trade-off is significantly more sensitive when using the force field to simulate dynamics than when doing i.i.d. generation with the same network. We report the performance of DFF (i.i.d. and sim.) for different
+
+[Page 7]
+
+number of hidden features {32, 64, 128, 256}. All other training settings are the same as described for Chignolin in the fast-folding protein experiment in Section C.5.2. Figure S2 and Table S2 show that while the performance of i.i.d. generation improves as we increase the number of hidden features, the performance of simulated dynamics peaks at 64 features and deteriorates as we increase the network size. This implies that dynamics simulation is more sensitive to the number of features compared to i.i.d. sampling. The number of training iterations was set to 1M in all models and the validation curves on noise-prediction loss did not show symptoms of over-fitting.
+
+Reference (MD)
+
+nf = 64
+
+nf = 128
+
+nf = 256
+
+i.i.d.
+
+nf = 32
+
+sim.
+
+Figure S2: TICA plots for the ablation on the number of features per layer for Chignolin. The proposed method (DFF sim.) has shown excellent performance in systems such as Alanine, Chignolin (nf=64) and Villin compared to previous ML coarse grained methods. Despite its good performance, we believe improving the robustness of the model by introducing new inductive biases or regularization techniques can be a promising direction in order to leverage higher-capacity neural networks without compromising the performance in simulation. Such increased robustness could also improve the performance for systems with a stronger dependence on non-local contacts and therefore a more challenging free energy distribution, like proteins with a higher β-sheet content (e.g. Bba, Protein G).
+
+[Page 8]
+
+Table S2: TIC JS and PWD JS w.r.t the test partition with varying numbers of features. The model used to compute all metrics is our proposed DFF in both i.i.d. sampling and dynamics simulation. Number of features Reference
+
+B.3
+
+TIC JS PWD JS
+
+i.i.d.
+
+sim.
+
+Ablation on noise level.
+
+In this section, we assess the performance across various noise levels. As mentioned in Section 3.1, the force field derived from the noise prediction network εθ∗ (z, i) approximates the data distribution for low noise levels i. However, there are two types of errors in the approximation of the approximate force. The first type of error comes from approximating q(z) as q(zi ), where ideally q(zi ) should approximate q(z) for small noise levels. The second type of error comes from the learned model not being able to perfectly fit q(zi ). Our network εθ (zi , i) is trained in the context of a limited number of data points, where larger noise values may serve as an inductive bias to facilitate interpolation between data points. Consequently, the optimal noise level i is in practice determined by a balance between the amount of noise and the quantity of available data (as well as the network capacity). A smaller dataset may therefore require a larger noise value. To demonstrate this behavior, we present TICA plots for Chignolin with different noise levels i in Figure S3. These plots display two aspects: 1) the true distribution q(zi ), obtained by convolving the data distribution q(z0 ) with a Gaussian kernel q(zi |z0 )q(z0 ), and 2) the DFF simulation, achieved by running Langevin Dynamics with the extracted force field.
+
+[Page 9]
+
+As can be observed in Figure S3, q(zi ) more closely resembles the reference distribution for smaller noise levels; however, in practice, when running Langevin Dynamics with the learned force field (DFF sim.), we find a trade-off in the chosen noise level i. Reference (MD)
+
+i=5
+
+i = 10
+
+i = 15
+
+i = 20
+
+i = 25
+
+i = 30
+
+i = 40
+
+i = 100
+
+q(z! )
+
+DFF (sim.)
+
+Figure S3: TICA plots for the ablation on different noise levels for Chignolin.
+
+B.4
+
+Rotation Equivariance through Data Augmentation
+
+In this section, we experimentally confirm that using data augmentation for training the neural network εθ to be approximately equivariant to rotations is sufficient in practice. Recall that a function f is equivariant to rotations if rotating its input results in an equivalent rotation of its output, i.e. Rf (z) = f (Rz), where R is a rotation matrix. To analyze the degree of equivariance of our network εθ , we compute the relative squared error between εθ (z) and R−1 εθ (Rz) for samples z ∼ pval (z) drawn from the validation partition. In Table S3, we show the errors of the networks εθ (·, i) trained on different proteins. Specifically, we evaluate the non-equivariance at the noise level i at which we extract the force field to simulate Langevin dynamics. These noise levels are {20, 15, 5, 5, 5} for Chignolin, Trp-cage, Bba, Villin and Protein G, respectively. Since the relative squared error is in the order of < 10−6 for all proteins, we conclude that applying data augmentation is sufficient for achieving rotation equivariance for most practical use cases.
+
+[Page 10]
+
+Table S3: Relative squared error between εθ (z) and R−1 εθ (Rz) across different fast-folding proteins. Chignolin Trp-cage
+
+Relative squared error (mean) 7.8 · 10−7 4.9 · 10−7 2.8 · 10−7 1.9 · 10−7 Relative squared error (stdev) 8.7 · 10−7 6.0 · 10−7 1.6 · 10−7 6.5 · 10−8
+
+Experimental Details
+
+C.1
+
+Architecture Details
+
+1.9 · 10−7 7.0 · 10−8
+
+In this section, we describe the neural network used to parameterize εθ . We adapted Graph Transformer (GT) from https://github.com/lucidrains/graph-transformer-pytorch. We modified the architecture to satisfy the symmetry constraints from Section 3.3. We start by naming a function that calls the Graph Transformer from the mentioned link as
+
+nodesout = GT[nodesin , edgesin ], where nodesin ∈ Rn×dn , edgesin ∈ Rn×n×de . n being the number of nodes, dn the number of dimensions per node and de the number of dimensions per edge. GT will receive as input the node embeddings h ∈ Rn×(·) and the noise level index i as node features. Pairs of vector differences zj − zk as edge features such that
+
+nodesin [j, :] = concat [h[j, :], i]] edgesin [j, k, :] = z[j, :] − z[k, :] Now we define a network nnθ′ : [h, z, i] → R1 that takes the Graph Transformer and outputs a scalar value:
+
+nnθ′ : {h, z, i} → {nodesin , edgesin } → GT → {nodesout } → nn.Linear(dn , 1) → sum(·) → {output}
+
+[Page 11]
+
+Finally, to define εθ , we incorporate h as its learnable parameters θ = {θ′ , h} and compute the gradient of nnθ′ w.r.t. z εθ (z, i) = ∇z nnθ′ (h, z, i)
+
+C.2
+
+Coarse-graining Operator
+
+In Figure S4, we give an overview of all systems we use in our experiments along with their CG representations. Coarse-graining is done by slicing out the relevant atoms, i.e. the backbone atoms for alanine-dipeptide, and Cα atoms for all fast-folding proteins. Fast-folding proteins
+
+Trp-cage
+
+5 beads
+
+10 beads
+
+20 beads
+
+28 beads
+
+35 beads
+
+56 beads
+
+Coarse-grained
+
+Fine-grained
+
+Alanine-dipeptide
+
+Figure S4: Overview of all systems used in our experiments, consisting of alanine dipeptide and five different fast-folding proteins. Top: fine-grained representation. Bottom: coarsegrained representation, i.e. backbone for alanine-dipeptide and Cα atoms for the fast-folding proteins. α-helices are shown in orange, β-sheets are shown in blue.
+
+C.3
+
+The optimization objective
+
+We defined the optimization objective of a diffusion model at a given noise level i in Section √ √ 3 as Eq(z0 ) EN (ε;0,I) ε−εθ ( ᾱi z0 + 1 − ᾱi ε, i) . In S1 , the noise level i is sampled from a discrete uniform distribution i ∼ U{1, . . . , L} . In this work, in order to encourage the
+
+[Page 12]
+
+training at lower noise levels, we sample i from U{1, . . . , L/10} and U{L/10 + 1, . . . , L} with 50% probability each. This results in more training samples at low noise levels which led to a better performance in the extracted force field.
+
+C.4
+
+Alanine Dipeptide
+
+The alanine dipeptide dataset simulated by Köhler et al. S2 consists of four different simulations of length 500ns with 250K samples each. We partition the data using three simulations for train-validation (750K samples) and one for testing (250K samples). The three trainingvalidation simulations are shuffled and 250K are used for validation and 500K for training.
+
+C.4.1
+
+Implementation details
+
+To evaluate the influence of the dataset size on model performance, we train the model on the following amounts of training data: 10K, 20K, 50K, 100K, 200K and 500K. We use a neural network with two graph Transformer layers and 96 hidden features per layer. The network is optimized using Adam with a learning rate of 3 · 10−4 and cosine learning rate decay dropping to 1 · 10−5 . All experiments are run with batch size 1024 and for 1M iterations, with early stopping on the training set sizes 10K and 20K. For the Langevin dynamics simulation, we use the same simulation settings as in Köhler et al. S2 , except that we do not use parallel tempering. We simulate for 1M iterations, with a time step resolution of 2 femtoseconds, samples are saved every 250 steps resulting in 4K samples per simulation. 100 simulations are run in parallel resulting in a total of 400K samples. The mass of each CG node is set to 12.8 g/mol, which is the weighted average of the mass of carbon and oxygen atoms. The temperature and the friction coefficient are the same as in the reference data (300 Kelvin and 1ps−1 ). The noise level i of the denoising diffusion process is obtained by cross-validation. As mentioned in Section 3.1, ideally, with infinite data and network capacity, we would choose i to be the smallest value (i = 1). But in practice we cross-validate it, and we find that the
+
+[Page 13]
+
+smaller the training dataset size, the larger the value of i. The i values obtained for each amount of training samples are the following (indexing from 0 as in the code instead of 1 as in the code): Table S4: Cross-validated noise levels i across different training set sizes. Training set size 10K 20K 50K 100K 200K 500K Noise level i
+
+C.5
+
+Fast-folding Proteins
+
+C.5.1
+
+Dataset details
+
+All fast-folding protein data was obtained from Lindorff-Larsen et al. S3 . The trajectories were randomly split 70-10-20% into a training, validation and test set, using the same seed as Köhler et al. S2 . All trajectories we used contain Cα atoms only, and the interval between frames is 200 picoseconds. Further details can be found in the table below. Table S5: Additional dataset details for fast-folding proteins. Chignolin Trp-cage
+
+ID CLN025 2JOF 1FME 2F4K NuG2/1MIO Temperature (K) Amino acids Simulation length (μs) Data points 534 743 1 044 000 1 114 545 629 907 1 849 251
+
+C.5.2
+
+Implementation details
+
+In diffusion-denoising process, we used the cosine scheduler with 1000 different noise levels i which is the standard setting in S1,S4 . We used the Adam optimizer. Remaining training hyperparameters are reported in Table S6. Given the training settings from Table S6, the training iterations per second were 17 it/s for chignolin on two V100 GPUs and 13 it/s, 9.8
+
+[Page 14]
+
+it/s, 6.5 it/s, 5.9 it/s, for trp-cage, bba, villin and protein G respectively on four V100 GPUs each. Table S6: Hyperparameters used in different experiments. Chignolin Trp-cage Batch size Learning rate Training iterations Number of layers Number of features Exponential moving average
+
+4 · 10−4 1M
+
+4 · 10−4 1M
+
+4 · 10−4 4 · 10−4 2M 2M
+
+4 · 10−4 3M
+
+For the Langevin dynamics, we ran 6 million steps simulations and saved samples every 500 steps, running 100 simulations in parallel resulted in 1.2M samples. The mass of the particles is set to 12 g/mol which is the mass of each slices Carbon atom, the simulated temperature is the same as in the ground truth data simulation which is reported in Table S5). The noise levels i used for each fast-folder protein indexing from 0 are {20, 15, 5, 5, 5} for Chignolin, Trp-cage, Bba, Villin and Protein G respectively.
+
+C.5.3
+
+Extended results
+
+Contact maps As presented in the main text, one way to analyze the global structure of a protein is by evaluating contact maps. Contacts are places within a protein where two atoms are close together, which will occur either when atoms are close in sequence space or when the protein’s global fold demands the atoms to be within short distance range. These contacts can be shown as binarized pairwise distance matrices, where only those atoms pairs that are within a certain distance from one another are given value 1 while all other pairs are 0. Contact maps provide rich information about the global conformation of a protein, and they evolve over time during dynamics. Here, we choose to evaluate the distribution over contact maps at equilibrium. We get contact maps for all samples, where a pairwise distance between two atoms smaller than 10Å is considered a contact, and show a normalized
+
+[Page 15]
+
+count over these contact maps. Note that Cα atoms are typically about 3.8Å apart due to local constraints, which means that the diagonal of the pairwise distance matrix as well as diagonals up until an offset between two and four are always contacts. From Figure S5, it is clear that the DFF i.i.d. method is better at capturing the off-diagonal contacts, especially for larger structures. Even for our largest test case of Protein G, where we have no FlowCGNet samples to compare, DFF i.i.d. extremely close to the reference. DFF sim. captures the off-diagonal distributions less well compared to the i.i.d. generator, but still improves significantly upon Flow-CGNet.
+
+Chemical integrity In order to show the chemical integrity of our samples, we show statistics over sequence-subsequent and sequence-distant Cα atoms. In the coarse-grained molecules, Cα atoms form the backbone of the protein structure, where we expect the bond length distribution between subsequent atoms to be consistent with the Reference data through the simulation. In Figure S6, we compare the ground truth MD distribution to the samples from our DFF sim. model. Our model shows the same mean, but a broader variance distribution due to the intrinsic variance introduced by the diffusion noise in qi (z). This is because DFF sim. is actually modelling qi (z) to approximate the Reference data. To demonstrate that the variance increase in the bonded nodes is caused by the variance in qi (z) and not by a bond dissociation in the dynamics, we also plot the distribution of the ground truth qi (z), which we can sample by diffusing the reference MD data z ∼ q(zi | z0 )q(z0 ). In Figure S6, we see the bonds distribution approximated by DFF (sim.) are the same as the ground truth diffused distribution qi (z), this means, the dynamics do not diverge into unknown regions that would lead to bond dissociation. Secondly, in the same Figure S6, we evaluate the small-distance tail of sequence-distant atoms that are three ore more residues apart, corresponding to off-diagonal contact points (see previous paragraph: ”Contact maps”). When these small-distance tails contain values that approach zero, it means van der Waals forces are violated and in the worst case there
+
+[Page 16]
+
+can be crossings of the backbone with itself. Figure S6 shows that our samples don’t violate chemical integrity.
+
+Transition probabilities using K-means clustering In this paragraph we present more detailed results of transition probability analysis using K-means clustering. Figure S7 depicts the results of k-means clustering in 2D TIC space as well as transition pribability matrices for the reference distribution, the Flow-CGNet model and our own DFF model.
+
+[Page 17]
+
+References (S1) Ho, J.; Jain, A.; Abbeel, P. Denoising diffusion probabilistic models. Adv. Neural Inf. Process. Syst. 2020, 33, 6840–6851. (S2) Köhler, J.; Chen, Y.; Krämer, A.; Clementi, C.; Noé, F. Flow-Matching: Efficient Coarse-Graining of Molecular Dynamics without Forces. J. Chem. Theory Comput. (S3) Lindorff-Larsen, K.; Piana, S.; Dror, R. O.; Shaw, D. E. How fast-folding proteins fold. Science 2011, 334, 517–520. (S4) Hoogeboom, E.; Satorras, V. G.; Vignac, C.; Welling, M. Equivariant diffusion for molecule generation in 3d. Int. Conf. Mach. Learn. 2022; pp 8867–8887.
+
+[Page 18]
+
+DFF (sim.)
+
+Flow (i.i.d.)
+
+DFF (i.i.d.)
+
+Reference
+
+Flow-CGNet (sim.)
+
+Trp-cage
+
+Figure S5: Contact analysis at equilibrium distribution for fast-folding proteins. Each row of results corresponds to one protein. Left: native structure visualization (α-helices in orange, β-sheets in blue), made with PyMOL. Right: log of normalized contact counts over all samples. Red squares indicate region of interest that contains longer-range contacts, crucial toe global structure.
+
+[Page 19]
+
+C! − C! , sequence subsequent
+
+DFF (sim.)
+
+q! (z)
+
+DFF (sim.)
+
+Trp-cage
+
+q! (z)
+
+Tail C! − C! , sequence distant (offset 4)
+
+Figure S6: Chemical integrity analysis. Plots in the first two columns display the bond distribution of qi (zi ) and DFF (sim) w.r.t. to Reference Molecular Dynamics. This demonstrates that our model respects the bond distribution of qi (z) without the dynamics degenerating into unkown regions of space that would lead to bond dissociations. Plots in the right two columns display the small-distance tail of the distribution for sequence-distant atoms, these plots show there are no crossings of the backbone with itself (the distribution doesn’t get close to zero).
+
+[Page 20]
+
+Figure S7: K-means clustering in 2D TIC space for fast-folders (K determined by elbow method) and resulting transition probability matrices for Flow-CGNet, DFF and the reference distribution. Color intensity indicates probability.

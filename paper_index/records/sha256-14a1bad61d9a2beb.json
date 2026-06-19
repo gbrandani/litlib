@@ -1,0 +1,272 @@
+{
+  "paper_id": "sha256-14a1bad61d9a2beb",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_MD/Greener 2021 PlosOne - Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins.pdf",
+  "pdf_sha256": "14a1bad61d9a2beb0ce2eebba4fbb174c576c6a0a272a722735c632fc42dcfa8",
+  "filename": "Greener 2021 PlosOne - Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins.pdf",
+  "item_type": "article",
+  "title_query": "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins",
+  "filename_hints": {
+    "year_hint": 2021,
+    "venue_hint": "",
+    "prefix": "Greener 2021 PlosOne"
+  },
+  "doi_candidates": [
+    "10.1371/journal.pone.0256990"
+  ],
+  "date_indexed": "2026-04-17T03:30:21.618658+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "165570c20f4741265cce1844a1bc20feb1b26c94",
+      "externalIds": {
+        "PubMedCentral": "8412298",
+        "MAG": "3126504584",
+        "DOI": "10.1371/journal.pone.0256990",
+        "CorpusId": 231885729,
+        "PubMed": "34473813"
+      },
+      "url": "https://www.semanticscholar.org/paper/165570c20f4741265cce1844a1bc20feb1b26c94",
+      "title": "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins",
+      "venue": "bioRxiv",
+      "year": 2021,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0256990&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8412298, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2021-02-07",
+      "journal": {
+        "name": "PLoS ONE",
+        "volume": "16"
+      },
+      "authors": [
+        {
+          "authorId": "36526409",
+          "name": "Joe G. Greener"
+        },
+        {
+          "authorId": "152898526",
+          "name": "David T. Jones"
+        }
+      ],
+      "abstract": "Finding optimal parameters for force fields used in molecular simulation is a challenging and time-consuming task, partly due to the difficulty of tuning multiple parameters at once. Automatic differentiation presents a general solution: run a simulation, obtain gradients of a loss function with respect to all the parameters, and use these to improve the force field. This approach takes advantage of the deep learning revolution whilst retaining the interpretability and efficiency of existing force fields. We demonstrate that this is possible by parameterising a simple coarse-grained force field for proteins, based on training simulations of up to 2,000 steps learning to keep the native structure stable. The learned potential matches chemical knowledge and PDB data, can fold and reproduce the dynamics of small proteins, and shows ability in protein design and model scoring applications. Problems in applying differentiable molecular simulation to all-atom models of proteins are discussed along with possible solutions. The learned potential, simulation scripts and training code are made available at https://github.com/psipred/cgdms."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "165570c20f4741265cce1844a1bc20feb1b26c94",
+        "title": "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2021,
+        "candidate_year": 2021,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1371/journal.pone.0256990"
+    ],
+    "matching_extracted_doi": "10.1371/journal.pone.0256990",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "165570c20f4741265cce1844a1bc20feb1b26c94",
+          "externalIds": {
+            "PubMedCentral": "8412298",
+            "MAG": "3126504584",
+            "DOI": "10.1371/journal.pone.0256990",
+            "CorpusId": 231885729,
+            "PubMed": "34473813"
+          },
+          "url": "https://www.semanticscholar.org/paper/165570c20f4741265cce1844a1bc20feb1b26c94",
+          "title": "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins",
+          "venue": "bioRxiv",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0256990&type=printable",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8412298, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-02-07",
+          "journal": {
+            "name": "PLoS ONE",
+            "volume": "16"
+          },
+          "authors": [
+            {
+              "authorId": "36526409",
+              "name": "Joe G. Greener"
+            },
+            {
+              "authorId": "152898526",
+              "name": "David T. Jones"
+            }
+          ],
+          "abstract": "Finding optimal parameters for force fields used in molecular simulation is a challenging and time-consuming task, partly due to the difficulty of tuning multiple parameters at once. Automatic differentiation presents a general solution: run a simulation, obtain gradients of a loss function with respect to all the parameters, and use these to improve the force field. This approach takes advantage of the deep learning revolution whilst retaining the interpretability and efficiency of existing force fields. We demonstrate that this is possible by parameterising a simple coarse-grained force field for proteins, based on training simulations of up to 2,000 steps learning to keep the native structure stable. The learned potential matches chemical knowledge and PDB data, can fold and reproduce the dynamics of small proteins, and shows ability in protein design and model scoring applications. Problems in applying differentiable molecular simulation to all-atom models of proteins are discussed along with possible solutions. The learned potential, simulation scripts and training code are made available at https://github.com/psipred/cgdms."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1371/journal.pone.0256990",
+      "DOI": "10.1371/journal.pone.0256990",
+      "type": "journal-article",
+      "issue": "9",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5154-1929",
+          "authenticated-orcid": true,
+          "given": "Joe G.",
+          "family": "Greener",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "David T.",
+          "family": "Jones",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "1932-6203"
+      ],
+      "page": "e0256990",
+      "container-title": [
+        "PLOS ONE"
+      ],
+      "title": [
+        "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins"
+      ],
+      "publisher": "Public Library of Science (PLoS)",
+      "abstract": "<jats:p>\n                    Finding optimal parameters for force fields used in molecular simulation is a challenging and time-consuming task, partly due to the difficulty of tuning multiple parameters at once. Automatic differentiation presents a general solution: run a simulation, obtain gradients of a loss function with respect to all the parameters, and use these to improve the force field. This approach takes advantage of the deep learning revolution whilst retaining the interpretability and efficiency of existing force fields. We demonstrate that this is possible by parameterising a simple coarse-grained force field for proteins, based on training simulations of up to 2,000 steps learning to keep the native structure stable. The learned potential matches chemical knowledge and PDB data, can fold and reproduce the dynamics of small proteins, and shows ability in protein design and model scoring applications. Problems in applying differentiable molecular simulation to all-atom models of proteins are discussed along with possible solutions and the variety of available loss functions. The learned potential, simulation scripts and training code are made available at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/psipred/cgdms\" xlink:type=\"simple\">https://github.com/psipred/cgdms</jats:ext-link>\n                    .\n                  </jats:p>",
+      "issued": {
+        "date-parts": [
+          [
+            2021,
+            9,
+            2
+          ]
+        ]
+      },
+      "volume": "16"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1371/journal.pone.0256990",
+    "best_candidate_doi": "10.1371/journal.pone.0256990",
+    "crossref_attempts": [
+      {
+        "doi": "10.1371/journal.pone.0256990",
+        "source_region": "first_page",
+        "position": 543,
+        "context": "in a coarse-grained force field for proteins. PLoS ONE 16(9): e0256990. https://doi. org/10.1371/journal.pone.0256990 Editor: Yang Zhang, University of Michigan, UNITED STATES Abstract Finding optimal param",
+        "priority_score": 0.57,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1371/journal.pone.0256990",
+          "DOI": "10.1371/journal.pone.0256990",
+          "type": "journal-article",
+          "issue": "9",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-5154-1929",
+              "authenticated-orcid": true,
+              "given": "Joe G.",
+              "family": "Greener",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "David T.",
+              "family": "Jones",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "1932-6203"
+          ],
+          "page": "e0256990",
+          "container-title": [
+            "PLOS ONE"
+          ],
+          "title": [
+            "Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins"
+          ],
+          "publisher": "Public Library of Science (PLoS)",
+          "abstract": "<jats:p>\n                    Finding optimal parameters for force fields used in molecular simulation is a challenging and time-consuming task, partly due to the difficulty of tuning multiple parameters at once. Automatic differentiation presents a general solution: run a simulation, obtain gradients of a loss function with respect to all the parameters, and use these to improve the force field. This approach takes advantage of the deep learning revolution whilst retaining the interpretability and efficiency of existing force fields. We demonstrate that this is possible by parameterising a simple coarse-grained force field for proteins, based on training simulations of up to 2,000 steps learning to keep the native structure stable. The learned potential matches chemical knowledge and PDB data, can fold and reproduce the dynamics of small proteins, and shows ability in protein design and model scoring applications. Problems in applying differentiable molecular simulation to all-atom models of proteins are discussed along with possible solutions and the variety of available loss functions. The learned potential, simulation scripts and training code are made available at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://github.com/psipred/cgdms\" xlink:type=\"simple\">https://github.com/psipred/cgdms</jats:ext-link>\n                    .\n                  </jats:p>",
+          "issued": {
+            "date-parts": [
+              [
+                2021,
+                9,
+                2
+              ]
+            ]
+          },
+          "volume": "16"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-14a1bad61d9a2beb.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-14a1bad61d9a2beb.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-14a1bad61d9a2beb.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "a7e236a971e7b24e32e2c61d6a7dcde30aa7096292e78d6d37efa27f9c86bc9b",
+    "chunk_count": 32,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1371/journal.pone.0256990",
+      "source_region": "first_page",
+      "position": 543,
+      "context": "in a coarse-grained force field for proteins. PLoS ONE 16(9): e0256990. https://doi. org/10.1371/journal.pone.0256990 Editor: Yang Zhang, University of Michigan, UNITED STATES Abstract Finding optimal param",
+      "priority_score": 0.57
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:08:41.937858+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1371/journal.pone.0256990",
+    "score": 1.08
+  }
+}

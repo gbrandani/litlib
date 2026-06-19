@@ -1,0 +1,659 @@
+[Page 1]
+
+Nucleic Acids Research, 2025, 53, gkaf670 https://doi.org/10.1093/nar/gkaf670 Computational Biology
+
+John Corrette1 , Jiachun Li2 , Hanjuan Shao2 , Praveen Krishna Veerasubramanian2 , Andrew Spakowitz 3 , Timothy L. Downing1 ,2 ,*, Jun Allard 1 ,4 ,*
+
+Mathematical, Computational and Systems Biology, University of California Irvine, Irvine, CA, 92797, United States Department of Biomedical Engineering, University of California Irvine, Irvine, CA, 92797, United States Department of Chemical Engineering, Stanford University, 450 Jane Stanford Way, Stanford, CA, 94305, United States Department of Mathematics and Department of Physics & Astronomy, University of California Irvine, Irvine, CA, 92797, United States
+
+*
+
+To whom correspondence should be addressed. Email: jun.allard@uci.edu Correspondence may also be addressed to Timothy L. Downing. Email: tim.downing@uci.edu
+
+Abstract The 3D organization of the genome—in particular, which two regions of DNA are in contact with each other—plays a role in regulating gene expression. Several factors influence genome 3D organization. Nucleosomes (where ∼100 base pairs of DNA wrap around histone proteins) bend, twist, and compactify chromosomal DNA, altering its polymer mechanics. How much does the positioning of nucleosomes between gene loci influence contacts between those gene loci? And to what extent are polymer mechanics responsible for this? To address this question, we combine a stochastic polymer mechanics model of chromosomal DNA including twists and wrapping induced by nucleosomes with two data-driven pipelines. The first estimates nucleosome positioning from ATAC-seq data in regions of high accessibility. Most of the genome is low accessibility, so we combine this with a novel image analysis method that estimates the distribution of nucleosome spacing from electron microscopy data. There are no fit parameters in the biophysical model. We apply this method to IL-6, IL-15, CXCL9, and CXCL10, inflammatory marker genes in macrophages, before and after inflammatory stimulation, and compare the predictions with contacts measured by conformation capture experiments (4C-seq). We find that within a 500-kb genomic region, polymer mechanics with nucleosomes can explain 71% of close contacts. These results suggest that, while genome contacts on 100 kb scales are multifactorial, they may be amenable to mechanistic, physical explanation. Our work also highlights the role of nucleosomes, not just at the loci of interest, but between them, and not just the total number of nucleosomes, but their specific placement. The method generalizes to other genes, and can be used to address whether a contact is under active regulation by the cell (e.g. a macrophage during inflammatory stimulation).
+
+Graphical abstract Polymer physics scale: 2 nm
+
+Locus A Locus B
+
+Locus C CXCL9 LEF1 Promoter
+
+A-B contact
+
+CTCF
+
+Nucleosome positioning 1 Predict
+
++LPS
+
+scale: ~100kbp
+
+Electron microscopy & ATAC-seq scale: 25 nm
+
+Nucleosome positioning 2
+
+Introduction The 3D organization of the genome—in particular, which two regions of DNA are in contact with each other—plays a role in regulating gene expression [1–3]. Many complex, interdependent factors influence genome 3D organization [2, 4–10], beginning with the polymer mechanics of chromosomal DNA, and including cohesins (in conjunction with DNA binding factors such as CTCF), lamins, phase separation, and
+
+CXCL9 LEF1 Promoter
+
+A-C contact
+
+CTCF
+
+Validation: 4C-seq
+
+nucleosomes, to name just a few. The current understanding of this organization is multiscale, with nucleosome clutches on the scale of kilobase pairs (kb), topologically associating domains (TADs) on the scale of hundreds of kilobase pairs, compartments on the scale of megabase pairs, and territories on the scale of the genome [11]. How DNA contacts are formed and how those contacts support chromatin accessibility through nucleosome remodeling for the binding of
+
+Received: October 28, 2024. Revised: June 18, 2025. Editorial Decision: June 21, 2025. Accepted: July 22, 2025 © The Author(s) 2025. Published by Oxford University Press on behalf of Nucleic Acids Research. This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial License (https://creativecommons.org/licenses/by-nc/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited. For commercial re-use, please contact reprints@oup.com for reprints and translation rights for reprints. All other permissions can be obtained through our RightsLink service via the Permissions link on the article page on our site—for further information please contact journals.permissions@oup.com.
+
+Nucleosome placement and polymer mechanics explain genomic contacts on 100 kb scales
+
+[Page 2]
+
+this is not “black box” training (which likely could provide higher predictive power) but rather the consequences only of known physical polymer properties and data-informed nucleosome positions. Therefore, these results suggest that, while genome contacts on 100 kb scales are multifactorial, they may be amenable to mechanistic, physical explanation.
+
+Materials and methods Computational simulation of contacts from the twistable worm-like model We use the twistable worm-like chain model with nucleosomes, as described previously in [7] and github.com/ ajspakow/wlcstat. The model is a stochastic polymer model that accounts for twisting and bending mechanics of DNA, as well as the entry and exit angles as DNA interacts with a nucleosome taken from known molecular structure of nucleosomes from crystallography and cryo-electron microscopy (cryo-EM) [25] and mechanical properties of DNA from experiments, including optical tweezer experiments [26]. This model requires as input the nucleosome positions. Given these, the algorithm uses a chain growth procedure to generate an ensemble of 3D conformations of the DNA between nucleosomes. The configurations between nucleosomes are chosen to obey the thermodynamic canonical ensemble with the energy functional (see equation 2 in [7])
+
+lP lT E= ω1 + ω22 ds + (ω3 − τ )2 ds, (1) 2kB T 0 2kB T 0 where lP and lT are the bending and twisting persistence lengths, τ is the twist repeat length, kB T is the thermal energy unit, and ω is given by ∂ t/∂s = ω × t where t is the tangent vector. The ensemble of configurations can then be queried for statistical quantities like the contact probability between any two loci. Snapshots of this algorithm’s output are shown in Figs 1 (top right), 3I, and 5D. For the uniform model, we take a mean spacing μ and a spacing variability σ , and place a nucleosome every μ + X bp, where X ∼ U(−σ , σ) and U is a uniform random distribution. For the Poisson process, we randomly place nucleosomes every Y bp, where Y has a probability distribution pY (y) = (1/λ) exp(−y/λ), where our exponential distribution is defined such that the expected value E[Y] = λ. Once we randomly sample nucleosomes, we compute the lengths of exposed DNA between nucleosome to generate a list of nucleosome spacings. This list of nucleosome spacings is then provided as input to a chain growth algorithm to compute the 3D conformation of DNA, with nucleosome wrapping, under random thermal fluctuations. For each conformation, we count each base pair within 10 nm of the locus of interest (usually the TSS). We repeat this a minimum of 150 000 randomly generated polymer conformations and average these scores together. The computation takes ∼2 h on an Intel Xeon Gold 6336Y 24-core CPU at 2.4 GHz.
+
+Nucleosome spacing from EM data We develop an algorithm for learning nucleosome spacings from EM microscopy data of heterochromatin, specifically here using data from [19]. We first determine the centroids of the nucleosomes in the EM data. To do so, we binarize the 3D EM image with a noise threshold of 95% of the maxi-
+
+regulatory factors remain largely unknown. The full set of biophysical factors that influence genome organization presents a formidable challenge to study. Therefore, to disentangle this complexity, we ask how much can be explained by nucleosome positioning and polymer mechanics alone? Nucleosomes are genomic structures comprising ∼100 base pairs of DNA wrapped around octameric assemblies of histone proteins [7]. While one established role of nucleosomes is to directly control access to a locus [1], nucleosomes also bend, twist, and compactify chromosomal DNA, altering its polymer mechanics [7]. This raises two possibilities: first, that the number of nucleosomes in between two loci could modulate their contact; second, that specific placement of these nucleosomes, even at approximately the same total number of nucleosomes (i.e. nucleosome frequency), could induce either the formation of new contacts or the loss of existing contacts, as shown in Fig. 1. There is mounting evidence for nucleosomes as key contributors in this role, including in physical models [12], synthetic plasmids [13], and experimental perturbations of linker length [9]. Compaction by specific nucleosome placement has been shown to encode significant architectural features of the genome in budding yeast [14]. These prior studies leave open the question of whether nucleosomes alone can encode long-range genomic contacts in higher eukaryotes. Furthermore, nucleosome positions change rapidly (within minutes to hours) in response to cellular stimuli, e.g. during macrophage exposure to pro-inflammatory stimuli [15, 16]. This leads us to a third question: to what degree are polymer mechanics and nucleosome positioning predictive of contact after a cell undergoes a functional change (e.g. inflammatory activation in macrophages)? And could these dynamics in nucleosome occupancy coordinate long-range (>10 kb) contacts between putative regulatory regions associated with active nearby gene promoters? We address the first possibility by using a stochastic polymer model. Addressing the second possibility requires the polymer model be combined with knowledge of the specific placement of nucleosomes in a particular genomic region of interest. We achieve this with two data-driven pipelines. The first estimates nucleosome positioning from ATAC-seq data in regions of high accessibility [17, 18]. Most of the genomic regions are low accessibility, so we combine this with a novel image analysis pipeline that estimates the distribution of nucleosome spacing from in vivo EM data [19]. With the aid of these two data-driven pipelines, there are no fit parameters in the biophysical model. Inflammation and the accompanying immune cell activation have provided a useful example for genome organization changes during a cell state transition [20]. Herein, we study macrophages undergoing classical pro-inflammatory activation induced by a bacterial cue, lipopolysaccharide (LPS) [21], providing the opportunity to study the transition from unstimulated (before LPS) to stimulated (after LPS) cell states. We apply the method to gene loci for CXCL9, CXCL10, IL6, and IL-15, which are inflammatory marker genes that are known to be dynamically regulated in human macrophages following inflammatory stimulation [22, 23]. We compare model predictions with contacts measured experimentally by viewpoint-targeted chromatin conformation capture followed by sequencing (4C-seq). We find that within a 500-kb genomic region, polymer mechanics with nucleosome positions can explain 71% of close contacts (P = 4 × 10−8 ). Notably,
+
+[Page 3]
+
+Locus A Locus B
+
+Nucleosome positioning 1
+
+scale: 2 nm
+
+Locus C
+
+A-B contact scale: ~100kbp
+
+Nucleosome positioning 2
+
+A-C contact
+
+Validation: 4C-seq Predict
+
+Electron microscopy inference scale: 25 nm
+
+CXCL9 LEF1 Promoter
+
+CTCF
+
+CXCL9 LEF1 Promoter
+
+CTCF
+
++LPS
+
+ATAC-seq scale: 10 kbp
+
+Figure 1. Nucleosomes (pink) between loci introduce “kinks” in chromosomal DNA, potentially driving contacts between distant genomic loci. We find that this is sufficient to significantly modulate the contact of genomic loci on ∼100 kb scales, and specifically that the positioning of nucleosome, even while holding constant the total number of nucleosomes, can introduce or reduce long-range contacts. Schematic of data driven mechanistic model pipeline: We combine ATAC-seq [24] and electron microscopy (EM) [19] data with a mechanistic model of the polymer physics of chromosomal DNA [7] to predict contacts between loci, and validate these predictions with 4C-seq. (Example EM image is synthetic test data.) We find that contact with some transcription factor (TF)-binding motifs (e.g. LEF1) is gained and some (e.g. CTCF) is lost during inflammatory response in macrophages (“+LPS”).
+
+mum voxel value. We find that naked DNA is fully eroded and the nucleosome cores remain intact in the image. We then use the cc3d Python package and the function connected_components to compute the unique connected 3D components in the image to cluster and compute the centroids of each disjointed candidate nucleosome. With a list of centroids in hand, we return to the original, non-binarized image and use Dijkstra’s algorithm [27] to compute nearest neighbor distances between all centroids. A centroid included in a previous pair is excluded from future pairs. The Dijkstra’s algorithm weighs all paths by both their intensity under EM and their path length, and returns the minimal path. We found that this method is the most robust: A method that simply computes shortest paths between detected nucleosomes would ignore DNA curvature, while, on the other hand, many paths are partially disconnected, with gaps that would cause problems with a method that only considers EM intensity. To validate our method, we simulate DNA in 100 randomly generated 100-kb windows via the ATAC-free algorithm with a uniform nucleosome spacing of 30, 60, and 90 ± 20 bp (slightly wider distributions than those presented in Fig. 2A). We then apply binary dilation with a diameter of 2.5 nm to each 1 nm3 voxel containing a bp-long segment of the polymer, as well as a 5.5 nm dilation to the known positions of the nucleosome cores, so as to match known diameter of DNA and half the diameter of nucleosomes [25,
+
+28]. We seek to apply the same noise and uncertainty to the synthetic data as in the real data, which we estimate has a Gaussian blur (point spread function) width of 1.8 nm, and a contrast ratio of 2.5 between nucleosomes and DNA (see Supplementary Fig. S2). We apply Poisson random noise to the synthetic EM image and Gaussian noise ranging from a standard deviation of 0.0 to 4.0 nm. We then perform the nucleosome spacing learning algorithm as described above, visually described in Supplementary Figs S3–S5. Finally, we compare the resultant learned nucleosome spacing distribution to the simulated ground truth in Fig. 3 and Supplementary Fig. S6. At intermediate Gaussian blur levels, the estimate is below the ground truth, due to the construction of our synthetic EM image, where nucleosomes are erroneously connected to themselves. This effect is absent at larger (and smaller) Gaussian blur levels, which more closely represents that seen in real ChromEMT data. Overall, these tests demonstrate that the method is able to correctly learn the mean nucleosome spacing for the noise parameters identified from the real data.
+
+Nucleosome spacing from combined ATAC-seq and EM-informed model First, we detect peak regions in the ATAC-seq data using MACS2 [29] with a window size of 1 kb. This is to ensure
+
+Polymer physics
+
+[Page 4]
+
+Figure 2. Nucleosome spacing pattern, not just mean spacing, impacts long-range DNA contact probability. DNA contact probability of different nucleosome spacing (i.e. linker length) models, defined as the proportion of configurations with the two loci within 10 nm, shown as heatmaps (A–C) and families of curves (D–F). (A, D) Evenly spaced nucleosomes with no variation result in a repeated pattern of high contact (bright ridges), consistent with the model assumption that the twist repeat of DNA is 10.5 bp. (B, E) Introducing variation into the uniform model results in the loss of the spaced ridges and reveals larger regions of increased and decreased contact probability. (C, F) Exponentially distributed nucleosome spacings (i.e. a spatial Poisson process or lattice gas) result in a smoother contact probability profile. Contact probabilities are highly sensitive to changes in nucleosome spacing; e.g. changing from 30 to 90 bp results in an 88% decrease in contact probability 1 kb away from the locus of interest in the Poisson process contact probability model (panel F, dashed arrows). The magenta dashed vertical line in panel (C) and curve in panel (F) indicate the best-fit estimate from our analysis of EM data (Fig. 3).
+
+that the regions in ATAC-seq that we determine nucleosome positioning from are of sufficient sequencing depth. We refer to these as high-ATAC-coverage regions. We then use NucleoATAC [17] to determine the probability distribution of nucleosome placement. Briefly, NucleoATAC uses a model fit on Saccharomyces cerevisiae to create estimates of the positions of nucleosomes along the genomic body using ATAC-seq fragment size and location distributions as input. This model works by running a V-plot, a learned distribution of fragment size relative to the position of a dyad, across the genome, and cross-correlates with the genomic spatial fragment size distribution. Thus, the output of this model can be interpreted as a
+
+probability density function for the locations of nucleosomes across the genome. A higher cross-correlation score coincides with a higher probability with a nucleosome being centered at that genomic position. We verify that our algorithm is behaving as stated by examining the nucleosome densities compared to the NucleoATAC score in Supplementary Fig. S8, as well as verify that the distribution of local maxima in NucleoATAC signal is similar to nucleosome placement probabilities in Supplementary Figs S9 and S10. Once we have the NucleoATAC probability distribution for a given region of DNA that is high ATAC coverage, we sequentially sample the probability distribution for nucleosome center positions un-
+
+[Page 5]
+
+25 nm
+
+Ground truth
+
+0.04
+
+Estimate
+
+0.03 0.02
+
+0.05
+
+0.01
+
+25 nm
+
+0.00
+
+Nucleosome Spacing (bp)
+
+Ground truth + IQR Estimate + IQR
+
+Nucleosome spacing (bp)
+
+Gaussian Blur Std Deviation(nm)
+
+Analysis of experimental data
+
+0.025
+
+0.020
+
+0.015
+
+0.010
+
+200 nm
+
+200 400 600 800
+
+200 400 600 800
+
+1.0
+
+Weibul Fit Exponential Fit Nucleosome spacing from EM
+
+Fraction of voxels
+
+0.005 0.000
+
+0.8 0.6 0.4 0.2 6.817 nm 0.0
+
+Nucleosome Spacing (bp)
+
+Simulation at EM-learned model parameters XY
+
+XZ
+
+YZ
+
+100 nm
+
+400 4000
+
+2 4 6 8 10 12 14 Erosion radius (nm) Erosion analysis of simulated data at EM-learned parameters
+
+1.0 Fraction of voxels
+
+Erosion analysis of experimental data
+
+0.8 0.6 0.4 0.2
+
+6.517 nm
+
+0.0
+
+4 6 8 10 12 14 Erosion radius (nm)
+
+Figure 3. Learning nucleosome spacing distribution from EM data. (A–D) Validation of image analysis pipeline on synthetic data. (A) Sample conformation of synthetic DNA with base-pair spacing distributed uniform randomly with mean 60 ± 20 bp, shown as a synthetic EM image with varying voxel intensity. (B) Sample nucleosome spacing paths estimated by novel Dijkstra’s algorithm pipeline, overlaid on image after estimated nucleosome cores are subtracted (see the “Materials and methods” section). (C) Comparison of ground-truth distribution of nucleosome spacing and learned distribution for 100 random synthetic EM images. (D) The learned nucleosome spacing, summarized by the mean and interquartile range, for various Gaussian blurs. Vertical dashed line indicates the point spread function estimated from the data of [19]. (E) Sample slice of 3D EM microscopy data from [19]. (F) Same as panel (E), after binarization and nucleosome center subtraction for analysis. (G) Learned distribution of nucleosome spacings. Data fit an exponential distribution with a mean of 43 bp. We also fit a Weibull distribution to the data, where we find our scale parameter to be 1.196, which indicates that our distribution is close to exponential. (H) Erosion analysis on EM data, following method described by Ou et al. [19]. X-axis intercept (6.817 nm) is indicative of cluster radii in the image. (I) Sample conformation of synthetic DNA using our learned nucleosome spacing distribution. Data exhibit similar qualitative “clumping” of chromosomal DNA that was identified in [19]. (J) Erosion analysis, same as panel (H), on synthetic data. X-axis intercept (6.517 nm) is indicative of cluster radii in the synthetic polymers and is within 0.3 nm of the real data in panel (H) (6.817 nm).
+
+til we can no longer place a nucleosome center without being within ±146 bp (the size of DNA wrapped around the nucleosome) of any previously placed nucleosome center. We then take the remaining regions of DNA that are not high ATAC coverage, and fill them with nucleosomes according to a Poisson process (i.e. exponential distribution) with mean 43 bp, as learned from the EM data, as described in the previous section.
+
+Inflammatory stimulation of THP-1-derived macrophages, 4C-seq library preparation, and sequencing 4C-seq was performed according to the protocol described by Krijger et al. [30], with minor modifications. Briefly, 10 million THP-1 cells were seeded in 10-cm dishes and treated with 20 nM phorbol 12-myristate 13-acetate for 48 h, followed by stimulation with 100 ng/ml ultrapure lipopolysaccharide
+
+Method validation on synthetic data
+
+[Page 6]
+
+Contact signal processing To compare our ATAC-informed and experimental 4C-seq contact signals, we seek to identify locations of close contact with the locus of interest. We first perform monotonic regression and subtract the resulting fit from the original data. Monotonic, or isotonic, regression is a technique that fits a piecewise-constant function to data, while enforcing monotonicity. Since we expect contact to peak at the TSS of each gene and to decay to the left and to the right, we fit two separate monotonic regression models for each side of the site and enforce that they converge to the same peak value at the locus of interest. We do not consider data within ±10 kb of the locus of interest. We then use a third-order Savitzky– Golay filter with a window size of 25 kb. Background removal and smoothing of this nature leads to the data exhibiting heteroscedasticity, with local variance increase further away from the locus of interest (Supplementary Fig. S13B), which can in turn lead to errors in peak finding. Thus, to address this we normalize our data with a rolling z-score with a window size of 25 kb, consistent with our choice of filter window size.
+
+Contact detection, hyperparameter selection, and statistical significance With data processed as above, we use wavelet peak finding with the SciPy function find_peaks_cwt [31, 32]. This method explores wavelengths in the interval [α, β], where α and β are hyperparameters of the model. We repeat this procedure for both the 4C-seq and the ATAC-informed contact signals. Although the biophysical model has no fit parameters, the wavelet peak-finding algorithm has two hyperparameters. To fit hyperparameters α and β, we first determine the 4C-seq contact signal parameters by fitting peaks to two replicates of the 4Cseq data, and predicting each other for the 0-h LPS data only. To quantify the predictive performance, for each choice of hyperparameters, we compute the proportion of peaks within 10 kb of replicates 1 and 2, respectively, which we term the ACC and precision, or positive predictive value (PPV; alternatively 1 − FDR), and take the minimum of these as our metric. In other words, we optimize hyperparameters to be
+
+ˆ = argmax min ACC(α, β ), PPV(α, β ) [ ˆα, β] α,β
+
+= argmax min ACC(α, β ), 1 − FDR(α, β ) . (2) α,β
+
+Once we compute αˆ and βˆ on the 4C data, we use these parameters to compute the peak locations on the average of the 4C LPS 0-h replicates to use as the ground truth. We then repeat the above optimization, where we have the ATAC-informed contact map predicting this 4C-seq ground truth in the same manner. To estimate the statistical significance of our results, we compare the results of our ATAC-informed model to a null model in which we assume to be uniform random placement of N peaks, where N is the number of peaks in our estimated 4C ground truth. We sample M different random peak placements, compute the performance metric for each of these, and count the proportion of these placements where this statistic is larger than the performance of the polymer model. In other words, we count the number of random placements with
+
+min ACC(α, β ), PPV(α, β )
+
+≥ min ACC(αˆ ATAC , βˆ ATAC ), PPV(αˆ ATAC , βˆ ATAC ) . (3) Note that doing so with the training data (unstimulated cells) is not a valid hypothesis test, since this is the result of an optimization procedure. We then repeat P-value procedure on our test data (LPS-stimulated cells), without refitting our hyperparameters, giving a true statistical P-value.
+
+Results Varying nucleosome positioning within the physiologically observed parameter range leads to order-of-magnitude changes in contact probability We use an existing model of the polymer mechanics of chromosomal DNA [7] to ask how much do contacts change when nucleosome positioning is varied within the physiologically observed parameter range? This model accounts for twisting and bending mechanics of DNA, as well as the entry and exit angles as DNA interacts with a nucleosome, taken from known molecular structure of nucleosomes from crystallog-
+
+(Invitrogen, Cat. tlrl-3pelps), which we herein refer to as “stimulated” (versus “unstimulated”). Cells were fixed with 2% paraformaldehyde for 10 min at room temperature, quenched with 1 M glycine, and lysed using cell lysis buffer comprising 1 M Tris–HCl, NP-40, Triton X-100, 5 M NaCl, 0.5 M ethylenediaminetetraacetic acid (EDTA), and 100× proteinase inhibitor. The supernatant was removed, and 10 ml of cold 0.13 M glycine in phosphate buffered saline was added to quench the reaction, followed by shaking on ice for 10 min. Cells were lysed in 5 ml of cold cell lysis buffer, comprising 1 M Tris–HCl, NP-40, Triton X-100, 5 M NaCl, 0.5 M EDTA, and 100× proteinase inhibitor. The mixture was shaken on ice for 15 min, and then scraped and shaken for another 5 min. The nuclei were collected by centrifugation at 500 × g for 5 min at 4◦ C, resuspended in 1.2× restriction enzyme (RE) buffer, and treated with 0.3% sodium dodecyl sulfate and 2.5% Triton X-100, with incubation at 37◦ C between steps. Chromatin was fragmented by subjecting isolated nuclei to primary RE digestion using the 4-bp cutter Csp6I (Thermo Fisher, Cat. ER0211) to achieve optimal contact-mapping resolution, followed by in situ ligation in a reaction mix containing ligase buffer and ligase, incubated overnight at 16◦ C. After ligation, cross-links were reversed by overnight incubation with Proteinase K at 65◦ C. DNA was purified using SPRI beads and subjected to a second RE digestion using NlaIII (NEB, Cat. R0125L) to generate sticky ends for circularization. The digested DNA was then ligated again, and the resulting 3C templates were purified using AMPure XP beads (Beckman Coulter, Cat. A63881), and quantified using the Qubit dsDNA BR Assay Kit. Next, two rounds of polymerase chain reaction (PCR) amplification were conducted: an inverse PCR to amplify captured regions, followed by an indexing PCR to generate sequencing-ready libraries. Libraries were purified using AMPure XP beads and sequenced on an Illumina MiSeq platform. Data processing, including demultiplexing, trimming, and mapping to the reference genome (hg38), was performed using the pipe4C pipeline as described by Krijger et al. [30]. The PCR primers used Primers are shown in Table 1. Universal forward primer for indexing (5 –3 ): AATGATACGGCGACCACCGAGATC TACACTCTTTCCCTACACGACGCTCTTCCGATCT.
+
+[Page 7]
+
+Table 1.
+
+Viewpoint gene primers
+
+Forward primer for inverse PCR (5 –3 )
+
+Reverse primer for inverse PCR (5 –3 )
+
+TNF (region 1)
+
+TACACGACGCTCTTCCGATCTTGGGGGT AGGGTTAGTAC TACACGACGCTCTTCCGATCTTGGGGGT AGGGTTAGTAC TACACGACGCTCTTCCGATCTCCTTCCC TGCCCCAGTAC TACACGACGCTCTTCCGATCTCCTTCCC TGCCCCAGTAC TACACGACGCTCTTCCGATCTCCTTCCC TGCCCCAGTAC TACACGACGCTCTTCCGATCTTTTGGATAA CTGGTCATG TACACGACGCTCTTCCGATCTCACAGCA TTCAATAGTAC TACACGACGCTCTTCCGATCTAGGACTC GATGGAGGTAC
+
+ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTACACTTAGTGAGCACCTTC ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTTCACTCCATACACACTTAGT ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTGCTCGAGGGCAGAATGAGC ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTGGGCTCGAGGGCAGAATG ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTTCTTTCGTTCCCGGTGGG ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTCTGACTGCTACACAATGT ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTTATGCAATGAAGTTCTTTTT ACTGGAGTTCAGACGTGTGCTCTTCCGA TCTCCGGTCTCCTCCTCTACC
+
+TNF (region 2) IL-6 (region 1) IL-6 (region 2) IL-6 (region 3) CXCL9 (region 1) CXCL10 (region 1) IL-15 (region 1)
+
+raphy and cryo-EM [25] and mechanical properties of DNA from experiments including optical tweezer experiments [26]. This model requires as input the nucleosome positions, while all other parameters are fixed for the purposes of the present work. Given these, the algorithm uses a chain growth procedure to generate an ensemble of 3D conformations of the chromosomal DNA, which can then be queried for statistical quantities like the distribution of distances between any two loci. Snapshots of this algorithm’s output are shown in Figs 1 (top right), 3I, and 5D. See [7] for full details. Here, we repurpose this model to look at contact probabilities as a function of distance between two loci. For convenience, we refer to one locus as the locus of interest. Typically, we choose the TSS or a nearby locus. We define the contact probability as the proportion of configurations with the two loci within 10 nm. As shown in Supplementary Fig. S1, our results are not sensitive to this choice. Before exploring contact probabilities with nucleosome positions extracted directly from experimental data (next section), here in Fig. 2, we perform an ab initio study with simplified assumptions for nucleosome positions. In this work, we specify nucleosome positions by specifying the sequence of nucleosome spacings, also called linker lengths, which is the number of base pairs between adjacent nucleosomes, and which does not include 147 base pairs assumed to be occupied by the nucleosome itself. We consider three scenarios: First, we assume nucleosomes are evenly spaced (Fig. 2A and D). Second, we assume nucleosomes are randomly spaced according to a uniform random distribution with a fixed mean, and a range of ±10 bp (Fig. 2B and E) following [7]. Finally, we assume nucleosomes are spaced according to an exponential distribution (Fig. 2C and F). This exponential distribution could arise from a spatially independent (Poisson) process, or the equilibrium of a 1-D lattice gas. In the simulations where there is no random variation in nucleosome spacing (Fig. 2A), contact probability repeats with a spacing consistent with the model assumption that the twist repeat of DNA is 10.5 bp. Next, we allow variation where nucleosome spacing is distributed uniformly with a mean ± 10 bp (Fig. 2B). Here, the local maxima that arose from the twist persistence are “averaged out,” resulting in a more smoothed-out contact probability profile. We see a local maximum ∼1 kb. This maximum occurs when the distance is approximately equal to the persistence length. It coincides with a balance of energetic cost
+
+and bending and entropic cost for looping. To elaborate, the persistence length is the length of polymer at which its angle is approximately uniformly random. When the polymer length is approximately equal to the persistence length, it is likely to bend back on itself. If it is much shorter than the persistence length, it sticks too straight to bend over; much longer than its persistence length, it is (on average) too far away in space. Finally, we allow variation where nucleosome spacing is distributed exponentially (Fig. 2C). Some of the qualitative features of the previous nucleosome placement models are preserved, but with a larger region of increased contact around the locus of interest. The maximum observed in Fig. 2A and B is absent. As more randomness is added to the polymer mechanics (in this case, via nucleosomes), the persistence length becomes more random, so the critical length that maximizes looping becomes random, and no maximum is observed in the heatmap. Taken together, these results demonstrate that contact probabilities are highly sensitive to changes in nucleosome spacing. For example, changing from 30 to 90 bp results in a decrease in contact probability 1 kb away from the TSS of 88%, almost 10-fold (Fig. 2F, dashed black arrows). These results also demonstrate the important role of nucleosome spacing pattern, and not just mean spacing or density. Motivated by these, we next seek to estimate the spacing distribution in cells.
+
+Analysis of existing EM images allows learning nucleosome spacing in low-ATAC-coverage regions To put the previous results into the context of a specific gene, in a cell undergoing regulated changes in gene expression, we require a method to extract nucleosome positions from data. This is possible using the DNA accessibility sequencing method ATAC-seq [24] and algorithms such as NucleoATAC [17] or NucPosSimulator [18]. However, we found that most of the genomic landscape (e.g. ≈98% for within ±200 kb of IL-6 TSS) has insufficient ATAC-seq data coverage, defined as any region of the ATAC-seq data that is not identified as a peak region by MACS2 peak calling [29]. Therefore, for these low-ATAC-coverage regions, we develop a nucleosome spacing learning algorithm that uses EM images of chromosomal DNA, combined with existing EM images [19]. The full method is described in the “Materials and methods” section. Briefly, we first binarize these data to a threshold such that only the dark core of the nucleosome remains, and
+
+Viewpoint gene locus
+
+[Page 8]
+
+An ATAC/EM-informed polymer model to understand the effects of nucleosome positioning and polymer mechanics on long-range contact probabilities and loci of high contact for specific genes The above method allows the study of nucleosome-driven contacts for a specific gene. We first apply the method to CXCL9, a gene that is upregulated in response to inflamma-
+
+tory stimulation [22, 23]. This gene, along with the other genes we study, was chosen for its known role in inflammation as well as sufficient ATAC-seq reads for nucleosome position estimation [16]. The full pipeline for simulation uses ATAC-seq data to place nucleosomes on regions of high ATAC coverage with the NucleoATAC algorithm [17], and then uses the EM-informed model presented above for regions of low ATAC coverage, resulting in a complete map of nucleosome placements around the CXCL9 TSS. Our algorithm for sampling nucleosome placements from NucleoATAC in regions of high ATAC coverage is described in the “Materials and methods” section. In Supplementary Figs S8–S10, we show that our nucleosome placement algorithm is consistent with the NucleoATAC data. We can then perform the same stochastic polymer mechanics calculation as in Fig. 2 but with datainformed nucleosome positions. Using published ATAC-seq data from [16], we perform this simulation for ATAC-seq data from both unstimulated macrophages and macrophages stimulated with bacterial LPS for 1 h. Crucially, there are no fit parameters in the biophysical model, since DNA mechanical properties are fixed by previous experiments [7, 25, 26]. Note that while MNase-seq may provide an alternative and more direct measurement of nucleosome positions, a method that uses ATAC-seq is valuable, since ATAC-seq data are more prominent (by a rough estimate, the GEO database has around 17 000 MNase-seq datasets and 64 000 ATAC-seq datasets). The configurations, as viewed by radius of gyration and root-mean-square distances, show discrepancy from the 0.5 power law predicted by the simplistic Gaussian chain assumption (Supplementary Fig. S11), consistent with simulations of chromosomal DNA in budding yeast [14]. We plot the datainformed contact probabilities in Fig. 4C. For comparison, we overplot the contact probabilities predicted for the exponentially distributed nucleosome spacing distribution estimated from EM data alone (so, same as Fig. 2F), which approximately obeys Gaussian chain statistics. The discrepancies between these two nucleosome placement assumptions demonstrates that real nucleosome placement can indeed significantly modulate contact, both quantitatively and in introducing new qualitative features, e.g. a sudden reduction in contact around −25 kb. The raw contact probabilities show significant differences between the contact probabilities before and after LPS stimulation (blue and red curves in Fig. 4C). One example locus is shown in contact with the TSS in Fig. 4D. This contact probability quadruples upon LPS stimulation, suggesting that nucleosome placement alone is sufficient to significantly alter contact probabilities. Note that this is not simply a consequence of increasing or decreasing the number of nucleosomes, since the total number of nucleosomes varies <2% between the two conditions. To further characterize the conformations before and after LPS stimulation, we produce Hi-C-like contact maps in Supplementary Fig. S12. In these contact maps, we see that on average the polymers form associated domains with edges coinciding with locations of NucleoATAC peaks. In other words, our polymer morphology is primarily determined by the accessible regions of DNA input into our model via ATAC-seq. We note that when compared to other works with Hi-C, Micro-C, or other methods, such as [36], our predicted contact maps decay faster, and the associated domain-like structures are not as strongly defined. We attribute this to our model not account-
+
+perform 3D connected component analysis to identify each distinct candidate nucleosome. We then apply a novel iterative pathfinding algorithm on the original, unbinarized image. This algorithm weighs all paths by both their path length and their intensity under EM (where darker, i.e. denser, regions are weighted less), and returns the minimal path between candidate nucleosomes identified from the binarized image. This proved advantageous: A method that simply computes shortest paths between detected nucleosomes would ignore DNA curvature, while a method that only considers EM intensity fails on many nucleosome pairs where the path is disjoint (due to imaging noise). We test the method on synthetic data with a known groundtruth distribution of nucleosome spacings (Fig. 3A–D), finding that the learned distribution is similar to the ground truth in terms of its mean and interquartile range, with larger tails in the learned distribution (Fig. 3C and D). Testing on synthetic data is further elaborated in the “Materials and methods” section and Supplementary Figs S2–S6. We then apply the method to EM images from [19], taken from heterochromatin in U2OS cells. We use a region of 328 nm × 328 nm × 119.72 nm, resulting in ≈1400 nucleosomes (Fig. 3E). We find a nucleosome spacing distribution that is well approximated as exponential, with a mean of ≈43 bp, as shown in Fig. 3G and indicated in Fig. 2C and F. This learned distribution of exponential with mean of 43 bp is in the range of values predicted and/or assumed in previous work [8, 33, 34]. We simulated the polymer mechanics model at the learned distribution and parameters, and then we use this to conduct comparisons with the original data. Besides the qualitative comparison in Fig. 3I showing similar clutch sizes, we provided two quantitative comparisons. First, we repeat the erosion analysis in [19] on both the real data (Fig. 3H) and synthetic data (Fig. 3J). Briefly, in erosion analysis, the binarized 3D image is convolved with a sphere of increasing radius, and volume of the new image (which has been eroded) is measured. The resulting volume as a function of erosion radius is then fitted with a linear function for the first five data points as done in [19]. We specifically quantify the comparison with the horizontal axis intercepts, finding radius 6.8 and 6.5 nm in the real data and synthetic polymer models, respectively. Second, we compute the chromatin packing scaling factor D as defined in [35]. This scaling factor estimates the fractal behavior of a polymer. Previously, Li et al. [35] determined that D ≈ 2.6 before a transition around autocorrelation radius of 102.4 nm. As Li et al. [35] point out, the packing factor cannot be directly measured in simulated polymers, but it can be approximated as the inverse of the scaling exponent of the end-to-end distance. Using their described methods, we observe a similar transition length, as shown in Supplementary Fig. S7, and using this, we estimate D ≈ 2.8.
+
+[Page 9]
+
+Unstimulated LPS-Stimulated EM-learned-only, unstimulated Open ATAC-seq, unstimulated
+
+10-1 10-2
+
+10-1 10
+
+2.0 1.5 1.0 0.5 0.0
+
+10-4 10-5 −250
+
+10-2
+
+7.67
+
+Model-predicted contact probability
+
+100 10
+
+Contact Probability
+
+ATACseq Coverage NucleoATAC Score
+
+7.68 7.69 7.70 7.71 1e7 Chr4 Genomic Location
+
+ATACinformed
+
+EMinformed
+
+ATACinformed
+
+10-3
+
+10-4 −40
+
+−20
+
+Distance from CXCL9 TSS (kb)
+
+LPS-stimulated
+
+Unstimulated
+
+No contact p = 0.99004
+
+Contact p = 0.00241
+
+No contact p = 0.99759
+
+Contact p = 0.00996
+
+Figure 4. Simulation of polymer mechanics of CXCL9 with nucleosomes placed according to ATAC-seq and EM data. (A) Example ATAC-seq coverage (top) and NucleoATAC output probability density function (bottom) centered at CXCL9 TSS ± 250 kb. Peaks correspond with a higher probability of nucleosome presence in transcriptionally active DNA. ATAC-seq and NucleoATAC maps are sparse and require EM data to fill in low-coverage regions. (B) The MACS2-identified high-coverage regions are analyzed using NucleoATAC [17], which gives a probability distribution of nucleosome center positions in all peak regions. We sample these regions for nucleosomes and then fill the remaining EM-informed regions with nucleosomes according to the learned distribution (described in Fig. 3). This list of nucleosome spacings for the genomic region of interest of DNA is provided to the polymer mechanics model [7], and we perform Monte Carlo sampling of the 3D conformation of DNA in thermal equilibrium. (C) Contact probability profiles for unstimulated (pre-LPS) and 1-h post-LPS-stimulated macrophages within a ±50 kb window around the transcriptional start site (TSS) of CXCL9. EM-only and open ATAC-seq are shown for comparison. Open ATAC-seq corresponds to not placing any nucleosomes in MACS2-identified high-coverage regions as seen in panel (B). The EM-only probability profile approximately behaves as a Gaussian chain. Inset is the same data but plotted on a ±250-kb window to demonstrate the genomic domain of simulation. (D) Sample conformations of CXCL9 before and after LPS stimulation. One example locus is shown in contact with the TSS; this contact probability quadruples upon LPS stimulation, suggesting that nucleosome placement alone is sufficient to significantly alter contact probabilities.
+
+ing for spacial restrictions on the polymers, such as a nuclear envelope, as well as no nucleosome–nucleosome interactions being explicitly modeled. To further characterize the conformations, we simulate 2D (i.e. pairwise) contact maps before and after stimulation in Supplementary Fig. S12. We observe association domains, which appear as triangles along the bottom edge of Supplementary Fig. S12. These association domains coincide with locations of NucleoATAC signal, representing regions of reduced nucleosome occupancy. We can compare the simulation with Hi-C, Micro-C, or other high-throughput conformation capture methods, such as data in [36], with several caveats. First, the domain size and resolution are different, with Hi-C on larger domains than
+
+the 500-kb domain simulated here. Second, we must compare relative changes in contact signal, since absolute contact signal depends on molecular details of the methods. Third, in both our work (Fig. 4C) and others [36], there is significant heterogeneity across genomic regions. With those caveats, the predicted contact maps in our nucleosome-only simulation decay faster (from 125 to 250 kb, roughly five-fold reduction in contact probability) compared to, for example, fig. 2B in [36] (from 125 to 250 kb, roughly two-fold reduction in contact signal). This implies that our simulated conformations are more expanded, suggesting that spatial restrictions not included in our model play a role. (Surprisingly, as presented below, this expanded conformation provides an intermediate step in accurate close-contact location prediction.)
+
+[Page 10]
+
+We next sought to identify specific loci that we could categorize as being in “close contact” with the locus of interest, namely the CXCL9 TSS. We perform background removal, smoothing, and normalization to produce a contact signal (see the “Materials and methods” section and Supplementary Fig. S13). We then use wavelet peak finding [32] to identify “peaks” in the contact signal, which we then refer to as predicted close contacts. Note that while the biophysical model that predicted the contact probabilities shown in Fig. 4C has no fit parameters, there are two hyperparameters in the wavelet peak-finding algorithm. To avoid overfitting, we optimize these hyperparameters on 4C data before LPS stimulation (Fig. 5A, C, and E, “Unstimulated,” which serves as the training dataset of LPS-treated human macrophages at 0 h), and then use the same peak-finding hyperparameters on 1-h post-LPS-treated cells (Fig. 5B, D, and F, “Stimulated,” which therefore serves as the validation dataset). A straightforward way to assess the predictive power of this model is via two quantities: the proportion of polymermechanics-predicted contacts that are within a tolerance distance of a 4C contact (i.e. the accuracy of the model) and the proportion of 4C contacts that are within a tolerance distance of a polymer-mechanics-predicted contact (i.e. the precision of the model, also called PPV, and is 1 − FDR where FDR is the false discovery rate). These are shown in Fig. 5E and F for various tolerance distances. At high tolerance, prediction becomes perfect, as expected. At the genomic distance of 10 kb, roughly the size of larger gene regulatory elements [37–39], the accuracy is 0.84 and precision is 0.72. This value has a Pvalue of .0128 compared to randomly guessing the locations of the same number of peaks. While this P-value is striking, it is comparable to the predictive power of nucleosome positioning for genomic domains on 40-kb regions in budding yeast [14]. This striking result indicates that polymer mechanics and nucleosome placement, alone, can account for a statistically significant proportion of contacts between two loci. Furthermore, we performed a similar analysis using one 4C replicate to predict another 4C replicate, and found that the average predictive power of 4C is 0.63 (Fig. 6B and Supplementary Figs S14 and S15), which is below the predictive power of our model. This between-replicate variability in 4C-seq data is roughly consistent with previous studies and 4C-seq peakfinding algorithms [30, 40, 41]. For example, a crude estimate from supplementary fig. S1B and C in [41], their peak identification has a between-replicate accuracy (1 − false positive rate) of around 70%, roughly in line with ours. This suggests that the predictive test of our model is not limited by the model itself, but the variability of the 4C data. Note that we report a P-value in Fig. 5C, but this should not be interpreted as a hypothesis test since it is part of the training set. Note also that we use an FDR instead of a false positive rate, since the latter is less meaningful for identifying ∼10 contacts on a region of ∼100 kb. Beyond CXCL9, we next sought to study other inflammatory genes, IL-6, IL-15, and CXCL10. Crucially, here we do not retrain the peak-finding hyperparameters (and recall there are no fit parameters in the biophysical model), reusing
+
+those we found for CXCL9. The resulting tracks are shown in Fig. 6A for the exponential model for nucleosome spacing in low-coverage regions. Tracks for the regular spacing and uniform spacing models are shown in Supplementary Fig. S19. We find that for all genes together, our model yields a metric of 0.70, corresponding to a P-value of 4.9399 × 10−8 , and comparable with that average predictive power of 4C as seen in Fig. 6B (lower solid) and Supplementary Figs S14 and S15.
+
+The range of validity of nucleosome-polymer-mechanics modeling As mentioned, many other factors influence genome organization besides polymer mechanics and kinks due to nucleosome placement. The scaling behavior of contacts exhibits different regimes at different genomic length scales [6, 42]. From these previous studies, we speculate that the simple model developed here would lose validity around 400 kb, where other effects such as fractal globule effects, and topological domains organized by regulatory complexes such as cohesins, may dominate. Therefore, we repeated the analysis, including polymer simulation, for a range of genomic domain sizes, and show the metric in Fig. 6B, for all four genes and two stimulation conditions. We compare this to the ability of one 4C replicate to predict another 4C replicate (red curve). As mentioned above, at this level of predictive performance, we expect the polymer model to be limited by the reproducibility of the 4C data. We also compare to the average predictive power of randomly placed contacts (dashed line; at this predictive performance, the P-value would be .5). We find that the model performs significantly better than random guessing, and comparable to the limitation of the 4C data. Furthermore, this appears to hold throughout a range of genomic distances, to 250 kb, suggesting that the nucleosomes continue to have a significant impact up to 250 kb. Computational limitations prevented us from simulating larger genomic distances.
+
+Role of linker length distribution in dense regions The above results raise the question of which aspect of nucleosome placement, specifically, is encoding the close contacts. We repeated the contact prediction pipeline with the two other (counterfactual) linker length distributions we studied in Fig. 2, using the mean spacing derived from EM as in Fig. 3G. Predicted and 4C-seq contacts are shown in Supplementary Figs S17–S19. Intriguingly, we find comparable predictive performance, with similar P-values (Fig. 6C, D, F, and G). This suggests that the long-range contacts are encoded in the sparse regions, plus the mean density in the dense regions, but not in the details of the distribution in the dense regions.
+
+Polymer-mechanics-predicted contacts harbor actively engaged regulatory factor DNA-binding motifs Given that long-range genomic contacts are widely thought to contribute to active gene regulation through the colocalization of regulatory factor binding hubs with distantly located gene promoters, whereby this co-recruitment can, for example, boost or “enhance” expression, we next examined the presence of regulatory binding factor motifs located within said contacts. To do so, we first selected genomic regions that overlapped as both experimentally observed (based on
+
+The ATAC/EM-informed polymer model is predictive of long-range genomic contacts observed by 4C-seq
+
+[Page 11]
+
+1.0 0.5 0.0
+
+C.
+
+Model
+
+−200 −100 (ACC,1-FDR) = (0.68,0.76) Contacts from 4C-seq
+
+−200 −100
+
+B. 1.0 0.5 0.0
+
+1.0 0.5 0.0
+
+D.
+
+Model
+
+4C
+
+ACC/FDR
+
+0.8
+
+ACC/FDR
+
+1.0
+
+0.8 ACC FDR
+
+0.2 0.0
+
+−200 −100
+
+Test Data Performance p-value: 0.0128
+
+1.0
+
+0.4
+
+Contacts from 4C-seq
+
+−200 −100 Distance from CXCL9 TSS (kb)
+
+F.
+
+Training Data Performance p-value: 0.0117
+
+0.6
+
+−200 −100 (ACC,1-FDR) = (0.84,0.72)
+
+4C
+
+−200 −100 Distance from CXCL9 TSS (kb)
+
+E.
+
+Contacts from Polymer Model
+
+Contact Signal
+
+Contact Signal Contact Signal
+
+Contacts from Polymer Model
+
+1.0 0.5 0.0
+
+Contact Signal
+
+Stimulated Cell Test Data
+
+Distance Tolerance (kb)
+
+0.6
+
+ACC FDR
+
+0.4 0.2 0.0
+
+Distance Tolerance (kb)
+
+Figure 5. ATAC–EM-informed polymer model predicts close contacts observed in 4C-seq. (A, B) Contact signals for unstimulated, pre-LPS human macrophage (left) and post-LPS 1-h-stimulated macrophage (left). Tracks from the ATAC–EM-informed model (top) and 4C (bottom) are shown with peaks overlaid as closed circles. (C, D) Predicted contact agreement between our model and 4C. Arcs represent identified contacts. (E) Training set performance. The pre-LPS dataset was used only to train the peak-finding algorithm (all biophysical parameters were fixed). Vertical dashed line shows where accuracy and precision were measured for hyperparameter optimization. (The P-value .0117 is shown but should not be interpreted as a hypothesis test, since it is on the training set.) (F) Validation set performance. Within a threshold of 10 kb, the model predicts peaks with an accuracy of 0.84 and a precision (1 − FDR) of 0.72 (vertical dashed line). This corresponds to a P-value of .0128 compared to randomly guessing the locations of the same number of peaks.
+
+4C-seq conserved across two biological replicates) and polymer-mechanics-predicted contacts across unstimulated (0 h) and LPS-stimulated (1 h) conditions. Using this strategy, we identified genomic contact regions that were either dynamically regulated (gained or lost) or static during macrophage stimulation (Supplementary Fig. S20A). We next used the MotifMap database to quantify the abundances of TF-binding motifs present within our genomic contact regions and found that these regions harbored a total of 243 motifs spanning 40 distinct TFs (Supplementary Fig. S20B), with the top 3 most abundant being LEF1, YY1, and IRF8. Notably, LEF1 (lymphoid enhancer binding factor 1) was the most abundant motif within our contacts and is known to regulate gene expression through DNA looping mechanisms [43] and its role in 3D genome organization has particularly been implicated in immune regulation of myeloid lineages [44]. We also observed overlap with the binding motif of CCCTC-binding factor CTCF, an architectural protein known to mediate intrachromosomal interactions [45] within a contact that was lost upon inflammatory stimulation. We compared the genomic positions of the motifs contained within our contact regions with publicly available data from genome-wide TFbinding assays (ChIP-seq) for TFs LEF1 and CTCF in Fig. 7.
+
+Indeed we find that several LEF1 motifs and the CTCF motif captured within our contact regions are occupied by actively bound TF proteins directly in macrophages for CTCF (GSM2544247) or cells of closely related lineage origin to our THP-1 cell line (specifically K562 lymphoblast cells) for LEF1 (GSM2828684).
+
+Discussion Besides their role at individual genomic loci, nucleosomes between loci can significantly modulate their long-range contacts. Changing nucleosome density within the physiologically observed range can lead to order-of-magnitude changes in contact probability. More surprisingly, we find that the specific placement of these nucleosomes between loci, even at approximately the same total number, can introduce or reduce contacts. The specific contacts predicted by the polymer model, after training on ATAC-seq and EM data, were statistically significant and on par with the difference between replicates of 4C-seq. Indeed, 71% of close contacts within four 500-kb genomic regions, before and after inflammation, were correctly predicted by the model. This is surprising, since many
+
+Unstimulated Cell Training Data
+
+[Page 12]
+
+Stimulated Unstimulated Cells Cells
+
+IL6
+
+IL15
+
+CXCL9
+
+CXCL10
+
+(ACC,1-FDR) = (0.78,0.65)
+
+(ACC,1-FDR) = (0.65,0.76)
+
+(ACC,1-FDR) = (0.84,0.72)
+
+(ACC,1-FDR) = (0.64,0.71)
+
+Model
+
+Model
+
+Model
+
+Model
+
+4C
+
+4C
+
+4C
+
+4C
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+−200 −100 0 100 200 Distance from TSS (kb) (ACC,1-FDR) = (0.67,0.73)
+
+(ACC,1-FDR) = (0.65,0.76)
+
+(ACC,1-FDR) = (0.72,0.67)
+
+(ACC,1-FDR) = (0.68,0.76)
+
+Model
+
+Model
+
+Model
+
+4C
+
+4C
+
+4C
+
+4C
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+Model prediction 4C between-replicate prediction Random prediction
+
+0.0 25 50 Model Window Size (kbp) Model Metrics Summary
+
+1-FDR
+
+0.8
+
+ACC
+
+0.6 0.4 0.2 0.0
+
+0 1 0 1 0 1 CXCL9 CXCL10 IL6
+
+0 1 All IL15 Genes
+
+250kbp all-gene p-value = 4.93399e-08 (ACC,1-FDR) = (0.70,0.71)
+
+0.4 Model prediction
+
+0.2
+
+4C between-replicate prediction Random prediction
+
+F. Predictive performance
+
+E. 1.0
+
+0.6
+
+0.0 25 50 Model Window Size (kbp)
+
+1.0
+
+0.8
+
+1.0 0.8 0.6 0.4 0.2 0.0
+
+0 1 0 1 0 1 CXCL9 CXCL10 IL6
+
+0 1 All IL15 Genes
+
+250kbp all-gene p-value = 8.70766e-09 (ACC,1-FDR) = (0.71,0.83)
+
+Distance with Uniform Spacing
+
+0.8 0.6 0.4 Model prediction
+
+0.2
+
+4C between-replicate prediction Random prediction
+
+0.0 25 50 Model Window Size (kbp)
+
+Model Metrics Summary
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+D. Model Predictive Power Over Genomic
+
+Distance with Regular Spacing Predictive performance (min(ACC,1-FDR))
+
+0.4
+
+Predictive performance (min(ACC,1-FDR))
+
+1.0
+
+0.6
+
+0.2
+
+C. Model Predictive Power Over Genomic
+
+Distance with Poisson Spacing
+
+0.8
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+G. Predictive performance
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+1.0 Predictive performance (min(ACC,1-FDR))
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+Model
+
+B. Model Predictive Power Over Genomic
+
+Predictive performance
+
+−200 −100 0 100 200 Distance from TSS (kb)
+
+1.0
+
+Model Metrics Summary
+
+0.8 0.6 0.4 0.2 0.0
+
+0 1 0 1 0 1 CXCL9 CXCL10 IL6
+
+0 1 All IL15 Genes
+
+250kbp all-gene p-value = 2.42826e-06 (ACC,1-FDR) = (0.67,0.79)
+
+Figure 6. ATAC-seq is predictive of genomic contact across multiple genes and genomic length scales. (A) Example of predicted contacts for 4C and our polymer model for IL-6, IL-15, CXCL9, and CXCL10. All contacts were predicted using CXCL9 hyperparameters as described in Fig. 5. Contact signals, such as those in Fig. 5A and B, are plotted for all four genes in Supplementary Fig. S16. Performance over genomic distance for all genes for exponentially (B), regularly (C), and uniformly (D) distributed spacing of nucleosomes in low-coverage regions. Gray band about model prediction depicts one standard deviation from the average prediction metric. Average 4C metric and random guessing metric are shown for reference. Model overall shows little trend over genomic distance; we find a slight downtrend for small window sizes. At large genomic distance, model performs significantly better than the random predictor with a P-value of 4.9399 × 10−8 . Performance of the model is similar regardless of model choice for the low-coverage regions. All predicted contacts and contact signals are given in Supplementary Figs S16–S19. Summary of accuracy and precision metrics for each gene, for both unstimulated (0 h) and LPS-stimulated (1 h) human macrophages, and the combination of all four genes being predicted simultaneously for exponentially (E), regularly (F), and uniformly (G) distributed spacing of nucleosomes in low-coverage regions.
+
+other factors are known to influence 3D genome organization, but is consistent with prior work by Wiese et al. [14] that demonstrates that nucleosome positioning is predictive of other aspects of 3D genome structure in budding yeast at ∼40 kb distances. Wiese et al. [14] speculated that the situation would be different in higher eukaryotes, but here we demonstrate that the role of nucleosomes in encoding 3D genome organization is conserved in the context of humanderived macrophages, and to ∼10× longer genomic distances. We therefore add to a growing body of work that suggests nucleosomes dominate, for example, the effects of the presence or absence of cohesins [8], and that cohesins are not always necessary to predict structure [12]. To be sure, there is clear evidence that factors besides nucleosomes and polymer me-
+
+chanics help determine and modulate 3D genome structure. These other factors have been reviewed and categorized as [11] motor and extrusion factors, compartmentalization and phase separation, landmark association (e.g. the nuclear lamina), and topological constraints preventing obedience to ideal polymer physics (e.g. fractal globule effects). And yet, our results suggest that, while genome contacts on 100 kb scales are multifactorial, some of these contacts may be amenable to mechanistic, physical explanation. A possible partial explanation for the success of the model is that it operates on the short length scale where ideal polymer scaling has been previously observed [11], which also corresponds to the size of typical TADs. Computational cost prevented us from simulating larger genomic sizes. While the algorithm scales linearly
+
+[Page 13]
+
+Static Contact
+
+Contact gained after LPS stimulation
+
+chr4:76,678,415-77,167,409
+
+CTCF
+
+Contacts ChIP peaks [0-100]
+
+LEF1
+
+Motif ChIP [0-4.9] Motif USO1
+
+PPEF2
+
+NAAA
+
+SDAD1
+
+CXCL9
+
+ART3
+
+NUP54
+
+FAM47E SCARB2 A
+
+Figure 7. Polymer-mechanics-predicted contacts harbor actively engaged regulatory factor DNA-binding motifs. Genome browser track showing the CXCL9 locus indicating genomic contacts identified in both polymer model and 4C-seq, along with overlapping TF-binding motif for CTCF and LEF1 and the respective ChIP-seq tracks for CTCF binding within macrophages and LEF1 binding within blood lineage-derived K562 lymphoblast cells. Shaded regions indicate contact regions where either a CTCF and an LEF1 ChIP-seq peak is present (1st, 4th, and 6th from the left) or they both coexist (2nd, 3rd, and 5th from the left).
+
+with the number of nucleosomes to generate individual polymer conformations, the number of conformations needed to sample increasingly rare contacts grows as a power law with genomic distance. The image analysis and pathfinding algorithm developed herein was necessary, since ATAC-seq coverage is low in most of the genome. Our method, which uses a novel pathfinding algorithm that weighs paths by both their intensity under EM and their path length, yielded a distribution of nucleosome spacings consistent with previous work [8, 33, 34]. It would be intriguing to apply this method to EM data on specific regions of the nucleus, and to cells in different regulatory states. This model assumed that causality runs from nucleosome placement, to polymer mechanics, to conformation and close contacts. While the predictive success of this model demonstrates that this is sufficient to explain a significant fraction of contacts, other mechanisms are possible. For example, it is possible that 3D conformation influences nucleosome placement, since histones may bind more easily to certain DNA conformations. Moreover, the purely causal, mechanistic assumptions of the model may also be a detriment if the goal were singularly to predict 4C data from ATAC data—something that could be better achieved by incorporating more information or removing physical constraints implied by the model. We emphasize that the granularity of this polymer mechanics model is optimal for this 100-kb-scale inquiry. The configurations are computed using efficient Monte Carlo sampling where analytical expressions [46, 47] are used for the mechanics of unbound DNA, greatly increasing the efficiency of the code. Models with more atomistic detail would be computationally prohibitive, and models on larger genomics scales would miss the effect of individual nucleosomes. This mesoscale approach, and the specific model and pipeline presented here, generalize to other genes, and can be used to address other cases of cells undergoing a state change. Having established the quantitative ability of modeling at this scale, it may be possible to integrate these results into larger-scale models of genome architecture [12, 48], via bias in the angular orientation between coarse-grained simulation beads. In the other direction of scales, molecular factors that directly in-
+
+fluence nucleosomes (reviewed in [10]) could be incorporated into this model. Throughout evolution, the sequence structure of the genome is undoubtably shaped through selective pressures associated with physical polymeric properties of the genome [49]. However the intricacies of this co-evolution of sequence and physical property remain largely undefined. Notably, there are long-standing observations that TF-binding sites occur in relatively high-density clusters (or hotspots) throughout the genome [50, 51]. Furthermore, the positioning of nucleosomes is heavily guided by genetic sequence yet still subject to precise nucleosome eviction events dynamically regulated according to cell state [52]. Our findings suggest a new paradigm through which nucleosome placement might favor contact (or loop) formation between regulatory binding sites with gene promoters, thereby influencing TF search dynamics [53].
+
+Acknowledgements We thank Elizabeth Read (UCI) for valuable discussion. Author contributions: J.C. (conceptualization, software, investigation, formal analysis, writing), H.S. (investigation), J.L. (investigation), P.K.V. (investigation), A.S., (conceptualization, supervision, funding acquisition), T.L.D., (conceptualization, supervision, funding acquisition), and J.A. (conceptualization, writing, supervision, funding acquisition).
+
+Supplementary data Supplementary data is available at NAR online.
+
+Conflict of interest None declared.
+
+Funding This work was funded by NSF DMS 2052668, NSF Emerging Frontiers URoL 2022182, NIH T32 GM136624, NSF DMS 1763272, and the Simons Foundation (594598, QN). Funding
+
+Contact lost after LPS stimulation
+
+[Page 14]
+
+Data availability The data underlying this article are available at GEO (www.ncbi.nlm.nih.gov/geo) under accession number GSE278886. Software to simulate the polymer model is available at doi.org/10.5281/zenodo.15346921, github.com/jcorrett/ATAC-EM_Polymer_Model.
+
+References 1. Fulco C, Nasser J, Jones T et al. Activity-by-contact model of enhancer–promoter regulation from thousands of CRISPR perturbations. Nat Genet 2019;51:1664–9. https://doi.org/10.1038/s41588- 019- 0538- 0 2. Ghosh R, Meyer B. Spatial organization of chromatin: emergence of chromatin structure during development. Annu Rev Cell Dev Biol 2021;37:199–232. https://doi.org/10.1146/annurev- cellbio- 032321- 035734 3. Li X, Zhu R, Jiang H et al. Autophagy enhanced by curcumin ameliorates inflammation in atherogenesis via the TFEB–P300–BRD4 axis. Acta Pharm Sin B 2022;12:2280–99. https://doi.org/10.1016/j.apsb.2021.12.014 4. Mirny L. The fractal globule as a model of chromatin architecture in the cell. Chromosome Res 2011;19:37–51. https://doi.org/10.1007/s10577- 010- 9177- 0 5. Junier I, Dale R, Hou C et al. CTCF-mediated transcriptional regulation through cell type-specific chromosome organization in the β-globin locus. Nucleic Acids Res 2012;40:7718–27. https://doi.org/10.1093/nar/gks536 6. Sanborn A, Rao S, Huang S et al. Chromatin extrusion explains key features of loop and domain formation in wild-type and engineered genomes. Proc Natl Acad Sci USA 2015;112:E6456–65. https://doi.org/10.1073/pnas.1518552112 7. Beltran B, Kannan D, MacPherson Q et al. Geometrical heterogeneity dominates thermal fluctuations in facilitating chromatin contacts. Phys Rev Lett 2019;123:208103. https://doi.org/10.1103/PhysRevLett.123.208103 8. Attou A, Zülske T, Wedemann G. Cohesin and CTCF complexes mediate contacts in chromatin loops depending on nucleosome positions. Biophys J 2022;121:4788–99. https://doi.org/10.1016/j.bpj.2022.10.044 9. Portillo-Ledesma S, Chung S, Hoffman J et al. Regulation of chromatin architecture by transcription factor binding. eLife 2022;12:RP91320. https://doi.org/10.7554/eLife.91320.3 10. Liu S, Athreya A, Lao Z et al. From nucleosomes to compartments: physicochemical interactions underlying chromatin organization. Annu Rev Biophys 2024;53:221–45. https://doi.org/10.1146/annurev- biophys- 030822- 032650 11. Dekker J, Mirny L. The chromosome folding problem and how cells solve it. Cell 2024;187:6424–50. https://doi.org/10.1016/j.cell.2024.10.026 12. Bianco S, Lupiáñez D, Chiariello A et al. Polymer physics predicts the effects of structural variants on chromatin architecture. Nat Genet 2018;50:662–7. https://doi.org/10.1038/s41588- 018- 0098- 8 13. Oberbeckmann E, Quililan K, Cramer P et al. In vitro reconstitution of chromatin domains shows a role for nucleosome positioning in 3D genome organization. Nat Genet 2024;56:483–92. https://doi.org/10.1038/s41588- 023- 01649- 8 14. Wiese O, Marenduzzo D, Brackley C. Nucleosome positions alone can be used to predict domains in yeast chromosomes. Proc Natl Acad Sci USA 2019;116:17307–15. https://doi.org/10.1073/pnas.1817829116 15. Lin D, Xu W, Hong P et al. Decoding the spatial chromatin organization and dynamic epigenetic landscapes of macrophage
+
+cells during differentiation and immune activation. Nat Commun 2022;13:5857. https://doi.org/10.1038/s41467- 022- 33558- 5 16. Zhang P, Amarasinghe H, Whalley J et al. Epigenomic analysis reveals a dynamic and context-specific macrophage enhancer landscape associated with innate immune activation and tolerance. Genome Biol 2022;23:136. https://doi.org/10.1186/s13059- 022- 02702- 1 17. Schep A, Buenrostro J, Denny S et al. Structured nucleosome fingerprints enable high-resolution mapping of chromatin architecture within regulatory regions. Genome Res 2015;25:1757–70. https://doi.org/10.1101/gr.192294.115 18. Schlöpflin R, Teif V, Müller O et al. Modeling nucleosome position distributions from experimental nucleosome positioning maps. Bioinformatics 2013;29:2380–6. https://doi.org/10.1093/bioinformatics/btt404 19. Ou H, Phan S, Deerinck T et al. ChromEMT: visualizing 3D chromatin structure and compaction in interphase and mitotic cells. Science 2017;357:eaag0025. https://doi.org/10.1126/science.aag0025 20. Dekker J, Alber F, Aufmkolk S et al. Spatial and temporal organization of the genome: current state and future aims of the 4D nucleome project. Mol Cell 2023;83:2624–40. https://doi.org/10.1016/j.molcel.2023.06.018 21. Veerasubramanian P, Shao H, Meli V et al. A Src-H3 acetylation signaling axis integrates macrophage mechanosensation with inflammatory response. Biomaterials 2021;279:121236. https://doi.org/10.1016/j.biomaterials.2021.121236 22. Meli V, Veerasubramanian P, Atcha H et al. Biophysical regulation of macrophages in health and disease. J Leukocyte Biol 2019;106:283–99. https://doi.org/10.1002/JLB.MR0318-126R 23. Orecchioni M, Ghosheh Y, Pramod A et al. Macrophage polarization: different gene signatures in M1(LPS+) vs. classically and M2(LPS−) vs. alternatively activated macrophages. Front Immunol 2019;10:1084. https://doi.org/10.3389/fimmu.2019.01084 24. Klemm S, Shipony Z, Greenleaf W. Chromatin accessibility and the regulatory epigenome. Nat Rev Genet 2019;20:207–20. https://doi.org/10.1038/s41576- 018- 0089- 8 25. Cutter A, Hayes J. A brief review of nucleosome structure. FEBS Lett 2015;589:2914–22. https://doi.org/10.1016/j.febslet.2015.05.016 26. Bryant Z, Stone M, Gore J et al. Structural transitions and elasticity from torque measurements on DNA. Nature 2003;424:338–41. https://doi.org/10.1038/nature01810 27. Dijkstra W. A note on two problems in connexion with graphs. Numer Math 1959;1:269–71. https://doi.org/10.1007/BF01386390 28. Mandelkern M, Elias J, Eden D et al. The dimensions of DNA in solution. J Mol Biol 1981;152:153–61. https://doi.org/10.1016/0022- 2836(81)90099- 1 29. Zhang Y, Liu T, Meyer C et al. Model-based analysis of ChIP-Seq (MACS). Genome Biol 2008;9:R137. https://doi.org/10.1186/gb- 2008- 9- 9- r137 30. Krijger PHL, Geeven G, Bianchi V et al. 4C-seq from beginning to end: a detailed protocol for sample preparation and data analysis. Methods 2020;170:17–32. https://doi.org/10.1016/j.ymeth.2019.07.014 31. Virtanen P, Gommers R, Oliphant T et al. SciPy 1.0: fundamental algorithms for scientific computing in Python. Nat Methods 2020;17:261–72. https://doi.org/10.1038/s41592- 019- 0686- 2 32. Du P, Kibbe W, Lin S. Improved peak detection in mass spectrum by incorporating continuous wavelet transform-based pattern matching. Bioinformatics 2006;22:2059–65. https://doi.org/10.1093/bioinformatics/btl355 33. Wakim J, Spakowitz A. Physical modeling of nucleosome clustering in euchromatin resulting from interactions between epigenetic reader proteins. Proc Natl Acad Sci USA 2024;121:e2317911121. https://doi.org/10.1073/pnas.2317911121
+
+to pay the Open Access publication charges for this article was provided by NSF DMS 2052668.
+
+[Page 15]
+
+organizing genomic architecture. Nat Commun 2021;12:5863. https://doi.org/10.1038/s41467- 021- 26159- 1 45. Ong C, Corces V. CTCF: an architectural protein bridging genome topology and function. Nat Rev Genet 2014;15:234–46. https://doi.org/10.1038/nrg3663 46. Mehraeen S, Sudhanshu B, Koslover E et al. End-to-end distribution for a wormlike chain in arbitrary dimensions. Phys Rev E 2008;77:061803. https://doi.org/10.1103/PhysRevE.77.061803 47. Spakowitz A, Wang Z. End-to-end distance vector distribution with fixed end orientations for the wormlike chain model. Phys Rev E 2005;72:041802. https://doi.org/10.1103/PhysRevE.72.041802 48. Barbieri M, Chotalia M, Fraser J et al. Complexity of chromatin folding is captured by the strings and binders switch model. Proc Natl Acad Sci USA 2012;109:16173–8. https://doi.org/10.1073/pnas.1204799109 49. Sazer S, Schiessel H. The biology and polymer physics underlying large-scale chromosome organization. Traffic 2018;19:87–104. https://doi.org/10.1111/tra.12539 50. Arnone M, Davidson E. The hardwiring of development: organization and function of genomic regulatory systems. Development 1997;124:1851–64. https://doi.org/10.1242/dev.124.10.1851 51. Frith M, Li M, Weng Z. Cluster-Buster: finding dense clusters of motifs in DNA sequences. Nucleic Acids Res 2003;31:3666–8. https://doi.org/10.1093/nar/gkg540 52. Struhl K, Segal E. Determinants of nucleosome positioning. Nat Struct Mol Biol 2013;20:267–73. https://doi.org/10.1038/nsmb.2506 53. Dror I, Rohs R, Mandel-Gutfreund Y. How motif environment influences transcription factor search dynamics: finding a needle in a haystack. BioEssays 2016;38:605–12. https://doi.org/10.1002/bies.201600005
+
+Received: October 28, 2024. Revised: June 18, 2025. Editorial Decision: June 21, 2025. Accepted: July 22, 2025 © The Author(s) 2025. Published by Oxford University Press on behalf of Nucleic Acids Research. This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial License (https://creativecommons.org/licenses/by-nc/4.0/), which permits non-commercial re-use, distribution, and reproduction in any medium, provided the original work is properly cited. For commercial re-use, please contact reprints@oup.com for reprints and translation rights for reprints. All other permissions can be obtained through our RightsLink service via the Permissions link on the article page on our site—for further information please contact journals.permissions@oup.com.
+
+34. Routh R, Sandin S, Rhodes D. Nucleosome repeat length and linker histone stoichiometry determine chromatin fiber structure. Proc Natl Acad Sci USA 2008;105:8872–7. https://doi.org/10.1073/pnas.0802336105 35. Li Y, Eshein A, Virk RKA et al. Nanoscale chromatin imaging and analysis platform bridges 4D chromatin organization with molecular function. Sci Adv 2021;7:eabe4310. https://doi.org/10.1126/sciadv.abe4310 36. Goel V, Huseyin M, Hansen A. Region capture Micro-C reveals coalescence of enhancers and promoters into nested microcompartments. Nat Genet 2023;55:1048–56. https://doi.org/10.1038/s41588- 023- 01391- 1 37. Panigrahi A, O’Malley B. Mechanisms of enhancer action: the known and the unknown. Genome Biol 2021;22:108. https://doi.org/10.1186/s13059- 021- 02322- 1 38. Whyte W, Orlando D, Hnisz D et al. Master transcription factors and mediator establish super-enhancers at key cell identity genes. Cell 2013;153:307–19. https://doi.org/10.1016/j.cell.2013.03.035 39. Pott S, Lieb J.What are super-enhancers? Nat Genet 2015;47:8–12. https://doi.org/10.1038/ng.3167 40. Raviram R, Rocha P, Bonneau R et al. Interpreting 4C-Seq data: how far can we go? Epigenomics 2014;6:455–7. https://doi.org/10.2217/epi.14.47 41. Geeven G, Teunissen H, de Laat W et al. peakC: a flexible, non-parametric peak calling package for 4C and Capture-C data. Nucleic Acids Res 2018;46:gky443. https://doi.org/10.1093/nar/gky443 42. Gibcus J, Samejima K, Goloborodko A et al. A pathway for mitotic chromosome formation. Science 2018;359:6376. https://doi.org/10.1126/science.aao6135 43. Yun K, So J, Jash A et al. Lymphoid enhancer binding factor 1 regulates transcription through gene looping. J Immunol 2009;183:5129–37. https://doi.org/10.4049/jimmunol.0802744 44. Shan Q, Li X, Chen X et al. Tcf1 and Lef1 provide constant supervision to mature CD8+ T cell identity and function by

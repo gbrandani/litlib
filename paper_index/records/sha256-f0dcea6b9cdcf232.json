@@ -1,0 +1,302 @@
+{
+  "paper_id": "sha256-f0dcea6b9cdcf232",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/tesei_2021_HPS_CG_model_for_IDPs_SI.pdf",
+  "pdf_sha256": "f0dcea6b9cdcf232e741e485749c0e7e018bc6c0db9685eec4f945b8fd38e7fa",
+  "filename": "tesei_2021_HPS_CG_model_for_IDPs_SI.pdf",
+  "item_type": "article",
+  "title_query": "HPS CG model for IDPs",
+  "filename_hints": {
+    "year_hint": 2021,
+    "venue_hint": "",
+    "prefix": "tesei 2021 HPS CG model for IDPs SI"
+  },
+  "doi_candidates": [
+    "10.5281/zenodo.5005953"
+  ],
+  "date_indexed": "2026-04-17T05:22:48.607779+00:00",
+  "match_status": "matched_supplement",
+  "match_confidence": 0.1917,
+  "warnings": [
+    "year_hint_mismatch:2021!=2022"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "manual_supplement_link",
+  "semantic_scholar": {
+    "query": "HPS CG model for IDPs",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "HPS CG model for IDPs",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2021!=2022"
+        ],
+        "best_score": 0.1917,
+        "candidate_count": 2
+      },
+      {
+        "query": "Supporting Information Giulio Teseia , Thea K",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2021!=2014"
+        ],
+        "best_score": 0.155,
+        "candidate_count": 10
+      },
+      {
+        "query": "where = 0.8368 kJ mol−1 and uLJ is the Lennard Jones potential: uLJ (r) = 4",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "σ and λ are arithmetic averages of amino acid specific parameters quantifying size (2) and hydrophobicity (3), respectively",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "qi qj e2 exp (−r/D), 4π0 r r",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2021!=2019"
+        ],
+        "best_score": 0.0,
+        "candidate_count": 5
+      }
+    ],
+    "best_candidate": {
+      "paperId": "a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+      "externalIds": {
+        "DBLP": "journals/jcisd/RizuanJPKM22",
+        "DOI": "10.1021/acs.jcim.2c00450",
+        "CorpusId": 252088554,
+        "PubMed": "36066390"
+      },
+      "url": "https://www.semanticscholar.org/paper/a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+      "title": "Developing Bonded Potentials for a Coarse-Grained Model of Intrinsically Disordered Proteins",
+      "venue": "Journal of Chemical Information and Modeling",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10165611",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jcim.2c00450?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jcim.2c00450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-09-06",
+      "journal": {
+        "name": "Journal of chemical information and modeling"
+      },
+      "authors": [
+        {
+          "authorId": "2154253613",
+          "name": "Azamat Rizuan"
+        },
+        {
+          "authorId": "2034368811",
+          "name": "N. Jovic"
+        },
+        {
+          "authorId": "2053734199",
+          "name": "T. Phan"
+        },
+        {
+          "authorId": "118136304",
+          "name": "Young C. Kim"
+        },
+        {
+          "authorId": "2924668",
+          "name": "J. Mittal"
+        }
+      ],
+      "abstract": "Recent advances in residue-level coarse-grained (CG) computational models have enabled molecular-level insights into biological condensates of intrinsically disordered proteins (IDPs), shedding light on the sequence determinants of their phase separation. The existing CG models that treat protein chains as flexible molecules connected via harmonic bonds cannot populate common secondary-structure elements. Here, we present a CG dihedral angle potential between four neighboring beads centered at Cα atoms to faithfully capture the transient helical structures of IDPs. In order to parameterize and validate our new model, we propose Cα-based helix assignment rules based on dihedral angles that succeed in reproducing the atomistic helicity results of a polyalanine peptide and folded proteins. We then introduce sequence-dependent dihedral angle potential parameters (εd) and use experimentally available helical propensities of naturally occurring 20 amino acids to find their optimal values. The single-chain helical propensities from the CG simulations for commonly studied prion-like IDPs are in excellent agreement with the NMR-based α-helix fraction, demonstrating that the new HPS-SS model can accurately produce structural features of IDPs. Furthermore, this model can be easily implemented for large-scale assembly simulations due to its simplicity."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+        "title": "Developing Bonded Potentials for a Coarse-Grained Model of Intrinsically Disordered Proteins",
+        "score": 0.1917,
+        "title_similarity": 0.1917,
+        "query_year": null,
+        "candidate_year": 2022,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0bb80e6df727d6a29ff21985a324739fc8112d2e",
+        "title": "Improved coarse‐grained model for studying sequence dependent phase separation of disordered proteins",
+        "score": 0.1875,
+        "title_similarity": 0.1875,
+        "query_year": null,
+        "candidate_year": 2021,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1021/acs.jcim.2c00450"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 2,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "0bb80e6df727d6a29ff21985a324739fc8112d2e",
+          "externalIds": {
+            "DOI": "10.1002/pro.4094",
+            "CorpusId": 233485139,
+            "PubMed": "33934416"
+          },
+          "url": "https://www.semanticscholar.org/paper/0bb80e6df727d6a29ff21985a324739fc8112d2e",
+          "title": "Improved coarse‐grained model for studying sequence dependent phase separation of disordered proteins",
+          "venue": "Protein Science",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://rss.onlinelibrary.wiley.com/doi/am-pdf/10.1002/pro.4094",
+            "status": "BRONZE",
+            "license": "publisher-specific, author manuscript",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/pro.4094?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/pro.4094, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-05-02",
+          "journal": {
+            "name": "Protein Science",
+            "pages": "1371 - 1379",
+            "volume": "30"
+          },
+          "authors": [
+            {
+              "authorId": "1581875851",
+              "name": "R. M. Regy"
+            },
+            {
+              "authorId": "2109938723",
+              "name": "Jacob Thompson"
+            },
+            {
+              "authorId": "118136304",
+              "name": "Young C. Kim"
+            },
+            {
+              "authorId": "2924668",
+              "name": "J. Mittal"
+            }
+          ],
+          "abstract": "We present improvements to the hydropathy scale (HPS) coarse‐grained (CG) model for simulating sequence‐specific behavior of intrinsically disordered proteins (IDPs), including their liquid–liquid phase separation (LLPS). The previous model based on an atomistic hydropathy scale by Kapcha and Rossky (KR scale) is not able to capture some well‐known LLPS trends such as reduced phase separation propensity upon mutations (R‐to‐K and Y‐to‐F). Here, we propose to use the Urry hydropathy scale instead, which was derived from the inverse temperature transitions in a model polypeptide with guest residues X. We introduce two free parameters to shift (Δ) and scale (µ) the overall interaction strengths for the new model (HPS‐Urry) and use the experimental radius of gyration for a diverse group of IDPs to find their optimal values. Interestingly, many possible (Δ, µ) combinations can be used for typical IDPs, but the phase behavior of a low‐complexity (LC) sequence FUS is only well described by one of these models, which highlights the need for a careful validation strategy based on multiple proteins. The CG HPS‐Urry model should enable accurate simulations of protein LLPS and provide a microscopically detailed view of molecular interactions."
+        },
+        {
+          "paperId": "a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+          "externalIds": {
+            "DBLP": "journals/jcisd/RizuanJPKM22",
+            "DOI": "10.1021/acs.jcim.2c00450",
+            "CorpusId": 252088554,
+            "PubMed": "36066390"
+          },
+          "url": "https://www.semanticscholar.org/paper/a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+          "title": "Developing Bonded Potentials for a Coarse-Grained Model of Intrinsically Disordered Proteins",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10165611",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jcim.2c00450?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jcim.2c00450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-09-06",
+          "journal": {
+            "name": "Journal of chemical information and modeling"
+          },
+          "authors": [
+            {
+              "authorId": "2154253613",
+              "name": "Azamat Rizuan"
+            },
+            {
+              "authorId": "2034368811",
+              "name": "N. Jovic"
+            },
+            {
+              "authorId": "2053734199",
+              "name": "T. Phan"
+            },
+            {
+              "authorId": "118136304",
+              "name": "Young C. Kim"
+            },
+            {
+              "authorId": "2924668",
+              "name": "J. Mittal"
+            }
+          ],
+          "abstract": "Recent advances in residue-level coarse-grained (CG) computational models have enabled molecular-level insights into biological condensates of intrinsically disordered proteins (IDPs), shedding light on the sequence determinants of their phase separation. The existing CG models that treat protein chains as flexible molecules connected via harmonic bonds cannot populate common secondary-structure elements. Here, we present a CG dihedral angle potential between four neighboring beads centered at Cα atoms to faithfully capture the transient helical structures of IDPs. In order to parameterize and validate our new model, we propose Cα-based helix assignment rules based on dihedral angles that succeed in reproducing the atomistic helicity results of a polyalanine peptide and folded proteins. We then introduce sequence-dependent dihedral angle potential parameters (εd) and use experimentally available helical propensities of naturally occurring 20 amino acids to find their optimal values. The single-chain helical propensities from the CG simulations for commonly studied prion-like IDPs are in excellent agreement with the NMR-based α-helix fraction, demonstrating that the new HPS-SS model can accurately produce structural features of IDPs. Furthermore, this model can be easily implemented for large-scale assembly simulations due to its simplicity."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "Crossref HTTP 404: Not Found",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": {
+    "paper_id": "sha256-a8396b9c2dcecfdf",
+    "item_type": "article",
+    "pdf_path": "articles/coarse-graining/tesei_2021_HPS_CG_model_for_IDPs.pdf",
+    "pdf_sha256": "a8396b9c2dcecfdfb9cc5bd31df1e0552126ca71ce0d5c0c4948e405593b541f",
+    "filename": "tesei_2021_HPS_CG_model_for_IDPs.pdf",
+    "title_query": "Accurate model of liquid liquid phase behavior of intrinsically disordered proteins from optimization of single chain properties Giulio Teseia,1 , Thea K",
+    "resolved_title": "Accurate model of liquid–liquid phase behavior of intrinsically disordered proteins from optimization of single-chain properties",
+    "authors": "G. Tesei, Thea K. Schulze, R. Crehuet, K. Lindorff‐Larsen",
+    "year": "2021",
+    "venue": "Proceedings of the National Academy of Sciences",
+    "doi": "10.1101/2021.06.23.449550",
+    "semantic_scholar_paper_id": "697dfd2ccee91b83a924dcf2ced5c57749608080",
+    "match_confidence": "0.96",
+    "match_status": "matched",
+    "bibtex_key": "tesei2021model",
+    "text_path": "paper_index/text/sha256-a8396b9c2dcecfdf.txt",
+    "chunk_path": "paper_index/chunks/sha256-a8396b9c2dcecfdf.jsonl",
+    "abstract_source": "semantic_scholar",
+    "date_indexed": "2026-04-17T05:22:46.577792+00:00",
+    "notes": ""
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-f0dcea6b9cdcf232.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-f0dcea6b9cdcf232.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-f0dcea6b9cdcf232.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "c1e61a126be2f55254d9793af987ef45b1f82a33e348ea10d27239b07b445b39",
+    "chunk_count": 16,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

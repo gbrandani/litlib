@@ -1,0 +1,675 @@
+[Page 1]
+
+RESEARCH ARTICLE | APRIL 04 2014
+
+Models for twistable elastic polymers in Brownian dynamics, and their implementation for LAMMPS  C. A. Brackley; A. N. Morozov; D. Marenduzzo
+
+https://doi.org/10.1063/1.4870088
+
+  View Online
+
+Export Citation
+
+[Page 2]
+
+THE JOURNAL OF CHEMICAL PHYSICS 140, 135103 (2014)
+
+Models for twistable elastic polymers in Brownian dynamics, and their implementation for LAMMPS C. A. Brackley, A. N. Morozov, and D. Marenduzzo SUPA, School of Physics and Astronomy, University of Edinburgh, Mayfield Road, Edinburgh EH9 3JZ, United Kingdom
+
+(Received 29 January 2014; accepted 20 March 2014; published online 4 April 2014) An elastic rod model for semi-flexible polymers is presented. Theory for a continuum rod is reviewed, and it is shown that a popular discretised model used in numerical simulations gives the correct continuum limit. Correlation functions relating to both bending and twisting of the rod are derived for both continuous and discrete cases, and results are compared with numerical simulations. Finally, two possible implementations of the discretised model in the multi-purpose molecular dynamics software package LAMMPS are described. © 2014 AIP Publishing LLC. [http://dx.doi.org/10.1063/1.4870088] I. INTRODUCTION
+
+0021-9606/2014/140(13)/135103/10/$30.00
+
+140, 135103-1
+
+© 2014 AIP Publishing LLC
+
+When setting up a coarse grained model for a polymer or biopolymer it is often useful, if not necessary, to account for its ability to both bend and twist. A notable example is that of double-stranded DNA. A first coarse grained description of DNA is to view it as a semi-flexible polymer, or a worm-like chain,1 i.e., a fluctuating elastic rod with a bending rigidity, and an associated persistence length. The latter gives a measure of the length scale along the polymer backbone over which correlations in the local direction (the tangent to the backbone) decay. For DNA in a physiologically realistic salt solution this length is 50 nm, which is significantly larger than its thickness (2.5 nm for hydrated B-DNA). While a worm-like chain provides a simple and useful description of DNA under some conditions,1–5 it neglects a key elastic property of this biomolecule: its resistance to twisting. Indeed, in reality DNA is a double helix which in its relaxed state has a pitch of around 10 base pairs (in B-DNA), and over-twisting or under-twisting the helix incurs an energetic penalty.6, 7 Twisting DNA may also lead to supercoiling,8–11 i.e., the writhing of a highly twisted filament, which can be witnessed in the everyday world when twisting up an office telephone cord. Supercoiling can be due to over or undertwisting the helical DNA, and is accordingly referred to as either positive or negative. Supercoiling is important for DNA organisation and function within cells. Within bacteria, supercoiling helps pack the genome into the tight volume of the cell,12 and Hi-C experiments suggest that this phenomenon is also gives rise to the contact maps observed for the bacterial chromosome.13 Furthermore, it was realised many years ago that supercoiling is naturally and generically created in vivo14–16 : as an RNA polymerase transcribes a gene, it generates an excess of twist ahead, and a deficit behind, and this leads to, respectively, positively and negatively supercoiled domains (a Brownian dynamics simulation exploring the biophysics of this phenomenon was provided in Ref. 17). Supercoiling is also thought to play a functional role in gene regulation18 and transcription19 in eukaryotes. This is because, among other
+
+things, as the DNA wraps around histones to make chromatin, each wrapping adds two units of writhe into the polymer: the interplay of this writhe with the transcriptionally driven supercoiling just discussed could help open up the chromatin fibre as it is transcribed (or replicated).9, 19–21 The importance of supercoiling to intracellular DNA is also apparent from the number of key enzymes whose role is to regulate it, such as DNA gyrases, which induce negative supercoiling, and topoisomerases, which are often employed to relieve it.9 It is therefore vital for coarse grained simulations of bacterial and eukaryotic DNA, or of naked DNA loops, to be able to treat twist and twist fluctuations accurately. The simplest way to achieve this is to endow the model DNA with a twist rigidity as well as a bending rigidity.7, 22 Just as the bending rigidity leads to a non-zero persistence length which characterises how correlations in the backbone directions decay due to bending, the twist rigidity leads to a twist persistence length, which characterises how twist correlations decay, or, equivalently, how big twist fluctuations should be at a given temperature T. This twist persistence length is of the same order of, and slightly larger than, the bending persistence length, and typical estimates are between 60 and 75 nm.10, 23, 24 There are many excellent papers in the literature which discuss how to set up a model of a twistable worm-like chain to study the dynamics of DNA when supercoiling is important.25–33 Most of the Brownian dynamics simulation work on coarse grained (bead-and-spring) DNA molecules with twisting and supercoiling build on the seminal contributions in Refs. 34–36. However, most modern, widely used molecular dynamics codes, such as LAMMPS,37 do not currently incorporate this force field in their source code. Furthermore, in the literature there have been a variety of approaches to study twistable elastic chains, and to our knowledge there has not been a systematic analysis of the possible Hamiltonians, and the relation between them and with the available continuum theories. Thus our goal in this work is to fill this gap and provide a detailed description of possible coarse grained Hamiltonians for twistable worm-like chains, suitable for use in Brownian or Langevin dynamics simulations. We
+
+[Page 3]
+
+also derive formulas for the tangent-tangent and for the twist correlation functions, and describe several possible implementations of these models in LAMMPS. Our work is structured as follows. In Sec. II, we will review the continuum theory of elastic rods. In Sec. III, we discretise the continuum energy and show that the model in Ref. 34 provides a valid discretisation, as do other equally valid options which are formulated using appropriate combinations of dihedral potentials. Section IV contains an analytical calculation of the persistence lengths in the discrete model, together with a comparison with numerical data. Section V provides a detailed description of the implementation of some of the models introduced in Sec. III in LAMMPS, and then in Sec. VI we compare the some simulations results with the theory. Finally, in Sec. VII we draw some conclusions, and point to some possible ways in which the current work may be applied to DNA biophysics.
+
+II. A CONTINUOUS ELASTIC ROD
+
+⎛ ⎞ ⎛ ⎞ ⎜ ⎟ ⎜ ⎟ ⎝ f̂ ⎠ = S ⎝ n̂ ⎠ , b̂ v̂
+
+⎛
+
+⎜ S = ⎝0
+
+cos θ − sin θ
+
+⎞ ⎟ sin θ ⎠ cos θ
+
+with θ the rotation angle between the two frames. The path of the rod is represented by the generalized curvatures ωi (s) which determine the unit vectors by the generalized Frenet-Serret38 equation ⎛ ⎞ ⎛ ⎞⎛ ⎞ ω2 −ω1 d ⎜ ⎟ ⎜ ⎟ ⎜ ω3 ⎠ ⎝ f̂ ⎟ ⎝ f̂ ⎠ = ⎝ −ω2 ⎠, ds −ω v̂ v̂ where it can be seen that ω3 (s)ds is the infinitesimal angle of rotation about the direction û(s), ω1 (s)ds is the infinitesimal rotation about f̂(s) etc. The in-extensibility of the rod can be expressed by the condition |dr/ds| = 1. The energy for an elastic rod is given by
+
+1 L EER = κb1 ω1 (s)2 + κb2 ω2 (s)2 + κt ω3 (s)2 ds, 2 0 where κ b1 and κ b2 are bending rigidities and κ t is the twist rigidity (each having units of energy · length). If the elastic rod has a circular cross section, then κ b1 = κ b2 = κ b , giving
+
+1 L κb ω12 + ω22 + κt ω32 ds. EER = 2 0 By inspection of Eq. (1), we can identify the curvature of the rod ω1 (s)2 + ω2 (s)2 =
+
+d û(s) 2 , ds
+
+and also d f̂(s) d v̂(s) × . ds ds One can therefore also write the energy
+
+d û(s) 2 1 L κb EER = 2 0 ds
+
+d f̂(s) d v̂(s) × ds. + κt û(s) · ds ds ω3 (s)2 = û(s) ·
+
+The flexibility of the rod can be described by looking at correlations in the direction of the vectors along the rod. For example, the bending correlations are given by û(0) · û(s), whereas the twist correlations are given by f̂(0) · f̂(s). We include a simple calculation of these expressions, in the continuous limit, in Appendix A. III. DISCRETE REPRESENTATION OF AN ELASTIC ROD
+
+FIG. 1. Schematic representation of an elastic rod showing the Darboux frame at a point s along the rod.
+
+We now consider a discrete elastic rod model, with segments of length a which are defined by the position vectors of the vertices between each segment ri , i = 1, . . . N. The configuration of the rod can be described by the tangents ûi = (ri+1 − ri )/a,39 and the orthogonal vectors f̂i and
+
+A non-extensible elastic rod can be described mathematically as a “stripe” (a thin slice of a plane), whose position in space is given by the vector r(s) where s is the distance along the rod.38 A continuous curve in three dimensional space can be described by the Frenet-Serret frame, made up of the vector tangent to the curve û(s) = dr(s)/ds, a normal vector n̂ which points in direction of d û/ds, and a binormal b̂ = û × n̂; the relationship between these vectors and their derivatives (i.e., a description of the rotation of the frame as one moves along the curve) is given by the Frenet-Serret equation (see Ref. 38). While a curve is uniquely defined by the tangent (the other two vectors are constructed from this), a stripe with a finite thickness requires two vectors to define it: the tangent û(s) and the local normal to the plane f̂(s) (also known as the material normal). The configuration of a stripe is described by the Darboux frame, consisting of û(s), f̂(s), and a vector v̂(s) perpendicular to these (defined such that f̂ × v̂ = û, so that f̂, v̂, and û correspond respectively to the usual x, y, and z axes); a schematic representation is given in Fig. 1. The Frenet-Serret and Darboux frames are related by
+
+[Page 4]
+
+v̂i . Together ûi , f̂i , and v̂i make up a frame of reference on vertex i. To discretise the energy, we start from the functional in Eq. (3). By using the following discretised approximations,
+
+By using angles, α i , β i , and γ i to describe the rotation between vertex i and i + 1, Eq. (4) can be rewritten as
+
+ûi+1 − ûi d û(s) , ds
+
+EDER =
+
+κb (ûi+1 − ûi )2 EDER = 2 i=1 N−1
+
+κt (f̂i+1 − f̂i ) × (v̂i+1 − v̂i ) ûi · 2 i=1
+
+κb (1 − ûi+1 · ûi ) a i=1 N−1
+
+κt (1 + ûi+1 · ûi − f̂i+1 · f̂i − v̂i+1 · v̂i ). (4) 2a i=1
+
+a · (b × c) = b · (c × a) = c · (a × b) ,
+
+which holds for any triplet of vectors, a, b, and c. Another useful parametrisation of the energy is to use Euler angles, where a set of three angles α, β, and γ is used to describe a rotation from one frame of reference to another. Here we use the z-x -z Euler angle convention where the first angle is a rotation of the initial frame about the z-axis, the second a rotation about the new x-axis, and the third about the new z-axis. Rotations have positive sign if they are clockwise when looking along the axis. The rotation can be written as a matrix R, for example to rotate the reference frame on vertex i to that on i + 1, (ûi+1 , f̂i+1 , v̂i+1 )T = R(ûi , f̂i , v̂i )T . The matrix can be decomposed into individual rotations, R = Rû (γ )Rf̂ (β)Rû (α),
+
+⎞
+
+⎜ Rû (θ ) = ⎝ 0 cos θ 0 − sin θ
+
+⎟ sin θ ⎠ cos θ
+
+⎛
+
+⎞ − sin θ 0 ⎠ cos θ
+
+cos θ Rf̂ (θ ) = ⎝ 0 sin θ
+
+N−1 N−1 κt κb [1 − cos βi ] + [1 − cos(αi + γi )], a i=1 a i=1 where the β i and α i + γ i angles are treated symmetrically. We note that the energy for each segment is independent, and Eq. (9) can be written as a sum EDER = i Ei . A typical simulation of such a discrete rod would represent each vertex as a bead, employing a spring potential between each (e.g., a harmonic or FENE springs) to account for extension of the polymer, and a steric interaction potential to prevent beads overlapping. The total energy for the system would therefore be a sum of these components H = EDER + Espring + Esteric .
+
+are rotation matrices such that, e.g., Rf̂ (θ )(û, f̂, v̂)T gives a set of axis vectors which have been rotated by an angle θ about f̂.
+
+IV. CORRELATION FUNCTIONS FOR THE DISCRETE ELASTIC ROD
+
+In this section, we find correlation functions for bending and twisting along the discrete rod, similar to those described in Sec. II (see Appendix A) for the continuous case. We will therefore need to calculate the probability of a given chain configuration, e−Ei /kB T , P({ri }) = where Ei is the ith term of the sums in Eq. (9) and
+
+Zi = e−Ei /kB T D(αi , βi , γi ),
+
+with D(α, β, γ ) the volume element for integrating over orientations parametrised by the Euler angles. To find the correlation functions it will useful to write down a rotation or “transfer” matrix, which describes the rotation of the frame at vertex i required to get that at i + 1.40 Using the Euler angle formulation this is simply the matrix given in Eq. (6), i.e., ⎞ ⎛ ⎞ ⎛ ûi ûi+1 ⎟ ⎜ ⎟ ⎜ ⎝ f̂i+1 ⎠ = R ⎝ f̂i ⎠ , v̂i+1
+
+v̂i
+
+To get the final formula, we have used the following mixed product identity,
+
+⎛
+
+EDER =
+
+N−1
+
+N−1 N−1 κt (αi + γi )2 κb βi2 + , a i=1 2 a i=1
+
+which is the energy function proposed in Ref. 34 and used in most subsequent works. This Hamiltonian is therefore equivalent to Eq. (3) in the continuum limit, where a → 0 while κ b,t /a are kept constant. In the same limit, another viable version, which we will use in the rest of this work, is
+
+N−1
+
++
+
+Expanding this to second order in β i and α i + γ i [which are both small due to the Boltzmann weight associated to the energy function in Eq. (7)], we obtain
+
+we obtain
+
+κt (1 + cos βi ) [1 − cos(αi + γi )]. a i=1 N−1
+
++
+
+f̂i+1 − f̂i d f̂(s) , ds d v̂(s) v̂i+1 − v̂i , ds
+
++
+
+κb [1 − cos βi ] a i=1 N−1
+
+EDER =
+
+[Page 5]
+
+⎛
+
+⎜ R = ⎝ sin βi sin γi sin βi cos γi
+
+cos γi cos αi − cos βi sin αi sin γi − cos αi sin γi − cos βi cos γi sin αi
+
+Alternatively we can write this as a set of equations for the i + 1th set of vectors as functions of the ith, ûi+1 = cos βi ûi + sin αi sin βi f̂i − cos αi sin βi v̂i ,
+
+⎞
+
+− cos αi sin βi
+
+sin αi sin βi
+
+cos βi
+
+⎟ sin αi cos γi + cos βi sin γi cos αi ⎠ . − sin γi sin αi + cos βi cos αi cos γi
+
+only an individual segment, and here-on drop the i index where appropriate. To perform the integrals we note that β is in the interval [0, π ], whereas α, γ ∈ [−π , π ]; the appropriate volume element is
+
+f̂i+1 = sin βi sin γi ûi + (cos γi cos αi − cos βi sin αi sin γi )f̂i + (sin αi cos γi + cos βi sin γi cos αi )v̂i ,
+
+D(α, β, γ ) = Cdα sin βdβdγ ,
+
+v̂i+1 = sin βi cos γi ûi − (cos αi sin γi + cos βi cos γi sin αi )f̂i − (sin γi sin αi − cos βi cos αi cos γi )v̂i .
+
+Correlation functions can be found from the Eigenvectors of the average of the transfer matrix R. The matrix elements are found, e.g., by integrating cos βi
+
+= cos βi P({ri })D(α i , βi , γi ). Since each segment decouples, i.e., P ({ri }) = i Pi (ri ), we can consider averages on
+
+cos β ⎜ R = ⎝ 0
+
+−sin α sin γ + cos βcos γ cos α
+
+The partition function for a segment is Z=
+
+dα
+
+−π
+
+dβ
+
+−π
+
+⎞
+
+cos γ cos α − cos βsin α sin γ
+
+dγ sin β exp −
+
+To get analytic expressions for these averages, we expand about akB T/κ b → 0 and akB T/κ t → 0. To first order this gives
+
+κb (1 − cos β) akB T
+
+κt [1 − cos(α + γ )] akB T
+
+2kB T a −κb /akB T κb 4π 2 e−κt /akB T sinh κb akB T
+
+κt , × I0 akB T
+
+⎟ ⎠.
+
+cos β = 1 −
+
+akB T , κb
+
+−
+
+cos γ cos α = −sin α sin γ =
+
+where Iν (x) are the modified Bessel functions of the first kind. Evaluating the remaining matrix elements, we find cos β = cos γ cos α =
+
+akB T , − tanh (κb /akB T ) κb I1 (κt /akB T ) , 2I0 (κt /akB T )
+
+sin α sin γ = −
+
+I1 (κt /akB T ) . 2I0 (κt /akB T )
+
+1 akB T − . 4κt
+
+The vectors ûi , f̂i , and v̂i are eigenvectors of R. The eigenvalue corresponding to ûi is cos β, meaning that ûn · û1 = cos βn−1 = e−a(n−1)/ξu , i.e., an exponential decay with a correlation length ξ u = −a/ln cos β. Using Eq. (18) gives ξu =
+
+κb . kB T
+
+We identify this as the bending persistence length (which is the same as in the continuous case—see Appendix A). The eigenvalue corresponding to the eigenvector f̂i is cos αcos γ (1 + cos β). In a similar fashion to above, we
+
+⎛
+
+where C is an arbitrary constant; since this will cancel out in the averages we set C = 1. In the probability, the β terms and the α + γ terms factorize, so that sin βcos γ = sin βcos γ and cos βsin αsin γ = cos βsin αsin γ etc. Also we find that sin α = sin γ = cos α = cos γ =0, and sin αcos γ = cos αsin γ = 0. This leaves a diagonal matrix,
+
+[Page 6]
+
+can say that
+
+f̂n · f̂1 = [cos α cos γ (1 + cos β)]n−1 = e−a(n−1)/ξf , where ξ f = −a/ln [cos αcos γ (1 + cos β)] is the f̂i correlation length. Using Eqs. (18) and (19) and taking the small a limit gives ξf =
+
+2 κb κt . kB T κb + κt
+
+Note that in the limit of large κ b , i.e., a straight rod, the twist correlation length reduces to ξ f = 2κ t /kB T; in other cases though, this correlation length is not such a useful quantity as it measures both bending and twisting. Other useful properties of the chain are the mean of the cosine and sine of the twist angle between a pair of segments cos (α + γ ) and sin (α + γ ), and also the correlation in the total twist between two points along the chain. The first two quantities are found to be cos(α + γ ) =
+
+I1 (κt /akB T ) , I0 (κt /akB T )
+
+≈1−
+
+akB T , 2κt
+
+The latter is the mean of the cosine of the total twist between two points, cos n , where n = ni=1 (αi + γi ) is the sum of twist angles between each of the beads from 1 to n. Since cos n will decrease as n increases, we can write cos n = e−na/ξTw , where ξ Tw the twist correlation length. The average is given by
+
+cos i=1 i exp − i=1 Ei /kB T d
+
+cos n =
+
+exp − N i=1 Ei /kB T d
+
+exp i ni=1 i exp − N /k i=1
+
+2 exp − N i=1 Ei /kB T d
+
+exp −i ni=1 i exp − N i=1 Ei /kB T d
+
+, +
+
+2 exp − N i=1 Ei /kB T d
+
+where d = N i = α i + γ i . Since the i=1 D(αi , βi , γi ), and integral will be the same for each i ≤ n, and terms for i > n cancel, this simplifies to
+
+ei e−E/kB T D(α, β, γ )
+
+cos n = e−E/kB T D(α, β, γ ) +
+
+e−i e−E/kB T D(α, β, γ )
+
+e−E/kB T D(α, β, γ )
+
+= ei n + e−i n ,
+
+Using Eqs. (23) and (24) above gives
+
+I1 (κt /akB T ) n cos n = . I0 (κt /akB T )
+
+and we find ξ Tw = −a/log (1 − akB T/2κ t ). Finally, for small akB T/κ t , ξTw =
+
+2κt . kB T
+
+V. IMPLEMENTATION OF ELASTIC ROD POLYMERS IN LAMMPS
+
+The model described above cannot be easily incorporated into pre-existing scalable software such as the LAMMPS molecular dynamics solver. In Ref. 34, Chirico and Langowski describe a Brownian dynamics simulation scheme for a bead-and-spring polymer model of DNA, where at each time step the positions of each bead are incremented by δri and the f̂i vectors rotated by δ i about the tangents ri+1 − ri , according to the energy given in Eq. (8) (plus terms for stretching and excluded volume). At each step they also make a correction to ensure that the f̂i vectors remain perpendicular to the tangents (i.e., ûi are aligned along the backbone); this correction prevents a straightforward implementation of this model in LAMMPS and other multi-purpose molecular dynamics software. Here we describe two alternative models in which we add an additional term to the energy in place of this correction. In order to describe a bead-and-spring polymer with torsional rigidity, the beads must have an orientation as well as a position. In LAMMPS, this can be achieved in two ways: either by representing each bead by a rigid body (a collection of point “atoms” which move and rotate as a unit), or by a spherical atom which has position and orientation. A. Model 1: Using dihedral interactions and “patchy” beads
+
+Consider a bead-and-spring polymer, where each bead is made up of a core sphere, and three small “patches.” The position of the ith bead is denoted ri , and the positions of the patches on that bead are such that they lie along unit vectors ûi , f̂i , and v̂i which make up a right handed orthogonal set of axes [i.e., the bead and patches move as a unit such that the patch positions are ri + (a/2)ûi etc., where a is the diameter of the bead—see Fig. 2(a)]. Tangent vectors are defined ti = ri+1 − ri . We write the energy of the system EModel1 =
+
+N−1
+
+κ̄b (1 − cos θi )
+
+i=1
+
+κ̄t κ̄t (1 − cos φi ) + (1 − cos ψi )
+
++ κ̄a (1 − cos ζi ) ,
+
++
+
+sin(α + γ ) = 0.
+
+e±i = cos(α + γ ) ± isin(α + γ ).
+
+[Page 7]
+
+cos ψi =
+
+−(ûi × v̂i+1 ) · f̂i . |ûi × v̂i+1 |
+
+As before the orientation of each bead can also be described by a set of Euler angles α i , β i , and γ i which give the rotation which transforms the axes on bead i into those on i + 1, and we can use Eqs. (14) to relate these frames. Using this in Eqs. (32)–(34), we get FIG. 2. Schematic diagram showing how three patches on a DNA bead can be used to describe the orientation of a DNA segment, according to Model 1 as detailed in the text. (a) The orientation of the ith bead is defined by a set of three “patches” rigidly fixed to the bead, which defines the set of unit axes vectors. (b) The tangent to the polymer at bead i is defined ti = ri+1 − ri , and the angle between ûi and ti is denoted ζ . (c) The twisting of the polymer is determined by dihedral angles φ and ψ between planes as described in the text.
+
+ti · ti+1 , cos θi = |ti ||ti+1 | cos φi = cos ψi =
+
+(ti × f̂i ) · (ti × f̂i+1 ) |ti × f̂i ||ti × f̂i+1 |
+
+,
+
+(ti × v̂i ) · (ti × v̂i+1 ) , |ti × v̂i ||ti × v̂i+1 |
+
+(ûi − ti ) . |ti |
+
+cos ζi = ûi ·
+
+and are shown schematically in Figs. 2(b) and 2(c). This bead model and energy can be implemented in LAMMPS by using the “rigid body fix” to integrate the dynamics of a patchy bead, angle interactions to implement the first and last terms in the energy, and dihedral interactions to implement the two twist terms (see Ref. 37). In the limit of large κ a , the fourth term in Eq. (27) will vanish since the angle ζ i will approach zero and the unit vector ûi will be parallel with ti —i.e., ûi → ti /|ti |. The vectors ûi , f̂i , and v̂i then give a set of axis vectors which describe a frame of reference attached to the ith bead, and we recover the formalism used in Secs. III and IV. Then Eqs. (28)–(30) can be written, cos θi = ûi · ûi+1 , cos φi =
+
+(ûi × f̂i+1 ) · v̂i |ûi × f̂i+1 |
+
+,
+
+cos φi =
+
+cos γi cos αi − cos βi sin αi sin γi
+
+, cos2 γi + cos2 βi sin2 γi
+
+cos ψi =
+
+cos βi cos αi cos γi − sin γi sin αi
+
+. sin2 γi + cos2 βi cos2 γi
+
+It is clear that the twist terms in Eq. (27) do not exactly equal the term in the discrete elastic rod energy in Eq. (9); to see if it is a good approximation we consider the limit of a stiff rod (small bending angles) and expand about β i → 0. To leading order in β i the cosines are cos φi = cos(αi + γi ) +
+
+βi2 (sin αi sin γi + cos(αi + γi ) sin2 γi ) + O βi4 ,
+
+cos ψi = cos(αi + γi ) +
+
+βi2 (− cos αi cos γi
+
++ cos(αi + γi ) cos2 γi ) + O βi4 . If we sum these the βi2 terms cancel, and we find that the twist term in Eq. (27) is equal to that in Eq. (9) up to the fourth order in β i . An alternative model where only one dihedral is used (e.g., similar to those used in Refs. 41 and 42) would therefore not exactly recover Eq. (9) to second order in β i .43 In summary, this model can be implemented using the standard built in features of the LAMMPS software, and up to fourth order in β i (and second order in ζ i 44 ) it will reproduce the discrete elastic rod model described by the Hamiltonian in Eq. (9). B. Model 2: Using spherical atoms
+
+An alternative to using patchy DNA beads and dihedral interactions is to use single spheres which have both a position and an orientation for the beads (achieved in LAMMPS using the “ellipsoid atom style”), and to enforce an orientational interaction between adjacent beads. Such an interaction is not available in the native LAMMPS code, and we have implemented this as a new “angle style.”45 In a similar manner to Secs. II–IV, we denote the position of each bead ri and represent its orientation with three unit vectors f̂i , v̂i , and ûi which from a right-handed set of axes. Again tangent vectors are defined ti = ri+1 − ri , and the Euler angles α i , β i , and γ i give the orientation of bead i + 1 with respect to bead i.
+
+where the first three terms are for bending and twisting, and the fourth is a term which keeps the orientation of the bead aligned with the backbone of the DNA; the energies κ̄b and κ̄t are the bending and twist rigidities scaled by the bond length (κ̄b = κb /a etc.). The angle θ i describes bending and is the angle between ti and ti+1 ; φ i is the angle between f̂i+1 and the plane defined by patch fi , core i and core i + 1, and ψ i is the angle between v̂i+1 and the plane defined by patch vi , core i and core i + 1. Finally, the angle ζ i in the fourth term is the angle between core i, patch ui , and core i + 1. These angles can be written in terms of the unit vectors,
+
+θi = βi ,
+
+[Page 8]
+
+We write down bending, twist, and alignment terms in the energy [κ̄b (1 − cos θi ) + κ̄t [1 − cos(αi + γi )]
+
+i=1
+
++ κ̄a (1 − cos ψi )],
+
+<cos(α+γ )>
+
+EModel2 =
+
+N−1
+
+(a)
+
+1.1
+
+(b)
+
+Theory Model 1 Model 2
+
+0.9
+
+κb /a=15 kBT κa /a=90 kBT
+
+0.8
+
+Theory Model 1 Model 2
+
+ξTw
+
+κb /a=15 kBT κa /a=90 kBT
+
+VI. COMPARING THEORY WITH NUMERICAL RESULTS
+
+(a)
+
+0.9
+
+κt /a=10 kBT κa /a=90 kBT
+
+0.8
+
+Theory Model 1 Model 2
+
+ξb
+
+<cosβ >
+
+(b)
+
+Theory Model 1 Model 2
+
+κt /a=10 kBT κa /a=90 kBT
+
+κb / a ( kBT )
+
+(c)
+
+ξb
+
+<cosβ >
+
+κt /a=30 kBT κa /a=90 kBT
+
+0.8
+
+(d)
+
+κt /a=30 kBT κa /a=90 kBT
+
+κb / a ( kBT )
+
+κb / a ( kBT )
+
+κt / a ( kBT )
+
+(c)
+
+1.1
+
+Theory Model 1 Model 2
+
+ξTw
+
+0.9
+
+κb /a=35 kBT κa /a=90 kBT
+
+0.8
+
+(d)
+
+Theory Model 1 Model 2
+
+κt / a ( kBT )
+
+κb /a=35 kBT κa /a=90 kBT
+
+κt / a ( kBT )
+
+κt / a ( kBT )
+
+FIG. 4. Plots comparing theory and simulations for the mean twist per segment and the twist correlation length. Parameters used are shown on the plots. (a) and (c) show cos (α + γ ) with solid lines showing the theory as given in Eq. (23). (b) and (d) show the twist correlation length ξ Tw with solid lines showing the theory as given in Eq. (26).
+
+cording to the Langevin equation (a scheme commonly know as Langevin dynamics, or Brownian dynamics with no hydrodynamic interactions). Averages and correlation lengths are measured from equilibrium configurations. In Fig. 3, the average bending angle and the bending persistence length are shown; for both models, there is good agreement with theory. In Fig. 4, we show results for the twisting of the chain. This time there is a good agreement between theory and both models for averages over the individual twist angles (α + γ ). The long range correlation results agree less well, with the measured twist correlation length ξ Tw slightly shorter than suggested by the theory. A likely source of this discrepancy is the fact that the Hamiltonian from which we obtain the expression for ξ Tw does not contain the term in κ̄a from the alignment interaction which is present in the simulations.
+
+Theory Model 1 Model 2
+
+0.9
+
+κb / a ( kBT )
+
+Theory Model 1 Model 2
+
+VII. CONCLUSIONS
+
+FIG. 3. Plots comparing theory and simulations for the mean bending angle per segment and the bending correlation length. Parameters used are shown on the plots. (a) and (c) show cos β with solid lines showing the theory as given in Eq. (18). (b) and (d) show the bending correlation length ξ u with solid lines showing the theory as given in Eq. (20).
+
+To summarise, we have discussed here a number of possible models for a twistable worm-like chain, which are suitable for use in coarse grained Brownian dynamics simulations. We have provided a detailed analysis of the connection between discretised and continuous energy functions, which shows that both standard formulations in terms of Euler angles (such as the one originally introduced in Ref. 34), and another description based on dihedrals, are equivalent with the continuous theory up to second order in the bending and twist angles. This link is not commonly discussed in the literature, yet it is crucial to prove that the theory has the right continuous limit. In our experience it is quite easy to build up an energy function for twistable elastic rods which has the right behaviour for straight fibres, but does not obey the correct continuum theory when bending and twist fluctuations
+
+We now compare the theoretical results for the correlation functions derived in Sec. IV with those from numerical simulations of bead-and-spring polymers. We use the LAMMPS software to implement each of the models described in Sec. V. Simulations were of a bead-and-spring polymer of length N = 200 beads. The force fields used correspond either to the Hamiltonian given in Eq. (27) or to that in Eq. (38), plus FENE spring interactions between the beads, and shifted, truncated Lennard-Jones interactions, which were used to stop the beads from overlapping. Dynamics were evolved ac-
+
+<cos(α+γ )>
+
+where the third term acts to align the ûi vectors along the backbone of the polymer. It is straightforward to see that in the limit of large κ a the alignment term will vanish, ûi will be parallel to the tangent ti , and we recover the energy for the discrete elastic rod given in Eq. (9). In summary, implementation of Model 2 in the LAMMPS code requires a new orientation angle style which is not part of the core software package. A derivation of the force and torque on each bead which results from this potential is given in Appendix B. The model reproduces the discrete elastic rod model [Eq. (9)] up to a correction which is second order in the angle ψ i .
+
+[Page 9]
+
+APPENDIX A: DERIVATION OF CORRELATION FUNCTIONS FOR THE CONTINUOUS ELASTIC ROD
+
+Here we present an approximate but intuitive way of calculating the correlation functions associated with bending and twisting of an elastic rod. The same results can be obtained in a formal way by either performing corresponding path integrals49 or solving a Fokker-Planck equation.50 Consider two close cross-sections positioned at s and s + s along the backbone of the rod, i.e., s is small in some sense. A fluctuation resulting in a small rotation of the cross-section s + s with respect to the s-cross-section is associated with an energy penalty which is given by Eq. (2), EER
+
+We acknowledge EPSRC grants EP/I034661/1 and EP/I004262/1 for funding.
+
+κb ω1 (s)2 + ω2 (s)2 + κt ω3 (s)2 ds
+
+κb ω12 + ω22 + κt ω32 , ≈
+
+(A1)
+
+where ω1 , ω2 , and ω3 are the rotation rates, i.e., changes in the angles per s, defining the orientation of the s + scross-section with respect to the s-cross-section. The probability distribution for the ω’s is then given by P (ω1 , ω2 , ω3 )
+
+κb ω1 + ω2 + κt ω3 , = P0 exp − 2kB T
+
+(A2)
+
+where kB is the Boltzmann constant, T is the temperature, and the normalisation constant P0 is obtained by integrating Eq. (A2) over the permitted values of ω’s. We observe that the integrand in this and all similar integrals is sharply peaked around ω1 = ω2 = ω3 = 0, and, therefore, we can replace the true limits of integration with an infinite range, thus greatly simplifying further analysis. The correlation function û(s) · û(s + s), describing propagation of bending along the rod, can now be evaluated, û(s) · û(s + s) !
+
+s 2
+
++ ··· ≈ û(s) · û(s) + û (s)s + û (s) ! s 2 2 ω1 + ω2 , (A3) =1− where the average is taken with respect to the probability distribution Eq. (A2) and we have used Eq. (1) to calculate û (s) and û (s); here primes denote derivatives with respect to s. Evaluating the Gaussian integral in Eq. (A3), we obtain 1−
+
+ACKNOWLEDGMENTS
+
+s+s
+
+s 2 2 ω1 + ω22
+
+! =1−
+
+≈ e−s/λu , λu
+
+(A4)
+
+where the last equality holds in view of smallness of s, and λu = κ b /kB T is the bending correlation length of the rod.
+
+are simultaneously incorporated. Our explicit analysis provides a simple criterion to discriminate between viable and non-viable theories. Furthermore, we have shown that, as expected, all “correct” models possess well-behaved tangenttangent and twist correlation functions, associated with two different persistence lengths. The continuum description of an elastic rod in Sec. II has been formulated for a linear rod with unconstrained ends. Several previous studies22, 46 have focused on supercoiled DNA by considering a rod stretched between two substrates; there the rod is parametrised by the deviation of its configuration from a reference relaxed molecule, an extra stretching term is included in the energy, and a constraint of constant linking number is imposed. That description suffers from a pathology in the continuum limit which arises because twisting a constrained rod will lead to writhing, and, unless self-avoidance is accounted for, it is possible for loops to form and the rod to pass through itself (this manifests as a singularity in the constant linking number Hamiltonian, and is related to the analogous system of a quantum mechanical symmetric top22 ). This problem does not arise in our analytical treatment, because we do not need to employ any approximate formulas for writhe and linking number, as we do not include supercoiling (since the ends of the rod are not constrained). A similar pathology appears in the case where the energy includes a term in the geometric normal n̂ (defined in Sec. II) instead of the material normal f̂,40 which gives rise to complex eigenvalues of the transfer matrix; this results in the tangent-tangent correlations decaying in an oscillatory way, with the oscillation period becoming singular in the continuum limit. We do not encounter this problem in the present work, since the energy in Eq. (9) leads to a transfer matrix [Eq. (16)] with real eigenvalues. The main contribution of our work is that we have provided a detailed implementation of the model of Refs. 34 in LAMMPS,37 a very well used code to simulate Brownian dynamics. The associated code, which is available on request, allows the inclusion of Hamiltonians defined in terms of Euler angles, and we expect it will be of use in the future to perform large scale and parallel coarse grained simulations of DNA and of other polymers or fibres where twist, as well as twist fluctuations, play a major role in the physics (for some examples, see, e.g., Refs. 47 and 48). In particular, one may use the implementation we have described to study the dynamics and physics of confined supercoiled DNA, which is a good starting point to describe bacterial DNA; it would also be possible, for instance, to model supercoiling in chromatin fibres and chromosome fragments, to begin understanding its role in gene regulation. The advantage of the approach we are proposing here is that, thanks to the high scalability of LAMMPS, these simulations can reach unprecedented large scale with respect to previous simulations of coarse grained supercoiled DNA presented.
+
+[Page 10]
+
+In a similar fashion, it can be shown that f̂(s) · f̂(s + s) s 2 2 ω2 + ω32
+
+≈1−
+
+!
+
+To find Fi and Ti , we can take the derivative of Eq. (B1),
+
+δU =κt sin(αi + γi )δ(αi + γi )
+
+≈ e−s/λf ,
+
+(A5)
+
++ κa
+
+(B7)
+
+and then equate terms in δri and δφ i in Eq. (B6). Differentiating Eq. (B5) gives
+
+APPENDIX B: IMPLEMENTATION OF ORIENTATION INTERACTION IN LAMMPS
+
+To implement Model 2 [described in Sec. V B] in LAMMPS, we have written a new “angle style,” which adds an orientation interaction between two adjacent DNA beads. This incorporates forces and torques which originate from the twist and alignment terms in Eq. (38), which we denote
+
+(1 − cos(αi + γi )) U = κt + κa
+
+sin ψi δψi ,
+
+where λf = [2/kB T][κ b κ t /(κ b + κ t )].
+
+(1 − cos ψi ).
+
+cos ψi δbi − bi sin ψi δψi = δ ûi · ti + ûi · (δri+1 − δri ) ,
+
+and δbi can be found by differentiating bi2 = ti · ti to give bi δbi = ti · (δri+1 − δri ) . The infinitesimal change in the axis vector ûi due to a rotation of δφ i about a vector p̂i is given by δ ûi = p̂i × ûi δφi .51 Equation (B8) can then be written sin ψi δψi =
+
+(B1)
+
+(cos ψi t̂i − ûi ) · (δri+1 − δri ) bi − (ûi × t̂i ) · p̂i δφi ,
+
+Below we first derive the force and torque which result from these terms, and then describe how this new angle style can be used in LAMMPS.
+
+(B8)
+
+(B9)
+
+where t̂i = ti /bi . Differentiating Eq. (B3) gives cos (αi + γi ) [δ ûi+1 · ûi + ûi+1 · δ ûi ]
+
+We proceed in a similar manner to the derivation in Ref. 34. Some useful expressions linking the Euler angles and the orientation vectors are ûi+1 · ûi = cos βi ,
+
+= δ f̂i+1 · f̂i + f̂i+1 · δ f̂i + δ v̂i+1 · v̂i + v̂i+1 · δ v̂i , which, again using δ ûi = p̂i × ûi δφi and similar for f̂i , v̂i etc., can be re-written
+
+(B2)
+
+[1 + ûi+1 · ûi ] sin (αi + γ1 ) δ (αi + γ1 ) = ((ûi+1 × ûi ) cos (αi + γ1 ) − (f̂i+1 × f̂i )
+
+f̂i+1 · f̂i + v̂i+1 · v̂i = (1 + ûi+1 · ûi ) cos (αi + γi ) .
+
+The angle between the vectors ti and ti+1 is denoted θ i , and the angle between vectors ûi and ti is denoted ψ i , and these are given by cos θi =
+
+ti · ti+1 bi bi+1
+
+−(v̂i+1 × v̂i )) · (p̂i+1 δφi+1 − p̂i δφi ) .
+
+(B3)
+
+(B10)
+
+Inserting Eqs. (B9) and (B10) into Eq. (B7), and matching terms in Eq. (B6) gives expressions for the force and torque Fi = κa (Gi − Gi−1 ) ,
+
+(B4)
+
+Ti = κa ûi × t̂i + κt (Hi − Hi−1 ) ,
+
+(B11)
+
+bi cos ψi = ûi · ti ,
+
+where bi = |ti | (note that in Sec. III, we considered a discrete rod with fixed bond length bi = a, but in simulations a spring potential is used to constrain the bond length, so the bi will be distributed about a mean value). Consider that in a time δt, the position and orientation of the ith bead change by δri and δφ i , respectively, where the latter is a rotation about an axis p̂i . Assuming that {δri , δφi } are independent variables, then via the principal of virtual work the force and torque on each bead due to the potential U is given by
+
+δU = − Fi · δri − Ti · p̂i δφi . (B6)
+
+Gi =
+
+(B5)
+
+(ûi · t̂i )t̂i − ûi , bi
+
+(B12)
+
+ûi+1 × ûi cos (αi + γ1 ) − f̂i+1 × f̂i − v̂i+1 × v̂i . 1 + ûi+1 · ûi (B13) For a circular polymer with N beads, the sums over i in Eqs. (B1) and (B6) are from 1 → N, and α N , β N , and γ N are the Euler angles describing the rotation to orientate bead N to bead 1, tN = r1 − rN , and θ N is the angle between tN and t1 . For a linear polymer α N , β N γ N , tN and θ N are not defined, so the sums run from 1 → N − 1; FN and TN therefore only have the GN−1 and HN−1 terms in this case. Hi =
+
+− sin (αi + γi ) [1 + ûi+1 · ûi ]δ (αi + γ1 )
+
+1. Force and torque
+
+[Page 11]
+
+2. Use in LAMMPS
+
+17 S. P. Mielke, W. H. Fink, V. V. Krishnan, N. Groenbech-Jensen, and C. J.
+
+We have implemented two new LAMMPS angle styles, polytors and polytorsend45 to add the forces and torques derived above to a simulation of a linear or circular polymer. The procedure to set up the force field is as follows: (1) Use the atom style “ellipsoids” (atoms with orientation) and set up suitable initial conditions, e.g., beads in a random walk configuration. (2) Add bond interactions between adjacent pairs of beads, e.g., using harmonic or FENE bond styles. (3) Add angle interactions between adjacent triplets of beads to provide bending stiffness, e.g., using the cosine angle potential. (4) Add angle interactions of style polytors between adjacent pairs of beads for the twist and alignment interactions. In LAMMPS angle interactions specify three atoms; in the case of the polytors style only two atoms are required, so the third atom id specified is ignored. For example a polytors angle between beads 1 and 2 adds forces and torques which act (a) to align the û1 axis so that it points toward bead 2, and (b) to minimise the angle α 1 + γ 1 . For a circular polymer include a polytors angle interaction between beads N and 1; for a linear DNA include both a polytors and a polytorsend angle interaction between beads N − 1 and N.
+
+18 C. Naughton et al., Nat. Struct. Mol. Biol. 20, 387 (2013).
+
+1 J. F. Marko and E. D. Siggia, Macromolecules 28, 8759 (1995). 2 C. Bustamante, J. F. Marko, E. D. Siggia, and S. Smith, Science 265, 1599
+
+4 A. Rosa, T. X. Hoang, D. Marenduzzo, and A. Maritan, Macromolecules
+
+36, 10095 (2003). 5 N. M. Toan, D. Marenduzzo, and C. Micheletti, Biophys. J. 89, 80 (2005). 6 C. R. Calladine and H. Drew, Understanding DNA (Academic Press, San
+
+Diego, 1992). 7 J. F. Marko and E. D. Siggia, Science 265, 506 (1994). 8 J. F. Marko and E. D. Siggia, Macromolecules 27, 981 (1994). 9 N. Gilbert and J. Allan, Curr. Opin. Genet. Dev. 25, 15 (2014). 10 J. F. Marko and E. D. Siggia, Phys. Rev. E 52, 2912 (1995). 11 S. Forth, C. Deufel, M. Y. Sheinin, B. Daniels, J. P. Sethna, and M. D.
+
+Wang, Phys. Rev. Lett. 100, 148301 (2008). 12 L. Postow, C. D. Hardy, J. Arsuaga, and N. R. Cozzarelli, Genes Dev. 18,
+
+1766 (2004). 13 T. B. K. Le, M. V. Imakaev, L. A. Mirny, and M. T. Laub, Science 342, 731
+
+14 L. F. Liu and J. C. Wang, Proc. Natl. Acad. Sci. U.S.A. 84, 7024 (1987). 15 Y. P. Tsao, H. Y. Wu, and L. F. Liu, Cell. 56, 111 (1989). 16 S. Deng, R. A. Stein, and N. P. Higgins, Mol. Microbiol. 57, 1511 (2005).
+
+19 D. J. Clark and G. Felsenfeld, EMBO J. 10, 387 (1991). 20 J. Roca, Chromosoma 120, 323 (2011). 21 N. Mondal and J. D. Parvin, Nature (London) 413, 435 (2001). 22 C. Bouchiat and M. Mézard, Eur. Phys. J. E 2, 377 (2000). 23 B. S. Fujimoto and J. M. Schurr, Nature (London) 344, 175 (1990). 24 J. Lipfert, J. W. J. Kerssemakers, T. Jager, and N. H. Dekker, Nat. Methods
+
+7, 977 (2010). 25 T. R. Powers, Rev. Mod. Phys. 82, 1607 (2010). 26 W. K. Olson, Curr. Opin. Struct. Biol. 6, 242 (1996). 27 R. K. Z. Tan and S. C. Harvey, J. Mol. Biol. 205, 573 (1989). 28 G. C. Rollins, A. S. Petrov, and S. C. Harvey, Biophys. J. 94, L38 (2008). 29 T. A. Knotts, N. Rathore, D. C. Schwartz, and J. J. de Pablo, J. Chem. Phys.
+
+126, 084901 (2007). 30 J. Huang, T. Schlick, and A. Vologodskii, Proc. Natl. Acad. Sci. U.S.A. 98,
+
+968 (2001). 31 T. Schlick and W. K. Olson, Science 257, 1110 (1992). 32 T. Schlick, Curr. Opin. Struct. Biol. 5, 245 (1995). 33 S. Rappaport and Y. Rabin, Macromolecules 37, 7847 (2004). 34 G. Chirico and J. Langowski, Biopolymers 34, 415 (1994). 35 G. Chirico and J. Langowski, Biophys. J. 71, 955 (1996). 36 S. Allison, R. Austin, and M. Hogan, J. Chem. Phys. 90, 3843 (1989). 37 S. J. Plimpton, J. Comp. Phys. 117, 1 (1995), see http://lammps.sandia.gov. 38 S. M. Rappaport and Y. Rabin, J. Phys. A 40, 4455 (2007). 39 In the case of a linear rod there are N position vectors describing the vertices
+
+of N − 1 segments, with tangents ûi with i = 1, . . . , N − 1. For a circular rod there are N segments and ûN = (r1 − rN )/a. 40 D. Marenduzzo, C. Micheletti, H. Seyed-allaei, A. Trovato, and A. Maritan, J. Phys. A 38, L277 (2005). 41 F. Benedetti, J. Dorier, Y. Burnier, and A. Stasiak, Nucl. Aci. Res. 42, 2848 42 C. A. Brackley, J. Allan, D. Keszenman-Pereyra, and D. Marenduzzo, “How to make chromatin: Topological enzymes aid chromatin selfassembly in silico” (unpublished). 43 The two potentials are however equivalent in the limit where all of α , β , and γ i are small, a regime which is forced by the Hamiltonian considering either of the dihedrals. 44 The angles ζ are minimised by choosing a large alignment energy κ ; in practice, this can be set as large as possible subject to numerical stability. 45 Source code for the LAMMPS orientation angle style discussed in Sec. V B is available on request from the authors. 46 J. D. Moroz and P. Nelson, Proc. Natl. Acad. Sci. U.S.A. 94, 14418 47 S. A. Koehler and T. R. Powers, Phys. Rev. Lett. 85, 4827 (2000). 48 C. W. Wolgemuth, T. R. Powers, and R. E. Goldstein, Phys. Rev. Lett. 84, 1623 (2000). 49 R. D. Kamien, Rev. Mod. Phys. 74, 953 (2002). 50 G. H. Fredrickson, The Equilibrium Theory of Inhomogeneous Polymers (Oxford University Press, New York, 2006). 51 If R is a rotation matrix for rotating a vector û by an angle δφ about some axis p̂, then δ û = (R − I )û. In the limit δφ → 0, p̂ × ûδφ = (R − I )û.
+
+3 P. L. Hansen and R. Podgornik, J. Chem. Phys. 114, 8637 (2001).
+
+Benham, J. Chem. Phys. 121, 8104 (2004).

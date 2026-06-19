@@ -1,0 +1,444 @@
+{
+  "paper_id": "sha256-bdcb63b79ed88f64",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_theory/Kingma 2013 arxiv - Auto-Encoding Variational Bayes.pdf",
+  "pdf_sha256": "bdcb63b79ed88f64f8ee2d43a721930d01dde5441a4dba20ecaa2342b34e017c",
+  "filename": "Kingma 2013 arxiv - Auto-Encoding Variational Bayes.pdf",
+  "item_type": "article",
+  "title_query": "Kingma 2013 arxiv Auto-Encoding Variational Bayes",
+  "filename_hints": {
+    "year_hint": 2013,
+    "venue_hint": "",
+    "prefix": "Kingma 2013 arxiv"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:31:22.533460+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "Kingma 2013 arxiv Auto-Encoding Variational Bayes",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+      "externalIds": {
+        "DBLP": "journals/corr/KingmaW13",
+        "MAG": "2951004968",
+        "ArXiv": "1312.6114",
+        "CorpusId": 216078090
+      },
+      "url": "https://www.semanticscholar.org/paper/5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+      "title": "Auto-Encoding Variational Bayes",
+      "venue": "International Conference on Learning Representations",
+      "year": 2013,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1312.6114, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2013-12-20",
+      "journal": {
+        "name": "CoRR",
+        "volume": "abs/1312.6114"
+      },
+      "authors": [
+        {
+          "authorId": "1726807",
+          "name": "Diederik P. Kingma"
+        },
+        {
+          "authorId": "1678311",
+          "name": "M. Welling"
+        }
+      ],
+      "abstract": "Abstract: How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+        "title": "Auto-Encoding Variational Bayes",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2013,
+        "candidate_year": 2013,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "fc55f6881e199a451ab7de44c723bf5b4b4c4b2c",
+        "title": "Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders",
+        "score": 0.0398,
+        "title_similarity": 0.1198,
+        "query_year": 2013,
+        "candidate_year": 2020,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3d5643bac10972c75656c5426a96abc52278d93c",
+        "title": "A Unifying Review of Efficient Variational Inference and Learning in Deep Directed Latent Variable Models",
+        "score": 0.0334,
+        "title_similarity": 0.1134,
+        "query_year": 2013,
+        "candidate_year": 2016,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c2eb3d80778a6c87cc4a681d8387de028b0f2e05",
+        "title": "Unsupervised Solar Wind Classification Using Wavelet Variational Autoencoders and Self-Organazing Maps",
+        "score": 0.0334,
+        "title_similarity": 0.1134,
+        "query_year": 2013,
+        "candidate_year": 2021,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "807621500f3d13bb839483b8b9227f3aa72e7d48",
+        "title": "Generative Adversarial Networks with Decoder-Encoder Output Noise",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2013,
+        "candidate_year": 2018,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b93e73152e400087b13b960e245f673a5990f518",
+        "title": "Learning Generative Models from Incomplete Data",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2013,
+        "candidate_year": 2019,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f475e99542dbdfca962d36f7af0fc4854042495c",
+        "title": "A Framework for Evaluating Predictive Models Using Synthetic Image Covariates and Longitudinal Data",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2013,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 7,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+          "externalIds": {
+            "DBLP": "journals/corr/KingmaW13",
+            "MAG": "2951004968",
+            "ArXiv": "1312.6114",
+            "CorpusId": 216078090
+          },
+          "url": "https://www.semanticscholar.org/paper/5f5dc5b9a2ba710937e2c413b37b053cd673df02",
+          "title": "Auto-Encoding Variational Bayes",
+          "venue": "International Conference on Learning Representations",
+          "year": 2013,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1312.6114, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2013-12-20",
+          "journal": {
+            "name": "CoRR",
+            "volume": "abs/1312.6114"
+          },
+          "authors": [
+            {
+              "authorId": "1726807",
+              "name": "Diederik P. Kingma"
+            },
+            {
+              "authorId": "1678311",
+              "name": "M. Welling"
+            }
+          ],
+          "abstract": "Abstract: How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results."
+        },
+        {
+          "paperId": "3d5643bac10972c75656c5426a96abc52278d93c",
+          "externalIds": {
+            "CorpusId": 202623652
+          },
+          "url": "https://www.semanticscholar.org/paper/3d5643bac10972c75656c5426a96abc52278d93c",
+          "title": "A Unifying Review of Efficient Variational Inference and Learning in Deep Directed Latent Variable Models",
+          "venue": "",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://riashatislam.files.wordpress.com/2017/06/final-report.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "18014232",
+              "name": "Riashat Islam"
+            },
+            {
+              "authorId": "8418520",
+              "name": "Jiameng Gao"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "fc55f6881e199a451ab7de44c723bf5b4b4c4b2c",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2003-07756",
+            "ArXiv": "2003.07756",
+            "MAG": "3011817866",
+            "CorpusId": 209167691,
+            "PubMed": "34950878"
+          },
+          "url": "https://www.semanticscholar.org/paper/fc55f6881e199a451ab7de44c723bf5b4b4c4b2c",
+          "title": "Characterizing and Avoiding Problematic Global Optima of Variational Autoencoders",
+          "venue": "Symposium on Advances in Approximate Bayesian Inference",
+          "year": 2020,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2003.07756, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2020-02-03",
+          "journal": {
+            "name": "Proceedings of machine learning research",
+            "volume": "118"
+          },
+          "authors": [
+            {
+              "authorId": "1394333587",
+              "name": "Yaniv Yacoby"
+            },
+            {
+              "authorId": "3291783",
+              "name": "Weiwei Pan"
+            },
+            {
+              "authorId": "1388372395",
+              "name": "F. Doshi-Velez"
+            }
+          ],
+          "abstract": "Variational Auto-encoders (VAEs) are deep generative latent variable models consisting of two components: a generative model that captures a data distribution p(x) by transforming a distribution p(z) over latent space, and an inference model that infers likely latent codes for each data point (Kingma and Welling, 2013). Recent work shows that traditional training methods tend to yield solutions that violate modeling desiderata: (1) the learned generative model captures the observed data distribution but does so while ignoring the latent codes, resulting in codes that do not represent the data (e.g. van den Oord et al. (2017); Kim et al. (2018)); (2) the aggregate of the learned latent codes does not match the prior p(z). This mismatch means that the learned generative model will be unable to generate realistic data with samples from p(z)(e.g. Makhzani et al. (2015); Tomczak and Welling (2017)). In this paper, we demonstrate that both issues stem from the fact that the global optima of the VAE training objective often correspond to undesirable solutions. Our analysis builds on two observations: (1) the generative model is unidentifiable - there exist many generative models that explain the data equally well, each with different (and potentially unwanted) properties and (2) bias in the VAE objective - the VAE objective may prefer generative models that explain the data poorly but have posteriors that are easy to approximate. We present a novel inference method, LiBI, mitigating the problems identified in our analysis. On synthetic datasets, we show that LiBI can learn generative models that capture the data distribution and inference models that better satisfy modeling assumptions when traditional methods struggle to do so."
+        },
+        {
+          "paperId": "807621500f3d13bb839483b8b9227f3aa72e7d48",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-1807-03923",
+            "MAG": "2814977632",
+            "ArXiv": "1807.03923",
+            "CorpusId": 49665341
+          },
+          "url": "https://www.semanticscholar.org/paper/807621500f3d13bb839483b8b9227f3aa72e7d48",
+          "title": "Generative Adversarial Networks with Decoder-Encoder Output Noise",
+          "venue": "arXiv.org",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1807.03923, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-07-11",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/1807.03923"
+          },
+          "authors": [
+            {
+              "authorId": "2421012",
+              "name": "G. Zhong"
+            },
+            {
+              "authorId": "2153576052",
+              "name": "Wei Gao"
+            },
+            {
+              "authorId": "2108493426",
+              "name": "Yongbin Liu"
+            },
+            {
+              "authorId": "47796538",
+              "name": "Youzhao Yang"
+            }
+          ],
+          "abstract": "In recent years, research on image generation methods has been developing fast. The auto-encoding variational Bayes method (VAEs) was proposed in 2013, which uses variational inference to learn a latent space from the image database and then generates images using the decoder. The generative adversarial networks (GANs) came out as a promising framework, which uses adversarial training to improve the generative ability of the generator. However, the generated pictures by GANs are generally blurry. The deep convolutional generative adversarial networks (DCGANs) were then proposed to leverage the quality of generated images. Since the input noise vectors are randomly sampled from a Gaussian distribution, the generator has to map from a whole normal distribution to the images. This makes DCGANs unable to reflect the inherent structure of the training data. In this paper, we propose a novel deep model, called generative adversarial networks with decoder-encoder output noise (DE-GANs), which takes advantage of both the adversarial training and the variational Bayesain inference to improve the performance of image generation. DE-GANs use a pre-trained decoder-encoder architecture to map the random Gaussian noise vectors to informative ones and pass them to the generator of the adversarial networks. Since the decoder-encoder architecture is trained by the same images as the generators, the output vectors could carry the intrinsic distribution information of the original images. Moreover, the loss function of DE-GANs is different from GANs and DCGANs. A hidden-space loss function is added to the adversarial loss function to enhance the robustness of the model. Extensive empirical results show that DE-GANs can accelerate the convergence of the adversarial training process and improve the quality of the generated images."
+        },
+        {
+          "paperId": "c2eb3d80778a6c87cc4a681d8387de028b0f2e05",
+          "externalIds": {
+            "MAG": "3162917919",
+            "DOI": "10.5194/EGUSPHERE-EGU21-12716",
+            "CorpusId": 236767329
+          },
+          "url": "https://www.semanticscholar.org/paper/c2eb3d80778a6c87cc4a681d8387de028b0f2e05",
+          "title": "Unsupervised Solar Wind Classification Using Wavelet Variational Autoencoders and Self-Organazing Maps",
+          "venue": "",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.5194/EGUSPHERE-EGU21-12716?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.5194/EGUSPHERE-EGU21-12716, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2021-03-03",
+          "journal": {
+            "name": "",
+            "volume": ""
+          },
+          "authors": [
+            {
+              "authorId": "1898587",
+              "name": "J. Amaya"
+            },
+            {
+              "authorId": "151209411",
+              "name": "S. Jamal"
+            },
+            {
+              "authorId": "1969391",
+              "name": "G. Lapenta"
+            }
+          ],
+          "abstract": "<p>Last year we published an automatic method for the automatic classification of the solar wind [1]. We showed that data transformation and unsupervised clustering can be used to classify observations made by the ACE spacecraft. Two data transformation techniques were used: Kernel Principal Component Analysis (KPCA) and Auto-encoder Neural Networks. After data transformation three clustering techniques were tested: k-means, Bayesian Gaussian Mixtures (BGM), and Self-Organizing Maps (SOM). Although the results were very positive we ran into a few difficulties: a) the data from the ACE mission contains a very small population of observations originated at high latitude coronal holes, b) the measured features contain a high degree of intercorrelation, c) the data distribution is compact in the feature space, and d) the final algorithm produces a single categorical class for a single point in time.</p><p><br>In this work we present an improvement of the model that redresses some of the limitations above. We are still making use of the two main features of our previous work, i.e. the data transformation using auto-encoders and the unsupervised classification using SOM. But in the present work: a) we include the analysis of Ulysses data with observations of the solar wind originated at high latitudes; b) we perform a Factor Analysis to reduce the number of features used as inputs; c) we transform windows of time of the multi-variate time series (instead of instantaneous observations) into scalograms using wavelet transformations; d) we apply the variational version of the auto-encoder [2] to parametrize the scalograms; f) we finally use the SOM to automatically classify the windows of time in different categories.</p><p><br>This method can be adapted to the classification of observations from the Parker Solar Probe and Solar Orbiter missions.</p><p><br>The work presented in this abstract has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No. 754304 (DEEP-EST, www.deep-projects.eu), and from the European Union's Horizon 2020 research and innovation programme under grant agreement No 776262 (AIDA, www.aida-space.eu).</p><p><br>[1] Amaya, Jorge, Romain Dupuis, Maria Elena Innocenti, and Giovanni Lapenta. \"Visualizing and Interpreting Unsupervised Solar Wind Classifications.\" arXiv preprint arXiv:2004.13430 (2020).</p><p>[2] Kingma, Diederik P., and Max Welling. \"Auto-encoding variational bayes.\" arXiv preprint arXiv:1312.6114 (2013).</p>"
+        },
+        {
+          "paperId": "b93e73152e400087b13b960e245f673a5990f518",
+          "externalIds": {
+            "CorpusId": 201638993
+          },
+          "url": "https://www.semanticscholar.org/paper/b93e73152e400087b13b960e245f673a5990f518",
+          "title": "Learning Generative Models from Incomplete Data",
+          "venue": "",
+          "year": 2019,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://reports-archive.adm.cs.cmu.edu/anon/2019/CMU-CS-19-120.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "144529448",
+              "name": "Y. Lim"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "f475e99542dbdfca962d36f7af0fc4854042495c",
+          "externalIds": {
+            "ArXiv": "2410.16177",
+            "DBLP": "journals/corr/abs-2410-16177",
+            "DOI": "10.48550/arXiv.2410.16177",
+            "CorpusId": 273507292
+          },
+          "url": "https://www.semanticscholar.org/paper/f475e99542dbdfca962d36f7af0fc4854042495c",
+          "title": "A Framework for Evaluating Predictive Models Using Synthetic Image Covariates and Longitudinal Data",
+          "venue": "Proceedings of the American Conference of Pharmacometrics 2024",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.16177, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2024-10-21",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2410.16177"
+          },
+          "authors": [
+            {
+              "authorId": "2316429028",
+              "name": "S. Deltadahl"
+            },
+            {
+              "authorId": "9872876",
+              "name": "Andreu Vall"
+            },
+            {
+              "authorId": "2327046556",
+              "name": "Vijay Ivaturi"
+            },
+            {
+              "authorId": "2274924017",
+              "name": "Niklas Korsbo"
+            }
+          ],
+          "abstract": "Objectives We present a novel framework to synthesize data sets with complex covariates, such as medical images, linked to simulated longitudinal patient outcomes. This allows us to evaluate and refine predictive models by providing training data where true relationships are known. Our implementation focuses on generating optical coherence tomography (OCT) scans, but the framework is adaptable to other covariates. We also show that, once we have such data, we can model it and appropriately leverage images to predict longitudinal outcomes. Methods We used 109,309 2D OCT image slices to train a model (combining a VAE [1] with Stable Diffusion [2]) to generate images from a 128-dimensional normally distributed latent space. We also defined an NLME model to generate longitudinal observations based on a latent space of three random effects. By introducing covariance in the sampling of the two models' latent space, we generated pairs of images and longitudinal measurements where a tunable proportion of the between-subject variability is predictable by features in the image. We generated a dataset of 1.1 million OCT scan slices, each paired with five sets of longitudinal measurements where the image has different degrees of predictiveness. We modeled this data to verify that we could predict outcomes from the images by: Modeling the longitudinal patient measurements with an NLME model - obtaining empirical Bayes estimates for each patient. Training a ResNet model [3] to predict a patient's empirical Bayes estimates from their OCT image.Combining the trained ResNet and NLME models to individualize longitudinal predictions based on the images. We repeated this for cases where the image could theoretically predict 100%, 50%, 10%, 5.26%, and 2% of the between-subject variability of the longitudinal data. Results The fitted models could dramatically improve longitudinal patient predictions by using image covariates. The predictivity of the image appropriately declined as we reduced the correlation between the synthetic images and longitudinal data. Importantly, in all but the 2% predictivity case, we got to within 50% of the theoretically best possible prediction on withheld data—indicating that we can find a signal even if it is weak. The success of fitting the data also validates our synthesis methodology and mechanism to control the predictive signal we imbue the generated images. The generated dataset is publicly available [4]. Conclusions Here, we synthesize and model realistic data with complex covariates and longitudinal patient outcomes. While easily adaptable to other rich data types, we successfully apply the methodology to OCT images. In that process, we also showed that we can utilize images for rich longitudinal predictions. This methodology enhances our ability to understand and model the impact of complex covariates on patient outcomes, ultimately leading to more accurate individualized patient predictions.Citations: [1] Kingma, Diederik P., and Max Welling. “Auto-Encoding Variational Bayes.” arXiv Preprint arXiv:1312.6114, 2013, https://doi.org/10.48550/arXiv.1312.6114 [2] Rombach, Robin, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. “High-Resolution Image Synthesis With Latent Diffusion Models,” In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022, pp. 10684-10695, https://doi.org/10.48550/arXiv.2112.10752 [3] He, Kaiming, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. “Deep Residual Learning for Image Recognition.” In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2016, pp. 770–78, https://doi.org/10.1109/CVPR.2016.90. [4] “Deltadahl/OCT-Longitudinal · Datasets at Hugging Face.” Accessed May 15, 2024. https://huggingface.co/datasets/Deltadahl/OCT-Longitudinal, https://doi.org/10.57967/hf/2089"
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-bdcb63b79ed88f64.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-bdcb63b79ed88f64.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-bdcb63b79ed88f64.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "882349bd27dfb9fc38d1004f2891792f8558a08e529e00d07b4a5495bb4d1469",
+    "chunk_count": 22,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

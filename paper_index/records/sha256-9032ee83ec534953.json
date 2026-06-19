@@ -1,0 +1,59 @@
+{
+  "paper_id": "sha256-9032ee83ec534953",
+  "content_kind": "pdf_backed",
+  "addition_mode": "pdf_guided",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/synthetic_biology/Venter 2016 Science - Design and synthesis of a minimal bacterial genome.pdf",
+  "pdf_sha256": "9032ee83ec5349536aec3c9db63c698fc27bc370614a0dadee1579e6daee5fbd",
+  "filename": "Venter 2016 Science - Design and synthesis of a minimal bacterial genome.pdf",
+  "item_type": "article",
+  "title_query": "Design and synthesis of a minimal bacterial genome",
+  "date_indexed": "2026-06-16T03:20:18.252296+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": null,
+  "metadata_source": "manual_bibtex",
+  "doi_candidates": [],
+  "doi_candidate_details": [],
+  "semantic_scholar": {
+    "query": "Design and synthesis of a minimal bacterial genome",
+    "limit": 0,
+    "attempts": [],
+    "selected_paper_id": "",
+    "best_candidate": null,
+    "merged_candidates": []
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false,
+    "accepted_doi": "",
+    "best_candidate_doi": "",
+    "crossref_attempts": [],
+    "accepted_source": "",
+    "matched_by": ""
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-9032ee83ec534953.json",
+    "text_path": "paper_index/text/sha256-9032ee83ec534953.txt",
+    "chunk_path": "paper_index/chunks/sha256-9032ee83ec534953.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "554bae5b458af6ea9c83338adcd13dc9f40d0e3e1f590086dd242f9913d42540",
+    "chunk_count": 43,
+    "chunk_target_chars": 2000,
+    "chunk_overlap_chars": 200,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "raw_bibtex": "@article{hutchison2016bacterial,\n  title = {Design and synthesis of a minimal bacterial genome},\n  author = {Clyde A. Hutchison, Ray-Yuan Chuang, Vladimir N. Noskov, Nacyra Assad-Garcia, Thomas J. Deerinck, Mark H. Ellisman, John Gill, Krishna Kannan, Bogumil J. Karas, Li Ma, James F. Pelletier, Zhi-Qing Qi, R. Alexander Richter, Elizabeth A. Strychalski, Lijie Sun, Yo Suzuki, Billyana Tsvetanova, Kim S. Wise, Hamilton O. Smith, John I. Glass, Chuck Merryman, Daniel G. Gibson, J. Craig Venter},\n  year = {2016},\n  journal = {Science},\n  volume = {351},\n  number = {6280},\n  doi = {10.1126/science.aad6253},\n  url = {https://doi.org/10.1126/science.aad6253},\n  issn = {0036-8075},\n  publisher = {American Association for the Advancement of Science (AAAS)}\n}",
+    "parsed_bibtex_type": "article",
+    "source_note": "pasted into library_add.py pdf flow",
+    "bibtex_key": "hutchison2016bacterial"
+  }
+}

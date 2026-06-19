@@ -1,0 +1,1428 @@
+{
+  "paper_id": "sha256-9522b50dc5805dba",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_MD/Feig 2023 NatCommun - Direct generation of protein conformational ensembles via machine learning.pdf",
+  "pdf_sha256": "9522b50dc5805dba9a55f7c7cf5b12a5ab502668a722b421085dae0cdf24bee1",
+  "filename": "Feig 2023 NatCommun - Direct generation of protein conformational ensembles via machine learning.pdf",
+  "item_type": "article",
+  "title_query": "Direct generation of protein conformational ensembles via machine learning",
+  "filename_hints": {
+    "year_hint": 2023,
+    "venue_hint": "naturecommunications",
+    "prefix": "Feig 2023 NatCommun"
+  },
+  "doi_candidates": [
+    "10.1038/s41467-023-36443-x"
+  ],
+  "date_indexed": "2026-04-17T03:30:17.033884+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2023!=2022"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Direct generation of protein conformational ensembles via machine learning",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "21a4afa74caf78e28880b7fe4c30a09a5f9c14e3",
+      "externalIds": {
+        "PubMedCentral": "9922302",
+        "DOI": "10.1038/s41467-023-36443-x",
+        "CorpusId": 249929979,
+        "PubMed": "36774359"
+      },
+      "url": "https://www.semanticscholar.org/paper/21a4afa74caf78e28880b7fe4c30a09a5f9c14e3",
+      "title": "Direct generation of protein conformational ensembles via machine learning",
+      "venue": "bioRxiv",
+      "year": 2022,
+      "openAccessPdf": {
+        "url": "https://www.nature.com/articles/s41467-023-36443-x.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9922302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2022-06-19",
+      "journal": {
+        "name": "Nature Communications",
+        "volume": "14"
+      },
+      "authors": [
+        {
+          "authorId": "5558079",
+          "name": "G. Janson"
+        },
+        {
+          "authorId": "1398916657",
+          "name": "Gilberto Valdés-García"
+        },
+        {
+          "authorId": "48473692",
+          "name": "Lim Heo"
+        },
+        {
+          "authorId": "1689993",
+          "name": "M. Feig"
+        }
+      ],
+      "abstract": "Dynamics and conformational sampling are essential for linking protein structure to biological function. While challenging to probe experimentally, computer simulations are widely used to describe protein dynamics, but at significant computational costs that continue to limit the systems that can be studied. Here, we demonstrate that machine learning can be trained with simulation data to directly generate physically realistic conformational ensembles of proteins without the need for any sampling and at negligible computational cost. As a proof-of-principle we train a generative adversarial network based on a transformer architecture with self-attention on coarse-grained simulations of intrinsically disordered peptides. The resulting model, idpGAN, can predict sequence-dependent coarse-grained ensembles for sequences that are not present in the training set demonstrating that transferability can be achieved beyond the limited training data. We also retrain idpGAN on atomistic simulation data to show that the approach can be extended in principle to higher-resolution conformational ensemble generation. Computational methods to study protein structural dynamics are a powerful tool in life sciences but are computationally expensive. Here, the authors show that machine learning can be used to efficiently generate protein conformational ensembles and test their method on intrinsically disordered peptides."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "21a4afa74caf78e28880b7fe4c30a09a5f9c14e3",
+        "title": "Direct generation of protein conformational ensembles via machine learning",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2023,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "05f9e05a00dccc7fd3d3c3c090b6efb7aabfdede",
+        "title": "Protein-Ligand Complex Generator & Drug Screening via Tiered Tensor Transform",
+        "score": 0.2863,
+        "title_similarity": 0.2062,
+        "query_year": 2023,
+        "candidate_year": 2023,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b6ed6633b73e8b0e340c9727fb6dd094e2ac38a9",
+        "title": "FastConformation: A Standalone ML-Based Toolkit for Modeling and Analyzing Protein Conformational Ensembles at Scale",
+        "score": 0.2294,
+        "title_similarity": 0.3094,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d0952e1974b35b72e4e4b658e9eb491f14800c18",
+        "title": "Nanooptics with anisotropic 2D materials",
+        "score": 0.03,
+        "title_similarity": 0.0,
+        "query_year": 2023,
+        "candidate_year": 2022,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0750e26e4d500a01623d3aba0303a4b2d6065193",
+        "title": "A Standardized Benchmark for Machine-Learned Molecular Dynamics using Weighted Ensemble Sampling",
+        "score": 0.0218,
+        "title_similarity": 0.1018,
+        "query_year": 2023,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d97c4539dcb3f4793b5b2d81d3caf92206c6346d",
+        "title": "Applications of Fuzzy Sets Theory, 7th International Workshop on Fuzzy Logic and Applications, WILF 2007, Camogli, Italy, July 7-10, 2007, Proceedings",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2023,
+        "candidate_year": 2007,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e3987edf5ed5a4f1b2bc926f56f576e46fdba8ea",
+        "title": "REVEALS POTENTIAL OF THERAPY-DRIVEN TUMOR EVOLUTION GENT-53. SELF-ORGANIZATION OF GLIOMAS: GENETIC RODENT MODELS, GENOMIC NETWORKS, AND MATHEMATICAL MODELING - PRECLINICAL STUDIES COMBINING TOCA 511 AND 5-FLUOROCYTOSINE WITH CHECKPOINT INHIBITORS SIGNIFICANTLY REDUCED TUMOR BURDEN IN A MOUSE MODEL O",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2023,
+        "candidate_year": 2016,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41467-023-36443-x"
+    ],
+    "matching_extracted_doi": "10.1038/s41467-023-36443-x",
+    "raw_response": {
+      "total": 7,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "21a4afa74caf78e28880b7fe4c30a09a5f9c14e3",
+          "externalIds": {
+            "PubMedCentral": "9922302",
+            "DOI": "10.1038/s41467-023-36443-x",
+            "CorpusId": 249929979,
+            "PubMed": "36774359"
+          },
+          "url": "https://www.semanticscholar.org/paper/21a4afa74caf78e28880b7fe4c30a09a5f9c14e3",
+          "title": "Direct generation of protein conformational ensembles via machine learning",
+          "venue": "bioRxiv",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.nature.com/articles/s41467-023-36443-x.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9922302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-06-19",
+          "journal": {
+            "name": "Nature Communications",
+            "volume": "14"
+          },
+          "authors": [
+            {
+              "authorId": "5558079",
+              "name": "G. Janson"
+            },
+            {
+              "authorId": "1398916657",
+              "name": "Gilberto Valdés-García"
+            },
+            {
+              "authorId": "48473692",
+              "name": "Lim Heo"
+            },
+            {
+              "authorId": "1689993",
+              "name": "M. Feig"
+            }
+          ],
+          "abstract": "Dynamics and conformational sampling are essential for linking protein structure to biological function. While challenging to probe experimentally, computer simulations are widely used to describe protein dynamics, but at significant computational costs that continue to limit the systems that can be studied. Here, we demonstrate that machine learning can be trained with simulation data to directly generate physically realistic conformational ensembles of proteins without the need for any sampling and at negligible computational cost. As a proof-of-principle we train a generative adversarial network based on a transformer architecture with self-attention on coarse-grained simulations of intrinsically disordered peptides. The resulting model, idpGAN, can predict sequence-dependent coarse-grained ensembles for sequences that are not present in the training set demonstrating that transferability can be achieved beyond the limited training data. We also retrain idpGAN on atomistic simulation data to show that the approach can be extended in principle to higher-resolution conformational ensemble generation. Computational methods to study protein structural dynamics are a powerful tool in life sciences but are computationally expensive. Here, the authors show that machine learning can be used to efficiently generate protein conformational ensembles and test their method on intrinsically disordered peptides."
+        },
+        {
+          "paperId": "b6ed6633b73e8b0e340c9727fb6dd094e2ac38a9",
+          "externalIds": {
+            "PubMedCentral": "12132556",
+            "DOI": "10.1101/2025.05.09.653048",
+            "CorpusId": 278715366,
+            "PubMed": "40463224"
+          },
+          "url": "https://www.semanticscholar.org/paper/b6ed6633b73e8b0e340c9727fb6dd094e2ac38a9",
+          "title": "FastConformation: A Standalone ML-Based Toolkit for Modeling and Analyzing Protein Conformational Ensembles at Scale",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12132556, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-05-14",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2362095450",
+              "name": "Flavia Maria Galeazzi"
+            },
+            {
+              "authorId": "2293706740",
+              "name": "Gabriel Monteiro da Silva"
+            },
+            {
+              "authorId": "2000128559",
+              "name": "P. Arantes"
+            },
+            {
+              "authorId": "2362569868",
+              "name": "Iz Varghese"
+            },
+            {
+              "authorId": "2350907947",
+              "name": "Ananya Shukla"
+            },
+            {
+              "authorId": "2275186881",
+              "name": "B. Rubenstein"
+            }
+          ],
+          "abstract": "Deep learning approaches like AlphaFold 2 (AF2) have revolutionized structural biology by accurately predicting the ground state structures of proteins. Recently, clustering and subsampling techniques that manipulate multiple sequence alignment (MSA) inputs into AlphaFold to generate conformational ensembles of proteins have also been proposed. Although many of these techniques have been made open source, they often require integrating multiple packages and can be challenging for researchers who have a limited programming background to employ. This is especially true when researchers are interested in subsampling to produce predictions of protein conformational ensembles, which require multiple computational steps. This manuscript introduces FastConformation, a Python-based application that integrates MSA generation, structure prediction via AF2, and interactive analysis of protein conformations and their distributions, all in one place. FastConformation is accessible through a user-friendly GUI suitable for non-programmers, allowing users to iteratively refine subsampling parameters based on their analyses to achieve diverse conformational ensembles. Starting from an amino acid sequence, users can make protein conformation predictions and analyze results in just a few hours on their local machines, which is significantly faster than traditional molecular dynamics (MD) simulations. Uniquely, by leveraging the subsampling of MSAs, our tool enables the generation of alternative protein conformations. We demonstrate the utility of FastConformation on proteins including the Abl1 kinase, LAT1 transporter, and CCR5 receptor, showcasing its ability to predict and analyze the protein conformational ensembles and effects of mutations on a variety of proteins. This tool enables a wide range of high-throughput applications in protein biochemistry, drug discovery, and protein engineering."
+        },
+        {
+          "paperId": "0750e26e4d500a01623d3aba0303a4b2d6065193",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2510-17187",
+            "ArXiv": "2510.17187",
+            "DOI": "10.48550/arXiv.2510.17187",
+            "CorpusId": 282209123,
+            "PubMed": "41346034"
+          },
+          "url": "https://www.semanticscholar.org/paper/0750e26e4d500a01623d3aba0303a4b2d6065193",
+          "title": "A Standardized Benchmark for Machine-Learned Molecular Dynamics using Weighted Ensemble Sampling",
+          "venue": "Journal of Physical Chemistry B",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.17187, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-10-20",
+          "journal": {
+            "name": "The journal of physical chemistry. B"
+          },
+          "authors": [
+            {
+              "authorId": "2381055543",
+              "name": "Alexander Aghili"
+            },
+            {
+              "authorId": "2381057409",
+              "name": "Andy Bruce"
+            },
+            {
+              "authorId": "2381057246",
+              "name": "Daniel Sabo"
+            },
+            {
+              "authorId": "2381372421",
+              "name": "Sanya Murdeshwar"
+            },
+            {
+              "authorId": "2381372950",
+              "name": "Kevin Bachelor"
+            },
+            {
+              "authorId": "2141795758",
+              "name": "Ionut Mistreanu"
+            },
+            {
+              "authorId": "4014072",
+              "name": "Ashwin Lokapally"
+            },
+            {
+              "authorId": "32126180",
+              "name": "Razvan V. Marinescu"
+            }
+          ],
+          "abstract": "The rapid evolution of molecular dynamics (MD) methods, including machine-learned dynamics, has outpaced the development of standardized tools for method validation. Objective comparison between simulation approaches is often hindered by inconsistent evaluation metrics, insufficient sampling of rare conformational states, and the absence of reproducible benchmarks. To address these challenges, we introduce a modular benchmarking framework that systematically evaluates protein MD methods using enhanced sampling analysis. Our approach uses weighted ensemble (WE) sampling via The Weighted Ensemble Simulation Toolkit with Parallelization and Analysis (WESTPA), based on progress coordinates derived from Time-lagged Independent Component Analysis (TICA), enabling fast and efficient exploration of protein conformational space. The framework includes a flexible, lightweight propagator interface that supports arbitrary simulation engines, allowing both classical force fields and machine learning-based models. Additionally, the framework offers a comprehensive evaluation suite capable of computing more than 19 different metrics and visualizations across a variety of domains. We further contribute a data set of nine diverse proteins, ranging from 10 to 224 residues, that span a variety of folding complexities and topologies. Each protein has been extensively simulated at 300 K for one million MD steps per starting point (4 ns). To demonstrate the utility of our framework, we perform validation tests using classic MD simulations with implicit solvent and compare protein conformational sampling using a fully trained versus under-trained CGSchNet model. By standardizing evaluation protocols and enabling direct, reproducible comparisons across MD approaches, our open-source platform lays the groundwork for consistent, rigorous benchmarking across the molecular simulation community."
+        },
+        {
+          "paperId": "05f9e05a00dccc7fd3d3c3c090b6efb7aabfdede",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2301-00984",
+            "ArXiv": "2301.00984",
+            "DOI": "10.48550/arXiv.2301.00984",
+            "CorpusId": 255393734
+          },
+          "url": "https://www.semanticscholar.org/paper/05f9e05a00dccc7fd3d3c3c090b6efb7aabfdede",
+          "title": "Protein-Ligand Complex Generator & Drug Screening via Tiered Tensor Transform",
+          "venue": "arXiv.org",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/2301.00984",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2301.00984, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-01-03",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2301.00984"
+          },
+          "authors": [
+            {
+              "authorId": "2276225",
+              "name": "J. Mailoa"
+            },
+            {
+              "authorId": "3492065",
+              "name": "Zhaofeng Ye"
+            },
+            {
+              "authorId": "40125294",
+              "name": "J. Qiu"
+            },
+            {
+              "authorId": "2051054428",
+              "name": "Chang-Yu Hsieh"
+            },
+            {
+              "authorId": "1689463",
+              "name": "Shengyu Zhang"
+            }
+          ],
+          "abstract": "The generation of small molecule candidate (ligand) binding poses in its target protein pocket is important for computer-aided drug discovery. Typical rigid-body docking methods ignore the pocket flexibility of protein, while the more accurate pose generation using molecular dynamics is hindered by slow protein dynamics. We develop a tiered tensor transform (3T) algorithm to rapidly generate diverse protein-ligand complex conformations for both pose and affinity estimation in drug screening, requiring neither machine learning training nor lengthy dynamics computation, while maintaining both coarse-grain-like coordinated protein dynamics and atomistic-level details of the complex pocket. The 3T conformation structures we generate achieve significantly higher accuracy in active ligand classification than traditional ensemble docking using hundreds of experimental protein conformations. Furthermore, we demonstrate that 3T can be used to explore distant protein-ligand binding poses within the protein pocket. 3T structure transformation is decoupled from the system physics, making future usage in other computational scientific domains possible."
+        },
+        {
+          "paperId": "d0952e1974b35b72e4e4b658e9eb491f14800c18",
+          "externalIds": {
+            "CorpusId": 253351912
+          },
+          "url": "https://www.semanticscholar.org/paper/d0952e1974b35b72e4e4b658e9eb491f14800c18",
+          "title": "Nanooptics with anisotropic 2D materials",
+          "venue": "",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://nfo16.ece.uvic.ca/assets/files/Abstracts-Oral-Thursday.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2119274992",
+              "name": "Edona Karakaçi"
+            },
+            {
+              "authorId": "2172250",
+              "name": "C. Ying"
+            },
+            {
+              "authorId": "4037936",
+              "name": "Alessandro Ianiro"
+            },
+            {
+              "authorId": "1401238826",
+              "name": "E. Bermúdez-Ureña"
+            },
+            {
+              "authorId": "2678629",
+              "name": "R. Gordon"
+            },
+            {
+              "authorId": "2066915940",
+              "name": "Michael Mayer"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "d97c4539dcb3f4793b5b2d81d3caf92206c6346d",
+          "externalIds": {
+            "MAG": "2914689246",
+            "DBLP": "conf/wilf/2007",
+            "DOI": "10.1007/978-3-540-73400-0",
+            "CorpusId": 29065387
+          },
+          "url": "https://www.semanticscholar.org/paper/d97c4539dcb3f4793b5b2d81d3caf92206c6346d",
+          "title": "Applications of Fuzzy Sets Theory, 7th International Workshop on Fuzzy Logic and Applications, WILF 2007, Camogli, Italy, July 7-10, 2007, Proceedings",
+          "venue": "International Workshop on Fuzzy Logic and Applications",
+          "year": 2007,
+          "openAccessPdf": {
+            "url": "https://ktisis.cut.ac.cy/bitstream/20.500.14279/4083/1/Tsapatsoulis_Clustering%20Microarray%20Data.pdf",
+            "status": "GREEN",
+            "license": "other-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-540-73400-0?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-540-73400-0, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": "2007-08-17",
+          "journal": {
+            "volume": "4578"
+          },
+          "authors": [
+            {
+              "authorId": "144493859",
+              "name": "F. Masulli"
+            },
+            {
+              "authorId": "2286446193",
+              "name": "S. Mitra"
+            },
+            {
+              "authorId": "145645971",
+              "name": "G. Pasi"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "e3987edf5ed5a4f1b2bc926f56f576e46fdba8ea",
+          "externalIds": {
+            "CorpusId": 250533228
+          },
+          "url": "https://www.semanticscholar.org/paper/e3987edf5ed5a4f1b2bc926f56f576e46fdba8ea",
+          "title": "REVEALS POTENTIAL OF THERAPY-DRIVEN TUMOR EVOLUTION GENT-53. SELF-ORGANIZATION OF GLIOMAS: GENETIC RODENT MODELS, GENOMIC NETWORKS, AND MATHEMATICAL MODELING - PRECLINICAL STUDIES COMBINING TOCA 511 AND 5-FLUOROCYTOSINE WITH CHECKPOINT INHIBITORS SIGNIFICANTLY REDUCED TUMOR BURDEN IN A MOUSE MODEL O",
+          "venue": "",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2054637635",
+              "name": "Zheng"
+            },
+            {
+              "authorId": "2097832389",
+              "name": "Sommer"
+            },
+            {
+              "authorId": "1933020377",
+              "name": "Laufer"
+            },
+            {
+              "authorId": "2008167278",
+              "name": "Bilsky"
+            },
+            {
+              "authorId": "2176231534",
+              "name": "Motsch"
+            },
+            {
+              "authorId": "2102654263",
+              "name": "Zamler"
+            },
+            {
+              "authorId": "2176233119",
+              "name": "Comba"
+            },
+            {
+              "authorId": "2102053275",
+              "name": "Koschmann"
+            },
+            {
+              "authorId": "2073227264",
+              "name": "Núñez"
+            },
+            {
+              "authorId": "2176233190",
+              "name": "Calinescu"
+            },
+            {
+              "authorId": "2307050645",
+              "name": "Kamran"
+            },
+            {
+              "authorId": "2176231595",
+              "name": "Dzaman"
+            },
+            {
+              "authorId": "39565405",
+              "name": "M. Castro"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            4,
+            17
+          ]
+        ],
+        "date-time": "2026-04-17T03:17:34Z",
+        "timestamp": 1776395854765,
+        "version": "3.51.2"
+      },
+      "reference-count": 68,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "1",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                2,
+                11
+              ]
+            ],
+            "date-time": "2023-02-11T00:00:00Z",
+            "timestamp": 1676073600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                2023,
+                2,
+                11
+              ]
+            ],
+            "date-time": "2023-02-11T00:00:00Z",
+            "timestamp": 1676073600000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000057",
+          "name": "U.S. Department of Health & Human Services | NIH | National Institute of General Medical Sciences",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "R35 GM126948"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "R35 GM126948"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000057",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Nat Commun"
+      ],
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Dynamics and conformational sampling are essential for linking protein structure to biological function. While challenging to probe experimentally, computer simulations are widely used to describe protein dynamics, but at significant computational costs that continue to limit the systems that can be studied. Here, we demonstrate that machine learning can be trained with simulation data to directly generate physically realistic conformational ensembles of proteins without the need for any sampling and at negligible computational cost. As a proof-of-principle we train a generative adversarial network based on a transformer architecture with self-attention on coarse-grained simulations of intrinsically disordered peptides. The resulting model, idpGAN, can predict sequence-dependent coarse-grained ensembles for sequences that are not present in the training set demonstrating that transferability can be achieved beyond the limited training data. We also retrain idpGAN on atomistic simulation data to show that the approach can be extended in principle to higher-resolution conformational ensemble generation.</jats:p>",
+      "DOI": "10.1038/s41467-023-36443-x",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            11
+          ]
+        ],
+        "date-time": "2023-02-11T03:02:51Z",
+        "timestamp": 1676084571000
+      },
+      "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 171,
+      "title": [
+        "Direct generation of protein conformational ensembles via machine learning"
+      ],
+      "prefix": "10.1038",
+      "volume": "14",
+      "author": [
+        {
+          "given": "Giacomo",
+          "family": "Janson",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8322-0284",
+          "authenticated-orcid": false,
+          "given": "Gilberto",
+          "family": "Valdes-Garcia",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3153-2363",
+          "authenticated-orcid": false,
+          "given": "Lim",
+          "family": "Heo",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9380-6422",
+          "authenticated-orcid": false,
+          "given": "Michael",
+          "family": "Feig",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            11
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "36443_CR1",
+          "doi-asserted-by": "publisher",
+          "first-page": "100749",
+          "DOI": "10.1016/j.jbc.2021.100749",
+          "volume": "296",
+          "author": "MD Miller",
+          "year": "2021",
+          "unstructured": "Miller, M. D. & Phillips, G. N. Moving beyond static snapshots: protein dynamics and the protein data bank. J. Biol. Chem. 296, 100749 (2021).",
+          "journal-title": "J. Biol. Chem."
+        },
+        {
+          "key": "36443_CR2",
+          "doi-asserted-by": "publisher",
+          "first-page": "1442",
+          "DOI": "10.1126/science.abd3623",
+          "volume": "370",
+          "author": "R Otten",
+          "year": "2020",
+          "unstructured": "Otten, R. et al. How directed evolution reshapes the energy landscape in an enzyme to boost catalysis. Science 370, 1442–1446 (2020).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "36443_CR3",
+          "doi-asserted-by": "publisher",
+          "first-page": "351",
+          "DOI": "10.1016/j.tibs.2018.11.007",
+          "volume": "44",
+          "author": "CR Knoverek",
+          "year": "2019",
+          "unstructured": "Knoverek, C. R., Amarasinghe, G. K. & Bowman, G. R. Advanced methods for accessing protein shape-shifting present new therapeutic opportunities. Trends Biochem. Sci. 44, 351–364 (2019).",
+          "journal-title": "Trends Biochem. Sci."
+        },
+        {
+          "key": "36443_CR4",
+          "doi-asserted-by": "publisher",
+          "first-page": "117",
+          "DOI": "10.1038/nature04105",
+          "volume": "438",
+          "author": "EZ Eisenmesser",
+          "year": "2005",
+          "unstructured": "Eisenmesser, E. Z. et al. Intrinsic dynamics of an enzyme underlies catalysis. Nature 438, 117–121 (2005).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "36443_CR5",
+          "unstructured": "Gupta, A. et al. in Advances in Protein Molecular and Structural Biology Methods (eds Timir Tripathi & Vikash Kumar Dubey) 181–197 (Academic Press, 2022)."
+        },
+        {
+          "key": "36443_CR6",
+          "doi-asserted-by": "publisher",
+          "first-page": "429",
+          "DOI": "10.1146/annurev-biophys-042910-155245",
+          "volume": "41",
+          "author": "RO Dror",
+          "year": "2012",
+          "unstructured": "Dror, R. O., Dirks, R. M., Grossman, J. P., Xu, H. & Shaw, D. E. Biomolecular simulation: a computational microscope for molecular biology. Annu. Rev. Biophys. 41, 429–452 (2012).",
+          "journal-title": "Annu. Rev. Biophys."
+        },
+        {
+          "key": "36443_CR7",
+          "unstructured": "Shaw, D. E. et al. in SC ‘14: Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 41–53 (2014)."
+        },
+        {
+          "key": "36443_CR8",
+          "doi-asserted-by": "publisher",
+          "first-page": "163",
+          "DOI": "10.3390/e16010163",
+          "volume": "16",
+          "author": "C Abrams",
+          "year": "2014",
+          "unstructured": "Abrams, C. & Bussi, G. Enhanced sampling in molecular dynamics using metadynamics, replica-exchange, and temperature-acceleration. Entropy 16, 163–199 (2014).",
+          "journal-title": "Entropy"
+        },
+        {
+          "key": "36443_CR9",
+          "doi-asserted-by": "publisher",
+          "first-page": "1",
+          "DOI": "10.1016/j.cbpa.2021.04.005",
+          "volume": "65",
+          "author": "M AlQuraishi",
+          "year": "2021",
+          "unstructured": "AlQuraishi, M. Machine learning in protein structure prediction. Curr. Opin. Chem. Biol. 65, 1–8 (2021).",
+          "journal-title": "Curr. Opin. Chem. Biol."
+        },
+        {
+          "key": "36443_CR10",
+          "doi-asserted-by": "publisher",
+          "first-page": "583",
+          "DOI": "10.1038/s41586-021-03819-2",
+          "volume": "596",
+          "author": "J Jumper",
+          "year": "2021",
+          "unstructured": "Jumper, J. et al. Highly accurate protein structure prediction with AlphaFold. Nature 596, 583–589 (2021).",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "36443_CR11",
+          "doi-asserted-by": "publisher",
+          "first-page": "871",
+          "DOI": "10.1126/science.abj8754",
+          "volume": "373",
+          "author": "M Baek",
+          "year": "2021",
+          "unstructured": "Baek, M. et al. Accurate prediction of protein structures and interactions using a three-track neural network. Science 373, 871–876 (2021).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "36443_CR12",
+          "doi-asserted-by": "publisher",
+          "first-page": "1687",
+          "DOI": "10.1002/prot.26171",
+          "volume": "89",
+          "author": "J Pereira",
+          "year": "2021",
+          "unstructured": "Pereira, J. et al. High-accuracy protein structure prediction in CASP14. Proteins 89, 1687–1699 (2021).",
+          "journal-title": "Proteins"
+        },
+        {
+          "key": "36443_CR13",
+          "doi-asserted-by": "publisher",
+          "first-page": "167208",
+          "DOI": "10.1016/j.jmb.2021.167208",
+          "volume": "433",
+          "author": "KM Ruff",
+          "year": "2021",
+          "unstructured": "Ruff, K. M. & Pappu, R. V. AlphaFold and implications for intrinsically disordered proteins. J. Mol. Biol. 433, 167208 (2021).",
+          "journal-title": "J. Mol. Biol."
+        },
+        {
+          "key": "36443_CR14",
+          "doi-asserted-by": "publisher",
+          "first-page": "541",
+          "DOI": "10.1042/BST20210499",
+          "volume": "50",
+          "author": "FE Thomasen",
+          "year": "2022",
+          "unstructured": "Thomasen, F. E. & Lindorff-Larsen, K. Conformational ensembles of intrinsically disordered proteins and flexible multidomain proteins. Biochem. Soc. T 50, 541–554 (2022).",
+          "journal-title": "Biochem. Soc. T"
+        },
+        {
+          "key": "36443_CR15",
+          "doi-asserted-by": "publisher",
+          "first-page": "553",
+          "DOI": "10.1146/annurev-biochem-072711-164947",
+          "volume": "83",
+          "author": "CJ Oldfield",
+          "year": "2014",
+          "unstructured": "Oldfield, C. J. & Dunker, A. K. Intrinsically disordered proteins and intrinsically disordered protein regions. Annu. Rev. Biochem. 83, 553–584 (2014).",
+          "journal-title": "Annu. Rev. Biochem."
+        },
+        {
+          "key": "36443_CR16",
+          "doi-asserted-by": "publisher",
+          "DOI": "10.1038/s41467-017-02388-1",
+          "volume": "9",
+          "author": "A Mardt",
+          "year": "2018",
+          "unstructured": "Mardt, A., Pasquali, L., Wu, H. & Noé, F. VAMPnets for deep learning of molecular kinetics. Nat. Commun. 9, 5 (2018).",
+          "journal-title": "Nat. Commun."
+        },
+        {
+          "key": "36443_CR17",
+          "doi-asserted-by": "publisher",
+          "first-page": "20",
+          "DOI": "10.1038/s43588-021-00173-1",
+          "volume": "2",
+          "author": "D Wang",
+          "year": "2022",
+          "unstructured": "Wang, D. et al. Efficient sampling of high-dimensional free energy landscapes using adaptive reinforced dynamics. Nat. Comput. Sci. 2, 20–29 (2022).",
+          "journal-title": "Nat. Comput. Sci."
+        },
+        {
+          "key": "36443_CR18",
+          "doi-asserted-by": "publisher",
+          "first-page": "587151",
+          "DOI": "10.3389/fmolb.2021.587151",
+          "volume": "8",
+          "author": "EO Salawu",
+          "year": "2021",
+          "unstructured": "Salawu, E. O. DESP: deep enhanced sampling of proteins’ conformation spaces using AI-inspired biasing forces. Front. Mol. Biosci. 8, 587151 (2021).",
+          "journal-title": "Front. Mol. Biosci."
+        },
+        {
+          "key": "36443_CR19",
+          "doi-asserted-by": "publisher",
+          "first-page": "194101",
+          "DOI": "10.1063/5.0026133",
+          "volume": "153",
+          "author": "BE Husic",
+          "year": "2020",
+          "unstructured": "Husic, B. E. et al. Coarse graining molecular dynamics with graph neural networks. J. Chem. Phys. 153, 194101 (2020).",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "36443_CR20",
+          "doi-asserted-by": "publisher",
+          "first-page": "7327",
+          "DOI": "10.1109/TPAMI.2021.3116668",
+          "volume": "44",
+          "author": "S Bond-Taylor",
+          "year": "2021",
+          "unstructured": "Bond-Taylor, S., Leach, A., Long, Y. & Willcocks, C. G. Deep generative modelling: a comparative review of VAEs, GANs, normalizing flows, energy-based and autoregressive models. IEEE Trans. Pattern Anal. Mach. Intel. 44, 7327–7347 (2021).",
+          "journal-title": "IEEE Trans. Pattern Anal. Mach. Intel."
+        },
+        {
+          "key": "36443_CR21",
+          "unstructured": "Ramesh, A. et al. in International Conference on Machine Learning. 8821–8831 (PMLR, 2021)."
+        },
+        {
+          "key": "36443_CR22",
+          "unstructured": "Oord, A. et al. in International Conference on Machine Learning. 3918–3926 (PMLR, 2018)."
+        },
+        {
+          "key": "36443_CR23",
+          "doi-asserted-by": "publisher",
+          "first-page": "361",
+          "DOI": "10.1146/annurev-physchem-042018-052331",
+          "volume": "71",
+          "author": "F Noé",
+          "year": "2020",
+          "unstructured": "Noé, F., Tkatchenko, A., Müller, K.-R. & Clementi, C. Machine learning for molecular simulation. Annu. Rev. Phys. Chem. 71, 361–390 (2020).",
+          "journal-title": "Annu. Rev. Phys. Chem."
+        },
+        {
+          "key": "36443_CR24",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Noé, F. in Machine Learning Meets Quantum Physics (eds Kristof T. Schütt et al.) 331-372 (Springer International Publishing, 2020).",
+          "DOI": "10.1007/978-3-030-40245-7_16"
+        },
+        {
+          "key": "36443_CR25",
+          "unstructured": "Xu, M., Luo, S., Bengio, Y., Peng, J. & Tang, J. in International Conference on Learning Representations. (2021)."
+        },
+        {
+          "key": "36443_CR26",
+          "first-page": "4181",
+          "volume": "34",
+          "author": "VG Satorras",
+          "year": "2021",
+          "unstructured": "Satorras, V. G., Hoogeboom, E., Fuchs, F. B., Posner, I. & Welling, M. E(n) equivariant normalizing flows. Adv. Neural Inf. Process. Syst. 34, 4181–4192 (2021).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR27",
+          "unstructured": "Simm, G. & Hernandez-Lobato, J. M. in International Conference on Machine Learning. 8949-8958 (PMLR, 2020)."
+        },
+        {
+          "key": "36443_CR28",
+          "doi-asserted-by": "publisher",
+          "first-page": "eaaw1147",
+          "DOI": "10.1126/science.aaw1147",
+          "volume": "365",
+          "author": "F Noé",
+          "year": "2019",
+          "unstructured": "Noé, F., Olsson, S., Köhler, J. & Wu, H. Boltzmann generators: Sampling equilibrium states of many-body systems with deep learning. Science 365, eaaw1147 (2019).",
+          "journal-title": "Science"
+        },
+        {
+          "key": "36443_CR29",
+          "doi-asserted-by": "publisher",
+          "first-page": "673",
+          "DOI": "10.1002/jcc.21005",
+          "volume": "30",
+          "author": "A Vitalis",
+          "year": "2009",
+          "unstructured": "Vitalis, A. & Pappu, R. V. ABSINTH: A new continuum solvation model for simulations of polypeptides in aqueous solutions. J. Comput. Chem. 30, 673–699 (2009).",
+          "journal-title": "J. Comput. Chem."
+        },
+        {
+          "key": "36443_CR30",
+          "doi-asserted-by": "publisher",
+          "first-page": "1190",
+          "DOI": "10.1016/j.bpj.2018.08.023",
+          "volume": "115",
+          "author": "J Woodard",
+          "year": "2018",
+          "unstructured": "Woodard, J. et al. Intramolecular diffusion in α-synuclein: it depends on how you measure it. Biophys. J. 115, 1190–1199 (2018).",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "36443_CR31",
+          "unstructured": "Goodfellow, I. et al. Generative adversarial nets. Adv. Neural Inf. Process. Syst. 27, 2672–2680 (2014)."
+        },
+        {
+          "key": "36443_CR32",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Guimaraes, G. L., Sanchez-Lengeling, B., Outeiral, C., Farias, P. L. C. & Aspuru-Guzik, A. Objective-reinforced generative adversarial networks (ORGAN) for sequence generation models. Preprint at https://doi.org/10.48550/arXiv.1705.10843 (2017).",
+          "DOI": "10.48550/arXiv.1705.10843"
+        },
+        {
+          "key": "36443_CR33",
+          "doi-asserted-by": "publisher",
+          "unstructured": "De Cao, N. & Kipf, T. MolGAN: An implicit generative model for small molecular graphs. Preprint at https://doi.org/10.48550/arXiv.1805.11973 (2018).",
+          "DOI": "10.48550/arXiv.1805.11973"
+        },
+        {
+          "key": "36443_CR34",
+          "first-page": "5998",
+          "volume": "30",
+          "author": "A Vaswani",
+          "year": "2017",
+          "unstructured": "Vaswani, A. et al. Attention is all you need. Adv. Neural Inf. Process. Syst. 30, 5998–6008 (2017).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR35",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Battaglia, P. W. et al. Relational inductive biases, deep learning, and graph networks. Preprint at https://doi.org/10.48550/arXiv:1806.01261 (2018).",
+          "DOI": "10.48550/arXiv:1806.01261"
+        },
+        {
+          "key": "36443_CR36",
+          "unstructured": "Wang, T.-C. et al. in IEEE Conference on Computer Vision and Pattern Recognition. 8798-8807 (2018)."
+        },
+        {
+          "key": "36443_CR37",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Durugkar, I., Gemp, I. & Mahadevan, S. Generative multi-adversarial networks. Preprint at https://doi.org/10.48550/arXiv:1611.01673 (2016).",
+          "DOI": "10.48550/arXiv:1611.01673"
+        },
+        {
+          "key": "36443_CR38",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Salawu, E. O. in IEEE Symposium Series on Computational Intelligence (SSCI). 1648-1654 (2020).",
+          "DOI": "10.1109/SSCI47803.2020.9308559"
+        },
+        {
+          "key": "36443_CR39",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Rosenbaum, D. et al. Inferring a continuous distribution of atom coordinates from cryo-EM images using VAEs. Preprint at https://doi.org/10.48550/arXiv:2106.14108 (2021).",
+          "DOI": "10.48550/arXiv:2106.14108"
+        },
+        {
+          "key": "36443_CR40",
+          "doi-asserted-by": "publisher",
+          "first-page": "8183",
+          "DOI": "10.1073/pnas.0911107107",
+          "volume": "107",
+          "author": "AH Mao",
+          "year": "2010",
+          "unstructured": "Mao, A. H., Crick, S. L., Vitalis, A., Chicoine, C. L. & Pappu, R. V. Net charge per residue modulates conformational ensembles of intrinsically disordered proteins. Proc. Natl Acad. Sci. USA. 107, 8183–8188 (2010).",
+          "journal-title": "Proc. Natl Acad. Sci. USA."
+        },
+        {
+          "key": "36443_CR41",
+          "doi-asserted-by": "publisher",
+          "first-page": "534",
+          "DOI": "10.1021/acscentsci.7b00626",
+          "volume": "4",
+          "author": "P Das",
+          "year": "2018",
+          "unstructured": "Das, P., Matysiak, S. & Mittal, J. Looking at the disordered proteins through the computational microscope. ACS Cent. Sci. 4, 534–542 (2018).",
+          "journal-title": "ACS Cent. Sci."
+        },
+        {
+          "key": "36443_CR42",
+          "doi-asserted-by": "publisher",
+          "first-page": "377",
+          "DOI": "10.1016/j.jmgm.2003.12.005",
+          "volume": "22",
+          "author": "M Feig",
+          "year": "2004",
+          "unstructured": "Feig, M., Karanicolas, J. & Brooks, C. L. III MMTSB tool set: enhanced sampling and multiscale modeling methods for applications in structural biology. J. Mol. Graph. Modell. 22, 377–395 (2004).",
+          "journal-title": "J. Mol. Graph. Modell."
+        },
+        {
+          "key": "36443_CR43",
+          "doi-asserted-by": "publisher",
+          "first-page": "2577",
+          "DOI": "10.1002/bip.360221211",
+          "volume": "22",
+          "author": "W Kabsch",
+          "year": "1983",
+          "unstructured": "Kabsch, W. & Sander, C. Dictionary of protein secondary structure: pattern recognition of hydrogen-bonded and geometrical features. Biopolymers 22, 2577–2637 (1983).",
+          "journal-title": "Biopolymers"
+        },
+        {
+          "key": "36443_CR44",
+          "doi-asserted-by": "publisher",
+          "first-page": "1528",
+          "DOI": "10.1016/j.bpj.2015.08.015",
+          "volume": "109",
+          "author": "RobertT McGibbon",
+          "year": "2015",
+          "unstructured": "McGibbon, RobertT. et al. MDTraj: A modern open library for the analysis of molecular dynamics trajectories. Biophys. J. 109, 1528–1532 (2015).",
+          "journal-title": "Biophys. J."
+        },
+        {
+          "key": "36443_CR45",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Vitalis, A. & Pappu, R. V. in Annual Reports in Computational Chemistry Vol. 5 (ed Ralph A. Wheeler) 49−76 (Elsevier, 2009).",
+          "DOI": "10.1016/S1574-1400(09)00503-9"
+        },
+        {
+          "key": "36443_CR46",
+          "doi-asserted-by": "publisher",
+          "first-page": "190401",
+          "DOI": "10.1063/1.5134029",
+          "volume": "151",
+          "author": "F Noé",
+          "year": "2019",
+          "unstructured": "Noé, F. & Rosta, E. Markov models of molecular kinetics. J. Chem. Phys. 151, 190401 (2019).",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "36443_CR47",
+          "unstructured": "Miyato, T., Kataoka, T., Koyama, M. & Yoshida, Y. in International Conference on Learning Representations. (2018)."
+        },
+        {
+          "key": "36443_CR48",
+          "unstructured": "Esser, P., Rombach, R. & Ommer, B. in IEEE/CVF Conference on Computer Vision and Pattern Recognition. 12873–12883 (2021)."
+        },
+        {
+          "key": "36443_CR49",
+          "first-page": "8780",
+          "volume": "34",
+          "author": "P Dhariwal",
+          "year": "2021",
+          "unstructured": "Dhariwal, P. & Nichol, A. Diffusion models beat GANs on image synthesis. Adv. Neural Inf. Process. Syst. 34, 8780–8794 (2021).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR50",
+          "doi-asserted-by": "publisher",
+          "first-page": "D480",
+          "DOI": "10.1093/nar/gkab1082",
+          "volume": "50",
+          "author": "F Quaglia",
+          "year": "2022",
+          "unstructured": "Quaglia, F. et al. DisProt in 2022: improved quality and accessibility of protein intrinsic disorder annotation. Nucleic Acids Res. 50, D480–D487 (2022).",
+          "journal-title": "Nucleic Acids Res."
+        },
+        {
+          "key": "36443_CR51",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1002195",
+          "DOI": "10.1371/journal.pcbi.1002195",
+          "volume": "7",
+          "author": "SR Eddy",
+          "year": "2011",
+          "unstructured": "Eddy, S. R. Accelerated profile HMM searches. Plos Comp. Biol. 7, e1002195 (2011).",
+          "journal-title": "Plos Comp. Biol."
+        },
+        {
+          "key": "36443_CR52",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Valdes-Garcia, G., Heo, L., Lapidus, L. J. & Feig, M. Modeling concentration-dependent phase separation processes involving peptides and RNA via residue-based coarse-graining. J. Chem. Theory Comput. 19, 669-678 (2023).",
+          "DOI": "10.1021/acs.jctc.2c00856"
+        },
+        {
+          "key": "36443_CR53",
+          "doi-asserted-by": "publisher",
+          "first-page": "e64004",
+          "DOI": "10.7554/eLife.64004",
+          "volume": "10",
+          "author": "B Dutagaci",
+          "year": "2021",
+          "unstructured": "Dutagaci, B. et al. Charge-driven condensation of RNA and proteins suggests broad role of phase separation in cytoplasmic environments. eLife 10, e64004 (2021).",
+          "journal-title": "eLife"
+        },
+        {
+          "key": "36443_CR54",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1005659",
+          "DOI": "10.1371/journal.pcbi.1005659",
+          "volume": "13",
+          "author": "P Eastman",
+          "year": "2017",
+          "unstructured": "Eastman, P. et al. OpenMM 7: Rapid development of high performance algorithms for molecular dynamics. Plos Comp. Biol. 13, e1005659 (2017).",
+          "journal-title": "Plos Comp. Biol."
+        },
+        {
+          "key": "36443_CR55",
+          "doi-asserted-by": "publisher",
+          "first-page": "1545",
+          "DOI": "10.1002/jcc.21287",
+          "volume": "30",
+          "author": "BR Brooks",
+          "year": "2009",
+          "unstructured": "Brooks, B. R. et al. CHARMM: the biomolecular simulation program. J. Comput. Chem. 30, 1545–1614 (2009).",
+          "journal-title": "J. Comput. Chem."
+        },
+        {
+          "key": "36443_CR56",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Goodfellow, I. Nips 2016 tutorial: Generative adversarial networks. Preprint at https://doi.org/10.48550/arXiv:1701.00160 (2016).",
+          "DOI": "10.48550/arXiv:1701.00160"
+        },
+        {
+          "key": "36443_CR57",
+          "unstructured": "Isola, P., Zhu, J.-Y., Zhou, T. & Efros, A. A. in IEEE Conference on Computer Vision and Pattern Recognition (CVPR). 5967–5976 (2017)."
+        },
+        {
+          "key": "36443_CR58",
+          "first-page": "12275",
+          "volume": "33",
+          "author": "T Che",
+          "year": "2020",
+          "unstructured": "Che, T. et al. Your GAN is secretly an energy-based model and you should use discriminator driven latent sampling. Adv. Neural Inf. Process. Syst. 33, 12275–12287 (2020).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR59",
+          "first-page": "8024",
+          "volume": "32",
+          "author": "A Paszke",
+          "year": "2019",
+          "unstructured": "Paszke, A. et al. PyTorch: an imperative style, high-performance deep learning library. Adv. Neural Inf. Process. Syst. 32, 8024–8035 (2019).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR60",
+          "unstructured": "Kingma, D. P. & Ba, J. in International Conference for Learning Representations. (2015)."
+        },
+        {
+          "key": "36443_CR61",
+          "doi-asserted-by": "publisher",
+          "first-page": "40",
+          "DOI": "10.1038/s41580-021-00407-0",
+          "volume": "23",
+          "author": "JG Greener",
+          "year": "2022",
+          "unstructured": "Greener, J. G., Kandathil, S. M., Moffat, L. & Jones, D. T. A guide to machine learning for biologists. Nat. Rev. Mol. Cell Biol. 23, 40–55 (2022).",
+          "journal-title": "Nat. Rev. Mol. Cell Biol."
+        },
+        {
+          "key": "36443_CR62",
+          "doi-asserted-by": "publisher",
+          "first-page": "6474",
+          "DOI": "10.1021/jp003919d",
+          "volume": "105",
+          "author": "GA Kaminski",
+          "year": "2001",
+          "unstructured": "Kaminski, G. A., Friesner, R. A., Tirado-Rives, J. & Jorgensen, W. L. Evaluation and reparametrization of the OPLS-AA force field for proteins via comparison with accurate quantum chemical calculations on peptides. J. Phys. Chem. B 105, 6474–6487 (2001).",
+          "journal-title": "J. Phys. Chem. B"
+        },
+        {
+          "key": "36443_CR63",
+          "first-page": "14638",
+          "volume": "33",
+          "author": "S Sinha",
+          "year": "2020",
+          "unstructured": "Sinha, S., Zhao, Z., Goyal, A., Raffel, C. A. & Odena, A. Top-k training of gans: Improving gan performance by throwing away bad samples. Adv. Neural Inf. Process. Syst. 33, 14638–14649 (2020).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR64",
+          "unstructured": "Xiong, R. et al. in International Conference on Machine Learning. 10524–10533 (PMLR, 2020)."
+        },
+        {
+          "key": "36443_CR65",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Wu, J. et al. EBM-Fold: fully-differentiable protein folding powered by energy-based models. Preprint at https://doi.org/10.48550/arXiv:2105.04771 (2021).",
+          "DOI": "10.48550/arXiv:2105.04771"
+        },
+        {
+          "key": "36443_CR66",
+          "first-page": "5769",
+          "volume": "30",
+          "author": "I Gulrajani",
+          "year": "2017",
+          "unstructured": "Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V. & Courville, A. C. Improved training of Wasserstein GANs. Adv. Neural Inf. Process. Syst. 30, 5769–5779 (2017).",
+          "journal-title": "Adv. Neural Inf. Process. Syst."
+        },
+        {
+          "key": "36443_CR67",
+          "doi-asserted-by": "publisher",
+          "unstructured": "Janson, G. & Feig, M. feiglab/idpgan, github https://doi.org/10.5281/zenodo.7545516. (2023).",
+          "DOI": "10.5281/zenodo.7545516"
+        },
+        {
+          "key": "36443_CR68",
+          "doi-asserted-by": "publisher",
+          "first-page": "1241",
+          "DOI": "10.1093/bioinformatics/btx789",
+          "volume": "34",
+          "author": "H Nguyen",
+          "year": "2018",
+          "unstructured": "Nguyen, H., Case, D. A. & Rose, A. S. NGLview–interactive molecular graphics for Jupyter notebooks. Bioinformatics 34, 1241–1242 (2018).",
+          "journal-title": "Bioinformatics"
+        }
+      ],
+      "container-title": [
+        "Nature Communications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://www.nature.com/articles/s41467-023-36443-x.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41467-023-36443-x",
+          "content-type": "text/html",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://www.nature.com/articles/s41467-023-36443-x.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            10,
+            13
+          ]
+        ],
+        "date-time": "2024-10-13T20:04:39Z",
+        "timestamp": 1728849879000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://www.nature.com/articles/s41467-023-36443-x"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            11
+          ]
+        ]
+      },
+      "references-count": 68,
+      "journal-issue": {
+        "issue": "1",
+        "published-online": {
+          "date-parts": [
+            [
+              2023,
+              12
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "36443"
+      ],
+      "URL": "https://doi.org/10.1038/s41467-023-36443-x",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/2022.06.18.496675",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "2041-1723"
+      ],
+      "issn-type": [
+        {
+          "value": "2041-1723",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            2,
+            11
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "18 June 2022",
+          "order": 1,
+          "name": "received",
+          "label": "Received",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "1 February 2023",
+          "order": 2,
+          "name": "accepted",
+          "label": "Accepted",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "11 February 2023",
+          "order": 3,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ArticleHistory",
+            "label": "Article History"
+          }
+        },
+        {
+          "value": "The authors declare no competing interests.",
+          "order": 1,
+          "name": "Ethics",
+          "group": {
+            "name": "EthicsHeading",
+            "label": "Competing interests"
+          }
+        }
+      ],
+      "article-number": "774"
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-9522b50dc5805dba.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-9522b50dc5805dba.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-9522b50dc5805dba.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "8f111f36f3e2280bcd04adc386a40d943097f34c7cf4349cb7153cdceb175a27",
+    "chunk_count": 42,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

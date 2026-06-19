@@ -1,0 +1,1019 @@
+{
+  "paper_id": "sha256-59f470adafbfb487",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/3d_genome_theory/DiPierro 2017 PNAS - de-novo-prediction-of-human-chromosome-structures-epigenetic-marking-patterns-encode-genome - SI.pdf",
+  "pdf_sha256": "59f470adafbfb487a90154e11fe44608cc7074e4b0ccedb8a7f58b96634a2eac",
+  "filename": "DiPierro 2017 PNAS - de-novo-prediction-of-human-chromosome-structures-epigenetic-marking-patterns-encode-genome - SI.pdf",
+  "item_type": "article",
+  "title_query": "de novo prediction of human chromosome structures epigenetic marking patterns encode genome",
+  "filename_hints": {
+    "year_hint": 2017,
+    "venue_hint": "proceedingsofthenationalacademyofsciences",
+    "prefix": "DiPierro 2017 PNAS"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:50:45.392739+00:00",
+  "match_status": "matched_supplement",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "manual_supplement_link",
+  "semantic_scholar": {
+    "query": "de novo prediction of human chromosome structures epigenetic marking patterns encode genome",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "de novo prediction of human chromosome structures epigenetic marking patterns encode genome",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 1.0,
+        "candidate_count": 8
+      }
+    ],
+    "best_candidate": {
+      "paperId": "46d3b46ec1bd59a1201a266d7b21dbce454518f6",
+      "externalIds": {
+        "MAG": "2950705625",
+        "PubMedCentral": "5699090",
+        "DOI": "10.1073/pnas.1714980114",
+        "CorpusId": 7635838,
+        "PubMed": "29087948"
+      },
+      "url": "https://www.semanticscholar.org/paper/46d3b46ec1bd59a1201a266d7b21dbce454518f6",
+      "title": "De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "year": 2017,
+      "openAccessPdf": {
+        "url": "https://www.cell.com/article/S0006349517344971/pdf",
+        "status": "BRONZE",
+        "license": "publisher-specific-oa",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5699090, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2017-08-07",
+      "journal": {
+        "name": "Proceedings of the National Academy of Sciences of the United States of America",
+        "pages": "12126 - 12131",
+        "volume": "114"
+      },
+      "authors": [
+        {
+          "authorId": "89365778",
+          "name": "Michele Di Pierro"
+        },
+        {
+          "authorId": "3536427",
+          "name": "R. R. Cheng"
+        },
+        {
+          "authorId": "7853656",
+          "name": "Erez Lieberman Aiden"
+        },
+        {
+          "authorId": "1909412",
+          "name": "P. Wolynes"
+        },
+        {
+          "authorId": "2110238",
+          "name": "J. Onuchic"
+        }
+      ],
+      "abstract": "Significance In the nucleus of eukaryotic cells, the genome is organized in three dimensions in an architecture that depends on cell type. This organization is a key element of transcriptional regulation, and its disruption often leads to disease. We demonstrate that it is possible to predict how a genome will fold based on the epigenetic marks that decorate chromatin. Epigenetic marking patterns are used to predict the corresponding ensemble of 3D structures by leveraging both energy landscape theory and neural network-based machine learning. These predictions are extensively validated by the results of DNA-DNA ligation assays and fluorescence microscopy, which are found to be in exceptionally good agreement with theory. Inside the cell nucleus, genomes fold into organized structures that are characteristic of cell type. Here, we show that this chromatin architecture can be predicted de novo using epigenetic data derived from chromatin immunoprecipitation-sequencing (ChIP-Seq). We exploit the idea that chromosomes encode a 1D sequence of chromatin structural types. Interactions between these chromatin types determine the 3D structural ensemble of chromosomes through a process similar to phase separation. First, a neural network is used to infer the relation between the epigenetic marks present at a locus, as assayed by ChIP-Seq, and the genomic compartment in which those loci reside, as measured by DNA-DNA proximity ligation (Hi-C). Next, types inferred from this neural network are used as an input to an energy landscape model for chromatin organization [Minimal Chromatin Model (MiChroM)] to generate an ensemble of 3D chromosome conformations at a resolution of 50 kilobases (kb). After training the model, dubbed Maximum Entropy Genomic Annotation from Biomarkers Associated to Structural Ensembles (MEGABASE), on odd-numbered chromosomes, we predict the sequences of chromatin types and the subsequent 3D conformational ensembles for the even chromosomes. We validate these structural ensembles by using ChIP-Seq tracks alone to predict Hi-C maps, as well as distances measured using 3D fluorescence in situ hybridization (FISH) experiments. Both sets of experiments support the hypothesis of phase separation being the driving process behind compartmentalization. These findings strongly suggest that epigenetic marking patterns encode sufficient information to determine the global architecture of chromosomes and that de novo structure prediction for whole genomes may be increasingly possible."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "46d3b46ec1bd59a1201a266d7b21dbce454518f6",
+        "title": "De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture",
+        "score": 1.0,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2017,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "dbe4e3cfb5c9f1e7383acfa31248b7551050a77f",
+        "title": "Faculty Opinions recommendation of De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture.",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2018,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "fc81ff4008c17a25f4360e49ca203a8abda6e1c0",
+        "title": "Faculty Opinions recommendation of De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture.",
+        "score": 0.95,
+        "title_similarity": 0.92,
+        "query_year": 2017,
+        "candidate_year": 2018,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "55689ad2dc588ce6e78f6bf5f502986597a4d2ca",
+        "title": "De novo deciphering three-dimensional chromatin interaction and topological domains by wavelet transformation of epigenetic profiles",
+        "score": 0.2573,
+        "title_similarity": 0.2273,
+        "query_year": 2017,
+        "candidate_year": 2016,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4e256382e2064492e75427c83911feac91758671",
+        "title": "Comprehensive functional genomic resource and integrative model for the human brain",
+        "score": 0.1085,
+        "title_similarity": 0.0785,
+        "query_year": 2017,
+        "candidate_year": 2018,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "87a6d7904fbee9d847d1aa23aceecb4b997d56f2",
+        "title": "DNA Methylation: Molecular Biology and Biological Significance",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2017,
+        "candidate_year": 1993,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "28f6a8fc9b5f9f9fc1b0e93b400c992a63315e99",
+        "title": "Epigenetics in Cancer Metastasis",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2017,
+        "candidate_year": 2015,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f79642e68af3e960aeb2e7e1c659825a30a0304d",
+        "title": "Development of a novel method for identifying centromeric DNA sequences",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": 2017,
+        "candidate_year": 2015,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1073/pnas.1714980114"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 8,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "46d3b46ec1bd59a1201a266d7b21dbce454518f6",
+          "externalIds": {
+            "MAG": "2950705625",
+            "PubMedCentral": "5699090",
+            "DOI": "10.1073/pnas.1714980114",
+            "CorpusId": 7635838,
+            "PubMed": "29087948"
+          },
+          "url": "https://www.semanticscholar.org/paper/46d3b46ec1bd59a1201a266d7b21dbce454518f6",
+          "title": "De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "https://www.cell.com/article/S0006349517344971/pdf",
+            "status": "BRONZE",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5699090, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2017-08-07",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences of the United States of America",
+            "pages": "12126 - 12131",
+            "volume": "114"
+          },
+          "authors": [
+            {
+              "authorId": "89365778",
+              "name": "Michele Di Pierro"
+            },
+            {
+              "authorId": "3536427",
+              "name": "R. R. Cheng"
+            },
+            {
+              "authorId": "7853656",
+              "name": "Erez Lieberman Aiden"
+            },
+            {
+              "authorId": "1909412",
+              "name": "P. Wolynes"
+            },
+            {
+              "authorId": "2110238",
+              "name": "J. Onuchic"
+            }
+          ],
+          "abstract": "Significance In the nucleus of eukaryotic cells, the genome is organized in three dimensions in an architecture that depends on cell type. This organization is a key element of transcriptional regulation, and its disruption often leads to disease. We demonstrate that it is possible to predict how a genome will fold based on the epigenetic marks that decorate chromatin. Epigenetic marking patterns are used to predict the corresponding ensemble of 3D structures by leveraging both energy landscape theory and neural network-based machine learning. These predictions are extensively validated by the results of DNA-DNA ligation assays and fluorescence microscopy, which are found to be in exceptionally good agreement with theory. Inside the cell nucleus, genomes fold into organized structures that are characteristic of cell type. Here, we show that this chromatin architecture can be predicted de novo using epigenetic data derived from chromatin immunoprecipitation-sequencing (ChIP-Seq). We exploit the idea that chromosomes encode a 1D sequence of chromatin structural types. Interactions between these chromatin types determine the 3D structural ensemble of chromosomes through a process similar to phase separation. First, a neural network is used to infer the relation between the epigenetic marks present at a locus, as assayed by ChIP-Seq, and the genomic compartment in which those loci reside, as measured by DNA-DNA proximity ligation (Hi-C). Next, types inferred from this neural network are used as an input to an energy landscape model for chromatin organization [Minimal Chromatin Model (MiChroM)] to generate an ensemble of 3D chromosome conformations at a resolution of 50 kilobases (kb). After training the model, dubbed Maximum Entropy Genomic Annotation from Biomarkers Associated to Structural Ensembles (MEGABASE), on odd-numbered chromosomes, we predict the sequences of chromatin types and the subsequent 3D conformational ensembles for the even chromosomes. We validate these structural ensembles by using ChIP-Seq tracks alone to predict Hi-C maps, as well as distances measured using 3D fluorescence in situ hybridization (FISH) experiments. Both sets of experiments support the hypothesis of phase separation being the driving process behind compartmentalization. These findings strongly suggest that epigenetic marking patterns encode sufficient information to determine the global architecture of chromosomes and that de novo structure prediction for whole genomes may be increasingly possible."
+        },
+        {
+          "paperId": "dbe4e3cfb5c9f1e7383acfa31248b7551050a77f",
+          "externalIds": {
+            "MAG": "2887856023",
+            "DOI": "10.3410/f.732055641.793548584",
+            "CorpusId": 91601566
+          },
+          "url": "https://www.semanticscholar.org/paper/dbe4e3cfb5c9f1e7383acfa31248b7551050a77f",
+          "title": "Faculty Opinions recommendation of De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://f1000.com/download/732055641",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.732055641.793548584?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.732055641.793548584, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2018-07-21",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "2287757690",
+              "name": "Kevin Y. Yip"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "fc81ff4008c17a25f4360e49ca203a8abda6e1c0",
+          "externalIds": {
+            "MAG": "2891209057",
+            "DOI": "10.3410/f.732055641.793550360",
+            "CorpusId": 91263171
+          },
+          "url": "https://www.semanticscholar.org/paper/fc81ff4008c17a25f4360e49ca203a8abda6e1c0",
+          "title": "Faculty Opinions recommendation of De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture.",
+          "venue": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://facultyopinions.com/download/732055641",
+            "status": "BRONZE",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3410/f.732055641.793550360?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3410/f.732055641.793550360, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2018-09-05",
+          "journal": {
+            "name": "Faculty Opinions – Post-Publication Peer Review of the Biomedical Literature"
+          },
+          "authors": [
+            {
+              "authorId": "1850466",
+              "name": "N. Dokholyan"
+            },
+            {
+              "authorId": "6066324",
+              "name": "Venkat R. Chirasani"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "55689ad2dc588ce6e78f6bf5f502986597a4d2ca",
+          "externalIds": {
+            "PubMedCentral": "4914103",
+            "MAG": "2324629078",
+            "DOI": "10.1093/nar/gkw225",
+            "CorpusId": 7303927,
+            "PubMed": "27060148"
+          },
+          "url": "https://www.semanticscholar.org/paper/55689ad2dc588ce6e78f6bf5f502986597a4d2ca",
+          "title": "De novo deciphering three-dimensional chromatin interaction and topological domains by wavelet transformation of epigenetic profiles",
+          "venue": "Nucleic Acids Research",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/nar/article-pdf/44/11/e106/19695486/gkw225.pdf",
+            "status": "GOLD",
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4914103, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2016-04-07",
+          "journal": {
+            "name": "Nucleic Acids Research",
+            "pages": "e106 - e106",
+            "volume": "44"
+          },
+          "authors": [
+            {
+              "authorId": "2115840169",
+              "name": "Yong Chen"
+            },
+            {
+              "authorId": "2143428741",
+              "name": "Yunfei Wang"
+            },
+            {
+              "authorId": "2785065",
+              "name": "Zhenyu Xuan"
+            },
+            {
+              "authorId": "2145944682",
+              "name": "Min Chen"
+            },
+            {
+              "authorId": "145332758",
+              "name": "Michael Q. Zhang"
+            }
+          ],
+          "abstract": "Abstract Defining chromatin interaction frequencies and topological domains is a great challenge for the annotations of genome structures. Although the chromosome conformation capture (3C) and its derivative methods have been developed for exploring the global interactome, they are limited by high experimental complexity and costs. Here we describe a novel computational method, called CITD, for de novo prediction of the chromatin interaction map by integrating histone modification data. We used the public epigenomic data from human fibroblast IMR90 cell and embryonic stem cell (H1) to develop and test CITD, which can not only successfully reconstruct the chromatin interaction frequencies discovered by the Hi-C technology, but also provide additional novel details of chromosomal organizations. We predicted the chromatin interaction frequencies, topological domains and their states (e.g. active or repressive) for 98 additional cell types from Roadmap Epigenomics and ENCODE projects. A total of 131 protein-coding genes located near 78 preserved boundaries among 100 cell types are found to be significantly enriched in functional categories of the nucleosome organization and chromatin assembly. CITD and its predicted results can be used for complementing the topological domains derived from limited Hi-C data and facilitating the understanding of spatial principles underlying the chromosomal organization."
+        },
+        {
+          "paperId": "4e256382e2064492e75427c83911feac91758671",
+          "externalIds": {
+            "MAG": "2904763455",
+            "DOI": "10.1126/science.aat8464",
+            "CorpusId": 55701943,
+            "PubMed": "30545857"
+          },
+          "url": "https://www.semanticscholar.org/paper/4e256382e2064492e75427c83911feac91758671",
+          "title": "Comprehensive functional genomic resource and integrative model for the human brain",
+          "venue": "Science",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://europepmc.org/articles/pmc6413328?pdf=render",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1126/science.aat8464?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1126/science.aat8464, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2018-12-14",
+          "journal": {
+            "name": "Science",
+            "volume": "362"
+          },
+          "authors": [
+            {
+              "authorId": "2676557",
+              "name": "Daifeng Wang"
+            },
+            {
+              "authorId": "1840491902",
+              "name": "Shuang Liu"
+            },
+            {
+              "authorId": "79777387",
+              "name": "J. Warrell"
+            },
+            {
+              "authorId": "31694824",
+              "name": "H. Won"
+            },
+            {
+              "authorId": "2110157436",
+              "name": "Xu Shi"
+            },
+            {
+              "authorId": "152575374",
+              "name": "Fábio C. P. Navarro"
+            },
+            {
+              "authorId": "143848051",
+              "name": "Declan Clarke"
+            },
+            {
+              "authorId": "39345350",
+              "name": "Mengting Gu"
+            },
+            {
+              "authorId": "3981107",
+              "name": "Prashant S. Emani"
+            },
+            {
+              "authorId": "2108801965",
+              "name": "Yucheng T. Yang"
+            },
+            {
+              "authorId": "2153555892",
+              "name": "Min Xu"
+            },
+            {
+              "authorId": "2242427",
+              "name": "Michael Jeffrey Gandal"
+            },
+            {
+              "authorId": "50195469",
+              "name": "S. Lou"
+            },
+            {
+              "authorId": "91744486",
+              "name": "Jing Zhang"
+            },
+            {
+              "authorId": "2378873357",
+              "name": "Jonathan J. Park"
+            },
+            {
+              "authorId": "34764116",
+              "name": "Chengfei Yan"
+            },
+            {
+              "authorId": "6581560",
+              "name": "S. Rhie"
+            },
+            {
+              "authorId": "11182801",
+              "name": "Kasidet Manakongtreecheep"
+            },
+            {
+              "authorId": "2157475320",
+              "name": "Holly Zhou"
+            },
+            {
+              "authorId": "32330844",
+              "name": "A. Nathan"
+            },
+            {
+              "authorId": "39894513",
+              "name": "M. Peters"
+            },
+            {
+              "authorId": "2072853022",
+              "name": "E. Mattei"
+            },
+            {
+              "authorId": "47049563",
+              "name": "Dominic Fitzgerald"
+            },
+            {
+              "authorId": "46969853",
+              "name": "Tonya M Brunetti"
+            },
+            {
+              "authorId": "47623503",
+              "name": "J. Moore"
+            },
+            {
+              "authorId": "40409295",
+              "name": "Yan Jiang"
+            },
+            {
+              "authorId": "49207538",
+              "name": "K. Girdhar"
+            },
+            {
+              "authorId": "47691455",
+              "name": "G. Hoffman"
+            },
+            {
+              "authorId": "2089864166",
+              "name": "Selim Kalayci"
+            },
+            {
+              "authorId": "1894070",
+              "name": "Z. Gümüş"
+            },
+            {
+              "authorId": "34638125",
+              "name": "G. Crawford"
+            },
+            {
+              "authorId": "2396444844",
+              "name": "Panagiotis Roussos"
+            },
+            {
+              "authorId": "6191719",
+              "name": "S. Akbarian"
+            },
+            {
+              "authorId": "38522070",
+              "name": "A. Jaffe"
+            },
+            {
+              "authorId": "38339998",
+              "name": "K. White"
+            },
+            {
+              "authorId": "145348257",
+              "name": "Z. Weng"
+            },
+            {
+              "authorId": "4976650",
+              "name": "N. Šestan"
+            },
+            {
+              "authorId": "3253547",
+              "name": "D. Geschwind"
+            },
+            {
+              "authorId": "144441184",
+              "name": "J. Knowles"
+            },
+            {
+              "authorId": "1717018",
+              "name": "M. Gerstein"
+            }
+          ],
+          "abstract": "INTRODUCTION Strong genetic associations have been found for a number of psychiatric disorders. However, understanding the underlying molecular mechanisms remains challenging. RATIONALE To address this challenge, the PsychENCODE Consortium has developed a comprehensive online resource and integrative models for the functional genomics of the human brain. RESULTS The base of the pyramidal resource is the datasets generated by PsychENCODE, including bulk transcriptome, chromatin, genotype, and Hi-C datasets and single-cell transcriptomic data from ~32,000 cells for major brain regions. We have merged these with data from Genotype-Tissue Expression (GTEx), ENCODE, Roadmap Epigenomics, and single-cell analyses. Via uniform processing, we created a harmonized resource, allowing us to survey functional genomics data on the brain over a sample size of 1866 individuals. From this uniformly processed dataset, we created derived data products. These include lists of brain-expressed genes, coexpression modules, and single-cell expression profiles for many brain cell types; ~79,000 brain-active enhancers with associated Hi-C loops and topologically associating domains; and ~2.5 million expression quantitative-trait loci (QTLs) comprising ~238,000 linkage-disequilibrium–independent single-nucleotide polymorphisms and of other types of QTLs associated with splice isoforms, cell fractions, and chromatin activity. By using these, we found that >88% of the cross-population variation in brain gene expression can be accounted for by cell fraction changes. Furthermore, a number of disorders and aging are associated with changes in cell-type proportions. The derived data also enable comparison between the brain and other tissues. In particular, by using spectral analyses, we found that the brain has distinct expression and epigenetic patterns, including a greater extent of noncoding transcription than other tissues. The top level of the resource consists of integrative networks for regulation and machine-learning models for disease prediction. The networks include a full gene regulatory network (GRN) for the brain, linking transcription factors, enhancers, and target genes from merging of the QTLs, generalized element-activity correlations, and Hi-C data. By using this network, we link disease genes to genome-wide association study (GWAS) variants for psychiatric disorders. For schizophrenia, we linked 321 genes to the 142 reported GWAS loci. We then embedded the regulatory network into a deep-learning model to predict psychiatric phenotypes from genotype and expression. Our model gives a ~6-fold improvement in prediction over additive polygenic risk scores. Moreover, it achieves a ~3-fold improvement over additive models, even when the gene expression data are imputed, highlighting the value of having just a small amount of transcriptome data for disease prediction. Lastly, it highlights key genes and pathways associated with disorder prediction, including immunological, synaptic, and metabolic pathways, recapitulating de novo results from more targeted analyses. CONCLUSION Our resource and integrative analyses have uncovered genomic elements and networks in the brain, which in turn have provided insight into the molecular mechanisms underlying psychiatric disorders. Our deep-learning model improves disease risk prediction over traditional approaches and can be extended with additional data types (e.g., microRNA and neuroimaging). A comprehensive functional genomic resource for the adult human brain. The resource forms a three-layer pyramid. The bottom layer includes sequencing datasets for traits, such as schizophrenia. The middle layer represents derived datasets, including functional genomic elements and QTLs. The top layer contains integrated models, which link genotypes to phenotypes. DSPN, Deep Structured Phenotype Network; PC1 and PC2, principal components 1 and 2; ref, reference; alt, alternate; H3K27ac, histone H3 acetylation at lysine 27. Despite progress in defining genetic risk for psychiatric disorders, their molecular mechanisms remain elusive. Addressing this, the PsychENCODE Consortium has generated a comprehensive online resource for the adult brain across 1866 individuals. The PsychENCODE resource contains ~79,000 brain-active enhancers, sets of Hi-C linkages, and topologically associating domains; single-cell expression profiles for many cell types; expression quantitative-trait loci (QTLs); and further QTLs associated with chromatin, splicing, and cell-type proportions. Integration shows that varying cell-type proportions largely account for the cross-population variation in expression (with >88% reconstruction accuracy). It also allows building of a gene regulatory network, linking genome-wide association study variants to genes (e.g., 321 for schizophrenia). We embed this network into an interpretable deep-learning model, which improves disease prediction by ~6-fold versus polygenic risk scores and identifies key genes and pathways in psychiatric disorders."
+        },
+        {
+          "paperId": "87a6d7904fbee9d847d1aa23aceecb4b997d56f2",
+          "externalIds": {
+            "MAG": "1533394581",
+            "CorpusId": 82004980
+          },
+          "url": "https://www.semanticscholar.org/paper/87a6d7904fbee9d847d1aa23aceecb4b997d56f2",
+          "title": "DNA Methylation: Molecular Biology and Biological Significance",
+          "venue": "",
+          "year": 1993,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": {
+            "name": "",
+            "volume": ""
+          },
+          "authors": [
+            {
+              "authorId": "1900306",
+              "name": "J. Jost"
+            },
+            {
+              "authorId": "6761892",
+              "name": "H. Saluz"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "28f6a8fc9b5f9f9fc1b0e93b400c992a63315e99",
+          "externalIds": {
+            "CorpusId": 31309066
+          },
+          "url": "https://www.semanticscholar.org/paper/28f6a8fc9b5f9f9fc1b0e93b400c992a63315e99",
+          "title": "Epigenetics in Cancer Metastasis",
+          "venue": "",
+          "year": 2015,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at http://blogs.brandeis.edu/dnamechanisms/files/2015/05/Weijin.pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review"
+          ],
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2336586224",
+              "name": "Weijing Xu"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "f79642e68af3e960aeb2e7e1c659825a30a0304d",
+          "externalIds": {
+            "CorpusId": 251838353
+          },
+          "url": "https://www.semanticscholar.org/paper/f79642e68af3e960aeb2e7e1c659825a30a0304d",
+          "title": "Development of a novel method for identifying centromeric DNA sequences",
+          "venue": "",
+          "year": 2015,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://web.archive.org/web/20190505101835/https://www.jstage.jst.go.jp/article/ggs/89/6/89_304/_pdf, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "78403670",
+              "name": "Fuminori"
+            },
+            {
+              "authorId": "2085123227",
+              "name": "Hiroyuki"
+            },
+            {
+              "authorId": "2118066699",
+              "name": "Tsuyoshi Tanaka"
+            },
+            {
+              "authorId": "114236800",
+              "name": "S. Katagiri"
+            },
+            {
+              "authorId": "2283681415",
+              "name": "Wataru"
+            },
+            {
+              "authorId": "2752651",
+              "name": "S. Watanabe"
+            },
+            {
+              "authorId": "6977775",
+              "name": "Kanako Kurita"
+            },
+            {
+              "authorId": "40223397",
+              "name": "Y. Katayose"
+            },
+            {
+              "authorId": "2117639731",
+              "name": "Yasunari"
+            },
+            {
+              "authorId": "3116924",
+              "name": "R. Takashi"
+            },
+            {
+              "authorId": "2086041719",
+              "name": "Jaroslav"
+            },
+            {
+              "authorId": "5738877",
+              "name": "K. Hayakawa"
+            },
+            {
+              "authorId": "2166754612",
+              "name": "Shuhei"
+            },
+            {
+              "authorId": "2180138056",
+              "name": "Jianzhong"
+            },
+            {
+              "authorId": "5478784",
+              "name": "H. Handa"
+            },
+            {
+              "authorId": "2182854806",
+              "name": "Shinji Kikuchu"
+            },
+            {
+              "authorId": "2143591902",
+              "name": "Lixia Wang"
+            },
+            {
+              "authorId": "32277143",
+              "name": "T. Isemura"
+            },
+            {
+              "authorId": "3056499",
+              "name": "S. Isobe"
+            },
+            {
+              "authorId": "2104020980",
+              "name": "Kaga"
+            },
+            {
+              "authorId": "2305896060",
+              "name": "Akito"
+            },
+            {
+              "authorId": "2998160",
+              "name": "N. Tomooka"
+            },
+            {
+              "authorId": "69915694",
+              "name": "Takanori"
+            },
+            {
+              "authorId": "2182853558",
+              "name": "Hazuka"
+            },
+            {
+              "authorId": "4517639",
+              "name": "Y. Tarutani"
+            },
+            {
+              "authorId": "2097783047",
+              "name": "Tetsuji"
+            },
+            {
+              "authorId": "34913999",
+              "name": "A. Kawabe"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "supplement_parent": {
+    "abstract": "Significance In the nucleus of eukaryotic cells, the genome is organized in three dimensions in an architecture that depends on cell type. This organization is a key element of transcriptional regulation, and its disruption often leads to disease. We demonstrate that it is possible to predict how a genome will fold based on the epigenetic marks that decorate chromatin. Epigenetic marking patterns are used to predict the corresponding ensemble of 3D structures by leveraging both energy landscape theory and neural network-based machine learning. These predictions are extensively validated by the results of DNA-DNA ligation assays and fluorescence microscopy, which are found to be in exceptionally good agreement with theory. Inside the cell nucleus, genomes fold into organized structures that are characteristic of cell type. Here, we show that this chromatin architecture can be predicted de novo using epigenetic data derived from chromatin immunoprecipitation-sequencing (ChIP-Seq). We exploit the idea that chromosomes encode a 1D sequence of chromatin structural types. Interactions between these chromatin types determine the 3D structural ensemble of chromosomes through a process similar to phase separation. First, a neural network is used to infer the relation between the epigenetic marks present at a locus, as assayed by ChIP-Seq, and the genomic compartment in which those loci reside, as measured by DNA-DNA proximity ligation (Hi-C). Next, types inferred from this neural network are used as an input to an energy landscape model for chromatin organization [Minimal Chromatin Model (MiChroM)] to generate an ensemble of 3D chromosome conformations at a resolution of 50 kilobases (kb). After training the model, dubbed Maximum Entropy Genomic Annotation from Biomarkers Associated to Structural Ensembles (MEGABASE), on odd-numbered chromosomes, we predict the sequences of chromatin types and the subsequent 3D conformational ensembles for the even chromosomes. We validate these structural ensembles by using ChIP-Seq tracks alone to predict Hi-C maps, as well as distances measured using 3D fluorescence in situ hybridization (FISH) experiments. Both sets of experiments support the hypothesis of phase separation being the driving process behind compartmentalization. These findings strongly suggest that epigenetic marking patterns encode sufficient information to determine the global architecture of chromosomes and that de novo structure prediction for whole genomes may be increasingly possible.",
+    "abstract_norm": "significance in the nucleus of eukaryotic cells the genome is organized in three dimensions in an architecture that depends on cell type this organization is a key element of transcriptional regulation and its disruption often leads to disease we demonstrate that it is possible to predict how a genome will fold based on the epigenetic marks that decorate chromatin epigenetic marking patterns are used to predict the corresponding ensemble of 3d structures by leveraging both energy landscape theory and neural network based machine learning these predictions are extensively validated by the results of dna dna ligation assays and fluorescence microscopy which are found to be in exceptionally good agreement with theory inside the cell nucleus genomes fold into organized structures that are characteristic of cell type here we show that this chromatin architecture can be predicted de novo using epigenetic data derived from chromatin immunoprecipitation sequencing chip seq we exploit the idea that chromosomes encode a 1d sequence of chromatin structural types interactions between these chromatin types determine the 3d structural ensemble of chromosomes through a process similar to phase separation first a neural network is used to infer the relation between the epigenetic marks present at a locus as assayed by chip seq and the genomic compartment in which those loci reside as measured by dna dna proximity ligation hi c next types inferred from this neural network are used as an input to an energy landscape model for chromatin organization minimal chromatin model michrom to generate an ensemble of 3d chromosome conformations at a resolution of 50 kilobases kb after training the model dubbed maximum entropy genomic annotation from biomarkers associated to structural ensembles megabase on odd numbered chromosomes we predict the sequences of chromatin types and the subsequent 3d conformational ensembles for the even chromosomes we validate these structural ensembles by using chip seq tracks alone to predict hi c maps as well as distances measured using 3d fluorescence in situ hybridization fish experiments both sets of experiments support the hypothesis of phase separation being the driving process behind compartmentalization these findings strongly suggest that epigenetic marking patterns encode sufficient information to determine the global architecture of chromosomes and that de novo structure prediction for whole genomes may be increasingly possible",
+    "abstract_tokens": [
+      "1d",
+      "3d",
+      "50",
+      "after",
+      "agreement",
+      "alone",
+      "annotation",
+      "architecture",
+      "are",
+      "assayed",
+      "assays",
+      "associated",
+      "based",
+      "be",
+      "behind",
+      "being",
+      "between",
+      "biomarkers",
+      "both",
+      "can",
+      "cell",
+      "cells",
+      "characteristic",
+      "chip",
+      "chromatin",
+      "chromosome",
+      "chromosomes",
+      "compartment",
+      "compartmentalization",
+      "conformational",
+      "conformations",
+      "corresponding",
+      "data",
+      "de",
+      "decorate",
+      "demonstrate",
+      "depends",
+      "derived",
+      "determine",
+      "dimensions",
+      "disease",
+      "disruption",
+      "distances",
+      "dna",
+      "driving",
+      "dubbed",
+      "element",
+      "encode",
+      "energy",
+      "ensemble",
+      "ensembles",
+      "entropy",
+      "epigenetic",
+      "eukaryotic",
+      "even",
+      "exceptionally",
+      "experiments",
+      "exploit",
+      "extensively",
+      "findings",
+      "first",
+      "fish",
+      "fluorescence",
+      "fold",
+      "found",
+      "generate",
+      "genome",
+      "genomes",
+      "genomic",
+      "global",
+      "good",
+      "here",
+      "hi",
+      "how",
+      "hybridization",
+      "hypothesis",
+      "idea",
+      "immunoprecipitation",
+      "increasingly",
+      "infer",
+      "inferred",
+      "information",
+      "input",
+      "inside",
+      "interactions",
+      "is",
+      "it",
+      "its",
+      "kb",
+      "key",
+      "kilobases",
+      "landscape",
+      "leads",
+      "learning",
+      "leveraging",
+      "ligation",
+      "loci",
+      "locus",
+      "machine",
+      "maps",
+      "marking",
+      "marks",
+      "maximum",
+      "may",
+      "measured",
+      "megabase",
+      "michrom",
+      "microscopy",
+      "minimal",
+      "model",
+      "network",
+      "neural",
+      "next",
+      "novo",
+      "nucleus",
+      "numbered",
+      "odd",
+      "often",
+      "organization",
+      "organized",
+      "patterns",
+      "phase",
+      "possible",
+      "predict",
+      "predicted",
+      "prediction",
+      "predictions",
+      "present",
+      "process",
+      "proximity",
+      "regulation",
+      "relation",
+      "reside",
+      "resolution",
+      "results",
+      "separation",
+      "seq",
+      "sequence",
+      "sequences",
+      "sequencing",
+      "sets",
+      "show",
+      "significance",
+      "similar",
+      "situ",
+      "strongly",
+      "structural",
+      "structure",
+      "structures",
+      "subsequent",
+      "sufficient",
+      "suggest",
+      "support",
+      "that",
+      "theory",
+      "these",
+      "this",
+      "those",
+      "three",
+      "through",
+      "tracks",
+      "training",
+      "transcriptional",
+      "type",
+      "types",
+      "used",
+      "using",
+      "validate",
+      "validated",
+      "we",
+      "well",
+      "which",
+      "whole",
+      "will"
+    ],
+    "author_tokens": [
+      "aiden",
+      "cheng",
+      "di",
+      "erez",
+      "jos",
+      "lieberman",
+      "michele",
+      "onuchic",
+      "peter",
+      "pierro",
+      "ryan",
+      "wolynes"
+    ],
+    "authors": "Michele Di Pierro, Ryan R. Cheng, Erez Lieberman Aiden, Peter G. Wolynes, José N. Onuchic",
+    "authors_norm": "michele di pierro ryan r cheng erez lieberman aiden peter g wolynes jos n onuchic",
+    "bibtex_key": "pierro2017de",
+    "bibtex_key_norm": "pierro2017de",
+    "canonical_url": "https://doi.org/10.1073/pnas.1714980114",
+    "chunk_path": "paper_index/chunks/sha256-5a7a89bbe5439087.jsonl",
+    "content_kind": "pdf_backed",
+    "doi": "10.1073/pnas.1714980114",
+    "filename": "DiPierro 2017 PNAS - de-novo-prediction-of-human-chromosome-structures-epigenetic-marking-patterns-encode-genome.pdf",
+    "filename_norm": "dipierro 2017 pnas de novo prediction of human chromosome structures epigenetic marking patterns encode genome pdf",
+    "filename_tokens": [
+      "2017",
+      "chromosome",
+      "de",
+      "dipierro",
+      "encode",
+      "epigenetic",
+      "genome",
+      "human",
+      "marking",
+      "novo",
+      "patterns",
+      "pdf",
+      "pnas",
+      "prediction",
+      "structures"
+    ],
+    "item_type": "article",
+    "paper_id": "sha256-5a7a89bbe5439087",
+    "paper_id_norm": "sha2565a7a89bbe5439087",
+    "pdf_path": "articles/3d_genome_theory/DiPierro 2017 PNAS - de-novo-prediction-of-human-chromosome-structures-epigenetic-marking-patterns-encode-genome.pdf",
+    "text_path": "paper_index/text/sha256-5a7a89bbe5439087.txt",
+    "title": "De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture",
+    "title_norm": "de novo prediction of human chromosome structures epigenetic marking patterns encode genome architecture",
+    "title_tokens": [
+      "architecture",
+      "chromosome",
+      "de",
+      "encode",
+      "epigenetic",
+      "genome",
+      "human",
+      "marking",
+      "novo",
+      "patterns",
+      "prediction",
+      "structures"
+    ],
+    "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+    "venue_norm": "proceedings of the national academy of sciences of the united states of america",
+    "venue_tokens": [
+      "acad",
+      "academy",
+      "america",
+      "national",
+      "natl",
+      "pnas",
+      "proc",
+      "proceedings",
+      "sci",
+      "sciences",
+      "states",
+      "united"
+    ],
+    "year": "2017"
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-59f470adafbfb487.json",
+    "text_path": "paper_index/text/sha256-59f470adafbfb487.txt",
+    "chunk_path": "paper_index/chunks/sha256-59f470adafbfb487.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "3ec341afa90a129b41f4f4d03d719dcab8836e94a16523df879aab8270dc574b",
+    "chunk_count": 47,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

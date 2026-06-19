@@ -1,0 +1,339 @@
+[Page 1]
+
+Top-down machine learning of coarse-grained protein force-fields
+
+arXiv:2306.11375v2 [q-bio.BM] 21 Jun 2023
+
+Carles Navarro,† Maciej Majewski,† and Gianni De Fabritiis∗,‡,¶,§ †Acellera Labs, Doctor Trueta 183, 08005, Barcelona, Spain ‡Computational Science Laboratory, Universitat Pompeu Fabra, Barcelona Biomedical Research Park (PRBB), Carrer Dr. Aiguader 88, 08003, Barcelona, Spain ¶Acellera Ltd, Devonshire House 582, HA7 1JS, United Kingdom §Institució Catalana de Recerca i Estudis Avançats, Barcelona, Spain E-mail: gianni.defabritiis@upf.edu
+
+Abstract
+
+Developing accurate and efficient coarsegrained representations of proteins is crucial for understanding their folding, function, and interactions over extended timescales. Our methodology involves simulating proteins with molecular dynamics and utilizing the resulting trajectories to train a neural network potential through differentiable trajectory reweighting. Remarkably, this method requires only the native conformation of proteins, eliminating the need for labeled data derived from extensive simulations or memory-intensive end-to-end differentiable simulations. Once trained, the model can be employed to run parallel molecular dynamics simulations and sample folding events for proteins both within and beyond the training distribution, showcasing its extrapolation capabilities. By applying Markov State Models, native-like conformations of the simulated proteins can be predicted from the coarse-grained simulations. Owing to its theoretical transferability and ability to use solely experimental static structures as training data, we anticipate that this approach will prove advantageous for developing new protein force fields and further advancing the study of protein dynamics, folding, and interactions.
+
+Molecular dynamics (MD) simulations are a valuable tool for investigating various biomolecular processes, such as protein-protein interactions, 1 folding and unfolding, 2–4 and proteinligand binding 5 . 6–9 However, conventional MD methods face limitations in their applicability to these processes, mainly due to high computational costs and large timescales involved. Coarse-grained protein modeling methods have emerged as a potential solution to this challenge. 10–16 These methods capture the essential dynamics of the system with reduced degrees of freedom, enabling the exploration of longer timescales, but require careful design of the coarse-grained representation and force field for accurate mapping to a lower-dimensional space. 17–19 In recent years, the adoption of machine learning algorithms in molecular dynamics has gained traction, driven by the increasing availability of experimental data, computational power, and auto-differentiation software. 20–23 A particularly promising application of machine learning in MD is the development of neural network potentials (NNPs). 24 NNPs can effectively model many-body interactions and represent potential energy surfaces, 25 and have been employed to construct machine-learned coarsegrained force fields for biomolecules. 22,26–30
+
+Introduction
+
+[Page 2]
+
+The development of CG machine-learned NNPs for proteins generally adopts a bottomup approach, which attempts to reproduce the reference fine-grained statistics. Initial studies focused on directly learning potentials from high-fidelity simulations through variational force-matching, 22,27,29 while more recent research has explored data-efficient strategies, such as flow-matching 31 and denoising diffusion probabilistic models. 32 This bottom-up approach has the advantage of preserving the thermodynamics of the projected degrees of freedom. However, it also necessitates a large quantity of all-atom 3D conformations and their corresponding energies and forces sampled from the equilibrium distribution for training the machine learning model. This requirement can be computationally expensive and may result in poor extrapolation in regions of conformational and sequence space where data is scarce. 33 On the other hand, an alternative approach for learning potential energy functions has been demonstrated by Greener et al. 34 through the application of end-to-end differentiable molecular simulations (DMS). However, this method faces challenges when applied to medium-tolarge proteins, as it requires a significant amount of memory to store all simulation operations during the forward pass, which are then used in the backward pass. This can lead to exploding gradients, causing instability during training as the accumulated gradients result in large updates in the neural network weights. To address this issue, the differentiable trajectory reweighting (DiffTre) method has been developed and applied to learn NNPs for atomistic systems in a more memory-efficient manner. 35 Bypassing the differentiation of the entire trajectory through the MD simulation for time-independent observables, DiffTre enables the learning of top-down coarse-grained potentials. In this work, we build upon the advantages of DiffTre and demonstrate its applicability for training NNPs of coarse-grained proteins using experimental structures and short differentiable MD trajectories from various proteins. Our approach allows us to train an NNP using differentiable trajectories and uncorrelated
+
+states while circumventing the need to save all simulation operations for the backward pass. As a result, our approach is considerably less memory-intensive while retaining the performance of DMS. We apply the proposed methodology to learn two distinct NNPs: one for 12 fast-folding proteins (FF-NNP), which can be utilized to recover their native conformations, and a general NNP (G-NNP) trained with a much larger dataset of computationally solved structures, which demonstrates the capability of extrapolating and folding proteins outside of the training set.
+
+Methods
+
+Coarse Grained Molecular Dynamics
+
+The design of a coarse-grained model starts with the definition of the variables that should be preserved after the dimensionality reduction. In this study, to reduce the dimensionality of system R ∈ R3N , we establish a linear mapping Ξ : R3N → R3n , projecting it onto a lower dimensional representation r ∈ R3n . We transform the all-atom representation into a Cα atom representation, with retained atoms referred to as coarse-grained ”beads”. Each Cα bead is assigned a bead type based on amino acid type, resulting in 21 unique bead types, which are identified by distinct integers. Molecular dynamics simulations are employed for training and testing the NNP. We utilize TorchMD, 28 a fully differentiable MD package written in PyTorch, 36 enabling the execution of multiple parallel trajectories. To confine the space explored by the dynamics and incorporate physical information, we apply a prior energy function Uλ (r, φ). TorchMD integrates prior energy terms and the NNP to compute total potential energy. Consequently, the potential energy function is decomposed into a prior potential Uλ and a neural network potential Uθ , with the total potential energy given by: Uθ,λ (r, φ) = Uθ (r) + Uλ (r, φ),
+
+(1)
+
+where Uθ represents the potential energy de2
+
+[Page 3]
+
+R3n of the system, and the potential energy Uλ,θ̂,i ∈ R of the system. As illustrated in Algorithm 1, we simulate multiple trajectories of length N in parallel, sampling K uncorrelated states Si from each trajectory {Si }N i=1 . For each state, we compute the root-mean square deviation (RMSD) between the state’s coordinates and the native conformation coordinates. Subsequently, the weighted RMSD ensemble average can be calculated as
+
+rived from the NNP, parameterized by parameters θ. The network is a graph neural network with a SchNet-based 37 architecture, a continuous-filter convolution neural network capable of modeling atomic interactions. The implementation, available in the Torchmd-NET package, 30 is defined by Majewski et al. 29 The prior energy Uλ is parameterized by constant parameters λ, which can be decomposed into three terms: a pairwise bonded term to prevent chain breaking, a nonbonded repulsive term to avoid structure collapse into overlapping beads, and a dihedral term to enforce chirality in the system. The Supporting Information provides a detailed description of the prior energy terms. The total energy of the system is then expressed as: Uθ,λ (r, φ) =Uλharmonic (r) + Uλrepulsive (r)+ Uλdihedral (φ) + UθN N P (r).
+
+⟨RM SD⟩ =
+
+Differentiable Reweighting
+
+wi RM SD(r0 , ri ),
+
+(3)
+
+i=1
+
+e−β(Uλ,θ (ri )−Uλ,θ̂ (ri )) wi = PK −β(U (rj )−U (rj )) , λ,θ λ,θ̂ j=1 e
+
+(4)
+
+where Uλ,θ̂ denotes the potential energy calculated with the reference parameters that generate the trajectory, Uλ,θ represents the potential energy calculated with the parameters to be updated, and β = 1/(kB T ), with kB being the Boltzmann constant and T the temperature. Note that before the first backward pass, θ = θ̂, thus wi = 1/N . The algorithm’s objective is to minimize a loss function Lθ , which in turn minimizes the ensemble average of the RMSD function. During optimization, the ensemble average RMSD between states sampled from short MD simulations and the native conformation of each protein is minimized. To avoid overfitting on proteins that are easier to optimize for the network, we employ a margin-ranking loss
+
+(2)
+
+To compute the forces, TorchMD computes analytically the forces from the priors and obtains the NNP forces with an autograd PyTorch call on the energy term computed with the NNP.
+
+Trajectory
+
+We implement a version of DiffTre 35 in PyTorch to train the NNP, facilitating parallel and distributed training across multiple GPUs and nodes. The package is modular, allowing training for any molecular system and using any experimental observable as a training objective. DiffTre is used to match K outputs of molecular dynamics simulations to experimental observables. In this study, we focus on the folding of coarse-grained proteins, using conformations r0 ∈ R3n of proteins in their native states as experimental observables, where n denotes the number of beads in the system. In the context of our work, a state denoted as Si , represents a specific configuration of the system at a given time in our simulations. More specifically, Si is a multidimensional entity that encapsulates both the spatial coordinates ri ∈
+
+1 X [max(0, ⟨RM SD⟩ + m)], Lθ = M k=1
+
+(5)
+
+where M represents the batch size and m denotes the margin. For example, when the margin is set to −1 Å, if the RMSD ensemble average is lower than 1 Å, the loss is set to 0 Å, and the network parameters will not be updated. Training is considered to have reached convergence when the training loss remains constant within a specified error range, and further optimization is unlikely to yield significant improvements.
+
+[Page 4]
+
+recorded. From this matrix, state populations and conditional pairwise transition probabilities can be obtained, and the state populations can be converted into free energies. In this work, we employ time-lagged independent component analysis (TICA) 43,44 to project the high-dimensional conformational space into an optimally reduced low-dimensional space. Following this, the resulting space is discretized using K-means clustering for MSM construction. We featurize the simulation data into pairwise Cα distances and use TICA to project the data onto the first four components. For the coarse-grained (CG) data, we adopt the approach presented by Maciej et al., 29 using the covariance matrices of the all-atom molecular dynamics (MD) to project the first three components. This method ensures consistency with established methodologies and facilitates further analysis. We use MSMs in the coarse-grained trajectories because we had them already for the allatom trajectories and to evaluate the shape of the folding basins. However, we have no expectation that the thermodynamics or kinetics of these coarse-grained simulations have anything to do with the original ones as the training methods do not preserve these quantities. It can be interpreted as a way to get stable states, which we can take as predictions for the native structure. By comparing the most probable macrostate to the protein’s native conformation, we can evaluate the predictive capabilities of our CG model. For clustering the data we apply the Pairwise Constrained Component Analysis 45 (PCCA) algorithm.
+
+Algorithm 1: Training DiffTre for Protein Structure Potentials 1 Input: Prior energy function Uλ , Neural Network Potential Uθ , dataset of native conformations D, Batch size M , Trajectory length N , Number of states to sample K, learning rate η, margin m 2 θ̂ ←− θ 3 repeat Draw a minibatch of samples { r01 , . . . , r0N } from pdata ∼ D. Sample K states for every sample of the minibatch {{S1 , . . . , SK }1 , . . . , {S1 , . . . , SK }N } from qλ,θ̂ ∝ exp(−Uλ,θ̂ ) (Using Molecular Dynamics trajectories of length N ) Update the neural network parameters by stochastic gradient descent: e−β(Uλ,θ (ri )−Uλ,θ̂ (ri ))
+
+wi = PK
+
+−β(Uλ,θ (rj )−Uλ,θ̂ (rj )) j=1 e
+
+⟨RM SD⟩ ≃ ∇θ Lθ =
+
+wi RM SD(r0 , ri )
+
+i=1
+
+[max(0, ⟨RM SD⟩ + m)] M k=1
+
+θ ←− θ − η∇θ Lθ
+
+θ̂ ←− θ until Convergence;
+
+Markov State Models
+
+Markov State Models (MSM) 38–42 are employed to analyze the CG simulations and compare them with their corresponding all-atom simulations. MSMs can describe the entire dynamics of a system by partitioning it into n discrete states. For a system to be Markovian, it must be ”memoryless”, meaning that future states depend only on the current state. In the case of Markovian systems, such as MD simulations, a transition probability matrix can be constructed, characterized by the n states and the lag time τ at which the system’s state is
+
+Datasets
+
+The first dataset comprises the crystal structures of 12 fast-folding proteins, previously studied by Lindorff-Larsen et al. 46 (using allatom MD) and Majewski et al 29 (using Machine Learned CG MD). These proteins exhibit a variety of secondary structure elements, including α-helices and β-sheets. The second dataset, used for training the general model, was created by searching the AlphaFold Database. 47 This dataset contains
+
+[Page 5]
+
+15,020 proteins between 50 and 150 residues, with computationally predicted structures solved using AlphaFold2. 48 The selected structures in this dataset are high-quality predictions, with a global predicted local-distance difference test (pLDDT) higher than 90, and are clustered at 50% sequence identity using Usearch. 49 We also removed any hits with more than 90% sequence identity to the fast-folding proteins used for testing. This approach ensures a diverse representation of protein structures in the dataset, allowing the NNP to generalize effectively to new and previously unseen protein structures. By incorporating AlphaFold2-predicted structures into our dataset, we significantly increase its size compared to using experimentally solved structures alone. The datasets are available in the supplementary information.
+
+Results
+
+A Neural Network coarsegrained potential learns the structure of fast-folding proteins.
+
+sive exploration of the conformational space, we took advantage of the parallel processing capabilities of TorchMD to initiate multiple parallel trajectories for each protein. Rather than starting all trajectories from unfolded conformations, which might limit the exploration, we diversified our starting points. We used 32 different conformations as starting points, representing a wide array of distinct points in the conformational space. These starting conformations were selected to create a wider initial condition set, promoting a broader exploration of the potential energy landscape. While in a typical experimental setup, such a wide range of initial conformations might not be readily available, our computational approach enabled this extended exploration, which we believe is key to a more robust validation of the NNP. Our simulations were conducted with a timestep of 1 fs and a temperature of 298 K, running for a total aggregated time of 64 ns for each protein. From the MSM analysis, we selected the minimum average RMSD macrostate for each protein, considering it as the native macrostate of the simulation. Table 1 presents the equilibrium probability of this macrostate, along with its mean and minimum RMSDs. The results suggest that the fast folders’ NNP simulations successfully recovered the experimental structure for all simulated proteins, except λ-repressor, a3d, and Protein B (Tab. 1). Furthermore, the equilibrium probability of all these native macrostates is high, indicating extensive sampling of the native conformation. Representative conformations from the macrostate are shown in Figure 1. For Protein B and λ-repressor, the lowest RMSD macrostates exhibit high flexibility and do not form any secondary structure. In contrast, for a3d, the secondary structure is recovered, although the tertiary structure is not correctly aligned.
+
+We trained the FF-NNP using the dataset of 12 fast-folding proteins. For training, the learning rate was set to ε = 0.0001, and the loss function was defined by Equation (5). The simulation temperature was set to 298 K, and the timestep was 5 fs. We employed trajectories of 1024 steps, with 128 states used for reweighting each trajectory. The margin was set to m = −1.0; Å, and the mini-batch size was 12. Compared to bottom-up approaches, 22,27,29,31,32 our training process did not require generating expensive reference all-atom data beforehand, and the training took only 5 hours on a single NVIDIA GeForce RTX 2080 GPU. Despite this, the model successfully folded most of the proteins and stabilized their native conformations. To validate the fast folders’ NNP, we performed coarse-grained molecular dynamics simulations using the same proteins used for training. In order to ensure a more comprehen5
+
+[Page 6]
+
+Figure 1: Representative structures sampled from the minimum RMSD macrostate from coarsegrained simulations of the 12 fast-folding proteins. For each protein we show the experimental structure (gray), the selected conformations from the general NNP (blue) and the selected structures from the fast folders NNP (orange). 10 structures are randomly selected from each model’s minimum RMSD macrostate, with the minimum RMSD one highlighted and the other as transparent shadows.
+
+A Neural Network Potential trained on a Large Protein Dataset learns beyond training data distribution
+
+the 12 fast-folding proteins to provide a wellknown but independent test set of our model’s ability to generalize to proteins that fall outside of the training set and allow us to directly compare the results with the FF-NNP. For training the G-NNP, the learning rate was set to ε = 0.0005. We used trajectories of 100 steps, the number of states used to reweight each trajectory was 20, and the mini-batch size was set to 32. As for the big dataset we have much more data, we can set the margin to m = 0Å without suffering from overfitting. We found that this combination was more optimal for training on a large dataset. We trained the G-NNP using a learning rate ε = 0.0005. Our training utilized trajectories consisting of 100 steps, with each trajectory being reweighted using 20 state and the minibatch size was 32. With the abundance of data
+
+In the previous section, we demonstrated that a folding NNP can be learned for a small set of proteins. In this section, we present the results of the G-NNP, which is trained on a much larger dataset of 15 thousand protein structures. This enables us to test the generalization capabilities of our approach. We used a random 90/10% training/validation split. Furthermore, we built the training dataset such that it did not contain sequences with a sequence similarity greater than 90% to the fast folders. The closest homologs to fast folders present in the dataset after filtering are reported in Table (S2) in the Supporting Information. Thus, we use
+
+[Page 7]
+
+Table 1: Minimum average RMSD macrostate statistic from MSM built with CG simulations of the fast-folders and general NNP. The data shows the average and minimum RMSD of the macrostate, as well as its equilibrium probabilities in percentage (Macro prob.) with standard deviation. In bold the proteins with Mean RMSD < 3.0 Å. Protein Chignolin Trp-cage BBA WW-domain Villin NTL9 BBL Protein B Homeodomain Protein G a3d λ-repressor
+
+Min RMSD (Å)
+
+FF-NNP Mean RMSD (Å) Macro prob. (%) 0.9 ± 0.7 42.5 ± 0.2 3.2 ± 1.4 5.5 ± 0.1 1.3 ± 0.7 30.0 ± 0.1 1.0 ± 0.6 1.8 ± 0.2 1.0 ± 0.5 18.6 ± 0.1 0.9 ± 0.3 16.0 ± 0.1 1.8 ± 0.6 4.6 ± 0.2 8.6 ± 2.5 9.9 ± 0.1 3.6 ± 3.9 35.0 ± 0.1 1.0 ± 0.4 1.5 ± 0.1 8.5 ± 2.3 5.8 ± 0.1 6.8 ± 1.5 0.4 ± 0.2
+
+from our large dataset, we were able to set the margin (m) to 0 Å, maintaining an optimal balance and avoiding the issue of overfitting. This parameter configuration was found to yield optimal results when training on large datasets. Similar to the FF-NNP, we initialized multiple parallel trajectories for each protein. We used the same conditions and starting points as those used in Section 3.1 with the same total aggregated time. Results from the MSM analysis reveal that for specific proteins, such as Chignolin, BBA, and Protein G, the minimum RMSD macrostate aligns with the native structure, exhibiting an average RMSD of less than 3.0 Å. Moreover, their equilibrium probabilities are 16.3 ± 0.2 % for Chignolin, 42.9 ± 0.1 % for BBA, and 6.1 ± 0.1 % for Protein G (Table 1). This evidence suggests that our NNP can effectively generalize when trained on an ample dataset. For the other proteins, the minimum RMSD of the macrostates is consistently lower than 5 Å. As a result, although the macrostates do not precisely match the native structure, near-native conformations are sampled during the simulations with notable probability. Simulations for Chignolin, BBA, and Homeodomain proteins successfully sampled folding events, even when starting from completely unfolded conformations. This indicates that the G-NNP can capture the underlying folding mechanisms that guide these proteins to adopt
+
+Min RMSD (Å)
+
+G-NNP Mean RMSD (Å) 1.5 ± 0.4 5.5 ± 0.5 2.5 ± 0.4 4.9 ± 0.9 6.9 ± 1.4 4.7 ± 0.4 6.1 ± 1.3 6.6 ± 0.7 7.2 ± 0.9 2.8 ± 0.4 7.0 ± 2.3 7.5 ± 1.1
+
+Macro prob. (%) 16.3 ± 0.2 11.0 ± 0.1 42.9 ± 0.1 4.4 ± 0.1 6.9 ± 0.1 2.9 ± 0.1 17.0 ± 0.1 4.8 ± 0.1 7.1 ± 0.1 6.1 ± 0.1 5.7 ± 0.1 4.9 ± 0.1
+
+their native structures. The folding events observed in our simulations, illustrated in Figure 2, provide compelling evidence that our G-NNP generalizes beyond the training set, accurately modeling the folding behavior of proteins not included in the training set. In addition to the aforementioned observations, Figure (1) illustrates that the G-NNPselected structures exhibit greater variability than those sampled with the FF-NNP. Nevertheless, the G-NNP more accurately recovers secondary structure elements and the overall shape for proteins (λ-repressor, a3d, and Protein B) where the FF-NNP fell short.
+
+The Neural Network Potential is comparable to other methods in de-novo structure prediction
+
+In this section, we evaluate the G-NNP performance in de-novo structure prediction, where experimental structures are not available. With this, we evaluate the capabilities of our learned CG forcefield to not only run dynamics but also fold proteins to their native conformation. For this purpose, we predict structures by selecting the most probable macrostate of the simulations used in the previous section. To benchmark our model (G-NNP) against other methods, we calculated the average root
+
+[Page 8]
+
+Figure 2: Three individual CG trajectories selected from MD of Chignolin, BBA and Homeodomain. Each trajectory is visualized using different colors ranging from purple to yellow. Each simulation started from an extended conformation and sampled the native structure. Top panels: Minimum RMSD conformation of the trajectory (blue) aligned with the experimental structure (gray) for Chignolin, BBA and Homeodomain. Middle panels: Cα RMSD of the trajectory with reference to the experimental structure for Chignolin, BBA and Homeodomain. Bottom panels: 100 states sampled uniformly from the trajectory plotted over CG free energy surface, projected over the first two time-lagged independent components (TICs) for Chignolin, BBA and Homeodomain. The red line indicates the all-atom equilibrium density by showing the energy level above the free energy minimum with the value of 7.5 kcal/mol. mean square deviation (RMSD) of the most probable macrostate derived from the simulations. The results are presented in Table 2. We compared our findings with two web servers employing coarse-grained methods for protein folding, UNRES 50 and CABS-fold, 51 as well as the only other method utilizing differentiable molecular simulations to learn coarse-grained parameters, DMS. 34 For the CABS-fold and DMS methods, the results were obtained from the paper by Greener et al., 34 as the CABS-fold server was not operational during our analysis. For the UNRES method, models were gener-
+
+ated on their web server using the parameters provided in the MREMD structure prediction example from their tutorial. Our general model has produced comparable results to other models that use coarsegraining simulations for predicting folded protein conformations. However, CABS-fold and UNRES employ replica exchange algorithms to enhance sampling. Additionally, the DMS method used an initial guess of the secondary structure as a starting point for the simulations, which may impact the comparability of the results. Nonetheless, we want to emphasize that
+
+[Page 9]
+
+Table 2: Comparison of Cα RMSDs (Å) 12 fast folding proteins predicted structures with our model and different Coarse-graining models. For our method (G-NNP) we show the mean RMSDs of the most probable macrostate. Protein Chignolin Trp-cage BBA Villin BBL WW-domain Protein B Protein G NTL9 Homeodomain a3d λ-repressor
+
+DMS – – – – – – – –
+
+UNRES
+
+CABS-fold – – – – – – – –
+
+eral NNP, while only trained to maintain the native structure, demonstrated the capability to fold some proteins, which their sequence was not present in the training, set starting from entirely unfolded conformations. We demonstrated that neural network potentials (NNPs) can be trained in a top-down manner, removing the need for expensive reference calculations or memory-intensive end-toend differentiable simulations when addressing the protein folding problem. While our current results do not encompass the entire protein folding process, including kinetics and thermodynamics, we are optimistic that future enhancements to our approach, in conjunction with bottom-up methodologies, will enable NNPs to achieve superior accuracy and faster inference times compared to current techniques. Future research may involve integrating our method with labeled data from extensive simulations to create a model capable of accurately predicting protein folding behavior through coarse-grained molecular dynamics simulations.
+
+G-NNP (ours)
+
+our neural network model, which was trained from scratch on experimental structures, can achieve results similar to those of more sophisticated, pre-existing, manually crafted methods, or DMS, which are more memory and timeintensive. Another aspect of our method is its capacity to illustrate not only the end conformation, as current protein structure prediction methods, 48,52,53 but also the pathway the protein traverses towards it. This aspect could provide a more comprehensive understanding of protein dynamics, and in combination with additional reference data, it could eventually predict both structure and folding pathways.
+
+Data and code availability Code, models, prior parameters and all the data are freely available in: github.com/compsciencelab/torchmd-exp
+
+References (1) Goh, C.-S.; Milburn, D.; Gerstein, M. Conformational changes associated with protein-protein interactions. Current Opinion in Structural Biology 2004, 14, 104–109.
+
+Conclusions
+
+In this study, we have effectively extended the application of the differentiable trajectory reweighting algorithm for the parameterization of neural network-based protein force fields. We developed a fast-folders neural network potential (NNP) using 12 proteins, highlighting its ability to fold and stabilize the native conformations of proteins within the training data distribution. Furthermore, we constructed a general NNP and showed that the learned potential can generalize outside of the training distribution and predict the folded macrostates of proteins with accuracy similar to existing classical coarse-grained methods. Remarkably, the gen-
+
+(2) Baxa, M. C.; Haddadian, E. J.; Jumper, J. M.; Freed, K. F.; Sosnick, T. R. Loss of conformational entropy in protein folding calculated using realistic ensembles and its implications for NMR-based calculations. Proceedings of the National Academy of Sciences 2014, 111, 15396–15401. (3) Noé, F.; Schütte, C.; Vanden-Eijnden, E.; Reich, L.; Weikl, T. R. Constructing the equilibrium ensemble of folding pathways
+
+[Page 10]
+
+from short off-equilibrium simulations. Proceedings of the National Academy of Sciences 2009, 106, 19011–19016.
+
+SIRAH 2.0 Force Field: Altius, Fortius, Citius. Journal of Chemical Theory and Computation 2019, 15, 2719–2733.
+
+(4) Naganathan, A. N.; Orozco, M. The Native Ensemble and Folding of a Protein Molten-Globule: Functional Consequence of Downhill Folding. Journal of the American Chemical Society 2011, 133, 12154–
+
+(12) Saunders, M. G.; Voth, G. A. CoarseGraining Methods for Computational Biology. Annual Review of Biophysics 2013, 42, 73–93. (13) Izvekov, S.; Voth, G. A. A Multiscale Coarse-Graining Method for Biomolecular Systems. The Journal of Physical Chemistry 2005, 109, 2469–2473.
+
+(5) Bidon-Chanal, A.; Martı́, M. A.; Crespo, A.; Milani, M.; Orozco, M.; Bolognesi, M.; Luque, F. J.; Estrin, D. A. Ligand-induced dynamical regulation of NO conversion in Mycobacterium tuberculosis truncated hemoglobin-N. Proteins 2006, 64, 457–464.
+
+(14) Noid, W. G. Perspective: Coarse-grained models for biomolecular systems. The Journal of chemicalphysics 2013, 139 . (15) Clementi, C. Coarse-grained models of protein folding: toy models or predictive tools? Current Opinion in Structural Biology 2008, 18, 10–15.
+
+(6) McGeagh, J. D.; Ranaghan, K. E.; Mulholland, A. J. Protein dynamics and enzyme catalysis: Insights from simulations. Biochimica et Biophysica Acta 2011, 1814, 1077–1092.
+
+(16) Clementi, C.; Nymeyer, H.; Onuchic, J. N. Topological and energetic factors: what determines the structural details of the transition state ensemble and “en-route” intermediates for protein folding? an investigation for small globular proteins11Edited by F. E. Cohen. Journal of Molecular Biology 2000, 298, 937–953.
+
+(7) Muller, M. P.; Jiang, T.; Sun, C.; Lihan, M.; Pant, S.; Mahinthichaichan, P.; Trifan, A.; Tajkhorshid, E. Characterization of Lipid–Protein Interactions and Lipid-Mediated Modulation of Membrane Protein Function through Molecular Simulation. Chemical Reviews 2019, 119, 6086–6161.
+
+(17) Boninsegna, L.; Banisch, R.; Clementi, C. A Data-Driven Perspective on the Hierarchical Assembly of Molecular Structures. Journal of Chemical Theory and Computation 2018, 14, 453–460.
+
+(8) Maffeo, C.; Bhattacharya, S.; Yoo, J.; Wells, D.; Aksimentiev, A. Modeling and Simulation of Ion Channels. Chemical Reviews 2012, 112, 6250–6284.
+
+(18) Foley, T. T.; Shell, M. S.; Noid, W. G. The impact of resolution upon entropy and information in coarse-grained models. The Journal of chemical physics 2015, 143 .
+
+(9) Petrov, D.; Margreitter, C.; Grandits, M.; Oostenbrink, C.; Zagrovic, B. A Systematic Framework for Molecular Dynamics Simulations of Protein Post-Translational Modifications. PLoS Computational Biology 2013, 9, e1003154.
+
+(19) Foley, T. T.; Kidder, K. M.; Shell, M. S.; Noid, W. Exploring the landscape of model representations. Proceedings of the National Academy of Sciences 2020, 117, 24061–24068.
+
+(10) Marrink, S. J.; Tieleman, D. P. Perspective on the Martini model. Chem. Soc. Rev. 2013, 42, 6801–6822.
+
+(20) Gkeka, P.; Stoltz, G.; Barati Farimani, A.; Belkacemi, Z.; Ceriotti, M.;
+
+(11) Machado, M. R.; Barrera, E. E.; Klein, F.; Sóñora, M.; Silva, S.; Pantano, S. The
+
+[Page 11]
+
+Chodera, J. D.; Dinner, A. R.; Ferguson, A. L.; Maillet, J.-B.; Minoux, H., et al. Machine Learning Force Fields and Coarse-Grained Variables in Molecular Dynamics: Application to Materials and Biological Systems. Journal of Chemical Theory and Computation 2020, 16, 4757–
+
+(28) Doerr, S.; Majewski, M.; Pérez, A.; Krämer, A.; Clementi, C.; Noe, F.; Giorgino, T.; De Fabritiis, G. TorchMD: A Deep Learning Framework for Molecular Simulations. Journal of Chemical Theory and Computation 2021, 17, 2355–2363. (29) Majewski, M.; Pérez, A.; Thölke, P.; Doerr, S.; Charron, N. E.; Giorgino, T.; Husic, B. E.; Clementi, C.; Noé, F.; De Fabritiis, G. Machine Learning Coarse-Grained Potentials of Protein Thermodynamics.
+
+(21) Zhang, L.; Han, J.; Wang, H.; Car, R.; E, W. DeePCG: Constructing CoarseGrained Models via Deep Neural Networks. The Journal of Chemical Physics 2018, 149, 034101.
+
+(30) Thölke, P.; De Fabritiis, G. TorchMDNET: Equivariant Transformers for Neural Network based Molecular Potentials.
+
+(22) Wang, J.; Olsson, S.; Wehmeyer, C.; Pérez, A.; Charron, N. E.; de Fabritiis, G.; Noé, F.; Clementi, C. Machine Learning of Coarse-Grained Molecular Dynamics Force Fields. ACS Central Science 2019, 5, 755–767.
+
+(31) Köhler, J.; Chen, Y.; Krämer, A.; Clementi, C.; Noé, F. Flow-Matching: Efficient Coarse-Graining of Molecular Dynamics without Forces. Journal of Chemical Theory and Computation 2023, 19, 942–952.
+
+(23) Wang, W.; Gómez-Bombarelli, R. CoarseGraining Auto-Encoders for Molecular Dynamics. Computational Materials Science 2019, 169, 109082.
+
+(32) Arts, M.; Satorras, V. G.; Huang, C.-W.; Zuegner, D.; Federici, M.; Clementi, C.; Noe, F.; Pinsler, R.; van den Berg, R. Two for One: Diffusion Models and Force Fields for Coarse-Grained Molecular Dynamics. 2023,
+
+(24) Behler, J.; Parrinello, M. Generalized Neural-Network Representation of HighDimensional Potential-Energy Surfaces. Phys. Rev. Lett. 2007, 98, 146401. (25) Noé, F.; Tkatchenko, A.; Müller, K.-R.; Clementi, C. Machine Learning for Molecular Simulation. Annual Review of Physical Chemistry 2020, 71, 361–390.
+
+(33) Noé, G.; Fabritiis, D.; Clementi, C. Machine learning for protein folding and dynamics. Current Opinion in Structural Biology 2020, 60, 77–84.
+
+(26) Smith, J. S.; Isayev, O.; Roitberg, A. E. ANI-1: an extensible neural network potential with DFT accuracy at force field computational cost. Chemical Science 2017, 8, 3192–3203.
+
+(34) Greener JG, J. D. Differentiable molecular simulation can learn all the parameters in a coarse-grained force field for proteins. PLoS ONE 2021, 16 . (35) Thaler, S.; Zavadlav, J. Learning neural network potentials from experimental data via Differentiable Trajectory Reweighting. Nature Communications 2021, 12, 6884.
+
+(27) Husic, B. E.; Charron, N. E.; Lemm, D.; Wang, J.; Pérez, A.; Majewski, M.; Krämer, A.; Chen, Y.; Olsson, S.; de Fabritiis, G.; Noé, F.; Clementi, C. Coarse graining molecular dynamics with graph neural networks. Journal of Chemical Physics 2020, 153, 194101.
+
+(36) Paszke, A.; Gross, S.; Massa, F.; Lerer, A.; Bradbury, J.; Chanan, G.; Killeen, T.; Lin, Z.; Gimelshein, N.; Antiga, L., et al.
+
+[Page 12]
+
+PyTorch: An Imperative Style, HighPerformance Deep Learning Library. Advances in Neural Information Processing Systems 32 2019, 1, 8024–8035.
+
+in the Folding of NTL9. Journal of Chemical Theory and Computation 2013, 9, 2000–2009, PMID: 23750122. (45) Mignon, A.; Jurie, F. PCCA: A new approach for distance learning from sparse pairwise constraints. CVPR 2012, 2666–2672.
+
+(37) Schütt, K. T.; Sauceda, H. E.; Kindermans, P.-J.; Tkatchenko, A.; Müller, K.R. SchNet – A deep learning architecture for molecules and materials. The Journal of Chemical Physics 2018, 148, 241722.
+
+(46) Lindorff-Larsen, K.; Piana, S.; Dror, R. O.; Shaw, D. E. How fastfolding proteins fold. Science 2011, 334, 517–520.
+
+(38) Husic, B. E.; Pande, V. S. Markov State Models: From an Art to a Science. Journal of the American Chemical Society 2018, 140, 2386–2396.
+
+(47) Varadi, M.; Anyango, S.; Deshpande, M.; Nair, S.; Natassia, C.; Yordanova, G.; Yuan, D.; Stroe, O.; Wood, G.; Laydon, A.; Žı́dek, A.; Green, T.; Tunyasuvunakool, K.; Petersen, S.; Jumper, J.; Clancy, E.; Green, R.; Vora, A.; Lutfi, M.; Figurnov, M.; Cowie, A.; Hobbs, N.; Kohli, P.; Kleywegt, G.; Birney, E.; Hassabis, D.; Velankar, S. AlphaFold Protein Structure Database: massively expanding the structural coverage of proteinsequence space with high-accuracy models. Nucleic Acids Research 2021, 50, D439–D444.
+
+(39) Prinz, J. H.; Wu, H.; Sarich, M.; Keller, B.; Senne, M.; Held, M.; Chodera, J. D.; Schtte, C.; Noé, F. Markov models of molecular kinetics: Generation and validation. Journal of Chemical Physics 2011, 134 . (40) Singhal, N.; Snow, C. D.; Pande, V. S. Using path sampling to build better Markovian state models: Predicting the folding rate and mechanism of a tryptophan zipper beta hairpin. J. Chem. Phys. 2004, 121, 415–425.
+
+(48) Jumper, J.; Evans, R.; Pritzel, A.; et al., Highly accurate protein structure prediction with AlphaFold. Nature 2021, 596, 583–589.
+
+(41) Noé, F.; Fischer, S. Transition networks for modeling the kinetics of conformational change in macromolecules. Current Opinion in Structural Biology 2008, 18, 154–162.
+
+(49) Edgar, R. C. Search and clustering orders of magnitude faster than BLAST. Bioinformatics 2010, 26 .
+
+(42) Pan, A. C.; Roux, B. Building Markov state models along pathways to determine free energies and rates of transitions. J. Chem. Phys. 2008, 129 .
+
+(50) Czaplewski, C.; Karczyńska, A.; Sieradzan, A. K.; Liwo, A. UNRES server for physics-based coarse-grained simulations and prediction of protein structure, dynamics and thermodynamics. Nucleic Acids Research 2018, 46, 304–309.
+
+(43) Pérez-Hernández, G.; Paul, F.; Giorgino, T.; De Fabritiis, G.; Noé, F. Identification of slow molecular order parameters for Markov model construction. J. Chem. Phys. 2008, 139 .
+
+(51) Blaszczyk, M.; Jamroz, M.; Kmiecik, S.; Kolinski, A. CABS-fold: Server for the de novo and consensus-based prediction of protein structure. Nucleic Acids Research 2013, 41, 406–411.
+
+(44) Schwantes, C. R.; Pande, V. S. Improvements in Markov State Model Construction Reveal Many Non-Native Interactions
+
+[Page 13]
+
+(52) Lin, Z.; Akin, H.; Rao, R.; Hie, B.; Zhu, Z.; Lu, W.; Smetanin, N.; Verkuil, R.; Kabeli, O.; Rives, A., et al. Evolutionaryscale prediction of atomic-level protein structure with a language model. Science 2023, 379, 1123–1130. (53) Baek, M.; DiMaio, F.; Anishchenko, I.; Dauparas, J.; Ovchinnikov, S.; Lee, G. R.; Wang, J.; Cong, Q.; Kinch, L. N.; Baker, D. Accurate prediction of protein structures and interactions using a threetrack neural network. Science 2021, 373, 871–876.
+
+[Page 14]
+
+Supporting Information
+
+arXiv:2306.11375v2 [q-bio.BM] 21 Jun 2023
+
+Top-down machine learning of coarse-grained protein force-fields Carles Navarro,† Maciej Majewski,† and Gianni De Fabritiis∗,‡,¶,§ †Acellera Labs, Doctor Trueta 183, 08005, Barcelona, Spain ‡Computational Science Laboratory, Universitat Pompeu Fabra, Barcelona Biomedical Research Park (PRBB), Carrer Dr. Aiguader 88, 08003, Barcelona, Spain ¶Acellera Ltd, Devonshire House 582, HA7 1JS, United Kingdom §Institució Catalana de Recerca i Estudis Avançats, Barcelona, Spain E-mail: gianni.defabritiis@upf.edu
+
+Prior energy terms The pairwise bonded term was: Uλharmonic (r) = k(r − r0 )2 + V0
+
+(1)
+
+where r is the distance between beads of a given bond, r0 is the equilibrium distance and k is the spring constant. The nonbonded repulsive term was: Uλrepulsive (r) = 4εr−6 + V0
+
+(2)
+
+[Page 15]
+
+where ε is a constant fitted to the data and r is the distance between two beads. Finally, the dihedral prior was: Uλdihedral (φ) =
+
+n=1,2
+
+kn (1 + cos(nφ − γn ))
+
+(3)
+
+where φ is the dihedral angle between four consecutive beads, kn is the amplitude and γn is the phase offset of the harmonic component of periodicity n. The parameters for the priors were fitted to data of all-atom simulations of the fast-folding proteins. For the dihedral prior we used specific dihedrals for each combination of four beads, and for the general NNP we considered all the four beads combinations equally since the straining dataset was bigger. In both cases, the values of kn were divided by five to achieve a soft prior that does not disturb the simulation too much.
+
+Graph Neural Networks The Graph Neural Network used as an NNP is the same as the one in the publicly available package TorchMD-NET. ? The network is inspired by SchNet ? and PhysNet, ? and optimized for coarse-graining. The network takes as input the Cartesian coordinates of the coarse-grained beads, alongside a predetermined type for each bead. Each bead represents a node of the graph and is given an embedding feature vector by applying a learnable linear mapping. The series of network operations can be written as:
+
+[Page 16]
+
+ξ0 = W E z ξ 1 = ξ 0 + W 0 σ(Aggr(W C ∗ ξ 0 )) ξ 2 = ξ 1 + W 1 σ(Aggr(W C ∗ ξ 1 )) .. .
+
+ξ N = ξ N −1 + W N −1 σ(Aggr(W C ∗ ξ N −1 )) U = Hout (ξ N ) F = − grad(U, x) for N interaction layers. Where W C are continuous filters, generated by expanding the pairwise distance between beads into a set of radial basis functions. Aggr is an aggregation function that reduces the convolution output, in our case we choose the sum as the aggregation method. Finally, the graph level feature U is computed which, in our case, corresponds to the potential energy of the protein and that can be used to compute the forces acting on each bead with an autograd call with respect to the Cartesian coordinates.
+
+Training curves
+
+Figure S1: Train curve for transferable fast-folding potential.
+
+Figure S2: Train curve for the general NNP potential.
+
+[Page 17]
+
+Table S1: Fast-folding proteins length and sequence. Protein Chignolin Trp-cage BBA WW-domain Villin NTL9 BBL Protein B Homeodomain Protein G a3D λ-repressor
+
+Length
+
+Sequence YYDPETGTWY DAYAQWLKDGGPSSGRPPPS EQYTAKYKGRTFRNEKELRDFIEKFKGR KLPPGWEKRMSRSSGRVYYFNHITNASQWERPSG LSDEDFKAVFGMTRSAFANLPLWXQQHLXKEKGLF MKVIFLKDVKGMGKKGEIKNVADGYANNFLFKQGLAIEA GSQNNDALSPAIRRLLAEWNLDASAIKGTGVGGRLTREDVEKHLAKA LKNAIEDAIAELKKAGITSDFYFNAINKAKTVEEVNALVNEILKAHA RPRTAFSSEQLARLKREFNENRYLTERRRQQLSSELGLNEAQIKIWFQNKRAKI DTYKLVIVLNGTTFTYTTEAVDAATAEKVFKQYANDAGVDGEWTYDAATKTFTVTE MGSWAEFKQRLAAIKTRLQALGGSEAELAAFEKEIAAFESELQAYKGKGNPEVEALRKEAAAIRDELQAYRHN PLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQSGVGALFNGINALNAYNAALLAKILKVSVEE FSPSIAREIY
+
+Table S2: Fast-folding proteins closest homolog in the General dataset with the percentage sequence identity. Protein Chignolin Trp-cage BBA WW-domain Villin NTL9 BBL Protein B Homeodomain Protein G a3D λ-repressor
+
+Uniprot Code K0ET17 P0AB65 K0EQQ9 A5I821 B8E0J2 B7HGC9 A0A0P0XY91 B3V4S7 A0A175W2C1 Q9N2U6 A0A1D6L4A9 Q87JD1
+
+Identity (%)
+
+Training hyperparameters Different architecture hyperparameters were used for each dataset (Table S3). For the smaller dataset, we used a network with a small cutoff and less number of layers in order to have fewer parameters, which helped to avoid overfitting. 4 NVIDIA GeForce RTX 2080 machines were used for training the general NNP and 1 NVIDIA GeForce RTX 2080 for the fast-folders dataset.
+
+[Page 18]
+
+Table S3: Hyperparameters choices for the neural networks trained on the fast folders and the monomers datasets. The neural network was implemented with the TorchMD-Net package, ? and the rest of the parameters were left to the default values. Hyperparameter Value for the Fast-Folders NNP Number of interaction layers Activation function tanh Radial base function (RBF) type expnorm Number of RBF Upper cutoff for RBF Lower cutoff for RBF Trainable RBF True Model type graph-network Embedding dimension Learning rate 1.0e-4 Neighbor embedding False Batch size Total parameters
+
+Value for the General NNP tanh expnorm True graph-network 5.0e-5 False

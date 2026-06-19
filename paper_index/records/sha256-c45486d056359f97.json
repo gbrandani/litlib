@@ -1,0 +1,351 @@
+{
+  "paper_id": "sha256-c45486d056359f97",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/deep_learning_MD/AlQuraishi 2023 biorxiv - OpenFold- Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization.pdf",
+  "pdf_sha256": "c45486d056359f97271cc612340b5041a2deca5b1c4fb048f17b56b2b7d448ef",
+  "filename": "AlQuraishi 2023 biorxiv - OpenFold- Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization.pdf",
+  "item_type": "article",
+  "title_query": "OpenFold- Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization",
+  "filename_hints": {
+    "year_hint": 2023,
+    "venue_hint": "",
+    "prefix": "AlQuraishi 2023 biorxiv"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:30:10.694858+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "OpenFold- Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "c51192d7440807dc98cc4374fb5d919390d70b0b",
+      "externalIds": {
+        "DOI": "10.1038/s41592-024-02272-z",
+        "CorpusId": 253803067,
+        "PubMed": "38744917"
+      },
+      "url": "https://www.semanticscholar.org/paper/c51192d7440807dc98cc4374fb5d919390d70b0b",
+      "title": "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization",
+      "venue": "bioRxiv",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s41592-024-02272-z",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41592-024-02272-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41592-024-02272-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2023-08-11",
+      "journal": {
+        "name": "bioRxiv"
+      },
+      "authors": [
+        {
+          "authorId": "2186878343",
+          "name": "Gustaf Ahdritz"
+        },
+        {
+          "authorId": "102353618",
+          "name": "N. Bouatta"
+        },
+        {
+          "authorId": "2110058999",
+          "name": "Sachin Kadyan"
+        },
+        {
+          "authorId": "2191903783",
+          "name": "Qinghui Xia"
+        },
+        {
+          "authorId": "52067907",
+          "name": "William Gerecke"
+        },
+        {
+          "authorId": "1649766107",
+          "name": "Tim O’Donnell"
+        },
+        {
+          "authorId": "46178346",
+          "name": "Daniel Berenberg"
+        },
+        {
+          "authorId": "2061576209",
+          "name": "Ian Fisk"
+        },
+        {
+          "authorId": "102304275",
+          "name": "Niccoló Zanichelli"
+        },
+        {
+          "authorId": "2264470853",
+          "name": "Bo Zhang"
+        },
+        {
+          "authorId": "2191900755",
+          "name": "Arkadiusz Nowaczynski"
+        },
+        {
+          "authorId": "2192025681",
+          "name": "Bei Wang"
+        },
+        {
+          "authorId": "1402882959",
+          "name": "Marta M. Stepniewska-Dziubinska"
+        },
+        {
+          "authorId": "2145443268",
+          "name": "Shang Zhang"
+        },
+        {
+          "authorId": "2306300",
+          "name": "A. Ojewole"
+        },
+        {
+          "authorId": "12732299",
+          "name": "M. Guney"
+        },
+        {
+          "authorId": "103476203",
+          "name": "Stella Biderman"
+        },
+        {
+          "authorId": "39139310",
+          "name": "A. Watkins"
+        },
+        {
+          "authorId": "4195120",
+          "name": "Stephen Ra"
+        },
+        {
+          "authorId": "15289394",
+          "name": "P. R. Lorenzo"
+        },
+        {
+          "authorId": "4629970",
+          "name": "L. Nivón"
+        },
+        {
+          "authorId": "2531497",
+          "name": "Brian D. Weitzner"
+        },
+        {
+          "authorId": "2302710",
+          "name": "Y. Ban"
+        },
+        {
+          "authorId": "2940596",
+          "name": "P. Sorger"
+        },
+        {
+          "authorId": "2191900751",
+          "name": "Emad Mostaque"
+        },
+        {
+          "authorId": "2156122400",
+          "name": "Zhao Zhang"
+        },
+        {
+          "authorId": "2067157865",
+          "name": "Richard Bonneau"
+        },
+        {
+          "authorId": "1380118346",
+          "name": "Mohammed Alquraishi"
+        }
+      ],
+      "abstract": "AlphaFold2 revolutionized structural biology with the ability to predict protein structures with exceptionally high accuracy. Its implementation, however, lacks the code and data required to train new models. These are necessary to (i) tackle new tasks, like protein-ligand complex structure prediction, (ii) investigate the process by which the model learns, which remains poorly understood, and (iii) assess the model’s generalization capacity to unseen regions of fold space. Here we report OpenFold, a fast, memory-efficient, and trainable implementation of AlphaFold2. We train OpenFold from scratch, fully matching the accuracy of AlphaFold2. Having established parity, we assess OpenFold’s capacity to generalize across fold space by retraining it using carefully designed datasets. We find that OpenFold is remarkably robust at generalizing despite extreme reductions in training set size and diversity, including near-complete elisions of classes of secondary structure elements. By analyzing intermediate structures produced by OpenFold during training, we also gain surprising insights into the manner in which the model learns to fold proteins, discovering that spatial dimensions are learned sequentially. Taken together, our studies demonstrate the power and utility of OpenFold, which we believe will prove to be a crucial new resource for the protein modeling community."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "c51192d7440807dc98cc4374fb5d919390d70b0b",
+        "title": "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2023,
+        "candidate_year": 2023,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1038/s41592-024-02272-z"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "c51192d7440807dc98cc4374fb5d919390d70b0b",
+          "externalIds": {
+            "DOI": "10.1038/s41592-024-02272-z",
+            "CorpusId": 253803067,
+            "PubMed": "38744917"
+          },
+          "url": "https://www.semanticscholar.org/paper/c51192d7440807dc98cc4374fb5d919390d70b0b",
+          "title": "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization",
+          "venue": "bioRxiv",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41592-024-02272-z",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s41592-024-02272-z?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s41592-024-02272-z, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-08-11",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2186878343",
+              "name": "Gustaf Ahdritz"
+            },
+            {
+              "authorId": "102353618",
+              "name": "N. Bouatta"
+            },
+            {
+              "authorId": "2110058999",
+              "name": "Sachin Kadyan"
+            },
+            {
+              "authorId": "2191903783",
+              "name": "Qinghui Xia"
+            },
+            {
+              "authorId": "52067907",
+              "name": "William Gerecke"
+            },
+            {
+              "authorId": "1649766107",
+              "name": "Tim O’Donnell"
+            },
+            {
+              "authorId": "46178346",
+              "name": "Daniel Berenberg"
+            },
+            {
+              "authorId": "2061576209",
+              "name": "Ian Fisk"
+            },
+            {
+              "authorId": "102304275",
+              "name": "Niccoló Zanichelli"
+            },
+            {
+              "authorId": "2264470853",
+              "name": "Bo Zhang"
+            },
+            {
+              "authorId": "2191900755",
+              "name": "Arkadiusz Nowaczynski"
+            },
+            {
+              "authorId": "2192025681",
+              "name": "Bei Wang"
+            },
+            {
+              "authorId": "1402882959",
+              "name": "Marta M. Stepniewska-Dziubinska"
+            },
+            {
+              "authorId": "2145443268",
+              "name": "Shang Zhang"
+            },
+            {
+              "authorId": "2306300",
+              "name": "A. Ojewole"
+            },
+            {
+              "authorId": "12732299",
+              "name": "M. Guney"
+            },
+            {
+              "authorId": "103476203",
+              "name": "Stella Biderman"
+            },
+            {
+              "authorId": "39139310",
+              "name": "A. Watkins"
+            },
+            {
+              "authorId": "4195120",
+              "name": "Stephen Ra"
+            },
+            {
+              "authorId": "15289394",
+              "name": "P. R. Lorenzo"
+            },
+            {
+              "authorId": "4629970",
+              "name": "L. Nivón"
+            },
+            {
+              "authorId": "2531497",
+              "name": "Brian D. Weitzner"
+            },
+            {
+              "authorId": "2302710",
+              "name": "Y. Ban"
+            },
+            {
+              "authorId": "2940596",
+              "name": "P. Sorger"
+            },
+            {
+              "authorId": "2191900751",
+              "name": "Emad Mostaque"
+            },
+            {
+              "authorId": "2156122400",
+              "name": "Zhao Zhang"
+            },
+            {
+              "authorId": "2067157865",
+              "name": "Richard Bonneau"
+            },
+            {
+              "authorId": "1380118346",
+              "name": "Mohammed Alquraishi"
+            }
+          ],
+          "abstract": "AlphaFold2 revolutionized structural biology with the ability to predict protein structures with exceptionally high accuracy. Its implementation, however, lacks the code and data required to train new models. These are necessary to (i) tackle new tasks, like protein-ligand complex structure prediction, (ii) investigate the process by which the model learns, which remains poorly understood, and (iii) assess the model’s generalization capacity to unseen regions of fold space. Here we report OpenFold, a fast, memory-efficient, and trainable implementation of AlphaFold2. We train OpenFold from scratch, fully matching the accuracy of AlphaFold2. Having established parity, we assess OpenFold’s capacity to generalize across fold space by retraining it using carefully designed datasets. We find that OpenFold is remarkably robust at generalizing despite extreme reductions in training set size and diversity, including near-complete elisions of classes of secondary structure elements. By analyzing intermediate structures produced by OpenFold during training, we also gain surprising insights into the manner in which the model learns to fold proteins, discovering that spatial dimensions are learned sequentially. Taken together, our studies demonstrate the power and utility of OpenFold, which we believe will prove to be a crucial new resource for the protein modeling community."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-c45486d056359f97.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-c45486d056359f97.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-c45486d056359f97.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "7fd9f3f4902e55ba716e672382217c4a67a6493327c13260b79cadbbc0eb75ef",
+    "chunk_count": 51,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

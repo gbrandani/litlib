@@ -1,0 +1,862 @@
+{
+  "paper_id": "sha256-39afff7ee9e7ceee",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/genome_folding_phase_separation/Mittal - Plos comput biol 2018 - Sequence determinants of protein phase behavior from a coarse-grained model.pdf",
+  "pdf_sha256": "39afff7ee9e7ceeee82b6a1fef0b13a32677e533be313599c51664326d365c0b",
+  "filename": "Mittal - Plos comput biol 2018 - Sequence determinants of protein phase behavior from a coarse-grained model.pdf",
+  "item_type": "article",
+  "title_query": "Sequence determinants of protein phase behavior from a coarse-grained model",
+  "filename_hints": {
+    "year_hint": null,
+    "venue_hint": "",
+    "prefix": "Mittal"
+  },
+  "doi_candidates": [
+    "10.1371/journal.pcbi.1005941"
+  ],
+  "date_indexed": "2026-04-17T03:32:28.240753+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "Sequence determinants of protein phase behavior from a coarse-grained model",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "21acb4ea9632bcc6d35da72f312d54ad1f50f079",
+      "externalIds": {
+        "MAG": "2952241487",
+        "PubMedCentral": "5798848",
+        "DBLP": "journals/ploscb/DignonZKBM18",
+        "DOI": "10.1101/238170",
+        "CorpusId": 3270833,
+        "PubMed": "29364893"
+      },
+      "url": "https://www.semanticscholar.org/paper/21acb4ea9632bcc6d35da72f312d54ad1f50f079",
+      "title": "Sequence determinants of protein phase behavior from a coarse-grained model",
+      "venue": "bioRxiv",
+      "year": 2017,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005941&type=printable",
+        "status": "GOLD",
+        "license": "public-domain",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5798848, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2017-12-21",
+      "journal": {
+        "name": "PLoS Computational Biology",
+        "volume": "14"
+      },
+      "authors": [
+        {
+          "authorId": "22338722",
+          "name": "G. Dignon"
+        },
+        {
+          "authorId": "3011038",
+          "name": "Wenwei Zheng"
+        },
+        {
+          "authorId": "118136304",
+          "name": "Young C. Kim"
+        },
+        {
+          "authorId": "2931059",
+          "name": "R. Best"
+        },
+        {
+          "authorId": "2924668",
+          "name": "J. Mittal"
+        }
+      ],
+      "abstract": "Membraneless organelles important to intracellular compartmentalization have recently been shown to comprise assemblies of proteins which undergo liquid-liquid phase separation (LLPS). However, many proteins involved in this phase separation are at least partially disordered. The molecular mechanism and the sequence determinants of this process are challenging to determine experimentally owing to the disordered nature of the assemblies, motivating the use of theoretical and simulation methods. This work advances a computational framework for conducting simulations of LLPS with residue-level detail, and allows for the determination of phase diagrams and coexistence densities of proteins in the two phases. The model includes a short-range contact potential as well as a simplified treatment of electrostatic energy. Interaction parameters are optimized against experimentally determined radius of gyration data for multiple unfolded or intrinsically disordered proteins (IDPs). These models are applied to two systems which undergo LLPS: the low complexity domain of the RNA-binding protein FUS and the DEAD-box helicase protein LAF-1. We develop a novel simulation method to determine thermodynamic phase diagrams as a function of the total protein concentration and temperature. We show that the model is capable of capturing qualitative changes in the phase diagram due to phosphomimetic mutations of FUS and to the presence or absence of the large folded domain in LAF-1. We also explore the effects of chain-length, or multivalency, on the phase diagram, and obtain results consistent with Flory-Huggins theory for polymers. Most importantly, the methodology presented here is flexible so that it can be easily extended to other pair potentials, be used with other enhanced sampling methods, and may incorporate additional features for biological systems of interest. Author summary Liquid liquid phase separation (LLPS) of low-complexity protein sequences has emerged as an important research topic due to its relevance to membraneless organelles and intracellular compartmentalization. However a molecular level understanding of LLPS cannot be easily obtained by experimental methods due to difficulty of determining structural properties of phase separated protein assemblies, and of choosing appropriate mutations. Here we advance a coarse-grained computational framework for accessing the long time scale phase separation process and for obtaining molecular details of LLPS, in conjunction with state of the art enhanced sampling methods. We are able to capture qualitatively the changes of phase diagram due to specific mutations, inclusion of a folded domain, and to variation of chain length. The model is flexible and can be used with different knowledge-based potential energy functions, as we demonstrate. We expect a wide application of the presented framework for advancing our understanding of the formation of liquid-like protein assemblies."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "21acb4ea9632bcc6d35da72f312d54ad1f50f079",
+        "title": "Sequence determinants of protein phase behavior from a coarse-grained model",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2018,
+        "candidate_year": 2017,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "0bb80e6df727d6a29ff21985a324739fc8112d2e",
+        "title": "Improved coarse‐grained model for studying sequence dependent phase separation of disordered proteins",
+        "score": 0.4912,
+        "title_similarity": 0.5312,
+        "query_year": 2018,
+        "candidate_year": 2021,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f48e72a59751fc8b0f28e50431d7786b551ea36f",
+        "title": "Coarse-grained strategy for modeling protein stability in concentrated solutions. II: phase behavior.",
+        "score": 0.4512,
+        "title_similarity": 0.5312,
+        "query_year": 2018,
+        "candidate_year": 2006,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5850a0bb31720e307926dea328b9bdcb010630d4",
+        "title": "Salt dependent phase behavior of intrinsically disordered proteins from a coarse-grained model with explicit water and ions.",
+        "score": 0.4356,
+        "title_similarity": 0.5156,
+        "query_year": 2018,
+        "candidate_year": 2021,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "11afdc93ee532853ccb017625ccb552ad1947af9",
+        "title": "Physics-driven coarse-grained model for biomolecular phase separation with near-quantitative accuracy",
+        "score": 0.3383,
+        "title_similarity": 0.4183,
+        "query_year": 2018,
+        "candidate_year": 2021,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b85b8ffb8e8a62aaab9bbe1a9a74bc526614295c",
+        "title": "Sequence determinants of protein phase separation and recognition by protein phase-separated condensates through molecular dynamics and active learning.",
+        "score": 0.3274,
+        "title_similarity": 0.4074,
+        "query_year": 2018,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+        "title": "Developing Bonded Potentials for a Coarse-Grained Model of Intrinsically Disordered Proteins",
+        "score": 0.2787,
+        "title_similarity": 0.3188,
+        "query_year": 2018,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "02a4f6d7c3ee73e0e24ddb7fb2e92b97536d696c",
+        "title": "Coarse-Grained Model of Disordered RNA for Simulations of Biomolecular Condensates.",
+        "score": 0.2445,
+        "title_similarity": 0.3245,
+        "query_year": 2018,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "3b24c593d006b0a754013f45c10fb10813ee9509",
+        "title": "A coarse-grained model of disordered RNA for simulations of biomolecular condensates",
+        "score": 0.2445,
+        "title_similarity": 0.3245,
+        "query_year": 2018,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2f47ce3030233dfe76708d54ce1c39f1ab2f841a",
+        "title": "How chromatin-binding proteins direct distinct folding pathways of tetra-nucleosomes: Insights from coarse-grained simulations",
+        "score": 0.1175,
+        "title_similarity": 0.1975,
+        "query_year": 2018,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1101/238170",
+      "10.1371/journal.pcbi.1005941"
+    ],
+    "matching_extracted_doi": "10.1371/journal.pcbi.1005941",
+    "raw_response": {
+      "total": 79,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "21acb4ea9632bcc6d35da72f312d54ad1f50f079",
+          "externalIds": {
+            "MAG": "2952241487",
+            "PubMedCentral": "5798848",
+            "DBLP": "journals/ploscb/DignonZKBM18",
+            "DOI": "10.1101/238170",
+            "CorpusId": 3270833,
+            "PubMed": "29364893"
+          },
+          "url": "https://www.semanticscholar.org/paper/21acb4ea9632bcc6d35da72f312d54ad1f50f079",
+          "title": "Sequence determinants of protein phase behavior from a coarse-grained model",
+          "venue": "bioRxiv",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005941&type=printable",
+            "status": "GOLD",
+            "license": "public-domain",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5798848, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2017-12-21",
+          "journal": {
+            "name": "PLoS Computational Biology",
+            "volume": "14"
+          },
+          "authors": [
+            {
+              "authorId": "22338722",
+              "name": "G. Dignon"
+            },
+            {
+              "authorId": "3011038",
+              "name": "Wenwei Zheng"
+            },
+            {
+              "authorId": "118136304",
+              "name": "Young C. Kim"
+            },
+            {
+              "authorId": "2931059",
+              "name": "R. Best"
+            },
+            {
+              "authorId": "2924668",
+              "name": "J. Mittal"
+            }
+          ],
+          "abstract": "Membraneless organelles important to intracellular compartmentalization have recently been shown to comprise assemblies of proteins which undergo liquid-liquid phase separation (LLPS). However, many proteins involved in this phase separation are at least partially disordered. The molecular mechanism and the sequence determinants of this process are challenging to determine experimentally owing to the disordered nature of the assemblies, motivating the use of theoretical and simulation methods. This work advances a computational framework for conducting simulations of LLPS with residue-level detail, and allows for the determination of phase diagrams and coexistence densities of proteins in the two phases. The model includes a short-range contact potential as well as a simplified treatment of electrostatic energy. Interaction parameters are optimized against experimentally determined radius of gyration data for multiple unfolded or intrinsically disordered proteins (IDPs). These models are applied to two systems which undergo LLPS: the low complexity domain of the RNA-binding protein FUS and the DEAD-box helicase protein LAF-1. We develop a novel simulation method to determine thermodynamic phase diagrams as a function of the total protein concentration and temperature. We show that the model is capable of capturing qualitative changes in the phase diagram due to phosphomimetic mutations of FUS and to the presence or absence of the large folded domain in LAF-1. We also explore the effects of chain-length, or multivalency, on the phase diagram, and obtain results consistent with Flory-Huggins theory for polymers. Most importantly, the methodology presented here is flexible so that it can be easily extended to other pair potentials, be used with other enhanced sampling methods, and may incorporate additional features for biological systems of interest. Author summary Liquid liquid phase separation (LLPS) of low-complexity protein sequences has emerged as an important research topic due to its relevance to membraneless organelles and intracellular compartmentalization. However a molecular level understanding of LLPS cannot be easily obtained by experimental methods due to difficulty of determining structural properties of phase separated protein assemblies, and of choosing appropriate mutations. Here we advance a coarse-grained computational framework for accessing the long time scale phase separation process and for obtaining molecular details of LLPS, in conjunction with state of the art enhanced sampling methods. We are able to capture qualitatively the changes of phase diagram due to specific mutations, inclusion of a folded domain, and to variation of chain length. The model is flexible and can be used with different knowledge-based potential energy functions, as we demonstrate. We expect a wide application of the presented framework for advancing our understanding of the formation of liquid-like protein assemblies."
+        },
+        {
+          "paperId": "b85b8ffb8e8a62aaab9bbe1a9a74bc526614295c",
+          "externalIds": {
+            "DOI": "10.1039/d4fd00099d",
+            "CorpusId": 271701421,
+            "PubMed": "39319382"
+          },
+          "url": "https://www.semanticscholar.org/paper/b85b8ffb8e8a62aaab9bbe1a9a74bc526614295c",
+          "title": "Sequence determinants of protein phase separation and recognition by protein phase-separated condensates through molecular dynamics and active learning.",
+          "venue": "Faraday discussions",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://pubs.rsc.org/en/content/articlepdf/2024/fd/d4fd00099d",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1039/d4fd00099d?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1039/d4fd00099d, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-09-25",
+          "journal": {
+            "name": "Faraday discussions"
+          },
+          "authors": [
+            {
+              "authorId": "2247171877",
+              "name": "Arya Changiarath"
+            },
+            {
+              "authorId": "2283933870",
+              "name": "Aayush Arya"
+            },
+            {
+              "authorId": "2314750098",
+              "name": "Vasileios A. Xenidis"
+            },
+            {
+              "authorId": "2237865501",
+              "name": "Jan Padeken"
+            },
+            {
+              "authorId": "5059616",
+              "name": "L. Stelzl"
+            }
+          ],
+          "abstract": "Elucidating how protein sequence determines the properties of disordered proteins and their phase-separated condensates is a great challenge in computational chemistry, biology, and biophysics. Quantitative molecular dynamics simulations and derived free energy values can in principle capture how a sequence encodes the chemical and biological properties of a protein. These calculations are, however, computationally demanding, even after reducing the representation by coarse-graining; exploring the large spaces of potentially relevant sequences remains a formidable task. We employ an \"active learning\" scheme introduced by Yang et al. (bioRxiv, 2022, https://doi.org/10.1101/2022.08.05.502972) to reduce the number of labelled examples needed from simulations, where a neural network-based model suggests the most useful examples for the next training cycle. Applying this Bayesian optimisation framework, we determine properties of protein sequences with coarse-grained molecular dynamics, which enables the network to establish sequence-property relationships for disordered proteins and their self-interactions and their interactions in phase-separated condensates. We show how iterative training with second virial coefficients derived from the simulations of disordered protein sequences leads to a rapid improvement in predicting peptide self-interactions. We employ this Bayesian approach to efficiently search for new sequences that bind to condensates of the disordered C-terminal domain (CTD) of RNA Polymerase II, by simulating molecular recognition of peptides to phase-separated condensates in coarse-grained molecular dynamics. By searching for protein sequences which prefer to self-interact rather than interact with another protein sequence we are able to shape the morphology of protein condensates and design multiphasic protein condensates."
+        },
+        {
+          "paperId": "02a4f6d7c3ee73e0e24ddb7fb2e92b97536d696c",
+          "externalIds": {
+            "DOI": "10.1021/acs.jctc.4c01646",
+            "CorpusId": 276644982,
+            "PubMed": "40009520"
+          },
+          "url": "https://www.semanticscholar.org/paper/02a4f6d7c3ee73e0e24ddb7fb2e92b97536d696c",
+          "title": "Coarse-Grained Model of Disordered RNA for Simulations of Biomolecular Condensates.",
+          "venue": "Journal of Chemical Theory and Computation",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1101/2024.11.26.625489",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jctc.4c01646?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jctc.4c01646, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-02-26",
+          "journal": {
+            "name": "Journal of chemical theory and computation"
+          },
+          "authors": [
+            {
+              "authorId": "2125650928",
+              "name": "Ikki Yasuda"
+            },
+            {
+              "authorId": "51508264",
+              "name": "Sören von Bülow"
+            },
+            {
+              "authorId": "2351758464",
+              "name": "G. Tesei"
+            },
+            {
+              "authorId": "2278221339",
+              "name": "Eiji Yamamoto"
+            },
+            {
+              "authorId": "2267883729",
+              "name": "Kenji Yasuoka"
+            },
+            {
+              "authorId": "2345485575",
+              "name": "Kresten Lindorff-Larsen"
+            }
+          ],
+          "abstract": "Protein-RNA condensates are involved in a range of cellular activities. Coarse-grained molecular models of intrinsically disordered proteins have been developed to shed light on and predict single-chain properties and phase separation. An RNA model compatible with such models for disordered proteins would enable the study of complex biomolecular mixtures involving RNA. Here, we present a sequence-independent coarse-grained, two-beads-per-nucleotide model of disordered, flexible RNA based on a hydropathy scale. We parametrize the model, which we term CALVADOS-RNA, using a combination of bottom-up and top-down approaches to reproduce local RNA geometry and intramolecular interactions based on atomistic simulations and in vitro experiments. The model semiquantitatively captures several aspects of RNA-RNA and RNA-protein interactions. We examined RNA-RNA interactions by comparing calculated and experimental virial coefficients and nonspecific RNA-protein interaction by studying the reentrant phase behavior of protein-RNA mixtures. We demonstrate the utility of the model by simulating the formation of mixed condensates consisting of the disordered region of MED1 and RNA chains and the selective partitioning of disordered regions from transcription factors into these and compare the results to experiments. Despite the simplicity of our model, we show that it captures several key aspects of protein-RNA interactions and may therefore be used as a baseline model to study several aspects of the biophysics and biology of protein-RNA condensates."
+        },
+        {
+          "paperId": "5850a0bb31720e307926dea328b9bdcb010630d4",
+          "externalIds": {
+            "DOI": "10.1063/5.0062687",
+            "CorpusId": 238249229,
+            "PubMed": "34598583"
+          },
+          "url": "https://www.semanticscholar.org/paper/5850a0bb31720e307926dea328b9bdcb010630d4",
+          "title": "Salt dependent phase behavior of intrinsically disordered proteins from a coarse-grained model with explicit water and ions.",
+          "venue": "Journal of Chemical Physics",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1063/5.0062687?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1063/5.0062687, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-09-28",
+          "journal": {
+            "name": "The Journal of chemical physics",
+            "pages": "\n          125103\n        ",
+            "volume": "155 12"
+          },
+          "authors": [
+            {
+              "authorId": "146072022",
+              "name": "A. Garaizar"
+            },
+            {
+              "authorId": "103688612",
+              "name": "J. R. Espinosa"
+            }
+          ],
+          "abstract": "Multivalent proteins and nucleic acids can self-assemble into biomolecular condensates that contribute to compartmentalize the cell interior. Computer simulations offer a unique view to elucidate the mechanisms and key intermolecular interactions behind the dynamic formation and dissolution of these condensates. In this work, we present a novel approach to include explicit water and salt in sequence-dependent coarse-grained (CG) models for proteins and RNA, enabling the study of biomolecular condensate formation in a salt-dependent manner. Our framework combines a reparameterized version of the HPS protein force field with the monoatomic mW water model and the mW-ion potential for NaCl. We show how our CG model qualitatively captures the experimental radius of the gyration trend of a subset of intrinsically disordered proteins and reproduces the experimental protein concentration and water percentage of the human fused in sarcoma (FUS) low-complexity-domain droplets at physiological salt concentration. Moreover, we perform seeding simulations as a function of salt concentration for two antagonist systems: the engineered peptide PR25 and poly-uridine/poly-arginine mixtures, finding good agreement with their reported in vitro phase behavior with salt concentration in both cases. Taken together, our work represents a step forward towards extending sequence-dependent CG models to include water and salt, and to consider their key role in biomolecular condensate self-assembly."
+        },
+        {
+          "paperId": "0bb80e6df727d6a29ff21985a324739fc8112d2e",
+          "externalIds": {
+            "DOI": "10.1002/pro.4094",
+            "CorpusId": 233485139,
+            "PubMed": "33934416"
+          },
+          "url": "https://www.semanticscholar.org/paper/0bb80e6df727d6a29ff21985a324739fc8112d2e",
+          "title": "Improved coarse‐grained model for studying sequence dependent phase separation of disordered proteins",
+          "venue": "Protein Science",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://rss.onlinelibrary.wiley.com/doi/am-pdf/10.1002/pro.4094",
+            "status": "BRONZE",
+            "license": "publisher-specific, author manuscript",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1002/pro.4094?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1002/pro.4094, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-05-02",
+          "journal": {
+            "name": "Protein Science",
+            "pages": "1371 - 1379",
+            "volume": "30"
+          },
+          "authors": [
+            {
+              "authorId": "1581875851",
+              "name": "R. M. Regy"
+            },
+            {
+              "authorId": "2109938723",
+              "name": "Jacob Thompson"
+            },
+            {
+              "authorId": "118136304",
+              "name": "Young C. Kim"
+            },
+            {
+              "authorId": "2924668",
+              "name": "J. Mittal"
+            }
+          ],
+          "abstract": "We present improvements to the hydropathy scale (HPS) coarse‐grained (CG) model for simulating sequence‐specific behavior of intrinsically disordered proteins (IDPs), including their liquid–liquid phase separation (LLPS). The previous model based on an atomistic hydropathy scale by Kapcha and Rossky (KR scale) is not able to capture some well‐known LLPS trends such as reduced phase separation propensity upon mutations (R‐to‐K and Y‐to‐F). Here, we propose to use the Urry hydropathy scale instead, which was derived from the inverse temperature transitions in a model polypeptide with guest residues X. We introduce two free parameters to shift (Δ) and scale (µ) the overall interaction strengths for the new model (HPS‐Urry) and use the experimental radius of gyration for a diverse group of IDPs to find their optimal values. Interestingly, many possible (Δ, µ) combinations can be used for typical IDPs, but the phase behavior of a low‐complexity (LC) sequence FUS is only well described by one of these models, which highlights the need for a careful validation strategy based on multiple proteins. The CG HPS‐Urry model should enable accurate simulations of protein LLPS and provide a microscopically detailed view of molecular interactions."
+        },
+        {
+          "paperId": "3b24c593d006b0a754013f45c10fb10813ee9509",
+          "externalIds": {
+            "DOI": "10.1101/2024.11.26.625489",
+            "CorpusId": 274370868
+          },
+          "url": "https://www.semanticscholar.org/paper/3b24c593d006b0a754013f45c10fb10813ee9509",
+          "title": "A coarse-grained model of disordered RNA for simulations of biomolecular condensates",
+          "venue": "bioRxiv",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2024/11/28/2024.11.26.625489.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.11.26.625489?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.11.26.625489, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2024-11-28",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2125650928",
+              "name": "Ikki Yasuda"
+            },
+            {
+              "authorId": "51508264",
+              "name": "Sören von Bülow"
+            },
+            {
+              "authorId": "2351758464",
+              "name": "G. Tesei"
+            },
+            {
+              "authorId": "2278221339",
+              "name": "Eiji Yamamoto"
+            },
+            {
+              "authorId": "2267883729",
+              "name": "Kenji Yasuoka"
+            },
+            {
+              "authorId": "1395846837",
+              "name": "K. Lindorff‐Larsen"
+            }
+          ],
+          "abstract": "Protein-RNA condensates are involved in a range of cellular activities. Coarse-grained molecular models of intrinsically disordered proteins have been developed to shed light on and predict single-chain properties and phase separation. An RNA model compatible with such models for disordered proteins would enable the study of complex biomolecular mixtures involving RNA. Here, we present a sequence-independent coarse-grained, two-bead-per-nucleotide model of disordered, flexible RNA based on a hydropathy scale. We parameterize the model, which we term CALVADOS-RNA, using a combination of bottom-up and top-down approaches to reproduce local RNA geometry and intramolecular interactions based on atomistic simulations and in vitro experiments. The model semi-quantitatively captures several aspects of RNA-RNA and RNA-protein interactions. We examined RNA-RNA interactions by comparing calculated and experimental virial coefficients, and non-specific RNA-protein interaction by studying reentrant phase behavior of protein-RNA mixtures. We demonstrate the utility of the model by simulating the formation of mixed condensates consisting of the disordered region of MED1 and RNA chains, and the selective partitioning of disordered regions from transcription factors into these, and compare the results to experiments. Despite the simplicity of our model we show that it captures several key aspects of protein-RNA interactions and may therefore be used as a baseline model to study several aspects of the biophysics and biology of protein-RNA condensates."
+        },
+        {
+          "paperId": "11afdc93ee532853ccb017625ccb552ad1947af9",
+          "externalIds": {
+            "DBLP": "journals/ncs/JosephRACREGC21",
+            "DOI": "10.1038/s43588-021-00155-3",
+            "CorpusId": 244516351,
+            "PubMed": "35795820"
+          },
+          "url": "https://www.semanticscholar.org/paper/11afdc93ee532853ccb017625ccb552ad1947af9",
+          "title": "Physics-driven coarse-grained model for biomolecular phase separation with near-quantitative accuracy",
+          "venue": "Nature Computational Science",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7612994",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1038/s43588-021-00155-3?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1038/s43588-021-00155-3, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-11-01",
+          "journal": {
+            "name": "Nature Computational Science",
+            "pages": "732 - 743",
+            "volume": "1"
+          },
+          "authors": [
+            {
+              "authorId": "47263075",
+              "name": "Jerelle A. Joseph"
+            },
+            {
+              "authorId": "5022339",
+              "name": "A. Reinhardt"
+            },
+            {
+              "authorId": "152310471",
+              "name": "Anne Aguirre"
+            },
+            {
+              "authorId": "2120720628",
+              "name": "Ping Chew"
+            },
+            {
+              "authorId": "2054364683",
+              "name": "Kieran O. Russell"
+            },
+            {
+              "authorId": "103688612",
+              "name": "J. R. Espinosa"
+            },
+            {
+              "authorId": "146072022",
+              "name": "A. Garaizar"
+            },
+            {
+              "authorId": "1399386596",
+              "name": "Rosana Collepardo-Guevara"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+          "externalIds": {
+            "DBLP": "journals/jcisd/RizuanJPKM22",
+            "DOI": "10.1021/acs.jcim.2c00450",
+            "CorpusId": 252088554,
+            "PubMed": "36066390"
+          },
+          "url": "https://www.semanticscholar.org/paper/a5dfd3dd2343a1428e15bdb0957d96efbfded80a",
+          "title": "Developing Bonded Potentials for a Coarse-Grained Model of Intrinsically Disordered Proteins",
+          "venue": "Journal of Chemical Information and Modeling",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10165611",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1021/acs.jcim.2c00450?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1021/acs.jcim.2c00450, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-09-06",
+          "journal": {
+            "name": "Journal of chemical information and modeling"
+          },
+          "authors": [
+            {
+              "authorId": "2154253613",
+              "name": "Azamat Rizuan"
+            },
+            {
+              "authorId": "2034368811",
+              "name": "N. Jovic"
+            },
+            {
+              "authorId": "2053734199",
+              "name": "T. Phan"
+            },
+            {
+              "authorId": "118136304",
+              "name": "Young C. Kim"
+            },
+            {
+              "authorId": "2924668",
+              "name": "J. Mittal"
+            }
+          ],
+          "abstract": "Recent advances in residue-level coarse-grained (CG) computational models have enabled molecular-level insights into biological condensates of intrinsically disordered proteins (IDPs), shedding light on the sequence determinants of their phase separation. The existing CG models that treat protein chains as flexible molecules connected via harmonic bonds cannot populate common secondary-structure elements. Here, we present a CG dihedral angle potential between four neighboring beads centered at Cα atoms to faithfully capture the transient helical structures of IDPs. In order to parameterize and validate our new model, we propose Cα-based helix assignment rules based on dihedral angles that succeed in reproducing the atomistic helicity results of a polyalanine peptide and folded proteins. We then introduce sequence-dependent dihedral angle potential parameters (εd) and use experimentally available helical propensities of naturally occurring 20 amino acids to find their optimal values. The single-chain helical propensities from the CG simulations for commonly studied prion-like IDPs are in excellent agreement with the NMR-based α-helix fraction, demonstrating that the new HPS-SS model can accurately produce structural features of IDPs. Furthermore, this model can be easily implemented for large-scale assembly simulations due to its simplicity."
+        },
+        {
+          "paperId": "2f47ce3030233dfe76708d54ce1c39f1ab2f841a",
+          "externalIds": {
+            "PubMedCentral": "12324292",
+            "DOI": "10.1101/2025.07.27.667063",
+            "CorpusId": 280532429,
+            "PubMed": "40766493"
+          },
+          "url": "https://www.semanticscholar.org/paper/2f47ce3030233dfe76708d54ce1c39f1ab2f841a",
+          "title": "How chromatin-binding proteins direct distinct folding pathways of tetra-nucleosomes: Insights from coarse-grained simulations",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12324292, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-31",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2364055949",
+              "name": "Utkarsh Kapoor"
+            }
+          ],
+          "abstract": "The dynamic coupling between chromatin organization and biomolecular condensates is governed by chromatin-binding proteins, yet the structural mechanisms by which these proteins modulate nucleosome interactions across spatial and organizational scales remain poorly understood. In this work, using high-resolution sequence-specific coarse-grained models combined with well-tempered metadynamics and parallel tempering, we investigate how heterochromatin protein 1α (HP1α) and a truncated construct of Polyhomeotic-like protein (tPHC3) influence the stability and folding pathways of tetra-nucleosomes, a minimal yet functionally informative chromatin model, under dilute and dense-phase conditions. While these proteins are known to drive distinct nuclear condensates their differential impact on chromatin topology and folding dynamics remains unclear. To address this, we ask: Do HP1α and tPHC3 stabilize or disrupt the canonical β-rhombus and α-tetrahedron nucleosome conformations? Are α-tetrahedron motifs transient intermediates or metastable states, and how do their prevalence and persistence depend on protein identity and phase context? To answer these questions, we analyze folding free energy landscapes, diffusion maps-based dimensionality reduced coordinates, and intermolecular interaction networks. Our simulations reveal that HP1α promote flexible, short-range nucleosome bridging and transient α-tetrahedron–like intermediates without stabilizing persistent structural basins. In contrast, tPHC3 stabilize α-tetrahedron–like motifs that scaffold folding toward the compact β-rhombus configuration characteristic of crystal-state tetra-nucleosomes. We find that this behavior arises from a context-dependent reorganization of multivalent SAM–linker interactions: in the absence of chromatin, self-association in dense phase conditions is mediated by linker–linker and linker– SAM contacts, while in the presence of nucleosomes, these linker-mediated interactions are suppressed, prompting compensatory SAM–SAM assembly. This reorganization highlights the essential role of SAM-mediated bridging in enabling long-range chromatin compaction. Together, our results demonstrate that under dense phase conditions α-tetrahedron–like motifs act as metastable intermediates rather than obligate folding end states, and their emergence depends critically on the identity of the chromatin-binding protein and their ability to mediate bridging. These insights offer a mechanistic framework for understanding how distinct architectural proteins encode topological preferences and remodel chromatin architecture across scales to support condensate formation and nuclear compartmentalization. Table of Contents Image"
+        },
+        {
+          "paperId": "f48e72a59751fc8b0f28e50431d7786b551ea36f",
+          "externalIds": {
+            "MAG": "1974218771",
+            "DOI": "10.1529/BIOPHYSJ.105.076497",
+            "CorpusId": 21429345,
+            "PubMed": "16387768"
+          },
+          "url": "https://www.semanticscholar.org/paper/f48e72a59751fc8b0f28e50431d7786b551ea36f",
+          "title": "Coarse-grained strategy for modeling protein stability in concentrated solutions. II: phase behavior.",
+          "venue": "Biophysical Journal",
+          "year": 2006,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S0006349506723815/pdf",
+            "status": "HYBRID",
+            "license": "publisher-specific-oa",
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1529/BIOPHYSJ.105.076497?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1529/BIOPHYSJ.105.076497, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2006-03-15",
+          "journal": {
+            "name": "Biophysical journal",
+            "pages": "\n          1949-60\n        ",
+            "volume": "90 6"
+          },
+          "authors": [
+            {
+              "authorId": "1864619",
+              "name": "V. K. Shen"
+            },
+            {
+              "authorId": "39851182",
+              "name": "Jason K. Cheung"
+            },
+            {
+              "authorId": "144474716",
+              "name": "J. Errington"
+            },
+            {
+              "authorId": "4294467",
+              "name": "Thomas M Truskett"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1371/journal.pcbi.1005941",
+      "DOI": "10.1371/journal.pcbi.1005941",
+      "type": "journal-article",
+      "issue": "1",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-8016-8652",
+          "authenticated-orcid": true,
+          "given": "Gregory L.",
+          "family": "Dignon",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Wenwei",
+          "family": "Zheng",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Young C.",
+          "family": "Kim",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Robert B.",
+          "family": "Best",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9725-6402",
+          "authenticated-orcid": true,
+          "given": "Jeetain",
+          "family": "Mittal",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "1553-7358"
+      ],
+      "page": "e1005941",
+      "container-title": [
+        "PLOS Computational Biology"
+      ],
+      "title": [
+        "Sequence determinants of protein phase behavior from a coarse-grained model"
+      ],
+      "publisher": "Public Library of Science (PLoS)",
+      "issued": {
+        "date-parts": [
+          [
+            2018,
+            1,
+            24
+          ]
+        ]
+      },
+      "volume": "14"
+    },
+    "accepted_score": 1.0,
+    "accepted": true,
+    "accepted_doi": "10.1371/journal.pcbi.1005941",
+    "best_candidate_doi": "10.1371/journal.pcbi.1005941",
+    "crossref_attempts": [
+      {
+        "doi": "10.1371/journal.pcbi.1005941",
+        "source_region": "first_page",
+        "position": 1081,
+        "context": "behavior from a coarse-grained model. PLoS Comput Biol 14(1): e1005941. https://doi. org/10.1371/journal.pcbi.1005941 Editor: Yanay Ofran, Bar Ilan University, ISRAEL Received: August 9, 2017 Accepted: Decem",
+        "priority_score": 0.57,
+        "score": 1.0,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1371/journal.pcbi.1005941",
+          "DOI": "10.1371/journal.pcbi.1005941",
+          "type": "journal-article",
+          "issue": "1",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0001-8016-8652",
+              "authenticated-orcid": true,
+              "given": "Gregory L.",
+              "family": "Dignon",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "Wenwei",
+              "family": "Zheng",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Young C.",
+              "family": "Kim",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Robert B.",
+              "family": "Best",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-9725-6402",
+              "authenticated-orcid": true,
+              "given": "Jeetain",
+              "family": "Mittal",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "1553-7358"
+          ],
+          "page": "e1005941",
+          "container-title": [
+            "PLOS Computational Biology"
+          ],
+          "title": [
+            "Sequence determinants of protein phase behavior from a coarse-grained model"
+          ],
+          "publisher": "Public Library of Science (PLoS)",
+          "issued": {
+            "date-parts": [
+              [
+                2018,
+                1,
+                24
+              ]
+            ]
+          },
+          "volume": "14"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-39afff7ee9e7ceee.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-39afff7ee9e7ceee.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-39afff7ee9e7ceee.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "7b3048a31835bdf96ee03e63054ec51172832b50f60e002e8e12e45ae5f1983d",
+    "chunk_count": 40,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1371/journal.pcbi.1005941",
+      "source_region": "first_page",
+      "position": 1081,
+      "context": "behavior from a coarse-grained model. PLoS Comput Biol 14(1): e1005941. https://doi. org/10.1371/journal.pcbi.1005941 Editor: Yanay Ofran, Bar Ilan University, ISRAEL Received: August 9, 2017 Accepted: Decem",
+      "priority_score": 0.57
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:09:03.725345+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1371/journal.pcbi.1005941",
+    "score": 1.0
+  }
+}

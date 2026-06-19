@@ -1,0 +1,1025 @@
+[Page 1]
+
+RNA polymerase II dynamics shape enhancer–promoter interactions Received: 12 July 2022 Accepted: 9 June 2023 Published online: 10 July 2023
+
+Gilad Barshad 1, James J. Lewis1,2, Alexandra G. Chivu1, Abderhman Abuhashem 3,4,5, Nils Krietenstein6, Edward J. Rice1, Yitian Ma7, Zhong Wang7, Oliver J. Rando 8, Anna-Katerina Hadjantonakis3,5 & Charles G. Danko 1,9
+
+Check for updates
+
+How enhancers control target gene expression over long genomic distances remains an important unsolved problem. Here we investigated enhancer– promoter communication by integrating data from nucleosome-resolution genomic contact maps, nascent transcription and perturbations affecting either RNA polymerase II (Pol II) dynamics or the activity of thousands of candidate enhancers. Integration of new Micro-C experiments with published CRISPRi data demonstrated that enhancers spend more time in close proximity to their target promoters in functional enhancer– promoter pairs compared to nonfunctional pairs, which can be attributed in part to factors unrelated to genomic position. Manipulation of the transcription cycle demonstrated a key role for Pol II in enhancer–promoter interactions. Notably, promoter-proximal paused Pol II itself partially stabilized interactions. We propose an updated model in which elements of transcriptional dynamics shape the duration or frequency of interactions to facilitate enhancer–promoter communication. Much of metazoan cellular diversity is encoded by cis-regulatory elements known as enhancers, which regulate the rate of mRNA production from distal promoters1. Because of the landmark discovery of the SV40 enhancer more than 40 years ago2–4, a key goal has been to understand the molecular basis by which enhancers and promoters communicate across long stretches of DNA sequence. The prevailing model proposes that enhancers and promoters loop into close physical proximity in the nucleus5. Classical looping models (which we collectively refer to as the structural bridge model) represent these enhancer–promoter interactions as a physical bridge by which the enhancer and promoter are connected via highly stereotyped protein– protein interactions between transcription factors, RNA polymerase II
+
+(Pol II), mediator, cohesin and other proteins and complexes6–9. Indeed, chromosome conformation capture (3C)-based methods such as in situ Hi-C10 and Micro-C11, which measure the frequency of ligation between DNA sequences that are close together in 3D space12, can be used to predict the functional impact of enhancers on a target gene13–15. Moreover, changes in enhancer–promoter loops16,17, including pre-established loops13,18, are associated with the activation of target promoters. Despite some support, however, several recent observations are not compatible with the structural bridge model. A key tenet of this model is that enhancer–promoter DNA sequences must come close enough together to establish a continuous protein bridge between the enhancer and promoter. However, measurements of
+
+Baker Institute for Animal Health, College of Veterinary Medicine, Cornell University, Ithaca, NY, USA. 2Department of Genetics and Biochemistry, Clemson University, Clemson, SC, USA. 3Developmental Biology Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, New York City, NY, USA. 4Weill Cornell/Rockefeller/Sloan Kettering Tri-Institutional MD-PhD Program, New York City, NY, USA. 5Biochemistry Cell and Molecular Biology Program, Weill Cornell Graduate School of Medical Sciences, Cornell University, New York City, NY, USA. 6The Novo Nordisk Center for Protein Research (CPR), Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark. 7School of Life and Pharmaceutical Sciences, Dalian University of Technology, Dalian, China. 8Department of Biochemistry and Molecular Biotechnology, University of Massachusetts Chan Medical School, Worcester, MA, USA. 9Department of Biomedical Sciences, College of Veterinary Medicine, Cornell University, Ithaca, NY, USA. e-mail: dankoc@gmail.com
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+[Page 2]
+
+enhancer–promoter distances in several fly and mouse developmental loci, using microscopy in both living and fixed cells, have suggested that enhancers and promoters are, on average, hundreds of nanometers apart at the time of gene activation19–21. At one well-characterized locus, the physical distance between the Shh promoter and several developmental enhancers actually increased following gene activation19. Finally, conflicting results exist regarding the effect of depletion of proteins proposed to constitute a physical bridge, such as Mediator and cohesin, on either 3C contact maps or transcription22–26. These studies have demonstrated that we still lack complete answers to the following long-standing questions about enhancer–promoter communication: do enhancer–promoter pairs spend more time in close physical proximity as the enhancer activates transcription? Are these interactions necessary, longer-lived or more frequently established at enhancers that functionally impact expression from their target promoter? And which molecules have a role in facilitating enhancer– promoter communication? Here we leverage a high-resolution 3C method, Micro-C11,27–29, nascent RNA sequencing30–32, and perturbations to Pol II and thousands of candidate enhancers33,34 to study the interplay between transcription and enhancer–promoter contact dynamics. Integration of new Micro-C data with CRISPR interference (CRISPRi) experiments testing nearly 6,000 candidate enhancers33,34 revealed that functional enhancer/promoter pairs spent more time at very short 3D distances, driven in part by macromolecular interactions that were independent of genomic position. Manipulation of transcription-related proteins revealed a key role for Pol II and its transcriptional dynamics in establishing the frequency of enhancer–promoter contacts. Notably, paused Pol II stabilized enhancer–promoter interactions, suggesting a role for paused Pol II in enhancer–promoter communication. These observations lead us to an updated model that incorporates the effect of transcription on enhancer–promoter communication.
+
+Results
+
+Enhancer function and transcription start site (TSS)-proximal enhancer–promoter contact We asked whether functional enhancer–promoter pairs, where the enhancer elicits a change in expression from its target promoter, spend more time in close proximity. Functional enhancers display more frequent interactions with their target promoter in 3C methods, like Hi-C and Micro-C13,14,33,34. However, because these functional enhancer–promoter pairs are also much more likely to be located within ~50 kb than nonfunctional pairs14,33, it is unclear whether these differences in Hi-C\Micro-C unique paired-end reads (which we will refer to as contacts throughout this study) simply result from the effect of genomic distance, as was recently proposed15, or whether they reflect additional structural or functional aspects of enhancer–promoter communication. We first defined a set of functional enhancer–promoter pairs in K562 cells for which knockdown of the enhancer using CRISPRi impacted the expression of a target gene14,33–35. To complement the functional data with corresponding architectural features, we generated an ~1.7 billion contact Micro-C dataset in K562 cells (Fig. 1a). To counter the impact of genomic distance in our measurements, we normalized contact frequencies for the local background and linear distance (Extended Data Fig. 1a; Methods). This approach allowed us to interpret differences in contact frequency between enhancer–promoter pairs as proportional to the average time each enhancer–promoter pair spends interacting, which may be driven by either differences in contact duration or the rate of initiating interactions, after factoring out the influence of genomic distance. We first analyzed CRISPRi data tiling the entire MYC locus with sgRNAs, which identified seven functional enhancers that regulate MYC expression34. Each of the seven active MYC enhancers was located near an active regulatory element, marked by a transcription initiation region (TIR) identified using dREG36,37, as well as chromatin accessibility Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+https://doi.org/10.1038/s41588-023-01442-7
+
+and active histone modifications (Fig. 1a). Normalized contact signal between the seven CRISPRi-validated enhancers and the MYC promoter were significantly higher than those observed for 52 other TIRs located within the same topologically associated domain (TAD) but which had no detectable effect on MYC (2.3-fold increase in median normalized contacts for functional pairs, P = 0.036; Mann–Whitney U-test; Fig. 1b and Extended Data Fig. 1b). We extended our work genome-wide using data from a CRISPRi screen that tested the function of 5,920 candidate enhancers in K562 cells33. We used this dataset to define 3,888 enhancer–promoter pairs that showed robust evidence of having (and not having) a functional impact on target gene expression (n = 245 functional, 3,643 nonfunctional, from which we further identified a subset of 232 pairs that were nonfunctional with higher confidence; Methods). Consistent with our study of the MYC locus, we found a significantly higher number of normalized contacts in functional enhancer–promoter pairs (31% increase in median normalized contacts for functional pairs, P < 0.001; Mann– Whitney U-test; Extended Data Fig. 1c). The difference between functional and nonfunctional pairs was not driven by the abnormal karyotype of K562 cells38 (Extended Data Fig. 1c, bottom row), was observed in independent datasets14 (Extended Data Fig. 1c, middle) and was observed using accessible H3K27ac peaks as an alternative definition of enhancer activity (Extended Data Fig. 1c, right column and Extended Data Fig. 1d). Likewise, all results were robust to corrections for differences in genomic distance, target gene transcription levels and chromatin accessibility by rejection sampling (46% increase in normalized contacts, P = 0.003; Mann–Whitney U-test; Fig. 1c and Extended Data Fig. 2). We asked whether the increased contact frequency between functional enhancer–promoter interactions could be reproduced within other individual loci, as observed for MYC. Indeed, similar to all enhancers, constituent enhancers within K562 super enhancers39 that showed evidence of a functional impact on a target promoter had higher contact frequency than those with no evidence of function (Extended Data Fig. 3a,b). Moreover, within the same super enhancer, functional constituent enhancers had a significantly higher contact frequency with the target promoter compared to nonfunctional constituents (36% increase in median normalized contacts; P = 0.034, paired Wilcoxon signed-rank test across 16 super enhancers; Extended Data Fig. 3c). We conclude that the frequency of enhancer–promoter interactions is higher for functionally active enhancer–promoter pairs even after factoring out the impact of genomic distance, locus-specific regulatory effects, chromatin accessibility and other confounding factors. These results suggest that an intrinsic physical property of functional enhancer–promoter pairs drives either the duration or frequency of interactions. We next investigated whether enhancers come into close proximity with their target promoter and, if so, whether the frequency of such interactions correlates with an enhancer’s effect on gene expression. Active enhancers and promoters have well-positioned +1 and +2 nucleosomes downstream of the TSS40–42 that are readily observed in Micro-C data (Extended Data Fig. 4). Micro-C contacts between these +1 and +2 nucleosomes at enhancers and promoters require enhancer/promoter DNA to come close enough in 3D space to ligate12, and therefore frequent contacts would be difficult to reconcile with the 100–300 nm distances measured by imaging studies19–21,43 (Discussion). Aggregated peak analysis (APA) between all candidate enhancer and promoter pairs (5–100 kb) showed that contacts between +1 (promoter) and +1 (enhancer) nucleosomes were most prominent (Fig. 1d). To determine whether such close interactions were enriched in functional enhancer–promoter pairs, we examined the difference in contact frequency between the CRISPRi functional and high-confidence nonfunctional enhancer–promoter pairs. We observed the greatest enrichment in functional enhancer–promoter pairs near the TSS, especially for interactions involving the +1 and +2 nucleosomes. The enrichment of functional enhancer–promoter pairs
+
+[Page 3]
+
+128.7 Mb e5
+
+d 1 Kb
+
+e6,7 Enhancer TSS
+
+Contacts per billion
+
+0.01 0.002
+
+Micro-C
+
+0.006 0.004 0.002
+
+–1 Kb –1 Kb
+
+e3,4 e2 e1
+
+Promoter TSS
+
+1 Kb
+
+10 Kb
+
+CRISPRi dREG
+
+PRO-seq
+
+–20
+
+H3K4me2
+
+H3K27ac
+
+CTCF
+
+–10 Kb –10 Kb
+
+Promoter TSS
+
+Virtual 4C
+
+MIR1208
+
+CASC11
+
+PVT1
+
+GSDMC CCDC26
+
+10 Kb
+
+MYC locus
+
+e6 e7 e5 Normalized contacts (log2)
+
+e4 e1 e3
+
+P = 0.003
+
+P = 0.036
+
+Genome wide
+
+e2
+
+10 Kb
+
+n = 75
+
+–2
+
+–1
+
+io ct Fu
+
+nc tio fu
+
+Functional difference 180 1D Micro-C signal
+
+–50
+
+1,000
+
+1,500
+
+2,000
+
+2,500
+
+Distance to TSS (bp)
+
+on
+
+na
+
+na
+
+na tio Fu nc
+
+ig no -co nf nf un id ct en io ce na
+
+–4
+
+ce an S En TS
+
+om TS ote S r –10 Kb –10 Kb
+
+n = 75
+
+Pr
+
+10 Kb
+
+1D Micro-C signal
+
+Normalized contacts (log2)
+
+Functional–nonfunctional Enhancer–promoter pairs (aggregated)
+
+Functional–nonfunctional enhancer–promoter pairs
+
+MYC
+
+LINC00977
+
+Functional–nonfunctional enhancer–promoter pairs
+
+0.4 –3.5 1.5
+
+Normalized contacts
+
+130.8 Mb
+
+Chr8
+
+Enhancer TSS
+
+Fig. 1 | Micro-C contacts are enriched in functional enhancer–promoter pairs. a, Genome-browser tracks showing Micro-C contact maps, CRISPRi-associated changes in cell viability34, dREG-defined TIRs and input PRO-seq signal40, H3K4me2, H3K27ac83 and CTCF84 ChIP–seq signal and a 2D representation (virtual 4C) of Micro-C contacts with the MYC promoter. Blue arrowheads point to regions in the contacts map representing the interaction between the seven CRISPRi-validated MYC enhancers and the MYC promoter. b, Box and dot plot comparing the observed contact frequency relative to expected by a local distance-decay function of the seven MYC enhancers (functional pairs, n = 7) compared to other TIRs in the TAD (nonfunctional pairs, n = 52) with the MYC promoter. A two-sided Mann–Whitney U-test P value is indicated. c, Violin plot comparing contacts relative to expected by a local distance-decay function of functional and nonfunctional enhancer–promoter pairs in the genome33, matched for genomic distance, accessibility and target gene expression distributions. A two-sided Mann–Whitney U-test P value is indicated.
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+d, An APA for enhancer–promoter contacts at 2 kb around the TSSs, oriented such that the gene TSS points to the right and the dominant TSS of the enhancer points upwards. Each pixel represents 20 bp. e, Pixel size is 200 bp square. APA represents the differences in contacts between functional and nonfunctional pairs based on CRISPRi33, oriented such that the gene TSS points to the right and the dominant TSS of the enhancer points upwards. The APA represents smoothed differences in contacts between functional and nonfunctional enhancer– promoter pairs at a region of 20 kb around the TSS with an original pixel size of 100 bp square. f, A 3D representation of the APA from e. g, Blue—dot and error plot showing the median aggregated difference between the 245 functional and 232 high-confidence nonfunctional enhancer–promoter pairs (dot) and associated 95% confidence interval of that median in enhancer–promoter contacts of the +1 and +2 nucleosomes (400 bp downstream to the TSS). Black—1D contact signal downstream to enhancers and promoters. Total median signal was smoothed using a sliding window of 100 bp.
+
+[Page 4]
+
+decayed as a function of distance to ~2.5 kb from the TSS (Pearson’s R = −0.83, P = 8.2 × 10−4; Fig. 1e–g). We thus conclude that the TSSs of functional enhancer–promoter pairs reside in very close physical proximity more frequently than nonfunctional pairs. This result is consistent with models of enhancer–promoter communication that involve very close interactions between enhancer–promoter DNA stabilized by transcription-associated proteins.
+
+Enhancer–promoter contacts depend on active transcription We next investigated which cellular factors mediate the increased contacts between enhancers and their target promoters. One model of interaction involves the aggregation of transcription proteins into clusters that contain both enhancers and promoters and act to facilitate communication43–49. Both the C-terminal domain (CTD) of the large subunit of Pol II and nascent RNA are reported to form macromolecular clusters with other transcription-related proteins46,50–52. These results imply that Pol II itself may have a role in mediating enhancer– promoter contacts. However, perturbing Pol II was reported to have modest effects on enhancer–promoter contacts28,53, with the notable exception of a recent study that degraded Pol II54. We set out to test the hypothesis that Pol II is required for enhancer–promoter contacts. To accommodate global changes in the distribution of contacts, we devised APAs that directly measure changes in contacts after adjusting for local 1D signal intensity near enhancer and promoter anchors, between different treatment conditions (Fig. 2a and Extended Data Fig. 5; Methods). Using this strategy to reanalyze published Micro-C data after blocking either Pol II initiation (triptolide, TRP) or release from pause (flavopiridol, FLV)28 showed that the largest effect of Pol II transcriptional inhibition occurred near the TSS (Fig. 2b and Extended Data Fig. 6a–c), in contrast to the interpretation presented by the original authors. We also explored an alternative background normalization scheme that adjusts contacts in each candidate enhancer–promoter pair for changes in the distribution of signal between conditions and found identical results (Fig. 2c,d; Methods). Changes were specific to enhancer–promoter contacts; we did not observe a similar effect of either TRP or FLV on CTCF–CTCF contact pairs after background normalization (Fig. 2e and Extended Data Fig. 6d). Changes were large enough in magnitude to be observed at individual loci, such as near enhancers regulating the Pou5f1 promoter55 (Extended Data Fig. 7). We do note that while the effect was observed in both of the independent biological replicates used by the authors in their original paper28, no effect was observed in a separate experiment included only in the author’s preprint56, potentially reflecting differences in sequencing depth, FLV concentration, or other technical confounders. Nevertheless, our observations provide further support for a model where Pol II has a role in facilitating enhancer–promoter contacts, consistent with new data from Pol II degron experiments54 as well as classic studies focused on specific loci57. By blocking the release from pause, FLV not only prevents actively elongating Pol II from entering the gene body but also leaves paused Pol II near the TSS at most promoters58. We hypothesized that the presence of paused Pol II may retain some of the interactions that are depleted in TRP, in which all Pol II is depleted from chromatin. Indeed, inhibition of Pol II recruitment to promoters and enhancers by TRP had a larger effect on enhancer–promoter contacts compared with the effect of inhibiting pause release by FLV (Fig. 2f; P < 10−100, Wilcoxon signed-rank test; Extended Data Figs. 5 and 6), indicating that Pol II occupancy at pause sites may have a stabilizing effect on these contacts. These observations suggest that different steps in the transcription cycle may have a fundamentally different impact on enhancer–promoter contacts based on the effect they have on Pol II density near the TSS.
+
+Transcriptional dynamics and enhancer–promoter contacts We next asked how different steps in the transcription cycle correlate with enhancer–promoter contacts. At steady-state, the rate of Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+https://doi.org/10.1038/s41588-023-01442-7
+
+transcription initiation is proportional to gene body transcription levels, whereas the rate of release of paused Pol II into productive elongation is proportional to the pausing index59. To address how different steps in the transcription cycle affect enhancer–promoter contacts, we first characterized RNA polymerase activity using precision run-on and sequencing (PRO-seq), a method that measures the position of transcriptionally engaged RNA polymerase at single nucleotide resolution30. We divided human gene promoters into quartiles based on their gene body transcription levels, the gene body-normalized PRO-seq signal in the first 250 bp downstream of the TSS (pausing index), or the pausing signal alone (pausing signal) in K562 cells (Fig. 3a,b). Enhancer–promoter contacts were most correlated with gene body transcription levels, in-line with previous findings14,17. Increased enhancer–promoter contacts were also associated with higher pausing signal and pausing index. However, whereas the increase in contacts associated with gene body transcription spread across the regions surrounding enhancers and promoters, as well as across the stripe overlapping the transcription unit, the pause-associated correlation was more specific to focal (promoter TSS–enhancer TSS) enhancer–promoter contacts near the location at which paused Pol II resides (Fig. 3b). To further isolate the effect of Pol II pausing from productive elongation, we compared changes in contacts and transcription between different cell types. We generated new Micro-C data from Jurkat T cells (~1.18 billion contacts) and compared them to our K562 Micro-C data. Jurkat and K562 cells are models of different cell types in the hematopoietic lineage; while K562 cells show similar properties to cells of the common myeloid progenitor lineage, Jurkat represents T cells. Overall, transcriptional differences between the cell lines were associated with differences in enhancer–promoter contacts (Fig. 3c). Differential transcription of gene bodies, and differences in the abundance of paused Pol II near promoters, were both positively correlated with enhancer–promoter contacts (Fig. 3d and Extended Data Fig. 8a). We identified gene promoters associated with a substantial change in gene body transcription and separated this set to compare promoters exhibiting altered levels of paused Pol II with promoters having unchanged Pol II pausing while maintaining a similar distribution of change in gene body transcription (Extended Data Fig. 8b, PC means pause change and NPC means no pause change). We found genes with a substantial increase in productive elongation but no associated change in paused Pol II exhibited, at most, a modest increase in enhancer–promoter contacts, relative to genes associated with increased paused Pol II (Fig. 3e and Extended Data Fig. 8c). Hence, we conclude that paused Pol II has a substantial effect on enhancer–promoter contacts that is independent of initiation or productive elongation rates.
+
+NELF degradation depletes enhancer–promoter contacts To directly test our hypothesis that Pol II pausing affects enhancer– promoter contacts, we asked whether depleting paused Pol II changed enhancer–promoter contacts. Although previously published TRP and FLV experiments alter Pol II pausing, they also have a substantial inhibitory effect on transcription initiation60. To focus on the effect of Pol II pausing, we used mouse embryonic stem cells (mESCs) in which both copies of the negative elongation factor complex subunit B (NELFB) were tagged with FKBP12F36V, allowing the rapid and reversible degradation of the NELF complex in the presence of a dTAG ligand61 (Fig. 4a). Following 30 min of NELFB depletion, PRO-seq-measured Pol II density in TSSs decreased. However, by 60 min of NELFB depletion, Pol II signal near the TSS was partially restored (Fig. 4b). Notably, it was recently shown that this recovery of Pol II near the TSS represents transcriptionally inactive Pol II that cannot productively elongate in the absence of NELF62,63. This suggests that while paused Pol II was removed following NELFB depletion, transcription initiation rates were intact or may even increase60.
+
+[Page 5]
+
+Pj Promoter
+
+Enhancer Ei
+
+Pj Promoter
+
+Enhancer Ei
+
+O2(i,j) B2(i,j)
+
+For each pixel:
+
+ΣO1(i,j)
+
+ΣB1(i,j)
+
+ΣO2(i,j)
+
+ΣB2(i,j)
+
+c Pair-by-pair
+
+10 kb
+
+–10 kb –10 kb
+
+10 kb
+
+10 kb
+
+Promoter
+
+d 10
+
+Enhancer
+
+1.0
+
+–1
+
+31,070
+
+–2
+
+–3
+
+Enhancer
+
+For each pair:
+
+O1
+
+B1
+
+O2
+
+B2
+
+–3
+
+–1
+
+DMSO
+
+k = index for the enhancer–promoter pair O = observed, number of observed contacts B = background, number of background contacts i,j = indices of bins within promoter and enhancer regions
+
+Estimated density
+
+35,358
+
+–1
+
+30,986
+
+–2
+
+***
+
+3.0
+
+2.5
+
+2.0
+
+1.5
+
+1.0
+
+0.5
+
+TRP
+
+***
+
+3.0
+
+***
+
+–3
+
+2.5
+
+2.5
+
+79,828 –3
+
+1.5
+
+2.0
+
+1.0
+
+0.5
+
+0.5
+
+CTCF
+
+1.5
+
+1.0
+
+–2
+
+DMSO
+
+FLV
+
+TRP
+
+–1
+
+DMSO Estimated density
+
+Enhancer– promoter
+
+CTCF
+
+Normalized fold change
+
+2.0
+
+Specific change TRP/DMSO
+
+Specific change FLV/DMSO
+
+–2
+
+Enhancer–promoter-specific change relative to control
+
+Promoter
+
+79,745
+
+Enhancer– promoter
+
+***
+
+3.5
+
+FLV
+
+O2
+
+3.0
+
+10 kb
+
+Distance to promoter TSS
+
+B2
+
+–10
+
+–10 kb –10 kb
+
+Distance to promoter TSS
+
+O1 B1
+
+Triptolide
+
+Normalized fold change (log2)
+
+B1(i,j)
+
+Flavopiridol
+
+Distance to enhancer TSS
+
+O1(i,j)
+
+Distance to enhancer TSS
+
+a APA
+
+FLV TRP
+
+1.0 0.9
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+***
+
+***
+
+*** ***
+
+***
+
+0.8 0.7 0.6 0.5
+
+Dot
+
+Fig. 2 | Enhancer–promoter contacts depend on active transcription. a, Schematic representation of the strategy used to compute APAs comparing between different conditions. The observed (solid arcs) and background (dashed arcs) contacts associated with the ith bin relative to the enhancer TSS and the jth bin relative to the promoter TSS are denoted as O and B, respectively. See also Extended Data Fig. 5 for an elaborated explanation of the method. b, APA heatmap representation of the log2 fold change in normalized contacts compared to DMSO control for mESCs treated with FLV or TRP. The APA heatmap is oriented such that the gene TSS points to the right and the dominant TSS of the enhancer points upwards, as denoted by the red and blue arrows. c, Schematic representation of ratio calculation between enhancer–promoter contacts (O, solid arcs) and background (B, dashed arcs) contacts. d, Scatterplot comparing the enhancer–promoter contacts over background ratio between
+
+***
+
+34,940
+
+Enhancer- Enhancer- Promoter- Promoterdownstream upstream downstream upstream stripe stripe stripe stripe
+
+Edges
+
+FLV-treated (top) or TRP-treated (bottom) and DMSO-treated (control) mESCs. The dots are colored based on the density of dots relative to their coordinates. The numbers of pairs in which the ratio was higher in FLV (top) or DMSO control (bottom) are indicated. Boxplots show the ratio distribution relative to the median DMSO control ratio (n = 110,815 enhancer–promoter pairs) (triple asterisk indicates two-sided Mann–Whitney P < 1 × 10−100). e, Boxplots showing the ratio distribution relative to the median DMSO control ratio for enhancer– promoter pairs (n = 110,815) and transcriptionally inactive bound CTCF motifs (triple asterisk indicates two-sided Mann–Whitney P < 1 × 10−100). f, Boxplots quantify the normalized contact changes at the dot (n = 100 matrix pixels), the different stripes (n = 400 matrix pixels each) and the edges (n = 3,200 matrix pixels) of the APA change matrices in each of the TRP and FLV treatments shown in b (triple asterisk indicates two-sided Wilcoxon signed-rank test P < 1 × 10−100).
+
+[Page 6]
+
+Pausing index =
+
+Pausing signal
+
+0.014
+
+Normalized contacts
+
+Gene body transcription
+
+PoI II
+
+59.4 Mb
+
+Gene body transcription
+
+Pausing signal
+
+PoI II
+
+Chr8
+
+58.3 Mb
+
+PoI II
+
+PoI II
+
+PoI II
+
+PoI II
+
+K562 Micro-C
+
+0.012 0.01 0.008 0.006
+
+Jurkat Micro-C
+
+0.004 0.002
+
+2.8
+
+1,000
+
+1st –10 kb
+
+Contacts per billion
+
+10 kb
+
+10 kb
+
+K562 PRO-seq
+
+–2.2 2.8
+
+Jurkat PRO-seq
+
+–2.2 UBXN2B AC009927.1
+
+K562 > Jurkat gene body transcription
+
+–10 kb
+
+3rd
+
+–2
+
+2,676
+
+–3
+
+–3
+
+–2
+
+Jurkat
+
+4th –10 kb –10 kb
+
+10 kb –10 kb
+
+10 kb –10 kb
+
+10 kb
+
+43,618
+
+Pausing
+
+–2
+
+3.0
+
+***
+
+***
+
+3.0
+
+2.0 1.5
+
+2.5
+
+1.0 0.5
+
+K562 Jurkat 3.0
+
+***
+
+2.0
+
+1.5
+
+2.5 1.0
+
+2.0
+
+n= =173
+
+=167 n=
+
+1.5
+
+K562
+
+1.8 1.7 1.6 1.5 1.4
+
+Estimated density
+
+0.5
+
+1.0 0.5
+
+–3
+
+1s 2n 3r 4t 1s 2n 3r 4t 1s 2n 3r 4t
+
+Dot/stripe intensity
+
+Distance to promoter TSS Gene body transcription Pausing index Pausing signal
+
+AC087698.1 AC090152.1
+
+2.5
+
+–10 kb 10 kb
+
+AC105150.1
+
+AC068522.1
+
+CYP7A1
+
+4,829
+
+10 kb
+
+TOX
+
+SDCBP NSMAF RNU4-50P
+
+PPIAP85
+
+2nd
+
+K562
+
+Distance to enhancer TSS
+
+Reads per million
+
+Gene body transcription Pausing index Pausing signal
+
+Enhancer–promoter-specific contact change relative to jurkat
+
+–3
+
+K562 Jurkat
+
+NPC
+
+PC
+
+–2
+
+Jurkat
+
+Estimated density
+
+34,290
+
+Fig. 3 | Changes in Pol II pausing and gene body transcription correlate with enhancer–promoter contacts. a, Schematic representation of gene transcription from initiation, pausing and productive elongation at the gene body. The definitions for the PRO-seq signal at the pause peak (first 250 bp downstream of the TSS) and gene body (250 bp downstream to the TSS to the end of the annotated gene), as well as the calculated pausing index for this analysis, are illustrated. b, APA heatmaps show enhancer–promoter contacts associated with promoters of four gene body transcription (left), pausing index (middle) and pause peak signal (right) divided into quartiles (top to bottom). Bar plots demonstrate the ratios between the dot- and stripe-associated contacts. All APAs are centered on the max TSS of the gene (x axis) and enhancer (y axis) and are oriented so that the primary TSS points to the right (gene) or upwards (enhancer), as denoted by the red and blue arrowheads. c, Genomebrowser shot of a 1.1 Mb region containing the TOX and NSMAF genes. The MicroC contact map pixel size is 10 kb. Arrows indicate differential contacts associated
+
+with differential transcriptional activity in K56238 and Jurkat T cells36. d, Scatterplots where each dot represents a single enhancer–promoter pair where the promoter was associated with higher gene body transcription (top, n = 7,505) and pausing signal (bottom, n = 923) at K562 compared to Jurkat T cells. The numbers of pairs in which the ratio was higher in K562 (upper number) or Jurkat (lower number) are indicated. The dots are colored based on the density of dots relative to their coordinates. The associated boxplots show the distribution of enhancer–promoter contacts relative to local background in both cell types, relative to the median ratio in Jurkat (triple asterisk indicates two-sided Wilcoxon signed-rank test P < 1 × 10−100). e, Boxplot shows the relative increase of enhancer–promoter contacts associated with promoters of genes with upregulated gene body transcription in K562 and with a corresponding significant increase in pausing signal (PC, n = 167) or without a change in pausing signal (NPC, n = 173) (triple asterisk indicates twosided Mann–Whitney P < 1 × 10−100).
+
+To ask if such a drop in Pol II pausing results in a loss of enhancer– promoter contacts, we generated Micro-C libraries (~300 million contacts each) following a time course of NELFB depletion and recovery after dTAG washout. We found a small but highly reproducible drop in
+
+enhancer–promoter contacts beginning at 30 min, which decreased further at 60 min of NELFB depletion (Fig. 4c and Extended Data Fig. 9). This suggests that the accumulation of improperly paused Pol II62,63 cannot rescue the loss of contacts associated with the
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+[Page 7]
+
+NELF complex
+
+C/D
+
+b No dTAG
+
+dTAG washout
+
+dTAG
+
+HA
+
+FKBP
+
+dTAG
+
+60 min
+
+60 min
+
+8h
+
+24 h
+
+1.01
+
+C/D 30 min
+
+30 min
+
+mESCs
+
+30/0FC
+
+60/0FC
+
+60/30 FC
+
+Enhancer–promoter contacts fold change
+
+1.00 0.99 0.98 0.97 0.96
+
+Transcription start sites
+
+min
+
+min
+
+8h post washout
+
+24 h post washout
+
+1.010
+
+Distance to TSS (kb)
+
+Median contacts fold change
+
+1.0
+
+TSS
+
+1.0 –1.0
+
+TSS
+
+1.0 –1.0
+
+TSS
+
+1.0 –1.0
+
+TSS
+
+1.0 –1.0
+
+TSS
+
+1.0 –1.0
+
+–1.0
+
+TSS
+
+1.005 1.000
+
+0.995 0.990 0.985 0.980 0.975
+
+0.5
+
+1.0
+
+PRO-seq signal
+
+1.5
+
+–0.15
+
+0.15
+
+Fold change (log2)
+
+Enhancer–promoter
+
+CTCF
+
+Fig. 4 | NELFB depletion and recovery correlate with changes in enhancer– promoter contacts. a, Illustration of the NELFB-dTAG system and the corresponding effect on the NELF complex. Following NELFB depletion with dTAG, the NELF complex dissociates and is no longer found bound to chromatin85. b, Heatmaps showing PRO-seq signal in untreated (control) mESCs (left) and 30–60 min of treatment with dTAG, as well as the fold change in PRO-seq signal following 30 min of dTAG treatment and after 60 min of dTAG treatment near TSSs (n = 27,900 TSSs) and the fold change in PRO-seq signal at 30 min and 60 min of dTAG treatment compared to untreated control and at
+
+60 min compared to 30 min of dTAG treatment. c, A line plot showing the median enhancer–promoter contacts over background ratio change relative to the untreated (T = 0) control over a 24 h time course. Gray shadow represents the 95% confidence interval for the median, based on 1,000 bootstrap iterations. d, Dot and error plot demonstrating the median contact change and the 95% confidence interval of the median based on 1,000 bootstrap iterations, after 60 min of NELFB depletion, for enhancer–promoter (purple) and transcriptionally inactive bound CTCF motif contacts in mESCs (gray).
+
+depletion of a properly paused Pol II. Washout of the dTAG ligand over 8 h and 24 h, corresponding to an ~20% to 40% restoration of NELFB62 levels, increased enhancer–promoter contacts back to the levels observed in untreated cells (Fig. 4c and Extended Data Fig. 9). The effect of NELF degradation was specific to enhancer–promoter contacts and was not observed at transcriptionally inactive CTCF-binding sites (Fig. 4d). The magnitude of decrease in contact frequency correlated with the magnitude of paused Pol II loss at 30 min (Pearson’s R = 0.24, P = 0.018; Methods), such that candidate enhancer–promoter pairs, which lost more paused Pol II, also lost more contacts. Likewise, the magnitude of the decrease in contact frequency across all genes was correlated with the effect on NELFB protein abundance (Spearman’s rho = 0.9, P = 0.037; Pearson’s R = 0.728, P = 0.163). An illustrative example is the ZRS enhancer of the Shh gene, which had a large drop in paused Pol II signal as well as a large reduction in contacts with the Shh promoter following 30 min of NELFB depletion (Extended Data Fig. 10). Hence, we conclude that paused Pol II contributes to enhancer–promoter contact levels.
+
+Discussion
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+Currently, two models are proposed to explain how enhancer and promoter regions communicate8. The structural bridge model holds that enhancer and promoter DNA come into close physical contact and are connected by a bridge formed by highly ordered protein– protein interactions6,7. More recently, an alternative model (which we refer to as the ‘hub’ model, following8,43,49) has come into favor, which predicts that protein–protein interactions form malleable hubs (Fig. 5). In the hub model, enhancer–promoter communication does not require stable protein–protein interactions to span the gap between the enhancer and promoter DNA sequences. Instead, high local concentrations of transcription-associated proteins, recruited by both the enhancer and promoter DNA into the local hub, facilitate transcriptional bursts64. The hub model has a long history64,65 but has recently come into favor because it explains findings that do not appear compatible with a structural bridge model, including long physical distances between enhancers and promoters upon gene activation19,20,66, the ability of enhancers to activate transcription
+
+[Page 8]
+
+Pol II dynamics influence enhancer–promoter interactions Initiation
+
+Pause
+
+Enhancer
+
+Enhancer
+
+Residence time influenced by hub function
+
+DNA TAPs
+
+Ser5
+
+Ser P 5
+
+Ser5p Ser2p
+
+Ser2
+
+Pol II initiation increases contact frequency
+
+CTD Ser5
+
+r5
+
+Ser5
+
+Distance correlates with hub function
+
+Ser5
+
+Pol II
+
+Ser5
+
+Ser5
+
+Se r2 P Se
+
+Order of 10–100s nm
+
+Ser2
+
+Ser2
+
+Promoter
+
+Paused Pol II tethers TIRs to regulatory hub Promoter
+
+Fig. 5 | Updated model integrating RNA Pol II dynamics into enhancer– promoter interactions. Cartoon depicts our updated model in which enhancers come into close contact with the target promoter during a transcriptional burst. We propose that the rate of initiation and productive elongation increases the mobility of enhancers and promoters in the nuclear space38,39,86, and hence can increase the rate of their entanglement or contact frequency. Paused RNA Pol II,
+
+which is stable on DNA for long durations, may tether TIRs into a hub for longer durations, providing more stable enhancer–promoter interactions at highly paused genes. In the key, TAPs denote transcription-associated proteins (such as transcription factors and coactivations), CTD denotes the C-terminal domain of RNA Pol II, and Ser5p and Ser2p represent serine 5 and serine 2 phosphorylation on the RNA Pol II CTD.
+
+from multiple promoters simultaneously67 and multiway interactions of enhancer clusters68. A key difference between the structural bridge and hub models is that a structural bridge requires a short physical distance between enhancers and promoters upon interaction. Conversely, while the hub model does not necessarily place constraints on physical distance, proponents of the hub model have argued that enhancers and promoters may not be able to come close together due to issues of molecular crowding within a hub43. We found that functional enhancer– promoter pairs are most enriched in contacts involving the +1 or +2 nucleosomes. Compared with recent work defining contacts between individual transcription factor-binding sites69, our study shows that these very proximal interactions are associated with enhancer function, even within individual loci like a super enhancer. Micro-C only detects contacts that are close enough to be crosslinked and ligated12, suggesting that functional enhancer–promoter pairs spend more time at very short interaction distances than current studies suggest. The exact proximity of engaged enhancer and promoter regions remains difficult to say. Even if we consider the most conservative model, in which crosslinks between fully extended N-terminal nucleosome tails were sufficient to gain an interaction in Micro-C, the distance between enhancer–promoter DNA must still be less than 100 nm. In the in situ ligation protocol that we use here, the distance required to generate a contact is likely much less, owing to the widespread availability of DNA in a packed nucleus that competes for ligations, as well as constraints placed on the diffusion of proteins and DNA during ligation by molecular crowding and crosslinks. We emphasize that our findings do not necessitate a structural bridge between enhancers and promoters. Our findings may also be compatible with hubs in which enhancer and promoter DNA is often located more closely together than imaging studies suggest (Fig. 5). Thus, our work may indicate that short-distance enhancer–promoter interactions are important for enhancer function, but that they are more malleable than predicted by a structural bridge model6,7. Both models predict that transcription-associated proteins, including transcription factors, Mediator and Pol II have key roles in enhancer–promoter communication. For this reason, the muted effect that degrading key transcription proteins, including mediator and Pol II, were reported to have on contact frequency was unexpected23,28,53. We report that Pol II contributes to enhancer–promoter interaction frequency, even after normalizing Micro-C for the substantial changes
+
+to chromatin observed when Pol II is depleted70,71. Our results are consistent with work that shows an impact of both Pol II and Mediator in enhancer–promoter communication9,26,54,57. Several aspects of Pol II may help facilitate interactions, especially under a hub model. First, the C-terminal heptad repeats on RPB1, the largest subunit of Pol II, have been shown to aid in macromolecular clustering44,47,48,66,72,73. Second, the nascent RNA emerging from the exit channel may also contribute to clustering74,75. For its part, the Mediator complex may facilitate enhancer–promoter communication by interacting with transcription factors or other transcription-associated proteins76,77. Thus, Pol II, along with the other molecules affecting enhancer activity like transcription factors and coactivators, has a direct impact on enhancer–promoter interactions (Fig. 5). Our results reveal a wide variation in the time that functional enhancer–promoter pairs spend in proximity at steady-state. Although some of this variation undoubtedly reflects technical noise in the Micro-C dataset, we do think there is a component of the variation that reflects differences in the underlying biology of different enhancer– promoter interactions. Certain loci (like MYC) appear to have more frequent interactions than the average enhancer–promoter pair. One interpretation is that most enhancer–promoter loops are transient and that either residence time or interaction frequency is increased by the activity of biological factors specific to each interacting locus, potentially including Pol II and other transcription-related proteins that form either a structural bridge or a hub. For the most part, our results address the broader question of whether there is evidence that functional enhancer–promoter pairs spend more time close together, on average. Future work will be required to identify the full complement of factors that influence the variation in contact frequency between loci. We present several independent lines of evidence that highlight paused Pol II as one of the factors which has a role in stabilizing enhancer–promoter interactions. Paused Pol II can be stable over durations estimated between 1 min and 10 min58,78. Given its stable attachment to DNA through the transcription bubble, it is possible that paused Pol II may serve as one of the tethers connecting promoter or enhancer DNA into an enhancer–promoter interaction. Under a hub model, paused Pol II initiated from multiple TSSs within a transcription initiation domain79 may serve to keep both enhancer and promoter DNA tethered to the hub80,81 (Fig. 5). Indeed, paused Pol II tethering enhancers into a hub may serve as one way in which enhancer-templated RNAs have a sequence-independent biological function82.
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+[Page 9]
+
+In summary, our work suggests several important changes to the prevailing models of enhancer–promoter interactions. First, we find that functional interactions between enhancers and their target promoter spend more time at very short 3D distances driven in part by macromolecular interactions that are independent of genomic position. Second, we provide direct evidence for the effect of Pol II on enhancer–promoter contacts. Our work emphasizes an important effect of Pol II pausing in metazoan cells and sheds light on the evolution of pausing alongside long-range enhancer–promoter interactions. Thus, considering transcription as a modulator of enhancer–promoter contacts may help future studies to better define the temporal correlation between the two.
+
+Online content
+
+Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41588-023-01442-7.
+
+References
+
+Levine, M. & Tjian, R. Transcription regulation and animal diversity. Nature 424, 147–151 (2003). Banerji, J., Rusconi, S. & Schaffner, W. Expression of a β-globin gene is enhanced by remote SV40 DNA sequences. Cell 27, 299–308 (1981). Gruss, P., Dhar, R. & Khoury, G. Simian virus 40 tandem repeated sequences as an element of the early promoter. Proc. Natl Acad. Sci. USA 78, 943–947 (1981). Benoist, C. & Chambon, P. In vivo sequence requirements of the SV40 early promoter region. Nature 290, 304–310 (1981). Choi, O. R. & Engel, J. D. Developmental regulation of β-globin gene switching. Cell 55, 17–26 (1988). Schoenfelder, S. & Fraser, P. Long-range enhancer–promoter contacts in gene expression control. Nat. Rev. Genet. 20, 437–455 (2019). Robson, M. I., Ringel, A. R. & Mundlos, S. Regulatory landscaping: how enhancer–promoter communication is sculpted in 3D. Mol. Cell 74, 1110–1122 (2019). Hamamoto, K. & Fukaya, T. Molecular architecture of enhancer– promoter interaction. Curr. Opin. Cell Biol. 74, 62–70 (2022). Kagey, M. H. et al. Mediator and cohesin connect gene expression and chromatin architecture. Nature 467, 430–435 (2010). Rao, S. S. P. et al. A 3D map of the human genome at kilobase resolution reveals principles of chromatin looping. Cell 159, 1665–1680 (2014). Horsfield, J. & Marsman, J. Chromatin: Methods and Protocols (Springer, 2022). Fudenberg, G. & Imakaev, M. FISH-ing for captured contacts: towards reconciling FISH and 3C. Nat. Methods 14, 673–678 (2017). Ray, J. et al. Chromatin conformation remains stable upon extensive transcriptional changes driven by heat shock. Proc. Natl Acad. Sci. USA 116, 19431–19439 (2019). Fulco, C. P. et al. Activity-by-contact model of enhancer–promoter regulation from thousands of CRISPR perturbations. Nat. Genet. 51, 1664–1669 (2019). Zuin, J. et al. Nonlinear control of transcription through enhancer– promoter interactions. Nature 604, 571–577 (2022). Beagan, J. A. et al. Three-dimensional genome restructuring across timescales of activity-induced neuronal gene expression. Nat. Neurosci. 23, 707–717 (2020). Mateo, L. J. et al. Visualizing DNA folding and RNA in embryos at single-cell resolution. Nature 568, 49–54 (2019).
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+https://doi.org/10.1038/s41588-023-01442-7 18. Rubin, A. J. et al. Lineage-specific dynamic and pre-established enhancer–promoter contacts cooperate in terminal differentiation. Nat. Genet. 49, 1522–1528 (2017). 19. Benabdallah, N. S. et al. Decreased enhancer–promoter proximity accompanying enhancer activation. Mol. Cell 76, 473–484 (2019). 20. Alexander, J. M. et al. Live-cell imaging reveals enhancer-dependent Sox2 transcription in the absence of enhancer proximity. eLife 8, e41769 (2019). 21. Chen, H. et al. Dynamic interplay between enhancer– promoter topology and gene activity. Nat. Genet. 50, 1296–1303 (2018). 22. Rao, S. S. P. et al. Cohesin loss eliminates all loop domains. Cell 171, 305–320 (2017). 23. El Khattabi, L. et al. A pliable mediator acts as a functional rather than an architectural bridge between promoters and enhancers. Cell 178, 1145–1158 (2019). 24. Hsieh, T.-H. S. et al. Enhancer–promoter interactions and transcription are largely maintained upon acute loss of CTCF, cohesin, WAPL or YY1. Nat. Genet. 54, 1919–1932 (2022). 25. Malik, S. & Roeder, R. G. Mediator: a drawbridge across the enhancer–promoter divide. Mol. cell 64, 433–434 (2016). 26. Ramasamy, S. et al. The mediator complex regulates enhancer–promoter interactions. Preprint at bioRxiv https://doi. org/10.1101/2022.06.15.496245 (2022). 27. Krietenstein, N. et al. Ultrastructural details of mammalian chromosome architecture. Mol. Cell 78, 554–565 (2020). 28. Hsieh, T.-H. S. et al. Resolving the 3D landscape of transcription-linked mammalian chromatin folding. Mol. Cell 78, 539–553 (2020). 29. Hsieh, T.-H. S., Fudenberg, G., Goloborodko, A. & Rando, O. J. Micro-C XL: assaying chromosome conformation from the nucleosome to the entire genome. Nat. Methods 13, 1009–1011 (2016). 30. Mahat, D. B. et al. Base-pair-resolution genome-wide mapping of active RNA polymerases using precision nuclear run-on (PRO-seq). Nat. Protoc. 11, 1455–1476 (2016). 31. Chu, T. et al. Chromatin run-on and sequencing maps the transcriptional regulatory landscape of glioblastoma multiforme. Nat. Genet. 50, 1553–1564 (2018). 32. Core, L. J., Waterfall, J. J. & Lis, J. T. Nascent RNA sequencing reveals widespread pausing and divergent initiation at human promoters. Science 322, 1845–1848 (2008). 33. Gasperini, M. et al. A genome-wide framework for mapping gene regulation via cellular genetic screens. Cell 176, 377–390 (2019). 34. Fulco, C. P. et al. Systematic mapping of functional enhancer– promoter connections with CRISPR interference. Science 354, 769–773 (2016). 35. Field, A. & Adelman, K. Evaluating enhancer function and transcription. Annu. Rev. Biochem. 89, 213–234 (2020). 36. Danko, C. G. et al. Identification of active transcriptional regulatory elements from GRO-seq data. Nat. Methods 12, 433–438 (2015). 37. Wang, Z., Chu, T., Choate, L. A. & Danko, C. G. Identification of regulatory elements from nascent transcription using dREG. Genome Res. 29, 293–303 (2019). 38. Zhou, B. et al. Comprehensive, integrated, and phased whole-genome analysis of the primary ENCODE cell line K562. Genome Res. 29, 472–484 (2019). 39. Hnisz, D. et al. Super-enhancers in the control of cell identity and disease. Cell 155, 934–947 (2013). 40. Core, L. J. et al. Analysis of nascent RNA identifies a unified architecture of initiation regions at mammalian promoters and enhancers. Nat. Genet. 46, 1311–1320 (2014).
+
+[Page 10]
+
+41. Scruggs, B. S. et al. Bidirectional transcription arises from two distinct hubs of transcription factor binding and active chromatin. Mol. Cell 58, 1101–1112 (2015). 42. Andersson, R., Sandelin, A. & Danko, C. G. A unified architecture of transcriptional regulatory elements. Trends Genet. 31, 426–433 (2015). 43. Lim, B. & Levine, M. S. enhancer–promoter communication: hubs or loops? Curr. Opin. Genet. Dev. 67, 5–9 (2020). 44. Cho, W.-K. et al. Mediator and RNA polymerase II clusters associate in transcription-dependent condensates. Science 361, 412–415 (2018). 45. Shrinivas, K. et al. Enhancer features that drive formation of transcriptional condensates. Mol. Cell 75, 549–561 (2019). 46. Lee, J.-H. et al. Enhancer RNA m6A methylation facilitates transcriptional condensate formation and gene activation. Mol. Cell 81, 3368–3385 (2021). 47. Sabari, B. R. et al. Coactivator condensation at superenhancers links phase separation and gene control. Science 361, eaar3958 (2018). 48. Boija, A. et al. Transcription factors activate genes through the phase-separation capacity of their activation domains. Cell 175, 1842–1855 (2018). 49. Di Giammartino, D. C., Polyzos, A. & Apostolou, E. Transcription factors: building hubs in the 3D space. Cell Cycle 19, 2395–2410 (2020). 50. Guo, Y. E. et al. Pol II phosphorylation regulates a switch between transcriptional and splicing condensates. Nature 572, 543–548 (2019). 51. Sigova, A. A. et al. Transcription factor trapping by RNA in gene regulatory elements. Science 350, 978–981 (2015). 52. Boehning, M. et al. RNA polymerase II clustering through carboxy-terminal domain phase separation. Nat. Struct. Mol. Biol. 25, 833–840 (2018). 53. Jiang, Y. et al. Genome-wide analyses of chromatin interactions after the loss of Pol I, Pol II, and Pol III. Genome Biol. 21, 158 (2020). 54. Zhang, S., Uebelmesser, N., Barbieri, M. & Papantonis, A. Enhancer–promoter contact formation requires RNAPII and antagonizes loop extrusion. Nat. Genet., 55(5), 832–840 (2023). 55. Glaser, L. V. et al. Assessing genome-wide dynamic changes in enhancer activity during early mESC differentiation by FAIRE-STARR-seq. Nucleic Acids Res. 49, 12178–12195 (2021). 56. Hsieh, T.-H. S. et al. Resolving the 3D landscape of transcription-linked mammalian chromatin folding. Preprint at bioRxiv https://doi.org/10.1101/638775 (2019). 57. Mitchell, J. A. & Fraser, P. Transcription factories are nuclear subcompartments that remain in the absence of transcription. Genes Dev. 22, 20–25 (2008). 58. Jonkers, I., Kwak, H. & Lis, J. T. Genome-wide dynamics of Pol II elongation and its interplay with promoter proximal pausing, chromatin, and exons. eLife 3, e02407 (2014). 59. Siepel, A. A unified probabilistic modeling framework for eukaryotic transcription based on nascent RNA sequencing data. Preprint at bioRxiv https://doi.org/10.1101/2021.01.12.426408 (2022). 60. Shao, W. & Zeitlinger, J. Paused RNA polymerase II inhibits new transcriptional initiation. Nat. Genet. 49, 1045–1051 (2017). 61. Nabet, B. et al. The dTAG system for immediate and target-specific protein degradation. Nat. Chem. Biol. 14, 431–441 (2018). 62. Abuhashem, A. et al. RNA Pol II pausing facilitates phased pluripotency transitions by buffering transcription. Genes Dev. 36, 770–789 (2022). 63. Aoi, Y. et al. NELF regulates a promoter-proximal step distinct from RNA Pol II pause-release. Mol. Cell 78, 261–274 (2020). Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+https://doi.org/10.1038/s41588-023-01442-7 64. Palstra, R.-J. et al. The β-globin nuclear compartment in development and erythroid differentiation. Nat. Genet. 35, 190–194 (2003). 65. de Laat, W. & Grosveld, F. Spatial organization of gene expression: the active chromatin hub. Chromosome Res. 11, 447–459 (2003). 66. Chong, S. et al. Imaging dynamic and selective low-complexity domain interactions that control gene transcription. Science 361, eaar2555 (2018). 67. Fukaya, T., Lim, B. & Levine, M. Enhancer control of transcriptional bursting. Cell 166, 358–368 (2016). 68. Beagrie, R. A. et al. Complex multi-enhancer contacts captured by genome architecture mapping. Nature 543, 519–524 (2017). 69. Hua, P. et al. Defining genome architecture at base-pair resolution. Nature 595, 125–129 (2021). 70. Wang, Z. et al. Prediction of histone post-translational modification patterns based on nascent transcription data. Nat. Genet. 54, 295–305 (2022). 71. Martin, B. J. E. et al. Transcription shapes genome-wide histone acetylation patterns. Nat. Commun. 12, 210 (2021). 72. Banani, S. F., Lee, H. O., Hyman, A. A. & Rosen, M. K. Biomolecular condensates: organizers of cellular biochemistry. Nat. Rev. Mol. Cell Biol. 18, 285–298 (2017). 73. Strom, A. R. et al. Phase separation drives heterochromatin domain formation. Biophys. J. 114, 445a (2018). 74. Nair, S. J. et al. Phase separation of ligand-activated enhancers licenses cooperative chromosomal enhancer assembly. Nat. Struct. Mol. Biol. 26, 193–203 (2019). 75. Barutcu, A. R., Blencowe, B. J. & Rinn, J. L. Differential contribution of steady-state RNA and active transcription in chromatin organization. EMBO Rep. 20, e48068 (2019). 76. Soutourina, J. Transcription regulation by the mediator complex. Nat. Rev. Mol. Cell Biol. 19, 262–274 (2018). 77. Malik, S. & Roeder, R. G. The metazoan Mediator co-activator complex as an integrative hub for transcriptional regulation. Nat. Rev. Genet. 11, 761–772 (2010). 78. Henriques, T. et al. Stable pausing by RNA polymerase II provides an opportunity to target and integrate regulatory signals. Mol. Cell 52, 517–528 (2013). 79. Tome, J. M., Tippens, N. D. & Lis, J. T. Single-molecule nascent RNA sequencing identifies regulatory domain architecture at promoters and enhancers. Nat. Genet. 50, 1533–1541 (2018). 80. Pancholi, A. et al. RNA polymerase II clusters form in line with surface condensation on regulatory chromatin. Mol. Syst. Biol. 17, e10272 (2021). 81. Hajiabadi, H. et al. Deep-learning microscopy image reconstruction with quality control reveals second-scale rearrangements in RNA polymerase II clusters. PNAS Nexus 1, pgac065 (2022). 82. Henninger, J. E. et al. RNA-mediated feedback control of transcriptional condensates. Cell 184, 207–225 (2021). 83. Wang, Z. et al. Prediction of histone post-translational modification patterns based on nascent transcription data. Nat Genet. 54, 295–305 (2022). 84. Luo, Y. et al. New developments on the Encyclopedia of DNA Elements (ENCODE) data portal. Nucleic Acids Res. 48, D882–D889 (2020). 85. Abuhashem, A., Lee, A. S., Joyner, A. L. & Hadjantonakis, A.-K. Rapid and efficient degradation of endogenous proteins in vivo identifies stage-specific roles of RNA Pol II pausing in mammalian development. Dev. Cell 57, 1068–1080 (2022). 86. Gu, B. et al. Transcription-coupled changes in nuclear mobility of mammalian cis-regulatory elements. Science 359, 1050–1055 (2018).
+
+[Page 11]
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author
+
+Nature Genetics | Volume 55 | August 2023 | 1370–1380
+
+self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law. © The Author(s), under exclusive licence to Springer Nature America, Inc. 2023
+
+[Page 12]
+
+Methods
+
+Ethics approval
+
+(read length = 150 bp) on a combination of Illumina’s NovaSeq 6000 and HiSeq 2500 at Novogene.
+
+No institutional review board (IRB) or Institutional Animal Care and Use Committee (IACUC) approvals were required for the present study.
+
+Micro-C data mapping and visualization
+
+Cell culture Cells were cultured in a humidified 37 °C incubator with 5% CO2. K562 (ATCC, CCL-243) and Jurkat (ATCC, TIB-152) cells were grown in RPMI-1640 medium supplemented with 10% FBS and 1× penicillin– streptomycin antibiotic. mESCs (E14, ATCC, CRL-1821) harboring a homozygous endogenous NELFB-FKBP12F36V fusion protein62,85 were cultured on 0.1% gelatin (Millipore) in PBS containing Mg++ and Ca++ (PBS+/+) coated tissue-culture grade plates. For routine culture, cells were grown in serum/leukemia inhibitory factor (LIF) conditions as follows: DMEM (Gibco), supplemented with 2 mM l-glutamine (Gibco), 1× minimum essential medium nonessential amino acids (Gibco), 1 mM sodium pyruvate (Gibco), 100 U ml−1 penicillin and 100 U ml−1 streptomycin (Gibco), 0.1 mM 2-mercaptoethanol (Gibco), 15% FBS (Gibco) and 1,000 U ml−1 of recombinant LIF (purified in house87). To induce NELFB degradation, dTAG-13 (Bio-Techne) was reconstituted in DMSO (Sigma-Aldrich) at 5 mM. dTAG-13 was diluted in maintenance medium to 500 nM and added to cells with medium changes for the specified amounts of time. For dTAG washes, the cells were washed four times, twice with PBS+/+ and twice with maintenance medium following the treatment time to ensure complete removal of the dTAG ligand. At the end of each dTAG-13 treatment time point, cells were detached using Trypsin-EDTA (0.05%; Gibco) and counted before crosslinking for Micro-C. All cell lines were purchased recently from ATCC and tested for mycoplasma before use.
+
+Micro-C Micro-C for K562, Jurkat and mESCs was performed by following the published protocol for mammalian Micro-C27,28,88. Cells were crosslinked with 1 ml per million cells of 1% formaldehyde for 10 min at room temperature and quenched with 0.25 M glycine for 5 min. After spin-down for 5 min at 300g at 4 °C, cells were washed at a density of 1 ml per million cells in ice-cold PBS. Cells were crosslinked a second time, with 1 ml per 4 million cells of 3 mM disuccinimidyl glutarate (DSG; Thermo Fisher Scientific, 20593) for 40 min at room temperature and quenched by 0.4 M Glycine for 5 min. Following two washes with ice-cold PBS, cells were flash-frozen and kept at −80 °C until further use. For MNase digestion, cells were thawed on ice for 5 min, incubated with 1 ml MB 1 buffer (10 mM Tris–HCl, pH 7.5, 50 mM NaCl, 5 mM MgCl2, 1 mM CaCl2, 0.2% NP-40, 1× Roche complete EDTA-free (Roche diagnostics, 04693132001)) and washed twice with MB 1 buffer. MNase concentration for each cell type was predetermined using MNase titration experiments exploring 2.5–20 U of MNase per million cells. We selected the MNase concentration that gives ~90% mononucleosomes (K562, 10 U per million cells; Jurkat and mESCs, 5 U per million cells). We note that a new titration was repeated before using each new lot of MNase to verify the proper working concentrations. Chromatin was digested with MNase for 10 min at 37 °C and digestion was stopped by adding 8 μl of 500 mM EGTA and incubating at 65 °C for 10 min. Following dephosphorylation with rSAP (NEB M0371) and end polishing using T4 PNK (NEB M0201), DNA polymerase Klenow fragment (NEB M0210) and biotinylated dATP and dCTP ( Jena Bioscience NU-835-BIO14-S and NU-809-BIOX-S, respectively), ligation was performed in a final volume of 2.5 ml for 3 h at room temperature using T4 DNA ligase (NEB M0202). Dangling ends were removed by a 5 min incubation with Exonuclease III (NEB 0206) at 37 °C and biotin enrichment was done using 20 μl Dynabeads MyOne Streptavidin C1 beads (Invitrogen 65001). Libraries were prepared with the NEBNext Ultra II Library Preparation Kit (NEB E7103). Samples were paired-end sequenced
+
+All Micro-C mapping was done using the mirnylab/distiller-nf: v0.3.3 pipeline89. Raw data were mapped to the hg38 human genome assembly (K562 and Jurkat) or mm10 mouse genome assembly (mESCs) using bwa mem v0.7.17 (ref. 90). For analysis of contacts in the MYC locus, data were mapped to hg19 human genome assembly due to a large gap present in this locus when mapping K562 sequencing data to hg38. For data visualization by contact maps, multicool (mcool) files, balanced by iterative correction and eigenvector decomposition for resolutions of 200 bp to 10 Mb, were generated from contacts with both ends having a mapq score ≥30. Micro-C data visualization as contact maps in genome-browser shots with available PRO-seq, dREG, CRISPRi and histone marks tracks was done using the HiCExplorer tool v3.7.2 (ref. 91) and pyGenomeTracks v3.6 (ref. 92). Virtual 4C tracks were prepared as described previously13. 1D signal near enhancer and promoter TSSs (Extended Data Fig. 2) was calculated based on the distiller-nf output pairs files, filtered for intrachromosomal with mapq ≥30. Contacts assigned to the 5′ of single reads were shifted 75 bp downstream, based on their orientation, to the probable center of the nucleosome.
+
+PRO-seq and GRO-seq data processing and analysis Processing PRO-seq and GRO-seq available raw data in this study was done using the Proseq2.0 pipeline available from GitHub (https:// github.com/Danko-Lab/proseq2.0 (refs. 93,94)). Briefly, our pipeline removed PCR duplicates (prinseq-lite v0.20.2 (ref. 95)), trimmed adapters (cutadapt v1.8.3 (ref. 96)), and mapped reads to the reference genome (bwa v0.7.17 (ref. 90)). Uniquely mapped reads were converted to bigwig format (bedtools v2.29.2 (ref. 97)). The output bigwig files use a single position for each read, the 3′ end of the RNA insert, which represents the Pol II active site. Differential expression analyses between K562 and Jurkat cells for pausing signal and gene body transcription levels were performed by DEseq2 (v1.36.0)98 either on signal between the TSS and 250 bp downstream (pause signal) or signal downstream to the first 250 bp through the annotated (GENCODE V29) polyadenylation cleavage site (gene body signal). For visualization of the changes, fold change in expression following NELFB-dTAG in mESCs, we used deepTools (v3.5.1) bigwigCompare command at 1 bp resolution, using 0.25 as pseudocount. For the NELFB-dTAG PRO-seq visualization, fold change and normalized PRO-seq signal matrices were calculated in a stranded manner, followed by a concatenation of the two strands’ matrices to generate a single, stranded matrix (Fig. 4b).
+
+Definition of TIRs, enhancers, promoters and TSSs For mESCs, we first defined TIRs genome-wide as detected by dREG36,37 using available GRO-seq data from mESCs58,99. To finely and unbiasedly define the position of transcription initiation at each of these TIRs, we used the position with the most 5′ mapped GRO-seq or START-seq100 reads within the dREG peak (maxTSN). For the analyses of K562 cells, we first called TIRs using dREG from available PRO-seq data37. The center of these TIRs was defined as the center of enhancers and promoters for the analysis comparison of contacts between functional and nonfunctional enhancer–promoter pairs, based on CRISPRi data. For any further analyses, the center of enhancers and promoters was defined as the maxTSNs, called using the data from coordinated precision run-on and sequencing (coPRO), which enriches for TSSs by mapping 5′ 7-methylguanosine caps (coPRO-capped)79. For the comparison between K562 and Jurkat cell lines, we called TIRs in both K562 and Jurkat using PRO-seq data37 and dREG and determined maxTSN based on coPRO-capped from K562 cells. We defined promoters based on the existence of any known human (K562 and Jurkat) of mouse (mESCs) stable 5′ mapped transcripts from CAGE101 within 5 kb away in the direction of maximum initiation. In analyses including Jurkat and K562 cell
+
+[Page 13]
+
+lines, we considered only shared promoters based on proximity to the best TSS defined by the nascent RNA-sequencing data (DENR v1.0.0)102, based on GENCODE V29 annotations, in both cell types. We used a combined set of enhancers from TIRs detected in both cell lines to define enhancers. Because promoters make a relatively small fraction of all TIRs found in the data and can act as enhancers for other distal genes103, we included promoters under the definition for enhancers whenever we calculated enhancer–promoter contacts genome-wide.
+
+Definition of functional and nonfunctional pairs Functional and nonfunctional enhancer–promoter pairs were defined using CRISPRi genetic screens for enhancer function either in the MYC locus, based on cell viability34, or across the genome using either single-cell RNA-sequencing33 or FlowFISH14 as a readout for gene expression. All CRISPRi-targeted enhancers and target promoters were reassigned to their nearest dREG-defined TIR (or H3K27ac overlapping ATAC-seq peak), within 5 kb, on the same strand. We defined the center of the TIR as the enhancer center. We filtered out all other reported sgRNA centers that had no such detectable nearby transcription initiation. Functional enhancers of the MYC locus were defined based on the previously CRISPRi-defined K562 enhancers of MYC34. Because the entire TAD harboring the MYC promoter was tiled with sgRNAs, we were able to detect 54 TIRs that were marked by DNase-I hypersensitivity sites and histone modifications, were located in the same TAD and were tested by CRISPRi, but which did not affect the growth rate of K562 cells. These TIRs were considered nonfunctional and compared to the seven functional MYC enhancers. Notably, this definition refers only to the measured effect on MYC expression and does not suggest that the enhancers associated with these TIRs lack function in other contexts. For the genome-wide analysis based on single-cell RNA-seq33, we defined functional enhancer–promoter pairs, 15 kb to 1 Mb away from each other, as having a minimum reduction of 10% of gene expression, with an empirical P < 0.05, following enhancer silencing. For high-confidence nonfunctional pairs within the same genomic distance range, we set a cutoff of empirical P value larger than 0.9 and a change in gene expression smaller than 5%. All other enhancer– promoter pairs within the same genomic distance range were defined as nonfunctional. To remove possible confounding effects, we filtered the functional and nonfunctional pairs to have similar distributions of enhancer–promoter contacts, accessibility (by ATAC-seq) and baseline gene body transcription levels (by PRO-seq) in the target gene (Extended Data Fig. 2). For CRISPRi-FlowFISH data14, due to richer data per sgRNA and the smaller overall number of tested enhancers, we defined functional enhancer–promoter pairs, 15 kb to 1 Mb away from each other, as having a minimum of 1% of gene expression, with an empirical P < 0.05. For high-confidence nonfunctional pairs within the same genomic distance range, we set a cutoff of adjusted P value larger than 0.9 and a change in gene expression smaller than 0.1%. All other enhancer–promoter pairs within the same genomic distance range were defined as nonfunctional.
+
+Comparison between functional and nonfunctional pairs Enhancer–promoter contacts were defined as contacts that map to a 4 kb window near the promoter on one end and the enhancer on the other end. The expected number of contacts between enhancers and promoters is often calculated based on a global distribution of contact-associated genomic distances at fairly large genomic regions that encompass them91,104. However, within such large regions, multiple factors like extrusion dynamics or the existence of insulators can affect the distribution of contacts locally. To better capture local fluctuations in background contacts distributions, contacts were normalized to the expected based on a nonparametric LOWESS smoothing of the contacts-by-distance function in a region corresponding to a 1 Mb in the orientation of the promoter, relative to each enhancer (Extended Data Fig. 1a). Observed over expected ratios were then compared between
+
+https://doi.org/10.1038/s41588-023-01442-7
+
+functional and high-confidence nonfunctional\nonfunctional pairs (Fig. 1b,c and Extended Data Fig. 1b,c). Differences in contacts between CRISPRi-defined functional and high-confidence nonfunctional pairs were calculated based on pixel-by-pixel differences between APA matrices for all functional and all high-confidence nonfunctional pairs, normalized for the number of pairs. The differences were calculated as the medians (Fig. 1e,f) or the sum (Fig. 1g) of the differences based on 1,000 bootstrapping iterations of the functional and high-confidence nonfunctional pairs, to remove outlier background. These differences were presented as the number of contact differences per 1,000 pairs. The APA matrices were centered on the coPRO-based maxTSN as the TSS assigned for each TIR.
+
+Between and within sample APA
+
+Overview. We expected substantial changes in chromatin after manipulating Pol II transcription70,71. As such, not only are enhancer–promoter contacts expected to change, but the background contacts with at least one end originating at enhancer and promoter regions may be affected between conditions. As APAs are often used to characterize contacts10,28,53, we devised an APA that normalizes enhancer–promoter contacts for changes in the 1D signal mapping to either anchor region. The primary challenge with devising a background-corrected APA is to handle the sparsity of Micro-C data (that is, most small genomic bins have an observed contact value of 0). To address this challenge, our strategy computes a single observed and background matrix separately that represents the set of all enhancer and promoter regions included in the analysis, and then performs a pixel-by-pixel division of the aggregate observed and background matrices (Fig. 2a and Extended Data Fig. 5). Computing the observed matrix. We first compute an aggregate observed matrix that represents all enhancer–promoter pairs. To do this calculation, we take the sum over the set of all enhancer–promoter pair matrices, leaving a single aggregate observed matrix (represented in Extended Data Fig. 5a). For a single enhancer–promoter pair, k, we calculated an observed contact matrix, Ok as follows: Ok = (Cki,j ) ,
+
+where Cki,j is the number of contacts mapped to the jth window relative to the enhancer TSS and the jth window relative to the promoter TSS for enhancer–promoter pair k. To make a single aggregate matrix, we take the element-wise sum of the matrices for all enhancer–promoter pairs. The result is a single observed (obs) APA matrix that represents the aggregate signal across all enhancer–promoter pairs (Extended Data Fig. 5a). Formally, the computation was completed as follows: nep
+
+obs = ∑ Ok , k=1
+
+where nep, the number of enhancer–promoter pairs, is restricted by the allowed genomic distance range we defined. In figures calculating APAs within a single sample or condition, we presented the obs matrix as heatmaps (Figs. 1d and 3b). Computing the background matrix. Next, we compute a background matrix that represents the aggregate signal near the enhancer–promoter anchors in the same dataset. We compute the background matrix in the following two steps: (1) we compute the average 1D signal near each enhancer and each promoter anchor and (2) we turn the average 1D signal into a matrix by computing the outer sum of the signal at enhancer and promoter anchors. The motivation for this strategy is that we assume the probability of observing a signal in window i, j of the observed matrix is proportional to the probability of observing a read in either window i in the
+
+[Page 14]
+
+enhancer or window j in the promoter. Further, we assume the probabilities observing reads in window i and j are statistically independent. These assumptions motivate the use of the sum of signals in each anchor in each window to build the matrix, often called the outer sum, because the probability of observing a read from either the enhancer or promoter is the sum of the two probabilities. We also considered alternative formulations that convert 1D signal vectors into a matrix using the outer product, instead of the outer sum. The problem with this formulation is that the outer product includes terms for potential enhancer–promoter pairs that do not meet the criteria used in our analysis and therefore were not incorporated into the observed matrix. Such pairs may not meet the necessary distance requirements, may reside on different chromosomes, or may have been excluded due to other heuristics (Supplementary Note). The computation of the background matrix is performed as follows: First (step 1), we defined a vector of counts with the same length and width as the APA matrix, obs, that represents the sum of all Micro-C paired-end tags in which at least one end falls into that window relative to the anchor (usually the enhancer or promoter TSS), and the other end falls between the minimum and maximum distance allowed between enhancers and promoters in the APA. Formally, we first compute vectors that represent the aggregate 1D signal at positions i or j for enhancers or promoters, respectively. We take the mean signal over the set of all ne enhancers or np promoters in the dataset, as shown: ne
+
+np
+
+E i = ∑ E i /ne , P j = ∑ P j /np x=1
+
+y=1
+
+These vectors are shown in the bottom right panel of Extended Data Fig. 5b. Note that we index using x and y (instead of k) to emphasize that these reflect individual enhancers and promoters, rather than enhancer–promoter pairs. Second (step 2), we used vectors E and P to generate the background matrix B. We compute the background matrix using the outer sum. Hence, the calculation of cell i, j in the background matrix is computed as follows: Bi,j = E i + P j
+
+Or, in vector notation, matrix B is defined as the outer sum of vectors E and P: B = E ⊕P
+
+Note that nep is not related to either ne or np for the following two reasons: first, not all enhancer–promoter pairs are allowed by our distance requirements, and second each enhancer (or promoter) can be paired with multiple promoters (or enhancers). Computing background-corrected APAs. We calculated the background-corrected APA matrix F by dividing observed and background matrices for each condition, as follows: Fi,j =
+
+obsi,j (T) /Bi,j (T) obsi,j (C) /Bi,j (C)
+
+,
+
+where T stands for the treatment condition and C for the control condition. Heuristics for choosing which enhancer–promoter pairs are included in each analysis. The primary concern when choosing window sizes in the APA is to avoid overlapping windows between enhancers and promoters, which would result in crossing the diagonal of the Micro-C matrix. To avoid overlapping windows around enhancers
+
+and promoters, we excluded enhancer–promoter pairs for which the separating genomic distance was smaller than the total 1D size of the APA plus the maximal fragment size in the library, which is known for Micro-C libraries due to the agarose gel purification step. For example, for a 20 kb × 20 kb APA, the minimum enhancer–promoter distance should be larger than 20.3 kb. For APAs calculated at windows of 20 kb around the anchors, we considered all possible anchor pairs within a genomic distance of 25–150 kb. For the high-resolution APA with 2 kb window around enhancer and promoter TSSs (Fig. 1d), we considered all possible enhancer–promoter pairs within a genomic distance of 5–100 kb. Individual contact comparison between samples and treatments. We also devised an alternative normalization scheme that compares the number of contacts between enhancer–promoter pairs to the local background near each enhancer and promoter anchor. The primary goal of this alternative normalization scheme was to assess changes in contact frequency specific to enhancer–promoter pairs, after accounting for changes in contact frequency between the enhancer (or promoter) and flanking regions to the second anchor. We calculated the number of contacts between each pair of anchors (enhancer– promoter or CTCF-binding sites) using a 5 kb window around each anchor. As a background, we counted the number of contacts between each anchor (in a 5 kb window) and regions 10–150 kb from the second anchor (Fig. 2c). As such, the ratio between the anchor-to-anchor (that is, either enhancer–promoter or CTCF–CTCF) contacts and background contacts was calculated for each pair of anchors using the following formula: Background-normalized contacts =
+
+E∩P E ∩ Pbg + P ∩ Ebg
+
+Where E ∩ P represents the number of contacts in which one end is mapped to a 5 kb window around the enhancer and the other to a 5 kb region around the promoter. E ∩ Pbg and P ∩ Ebg represent the number of contacts in which one end maps 5 kb from the enhancer (or promoter) and the other maps in the background window (defined as 10–150 kb) of the promoter (or enhancer). These background-normalized contacts are computed separately for each anchor pair and are presented in scatterplots, box- and whiskers plots or line plots over the NELFB degradation and dTAG washout time course, to calculate the statistical significance of changes between treatments and samples. To avoid the impact of noise, we analyzed only contacts that met a minimum baseline of anchor-to-anchor contacts (at least eight contacts per billion contacts (CPB)) in one of the treatment conditions. Because TSS calling data (PRO-seq and coPRO-capped) were more abundant for K562 than Jurkat, when comparing K562 and Jurkat libraries, we considered enhancer–promoter pairs with at least eight CPB in both cell lines, to avoid ascertainment bias. The distribution of ratios between enhancer–promoter and background contacts in treated samples (Olaparib\TRP\FLV or dTAG treated cells) was compared to the median ratio in the respective control samples (Figs. 2d,e, 4c,d and 5b). For comparison between cell lines, enhancer–promoter contacts at promoters with increased gene body transcription and\ or Pol II pausing signal in one cell line, were compared to their median at the other cell line (Fig. 3d–e). To calculate Pearson’s correlation between the change in paused Pol II and enhancer–promoter contacts following 30 min of NELFB degradation, we first calculated the mean change in Pol II for each enhancer–promoter pair in our data. We then calculated the median change in enhancer–promoter contacts associated with each percentile of paused Pol II change and calculated the correlation between these medians and their corresponding levels of change in pause Pol II density. To avoid overlap, we had set the minimum genomic distance between anchors in each pair to 25 kb. Additionally, as many anchors
+
+[Page 15]
+
+can be included in the background-associated regions flanking the second anchor, we excluded any contacts where both ends fall within the anchor’s defined window (intra-anchor contact) from the background contacts.
+
+GSE43390 and GSE48895. Positions for human (hg38) and mouse (https://fantom.gsc.riken.jp/5/).
+
+Definition of CTCF-binding sites. Contacts between CTCF-binding sites were used as a control to determine whether the effects of treatment were specific to enhancer–promoter contacts. We defined pairs of CTCF-binding sites as CTCF motifs that were shown to bind CTCF based on ENCODE ChIP–seq data, within the same minimum and maximum allowed genomic distances as for enhancers and promoters. We focused only on CTCF sites that show no overlap with any dREG-defined TIR within 5 kb.
+
+All data normalization and visualization code are available at https://github.com/Danko-Lab/E-P_contacts ref. 105.
+
+Statistics and reproducibility. Throughout this study, the two-sided Mann–Whitney U-test is used for independent samples, such as the comparison of changes between different sets of genomic loci or pairs. The two-sided Wilcoxon signed-rank test is used for paired samples, usually being the same loci\pairs compared between samples\conditions. For the assessment of trends in our data, such as the changes in the difference in contacts between functional and nonfunctional pairs or assessing the effect of changes in paused RNA Pol II occupancy on changes in enhancer–promoter contacts, we used Pearson’s correlation coefficient (R). The confidence intervals for the medians throughout this study were calculated using 1,000 iterations of bootstrap. Unless stated otherwise, trends for changes in enhancer–promoter contacts or contacts between other anchors, such as CTCF-binding sites, were consistent between replicates for all experiments where bulked data are presented. For Micro-C data, this includes six biological replicates for K562, two for Jurkat and two biological replicates with two technical replicates, each for the different time points of the NELFB-dTAG experiments. For differences between functional and nonfunctional pairs, the median functional difference presented was calculated with 1,000 bootstrapping of the functional and nonfunctional pairs where for each iteration, the aggregated signals for functional and nonfunctional pairs were divided by the number of functional (245) and high-confidence nonfunctional (232) pairs, respectively, and multiplied by a factor of 1,000 (Fig. 2e–g). For all boxplots, the central line within each box represents the median of the data, and the bounds of the box depict the 25th and 75th percentiles (interquartile range (IQR)). When a white dot is displayed within the box, this represents the mean. The whiskers extend from the box to represent the variability outside the upper and lower quartiles, with a maximum length of 1.5 times the IQR. In the violin plots, the median is represented by the middle dashed line, and the 25th and 75th percentiles are represented by the dotted lines.
+
+Reporting summary Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.
+
+Data availability
+
+Micro-C data generated in this study were deposited in the Gene Expression Omnibus (GEO) database under accession number GSE206133. CTCF ChIP-–seq (ENCSR447BSF), MNase-seq (ENCSR000CXQ) and DMSO, TRP and FLV-treated mESCs Micro-C data28 were downloaded from GSE130275. PRO-seq data36,40 for Jurkat T cells were downloaded from GSE66031 and for K562 from GSE60455. PRO-seq data for mECSs harboring a homozygous endogenous NELFB-FKBP12F36V fusion protein, treated and untreated with dTAG-13 (ref. 85), were downloaded
+
+Code availability
+
+References
+
+87. Imsoonthornruksa, S., Noisa, P., Parnpai, R. & Ketudat-Cairns, M. A simple method for production and purification of soluble and biologically active recombinant human leukemia inhibitory factor (hLIF) fusion protein in Escherichia coli. J. Biotechnol. 151, 295–302 (2011). 88. Hsieh, T. H. S. et al. Enhancer-promoter interactions and transcription are largely maintained upon acute loss of CTCF, cohesin, WAPL or YY1. Nat. Genet. 54, 1919–1932 (2022). 89. Goloborodko, A. et al. mirnylab/distiller-nf: v0.3.3. Zenodo. https://doi.org/10.5281/zenodo.3350937 (2019). 90. Li, H. & Durbin, R. Fast and accurate short read alignment with Burrows–Wheeler transform. Bioinformatics 25, 1754–1760 (2009). 91. Ramírez, F. et al. High-resolution TADs reveal DNA sequences underlying genome organization in flies. Nat. Commun. 9, 189 (2018). 92. Lopez-Delisle, L. et al. pyGenomeTracks: reproducible plots for multivariate genomic datasets. Bioinformatics 37, 422–423 (2021). 93. Chu, T., Wang, Z., Chou, S.-P. & Danko, C. G. Discovering transcriptional regulatory elements from run-on and sequencing data using the web-based dREG gateway. Curr. Protoc. Bioinformatics 66, e70 (2019). 94. Chou, S.-P., He, A. Y., Wang, Z. & Danko, C. Danko-Lab/proseq2.0: PRO-seq pipeline used by the Danko lab. Zenodo. https://doi. org/10.5281/ZENODO.8015719 (2023). 95. Schmieder, R. & Edwards, R. Quality control and preprocessing of metagenomic datasets. Bioinformatics 27, 863–864 (2011). 96. Martin, M. Cutadapt removes adapter sequences from high-throughput sequencing reads. EMBnet J. 17, 10 (2011). 97. Quinlan, A. R. BEDTools: the Swiss-army tool for genome feature analysis. Curr. Protoc. Bioinformatics 47, 1–34 (2014). 98. Anders, S. & Huber, W. Differential expression analysis for sequence count data. Genome Biol. 11, R106 (2010). 99. Williams, L. H. et al. Pausing of RNA polymerase II regulates mammalian developmental potential through control of signaling networks. Mol. Cell 58, 311–322 (2015). 100. Dorighi, K. M. et al. Mll3 and Mll4 facilitate enhancer RNA synthesis and transcription from promoters independently of H3K4 monomethylation. Mol. Cell 66, 568–576 (2017). 101. Noguchi, S. et al. FANTOM5 CAGE profiles of human and mouse samples. Sci. Data 4, 170112 (2017). 102. Zhao, Y. et al. Deconvolution of Expression for Nascent RNA sequencing data (DENR) highlights pre-RNA isoform diversity in human cells. Bioinformatics 37, 4727–4736 (2021). 103. Li, G. et al. Extensive promoter-centered chromatin interactions provide a topological basis for transcription regulation. Cell 148, 84–98 (2012). 104. Open2C et al. Cooltools: enabling high-resolution Hi-C analysis in Python. Preprint at bioRxiv https://doi.org/10.1101/2022.10. 31.514564 (2022). 105. Barshad, G. & Wang, Z. Danko-Lab/E-P_contacts: E-P contacts. Zenodo. https://doi.org/10.5281/ZENODO.7948817 (2023).
+
+Acknowledgements
+
+We thank E. Apostolou and members of her lab for commenting on a manuscript draft as well as members of the Danko, Lis, and Yu Labs for valuable discussions and suggestions throughout the life of this
+
+[Page 16]
+
+project. Work in this publication was supported by R01-HG010346 and R01-HG009309 (NHGRI) to C.G.D. A.A. is supported by the NIH (T32GM007739 and F30HD103398). Work in AKH Lab is supported by the NIH (R01HD094868, R01DK127821, R01HD086478 and P30CA008748). The content is solely the responsibility of the authors and does not necessarily represent the official views of the US National Institutes of Health. Some of the figures in this manuscript were created using BioRender.
+
+Author contributions
+
+G.B., J.J.L. and C.G.D. designed the study. E.J.R. generated PRO-seq data. G.B. and A.G.C. analyzed PRO-seq data. A.A. and A.K.H. contributed NELFB-dTAG mESCs. A.A. performed all treatments and crosslinking for the time course of the NELFB degradation dTAG experiments. G.B. collected all Micro-C data. N.K. and O.J.R. assisted with the collection of Jurkat Micro-C and taught G.B. the protocol. J.J.L., Y.M., Z.W. and G.B. implemented contact normalization by local decay (Contact Caller). G.B., J.J.L., A.G.C., N.K., O.J.R., A.K.H. and C.G.D. analyzed and interpreted data. G.B. and C.G.D. drafted the manuscript. All authors read and approved the final manuscript.
+
+https://doi.org/10.1038/s41588-023-01442-7
+
+Competing interests
+
+The authors declare no competing interests.
+
+Additional information
+
+Extended data is available for this paper at Supplementary information The online version contains supplementary material available at Correspondence and requests for materials should be addressed to Charles G. Danko. Peer review information Nature Genetics thanks the anonymous reviewers for their contribution to the peer review of this work. Peer reviewer reports are available. Reprints and permissions information is available at
+
+[Page 17]
+
+Extended Data Fig. 1 | See next page for caption.
+
+[Page 18]
+
+Extended Data Fig. 1 | Details for the comparison between functional and nonfunctional enhancer-promoter pairs. (a) Schematic representation of the LOWESS-based normalization for enhancer-promoter contacts. (b) Box and dot plots, similar to Fig. 1b, comparing the observed contact frequency relative to expected by a local distance-decay function of the validated functional enhancers in the MYC locus (functional pairs) compared to the rest of the dREGdetected TIRs in the TAD (nonfunctional pairs) with the MYC promoter. Here we divided the CRISPRi-tested TIRs to those that fall within the first 0.5 Mb (near, functional: n = 4, nonfunctional: n = 27) or beyond 1.5 Mb (far, functional: n = 3, nonfunctional: n = 12) within the TAD. Two-sided Mann-Whitney p-values are indicated. (c) Violin plots comparing contact levels relative to expected by local distance-decay function of functional versus the nonfunctional
+
+enhancer-promoter pairs in the genome, before matching for enhancerpromoter distance, accessibility or target gene expression. On the left column, the results are based on dREG CRISPRi-targeted TIRs33 either before (top) and after (bottom) excluding pairs that do not fall into the same mega-haplotype (MH) or fall within known structural variants (SVs) in K562 cells96. The middle violin plot shows the same as the top-left one, but using data from a different CRISPRi dataset97. The two violin plots on the right show the same as the two on the left, using the same CRISPRi dataset98, but centering on H3K27ac overlapping ATAC-peaks instead of TIRs. Two-sided Mann-Whitney p-values are indicated. ( d) Venn diagram showing the overlap between H3K27ac+ ATAC-peaks (H3K27ac)and dREG TIRs-defined enhancers tested by CRISPRi in33.
+
+[Page 19]
+
+Extended Data Fig. 2 | Matching possible confounders between CRISPRi functional and nonfunctional pairs. Histograms demonstrating the distribution of functional and high-confidence nonfunctional enhancerpromoter pairs in terms of enhancer-promoter genomic distance (top),
+
+accessibility by mean ATAC-seq signal (middle) and PRO-seq target gene transcription signal in reads per kilobase per million reads (RPKM) (bottom), after matching for these possible confounding factors.
+
+[Page 20]
+
+Extended Data Fig. 3 | See next page for caption.
+
+[Page 21]
+
+Extended Data Fig. 3 | Functional constituent enhancers within super enhancers interact more with the target promoter. a,b) Violin plots comparing contact levels relative to expected by local distance-decay function of functional versus the nonfunctional enhancer-promoter pairs in the genome, where the enhancers are mapped within (a) or outside (b) K562 defined super enhancers101. Two-sided Mann-Whitney p-values are indicated (c) Dot plot shows the log2 distribution of local genomic distance-normalized contact frequency between CRISPRi-defined functional constituent enhancers within 16 super enhancers compared to other constituent enhancers within these super enhancers. The dashed lines connect data points representing the median values of the same super enhancer. Two-sided Wilcoxon paired-test p-values are shown.
+
+(d) Dot plot shows the log2 distribution of local genomic distance-normalized contact frequency between CRISPRi-defined high-confidence nonfunctional constituent enhancers within 15 super enhancers compared to other constituent enhancers within these super enhancers. The dashed lines connect data points representing the median values of the same super enhancer. Two-sided Wilcoxon paired-test p-values is shown. (e) Violin plot shows the distribution of the ratios between the functional constituent enhancers to other constituent enhancers in the same super enhancer (yellow) and between high-confidence nonfunctional constituent enhancers to other constituent enhancers in the same super enhancer. Two-sided Mann-Whitney p-value is indicated.
+
+[Page 22]
+
+Extended Data Fig. 4 | Micro-C 1D signal near TSSs genome-wide. One dimensional contact signal for intra-chromosomal contacts with both sides having mapping quality (mapq) ≥ 30. Total median signal was smoothed using a sliding window of 100 bp. Shown are signals around promoter TSSs (orange), enhancer TSSs (purple) and all TSSs genome-wide (black).
+
+[Page 23]
+
+Extended Data Fig. 5 | See next page for caption.
+
+[Page 24]
+
+Extended Data Fig. 5 | Elaborated schematic representation of the APA method used to calculate 1D background-normalized changes in contacts between samples. (a) To calculate the observed change in contacts, a matrix of contacts between each enhancer-promoter pair within the limited defined genomic distance range was calculated and then all of these matrices were summed to obtain the observed aggregated matrix. To get the obs the sequencing depth-normalized aggregated matrices were divided by the control matrix. Shown are also the depth-normalized aggregated matrices for the DMSO control, TRP- and FLV-treated mESCs, as well as the obs matrices for both
+
+treatments. (b) To calculate the 1D signal background matrices we calculated the average of 1D Micro-C signal vectors across cells around enhancers and promoters. Line plot representations of these vectors at 20 kb windows around enhancers and promoters, across cells of 200 bp are shown for both treatment conditions and DMSO control. The 1D background change matrix, B, was calculated by dividing the 1D signal background matrix of each treatment by the control. The 1D background matrices for both treatments and control samples as well as the matrices B for both treatments in mESCs are shown.
+
+[Page 25]
+
+Extended Data Fig. 6 | See next page for caption.
+
+[Page 26]
+
+Extended Data Fig. 6 | Genomic distance has little effect on the shape of enhancer-promoter contacts fold change. Matrices showing the observed fold-change (a) the 1D background signal fold change (b) and the 1D background-normalized enhancer-promoter fold change (c) following TRP and FLV treatment compared to the DMSO control at 25kb-wide distance ranges
+
+starting at 25–50 kb (leftmost column) and ending at 125–150 kb (rightmost column). (d) Matrix showing the 1D background-normalized fold change of contacts between CTCF bound motifs following TRP and FLV treatments, compared with the DMSO control.
+
+[Page 27]
+
+Extended Data Fig. 7 | Changes in enhancer-promoter contacts at the Pou5f1 locus following transcriptional inhibition. Virtual 4 C signal showing Micro-C signal associated with Pou5f1 promoter from a ~ 1.3 billion contacts library of untreated mESC, as well as the FLV and TRP treated mESCs (~400 million contacts each). Shown are also GRO-seq and ATAC-seq signals. Two regulatory elements
+
+shown to induce Pou5f1 gene expression55 are shown in green and the relative contacts between these regulatory elements and the Pou5f1 promoter, relative to the untreated control, in each treatment are shown in the associated bar plots. The position of the anchor for the virtual 4 C is shown.
+
+[Page 28]
+
+Extended Data Fig. 8 | See next page for caption.
+
+[Page 29]
+
+Extended Data Fig. 8 | Distribution of fold change in gene body transcription for K562 and Jurkat upregulated genes. (a) Scatterplots where each dot represents a single enhancer-promoter pair where the promoter was associated with higher gene body transcription (top, n = 4,071) and pausing signal (bottom, n = 502) at Jurkat T cells compared to K562. The dots are colored based on the density of dots relative to their coordinates. The associated boxplots show the distribution of enhancer-promoter contacts relative to local background in both cell types, relative to the median ratio in K562. (*** Two-sided Wilcoxon signedrank test p-value < 1 × 10−100). (b) Boxplots showing the distributions of fold
+
+change in gene body signal in genes with no associated paused Pol II change (NPC, K562 > Jurkat: n = 173, Jurkat > K562: n = 64) and associated significant paused Pol II change (PC, K562 > Jurkat: n = 167, Jurkat > K562: n = 43) (‘ns’ - Two-sided MannWhitney p-value > 0.5). (c) Boxplot depicting the relative increase of enhancerpromoter contacts associated with promoters of genes with upregulated gene body transcription in Jurkat T-cells with a corresponding significant increase in pausing signal (pause change—PC, n = 43) and without a change in pausing signal (no pause change—NPC, n = 64) (** Two-sided Mann-Whitney p-value < 1 × 10−10).
+
+[Page 30]
+
+Extended Data Fig. 9 | Changes in enhance-promoter contacts architecture following NELFB depletion. (a) APA heatmaps of the 1D change-normalized contact change (log2) between enhancer and promoter regions at 20 kb around TSSs. Pixel size is 200 bp square. The APA heatmaps are oriented such that
+
+the gene TSS points to the right and the dominant TSS of the enhancer points upwards. (b) Line plot of the median fold changes at the dot (blue), stripes (red) and edges (gray) relative to T = 0 at the different time points of dTAG treatments and following dTAG washout.
+
+[Page 31]
+
+Extended Data Fig. 10 | Changes in ZRS-Shh contacts following NELFB depletion. Micro-C contact maps in 10 kb resolution along with the associated virtual 4 C signal and PRO-seq signal in mESCs not treated (top) or treated (bottom) with the dTAG ligand for 30 minutes to degrade NELFB. The positions of the ZRS enhancer and the Shh promoter are indicated in red rectangles.

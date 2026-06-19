@@ -1,0 +1,840 @@
+{
+  "paper_id": "sha256-befc2cb74e50b966",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/clementi_2019_ACSCentSci_CGnet.pdf",
+  "pdf_sha256": "befc2cb74e50b966f391ef17e7421f1e0041c84dee7b355017b8284b3c161ad5",
+  "filename": "clementi_2019_ACSCentSci_CGnet.pdf",
+  "item_type": "article",
+  "title_query": "ACSCentSci CGnet",
+  "filename_hints": {
+    "year_hint": 2019,
+    "venue_hint": "",
+    "prefix": "clementi 2019 ACSCentSci CGnet"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T05:22:30.220645+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": 0.3688,
+  "warnings": [
+    "year_hint_mismatch:2019!=2025"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "manual_verified",
+  "semantic_scholar": {
+    "query": "ACSCentSci CGnet",
+    "limit": 10,
+    "api_error": "",
+    "attempts": [
+      {
+        "query": "ACSCentSci CGnet",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2019!=2025"
+        ],
+        "best_score": 0.3688,
+        "candidate_count": 10
+      },
+      {
+        "query": "Cite This: ACS Cent. Sci. 2019, 5, 755−767",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "Downloaded via KYOTO UNIV on March 28, 2022 at 08:26:44 (UTC)",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "Downloaded via KYOTO UNIV on March 28, 2022 at 08:26:44 (UTC). See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      },
+      {
+        "query": "learning to design optimal reduced models to reproduce the equilibrium thermodynamics of a macromolecule",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [],
+        "best_score": null,
+        "candidate_count": 0
+      }
+    ],
+    "best_candidate": {
+      "paperId": "e646fd7d19c4272b335c2c96def47bb7c275859d",
+      "externalIds": {
+        "DBLP": "journals/cmig/GongLYZLCLC25",
+        "DOI": "10.1016/j.compmedimag.2025.102505",
+        "CorpusId": 276166194,
+        "PubMed": "39921928"
+      },
+      "url": "https://www.semanticscholar.org/paper/e646fd7d19c4272b335c2c96def47bb7c275859d",
+      "title": "CGNet: Few-shot learning for Intracranial Hemorrhage Segmentation",
+      "venue": "Comput. Medical Imaging Graph.",
+      "year": 2025,
+      "openAccessPdf": {
+        "url": "",
+        "status": null,
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compmedimag.2025.102505?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compmedimag.2025.102505, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2025-02-05",
+      "journal": {
+        "name": "Computerized medical imaging and graphics : the official journal of the Computerized Medical Imaging Society",
+        "pages": "\n          102505\n        ",
+        "volume": "121"
+      },
+      "authors": [
+        {
+          "authorId": "2344216767",
+          "name": "Wanyuan Gong"
+        },
+        {
+          "authorId": "2112602205",
+          "name": "Yanmin Luo"
+        },
+        {
+          "authorId": "2344219245",
+          "name": "Fuxing Yang"
+        },
+        {
+          "authorId": "2344584248",
+          "name": "Huabiao Zhou"
+        },
+        {
+          "authorId": "2344210707",
+          "name": "Zhongwei Lin"
+        },
+        {
+          "authorId": "2247582147",
+          "name": "Chi Cai"
+        },
+        {
+          "authorId": "2344193918",
+          "name": "Youcao Lin"
+        },
+        {
+          "authorId": "2344195246",
+          "name": "Junyan Chen"
+        }
+      ],
+      "abstract": "In recent years, with the increasing attention from researchers towards medical imaging, deep learning-based image segmentation techniques have become mainstream in the field, requiring large amounts of manually annotated data. Annotating datasets for Intracranial Hemorrhage(ICH) is particularly tedious and costly. Few-shot segmentation holds significant potential for medical imaging. In this work, we designed a novel segmentation model CGNet to leverage a limited dataset for segmenting ICH regions, we propose a Cross Feature Module (CFM) enhances the understanding of lesion details by facilitating interaction between feature information from the query and support sets and Support Guide Query (SGQ) refines segmentation targets by integrating features from support and query sets at different scales, preserving the integrity of target feature information while further enhancing segmentation detail. We first propose transforming the ICH segmentation task into a few-shot learning problem. We evaluated our model using the publicly available BHSD dataset and the private IHSAH dataset. Our approach outperforms current state-of-the-art few-shot segmentation models, outperforming methods of 3% and 1.8% in Dice coefficient scores, respectively, and also exceeds the performance of fully supervised segmentation models with the same amount of data."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "e646fd7d19c4272b335c2c96def47bb7c275859d",
+        "title": "CGNet: Few-shot learning for Intracranial Hemorrhage Segmentation",
+        "score": 0.3688,
+        "title_similarity": 0.3688,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "7fd2604e477f941ea6db921b6efaadede6c29490",
+        "title": "CGNet: A Correlation-Guided Registration Network for Unsupervised Deformable Image Registration",
+        "score": 0.3639,
+        "title_similarity": 0.3639,
+        "query_year": null,
+        "candidate_year": 2024,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e77809847a4e37710e4c60569ecc3159edd1c2d8",
+        "title": "CGNet-PIE: A causal generative approach for urban planning intervention effect estimation",
+        "score": 0.3568,
+        "title_similarity": 0.3568,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d25503c9849e17a9dd31097ea4498b529bf1fa7a",
+        "title": "TS-CGNet: Temporal-Spatial Fusion Meets Centerline-Guided Diffusion for BEV Mapping",
+        "score": 0.3542,
+        "title_similarity": 0.3542,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "248c2f64e2a686797130395f63c50f0930b61b81",
+        "title": "CGNet: Classification-Guided Multi-Task Interactive Network for Hyperspectral and Multispectral Image Fusion",
+        "score": 0.3542,
+        "title_similarity": 0.3542,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "2798f8bdc910388620b61e13702994567fa9232f",
+        "title": "ST-CGNet: A spatiotemporal gesture recognition network with triplet attention and dual feature fusion",
+        "score": 0.3542,
+        "title_similarity": 0.3542,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "06c886074277f6e557b8164a3f1b8cc52c16873e",
+        "title": "DAM-CGNet: Semantic segmentation-based approach for valley-bottom extraction from digital elevation models",
+        "score": 0.3519,
+        "title_similarity": 0.3519,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "878794c70380d5af43176e3fa4b952002fd94290",
+        "title": "FS-CGNet: Frequency Spectral–Channel Fusion and Cross-Scale Global Aggregation Network for Hyperspectral Image Classification",
+        "score": 0.3483,
+        "title_similarity": 0.3483,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "f1097f375bd688f7cb098bf0e639879eb2308fa1",
+        "title": "CGNet: Remote Sensing Instance Segmentation Method Using Contrastive Language–Image Pretraining and Gated Recurrent Units",
+        "score": 0.3483,
+        "title_similarity": 0.3483,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8fb9ff0aa9c7bf184660696525bc0b25d44ff1ef",
+        "title": "CGNet: A Complex-valued Graph Network for jointly learning amplitude-phase information in EEG-based brain-computer interfaces",
+        "score": 0.3469,
+        "title_similarity": 0.3469,
+        "query_year": null,
+        "candidate_year": 2025,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1016/j.compmedimag.2025.102505"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 176,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "8fb9ff0aa9c7bf184660696525bc0b25d44ff1ef",
+          "externalIds": {
+            "DBLP": "journals/nn/CaiCYYMW25",
+            "DOI": "10.1016/j.neunet.2025.107795",
+            "CorpusId": 279962356,
+            "PubMed": "40644990"
+          },
+          "url": "https://www.semanticscholar.org/paper/8fb9ff0aa9c7bf184660696525bc0b25d44ff1ef",
+          "title": "CGNet: A Complex-valued Graph Network for jointly learning amplitude-phase information in EEG-based brain-computer interfaces",
+          "venue": "Neural Networks",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.neunet.2025.107795?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.neunet.2025.107795, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-01",
+          "journal": {
+            "name": "Neural networks : the official journal of the International Neural Network Society",
+            "pages": "\n          107795\n        ",
+            "volume": "191"
+          },
+          "authors": [
+            {
+              "authorId": "2055943419",
+              "name": "Guoqing Cai"
+            },
+            {
+              "authorId": "2243961427",
+              "name": "Yiyi Chen"
+            },
+            {
+              "authorId": "2281026638",
+              "name": "Bolun Yang"
+            },
+            {
+              "authorId": "2108648724",
+              "name": "Yanwu Yang"
+            },
+            {
+              "authorId": "2147331400",
+              "name": "Ting Ma"
+            },
+            {
+              "authorId": "2370063049",
+              "name": "Yilong Wang"
+            }
+          ],
+          "abstract": "The synergy between amplitude and phase in electroencephalogram (EEG)-based brain-computer interfaces (BCIs) provides comprehensive and essential insights into neural oscillatory processes. However, constrained by real-valued computation paradigms, most deep learning methods have to process amplitude and phase independently, neglecting their crucial interaction mechanisms. To address this issue, we construct a Complex-valued Graph Network (CGNet) to capture comprehensive information from EEG signals, where both amplitude and phase information are encoded into the complex-valued representation. Specifically, we design a two-scale complex-valued convolutional network to learn local spatio-temporal information, develop a spatial attention module to enhance spatial information learning, and formulate a dynamic graph convolution to capture global temporal dependencies. Furthermore, we extend CGNet to Filter-Band CGNet (FBCGNet), enhancing the model's adaptability to broadband EEG data. Applied to motor imagery and execution BCI tasks, CGNet achieves state-of-the-art classification performance while maintaining computational efficiency comparable to other advanced algorithms. Notably, FBCGNet further improves CGNet's performance. Visualization results show that CGNet can identify the key spatio-temporal information consistent with paradigm principles. In addition, compared with using amplitude or phase alone, CGNet can capture more comprehensive task-related neural activities, thereby showing higher classification performance. CGNet is a promising tool for mining amplitude-phase information and offering more comprehensive neural decoding in EEG-based BCIs."
+        },
+        {
+          "paperId": "e646fd7d19c4272b335c2c96def47bb7c275859d",
+          "externalIds": {
+            "DBLP": "journals/cmig/GongLYZLCLC25",
+            "DOI": "10.1016/j.compmedimag.2025.102505",
+            "CorpusId": 276166194,
+            "PubMed": "39921928"
+          },
+          "url": "https://www.semanticscholar.org/paper/e646fd7d19c4272b335c2c96def47bb7c275859d",
+          "title": "CGNet: Few-shot learning for Intracranial Hemorrhage Segmentation",
+          "venue": "Comput. Medical Imaging Graph.",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.compmedimag.2025.102505?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.compmedimag.2025.102505, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-02-05",
+          "journal": {
+            "name": "Computerized medical imaging and graphics : the official journal of the Computerized Medical Imaging Society",
+            "pages": "\n          102505\n        ",
+            "volume": "121"
+          },
+          "authors": [
+            {
+              "authorId": "2344216767",
+              "name": "Wanyuan Gong"
+            },
+            {
+              "authorId": "2112602205",
+              "name": "Yanmin Luo"
+            },
+            {
+              "authorId": "2344219245",
+              "name": "Fuxing Yang"
+            },
+            {
+              "authorId": "2344584248",
+              "name": "Huabiao Zhou"
+            },
+            {
+              "authorId": "2344210707",
+              "name": "Zhongwei Lin"
+            },
+            {
+              "authorId": "2247582147",
+              "name": "Chi Cai"
+            },
+            {
+              "authorId": "2344193918",
+              "name": "Youcao Lin"
+            },
+            {
+              "authorId": "2344195246",
+              "name": "Junyan Chen"
+            }
+          ],
+          "abstract": "In recent years, with the increasing attention from researchers towards medical imaging, deep learning-based image segmentation techniques have become mainstream in the field, requiring large amounts of manually annotated data. Annotating datasets for Intracranial Hemorrhage(ICH) is particularly tedious and costly. Few-shot segmentation holds significant potential for medical imaging. In this work, we designed a novel segmentation model CGNet to leverage a limited dataset for segmenting ICH regions, we propose a Cross Feature Module (CFM) enhances the understanding of lesion details by facilitating interaction between feature information from the query and support sets and Support Guide Query (SGQ) refines segmentation targets by integrating features from support and query sets at different scales, preserving the integrity of target feature information while further enhancing segmentation detail. We first propose transforming the ICH segmentation task into a few-shot learning problem. We evaluated our model using the publicly available BHSD dataset and the private IHSAH dataset. Our approach outperforms current state-of-the-art few-shot segmentation models, outperforming methods of 3% and 1.8% in Dice coefficient scores, respectively, and also exceeds the performance of fully supervised segmentation models with the same amount of data."
+        },
+        {
+          "paperId": "878794c70380d5af43176e3fa4b952002fd94290",
+          "externalIds": {
+            "DBLP": "journals/tgrs/WanCMLLH25",
+            "DOI": "10.1109/TGRS.2025.3610848",
+            "CorpusId": 281472137
+          },
+          "url": "https://www.semanticscholar.org/paper/878794c70380d5af43176e3fa4b952002fd94290",
+          "title": "FS-CGNet: Frequency Spectral–Channel Fusion and Cross-Scale Global Aggregation Network for Hyperspectral Image Classification",
+          "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TGRS.2025.3610848?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TGRS.2025.3610848, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "name": "IEEE Transactions on Geoscience and Remote Sensing",
+            "pages": "1-22",
+            "volume": "63"
+          },
+          "authors": [
+            {
+              "authorId": "2283857070",
+              "name": "Xiaoqing Wan"
+            },
+            {
+              "authorId": "2284214701",
+              "name": "Feng Chen"
+            },
+            {
+              "authorId": "2347501489",
+              "name": "Dongtao Mo"
+            },
+            {
+              "authorId": "2329728738",
+              "name": "Hui Liu"
+            },
+            {
+              "authorId": "2329716506",
+              "name": "Zhize Li"
+            },
+            {
+              "authorId": "2380680148",
+              "name": "Kun Hu"
+            }
+          ],
+          "abstract": "Hyperspectral image (HSI) classification is a challenging task due to the high-dimensional attribute of the data and the scarcity of labeled samples. Many existing models struggle to simultaneously capture both local structural features and global patterns, limiting their ability to handle complex HSI tasks to some extent. Furthermore, they often fail to efficiently process multiscale and multifrequency information, resulting in suboptimal performance. To address these challenges, we propose FS-CGNet, a novel framework that integrates frequency spectral–channel fusion and cross-scale global aggregation networks for HSI classification. FS-CGNet introduces three key components: 1) a frequency-domain spectral feature extraction module (FDSFM) that utilizes techniques like fast Fourier transform (FFT) to capture multiscale and multifrequency information, improving the ability to discriminate local and global features; 2) a multiscale spectral–channel fusion attention module (MSFAM) that adaptively emphasizes critical spectral channels, enhancing classification accuracy and robustness; and 3) a cross-scale global aggregation module (CGAM) that aggregates features from multiple scales, ensuring optimal utilization of cross-scale information and improving overall classification performance. Comprehensive experiments on four benchmark HSI datasets (Pavia University, Salinas, WHU-Hi-LongKou, and Xiong An) demonstrate that FS-CGNet achieves the state-of-the-art performance, comparable to several leading methods in the field. The code of this work is available at https://github.com/wanxiaoqing/FS-CGNet"
+        },
+        {
+          "paperId": "d25503c9849e17a9dd31097ea4498b529bf1fa7a",
+          "externalIds": {
+            "DBLP": "journals/corr/abs-2503-02578",
+            "ArXiv": "2503.02578",
+            "DOI": "10.48550/arXiv.2503.02578",
+            "CorpusId": 276776912
+          },
+          "url": "https://www.semanticscholar.org/paper/d25503c9849e17a9dd31097ea4498b529bf1fa7a",
+          "title": "TS-CGNet: Temporal-Spatial Fusion Meets Centerline-Guided Diffusion for BEV Mapping",
+          "venue": "arXiv.org",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.02578, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-03-04",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/2503.02578"
+          },
+          "authors": [
+            {
+              "authorId": "2260970521",
+              "name": "Xinying Hong"
+            },
+            {
+              "authorId": "2216558499",
+              "name": "Siyu Li"
+            },
+            {
+              "authorId": "2275649180",
+              "name": "Kang Zeng"
+            },
+            {
+              "authorId": "2348769819",
+              "name": "Hao Shi"
+            },
+            {
+              "authorId": "2262216482",
+              "name": "Bo Peng"
+            },
+            {
+              "authorId": "8689702",
+              "name": "Kailun Yang"
+            },
+            {
+              "authorId": "2281901856",
+              "name": "Zhiyong Li"
+            }
+          ],
+          "abstract": "Bird's Eye View (BEV) perception technology is crucial for autonomous driving, as it generates top-down 2D maps for environment perception, navigation, and decision-making. Nevertheless, the majority of current BEV map generation studies focusing on visual map generation lack depth-aware reasoning capabilities. They exhibit limited efficacy in managing occlusions and handling complex environments, with a notable decline in perceptual performance under adverse weather conditions or low-light scenarios. Therefore, this paper proposes TS-CGNet, which leverages Temporal-Spatial fusion with Centerline-Guided diffusion. This visual framework, grounded in prior knowledge, is designed for integration into any existing network for building BEV maps. Specifically, this framework is decoupled into three parts: Local mapping system involves the initial generation of semantic maps using purely visual information; The Temporal-Spatial Aligner Module (TSAM) integrates historical information into mapping generation by applying transformation matrices; The Centerline-Guided Diffusion Model (CGDM) is a prediction module based on the diffusion model. CGDM incorporates centerline information through spatial-attention mechanisms to enhance semantic segmentation reconstruction. We construct BEV semantic segmentation maps by our methods on the public nuScenes and the robustness benchmarks under various corruptions. Our method improves 1.90%, 1.73%, and 2.87% for perceived ranges of 60x30m, 120x60m, and 240x60m in the task of BEV HD mapping. TS-CGNet attains an improvement of 1.92% for perceived ranges of 100x100m in the task of BEV semantic mapping. Moreover, TS-CGNet achieves an average improvement of 2.92% in detection accuracy under varying weather conditions and sensor interferences in the perception range of 240x60m. The source code will be publicly available at https://github.com/krabs-H/TS-CGNet."
+        },
+        {
+          "paperId": "248c2f64e2a686797130395f63c50f0930b61b81",
+          "externalIds": {
+            "DBLP": "conf/icassp/LvXGZWS25",
+            "DOI": "10.1109/ICASSP49660.2025.10887704",
+            "CorpusId": 276972231
+          },
+          "url": "https://www.semanticscholar.org/paper/248c2f64e2a686797130395f63c50f0930b61b81",
+          "title": "CGNet: Classification-Guided Multi-Task Interactive Network for Hyperspectral and Multispectral Image Fusion",
+          "venue": "IEEE International Conference on Acoustics, Speech, and Signal Processing",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICASSP49660.2025.10887704?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICASSP49660.2025.10887704, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2025-04-06",
+          "journal": {
+            "name": "ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+            "pages": "1-5"
+          },
+          "authors": [
+            {
+              "authorId": "2239869196",
+              "name": "Guohua Lv"
+            },
+            {
+              "authorId": "2323308961",
+              "name": "Yanlong Xu"
+            },
+            {
+              "authorId": "2321065209",
+              "name": "Yongbiao Gao"
+            },
+            {
+              "authorId": "2239844600",
+              "name": "Guixin Zhao"
+            },
+            {
+              "authorId": "2350384419",
+              "name": "Guotao Wang"
+            },
+            {
+              "authorId": "2337775932",
+              "name": "Xiangcheng Sun"
+            }
+          ],
+          "abstract": "The goal of fusing hyperspectral images (HSI) and multispectral images (MSI) is to generate high-resolution hyperspectral images for downstream tasks. However, most existing methods overlook the specific requirements of these tasks, leading to a gap between the fusion process and its subsequent applications due to insufficient guidance from downstream tasks. To address this issue, we propose a classification-guided multitask interactive network (CGNet) that integrates both fusion and classification tasks into a unified framework, with two branches producing the fused image and classification results, respectively. In the fusion branch, we design a multi-level residual refinement module to efficiently integrate spatial and spectral information. Additionally, an attention-based multi-scale fusion module, incorporating both spatial and channel attention, is carefully crafted to enhance representation learning. In the classification branch, both 2-D and 3-D convolutions are employed to improve classification performance. Moreover, an information interaction module is proposed to guide the fusion task based on classification outcomes. Extensive experiments demonstrate that our method outperforms state-of-the-art approaches on the Pavia Centre and Pavia University datasets."
+        },
+        {
+          "paperId": "f1097f375bd688f7cb098bf0e639879eb2308fa1",
+          "externalIds": {
+            "DOI": "10.3390/rs17193305",
+            "CorpusId": 281628751
+          },
+          "url": "https://www.semanticscholar.org/paper/f1097f375bd688f7cb098bf0e639879eb2308fa1",
+          "title": "CGNet: Remote Sensing Instance Segmentation Method Using Contrastive Language–Image Pretraining and Gated Recurrent Units",
+          "venue": "Remote Sensing",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/rs17193305?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/rs17193305, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-09-26",
+          "journal": {
+            "name": "Remote Sensing"
+          },
+          "authors": [
+            {
+              "authorId": "2267498325",
+              "name": "Hui Zhang"
+            },
+            {
+              "authorId": "2268027803",
+              "name": "Zhaoxia Tian"
+            },
+            {
+              "authorId": "2237405040",
+              "name": "Zhong Chen"
+            },
+            {
+              "authorId": "2296790759",
+              "name": "Tianhang Liu"
+            },
+            {
+              "authorId": "2237387426",
+              "name": "Xueru Xu"
+            },
+            {
+              "authorId": "2275608512",
+              "name": "Junsong Leng"
+            },
+            {
+              "authorId": "2088921979",
+              "name": "Xinyuan Qi"
+            }
+          ],
+          "abstract": "Instance segmentation in remote sensing imagery is a significant application area within computer vision, holding considerable value in fields such as land planning and aerospace. The target scales of remote sensing images are often small, the contours of different categories of targets can be remarkably similar, and the background information is complex, containing more noise interference. Therefore, it is essential for the network model to utilize the background and internal instance information more effectively. Considering all the above, to fully adapt to the characteristics of remote sensing images, a network named CGNet, which combines an enhanced backbone with a contour–mask branch, is proposed. This network employs gated recurrent units for the iteration of contour and mask branches and adopts the attention head for branch fusion. Additionally, to address the common issues of missed and misdetections in target detection, a supervised backbone network using contrastive pretraining for feature supplementation is introduced. The proposed method has been experimentally validated in the NWPU VHR-10 and SSDD datasets, achieving average precision metrics of 68.1% and 67.4%, respectively, which are 0.9% and 3.2% higher than those of the suboptimal methods."
+        },
+        {
+          "paperId": "e77809847a4e37710e4c60569ecc3159edd1c2d8",
+          "externalIds": {
+            "DOI": "10.1177/27541231251318348",
+            "CorpusId": 276805237
+          },
+          "url": "https://www.semanticscholar.org/paper/e77809847a4e37710e4c60569ecc3159edd1c2d8",
+          "title": "CGNet-PIE: A causal generative approach for urban planning intervention effect estimation",
+          "venue": "Transactions in Urban Data, Science, and Technology",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1177/27541231251318348?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1177/27541231251318348, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-03-01",
+          "journal": {
+            "name": "Transactions in Urban Data, Science, and Technology",
+            "pages": "3 - 21",
+            "volume": "4"
+          },
+          "authors": [
+            {
+              "authorId": "2307403438",
+              "name": "Zhou Fang"
+            },
+            {
+              "authorId": "2349582286",
+              "name": "Qianmu Zheng"
+            },
+            {
+              "authorId": "2307567405",
+              "name": "Shuwen Zheng"
+            },
+            {
+              "authorId": "2304713401",
+              "name": "Liang Zhao"
+            }
+          ],
+          "abstract": "A critical challenge for urban planners lies in estimating the potential impacts of planning interventions before their implementation. Current approaches to urban planning intervention effect estimation encounter notable constraints. Association modelling approaches, while effective at capturing complex relationships between interventions and outcomes in observed cases, fail to estimate causal effects, making them unreliable for counterfactual predictions. Operational modelling approaches frequently set up structural causal models to transform interventions into outcomes based on subjective assumptions about simplified causal relationships. These approaches, while achieving a clear representation of causality, compromise the ability to accurately model the dynamic and intricate nature of cities and human behaviour. This paper introduces the Causal Generative Network for Planning Intervention Effect estimation (CGNet-PIE), a lightweight yet robust approach that directly estimates causal effects from observed data without the need for fully articulated causal interaction models. By integrating generative deep learning with the Rubin Causal Model, CGNet-PIE effectively captures non-linear relationships and enhances causal inference for reliable and generalizable counterfactual predictions. Experiments on synthetic, semi-synthetic, and real-world datasets demonstrate CGNet-PIE’s superior accuracy and generalization compared to baseline models. CGNet-PIE offers a powerful tool for planners to improve decision-making for informed policymaking and optimal resource allocation."
+        },
+        {
+          "paperId": "2798f8bdc910388620b61e13702994567fa9232f",
+          "externalIds": {
+            "DBLP": "journals/pr/HuLLZLZ25",
+            "DOI": "10.1016/j.patcog.2025.111767",
+            "CorpusId": 278545571
+          },
+          "url": "https://www.semanticscholar.org/paper/2798f8bdc910388620b61e13702994567fa9232f",
+          "title": "ST-CGNet: A spatiotemporal gesture recognition network with triplet attention and dual feature fusion",
+          "venue": "Pattern Recognition",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.patcog.2025.111767?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.patcog.2025.111767, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-05-01",
+          "journal": {
+            "name": "Pattern Recognit.",
+            "pages": "111767",
+            "volume": "167"
+          },
+          "authors": [
+            {
+              "authorId": "2146555603",
+              "name": "Jing Hu"
+            },
+            {
+              "authorId": "2268239799",
+              "name": "Songtao Liu"
+            },
+            {
+              "authorId": "2266744708",
+              "name": "Mingzhou Liu"
+            },
+            {
+              "authorId": "2283251922",
+              "name": "Tingyu Zhou"
+            },
+            {
+              "authorId": "2280102737",
+              "name": "Jiale Lu"
+            },
+            {
+              "authorId": "2297532171",
+              "name": "X. Zuo"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "06c886074277f6e557b8164a3f1b8cc52c16873e",
+          "externalIds": {
+            "DBLP": "journals/gandc/RenZDYLDCL25",
+            "DOI": "10.1016/j.cageo.2025.106012",
+            "CorpusId": 280107272
+          },
+          "url": "https://www.semanticscholar.org/paper/06c886074277f6e557b8164a3f1b8cc52c16873e",
+          "title": "DAM-CGNet: Semantic segmentation-based approach for valley-bottom extraction from digital elevation models",
+          "venue": "Computational Geosciences",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.cageo.2025.106012?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.cageo.2025.106012, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-11-01",
+          "journal": {
+            "name": "Comput. Geosci.",
+            "pages": "106012",
+            "volume": "205"
+          },
+          "authors": [
+            {
+              "authorId": "2372496169",
+              "name": "Yuhan Ren"
+            },
+            {
+              "authorId": "2161344117",
+              "name": "Hongming Zhang"
+            },
+            {
+              "authorId": "2280103716",
+              "name": "Liang Dong"
+            },
+            {
+              "authorId": "2374120113",
+              "name": "Huanyu Yang"
+            },
+            {
+              "authorId": "2280089302",
+              "name": "Hongyi Li"
+            },
+            {
+              "authorId": "2374374031",
+              "name": "Lu Du"
+            },
+            {
+              "authorId": "2372386524",
+              "name": "Qiankun Chen"
+            },
+            {
+              "authorId": "2387980542",
+              "name": "Songyuan Li"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "7fd2604e477f941ea6db921b6efaadede6c29490",
+          "externalIds": {
+            "DBLP": "journals/tmi/ChangLX25",
+            "DOI": "10.1109/TMI.2024.3505853",
+            "CorpusId": 274297914,
+            "PubMed": "40030290"
+          },
+          "url": "https://www.semanticscholar.org/paper/7fd2604e477f941ea6db921b6efaadede6c29490",
+          "title": "CGNet: A Correlation-Guided Registration Network for Unsupervised Deformable Image Registration",
+          "venue": "IEEE Transactions on Medical Imaging",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/TMI.2024.3505853?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/TMI.2024.3505853, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-11-25",
+          "journal": {
+            "name": "IEEE Transactions on Medical Imaging",
+            "pages": "1468-1479",
+            "volume": "44"
+          },
+          "authors": [
+            {
+              "authorId": "2332583052",
+              "name": "Yuan Chang"
+            },
+            {
+              "authorId": "2194681044",
+              "name": "Zheng Li"
+            },
+            {
+              "authorId": "2152918213",
+              "name": "Wenzheng Xu"
+            }
+          ],
+          "abstract": "Deformable medical image registration plays a significant role in medical image analysis. With the advancement of deep neural networks, learning-based deformable registration methods have made great strides due to their ability to perform fast end-to-end registration and their competitive performance compared to traditional methods. However, these methods primarily improve registration performance by replacing specific layers of the encoder-decoder architecture designed for segmentation tasks with advanced network structures like Transformers, overlooking the crucial difference between these two tasks, which is feature matching. In this paper, we propose a novel correlation-guided registration network (CGNet) specifically designed for deformable medical image registration tasks, which achieves a reasonable and accurate registration through three main components: dual-stream encoder, correlation learning module, and coarse-to-fine decoder. Specifically, the dual-stream encoder is used to independently extract hierarchical features from a moving image and a fixed image. The correlation learning module is used to calculate correlation maps, enabling explicit feature matching between input image pairs. The coarse-to-fine decoder outputs deformation sub-fields for each decoding layer in a coarse-to-fine manner, facilitating accurate estimation of the final deformation field. Extensive experiments on four 3D brain MRI datasets show that the proposed method achieves state-of-the-art performance on three evaluation metrics compared to twelve learning-based registration methods, demonstrating the potential of our model for deformable medical image registration."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false
+  },
+  "supplement_parent": null,
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-befc2cb74e50b966.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-befc2cb74e50b966.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-befc2cb74e50b966.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "e90a46667eac52fe9351f2219adf4c1f46ebcd5a4ebd2ef491e00a7235c1c4d9",
+    "chunk_count": 36,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "title": "Machine Learning of Coarse-Grained Molecular Dynamics Force Fields",
+    "authors": "Jiang Wang, Simon Olsson, Christoph Wehmeyer, Adrià Pérez, Nicholas E. Charron, Gianni de Fabritiis, Frank Noé, Cecilia Clementi",
+    "year": "2019",
+    "venue": "ACS Central Science",
+    "doi": "10.1021/acscentsci.8b00913",
+    "url": "https://doi.org/10.1021/acscentsci.8b00913",
+    "abstract": "",
+    "source_urls": [
+      "https://pubs.acs.org/doi/10.1021/acscentsci.8b00913"
+    ],
+    "source_note": "verified from first page and ACS Central Science article page",
+    "bibtex_key": "wang2019coarse"
+  },
+  "content_kind": "pdf_backed"
+}

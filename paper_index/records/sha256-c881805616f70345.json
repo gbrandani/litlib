@@ -1,0 +1,1282 @@
+{
+  "paper_id": "sha256-c881805616f70345",
+  "content_kind": "pdf_backed",
+  "addition_mode": "pdf_guided",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/protein_folding_and_design/Baker 2023 Nature - De novo design of protein structure and function with RFdiffusion.pdf",
+  "pdf_sha256": "c881805616f7034577682a0b38b043f379a9973aaf02aec2393ab91c79fddc58",
+  "filename": "Baker 2023 Nature - De novo design of protein structure and function with RFdiffusion.pdf",
+  "item_type": "article",
+  "title_query": "De novo design of protein structure and function with RFdiffusion",
+  "date_indexed": "2026-04-20T02:46:01.438354+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": null,
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "De novo design of protein structure and function with RFdiffusion",
+    "limit": 2,
+    "attempts": [
+      {
+        "query": "De novo design of protein structure and function with RFdiffusion",
+        "status": "matched",
+        "api_error": "",
+        "warnings": [],
+        "best_score": 1.0,
+        "candidate_count": 1,
+        "best_candidate": {
+          "paperId": "eb8c0df75993c1c19c51cde9345e45fc260f661c",
+          "externalIds": {
+            "PubMedCentral": "10468394",
+            "DOI": "10.1038/s41586-023-06415-8",
+            "CorpusId": 281352933,
+            "PubMed": "37433327"
+          },
+          "url": "https://www.semanticscholar.org/paper/eb8c0df75993c1c19c51cde9345e45fc260f661c",
+          "title": "De novo design of protein structure and function with RFdiffusion",
+          "venue": "Nature",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41586-023-06415-8",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10468394, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-07-11",
+          "journal": {
+            "name": "Nature",
+            "pages": "1089 - 1100",
+            "volume": "620"
+          },
+          "authors": [
+            {
+              "authorId": "2239082563",
+              "name": "Joseph L. Watson"
+            },
+            {
+              "authorId": "1840400657",
+              "name": "David Juergens"
+            },
+            {
+              "authorId": "2160034551",
+              "name": "N. Bennett"
+            },
+            {
+              "authorId": "80066929",
+              "name": "Brian L. Trippe"
+            },
+            {
+              "authorId": "2254458217",
+              "name": "Jason Yim"
+            },
+            {
+              "authorId": "2090011760",
+              "name": "Helen E. Eisenach"
+            },
+            {
+              "authorId": "2195323356",
+              "name": "Woody Ahern"
+            },
+            {
+              "authorId": "27349542",
+              "name": "Andrew J. Borst"
+            },
+            {
+              "authorId": "2302963576",
+              "name": "Robert J. Ragotte"
+            },
+            {
+              "authorId": "3741725",
+              "name": "L. Milles"
+            },
+            {
+              "authorId": "50616282",
+              "name": "B. Wicky"
+            },
+            {
+              "authorId": "10269016",
+              "name": "Nikita Hanikel"
+            },
+            {
+              "authorId": "14938784",
+              "name": "S. Pellock"
+            },
+            {
+              "authorId": "8672839",
+              "name": "A. Courbet"
+            },
+            {
+              "authorId": "5467144",
+              "name": "W. Sheffler"
+            },
+            {
+              "authorId": "2109764847",
+              "name": "Jue Wang"
+            },
+            {
+              "authorId": "153643066",
+              "name": "Preetham Venkatesh"
+            },
+            {
+              "authorId": "2132725826",
+              "name": "Isaac Sappington"
+            },
+            {
+              "authorId": "2180646302",
+              "name": "Susana Vázquez Torres"
+            },
+            {
+              "authorId": "2277257144",
+              "name": "Anna Lauko"
+            },
+            {
+              "authorId": "2202743771",
+              "name": "Valentin De Bortoli"
+            },
+            {
+              "authorId": "2274102454",
+              "name": "Emile Mathieu"
+            },
+            {
+              "authorId": "2262061218",
+              "name": "Sergey Ovchinnikov"
+            },
+            {
+              "authorId": "2254308896",
+              "name": "R. Barzilay"
+            },
+            {
+              "authorId": "35132120",
+              "name": "T. Jaakkola"
+            },
+            {
+              "authorId": "2282970204",
+              "name": "F. Dimaio"
+            },
+            {
+              "authorId": "4876886",
+              "name": "M. Baek"
+            },
+            {
+              "authorId": "2387243532",
+              "name": "David Baker"
+            }
+          ],
+          "abstract": "There has been considerable recent progress in designing new proteins using deep-learning methods^ 1 – 9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models^ 10 , 11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications. Fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks yields a generative model for protein design that achieves outstanding performance on a wide range of protein structure and function design challenges."
+        },
+        "scored_candidates": [
+          {
+            "paper_id": "eb8c0df75993c1c19c51cde9345e45fc260f661c",
+            "title": "De novo design of protein structure and function with RFdiffusion",
+            "score": 1.0,
+            "title_similarity": 1.0,
+            "query_year": 2023,
+            "candidate_year": 2023,
+            "year_bonus": 0.08,
+            "author_bonus": 0.04,
+            "venue_penalty": 0.0
+          }
+        ]
+      },
+      {
+        "query": "There has been considerable recent progress in designing new proteins using deeplearning methods1 9",
+        "status": "not_found",
+        "api_error": "",
+        "warnings": [
+          "year_hint_mismatch:2023!=2022",
+          "venue_hint_mismatch:nature!=biorxiv"
+        ],
+        "best_score": 0.07,
+        "candidate_count": 1,
+        "best_candidate": {
+          "paperId": "ad07d3499faade81e6c33069902c45b13ba90c44",
+          "externalIds": {
+            "DOI": "10.1101/2022.12.09.519842",
+            "CorpusId": 254496681
+          },
+          "url": "https://www.semanticscholar.org/paper/ad07d3499faade81e6c33069902c45b13ba90c44",
+          "title": "Broadly applicable and accurate protein design by integrating structure prediction networks and diffusion generative models",
+          "venue": "bioRxiv",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2022/12/14/2022.12.09.519842.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2022.12.09.519842?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2022.12.09.519842, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2022-12-14",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "1610516344",
+              "name": "Joseph L. Watson"
+            },
+            {
+              "authorId": "1840400657",
+              "name": "David Juergens"
+            },
+            {
+              "authorId": "2160034551",
+              "name": "N. Bennett"
+            },
+            {
+              "authorId": "80066929",
+              "name": "Brian L. Trippe"
+            },
+            {
+              "authorId": "121163131",
+              "name": "Jason Yim"
+            },
+            {
+              "authorId": "2090011760",
+              "name": "Helen E. Eisenach"
+            },
+            {
+              "authorId": "2195323356",
+              "name": "Woody Ahern"
+            },
+            {
+              "authorId": "27349542",
+              "name": "Andrew J. Borst"
+            },
+            {
+              "authorId": "150282231",
+              "name": "R. Ragotte"
+            },
+            {
+              "authorId": "3741725",
+              "name": "L. Milles"
+            },
+            {
+              "authorId": "50616282",
+              "name": "B. Wicky"
+            },
+            {
+              "authorId": "10269016",
+              "name": "Nikita Hanikel"
+            },
+            {
+              "authorId": "14938784",
+              "name": "S. Pellock"
+            },
+            {
+              "authorId": "8672839",
+              "name": "A. Courbet"
+            },
+            {
+              "authorId": "5467144",
+              "name": "W. Sheffler"
+            },
+            {
+              "authorId": "2109764847",
+              "name": "Jue Wang"
+            },
+            {
+              "authorId": "153643066",
+              "name": "Preetham Venkatesh"
+            },
+            {
+              "authorId": "2132725826",
+              "name": "Isaac Sappington"
+            },
+            {
+              "authorId": "2180646302",
+              "name": "Susana Vázquez Torres"
+            },
+            {
+              "authorId": "15725179",
+              "name": "A. Lauko"
+            },
+            {
+              "authorId": "2202743771",
+              "name": "Valentin De Bortoli"
+            },
+            {
+              "authorId": "51051483",
+              "name": "Emile Mathieu"
+            },
+            {
+              "authorId": "1741283",
+              "name": "R. Barzilay"
+            },
+            {
+              "authorId": "35132120",
+              "name": "T. Jaakkola"
+            },
+            {
+              "authorId": "2210247",
+              "name": "F. DiMaio"
+            },
+            {
+              "authorId": "4876886",
+              "name": "M. Baek"
+            },
+            {
+              "authorId": "2118774034",
+              "name": "D. Baker"
+            }
+          ],
+          "abstract": "There has been considerable recent progress in designing new proteins using deep learning methods1–9. Despite this progress, a general deep learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher order symmetric architectures, has yet to be described. Diffusion models10,11 have had considerable success in image and language generative modeling but limited success when applied to protein modeling, likely due to the complexity of protein backbone geometry and sequence-structure relationships. Here we show that by fine tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding, and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold Diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of new designs. In a manner analogous to networks which produce images from user-specified inputs, RFdiffusion enables the design of diverse, complex, functional proteins from simple molecular specifications."
+        },
+        "scored_candidates": [
+          {
+            "paper_id": "ad07d3499faade81e6c33069902c45b13ba90c44",
+            "title": "Broadly applicable and accurate protein design by integrating structure prediction networks and diffusion generative models",
+            "score": 0.07,
+            "title_similarity": 0.0,
+            "query_year": 2023,
+            "candidate_year": 2022,
+            "year_bonus": 0.03,
+            "author_bonus": 0.04,
+            "venue_penalty": 0.0
+          }
+        ]
+      }
+    ],
+    "selected_paper_id": "eb8c0df75993c1c19c51cde9345e45fc260f661c",
+    "best_candidate": {
+      "paperId": "eb8c0df75993c1c19c51cde9345e45fc260f661c",
+      "externalIds": {
+        "PubMedCentral": "10468394",
+        "DOI": "10.1038/s41586-023-06415-8",
+        "CorpusId": 281352933,
+        "PubMed": "37433327"
+      },
+      "url": "https://www.semanticscholar.org/paper/eb8c0df75993c1c19c51cde9345e45fc260f661c",
+      "title": "De novo design of protein structure and function with RFdiffusion",
+      "venue": "Nature",
+      "year": 2023,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1038/s41586-023-06415-8",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10468394, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2023-07-11",
+      "journal": {
+        "name": "Nature",
+        "pages": "1089 - 1100",
+        "volume": "620"
+      },
+      "authors": [
+        {
+          "authorId": "2239082563",
+          "name": "Joseph L. Watson"
+        },
+        {
+          "authorId": "1840400657",
+          "name": "David Juergens"
+        },
+        {
+          "authorId": "2160034551",
+          "name": "N. Bennett"
+        },
+        {
+          "authorId": "80066929",
+          "name": "Brian L. Trippe"
+        },
+        {
+          "authorId": "2254458217",
+          "name": "Jason Yim"
+        },
+        {
+          "authorId": "2090011760",
+          "name": "Helen E. Eisenach"
+        },
+        {
+          "authorId": "2195323356",
+          "name": "Woody Ahern"
+        },
+        {
+          "authorId": "27349542",
+          "name": "Andrew J. Borst"
+        },
+        {
+          "authorId": "2302963576",
+          "name": "Robert J. Ragotte"
+        },
+        {
+          "authorId": "3741725",
+          "name": "L. Milles"
+        },
+        {
+          "authorId": "50616282",
+          "name": "B. Wicky"
+        },
+        {
+          "authorId": "10269016",
+          "name": "Nikita Hanikel"
+        },
+        {
+          "authorId": "14938784",
+          "name": "S. Pellock"
+        },
+        {
+          "authorId": "8672839",
+          "name": "A. Courbet"
+        },
+        {
+          "authorId": "5467144",
+          "name": "W. Sheffler"
+        },
+        {
+          "authorId": "2109764847",
+          "name": "Jue Wang"
+        },
+        {
+          "authorId": "153643066",
+          "name": "Preetham Venkatesh"
+        },
+        {
+          "authorId": "2132725826",
+          "name": "Isaac Sappington"
+        },
+        {
+          "authorId": "2180646302",
+          "name": "Susana Vázquez Torres"
+        },
+        {
+          "authorId": "2277257144",
+          "name": "Anna Lauko"
+        },
+        {
+          "authorId": "2202743771",
+          "name": "Valentin De Bortoli"
+        },
+        {
+          "authorId": "2274102454",
+          "name": "Emile Mathieu"
+        },
+        {
+          "authorId": "2262061218",
+          "name": "Sergey Ovchinnikov"
+        },
+        {
+          "authorId": "2254308896",
+          "name": "R. Barzilay"
+        },
+        {
+          "authorId": "35132120",
+          "name": "T. Jaakkola"
+        },
+        {
+          "authorId": "2282970204",
+          "name": "F. Dimaio"
+        },
+        {
+          "authorId": "4876886",
+          "name": "M. Baek"
+        },
+        {
+          "authorId": "2387243532",
+          "name": "David Baker"
+        }
+      ],
+      "abstract": "There has been considerable recent progress in designing new proteins using deep-learning methods^ 1 – 9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models^ 10 , 11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications. Fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks yields a generative model for protein design that achieves outstanding performance on a wide range of protein structure and function design challenges."
+    },
+    "merged_candidates": [
+      {
+        "identity": "paper:eb8c0df75993c1c19c51cde9345e45fc260f661c",
+        "candidate": {
+          "paperId": "eb8c0df75993c1c19c51cde9345e45fc260f661c",
+          "externalIds": {
+            "PubMedCentral": "10468394",
+            "DOI": "10.1038/s41586-023-06415-8",
+            "CorpusId": 281352933,
+            "PubMed": "37433327"
+          },
+          "url": "https://www.semanticscholar.org/paper/eb8c0df75993c1c19c51cde9345e45fc260f661c",
+          "title": "De novo design of protein structure and function with RFdiffusion",
+          "venue": "Nature",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1038/s41586-023-06415-8",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10468394, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-07-11",
+          "journal": {
+            "name": "Nature",
+            "pages": "1089 - 1100",
+            "volume": "620"
+          },
+          "authors": [
+            {
+              "authorId": "2239082563",
+              "name": "Joseph L. Watson"
+            },
+            {
+              "authorId": "1840400657",
+              "name": "David Juergens"
+            },
+            {
+              "authorId": "2160034551",
+              "name": "N. Bennett"
+            },
+            {
+              "authorId": "80066929",
+              "name": "Brian L. Trippe"
+            },
+            {
+              "authorId": "2254458217",
+              "name": "Jason Yim"
+            },
+            {
+              "authorId": "2090011760",
+              "name": "Helen E. Eisenach"
+            },
+            {
+              "authorId": "2195323356",
+              "name": "Woody Ahern"
+            },
+            {
+              "authorId": "27349542",
+              "name": "Andrew J. Borst"
+            },
+            {
+              "authorId": "2302963576",
+              "name": "Robert J. Ragotte"
+            },
+            {
+              "authorId": "3741725",
+              "name": "L. Milles"
+            },
+            {
+              "authorId": "50616282",
+              "name": "B. Wicky"
+            },
+            {
+              "authorId": "10269016",
+              "name": "Nikita Hanikel"
+            },
+            {
+              "authorId": "14938784",
+              "name": "S. Pellock"
+            },
+            {
+              "authorId": "8672839",
+              "name": "A. Courbet"
+            },
+            {
+              "authorId": "5467144",
+              "name": "W. Sheffler"
+            },
+            {
+              "authorId": "2109764847",
+              "name": "Jue Wang"
+            },
+            {
+              "authorId": "153643066",
+              "name": "Preetham Venkatesh"
+            },
+            {
+              "authorId": "2132725826",
+              "name": "Isaac Sappington"
+            },
+            {
+              "authorId": "2180646302",
+              "name": "Susana Vázquez Torres"
+            },
+            {
+              "authorId": "2277257144",
+              "name": "Anna Lauko"
+            },
+            {
+              "authorId": "2202743771",
+              "name": "Valentin De Bortoli"
+            },
+            {
+              "authorId": "2274102454",
+              "name": "Emile Mathieu"
+            },
+            {
+              "authorId": "2262061218",
+              "name": "Sergey Ovchinnikov"
+            },
+            {
+              "authorId": "2254308896",
+              "name": "R. Barzilay"
+            },
+            {
+              "authorId": "35132120",
+              "name": "T. Jaakkola"
+            },
+            {
+              "authorId": "2282970204",
+              "name": "F. Dimaio"
+            },
+            {
+              "authorId": "4876886",
+              "name": "M. Baek"
+            },
+            {
+              "authorId": "2387243532",
+              "name": "David Baker"
+            }
+          ],
+          "abstract": "There has been considerable recent progress in designing new proteins using deep-learning methods^ 1 – 9 . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models^ 10 , 11 have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications. Fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks yields a generative model for protein design that achieves outstanding performance on a wide range of protein structure and function design challenges."
+        },
+        "query": "De novo design of protein structure and function with RFdiffusion",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "candidate_year": 2023
+      },
+      {
+        "identity": "paper:ad07d3499faade81e6c33069902c45b13ba90c44",
+        "candidate": {
+          "paperId": "ad07d3499faade81e6c33069902c45b13ba90c44",
+          "externalIds": {
+            "DOI": "10.1101/2022.12.09.519842",
+            "CorpusId": 254496681
+          },
+          "url": "https://www.semanticscholar.org/paper/ad07d3499faade81e6c33069902c45b13ba90c44",
+          "title": "Broadly applicable and accurate protein design by integrating structure prediction networks and diffusion generative models",
+          "venue": "bioRxiv",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2022/12/14/2022.12.09.519842.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYND",
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2022.12.09.519842?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2022.12.09.519842, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2022-12-14",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "1610516344",
+              "name": "Joseph L. Watson"
+            },
+            {
+              "authorId": "1840400657",
+              "name": "David Juergens"
+            },
+            {
+              "authorId": "2160034551",
+              "name": "N. Bennett"
+            },
+            {
+              "authorId": "80066929",
+              "name": "Brian L. Trippe"
+            },
+            {
+              "authorId": "121163131",
+              "name": "Jason Yim"
+            },
+            {
+              "authorId": "2090011760",
+              "name": "Helen E. Eisenach"
+            },
+            {
+              "authorId": "2195323356",
+              "name": "Woody Ahern"
+            },
+            {
+              "authorId": "27349542",
+              "name": "Andrew J. Borst"
+            },
+            {
+              "authorId": "150282231",
+              "name": "R. Ragotte"
+            },
+            {
+              "authorId": "3741725",
+              "name": "L. Milles"
+            },
+            {
+              "authorId": "50616282",
+              "name": "B. Wicky"
+            },
+            {
+              "authorId": "10269016",
+              "name": "Nikita Hanikel"
+            },
+            {
+              "authorId": "14938784",
+              "name": "S. Pellock"
+            },
+            {
+              "authorId": "8672839",
+              "name": "A. Courbet"
+            },
+            {
+              "authorId": "5467144",
+              "name": "W. Sheffler"
+            },
+            {
+              "authorId": "2109764847",
+              "name": "Jue Wang"
+            },
+            {
+              "authorId": "153643066",
+              "name": "Preetham Venkatesh"
+            },
+            {
+              "authorId": "2132725826",
+              "name": "Isaac Sappington"
+            },
+            {
+              "authorId": "2180646302",
+              "name": "Susana Vázquez Torres"
+            },
+            {
+              "authorId": "15725179",
+              "name": "A. Lauko"
+            },
+            {
+              "authorId": "2202743771",
+              "name": "Valentin De Bortoli"
+            },
+            {
+              "authorId": "51051483",
+              "name": "Emile Mathieu"
+            },
+            {
+              "authorId": "1741283",
+              "name": "R. Barzilay"
+            },
+            {
+              "authorId": "35132120",
+              "name": "T. Jaakkola"
+            },
+            {
+              "authorId": "2210247",
+              "name": "F. DiMaio"
+            },
+            {
+              "authorId": "4876886",
+              "name": "M. Baek"
+            },
+            {
+              "authorId": "2118774034",
+              "name": "D. Baker"
+            }
+          ],
+          "abstract": "There has been considerable recent progress in designing new proteins using deep learning methods1–9. Despite this progress, a general deep learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher order symmetric architectures, has yet to be described. Diffusion models10,11 have had considerable success in image and language generative modeling but limited success when applied to protein modeling, likely due to the complexity of protein backbone geometry and sequence-structure relationships. Here we show that by fine tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding, and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold Diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of new designs. In a manner analogous to networks which produce images from user-specified inputs, RFdiffusion enables the design of diverse, complex, functional proteins from simple molecular specifications."
+        },
+        "query": "There has been considerable recent progress in designing new proteins using deeplearning methods1 9",
+        "score": 0.07,
+        "title_similarity": 0.0,
+        "candidate_year": 2022
+      }
+    ]
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-c881805616f70345.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-c881805616f70345.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-c881805616f70345.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "18083d7ef97b10e2d89ae0441a037b55cad5135cc1e226b2223fad1ce1520afd",
+    "chunk_count": 62,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1038/s41586-023-06415-8",
+      "DOI": "10.1038/s41586-023-06415-8",
+      "type": "journal-article",
+      "issue": "7976",
+      "author": [
+        {
+          "given": "Joseph L.",
+          "family": "Watson",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "David",
+          "family": "Juergens",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8590-1454",
+          "authenticated-orcid": false,
+          "given": "Nathaniel R.",
+          "family": "Bennett",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Brian L.",
+          "family": "Trippe",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0575-7400",
+          "authenticated-orcid": false,
+          "given": "Jason",
+          "family": "Yim",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Helen E.",
+          "family": "Eisenach",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Woody",
+          "family": "Ahern",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4297-7824",
+          "authenticated-orcid": false,
+          "given": "Andrew J.",
+          "family": "Borst",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Robert J.",
+          "family": "Ragotte",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8417-3205",
+          "authenticated-orcid": false,
+          "given": "Lukas F.",
+          "family": "Milles",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2501-7875",
+          "authenticated-orcid": false,
+          "given": "Basile I. M.",
+          "family": "Wicky",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3292-5070",
+          "authenticated-orcid": false,
+          "given": "Nikita",
+          "family": "Hanikel",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7557-7985",
+          "authenticated-orcid": false,
+          "given": "Samuel J.",
+          "family": "Pellock",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0539-7011",
+          "authenticated-orcid": false,
+          "given": "Alexis",
+          "family": "Courbet",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "William",
+          "family": "Sheffler",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Jue",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Preetham",
+          "family": "Venkatesh",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Isaac",
+          "family": "Sappington",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Susana Vázquez",
+          "family": "Torres",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Anna",
+          "family": "Lauko",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Valentin",
+          "family": "De Bortoli",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Emile",
+          "family": "Mathieu",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2774-2744",
+          "authenticated-orcid": false,
+          "given": "Sergey",
+          "family": "Ovchinnikov",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Regina",
+          "family": "Barzilay",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2199-0379",
+          "authenticated-orcid": false,
+          "given": "Tommi S.",
+          "family": "Jaakkola",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Frank",
+          "family": "DiMaio",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3414-9404",
+          "authenticated-orcid": false,
+          "given": "Minkyung",
+          "family": "Baek",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7896-6217",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Baker",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "ISSN": [
+        "0028-0836",
+        "1476-4687"
+      ],
+      "page": "1089-1100",
+      "container-title": [
+        "Nature"
+      ],
+      "title": [
+        "De novo design of protein structure and function with RFdiffusion"
+      ],
+      "publisher": "Springer Science and Business Media LLC",
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    There has been considerable recent progress in designing new proteins using deep-learning methods\n                    <jats:sup>1–9</jats:sup>\n                    . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models\n                    <jats:sup>10,11</jats:sup>\n                    have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.\n                  </jats:p>",
+      "issued": {
+        "date-parts": [
+          [
+            2023,
+            7,
+            11
+          ]
+        ]
+      },
+      "volume": "620"
+    },
+    "accepted_score": 1.1600000000000001,
+    "accepted": true,
+    "accepted_doi": "10.1038/s41586-023-06415-8",
+    "best_candidate_doi": "10.1038/s41586-023-06415-8",
+    "crossref_attempts": [
+      {
+        "doi": "10.1038/s41586-023-06415-8",
+        "source_region": "first_page",
+        "position": 92,
+        "context": "age 1] De novo design of protein structure and function with RFdiffusion https://doi.org/10.1038/s41586-023-06415-8 Received: 14 December 2022 Accepted: 7 July 2023 Published online: 11 July 2023 Open acce",
+        "priority_score": 0.83,
+        "score": 1.1600000000000001,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1038/s41586-023-06415-8",
+          "DOI": "10.1038/s41586-023-06415-8",
+          "type": "journal-article",
+          "issue": "7976",
+          "author": [
+            {
+              "given": "Joseph L.",
+              "family": "Watson",
+              "sequence": "first",
+              "affiliation": []
+            },
+            {
+              "given": "David",
+              "family": "Juergens",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-8590-1454",
+              "authenticated-orcid": false,
+              "given": "Nathaniel R.",
+              "family": "Bennett",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Brian L.",
+              "family": "Trippe",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0575-7400",
+              "authenticated-orcid": false,
+              "given": "Jason",
+              "family": "Yim",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Helen E.",
+              "family": "Eisenach",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Woody",
+              "family": "Ahern",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-4297-7824",
+              "authenticated-orcid": false,
+              "given": "Andrew J.",
+              "family": "Borst",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Robert J.",
+              "family": "Ragotte",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-8417-3205",
+              "authenticated-orcid": false,
+              "given": "Lukas F.",
+              "family": "Milles",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2501-7875",
+              "authenticated-orcid": false,
+              "given": "Basile I. M.",
+              "family": "Wicky",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-3292-5070",
+              "authenticated-orcid": false,
+              "given": "Nikita",
+              "family": "Hanikel",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-7557-7985",
+              "authenticated-orcid": false,
+              "given": "Samuel J.",
+              "family": "Pellock",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-0539-7011",
+              "authenticated-orcid": false,
+              "given": "Alexis",
+              "family": "Courbet",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "William",
+              "family": "Sheffler",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Jue",
+              "family": "Wang",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Preetham",
+              "family": "Venkatesh",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Isaac",
+              "family": "Sappington",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Susana Vázquez",
+              "family": "Torres",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Anna",
+              "family": "Lauko",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Valentin",
+              "family": "De Bortoli",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Emile",
+              "family": "Mathieu",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-2774-2744",
+              "authenticated-orcid": false,
+              "given": "Sergey",
+              "family": "Ovchinnikov",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Regina",
+              "family": "Barzilay",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0002-2199-0379",
+              "authenticated-orcid": false,
+              "given": "Tommi S.",
+              "family": "Jaakkola",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "given": "Frank",
+              "family": "DiMaio",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0003-3414-9404",
+              "authenticated-orcid": false,
+              "given": "Minkyung",
+              "family": "Baek",
+              "sequence": "additional",
+              "affiliation": []
+            },
+            {
+              "ORCID": "https://orcid.org/0000-0001-7896-6217",
+              "authenticated-orcid": false,
+              "given": "David",
+              "family": "Baker",
+              "sequence": "additional",
+              "affiliation": []
+            }
+          ],
+          "ISSN": [
+            "0028-0836",
+            "1476-4687"
+          ],
+          "page": "1089-1100",
+          "container-title": [
+            "Nature"
+          ],
+          "title": [
+            "De novo design of protein structure and function with RFdiffusion"
+          ],
+          "publisher": "Springer Science and Business Media LLC",
+          "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    There has been considerable recent progress in designing new proteins using deep-learning methods\n                    <jats:sup>1–9</jats:sup>\n                    . Despite this progress, a general deep-learning framework for protein design that enables solution of a wide range of design challenges, including de novo binder design and design of higher-order symmetric architectures, has yet to be described. Diffusion models\n                    <jats:sup>10,11</jats:sup>\n                    have had considerable success in image and language generative modelling but limited success when applied to protein modelling, probably due to the complexity of protein backbone geometry and sequence–structure relationships. Here we show that by fine-tuning the RoseTTAFold structure prediction network on protein structure denoising tasks, we obtain a generative model of protein backbones that achieves outstanding performance on unconditional and topology-constrained protein monomer design, protein binder design, symmetric oligomer design, enzyme active site scaffolding and symmetric motif scaffolding for therapeutic and metal-binding protein design. We demonstrate the power and generality of the method, called RoseTTAFold diffusion (RFdiffusion), by experimentally characterizing the structures and functions of hundreds of designed symmetric assemblies, metal-binding proteins and protein binders. The accuracy of RFdiffusion is confirmed by the cryogenic electron microscopy structure of a designed binder in complex with influenza haemagglutinin that is nearly identical to the design model. In a manner analogous to networks that produce images from user-specified inputs, RFdiffusion enables the design of diverse functional proteins from simple molecular specifications.\n                  </jats:p>",
+          "issued": {
+            "date-parts": [
+              [
+                2023,
+                7,
+                11
+              ]
+            ]
+          },
+          "volume": "620"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "doi_candidates": [
+    "10.1038/s41586-023-06415-8"
+  ],
+  "doi_candidate_details": [
+    {
+      "doi": "10.1038/s41586-023-06415-8",
+      "source_region": "first_page",
+      "position": 92,
+      "context": "age 1] De novo design of protein structure and function with RFdiffusion https://doi.org/10.1038/s41586-023-06415-8 Received: 14 December 2022 Accepted: 7 July 2023 Published online: 11 July 2023 Open acce",
+      "priority_score": 0.83
+    }
+  ],
+  "crossref_warnings": [],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:10:48.107414+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1038/s41586-023-06415-8",
+    "score": 1.1600000000000001
+  }
+}

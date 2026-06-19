@@ -1,0 +1,2036 @@
+{
+  "paper_id": "sha256-ae23332c6c5b5efe",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/3d_genome_theory/Zhang 2019 PCB - Predicting three-dimensional genome organization with chromatin states.pdf",
+  "pdf_sha256": "ae23332c6c5b5efe30f10a3dcce3dd4e806680e4eba0b0f8af99c3b7ad68f431",
+  "filename": "Zhang 2019 PCB - Predicting three-dimensional genome organization with chromatin states.pdf",
+  "item_type": "article",
+  "title_query": "Predicting three-dimensional genome organization with chromatin states",
+  "filename_hints": {
+    "year_hint": 2019,
+    "venue_hint": "",
+    "prefix": "Zhang 2019 PCB"
+  },
+  "doi_candidates": [
+    "10.1371/journal.pcbi.1007024",
+    "10.1371/journal.pcbi.1007024.g001",
+    "10.1371/journal.pcbi.1007024.g002"
+  ],
+  "date_indexed": "2026-04-17T03:16:25.260637+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2019!=2018"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Predicting three-dimensional genome organization with chromatin states",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "f93cc3be5dd2cfc183a05d76efa9089efacd81d9",
+      "externalIds": {
+        "MAG": "2793253652",
+        "PubMedCentral": "6586364",
+        "DBLP": "journals/ploscb/QiZ19",
+        "DOI": "10.1371/journal.pcbi.1007024",
+        "CorpusId": 90166070,
+        "PubMed": "31181064"
+      },
+      "url": "https://www.semanticscholar.org/paper/f93cc3be5dd2cfc183a05d76efa9089efacd81d9",
+      "title": "Predicting three-dimensional genome organization with chromatin states",
+      "venue": "bioRxiv",
+      "year": 2018,
+      "openAccessPdf": {
+        "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007024&type=printable",
+        "status": "GREEN",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6586364, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2018-03-14",
+      "journal": {
+        "name": "PLoS Computational Biology",
+        "volume": "15"
+      },
+      "authors": [
+        {
+          "authorId": "12058337",
+          "name": "Yifeng Qi"
+        },
+        {
+          "authorId": "87526573",
+          "name": "Bin Zhang"
+        }
+      ],
+      "abstract": "We introduce a computational model to simulate chromatin structure and dynamics. Starting from one-dimensional genomics and epigenomics data that are available for hundreds of cell types, this model enables de novo prediction of chromatin structures at five-kilo-base resolution. Simulated chromatin structures recapitulate known features of genome organization, including the formation of chromatin loops, topologically associating domains (TADs) and compartments, and are in quantitative agreements with chromosome conformation capture experiments and super-resolution microscopy measurements. Detailed characterization of the predicted structural ensemble reveals the dynamical flexibility of chromatin loops and the presence of cross-talks among neighboring TADs. Analysis of the model’s energy function uncovers the presence of distinct mechanisms for chromatin folding at various length scales."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "f93cc3be5dd2cfc183a05d76efa9089efacd81d9",
+        "title": "Predicting three-dimensional genome organization with chromatin states",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2019,
+        "candidate_year": 2018,
+        "year_bonus": 0.03,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8121e09cf15530392e4b86727f9804c45b5ffe13",
+        "title": "Organization principles of dynamic three-dimensional genome architecture associated with centromere clustering states",
+        "score": 0.5189,
+        "title_similarity": 0.5989,
+        "query_year": 2019,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "928f0c7608f9fa10219fcda24aa97dc2ef0bf14b",
+        "title": "4D nucleome: dynamic three-dimensional genome organization over time",
+        "score": 0.4081,
+        "title_similarity": 0.4881,
+        "query_year": 2019,
+        "candidate_year": 2024,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "eeed6204f34501b61ddd3042d1ae79c1db1c03ae",
+        "title": "Three-dimensional Genome Reorganization in Hematopoietic Stem Cells.",
+        "score": 0.294,
+        "title_similarity": 0.374,
+        "query_year": 2019,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "5386bf5a0899f5d6acb913fb02438105732c10cf",
+        "title": "Unraveling the three-dimensional genome structure using machine learning",
+        "score": 0.2861,
+        "title_similarity": 0.3661,
+        "query_year": 2019,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "6f6f32d177cff73350271309b3e1b5bc0695683d",
+        "title": "Three-dimensional genome rewiring in loci with human accelerated regions",
+        "score": 0.2861,
+        "title_similarity": 0.3661,
+        "query_year": 2019,
+        "candidate_year": 2023,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "b003bc1a4fe8eca462587486f22e15b9ef2a0398",
+        "title": "Sequence-based modeling of three-dimensional genome architecture from kilobase to chromosome scale",
+        "score": 0.2736,
+        "title_similarity": 0.3536,
+        "query_year": 2019,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "a7e4cce9a2b0478217c63fb6aae596fa4fa8aae3",
+        "title": "Rewiring of the three-dimensional genome encodes regenerative potential in the adult central nervous system",
+        "score": 0.2686,
+        "title_similarity": 0.3486,
+        "query_year": 2019,
+        "candidate_year": 2026,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "66da971bfb9b3374978e06a1b8053ff88205a112",
+        "title": "Reconstructing the 3D genome organization of Neanderthals reveals that chromatin folding shaped phenotypic and sequence divergence",
+        "score": 0.2603,
+        "title_similarity": 0.3403,
+        "query_year": 2019,
+        "candidate_year": 2025,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "d670ac0930ac889ac07b23cb7a9885a87247c58d",
+        "title": "Chromatin features constrain structural variation across evolutionary timescales",
+        "score": 0.1479,
+        "title_similarity": 0.1179,
+        "query_year": 2019,
+        "candidate_year": 2018,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1371/journal.pcbi.1007024"
+    ],
+    "matching_extracted_doi": "10.1371/journal.pcbi.1007024",
+    "raw_response": {
+      "total": 281,
+      "offset": 0,
+      "next": 10,
+      "data": [
+        {
+          "paperId": "f93cc3be5dd2cfc183a05d76efa9089efacd81d9",
+          "externalIds": {
+            "MAG": "2793253652",
+            "PubMedCentral": "6586364",
+            "DBLP": "journals/ploscb/QiZ19",
+            "DOI": "10.1371/journal.pcbi.1007024",
+            "CorpusId": 90166070,
+            "PubMed": "31181064"
+          },
+          "url": "https://www.semanticscholar.org/paper/f93cc3be5dd2cfc183a05d76efa9089efacd81d9",
+          "title": "Predicting three-dimensional genome organization with chromatin states",
+          "venue": "bioRxiv",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007024&type=printable",
+            "status": "GREEN",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6586364, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-03-14",
+          "journal": {
+            "name": "PLoS Computational Biology",
+            "volume": "15"
+          },
+          "authors": [
+            {
+              "authorId": "12058337",
+              "name": "Yifeng Qi"
+            },
+            {
+              "authorId": "87526573",
+              "name": "Bin Zhang"
+            }
+          ],
+          "abstract": "We introduce a computational model to simulate chromatin structure and dynamics. Starting from one-dimensional genomics and epigenomics data that are available for hundreds of cell types, this model enables de novo prediction of chromatin structures at five-kilo-base resolution. Simulated chromatin structures recapitulate known features of genome organization, including the formation of chromatin loops, topologically associating domains (TADs) and compartments, and are in quantitative agreements with chromosome conformation capture experiments and super-resolution microscopy measurements. Detailed characterization of the predicted structural ensemble reveals the dynamical flexibility of chromatin loops and the presence of cross-talks among neighboring TADs. Analysis of the model’s energy function uncovers the presence of distinct mechanisms for chromatin folding at various length scales."
+        },
+        {
+          "paperId": "d670ac0930ac889ac07b23cb7a9885a87247c58d",
+          "externalIds": {
+            "MAG": "2949893004",
+            "PubMedCentral": "6369792",
+            "DOI": "10.1073/pnas.1808631116",
+            "CorpusId": 58610946,
+            "PubMed": "30659153"
+          },
+          "url": "https://www.semanticscholar.org/paper/d670ac0930ac889ac07b23cb7a9885a87247c58d",
+          "title": "Chromatin features constrain structural variation across evolutionary timescales",
+          "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+          "year": 2018,
+          "openAccessPdf": {
+            "url": "https://www.pnas.org/content/pnas/116/6/2175.full.pdf",
+            "status": "HYBRID",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC6369792, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2018-03-19",
+          "journal": {
+            "name": "Proceedings of the National Academy of Sciences of the United States of America",
+            "pages": "2175 - 2180",
+            "volume": "116"
+          },
+          "authors": [
+            {
+              "authorId": "2143354",
+              "name": "G. Fudenberg"
+            },
+            {
+              "authorId": "1694593",
+              "name": "K. Pollard"
+            }
+          ],
+          "abstract": "Significance Noncoding DNA sequences play crucial roles in gene regulation, including via three-dimensional genome organization where they define chromatin boundaries and segment the genome into a sequence of insulated neighborhoods. However, the relative importance of noncoding DNA elements, particularly in comparison with protein-coding DNA sequences, remains more poorly characterized. Here, we systematically test if chromatin boundary disruptions are under purifying selection. Our analyses uncover a genomewide depletion of structural variants that would have the potential to alter chromatin structure. This in turn has implications for predicting not only which variants are likely pathogenic in clinical genetics settings, but also which are likely key innovations in primate evolution, and argues for expanding the current gene-centric paradigm for interpreting structural variants. The potential impact of structural variants includes not only the duplication or deletion of coding sequences, but also the perturbation of noncoding DNA regulatory elements and structural chromatin features, including topological domains (TADs). Structural variants disrupting TAD boundaries have been implicated both in cancer and developmental disease; this likely occurs via “enhancer hijacking,” whereby removal of the TAD boundary exposes enhancers to new target transcription start sites (TSSs). With this functional role, we hypothesized that boundaries would display evidence for negative selection. Here we demonstrate that the chromatin landscape constrains structural variation both within healthy humans and across primate evolution. In contrast, in patients with developmental delay, variants occur remarkably uniformly across genomic features, suggesting a potentially broad role for enhancer hijacking in human disease."
+        },
+        {
+          "paperId": "8121e09cf15530392e4b86727f9804c45b5ffe13",
+          "externalIds": {
+            "DOI": "10.1101/2025.06.12.659004",
+            "CorpusId": 279448701,
+            "PubMed": "41364759"
+          },
+          "url": "https://www.semanticscholar.org/paper/8121e09cf15530392e4b86727f9804c45b5ffe13",
+          "title": "Organization principles of dynamic three-dimensional genome architecture associated with centromere clustering states",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2025.06.12.659004?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2025.06.12.659004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-07-28",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2156711538",
+              "name": "Satyadev Polisetty"
+            },
+            {
+              "authorId": "2182749273",
+              "name": "Shuvadip Dutta"
+            },
+            {
+              "authorId": "1490326345",
+              "name": "Rakesh Netha Vadnala"
+            },
+            {
+              "authorId": "6509901",
+              "name": "D. Notani"
+            },
+            {
+              "authorId": "3127931",
+              "name": "R. Padinhateeri"
+            },
+            {
+              "authorId": "3445297",
+              "name": "K. Sanyal"
+            }
+          ],
+          "abstract": "Fungal centromeres are clustered near microtubule organizing centers to help adopt the Rabl chromosomal organization. The role of centromere clustering in driving large-scale changes in structural and functional chromatin assembly remains unclear. Here, using Hi-C and super-resolution microscopy, we show that cell cycle-dependent centromere declustering and clustering states in Cryptococcus neoformans drive global changes in the 3D genome architecture. Centromeres and telomeres are scattered around the nuclear periphery at interphaseG1, and this arrangement constrains the inter-arm interactions within a chromosome, providing a unique interphaseG1 chromosome organization. Moreover, centromeres and telomeres are organized as compartments, segregating them from active euchromatic regions. Polymer modeling reveals that the transition from the unclustered to clustered centromere state during the cell cycle involves changes from a globular to an elongated chromosome architecture. Strikingly, while clustered centromeres replicate early in most yeasts, C. neoformans centromeres replicate late in S-phase, hinting a possible link between centromere clustering dynamics and CEN DNA replication timing. Overall, our study uncovers several unique organizational principles governing the dynamic genome architecture in an evolutionarily diverged basidiomycete yeast. Significance Chromosomes occupy the nuclear space in many ways. Primary chromosomal arrangements are such that centromere regions of different chromosomes either form a cluster, as in yeasts, or are scattered around the nuclear periphery, more common in metazoans. Exceptionally, centromeres show cell cycle stage-specific clustering in the basidiomycete fungus Cryptococcus neoformans. We show that the spatial positioning and the refractory nature of centromeres and telomeres shape the arrangement and large-scale organization of chromosomes in C. neoformans. Metazoan-like late-replicating centromeres in C. neoformans possibly favor the unclustered/scattered centromere state in S-phase, not commonly found in fungi. Our results not only highlight the remarkable genome plasticity of C. neoformans but also raise the possibility that centromere replication timing determines genome organization principles."
+        },
+        {
+          "paperId": "928f0c7608f9fa10219fcda24aa97dc2ef0bf14b",
+          "externalIds": {
+            "PubMedCentral": "11058255",
+            "DOI": "10.1038/s12276-024-01248-5",
+            "CorpusId": 269358508,
+            "PubMed": "38658700"
+          },
+          "url": "https://www.semanticscholar.org/paper/928f0c7608f9fa10219fcda24aa97dc2ef0bf14b",
+          "title": "4D nucleome: dynamic three-dimensional genome organization over time",
+          "venue": "Experimental and Molecular Medicine",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11058255, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Editorial",
+            "JournalArticle",
+            "Review"
+          ],
+          "publicationDate": "2024-04-01",
+          "journal": {
+            "name": "Experimental & Molecular Medicine",
+            "pages": "761 - 762",
+            "volume": "56"
+          },
+          "authors": [
+            {
+              "authorId": "2279339536",
+              "name": "Hyoungkyu Kim"
+            }
+          ],
+          "abstract": "The chromatin architecture of mammalian genomes is intricately organized into a multilayered three-dimensional structure that features compartments, topologically associating domains (TADs), and chromatin loops 1,2 . Individual chromosomes segregate into either active or inactive compartments through homotypic interactions among genomic regions with similar transcriptional and chromatin states. TADs exhibit preferential interactions within their chromatin and are delineated by distinct boundaries, frequently forming loops. Chromosomal spatial folding and organization in the nucleus crucially regulate gene expression and cellular function, impacting both normal development and the onset of various diseases 3 – 5 . Exploring the 3D organization of DNA within the nucleus and its temporal changes is a key focus of the 4D Nucleome Project 6 . This special issue provides comprehensive reviews of technological advances in the investigation of the 3D organization of DNA in the nucleus and the functional implications of the 4D nucleome in physiology and human disease. Han et al. 7 explored signi ﬁ cant advancements in experimental techniques developed over the past decade to elucidate the multilayered organization of the 3D genome and its impact on transcription and other biological functions. They initially introduced sequencing-based approaches for mapping genome-wide chromatin interactions, exempli ﬁ ed by Hi – C, which utilizes proximity ligation followed by deep sequencing. This method was subsequently integrated with other measurements to reveal chromosomal topological organization across various biological parameters. They also pioneered imaging technologies for direct investigation of 3D chromatin architecture at a single-cell resolution, leveraging advancements in superresolution microscopy, and the development of high-throughput Oligopaint library methods. Additionally, they emphasized innovations in single-cell multimodal approaches, which enable the simultaneous measurement of gene expression and epigenetic states, elucidating the intricate spatiotemporal dynamics governing gene regulation. The precise regulation of gene expression by cis -regulatory elements, such as promoters and enhancers"
+        },
+        {
+          "paperId": "5386bf5a0899f5d6acb913fb02438105732c10cf",
+          "externalIds": {
+            "PubMedCentral": "12123201",
+            "DOI": "10.5483/BMBRep.2024-0020",
+            "CorpusId": 276895308,
+            "PubMed": "40058875"
+          },
+          "url": "https://www.semanticscholar.org/paper/5386bf5a0899f5d6acb913fb02438105732c10cf",
+          "title": "Unraveling the three-dimensional genome structure using machine learning",
+          "venue": "BMB Reports",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": "CCBYNC",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12123201, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "News",
+            "Review"
+          ],
+          "publicationDate": "2025-03-05",
+          "journal": {
+            "name": "BMB Reports",
+            "pages": "203 - 208",
+            "volume": "58"
+          },
+          "authors": [
+            {
+              "authorId": "2349380769",
+              "name": "Jiho Lee"
+            },
+            {
+              "authorId": "2349320661",
+              "name": "Hye-Lim Mo"
+            },
+            {
+              "authorId": "2349321991",
+              "name": "Yoon Ha"
+            },
+            {
+              "authorId": "2166001921",
+              "name": "Dong-Yeon Nam"
+            },
+            {
+              "authorId": "2349321473",
+              "name": "Geumnim Lim"
+            },
+            {
+              "authorId": "2325136716",
+              "name": "Jeong-Woon Park"
+            },
+            {
+              "authorId": "49591334",
+              "name": "Seoyoung Park"
+            },
+            {
+              "authorId": "49071196",
+              "name": "Woo-young Choi"
+            },
+            {
+              "authorId": "2349391768",
+              "name": "Hyun Ji Lee"
+            },
+            {
+              "authorId": "2291346232",
+              "name": "Je-Keun Rhee"
+            }
+          ],
+          "abstract": "The study of chromatin interactions has advanced considerably with technologies such as high-throughput chromosome conformation capture (Hi-C) sequencing, providing a genome-wide view of physical interactions within the nucleus. These techniques have revealed the existence of hierarchical chromatin structures such as compartments, topologically associating domains (TADs), and chromatin loops, which are crucial in genome organization and regulation. However, identifying and analyzing these structural features require advanced computational methods. In recent years, machine learning approaches, particularly deep learning, have emerged as powerful tools for detecting and analyzing structural information. In this review, we present an overview of various machine learning-based techniques for determining chromosomal organization. Starting with the progress in predicting interactions from DNA sequences, we describe methods for identifying various hierarchical structures from Hi-C data. Additionally, we present advances in enhancing the chromosome contact frequency map resolution to overcome the limitations of Hi-C data. Finally, we identify the remaining challenges and propose potential solutions and future directions."
+        },
+        {
+          "paperId": "a7e4cce9a2b0478217c63fb6aae596fa4fa8aae3",
+          "externalIds": {
+            "DOI": "10.64898/2026.03.12.711224",
+            "CorpusId": 286584954
+          },
+          "url": "https://www.semanticscholar.org/paper/a7e4cce9a2b0478217c63fb6aae596fa4fa8aae3",
+          "title": "Rewiring of the three-dimensional genome encodes regenerative potential in the adult central nervous system",
+          "venue": "bioRxiv",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2026.03.12.711224?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2026.03.12.711224, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2026-03-16",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2362571041",
+              "name": "Anisha S. Menon"
+            },
+            {
+              "authorId": "2304557042",
+              "name": "Manojkumar Kumaran"
+            },
+            {
+              "authorId": "2219988668",
+              "name": "Faheem Farooq"
+            },
+            {
+              "authorId": "2355194962",
+              "name": "D. S. Beji"
+            },
+            {
+              "authorId": "2362918005",
+              "name": "Dhruva Kumar Kesireddy"
+            },
+            {
+              "authorId": "2362569631",
+              "name": "Yogesh Sahu"
+            },
+            {
+              "authorId": "4388628",
+              "name": "Ishwariya Venkatesh"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "eeed6204f34501b61ddd3042d1ae79c1db1c03ae",
+          "externalIds": {
+            "DOI": "10.1016/j.exphem.2025.105249",
+            "CorpusId": 281410397,
+            "PubMed": "40975221"
+          },
+          "url": "https://www.semanticscholar.org/paper/eeed6204f34501b61ddd3042d1ae79c1db1c03ae",
+          "title": "Three-dimensional Genome Reorganization in Hematopoietic Stem Cells.",
+          "venue": "Experimental Hematology",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1016/j.exphem.2025.105249?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1016/j.exphem.2025.105249, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Review",
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-09-01",
+          "journal": {
+            "name": "Experimental hematology",
+            "pages": "\n          105249\n        "
+          },
+          "authors": [
+            {
+              "authorId": "2381435552",
+              "name": "Akihiro Nakajima"
+            },
+            {
+              "authorId": "2368836998",
+              "name": "Keisuke Kirito"
+            },
+            {
+              "authorId": "2292770268",
+              "name": "Mio Nakanishi"
+            },
+            {
+              "authorId": "2239189915",
+              "name": "Naoya Takayama"
+            }
+          ],
+          "abstract": "Hematopoietic stem cells (HSCs) possess unique characteristics that distinguish them from other hematopoietic progenitor cells, including self-renewal capacity, multipotency, stress response, metabolism, and deep quiescence. Recent advances have significantly enhanced our understanding of the epigenomic states that define these properties. HSCs undergo profound changes in their three-dimensional (3D) genome reorganization throughout development, differentiation, and responses to stimuli. Recent advancements in chromatin conformation capture techniques that require only a small number of cells have provided detailed insights into these dynamic processes. This review explores the latest discoveries in the 3D genome reorganization in HSCs, with a focus on chromatin remodeling during key transitions, including fetal-to-adult development, quiescence-to-activation, differentiation, and aging. We discuss the roles of key transcription factors, epigenetic modifiers, and structural proteins in shaping the 3D genome landscape. Additionally, we examine how alterations in the 3D genome organization impact HSC function and dysfunction in hematological disorders. Finally, we highlight future directions in this rapidly evolving field, emphasizing the potential implications of 3D genome research for targeted therapies in hematology.Teaser Abstract: Hematopoietic stem cells (HSCs) are defined by self-renewal, multipotency, stress response, metabolism, and quiescence. Advances in chromatin conformation capture reveal how their 3D genome organization changes during development, activation, differentiation, and aging. This review covers chromatin remodeling, key transcription factors, epigenetic modifiers, and structural proteins in shaping HSC genome architecture, and how its disruption contributes to hematological disorders, highlighting therapeutic prospects."
+        },
+        {
+          "paperId": "b003bc1a4fe8eca462587486f22e15b9ef2a0398",
+          "externalIds": {
+            "PubMedCentral": "9186125",
+            "DOI": "10.1038/s41588-022-01065-4",
+            "CorpusId": 248749742,
+            "PubMed": "35551308"
+          },
+          "url": "https://www.semanticscholar.org/paper/b003bc1a4fe8eca462587486f22e15b9ef2a0398",
+          "title": "Sequence-based modeling of three-dimensional genome architecture from kilobase to chromosome scale",
+          "venue": "Nature Genetics",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9186125",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9186125, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-04-02",
+          "journal": {
+            "name": "Nature genetics",
+            "pages": "725 - 734",
+            "volume": "54"
+          },
+          "authors": [
+            {
+              "authorId": "2124432680",
+              "name": "Jian Zhou"
+            }
+          ],
+          "abstract": "To learn how genomic sequence influences multiscale three-dimensional (3D) genome architecture, this manuscript presents a sequence-based deep-learning approach, Orca, that predicts directly from sequence the 3D genome architecture from kilobase to whole-chromosome scale. Orca captures the sequence dependencies of structures including chromatin compartments and topologically associating domains, as well as diverse types of interactions from CTCF-mediated to enhancer–promoter interactions and Polycomb-mediated interactions with cell-type specificity. Orca enables various applications including predicting structural variant effects on multiscale genome organization and it recapitulated effects of experimentally studied variants at varying sizes (300 bp to 90 Mb). Moreover, Orca enables in silico virtual screens to probe the sequence basis of 3D genome organization at different scales. At the submegabase scale, it predicted specific transcription factor motifs underlying cell-type-specific genome interactions. At the compartment scale, virtual screens of sequence activities suggest a model for the sequence basis of chromatin compartments with a prominent role of transcription start sites. Orca is a sequence-based deep-learning algorithm that predicts 3D genome architecture from kilobase to whole-chromosome scale, including the impact of structural variants. In silico modeling identifies a putative sequence basis for chromatin compartment formation."
+        },
+        {
+          "paperId": "6f6f32d177cff73350271309b3e1b5bc0695683d",
+          "externalIds": {
+            "DOI": "10.1126/science.abm1696",
+            "CorpusId": 252763970,
+            "PubMed": "37104607"
+          },
+          "url": "https://www.semanticscholar.org/paper/6f6f32d177cff73350271309b3e1b5bc0695683d",
+          "title": "Three-dimensional genome rewiring in loci with human accelerated regions",
+          "venue": "Science",
+          "year": 2023,
+          "openAccessPdf": {
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10999243",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1126/science.abm1696?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1126/science.abm1696, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2023-04-28",
+          "journal": {
+            "name": "Science",
+            "volume": "380"
+          },
+          "authors": [
+            {
+              "authorId": "49507590",
+              "name": "Kathleen C. Keough"
+            },
+            {
+              "authorId": "1773065",
+              "name": "Sean Whalen"
+            },
+            {
+              "authorId": "46311547",
+              "name": "Fumitaka Inoue"
+            },
+            {
+              "authorId": "2412004",
+              "name": "P. Przytycki"
+            },
+            {
+              "authorId": "2166680699",
+              "name": "Tyler Fair"
+            },
+            {
+              "authorId": "16057457",
+              "name": "Chengyu Deng"
+            },
+            {
+              "authorId": "2242338836",
+              "name": "Marilyn R. Steyert"
+            },
+            {
+              "authorId": "2073589431",
+              "name": "H. Ryu"
+            },
+            {
+              "authorId": "1382417671",
+              "name": "K. Lindblad-Toh"
+            },
+            {
+              "authorId": "7543407",
+              "name": "E. Karlsson"
+            },
+            {
+              "authorId": "35843432",
+              "name": "T. Nowakowski"
+            },
+            {
+              "authorId": "2643115",
+              "name": "N. Ahituv"
+            },
+            {
+              "authorId": "3434652",
+              "name": "Alex A. Pollen"
+            },
+            {
+              "authorId": "1694593",
+              "name": "K. Pollard"
+            }
+          ],
+          "abstract": "Human accelerated regions (HARs) are conserved genomic loci that evolved at an accelerated rate in the human lineage and may underlie human-specific traits. We generated HARs and chimpanzee accelerated regions with an automated pipeline and an alignment of 241 mammalian genomes. Combining deep learning with chromatin capture experiments in human and chimpanzee neural progenitor cells, we discovered a significant enrichment of HARs in topologically associating domains containing human-specific genomic variants that change three-dimensional (3D) genome organization. Differential gene expression between humans and chimpanzees at these loci suggests rewiring of regulatory interactions between HARs and neurodevelopmental genes. Thus, comparative genomics together with models of 3D genome folding revealed enhancer hijacking as an explanation for the rapid evolution of HARs. Description INTRODUCTION Human accelerated regions (HARs) are evolutionarily conserved sequences that acquired an unexpectedly high number of nucleotide substitutions in the human genome since divergence from our common ancestor with chimpanzees. Prior work has established that many HARs are gene regulatory enhancers that function during embryonic development, particularly in neurodevelopment, and that most HARs show signatures of positive selection. However, the events that caused the sudden change in selective pressures on HARs remain a mystery. RATIONALE Because HARs acquired many substitutions in our ancestors after millions of years of extreme constraint across diverse mammals, we reasoned that their conserved roles in regulating development of the brain and other organs must have changed during human evolution. One mechanism that could drive such a functional shift is enhancer hijacking, whereby the target gene repertoire of a noncoding sequence is changed through alterations in three-dimensional genome folding. The regulatory information encoded in a hijacked enhancer would likely need to change to avoid deleterious expression of the altered target gene while also possibly supporting modified expression patterns. Structural variants—large genomic insertions, deletions, and rearrangements—are the greatest sources of sequence differences between the human and chimpanzee genomes, and they have the potential to affect how a region of the genome folds and localizes in the nucleus. We therefore hypothesized that some HARs were generated through enhancer hijacking triggered by nearby human-specific structural variants (hsSVs). RESULTS We leveraged an alignment of hundreds of mammalian genomes plus a Nextflow pipeline that we wrote for automating the detection of lineage-specific accelerated regions to identify 312 high-confidence HARs (zooHARs). Through massively parallel reporter assays and machine learning integration of hundreds of epigenomic datasets, we showed that many zooHARs function as neurodevelopmental enhancers and that their human substitutions alter transcription factor binding sites, consistent with previous studies. We further mapped zooHARs to specific cell types and tissues using single-cell open chromatin and gene expression data, and we found that they represent a more diverse set of neurodevelopmental processes than a parallel set of chimpanzee accelerated regions. To test the enhancer hijacking hypothesis, we first examined the three-dimensional neighborhoods of zooHARs using publicly available chromatin capture (Hi-C) data, finding a significant enrichment of zooHARs in domains with hsSVs. This motivated us to use deep learning to predict how hsSVs changed genome folding in the human versus the chimpanzee genomes. We found that 30% of zooHARs occur within 500 kb of an hsSV that substantially alters local chromatin interactions, and we confirmed this association in Hi-C data that we generated in human and chimpanzee neural progenitor cells. Finally, we showed that chromatin domains containing zooHARs and hsSVs are enriched for genes differentially expressed in human versus chimpanzee neurodevelopment. CONCLUSION The origin of many HARs may be explained by human-specific structural variants that altered three-dimensional genome folding, causing evolutionarily conserved enhancers to adapt to different target genes and regulatory domains. Example of HAR enhancer hijacking. The HAR is nearby and regulates gene A, but not gene B, as the chimpanzee genome folds. An insertion in the human genome brings the HAR closer to gene B, causing expression of gene B. The HAR adapts to being in gene B’s regulatory domain through substitutions to previously conserved nucleotides."
+        },
+        {
+          "paperId": "66da971bfb9b3374978e06a1b8053ff88205a112",
+          "externalIds": {
+            "PubMedCentral": "12424642",
+            "DOI": "10.1101/2022.02.07.479462",
+            "CorpusId": 246681403,
+            "PubMed": "40949959"
+          },
+          "url": "https://www.semanticscholar.org/paper/66da971bfb9b3374978e06a1b8053ff88205a112",
+          "title": "Reconstructing the 3D genome organization of Neanderthals reveals that chromatin folding shaped phenotypic and sequence divergence",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "https://www.biorxiv.org/content/biorxiv/early/2022/02/08/2022.02.07.479462.full.pdf",
+            "status": "GREEN",
+            "license": "CCBYNCND",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12424642, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2025-09-02",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "39172006",
+              "name": "Evonne McArthur"
+            },
+            {
+              "authorId": "3086750",
+              "name": "D. Rinker"
+            },
+            {
+              "authorId": "2257130237",
+              "name": "Yang Cheng"
+            },
+            {
+              "authorId": "2109090702",
+              "name": "Qixuan Wang"
+            },
+            {
+              "authorId": "2387391569",
+              "name": "Juan Wang"
+            },
+            {
+              "authorId": "137385676",
+              "name": "Erin N. Gilbertson"
+            },
+            {
+              "authorId": "2143354",
+              "name": "G. Fudenberg"
+            },
+            {
+              "authorId": "1680400781",
+              "name": "Maureen Pittman"
+            },
+            {
+              "authorId": "49507590",
+              "name": "Kathleen C. Keough"
+            },
+            {
+              "authorId": "2279852933",
+              "name": "Feng Yue"
+            },
+            {
+              "authorId": "1694593",
+              "name": "K. Pollard"
+            },
+            {
+              "authorId": "144891069",
+              "name": "J. Capra"
+            }
+          ],
+          "abstract": "Changes in gene regulation were a major driver of the divergence of archaic hominins (AHs)—Neanderthals and Denisovans—and modern humans (MHs). The three-dimensional (3D) folding of the genome is critical for regulating gene expression; however, its role in recent human evolution has not been explored because the degradation of ancient samples does not permit experimental determination of AH 3D genome folding. To fill this gap, we apply novel deep learning methods for inferring 3D genome organization from DNA sequence to Neanderthal, Denisovan, and diverse MH genomes. Using the resulting 3D contact maps across the genome, we identify 167 distinct regions with diverged 3D genome organization between AHs and MHs. We show that these 3D-diverged loci are enriched for genes related to the function and morphology of the eye, supra-orbital ridges, hair, lungs, immune response, and cognition. Despite these specific diverged loci, the 3D genome of AHs and MHs is more similar than expected based on sequence divergence, suggesting that the pressure to maintain 3D genome organization constrained hominin sequence evolution. We also find that 3D genome organization constrained the landscape of AH ancestry in MHs today: regions more tolerant of 3D variation are enriched for introgression in modern Eurasians. Finally, we identify loci where modern Eurasians have inherited novel 3D genome folding patterns from AH ancestors and validate folding differences in a high-frequency locus using Hi-C, revealing a putative molecular mechanism for phenotypes associated with archaic introgression. In summary, our application of deep learning to predict archaic 3D genome organization illustrates the potential of inferring molecular phenotypes from ancient DNA to reveal previously unobservable biological differences."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            28
+          ]
+        ],
+        "date-time": "2026-03-28T19:58:00Z",
+        "timestamp": 1774727880716,
+        "version": "3.50.1"
+      },
+      "update-to": [
+        {
+          "DOI": "10.1371/journal.pcbi.1007024",
+          "type": "new_version",
+          "label": "New version",
+          "source": "publisher",
+          "updated": {
+            "date-parts": [
+              [
+                2019,
+                6,
+                20
+              ]
+            ],
+            "date-time": "2019-06-20T00:00:00Z",
+            "timestamp": 1560988800000
+          }
+        }
+      ],
+      "reference-count": 97,
+      "publisher": "Public Library of Science (PLoS)",
+      "issue": "6",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2019,
+                6,
+                10
+              ]
+            ],
+            "date-time": "2019-06-10T00:00:00Z",
+            "timestamp": 1560124800000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "http://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100000152",
+          "name": "Division of Molecular and Cellular Biosciences",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "1715859"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "1715859"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100000152",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "www.ploscompbiol.org"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "PLoS Comput Biol"
+      ],
+      "DOI": "10.1371/journal.pcbi.1007024",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            10
+          ]
+        ],
+        "date-time": "2019-06-10T13:25:01Z",
+        "timestamp": 1560173101000
+      },
+      "page": "e1007024",
+      "update-policy": "https://doi.org/10.1371/journal.pcbi.corrections_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 137,
+      "title": [
+        "Predicting three-dimensional genome organization with chromatin states"
+      ],
+      "prefix": "10.1371",
+      "volume": "15",
+      "author": [
+        {
+          "given": "Yifeng",
+          "family": "Qi",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3685-7503",
+          "authenticated-orcid": true,
+          "given": "Bin",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "340",
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            10
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "ref1",
+          "article-title": "Molecular Cell Biology",
+          "author": "H Lodish",
+          "year": "2004",
+          "journal-title": "Molecular Cell Biology"
+        },
+        {
+          "key": "ref2",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1016/j.cell.2007.01.028",
+          "article-title": "Beyond the sequence: cellular organization of genome function",
+          "volume": "128",
+          "author": "T Misteli",
+          "year": "2007",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref3",
+          "doi-asserted-by": "crossref",
+          "first-page": "762",
+          "DOI": "10.1016/j.stem.2014.05.017",
+          "article-title": "The 3D genome in transcriptional regulation and pluripotency",
+          "volume": "14",
+          "author": "DU Gorkin",
+          "year": "2014",
+          "journal-title": "Cell Stem Cell"
+        },
+        {
+          "key": "ref4",
+          "doi-asserted-by": "crossref",
+          "first-page": "1188",
+          "DOI": "10.1016/j.cell.2016.10.024",
+          "article-title": "Insulated Neighborhoods: Structural and Functional Units of Mammalian Gene Control",
+          "volume": "167",
+          "author": "D Hnisz",
+          "year": "2016",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref5",
+          "doi-asserted-by": "crossref",
+          "first-page": "1306",
+          "DOI": "10.1126/science.1067799",
+          "article-title": "Capturing Chromosome Conformation",
+          "volume": "295",
+          "author": "J Dekker",
+          "year": "2002",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref6",
+          "doi-asserted-by": "crossref",
+          "first-page": "289",
+          "DOI": "10.1126/science.1181369",
+          "article-title": "Comprehensive mapping of long-range interactions reveals folding principles of the human genome",
+          "volume": "326",
+          "author": "E Lieberman-Aiden",
+          "year": "2009",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref7",
+          "doi-asserted-by": "crossref",
+          "first-page": "1665",
+          "DOI": "10.1016/j.cell.2014.11.021",
+          "article-title": "A 3D map of the human genome at kilobase resolution reveals principles of chromatin looping",
+          "volume": "159",
+          "author": "SSP Rao",
+          "year": "2014",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref8",
+          "doi-asserted-by": "crossref",
+          "first-page": "296",
+          "DOI": "10.1038/nature20158",
+          "article-title": "Capturing pairwise and multi-way chromosomal conformations using chromosomal walks",
+          "volume": "540",
+          "author": "P Olivares-Chauvet",
+          "year": "2016",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref9",
+          "doi-asserted-by": "crossref",
+          "first-page": "381",
+          "DOI": "10.1038/nature11049",
+          "article-title": "Spatial partitioning of the regulatory landscape of the X-inactivation centre",
+          "volume": "485",
+          "author": "EP Nora",
+          "year": "2012",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref10",
+          "doi-asserted-by": "crossref",
+          "first-page": "1611",
+          "DOI": "10.1016/j.cell.2015.11.024",
+          "article-title": "CTCF-Mediated Human 3D Genome Architecture Reveals Chromatin Topology for Transcription",
+          "volume": "163",
+          "author": "Z Tang",
+          "year": "2015",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref11",
+          "doi-asserted-by": "crossref",
+          "first-page": "376",
+          "DOI": "10.1038/nature11082",
+          "article-title": "Topological domains in mammalian genomes identified by analysis of chromatin interactions",
+          "volume": "485",
+          "author": "JR Dixon",
+          "year": "2012",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref12",
+          "doi-asserted-by": "crossref",
+          "first-page": "418",
+          "DOI": "10.1038/nature16496",
+          "article-title": "Super-resolution imaging reveals distinct chromatin folding for different epigenetic states",
+          "volume": "529",
+          "author": "AN Boettiger",
+          "year": "2016",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref13",
+          "doi-asserted-by": "crossref",
+          "first-page": "598",
+          "DOI": "10.1126/science.aaf8084",
+          "article-title": "Spatial organization of chromatin domains and compartments in single chromosomes",
+          "volume": "353",
+          "author": "S Wang",
+          "year": "2016",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref14",
+          "doi-asserted-by": "crossref",
+          "first-page": "911",
+          "DOI": "10.1016/j.cell.2015.07.035",
+          "article-title": "Identification of Gene Positioning Factors Using High-Throughput Imaging Mapping",
+          "volume": "162",
+          "author": "S Shachar",
+          "year": "2015",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref15",
+          "doi-asserted-by": "crossref",
+          "first-page": "1479",
+          "DOI": "10.1016/j.cell.2013.12.001",
+          "article-title": "Dynamic imaging of genomic loci in living human cells by an optimized CRISPR/Cas system",
+          "volume": "155",
+          "author": "B Chen",
+          "year": "2013",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref16",
+          "doi-asserted-by": "crossref",
+          "first-page": "2778",
+          "DOI": "10.1101/gad.251694.114",
+          "article-title": "Spatial genome organization: contrasting views from chromosome conformation capture and fluorescence in situ hybridization",
+          "volume": "28",
+          "author": "I Williamson",
+          "year": "2014",
+          "journal-title": "Genes Dev"
+        },
+        {
+          "key": "ref17",
+          "doi-asserted-by": "crossref",
+          "first-page": "246",
+          "DOI": "10.1016/j.cell.2015.09.002",
+          "article-title": "A high-resolution imaging approach to investigate chromatin architecture in complex tissues",
+          "volume": "163",
+          "author": "MW Linhoff",
+          "year": "2015",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref18",
+          "doi-asserted-by": "crossref",
+          "first-page": "1013",
+          "DOI": "10.1038/nmeth.4031",
+          "article-title": "ATAC-see reveals the accessible genome by transposase-mediated imaging and sequencing",
+          "volume": "13",
+          "author": "X Chen",
+          "year": "2016",
+          "journal-title": "Nat Methods"
+        },
+        {
+          "key": "ref19",
+          "doi-asserted-by": "crossref",
+          "first-page": "69",
+          "DOI": "10.1016/j.ceb.2013.10.002",
+          "article-title": "Large-scale chromatin organization: The good, the surprising, and the still perplexing",
+          "volume": "26",
+          "author": "AS Belmont",
+          "year": "2014",
+          "journal-title": "Curr Opin Cell Biol"
+        },
+        {
+          "key": "ref20",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1126/science.aau1783",
+          "article-title": "Super-resolution chromatin tracing reveals domains and cooperative interactions in single cells",
+          "volume": "362",
+          "author": "B Bintu",
+          "year": "2018",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref21",
+          "doi-asserted-by": "crossref",
+          "first-page": "390",
+          "DOI": "10.1038/nrg3454",
+          "article-title": "Exploring the three-dimensional organization of genomes: Interpreting chromatin interaction data",
+          "volume": "14",
+          "author": "J Dekker",
+          "year": "2013",
+          "journal-title": "Nat Rev Genet"
+        },
+        {
+          "key": "ref22",
+          "doi-asserted-by": "crossref",
+          "first-page": "37",
+          "DOI": "10.1007/s10577-010-9177-0",
+          "article-title": "The fractal globule as a model of chromatin architecture in the cell",
+          "volume": "19",
+          "author": "LA Mirny",
+          "year": "2011",
+          "journal-title": "Chromosom Res"
+        },
+        {
+          "key": "ref23",
+          "doi-asserted-by": "crossref",
+          "first-page": "e1000153",
+          "DOI": "10.1371/journal.pcbi.1000153",
+          "article-title": "Structure and Dynamics of Interphase Chromosomes",
+          "volume": "4",
+          "author": "A Rosa",
+          "year": "2008",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "key": "ref24",
+          "doi-asserted-by": "crossref",
+          "first-page": "e12218",
+          "DOI": "10.1371/journal.pone.0012218",
+          "article-title": "Diffusion-driven looping provides a consistent provides a consistent framework for chromatin organization",
+          "volume": "5",
+          "author": "M Bohn",
+          "year": "2010",
+          "journal-title": "PLoS One"
+        },
+        {
+          "key": "ref25",
+          "doi-asserted-by": "crossref",
+          "first-page": "16173",
+          "DOI": "10.1073/pnas.1204799109",
+          "article-title": "Complexity of chromatin folding is captured by the strings and binders switch model",
+          "volume": "109",
+          "author": "M Barbieri",
+          "year": "2012",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref26",
+          "doi-asserted-by": "crossref",
+          "first-page": "8223",
+          "DOI": "10.1093/nar/gku462",
+          "article-title": "Spatial confinement is a major determinant of the folding landscape of human chromosomes",
+          "volume": "42",
+          "author": "G Gürsoy",
+          "year": "2014",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref27",
+          "doi-asserted-by": "crossref",
+          "first-page": "E3605",
+          "DOI": "10.1073/pnas.1302950110",
+          "article-title": "Nonspecific bridging-induced attraction drives clustering of DNA-binding proteins and genome organization",
+          "volume": "110",
+          "author": "CA Brackley",
+          "year": "2013",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref28",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1038/srep29775",
+          "article-title": "Polymer physics of chromosome large-scale 3D organisation",
+          "volume": "6",
+          "author": "AM Chiariello",
+          "year": "2016",
+          "journal-title": "Sci Rep"
+        },
+        {
+          "key": "ref29",
+          "doi-asserted-by": "crossref",
+          "first-page": "E6456",
+          "DOI": "10.1073/pnas.1518552112",
+          "article-title": "Chromatin extrusion explains key features of loop and domain formation in wild-type and engineered genomes",
+          "volume": "112",
+          "author": "AL Sanborn",
+          "year": "2015",
+          "journal-title": "Proc Natl Acad Sci USA"
+        },
+        {
+          "key": "ref30",
+          "doi-asserted-by": "crossref",
+          "first-page": "2038",
+          "DOI": "10.1016/j.celrep.2016.04.085",
+          "article-title": "Formation of Chromosomal Domains by Loop Extrusion",
+          "volume": "15",
+          "author": "G Fudenberg",
+          "year": "2016",
+          "journal-title": "Cell Rep"
+        },
+        {
+          "key": "ref31",
+          "doi-asserted-by": "crossref",
+          "first-page": "2162",
+          "DOI": "10.1016/j.bpj.2016.02.041",
+          "article-title": "Chromosome Compaction by Active Loop Extrusion",
+          "volume": "110",
+          "author": "A Goloborodko",
+          "year": "2016",
+          "journal-title": "Biophys J"
+        },
+        {
+          "key": "ref32",
+          "doi-asserted-by": "crossref",
+          "first-page": "45",
+          "DOI": "10.1101/sqb.2017.82.034710",
+          "article-title": "Emerging Evidence of Chromosome Folding by Loop Extrusion",
+          "volume": "82",
+          "author": "G Fudenberg",
+          "year": "2017",
+          "journal-title": "Cold Spring Harb Symp Quant Biol"
+        },
+        {
+          "key": "ref33",
+          "doi-asserted-by": "crossref",
+          "first-page": "1281",
+          "DOI": "10.1016/j.cell.2013.04.053",
+          "article-title": "Architectural protein subclasses shape 3D organization of genomes during lineage commitment",
+          "volume": "153",
+          "author": "JE Phillips-Cremins",
+          "year": "2013",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref34",
+          "first-page": "81",
+          "article-title": "Physical principles of intracellular organization via active and passive phase transitions",
+          "author": "J Berry",
+          "year": "2018",
+          "journal-title": "Reports Prog Phys"
+        },
+        {
+          "key": "ref35",
+          "doi-asserted-by": "crossref",
+          "first-page": "13",
+          "DOI": "10.1016/j.cell.2017.02.007",
+          "article-title": "A Phase Separation Model for Transcriptional Control",
+          "volume": "169",
+          "author": "D Hnisz",
+          "year": "2017",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref36",
+          "first-page": "201815912",
+          "article-title": "Evolution of weak cooperative interactions for biological specificity",
+          "volume": "115",
+          "author": "A Gao",
+          "year": "2018",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref37",
+          "doi-asserted-by": "crossref",
+          "first-page": "12168",
+          "DOI": "10.1073/pnas.1613607113",
+          "article-title": "Transferable model for chromosome architecture",
+          "volume": "113",
+          "author": "M Di Pierro",
+          "year": "2016",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref38",
+          "doi-asserted-by": "crossref",
+          "first-page": "9553",
+          "DOI": "10.1093/nar/gku698",
+          "article-title": "Modeling epigenome folding: Formation and dynamics of topologically associated chromatin domains",
+          "volume": "42",
+          "author": "D Jost",
+          "year": "2014",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref39",
+          "doi-asserted-by": "crossref",
+          "first-page": "12126",
+          "DOI": "10.1073/pnas.1714980114",
+          "article-title": "De novo prediction of human chromosome structures: Epigenetic marking patterns encode genome architecture",
+          "volume": "114",
+          "author": "M Di Pierro",
+          "year": "2017",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref40",
+          "article-title": "Scaling Concepts in Polymer Physics",
+          "author": "PG de Gennes",
+          "year": "1979"
+        },
+        {
+          "key": "ref41",
+          "doi-asserted-by": "crossref",
+          "first-page": "950",
+          "DOI": "10.1016/j.cell.2014.03.025",
+          "article-title": "Predictive polymer modeling reveals coupled fluctuations in chromosome conformation and transcription",
+          "volume": "157",
+          "author": "L Giorgetti",
+          "year": "2014",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref42",
+          "doi-asserted-by": "crossref",
+          "first-page": "E1663",
+          "DOI": "10.1073/pnas.1512577113",
+          "article-title": "Population-based 3D genome structure analysis reveals driving forces in spatial genome organization",
+          "volume": "113",
+          "author": "H Tjong",
+          "year": "2016",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "ref43",
+          "doi-asserted-by": "crossref",
+          "first-page": "e1005665",
+          "DOI": "10.1371/journal.pcbi.1005665",
+          "article-title": "Automatic analysis and 3D-modelling of Hi-C data using TADbit reveals structural features of the fly chromatin colors",
+          "volume": "13",
+          "author": "F Serra",
+          "year": "2017",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "key": "ref44",
+          "doi-asserted-by": "crossref",
+          "first-page": "427",
+          "DOI": "10.1016/j.bpj.2016.08.046",
+          "article-title": "Genomic Energy Landscapes",
+          "volume": "112",
+          "author": "B Zhang",
+          "year": "2017",
+          "journal-title": "Biophys J"
+        },
+        {
+          "key": "ref45",
+          "doi-asserted-by": "crossref",
+          "first-page": "i26",
+          "DOI": "10.1093/bioinformatics/btu268",
+          "article-title": "A statistical approach for inferring the 3D structure of the genome",
+          "volume": "30",
+          "author": "N Varoquaux",
+          "year": "2014",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "ref46",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1038/nmeth.2148",
+          "article-title": "Iterative correction of Hi-C data reveals hallmarks of chromosome organization",
+          "volume": "9",
+          "author": "M Imakaev",
+          "year": "2012",
+          "journal-title": "Nat Methods"
+        },
+        {
+          "key": "ref47",
+          "doi-asserted-by": "crossref",
+          "first-page": "1059",
+          "DOI": "10.1038/ng.947",
+          "article-title": "Probabilistic modeling of Hi-C contact maps eliminates systematic biases to characterize global chromosomal architecture",
+          "volume": "43",
+          "author": "E Yaffe",
+          "year": "2011",
+          "journal-title": "Nat Genet"
+        },
+        {
+          "key": "ref48",
+          "doi-asserted-by": "crossref",
+          "first-page": "999",
+          "DOI": "10.1101/gr.160374.113",
+          "article-title": "Statistical confidence estimation for Hi-C data reveals regulatory chromatin contacts",
+          "volume": "24",
+          "author": "F Ay",
+          "year": "2014",
+          "journal-title": "Genome Res"
+        },
+        {
+          "key": "ref49",
+          "doi-asserted-by": "crossref",
+          "first-page": "245",
+          "DOI": "10.1038/nrm3965",
+          "article-title": "Three-dimensional genome architecture: players and mechanisms",
+          "volume": "16",
+          "author": "A Pombo",
+          "year": "2015",
+          "journal-title": "Nat Rev Mol Cell Biol"
+        },
+        {
+          "key": "ref50",
+          "doi-asserted-by": "crossref",
+          "first-page": "1270",
+          "DOI": "10.1016/j.cell.2013.02.001",
+          "article-title": "Genome architecture: domain organization of interphase chromosomes",
+          "volume": "152",
+          "author": "WA Bickmore",
+          "year": "2013",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref51",
+          "doi-asserted-by": "crossref",
+          "first-page": "234",
+          "DOI": "10.1038/nrg3663",
+          "article-title": "CTCF: An architectural protein bridging genome topology and function",
+          "volume": "15",
+          "author": "CT Ong",
+          "year": "2014",
+          "journal-title": "Nat Rev Genet"
+        },
+        {
+          "key": "ref52",
+          "first-page": "1",
+          "article-title": "Integrative annotation of chromatin elements from ENCODE data",
+          "volume": "7",
+          "author": "PB Talbert",
+          "year": "2013",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref53",
+          "doi-asserted-by": "crossref",
+          "first-page": "10812",
+          "DOI": "10.1038/ncomms10812",
+          "article-title": "Constructing 3D interaction maps from 1D epigenomes",
+          "volume": "7",
+          "author": "Y Zhu",
+          "year": "2016",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "ref54",
+          "article-title": "Reconstructing A/B compartments as revealed by Hi-C using long-range correlations in epigenetic data",
+          "author": "JP Fortin",
+          "year": "2015",
+          "journal-title": "Genome Biol"
+        },
+        {
+          "key": "ref55",
+          "doi-asserted-by": "crossref",
+          "first-page": "E2191",
+          "DOI": "10.1073/pnas.1320308111",
+          "article-title": "Global view of enhancer-promoter interactome in human cells",
+          "volume": "111",
+          "author": "B He",
+          "year": "2014",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref56",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1186/s12859-017-1624-x",
+          "article-title": "Genetic sequence-based prediction of long-range chromatin interactions suggests a potential role of short tandem repeat sequences in genome organization",
+          "volume": "18",
+          "author": "S Nikumbh",
+          "year": "2017",
+          "journal-title": "BMC Bioinformatics"
+        },
+        {
+          "key": "ref57",
+          "doi-asserted-by": "crossref",
+          "first-page": "8694",
+          "DOI": "10.1093/nar/gkv865",
+          "article-title": "A predictive modeling approach for cell line-specific long-range regulatory interactions",
+          "volume": "43",
+          "author": "S Roy",
+          "year": "2015",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref58",
+          "article-title": "Nucleotide sequence and DNaseI sensitivity are predictive of 3D chromatin architecture",
+          "volume": "14",
+          "author": "J Schreiber",
+          "year": "2017",
+          "journal-title": "bioRxiv"
+        },
+        {
+          "key": "ref59",
+          "doi-asserted-by": "crossref",
+          "first-page": "786",
+          "DOI": "10.1016/j.molcel.2018.09.016",
+          "article-title": "Polymer Simulations of Heteromorphic Chromatin Predict the 3D Folding of Complex Genomic Loci",
+          "volume": "72",
+          "author": "A Buckle",
+          "year": "2018",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "key": "ref60",
+          "doi-asserted-by": "crossref",
+          "first-page": "E6697",
+          "DOI": "10.1073/pnas.1717730115",
+          "article-title": "Chromatin organization by an interplay of loop extrusion and compartmental segregation",
+          "volume": "115",
+          "author": "J Nuebler",
+          "year": "2018",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref61",
+          "doi-asserted-by": "crossref",
+          "first-page": "662",
+          "DOI": "10.1038/s41588-018-0098-8",
+          "article-title": "Polymer physics predicts the effects of structural variants on chromatin architecture",
+          "volume": "50",
+          "author": "S Bianco",
+          "year": "2018",
+          "journal-title": "Nat Genet"
+        },
+        {
+          "key": "ref62",
+          "doi-asserted-by": "crossref",
+          "first-page": "12739 LP",
+          "DOI": "10.1073/pnas.1812268115",
+          "article-title": "Bottom–up modeling of chromatin segregation due to epigenetic modifications",
+          "volume": "115",
+          "author": "Q MacPherson",
+          "year": "2018",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref63",
+          "first-page": "9",
+          "article-title": "Interphase human chromosome exhibits out of equilibrium glassy dynamics",
+          "author": "G Shi",
+          "year": "2018",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "ref64",
+          "doi-asserted-by": "crossref",
+          "first-page": "6062",
+          "DOI": "10.1073/pnas.1506257112",
+          "article-title": "Topology, structures, and energy landscapes of human chromosomes",
+          "volume": "112",
+          "author": "B Zhang",
+          "year": "2015",
+          "journal-title": "Proc Natl Acad Sci"
+        },
+        {
+          "key": "ref65",
+          "doi-asserted-by": "crossref",
+          "first-page": "248101",
+          "DOI": "10.1103/PhysRevLett.116.248101",
+          "article-title": "Shape Transitions and Chiral Symmetry Breaking in the Energy Landscape of the Mitotic Chromosome",
+          "volume": "116",
+          "author": "B Zhang",
+          "year": "2016",
+          "journal-title": "Phys Rev Lett"
+        },
+        {
+          "key": "ref66",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1093/nar/gkw225",
+          "article-title": "De novo deciphering three-dimensional chromatin interaction and topological domains by wavelet transformation of epigenetic profiles",
+          "volume": "44",
+          "author": "Y Chen",
+          "year": "2016",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref67",
+          "doi-asserted-by": "crossref",
+          "first-page": "817",
+          "DOI": "10.1038/nbt.1662",
+          "article-title": "Discovery and characterization of chromatin states for systematic annotation of the human genome",
+          "volume": "28",
+          "author": "J Ernst",
+          "year": "2010",
+          "journal-title": "Nat Biotechnol"
+        },
+        {
+          "key": "ref68",
+          "doi-asserted-by": "crossref",
+          "first-page": "1939",
+          "DOI": "10.1101/gr.220640.117",
+          "article-title": "HiCRep: assessing the reproducibility of Hi-C data using a stratum-adjusted correlation coefficient",
+          "volume": "27",
+          "author": "T Yang",
+          "year": "2017",
+          "journal-title": "Genome Res"
+        },
+        {
+          "key": "ref69",
+          "article-title": "Predicting CTCF-mediated chromatin interactions by integrating genomic and epigenomic features",
+          "volume": "9",
+          "author": "Y Kai",
+          "year": "2018",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "ref70",
+          "doi-asserted-by": "crossref",
+          "first-page": "1573",
+          "DOI": "10.1016/j.cell.2017.11.008",
+          "article-title": "YY1 Is a Structural Regulator of Enhancer-Promoter Loops",
+          "volume": "171",
+          "author": "AS Weintraub",
+          "year": "2017",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref71",
+          "doi-asserted-by": "crossref",
+          "first-page": "240",
+          "DOI": "10.1038/nature14450",
+          "article-title": "Condensin-driven remodelling of X chromosome topology during dosage compensation",
+          "volume": "523",
+          "author": "E Crane",
+          "year": "2015",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref72",
+          "doi-asserted-by": "crossref",
+          "first-page": "11549",
+          "DOI": "10.1038/ncomms11549",
+          "article-title": "Mining 3D genome structure populations identifies major factors governing the stability of regulatory communities",
+          "volume": "7",
+          "author": "C Dai",
+          "year": "2016",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "ref73",
+          "doi-asserted-by": "crossref",
+          "first-page": "2931",
+          "DOI": "10.1016/j.febslet.2015.05.037",
+          "article-title": "The 4D nucleome: Evidence for a dynamic nuclear landscape based on co-aligned active and inactive nuclear compartments",
+          "volume": "589",
+          "author": "T Cremer",
+          "year": "2015",
+          "journal-title": "FEBS Lett"
+        },
+        {
+          "key": "ref74",
+          "doi-asserted-by": "crossref",
+          "first-page": "900",
+          "DOI": "10.1016/j.cell.2015.07.038",
+          "article-title": "CRISPR Inversion of CTCF Sites Alters Genome Topology and Enhancer/Promoter Function",
+          "volume": "162",
+          "author": "Y Guo",
+          "year": "2015",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref75",
+          "doi-asserted-by": "crossref",
+          "first-page": "676",
+          "DOI": "10.1016/j.molcel.2015.09.023",
+          "article-title": "CTCF Binding Polarity Determines Chromatin Looping",
+          "volume": "60",
+          "author": "E de Wit",
+          "year": "2015",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "key": "ref76",
+          "doi-asserted-by": "crossref",
+          "first-page": "1234",
+          "DOI": "10.1016/j.bpj.2016.02.003",
+          "article-title": "Structural Fluctuations of the Chromatin Fiber within Topologically Associating Domains",
+          "volume": "110",
+          "author": "G Tiana",
+          "year": "2016",
+          "journal-title": "Biophys J"
+        },
+        {
+          "key": "ref77",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1186/s13059-016-1081-2",
+          "article-title": "Closing the loop: 3C versus DNA FISH",
+          "volume": "17",
+          "author": "L Giorgetti",
+          "year": "2016",
+          "journal-title": "Genome Biol"
+        },
+        {
+          "key": "ref78",
+          "doi-asserted-by": "crossref",
+          "first-page": "673",
+          "DOI": "10.1038/nmeth.4329",
+          "article-title": "FISH-ing for captured contacts: Towards reconciling FISH and 3C",
+          "volume": "14",
+          "author": "G Fudenberg",
+          "year": "2017",
+          "journal-title": "Nat Methods"
+        },
+        {
+          "key": "ref79",
+          "doi-asserted-by": "crossref",
+          "first-page": "668",
+          "DOI": "10.1016/j.molcel.2016.05.018",
+          "article-title": "Chromatin Domains: The Unit of Chromosome Organization",
+          "volume": "62",
+          "author": "JR Dixon",
+          "year": "2016",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "key": "ref80",
+          "doi-asserted-by": "crossref",
+          "first-page": "167",
+          "DOI": "10.1002/prot.340210302",
+          "article-title": "Funnels, pathways, and the energy landscape of protein folding: A synthesis",
+          "volume": "21",
+          "author": "JD Bryngelson",
+          "year": "1995",
+          "journal-title": "Proteins Struct Funct Bioinforma"
+        },
+        {
+          "key": "ref81",
+          "doi-asserted-by": "crossref",
+          "first-page": "842",
+          "DOI": "10.1137/070696325",
+          "article-title": "Diffusion Maps, Reduction Coordinates, and Low Dimensional Representation of Stochastic Systems",
+          "volume": "7",
+          "author": "R Coifman",
+          "year": "2008",
+          "journal-title": "Multiscale Model Simul"
+        },
+        {
+          "key": "ref82",
+          "doi-asserted-by": "crossref",
+          "first-page": "124116",
+          "DOI": "10.1063/1.3569857",
+          "article-title": "Determination of reaction coordinates via locally scaled diffusion map",
+          "volume": "134",
+          "author": "MA Rohrdanz",
+          "year": "2011",
+          "journal-title": "J Chem Phys"
+        },
+        {
+          "key": "ref83",
+          "doi-asserted-by": "crossref",
+          "first-page": "13065",
+          "DOI": "10.1021/jp2076935",
+          "article-title": "Delineation of Folding Pathways of a β-Sheet Miniprotein",
+          "volume": "115",
+          "author": "W Zheng",
+          "year": "2011",
+          "journal-title": "J Phys Chem B"
+        },
+        {
+          "key": "ref84",
+          "doi-asserted-by": "crossref",
+          "first-page": "145102",
+          "DOI": "10.1063/1.4824106",
+          "article-title": "Molecular recognition of DNA by ligands: Roughness and complexity of the free energy profile",
+          "volume": "139",
+          "author": "W Zheng",
+          "year": "2013",
+          "journal-title": "J Chem Phys"
+        },
+        {
+          "key": "ref85",
+          "doi-asserted-by": "crossref",
+          "first-page": "110",
+          "DOI": "10.1038/nature21711",
+          "article-title": "Single-nucleus Hi-C reveals unique chromatin reorganization at oocyte-to-zygote transition",
+          "volume": "544",
+          "author": "IM Flyamer",
+          "year": "2017",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref86",
+          "doi-asserted-by": "crossref",
+          "first-page": "305",
+          "DOI": "10.1016/j.cell.2017.09.026",
+          "article-title": "Cohesin Loss Eliminates All Loop Domains",
+          "volume": "171",
+          "author": "SSPP Rao",
+          "year": "2017",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref87",
+          "doi-asserted-by": "crossref",
+          "first-page": "51",
+          "DOI": "10.1038/nature24281",
+          "article-title": "Two independent modes of chromatin organization revealed by cohesin removal",
+          "volume": "551",
+          "author": "W Schwarzer",
+          "year": "2017",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref88",
+          "doi-asserted-by": "crossref",
+          "first-page": "780",
+          "DOI": "10.1016/j.cell.2017.04.022",
+          "article-title": "Lamina-Associated Domains: Links with Chromosome Architecture, Heterochromatin, and Gene Repression",
+          "volume": "169",
+          "author": "B van Steensel",
+          "year": "2017",
+          "journal-title": "Cell"
+        },
+        {
+          "key": "ref89",
+          "doi-asserted-by": "crossref",
+          "first-page": "1045",
+          "DOI": "10.1038/nbt1010-1045",
+          "article-title": "The NIH Roadmap Epigenomics Mapping Consortium",
+          "volume": "28",
+          "author": "BE Bernstein",
+          "year": "2010",
+          "journal-title": "Nat Biotechnol"
+        },
+        {
+          "key": "ref90",
+          "doi-asserted-by": "crossref",
+          "first-page": "7",
+          "DOI": "10.1038/nrg2905",
+          "article-title": "Charting histone modifications and the functional organization of mammalian genomes",
+          "volume": "12",
+          "author": "VW Zhou",
+          "year": "2011",
+          "journal-title": "Nat Rev Genet"
+        },
+        {
+          "key": "ref91",
+          "doi-asserted-by": "crossref",
+          "first-page": "41",
+          "DOI": "10.1038/47412",
+          "article-title": "The language of covalent histone modifications",
+          "volume": "403",
+          "author": "BD Strahl",
+          "year": "2000",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "ref92",
+          "doi-asserted-by": "crossref",
+          "first-page": "148",
+          "DOI": "10.1016/j.gde.2012.02.013",
+          "article-title": "Combinatorial complexity in chromatin structure and function: revisiting the histone code",
+          "volume": "22",
+          "author": "OJ Rando",
+          "year": "2012",
+          "journal-title": "Curr Opin Genet Dev"
+        },
+        {
+          "key": "ref93",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1006/jcph.1995.1039",
+          "article-title": "Fast Parallel Algorithms for Short–Range Molecular Dynamics",
+          "volume": "117",
+          "author": "S Plimpton",
+          "year": "1995",
+          "journal-title": "J Comput Phys"
+        },
+        {
+          "key": "ref94",
+          "doi-asserted-by": "crossref",
+          "first-page": "376 LP",
+          "DOI": "10.1126/science.1251413",
+          "article-title": "Cryo-EM Study of the Chromatin Fiber Reveals a Double Helix Twisted by Tetranucleosomal Units",
+          "volume": "344",
+          "author": "F Song",
+          "year": "2014",
+          "journal-title": "Science"
+        },
+        {
+          "key": "ref95",
+          "doi-asserted-by": "crossref",
+          "first-page": "215",
+          "DOI": "10.1038/nmeth.1906",
+          "article-title": "ChromHMM: automating chromatin-state discovery and characterization",
+          "volume": "9",
+          "author": "J Ernst",
+          "year": "2012",
+          "journal-title": "Nat Methods"
+        },
+        {
+          "key": "ref96",
+          "doi-asserted-by": "crossref",
+          "first-page": "2976",
+          "DOI": "10.1093/nar/gkt1249",
+          "article-title": "Systematic discovery and characterization of regulatory motifs in ENCODE TF binding experiments",
+          "volume": "42",
+          "author": "P Kheradpour",
+          "year": "2014",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "ref97",
+          "doi-asserted-by": "crossref",
+          "first-page": "113",
+          "DOI": "10.1016/j.acha.2005.07.004",
+          "article-title": "Diffusion maps, spectral clustering and reaction coordinates of dynamical systems",
+          "volume": "21",
+          "author": "B Nadler",
+          "year": "2006",
+          "journal-title": "Appl Comput Harmon Anal"
+        }
+      ],
+      "updated-by": [
+        {
+          "DOI": "10.1371/journal.pcbi.1007024",
+          "type": "new_version",
+          "label": "New version",
+          "source": "publisher",
+          "updated": {
+            "date-parts": [
+              [
+                2019,
+                6,
+                20
+              ]
+            ],
+            "date-time": "2019-06-20T00:00:00Z",
+            "timestamp": 1560988800000
+          }
+        }
+      ],
+      "container-title": [
+        "PLOS Computational Biology"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://dx.plos.org/10.1371/journal.pcbi.1007024",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2020,
+            5,
+            8
+          ]
+        ],
+        "date-time": "2020-05-08T15:34:45Z",
+        "timestamp": 1588952085000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://dx.plos.org/10.1371/journal.pcbi.1007024"
+        }
+      },
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Jian",
+          "family": "Ma",
+          "sequence": "first",
+          "affiliation": []
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            10
+          ]
+        ]
+      },
+      "references-count": 97,
+      "journal-issue": {
+        "issue": "6",
+        "published-online": {
+          "date-parts": [
+            [
+              2019,
+              6,
+              10
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1371/journal.pcbi.1007024",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/282095",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "1553-7358"
+      ],
+      "issn-type": [
+        {
+          "value": "1553-7358",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2019,
+            6,
+            10
+          ]
+        ]
+      }
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-ae23332c6c5b5efe.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-ae23332c6c5b5efe.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-ae23332c6c5b5efe.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "6c3a53953752f1f927d888b73eb4720338dd0556d6629ef8cc00e911efce6f3b",
+    "chunk_count": 39,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

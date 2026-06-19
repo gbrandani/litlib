@@ -1,0 +1,1533 @@
+[Page 1]
+
+DNA bendability inside the nucleosome regulates INO80’s nucleosome positioning Graphical abstract
+
+Authors Shagun Shukla, Mzwanele Ngubo, Somnath Paul, ..., Junwoo Lee, Karl-Peter Hopfner, Blaine Bartholomew
+
+Correspondence hopfner@genzentrum.lmu.de (K.-P.H.), bbartholomew@mdanderson.org (B.B.)
+
+In brief Shukla et al. find that the INO80 chromatin remodeler positions nucleosomes at specific genomic positions, including the 5′ end of genes. INO80 recognizes DNA shape rather than a unique DNA sequence. Nucleosome movement is blocked when INO80 encounters inflexible DNA inside the nucleosome, mediated by the DNA-rigidity-sensitive binding of its Arp5 subunit.
+
+Highlights
+
+• The INO80 remodeler positions nucleosomes at gene promoters by ‘‘reading’’ DNA shape
+
+• DNA needs to bend where it first enters for INO80 to move nucleosomes
+
+• Nucleosomes are moved by bent DNA forming bulges that move around the nucleosome
+
+• INO80’s Arp5 subunit contacts DNA and histones and regulates bent DNA movement
+
+Shukla et al., 2025, Molecular Cell 85, 4318–4332 December 4, 2025 © 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies. https://doi.org/10.1016/j.molcel.2025.10.010
+
+[Page 2]
+
+DNA bendability inside the nucleosome regulates INO80’s nucleosome positioning Shagun Shukla,1,6 Mzwanele Ngubo,1,2,6 Somnath Paul,1,3 Franziska Kunert,5 Jim Persinger,1,4 Junwoo Lee,1 Karl-Peter Hopfner,5,* and Blaine Bartholomew1,7,* 1Department of Epigenetics and Molecular Carcinogenesis, UT MD Anderson Cancer Center, Houston, TX 77054, USA 2Ottawa Hospital Research Institute, Ottawa, ON, Canada 3Department of Pathology and Immunology, Washington University, St. Louis, MO 63108, USA 4University of Nebraska Medical Center, Omaha, NE, USA 5Gene Center, Department of Biochemistry, Ludwig-Maximilians-Universität München, Munich, Germany 6These authors contributed equally 7Lead contact
+
+*Correspondence: hopfner@genzentrum.lmu.de (K.-P.H.), bbartholomew@mdanderson.org (B.B.) https://doi.org/10.1016/j.molcel.2025.10.010
+
+SUMMARY
+
+While some ATP-dependent chromatin remodelers are negatively regulated by short tracts of DNA sequences (i.e., poly d(A) or GC-rich), the INO80 chromatin remodeler is regulated by DNA not readily identified by its sequence but rather by its physical properties. The underlying reason for these differences appears to be the unique mechanism by which INO80 mobilizes nucleosomes. We find that the INO80 chromatin remodeler mobilizes nucleosomes by displacing DNA from the histone octamer and creating DNA ‘‘bulges’’ that translocate around the octamer in a wave-like manner. Nucleosome movement is blocked by inflexible nucleosomal DNA that interferes with the initial formation of DNA bulges and is linked to INO80’s accurate positioning of nucleosomes at the +1 position of yeast gene promoters. Some of the interactions of the Arp5 subunit are lost when bound to inflexible DNA and may act as sensors to regulate INO80 remodeling in a DNA-shape-dependent manner.
+
+INTRODUCTION Transcription, DNA replication, and repair are regulated by ATPdependent chromatin remodelers that reorganize chromatin to make DNA accessible or alter its composition at specific DNA regions. Each of these remodelers contains an ATP-dependent DNA translocase domain that binds and moves along nucleosomal DNA, which facilitates moving or displacing nucleosomes or exchanging canonical and variant histones.1–3 The INO80 family of remodelers swaps out different variant or canonical H2A for demarcating regions of chromatin involved in gene promoters, heterochromatin formation, origins of replication, and DNA damage repair.4–7 INO80, the founding member of this family, also spaces nucleosomes equally apart and uniquely positions nucleosomes in the genome.8–12 Mutations, deletions, and overexpression of INO80 and its subunits are associated with heart disease13,14 and cancer.15–17 The Korber lab found that in vitro INO80 positions nucleosomes like that observed in vivo18 and its DNA specificity is due to physical differences in the DNA rather than a well conserved DNA motif.9,19 The distinct physical properties are a more negative propeller twist 80–120 bp from the dyad axis or a more positive propeller twist in the DNA 30–60 bp from the
+
+dyad axis compared to nucleosomes positioned by salt dialysis.9,19 These data suggest that DNA shape and mechanics are read by INO80. INO80’s DNA specificity is notably different from that of SWI/SNF, CHD1, and SWR1, where short poly(dA) or GC-rich tracts inhibit the ATPase domain from translocating on DNA.9,12,20 It remains to be shown that inflexible DNA directly blocks INO80 from moving nucleosomes. Although binding of the Arp8 module of INO80 to extranucleosomal DNA regulates nucleosome mobilization, rigid extranucleosomal DNA has not been shown to do so.10,12,19 There were no significant differences in the rates of nucleosome movement with rigid or flexible extranucleosomal yeast genomic DNA combined with 601 core nucleosomes (Extended Data, Figures 6C and 6D with 1- to 1.8-fold difference in Basu et al.21). Until now, there have been no studies testing whether rigid DNA 30–60 bp from the dyad axis on the entry side of nucleosomes arrests INO80 remodeling and whether it is a crucial factor in INO80’s DNA specificity. We now find that rigid DNA with a more positive DNA twist at the entry side arrests nucleosome movement by INO80 and reflects that previously observed for INO80 on yeast genomic DNA. Our study is the first to show that DNA rigidity regulates the nucleosome mobilization activity of an ATP-dependent chromatin remodeler.
+
+4318 Molecular Cell 85, 4318–4332, December 4, 2025 © 2025 Elsevier Inc. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+
+[Page 3]
+
+Figure 1. DNA bound to H2A-H2B on the entry side of nucleosomes blocks INO80mediated nucleosome movement (A and D) The different nucleosome substrates used either for switching the orientation of INO80 on nucleosomes or reversing the orientation of the core 73 bp DNA (i.e., M1) or swapping the 36 bp flanking DNA to opposite sides of the nucleosome (i.e., M2). The dyad axis is at 0 and the (+) and (− ) sides are labeled. (B, E, and G) The rates at which nucleosomes are moved were measured using EMSA and plotted as shown for the different nucleosomes (see Figure S1). (C, F, and H) The corresponding rates of ATP hydrolysis are plotted as indicated. Reactions contained 80 μM ATP, 24 nM INO80, and 8 nM nucleosomes and were remodeled at 30◦ C. A total of three technical replicates were performed, and error bars denote ±SD.
+
+We discovered, while delineating the step where DNA shape and bendability are critical for remodeling, that INO80 displaces ∼30 bp of DNA from the histone octamer, creating DNA loops or bulges that move across the nucleosome surface. The DNA specificity of INO80 is linked to its mechanism for mobilizing nucleosomes, which is quite distinct from that of ISWI, CHD1, and SWI/SNF chromatin remodelers, where small DNA distortions move around the histone octamer. RESULTS DNA on the entry side of nucleosomes halts INO80mediated nucleosome movement Mechanical unwrapping of nucleosomes and RNA polymerase II (RNAPII) transcribing through nucleosomes have both shown the asymmetric nature of the 601 nucleosome.22–24 On the one side, the DNA is stiffer and more readily peeled off, while the other is innately curved, binds tighter to the histone octamer,
+
+and is a barrier to enzymes such as RNAPII. We investigate whether the asymmetry of the 601 nucleosome influences the capacity of Saccharomyces cerevisiae (Sc) INO80 to mobilize nucleosomes by changing INO80’s orientation on nucleosomes (Figure 1A).11,18,19,21 Nucleosomes with 70 and 5 bp of extranucleosomal DNA on the (− ) and (+) sides (70N5) are remodeled >10 faster than the reverse, with 5N70 nucleosomes (Figures 1B, S1A, and S1B; Table 1). To better understand this DNA sequence specificity, we reverse the central 72 bp DNA bound to the H3-H4 tetramer, referred to as M1, or separately switch the flanking 36 bp of DNA bound to the H2A-H2B dimer, referred to as M2 (Figure 1D). The (+) side of the central 72 bp region is intrinsically bent, with 3-TA dinucleotides spaced ∼10 bp apart, energetically favored for histone octamer binding, in contrast to the other more rigid side.24 Altering the flanking DNA has a stronger effect on INO80-mediated nucleosome mobilization than changing the orientation of the core DNA. The rate of moving 70N5 nucleosomes by INO80 remodeling was reduced 22-fold by switching the flanking 36 bp of 601 DNA that binds the H2A-H2B dimer (Figures 1E and S1A; Table 1). These data indicate that nucleosome movement by INO80 is negatively regulated by DNA bound to the H2A-H2B surface on the entry side of nucleosomes. DNA bound to the H3-H4 tetramer surface impacts INO80 remodeling to a lesser effect, as seen by a 4-fold reduction in the rate of remodeling when reversed. Switching the orientation of INO80 binding with 5N70 nucleosomes and reversing the direction of the central 73 bp DNA did not change the already severely blocked INO80 remodeling (Figures 1G and S1B; Table 1). These data show that even when the tetramer binding surface orientation is reversed, it
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4319
+
+[Page 4]
+
+Table 1. Enzyme kinetics for INO80 and ISW2
+
+INO80 remodel
+
+INO80 ATPase
+
+ISW2 remodel
+
+DNA
+
+Nucleosome
+
+K (pM/s)
+
+95% CI
+
+Plateau
+
+95% CI
+
+601
+
+70N5
+
+6.2
+
+4.6–8.0
+
+80%
+
+87%–147%
+
+601
+
+5N70
+
+0.47
+
+ND
+
+ND
+
+ND
+
+601
+
+70N5
+
+7.4
+
+5.9–9.2
+
+76%
+
+71%–82%
+
+M1
+
+70N5
+
+2
+
+1.1–3.0
+
+108%
+
+87%–158%
+
+M2
+
+70N5
+
+0.33
+
+–
+
+67%
+
+49%–165%
+
+601
+
+5N70
+
+0.33
+
+0.2–0.5
+
+26%
+
+20%–45%
+
+M1
+
+5N70
+
+ND
+
+ND
+
+ND
+
+ND
+
+M2
+
+5N70
+
+1.6
+
+1.0–2.4
+
+81%
+
+74%–90%
+
+601
+
+70N5
+
+11
+
+7.8–16
+
+71%
+
+64%–78%
+
+M2.1
+
+70N5
+
+7.8
+
+5.7–11
+
+89%
+
+81%–97%
+
+M2.2
+
+70N5
+
+2.7
+
+1.1–4.5
+
+56%
+
+45%–94%
+
+M2.3
+
+70N5
+
+7
+
+4.9–9.7
+
+74%
+
+66%–83%
+
+601
+
+70N5
+
+1.8
+
+1.6–2.0
+
+–
+
+–
+
+601
+
+5N70
+
+2.2
+
+1.9–2.5
+
+–
+
+–
+
+601
+
+70N5
+
+2
+
+1.7–2.3
+
+–
+
+–
+
+M1
+
+70N5
+
+2.3
+
+2.0–2.7
+
+–
+
+–
+
+M2
+
+70N5
+
+6.3
+
+5.4–7.2
+
+–
+
+–
+
+601
+
+5N70
+
+1.6
+
+1.4–1.8
+
+–
+
+–
+
+M1
+
+5N70
+
+1.3
+
+0.96–1.6
+
+–
+
+–
+
+M2
+
+5N70
+
+1.6
+
+1.3–1.9
+
+–
+
+–
+
+601
+
+70N5
+
+2.4
+
+1.5–3.3
+
+–
+
+–
+
+M2.1
+
+70N5
+
+2.5
+
+1.2–3.8
+
+–
+
+–
+
+M2.2
+
+70N5
+
+1.9
+
+1.2–2.6
+
+–
+
+–
+
+M2.3
+
+70N5
+
+2.7
+
+2.0–3.5
+
+–
+
+–
+
+M2.1
+
+5N70
+
+ND
+
+ND
+
+–
+
+–
+
+M2.2
+
+5N70
+
+ND
+
+ND
+
+–
+
+–
+
+M2.3
+
+5N70
+
+ND
+
+ND
+
+–
+
+–
+
+601
+
+70N5
+
+40
+
+28–57
+
+88%
+
+79%–100%
+
+M1
+
+70N5
+
+19
+
+14–25
+
+102%
+
+91%–116%
+
+M2
+
+70N5
+
+11
+
+7.3–15
+
+103%
+
+90%–120%
+
+601
+
+5N70
+
+19
+
+11–29
+
+83%
+
+70%–103%
+
+M1
+
+5N70
+
+68
+
+52–91
+
+90%
+
+84%–97%
+
+M2
+
+5N70
+
+17
+
+13–22
+
+99%
+
+90%–109%
+
+Mapping histone-DNA contacts, INO80 Side-nucleosome
+
+DNA
+
+Type
+
+95% CI
+
+Corresponding figure
+
+Entry
+
+601
+
+start
+
+10 pM/s
+
+3.6–21
+
+Figure 3B
+
+Entry
+
+M2
+
+start
+
+17 pM/s
+
+11–27
+
+Figure 3B
+
+Entry
+
+601
+
+displaced
+
+0.2 nM/s
+
+0.14–0.32
+
+Figure 3C
+
+Entry
+
+M2
+
+displaced
+
+0.5 nM/s
+
+0.42–0.59
+
+Figure 3C
+
+Entry
+
+601
+
+20 bp
+
+0.11 nM/s
+
+0.05–0.28
+
+Figure 3D
+
+Entry
+
+M2
+
+20 bp
+
+ND
+
+ND
+
+Figure 3D
+
+Exit
+
+601
+
+start
+
+9.6 pM/s
+
+4–22
+
+Figure 3F
+
+Exit
+
+M2
+
+start
+
+4.2 pM/s
+
+1.7–9.2
+
+Figure 3F
+
+Exit
+
+601
+
+32bp
+
+15 pM/s
+
+11–20
+
+Figure 3G
+
+Exit
+
+M2
+
+33bp
+
+3.8 pM/s
+
+0.8–7.9
+
+Figure 3G
+
+Exit
+
+M2
+
+21bp
+
+24 pM/s
+
+9.1–58
+
+Figure 3H
+
+4320 Molecular Cell 85, 4318–4332, December 4, 2025
+
+[Page 5]
+
+Figure 2. Native, rigid genomic DNA at the entry side of 601-type nucleosomes interferes with INO80-mediated nucleosome mobilization and requires the entire 36 bp region to halt INO80 remodeling (A and B) The predicted (A) propeller twist angles and (B) intrinsic cyclizability or C-scores are shown for DNA on the entry side of M2 (orange) and 601 (blue) 70N5 nucleosomes. (C) The schematic shows how native, rigid yeast DNA is selected from the 36 bp flanking sides where INO80 positions nucleosomes. Yeast-601 hybrid DNAs (y1–y3-M2) were constructed and assembled into nucleosomes, then remodeled by INO80 and assayed as described in Figure 1. The example shown corresponds to the indicated region of yeast chromosome XIV. (D) The rate at which the yeast-601 hybrid nucleosomes move are determined as in Figure 1 (see Figures S3A–S3D). Reactions contained 25 nM nucleosomes, 50 nM INO80, and 80 μM ATP. (E) Rigid DNA, as seen in region 2, was substituted into the 36 bp flanking DNA on the entry side of nucleosomes. (F) The intrinsic normalized C-scores measuring DNA bendability are shown for these substituted DNAs as labeled. (G and H) The rates at which INO80 (G) mobilizes nucleosomes and (H) hydrolyzes ATP using these modified DNA are shown. Reactions contained 80 μM ATP, 24 nM INO80, and 8 nM nucleosomes and were incubated at 30◦ C. Assays were done in triplicates, and error bars denote ±SD.
+
+cannot compensate for the negative impact of DNA bound to the H2A-H2B dimer on the entry side. When the less favorable tetramer DNA orientation is paired with the preferred flanking 36 bp DNA, i.e., M2 5N70, we observed a 5-fold increase in the rate of nucleosome movement, resembling that seen when the core 73 bp DNA is swapped in the 70N5 nucleosome (Figures 1G and S1B; Table 1). Together, these results show that INO80 remodeling can be regulated by the DNA bound to the incoming H2A-H2B dimer and the H3-H4 tetramer surface. Those substrates where nucleosome movement is blocked exhibit ATP hydrolysis that is uncoupled from nucleosome movement, as they have the same or higher rate of ATP hydrolysis compared to those that are moved efficiently (Figures 1E– 1H). Similar uncoupling of ATP hydrolysis from nucleosome movement has been observed when Arp5 is absent25–27 or the acid patch in the histone octamer28 or Arp8 module binding to extranucleosomal DNA8,10 is lost. The ATPase activity was 3-fold higher with M2 than 601 70N5 nucleosomes, indicative
+
+of the ATPase domain working more efficiently (Figures 1E and 1F; Table 1). Our data suggest that the combination of rigid DNA on the H2A-H2B entry side and adjacent H3-H4 is required for hyperactive ATPase activity, as 601 5N70 nucleosomes with flexible DNA on the adjacent H3-H4 side and rigid DNA on the H2AH2B side halt nucleosome movement without increasing ATPase activity (Figures 1G and 1H; Table 1). Inflexible DNA at the entry side of nucleosomes blocks INO80-mediated nucleosome movement The predicted intrinsic propeller twist of DNA from − 38 to − 72 bp from the dyad axis of M2 nucleosomes is more positive than that of DNA from the same region of 601 nucleosomes (Figure 2A; Table S1). These differences in propeller twist resemble that seen for nucleosomes positioned by INO80 on yeast genomic DNA versus nucleosomes assembled by salt dialysis.19 The DNA from − 51 to − 87 bp from the dyad axis in M2 nucleosomes is predicted by DNAcycP2 to be intrinsically less prone to bend than the corresponding DNA region in 601 nucleosomes21,29 (Figure 2B; Table S2). The most dramatic difference in DNA bendability is predicted at the entry point of nucleosomes. Similar analysis showed that ∼15 bp of DNA bound to the tetramer surface is intrinsically bent on the ‘‘+’’ side, centered
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4321
+
+[Page 6]
+
+20 bp from the dyad axis (Figure S2A), consistent with the DNA intrinsically conforming to the histone octamer surface and binding more tightly to the tetramer surface.24 These data show a correlation between inflexible DNA at the entry side of nucleosomes and the arrest of nucleosome movement by INO80. We searched for yeast genomic DNAs that are highly prone to position nucleosomes in vitro when remodeled by INO80 that are nucleosome-free when first assembled by salt dialysis (Figures 2C, step 1, S2B, and S2C).19 The DNAcycP2 analysis found that DNA from − 36 to − 72 bp from the dyad center of nucleosomes positioned by INO80 is generally more intrinsically inflexible, similar to that observed in M2 nucleosomes (Figures 2C, step 2, S2B, and S2C; Table S3). Inflexible yeast DNAs from these regions were swapped into the region of M2 DNA corresponding to − 36 to − 72 bp from the dyad axis (Figures 2C, step 3, S2B, and S2C), assembled into nucleosomes, and remodeled by INO80. These yeast DNAs were found to inhibit nucleosome movement, comparable to the original M2 nucleosomes (Figure 2D). In conclusion, rigid DNA on the entry side of yeast nucleosomes is sufficient to halt INO80 remodeling and negative regulation of INO80 by inflexible DNA is a universal property of INO80 not reserved to 601 nucleosomes. The entire 36 bp of inflexible DNA is required to efficiently arrest INO80 remodeling The rigid 36 bp flanking DNA was divided into three sections, and each section was inserted into the corresponding locations on the entry side of 70N5 601 nucleosomes (Figure 2E). The predicted intrinsic DNA bendability of these three DNA constructs reflects different states of DNA inflexibility. The M2.1 and M2.3 constructs, with DNA inserted at − 65 to − 72 and − 37 to − 53 bp from the dyad axis, respectively, either decrease DNA flexibility near the entry side or further inside the nucleosome—specifically at − 68 to − 87 or − 45 to − 68 bp from the dyad axis (Figure 2F; Table S2). Less DNA bendability at either of these two positions is alone insufficient to block INO80 remodeling, as evidenced by only a 1.4- to 1.6-fold reduction in the rate of remodeling (Figures 2G and S4). Insertion of inhibitory DNA at − 55 to − 64 bp from the dyad axis replaces an AT-rich region at superhelical location (SHL)− 6 with a GC-rich DNA (M2.2) and reduces DNA bendability over a larger region, − 44 to − 87 bp from the dyad axis. The M2.2 DNA, however, did not have the same level of intrinsic inflexibility as the M2 DNA near the entry side of nucleosome, from − 64 to − 87 bp from the dyad axis (Figure 2F; Table S2). M2.2 nucleosomes were remodeled 4-fold slower than 601 nucleosomes (11/2.7 pM/s), which is ∼5-fold lesser effect than with M2 nucleosomes (Figures 2G and S4; Table 1). These experiments show the extent of DNA inflexibility required to block INO80 remodeling and that the entire 36 bp region is required to efficiently block INO80 remodeling. The GC-rich DNA might also inhibit the ATPase domain from translocating along DNA, as with other chromatin remodelers9,12,20 but, as we show next, this does not occur with INO80. Rigid DNA interferes with nucleosome movement after DNA is displaced from the entry side and moved 21 bp out on the exit side Site-directed histone-DNA photocrosslinking was used to determine at which stage of INO80 remodeling DNA bending is
+
+4322 Molecular Cell 85, 4318–4332, December 4, 2025
+
+required (Figures 3A and 3E). The initial rate of DNA movement on the entry side was the same for M2 and 601 70N5 nucleosomes, as measured by the loss of DNA crosslinking at the starting position 54 nucleotides (nt) from the dyad axis (Figures 3B and S5C). DNA displacement monitored by overall net loss of DNA crosslinking was 2.5-fold faster on the entry side for M2 nucleosomes than 601 (Figures 3C and S5C). Faster DNA displacement in M2 nucleosomes is consistent with DNA on the entry side of the H3-H4 tetramer being more readily displaced due to its rigidity and lack of conforming to the curvature of the histone octamer. DNA would also need to be displaced from the tetramer in this region for DNA to move and rebind 20 bp from its starting position. DNA movement on the exit side was tracked for both M2 and 601 nucleosomes (Figures S5A, S5B and S5D), and 21 bp of DNA moves out faster and to a greater extent with M2 than with 601 70N5 nucleosomes (Figures 3F and S5D). These data indicate that the higher ATPase activity observed earlier with M2 70N5 nucleosomes (Figures 1E–1H) is likely due to the ATPase domain moving more efficiently on nucleosomal DNA, owing to the higher tendency of DNA being displaced at the entry side of the H3-H4 tetramer. The higher ATPase activity also shows that the ATPase domain cycles in a processive and abortive fashion when further DNA movement is blocked, which is not seen when DNA is less likely to be displaced from the tetramer surface, as observed with 601 5N70 nucleosomes. The step missing for productive nucleosome movement appears to be the ability to bend DNA and form DNA loops, rather than ATPase domain movement and hydrolysis. After DNA was displaced from the entry side and 21 bp of DNA exited, displaced DNA on the entry side rebounded to the histone octamer 20 bp from its starting position and an additional 11 bp of DNA moved out on the exit side, for a total of 32 bp— which were not observed with M2 nucleosomes (Figures 3D and 3G). DNA bending is likely required to move DNA farther inside the nucleosome and form a loop or bulge on the histone octamer surface before DNA can rebind 20 bp from its starting position at the entry side of nucleosomes. Although the 21 bp movement is considerably faster and more efficient with M2 than 601 nucleosomes on the exit side, the rate of moving 32 bp out on the exit side is 13-fold slower with M2 nucleosomes (Figures 3F and 3G; Table 1). Rebinding of DNA at the entry site appears to be required to move 32 bp DNA out on the exit side. DNA also moved 2-fold slower from its starting position on the exit side with M2 nucleosomes (Figure 3H). DNA bulges form over the H3-H4 tetramer surface during INO80 remodeling, which are blocked by rigid DNA at the entry side We tested whether DNA bulges form on the histone surface during remodeling with lower ATP by DNA footprinting. After 80 s of remodeling, DNA is displaced from the tetramer surface, as indicated by the loss of DNA protection from SHL− 1 to SHL+2 (Figure 4A, green dots, and S6). Increased protection at SHL− 2 and +2, the two sides flanking the tetramer, indicates increased Arp5 and Ino80 binding and correlates with the initial displacement of DNA from the tetramer surface (Figure 4A, blue dots).28 The additional Arp5 and Ino80 contacts and
+
+[Page 7]
+
+Figure 3. Rigid DNA does not interfere with nucleosome DNA being displaced from the histone octamer on the entry side or 21 bp of DNA moving out from the exit side of nucleosomes (A–H) DNA movement on the histone octamer surface of nucleosomes was tracked from the (A–D) entry and (E–H) exit sides of 601 and M2 70N5 nucleosomes using nucleosomes with residue 53 of H2B (blue circle) coupled to a photoreactive reporter (red arrow). (B and H) The rate at which the starting position on DNA (0) is moved away from residue 53 of H2B is plotted, indicating whether it is being displaced or moving to a new position on DNA. (C) DNA displacement on the entry side was tracked by measuring the next loss of DNA contact accounting for both reduction of the initial crosslink and the appearance of new crosslinks. (D, F, and G) The rate at which DNA moves different distances from its starting position is plotted as indicated. These experiments had 3 technical replicates, and error bars denote ±SD (see Figures S5C and S5D).
+
+increased DNA accessibility over the tetramer are absent with M2 nucleosomes (Figures 4B and S6). These data point to rigid DNA interfering with DNA displaced at the entry side from moving over the H3-H4 tetramer surface and forming a DNA bulge. Moving the DNA bulge onto the exit side of nucleosomes is blocked by rigid DNA on the entry side The DNA bulge over the tetramer surface is expected to move toward the exit side of nucleosomes. Our original histone-DNA tracking method was modified to capture transient DNA bulges on the exit side by stopping remodeling with photocrosslinking (not quenched) and comparing when stopped with EDTA and competitor DNA before photocrosslinking (quenched, see Figure 4C). Less DNA is detected moving 32 bp on the exit
+
+side when unquenched than with quenching (Figures 4D, S7A and S7B). This difference is likely due to DNA being actively displaced from the histone octamer by INO80, which collapses onto the histone octamer when quenched (Figure 4C). Due to the size of the displaced bulge, DNA repositions 32 bp from its starting position. There is no decrease in 21 bp of DNA moving out on the exit side of M2 nucleosomes when samples are not quenched versus quenched, consistent with DNA not being actively displaced at the exit side (Figure 4E). These differences between M2 and 601 nucleosomes indicate that DNA can move out of the exit side in a manner that depends on DNA bending at the entry side and DNA bulge formation (i.e., 601), or alternatively, independently of DNA bending in a less productive manner (i.e., M2). These data are consistent with displaced DNA on the entry side moving farther inside the nucleosomes, forming a DNA bulge over the tetramer surface, and moving over the H2A-H2B surface before finally exiting the nucleosome. In this model, tighter binding to the tetramer on the side where the DNA bulge initially forms is expected to interfere with DNA lifting off the tetramer surface and bulge formation (Figures 1E and 1G). Rigid DNA alters the binding of Arp5 to both the histone octamer and nucleosomal DNA DNA footprinting of the INO80:nucleosome complex during remodeling suggests that the Arp5 and Ino80 ATPase domains regulate the initial formation of DNA bulges over the tetramer
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4323
+
+[Page 8]
+
+Figure 4. Displacement of DNA from the H3-H4 tetramer surface and the exit side near H2A-H2B is blocked by rigid DNA on the entry side (A and B) DNA displacement from the histone octamer during remodeling is tracked by DNA footprinting for (A) 601 and (B) M2 70N5 nucleosomes (Figure S6). Top profile shows where INO80 binding is detected by DNA footprinting, with protected regions highlighted by cyan dots. The next 3 profiles show the changes in INO80 during remodeling at the indicated times with remodeled and initial INO80 bound complex as labeled. Dark blue dots indicate a gain in INO80 binding to nucleosomal DNA, and green dots indicate a gain in accessibility due to DNA lifting off the histone octamer. (C) The schematic shows the expected differences in histone crosslinking DNA, which is dependent on how the reactions were stopped and whether DNA was actively displaced from the histone octamer. (D and E) The extent of DNA displacement on the exit side is plotted for different times during remodeling. Remodeling reactions are stopped either by the addition of EDTA and salmon sperm DNA (i.e., quench) or by only crosslinking (no quench). These experiments had 3 technical replicates, and error bars denote ± SD (see Figure S7).
+
+surface in a DNA bending-dependent manner (Figures 4A and 4B). We first confirmed that DNA rigidity does not alter the nucleosome structure by cryogenic electron microscopy (cryo-EM). The structure of 70N5 M2 nucleosomes was reconstructed and refined to an overall resolution of 3.03 ̊A and is virtually indistinguishable from the original 601 nucleosome structure at this resolution (Figures 5A, 5B, S8 and S9). The AlphaFold330 prediction of M2 nucleosomes fitted the DNA nearly perfectly into the cryoEM map, allowing for the distinction between purines and pyrimidines in certain areas sufficient to show that the DNA structure of M2 nucleosomes overlaps well with that of 601 nucleosomes (Figures 5C–5E and S9). M2 nucleosomes lacked well-defined DNA density on the exit side, which could be due to fewer interactions between histones and DNA and increased DNA mobility, or it could be an artifact of cryo-EM (Figure 5A). DNA footprinting
+
+4324 Molecular Cell 85, 4318–4332, December 4, 2025
+
+revealed that DNA is positioned rotationally and translationally the same on the M2 and 601 nucleosomes (Figures S10A– S10C). ScINO80 bound equally well to M2 and 601 nucleosomes, as shown by electrophoretic mobility shift assays (EMSA), consistent with no structural differences between them (Figures S10D and S10E). The Chaetomium thermophilum (Ct)INO80:M2 nucleosome complex with ADP-AlFx was resolved to 3.41 A ̊ resolution (Figures 5F–5H and S11). We focused on three key interactions of the INO80 complex known to be crucial for nucleosome remodeling and compared the structures of CtINO80:M2 nucleosome versus CtINO80:601 nucleosome (PDBs: 8ATF and 8AV6).11 The cross and parallel conformations of the grappler domain of Arp5 are resolved to 3.8 A ̊ and 3.69 A ̊ (Figures 5F– 5H and S11). Binding of the Arp5 DNA binding domain (DBD)
+
+[Page 9]
+
+Figure 5. Rigid DNA on the entry side does not alter nucleosome structure or block key INO80 interactions (A and B) The structures of cryo-EM reconstructions of M2 (this study) and 601 (PDB: 3lz031) nucleosomes are aligned to the histone and shown as follows: (A) the nucleosomal DNA and (B) the histone proteins, as indicated. (C–E) The Alphafold3 model of the M2 nucleosome is built into the cryo-EM reconstruction of the M2 nucleosome and compared to 601 nucleosomes at (C) the H3-H4 interface, (D) the H2A-H2B interface, and (E) the H2B-H4 interaction site. (F and G) Cryo-EM reconstructions of the CtINO80:M2 complex (F: parallel grappler and G: cross grappler). PDBs 8AV6 (Rvb1/2, Arp5/Ies6, Ies2, 601 nucleosome), 8ATF (ATPase domain), and Alphafold3 predictions were fitted into the cryo-EM reconstructions using rigid-body docking in ChimeraX. Single subunits and domains of the INO80 complex and nucleosome typically move slightly and were fitted, respectively, into the maps using real-space fitting (ChimeraX32). (legend continued on next page)
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4325
+
+[Page 10]
+
+to nucleosomal DNA and the cross and parallel conformations of the grappler domain to the histone octamer in the CtINO80:M2 nucleosome structure are the same as previously observed with 601 nucleosomes11,28,33,34 (Figures 5F–5J). Although the density of the ATPase domain was less defined and its contacts with nucleosomes not well resolved, the previous structure for the ATPase domain in the CtINO80:601 nucleosome structure (PDB: 8ATF with ADP-BeF) fitted well into the cryo-EM structure for CtINO80:M2 nucleosome using ChimeraX without model building (Figure 5H). These data indicate that the reason INO80 does not mobilize M2 nucleosomes is not due to the absence of these crucial contacts with the nucleosome. Certain changes, however, may not have been visualized by cryo-EM because of the less well-defined density of the ATPase domain or the possibility of other conformations of the grappler domain not captured by cryo-EM. Consistent with the CtINO80:M2 nucleosome structure, histone crosslinking at residues 89 and 109 of histones H2A and H2B, respectively, showed that Arp5 binds equally well to the acidic pocket of both M2 and 601 nucleosomes35 (Figures 6A, S12A and S12B). One conformation of the grappler domain, revealed by Arp5 crosslinking but not seen in cryo-EM with the CtINO80:nucleosome structure,11,28,33,34 involves residues 358 to 516 of the grappler domain binding near residue 80 of histone H3 (H3-80) in the loop1 region of H3 between α1 and α2 helices.35,36 Binding of the grappler domain to this region is disrupted when INO80 is bound to M2 versus 601 nucleosomes, with reduced crosslinking of Arp5 and Ies6 at H3-80 (Figure 6A). This part of the grappler domain was shown to bind this region of H3 with INO80 bound to hexasomes with a more exposed H3-H4 tetramer surface.33,36 Differences in the grappler domain’s binding to M2 nucleosome are not due to changes in the accessibility of the tetramer surface as DNA is wrapped the same in M2 and 601 nucleosomes, with no changes in DNA phasing (Figures 6B–6D, S10A–S10C, S12C and S12D). Binding of Arp5 DBD was altered when INO80 was bound to M2 nucleosomes, as seen by a loss of DNA footprinting at SHL− 2 and SHL− 4 compared to 601 nucleosomes (Figure 6B). The proximity of residue 80 of histone H3 to nucleosomal DNA at SHL− 2 is consistent with a concerted loss of Arp5 binding at this region when INO80 was bound to M2 nucleosomes. These observations indicate that binding of the DBD and grappler domain of Arp5 are responsive to changes in DNA flexibility, which is important for the DNA specificity of INO80. The loss of Arp5 binding at SHL− 2 with M2 nucleosomes in the absence of ATP probably accounts for the loss of enhanced binding at SHL− 2 that occurs during remodeling with M2 nucleosomes.
+
+to that observed by cryo-EM for CtINO80 with M2 nucleosomes (Figures 5H, 6C and 6D). However, the ATPase domain interactions were lost at nt − 52 to − 54 on one DNA strand in the ScINO80:M2 nucleosome complex, and on the other DNA strand, phasing is altered at SHL− 6 (Figure 6C, cyan dots). Binding of the ATPase domain on the adjacent DNA superhelix at SHL+3 is also reduced when INO80 binds M2 nucleosomes (Figure 6D, blue dots). The changes in the ATPase domain interactions at SHL+3 and SHL− 5 are spatially close together, consistent with the alterations in ATPase domain interactions in this region. These data suggest that changes in ATPase domain binding may contribute to the reduced remodeling activity caused by the 10 bp GC-rich DNA, which occurs in the absence of ATP. DNA footprinting also showed that DNA is not lifted off the histone octamer at the entry edge, in contrast to that observed in the CtINO80:601 and CtINO80:M2 nucleosome cryo-EM structures, which could account for changes in the ATPase domain interactions not detected by cryo-EM11 (Figures 6C and S12C, nt − 58 to − 72). The DNA specificity of INO80 at the H2A-H2B interface is not shared with ISW2, another nucleosome spacing factor We found that the DNA specificity of INO80 is not shared by ISW2, an ATP-dependent remodeler that equally spaces nucleosomes in arrays and is mediated by a non-catalytic subunit bound to extranucleosomal DNA, similar to INO80.37–39 ISW2 moved 5N70 nucleosomes only 2-fold slower than 70N5 nucleosomes, which is much less than the estimated >10-fold difference seen with INO80 (Figure 7A compared to Figure 1B; Table 1). The flanking 36 bp DNA has less impact on ISW2 remodeling than INO80, as shown by M2 70N5 nucleosomes remodeling 3.6-fold slower than 601 nucleosomes, considerably less than the 22-fold difference in remodeling rates observed for INO80 (Figure 7B compared to Figure 1E; Table 1). Similarly, there was no difference in the rates of ISW2 remodeling for M2 versus 601 5N70 nucleosomes, whereas there was a 4.8-fold increase for INO80 (Figure 7C compared to Figure 1G; Table 1). In contrast, the orientation of the central 73 bp DNA had a larger effect on ISW2 than on INO80, as shown by ISW2 remodeling M1 5N70 nucleosomes 3.6-fold faster than 601 nucleosome, whereas there were no differences in the rates of INO80 remodeling with these same two types of nucleosomes (Figure 7C compared to Figure 1G). These experiments demonstrate that the DNA specificity of INO80 is distinct from ISW2, which likely reflects their different mechanisms of nucleosome remodeling. DISCUSSION
+
+ATPase domain binding to nucleosomal DNA is altered by inflexible DNA at the entry side of nucleosomes The ATPase domain of ScINO80 bound to nucleosomal DNA at SHL− 6 and SHL+2, as detected by DNA footprinting, is similar
+
+By rearranging the 601 DNA sequence, we found that inflexible DNA arrests INO80 remodeling when located near where DNA is displaced from the histone octamer on the entry side of
+
+(H–J) Overlay of the INO80:M2 (this study) and INO80-601 (PDBs: 8AV6 and 8ATF) nucleosome complexes. Single subunits and domains of the INO80 complex and nucleosome were real-space fitted, respectively, into the cryo-EM reconstructions (ChimeraX). The Arp5 structures from CtINO80 bound to M2 nucleosomes (this study) and CtINO80 bound to 601 nucleosomes (PDB: 8AV6) are overlaid for (I) DBD and (J) grappler domain regions of Arp5. (K) Overlay of the ATPase domain bound to a 601 nucleosome (8ATF, orange) aligned to the nucleosome of our cryo-EM reconstruction and the ATPase domain (red) fitted without the nucleosome structure into the cryo-EM reconstruction of the CtINO80:M2 complex (this study).
+
+4326 Molecular Cell 85, 4318–4332, December 4, 2025
+
+[Page 11]
+
+Figure 6. Limited change in Arp5 and ATPase domain contacts on the entry side of nucleosomes due to DNA rigidity (A) Site-directed histone crosslinking at the four indicated histone octamer positions is used to probe the interactions of Arp5 and Ies6 with INO80-bound M2 and 601 70N5 nucleosomes (Figure S12B). Efficiency of photoaffinity labeling is relative to the extent of Arp5 being crosslinked at residue 109 of histone H2B. A total of three technical replicates were performed, and error bars denote ±SD. (B–D) INO80 interactions with the upper strand of nucleosomal DNA on the entry side of 601 and M2 70N5 nucleosomes are probed by DNA footprinting. Cyan dots indicate those positions where these interactions differ between M2 and 601 nucleosomes (Figure S13).
+
+nucleosomes. The rigid DNA interferes with INO80 bending the displaced DNA, which is required for forming DNA bulges or loops that move around the nucleosome. At the +1 nucleosome positions of gene promoters and other positions where INO80 alone positions nucleosomes, 36 bp of DNA on the flanking sides of these nucleosomes are similarly inflexible.9,19 For the first time, we show that these inflexible yeast genomic DNAs, when placed at the entry side of nucleosomes, arrest nucleosome movement by INO80 and provide direct evidence for how they function in vivo. The DNA specificity of INO80 is distinct from that previously observed for SWI/SNF, RSC, CHD1, and SWR1, where short tracts of poly (dA) or GC-rich DNA interfere with the ATPase domain’s twisting of DNA and/or translocating along DNA.9,12,20 Instead, the DNA specificity of INO80 is due to larger stretches of DNA that are minimally ∼36 bp with
+
+no well-defined consensus sequence. Rather than interfering with the ATPase domain moving on DNA, we found that rigid DNA on the entry side of nucleosomes, 36 to 72 bp from the dyad center, increases the ability of INO80 to displace 20 bp of DNA from the entry side and move 21 bp of DNA out the exit side of nucleosomes while still blocking nucleosome movement. During INO80 remodeling, the formation of a ∼30 bp DNA loop or bulge on the surface of the histone octamer near the H3-H4 tetramer surface was seen by DNA footprinting. Increased binding of Arp5 DBD at SHL− 2 and SHL− 3 and Ino80’s ATPase domain at SHL+2 was observed when the DNA bulge is formed, flanking the tetramer surface, and likely promotes or stabilizes DNA displacement at this region. Both the increased binding of DBD at SHL− 2 and SHL− 3 and the binding of the ATPase domain at SHL+2 are lost when rigid DNA is on the entry side of nucleosomes, coupled with the loss of the DNA bulge over the tetramer surface. DNA bound to the tetramer is also found to impact nucleosome movement by INO80, as switching the orientation of the tetramer-bound DNA interfered with remodeling. The orientation of the core 73 bp DNA that blocks remodeling places a ∼15 bp region, intrinsically bent at SHL− 2, causing DNA to bind tighter to the histone octamer, which is adjacent to where DNA is first displaced. Consistent with our model, tighter binding to nucleosomal DNA specifically at this region would be expected to impede the formation of DNA bulges over the tetramer surface. Other data supporting DNA bulge formation as a ratelimiting step for INO80 remodeling come from experiments with single-nucleotide gaps in DNA that interfere with INO80 remodeling.40 In these experiments, DNAs were designed with a
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4327
+
+[Page 12]
+
+Figure 7. ISW2 does not share the same DNA specificity of INO80, even though both space nucleosomes (A–C) The rate of nucleosome movement for the same nucleosomal substrates shown in Figure 1 is measured for ISW2, with EMSA on the right and their quantitation plotted on the left. Reactions were incubated at 30◦ C for 0–640 s, containing 8 nM nucleosomes and 18 nM ISW2. Lanes 17 and 18 show the initial reactions before remodeling, indicating nucleosomes are fully bound by ISW2 under these conditions. All assays were done in triplicates, and error bars denote ±SD.
+
+single-nucleotide gap per DNA template, each at a different position. After remodeling, the gaps enriched in the immobile nucleosomes were those that block remodeling. There was a modest enrichment of gaps spanning 10–15 nt when remodeled by ISW2 and SWI/SNF41 (Figures 2B and 4A). The modest enrichment of gaps proximal to SHL− 2 shows that these 1 bp gaps have a partial effect on blocking the ATPase domain from translocating on DNA. We expect that for INO80, a 1 bp DNA gap would block bulge formation by making the displaced DNA too flexible to constrain and/or bend in a manner to move farther inside the nucleosome. Similar experiments with INO80 found that singlenucleotide gaps spanning a 34 bp region, 34 and 68 bp from the dyad axis on the entry side, are exclusively observed in the immobile nucleosomes and not in those mobilized, unlike that seen for SWI/SNF and ISW240 (Figure 3A). The higher enrichment and stronger impact of the single-nucleotide gaps in DNA on INO80 remodeling indicate that the gaps are not likely blocking the ATPase domain of INO80 but are impacting some other aspect of INO80 remodeling. The region where gaps interfere with INO80 remodeling aligns with the same region where the lack of DNA bending interferes with INO80 remodeling and is a significantly larger region than observed for ISW2 and SWI/ SNF. These data suggest that 1 bp gaps have a more severe effect on INO80 remodeling than on ISW2 and SWI/SNF because the gaps are more efficient at blocking bulge formation than blocking DNA translocation by the ATPase domain.
+
+4328 Molecular Cell 85, 4318–4332, December 4, 2025
+
+While most INO80 interactions are the same between M2 and 601 nucleosomes, a few significant differences are seen by histone-Arp5/Ies6 crosslinking and DNA footprinting with ScINO80. Previously, the grappler domain of ScArp5 was shown to bind nucleosomes near loop1, between α1 and α2 helices of histone H3, by photoaffinity labeling of Arp5 from residue 80 of histone H3 and peptide mapping.35 Grappler domain binding to the H3-H4 interface has also been seen in the cryo-EM structures of CtINO80:hexasomes, where DNA is partially lifted off the H3-H4 tetramer surface,36 but not for CtINO80:nucleosomes.11,28 One reason for this interaction not being detected by cryo-EM with nucleosomes is likely the dynamic nature of the grappler domain with only a subset of the different bound conformations being stable under cryogenic conditions.11,28,34 In ScINO80:nucleosomes, binding of the grappler domain to the loop1 region is sensitive to changes in DNA flexibility and is lost when rigid DNA is at the entry side. Binding of Arp5 DBD to nucleosomal DNA at SHL− 2, proximal to residue 80 of H3, is similarly lost when rigid DNA is at the entry side of nucleosomes. These results together show a general loss of Arp5 binding in this vicinity is likely the reason for the failure of enhanced binding at SHL− 2 and SHL− 3 during M2 nucleosome remodeling. Recently, binding of Arp5 DBD to nucleosomal DNA has been shown to be required for displacing DNA at the entry side, and now, we provide evidence that the DBD along with the grappler domain is important for the passage of displaced DNA and the formation of the initial DNA bulge.35 Although Ino80’s ATPase domain likely moves along DNA in a 1–2 bp stepwise manner like other remodelers, it is unique in that it does not mobilize nucleosomes by ∼1 bp distortions in a corkscrew fashion through the nucleosome like other remodelers.42–46 Instead, INO80 displaces ∼20–30 bp of DNA off the surface of nucleosomes, forming a DNA loop or bulge, which moves to the other side of the nucleosome. SWR1, a paralog of INO80, has been observed to displace large stretches of DNA from the histone octamer like that observed here for INO80, but SWR1 does not move nucleosomes.47 While these two
+
+[Page 13]
+
+complexes differ in their ability to mobilize nucleosomes, it is not surprising, given their extensive structural similarity and shared subunits, that they both displace large stretches of DNA off the histone octamer surface for the purpose of either exchanging histones or mobilizing nucleosomes. There are also reports that SWI/SNF might form DNA loops on nucleosomes, but SWI/SNF does not have the same DNA specificity as INO80.18,48 Limitations of the study In this study, DNA loops are inferred from increased DNA accessibility over the H3-H4 tetramer surface or loss of DNA contacts with the H2A-H2B dimer surface. An alternative explanation for the increased DNA accessibility detected by DNA footprinting is loosening of histone-DNA contacts with DNA being displaced a short distance from the histone octamer rather than forming DNA bulges. DNA moving 32 bp from its starting position after initial displacement from the H2A-H2B surface, as seen with histone-DNA site-specific crosslinking, is, however, inconsistent with loosening histone-DNA interactions. In the future, time resolved cryo-EM studies of INO80 nucleosome remodeling intermediates may further confirm the formation of DNA bulges during remodeling. Our study does not determine if INO80 has the same DNA specificity with hexasomes.33,36,49 The ATPase domain and Arp5 module are positioned quite differently on hexasomes compared to nucleosomes, yet they share some remodeling properties. Arp5 interactions are universally vital for hexasome and nucleosome remodeling and are also important for the DNA specificity of INO80. Binding of the DBD of Arp5 to DNA is equally required for nucleosome and hexasome remodeling, even though the DBD of Arp5 relocates from SHL− 3 to SHL+1 and SHL− 3 when bound to hexasomes.33,36 The DBD is important for INO80’s ‘‘sensing’’ of DNA flexibility and therefore might function the same with hexasomes. In contrast, Arp5 interactions with the acidic pocket of nucleosomes are not responsive to changes in DNA flexibility and are also not required for hexasome remodeling.36 Arp5’s grappler domain switches from contacting the acidic pocket of nucleosomes to binding the exposed surface of the H3-H4 tetramer of hexasomes.33,36 As seen by histone-Arp5 crosslinking, the grappler domain contacts the same H3-H4 tetramer surface in nucleosomes as in the cryo-EM structure of INO80 bound to hexasomes,35 and these interactions are involved in ‘‘sensing’’ DNA flexibility. These similarities suggest that INO80 might have DNA specificity with hexasomes like that of nucleosomes, although at different DNA positions. Further work is needed to confirm if DNA shape regulates INO80 remodeling of hexasomes.
+
+Data and code availability • The cryo-EM reconstructions for the 70N5 M2 nucleosome and 70N5 M2 nucleosome bound to C. thermophilum INO80 C-module are at EMDB: EMD-52223 and EMDB: EMD-52220. The coordinates of the 70N5 M2 nucleosome are deposited at PDB: 9QIK. Original native and denaturing polyacrylamide gel images have been deposited at Mendeley at https://data.mendeley.com/datasets/2bnfcbp8ch/1 and are publicly available as of the data of publication. • This paper does not report original code. • Any additional information required to reanalyze the data reported in this paper is available from the lead contact upon request.
+
+ACKNOWLEDGMENTS We thank Felix Metzner, Albert Lopez-Francos Lopez-Romero, and Katja Lammens for help with data collection, sample preparation, and data deposition. Dhurjhoti Saha and Srinivas Animireddy also assisted in manuscript preparation. Funding support was provided by the National Institutes of Health grant R01GM108908 to B.B., the Deutsche Forschungsgemeinschaft (Gottfried Wilhelm Leibniz Preis, SFB1064 – 213249687, SFB1361 – 393547839) and European Research Council Advanced Grant (833613 INO3D) to K.-P.H. AUTHOR CONTRIBUTIONS J.P. and S.S. performed DNA footprinting experiments and analysis; J.L. performed MNase-seq analysis of INO80-remodeled yeast genomic DNA; S.S. executed mapping of histone-DNA contacts by photocrosslinking; M.N. designed and constructed the M1, M2, and M2 variants and performed INO80 and ISW2 remodeling and ATPase assays with them; M.N. carried out the analysis of these experiments with assistance from S.P.; S.P. performed the INO80 binding and histone crosslinking assays with 601 and M2 nucleosome; F.K. generated and purified C. thermophilum INO80ΔN and 70N5 M2 nucleosomes for cryo-EM data analysis; F.K carried out cryo-EM sample preparation, processing, and evaluation and generated cryo-EM figures; F.K., S.S., and B.B. created the graphics; S.S. and B.B. wrote the manuscript; and B.B and K.P.H (structural studies) supervised this work. DECLARATION OF INTERESTS The authors declare no conflicts of interests. STAR★METHODS Detailed methods are provided in the online version of this paper and include the following:
+
+• KEY RESOURCES TABLE • EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS ○ Yeast strains and culture ○ Bacterial strains and culture ○ Insect cell lines and culture
+
+• METHOD DETAILS ○ Immunoaffinity purification of the INO80 and ISW2 complexes ○ Expression and purification of the INO80ΔN complex from C. ther-
+
+mophilum RESOURCE AVAILABILITY Lead contact Requests for further information and resources should be directed to and will be fulfilled by the lead contact, Blaine Bartholomew (bbartholomew@ mdanderson.org).
+
+○ 601 DNA constructs preparation ○ Nucleosome reconstitution ○ Nucleosome remodeling ○ ATPase assay ○ Binding assay ○ High-resolution mapping of changes in H2B53–DNA contacts ○ Hydroxyl radical footprinting ○ Histone crosslinking
+
+Materials availability All unique/stable reagents generated in this study are available from the lead contact with a completed materials transfer agreement.
+
+○ Estimating the physical properties of DNA at the entry side of nucle-
+
+osomes ○ Cryo-EM grid preparation: 70N5 M2 nucleosome dataset
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4329
+
+[Page 14]
+
+Cryo-EM grid preparation: C-module of CtINO80-70N5 M2 nucleosome dataset ○ Cryo-EM data collection ○ Cryo-EM image processing of the 70N5 M2 nucleosome ○ Cryo-EM image processing of the C. thermophilum INO80 C-module and 70N5 M2 nucleosome (ADP-AlFx) ○ Model building and refinement ○ In vitro yeast chromatin nucleosome positioning analysis • QUANTIFICATION AND STATISTICAL ANALYSIS ○
+
+SUPPLEMENTAL INFORMATION Supplemental information can be found online at https://doi.org/10.1016/j. molcel.2025.10.010. Received: December 2, 2024 Revised: July 25, 2025 Accepted: October 10, 2025 Published: November 24, 2025 REFERENCES 1. Clapier, C.R., Iwasa, J., Cairns, B.R., and Peterson, C.L. (2017). Mechanisms of action and regulation of ATP-dependent chromatin-remodelling complexes. Nat. Rev. Mol. Cell Biol. 18, 407–422. https://doi. org/10.1038/nrm.2017.26. 2. Zhou, C.Y., Johnson, S.L., Gamarra, N.I., and Narlikar, G.J. (2016). Mechanisms of ATP-Dependent Chromatin Remodeling Motors. Annu. Rev. Biophys. 45, 153–181. https://doi.org/10.1146/annurev-biophys051013-022819. 3. Bartholomew, B. (2014). Regulating the chromatin landscape: structural and mechanistic perspectives. Annu. Rev. Biochem. 83, 671–696. https://doi.org/10.1146/annurev-biochem-051810-093157. 4. Giaimo, B.D., Ferrante, F., Herchenröther, A., Hake, S.B., and Borggrefe, T. (2019). The histone variant H2A.Z in gene regulation. Epigenetics Chromatin 12, 37. https://doi.org/10.1186/s13072-019-0274-9. 5. Meneghini, M.D., Wu, M., and Madhani, H.D. (2003). Conserved histone variant H2A.Z protects euchromatin from the ectopic spread of silent heterochromatin. Cell 112, 725–736. https://doi.org/10.1016/s00928674(03)00123-5. 6. Papamichos-Chronakis, M., Watanabe, S., Rando, O.J., and Peterson, C.L. (2011). Global regulation of H2A.Z localization by the INO80 chromatin-remodeling enzyme is essential for genome integrity. Cell 144, 200–213. https://doi.org/10.1016/j.cell.2010.12.021.S0092-8674(10)01479-0. 7. Alatwi, H.E., and Downs, J.A. (2015). Removal of H2A.Z by INO80 promotes homologous recombination. EMBO Rep. 16, 986–994. https://doi. org/10.15252/embr.201540330. 8. Knoll, K.R., Eustermann, S., Niebauer, V., Oberbeckmann, E., Stoehr, G., Schall, K., Tosi, A., Schwarz, M., Buchfellner, A., Korber, P., and Hopfner, K.P. (2018). The nuclear actin-containing Arp8 module is a linker DNA sensor driving INO80 chromatin remodeling. Nat. Struct. Mol. Biol. 25, 823–832. https://doi.org/10.1038/s41594-018-0115-8. 9. Oberbeckmann, E., Niebauer, V., Watanabe, S., Farnung, L., Moldt, M., Schmid, A., Cramer, P., Peterson, C.L., Eustermann, S., Hopfner, K.P., and Korber, P. (2021). Ruler elements in chromatin remodelers set nucleosome array spacing and phasing. Nat. Commun. 12, 3232. https://doi. org/10.1038/s41467-021-23015-0.
+
+12. Udugama, M., Sabri, A., and Bartholomew, B. (2011). The INO80 ATPdependent chromatin remodeling complex is a nucleosome spacing factor. Mol. Cell Biol. 31, 662–673. https://doi.org/10.1128/MCB.01035-10. 13. Rhee, S., Chung, J.I., King, D.A., D’Amato, G., Paik, D.T., Duan, A., Chang, A., Nagelberg, D., Sharma, B., Jeong, Y., et al. (2018). Endothelial deletion of Ino80 disrupts coronary angiogenesis and causes congenital heart disease. Nat. Commun. 9, 368. https://doi.org/10.1038/s41467-01702796-3. 14. Guo, D.C., Duan, X.Y., Regalado, E.S., Mellor-Crummey, L., Kwartler, C.S., Kim, D., Lieberman, K., de Vries, B.B.A., Pfundt, R., Schinzel, A., et al. (2017). Loss-of-Function Mutations in YY1AP1 Lead to Grange Syndrome and a Fibromuscular Dysplasia-Like Vascular Disease. Am. J. Hum. Genet. 100, 21–30. https://doi.org/10.1016/j.ajhg.2016.11.008. 15. Zhou, B., Wang, L., Zhang, S., Bennett, B.D., He, F., Zhang, Y., Xiong, C., Han, L., Diao, L., Li, P., et al. (2016). INO80 governs superenhancer-mediated oncogenic transcription and tumor growth in melanoma. Genes Dev. 30, 1440–1453. https://doi.org/10.1101/gad.277178.115. 16. Zhang, S., Zhou, B., Wang, L., Li, P., Bennett, B.D., Snyder, R., Garantziotis, S., Fargo, D.C., Cox, A.D., Chen, L., and Hu, G. (2017). INO80 is required for oncogenic transcription and tumor growth in nonsmall cell lung cancer. Oncogene 36, 1430–1439. https://doi.org/10. 1038/onc.2016.311. 17. Lee, S.A., Lee, H.S., Hur, S.K., Kang, S.W., Oh, G.T., Lee, D., and Kwon, J. (2017). INO80 haploinsufficiency inhibits colon cancer tumorigenesis via replication stress-induced apoptosis. Oncotarget 8, 115041–115053. https://doi.org/10.18632/oncotarget.22984. 18. Krietenstein, N., Wal, M., Watanabe, S., Park, B., Peterson, C.L., Pugh, B.F., and Korber, P. (2016). Genomic Nucleosome Organization Reconstituted with Pure Proteins. Cell 167, 709–721.e12. https://doi. org/10.1016/j.cell.2016.09.045. 19. Oberbeckmann, E., Krietenstein, N., Niebauer, V., Wang, Y., Schall, K., Moldt, M., Straub, T., Rohs, R., Hopfner, K.P., Korber, P., and Eustermann, S. (2021). Genome information processing by the INO80 chromatin remodeler positions nucleosomes. Nat. Commun. 12, 3231. https://doi.org/10.1038/s41467-021-23016-z. 20. Converso, C., Pierrakeas, L., Chan, L., Chowdhury, S., de Onis, E., Kuznetsov, V.I., Denu, J.M., and Luk, E. (2025). H2A.Z deposition by the SWR complex is stimulated by polyadenine DNA sequences in nucleosomes. PLoS Biol. 23, e3003059. https://doi.org/10.1371/journal.pbio. 3003059. 21. Basu, A., Bobrovnikov, D.G., Qureshi, Z., Kayikcioglu, T., Ngo, T.T.M., Ranjan, A., Eustermann, S., Cieza, B., Morgan, M.T., Hejna, M., et al. (2021). Measuring DNA mechanics on the genome scale. Nature 589, 462–467. https://doi.org/10.1038/s41586-020-03052-3. 22. Bondarenko, V.A., Steele, L.M., Ujvári, A., Gaykalova, D.A., Kulaeva, O.I., Polikanov, Y.S., Luse, D.S., and Studitsky, V.M. (2006). Nucleosomes can form a polar barrier to transcript elongation by RNA polymerase II. Mol. Cell 24, 469–479. https://doi.org/10.1016/j.molcel.2006.09.009. 23. Gaykalova, D.A., Nagarajavel, V., Bondarenko, V.A., Bartholomew, B., Clark, D.J., and Studitsky, V.M. (2011). A polar barrier to transcription can be circumvented by remodeler-induced nucleosome translocation. Nucleic Acids Res. 39, 3520–3528. https://doi.org/10.1093/nar/gkq1273. 24. Ngo, T.T.M., Zhang, Q., Zhou, R., Yodh, J.G., and Ha, T. (2015). Asymmetric unwrapping of nucleosomes under tension directed by DNA local flexibility. Cell 160, 1135–1144. https://doi.org/10.1016/j.cell.2015. 02.001.
+
+10. Brahma, S., Ngubo, M., Paul, S., Udugama, M., and Bartholomew, B. (2018). The Arp8 and Arp4 module acts as a DNA sensor controlling INO80 chromatin remodeling. Nat. Commun. 9, 3309. https://doi.org/10. 1038/s41467-018-05710-7.
+
+25. Willhoft, O., Bythell-Douglas, R., McCormack, E.A., and Wigley, D.B. (2016). Synergy and antagonism in regulation of recombinant human INO80 chromatin remodeling complex. Nucleic Acids Res. 44, 8179– 8188. https://doi.org/10.1093/nar/gkw509.
+
+11. Kunert, F., Metzner, F.J., Jung, J., Höpfler, M., Woike, S., Schall, K., Kostrewa, D., Moldt, M., Chen, J.X., Bantele, S., et al. (2022). Structural mechanism of extranucleosomal DNA readout by the INO80 complex. Sci. Adv. 8, eadd3189. https://doi.org/10.1126/sciadv.add3189.
+
+26. Yao, W., Beckwith, S.L., Zheng, T., Young, T., Dinh, V.T., Ranjan, A., and Morrison, A.J. (2015). Assembly of the Arp5 (Actin-related Protein) Subunit Involved in Distinct INO80 Chromatin Remodeling Activities. J. Biol. Chem. 290, 25700–25709. https://doi.org/10.1074/jbc.M115.674887.
+
+4330 Molecular Cell 85, 4318–4332, December 4, 2025
+
+[Page 15]
+
+27. Watanabe, S., Tan, D., Lakshminarasimhan, M., Washburn, M.P., Hong, E.J.E., Walz, T., and Peterson, C.L. (2015). Structural analyses of the chromatin remodelling enzymes INO80-C and SWR-C. Nat. Commun. 6, 7108. https://doi.org/10.1038/ncomms8108. 28. Eustermann, S., Schall, K., Kostrewa, D., Lakomek, K., Strauss, M., Moldt, M., and Hopfner, K.P. (2018). Structural basis for ATP-dependent chromatin remodelling by the INO80 complex. Nature 556, 386–390. https:// doi.org/10.1038/s41586-018-0029-y. 29. Li, K., Carroll, M., Vafabakhsh, R., Wang, X.A., and Wang, J.P. (2022). DNAcycP: a deep learning tool for DNA cyclizability prediction. Nucleic Acids Res. 50, 3142–3154. https://doi.org/10.1093/nar/gkac162. 30. Abramson, J., Adler, J., Dunger, J., Evans, R., Green, T., Pritzel, A., Ronneberger, O., Willmore, L., Ballard, A.J., Bambrick, J., et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. Nature 630, 493–500. https://doi.org/10.1038/s41586-02407487-w.
+
+43. Malik, D., Deshmukh, A., Bilokapic, S., and Halic, M. (2025). Mechanisms of chromatin remodeling by the human Snf2-type ATPase SNF2H. Cell Res. 35, 465–468. https://doi.org/10.1038/s41422-025-01103-w. 44. Deindl, S., Hwang, W.L., Hota, S.K., Blosser, T.R., Prasad, P., Bartholomew, B., and Zhuang, X. (2013). ISWI remodelers slide nucleosomes with coordinated multi-base-pair entry steps and single-basepair exit steps. Cell 152, 442–452. https://doi.org/10.1016/j.cell.2012.12. 040S0092-8674(13)00007-X. 45. Sabantsev, A., Levendosky, R.F., Zhuang, X., Bowman, G.D., and Deindl, S. (2019). Direct observation of coordinated DNA movements on the nucleosome during chromatin remodelling. Nat. Commun. 10, 1720. https://doi.org/10.1038/s41467-019-09657-1. 46. Sia, Y., Pan, H., Chen, K., and Chen, Z. (2025). Structural insights into chromatin remodeling by ISWI during active ATP hydrolysis. Science 388, eadu5654. https://doi.org/10.1126/science.adu5654.
+
+31. Vasudevan, D., Chua, E.Y.D., and Davey, C.A. (2010). Crystal structures of nucleosome core particle containing the ‘‘601 string poistioning sequence. J. Mol. Biol. 403, 1–10. https://doi.org/10.1016/j.jmb.2010.08.039.
+
+47. Poyton, M.F., Feng, X.A., Ranjan, A., Lei, Q., Wang, F., Zarb, J.S., Louder, R.K., Park, G., Jo, M.H., Ye, J., et al. (2022). Coordinated DNA and histone dynamics drive accurate histone H2A.Z exchange. Sci. Adv. 8, eabj5509. https://doi.org/10.1126/sciadv.abj5509.
+
+32. Pettersen, E.F., Goddard, T.D., Huang, C.C., Meng, E.C., Couch, G.S., Croll, T.I., Morris, J.H., and Ferrin, T.E. (2021). UCSF ChimeraX: Structure visualization for researchers, educators, and developers. Protein Sci. 30, 70–82. https://doi.org/10.1002/pro.3943.
+
+48. Zhang, Y., Smith, C.L., Saha, A., Grill, S.W., Mihardja, S., Smith, S.B., Cairns, B.R., Peterson, C.L., and Bustamante, C. (2006). DNA translocation and loop formation mechanism of chromatin remodeling by SWI/ SNF and RSC. Mol. Cell 24, 559–568.
+
+33. Wu, H., Muñoz, E.N., Hsieh, L.J., Chio, U.S., Gourdet, M.A., Narlikar, G.J., and Cheng, Y. (2023). Reorientation of INO80 on hexasomes reveals basis for mechanistic versatility. Science 381, 319–324. https://doi.org/10.1126/ science.adf4197.
+
+49. Hsieh, L.J., Gourdet, M.A., Moore, C.M., Muñoz, E.N., Gamarra, N., Ramani, V., and Narlikar, G.J. (2022). A hexasome is the preferred substrate for the INO80 chromatin remodeling complex, allowing versatility of function. Mol. Cell 82, 2098–2112.e4. https://doi.org/10.1016/j.molcel. 2022.04.026.
+
+34. Ayala, R., Willhoft, O., Aramayo, R.J., Wilkinson, M., McCormack, E.A., Ocloo, L., Wigley, D.B., and Zhang, X. (2018). Structure and regulation of the human INO80-nucleosome complex. Nature 556, 391–395. https://doi.org/10.1038/s41586-018-0021-6. 35. Shukla, S., Paul, S., Garcia, J., Zhong, Y., Juste, S.S., Beauchemin, K., and Bartholomew, B. (2025). Conformational switching of Arp5 subunit regulates INO80 chromatin remodeling. Nucleic Acids Res. 53, gkae1187. https://doi.org/10.1093/nar/gkae1187. 36. Zhang, M., Jungblut, A., Kunert, F., Hauptmann, L., Hoffmann, T., Kolesnikova, O., Metzner, F., Moldt, M., Weis, F., DiMaio, F., et al. (2023). Hexasome-INO80 complex reveals structural basis of noncanonical nucleosome remodeling. Science 381, 313–319. https://doi.org/10. 1126/science.adf6287.
+
+50. Hada, A., Hota, S.K., Luo, J., Lin, Y.C., Kale, S., Shaytan, A.K., Bhardwaj, S.K., Persinger, J., Ranish, J., Panchenko, A.R., and Bartholomew, B. (2019). Histone Octamer Structure Is Altered Early in ISW2 ATPDependent Nucleosome Remodeling. Cell Rep. 28, 282–294.e6. https:// doi.org/10.1016/j.celrep.2019.05.106. 51. Punjani, A., Rubinstein, J.L., Fleet, D.J., and Brubaker, M.A. (2017). cryoSPARC: algorithms for rapid unsupervised cryo-EM structure determination. Nat. Methods 14, 290–296. https://doi.org/10.1038/nmeth.4169. 52. Bepler, T., Morin, A., Rapp, M., Brasch, J., Shapiro, L., Noble, A.J., and Berger, B. (2019). Positive-unlabeled convolutional neural networks for particle picking in cryo-electron micrographs. Nat. Methods 16, 1153– 1160. https://doi.org/10.1038/s41592-019-0575-8.
+
+37. Zofall, M., Persinger, J., and Bartholomew, B. (2004). Functional role of extranucleosomal DNA and the entry site of the nucleosome in chromatin remodeling by ISW2. Mol. Cell Biol. 24, 10047–10057.
+
+53. Emsley, P., and Cowtan, K. (2004). Coot: model-building tools for molecular graphics. Acta Crystallogr. D Biol. Crystallogr. 60, 2126–2132. https:// doi.org/10.1107/S0907444904019158.
+
+38. Dang, W., Kagalwala, M.N., and Bartholomew, B. (2006). Regulation of ISW2 by concerted action of histone H4 tail and extranucleosomal DNA. Mol. Cell Biol. 26, 7388–7396. https://doi.org/10.1128/MCB.01159-06. 26/20/7388.
+
+54. Afonine, P.V., Grosse-Kunstleve, R.W., Echols, N., Headd, J.J., Moriarty, N.W., Mustyakimov, M., Terwilliger, T.C., Urzhumtsev, A., Zwart, P.H., and Adams, P.D. (2012). Towards automated crystallographic structure refinement with phenix.refine. Acta Crystallogr. Sect. D Biol. Crystallogr. 68, 352–367. https://doi.org/10.1107/s0907444912001308.
+
+39. Gangaraju, V.K., Prasad, P., Srour, A., Kagalwala, M.N., and Bartholomew, B. (2009). Conformational changes associated with template commitment in ATP-dependent chromatin remodeling by ISW2. Mol. Cell 35, 58–69. https://doi.org/10.1016/j.molcel.2009.05.013.S10972765(09)00346-3. 40. Brahma, S., Udugama, M.I., Kim, J., Hada, A., Bhardwaj, S.K., Hailu, S.G., Lee, T.H., and Bartholomew, B. (2017). INO80 exchanges H2A.Z for H2A by translocating on DNA proximal to histone dimers. Nat. Commun. 8, 15616. https://doi.org/10.1038/ncomms15616. 41. Zofall, M., Persinger, J., Kassabov, S.R., and Bartholomew, B. (2006). Chromatin remodeling by ISW2 and SWI/SNF requires DNA translocation inside the nucleosome. Nat. Struct. Mol. Biol. 13, 339–346. 42. Bowman, G.D., and Deindl, S. (2019). Remodeling the genome with DNA twists. Science 366, 35–36. https://doi.org/10.1126/science.aay4317.
+
+55. Liebschner, D., Afonine, P.V., Baker, M.L., Bunkóczi, G., Chen, V.B., Croll, T.I., Hintze, B., Hung, L.-W., Jain, S., McCoy, A.J., et al. (2019). Macromolecular structure determination using X-rays, neutrons and electrons: recent developments in Phenix. Acta Crystallographica Section D Structural Biology 75, 861–877. https://doi.org/10.1107/ s2059798319011471. 56. Croll, T.I. (2018). ISOLDE: a physically realistic environment for model building into low-resolution electron-density maps. Acta Crystallogr. D Struct. Biol. 74, 519–530. https://doi.org/10.1107/s2059798318002425. 57. Zheng, S.Q., Palovcak, E., Armache, J.-P., Verba, K.A., Cheng, Y., and Agard, D.A. (2017). MotionCor2: anisotropic correction of beam-induced motion for improved cryo-electron microscopy. Nat. Methods 14, 331–332. https://doi.org/10.1038/nmeth.4193.
+
+Molecular Cell 85, 4318–4332, December 4, 2025 4331
+
+[Page 16]
+
+58. Langmead, B., and Salzberg, S.L. (2012). Fast gapped-read alignment with Bowtie 2. Nat. Methods 9, 357–359. https://doi.org/10.1038/ nmeth.1923. 59. Leinonen, R., Sugawara, H., and Shumway, M.; International Nucleotide Sequence Database Collaboration (2011). The Sequence Read Archive. Nucleic Acids Res. 39, D19–D21. https://doi.org/10.1093/nar/gkq1019. 60. Li, H., Handsaker, B., Wysoker, A., Fennell, T., Ruan, J., Homer, N., Marth, G., Abecasis, G., and Durbin, R.; 1000 Genome Project Data Processing Subgroup (2009). The Sequence Alignment/Map format and SAMtools. Bioinformatics 25, 2078–2079. https://doi.org/10.1093/bioinformatics/ btp352. 61. Chen, K., Xi, Y., Pan, X., Li, Z., Kaestner, K., Tyler, J., Dent, S., He, X., and Li, W. (2013). DANPOS: Dynamic analysis of nucleosome position and occupancy by sequencing. Genome Res. 23, 341–351. https://doi.org/10. 1101/gr.142067.112. 62. Chen, K., Chen, Z., Wu, D., Zhang, L., Lin, X., Su, J., Rodriguez, B., Xi, Y., Xia, Z., Chen, X., et al. (2015). Broad H3K4me3 is associated with increased transcription elongation and enhancer activity at tumor-suppressor genes. Nat. Genet. 47, 1149–1157. https://doi.org/10.1038/ ng.3385. 63. Heinz, S., Benner, C., Spann, N., Bertolino, E., Lin, Y.C., Laslo, P., Cheng, J.X., Murre, C., Singh, H., and Glass, C.K. (2010). Simple Combinations of Lineage-Determining Transcription Factors Prime cis-Regulatory
+
+4332 Molecular Cell 85, 4318–4332, December 4, 2025
+
+Elements Required for Macrophage and B Cell Identities. Mol. Cell 38, 576–589. https://doi.org/10.1016/j.molcel.2010.05.004. 64. Love, M.I., Huber, W., and Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. Genome Biol. 15, 550. https://doi.org/10.1186/s13059-014-0550-8. 65. Tullius, T.D., Dombroski, B.A., Churchill, M.E., and Kam, L. (1987). Hydroxyl radical footprinting: a high-resolution method for mapping protein-DNA contacts. Methods Enzymol. 155, 537–558. 66. Zhou, T., Yang, L., Lu, Y., Dror, I., Dantas Machado, A.C., Ghane, T., Di Felice, R., and Rohs, R. (2013). DNAshape: a method for the highthroughput prediction of DNA structural features on a genomic scale. Nucleic Acids Res. 41, W56–W62. https://doi.org/10.1093/nar/gkt437. 67. Tan, Y.Z., Baldwin, P.R., Davis, J.H., Williamson, J.R., Potter, C.S., Carragher, B., and Lyumkis, D. (2017). Addressing preferred specimen orientation in single-particle cryo-EM through tilting. Nat. Methods 14, 793–796. https://doi.org/10.1038/nmeth.4347. 68. Punjani, A., and Fleet, D.J. (2023). 3DFlex: determining structure and motion of flexible proteins from cryo-EM. Nat. Methods 20, 860–870. https:// doi.org/10.1038/s41592-023-01853-8. 69. Punjani, A., Zhang, H., and Fleet, D.J. (2020). Non-uniform refinement: adaptive regularization improves single-particle cryo-EM reconstruction. Nat. Methods 17, 1214–1221. https://doi.org/10.1038/s41592-02000990-8.
+
+[Page 17]
+
+STAR★METHODS KEY RESOURCES TABLE
+
+REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+PirHC
+
+Geneva Biotech
+
+N/A
+
+E. coli XL1-Blue
+
+(Stratagene) cells
+
+cat#200249
+
+E. coli DH10 MultiBac cells
+
+Geneva Biotech
+
+N/A
+
+Yeast Extract
+
+Fisher Scientific
+
+cat#BP14222
+
+Peptone
+
+Research Products International, Corp
+
+cat#P20250
+
+Mono Q 5/50 GL column
+
+GE Healthcare
+
+cat#17516601
+
+3xFLAG peptide
+
+Sigma-Aldrich
+
+cat #F4799
+
+SourceQ 1-mL column
+
+Cytiva
+
+cat#17-1177-01
+
+Dextrose
+
+Fisher Scientific
+
+cat#D16-10
+
+Adenine sulfate
+
+Gibco
+
+cat#25030-081
+
+Yeast Nitrogen Base
+
+Gibco
+
+cat#11360-070
+
+2-mercaptoethanol
+
+Sigma-Aldrich
+
+cat#M6250
+
+BSA
+
+Sigma-Aldrich
+
+cat#A1470
+
+Amicon Ultra Filters
+
+EMD Millipore
+
+cat#UFC803024
+
+γ-P32-ATP, 3000Ci/mmol 10mCi/ml EasyTide Lead,500 uCi
+
+PerkinElmer Inc
+
+cat#NEG502A500UC
+
+Iodine-125 Radionuclide, 10mCi, Specific Activity: 17Ci/mg,0.1M NaOH(ph12-14), Concentration >350mCi/ml
+
+PerkinElmer Inc
+
+cat#NEZ033H010MC
+
+Polyethyleneimine Cellulose plates
+
+J.T Baker
+
+cat#02-002-562
+
+PEAS [N-((2-pyridyldithio)ethyl)-4-azidosalicylamide]
+
+Thermofisher
+
+cat#P6317
+
+ATP Solution, Tris buffered
+
+Thermofisher
+
+cat#R1441
+
+Pyrrolidine
+
+Sigma-Aldrich
+
+cat#394238
+
+AntiFoam agent
+
+Sigma-Aldrich
+
+cat#A8311
+
+ANTI-FLAG(R) M2 Affinity Gel
+
+Sigma-Aldrich
+
+cat#A2220
+
+IPTG
+
+Sigma-Aldrich
+
+cat#16758
+
+Hydrogen Peroxide
+
+Merck
+
+cat#107209
+
+Ammonium Ferrous (II) Sulfate. hexahydrate
+
+Sigma-Aldrich
+
+cat#09719
+
+Sodium (L) Ascorbate
+
+Sigma-Aldrich
+
+cat#09689
+
+Phenylmethylsulfonyl fluoride (PMSF)
+
+Sigma-Aldrich
+
+cat #P7626-25G
+
+Urea
+
+Sigma-Aldrich
+
+cat#U5378-5Kg
+
+Thiourea
+
+Merck
+
+cat#1079790250
+
+Phenylmethylsulfonyl fluoride (PMSF)
+
+Sigma-Aldrich
+
+cat #P7626-25G
+
+Na-metabisulphite
+
+Sigma-Aldrich
+
+cat # 31448
+
+Pepstatin
+
+Sigma-Aldrich
+
+cat # 11524488001
+
+Leupeptin
+
+Sigma-Aldrich
+
+cat # 11034626001
+
+Benzamidine
+
+Sigma-Aldrich
+
+cat #B6506-25G
+
+Chymostatin
+
+Sigma-Aldrich
+
+cat # 230790-25MG
+
+NP-40
+
+Sigma-Aldrich
+
+cat # 13021-500ML
+
+Ampicillin
+
+Sigma-Aldrich
+
+cat # BP1760-25G
+
+Chloramphenicol
+
+Sigma-Aldrich
+
+cat # BP904-100
+
+Bacterial and virus strains
+
+Chemicals, peptides, and recombinant proteins
+
+(Continued on next page)
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+e1
+
+[Page 18]
+
+Continued REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+Dimethyl sulfoxide
+
+Sigma-Aldrich
+
+cat # 276855-100ML
+
+Isopropyl β-D-1-thiogalactopyranoside
+
+Inalco
+
+cat # 1758-1400
+
+Phenylmethylsulfonyl fluoride (PMSF)
+
+Sigma-Aldrich
+
+cat #P7626-25G
+
+4-Azidophenacyl bromide
+
+Sigma-Aldrich
+
+cat # A6057
+
+Cre recombinase
+
+(NEB)
+
+cat#M0298S
+
+FLAG® peptide
+
+Sigma-Aldrich
+
+cat# F4799
+
+Taq 5X Master mix
+
+New England Biolabs
+
+cat # MO285L
+
+Q5 Site directed mutagenesis kit
+
+NEB
+
+cat#E0554
+
+SequenaseTM Quick- Denature Plasmid Sequencing Kit
+
+Affymetrix
+
+cat # 70140
+
+QIAquick PCR Purification Kit
+
+QIAGEN
+
+cat # 28104
+
+70N5 M2 nucleosome bound C. thermophilum INO80 C-module
+
+This Paper
+
+EMDB: EMD-52220
+
+70N5 M2 nucleosome
+
+This Paper
+
+EMDB: EMD-52223
+
+70N5 M2 nucleosome coordinates
+
+This Paper
+
+PDB: 9QIK.
+
+Raw image data in Mendeley
+
+This Paper
+
+https://data.mendeley.com/ datasets/2bnfcbp8ch/1
+
+S cerevisiae: INO80-FLAG, ((BY4741) MATα his3Δ1 leu2Δ0 met15Δ0)
+
+Brahma et al.10
+
+N/A
+
+Spodoptera frugiperda (Sf21) insect cells
+
+Thermo Fisher Scientific,
+
+cat#11497013
+
+Trichoplusia ni High Five cells
+
+Invitrogen
+
+cat#B85502
+
+S cerevisiae: BY4742 Isw2-2FLAG::KanMX
+
+Hada et al.50
+
+N/A
+
+>601 70N5 TTTCCCAGTCACGACGTTGTAAAACGACGGC CAGTGAATTCGAGCTCGGTACTCGGGTTCAAT ACATGCACAGGATGTATATATCTGACACGTG CCTGGAGACTAGGGAGTAATCCCCTTGGCG GTTAAAACGCGGGGGACAGCGCGTACGTGCG TTTAAGCGGTGCTAGAGCTTGCTACGACCAATT GAGCGGCCTCGGCACCGGGATTCTCTCGGGGA
+
+IDT-DNA
+
+N/A
+
+>M1 70N5 TTTCCCAGTCACGACGTTGTAAAACGACGGCC AGTGAATTCGAGCTCGGTACTCGGGTTCAATA CATGCACAGGATGTATATATCTGACACGTGCC TGGAGACTAGTAGCAAGCTCTAGCACCGCTT AAACGCACGTACGCGGTGTCCCCCGCGTTTTA ACCGCCAAGGGGATTACTCCCGACCAATTGAG CGGCCTCGGCACCGGGATTCTCCAGGGCG
+
+IDT-DNA/This paper
+
+N/A
+
+>M2 70N5 TTTCCCAGTCACGACGTTGTAAAACGACGGCCAG TGAATTCGAGCTCGGTACTCGGGTTCAATACATG CATGGAGAATCCCGGTGCCGAGGCCGCTCAATT GGTCGGGAGTAATCCCCTTGGCGGTTAAAACGCG GGGGACAGCGCGTACGTGCGTTTAAGCGGTGCTA GAGCTTGCTACTAGTCTCCAGGCACGTGTCAG ATATATACATCCTGGGGCG
+
+IDT-DNA/This paper
+
+N/A
+
+Critical commercial assays
+
+Deposited data
+
+Experimental models: Organisms/strains
+
+Recombinant DNA
+
+(Continued on next page)
+
+e2
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+[Page 19]
+
+Continued REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+>M2.1 TCCCCGAGAGAATCCCGGTGCCGAGGCCGC TCAATTGGTCGTAGCAAGCTCTAGCACCGCT TAAACGCACGTACGCGCTGTCCCCCGCGTTTT AACCGCCAAGGGGATTACTCCCTAGTCTCCA GGCACGTGTCAGATATATATTCTCCATGCATGT ATTGAACCCGAGTACCGAGCTCGAATTCACTG GCCGTCGTTTTACAACGTCGTGACTGGGAAA
+
+This paper
+
+N/A
+
+>M2.2 70N5 TTTCCCAGTCACGACGTTGTAAAACGACG GCCAGTGAATTCGAGCTCGGTACTCGGGT TCAATACATGCACAGGATGTCCCGGTGCCG CACGTGCCTGGAGACTAGGGAGTAATCCCC TTGGCGGTTAAAACGCGGGGGACAGCGCGT ACGTGCGTTTAAGCGGTGCTAGAGCTTGCTA CGACCAATTGAGCGGCCTCGGCACCG GGATTCTCTCGGGGA
+
+This paper
+
+N/A
+
+>M2.3 70N5 TTTCCCAGTCACGACGTTGTAAAACGACGGCC AGTGAATTCGAGCTCGGTACTCGGGTTCAATA CATGCACAGGATGTATATATCTGAAGGCCGC TCAATTGGTCGGGAGTAATCCCCTTGGCGGT TAAAACGCGGGGGACAGCGCGTACGTGCGT TTAAGCGGTGCTAGAGCTTGCTACGACCAAT TGAGCGGCCTCGGCACCGGGATTCTCTCGGGGA
+
+This paper
+
+N/A
+
+>y1-M2 TTTTCCCAGTCACGACGTTGTAAAACGACG GCCAGTGAATTCGAGCTCGGTACTCGGGTT CAATACATGCAAAGTTTTTGAAGAATTGCCAG ATGGGCAACAGAATAGGAGTAATCCCCTTG GCGGTTAAAACGCGGGGGACAGCGCGTAC GTGCGTTTAAGCGGTGCTAGAGCTTGCTACT AGTCTCCAGGCACGTGTCAGATATAT ACATCCTGCGGGG
+
+Twist Biosciences/This paper
+
+N/A
+
+>y2-M2 TTTCCCAGTCACGACGTTGTAAAACGACGGC CAGTGAATTCGAGCTCGGTACTCGGGTTCAA TACATGCAGTGATCTCTTTGACTAAATGAACTA TTGAAACGTTTGGGAGTAATCCCCTTGGCGGTT AAAACGCGGGGGACAGCGCGTACGTGCGTTT AAGCGGTGCTAGAGCTTGCTACTAGTCTCCAG GCACGTGTCAGATATATACATCCTGCGGGG
+
+Twist Biosciences/This paper
+
+N/A
+
+>y3-M2 TTTCCCAGTCACGACGTTGTAAAACGACGGC CAGTGAATTCGAGCTCGGTACTCGGGTTCAAT ACATGCACAATAAAGTGACGCGCCGCCCAAT GGCATAACAGTAGGGAGTAATCCCCTTGGCGG TTAAAACGCGGGGGACAGCGCGTACGTGCGTT TAAGCGGTGCTAGAGCTTGCTACTAGTCTCCAG GCACGTGTCAGATATATACATCCTGCGGGG
+
+Twist Biosciences/This paper
+
+N/A
+
+DNAcycP2
+
+Li et al.29
+
+https://rohslab.cmb.usc.edu/DNAshape/
+
+GraphPad Prism V.10
+
+GraphPad Software Inc RStudio
+
+https://www.graphpad.com/ scientific-software/prism/
+
+CryoSPARC (v4.5.3)
+
+Punjani et al.51
+
+https://cryosparc.com/
+
+Topaz
+
+Bepler et al.52
+
+https://github.com/tbepler/topaz
+
+ChimeraX 1.6.145
+
+Pettersen et al.32
+
+https://www.cgl.ucsf.edu/chimerax/
+
+Software and algorithms
+
+(Continued on next page)
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+e3
+
+[Page 20]
+
+Continued REAGENT or RESOURCE
+
+SOURCE
+
+IDENTIFIER
+
+AlphaFold3
+
+Abramson et al.
+
+Coot 0.9.8.1
+
+Emsley and Cowtan53
+
+https://www2.mrc-lmb.cam.ac.uk/ personal/pemsley/coot/
+
+PHENIX 1.20.1–4
+
+Afonine et al.54 and Liebschner et al.55
+
+https://phenix-online.org/download
+
+ISOLDE 1.6.0
+
+Croll56
+
+https://isolde.cimr.cam.ac.uk
+
+MotionCor2
+
+Zheng et al.57
+
+https://github.com/leschzinerlab/ Motion-correction
+
+PyMOL
+
+Schrodinger
+
+https://pymol.org/
+
+OptiQuant Version 4
+
+Bright Instrument Co Ltd., PerkinElmer
+
+N/A
+
+ImageQuant Version 5.2
+
+Amersham, Cytiva
+
+N/A
+
+Bowtie2
+
+Langmead et al.58
+
+http://bowtie-bio.sourceforge. net/bowtie2/index.shtml
+
+SRA Toolkit (fastq-dump)
+
+Leinonen et al.59
+
+https://github.com/ncbi/sra-tools
+
+Trim Galore
+
+Babraham Bioinformatics
+
+https://github.com/FelixKrueger/TrimGalore
+
+Samtools
+
+Li et al.60
+
+http://www.htslib.org/
+
+DANPOS 2.2.2
+
+Chen et al.61 and Chen et al.62
+
+https://sites.google.com/site/danposdoc/
+
+HOMER
+
+Heinz et al.63
+
+http://homer.ucsd.edu/homer/index.html
+
+DESeq2
+
+Love et al.64
+
+https://bioconductor.org/packages/DESeq2/
+
+Typhoon FLA 9500 laser scanner
+
+GE Healthcare Life Sciences
+
+N/A
+
+EPU acquisition software
+
+Thermo Fisher Scientific
+
+N/A
+
+ӒKTA pureTM chromatography system
+
+Cytiva
+
+N/A
+
+https://alphafoldserver.com/
+
+Other
+
+EXPERIMENTAL MODEL AND STUDY PARTICIPANT DETAILS Yeast strains and culture Saccharomyces cerevisiae strain, INO80-FLAG, ((BY4741) MATα his3Δ1 leu2Δ0 met15Δ0) was initially streaked on YPD plates from frozen glycerol stocks incubated at 30 deg C and strain S cerevisiae: BY4742 Isw2-2FLAG::KanMX, was streaked on the YPD media +G418 at KanMX marker selection at 200 μg/mL, the and then a single colony for each strain was inoculated in 5mL YPD media and incubated overnight at 30◦ C with shaking (230–270 rpm) to reach stationary phase (OD600 > 1.5). Saturated cultures were then used to inoculate large culture volumes in YPD media as further described in the methods details. Bacterial strains and culture The Escherichia coli (E. coli) PirHC, XL1-Blue and DH10 MultiBac cells used for generating bacmids were cultured in Luria broth (LB) medium supplemented with antibiotics, at 37◦ C. Insect cell lines and culture For C.thermophilum INO80 complex purification, two insect cell lines are used, Sf21 (Spodoptera frugiperda) and Trichoplusia ni High Five. Both cell lines were cultured according to the manufacturer protocol at 27◦ C as further described in the method details. METHOD DETAILS Immunoaffinity purification of the INO80 and ISW2 complexes Native wild-type Saccharomyces cerevisiae INO80 and ISW2 complexes were purified by immunoaffinity purification with 2 - FLAG (DYKDDDDK) epitopes attached at the C-terminus of the catalytic subunit. Yeast was grown in 15L YPD cultures (1% yeast extract, 2% peptone, 2% dextrose, 40 ppm antifoam A and 0.05% adenine sulfate), until the OD600 reached 5–6. Cells were harvested, washed with ice-cold water followed by ice-cold H-0.3 buffer (300 mM NaCl, 25 mM Na-Hepes pH 7.8, 0.5 mM EGTA, 0.1 mM EDTA, 2 mM MgCl2, 20% glycerol, and 0.02% NP-40) containing protease inhibitors (1 mM PMSF, 1 mM β-mercaptoethanol, 0.5 Na-metabisulphite, 2 μM pepstatin, 0.6 μM leupeptin, 2 mM benzamidine, and 2 μg/mL chymostatin). The cell pellet was collected and passed through a syringe to make yeast spaghetti, which were frozen in liquid nitrogen. The spaghetti was ground into fine powder by cryogenic grinding using (Spex freezer mill 6870). The yeast powder was suspended with ice-cold H-0.3 buffer with protease inhibitors, and nuclear proteins were extracted (S-100 extract) by ultracentrifugation at 100,000 g for 1 h using a Ti-55.2 rotor in an
+
+e4
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+[Page 21]
+
+ultra-centrifuge (Thermo Fisher) at 4◦ C. The supernatant containing the soluble protein fraction from ultracentrifugation was incubated overnight at 4◦ C with the Anti-FLAG M2 agarose beads (Sigma Aldrich) (10 μL beads per mL S-100 extract) equilibrated with buffer H-0.3 with protease inhibitors. The resin was washed several times with buffer H-0.5 followed by H-0.1 (same composition as H-0.3 but containing 500 mM and 100 mM of NaCl respectively) with protease inhibitors. FLAG-tagged protein complexes were eluted from the resin with 1 mg/mL solution of 3X-FLAG peptide in buffer H-0.1 containing PMSF only (no other protease inhibitor). Complex purity and integrity were determined by analyzing samples on 4–20% gradient SDS–polyacrylamide gels and staining with Coomassie brilliant blue R-250 or SYPRO Ruby protein stain. Expression and purification of the INO80ΔN complex from C. thermophilum The purification of C. thermophilum INO80 followed the protocol as described previously.28 Subunits of the CtINO80 complex were cloned and expressed using MultiBac technology (MultiBac). Specifically, the gene encoding Ino80718− 1848 (CtIno80ΔN)–2xFLAG was cloned into the pACEBac1 vector; genes for Rvb1 and Rvb2 were cloned in pIDC, while Arp5, Ies6, and Ies2 genes were cloned in the pIDK vector. These constructs were assembled into one single bacmid. Recombination steps were carried out in PirHC (Geneva Biotech) and E. coli XL1-Blue (Stratagene) cells, utilizing Cre recombinase (NEB). Baculoviruses were then generated from each bacmid (produced in E. coli DH10 MultiBac cells) in Spodoptera frugiperda (Sf21) insect cells (Thermo Fisher Scientific, #11497013). Both baculoviruses (1:100) was introduced to one liter of Trichoplusia ni High Five cells (Invitrogen, #B85502), which were coinfected and cultured for 60 h at 27◦ C before being harvested by centrifugation at 4◦ C. The cells were lysed in buffer [30 mM HEPES (pH 7.8), 400 mM NaCl, 10% glycerol, 0.25 mM DTT, 0.28 μg/mL pepstatin A, 0.17 mg/mL PMSF, 0.33 mg/mL benzamidine, and 2 mM MgCl2] and gently sonicated for 2 min (50% duty cycle, output control 5). The lysate was cleared by centrifugation at 20,500g and 4◦ C for 30 min. The resulting supernatant was incubated with 2 mL of ANTI-FLAG M2 Affinity Gel (Sigma-Aldrich) for 1 h, followed by sequential washes with 50 mL of lysis buffer and 75 mL of wash buffer [30 mM HEPES (pH 7.8), 150 mM NaCl, 5% glycerol, and 0.25 mM DTT]. Protein elution was achieved by three consecutive incubations, each with 1.5 mL of wash buffer supplemented with FLAG peptide (0.2 mg/mL), for 20 min per step. The eluted fractions were further purified on a Mono Q 5/50 GL column (GE Healthcare) using a salt gradient (200 mM NaCl to 1 M NaCl), yielding highly purified INO80. 601 DNA constructs preparation The M1 and M2, 601 DNA constructs were synthesized by IDT-DNA. The M1 construct was generated by swapping and taking the reverse complement of the middle 36 bp DNA fragments, whereas the M2 construct was generated by swapping and taking the reverse complement of the outer 36 bp DNA fragments. The 601 DNA sequence mutant M2.1, M2.2, and M2.3 constructs were generated by site directed mutagenesis using the NEB SDM Kit by swapping the nucleotide regions with the opposite M2 corresponding nucleotide regions. The DNA constructs y1-M2, y2-M2 and y3-M3 were synthesized by Twist-Biosciences and amplified using PCR. For samples used in Cryo-EM M2 70N5 template DNA was amplified via PCR, purified through anion exchange chromatography, dialyzed into water overnight, and concentrated under vacuum. Nucleosome reconstitution Mononucleosomes were reconstituted with 1.7 μg of PCR-generated 70N5 and 5N70 DNA (70 and 5 bp of flanking DNA on either side of 145 bp of 601 nucleosome position sequence DNA) and 100 fmol of 5′ [32P]-labeled DNA at 37◦ C by salt-dilution with 3–5 μg of recombinant Xenopus laevis histone octamers (wild-type or cysteine mutant octamer, see below). The DNA and histone octamer was serially diluted from 2 M to 280 mM NaCl in steps at 37◦ C. Reconstituted nucleosomes were examined on a native 4% polyacrylamide gel (35.36 acrylamide: 1 bisacrylamide) (PAGE). Dried gels were imaged with a Typhoon FLA 9500 laser scanner, GE Healthcare Life Sciences) and quantified using OptiQuant (Version 4). For cryo-EM sample preparation, amplified 70N5 M2 DNA template was combined with histone octamers at a 1.1-fold excess in 2 M NaCl. The NaCl concentration gradually lowered to 50 mM over a period of 16 h at 4◦ C. The assembled nucleosomes were then purified by anion exchange chromatography on a SourceQ 1-mL column, with nucleosome-containing fractions pooled, dialyzed to 50 mM NaCl, concentrated to 1 mg/mL (Centricon; 10-kDa cutoff, Millipore), and stored at 4◦ C. Nucleosome remodeling Nucleosomes 70N5 or 5N70 (8 nM) were bound with saturating amounts of INO80 (24 nM) and ISW2 (18 nM) at 30◦ C for 30 min. Nucleosome sliding was initiated by adding ATP to a final concentration of 80 μM for INO80 remodeling and 10 μM for ISW2, and incubated at 30◦ C. Remodeling reactions were stopped at the indicated time points by adding γ-S-ATP and sonicated salmon sperm DNA (stop mix) to final concentrations of 1.5 mM and 300 ng/μL, respectively. Samples were analyzed on 5% native polyacrylamide gels in 0.2X TBE buffer. The gels were imaged and quantitated as described above for nucleosome reconstitution and are representative of 3 independent experiments. From each lane background was subtracted and the signal intensity for each band plotted as a percent of remodeled product, where ‘‘0’’ time point represents ‘‘0’’ remodeled product. Data was analyzed using One Phase association kinetics (Y=Y0 + (Plateau-Y0)*(1-exp(-K*x)) in GraphPad Prism V.10.
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+e5
+
+[Page 22]
+
+ATPase assay ATPase assays were performed by initially binding 50nM of nucleosomes and 10nM of INO80 used in each reaction. After binding for 30 min at 30◦ C, a mixture of 32P labeled ATP and unlabeled ATP (Roche) was added to a final concentration of 80μM. Reactions were stopped by addition of EDTA and SDS to final concentrations of 100 mM and 2%, respectively. Reactions were spotted onto a polyethyleneimine cellulose plate (J.T. Baker) and resolved with 0.5 M LiCl and 0.5 M formic acid. The hydrolyzed ATP was visualized using a Typhoon FLA 9500 laser scanner, GE Healthcare Life Sciences and quantitated using Optiquant software (Version 4). Background was subtracted from each lane and rate constants determined using simple linear regression in GraphPad Prism V.10. Binding assay Cy5 labeled DNA template was amplified for 70N5 601 and M2 DNA templates and nucleosomes were reconstituted. An increasing concentration of INO80 complex was incubated with 40nM nucleosome at 30oC for 30 min, in 10 mM Na-HEPES (pH7.8), 4 mM MgCl2, 60 mM NaCl, 0.2 mM EGTA, 0.04 mM EDTA and 8% glycerol. Reactions were analyzed by resolving enzyme-bound nucleosomes from free nucleosomes on 4% native polyacrylamide gels in 1X Tris-EDTA buffer. The gels were scanned for Cy5 fluorescence signal using Typhoon FLA 9500 laser scanner, GE Healthcare Life Sciences and quantitated as described above for nucleosome remodeling. High-resolution mapping of changes in H2B53–DNA contacts Histone octamers containing cysteine at residue 53 of H2B were conjugated to p-azido phenacyl bromide (APB) immediately after octamer refolding. INO80 was incubated with 70N5 601 and M2 nucleosomes at 30◦ C for 15min in conditions so that nucleosomes would be completely bound. Nucleosome movement was initiated by adding 80 μM ATP and was stopped with sonicated salmon sperm DNA (300 ng/μL) and excess EDTA at the indicated time points. For site-directed histone-DNA crosslinking, samples were irradiated with UV (3 min at 310 nm, 2.65mW cm− 2). Samples were denatured with 0.1% SDS at 37◦ C for 20min in 30mM NaCl and 20mM Tris-HCl (pH 8.0). Crosslinked protein-DNA were enriched and separated from un-crosslinked DNA by phenol-chloroform (4:1) extraction. The aqueous phase containing un-crosslinked DNA was discarded. Crosslinked DNA was ethanol precipitated with 1M LiCl in the presence of sheared salmon sperm DNA as carrier. Crosslinked DNA was cleaved with 1M pyrrolidine (Sigma) at 90◦ C for 15 min. DNA samples were analyzed alongside a sequence ladder made from the same DNA, on denaturing 6.5% polyacrylamide gels containing 8M urea. For the ‘no quench’ reactions, INO80 was incubated with 70N5 601 and M2 nucleosomes at 30◦ C for 15min in conditions so that nucleosomes would be completely bound. Nucleosome movement was initiated by adding 80 μM ATP and at each time point the sample reaction was irradiated with UV (3 min at 310 nm, 2.65mW cm− 2) without stopping the reaction. The crosslinked DNA was enriched and analyzed on 6.5% denaturing Urea gel as described above. Gels were visualized by phosphorimaging using a Typhoon FLA 9500 laser scanner, GE Healthcare Life Sciences and quantified using ImageQuant software (Version 5.2). Briefly, total lane intensity was normalized to correct for loading bias using Microsoft Excel. Background signal intensity was subtracted from each lane and the signal intensity measured for corresponding band/step size was plotted as % Fraction moved and analyzed using One Phase association kinetics (Y=Y0 + (Plateau-Y0)*(1-exp(-K*x)) and One Phase decay (Y=(Y0 Plateau)*exp(-K*X) + Plateau)) for the % reduction in Initial crosslink using GraphPad V. 10. Data images in figures are representative of ≥3 experiments. Hydroxyl radical footprinting INO80-nucleosome footprinting for nucleosome bound complex, upon addition of ATP (incubated for 320s upon addition of final concentration of all at 200 μM) was performed as described,65 except that the final concentrations of Fe(II)-ammonium sulfate, H2O2, Naascorbate and EDTA used were 0.3 mM, 0.02%, 6 mM and 0.3 mM, respectively. Cleavage reactions (42 μL) were terminated after 30 s by the addition of 100 μL of termination mix (5 M ammonium acetate, 5 mM thiourea and 10 mM EDTA). DNA was isolated by phenol-chloroform extraction followed by ethanol precipitation at − 20◦ C. Samples were resolved on a denaturing (8 M Urea) 6.5% polyacrylamide gel with a sequencing ladder created the same DNA template using the SequenaseTM Quick- Denature Plasmid Sequencing Kit from Affymetrix. The gels were dried and phosphorimaged using a Typhoon FLA 9500 laser scanner. The data were analyzed with ImageQuant and Microsoft Excel. Total lane intensity for each sample was normalized to correct for loading bias using Microsoft Excel and the signal intensities were plotted as overlays as presented in the figures. Histone crosslinking Recombinant Xenopus laevis histones with amino acids replaced by cysteine at specific positions (Figure S12A) were expressed, purified, and reconstituted into octamers with other histones as discussed above. Homogeneous 70N5 601/M2 nucleosomes were reconstituted using the respective 601-nucleosome positioning sequence containing Cy5 label at one end. The PEAS [N-((2pyridyldithio)ethyl)-4-azidosalicylamide] (Thermo Fisher) -conjugated nucleosomes were iodinated with [125I] (PerkinElmer). Detailed protocol had been discussed and standardized earlier.10 Nucleosomes with photoreactive octamers were bound to saturating amounts of INO80 at 30o C and were irradiated directly under UV (3 min at 310 nm, 2.65 mW cm-2) for crosslinking. After crosslinking, samples were treated with 100 mM DTT and incubated at 37o C for 30 min to transfer [125I]-radiolabel to the crosslinked proteins. Samples were resolved on 4–20% SDS-polyacrylamide gels, dried and viewed by phosphorimaging using Typhoon FLA 9500 laser scanner following 14–16 h of exposure to identify the radiolabeled subunits. Data images were analyzed using OptiQuant Version 4
+
+e6
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+[Page 23]
+
+and the band intensity was measured over the background signal intensity; plotted and analyzed using GraphPad prism V10. Data in figures are representative of 3 individual experiments. Estimating the physical properties of DNA at the entry side of nucleosomes Two methods are used to predict the propeller twist angle and DNA flexibility in the 36 bp region on the entry side of 601 and M2 nucleosomes where the H2A-H2B dimers. DNA propeller twist was predicted using the DNA shape program that is available as an online tool at https://rohslab.cmb.usc.edu/DNAshape/.66 A deep learning online available tool DNAcycP2 was utilized to predict the extent of DNA cyclization of 601 and M2 nucleosome positioning sequences based on empirical data using yeast genomic DNA. This tool predicts intrinsic DNA cyclizability score (C-score) which corresponds to the extent of DNA bendability as defined in loopseq assay29 (https://cyclizability.stats.northwestern.edu/). Cryo-EM grid preparation: 70N5 M2 nucleosome dataset 150 nM 70N5 M2 nucleosomes were dialyzed in cryo-EM dialysis buffer [20 mM HEPES (pH 8), 60 mM KCl, and 0.5 mM DTT] for 2 h at 4◦ C. The sample was vitrified onto a glow discharged QUANTIFOIL R2/1 + 2 nm carbon Cu200 grid in the presence of 0.045% octylβ-glucoside using a Leica EM GP (Leica; 10◦ C and 90% humidity). Cryo-EM grid preparation: C-module of CtINO80-70N5 M2 nucleosome dataset C-module of CtINO80 and 70N5 M2 nucleosomes were mixed in a ratio of 1:1 and incubated with 1 mM ADP-AlFx in cryo-EM reaction buffer [20 mM HEPES (pH 8), 60 mM KCl, 0.25 mM CaCl2, 2 mM MgCl2, and 0.5 mM DTT] for 10 min at 25◦ C. The complex was vitrified at a concentration of 1 mg/mL onto a glow discharged QUANTIFOIL R2/1 Cu200 grid in the presence of 0.045% octyl-β-glucoside using a Leica EM GP (Leica; 10◦ C and 90% humidity). Cryo-EM data collection Movies of CtINO80ΔN-M2 nucleosome and M2 nucleosome particles embedded in vitreous ice were collected at liquid nitrogen temperature using an FEI Titan Krios G3 transmission electron microscope (300 kV) equipped with a Selectris X imagining filter (slit with 10eV) and a Falcon4 direct electron detector. The movies were recorded in counting mode using EPU acquisition software (Thermo Fisher Scientific) at ×165,000 magnification with a pixel size of 0.727 A ̊ /pixel and nominal defocus range of − 1.1 to − 2.9μm. The total electron dosage of each movie was 40 e/A ̊ 2, fractionated into 40 movie frames. Cryo-EM image processing of the 70N5 M2 nucleosome The movie frames were motion-corrected using MotionCor2.57 All subsequent processing steps were performed in cryoSPARC (v4.5.3),51 and the resolutions reported here are calculated based on the gold-standard Fourier shell correlation criterion (FSC = 0.143).67 The CTF parameters of the dataset (31670 micrographs) were determined using patch CTF estimation (multi) in cryoSPARC (v4.5.3).51 The exact processing scheme is depicted in Figure S8. The data collection and refinement statistics are summarized in the cryo-EM validation table. Initial particle picking was done using Blob picker (11600k particles). Particles were subjected to 2D classification, ab initio reconstruction, and heterogeneous refinement (607k particles). Particles with clearly defined features, were used for three rounds of Topaz,52 2D-, and 3D classification. Particles were extracted with a box size of 400 px and a pixel size of 0.727. 375k particles were used for heterogeneous refinement into two classes. One class with 198k particles was used for another round of 3D classification and ab initio reconstruction. One class with 94k particles was used for further processing. After several rounds of non-uniform and local refinements, the final resolution of the M2 nucleosome reconstruction was 3.03 A ̊ . Figures were generated in UCSF ChimeraX 1.6.145.32 Cryo-EM image processing of the C. thermophilum INO80 C-module and 70N5 M2 nucleosome (ADP-AlFx) The movie frames were motion-corrected using MotionCor2.57 All subsequent processing steps were performed in cryoSPARCv4.5.350, and the resolutions reported here are calculated on the basis of the gold-standard Fourier shell correlation criterion (FSC = 0.143).67 The CTF parameters of the dataset (37142 micrographs) were determined using patch CTF estimation (multi) in cryoSPARC (v4.5.3). The exact processing scheme is depicted in Figure S11. The data collection and refinement statistics are summarized in the cryo-EM validation table. Initial particle picking was done using Blob picker (8300k particles). Particles were subjected to 2D classification, Topaz train52 and ab initio reconstruction (51.7k particles). After selecting 2D classes with clearly defined features, one round of ab initio reconstruction with six classes was performed. Classes with clearly defined features were selected and subjected to heterogeneous refinement and 3D classification with four classes (37.4k particles). After another round of Topaz train,52 several rounds of ab initio reconstruction, 3D flexibility refinement68 and non-uniform refinement69 were performed (42.3k particles). After non-uniform and local refinement, the final resolution was 3.41 A ̊ with 42.3k particles. Another round of heterogeneous refinement was performed to distinguish between the two Arp5 grappler conformations (cross: 19.1k particles and parallel: 23.2k particles). Those two maps were only used for figure generation. Figures were generated in UCSF ChimeraX 1.6.14532
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+e7
+
+[Page 24]
+
+Model building and refinement An AlphaFold330 prediction of the 70N5 M2 nucleosome was used as the starting model for the M2 nucleosome structure. The coordinates of the M2 nucleosome AlphaFold3 prediction were rigid body docked into the cryo-EM density of the M2 nucleosome using UCSF ChimeraX 1.6.145.32 The model was partially rebuilt in Coot 0.9.8.1.53 The atomic model was improved by ISOLDE 1.6.056 and real space refined in PHENIX 1.20.1–4.54,55 PDBs 8ATF (ATPase domain), 8AV6 (Rvb1/2, Arp5/Ies6, Ies2, 601 nucleosome), and AlphaFold3 predictions (Arp5 grappler) were used for figure generation of the INO80-M2 nucleosome complex using ChimeraX 1.6.145.32 Therefore, we fitted previously determined cryo-EM structures (8AV6, 8ATF)11 using rigid body fitting in ChimeraX. Next, domains that typically move slightly from structure to structure in relation to the prominent Rvb1/2 module, such as the ATPase, Arp5/Ies6, Ies2, the nucleosome, and grappler arms, were individually fitted into the map using rigid body fitting in ChimeraX. Due to the resolution limit, we did not adjust side chains or model loops at this stage. In vitro yeast chromatin nucleosome positioning analysis GSE140614 by fastq-dump of SRA Toolkit59 with ‘‘–skip-technical –readids –dumpbase –split-files –read-filter pass –clip’’ options. The downloaded raw fastq files were passed through adapter and quality trimming via Trim Galore (https://github.com/FelixKrueger/ TrimGalore). The trimmed reads were then mapped onto the budding yeast reference genome R64-2-1 using bowtie258 with ‘‘-q –very-sensitive’’ options. The mapped reads were compressed, sorted and indexed by samtools60 view/sort/index. The triplicates of the mapped reads were used together to call the nucleosome peaks by ‘‘dpos’’ function of DANPOS 2.2.261,62 with ‘‘-a 1’’ option. Nucleosome position bed files were prepared manually using the output of danpos.py dpos runs. The raw readcounts bigwig files were prepared by running ‘‘danpos.py dpos -a 1’’ and ‘‘wigToBigWig’’ for each replicate independently. The bigwig files were used to calculate readcounts via ‘‘multiBigwigSummary BED-file –outRawCounts’’. The readcounts were then used for differential DESeq264 analysis using Homer63 ‘‘getDiffExpression.pl’’. The top INO80-dependent nucleosomes were selected with p.adj <0.05, log2(with-INO80/without-INO80) > 1 and INO80 nucleosome smt_value >10,000 (danpos dpos output value). The top intrinsic DNA sequence dependent nucleosomes were selected with p.adj <0.05, log2(with-INO80/without-INO80) < − 3 and without INO80 smt value >10,000. QUANTIFICATION AND STATISTICAL ANALYSIS Statistical analyses were performed with GraphPad Prism software (v.10) for calculating standard deviation (SD) and the 95% confidence intervals as shown in Table 1 and accompanying figures. All 32P and fluorescently labeled gels were imaged with a Typhoon FLA 9500 laser scanner, GE Healthcare Life Sciences and quantitated using Optiquant software (Version 4). Cryo-EM validation table
+
+Complex
+
+M2 nucleosome
+
+CtINO80:M2
+
+Magnification
+
+165,000
+
+165,000
+
+Voltage (kV)
+
+300
+
+300
+
+Electron exposure (e− /A ̊ 2)
+
+40
+
+40
+
+Defocus range (μm) Pixel size (A ̊ )
+
+− 1.1 to − 2.9
+
+− 1.1 to − 2.9
+
+0.727
+
+0.727
+
+Symmetry imposed
+
+C1
+
+C1
+
+initial particle images (no.)
+
+11,600,000
+
+8,300,000
+
+Final particle images (no.) Map resolution [A ̊ ]
+
+94,000 3.03 A ̊
+
+42,000 3.4 A ̊
+
+FSC
+
+0.143
+
+0.143
+
+Data collectionand processing
+
+Refinement Inital model used
+
+Alphafold3
+
+Map sharpening B factor (A ̊ 2)
+
+89.5
+
+Model composition Non-hydrogen atoms
+
+Protein residues
+
+Nucleotide residues
+
+(Continued on next page)
+
+e8
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+[Page 25]
+
+Continued Complex
+
+M2 nucleosome
+
+CtINO80:M2
+
+B factors (A ̊ 2) Protein
+
+93.46
+
+Nucleotide
+
+84.95
+
+R.m.s. deviations Bond lengths (A ̊ )
+
+0.01
+
+Bond angles (◦ )
+
+1.267
+
+Validation MolProbity score
+
+1.71
+
+Clashscore
+
+6.69
+
+Poor rotamers (%)
+
+1.56
+
+Ramachandran plot Favored (%)
+
+96.8
+
+Allowed (%)
+
+3.2
+
+Disallowed (%)
+
+Molecular Cell 85, 4318–4332.e1–e9, December 4, 2025
+
+e9

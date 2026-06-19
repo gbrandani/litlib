@@ -1,0 +1,1251 @@
+{
+  "paper_id": "sha256-293e271d61fe8281",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/evolution/DeLeonardis 2025 MolBiolEvol - Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models.pdf",
+  "pdf_sha256": "293e271d61fe8281115b71ba3c5ccac92ef9d9820f09a2e48dd4513a0ba767b0",
+  "filename": "DeLeonardis 2025 MolBiolEvol - Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models.pdf",
+  "item_type": "article",
+  "title_query": "Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models",
+  "filename_hints": {
+    "year_hint": 2025,
+    "venue_hint": "",
+    "prefix": "DeLeonardis 2025 MolBiolEvol"
+  },
+  "doi_candidates": [
+    "10.1093/molbev/msaf070"
+  ],
+  "date_indexed": "2026-04-17T03:31:30.079883+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [
+    "year_hint_mismatch:2025!=2024"
+  ],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi",
+  "semantic_scholar": {
+    "query": "Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "69065de7cf1702f48599730931860e66adec1145",
+      "externalIds": {
+        "PubMedCentral": "12006719",
+        "DOI": "10.1093/molbev/msaf070",
+        "CorpusId": 272831194,
+        "PubMed": "40139916"
+      },
+      "url": "https://www.semanticscholar.org/paper/69065de7cf1702f48599730931860e66adec1145",
+      "title": "Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models",
+      "venue": "bioRxiv",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://doi.org/10.1093/molbev/msaf070",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12006719, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2024-09-21",
+      "journal": {
+        "name": "Molecular Biology and Evolution",
+        "volume": "42"
+      },
+      "authors": [
+        {
+          "authorId": "2262450388",
+          "name": "Matteo De Leonardis"
+        },
+        {
+          "authorId": "2262114908",
+          "name": "Andrea Pagnani"
+        },
+        {
+          "authorId": "1416745439",
+          "name": "Pierre Barrat-Charlaix"
+        }
+      ],
+      "abstract": "Ancestral sequence reconstruction (ASR) is an important tool to understand how protein structure and function changed over the course of evolution. It essentially relies on models of sequence evolution that can quantitatively describe changes in a sequence over time. Such models usually consider that sequence positions evolve independently from each other and neglect epistasis: the context-dependence of the effect of mutations. On the other hands, the last years have seen major developments in the field of generative protein models, which learn constraints associated with structure and function from large ensembles of evolutionarily related proteins. Here, we show that it is possible to extend a specific type of generative model to describe the evolution of sequences in time while taking epistasis into account. We apply the developed technique to the problem of Ancestral Sequence Reconstruction (ASR): given a protein family and its evolutionary tree, we try to infer the sequences of extinct ancestors. Using both simulations and data coming from experimental evolution we show that our method outperforms state-of-the-art ones. Moreover, it allows for sampling a greater diversity of potential ancestors, allowing for a less biased characterization of ancestral sequences."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "69065de7cf1702f48599730931860e66adec1145",
+        "title": "Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2025,
+        "candidate_year": 2024,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "c9fc9fd575f03ee1992000337e991caa35234e5e",
+        "title": "Ancestral sequence reconstruction using generative models",
+        "score": 0.6307,
+        "title_similarity": 0.6007,
+        "query_year": 2025,
+        "candidate_year": 2026,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "8461c8b7dbbf71c0f3aea3e6a5852bcc21620401",
+        "title": "Ancestral protein sequence reconstruction using a tree-structured Ornstein-Uhlenbeck variational autoencoder",
+        "score": 0.3383,
+        "title_similarity": 0.4183,
+        "query_year": 2025,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "9d1c2b1e66a958cf4c93d1d4a846682e7e9f33d1",
+        "title": "EvoSeq-ML: Advancing Data-Centric Machine Learning with Evolutionary-Informed Protein Sequence Representation and Generation",
+        "score": 0.1288,
+        "title_similarity": 0.0988,
+        "query_year": 2025,
+        "candidate_year": 2024,
+        "year_bonus": 0.03,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "43815b0b8e7850267db8d78205ae96d16492f284",
+        "title": "A UTO - REGRESSIVE W AVE N ET VARIATIONAL AUTOEN - CODERS FOR ALIGNMENT - FREE GENERATIVE PROTEIN DESIGN AND FITNESS PREDICTION .",
+        "score": 0.1175,
+        "title_similarity": 0.1975,
+        "query_year": 2025,
+        "candidate_year": 2022,
+        "year_bonus": -0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "03141bb18778df73079323b5aaadc99f60ef9470",
+        "title": "Design and experimental characterization of specificity-switching mutational paths of WW domains",
+        "score": 0.08,
+        "title_similarity": 0.0,
+        "query_year": 2025,
+        "candidate_year": 2025,
+        "year_bonus": 0.08,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1093/molbev/msaf070"
+    ],
+    "matching_extracted_doi": "10.1093/molbev/msaf070",
+    "raw_response": {
+      "total": 6,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "69065de7cf1702f48599730931860e66adec1145",
+          "externalIds": {
+            "PubMedCentral": "12006719",
+            "DOI": "10.1093/molbev/msaf070",
+            "CorpusId": 272831194,
+            "PubMed": "40139916"
+          },
+          "url": "https://www.semanticscholar.org/paper/69065de7cf1702f48599730931860e66adec1145",
+          "title": "Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models",
+          "venue": "bioRxiv",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://doi.org/10.1093/molbev/msaf070",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC12006719, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-09-21",
+          "journal": {
+            "name": "Molecular Biology and Evolution",
+            "volume": "42"
+          },
+          "authors": [
+            {
+              "authorId": "2262450388",
+              "name": "Matteo De Leonardis"
+            },
+            {
+              "authorId": "2262114908",
+              "name": "Andrea Pagnani"
+            },
+            {
+              "authorId": "1416745439",
+              "name": "Pierre Barrat-Charlaix"
+            }
+          ],
+          "abstract": "Ancestral sequence reconstruction (ASR) is an important tool to understand how protein structure and function changed over the course of evolution. It essentially relies on models of sequence evolution that can quantitatively describe changes in a sequence over time. Such models usually consider that sequence positions evolve independently from each other and neglect epistasis: the context-dependence of the effect of mutations. On the other hands, the last years have seen major developments in the field of generative protein models, which learn constraints associated with structure and function from large ensembles of evolutionarily related proteins. Here, we show that it is possible to extend a specific type of generative model to describe the evolution of sequences in time while taking epistasis into account. We apply the developed technique to the problem of Ancestral Sequence Reconstruction (ASR): given a protein family and its evolutionary tree, we try to infer the sequences of extinct ancestors. Using both simulations and data coming from experimental evolution we show that our method outperforms state-of-the-art ones. Moreover, it allows for sampling a greater diversity of potential ancestors, allowing for a less biased characterization of ancestral sequences."
+        },
+        {
+          "paperId": "c9fc9fd575f03ee1992000337e991caa35234e5e",
+          "externalIds": {
+            "DOI": "10.64898/2026.01.18.700141",
+            "CorpusId": 284964702
+          },
+          "url": "https://www.semanticscholar.org/paper/c9fc9fd575f03ee1992000337e991caa35234e5e",
+          "title": "Ancestral sequence reconstruction using generative models",
+          "venue": "bioRxiv",
+          "year": 2026,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2026.01.18.700141?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2026.01.18.700141, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2026-01-21",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2129014448",
+              "name": "Edo Dotan"
+            },
+            {
+              "authorId": "2179213832",
+              "name": "Elya Wygoda"
+            },
+            {
+              "authorId": "2406263275",
+              "name": "Asaf Schers"
+            },
+            {
+              "authorId": "2334465554",
+              "name": "Iris Lyubman"
+            },
+            {
+              "authorId": "2083259",
+              "name": "Yonatan Belinkov"
+            },
+            {
+              "authorId": "1963380",
+              "name": "T. Pupko"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "8461c8b7dbbf71c0f3aea3e6a5852bcc21620401",
+          "externalIds": {
+            "DBLP": "conf/iclr/MoretaRAHTH22",
+            "CorpusId": 247693575,
+            "PubMed": "41704296"
+          },
+          "url": "https://www.semanticscholar.org/paper/8461c8b7dbbf71c0f3aea3e6a5852bcc21620401",
+          "title": "Ancestral protein sequence reconstruction using a tree-structured Ornstein-Uhlenbeck variational autoencoder",
+          "venue": "International Conference on Learning Representations",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/forum?id=FZoZ7a31GCW, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2022-04-01",
+          "journal": {
+            "name": "... International Conference on Learning Representations",
+            "pages": "\n          9556-9577\n        ",
+            "volume": "2022"
+          },
+          "authors": [
+            {
+              "authorId": "89159971",
+              "name": "L. S. Moreta"
+            },
+            {
+              "authorId": "1403147996",
+              "name": "Ahmad Salim Al-Sibahi"
+            },
+            {
+              "authorId": "143631093",
+              "name": "J. Hein"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "43815b0b8e7850267db8d78205ae96d16492f284",
+          "externalIds": {
+            "CorpusId": 248883306
+          },
+          "url": "https://www.semanticscholar.org/paper/43815b0b8e7850267db8d78205ae96d16492f284",
+          "title": "A UTO - REGRESSIVE W AVE N ET VARIATIONAL AUTOEN - CODERS FOR ALIGNMENT - FREE GENERATIVE PROTEIN DESIGN AND FITNESS PREDICTION .",
+          "venue": "",
+          "year": 2022,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://openreview.net/pdf?id=YFQlXzn3-jq, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": null,
+          "journal": null,
+          "authors": [
+            {
+              "authorId": "2286590138",
+              "name": "Nikˇsa Praljak"
+            },
+            {
+              "authorId": "2239660215",
+              "name": "Andrew L. Ferguson"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "9d1c2b1e66a958cf4c93d1d4a846682e7e9f33d1",
+          "externalIds": {
+            "DOI": "10.1101/2024.10.02.616302",
+            "CorpusId": 273180362
+          },
+          "url": "https://www.semanticscholar.org/paper/9d1c2b1e66a958cf4c93d1d4a846682e7e9f33d1",
+          "title": "EvoSeq-ML: Advancing Data-Centric Machine Learning with Evolutionary-Informed Protein Sequence Representation and Generation",
+          "venue": "bioRxiv",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1101/2024.10.02.616302?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1101/2024.10.02.616302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2024-10-03",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2154230482",
+              "name": "Mehrsa Mardikoraem"
+            },
+            {
+              "authorId": "2250402437",
+              "name": "Nathaniel Pascual"
+            },
+            {
+              "authorId": "88652711",
+              "name": "P. Finneran"
+            },
+            {
+              "authorId": "6396959",
+              "name": "Daniel R. Woldring"
+            }
+          ],
+          "abstract": null
+        },
+        {
+          "paperId": "03141bb18778df73079323b5aaadc99f60ef9470",
+          "externalIds": {
+            "DOI": "10.64898/2025.12.08.693000",
+            "CorpusId": 283746510
+          },
+          "url": "https://www.semanticscholar.org/paper/03141bb18778df73079323b5aaadc99f60ef9470",
+          "title": "Design and experimental characterization of specificity-switching mutational paths of WW domains",
+          "venue": "bioRxiv",
+          "year": 2025,
+          "openAccessPdf": {
+            "url": "",
+            "status": null,
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.64898/2025.12.08.693000?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.64898/2025.12.08.693000, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": null,
+          "publicationDate": "2025-12-10",
+          "journal": {
+            "name": "bioRxiv"
+          },
+          "authors": [
+            {
+              "authorId": "2366019962",
+              "name": "Ahmed Rehan"
+            },
+            {
+              "authorId": "1782283383",
+              "name": "Eugenio Mauri"
+            },
+            {
+              "authorId": "1405381202",
+              "name": "Jorge FERNANDEZ-DE-COSSIO-DIAZ"
+            },
+            {
+              "authorId": "123300597",
+              "name": "Pierre-Guillaume Brun"
+            },
+            {
+              "authorId": "2335444263",
+              "name": "R. Monasson"
+            },
+            {
+              "authorId": "2293815740",
+              "name": "Marco Ribezzi-Crivellari"
+            },
+            {
+              "authorId": "2266841193",
+              "name": "S. Cocco"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            3,
+            12
+          ]
+        ],
+        "date-time": "2026-03-12T01:15:03Z",
+        "timestamp": 1773278103203,
+        "version": "3.50.1"
+      },
+      "reference-count": 51,
+      "publisher": "Oxford University Press (OUP)",
+      "issue": "4",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2025,
+                3,
+                26
+              ]
+            ],
+            "date-time": "2025-03-26T00:00:00Z",
+            "timestamp": 1742947200000
+          },
+          "content-version": "vor",
+          "delay-in-days": 0,
+          "URL": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            1
+          ]
+        ]
+      },
+      "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Ancestral sequence reconstruction (ASR) is an important tool to understand how protein structure and function changed over the course of evolution. It essentially relies on models of sequence evolution that can quantitatively describe changes in a sequence over time. Such models usually consider that sequence positions evolve independently from each other and neglect epistasis: the context-dependence of the effect of mutations. On the other hand, the last years have seen major developments in the field of generative protein models, which learn constraints associated with structure and function from large ensembles of evolutionarily related proteins. Here, we show that it is possible to extend a specific type of generative model to describe the evolution of sequences in time while taking epistasis into account. We apply the developed technique to the problem of ASR: given a protein family and its evolutionary tree, we try to infer the sequences of extinct ancestors. Using both simulations and data coming from experimental evolution we show that our method outperforms state-of-the-art ones. Moreover, it allows for sampling a greater diversity of potential ancestors, allowing for a less biased characterization of ancestral sequences.</jats:p>",
+      "DOI": "10.1093/molbev/msaf070",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            29
+          ]
+        ],
+        "date-time": "2025-03-29T18:39:11Z",
+        "timestamp": 1743273551000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 10,
+      "title": [
+        "Reconstruction of Ancestral Protein Sequences Using Autoregressive Generative Models"
+      ],
+      "prefix": "10.1093",
+      "volume": "42",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4082-4170",
+          "authenticated-orcid": false,
+          "given": "Matteo",
+          "family": "De Leonardis",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "DISAT, Politecnico di Torino , Corso Duca degli Abruzzi 24, Torino 10129 ,",
+              "place": [
+                "Italy"
+              ]
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6509-0807",
+          "authenticated-orcid": false,
+          "given": "Andrea",
+          "family": "Pagnani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "DISAT, Politecnico di Torino , Corso Duca degli Abruzzi 24, Torino 10129 ,",
+              "place": [
+                "Italy"
+              ]
+            },
+            {
+              "name": "Italian Institute for Genomic Medicine, IRCCS Candiolo , SP-142, Candiolo 10060 ,",
+              "place": [
+                "Italy"
+              ]
+            },
+            {
+              "name": "INFN, Sezione di Torino , Via Pietro Giuria 1, Torino 10125 ,",
+              "place": [
+                "Italy"
+              ]
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3816-3724",
+          "authenticated-orcid": false,
+          "given": "Pierre",
+          "family": "Barrat-Charlaix",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "DISAT, Politecnico di Torino , Corso Duca degli Abruzzi 24, Torino 10129 ,",
+              "place": [
+                "Italy"
+              ]
+            }
+          ]
+        }
+      ],
+      "member": "286",
+      "published-online": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            26
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "issue": "27",
+          "key": "2025043002363645400_msaf070-B1",
+          "doi-asserted-by": "publisher",
+          "first-page": "11067",
+          "DOI": "10.1073/pnas.1308215110",
+          "article-title": "Experimental evidence for the thermophilicity of ancestral life",
+          "volume": "110",
+          "author": "Akanuma",
+          "year": "2013",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "issue": "6",
+          "key": "2025043002363645400_msaf070-B2",
+          "doi-asserted-by": "publisher",
+          "first-page": "e2308895121",
+          "DOI": "10.1073/pnas.2308895121",
+          "article-title": "In vivo functional phenotypes from a computational epistatic model of evolution",
+          "volume": "121",
+          "author": "Alvarez",
+          "year": "2024",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B3",
+          "doi-asserted-by": "publisher",
+          "first-page": "msab321",
+          "DOI": "10.1093/molbev/msab321",
+          "article-title": "Modeling sequence-space exploration and emergence of epistatic signals in protein evolution",
+          "volume": "39",
+          "author": "Bisardi",
+          "year": "2021",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "issue": "5",
+          "key": "2025043002363645400_msaf070-B4",
+          "doi-asserted-by": "publisher",
+          "first-page": "756",
+          "DOI": "10.1080/10635150600975218",
+          "article-title": "Efficient likelihood computations with nonreversible models of evolution",
+          "volume": "55",
+          "author": "Boussau",
+          "year": "2006",
+          "journal-title": "Syst Biol"
+        },
+        {
+          "issue": "3",
+          "key": "2025043002363645400_msaf070-B5",
+          "doi-asserted-by": "publisher",
+          "first-page": "032601",
+          "DOI": "10.1088/1361-6633/aa9965",
+          "article-title": "Inverse statistical physics of protein sequences: a key issues review",
+          "volume": "81",
+          "author": "Cocco",
+          "year": "2018",
+          "journal-title": "Rep Prog Phys"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B6",
+          "volume-title": "Atlas of protein sequence and structure",
+          "author": "Dayhoff",
+          "year": "1978"
+        },
+        {
+          "issue": "11",
+          "key": "2025043002363645400_msaf070-B7",
+          "doi-asserted-by": "publisher",
+          "first-page": "5873",
+          "DOI": "10.1073/pnas.1913071117",
+          "article-title": "Epistatic contributions promote the unification of incompatible models of neutral molecular evolution",
+          "volume": "117",
+          "author": "de la Paz",
+          "year": "2020",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "issue": "40",
+          "key": "2025043002363645400_msaf070-B8",
+          "doi-asserted-by": "publisher",
+          "first-page": "e2406807121",
+          "DOI": "10.1073/pnas.2406807121",
+          "article-title": "Emergent time scales of epistasis in protein evolution",
+          "volume": "121",
+          "author": "Di Bari",
+          "year": "2024",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B9",
+          "author": "Eddy",
+          "year": "2023"
+        },
+        {
+          "issue": "2",
+          "key": "2025043002363645400_msaf070-B10",
+          "doi-asserted-by": "publisher",
+          "first-page": "247",
+          "DOI": "10.1093/molbev/msw223",
+          "article-title": "Robustness of reconstructed ancestral protein functions to statistical uncertainty",
+          "volume": "34",
+          "author": "Eick",
+          "year": "2017",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "issue": "10",
+          "key": "2025043002363645400_msaf070-B11",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1003847",
+          "DOI": "10.1371/journal.pcbi.1003847",
+          "article-title": "Improving contact prediction along three dimensions",
+          "volume": "10",
+          "author": "Feinauer",
+          "year": "2014",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B12",
+          "volume-title": "Inferring phylogenies",
+          "author": "Felsenstein",
+          "year": "2003"
+        },
+        {
+          "issue": "1",
+          "key": "2025043002363645400_msaf070-B13",
+          "doi-asserted-by": "publisher",
+          "first-page": "4348",
+          "DOI": "10.1038/s41467-022-32007-7",
+          "article-title": "ProtGPT2 is a deep unsupervised language model for protein design",
+          "volume": "13",
+          "author": "Ferruz",
+          "year": "2022",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "issue": "7",
+          "key": "2025043002363645400_msaf070-B14",
+          "doi-asserted-by": "publisher",
+          "first-page": "910",
+          "DOI": "10.1093/oxfordjournals.molbev.a025995",
+          "article-title": "Evolutionary distances for protein-coding sequences: modeling site-specific residue frequencies",
+          "volume": "15",
+          "author": "Halpern",
+          "year": "1998",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B15",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1007/978-0-387-84858-7",
+          "volume-title": "The elements of statistical learning: data mining, inference, and prediction",
+          "author": "Hastie",
+          "year": "2009"
+        },
+        {
+          "issue": "22",
+          "key": "2025043002363645400_msaf070-B16",
+          "doi-asserted-by": "publisher",
+          "first-page": "10915",
+          "DOI": "10.1073/pnas.89.22.10915",
+          "article-title": "Amino acid substitution matrices from protein blocks",
+          "volume": "89",
+          "author": "Henikoff",
+          "year": "1992",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "issue": "2",
+          "key": "2025043002363645400_msaf070-B17",
+          "doi-asserted-by": "publisher",
+          "first-page": "825",
+          "DOI": "10.1093/molbev/msr253",
+          "article-title": "On the origin and evolution of thermophily: reconstruction of functional precambrian enzymes from ancestors of bacillus",
+          "volume": "29",
+          "author": "Hobbs",
+          "year": "2012",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "issue": "1",
+          "key": "2025043002363645400_msaf070-B18",
+          "doi-asserted-by": "publisher",
+          "first-page": "247",
+          "DOI": "10.1146/annurev-biophys-070816-033631",
+          "article-title": "Reconstructing ancient proteins to understand the causes of structure and function",
+          "volume": "46",
+          "author": "Hochberg",
+          "year": "2017",
+          "journal-title": "Annu Rev Biophys"
+        },
+        {
+          "issue": "10",
+          "key": "2025043002363645400_msaf070-B19",
+          "doi-asserted-by": "publisher",
+          "first-page": "1000",
+          "DOI": "10.3390/e21101000",
+          "article-title": "Phylogenetic weighting does little to improve the accuracy of evolutionary coupling analyses",
+          "volume": "21",
+          "author": "Hockenberry",
+          "year": "2019",
+          "journal-title": "Entropy"
+        },
+        {
+          "issue": "3",
+          "key": "2025043002363645400_msaf070-B20",
+          "doi-asserted-by": "publisher",
+          "first-page": "275",
+          "DOI": "10.1093/bioinformatics/8.3.275",
+          "article-title": "The rapid generation of mutation data matrices from protein sequences",
+          "volume": "8",
+          "author": "Jones",
+          "year": "1992",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "issue": "6",
+          "key": "2025043002363645400_msaf070-B21",
+          "doi-asserted-by": "publisher",
+          "first-page": "587",
+          "DOI": "10.1038/nmeth.4285",
+          "article-title": "ModelFinder: fast model selection for accurate phylogenetic estimates",
+          "volume": "14",
+          "author": "Kalyaanamoorthy",
+          "year": "2017",
+          "journal-title": "Nat Methods"
+        },
+        {
+          "issue": "8",
+          "key": "2025043002363645400_msaf070-B22",
+          "doi-asserted-by": "publisher",
+          "first-page": "1099",
+          "DOI": "10.1038/s41587-022-01618-2",
+          "article-title": "Large language models generate functional protein sequences across diverse families",
+          "volume": "41",
+          "author": "Madani",
+          "year": "2023",
+          "journal-title": "Nat Biotechnol"
+        },
+        {
+          "issue": "1",
+          "key": "2025043002363645400_msaf070-B23",
+          "doi-asserted-by": "publisher",
+          "first-page": "6302",
+          "DOI": "10.1038/s41467-021-26529-9",
+          "article-title": "The generative capacity of probabilistic protein sequence models",
+          "volume": "12",
+          "author": "McGee",
+          "year": "2021",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "issue": "11",
+          "key": "2025043002363645400_msaf070-B24",
+          "doi-asserted-by": "publisher",
+          "first-page": "5027",
+          "DOI": "10.1073/pnas.1813836116",
+          "article-title": "Simultaneous Bayesian inference of phylogeny and molecular coevolution",
+          "volume": "116",
+          "author": "Meyer",
+          "year": "2019",
+          "journal-title": "Proc Natl Acad Sci U S A"
+        },
+        {
+          "issue": "5",
+          "key": "2025043002363645400_msaf070-B25",
+          "doi-asserted-by": "publisher",
+          "first-page": "1530",
+          "DOI": "10.1093/molbev/msaa015",
+          "article-title": "IQ-TREE 2: new models and efficient methods for phylogenetic inference in the genomic era",
+          "volume": "37",
+          "author": "Minh",
+          "year": "2020",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B26",
+          "volume-title": "International Conference on Learning Representations.",
+          "author": "Moreta",
+          "year": "2021"
+        },
+        {
+          "issue": "1",
+          "key": "2025043002363645400_msaf070-B27",
+          "doi-asserted-by": "publisher",
+          "first-page": "60",
+          "DOI": "10.1093/sysbio/syq074",
+          "article-title": "Quantifying the impact of dependent evolution among sites in phylogenetic inference",
+          "volume": "60",
+          "author": "Nasrallah",
+          "year": "2011",
+          "journal-title": "Syst Biol"
+        },
+        {
+          "issue": "6",
+          "key": "2025043002363645400_msaf070-B28",
+          "doi-asserted-by": "publisher",
+          "first-page": "e503",
+          "DOI": "10.1371/journal.pone.0000503",
+          "article-title": "HIV-specific probabilistic models of protein evolution",
+          "volume": "2",
+          "author": "Nickle",
+          "year": "2007",
+          "journal-title": "PLoS One"
+        },
+        {
+          "issue": "6595",
+          "key": "2025043002363645400_msaf070-B29",
+          "doi-asserted-by": "publisher",
+          "first-page": "823",
+          "DOI": "10.1126/science.abn6895",
+          "article-title": "Epistatic drift causes gradual decay of predictability in protein evolution",
+          "volume": "376",
+          "author": "Park",
+          "year": "2022",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "2",
+          "key": "2025043002363645400_msaf070-B30",
+          "doi-asserted-by": "publisher",
+          "first-page": "veaa066",
+          "DOI": "10.1093/ve/veaa066",
+          "article-title": "Efficient inference, potential, and limitations of site-specific substitution models",
+          "volume": "6",
+          "author": "Puller",
+          "year": "2020",
+          "journal-title": "Virus Evol"
+        },
+        {
+          "issue": "3",
+          "key": "2025043002363645400_msaf070-B31",
+          "doi-asserted-by": "publisher",
+          "first-page": "235",
+          "DOI": "10.1093/bioinformatics/13.3.235",
+          "article-title": "Seq-gen: an application for the Monte Carlo simulation of DNA sequence evolution along phylogenetic trees",
+          "volume": "13",
+          "author": "Rambaut",
+          "year": "1997",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B32",
+          "first-page": "8844",
+          "volume-title": "Proceedings of the 38th International Conference on Machine Learning",
+          "author": "Rao",
+          "year": "2021"
+        },
+        {
+          "issue": "10",
+          "key": "2025043002363645400_msaf070-B33",
+          "doi-asserted-by": "publisher",
+          "first-page": "1692",
+          "DOI": "10.1093/molbev/msg184",
+          "article-title": "Protein evolution with dependence among codons due to tertiary structure",
+          "volume": "20",
+          "author": "Robinson",
+          "year": "2003",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "issue": "9",
+          "key": "2025043002363645400_msaf070-B34",
+          "doi-asserted-by": "publisher",
+          "first-page": "1762",
+          "DOI": "10.1093/molbev/msl041",
+          "article-title": "Assessing site-interdependent phylogenetic models of sequence evolution",
+          "volume": "23",
+          "author": "Rodrigue",
+          "year": "2006",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "issue": "5",
+          "key": "2025043002363645400_msaf070-B35",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1008957",
+          "DOI": "10.1371/journal.pcbi.1008957",
+          "article-title": "On the effect of phylogenetic correlations in coevolution-based contact prediction in proteins",
+          "volume": "17",
+          "author": "Rodriguez Horta",
+          "year": "2021",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "issue": "6502",
+          "key": "2025043002363645400_msaf070-B36",
+          "doi-asserted-by": "publisher",
+          "first-page": "440",
+          "DOI": "10.1126/science.aba3304",
+          "article-title": "An evolution-based model for designing chorismate mutase enzymes",
+          "volume": "369",
+          "author": "Russ",
+          "year": "2020",
+          "journal-title": "Science"
+        },
+        {
+          "issue": "20",
+          "key": "2025043002363645400_msaf070-B37",
+          "doi-asserted-by": "publisher",
+          "first-page": "2317",
+          "DOI": "10.1093/bioinformatics/btn445",
+          "article-title": "Empirical profile mixture models for phylogenetic reconstruction",
+          "volume": "24",
+          "author": "Si Quang",
+          "year": "2008",
+          "journal-title": "Bioinformatics"
+        },
+        {
+          "issue": "7058",
+          "key": "2025043002363645400_msaf070-B38",
+          "doi-asserted-by": "publisher",
+          "first-page": "512",
+          "DOI": "10.1038/nature03991",
+          "article-title": "Evolutionary information for specifying a protein fold",
+          "volume": "437",
+          "author": "Socolich",
+          "year": "2005",
+          "journal-title": "Nature"
+        },
+        {
+          "issue": "1",
+          "key": "2025043002363645400_msaf070-B39",
+          "doi-asserted-by": "publisher",
+          "first-page": "15",
+          "DOI": "10.1016/j.cels.2019.11.008",
+          "article-title": "Protein structure from experimental evolution",
+          "volume": "10",
+          "author": "Stiffler",
+          "year": "2020",
+          "journal-title": "Cell Syst"
+        },
+        {
+          "issue": "20",
+          "key": "2025043002363645400_msaf070-B40",
+          "doi-asserted-by": "publisher",
+          "first-page": "5674",
+          "DOI": "10.1002/anie.201713220",
+          "article-title": "Co-evolutionary fitness landscapes for sequence design",
+          "volume": "57",
+          "author": "Tian",
+          "year": "2018",
+          "journal-title": "Angew Chem Int Ed Engl"
+        },
+        {
+          "issue": "1",
+          "key": "2025043002363645400_msaf070-B41",
+          "doi-asserted-by": "publisher",
+          "first-page": "5800",
+          "DOI": "10.1038/s41467-021-25756-4",
+          "article-title": "Efficient generative modeling of protein sequences using simple autoregressive models",
+          "volume": "12",
+          "author": "Trinquier",
+          "year": "2021",
+          "journal-title": "Nat Commun"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B42",
+          "doi-asserted-by": "publisher",
+          "first-page": "e39397",
+          "DOI": "10.7554/eLife.39397",
+          "article-title": "Learning protein constitutive motifs from sequence data",
+          "volume": "8",
+          "author": "Tubiana",
+          "year": "2019",
+          "journal-title": "Elife"
+        },
+        {
+          "issue": "6",
+          "key": "2025043002363645400_msaf070-B43",
+          "doi-asserted-by": "publisher",
+          "first-page": "997",
+          "DOI": "10.1089/106652703322756195",
+          "article-title": "A transition probability model for amino acid substitutions from blocks",
+          "volume": "10",
+          "author": "Veerassamy",
+          "year": "2003",
+          "journal-title": "J Comput Biol"
+        },
+        {
+          "issue": "12",
+          "key": "2025043002363645400_msaf070-B44",
+          "doi-asserted-by": "publisher",
+          "first-page": "e1001446",
+          "DOI": "10.1371/journal.pbio.1001446",
+          "article-title": "Reconstruction of ancestral metabolic enzymes reveals molecular mechanisms underlying evolutionary innovation through gene duplication",
+          "volume": "10",
+          "author": "Voordeckers",
+          "year": "2012",
+          "journal-title": "PLoS Biol"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B45",
+          "doi-asserted-by": "publisher",
+          "first-page": "37",
+          "DOI": "10.1016/j.sbi.2016.05.015",
+          "article-title": "The thermostability and specificity of ancient proteins",
+          "volume": "38",
+          "author": "Wheeler",
+          "year": "2016",
+          "journal-title": "Curr Opin Struct Biol"
+        },
+        {
+          "issue": "6",
+          "key": "2025043002363645400_msaf070-B46",
+          "doi-asserted-by": "publisher",
+          "first-page": "e69",
+          "DOI": "10.1371/journal.pcbi.0020069",
+          "article-title": "Assessing the accuracy of ancestral protein reconstruction methods",
+          "volume": "2",
+          "author": "Williams",
+          "year": "2006",
+          "journal-title": "PLoS Comput Biol"
+        },
+        {
+          "issue": "2",
+          "key": "2025043002363645400_msaf070-B47",
+          "doi-asserted-by": "publisher",
+          "first-page": "343",
+          "DOI": "10.1016/S1097-2765(03)00308-3",
+          "article-title": "A despecialization step underlying evolution of a family of serine proteases",
+          "volume": "12",
+          "author": "Wouters",
+          "year": "2003",
+          "journal-title": "Mol Cell"
+        },
+        {
+          "issue": "3",
+          "key": "2025043002363645400_msaf070-B48",
+          "doi-asserted-by": "publisher",
+          "first-page": "306",
+          "DOI": "10.1007/BF00160154",
+          "article-title": "Maximum likelihood phylogenetic estimation from DNA sequences with variable rates over sites: approximate methods",
+          "volume": "39",
+          "author": "Yang",
+          "year": "1994",
+          "journal-title": "J Mol Evol"
+        },
+        {
+          "key": "2025043002363645400_msaf070-B49",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1093/acprof:oso/9780198567028.001.0001",
+          "volume-title": "Computational molecular evolution",
+          "author": "Yang",
+          "year": "2006"
+        },
+        {
+          "issue": "8",
+          "key": "2025043002363645400_msaf070-B50",
+          "doi-asserted-by": "publisher",
+          "first-page": "1586",
+          "DOI": "10.1093/molbev/msm088",
+          "article-title": "PAML 4: phylogenetic analysis by maximum likelihood",
+          "volume": "24",
+          "author": "Yang",
+          "year": "2007",
+          "journal-title": "Mol Biol Evol"
+        },
+        {
+          "issue": "4",
+          "key": "2025043002363645400_msaf070-B51",
+          "doi-asserted-by": "publisher",
+          "first-page": "1641",
+          "DOI": "10.1093/genetics/141.4.1641",
+          "article-title": "A new method of inference of ancestral nucleotide and amino acid sequences",
+          "volume": "141",
+          "author": "Yang",
+          "year": "1995",
+          "journal-title": "Genetics"
+        }
+      ],
+      "container-title": [
+        "Molecular Biology and Evolution"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://academic.oup.com/mbe/article-pdf/42/4/msaf070/62748976/msaf070.pdf",
+          "content-type": "application/pdf",
+          "content-version": "vor",
+          "intended-application": "syndication"
+        },
+        {
+          "URL": "https://academic.oup.com/mbe/article-pdf/42/4/msaf070/62748976/msaf070.pdf",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            4,
+            30
+          ]
+        ],
+        "date-time": "2025-04-30T02:36:53Z",
+        "timestamp": 1745980613000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "https://academic.oup.com/mbe/article/doi/10.1093/molbev/msaf070/8096459"
+        }
+      },
+      "subtitle": [],
+      "editor": [
+        {
+          "given": "Bui Quang",
+          "family": "Minh",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            26
+          ]
+        ]
+      },
+      "references-count": 51,
+      "journal-issue": {
+        "issue": "4",
+        "published-print": {
+          "date-parts": [
+            [
+              2025,
+              4,
+              1
+            ]
+          ]
+        }
+      },
+      "URL": "https://doi.org/10.1093/molbev/msaf070",
+      "relation": {
+        "has-preprint": [
+          {
+            "id-type": "doi",
+            "id": "10.1101/2024.09.17.613387",
+            "asserted-by": "object"
+          }
+        ]
+      },
+      "ISSN": [
+        "0737-4038",
+        "1537-1719"
+      ],
+      "issn-type": [
+        {
+          "value": "0737-4038",
+          "type": "print"
+        },
+        {
+          "value": "1537-1719",
+          "type": "electronic"
+        }
+      ],
+      "subject": [],
+      "published-other": {
+        "date-parts": [
+          [
+            2025,
+            4
+          ]
+        ]
+      },
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            3,
+            26
+          ]
+        ]
+      },
+      "article-number": "msaf070"
+    }
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-293e271d61fe8281.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-293e271d61fe8281.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-293e271d61fe8281.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "215917f6eeab23d79681f5ff741517994fccd79a2c505058006db466307c6339",
+    "chunk_count": 36,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}

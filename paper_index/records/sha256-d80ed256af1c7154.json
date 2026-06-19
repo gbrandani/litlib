@@ -1,0 +1,353 @@
+{
+  "paper_id": "sha256-d80ed256af1c7154",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/coarse-graining/Orozco 2024 NAR - CGeNArate- a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes.pdf",
+  "pdf_sha256": "d80ed256af1c7154a97b290b8f557c046d3364194ae2b7bf63a6b239cfbd7882",
+  "filename": "Orozco 2024 NAR - CGeNArate- a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes.pdf",
+  "item_type": "article",
+  "title_query": "CGeNArate- a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes",
+  "filename_hints": {
+    "year_hint": 2024,
+    "venue_hint": "",
+    "prefix": "Orozco 2024 NAR"
+  },
+  "doi_candidates": [
+    "10.1093/nar/gkae444"
+  ],
+  "date_indexed": "2026-04-17T03:29:26.848846+00:00",
+  "match_status": "matched_via_doi",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "crossref_doi_plus_semantic_enrichment",
+  "semantic_scholar": {
+    "query": "CGeNArate- a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "ef933a16c9f0ae5a920dcdf63d34c6aa7ce219b0",
+      "externalIds": {
+        "PubMedCentral": "11229373",
+        "DOI": "10.1093/nar/gkae444",
+        "CorpusId": 270120348,
+        "PubMed": "38813824"
+      },
+      "url": "https://www.semanticscholar.org/paper/ef933a16c9f0ae5a920dcdf63d34c6aa7ce219b0",
+      "title": "CGeNArate: a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes",
+      "venue": "Nucleic Acids Research",
+      "year": 2024,
+      "openAccessPdf": {
+        "url": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkae444/58006348/gkae444.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11229373, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle"
+      ],
+      "publicationDate": "2024-05-30",
+      "journal": {
+        "name": "Nucleic Acids Research",
+        "pages": "6791 - 6801",
+        "volume": "52"
+      },
+      "authors": [
+        {
+          "authorId": "2303817956",
+          "name": "David Farré-Gil"
+        },
+        {
+          "authorId": "1869030",
+          "name": "Juan Pablo Arcon"
+        },
+        {
+          "authorId": "2275347251",
+          "name": "C. Laughton"
+        },
+        {
+          "authorId": "2289307418",
+          "name": "Modesto Orozco"
+        }
+      ],
+      "abstract": "Abstract We present CGeNArate, a new model for molecular dynamics simulations of very long segments of B-DNA in the context of biotechnological or chromatin studies. The developed method uses a coarse-grained Hamiltonian with trajectories that are back-mapped to the atomistic resolution level with extreme accuracy by means of Machine Learning Approaches. The method is sequence-dependent and reproduces very well not only local, but also global physical properties of DNA. The efficiency of the method allows us to recover with a reduced computational effort high-quality atomic-resolution ensembles of segments containing many kilobases of DNA, entering into the gene range or even the entire DNA of certain cellular organelles."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "ef933a16c9f0ae5a920dcdf63d34c6aa7ce219b0",
+        "title": "CGeNArate: a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": 2024,
+        "candidate_year": 2024,
+        "year_bonus": 0.08,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1093/nar/gkae444",
+      "10.1093/nar/gkae444/58006348/gkae444.pdf"
+    ],
+    "matching_extracted_doi": "10.1093/nar/gkae444",
+    "raw_response": {
+      "total": 1,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "ef933a16c9f0ae5a920dcdf63d34c6aa7ce219b0",
+          "externalIds": {
+            "PubMedCentral": "11229373",
+            "DOI": "10.1093/nar/gkae444",
+            "CorpusId": 270120348,
+            "PubMed": "38813824"
+          },
+          "url": "https://www.semanticscholar.org/paper/ef933a16c9f0ae5a920dcdf63d34c6aa7ce219b0",
+          "title": "CGeNArate: a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes",
+          "venue": "Nucleic Acids Research",
+          "year": 2024,
+          "openAccessPdf": {
+            "url": "https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkae444/58006348/gkae444.pdf",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC11229373, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2024-05-30",
+          "journal": {
+            "name": "Nucleic Acids Research",
+            "pages": "6791 - 6801",
+            "volume": "52"
+          },
+          "authors": [
+            {
+              "authorId": "2303817956",
+              "name": "David Farré-Gil"
+            },
+            {
+              "authorId": "1869030",
+              "name": "Juan Pablo Arcon"
+            },
+            {
+              "authorId": "2275347251",
+              "name": "C. Laughton"
+            },
+            {
+              "authorId": "2289307418",
+              "name": "Modesto Orozco"
+            }
+          ],
+          "abstract": "Abstract We present CGeNArate, a new model for molecular dynamics simulations of very long segments of B-DNA in the context of biotechnological or chromatin studies. The developed method uses a coarse-grained Hamiltonian with trajectories that are back-mapped to the atomistic resolution level with extreme accuracy by means of Machine Learning Approaches. The method is sequence-dependent and reproduces very well not only local, but also global physical properties of DNA. The efficiency of the method allows us to recover with a reduced computational effort high-quality atomic-resolution ensembles of segments containing many kilobases of DNA, entering into the gene range or even the entire DNA of certain cellular organelles."
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": {
+      "URL": "https://doi.org/10.1093/nar/gkae444",
+      "DOI": "10.1093/nar/gkae444",
+      "type": "journal-article",
+      "issue": "12",
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7282-3204",
+          "authenticated-orcid": false,
+          "given": "David",
+          "family": "Farré-Gil",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology , Baldiri Reixac 10-12, E-08028  Barcelona , Spain"
+            }
+          ]
+        },
+        {
+          "given": "Juan Pablo",
+          "family": "Arcon",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology , Baldiri Reixac 10-12, E-08028  Barcelona , Spain"
+            }
+          ]
+        },
+        {
+          "given": "Charles A",
+          "family": "Laughton",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Pharmacy and Biodiscovery Institute, University of Nottingham, University Park , Nottingham NG7 2RD, UK"
+            }
+          ]
+        },
+        {
+          "given": "Modesto",
+          "family": "Orozco",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology , Baldiri Reixac 10-12, E-08028  Barcelona , Spain"
+            },
+            {
+              "name": "Department of Biochemistry and Biomedicine, University of Barcelona , E-08028  Barcelona , Spain"
+            }
+          ]
+        }
+      ],
+      "ISSN": [
+        "0305-1048",
+        "1362-4962"
+      ],
+      "page": "6791-6801",
+      "container-title": [
+        "Nucleic Acids Research"
+      ],
+      "title": [
+        "CGeNArate: a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes"
+      ],
+      "publisher": "Oxford University Press (OUP)",
+      "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We present CGeNArate, a new model for molecular dynamics simulations of very long segments of B-DNA in the context of biotechnological or chromatin studies. The developed method uses a coarse-grained Hamiltonian with trajectories that are back-mapped to the atomistic resolution level with extreme accuracy by means of Machine Learning Approaches. The method is sequence-dependent and reproduces very well not only local, but also global physical properties of DNA. The efficiency of the method allows us to recover with a reduced computational effort high-quality atomic-resolution ensembles of segments containing many kilobases of DNA, entering into the gene range or even the entire DNA of certain cellular organelles.</jats:p>",
+      "issued": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            30
+          ]
+        ]
+      },
+      "volume": "52"
+    },
+    "accepted_score": 1.08,
+    "accepted": true,
+    "accepted_doi": "10.1093/nar/gkae444",
+    "best_candidate_doi": "10.1093/nar/gkae444",
+    "crossref_attempts": [
+      {
+        "doi": "10.1093/nar/gkae444",
+        "source_region": "first_page",
+        "position": 61,
+        "context": "[Page 1] Nucleic Acids Research, 2024, 1–11 https://doi.org/10.1093/nar/gkae444 Computational Biology David Farré-Gil , Juan Pablo Arcon1 , Charles A. Laughton2 and Mo",
+        "priority_score": 0.83,
+        "score": 1.08,
+        "warnings": [],
+        "error": "",
+        "accepted": false,
+        "metadata": {
+          "URL": "https://doi.org/10.1093/nar/gkae444",
+          "DOI": "10.1093/nar/gkae444",
+          "type": "journal-article",
+          "issue": "12",
+          "author": [
+            {
+              "ORCID": "https://orcid.org/0000-0002-7282-3204",
+              "authenticated-orcid": false,
+              "given": "David",
+              "family": "Farré-Gil",
+              "sequence": "first",
+              "affiliation": [
+                {
+                  "name": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology , Baldiri Reixac 10-12, E-08028  Barcelona , Spain"
+                }
+              ]
+            },
+            {
+              "given": "Juan Pablo",
+              "family": "Arcon",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology , Baldiri Reixac 10-12, E-08028  Barcelona , Spain"
+                }
+              ]
+            },
+            {
+              "given": "Charles A",
+              "family": "Laughton",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "School of Pharmacy and Biodiscovery Institute, University of Nottingham, University Park , Nottingham NG7 2RD, UK"
+                }
+              ]
+            },
+            {
+              "given": "Modesto",
+              "family": "Orozco",
+              "sequence": "additional",
+              "affiliation": [
+                {
+                  "name": "Institute for Research in Biomedicine (IRB Barcelona), The Barcelona Institute of Science and Technology , Baldiri Reixac 10-12, E-08028  Barcelona , Spain"
+                },
+                {
+                  "name": "Department of Biochemistry and Biomedicine, University of Barcelona , E-08028  Barcelona , Spain"
+                }
+              ]
+            }
+          ],
+          "ISSN": [
+            "0305-1048",
+            "1362-4962"
+          ],
+          "page": "6791-6801",
+          "container-title": [
+            "Nucleic Acids Research"
+          ],
+          "title": [
+            "CGeNArate: a sequence-dependent coarse-grained model of DNA for accurate atomistic MD simulations of kb-long duplexes"
+          ],
+          "publisher": "Oxford University Press (OUP)",
+          "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>We present CGeNArate, a new model for molecular dynamics simulations of very long segments of B-DNA in the context of biotechnological or chromatin studies. The developed method uses a coarse-grained Hamiltonian with trajectories that are back-mapped to the atomistic resolution level with extreme accuracy by means of Machine Learning Approaches. The method is sequence-dependent and reproduces very well not only local, but also global physical properties of DNA. The efficiency of the method allows us to recover with a reduced computational effort high-quality atomic-resolution ensembles of segments containing many kilobases of DNA, entering into the gene range or even the entire DNA of certain cellular organelles.</jats:p>",
+          "issued": {
+            "date-parts": [
+              [
+                2024,
+                5,
+                30
+              ]
+            ]
+          },
+          "volume": "52"
+        }
+      }
+    ],
+    "accepted_source": "crossref_doi",
+    "matched_by": "doi_text_validation"
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-d80ed256af1c7154.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-d80ed256af1c7154.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-d80ed256af1c7154.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "b24ca467eb7a04b65015ea93956eb41b5d2793dce29c8a14adf77a6dd464a35c",
+    "chunk_count": 26,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed",
+  "doi_candidate_details": [
+    {
+      "doi": "10.1093/nar/gkae444",
+      "source_region": "first_page",
+      "position": 61,
+      "context": "[Page 1] Nucleic Acids Research, 2024, 1–11 https://doi.org/10.1093/nar/gkae444 Computational Biology David Farré-Gil , Juan Pablo Arcon1 , Charles A. Laughton2 and Mo",
+      "priority_score": 0.83
+    }
+  ],
+  "metadata_reconciliation": {
+    "last_applied": "2026-05-11T06:08:34.038182+00:00",
+    "tool": "library_reconcile_metadata.py",
+    "accepted_doi": "10.1093/nar/gkae444",
+    "score": 1.08
+  }
+}

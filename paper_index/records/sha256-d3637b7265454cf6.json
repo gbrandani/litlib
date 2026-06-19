@@ -1,0 +1,59 @@
+{
+  "paper_id": "sha256-d3637b7265454cf6",
+  "content_kind": "pdf_backed",
+  "addition_mode": "pdf_guided",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "articles/protein_aggregation/Ilie arXiv 2026 - Modulators Selectively Reshape alpha-Synuclein Phase Transitions.pdf",
+  "pdf_sha256": "d3637b7265454cf63ac66a17777909cefbf7459569e135ee3f6ca20d59ee687c",
+  "filename": "Ilie arXiv 2026 - Modulators Selectively Reshape alpha-Synuclein Phase Transitions.pdf",
+  "item_type": "article",
+  "title_query": "Modulators Selectively Reshape alpha Synuclein Phase Transitions",
+  "date_indexed": "2026-06-15T08:07:03.270151+00:00",
+  "match_status": "manual_verified",
+  "match_confidence": null,
+  "metadata_source": "manual_bibtex",
+  "doi_candidates": [],
+  "doi_candidate_details": [],
+  "semantic_scholar": {
+    "query": "Modulators Selectively Reshape alpha Synuclein Phase Transitions",
+    "limit": 0,
+    "attempts": [],
+    "selected_paper_id": "",
+    "best_candidate": null,
+    "merged_candidates": []
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null,
+    "accepted_score": null,
+    "accepted": false,
+    "accepted_doi": "",
+    "best_candidate_doi": "",
+    "crossref_attempts": [],
+    "accepted_source": "",
+    "matched_by": ""
+  },
+  "artifacts": {
+    "record_path": "paper_index/records/sha256-d3637b7265454cf6.json",
+    "text_path": "paper_index/text/sha256-d3637b7265454cf6.txt",
+    "chunk_path": "paper_index/chunks/sha256-d3637b7265454cf6.jsonl",
+    "master_index": "paper_index/master_index.tsv",
+    "master_bib": "paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "e0de01d330f8d7d980caeffc3c4ada2d937a9d29a03866835d2abbc55267cd4a",
+    "chunk_count": 34,
+    "chunk_target_chars": 2000,
+    "chunk_overlap_chars": 200,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "manual_override": {
+    "raw_bibtex": "@article{masson2026modulators,\n  title = {Modulators Selectively Reshape alpha-Synuclein Phase Transitions},\n  author = {Masson, Holly and Paesani, Massimiliano and Ilie, Ioana M},\n  year = {2026},\n  journal = {arXiv preprint arXiv:2601.07513}\n}",
+    "parsed_bibtex_type": "article",
+    "source_note": "pasted into library_add.py pdf flow",
+    "bibtex_key": "masson2026modulators"
+  }
+}

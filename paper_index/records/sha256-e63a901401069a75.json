@@ -1,0 +1,382 @@
+{
+  "paper_id": "sha256-e63a901401069a75",
+  "library_root": "/Users/brandani/Dropbox/documents/library",
+  "pdf_path": "/Users/brandani/Dropbox/documents/library/articles/neuroscience/Tavanaei_2016_Acquisition_of_visual_features_through_probabilistic_spike-timing-dependent_plasticity.pdf",
+  "pdf_sha256": "e63a901401069a7594bd1a9b20ec8624b98d8a3dc89b81ff7197cf84dc40e31d",
+  "filename": "Tavanaei_2016_Acquisition_of_visual_features_through_probabilistic_spike-timing-dependent_plasticity.pdf",
+  "item_type": "article",
+  "title_query": "Acquisition of visual features through probabilistic spike timing dependent plasticity",
+  "filename_hints": {
+    "year_hint": 2016,
+    "venue_hint": "",
+    "prefix": "Tavanaei 2016 Acquisition of visual features through probabilistic spike-timing-dependent plasticity"
+  },
+  "doi_candidates": [],
+  "date_indexed": "2026-04-17T03:32:58.089424+00:00",
+  "match_status": "matched",
+  "match_confidence": 1.0,
+  "warnings": [],
+  "crossref_warnings": [],
+  "metadata_source": "semantic_scholar",
+  "semantic_scholar": {
+    "query": "Acquisition of visual features through probabilistic spike timing dependent plasticity",
+    "limit": 10,
+    "api_error": "",
+    "best_candidate": {
+      "paperId": "8c534d75253d74269814674bd00c911336af890c",
+      "externalIds": {
+        "MAG": "3106257432",
+        "DBLP": "journals/corr/TavanaeiMM16",
+        "ArXiv": "1606.01102",
+        "DOI": "10.1109/IJCNN.2016.7727213",
+        "CorpusId": 2043145
+      },
+      "url": "https://www.semanticscholar.org/paper/8c534d75253d74269814674bd00c911336af890c",
+      "title": "Acquisition of visual features through probabilistic spike-timing-dependent plasticity",
+      "venue": "IEEE International Joint Conference on Neural Network",
+      "year": 2016,
+      "openAccessPdf": {
+        "url": "https://arxiv.org/pdf/1606.01102",
+        "status": "GREEN",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1606.01102, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "publicationTypes": [
+        "JournalArticle",
+        "Conference"
+      ],
+      "publicationDate": "2016-06-03",
+      "journal": {
+        "name": "2016 International Joint Conference on Neural Networks (IJCNN)",
+        "pages": "307-314"
+      },
+      "authors": [
+        {
+          "authorId": "2494810",
+          "name": "A. Tavanaei"
+        },
+        {
+          "authorId": "2441104",
+          "name": "T. Masquelier"
+        },
+        {
+          "authorId": "143721723",
+          "name": "A. Maida"
+        }
+      ],
+      "abstract": "This paper explores modifications to a feedforward five-layer spiking convolutional network (SCN) of the ventral visual stream [Masquelier, T., Thorpe, S., Unsupervised learning of visual features through spike timing dependent plasticity. PLoS Computational Biology, 3(2), 247-257]. The original model showed that a spike-timing-dependent plasticity (STDP) learning algorithm embedded in an appropriately selected SCN could perform unsupervised feature discovery. The discovered features where interpretable and could effectively be used to perform rapid binary decisions in a classifier. In order to study the robustness of the previous results, the present research examines the effects of modifying some of the components of the original model. For improved biological realism, we replace the original non-leaky integrate-and-fire neurons with Izhikevich-like neurons. We also replace the original STDP rule with a novel rule that has a probabilistic interpretation. The probabilistic STDP slightly but significantly improves the performance for both types of model neurons. Use of the Izhikevich-like neuron was not found to improve performance although performance was still comparable to the IF neuron. This shows that the model is robust enough to handle more biologically realistic neurons. We also conclude that the underlying reasons for stable performance in the model are preserved despite the overt changes to the explicit components of the model."
+    },
+    "candidate_scores": [
+      {
+        "paper_id": "8c534d75253d74269814674bd00c911336af890c",
+        "title": "Acquisition of visual features through probabilistic spike-timing-dependent plasticity",
+        "score": 1.0,
+        "title_similarity": 1.0,
+        "query_year": null,
+        "candidate_year": 2016,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "811b0300fd73eab3a4ae0685a7c66e8143f27fe6",
+        "title": "Emergence of probabilistic representation in the neural network of primary visual cortex",
+        "score": 0.1911,
+        "title_similarity": 0.1911,
+        "query_year": null,
+        "candidate_year": 2021,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "e633a11884f4f056ff5431677e6bdf6633ca1499",
+        "title": "Where’s the Noise? Key Features of Spontaneous Activity and Neural Variability Arise through Learning in a Deterministic Network",
+        "score": 0.1794,
+        "title_similarity": 0.1794,
+        "query_year": null,
+        "candidate_year": 2015,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "4f058fc172ebc80cdf33fef115ed9d850349a664",
+        "title": "Bio-inspired Multi-layer Spiking Neural Network Extracts Discriminative Features from Speech Signals",
+        "score": 0.1297,
+        "title_similarity": 0.0897,
+        "query_year": null,
+        "candidate_year": 2017,
+        "year_bonus": 0.0,
+        "author_bonus": 0.04,
+        "venue_penalty": 0.0
+      },
+      {
+        "paper_id": "ca69bd141d4d1c0223e5aa6c3c5cfec2e99d7dbf",
+        "title": "Artificial Neural Networks: Biological Inspirations - ICANN 2005, 15th International Conference, Warsaw, Poland, September 11-15, 2005, Proceedings, Part I",
+        "score": 0.0,
+        "title_similarity": 0.0,
+        "query_year": null,
+        "candidate_year": 2005,
+        "year_bonus": 0.0,
+        "author_bonus": 0.0,
+        "venue_penalty": 0.0
+      }
+    ],
+    "candidate_dois": [
+      "10.1109/ijcnn.2016.7727213"
+    ],
+    "matching_extracted_doi": "",
+    "raw_response": {
+      "total": 5,
+      "offset": 0,
+      "data": [
+        {
+          "paperId": "8c534d75253d74269814674bd00c911336af890c",
+          "externalIds": {
+            "MAG": "3106257432",
+            "DBLP": "journals/corr/TavanaeiMM16",
+            "ArXiv": "1606.01102",
+            "DOI": "10.1109/IJCNN.2016.7727213",
+            "CorpusId": 2043145
+          },
+          "url": "https://www.semanticscholar.org/paper/8c534d75253d74269814674bd00c911336af890c",
+          "title": "Acquisition of visual features through probabilistic spike-timing-dependent plasticity",
+          "venue": "IEEE International Joint Conference on Neural Network",
+          "year": 2016,
+          "openAccessPdf": {
+            "url": "https://arxiv.org/pdf/1606.01102",
+            "status": "GREEN",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1606.01102, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle",
+            "Conference"
+          ],
+          "publicationDate": "2016-06-03",
+          "journal": {
+            "name": "2016 International Joint Conference on Neural Networks (IJCNN)",
+            "pages": "307-314"
+          },
+          "authors": [
+            {
+              "authorId": "2494810",
+              "name": "A. Tavanaei"
+            },
+            {
+              "authorId": "2441104",
+              "name": "T. Masquelier"
+            },
+            {
+              "authorId": "143721723",
+              "name": "A. Maida"
+            }
+          ],
+          "abstract": "This paper explores modifications to a feedforward five-layer spiking convolutional network (SCN) of the ventral visual stream [Masquelier, T., Thorpe, S., Unsupervised learning of visual features through spike timing dependent plasticity. PLoS Computational Biology, 3(2), 247-257]. The original model showed that a spike-timing-dependent plasticity (STDP) learning algorithm embedded in an appropriately selected SCN could perform unsupervised feature discovery. The discovered features where interpretable and could effectively be used to perform rapid binary decisions in a classifier. In order to study the robustness of the previous results, the present research examines the effects of modifying some of the components of the original model. For improved biological realism, we replace the original non-leaky integrate-and-fire neurons with Izhikevich-like neurons. We also replace the original STDP rule with a novel rule that has a probabilistic interpretation. The probabilistic STDP slightly but significantly improves the performance for both types of model neurons. Use of the Izhikevich-like neuron was not found to improve performance although performance was still comparable to the IF neuron. This shows that the model is robust enough to handle more biologically realistic neurons. We also conclude that the underlying reasons for stable performance in the model are preserved despite the overt changes to the explicit components of the model."
+        },
+        {
+          "paperId": "811b0300fd73eab3a4ae0685a7c66e8143f27fe6",
+          "externalIds": {
+            "PubMedCentral": "8924637",
+            "DOI": "10.1101/2021.02.06.429971",
+            "CorpusId": 231885033,
+            "PubMed": "35310336"
+          },
+          "url": "https://www.semanticscholar.org/paper/811b0300fd73eab3a4ae0685a7c66e8143f27fe6",
+          "title": "Emergence of probabilistic representation in the neural network of primary visual cortex",
+          "venue": "bioRxiv",
+          "year": 2021,
+          "openAccessPdf": {
+            "url": "http://www.cell.com/article/S2589004222002450/pdf",
+            "status": "GREEN",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8924637, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2021-02-08",
+          "journal": {
+            "name": "iScience",
+            "volume": "25"
+          },
+          "authors": [
+            {
+              "authorId": "2141520304",
+              "name": "Ang Li"
+            },
+            {
+              "authorId": "2112346070",
+              "name": "Fengchao Wang"
+            },
+            {
+              "authorId": "2108583033",
+              "name": "Xiaohui Zhang"
+            },
+            {
+              "authorId": "143700216",
+              "name": "Si Wu"
+            }
+          ],
+          "abstract": "During the early development of mammalian visual system, the distribution of neuronal preferred orientations in the primary visual cortex (V1) gradually shifts to match the major orientation features of an environment, achieving optimal representation of the environment. By combining the computational modeling and experimental electrophysiological recording, we provide a circuitry plasticity mechanism that underlies the developmental emergence of such matched representation in the visual cortical network. Specifically, in a canonical circuit of densely interconnected pyramidal cells and inhibitory parvalbumin-expressing (PV+) fast-spiking interneurons in the V1 layer 2/3, our model successfully simulates the experimental observations and further reveals that the non-uniform inhibition, mediated by local interneurons, exerts a key role in shaping the network representation through spike timing-dependent synaptic modifications. The experimental results confirm that PV+ interneurons in the V1 are capable of providing such non-uniform inhibition during a short period after the vision onset. Thus, our study elucidates a circuitry mechanism for acquisition of the prior knowledge of environment for optimal inference in sensory neural system."
+        },
+        {
+          "paperId": "4f058fc172ebc80cdf33fef115ed9d850349a664",
+          "externalIds": {
+            "DBLP": "journals/corr/TavanaeiM17",
+            "MAG": "3100597003",
+            "ArXiv": "1706.03170",
+            "DOI": "10.1007/978-3-319-70136-3_95",
+            "CorpusId": 1757707
+          },
+          "url": "https://www.semanticscholar.org/paper/4f058fc172ebc80cdf33fef115ed9d850349a664",
+          "title": "Bio-inspired Multi-layer Spiking Neural Network Extracts Discriminative Features from Speech Signals",
+          "venue": "International Conference on Neural Information Processing",
+          "year": 2017,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1706.03170, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2017-06-10",
+          "journal": {
+            "name": "ArXiv",
+            "volume": "abs/1706.03170"
+          },
+          "authors": [
+            {
+              "authorId": "2494810",
+              "name": "A. Tavanaei"
+            },
+            {
+              "authorId": "143721723",
+              "name": "A. Maida"
+            }
+          ],
+          "abstract": "Spiking neural networks (SNNs) enable power-efficient implementations due to their sparse, spike-based coding scheme. This paper develops a bio-inspired SNN that uses unsupervised learning to extract discriminative features from speech signals, which can subsequently be used in a classifier. The architecture consists of a spiking convolutional/pooling layer followed by a fully connected spiking layer for feature discovery. The convolutional layer of leaky, integrate-and-fire (LIF) neurons represents primary acoustic features. The fully connected layer is equipped with a probabilistic spike-timing-dependent plasticity learning rule. This layer represents the discriminative features through probabilistic, LIF neurons. To assess the discriminative power of the learned features, they are used in a hidden Markov model (HMM) for spoken digit recognition. The experimental results show performance above 96% that compares favorably with popular statistical feature extraction methods. Our results provide a novel demonstration of unsupervised feature acquisition in an SNN."
+        },
+        {
+          "paperId": "e633a11884f4f056ff5431677e6bdf6633ca1499",
+          "externalIds": {
+            "DBLP": "journals/ploscb/HartmannLNT15",
+            "MAG": "2203645894",
+            "PubMedCentral": "4694925",
+            "DOI": "10.1371/journal.pcbi.1004640",
+            "CorpusId": 14859558,
+            "PubMed": "26714277"
+          },
+          "url": "https://www.semanticscholar.org/paper/e633a11884f4f056ff5431677e6bdf6633ca1499",
+          "title": "Where’s the Noise? Key Features of Spontaneous Activity and Neural Variability Arise through Learning in a Deterministic Network",
+          "venue": "PLoS Comput. Biol.",
+          "year": 2015,
+          "openAccessPdf": {
+            "url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004640&type=printable",
+            "status": "GOLD",
+            "license": "CCBY",
+            "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC4694925, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "JournalArticle"
+          ],
+          "publicationDate": "2015-12-01",
+          "journal": {
+            "name": "PLoS Computational Biology",
+            "volume": "11"
+          },
+          "authors": [
+            {
+              "authorId": "2057424916",
+              "name": "Christoph Hartmann"
+            },
+            {
+              "authorId": "40381799",
+              "name": "Andreea Lazar"
+            },
+            {
+              "authorId": "37082831",
+              "name": "Bernhard Nessler"
+            },
+            {
+              "authorId": "2774681",
+              "name": "J. Triesch"
+            }
+          ],
+          "abstract": "Even in the absence of sensory stimulation the brain is spontaneously active. This background “noise” seems to be the dominant cause of the notoriously high trial-to-trial variability of neural recordings. Recent experimental observations have extended our knowledge of trial-to-trial variability and spontaneous activity in several directions: 1. Trial-to-trial variability systematically decreases following the onset of a sensory stimulus or the start of a motor act. 2. Spontaneous activity states in sensory cortex outline the region of evoked sensory responses. 3. Across development, spontaneous activity aligns itself with typical evoked activity patterns. 4. The spontaneous brain activity prior to the presentation of an ambiguous stimulus predicts how the stimulus will be interpreted. At present it is unclear how these observations relate to each other and how they arise in cortical circuits. Here we demonstrate that all of these phenomena can be accounted for by a deterministic self-organizing recurrent neural network model (SORN), which learns a predictive model of its sensory environment. The SORN comprises recurrently coupled populations of excitatory and inhibitory threshold units and learns via a combination of spike-timing dependent plasticity (STDP) and homeostatic plasticity mechanisms. Similar to balanced network architectures, units in the network show irregular activity and variable responses to inputs. Additionally, however, the SORN exhibits sequence learning abilities matching recent findings from visual cortex and the network’s spontaneous activity reproduces the experimental findings mentioned above. Intriguingly, the network’s behaviour is reminiscent of sampling-based probabilistic inference, suggesting that correlates of sampling-based inference can develop from the interaction of STDP and homeostasis in deterministic networks. We conclude that key observations on spontaneous brain activity and the variability of neural responses can be accounted for by a simple deterministic recurrent neural network which learns a predictive model of its sensory environment via a combination of generic neural plasticity mechanisms."
+        },
+        {
+          "paperId": "ca69bd141d4d1c0223e5aa6c3c5cfec2e99d7dbf",
+          "externalIds": {
+            "MAG": "1496936869",
+            "DBLP": "conf/icann/2005-1",
+            "DOI": "10.1007/11550822",
+            "CorpusId": 12475269
+          },
+          "url": "https://www.semanticscholar.org/paper/ca69bd141d4d1c0223e5aa6c3c5cfec2e99d7dbf",
+          "title": "Artificial Neural Networks: Biological Inspirations - ICANN 2005, 15th International Conference, Warsaw, Poland, September 11-15, 2005, Proceedings, Part I",
+          "venue": "International Conference on Artificial Neural Networks",
+          "year": 2005,
+          "openAccessPdf": {
+            "url": "",
+            "status": "CLOSED",
+            "license": null,
+            "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/11550822?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/11550822, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+          },
+          "publicationTypes": [
+            "Conference",
+            "Review"
+          ],
+          "publicationDate": null,
+          "journal": {
+            "volume": "3696"
+          },
+          "authors": [
+            {
+              "authorId": "1679601",
+              "name": "Wlodzislaw Duch"
+            },
+            {
+              "authorId": "1760085",
+              "name": "J. Kacprzyk"
+            },
+            {
+              "authorId": "1726997",
+              "name": "E. Oja"
+            },
+            {
+              "authorId": "1759803",
+              "name": "S. Zadrożny"
+            }
+          ],
+          "abstract": null
+        }
+      ]
+    }
+  },
+  "crossref": {
+    "error": "",
+    "metadata": null
+  },
+  "artifacts": {
+    "record_path": "/Users/brandani/Dropbox/documents/library/paper_index/records/sha256-e63a901401069a75.json",
+    "text_path": "/Users/brandani/Dropbox/documents/library/paper_index/text/sha256-e63a901401069a75.txt",
+    "chunk_path": "/Users/brandani/Dropbox/documents/library/paper_index/chunks/sha256-e63a901401069a75.jsonl",
+    "master_index": "/Users/brandani/Dropbox/documents/library/paper_index/master_index.tsv",
+    "master_bib": "/Users/brandani/Dropbox/documents/library/paper_index/master.bib",
+    "text_kind": "pdf_text"
+  },
+  "text_extraction": {
+    "status": "ok",
+    "error": "",
+    "text_sha256": "38f04875ab9208ca4dd950a768f4ac0042fe217e715c95920bfae2c0d3a45397",
+    "chunk_count": 17,
+    "chunk_target_chars": 2200,
+    "chunk_overlap_chars": 250,
+    "converter": "/Users/brandani/Dropbox/scripts/pdf2text.py"
+  },
+  "content_kind": "pdf_backed"
+}
