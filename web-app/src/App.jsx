@@ -921,16 +921,15 @@ export default function App() {
         if (data.doi_found) {
           setWizardStep(1);
         } else {
-          alert('No DOI found in PDF. Moving to Semantic Scholar search.');
-          setWizardStep(2);
+          setWizardStep(3);
         }
       } else {
-        alert('Scanning PDF failed. Proceeding to Semantic Scholar search.');
-        setWizardStep(2);
+        alert('Scanning PDF failed. Proceeding to manual BibTeX paste.');
+        setWizardStep(3);
       }
     } catch (err) {
       alert(`Error scanning: ${err}`);
-      setWizardStep(2);
+      setWizardStep(3);
     } finally {
       setIsWizardProcessing(false);
     }
@@ -960,15 +959,15 @@ export default function App() {
           setWizardManualBibtex(data.doi_bibtex);
         }
         if (!data.doi_found) {
-          setWizardStep(2);
+          setWizardStep(3);
         }
       } else {
-        alert('Scanning PDF failed. Proceeding to search candidates.');
-        setWizardStep(2);
+        alert('Scanning PDF failed. Proceeding to manual BibTeX paste.');
+        setWizardStep(3);
       }
     } catch (err) {
       alert(`Error scanning: ${err}`);
-      setWizardStep(2);
+      setWizardStep(3);
     } finally {
       setIsWizardProcessing(false);
     }
@@ -998,22 +997,22 @@ export default function App() {
             setWizardManualBibtex(data.doi_bibtex);
           }
           if (!data.doi_found) {
-            setWizardStep(2);
+            setWizardStep(3);
           }
         } else {
           setWizardSearchQuery(paper.title || '');
-          setWizardStep(2);
+          setWizardStep(3);
         }
       } catch (err) {
         setWizardSearchQuery(paper.title || '');
-        setWizardStep(2);
+        setWizardStep(3);
       } finally {
         setIsWizardProcessing(false);
       }
     } else {
       setWizardSearchQuery(paper.title || '');
       setWizardScanData(null);
-      setWizardStep(2);
+      setWizardStep(3);
       setShowWizardModal(true);
     }
   };
@@ -1714,7 +1713,7 @@ export default function App() {
                 </button>
                 <button className="btn" onClick={() => {
                   setWizardMode('ref');
-                  setWizardStep(2);
+                  setWizardStep(3);
                   setWizardSearchQuery('');
                   setWizardCandidates([]);
                   setWizardSelectedCandidate(null);
@@ -2553,21 +2552,16 @@ export default function App() {
                   <>
                     <div style={{ fontWeight: wizardStep === 0 ? '700' : '400', color: wizardStep === 0 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>1. Select File</div>
                     <div style={{ fontWeight: wizardStep === 1 ? '700' : '400', color: wizardStep === 1 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>2. DOI Resolution</div>
-                    <div style={{ fontWeight: wizardStep === 2 ? '700' : '400', color: wizardStep === 2 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>3. Semantic Scholar</div>
-                    <div style={{ fontWeight: wizardStep === 3 ? '700' : '400', color: wizardStep === 3 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>4. Manual Paste</div>
+                    <div style={{ fontWeight: wizardStep === 3 ? '700' : '400', color: wizardStep === 3 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>3. Manual Paste</div>
                   </>
                 )}
                 {wizardMode === 'ref' && (
-                  <>
-                    <div style={{ fontWeight: wizardStep === 2 ? '700' : '400', color: wizardStep === 2 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>1. Semantic Scholar</div>
-                    <div style={{ fontWeight: wizardStep === 3 ? '700' : '400', color: wizardStep === 3 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>2. Manual Paste</div>
-                  </>
+                  <div style={{ fontWeight: '700', color: 'var(--accent-color)' }}>Manual BibTeX Entry</div>
                 )}
                 {wizardMode === 'repair' && (
                   <>
                     <div style={{ fontWeight: wizardStep === 1 ? '700' : '400', color: wizardStep === 1 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>1. DOI Resolution</div>
-                    <div style={{ fontWeight: wizardStep === 2 ? '700' : '400', color: wizardStep === 2 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>2. Semantic Scholar</div>
-                    <div style={{ fontWeight: wizardStep === 3 ? '700' : '400', color: wizardStep === 3 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>3. Manual Paste</div>
+                    <div style={{ fontWeight: wizardStep === 3 ? '700' : '400', color: wizardStep === 3 ? 'var(--accent-color)' : 'var(--text-secondary)' }}>2. Manual Paste</div>
                   </>
                 )}
               </div>
@@ -2748,167 +2742,112 @@ export default function App() {
                     <>
                       {/* STEP 0: Folder and file selection */}
                       {wizardStep === 0 && (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                      <div className="form-group">
-                        <label>Select Category Directory</label>
-                        <select 
-                          className="form-control" 
-                          value={wizardFolder} 
-                          onChange={e => {
-                            setWizardFolder(e.target.value);
-                            setWizardFilePath('');
-                          }}
-                        >
-                          <option value="">(root of articles/)</option>
-                          {folders.map(f => (
-                            <option key={f} value={f}>{f}</option>
-                          ))}
-                        </select>
-                      </div>
-
-                      <div className="form-group">
-                        <label>Select PDF file to ingest:</label>
-                        {untrackedInFolder.length === 0 ? (
-                          <div style={{ padding: '15px', border: '1px dashed var(--border-color)', borderRadius: '6px', textAlign: 'center', color: 'var(--text-secondary)' }}>
-                            No untracked PDF files found in <code>articles/{wizardFolder || '(root)'}</code>.<br/>
-                            Place your PDF files in this folder on your computer to see them here.
-                          </div>
-                        ) : (
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: '200px', overflowY: 'auto', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '6px' }}>
-                            {untrackedInFolder.map(item => (
-                              <div 
-                                key={item.relative_path} 
-                                className={`candidate-item ${wizardFilePath === item.relative_path ? 'selected' : ''}`}
-                                onClick={() => setWizardFilePath(item.relative_path)}
-                                style={{ padding: '8px 12px', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px' }}
-                              >
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-                                <span style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{item.filename}</span>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  )}
-
-                  {/* STEP 1: DOI Resolution */}
-                  {wizardStep === 1 && (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                      {wizardScanData?.doi_found ? (
-                        <>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--success-color)', fontWeight: '600' }}>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                            <span>DOI Found: <code>{wizardScanData.doi_found}</code></span>
-                          </div>
-                          
-                          <div style={{ padding: '12px', border: '1px solid var(--border-color)', borderRadius: '6px', backgroundColor: 'var(--bg-primary)' }}>
-                            <div style={{ fontWeight: '600', fontSize: '14px', marginBottom: '4px' }}>
-                              {wizardScanData.doi_metadata?.title || 'Unknown Title'}
-                            </div>
-                            <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)' }}>
-                              Authors: {
-                                wizardScanData.doi_metadata?.author?.map(a => `${a.given || ''} ${a.family || ''}`).join(', ') || 'n/a'
-                              }
-                            </div>
-                            <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '2px' }}>
-                              Year: {wizardScanData.doi_metadata?.created?.['date-parts']?.[0]?.[0] || 'n/a'} | Venue: {wizardScanData.doi_metadata?.['container-title']?.[0] || 'n/a'}
-                            </div>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                          <div className="form-group">
+                            <label>Select Category Directory</label>
+                            <select 
+                              className="form-control" 
+                              value={wizardFolder} 
+                              onChange={e => {
+                                setWizardFolder(e.target.value);
+                                setWizardFilePath('');
+                              }}
+                            >
+                              <option value="">(root of articles/)</option>
+                              {folders.map(f => (
+                                <option key={f} value={f}>{f}</option>
+                              ))}
+                            </select>
                           </div>
 
                           <div className="form-group">
-                            <label>BibTeX Entry Preview (Directly Editable):</label>
+                            <label>Select PDF file to ingest:</label>
+                            {untrackedInFolder.length === 0 ? (
+                              <div style={{ padding: '15px', border: '1px dashed var(--border-color)', borderRadius: '6px', textAlign: 'center', color: 'var(--text-secondary)' }}>
+                                No untracked PDF files found in <code>articles/{wizardFolder || '(root)'}</code>.<br/>
+                                Place your PDF files in this folder on your computer to see them here.
+                              </div>
+                            ) : (
+                              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: '200px', overflowY: 'auto', border: '1px solid var(--border-color)', borderRadius: '6px', padding: '6px' }}>
+                                {untrackedInFolder.map(item => (
+                                  <div 
+                                    key={item.relative_path} 
+                                    className={`candidate-item ${wizardFilePath === item.relative_path ? 'selected' : ''}`}
+                                    onClick={() => setWizardFilePath(item.relative_path)}
+                                    style={{ padding: '8px 12px', fontSize: '13px', display: 'flex', alignItems: 'center', gap: '8px' }}
+                                  >
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                                    <span style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{item.filename}</span>
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* STEP 1: DOI Resolution */}
+                      {wizardStep === 1 && (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                          {wizardScanData?.doi_found ? (
+                            <>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--success-color)', fontWeight: '600' }}>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <span>DOI Found: <code>{wizardScanData.doi_found}</code></span>
+                              </div>
+                              
+                              <div style={{ padding: '12px', border: '1px solid var(--border-color)', borderRadius: '6px', backgroundColor: 'var(--bg-primary)' }}>
+                                <div style={{ fontWeight: '600', fontSize: '14px', marginBottom: '4px' }}>
+                                  {wizardScanData.doi_metadata?.title || 'Unknown Title'}
+                                </div>
+                                <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)' }}>
+                                  Authors: {
+                                    wizardScanData.doi_metadata?.author?.map(a => `${a.given || ''} ${a.family || ''}`).join(', ') || 'n/a'
+                                  }
+                                </div>
+                                <div style={{ fontSize: '12.5px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                                  Year: {wizardScanData.doi_metadata?.created?.['date-parts']?.[0]?.[0] || 'n/a'} | Venue: {wizardScanData.doi_metadata?.['container-title']?.[0] || 'n/a'}
+                                </div>
+                              </div>
+
+                              <div className="form-group">
+                                <label>BibTeX Entry Preview (Directly Editable):</label>
+                                <textarea 
+                                  className="form-control" 
+                                  value={wizardManualBibtex}
+                                  onChange={e => setWizardManualBibtex(e.target.value)}
+                                  style={{ fontFamily: 'var(--font-mono)', minHeight: '200px', fontSize: '12.5px' }}
+                                />
+                              </div>
+                            </>
+                          ) : (
+                            <div style={{ padding: '15px', border: '1px dashed var(--border-color)', borderRadius: '6px', textAlign: 'center', color: 'var(--text-secondary)' }}>
+                              No DOI could be found or resolved in the PDF file.<br/>
+                              You can paste or edit a BibTeX entry manually.
+                            </div>
+                          )}
+                        </div>
+                      )}
+
+                      {/* STEP 3: Manual BibTeX Paste */}
+                      {wizardStep === 3 && (
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
+                          <div className="form-group">
+                            <label>Paste or Edit BibTeX Entry Here</label>
                             <textarea 
                               className="form-control" 
                               value={wizardManualBibtex}
                               onChange={e => setWizardManualBibtex(e.target.value)}
-                              style={{ fontFamily: 'var(--font-mono)', minHeight: '200px', fontSize: '12.5px' }}
+                              placeholder="@article{key,&#10;  title={Paper Title},&#10;  author={Author, A. and Bob, B.},&#10;  year={2023}&#10;}"
+                              style={{ fontFamily: 'var(--font-mono)', minHeight: '250px', fontSize: '12.5px' }}
                             />
                           </div>
-                        </>
-                      ) : (
-                        <div style={{ padding: '15px', border: '1px dashed var(--border-color)', borderRadius: '6px', textAlign: 'center', color: 'var(--text-secondary)' }}>
-                          No DOI could be found or resolved in the PDF file.<br/>
-                          Let's try searching Semantic Scholar instead.
                         </div>
                       )}
-                    </div>
-                  )}
-
-                  {/* STEP 2: Semantic Scholar Search */}
-                  {wizardStep === 2 && (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                      <div className="form-group">
-                        <label>Search Query (Title or Keywords)</label>
-                        <div style={{ display: 'flex', gap: '8px' }}>
-                          <input 
-                            type="text" 
-                            className="form-control"
-                            value={wizardSearchQuery}
-                            onChange={e => setWizardSearchQuery(e.target.value)}
-                            onKeyDown={e => e.key === 'Enter' && handleWizardSearch()}
-                            placeholder="Enter paper title or keywords..."
-                          />
-                          <button className="btn btn-primary" onClick={handleWizardSearch} disabled={isSearchingWizard}>
-                            {isSearchingWizard ? 'Searching...' : 'Search'}
-                          </button>
-                        </div>
-                      </div>
-
-                      {wizardCandidates.length > 0 && (
-                        <div className="form-group">
-                          <label>Candidates Found (Select to load BibTeX)</label>
-                          <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '180px', overflowY: 'auto' }}>
-                            {wizardCandidates.map(c => (
-                              <div 
-                                key={c.paperId} 
-                                className={`candidate-item ${wizardSelectedCandidate?.paperId === c.paperId ? 'selected' : ''}`}
-                                onClick={() => handleWizardSelectCandidate(c)}
-                                style={{ padding: '8px 12px' }}
-                              >
-                                <div style={{ fontWeight: '600', fontSize: '13px' }}>{c.title}</div>
-                                <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)' }}>
-                                  {c.authors?.map(a => a.name).join(', ')} ({c.year}) — {c.venue || 'Unknown Venue'}
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-
-                      {wizardManualBibtex && (
-                        <div className="form-group">
-                          <label>BibTeX Entry Preview (Directly Editable):</label>
-                          <textarea 
-                            className="form-control" 
-                            value={wizardManualBibtex}
-                            onChange={e => setWizardManualBibtex(e.target.value)}
-                            style={{ fontFamily: 'var(--font-mono)', minHeight: '180px', fontSize: '12.5px' }}
-                          />
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {/* STEP 3: Manual BibTeX Paste */}
-                  {wizardStep === 3 && (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-                      <div className="form-group">
-                        <label>Paste BibTeX Entry Here</label>
-                        <textarea 
-                          className="form-control" 
-                          value={wizardManualBibtex}
-                          onChange={e => setWizardManualBibtex(e.target.value)}
-                          placeholder="@article{key,&#10;  title={Paper Title},&#10;  author={Author, A. and Bob, B.},&#10;  year={2023}&#10;}"
-                          style={{ fontFamily: 'var(--font-mono)', minHeight: '250px', fontSize: '12.5px' }}
-                        />
-                      </div>
-                    </div>
+                    </>
                   )}
                 </>
               )}
-            </>
-          )}
             </div>
 
             <div className="modal-footer">
@@ -2969,25 +2908,17 @@ export default function App() {
                           {wizardMode !== 'existing' && (
                             <button className="btn" onClick={closeWizardModal}>Cancel</button>
                           )}
-                          {wizardScanData?.doi_found ? (
-                            <button className="btn" onClick={() => setWizardStep(2)}>Skip/Use Semantic Scholar</button>
-                          ) : (
-                            <button className="btn btn-primary" onClick={() => setWizardStep(2)}>Proceed to Search</button>
-                          )}
+                          <button className="btn" onClick={() => setWizardStep(3)}>Paste BibTeX Manually</button>
                         </>
                       )}
-                      {wizardStep === 2 && (
+                      {wizardStep === 3 && (
                         <>
                           {wizardMode === 'ref' ? (
                             <button className="btn" onClick={closeWizardModal}>Cancel</button>
                           ) : (
-                            <button className="btn" onClick={() => setWizardStep(1)}>Back to DOI</button>
+                            <button className="btn" onClick={() => setWizardStep(1)}>Back to DOI Resolution</button>
                           )}
-                          <button className="btn" onClick={() => setWizardStep(3)}>Try Manual Paste</button>
                         </>
-                      )}
-                      {wizardStep === 3 && (
-                        <button className="btn" onClick={() => setWizardStep(2)}>Back to Search</button>
                       )}
 
                       {/* Action Confirm Buttons */}
@@ -3002,15 +2933,6 @@ export default function App() {
                       )}
                       {wizardStep === 1 && wizardScanData?.doi_found && (
                         <button className="btn btn-primary" onClick={handleWizardConfirm}>Confirm Ingestion</button>
-                      )}
-                      {wizardStep === 2 && (
-                        <button 
-                          className="btn btn-primary" 
-                          onClick={handleWizardConfirm}
-                          disabled={!wizardSelectedCandidate && !wizardManualBibtex}
-                        >
-                          Confirm Ingestion
-                        </button>
                       )}
                       {wizardStep === 3 && (
                         <button 
