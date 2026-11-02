@@ -1580,7 +1580,7 @@ def doi_candidate_priority_score(source_region: str, position: int, context: str
     return round(score, 4)
 
 
-def extract_pdf_embedded_dois(pdf_path: Path) -> list[tuple[str, str, str]]:
+def extract_pdf_embedded_dois(pdf_path: Path, *args: Any, **kwargs: Any) -> list[tuple[str, str, str]]:
     """Return (source_region, raw_doi, context) tuples from PDF metadata and link annotations."""
     results: list[tuple[str, str, str]] = []
     if not pdf_path or not pdf_path.exists():
@@ -1785,11 +1785,13 @@ def derive_text_title_candidates(text: str) -> list[str]:
     return deduped[:4]
 
 
-def is_supplement_pdf(pdf_path: Path, text_content: str) -> bool:
+def is_supplement_pdf(pdf_path: Path, text_content: str = "", *args: Any, **kwargs: Any) -> bool:
+    if args:
+        text_content = str(args[0])
     filename = pdf_path.name
     if re.search(r"\b(SI|supp|supplement|supplementary|SM)\b", filename, re.I):
         return True
-    head = text_content[:1500]
+    head = text_content[:1500] if text_content else ""
     if re.search(r"\b(supporting information|supplementary information|supplementary materials)\b", head, re.I):
         return True
     return False
@@ -1813,9 +1815,17 @@ def strip_supplement_filename_stem(stem: str) -> str:
 
 def find_parent_article_for_supplement(
     pdf_path: Path,
-    text_title_candidates: list[str],
-    extracted_dois: list[str] | None = None,
+    text_title_candidates: list[str] | str | None = None,
+    extracted_dois: list[str] | str | None = None,
+    *args: Any,
+    **kwargs: Any,
 ) -> dict[str, str] | None:
+    if text_title_candidates is None:
+        text_title_candidates = []
+    elif isinstance(text_title_candidates, str):
+        text_title_candidates = [text_title_candidates] if text_title_candidates else []
+    if isinstance(extracted_dois, str):
+        extracted_dois = [doi for _, doi, _ in extract_pdf_embedded_dois(pdf_path)] + extract_dois_from_text(extracted_dois)
     rows = load_master_index_rows()
     scoped_rows = [
         row

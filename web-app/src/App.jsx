@@ -1103,7 +1103,9 @@ export default function App() {
           setWizardStep(3);
         }
       } else {
-        alert('Scanning PDF failed. Proceeding to manual BibTeX paste.');
+        const errData = await res.json().catch(() => null);
+        const errMsg = errData?.detail || `HTTP ${res.status}`;
+        alert(`Scanning PDF failed: ${errMsg}. Proceeding to manual BibTeX paste.`);
         setWizardStep(3);
       }
     } catch (err) {
@@ -1146,7 +1148,9 @@ export default function App() {
           setWizardStep(3);
         }
       } else {
-        alert('Scanning PDF failed. Proceeding to manual BibTeX paste.');
+        const errData = await res.json().catch(() => null);
+        const errMsg = errData?.detail || `HTTP ${res.status}`;
+        alert(`Scanning PDF failed: ${errMsg}. Proceeding to manual BibTeX paste.`);
         setWizardStep(3);
       }
     } catch (err) {

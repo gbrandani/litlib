@@ -307,11 +307,19 @@ async def scan_pdf_metadata(path: str, exclude_paper_id: str = None):
         sha256 = ingest.sha256_path(abs_path)
         existing_by_sha = ingest.load_master_index_row_by_pdf_sha256(sha256)
         
-        is_supplement = ingest.is_supplement_pdf(abs_path, title_query, extracted_text)
+        is_supplement = ingest.is_supplement_pdf(abs_path, extracted_text)
         suggested_parent = None
         if is_supplement:
+            text_title_candidates = (
+                ingest.derive_text_title_candidates(extracted_text) if extracted_text else []
+            ) or ([title_query] if title_query else [])
+            embedded_dois = [doi for _, doi, _ in ingest.extract_pdf_embedded_dois(abs_path)]
+            extracted_text_dois = ingest.collect_pdf_doi_candidates(abs_path, extracted_text) if extracted_text else []
+            candidate_dois = list(dict.fromkeys(embedded_dois + extracted_text_dois))
             suggested_parent = attach_row_title(
-                ingest.find_parent_article_for_supplement(abs_path, title_query, extracted_text)
+                ingest.find_parent_article_for_supplement(
+                    abs_path, text_title_candidates, extracted_dois=candidate_dois
+                )
             )
         
         doi_metadata = None
@@ -801,11 +809,19 @@ async def upload_scan(file: UploadFile = File(...)):
         # Extract DOI first
         text_status, text_error, text_content = ingest.extract_pdf_text(temp_path)
         extracted_text = text_content if text_status == "ok" and text_content else ""
-        is_supplement = ingest.is_supplement_pdf(temp_path, title_query, extracted_text)
+        is_supplement = ingest.is_supplement_pdf(temp_path, extracted_text)
         suggested_parent = None
         if is_supplement:
+            text_title_candidates = (
+                ingest.derive_text_title_candidates(extracted_text) if extracted_text else []
+            ) or ([title_query] if title_query else [])
+            embedded_dois = [doi for _, doi, _ in ingest.extract_pdf_embedded_dois(temp_path)]
+            extracted_text_dois = ingest.collect_pdf_doi_candidates(temp_path, extracted_text) if extracted_text else []
+            candidate_dois = list(dict.fromkeys(embedded_dois + extracted_text_dois))
             suggested_parent = attach_row_title(
-                ingest.find_parent_article_for_supplement(temp_path, title_query, extracted_text)
+                ingest.find_parent_article_for_supplement(
+                    temp_path, text_title_candidates, extracted_dois=candidate_dois
+                )
             )
         doi_metadata = None
         doi_score = None
