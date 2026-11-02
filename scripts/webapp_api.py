@@ -703,6 +703,7 @@ def semantic_candidate_to_bibtex(candidate: dict) -> str:
         authors=authors_norm,
         year=metadata.get("year", "undated"),
         title=metadata.get("title", "title"),
+        fallback_stem="paper",
     )
     fields = {
         "title": metadata.get("title", ""),
@@ -721,9 +722,10 @@ def semantic_candidate_to_bibtex(candidate: dict) -> str:
 def make_doi_bibtex(doi_metadata: dict, s2_abstract: str = "") -> str:
     fields = ingest.crossref_to_bibtex_fields(doi_metadata, abstract_override=s2_abstract)
     bibtex_key = ingest.build_bibtex_key_from_fields(
-        authors=fields.get("author", ""),
+        authors=fields.get("authors") or fields.get("author", ""),
         year=fields.get("year", "undated"),
         title=fields.get("title", "title"),
+        fallback_stem="paper",
     )
     return ingest.build_crossref_bibtex_entry(bibtex_key, doi_metadata, abstract_override=s2_abstract)
 
@@ -990,6 +992,7 @@ async def add_reference(body: RefAddRequest):
                 authors=metadata.get("authors", "author"),
                 year=metadata.get("year", "undated"),
                 title=metadata.get("title", "title"),
+                fallback_stem="paper",
             )
             metadata["bibtex_key"] = bibtex_key
         
@@ -1431,6 +1434,7 @@ async def batch_import_bibtex(body: BatchImportBibtexRequest):
                         authors=metadata.get("authors", "author"),
                         year=year or "undated",
                         title=title or "title",
+                        fallback_stem="paper",
                     )
                     metadata["bibtex_key"] = key
 

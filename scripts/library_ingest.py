@@ -2054,19 +2054,29 @@ def crossref_bibtex_type(message: dict[str, Any]) -> str:
     return "article"
 
 
-def crossref_to_bibtex_fields(message: dict[str, Any]) -> dict[str, str]:
+def crossref_to_bibtex_fields(
+    message: dict[str, Any],
+    abstract_override: str = "",
+    *args: Any,
+    **kwargs: Any,
+) -> dict[str, str]:
     btype = crossref_bibtex_type(message)
     container = crossref_container(message)
+    abstract = crossref_abstract(message)
+    if not abstract and abstract_override:
+        abstract = abstract_override
+    authors = crossref_authors(message)
     fields = {
         "bibtex_type": btype,
         "title": crossref_title(message),
-        "authors": crossref_authors(message),
+        "authors": authors,
+        "author": authors,
         "editor": crossref_editors(message),
         "year": crossref_year(message),
         "venue": container,
         "doi": normalize_doi(message.get("DOI") or ""),
         "url": str(message.get("URL") or "").strip(),
-        "abstract": crossref_abstract(message),
+        "abstract": abstract,
         "volume": crossref_volume(message),
         "number": crossref_number(message),
         "pages": crossref_pages(message),
@@ -2079,9 +2089,7 @@ def crossref_to_bibtex_fields(message: dict[str, Any]) -> dict[str, str]:
 
 
 def build_crossref_bibtex_entry(bibtex_key: str, message: dict[str, Any], abstract_override: str = "") -> str:
-    fields = crossref_to_bibtex_fields(message)
-    if abstract_override and not fields.get("abstract"):
-        fields["abstract"] = abstract_override
+    fields = crossref_to_bibtex_fields(message, abstract_override=abstract_override)
     entry_type = fields.get("bibtex_type") or "article"
     return build_bibtex_entry_from_fields(entry_type, bibtex_key, fields)
 
@@ -2177,7 +2185,14 @@ def choose_semantic_candidate_for_doi(
     return fallback_candidate
 
 
-def build_bibtex_key_from_fields(authors: str, year: str, title: str, fallback_stem: str) -> str:
+def build_bibtex_key_from_fields(
+    authors: str,
+    year: str,
+    title: str,
+    fallback_stem: str = "paper",
+    *args: Any,
+    **kwargs: Any,
+) -> str:
     norm_authors = normalize_authors_bibtex(authors) if authors else ""
     if norm_authors:
         first_chunk = re.split(r"\s+and\s+", norm_authors, maxsplit=1, flags=re.I)[0].strip()
