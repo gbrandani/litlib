@@ -101,13 +101,18 @@ def evaluate_record(row: dict[str, str], args: argparse.Namespace) -> dict[str, 
         result["skip_reason"] = "no_doi"
         return result
 
+    if source == "manual_bibtex" and record.get("manual_override") and not args.force:
+        result["eligible"] = False
+        result["skip_reason"] = "manual_override_protected"
+        return result
+
     if args.only_semantic and not is_semantic_source(row, record):
         result["eligible"] = False
         result["skip_reason"] = f"not_semantic_source:{source}"
         return result
 
     try:
-        crossref_meta = ingest.crossref_fetch_by_doi(doi)
+        crossref_meta = ingest.crossref_fetch_prefer_published(doi)
     except Exception as err:
         result["eligible"] = False
         result["skip_reason"] = f"crossref_fetch_error:{err}"
@@ -180,6 +185,7 @@ def evaluate_record(row: dict[str, str], args: argparse.Namespace) -> dict[str, 
 def apply_record_update(row: dict[str, str], eval_res: dict[str, Any]) -> None:
     paper_id = eval_res["paper_id"]
     proposed = eval_res["proposed"]
+    resolved_doi = ingest.normalize_doi(eval_res["crossref_meta"].get("DOI") or eval_res["doi"])
 
     # 1. Update Master Index row fields
     row["resolved_title"] = proposed["title"]
@@ -191,6 +197,8 @@ def apply_record_update(row: dict[str, str], eval_res: dict[str, Any]) -> None:
         row["venue"] = proposed["venue"]
     if proposed["url"]:
         row["canonical_url"] = proposed["url"]
+    if resolved_doi:
+        row["doi"] = resolved_doi
     row["match_status"] = "matched_via_doi"
 
     # 2. Update Record JSON
@@ -204,16 +212,36 @@ def apply_record_update(row: dict[str, str], eval_res: dict[str, Any]) -> None:
         record["venue"] = proposed["venue"]
     if proposed["url"]:
         record["canonical_url"] = proposed["url"]
-    
+
+    s2_block = record.get("semantic_scholar")
+    if not isinstance(s2_block, dict):
+        s2_block = {}
+    best_cand = s2_block.get("best_candidate")
+    has_s2_abstract = isinstance(best_cand, dict) and bool(str(best_cand.get("abstract") or "").strip())
+    cr_abstract = ingest.crossref_abstract(eval_res["crossref_meta"])
+    if not cr_abstract and not has_s2_abstract and resolved_doi:
+        s2_fetched = ingest.semantic_scholar_fetch_by_doi(resolved_doi)
+        if isinstance(s2_fetched, dict):
+            s2_block["best_candidate"] = s2_fetched
+            s2_id = str(s2_fetched.get("paperId") or "").strip()
+            if s2_id:
+                s2_block["selected_paper_id"] = s2_id
+                row["semantic_scholar_paper_id"] = s2_id
+            if str(s2_fetched.get("abstract") or "").strip():
+                row["abstract_source"] = "semantic_scholar_linked_record"
+            record["semantic_scholar"] = s2_block
+    elif cr_abstract:
+        row["abstract_source"] = "crossref"
+
     record["match_status"] = "matched_via_doi"
     record["metadata_source"] = "crossref_doi_refresh"
     record["crossref"] = {
         "metadata": eval_res["crossref_meta"],
         "accepted": True,
-        "accepted_doi": eval_res["doi"],
+        "accepted_doi": resolved_doi or eval_res["doi"],
         "matched_by": "doi_refresh_script",
     }
-    
+
     # Save record JSON
     rec_path = ingest.record_path_for_paper_id(paper_id)
     ingest.write_record_json(rec_path, record)

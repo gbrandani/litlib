@@ -24,12 +24,12 @@ def relative_to_library(raw_path: str | None) -> str:
 
 
 def pick_semantic_field(record: dict, name: str) -> str:
-    candidate = ((record.get("semantic_scholar") or {}).get("best_candidate") or {})
+    s2 = record.get("semantic_scholar") or {}
+    candidate = (s2.get("best_candidate") or s2.get("selected_candidate") or {})
     if name == "title":
-        return str(candidate.get("title") or "")
+        return " ".join(ingest.decode_latex_text(ingest.strip_jats_markup(str(candidate.get("title") or ""))).split()).strip()
     if name == "authors":
-        authors = candidate.get("authors") or []
-        return ", ".join(author.get("name", "") for author in authors if isinstance(author, dict))
+        return ingest.candidate_authors(candidate)
     if name == "year":
         return str(candidate.get("year") or "")
     if name == "venue":
@@ -38,7 +38,7 @@ def pick_semantic_field(record: dict, name: str) -> str:
         return ingest.normalize_venue_name(str(candidate.get("venue") or ""))
     if name == "doi":
         external_ids = candidate.get("externalIds") or {}
-        return str(external_ids.get("DOI") or external_ids.get("doi") or "")
+        return ingest.normalize_doi(str(external_ids.get("DOI") or external_ids.get("doi") or ""))
     if name == "paper_id":
         return str(candidate.get("paperId") or "")
     return ""
@@ -50,13 +50,13 @@ def manual_override_metadata(record: dict) -> dict[str, str]:
         return {}
 
     metadata = {
-        "title": str(manual.get("title") or ""),
-        "authors": str(manual.get("authors") or ""),
+        "title": " ".join(ingest.decode_latex_text(ingest.strip_jats_markup(str(manual.get("title") or ""))).split()).strip(),
+        "authors": ingest.normalize_authors_bibtex(str(manual.get("authors") or "")),
         "year": str(manual.get("year") or ""),
         "venue": ingest.normalize_venue_name(str(manual.get("venue") or "")),
-        "doi": str(manual.get("doi") or ""),
+        "doi": ingest.normalize_doi(str(manual.get("doi") or "")),
         "url": str(manual.get("url") or ""),
-        "abstract": str(manual.get("abstract") or ""),
+        "abstract": " ".join(ingest.decode_latex_text(ingest.strip_jats_markup(str(manual.get("abstract") or ""))).split()).strip(),
         "bibtex_key": str(manual.get("bibtex_key") or ""),
         "bibtex_type": str(manual.get("parsed_bibtex_type") or ""),
     }
@@ -67,10 +67,10 @@ def manual_override_metadata(record: dict) -> dict[str, str]:
             parsed = ingest.parse_bibtex_entry(raw_bibtex)
             normalized = parsed.get("normalized") or {}
             metadata["title"] = metadata["title"] or str(normalized.get("title") or "")
-            metadata["authors"] = metadata["authors"] or str(normalized.get("authors") or "")
+            metadata["authors"] = metadata["authors"] or ingest.normalize_authors_bibtex(str(normalized.get("authors") or ""))
             metadata["year"] = metadata["year"] or str(normalized.get("year") or "")
             metadata["venue"] = metadata["venue"] or ingest.normalize_venue_name(str(normalized.get("venue") or ""))
-            metadata["doi"] = metadata["doi"] or str(normalized.get("doi") or "")
+            metadata["doi"] = metadata["doi"] or ingest.normalize_doi(str(normalized.get("doi") or ""))
             metadata["url"] = metadata["url"] or str(normalized.get("url") or "")
             metadata["abstract"] = metadata["abstract"] or str(normalized.get("abstract") or "")
             metadata["bibtex_key"] = metadata["bibtex_key"] or str(parsed.get("bibtex_key") or "")
@@ -257,11 +257,17 @@ def choose_bibtex_entry(
 def build_row(record: dict, bib_lookups: dict[str, dict], existing_rows_by_paper_id: dict[str, dict[str, str]]) -> dict[str, str]:
     manual = record.get("manual_override") or {}
     manual_meta = manual_override_metadata(record)
-    crossref_meta = ((record.get("crossref") or {}).get("metadata") or {}) if ((record.get("crossref") or {}).get("accepted") or record.get("match_status") == "matched_via_doi") else {}
+    crossref_block = record.get("crossref") or {}
+    crossref_meta = (
+        (crossref_block.get("metadata") or {})
+        if (crossref_block.get("accepted") or crossref_block.get("matched_doi") or record.get("match_status") == "matched_via_doi")
+        else {}
+    )
     supplement_parent = record.get("supplement_parent") or {}
     content_kind = str(record.get("content_kind") or "").strip() or (
         ingest.CONTENT_KIND_PDF if record.get("pdf_path") else ingest.CONTENT_KIND_REF
     )
+    metadata_source = str(record.get("metadata_source") or "").strip()
 
     resolved_title = ""
     authors = ""
@@ -270,21 +276,29 @@ def build_row(record: dict, bib_lookups: dict[str, dict], existing_rows_by_paper
     doi = ""
     semantic_scholar_paper_id = pick_semantic_field(record, "paper_id")
 
-    if manual:
+    prefer_manual = bool(manual) and (not crossref_meta or metadata_source == "manual_bibtex")
+
+    if prefer_manual:
         resolved_title = manual_meta.get("title", "")
         authors = manual_meta.get("authors", "")
         year = manual_meta.get("year", "")
         venue = manual_meta.get("venue", "")
         doi = manual_meta.get("doi", "")
+        if crossref_meta:
+            resolved_title = resolved_title or ingest.crossref_title(crossref_meta)
+            authors = authors or ingest.crossref_authors(crossref_meta)
+            year = year or ingest.crossref_year(crossref_meta)
+            venue = venue or ingest.crossref_container(crossref_meta)
+            doi = doi or ingest.normalize_doi(crossref_meta.get("DOI") or "")
     elif crossref_meta:
-        resolved_title = ingest.crossref_title(crossref_meta)
-        authors = ingest.crossref_authors(crossref_meta)
-        year = ingest.crossref_year(crossref_meta)
-        venue = ingest.crossref_container(crossref_meta)
-        doi = str(crossref_meta.get("DOI") or "")
+        resolved_title = ingest.crossref_title(crossref_meta) or manual_meta.get("title", "")
+        authors = ingest.crossref_authors(crossref_meta) or manual_meta.get("authors", "")
+        year = ingest.crossref_year(crossref_meta) or manual_meta.get("year", "")
+        venue = ingest.crossref_container(crossref_meta) or manual_meta.get("venue", "")
+        doi = ingest.normalize_doi(crossref_meta.get("DOI") or "") or manual_meta.get("doi", "")
     elif supplement_parent:
-        resolved_title = str(supplement_parent.get("resolved_title") or "")
-        authors = str(supplement_parent.get("authors") or "")
+        resolved_title = " ".join(ingest.decode_latex_text(str(supplement_parent.get("resolved_title") or "")).split()).strip()
+        authors = ingest.normalize_authors_bibtex(str(supplement_parent.get("authors") or ""))
         year = str(supplement_parent.get("year") or "")
         venue = ingest.normalize_venue_name(str(supplement_parent.get("venue") or ""))
         doi = ""
@@ -294,6 +308,10 @@ def build_row(record: dict, bib_lookups: dict[str, dict], existing_rows_by_paper
         year = pick_semantic_field(record, "year")
         venue = pick_semantic_field(record, "venue")
         doi = pick_semantic_field(record, "doi")
+
+    authors = ingest.normalize_authors_bibtex(authors)
+    venue = ingest.normalize_venue_name(venue)
+    doi = ingest.normalize_doi(doi)
 
     artifacts = record.get("artifacts") or {}
     notes_parts = []
@@ -313,12 +331,16 @@ def build_row(record: dict, bib_lookups: dict[str, dict], existing_rows_by_paper
     bibtex_type = ""
     existing_row = existing_rows_by_paper_id.get(str(record.get("paper_id") or ""))
     existing_key = str((existing_row or {}).get("bibtex_key") or "")
-    if manual:
+    if supplement_parent:
+        bibtex_key = str(supplement_parent.get("bibtex_key") or "")
+    elif existing_key:
+        bibtex_key = existing_key
+        bibtex_type = str((existing_row or {}).get("bibtex_type") or "")
+    elif manual:
         bibtex_key = manual_meta.get("bibtex_key", "")
         bibtex_type = manual_meta.get("bibtex_type", "")
-    elif supplement_parent:
-        bibtex_key = str(supplement_parent.get("bibtex_key") or "")
-    else:
+
+    if not bibtex_key and not supplement_parent:
         matched_entry = choose_bibtex_entry(
             bib_lookups=bib_lookups,
             existing_key=existing_key,
@@ -329,9 +351,16 @@ def build_row(record: dict, bib_lookups: dict[str, dict], existing_rows_by_paper
         )
         if matched_entry is not None:
             bibtex_key = str(matched_entry.get("bibtex_key") or "")
-            bibtex_type = str(matched_entry.get("entry_type") or "")
-        else:
+            bibtex_type = bibtex_type or str(matched_entry.get("entry_type") or "")
+        elif resolved_title or authors:
             bibtex_key = ingest.build_bibtex_key_from_fields(authors, year, resolved_title, Path(str(record.get("filename") or "paper")).stem)
+
+    if crossref_meta:
+        cr_btype = ingest.crossref_bibtex_type(crossref_meta)
+        if not bibtex_type or (bibtex_type == "article" and cr_btype != "article"):
+            bibtex_type = cr_btype
+    if not bibtex_type and manual_meta.get("bibtex_type"):
+        bibtex_type = manual_meta["bibtex_type"]
     if not bibtex_type:
         matched_entry = choose_bibtex_entry(
             bib_lookups=bib_lookups,
@@ -346,17 +375,24 @@ def build_row(record: dict, bib_lookups: dict[str, dict], existing_rows_by_paper
     if not bibtex_type:
         bibtex_type = "book" if str(record.get("item_type") or "") == "book" else "article"
 
+    s2_cand = ((record.get("semantic_scholar") or {}).get("best_candidate") or (record.get("semantic_scholar") or {}).get("selected_candidate") or {})
     abstract_source = ""
-    if manual and manual.get("abstract"):
+    if prefer_manual and manual_meta.get("abstract"):
         abstract_source = "manual_verified"
-    elif ((record.get("semantic_scholar") or {}).get("best_candidate") or {}).get("abstract"):
-        abstract_source = "semantic_scholar"
+    elif crossref_meta and ingest.crossref_abstract(crossref_meta):
+        abstract_source = "crossref"
+    elif s2_cand.get("abstract"):
+        abstract_source = "semantic_scholar_linked_record" if crossref_meta else "semantic_scholar"
+    elif manual_meta.get("abstract"):
+        abstract_source = "manual_verified"
 
     canonical_url = str(manual_meta.get("url") or "").strip()
     if not canonical_url:
         canonical_url = str(crossref_meta.get("URL") or "").strip()
     if not canonical_url:
-        canonical_url = str(((record.get("semantic_scholar") or {}).get("best_candidate") or {}).get("url") or "").strip()
+        canonical_url = str(s2_cand.get("url") or "").strip()
+    if not canonical_url and supplement_parent:
+        canonical_url = str(supplement_parent.get("canonical_url") or "").strip()
 
     return {
         "paper_id": str(record.get("paper_id") or ""),
@@ -397,11 +433,43 @@ def main() -> int:
     bib_entries = load_master_bib_entries()
     bib_lookups = build_master_bib_lookups(bib_entries)
 
-    rows = []
+    loaded_records: list[tuple[Path, dict, dict]] = []
     for record_path in sorted(ingest.RECORDS_DIR.glob("*.json")):
         payload = json.loads(record_path.read_text(encoding="utf-8"))
         record = ingest.resolve_record_paths(payload, ingest.LIBRARY_ROOT)
-        rows.append(build_row(record, bib_lookups, existing_rows_by_paper_id))
+        loaded_records.append((record_path, payload, record))
+
+    rebuilt_by_paper_id: dict[str, dict[str, str]] = {}
+    rows: list[dict[str, str]] = []
+
+    # Pass 1: Build primary (non-supplement) rows first
+    for record_path, payload, record in loaded_records:
+        if record.get("supplement_parent"):
+            continue
+        row = build_row(record, bib_lookups, existing_rows_by_paper_id)
+        rows.append(row)
+        if row.get("paper_id"):
+            rebuilt_by_paper_id[row["paper_id"]] = row
+
+    # Pass 2: Build supplement rows, refreshing supplement_parent from rebuilt parent rows
+    for record_path, payload, record in loaded_records:
+        supp_parent = record.get("supplement_parent")
+        if not supp_parent:
+            continue
+        if isinstance(supp_parent, dict):
+            parent_id = str(supp_parent.get("paper_id") or "").strip()
+            parent_row = rebuilt_by_paper_id.get(parent_id)
+            if parent_row:
+                updated_parent = dict(supp_parent)
+                for field in ["resolved_title", "authors", "year", "venue", "bibtex_key", "canonical_url"]:
+                    if parent_row.get(field):
+                        updated_parent[field] = parent_row[field]
+                if updated_parent != supp_parent:
+                    record["supplement_parent"] = updated_parent
+                    payload["supplement_parent"] = updated_parent
+                    ingest.write_record_json(record_path, payload)
+        row = build_row(record, bib_lookups, existing_rows_by_paper_id)
+        rows.append(row)
 
     rows.sort(key=lambda row: row["pdf_path"])
     ingest.write_master_index_rows(rows)

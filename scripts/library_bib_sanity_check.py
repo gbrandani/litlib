@@ -51,6 +51,7 @@ def main() -> int:
     duplicate_keys: list[tuple[str, int, int]] = []
     embedded_headers: list[tuple[int, str]] = []
     stale_reference_rows: list[tuple[str, str]] = []
+    format_issues: list[tuple[int, str, str]] = []
 
     for index, block in enumerate(blocks, start=1):
         raw = block if block.startswith("@") else "@" + block
@@ -66,6 +67,37 @@ def main() -> int:
                 duplicate_keys.append((key, seen_keys[key], index))
             else:
                 seen_keys[key] = index
+
+            fields = parsed.get("fields") or {}
+            entry_type = parsed.get("entry_type") or ""
+            if not key.isascii():
+                format_issues.append((index, key, "non_ascii_bibtex_key"))
+            author = str(fields.get("author") or "").strip()
+            editor = str(fields.get("editor") or "").strip()
+            if not author and not editor and entry_type not in {"proceedings", "misc"}:
+                format_issues.append((index, key, "missing_author"))
+            elif author or editor:
+                name_list = author or editor
+                if re.search(r"\band\s+others\b|\bet\s+al\.?\b", name_list, flags=re.I):
+                    format_issues.append((index, key, "truncated_author_list_et_al_or_others"))
+                if re.search(r"\{\\['`\"^~=.uvHcdbk]|\{\\(?:aa|AA|o|O|l|L|ss)\}", name_list):
+                    format_issues.append((index, key, "raw_latex_accents_in_author"))
+                if " and " not in name_list and name_list.count(",") >= 2:
+                    format_issues.append((index, key, "comma_separated_authors_missing_and"))
+                for part in re.split(r"\s+and\s+", name_list):
+                    part = part.strip()
+                    if part and "," not in part and len(part.split()) >= 2:
+                        format_issues.append((index, key, f"author_not_family_given:{part}"))
+                        break
+
+            for vfield in ["journal", "booktitle", "publisher"]:
+                vval = str(fields.get(vfield) or "").strip()
+                if vval.casefold() == "openrxiv":
+                    format_issues.append((index, key, f"openrxiv_in_{vfield}"))
+
+            pages = str(fields.get("pages") or "").strip()
+            if pages and re.fullmatch(r"(?:19|20)\d{2}[-–—]{1,2}(?:0[1-9]|1[0-2])", pages):
+                format_issues.append((index, key, f"bogus_date_in_pages:{pages}"))
         except Exception as exc:
             errors.append((index, first_line, repr(exc)))
 
@@ -104,6 +136,7 @@ def main() -> int:
     print(f"[library_bib_sanity_check] duplicate_keys={len(duplicate_keys)}")
     print(f"[library_bib_sanity_check] embedded_headers={len(embedded_headers)}")
     print(f"[library_bib_sanity_check] stale_reference_rows={len(stale_reference_rows)}")
+    print(f"[library_bib_sanity_check] format_issues={len(format_issues)}")
 
     for index, first_line, message in errors:
         print(f"ERROR entry={index} {first_line} {message}")
@@ -113,12 +146,14 @@ def main() -> int:
         print(f"EMBEDDED_HEADER entry={index} context={context}")
     for paper_id, record_name in stale_reference_rows:
         print(f"STALE_REFERENCE_ROW paper_id={paper_id} record={record_name}")
+    for index, key, issue in format_issues:
+        print(f"FORMAT_ISSUE entry={index} key={key} issue={issue}")
 
     trailing = text.rstrip("\n")
     if trailing and not trailing.endswith("}"):
         print("[library_bib_sanity_check] trailing_text_warning=final non-newline character is not '}'")
 
-    return 0 if not errors and not duplicate_keys and not embedded_headers and not stale_reference_rows else 1
+    return 0 if not errors and not duplicate_keys and not embedded_headers and not stale_reference_rows and not format_issues else 1
 
 
 if __name__ == "__main__":

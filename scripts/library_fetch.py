@@ -69,9 +69,42 @@ def parse_args(mode: str = "full") -> argparse.Namespace:
     return parser.parse_args()
 
 
+def crossref_message_to_synthetic_candidate(
+    message: dict[str, Any],
+    s2_candidate: dict[str, Any] | None = None,
+) -> dict[str, Any]:
+    cr_fields = ingest.crossref_to_bibtex_fields(message)
+    s2_candidate = s2_candidate or {}
+    author_objs = [{"name": part.strip()} for part in cr_fields.get("authors", "").split(" and ") if part.strip()]
+    return {
+        "paperId": str(s2_candidate.get("paperId") or ""),
+        "title": cr_fields.get("title") or str(s2_candidate.get("title") or ""),
+        "abstract": cr_fields.get("abstract") or str(s2_candidate.get("abstract") or ""),
+        "year": int(cr_fields["year"]) if str(cr_fields.get("year") or "").isdigit() else s2_candidate.get("year"),
+        "venue": cr_fields.get("venue") or str(s2_candidate.get("venue") or ""),
+        "authors": author_objs or (s2_candidate.get("authors") or []),
+        "externalIds": {"DOI": cr_fields.get("doi") or ""},
+        "url": cr_fields.get("url") or str(s2_candidate.get("url") or ""),
+        "journal": {"name": cr_fields.get("venue") or ""},
+        "openAccessPdf": s2_candidate.get("openAccessPdf"),
+        "_crossref_metadata": message,
+    }
+
+
 def candidate_to_bibtex(candidate: dict[str, Any], query: str) -> dict[str, Any]:
+    cr_meta = candidate.get("_crossref_metadata")
+    if not isinstance(cr_meta, dict):
+        doi = ingest.normalize_doi(ingest.candidate_doi(candidate))
+        if doi:
+            try:
+                cr_meta = ingest.crossref_fetch_prefer_published(doi)
+            except Exception:
+                cr_meta = None
+    if isinstance(cr_meta, dict) and ingest.crossref_title(cr_meta):
+        return crossref_payload_to_bibtex(cr_meta, query=query, semantic_candidate=candidate)
+
     metadata = ingest.semantic_candidate_to_metadata(candidate)
-    bibtex_type = "article"
+    bibtex_type = metadata.get("bibtex_type") or "article"
     bibtex_key = ingest.build_bibtex_key_from_fields(
         metadata.get("authors", ""),
         metadata.get("year", ""),
@@ -109,11 +142,13 @@ def crossref_payload_to_bibtex(
     semantic_candidate: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     crossref_fields = ingest.crossref_to_bibtex_fields(crossref_message)
+    if not semantic_candidate and crossref_fields.get("doi") and not crossref_fields.get("abstract"):
+        semantic_candidate = ingest.semantic_scholar_fetch_by_doi(crossref_fields["doi"])
     semantic_meta = ingest.semantic_candidate_to_metadata(semantic_candidate or {})
     merged_metadata = dict(crossref_fields)
     merged_metadata["abstract"] = crossref_fields.get("abstract") or semantic_meta.get("abstract", "")
     merged_metadata["semantic_scholar_paper_id"] = semantic_meta.get("semantic_scholar_paper_id", "")
-    bibtex_type = "article"
+    bibtex_type = crossref_fields.get("bibtex_type") or "article"
     bibtex_key = ingest.build_bibtex_key_from_fields(
         merged_metadata.get("authors", ""),
         merged_metadata.get("year", ""),
@@ -154,13 +189,76 @@ def select_candidate_interactively(candidates: list[dict[str, Any]], limit: int)
 def search_loop(args: argparse.Namespace) -> tuple[str, dict[str, Any] | None, list[dict[str, Any]], list[dict[str, Any]]]:
     queries = dedupe_queries([args.query])
     while True:
+        current_query = queries[-1]
         attempts, merged = ingest.collect_semantic_candidates(
             queries=queries,
-            filename=args.query,
+            filename=current_query,
             item_type="article",
-            filename_hints={"year_hint": ingest.extract_year(args.query), "venue_hint": "", "prefix": args.query},
+            filename_hints={"year_hint": ingest.extract_year(current_query), "venue_hint": "", "prefix": current_query},
             semantic_limit=args.semantic_limit,
         )
+        for att in attempts:
+            if att.get("api_error"):
+                eprint(f"[library_fetch] Semantic Scholar API warning for query '{att.get('query')}': {att['api_error']}")
+
+        seen_dois = {
+            ingest.normalize_doi(ingest.candidate_doi(entry.get("candidate") or {}))
+            for entry in merged
+            if ingest.normalize_doi(ingest.candidate_doi(entry.get("candidate") or {}))
+        }
+        query_dois = [ingest.normalize_doi(d) for d in ingest.extract_dois_from_text(current_query)]
+        for q_doi in query_dois:
+            if not q_doi:
+                continue
+            try:
+                cr_msg = ingest.crossref_fetch_prefer_published(q_doi)
+                s2_cand = ingest.semantic_scholar_fetch_by_doi(ingest.normalize_doi(cr_msg.get("DOI") or q_doi))
+                synth = crossref_message_to_synthetic_candidate(cr_msg, s2_cand)
+                merged.insert(
+                    0,
+                    {
+                        "identity": f"doi:{ingest.normalize_doi(cr_msg.get('DOI') or q_doi)}",
+                        "candidate": synth,
+                        "query": current_query,
+                        "score": 1.0,
+                        "title_similarity": 1.0,
+                        "candidate_year": synth.get("year"),
+                    },
+                )
+                seen_dois.add(ingest.normalize_doi(cr_msg.get("DOI") or q_doi))
+            except Exception as exc:
+                eprint(f"[library_fetch] Crossref DOI lookup warning for '{q_doi}': {exc}")
+
+        top_score = merged[0]["score"] if merged else 0.0
+        if top_score < 0.85:
+            try:
+                cr_items = ingest.crossref_search_title(current_query, limit=min(5, args.semantic_limit))
+                for cr_item in cr_items:
+                    cr_doi = ingest.normalize_doi(cr_item.get("DOI") or "")
+                    if cr_doi and cr_doi in seen_dois:
+                        continue
+                    synth = crossref_message_to_synthetic_candidate(cr_item, None)
+                    scored = ingest.score_candidate(current_query, synth, current_query)
+                    if scored.score >= 0.45:
+                        merged.append(
+                            {
+                                "identity": f"doi:{cr_doi}" if cr_doi else f"title:{ingest.normalize_title(synth.get('title', ''))}",
+                                "candidate": synth,
+                                "query": current_query,
+                                "score": scored.score,
+                                "title_similarity": scored.title_similarity,
+                                "candidate_year": scored.candidate_year,
+                            }
+                        )
+                        if cr_doi:
+                            seen_dois.add(cr_doi)
+                merged.sort(
+                    key=lambda item: (item["score"], str(item["candidate"].get("year") or ""), str(item["candidate"].get("title") or "")),
+                    reverse=True,
+                )
+            except Exception:
+                pass
+
         if args.list:
             return queries[-1], None, attempts, merged
         if args.best:

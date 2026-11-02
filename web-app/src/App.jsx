@@ -14,11 +14,12 @@ export default function App() {
   const [wordPapers, setWordPapers] = useState([]);
   const [selectedWordPaperIds, setSelectedWordPaperIds] = useState([]);
   const [papers, setPapers] = useState([]);
+  const [allPapers, setAllPapers] = useState([]);
   const selectedPapersDetails = React.useMemo(() => {
     return selectedWordPaperIds.map(id => {
-      return wordPapers.find(p => p.paper_id === id) || papers.find(p => p.paper_id === id);
+      return wordPapers.find(p => p.paper_id === id) || allPapers.find(p => p.paper_id === id) || papers.find(p => p.paper_id === id);
     }).filter(Boolean);
-  }, [selectedWordPaperIds, wordPapers, papers]);
+  }, [selectedWordPaperIds, wordPapers, allPapers, papers]);
 
   const displayedWordPapers = React.useMemo(() => {
     const selected = selectedPapersDetails;
@@ -493,62 +494,199 @@ export default function App() {
   const [isWizardSupplementMode, setIsWizardSupplementMode] = useState(false);
   const [wizardSupplementSearchQuery, setWizardSupplementSearchQuery] = useState('');
   const [wizardSupplementSelectedParent, setWizardSupplementSelectedParent] = useState(null);
+  const [wizardDoiInput, setWizardDoiInput] = useState('');
   
   const uploadFileInputRef = useRef(null);
+
+  const fullLibraryPapers = React.useMemo(() => {
+    return allPapers.length > 0 ? allPapers : papers;
+  }, [allPapers, papers]);
+
+  const foldSearchText = (str) => {
+    if (!str) return '';
+    return String(str)
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/ß/g, 'ss')
+      .replace(/[øØ]/g, 'o')
+      .replace(/[łŁ]/g, 'l')
+      .replace(/[æÆ]/g, 'ae')
+      .replace(/[œŒ]/g, 'oe')
+      .toLowerCase();
+  };
+
+  const getPaperTitle = (p) => {
+    if (!p) return '';
+    return p.title || p.resolved_title || p.title_query || p.filename || '';
+  };
+
+  const searchCandidatePapers = (pool, query, { excludePaperId = null, excludeSupplements = false, contextPath = '', contextPaper = null, suggestedParent = null } = {}) => {
+    const candidates = pool.filter(p => {
+      if (excludePaperId && p.paper_id === excludePaperId) return false;
+      if (excludeSupplements && p.match_status === 'matched_supplement') return false;
+      return true;
+    });
+
+    const trimmed = (query || '').trim();
+    if (!trimmed) {
+      // Auto-suggest top parent papers based on filename stem & folder when query is empty
+      const rawPath = contextPath || contextPaper?.pdf_path || contextPaper?.filename || '';
+      if (!rawPath && !suggestedParent) return [];
+      const pathParts = rawPath.split('/');
+      const filename = pathParts[pathParts.length - 1] || '';
+      const folder = pathParts.length > 1 ? pathParts.slice(0, -1).join('/') : '';
+      const strippedStem = filename
+        .replace(/\.pdf$/i, '')
+        .replace(/(?:[-_\s]+(?:si|sm|supp(?:lement(?:ary|al)?)?|supporting[-_\s]*(?:info(?:rmation)?|material))|\s*\((?:si|sm|supplement[^)]*)\))+$/i, '');
+      const stemTokens = foldSearchText(strippedStem)
+        .split(/[^a-z0-9]+/)
+        .filter(t => t.length >= 3 && !['pdf', 'supplement', 'supplementary', 'supporting', 'information'].includes(t));
+
+      const scored = [];
+      for (const p of candidates) {
+        let score = 0;
+        if (suggestedParent && p.paper_id === suggestedParent.paper_id) {
+          score += 1000;
+        }
+        if (folder && p.pdf_path && p.pdf_path.startsWith(folder + '/')) {
+          score += 15;
+        }
+        if (stemTokens.length > 0) {
+          const hay = foldSearchText(`${getPaperTitle(p)} ${p.authors || ''} ${p.year || ''} ${p.venue || ''} ${p.bibtex_key || ''} ${p.filename || ''}`);
+          const hayCompact = hay.replace(/[^a-z0-9]/g, '');
+          let matched = 0;
+          for (const tok of stemTokens) {
+            if (hay.includes(tok) || hayCompact.includes(tok)) {
+              matched += 1;
+              score += tok.length >= 4 ? 18 : 10;
+            }
+          }
+          if (matched === stemTokens.length) {
+            score += 60;
+          }
+        }
+        if (score > 15) {
+          scored.push({ paper: { ...p, title: getPaperTitle(p) }, score });
+        }
+      }
+      scored.sort((a, b) => b.score - a.score);
+      return scored.slice(0, 10).map(item => item.paper);
+    }
+
+    const qTokens = foldSearchText(trimmed).split(/[^a-z0-9]+/).filter(Boolean);
+    if (qTokens.length === 0) return [];
+
+    const scoredAll = [];
+    const scoredPartial = [];
+
+    for (const p of candidates) {
+      const titleStr = foldSearchText(getPaperTitle(p));
+      const authorStr = foldSearchText(p.authors || '');
+      const keyStr = foldSearchText(p.bibtex_key || '');
+      const venueStr = foldSearchText(p.venue || '');
+      const yearStr = foldSearchText(p.year || '');
+      const fileStr = foldSearchText(`${p.filename || ''} ${p.pdf_path || ''} ${p.doi || ''}`);
+      const fullHay = `${titleStr} ${authorStr} ${keyStr} ${venueStr} ${yearStr} ${fileStr}`;
+      const compactHay = fullHay.replace(/[^a-z0-9]/g, '');
+
+      let matchedCount = 0;
+      let score = 0;
+      for (const tok of qTokens) {
+        let tokMatched = false;
+        if (keyStr.includes(tok)) {
+          score += keyStr === tok ? 80 : 35;
+          tokMatched = true;
+        }
+        if (authorStr.includes(tok)) {
+          score += 28;
+          tokMatched = true;
+        }
+        if (yearStr === tok) {
+          score += 25;
+          tokMatched = true;
+        }
+        if (titleStr.includes(tok)) {
+          score += 22;
+          tokMatched = true;
+        }
+        if (venueStr.includes(tok) || venueStr.replace(/[^a-z0-9]/g, '').includes(tok)) {
+          score += 18;
+          tokMatched = true;
+        }
+        if (fileStr.includes(tok)) {
+          score += 15;
+          tokMatched = true;
+        }
+        if (!tokMatched && compactHay.includes(tok)) {
+          score += 12;
+          tokMatched = true;
+        }
+        if (tokMatched) {
+          matchedCount += 1;
+        }
+      }
+
+      if (matchedCount === qTokens.length) {
+        score += 200;
+        if (suggestedParent && p.paper_id === suggestedParent.paper_id) score += 50;
+        scoredAll.push({ paper: { ...p, title: getPaperTitle(p) }, score });
+      } else if (matchedCount > 0 && qTokens.length > 1) {
+        score += (matchedCount / qTokens.length) * 50;
+        scoredPartial.push({ paper: { ...p, title: getPaperTitle(p) }, score });
+      }
+    }
+
+    scoredAll.sort((a, b) => b.score - a.score);
+    if (scoredAll.length > 0) {
+      return scoredAll.slice(0, 12).map(item => item.paper);
+    }
+    scoredPartial.sort((a, b) => b.score - a.score);
+    return scoredPartial.slice(0, 10).map(item => item.paper);
+  };
 
   // Index papers by bibtex_key for fast notes hover lookup
   const papersByBibtexKey = React.useMemo(() => {
     const map = {};
-    papers.forEach(p => {
+    fullLibraryPapers.forEach(p => {
       if (p.bibtex_key) {
-        map[p.bibtex_key] = p;
+        map[p.bibtex_key] = { ...p, title: getPaperTitle(p) };
       }
     });
     return map;
-  }, [papers]);
+  }, [fullLibraryPapers]);
 
   const mergeCandidates = React.useMemo(() => {
-    if (!mergeSearchQuery.trim()) return [];
-    const tokens = mergeSearchQuery.toLowerCase().split(/\s+/).filter(Boolean);
-    if (tokens.length === 0) return [];
-    return papers.filter(p => {
-      if (p.paper_id === selectedPaper?.paper_id) return false;
-      const textToSearch = `${p.title || ''} ${p.authors || ''} ${p.bibtex_key || ''}`.toLowerCase();
-      return tokens.every(token => textToSearch.includes(token));
-    }).slice(0, 10);
-  }, [mergeSearchQuery, papers, selectedPaper]);
+    return searchCandidatePapers(fullLibraryPapers, mergeSearchQuery, {
+      excludePaperId: selectedPaper?.paper_id,
+      excludeSupplements: false,
+      contextPaper: selectedPaper,
+    });
+  }, [mergeSearchQuery, fullLibraryPapers, selectedPaper]);
 
   const linkSupplementCandidates = React.useMemo(() => {
-    if (!linkSupplementSearchQuery.trim()) return [];
-    const tokens = linkSupplementSearchQuery.toLowerCase().split(/\s+/).filter(Boolean);
-    if (tokens.length === 0) return [];
-    return papers.filter(p => {
-      if (p.paper_id === selectedPaper?.paper_id) return false;
-      if (p.match_status === 'matched_supplement') return false;
-      const textToSearch = `${p.title || ''} ${p.authors || ''} ${p.bibtex_key || ''}`.toLowerCase();
-      return tokens.every(token => textToSearch.includes(token));
-    }).slice(0, 10);
-  }, [linkSupplementSearchQuery, papers, selectedPaper]);
+    return searchCandidatePapers(fullLibraryPapers, linkSupplementSearchQuery, {
+      excludePaperId: selectedPaper?.paper_id,
+      excludeSupplements: true,
+      contextPaper: selectedPaper,
+    });
+  }, [linkSupplementSearchQuery, fullLibraryPapers, selectedPaper]);
 
   const wizardSupplementCandidates = React.useMemo(() => {
-    if (!wizardSupplementSearchQuery.trim()) return [];
-    const tokens = wizardSupplementSearchQuery.toLowerCase().split(/\s+/).filter(Boolean);
-    if (tokens.length === 0) return [];
-    return papers.filter(p => {
-      if (p.match_status === 'matched_supplement') return false;
-      const textToSearch = `${p.title || ''} ${p.authors || ''} ${p.bibtex_key || ''}`.toLowerCase();
-      return tokens.every(token => textToSearch.includes(token));
-    }).slice(0, 10);
-  }, [wizardSupplementSearchQuery, papers]);
+    return searchCandidatePapers(fullLibraryPapers, wizardSupplementSearchQuery, {
+      excludeSupplements: true,
+      contextPath: wizardFilePath || wizardScanData?.temp_filename || '',
+      suggestedParent: wizardScanData?.suggested_supplement_parent || null,
+    });
+  }, [wizardSupplementSearchQuery, fullLibraryPapers, wizardFilePath, wizardScanData]);
 
   const supplements = React.useMemo(() => {
     if (!paperDetails) return [];
-    return papers.filter(p => 
+    return fullLibraryPapers.filter(p => 
       p.match_status === 'matched_supplement' && 
       p.bibtex_key === paperDetails.bibtex_key &&
       p.paper_id !== paperDetails.paper_id
     );
-  }, [papers, paperDetails]);
+  }, [fullLibraryPapers, paperDetails]);
 
   const escapeHtml = (str) => {
     if (!str) return '';
@@ -645,7 +783,17 @@ export default function App() {
     try {
       const res = await fetch(`${API_BASE}/api/papers`);
       const data = await res.json();
-      setPapers(data);
+      const normalized = (data || []).map(p => ({
+        ...p,
+        title: getPaperTitle(p),
+      }));
+      setAllPapers(normalized);
+      const hasActiveFilters = Boolean(searchQuery || filterAuthor || filterVenue || filterYear || filterDoi || libraryFilter !== 'all');
+      if (hasActiveFilters) {
+        handleSearch();
+      } else {
+        setPapers(normalized);
+      }
     } catch (err) {
       console.error('Error fetching papers:', err);
     }
@@ -880,6 +1028,32 @@ export default function App() {
     setIsWizardSupplementMode(false);
     setWizardSupplementSearchQuery('');
     setWizardSupplementSelectedParent(null);
+    setWizardDoiInput('');
+  };
+
+  const handleWizardFetchByDoi = async () => {
+    const doi = (wizardDoiInput || '').trim();
+    if (!doi) {
+      alert('Please enter a DOI first.');
+      return;
+    }
+    setIsWizardProcessing(true);
+    try {
+      const res = await fetch(`${API_BASE}/api/papers/resolve-doi?doi=${encodeURIComponent(doi)}`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.doi_bibtex) {
+          setWizardManualBibtex(data.doi_bibtex);
+        }
+      } else {
+        const err = await res.json();
+        alert(err.detail || 'Could not resolve DOI via Crossref.');
+      }
+    } catch (err) {
+      alert(`Error resolving DOI: ${err}`);
+    } finally {
+      setIsWizardProcessing(false);
+    }
   };
 
   // Ingestion Wizard Trigger Functions
@@ -917,6 +1091,11 @@ export default function App() {
         setWizardSearchQuery(data.title_query || '');
         if (data.doi_bibtex) {
           setWizardManualBibtex(data.doi_bibtex);
+        }
+        if (data.is_supplement) {
+          setIsWizardSupplementMode(true);
+          setWizardSupplementSearchQuery('');
+          setWizardSupplementSelectedParent(data.suggested_supplement_parent || null);
         }
         if (data.doi_found) {
           setWizardStep(1);
@@ -957,6 +1136,11 @@ export default function App() {
         setWizardSearchQuery(data.title_query || '');
         if (data.doi_bibtex) {
           setWizardManualBibtex(data.doi_bibtex);
+        }
+        if (data.is_supplement) {
+          setIsWizardSupplementMode(true);
+          setWizardSupplementSearchQuery('');
+          setWizardSupplementSelectedParent(data.suggested_supplement_parent || null);
         }
         if (!data.doi_found) {
           setWizardStep(3);
@@ -1095,6 +1279,9 @@ export default function App() {
       } else if (wizardMode === 'existing') {
         url = `${API_BASE}/api/papers/ingest-existing`;
         body.relative_path = wizardFilePath;
+      } else if (wizardMode === 'ref') {
+        url = `${API_BASE}/api/papers/ref`;
+        body.query = wizardSearchQuery || 'manual reference';
       } else if (wizardMode === 'repair') {
         url = `${API_BASE}/api/papers/${wizardRepairPaperId}`;
         method = 'PUT';
@@ -2706,7 +2893,7 @@ export default function App() {
                         <input 
                           type="text" 
                           className="form-control" 
-                          placeholder="Type title, author, or BibTeX key..."
+                          placeholder="Type title, author, year, venue, filename, or BibTeX key..."
                           value={wizardSupplementSearchQuery}
                           onChange={e => setWizardSupplementSearchQuery(e.target.value)}
                         />
@@ -2714,7 +2901,7 @@ export default function App() {
 
                       {wizardSupplementCandidates.length > 0 && (
                         <div className="form-group">
-                          <label>Select Parent Paper</label>
+                          <label>{wizardSupplementSearchQuery.trim() ? 'Matching Parent Papers' : 'Suggested Parent Papers'}</label>
                           <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxHeight: '180px', overflowY: 'auto' }}>
                             {wizardSupplementCandidates.map(c => (
                               <div 
@@ -2723,7 +2910,7 @@ export default function App() {
                                 onClick={() => setWizardSupplementSelectedParent(c)}
                               >
                                 <div className="candidate-title">{c.title}</div>
-                                <div className="candidate-meta">{c.authors} ({c.year}) — {c.bibtex_key}</div>
+                                <div className="candidate-meta">{c.authors} ({c.year}) — {c.venue || 'n/a'} — {c.bibtex_key}</div>
                               </div>
                             ))}
                           </div>
@@ -2833,6 +3020,22 @@ export default function App() {
                       {wizardStep === 3 && (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                           <div className="form-group">
+                            <label>Auto-Fetch by DOI (Crossref + Semantic Scholar Abstract)</label>
+                            <div style={{ display: 'flex', gap: '8px' }}>
+                              <input
+                                type="text"
+                                className="form-control"
+                                placeholder="e.g. 10.1038/s41586-025-08971-7"
+                                value={wizardDoiInput}
+                                onChange={e => setWizardDoiInput(e.target.value)}
+                                onKeyDown={e => e.key === 'Enter' && handleWizardFetchByDoi()}
+                              />
+                              <button className="btn" onClick={handleWizardFetchByDoi} style={{ whiteSpace: 'nowrap' }}>
+                                Fetch DOI
+                              </button>
+                            </div>
+                          </div>
+                          <div className="form-group">
                             <label>Paste or Edit BibTeX Entry Here</label>
                             <textarea 
                               className="form-control" 
@@ -2857,6 +3060,19 @@ export default function App() {
                     <>
                       <button className="btn" onClick={closeWizardModal}>
                         Cancel
+                      </button>
+                      <button
+                        className="btn"
+                        style={{ backgroundColor: 'var(--accent-light)', borderColor: 'var(--accent-color)' }}
+                        onClick={() => {
+                          const existingParent = fullLibraryPapers.find(p => p.paper_id === wizardScanData.existing_paper_id) || null;
+                          setWizardScanData({ ...wizardScanData, is_duplicate: false });
+                          setIsWizardSupplementMode(true);
+                          setWizardSupplementSearchQuery('');
+                          setWizardSupplementSelectedParent(existingParent);
+                        }}
+                      >
+                        Link as Supplement Instead
                       </button>
                       <button className="btn" onClick={handleViewExistingDuplicate}>
                         View Existing Paper

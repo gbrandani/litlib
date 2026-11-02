@@ -195,7 +195,7 @@ def year_matches_filter(row_year: Any, year_filter: tuple[int | None, int | None
 
 
 def compact_token(text: Any) -> str:
-    return re.sub(r"[^a-z0-9]+", "", str(text or "").casefold())
+    return ingest.compact_alnum(text)
 
 
 def load_journal_abbreviations() -> dict[str, str]:
@@ -312,6 +312,7 @@ def search_index_record(row: dict[str, str], record: dict[str, Any]) -> dict[str
         "bibtex_key": row.get("bibtex_key", "") or "",
         "content_kind": row.get("content_kind", "") or "",
         "item_type": row.get("item_type", "") or "",
+        "match_status": row.get("match_status", "") or "",
         "title": title,
         "authors": authors,
         "year": row.get("year", "") or "",
@@ -482,6 +483,20 @@ def extract_quoted_phrases(query: str) -> list[str]:
     return [ingest.normalize_title(p) for p in phrases if p.strip()]
 
 
+def _tokens_match_with_prefix(query_tokens: set[str], target_tokens: set[str]) -> set[str]:
+    matched: set[str] = set()
+    for qt in query_tokens:
+        if qt in target_tokens:
+            matched.add(qt)
+            continue
+        if len(qt) >= 5:
+            for tt in target_tokens:
+                if len(tt) >= 5 and (tt.startswith(qt) or qt.startswith(tt)):
+                    matched.add(qt)
+                    break
+    return matched
+
+
 def metadata_score(row: dict[str, Any], query: str, include_abstract: bool) -> tuple[float, dict[str, float]]:
     if not query:
         return 0.0, {}
@@ -503,15 +518,23 @@ def metadata_score(row: dict[str, Any], query: str, include_abstract: bool) -> t
                 breakdown["title_similarity"] = round(similarity * 55.0, 2)
 
     title_tokens = set(row.get("title_tokens") or [])
-    title_overlap = len(query_tokens & title_tokens)
+    title_matched = _tokens_match_with_prefix(query_tokens, title_tokens)
+    title_overlap = len(title_matched)
     if title_overlap:
         coverage = title_overlap / max(len(query_tokens), 1)
-        breakdown["title_tokens"] = round(title_overlap * 9.0 + coverage * 18.0, 2)
+        breakdown["title_tokens"] = round(title_overlap * 10.0 + coverage * 20.0, 2)
 
-    if query_norm and compact_token(query) == row.get("paper_id_norm", ""):
+    q_compact = compact_token(query)
+    key_norm = row.get("bibtex_key_norm", "")
+    if query_norm and q_compact == row.get("paper_id_norm", ""):
         breakdown["paper_id"] = 140.0
-    if query_norm and compact_token(query) == row.get("bibtex_key_norm", ""):
-        breakdown["bibtex_key"] = 130.0
+    if query_norm and key_norm:
+        if q_compact == key_norm:
+            breakdown["bibtex_key"] = 130.0
+        elif len(q_compact) >= 5 and q_compact in key_norm:
+            breakdown["bibtex_key_partial"] = 75.0
+        elif any(len(qt) >= 5 and qt == key_norm for qt in query_tokens):
+            breakdown["bibtex_key"] = 130.0
     query_doi = ingest.normalize_doi(query)
     if query_doi and query_doi == ingest.normalize_doi(row.get("doi", "")):
         breakdown["doi_exact"] = 150.0
@@ -527,16 +550,20 @@ def metadata_score(row: dict[str, Any], query: str, include_abstract: bool) -> t
     author_tokens = set(row.get("author_tokens") or [])
     author_overlap = len(query_tokens & author_tokens)
     if author_overlap:
-        breakdown["author_tokens"] = round(author_overlap * 6.0, 2)
+        breakdown["author_tokens"] = round(author_overlap * 8.0, 2)
 
-    # Multi-author surname match
+    # Multi-author surname match (supports multi-token and hyphenated surnames)
     author_surnames = extract_all_author_surnames(row.get("authors", ""))
-    matched_surnames = [s for s in author_surnames if s in query_tokens]
+    matched_surnames = []
+    for s in author_surnames:
+        s_parts = set(s.split())
+        if s in query_tokens or (s_parts and s_parts <= query_tokens) or compact_token(s) in query_tokens:
+            matched_surnames.append(s)
     if matched_surnames:
-        breakdown["any_author_match"] = 15.0
+        breakdown["any_author_match"] = 18.0
         first_author_surname = author_surnames[0] if author_surnames else ""
-        if first_author_surname and first_author_surname in query_tokens:
-            breakdown["first_author_match"] = 25.0
+        if first_author_surname and first_author_surname in matched_surnames:
+            breakdown["first_author_match"] = 28.0
 
     # Year match with proximity scoring
     row_year_int = safe_year_int(row.get("year"))
@@ -567,17 +594,19 @@ def metadata_score(row: dict[str, Any], query: str, include_abstract: bool) -> t
             breakdown["venue_abbreviation_match"] = 25.0
 
     filename_tokens = set(row.get("filename_tokens") or [])
-    filename_overlap = len(query_tokens & filename_tokens)
+    filename_matched = _tokens_match_with_prefix(query_tokens, filename_tokens)
+    filename_overlap = len(filename_matched)
     if filename_overlap:
-        breakdown["filename_tokens"] = round(filename_overlap * 2.5, 2)
+        breakdown["filename_tokens"] = round(filename_overlap * 6.0, 2)
 
     if include_abstract:
         abstract_tokens = set(row.get("abstract_tokens") or [])
-        abstract_overlap = len(query_tokens & abstract_tokens)
+        abstract_matched = _tokens_match_with_prefix(query_tokens, abstract_tokens)
+        abstract_overlap = len(abstract_matched)
         if abstract_overlap:
-            breakdown["abstract_tokens"] = round(abstract_overlap * 2.0, 2)
+            breakdown["abstract_tokens"] = round(abstract_overlap * 2.5, 2)
         if query_norm and query_norm in row.get("abstract_norm", ""):
-            breakdown["abstract_phrase"] = 6.0
+            breakdown["abstract_phrase"] = 8.0
 
     # Quoted phrase matches
     quoted_phrases = extract_quoted_phrases(query)
@@ -598,15 +627,23 @@ def metadata_score(row: dict[str, Any], query: str, include_abstract: bool) -> t
     )
     if row.get("year"):
         all_record_tokens.add(str(row.get("year")).strip())
+    if key_norm:
+        all_record_tokens.add(key_norm)
     for s in author_surnames:
         all_record_tokens.add(s)
+        all_record_tokens.add(compact_token(s))
 
-    query_overlap = query_tokens & all_record_tokens
+    query_overlap = _tokens_match_with_prefix(query_tokens, all_record_tokens)
     if query_overlap and query_tokens:
         coverage = len(query_overlap) / len(query_tokens)
         breakdown["query_coverage"] = round(coverage * 50.0, 2)
+        if len(query_overlap) == len(query_tokens) and len(query_tokens) >= 2:
+            breakdown["all_tokens_matched"] = 45.0
 
-    score = round(sum(breakdown.values()), 2)
+    if breakdown and row.get("match_status") == "matched_supplement":
+        breakdown["supplement_penalty"] = -8.0
+
+    score = max(0.0, round(sum(breakdown.values()), 2))
     return score, breakdown
 
 
@@ -716,7 +753,13 @@ def combine_search_results(rows: list[dict[str, Any]], args: argparse.Namespace,
             }
         )
 
-    need_fulltext = args.scope == "fulltext" or (args.scope == "auto" and query and not any(item["score"] > 0 for item in results))
+    has_full_coverage_hit = any(
+        item["score_breakdown"].get("query_coverage", 0.0) >= 49.9 or item["score"] >= 100.0
+        for item in results
+    )
+    need_fulltext = args.scope == "fulltext" or (
+        args.scope == "auto" and bool(query) and not has_full_coverage_hit
+    )
     fulltext_by_id = fulltext_matches(query, scoped_rows) if query and need_fulltext else {}
 
     for result in results:
@@ -733,7 +776,7 @@ def combine_search_results(rows: list[dict[str, Any]], args: argparse.Namespace,
 
     results.sort(
         key=lambda item: (
-            -int(item["score"] / 5),
+            -item["score"],
             -(safe_year_int(item["row"].get("year")) or 0),
             item["row"].get("title", "").casefold(),
         )

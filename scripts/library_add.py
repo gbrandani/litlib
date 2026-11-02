@@ -169,6 +169,7 @@ def search_loop(
 ) -> dict[str, Any]:
     queries = dedupe_queries(initial_queries)
     while True:
+        current_query = queries[-1] if queries else ""
         attempts, merged = ingest.collect_semantic_candidates(
             queries=queries,
             filename=filename,
@@ -176,18 +177,87 @@ def search_loop(
             filename_hints=filename_hints,
             semantic_limit=semantic_limit,
         )
+        for q_doi in [ingest.normalize_doi(d) for d in ingest.extract_dois_from_text(current_query)]:
+            if not q_doi:
+                continue
+            try:
+                cr_msg = ingest.crossref_fetch_prefer_published(q_doi)
+                s2_cand = ingest.semantic_scholar_fetch_by_doi(ingest.normalize_doi(cr_msg.get("DOI") or q_doi))
+                cr_meta = metadata_from_crossref_resolution(cr_msg, s2_cand)
+                synth_cand = dict(s2_cand or {})
+                synth_cand.update(
+                    {
+                        "title": cr_meta.get("title", ""),
+                        "year": int(cr_meta["year"]) if str(cr_meta.get("year") or "").isdigit() else synth_cand.get("year"),
+                        "venue": cr_meta.get("venue", ""),
+                        "externalIds": {"DOI": cr_meta.get("doi", "")},
+                        "url": cr_meta.get("url", ""),
+                        "abstract": cr_meta.get("abstract", ""),
+                        "_crossref_metadata": cr_msg,
+                    }
+                )
+                merged.insert(
+                    0,
+                    {
+                        "identity": f"doi:{cr_meta.get('doi', q_doi)}",
+                        "candidate": synth_cand,
+                        "query": current_query,
+                        "score": 1.0,
+                        "title_similarity": 1.0,
+                        "candidate_year": synth_cand.get("year"),
+                    },
+                )
+            except Exception as exc:
+                eprint(f"Crossref lookup warning for DOI {q_doi}: {exc}")
+
+        if not merged and current_query:
+            try:
+                for cr_item in ingest.crossref_search_title(current_query, limit=min(5, semantic_limit)):
+                    cr_doi = ingest.normalize_doi(cr_item.get("DOI") or "")
+                    s2_cand = ingest.semantic_scholar_fetch_by_doi(cr_doi) if cr_doi else None
+                    cr_meta = metadata_from_crossref_resolution(cr_item, s2_cand)
+                    synth_cand = dict(s2_cand or {})
+                    synth_cand.update(
+                        {
+                            "title": cr_meta.get("title", ""),
+                            "year": int(cr_meta["year"]) if str(cr_meta.get("year") or "").isdigit() else synth_cand.get("year"),
+                            "venue": cr_meta.get("venue", ""),
+                            "externalIds": {"DOI": cr_meta.get("doi", "")},
+                            "url": cr_meta.get("url", ""),
+                            "abstract": cr_meta.get("abstract", ""),
+                            "_crossref_metadata": cr_item,
+                        }
+                    )
+                    scored = ingest.score_candidate(current_query, synth_cand, filename)
+                    if scored.score >= 0.45:
+                        merged.append(
+                            {
+                                "identity": f"doi:{cr_doi}" if cr_doi else f"title:{ingest.normalize_title(cr_meta.get('title', ''))}",
+                                "candidate": synth_cand,
+                                "query": current_query,
+                                "score": scored.score,
+                                "title_similarity": scored.title_similarity,
+                                "candidate_year": scored.candidate_year,
+                            }
+                        )
+                merged.sort(key=lambda item: item["score"], reverse=True)
+            except Exception:
+                pass
+
         print_candidates(merged, semantic_limit)
 
         if autonomous:
             if not merged:
                 return {"action": "skip", "attempts": attempts, "merged": merged}
             top = merged[0]["candidate"]
+            top_cr = top.get("_crossref_metadata") if isinstance(top, dict) else None
+            top_meta = metadata_from_crossref_resolution(top_cr, top) if isinstance(top_cr, dict) else ingest.semantic_candidate_to_metadata(top)
             return {
                 "action": "candidate",
                 "attempts": attempts,
                 "merged": merged,
                 "candidate": top,
-                "metadata": ingest.semantic_candidate_to_metadata(top),
+                "metadata": top_meta,
             }
 
         eprint("")
@@ -218,12 +288,14 @@ def search_loop(
             index = int(response)
             if 1 <= index <= min(len(merged), semantic_limit):
                 candidate = merged[index - 1]["candidate"]
+                cand_cr = candidate.get("_crossref_metadata") if isinstance(candidate, dict) else None
+                cand_meta = metadata_from_crossref_resolution(cand_cr, candidate) if isinstance(cand_cr, dict) else ingest.semantic_candidate_to_metadata(candidate)
                 return {
                     "action": "candidate",
                     "attempts": attempts,
                     "merged": merged,
                     "candidate": candidate,
-                    "metadata": ingest.semantic_candidate_to_metadata(candidate),
+                    "metadata": cand_meta,
                 }
         eprint("Unrecognized action.")
 
@@ -507,6 +579,24 @@ def finalize_reference_addition(
 
     record_path = ingest.record_path_for_paper_id(paper_id)
     existing_record = json.loads(record_path.read_text(encoding="utf-8")) if record_path.exists() else {}
+    cand_cr_meta = (selected_candidate or {}).get("_crossref_metadata") if isinstance(selected_candidate, dict) else None
+    if not isinstance(cand_cr_meta, dict) and metadata.get("doi") and not parsed_bibtex:
+        try:
+            cand_cr_meta = ingest.crossref_fetch_prefer_published(metadata["doi"])
+        except Exception:
+            cand_cr_meta = None
+    if isinstance(cand_cr_meta, dict) and ingest.crossref_title(cand_cr_meta):
+        cr_fields = ingest.crossref_to_bibtex_fields(cand_cr_meta)
+        metadata = {
+            **metadata,
+            **cr_fields,
+            "abstract": cr_fields.get("abstract") or metadata.get("abstract", ""),
+        }
+    clean_selected_candidate = (
+        {k: v for k, v in selected_candidate.items() if k != "_crossref_metadata"}
+        if isinstance(selected_candidate, dict)
+        else selected_candidate
+    )
     bibtex_type = (existing_row or {}).get("bibtex_type", "") or (parsed_bibtex or {}).get("entry_type", "") or metadata.get("bibtex_type", "") or "article"
     existing_bibtex_key = (existing_row or {}).get("bibtex_key", "")
     bibtex_key = existing_bibtex_key or (parsed_bibtex or {}).get("bibtex_key", "") or ingest.build_bibtex_key_from_fields(
@@ -563,13 +653,13 @@ def finalize_reference_addition(
             "doi": metadata.get("doi", ""),
             "semantic_scholar_paper_id": metadata.get("semantic_scholar_paper_id", ""),
             "match_confidence": "",
-            "match_status": "matched" if selected_candidate else "manual_verified",
+            "match_status": "matched_via_doi" if isinstance(cand_cr_meta, dict) else ("matched" if selected_candidate else "manual_verified"),
             "bibtex_type": bibtex_type,
             "canonical_url": metadata.get("url", ""),
             "bibtex_key": bibtex_key,
             "text_path": text_path,
             "chunk_path": chunk_path,
-            "abstract_source": "semantic_scholar" if selected_candidate and metadata.get("abstract") else ("manual_verified" if metadata.get("abstract") else ""),
+            "abstract_source": "crossref" if isinstance(cand_cr_meta, dict) and ingest.crossref_abstract(cand_cr_meta) else ("semantic_scholar" if selected_candidate and metadata.get("abstract") else ("manual_verified" if metadata.get("abstract") else "")),
             "date_indexed": now,
             "notes": "",
         }
@@ -591,15 +681,26 @@ def finalize_reference_addition(
             "date_indexed": now,
             "match_status": row["match_status"],
             "match_confidence": None,
-            "metadata_source": "semantic_scholar" if selected_candidate else "manual_bibtex",
+            "metadata_source": "crossref_doi_plus_semantic_enrichment" if isinstance(cand_cr_meta, dict) and clean_selected_candidate else ("crossref_doi_primary" if isinstance(cand_cr_meta, dict) else ("semantic_scholar" if selected_candidate else "manual_bibtex")),
             "semantic_scholar": {
                 "query": query,
                 "limit": len(semantic_merged_json),
                 "attempts": semantic_attempts_json,
                 "selected_paper_id": metadata.get("semantic_scholar_paper_id", ""),
-                "best_candidate": selected_candidate,
+                "best_candidate": clean_selected_candidate,
                 "merged_candidates": semantic_merged_json,
             },
+            "crossref": (
+                {
+                    "error": "",
+                    "metadata": cand_cr_meta,
+                    "accepted": True,
+                    "accepted_doi": str(cand_cr_meta.get("DOI") or metadata.get("doi") or ""),
+                    "matched_by": "ref_doi_lookup",
+                }
+                if isinstance(cand_cr_meta, dict)
+                else existing_record.get("crossref", {})
+            ),
             "artifacts": {
                 "record_path": str(record_path),
                 "text_path": str((ingest.LIBRARY_ROOT / text_path).resolve()) if text_path else None,

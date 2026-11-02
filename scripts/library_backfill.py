@@ -47,7 +47,13 @@ def load_master_index() -> dict[str, dict[str, str]]:
 
 
 def find_pdfs(root: Path) -> list[Path]:
-    return sorted(path for path in root.rglob("*.pdf") if path.is_file())
+    return sorted(
+        path
+        for path in root.rglob("*.pdf")
+        if path.is_file()
+        and "temp_uploads" not in path.parts
+        and not any(part.startswith(".") for part in path.parts)
+    )
 
 
 def should_process(

@@ -105,11 +105,37 @@ class BibtexPreviewRequest(BaseModel):
     selected_candidate: dict
 
 
+def enrich_crossref_with_s2(doi_metadata: dict | None, doi_hint: str = "") -> tuple[str, str, dict | None]:
+    """Return (s2_abstract, s2_paper_id, s2_candidate) for a Crossref metadata dict or DOI."""
+    doi = ingest.normalize_doi(
+        (doi_metadata.get("DOI") if isinstance(doi_metadata, dict) else "") or doi_hint
+    )
+    if not doi:
+        return "", "", None
+    cr_abstract = ingest.crossref_abstract(doi_metadata) if isinstance(doi_metadata, dict) else ""
+    s2_cand = ingest.semantic_scholar_fetch_by_doi(doi)
+    if not isinstance(s2_cand, dict):
+        return cr_abstract, "", None
+    s2_meta = ingest.semantic_candidate_to_metadata(s2_cand)
+    s2_abstract = cr_abstract or s2_meta.get("abstract", "")
+    s2_paper_id = s2_meta.get("semantic_scholar_paper_id", "")
+    return s2_abstract, s2_paper_id, s2_cand
+
+
+def attach_row_title(row: dict | None) -> dict | None:
+    if not isinstance(row, dict):
+        return row
+    out = dict(row)
+    if not out.get("title"):
+        out["title"] = out.get("resolved_title") or out.get("title_query") or out.get("filename") or ""
+    return out
+
+
 @app.get("/api/papers")
 async def list_papers():
     try:
         rows = ingest.load_master_index_rows()
-        return rows
+        return [attach_row_title(r) for r in rows]
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -196,6 +222,8 @@ async def list_broken_papers():
         rows = ingest.load_master_index_rows()
         broken = []
         for r in rows:
+            if r.get("match_status") == "matched_supplement":
+                continue
             issues = []
             title = r.get("resolved_title") or r.get("title_query") or ""
             authors = r.get("authors") or ""
@@ -208,12 +236,16 @@ async def list_broken_papers():
                 issues.append("Missing title")
             if not authors.strip() or authors.lower() in {"none", "n/a", "null", "author"}:
                 issues.append("Missing or generic authors")
+            elif "et al" in authors.lower() or "and others" in authors.lower():
+                issues.append("Truncated authors (et al.)")
             if not year.strip() or not year.isdigit() or year.lower() in {"none", "n/a", "null"}:
                 issues.append("Missing or invalid year")
             if not venue.strip() or venue.lower() in {"none", "n/a", "null"}:
                 issues.append("Missing journal/venue")
             if not bibtex_key.strip():
                 issues.append("Missing BibTeX key")
+            elif not bibtex_key.isascii():
+                issues.append("Non-ASCII BibTeX key")
                 
             if issues:
                 broken.append({
@@ -233,6 +265,34 @@ async def list_broken_papers():
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.get("/api/papers/resolve-doi")
+async def resolve_doi_endpoint(doi: str):
+    cleaned = ingest.normalize_doi(doi)
+    if not cleaned:
+        raise HTTPException(status_code=400, detail="Valid DOI is required")
+    try:
+        try:
+            doi_metadata = ingest.crossref_fetch_prefer_published(cleaned)
+        except Exception:
+            doi_metadata = None
+        if not isinstance(doi_metadata, dict):
+            raise HTTPException(status_code=404, detail=f"Could not resolve DOI: {cleaned}")
+        resolved_doi = ingest.normalize_doi(doi_metadata.get("DOI") or cleaned)
+        s2_abstract, s2_paper_id, _ = enrich_crossref_with_s2(doi_metadata, resolved_doi)
+        doi_bibtex = make_doi_bibtex(doi_metadata, s2_abstract=s2_abstract)
+        return {
+            "doi_found": resolved_doi,
+            "doi_metadata": doi_metadata,
+            "doi_bibtex": doi_bibtex,
+            "s2_abstract": s2_abstract,
+            "s2_paper_id": s2_paper_id,
+        }
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @app.get("/api/papers/scan-pdf-metadata")
 async def scan_pdf_metadata(path: str, exclude_paper_id: str = None):
     abs_path = LIBRARY_ROOT / path.strip("/")
@@ -242,29 +302,37 @@ async def scan_pdf_metadata(path: str, exclude_paper_id: str = None):
     try:
         title_query = ingest.derive_title_query(abs_path)
         text_status, text_error, text_content = ingest.extract_pdf_text(abs_path)
+        extracted_text = text_content if text_status == "ok" and text_content else ""
         
         sha256 = ingest.sha256_path(abs_path)
         existing_by_sha = ingest.load_master_index_row_by_pdf_sha256(sha256)
+        
+        is_supplement = ingest.is_supplement_pdf(abs_path, title_query, extracted_text)
+        suggested_parent = None
+        if is_supplement:
+            suggested_parent = attach_row_title(
+                ingest.find_parent_article_for_supplement(abs_path, title_query, extracted_text)
+            )
         
         doi_metadata = None
         doi_score = None
         doi_found = ""
         doi_bibtex = ""
         
-        if text_status == "ok" and text_content:
-            filename_hints = ingest.derive_filename_hints(abs_path)
-            title_targets = [title_query] + ingest.derive_text_title_candidates(text_content)
-            doi_res = ingest.resolve_pdf_doi_metadata(
-                pdf_path=abs_path,
-                extracted_text=text_content,
-                filename_hints=filename_hints,
-                title_targets=title_targets
-            )
-            if doi_res.get("best_metadata"):
-                doi_metadata = doi_res["best_metadata"]
-                doi_score = doi_res.get("best_score")
-                doi_found = doi_res.get("best_candidate_doi")
-                doi_bibtex = make_doi_bibtex(doi_metadata)
+        filename_hints = ingest.derive_filename_hints(abs_path)
+        title_targets = [title_query] + (ingest.derive_text_title_candidates(extracted_text) if extracted_text else [])
+        doi_res = ingest.resolve_pdf_doi_metadata(
+            pdf_path=abs_path,
+            extracted_text=extracted_text,
+            filename_hints=filename_hints,
+            title_targets=title_targets
+        )
+        if doi_res.get("best_metadata"):
+            doi_metadata = doi_res["best_metadata"]
+            doi_score = doi_res.get("best_score")
+            doi_found = doi_res.get("best_candidate_doi")
+            s2_abstract, _, _ = enrich_crossref_with_s2(doi_metadata, doi_found)
+            doi_bibtex = make_doi_bibtex(doi_metadata, s2_abstract=s2_abstract)
                 
         if existing_by_sha and exclude_paper_id and existing_by_sha.get("paper_id") == exclude_paper_id:
             existing_by_sha = None
@@ -273,19 +341,13 @@ async def scan_pdf_metadata(path: str, exclude_paper_id: str = None):
         matched_row = None
         if existing_by_sha and existing_by_sha.get("content_kind") == ingest.CONTENT_KIND_PDF:
             matched_row = existing_by_sha
-        else:
+        elif not is_supplement:
             doi_to_match = doi_found or (doi_metadata.get("DOI", "") if doi_metadata else "")
             title_to_match = ""
             year_to_match = ""
             if doi_metadata:
-                title_to_match = doi_metadata.get("title", "")
-                if isinstance(title_to_match, list):
-                    title_to_match = title_to_match[0] if title_to_match else ""
-                
-                issued = doi_metadata.get("issued", {})
-                date_parts = issued.get("date-parts", [[None]])
-                if date_parts and date_parts[0] and date_parts[0][0]:
-                    year_to_match = str(date_parts[0][0])
+                title_to_match = ingest.crossref_title(doi_metadata)
+                year_to_match = ingest.crossref_year(doi_metadata)
             
             if not title_to_match:
                 title_to_match = title_query
@@ -299,6 +361,10 @@ async def scan_pdf_metadata(path: str, exclude_paper_id: str = None):
                 cand_row = None
             if cand_row and cand_row.get("content_kind") == ingest.CONTENT_KIND_PDF:
                 matched_row = cand_row
+        elif is_supplement and not suggested_parent and doi_found:
+            cand_row = ingest.find_existing_reference_match(doi=doi_found, title="", year="")
+            if cand_row and cand_row.get("match_status") != "matched_supplement":
+                suggested_parent = attach_row_title(cand_row)
 
         if matched_row:
             # Self-healing: if the matched row is missing title or sha256 in the index, refresh it!
@@ -316,11 +382,13 @@ async def scan_pdf_metadata(path: str, exclude_paper_id: str = None):
             "existing_paper_id": matched_row.get("paper_id") if matched_row else None,
             "existing_title": (matched_row.get("resolved_title") or matched_row.get("title_query") or "Untitled") if matched_row else None,
             "existing_pdf_path": matched_row.get("pdf_path") if matched_row else None,
+            "is_supplement": is_supplement,
+            "suggested_supplement_parent": suggested_parent,
             "doi_found": doi_found,
             "doi_metadata": doi_metadata,
             "doi_score": doi_score,
             "doi_bibtex": doi_bibtex,
-            "text_extracted": bool(text_content)
+            "text_extracted": bool(extracted_text)
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -622,47 +690,88 @@ async def search_candidates(q: str = ""):
 
 def semantic_candidate_to_bibtex(candidate: dict) -> str:
     metadata = ingest.semantic_candidate_to_metadata(candidate)
-    
-    author_name = "author"
-    authors_str = metadata.get("authors", "")
-    if authors_str:
-        first_author = authors_str.split(",")[0].strip()
-        if " " in first_author:
-            author_name = first_author.split(" ")[-1]
-        else:
-            author_name = first_author
-            
-    author_token = ingest.preferred_title_token(author_name)
-    year_token = metadata.get("year", "undated")
-    title_token = ingest.preferred_title_token(metadata.get("title", "title"))
-    bibtex_key = f"{author_token}{year_token}{title_token}"
-    
+    authors_norm = ingest.normalize_authors_bibtex(metadata.get("authors", ""))
+    bibtex_key = ingest.build_bibtex_key_from_fields(
+        authors=authors_norm,
+        year=metadata.get("year", "undated"),
+        title=metadata.get("title", "title"),
+    )
     fields = {
         "title": metadata.get("title", ""),
-        "author": " and ".join(a.strip() for a in authors_str.split(",") if a.strip()),
+        "author": authors_norm,
         "year": metadata.get("year", ""),
         "doi": metadata.get("doi", ""),
         "url": metadata.get("url", ""),
+        "abstract": metadata.get("abstract", ""),
     }
     if metadata.get("venue"):
-        fields["journal"] = metadata.get("venue")
+        fields["journal"] = ingest.canonicalize_venue_name(metadata.get("venue", ""))
         
     return ingest.build_bibtex_entry_from_fields("article", bibtex_key, fields)
 
 
-def make_doi_bibtex(doi_metadata: dict) -> str:
-    author_token = "author"
-    if doi_metadata.get("author"):
-        authors_list = doi_metadata.get("author")
-        if isinstance(authors_list, list) and authors_list:
-            first = authors_list[0]
-            if isinstance(first, dict):
-                author_token = first.get("family") or first.get("given") or "author"
-    author_token = ingest.preferred_title_token(author_token)
-    year_token = ingest.crossref_year(doi_metadata) or "undated"
-    title_token = ingest.preferred_title_token(ingest.crossref_title(doi_metadata))
-    bibtex_key = f"{author_token}{year_token}{title_token}"
-    return ingest.build_crossref_bibtex_entry(bibtex_key, doi_metadata)
+def make_doi_bibtex(doi_metadata: dict, s2_abstract: str = "") -> str:
+    fields = ingest.crossref_to_bibtex_fields(doi_metadata, abstract_override=s2_abstract)
+    bibtex_key = ingest.build_bibtex_key_from_fields(
+        authors=fields.get("author", ""),
+        year=fields.get("year", "undated"),
+        title=fields.get("title", "title"),
+    )
+    return ingest.build_crossref_bibtex_entry(bibtex_key, doi_metadata, abstract_override=s2_abstract)
+
+
+def resolve_provenance_for_ingestion(
+    parsed_bibtex: dict | None,
+    metadata: dict,
+    selected_candidate: dict | None,
+    metadata_source: str,
+) -> tuple[dict | None, dict, dict | None, str, dict | None]:
+    """Enrich DOI-bearing submissions with Crossref + Semantic Scholar provenance and abstract."""
+    doi_resolution_hint = None
+    doi = ingest.normalize_doi(metadata.get("doi", ""))
+    if doi:
+        try:
+            cr_meta = ingest.crossref_fetch_prefer_published(doi)
+            if not isinstance(cr_meta, dict):
+                cr_meta = None
+        except Exception:
+            cr_meta = None
+        s2_abstract, s2_paper_id, s2_cand = enrich_crossref_with_s2(cr_meta, doi)
+        if s2_cand and not selected_candidate:
+            selected_candidate = s2_cand
+        if s2_abstract and not metadata.get("abstract"):
+            metadata["abstract"] = s2_abstract
+            if parsed_bibtex and isinstance(parsed_bibtex.get("fields"), dict):
+                parsed_bibtex["fields"]["abstract"] = s2_abstract
+                parsed_bibtex = add_lib.canonicalize_manual_bibtex(parsed_bibtex)
+        if s2_paper_id and not metadata.get("semantic_scholar_paper_id"):
+            metadata["semantic_scholar_paper_id"] = s2_paper_id
+        if cr_meta:
+            resolved_doi = ingest.normalize_doi(cr_meta.get("DOI") or doi)
+            doi_resolution_hint = {
+                "candidate_dois": [resolved_doi],
+                "candidate_details": [{"doi": resolved_doi, "sources": ["user_or_pdf"]}],
+                "crossref_attempts": [{"doi": resolved_doi, "status": "ok"}],
+                "best_candidate_doi": resolved_doi,
+                "best_metadata": cr_meta,
+                "best_score": 1.0,
+                "warnings": [],
+                "error": "",
+                "accepted_metadata": cr_meta,
+                "review_metadata": None,
+                "accepted_source": "crossref_doi",
+                "matched_by": "doi_lookup",
+            }
+            if parsed_bibtex:
+                expected_bibtex = make_doi_bibtex(cr_meta, s2_abstract=metadata.get("abstract", ""))
+                if parsed_bibtex.get("raw_bibtex", "").strip() == expected_bibtex.strip():
+                    # Unmodified DOI wizard output: treat Crossref as canonical primary source
+                    metadata = ingest.crossref_to_bibtex_fields(cr_meta, abstract_override=metadata.get("abstract", ""))
+                    if s2_paper_id:
+                        metadata["semantic_scholar_paper_id"] = s2_paper_id
+                    parsed_bibtex = None
+                    metadata_source = "crossref_doi_primary"
+    return parsed_bibtex, metadata, selected_candidate, metadata_source, doi_resolution_hint
 
 
 @app.post("/api/candidates/bibtex")
@@ -691,25 +800,36 @@ async def upload_scan(file: UploadFile = File(...)):
         
         # Extract DOI first
         text_status, text_error, text_content = ingest.extract_pdf_text(temp_path)
+        extracted_text = text_content if text_status == "ok" and text_content else ""
+        is_supplement = ingest.is_supplement_pdf(temp_path, title_query, extracted_text)
+        suggested_parent = None
+        if is_supplement:
+            suggested_parent = attach_row_title(
+                ingest.find_parent_article_for_supplement(temp_path, title_query, extracted_text)
+            )
         doi_metadata = None
         doi_score = None
         doi_found = ""
         doi_bibtex = ""
         
-        if text_status == "ok" and text_content:
-            filename_hints = ingest.derive_filename_hints(temp_path)
-            title_targets = [title_query] + ingest.derive_text_title_candidates(text_content)
-            doi_res = ingest.resolve_pdf_doi_metadata(
-                pdf_path=temp_path,
-                extracted_text=text_content,
-                filename_hints=filename_hints,
-                title_targets=title_targets
-            )
-            if doi_res.get("best_metadata"):
-                doi_metadata = doi_res["best_metadata"]
-                doi_score = doi_res.get("best_score")
-                doi_found = doi_res.get("best_candidate_doi")
-                doi_bibtex = make_doi_bibtex(doi_metadata)
+        filename_hints = ingest.derive_filename_hints(temp_path)
+        title_targets = [title_query] + (ingest.derive_text_title_candidates(extracted_text) if extracted_text else [])
+        doi_res = ingest.resolve_pdf_doi_metadata(
+            pdf_path=temp_path,
+            extracted_text=extracted_text,
+            filename_hints=filename_hints,
+            title_targets=title_targets
+        )
+        if doi_res.get("best_metadata"):
+            doi_metadata = doi_res["best_metadata"]
+            doi_score = doi_res.get("best_score")
+            doi_found = doi_res.get("best_candidate_doi")
+            s2_abstract, _, _ = enrich_crossref_with_s2(doi_metadata, doi_found)
+            doi_bibtex = make_doi_bibtex(doi_metadata, s2_abstract=s2_abstract)
+            if is_supplement and not suggested_parent and doi_found:
+                cand_row = ingest.find_existing_reference_match(doi=doi_found, title="", year="")
+                if cand_row and cand_row.get("match_status") != "matched_supplement":
+                    suggested_parent = attach_row_title(cand_row)
                 
         return {
             "temp_filename": safe_filename,
@@ -717,11 +837,13 @@ async def upload_scan(file: UploadFile = File(...)):
             "sha256": sha256,
             "is_duplicate": existing_by_sha is not None,
             "existing_paper_id": existing_by_sha.get("paper_id") if existing_by_sha else None,
+            "is_supplement": is_supplement,
+            "suggested_supplement_parent": suggested_parent,
             "doi_found": doi_found,
             "doi_metadata": doi_metadata,
             "doi_score": doi_score,
             "doi_bibtex": doi_bibtex,
-            "text_extracted": bool(text_content)
+            "text_extracted": bool(extracted_text)
         }
     except Exception as e:
         if temp_path.exists():
@@ -744,21 +866,26 @@ async def upload_confirm(body: PDFConfirmRequest):
         parsed_bibtex = None
         metadata = {}
         metadata_source = "semantic_scholar"
+        selected_candidate = body.selected_candidate
         
         if body.manual_bibtex:
             try:
                 parsed_bibtex = ingest.parse_bibtex_entry(body.manual_bibtex)
                 parsed_bibtex = add_lib.canonicalize_manual_bibtex(parsed_bibtex)
-                metadata = parsed_bibtex["normalized"]
+                metadata = dict(parsed_bibtex["normalized"])
                 metadata_source = "manual_bibtex"
             except Exception as e:
                 shutil.move(str(target_path), str(temp_path))
                 raise HTTPException(status_code=400, detail=f"Invalid Manual BibTeX: {e}")
-        elif body.selected_candidate:
-            metadata = ingest.semantic_candidate_to_metadata(body.selected_candidate)
+        elif selected_candidate:
+            metadata = ingest.semantic_candidate_to_metadata(selected_candidate)
         else:
             metadata = {"title": body.title_query}
             metadata_source = "title_only"
+
+        parsed_bibtex, metadata, selected_candidate, metadata_source, doi_resolution_hint = (
+            resolve_provenance_for_ingestion(parsed_bibtex, metadata, selected_candidate, metadata_source)
+        )
             
         # Check for duplicates before finalizing
         sha256 = ingest.sha256_path(target_path)
@@ -789,7 +916,7 @@ async def upload_confirm(body: PDFConfirmRequest):
             return {
                 "status": "duplicate",
                 "message": "This paper is already indexed with a PDF. The duplicate file was deleted from disk.",
-                "data": matched_row
+                "data": attach_row_title(matched_row)
             }
         
         res = add_lib.finalize_pdf_addition(
@@ -798,12 +925,13 @@ async def upload_confirm(body: PDFConfirmRequest):
             metadata=metadata,
             semantic_attempts=[],
             semantic_merged=[],
-            selected_candidate=body.selected_candidate,
+            selected_candidate=selected_candidate,
             parsed_bibtex=parsed_bibtex,
             chunk_chars=2000,
             overlap_chars=200,
             addition_mode="pdf_guided",
-            metadata_source_hint=metadata_source
+            metadata_source_hint=metadata_source,
+            doi_resolution_hint=doi_resolution_hint,
         )
         
         if res != 0:
@@ -811,7 +939,7 @@ async def upload_confirm(body: PDFConfirmRequest):
         
         sha256 = ingest.sha256_path(target_path)
         new_row = ingest.load_master_index_row_by_pdf_sha256(sha256)
-        return {"status": "success", "data": new_row}
+        return {"status": "success", "data": attach_row_title(new_row)}
     except Exception as e:
         if target_path.exists():
             target_path.unlink()
@@ -824,23 +952,30 @@ async def add_reference(body: RefAddRequest):
         parsed_bibtex = None
         metadata = {}
         metadata_source = "semantic_scholar"
+        selected_candidate = body.selected_candidate
         
         if body.manual_bibtex:
             parsed_bibtex = ingest.parse_bibtex_entry(body.manual_bibtex)
             parsed_bibtex = add_lib.canonicalize_manual_bibtex(parsed_bibtex)
-            metadata = parsed_bibtex["normalized"]
+            metadata = dict(parsed_bibtex["normalized"])
             metadata_source = "manual_bibtex"
-        elif body.selected_candidate:
-            metadata = ingest.semantic_candidate_to_metadata(body.selected_candidate)
+        elif selected_candidate:
+            metadata = ingest.semantic_candidate_to_metadata(selected_candidate)
         else:
             raise HTTPException(status_code=400, detail="Either selected_candidate or manual_bibtex is required.")
+
+        parsed_bibtex, metadata, selected_candidate, metadata_source, _ = (
+            resolve_provenance_for_ingestion(parsed_bibtex, metadata, selected_candidate, metadata_source)
+        )
         
         bibtex_key = metadata.get("bibtex_key", "")
         if not bibtex_key:
-            author_token = ingest.preferred_title_token(metadata.get("authors", "author"))
-            year_token = metadata.get("year", "undated")
-            title_token = ingest.preferred_title_token(metadata.get("title", "title"))
-            bibtex_key = f"{author_token}{year_token}{title_token}"
+            bibtex_key = ingest.build_bibtex_key_from_fields(
+                authors=metadata.get("authors", "author"),
+                year=metadata.get("year", "undated"),
+                title=metadata.get("title", "title"),
+            )
+            metadata["bibtex_key"] = bibtex_key
         
         paper_id = ingest.reference_paper_id_from_metadata(metadata.get("semantic_scholar_paper_id"), bibtex_key)
         
@@ -849,7 +984,7 @@ async def add_reference(body: RefAddRequest):
             metadata=metadata,
             semantic_attempts=[],
             semantic_merged=[],
-            selected_candidate=body.selected_candidate,
+            selected_candidate=selected_candidate,
             parsed_bibtex=parsed_bibtex,
             chunk_chars=2000,
             overlap_chars=200,
@@ -859,7 +994,10 @@ async def add_reference(body: RefAddRequest):
             raise HTTPException(status_code=500, detail="Ingestion pipeline failed")
         
         new_row = ingest.load_master_index_row_by_paper_id(paper_id)
-        return {"status": "success", "data": new_row}
+        if not new_row:
+            rows = [r for r in ingest.load_master_index_rows() if r.get("bibtex_key") == bibtex_key]
+            new_row = rows[0] if rows else None
+        return {"status": "success", "data": attach_row_title(new_row)}
     except SystemExit as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
@@ -936,17 +1074,22 @@ async def ingest_existing(body: IngestExistingRequest):
         parsed_bibtex = None
         metadata = {}
         metadata_source = "semantic_scholar"
+        selected_candidate = body.selected_candidate
         
         if body.manual_bibtex:
             parsed_bibtex = ingest.parse_bibtex_entry(body.manual_bibtex)
             parsed_bibtex = add_lib.canonicalize_manual_bibtex(parsed_bibtex)
-            metadata = parsed_bibtex["normalized"]
+            metadata = dict(parsed_bibtex["normalized"])
             metadata_source = "manual_bibtex"
-        elif body.selected_candidate:
-            metadata = ingest.semantic_candidate_to_metadata(body.selected_candidate)
+        elif selected_candidate:
+            metadata = ingest.semantic_candidate_to_metadata(selected_candidate)
         else:
             metadata = {"title": title_query}
             metadata_source = "title_only"
+
+        parsed_bibtex, metadata, selected_candidate, metadata_source, doi_resolution_hint = (
+            resolve_provenance_for_ingestion(parsed_bibtex, metadata, selected_candidate, metadata_source)
+        )
             
         # Check for duplicates before finalizing
         sha256 = ingest.sha256_path(pdf_path)
@@ -977,7 +1120,7 @@ async def ingest_existing(body: IngestExistingRequest):
             return {
                 "status": "duplicate",
                 "message": "This paper is already indexed with a PDF. The duplicate file was deleted from disk.",
-                "data": matched_row
+                "data": attach_row_title(matched_row)
             }
             
         res = add_lib.finalize_pdf_addition(
@@ -986,19 +1129,20 @@ async def ingest_existing(body: IngestExistingRequest):
             metadata=metadata,
             semantic_attempts=[],
             semantic_merged=[],
-            selected_candidate=body.selected_candidate,
+            selected_candidate=selected_candidate,
             parsed_bibtex=parsed_bibtex,
             chunk_chars=2000,
             overlap_chars=200,
             addition_mode="pdf_guided",
-            metadata_source_hint=metadata_source
+            metadata_source_hint=metadata_source,
+            doi_resolution_hint=doi_resolution_hint,
         )
         if res != 0:
             raise HTTPException(status_code=500, detail="Ingestion pipeline failed")
             
         sha256 = ingest.sha256_path(pdf_path)
         new_row = ingest.load_master_index_row_by_pdf_sha256(sha256)
-        return {"status": "success", "data": new_row}
+        return {"status": "success", "data": attach_row_title(new_row)}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -1267,11 +1411,16 @@ async def batch_import_bibtex(body: BatchImportBibtexRequest):
                     continue
 
                 if not key:
-                    author_token = ingest.preferred_title_token(metadata.get("authors", "author"))
-                    year_token = year or "undated"
-                    title_token = ingest.preferred_title_token(title or "title")
-                    key = f"{author_token}{year_token}{title_token}"
+                    key = ingest.build_bibtex_key_from_fields(
+                        authors=metadata.get("authors", "author"),
+                        year=year or "undated",
+                        title=title or "title",
+                    )
                     metadata["bibtex_key"] = key
+
+                parsed_bibtex, metadata, selected_candidate, _, _ = (
+                    resolve_provenance_for_ingestion(parsed_bibtex, dict(metadata), None, "manual_bibtex")
+                )
 
                 paper_id = ingest.reference_paper_id_from_metadata(
                     metadata.get("semantic_scholar_paper_id"), key
@@ -1282,7 +1431,7 @@ async def batch_import_bibtex(body: BatchImportBibtexRequest):
                     metadata=metadata,
                     semantic_attempts=[],
                     semantic_merged=[],
-                    selected_candidate=None,
+                    selected_candidate=selected_candidate,
                     parsed_bibtex=parsed_bibtex,
                     chunk_chars=2000,
                     overlap_chars=200,
@@ -1331,14 +1480,16 @@ async def batch_import_directory(body: BatchImportDirectoryRequest):
         pdf_paths = []
         if body.recursive:
             for root, dirs, files in os.walk(dir_path):
+                dirs[:] = [d for d in dirs if d != "temp_uploads" and not d.startswith(".")]
                 for f in files:
-                    if f.lower().endswith(".pdf"):
+                    if f.lower().endswith(".pdf") and not f.startswith("."):
                         pdf_paths.append(Path(root) / f)
         else:
-            for f in os.listdir(dir_path):
-                full_f = dir_path / f
-                if full_f.is_file() and f.lower().endswith(".pdf"):
-                    pdf_paths.append(full_f)
+            if dir_path.name != "temp_uploads":
+                for f in os.listdir(dir_path):
+                    full_f = dir_path / f
+                    if full_f.is_file() and f.lower().endswith(".pdf") and not f.startswith("."):
+                        pdf_paths.append(full_f)
                     
         total_found = len(pdf_paths)
         already_indexed = 0
@@ -1389,7 +1540,12 @@ async def batch_import_directory(body: BatchImportDirectoryRequest):
                     })
                     continue
                     
-                metadata = ingest.crossref_to_bibtex_fields(accepted_crossref)
+                s2_abstract, s2_paper_id, s2_cand = enrich_crossref_with_s2(
+                    accepted_crossref, doi_res.get("best_candidate_doi", "")
+                )
+                metadata = ingest.crossref_to_bibtex_fields(accepted_crossref, abstract_override=s2_abstract)
+                if s2_paper_id:
+                    metadata["semantic_scholar_paper_id"] = s2_paper_id
                 
                 doi_resolution = {
                     "candidate_dois": doi_res.get("candidate_dois", []),
@@ -1412,7 +1568,7 @@ async def batch_import_directory(body: BatchImportDirectoryRequest):
                     metadata=metadata,
                     semantic_attempts=[],
                     semantic_merged=[],
-                    selected_candidate=None,
+                    selected_candidate=s2_cand,
                     parsed_bibtex=None,
                     chunk_chars=2000,
                     overlap_chars=200,

@@ -76,15 +76,19 @@ def extract_abstract(record: dict[str, Any]) -> str:
     for container_name in ["resolved_metadata", "manual_override"]:
         container = record.get(container_name)
         if isinstance(container, dict):
-            abstract = " ".join(str(container.get("abstract") or "").split()).strip()
+            abstract = " ".join(
+                ingest.decode_latex_text(ingest.strip_jats_markup(str(container.get("abstract") or ""))).split()
+            ).strip()
             if abstract:
                 return abstract
 
     semantic = record.get("semantic_scholar")
     if isinstance(semantic, dict):
-        best = semantic.get("best_candidate")
+        best = semantic.get("best_candidate") or semantic.get("selected_candidate")
         if isinstance(best, dict):
-            abstract = " ".join(str(best.get("abstract") or "").split()).strip()
+            abstract = " ".join(
+                ingest.decode_latex_text(ingest.strip_jats_markup(str(best.get("abstract") or ""))).split()
+            ).strip()
             if abstract:
                 return abstract
 
@@ -92,7 +96,7 @@ def extract_abstract(record: dict[str, Any]) -> str:
     if isinstance(crossref, dict):
         metadata = crossref.get("metadata")
         if isinstance(metadata, dict):
-            abstract = " ".join(str(metadata.get("abstract") or "").split()).strip()
+            abstract = ingest.crossref_abstract(metadata)
             if abstract:
                 return abstract
     return ""
@@ -141,11 +145,12 @@ def normalized_fields_from_row(row: dict[str, str], record: dict[str, Any]) -> d
     }
     crossref = record.get("crossref")
     if isinstance(crossref, dict) and isinstance(crossref.get("metadata"), dict):
-        crossref_fields = ingest.crossref_to_bibtex_fields(crossref["metadata"])
-        for field in ["volume", "number", "pages", "publisher", "issn"]:
-            value = str(crossref_fields.get(field) or "").strip()
-            if value:
-                fields[field] = value
+        if crossref.get("accepted") or crossref.get("matched_doi") or row.get("match_status") == "matched_via_doi":
+            crossref_fields = ingest.crossref_to_bibtex_fields(crossref["metadata"])
+            for field in ["editor", "booktitle", "volume", "number", "pages", "publisher", "issn"]:
+                value = str(crossref_fields.get(field) or "").strip()
+                if value:
+                    fields[field] = value
     return fields
 
 
@@ -155,13 +160,27 @@ def original_fields_for_key(existing_entries: dict[str, dict[str, Any]], row: di
     if isinstance(manual, dict) and manual.get("raw_bibtex"):
         try:
             parsed = ingest.parse_bibtex_entry(str(manual.get("raw_bibtex")))
-            return str(parsed.get("entry_type") or row.get("bibtex_type") or "article"), dict(parsed.get("fields") or {})
+            entry_type = str(row.get("bibtex_type") or parsed.get("entry_type") or "article")
+            return entry_type, dict(parsed.get("fields") or {})
         except Exception:
             pass
 
+    crossref = record.get("crossref")
+    has_accepted_crossref = (
+        isinstance(crossref, dict)
+        and isinstance(crossref.get("metadata"), dict)
+        and (crossref.get("accepted") or crossref.get("matched_doi") or row.get("match_status") == "matched_via_doi")
+    )
+    if has_accepted_crossref:
+        cr_type = ingest.crossref_bibtex_type(crossref["metadata"])
+        entry_type = str(row.get("bibtex_type") or cr_type or "article")
+        if entry_type == "article" and cr_type != "article":
+            entry_type = cr_type
+        return entry_type, {}
+
     existing = existing_entries.get(key)
     if existing is not None:
-        return str(existing.get("entry_type") or row.get("bibtex_type") or "article"), dict(existing.get("fields") or {})
+        return str(row.get("bibtex_type") or existing.get("entry_type") or "article"), dict(existing.get("fields") or {})
 
     return str(row.get("bibtex_type") or "article"), {}
 

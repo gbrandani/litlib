@@ -21,6 +21,7 @@ try:
 except ImportError:
     fcntl = None
 import hashlib
+import html
 import json
 import os
 import re
@@ -31,6 +32,7 @@ import sys
 import tempfile
 import textwrap
 import time
+import unicodedata
 import urllib.parse
 import urllib.error
 import urllib.request
@@ -104,6 +106,11 @@ CANONICAL_VENUE_BY_CASEFOLD = {
     "annual review of biochemistry": "Annual Review of Biochemistry",
     "annual review of biophysics": "Annual Review of Biophysics",
     "arxiv": "arXiv",
+    "biorxiv": "bioRxiv",
+    "medrxiv": "medRxiv",
+    "openrxiv": "bioRxiv",
+    "chemrxiv": "ChemRxiv",
+    "elife": "eLife",
     "biophysical journal": "Biophysical Journal",
     "cell reports": "Cell Reports",
     "chemical reviews": "Chemical Reviews",
@@ -129,6 +136,10 @@ CANONICAL_VENUE_BY_CASEFOLD = {
     "progress in biophysics and molecular biology": "Progress in Biophysics and Molecular Biology",
     "the journal of chemical physics": "The Journal of Chemical Physics",
     "the journal of physical chemistry. b": "The Journal of Physical Chemistry. B",
+    "the embo journal": "The EMBO Journal",
+    "embo journal": "The EMBO Journal",
+    "the embo reports": "EMBO Reports",
+    "embo reports": "EMBO Reports",
 }
 STOPWORDS = {
     "a",
@@ -183,12 +194,305 @@ VENUE_ALIASES = {
 }
 
 
+COMBINING_MAP = {
+    "'": "\u0301",
+    "`": "\u0300",
+    '"': "\u0308",
+    "^": "\u0302",
+    "~": "\u0303",
+    "=": "\u0304",
+    ".": "\u0307",
+    "u": "\u0306",
+    "v": "\u030c",
+    "H": "\u030b",
+    "c": "\u0327",
+    "d": "\u0323",
+    "b": "\u0331",
+    "k": "\u0328",
+}
+
+
+def _apply_combining(base: str, cmd: str) -> str:
+    comb = COMBINING_MAP.get(cmd, "")
+    return unicodedata.normalize("NFC", base + comb) if comb else base
+
+
+LATEX_ACCENT_PATTERNS = [
+    (r"\{\\'\s*\\?i\}", "í"),
+    (r"\{\\`\s*\\?i\}", "ì"),
+    (r"\{\\\"\s*\\?i\}", "ï"),
+    (r"\{\\\^\s*\\?i\}", "î"),
+    (r"\\'\s*\{\\?i\}", "í"),
+    (r"\{\\([`'\"^~=.])\{?([A-Za-z])\}?\}", lambda m: _apply_combining(m.group(2), m.group(1))),
+    (r"\\([`'\"^~=.])\{([A-Za-z])\}", lambda m: _apply_combining(m.group(2), m.group(1))),
+    (r"\{\\([uvHcdbk])\{([A-Za-z])\}\}", lambda m: _apply_combining(m.group(2), m.group(1))),
+    (r"\\([uvHcdbk])\{([A-Za-z])\}", lambda m: _apply_combining(m.group(2), m.group(1))),
+    (r"\{\\([`'\"^~])([A-Za-z])\}", lambda m: _apply_combining(m.group(2), m.group(1))),
+    (r"\\([`'\"^~])([A-Za-z])", lambda m: _apply_combining(m.group(2), m.group(1))),
+    (r"\{\\aa\}", "å"), (r"\{\\AA\}", "Å"), (r"\\aa\b", "å"), (r"\\AA\b", "Å"),
+    (r"\{\\o\}", "ø"), (r"\{\\O\}", "Ø"), (r"\\o\b", "ø"), (r"\\O\b", "Ø"),
+    (r"\{\\l\}", "ł"), (r"\{\\L\}", "Ł"), (r"\\l\b", "ł"), (r"\\L\b", "Ł"),
+    (r"\{\\ss\}", "ß"), (r"\\ss\b", "ß"),
+    (r"\{\\ae\}", "æ"), (r"\{\\AE\}", "Æ"),
+    (r"\{\\oe\}", "œ"), (r"\{\\OE\}", "Œ"),
+]
+
+TRANSLITERATION_MAP = str.maketrans({
+    "ł": "l", "Ł": "l",
+    "ø": "o", "Ø": "o",
+    "ß": "ss", "ẞ": "ss",
+    "æ": "ae", "Æ": "ae",
+    "œ": "oe", "Œ": "oe",
+    "đ": "d", "Đ": "d",
+    "ð": "d", "Ð": "d",
+    "þ": "th", "Þ": "th",
+    "ı": "i",
+})
+
+LOWER_PARTICLES = {
+    "van", "von", "de", "del", "della", "di", "da", "dos", "das",
+    "du", "le", "la", "ten", "ter", "den", "der", "st", "st.", "dela",
+}
+
+KNOWN_MULTIWORD_SURNAMES = [
+    "Trueba Sánchez",
+    "Trueba Sanchez",
+    "Lieberman Aiden",
+    "Cadilha Marques",
+    "Otamendi Laspiur",
+    "Garcia Satorras",
+    "Vázquez Torres",
+    "Vazquez Torres",
+    "Sellam Bojan",
+    "Viguera Diez",
+    "Dantas Machado",
+    "Braz Teixeira",
+    "Gonzalez Llamazares",
+    "Glenn St Hilaire",
+    "Sáme Guerra",
+    "Same Guerra",
+    "Kokkila Schumacher",
+    "Umesh Nagalakshmi",
+    "Pereira Ribeiro",
+    "Sanchez Guerrero",
+    "Tecero Paz",
+    "Roth Manning",
+    "Guaman Tipan",
+    "Agudelo Higuita",
+    "Doni Jayavelu",
+    "Nemati Hayati",
+    "Park Chang",
+    "Torres Altamirano",
+    "Sadeed Rashid",
+    "De La Cruz",
+    "De Moura Gallo",
+    "De Menezes",
+    "De Marzio",
+    "De Simone",
+    "De Munck",
+    "Di Pierro",
+    "Di Stefano",
+    "Di Felice",
+    "Di Natale",
+    "Van Essen",
+    "Van Dongen",
+    "Van Phan",
+    "Van Noort",
+    "Le Gros",
+    "St. Laurent",
+    "St Hilaire",
+    "Dela Cruz",
+    "dos Santos Costa",
+    "dos Santos de Sousa",
+]
+
+
+def decode_latex_text(text: Any) -> str:
+    if not text:
+        return ""
+    val = html.unescape(str(text))
+    val = val.replace("\u00a0", " ")
+    val = re.sub(r"\bNo['’]e\b", "Noé", val)
+    for pat, repl in LATEX_ACCENT_PATTERNS:
+        val = re.sub(pat, repl, val)
+    val = re.sub(r"\{([^\x00-\x7f]|[A-Za-z]{1,2})\}", r"\1", val)
+    return unicodedata.normalize("NFC", val)
+
+
+def fold_unicode_to_ascii(text: Any) -> str:
+    if not text:
+        return ""
+    decoded = decode_latex_text(str(text)).translate(TRANSLITERATION_MAP)
+    decomposed = unicodedata.normalize("NFKD", decoded)
+    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
+
+
+def normalize_given_initials(given: str) -> str:
+    given = " ".join(decode_latex_text(given).split()).strip()
+    if not given:
+        return ""
+    given = re.sub(r"([A-Z])\.([A-Z])\.", r"\1. \2.", given)
+    given = re.sub(r"([A-Z])\.([A-Z])\.", r"\1. \2.", given)
+    given = re.sub(r"([A-Z])\.([A-Z][a-z])", r"\1. \2", given)
+    out_tokens: list[str] = []
+    for tok in given.split():
+        if re.fullmatch(r"[A-Z]", tok):
+            out_tokens.append(f"{tok}.")
+        elif re.fullmatch(r"[A-Z]{2,3}", tok) and tok not in {"II", "III", "IV"}:
+            out_tokens.extend(f"{ch}." for ch in tok)
+        else:
+            out_tokens.append(tok)
+    return " ".join(out_tokens)
+
+
+def _extract_trailing_particles(given_tokens: list[str], family: str) -> tuple[str, str]:
+    if len(given_tokens) >= 2 and given_tokens[-1].lower() in LOWER_PARTICLES:
+        if len(given_tokens) >= 4 and " ".join(given_tokens[-3:]).lower() == "dos santos de":
+            family = " ".join(given_tokens[-3:]) + " " + family
+            given_tokens = given_tokens[:-3]
+        elif len(given_tokens) >= 3 and given_tokens[-2].lower() in LOWER_PARTICLES:
+            family = " ".join(given_tokens[-2:]) + " " + family
+            given_tokens = given_tokens[:-2]
+        else:
+            family = given_tokens[-1] + " " + family
+            given_tokens = given_tokens[:-1]
+    return " ".join(given_tokens), family
+
+
+def format_crossref_author_list(cr_authors: list[dict[str, Any]] | None) -> str:
+    formatted: list[str] = []
+    for author in cr_authors or []:
+        if not isinstance(author, dict):
+            continue
+        given = decode_latex_text(str(author.get("given") or "")).strip()
+        family = decode_latex_text(str(author.get("family") or "")).strip()
+        if not family and author.get("name"):
+            formatted.append(decode_latex_text(str(author["name"])).strip())
+            continue
+        if not family:
+            continue
+        given, family = _extract_trailing_particles(given.split(), family)
+        given_norm = normalize_given_initials(given)
+        family_norm = " ".join(family.split()).strip()
+        if given_norm:
+            formatted.append(f"{family_norm}, {given_norm}")
+        else:
+            formatted.append(family_norm)
+    return " and ".join(formatted)
+
+
+def split_single_given_family(name: str) -> str:
+    name = " ".join(decode_latex_text(name).split()).strip()
+    if not name:
+        return ""
+    if "," in name:
+        fam, giv = [p.strip() for p in name.split(",", 1)]
+        giv, fam = _extract_trailing_particles(giv.split(), fam)
+        giv_norm = normalize_given_initials(giv)
+        fam_norm = " ".join(fam.split()).strip()
+        return f"{fam_norm}, {giv_norm}" if giv_norm else fam_norm
+    lower_name = name.lower()
+    for mw in KNOWN_MULTIWORD_SURNAMES:
+        mw_low = mw.lower()
+        if lower_name.endswith(" " + mw_low):
+            giv = name[: -(len(mw) + 1)].strip()
+            fam = name[-len(mw) :].strip()
+            return f"{fam}, {normalize_given_initials(giv)}" if giv else fam
+    tokens = name.split()
+    if len(tokens) == 1:
+        return tokens[0]
+    for i in range(1, len(tokens) - 1):
+        if tokens[i] in LOWER_PARTICLES or (
+            tokens[i].lower() in {"van", "von", "de", "di", "da", "del", "della", "dos", "du", "le", "la"} and i >= 1
+        ):
+            giv = " ".join(tokens[:i])
+            fam = " ".join(tokens[i:])
+            return f"{fam}, {normalize_given_initials(giv)}"
+    giv = " ".join(tokens[:-1])
+    fam = tokens[-1]
+    return f"{fam}, {normalize_given_initials(giv)}"
+
+
+def normalize_authors_bibtex(authors_text: Any) -> str:
+    text = " ".join(decode_latex_text(authors_text or "").split()).strip()
+    if not text:
+        return ""
+    text = re.sub(r"\s+and\s+others\s*$", "", text, flags=re.I)
+    text = re.sub(r",?\s*et\s+al\.?\s*$", "", text, flags=re.I)
+
+    and_splits = re.split(r"\s+and\s+", text, flags=re.I)
+    comma_count = text.count(",")
+    if len(and_splits) > 1 and not (", and " in text.lower() and comma_count >= 2):
+        parts = [p.strip().strip(",") for p in and_splits if p.strip().strip(",")]
+        return " and ".join(split_single_given_family(p) for p in parts)
+
+    text = re.sub(r",\s+and\s+", ", ", text, flags=re.I)
+    if len(and_splits) == 2 and comma_count == 0:
+        return " and ".join(split_single_given_family(p.strip()) for p in and_splits if p.strip())
+
+    if comma_count == 0:
+        return split_single_given_family(text)
+
+    if comma_count == 1:
+        left, right = [p.strip() for p in text.split(",", 1)]
+        left_tokens = left.split()
+        is_left_surname_only = (
+            len(left_tokens) == 1
+            or (left_tokens and left_tokens[0].lower() in LOWER_PARTICLES)
+            or any(left.lower() == mw.lower() for mw in KNOWN_MULTIWORD_SURNAMES)
+        )
+        if is_left_surname_only:
+            giv, fam = _extract_trailing_particles(right.split(), left)
+            return f"{fam}, {normalize_given_initials(giv)}" if giv else fam
+        return f"{split_single_given_family(left)} and {split_single_given_family(right)}"
+
+    comma_parts = [p.strip() for p in text.split(",") if p.strip()]
+    if len(comma_parts) % 2 == 0 and all(len(comma_parts[i].split()) == 1 for i in range(0, len(comma_parts), 2)):
+        pairs = [
+            f"{comma_parts[i]}, {normalize_given_initials(comma_parts[i + 1])}"
+            for i in range(0, len(comma_parts), 2)
+        ]
+        return " and ".join(pairs)
+
+    return " and ".join(split_single_given_family(p) for p in comma_parts)
+
+
+def _load_journal_abbreviations_table() -> None:
+    abbrev_path = REGISTRY_ROOT / "journal_abbreviations.tsv"
+    if not abbrev_path.exists():
+        return
+    try:
+        with abbrev_path.open("r", encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader(handle, delimiter="\t"):
+                journal = str(row.get("journal") or "").strip()
+                cite_abbrev = str(row.get("citation_abbreviation") or "").strip()
+                file_abbrev = str(row.get("filename_abbreviation") or "").strip()
+                if not journal:
+                    continue
+                CANONICAL_VENUE_BY_CASEFOLD.setdefault(journal.casefold(), journal)
+                if cite_abbrev:
+                    CANONICAL_VENUE_BY_CASEFOLD.setdefault(cite_abbrev.casefold(), journal)
+                    CANONICAL_VENUE_BY_CASEFOLD.setdefault(cite_abbrev.replace(".", "").casefold(), journal)
+                target_alias = re.sub(r"[^a-z0-9]+", "", journal.casefold())
+                if target_alias:
+                    VENUE_ALIASES.setdefault(target_alias, target_alias)
+                    for alias_src in (cite_abbrev, file_abbrev):
+                        compact_src = re.sub(r"[^a-z0-9]+", "", alias_src.casefold())
+                        if compact_src:
+                            VENUE_ALIASES.setdefault(compact_src, target_alias)
+    except Exception:
+        pass
+
+
+_load_journal_abbreviations_table()
+
+
 def eprint(*parts: object) -> None:
     print(*parts, file=sys.stderr)
 
 
 def slugify(value: str) -> str:
-    value = value.lower()
+    value = fold_unicode_to_ascii(value).lower()
     value = re.sub(r"[^a-z0-9]+", "-", value)
     return value.strip("-") or "untitled"
 
@@ -293,17 +597,17 @@ def extract_year(text: str) -> int | None:
 
 
 def compact_alnum(text: Any) -> str:
-    return re.sub(r"[^a-z0-9]+", "", str(text or "").casefold())
+    return re.sub(r"[^a-z0-9]+", "", fold_unicode_to_ascii(text or "").casefold())
 
 
 def normalize_title(text: Any) -> str:
-    text = str(text or "").casefold()
+    text = fold_unicode_to_ascii(text or "").casefold()
     text = re.sub(r"[^a-z0-9]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
 def tokenize(text: Any) -> list[str]:
-    return [token.casefold() for token in TOKEN_RE.findall(str(text or ""))]
+    return [token.casefold() for token in TOKEN_RE.findall(fold_unicode_to_ascii(text or ""))]
 
 
 def informative_tokens(text: str) -> set[str]:
@@ -356,23 +660,23 @@ def semantic_scholar_fields() -> str:
     )
 
 
-def semantic_scholar_search(query: str, limit: int) -> dict[str, Any]:
-    params = {"query": query, "limit": str(limit), "fields": semantic_scholar_fields()}
-    url = f"{SEMANTIC_SCHOLAR_SEARCH}?{urllib.parse.urlencode(params)}"
-
-    headers = {"Accept": "application/json"}
-    api_key = os.environ.get("SEMANTIC_SCHOLAR_API_KEY")
+def _semantic_scholar_get_json(url: str) -> dict[str, Any]:
+    headers = {"Accept": "application/json", "User-Agent": "litlib/1.0"}
+    api_key = os.environ.get("SEMANTIC_SCHOLAR_API_KEY", "").strip()
     if api_key:
         headers["x-api-key"] = api_key
 
-    request = urllib.request.Request(url, headers=headers)
     last_error: urllib.error.HTTPError | None = None
     for attempt in range(4):
+        request = urllib.request.Request(url, headers=dict(headers))
         try:
             with urllib.request.urlopen(request, timeout=30) as response:
                 return json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             last_error = exc
+            if exc.code in {401, 403} and "x-api-key" in headers:
+                headers.pop("x-api-key", None)
+                continue
             if exc.code != 429 or attempt == 3:
                 raise
             retry_after = exc.headers.get("Retry-After") if exc.headers else None
@@ -384,6 +688,107 @@ def semantic_scholar_search(query: str, limit: int) -> dict[str, Any]:
     if last_error:
         raise last_error
     raise RuntimeError("Semantic Scholar request failed without response")
+
+
+def semantic_scholar_search(query: str, limit: int) -> dict[str, Any]:
+    params = {"query": query, "limit": str(limit), "fields": semantic_scholar_fields()}
+    url = f"{SEMANTIC_SCHOLAR_SEARCH}?{urllib.parse.urlencode(params)}"
+    return _semantic_scholar_get_json(url)
+
+
+def reconstruct_openalex_abstract(inverted_index: Any) -> str:
+    if not isinstance(inverted_index, dict) or not inverted_index:
+        return ""
+    pos_to_word: dict[int, str] = {}
+    for word, positions in inverted_index.items():
+        if isinstance(positions, list):
+            for pos in positions:
+                if isinstance(pos, int):
+                    pos_to_word[pos] = str(word)
+    if not pos_to_word:
+        return ""
+    return clean_whitespace(" ".join(pos_to_word[idx] for idx in sorted(pos_to_word)))
+
+
+def openalex_fetch_abstract_by_doi(doi: str) -> str:
+    normalized = normalize_doi(doi)
+    if not normalized:
+        return ""
+    encoded = urllib.parse.quote(f"https://doi.org/{normalized}", safe=":/")
+    url = f"https://api.openalex.org/works/{encoded}?select=id,doi,title,abstract_inverted_index"
+    req = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "local-literature-library/1.0 (mailto:library@localhost)",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            payload = json.loads(resp.read().decode("utf-8"))
+        return reconstruct_openalex_abstract(payload.get("abstract_inverted_index"))
+    except Exception:
+        return ""
+
+
+def semantic_scholar_fetch_by_doi(doi: str) -> dict[str, Any] | None:
+    normalized = normalize_doi(doi)
+    if not normalized:
+        return None
+    paper_base = "https://api.semanticscholar.org/graph/v1/paper/"
+    fields = semantic_scholar_fields()
+    identifiers = [f"DOI:{urllib.parse.quote(normalized, safe='')}"]
+    arxiv_match = re.match(r"^10\.48550/arxiv\.(.+)$", normalized, flags=re.I)
+    if arxiv_match:
+        identifiers.append(f"ARXIV:{urllib.parse.quote(arxiv_match.group(1), safe='')}")
+
+    s2_data: dict[str, Any] | None = None
+    for identifier in identifiers:
+        url = f"{paper_base}{identifier}?{urllib.parse.urlencode({'fields': fields})}"
+        for attempt in range(2):
+            try:
+                data = _semantic_scholar_get_json(url)
+                if isinstance(data, dict) and (data.get("paperId") or data.get("title") or data.get("abstract")):
+                    s2_data = data
+                    break
+            except urllib.error.HTTPError as exc:
+                if exc.code == 404:
+                    break
+                if exc.code == 429 and attempt == 0:
+                    time.sleep(1.5)
+                    continue
+                break
+            except Exception:
+                break
+        if s2_data:
+            break
+
+    if s2_data and s2_data.get("abstract"):
+        return s2_data
+
+    oa_abstract = openalex_fetch_abstract_by_doi(normalized)
+    if oa_abstract:
+        if isinstance(s2_data, dict):
+            s2_data["abstract"] = oa_abstract
+            return s2_data
+        return {"abstract": oa_abstract, "externalIds": {"DOI": normalized}}
+    return s2_data
+
+
+def crossref_search_title(query: str, limit: int = 5) -> list[dict[str, Any]]:
+    params = {"query.bibliographic": query, "rows": str(limit)}
+    url = f"https://api.crossref.org/works?{urllib.parse.urlencode(params)}"
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "library_ingest.py (local literature registry)",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    items = (payload.get("message") or {}).get("items") or []
+    return [item for item in items if isinstance(item, dict)]
 
 
 def crossref_fetch_by_doi(doi: str) -> dict[str, Any]:
@@ -400,6 +805,33 @@ def crossref_fetch_by_doi(doi: str) -> dict[str, Any]:
     message = payload.get("message")
     if not isinstance(message, dict):
         raise RuntimeError("Crossref response missing message payload")
+    return message
+
+
+def crossref_published_doi_from_relations(message: dict[str, Any] | None) -> str:
+    if not isinstance(message, dict):
+        return ""
+    relation = message.get("relation") or {}
+    if not isinstance(relation, dict):
+        return ""
+    preprint_of = relation.get("is-preprint-of") or []
+    if isinstance(preprint_of, list):
+        for item in preprint_of:
+            if isinstance(item, dict) and str(item.get("id-type") or "").lower() == "doi" and item.get("id"):
+                return normalize_doi(str(item["id"]))
+    return ""
+
+
+def crossref_fetch_prefer_published(doi: str) -> dict[str, Any]:
+    message = crossref_fetch_by_doi(doi)
+    published_doi = crossref_published_doi_from_relations(message)
+    if published_doi and published_doi != normalize_doi(doi):
+        try:
+            pub_message = crossref_fetch_by_doi(published_doi)
+            if isinstance(pub_message, dict) and crossref_title(pub_message):
+                return pub_message
+        except Exception:
+            pass
     return message
 
 
@@ -519,13 +951,14 @@ def candidate_dois(candidate: dict[str, Any]) -> set[str]:
 
 def extract_dois_from_text(text: str) -> list[str]:
     seen: list[str] = []
-    for raw in DOI_RE.findall(text or ""):
+    cleaned = re.sub(r"(10\.1073/pnas\.)\s+(\d{8,12})", r"\1\2", text or "", flags=re.I)
+    for raw in DOI_RE.findall(cleaned):
         doi = raw.rstrip(".,);]").strip()
         suffix = doi.split("/", 1)[1] if "/" in doi else ""
         if not doi.lower().startswith("10."):
             continue
         # Reject obviously truncated DOI fragments such as "10.1073/pnas".
-        if len(suffix) < 8 or not re.search(r"\d", suffix):
+        if len(suffix) < 6 or not re.search(r"\d", suffix):
             continue
         if doi not in seen:
             seen.append(doi)
@@ -533,9 +966,11 @@ def extract_dois_from_text(text: str) -> list[str]:
 
 
 def normalize_doi_candidate(doi: str) -> str:
-    value = doi.strip().rstrip(".,);]")
+    value = urllib.parse.unquote(str(doi or "")).strip().rstrip(".,);]")
     value = re.sub(r"/-/(?:dcsupplemental|supplemental).*", "", value, flags=re.I)
     value = re.sub(r"\.(?:g|t|s|f|e)\d{3}$", "", value, flags=re.I)
+    value = re.sub(r"\.sa\d+$", "", value, flags=re.I)
+    value = re.sub(r"^(10\.(?:1101|64898)/(?:\d{4}\.\d{2}\.\d{2}\.\d+|\d{5,8}))v\d+$", r"\1", value, flags=re.I)
     if re.match(r"^10\.7554/elife\.\d+\.\d{3}$", value, flags=re.I):
         value = re.sub(r"\.\d{3}$", "", value)
     return value
@@ -682,7 +1117,12 @@ def ensure_path_inside_library(path: Path, label: str) -> Path:
 
 
 def candidate_authors(candidate: dict[str, Any]) -> str:
-    return ", ".join(author.get("name", "") for author in (candidate.get("authors") or []) if isinstance(author, dict))
+    raw_names = [
+        str(author.get("name") or "").strip()
+        for author in (candidate.get("authors") or [])
+        if isinstance(author, dict) and str(author.get("name") or "").strip()
+    ]
+    return normalize_authors_bibtex(" and ".join(raw_names))
 
 
 def candidate_venue(candidate: dict[str, Any]) -> str:
@@ -713,14 +1153,24 @@ def semantic_candidate_to_metadata(candidate: dict[str, Any]) -> dict[str, str]:
     )
 
 
+def normalize_pages_value(pages: Any) -> str:
+    val = " ".join(str(pages or "").split()).strip()
+    if not val:
+        return ""
+    if re.fullmatch(r"(?:19|20)\d{2}[-–—]{1,2}(?:0[1-9]|1[0-2])", val):
+        return ""
+    val = re.sub(r"^(\d+)\s*[-–—]+\s*(\d+)$", r"\1--\2", val)
+    return val
+
+
 def normalize_metadata_fields(fields: dict[str, Any]) -> dict[str, str]:
-    title = " ".join(str(fields.get("title") or "").split()).strip()
-    authors = ", ".join(part.strip() for part in str(fields.get("authors") or "").split(",") if part.strip())
+    title = " ".join(decode_latex_text(strip_jats_markup(str(fields.get("title") or ""))).split()).strip()
+    authors = normalize_authors_bibtex(str(fields.get("authors") or fields.get("author") or ""))
     year = str(fields.get("year") or "").strip()
     venue = normalize_venue_name(str(fields.get("venue") or ""))
     doi = normalize_doi(str(fields.get("doi") or ""))
     url = str(fields.get("url") or fields.get("canonical_url") or "").strip()
-    abstract = " ".join(str(fields.get("abstract") or "").split()).strip()
+    abstract = " ".join(decode_latex_text(strip_jats_markup(str(fields.get("abstract") or ""))).split()).strip()
     semantic_scholar_paper_id = str(fields.get("semantic_scholar_paper_id") or "").strip()
     bibtex_key = str(fields.get("bibtex_key") or "").strip()
     entry_type = str(fields.get("bibtex_type") or fields.get("entry_type") or "").strip().lower()
@@ -748,13 +1198,17 @@ def bibtex_field_aliases_from_metadata(entry_type: str, fields: dict[str, Any]) 
         if not field_name or not field_value:
             continue
         lower = field_name.lower()
-        if lower == "authors":
-            mapped["author"] = field_value
+        if lower in {"authors", "author"}:
+            mapped["author"] = normalize_authors_bibtex(field_value)
+        elif lower == "editor":
+            mapped["editor"] = normalize_authors_bibtex(field_value)
         elif lower == "venue":
             mapped[venue_field] = normalize_venue_name(field_value)
-        elif lower == "bibtex_type":
-            continue
-        elif lower == "bibtex_key":
+        elif lower == "pages":
+            cleaned_pages = normalize_pages_value(field_value)
+            if cleaned_pages:
+                mapped["pages"] = cleaned_pages
+        elif lower in {"bibtex_type", "entry_type", "bibtex_key"}:
             continue
         else:
             mapped[lower] = field_value
@@ -862,12 +1316,22 @@ def build_bibtex_entry_with_preserved_fields(
     if normalized["abstract"]:
         merged["abstract"] = normalized["abstract"]
     if normalized["venue"]:
-        for field_name in ["journal", "booktitle", "publisher", "school", "institution"]:
-            if merged.get(field_name):
-                merged[field_name] = normalized["venue"]
-                break
+        target_venue_field = venue_field_name_for_bibtex_type(bibtex_type)
+        merged[target_venue_field] = normalized["venue"]
+    if merged.get("author"):
+        merged["author"] = normalize_authors_bibtex(merged["author"])
+    if merged.get("editor"):
+        merged["editor"] = normalize_authors_bibtex(merged["editor"])
+    if merged.get("journal"):
+        merged["journal"] = normalize_venue_name(merged["journal"])
+    if "pages" in merged:
+        cleaned_pages = normalize_pages_value(merged["pages"])
+        if cleaned_pages:
+            merged["pages"] = cleaned_pages
         else:
-            merged[venue_field_name_for_bibtex_type(bibtex_type)] = normalized["venue"]
+            merged.pop("pages", None)
+    if merged.get("publisher", "").strip().casefold() == "openrxiv":
+        merged["publisher"] = "Cold Spring Harbor Laboratory"
 
     merged, _ignored_after_merge = sanitize_bibtex_fields(bibtex_type, merged)
     preferred_order = canonical_bibtex_field_order(bibtex_type)
@@ -1087,7 +1551,11 @@ def first_page_text(extracted_text: str) -> str:
 
 def doi_candidate_priority_score(source_region: str, position: int, context: str) -> float:
     score = 0.0
-    if source_region == "filename":
+    if source_region in {"pdf_metadata", "page1_annot_uri"}:
+        score += 0.85
+    elif source_region == "tail_annot_uri":
+        score += 0.55
+    elif source_region == "filename":
         score += 0.2
     elif source_region == "first_page":
         score += 0.45
@@ -1112,8 +1580,73 @@ def doi_candidate_priority_score(source_region: str, position: int, context: str
     return round(score, 4)
 
 
+def extract_pdf_embedded_dois(pdf_path: Path) -> list[tuple[str, str, str]]:
+    """Return (source_region, raw_doi, context) tuples from PDF metadata and link annotations."""
+    results: list[tuple[str, str, str]] = []
+    if not pdf_path or not pdf_path.exists():
+        return results
+    try:
+        from pypdf import PdfReader
+
+        reader = PdfReader(str(pdf_path))
+        meta = reader.metadata or {}
+        for key in ["/DOI", "/Subject", "/Keywords", "/Identifier", "/Title", "/Description"]:
+            val = str(meta.get(key) or "").strip()
+            if not val:
+                continue
+            for doi in extract_dois_from_text(val):
+                results.append(("pdf_metadata", doi, f"{key}: {val[:140]}"))
+            pnas_match = re.search(r"Proc\.\s*Natl\.\s*Acad\.\s*Sci\..*?:e(\d{10})\b", val, flags=re.I)
+            if pnas_match:
+                results.append(("pdf_metadata", f"10.1073/pnas.{pnas_match.group(1)}", f"{key}: {val[:140]}"))
+            sciadv_match = re.search(r"Sci\.\s*Adv\.\s*\d{4}\.\d+:e([a-z0-9]{6,10})\b", val, flags=re.I)
+            if sciadv_match:
+                results.append(("pdf_metadata", f"10.1126/sciadv.{sciadv_match.group(1)}", f"{key}: {val[:140]}"))
+
+        num_pages = len(reader.pages)
+        head_indices = list(range(min(2, num_pages)))
+        tail_indices = [idx for idx in range(max(0, num_pages - 2), num_pages) if idx not in head_indices]
+        for region_name, page_indices in [("page1_annot_uri", head_indices), ("tail_annot_uri", tail_indices)]:
+            for idx in page_indices:
+                page = reader.pages[idx]
+                annots = page.get("/Annots")
+                if not annots:
+                    continue
+                for annot in annots:
+                    try:
+                        obj = annot.get_object()
+                        action = obj.get("/A") if isinstance(obj, dict) else None
+                        uri = str(action.get("/URI") or "") if isinstance(action, dict) else ""
+                        if not uri:
+                            continue
+                        unquoted = urllib.parse.unquote(uri)
+                        for doi in extract_dois_from_text(unquoted):
+                            results.append((region_name, doi, unquoted[:160]))
+                    except Exception:
+                        continue
+    except Exception:
+        pass
+    return results
+
+
 def collect_pdf_doi_candidate_details(pdf_path: Path, extracted_text: str) -> list[dict[str, Any]]:
     seen: dict[str, dict[str, Any]] = {}
+    for source_region, raw_doi, context in extract_pdf_embedded_dois(pdf_path):
+        normalized = normalize_doi_candidate(raw_doi)
+        if not normalized:
+            continue
+        priority_score = doi_candidate_priority_score(source_region, 0, context)
+        detail = {
+            "doi": normalized,
+            "source_region": source_region,
+            "position": 0,
+            "context": context,
+            "priority_score": priority_score,
+        }
+        existing = seen.get(normalized)
+        if existing is None or detail["priority_score"] > existing["priority_score"]:
+            seen[normalized] = detail
+
     windows = [
         ("filename", pdf_path.name),
         ("first_page", first_page_text(extracted_text)),
@@ -1268,24 +1801,63 @@ def strip_supplement_markers(text: str) -> str:
     return normalize_titleish_text(text)
 
 
+def strip_supplement_filename_stem(stem: str) -> str:
+    cleaned = re.sub(
+        r"(?:[-_\s]+|\b)(?:si|sm|supp(?:lement|lementary)?(?:\s+info(?:rmation)?|\s+materials?)?)\s*$",
+        "",
+        stem,
+        flags=re.I,
+    ).strip(" -_.")
+    return cleaned
+
+
 def find_parent_article_for_supplement(
     pdf_path: Path,
     text_title_candidates: list[str],
+    extracted_dois: list[str] | None = None,
 ) -> dict[str, str] | None:
     rows = load_master_index_rows()
-    scoped_rows = [row for row in rows if row.get("match_status") in {"matched", "matched_via_doi", "matched_supplement"}]
+    scoped_rows = [
+        row
+        for row in rows
+        if row.get("match_status") in {"matched", "matched_via_doi", "manual_verified"}
+        and row.get("content_kind") == CONTENT_KIND_PDF
+        and row.get("pdf_path") != relative_to_library(pdf_path)
+    ]
+    if not scoped_rows:
+        return None
+
     same_dir_prefix = str(pdf_path.parent.resolve().relative_to(LIBRARY_ROOT))
     primary_rows = [row for row in scoped_rows if row.get("pdf_path", "").startswith(same_dir_prefix + "/")]
-    if not primary_rows:
-        primary_rows = scoped_rows
+    search_pools = [primary_rows, scoped_rows] if primary_rows else [scoped_rows]
+
+    base_stem = strip_supplement_filename_stem(pdf_path.stem)
+    if base_stem and compact_alnum(base_stem) != compact_alnum(pdf_path.stem):
+        target_compact = compact_alnum(base_stem)
+        for pool in search_pools:
+            for row in pool:
+                row_stem = Path(row.get("filename") or row.get("pdf_path") or "").stem
+                if row_stem and compact_alnum(row_stem) == target_compact:
+                    return row
+
+    if extracted_dois:
+        norm_dois = {normalize_doi(d) for d in extracted_dois if normalize_doi(d)}
+        if norm_dois:
+            for pool in search_pools:
+                for row in pool:
+                    if normalize_doi(row.get("doi", "")) in norm_dois:
+                        return row
 
     best_row: dict[str, str] | None = None
     best_score = 0.0
-    for candidate in text_title_candidates:
+    candidates_to_check = list(text_title_candidates)
+    if base_stem:
+        candidates_to_check.append(derive_title_query(pdf_path.with_name(base_stem + ".pdf")))
+    for candidate in candidates_to_check:
         stripped = strip_supplement_markers(candidate)
         if len(stripped.split()) < 4:
             continue
-        for row in primary_rows:
+        for row in primary_rows or scoped_rows:
             row_title = row.get("resolved_title") or row.get("title_query") or ""
             if not row_title:
                 continue
@@ -1294,7 +1866,7 @@ def find_parent_article_for_supplement(
                 best_score = score
                 best_row = row
 
-    if best_row and best_score >= 0.9:
+    if best_row and best_score >= 0.88:
         return best_row
     return None
 
@@ -1337,32 +1909,70 @@ def crossref_consistency_warnings(filename_hints: dict[str, Any], message: dict[
 
 def crossref_title(message: dict[str, Any]) -> str:
     title = message.get("title") or []
+    raw = ""
     if isinstance(title, list) and title:
-        return str(title[0])
-    if isinstance(title, str):
-        return title
-    return ""
+        raw = str(title[0])
+    elif isinstance(title, str):
+        raw = title
+    return " ".join(decode_latex_text(strip_jats_markup(raw)).split()).strip()
 
 
 def crossref_container(message: dict[str, Any]) -> str:
     container = message.get("container-title") or []
+    raw_container = ""
     if isinstance(container, list) and container:
-        return normalize_venue_name(str(container[0]))
-    if isinstance(container, str):
-        return normalize_venue_name(container)
+        raw_container = str(container[0]).strip()
+    elif isinstance(container, str):
+        raw_container = container.strip()
+
+    if raw_container and raw_container.casefold() != "openrxiv":
+        return normalize_venue_name(raw_container)
+
+    institutions = message.get("institution") or []
+    if isinstance(institutions, dict):
+        institutions = [institutions]
+    if isinstance(institutions, list):
+        for inst in institutions:
+            if isinstance(inst, dict):
+                inst_name = str(inst.get("name") or "").strip()
+                if inst_name and inst_name.casefold() != "openrxiv":
+                    return normalize_venue_name(inst_name)
+
+    doi = normalize_doi(message.get("DOI") or "")
+    cr_type = str(message.get("type") or "").strip().lower()
+    if doi.startswith("10.64898/"):
+        return "bioRxiv"
+    if doi.startswith("10.1101/") and (
+        cr_type == "posted-content" or re.match(r"^10\.1101/(?:\d{4}\.\d{2}\.\d{2}\.\d+|\d{5,8})$", doi)
+    ):
+        return "bioRxiv"
+    if doi.startswith("10.21203/"):
+        return "Research Square"
+    if doi.startswith("10.48550/arxiv."):
+        return "arXiv"
+    if raw_container:
+        return normalize_venue_name(raw_container)
     return ""
 
 
 def normalize_venue_name(value: str) -> str:
-    venue = " ".join((value or "").split()).strip()
+    venue = " ".join(decode_latex_text(value or "").split()).strip()
     venue = venue.replace("\\&", "&").replace("&amp;", "&")
     if not venue:
         return ""
-    return CANONICAL_VENUE_BY_CASEFOLD.get(venue.casefold(), venue)
+    lowered = venue.casefold()
+    if lowered.startswith("arxiv preprint") or lowered.startswith("arxiv:"):
+        return "arXiv"
+    if lowered in CANONICAL_VENUE_BY_CASEFOLD:
+        return CANONICAL_VENUE_BY_CASEFOLD[lowered]
+    stripped_dot = lowered.rstrip(".")
+    if stripped_dot in CANONICAL_VENUE_BY_CASEFOLD:
+        return CANONICAL_VENUE_BY_CASEFOLD[stripped_dot]
+    return venue
 
 
 def crossref_year(message: dict[str, Any]) -> str:
-    for key in ["published-print", "published-online", "issued"]:
+    for key in ["published-print", "published-online", "issued", "posted", "created"]:
         part = message.get(key) or {}
         date_parts = part.get("date-parts") if isinstance(part, dict) else None
         if isinstance(date_parts, list) and date_parts and date_parts[0]:
@@ -1371,26 +1981,21 @@ def crossref_year(message: dict[str, Any]) -> str:
 
 
 def crossref_authors(message: dict[str, Any]) -> str:
-    names: list[str] = []
-    for author in message.get("author") or []:
-        if not isinstance(author, dict):
-            continue
-        given = str(author.get("given") or "").strip()
-        family = str(author.get("family") or "").strip()
-        name = " ".join(part for part in [given, family] if part)
-        if name:
-            names.append(name)
-    return ", ".join(names)
+    return format_crossref_author_list(message.get("author") or [])
+
+
+def crossref_editors(message: dict[str, Any]) -> str:
+    return format_crossref_author_list(message.get("editor") or [])
 
 
 def strip_jats_markup(text: str) -> str:
-    cleaned = re.sub(r"</?(?:jats:)?(?:p|i|b|sub|sup|italic|bold|title|sc)>", " ", text or "", flags=re.I)
+    cleaned = re.sub(r"</?(?:jats:)?(?:p|i|b|sub|sup|italic|bold|title|sc|scp)>", "", text or "", flags=re.I)
     cleaned = re.sub(r"<[^>]+>", " ", cleaned)
     return " ".join(cleaned.split()).strip()
 
 
 def crossref_abstract(message: dict[str, Any]) -> str:
-    return strip_jats_markup(str(message.get("abstract") or ""))
+    return " ".join(decode_latex_text(strip_jats_markup(str(message.get("abstract") or ""))).split()).strip()
 
 
 def crossref_volume(message: dict[str, Any]) -> str:
@@ -1402,11 +2007,17 @@ def crossref_number(message: dict[str, Any]) -> str:
 
 
 def crossref_pages(message: dict[str, Any]) -> str:
-    return str(message.get("page") or "").strip()
+    raw = str(message.get("page") or "").strip()
+    if not raw:
+        raw = str(message.get("article-number") or "").strip()
+    return normalize_pages_value(raw)
 
 
 def crossref_publisher(message: dict[str, Any]) -> str:
-    return str(message.get("publisher") or "").strip()
+    pub = " ".join(decode_latex_text(str(message.get("publisher") or "")).split()).strip()
+    if pub.casefold() == "openrxiv":
+        return "Cold Spring Harbor Laboratory"
+    return pub
 
 
 def crossref_issn(message: dict[str, Any]) -> str:
@@ -1418,14 +2029,33 @@ def crossref_issn(message: dict[str, Any]) -> str:
     return ""
 
 
+def crossref_bibtex_type(message: dict[str, Any]) -> str:
+    cr_type = str(message.get("type") or "").strip().lower()
+    if cr_type in {"book-chapter", "reference-entry"}:
+        return "incollection"
+    if cr_type in {"book", "monograph", "edited-book", "reference-book"}:
+        return "book"
+    if cr_type in {"proceedings-article", "paper-conference"}:
+        return "inproceedings"
+    if cr_type == "dissertation":
+        return "phdthesis"
+    if cr_type in {"report", "standard"}:
+        return "techreport"
+    return "article"
+
+
 def crossref_to_bibtex_fields(message: dict[str, Any]) -> dict[str, str]:
-    return {
+    btype = crossref_bibtex_type(message)
+    container = crossref_container(message)
+    fields = {
+        "bibtex_type": btype,
         "title": crossref_title(message),
         "authors": crossref_authors(message),
+        "editor": crossref_editors(message),
         "year": crossref_year(message),
-        "venue": crossref_container(message),
-        "doi": str(message.get("DOI") or ""),
-        "url": str(message.get("URL") or ""),
+        "venue": container,
+        "doi": normalize_doi(message.get("DOI") or ""),
+        "url": str(message.get("URL") or "").strip(),
         "abstract": crossref_abstract(message),
         "volume": crossref_volume(message),
         "number": crossref_number(message),
@@ -1433,34 +2063,17 @@ def crossref_to_bibtex_fields(message: dict[str, Any]) -> dict[str, str]:
         "publisher": crossref_publisher(message),
         "issn": crossref_issn(message),
     }
+    if btype in {"incollection", "inproceedings"} and container:
+        fields["booktitle"] = container
+    return fields
 
 
-def build_crossref_bibtex_entry(bibtex_key: str, message: dict[str, Any]) -> str:
+def build_crossref_bibtex_entry(bibtex_key: str, message: dict[str, Any], abstract_override: str = "") -> str:
     fields = crossref_to_bibtex_fields(message)
-    field_mappings = [
-        ("title", "title"),
-        ("authors", "author"),
-        ("year", "year"),
-        ("venue", "journal"),
-        ("volume", "volume"),
-        ("number", "number"),
-        ("pages", "pages"),
-        ("doi", "doi"),
-        ("url", "url"),
-        ("publisher", "publisher"),
-        ("issn", "issn"),
-    ]
-    populated = []
-    for source_key, target_name in field_mappings:
-        val = fields.get(source_key, "")
-        if val:
-            populated.append((target_name, val))
-            
-    body = ",\n".join(
-        f"  {name} = {{{sanitize_bibtex_value(value)}}}"
-        for name, value in populated
-    )
-    return f"@article{{{bibtex_key},\n{body}\n}}\n"
+    if abstract_override and not fields.get("abstract"):
+        fields["abstract"] = abstract_override
+    entry_type = fields.get("bibtex_type") or "article"
+    return build_bibtex_entry_from_fields(entry_type, bibtex_key, fields)
 
 
 DOI_ACCEPT_THRESHOLD = 0.55
@@ -1495,7 +2108,7 @@ def resolve_pdf_doi_metadata(
             }
         )
         try:
-            metadata = crossref_fetch_by_doi(doi_candidate)
+            metadata = crossref_fetch_prefer_published(doi_candidate)
             warnings = crossref_consistency_warnings(filename_hints, metadata)
             score = score_crossref_metadata(metadata, filename_hints, title_targets)
             attempt["score"] = score
@@ -1506,7 +2119,7 @@ def resolve_pdf_doi_metadata(
                 best_score = score
                 best_warnings = warnings
                 best_error = ""
-                best_doi = doi_candidate
+                best_doi = str(metadata.get("DOI") or doi_candidate)
                 best_priority = float(detail.get("priority_score") or 0.0)
         except urllib.error.HTTPError as exc:
             attempt["error"] = f"Crossref HTTP {exc.code}: {exc.reason}"
@@ -1548,12 +2161,20 @@ def choose_semantic_candidate_for_doi(
             candidate = entry.get("candidate") or {}
             if normalized in {normalize_doi(value) for value in candidate_dois(candidate)}:
                 return candidate
+        direct_s2 = semantic_scholar_fetch_by_doi(normalized)
+        if direct_s2:
+            return direct_s2
     return fallback_candidate
 
 
 def build_bibtex_key_from_fields(authors: str, year: str, title: str, fallback_stem: str) -> str:
-    first_author = authors.split(",")[0].strip() if authors else fallback_stem
-    surname = first_author.split()[-1] if first_author.split() else fallback_stem
+    norm_authors = normalize_authors_bibtex(authors) if authors else ""
+    if norm_authors:
+        first_chunk = re.split(r"\s+and\s+", norm_authors, maxsplit=1, flags=re.I)[0].strip()
+        surname_part = first_chunk.split(",", 1)[0].strip() if "," in first_chunk else first_chunk
+        surname = surname_part.split()[-1] if surname_part.split() else fallback_stem
+    else:
+        surname = fallback_stem
     title_token = preferred_title_token(title)
     return slugify(f"{surname}{year or 'undated'}{title_token}").replace("-", "")
 
@@ -1824,34 +2445,18 @@ def sanitize_bibtex_value(value: str) -> str:
 
 
 def make_bibtex_key(candidate: dict[str, Any], fallback_stem: str) -> str:
-    authors = candidate.get("authors") or []
-    first_author = authors[0]["name"] if authors and authors[0].get("name") else fallback_stem
-    surname = first_author.split()[-1]
-    year = candidate.get("year") or "undated"
-    title = candidate.get("title") or fallback_stem
-    title_token = preferred_title_token(title)
-    return slugify(f"{surname}{year}{title_token}").replace("-", "")
+    authors = candidate_authors(candidate)
+    year = str(candidate.get("year") or "undated")
+    title = str(candidate.get("title") or fallback_stem)
+    return build_bibtex_key_from_fields(authors, year, title, fallback_stem)
 
 
 def build_bibtex_entry(entry_type: str, bibtex_key: str, candidate: dict[str, Any]) -> str:
-    author_names = " and ".join(author.get("name", "") for author in candidate.get("authors") or [])
-    journal = ""
-    if isinstance(candidate.get("journal"), dict):
-        journal = normalize_venue_name(candidate["journal"].get("name", ""))
-
-    fields: list[tuple[str, str]] = [
-        ("title", candidate.get("title", "")),
-        ("author", author_names),
-        ("year", str(candidate.get("year", ""))),
-        ("journal", journal or normalize_venue_name(candidate.get("venue", ""))),
-        ("doi", (candidate.get("externalIds") or {}).get("DOI", "")),
-        ("url", candidate.get("url", "")),
-        ("abstract", candidate.get("abstract", "")),
-    ]
-
-    populated = [(name, sanitize_bibtex_value(value)) for name, value in fields if value]
-    body = ",\n".join(f"  {name} = {{{value}}}" for name, value in populated)
-    return f"@{entry_type}{{{bibtex_key},\n{body}\n}}\n"
+    return build_bibtex_entry_from_fields(
+        entry_type,
+        bibtex_key,
+        semantic_candidate_to_metadata(candidate),
+    )
 
 
 def upsert_master_index(row: dict[str, str]) -> None:
@@ -2185,17 +2790,25 @@ def ingest(
         for attempt in attempts
     ]
     supplement_parent_row: dict[str, str] | None = None
-    if is_supplement_pdf(pdf_path, text_content) and status in {"not_found", "needs_manual_review", "api_error"} and not accepted_crossref_metadata:
-        supplement_parent_row = find_parent_article_for_supplement(pdf_path, text_title_candidates)
+    if is_supplement_pdf(pdf_path, text_content):
+        supplement_parent_row = find_parent_article_for_supplement(
+            pdf_path,
+            text_title_candidates,
+            extracted_dois=extracted_dois,
+        )
         if supplement_parent_row:
             status = "matched_supplement"
+            accepted_crossref_metadata = None
+            review_crossref_metadata = None
     metadata_source = "semantic_scholar_primary"
     s2_candidate_dois = candidate_dois(best_candidate or {})
     matching_extracted_doi = next(
         (doi for doi in extracted_dois if normalize_doi(doi) in {normalize_doi(value) for value in s2_candidate_dois}),
         "",
     )
-    if accepted_crossref_metadata:
+    if supplement_parent_row:
+        metadata_source = "supplement_parent_link"
+    elif accepted_crossref_metadata:
         status = "matched_via_doi"
         best_candidate = choose_semantic_candidate_for_doi(
             merged_candidates,
@@ -2231,19 +2844,22 @@ def ingest(
         year = supplement_parent_row.get("year", "")
         venue = normalize_venue_name(supplement_parent_row.get("venue", ""))
         doi = ""
+        best_candidate = None
 
-    matched_row = find_existing_reference_match(
-        semantic_scholar_paper_id=str((best_candidate or {}).get("paperId", "")),
-        doi=doi,
-        title=resolved_title or title_query,
-        year=year,
-    )
+    matched_row = None
+    if not supplement_parent_row:
+        matched_row = find_existing_reference_match(
+            semantic_scholar_paper_id=str((best_candidate or {}).get("paperId", "")),
+            doi=doi,
+            title=resolved_title or title_query,
+            year=year,
+        )
 
     if existing_by_sha and existing_by_sha.get("content_kind") == CONTENT_KIND_PDF:
         matched_row = existing_by_sha
 
     if matched_row and matched_row.get("content_kind") == CONTENT_KIND_PDF:
-        same_pdf = normalize_doi(matched_row.get("doi", "")) == normalize_doi(doi) or matched_row.get("paper_id") == (existing_by_sha or {}).get("paper_id", "")
+        same_pdf = matched_row.get("paper_id") == (existing_by_sha or {}).get("paper_id", "")
         if same_pdf:
             if not force and matched_row.get("pdf_path", "") == rel_pdf_path and matched_row.get("pdf_sha256", "") == pdf_sha256:
                 eprint(f"[library_ingest] already indexed path={pdf_path} paper_id={matched_row['paper_id']}")
@@ -2277,7 +2893,8 @@ def ingest(
 
     existing_bibtex_key = existing_row.get("bibtex_key", "") if existing_row else ""
     existing_bibtex_type = existing_row.get("bibtex_type", "") if existing_row else ""
-    bibtex_type = existing_bibtex_type or ("book" if item_type == "book" else "article")
+    inferred_cr_type = crossref_bibtex_type(accepted_crossref_metadata) if accepted_crossref_metadata else ""
+    bibtex_type = existing_bibtex_type or ("book" if item_type == "book" else (inferred_cr_type or "article"))
     bibtex_key = existing_bibtex_key
     abstract_source = ""
     canonical_url = canonical_url_from_sources(

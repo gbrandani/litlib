@@ -2,6 +2,9 @@
 
 This file is the single canonical reference for AI coding assistants and automation scripts operating within this repository.
 
+> **Open issues:** see [`FIXME.md`](FIXME.md) for known metadata bugs and missing papers
+> awaiting a proper fix. Read it before any maintenance task.
+
 ## Project Overview
 
 `litlib` is a local, offline-first literature library containing research papers (mostly PDFs), books, a machine-readable index, a self-hosted FastAPI + React web application, a Microsoft Word Add-in, and Python scripts for library maintenance, search, and citation management.
